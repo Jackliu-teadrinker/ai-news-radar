@@ -2971,6 +2971,7 @@ def main() -> int:
     parser.add_argument("--translate-max-new", type=int, default=80, help="Max new EN->ZH title translations per run")
     parser.add_argument("--rss-opml", default="", help="Optional OPML file path to include RSS sources")
     parser.add_argument("--rss-max-feeds", type=int, default=0, help="Optional max OPML RSS feeds to fetch (0 means all)")
+    parser.add_argument("--disable-builtins", action="store_true", help="Disable built-in fetchers, only run OPML RSS")
     args = parser.parse_args()
 
     now = utc_now()
@@ -2988,6 +2989,9 @@ def main() -> int:
     archive = load_archive(archive_path)
 
     session = create_session()
+if args.disable_builtins:
+    raw_items, statuses = [], []
+else:
     raw_items, statuses = collect_all(session, now)
     rss_feed_statuses: list[dict[str, Any]] = []
     email_digest_payload, agentmail_status = maybe_fetch_agentmail_digest(
