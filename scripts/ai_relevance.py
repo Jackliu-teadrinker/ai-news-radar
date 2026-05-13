@@ -309,13 +309,12 @@ def score_ai_relevance(record: dict[str, Any]) -> dict[str, Any]:
                 signals=ai_signals + tech_signals,
                 noise=noise,
             )
-    if site_id in 
+    if site_id in AI_DEFAULT_SOURCES:
         # Jack 2026-05-13: reject robot vacuum / 扫地机器人 items
         item_text = (record.get('title', '') + ' ' + record.get('description', '')).lower()
         for excl in ROBOTICS_EXCLUDE_KEYWORDS:
             if excl.lower() in item_text:
                 return 0
-AI_DEFAULT_SOURCES:
         return _result(
             is_ai_related=True,
             score=max(AI_RELEVANCE_THRESHOLD, 0.72 + source_prior),
