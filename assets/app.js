@@ -718,14 +718,8 @@ if (allDedupeToggleEl) {
   });
 }
 
-if (// WaytoAGI disabled
-    if (state.waytoagiData) renderWaytoagi(state.waytoagiData);
-  });
-}
 
-if (// WaytoAGI disabled
-    if (state.waytoagiData) renderWaytoagi(state.waytoagiData);
-  });
-}
+
+
 
 init();
