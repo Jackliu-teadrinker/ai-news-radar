@@ -75,6 +75,25 @@ TECH_KEYWORDS = [
     "机器人",
     "具身",
 ]
+ROBOTICS_KEYWORDS = [
+    # English robotics core
+    "robot", "robotics", "humanoid", "bipedal robot", "quadruped robot",
+    "embodied", "embodied ai", "embodied intelligence", "physical ai", "physical intelligence",
+    "bionic", "dexterous", "grasping", "locomotion", "balancing",
+    "robot arm", "mobile manipulation", "whole-body control", "force control", "torque control",
+    "vision-language-action", "VLA model", "end effector", "contact impedance",
+    "teleoperation", "teleop", "bimanual",
+    # Companies
+    "Boston Dynamics", "Figure AI", "Tesla Optimus", "Unitree", "Agility Robotics",
+    "1X Technologies", "1X", "Apptronik", "Robotis", "PAL Robotics", "RoboSense",
+    # Chinese robotics
+    "宇树", "智元机器人", "傅利叶智能", "小米铁大", "追觅", "石头科技",
+    "机器人大讲堂", "具身智能", "人形机器人",
+    # BCI
+    "brain-computer interface", "neural interface", "neuroscience",
+    "spinal cord stimulation", "neural signal", "bci",
+]
+
 
 NOISE_KEYWORDS = [
     "娱乐",
@@ -263,6 +282,18 @@ def score_ai_relevance(record: dict[str, Any]) -> dict[str, Any]:
                 noise=noise,
             )
 
+    # Plan B: opmlrss sources require at least one robotics keyword
+    if site_id.startswith("opmlrss"):
+        robotics_signals = [kw for kw in ROBOTICS_KEYWORDS if kw.lower() in text]
+        if not robotics_signals:
+            return _result(
+                is_ai_related=False,
+                score=source_prior + 0.05,
+                label="no_robotics_signal",
+                reason="opmlrss_requires_robotics_keyword",
+                signals=ai_signals + tech_signals,
+                noise=noise,
+            )
     if site_id in AI_DEFAULT_SOURCES:
         return _result(
             is_ai_related=True,
