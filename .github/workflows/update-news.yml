@@ -33,19 +33,21 @@ jobs:
           pip install -r requirements.txt
 
       - name: Prepare OPML
-        env:
-          FOLLOW_OPML_B64: ${{ secrets.FOLLOW_OPML_B64 }}
         run: |
           mkdir -p feeds
-          if [ -n "$FOLLOW_OPML_B64" ]; then
+          if [ -f feeds/follow.opml ]; then
+            echo "Using local feeds/follow.opml from repo (priority)"
+          elif [ -n "$FOLLOW_OPML_B64" ]; then
             echo "$FOLLOW_OPML_B64" | base64 --decode > feeds/follow.opml
-          elif [ -n "\$FOLLOW_OPML_B64" ]; then
-            echo "\$FOLLOW_OPML_B64" | base64 --decode > feeds/follow.opml
+            echo "Loaded feeds/follow.opml from FOLLOW_OPML_B64 secret"
+          elif [ -f feeds/follow.example.opml ]; then
             cp feeds/follow.example.opml feeds/follow.opml
             echo "Loaded public demo OPML from feeds/follow.example.opml"
           else
-            echo "No OPML file available; RSS OPML is optional"
+            echo "No OPML file available"
           fi
+        env:
+          FOLLOW_OPML_B64: ${{ secrets.FOLLOW_OPML_B64 }}
 
       - name: Update data
         env:
