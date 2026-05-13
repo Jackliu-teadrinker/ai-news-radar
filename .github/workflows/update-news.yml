@@ -66,9 +66,10 @@ jobs:
           X_API_RUN_UTC_MINUTE_MAX: ${{ vars.X_API_RUN_UTC_MINUTE_MAX }}
           RSS_MAX_FEEDS: ${{ vars.RSS_MAX_FEEDS || 0 }}
           DISABLE_BUILTINS: ${{ vars.DISABLE_BUILTINS || 0 }}
+          DISABLE_WAYTOAGI: ${{ vars.DISABLE_WAYTOAGI || 0 }}
         run: |
           if [ -f feeds/follow.opml ]; then
-            DISABLE_BUILTINS=1 python scripts/update_news.py --output-dir data --window-hours 24 --archive-days 21 --rss-opml feeds/follow.opml --rss-max-feeds "${RSS_MAX_FEEDS:-0}" --disable-builtins
+            DISABLE_BUILTINS=1 DISABLE_WAYTOAGI=1 python scripts/update_news.py --output-dir data --window-hours 24 --archive-days 21 --rss-opml feeds/follow.opml --rss-max-feeds "${RSS_MAX_FEEDS:-0}" --disable-builtins
           else
             python scripts/update_news.py --output-dir data --window-hours 24 --archive-days 21
           fi
