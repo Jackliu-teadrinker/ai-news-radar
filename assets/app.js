@@ -60,6 +60,20 @@ const SOURCE_KINDS = {
   newsnow: { label: "聚合", tone: "aggregate" },
 };
 
+// Jack 2026-05-13: GN feed display priority (lower = shown first)
+const GN_PRIORITY = {
+  "GN: 人形机器人": 1,
+  "GN: 具身智能": 2,
+  "GN: 脑机接口": 3,
+  "GN: 机器人": 4,
+  "GN: Physical AI": 5,
+};
+
+function gnPriority(source) {
+  return GN_PRIORITY[source] !== undefined ? GN_PRIORITY[source] : 999;
+}
+
+
 function fmtNumber(n) {
   return new Intl.NumberFormat("zh-CN").format(n || 0);
 }
@@ -334,7 +348,11 @@ function groupBySource(items) {
     groupMap.get(key).push(item);
   });
 
-  return Array.from(groupMap.entries()).sort((a, b) => b[1].length - a[1].length || a[0].localeCompare(b[0], "zh-CN"));
+  return Array.from(groupMap.entries()).sort((a, b) => {
+    const pa = gnPriority(a[0]), pb = gnPriority(b[0]);
+    if (pa !== pb) return pa - pb;
+    return b[1].length - a[1].length;
+  });
 }
 
 function renderGroupedBySource(items) {
@@ -363,6 +381,8 @@ function renderGroupedBySiteAndSource(items) {
   const sites = Array.from(siteMap.entries()).sort((a, b) => {
     const byCount = b[1].items.length - a[1].items.length;
     if (byCount !== 0) return byCount;
+    const pa = gnPriority(a[1].siteName), pb = gnPriority(b[1].siteName);
+    if (pa !== pb) return pa - pb;
     return a[1].siteName.localeCompare(b[1].siteName, "zh-CN");
   });
 
