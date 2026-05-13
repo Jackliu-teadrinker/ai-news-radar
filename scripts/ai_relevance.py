@@ -95,6 +95,21 @@ ROBOTICS_KEYWORDS = [
 ]
 
 
+# Jack 2026-05-13: 扫地机器人/吸尘器强过滤（正文或标题含这些词则直接排除）
+ROBOTICS_EXCLUDE_KEYWORDS = [
+    "robot vacuum", "vacuum robot", "robotic vacuum", "roomba", "roborock", "ecovacs", "石头科技", "科沃斯", "扫地机器人", "扫地机", "扫拖一体", "智能扫地", "自动集尘", "吸尘器机器人", "iRobot", "Roborock", "ECOVACS", "Yeedi", "yeedi", "RoboVac", "机器人吸尘器", "清洁机器人", "扫街机器人", "泳池清洁机", "泳池机器人", "除草机器人", "割草机器人", "窗户清洁机器人", "擦窗机器人", "地板清洁机器人", "家用清洁机器人", "宠物毛发清理", "自动清洗拖布", "自动洗拖布", "扫地拖地", "智能清扫", "自动清扫", "智能清洁机器人", "清洁自动", "全屋清扫", "室内清扫", "户外清扫", "商用清扫", "物业清扫", "保洁机器人",
+    # English variants
+    "robot vacuum cleaner", "automated vacuum", "self-emptying vacuum", "robot mop", "robot sweeper", "floor cleaning robot", "carpet cleaner robot", "window cleaning robot", "pool cleaning robot", "lawn mowing robot", "grass cutting robot", "automated lawn mower",
+    # Chinese variants
+    "机器人扫地", "智能扫地机", "自动扫地机器人", "全自动扫地", "家用扫地机器人", "手持吸尘器", "无线吸尘器", "手持扫地机", "洗地机机器人", "扫拖机器人", "扫拖洗机器人", "全自动洗拖布",
+    # Brand names
+    "Roborock S", "Ecovacs Deebot", "iRobot Roomba", "Yeedi vac", "360 S", "小狗扫地机器人", "斐纳扫地机器人", "戴森扫地机器人", "松下扫地机器人", "三星扫地机器人", "LG扫地机器人", "华为扫地机器人", "小米扫地机器人", "米家扫地机", "海尔扫地机器人", "美的扫地机器人", "浦桑尼克扫地机器人", "福玛特扫地机器人", "乾阶扫地机器人", "ILIFE扫地机器人", "Xrobot", "Proscenic扫地机", "岚豹扫地机器人", "云鲸扫地机", "云鲸拖地机", "追觅扫地机", "石头扫地机", "米家扫地机",
+    # Generic consumer cleaning
+    "自动清洁机器人", "小型清扫机器人", "手持式清洁机", "无线清洁机器人", "智能清洁机", "懒人清洁神器", "扫地神器", "清扫神器", "解放双手扫地", "家务好帮手扫地", "家用智能清扫", "地面清洁神器", "地板清洁器智能",
+    # Misc non-robotics industrial robot terms to exclude
+    "工业吸尘器", "商业吸尘器", "工业清洁机器人", "商用清洁机器人", "专业清扫设备",
+]
+
 NOISE_KEYWORDS = [
     "娱乐",
     "明星",
@@ -294,7 +309,13 @@ def score_ai_relevance(record: dict[str, Any]) -> dict[str, Any]:
                 signals=ai_signals + tech_signals,
                 noise=noise,
             )
-    if site_id in AI_DEFAULT_SOURCES:
+    if site_id in 
+        # Jack 2026-05-13: reject robot vacuum / 扫地机器人 items
+        item_text = (record.get('title', '') + ' ' + record.get('description', '')).lower()
+        for excl in ROBOTICS_EXCLUDE_KEYWORDS:
+            if excl.lower() in item_text:
+                return 0
+AI_DEFAULT_SOURCES:
         return _result(
             is_ai_related=True,
             score=max(AI_RELEVANCE_THRESHOLD, 0.72 + source_prior),
