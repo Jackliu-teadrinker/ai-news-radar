@@ -3235,9 +3235,7 @@ def main() -> int:
         "x_api": x_api_status,
     }
 
-    try:
-        waytoagi_payload = fetch_waytoagi_recent_7d(session, now, WAYTOAGI_DEFAULT)
-    except Exception as exc:
+    if os.environ.get("DISABLE_WAYTOAGI") == "1":
         waytoagi_payload = {
             "generated_at": iso(now),
             "timezone": "Asia/Shanghai",
@@ -3246,10 +3244,24 @@ def main() -> int:
             "window_days": 7,
             "count_7d": 0,
             "updates_7d": [],
-            "warning": "WaytoAGI 近7日更新抓取失败",
-            "has_error": True,
-            "error": str(exc),
+            "warning": "WaytoAGI 已禁用（DISABLE_WAYTOAGI=1）",
         }
+    else:
+        try:
+            waytoagi_payload = fetch_waytoagi_recent_7d(session, now, WAYTOAGI_DEFAULT)
+        except Exception as exc:
+            waytoagi_payload = {
+                "generated_at": iso(now),
+                "timezone": "Asia/Shanghai",
+                "root_url": WAYTOAGI_DEFAULT,
+                "history_url": None,
+                "window_days": 7,
+                "count_7d": 0,
+                "updates_7d": [],
+                "warning": "WaytoAGI 近7日更新抓取失败",
+                "has_error": True,
+                "error": str(exc),
+            }
 
     latest_payload, latest_all_payload = build_latest_payloads(latest_payload)
 
