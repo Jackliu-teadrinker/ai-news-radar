@@ -37,11 +37,11 @@ const allDedupeLabelEl = document.getElementById("allDedupeLabel");
 const advancedSummaryEl = document.getElementById("advancedSummary");
 const sourceHealthEl = document.getElementById("sourceHealth");
 
-const waytoagiUpdatedAtEl = document.null // WaytoAGI disabled;
-const waytoagiMetaEl = document.null // WaytoAGI disabled;
-const waytoagiListEl = document.null // WaytoAGI disabled;
-const waytoagiTodayBtnEl = document.null // WaytoAGI disabled;
-const waytoagi7dBtnEl = document.null // WaytoAGI disabled;
+const waytoagiUpdatedAtEl = null;
+const waytoagiMetaEl = null;
+const waytoagiListEl = null;
+const waytoagiTodayBtnEl = null;
+const waytoagi7dBtnEl = null;
 const coverageStripEl = document.getElementById("coverageStrip");
 
 const SOURCE_KINDS = {
@@ -422,7 +422,7 @@ function waytoagiViews(waytoagi) {
   return { updates7d, updatesToday, latestDate };
 }
 
-function renderWaytoagi(waytoagi) {
+function renderWaytoagi(waytoagi) { if (!waytoagi || !waytoagi.updates_7d || waytoagi.updates_7d.length === 0) { if (waytoagiUpdatedAtEl) waytoagiUpdatedAtEl.textContent = "WaytoAGI 已禁用"; if (waytoagiListEl) waytoagiListEl.innerHTML = ""; return; }
   const { updates7d, updatesToday, latestDate } = waytoagiViews(waytoagi);
   if (waytoagiTodayBtnEl) waytoagiTodayBtnEl.classList.toggle("active", state.waytoagiMode === "today");
   if (waytoagi7dBtnEl) waytoagi7dBtnEl.classList.toggle("active", state.waytoagiMode === "7d");
