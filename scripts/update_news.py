@@ -1864,6 +1864,9 @@ def collect_all(session: requests.Session, now: datetime) -> tuple[list[RawItem]
         ("aihot", "AI HOT", fetch_aihot),
         ("newsnow", "NewsNow", fetch_newsnow),
     ]
+    if os.environ.get("DISABLE_BUILTINS") == "1":
+        return [], []
+
 
     raw_items: list[RawItem] = []
     statuses: list[dict[str, Any]] = []
