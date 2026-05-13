@@ -37,11 +37,11 @@ const allDedupeLabelEl = document.getElementById("allDedupeLabel");
 const advancedSummaryEl = document.getElementById("advancedSummary");
 const sourceHealthEl = document.getElementById("sourceHealth");
 
-const waytoagiUpdatedAtEl = document.getElementById("waytoagiUpdatedAt");
-const waytoagiMetaEl = document.getElementById("waytoagiMeta");
-const waytoagiListEl = document.getElementById("waytoagiList");
-const waytoagiTodayBtnEl = document.getElementById("waytoagiTodayBtn");
-const waytoagi7dBtnEl = document.getElementById("waytoagi7dBtn");
+const waytoagiUpdatedAtEl = document.null // WaytoAGI disabled;
+const waytoagiMetaEl = document.null // WaytoAGI disabled;
+const waytoagiListEl = document.null // WaytoAGI disabled;
+const waytoagiTodayBtnEl = document.null // WaytoAGI disabled;
+const waytoagi7dBtnEl = document.null // WaytoAGI disabled;
 const coverageStripEl = document.getElementById("coverageStrip");
 
 const SOURCE_KINDS = {
@@ -718,16 +718,12 @@ if (allDedupeToggleEl) {
   });
 }
 
-if (waytoagiTodayBtnEl) {
-  waytoagiTodayBtnEl.addEventListener("click", () => {
-    state.waytoagiMode = "today";
+if (// WaytoAGI disabled
     if (state.waytoagiData) renderWaytoagi(state.waytoagiData);
   });
 }
 
-if (waytoagi7dBtnEl) {
-  waytoagi7dBtnEl.addEventListener("click", () => {
-    state.waytoagiMode = "7d";
+if (// WaytoAGI disabled
     if (state.waytoagiData) renderWaytoagi(state.waytoagiData);
   });
 }
