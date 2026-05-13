@@ -5,38 +5,33 @@
   </head>
   <body>
 
-    <!-- ===== Google News 精准关键词 ===== -->
-    <outline text="Google News 精准关键词">
-      <outline text="GN: embodied intelligence" title="GN: embodied intelligence" type="rss" xmlUrl="https://news.google.com/rss/search?q=embodied%20intelligence&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" htmlUrl="https://news.google.com/search?q=embodied%20intelligence&amp;tbm=nws" />
-      <outline text="GN: humanoid robot" title="GN: humanoid robot" type="rss" xmlUrl="https://news.google.com/rss/search?q=humanoid%20robot&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" htmlUrl="https://news.google.com/search?q=humanoid%20robot&amp;tbm=nws" />
-      <outline text="GN: robot" title="GN: robot" type="rss" xmlUrl="https://news.google.com/rss/search?q=robot&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" htmlUrl="https://news.google.com/search?q=robot&amp;tbm=nws" />
-      <outline text="GN: BCI brain computer interface" title="GN: BCI" type="rss" xmlUrl="https://news.google.com/rss/search?q=BCI%20brain%20computer%20interface&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" htmlUrl="https://news.google.com/search?q=BCI%20brain%20computer%20interface&amp;tbm=nws" />
-    </outline>
+    <!-- ===== Google News 精准关键词（按Jack指定顺序） ===== -->
+    <outline text="GN: 人形机器人" title="GN: 人形机器人" type="rss" xmlUrl="https://news.google.com/rss/search?q=humanoid%20robot&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" htmlUrl="https://news.google.com/search?q=humanoid%20robot&amp;tbm=nws" />
+    <outline text="GN: 具身智能" title="GN: 具身智能" type="rss" xmlUrl="https://news.google.com/rss/search?q=embodied%20intelligence&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" htmlUrl="https://news.google.com/search?q=embodied%20intelligence&amp;tbm=nws" />
+    <outline text="GN: 脑机接口" title="GN: 脑机接口" type="rss" xmlUrl="https://news.google.com/rss/search?q=BCI%20brain%20computer%20interface&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" htmlUrl="https://news.google.com/search?q=BCI%20brain%20computer%20interface&amp;tbm=nws" />
+    <outline text="GN: 机器人" title="GN: 机器人" type="rss" xmlUrl="https://news.google.com/rss/search?q=robot&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" htmlUrl="https://news.google.com/search?q=robot&amp;tbm=nws" />
+    <outline text="GN: Physical AI" title="GN: Physical AI" type="rss" xmlUrl="https://news.google.com/rss/search?q=physical%20AI&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" htmlUrl="https://news.google.com/search?q=physical%20AI&amp;tbm=nws" />
 
     <!-- ===== 国际机器人核心 ===== -->
-    <outline text="国际机器人核心">
-      <outline text="Science Robotics (Jina)" title="Science Robotics" type="rss" xmlUrl="https://r.jina.ai/https://www.science.org/journal/scirobotics" htmlUrl="https://www.science.org/journal/scirobotics" />
-      <outline text="IFR (Jina)" title="IFR" type="rss" xmlUrl="https://r.jina.ai/https://ifr.org/" htmlUrl="https://ifr.org/" />
-      <outline text="Automate.org Robotics (Jina)" title="Automate.org Robotics" type="rss" xmlUrl="https://r.jina.ai/https://www.automate.org/robotics" htmlUrl="https://www.automate.org/robotics" />
-      <outline text="Robot Report Platforms (Jina)" title="Robot Report - Robots Platforms" type="rss" xmlUrl="https://r.jina.ai/https://www.therobotreport.com/category/robots-platforms/" htmlUrl="https://www.therobotreport.com/category/robots-platforms/" />
-      <outline text="TechXplore Robotics (Jina)" title="TechXplore Robotics News" type="rss" xmlUrl="https://r.jina.ai/https://techxplore.com/robotics-news/" htmlUrl="https://techxplore.com/robotics-news/" />
-      <outline text="IEEE Spectrum Robotics" title="IEEE Spectrum Robotics" type="rss" xmlUrl="https://spectrum.ieee.org/topic/robotics.rss" htmlUrl="https://spectrum.ieee.org/topic/robotics/" />
-      <outline text="Boston Dynamics News" title="Boston Dynamics News" type="rss" xmlUrl="https://bostondynamics.com/feed/" htmlUrl="https://bostondynamics.com/news/" />
-    </outline>
+    <outline text="Science Robotics" title="Science Robotics" type="rss" xmlUrl="https://r.jina.ai/https://www.science.org/journal/scirobotics" htmlUrl="https://www.science.org/journal/scirobotics" />
+    <outline text="IFR" title="IFR" type="rss" xmlUrl="https://r.jina.ai/https://ifr.org/" htmlUrl="https://ifr.org/" />
+    <outline text="Automate.org Robotics" title="Automate.org Robotics" type="rss" xmlUrl="https://r.jina.ai/https://www.automate.org/robotics" htmlUrl="https://www.automate.org/robotics" />
+    <outline text="Robot Report - Robots Platforms" title="Robot Report - Robots Platforms" type="rss" xmlUrl="https://r.jina.ai/https://www.therobotreport.com/category/robots-platforms/" htmlUrl="https://www.therobotreport.com/category/robots-platforms/" />
+    <outline text="TechXplore Robotics News" title="TechXplore Robotics News" type="rss" xmlUrl="https://r.jina.ai/https://techxplore.com/robotics-news/" htmlUrl="https://techxplore.com/robotics-news/" />
+    <outline text="IEEE Spectrum Robotics" title="IEEE Spectrum Robotics" type="rss" xmlUrl="https://spectrum.ieee.org/topic/robotics.rss" htmlUrl="https://spectrum.ieee.org/topic/robotics/" />
+    <outline text="Boston Dynamics News" title="Boston Dynamics News" type="rss" xmlUrl="https://bostondynamics.com/feed/" htmlUrl="https://bostondynamics.com/news/" />
 
-    <!-- ===== 国内精准机器人源 ===== -->
-    <outline text="国内机器人源">
-      <outline text="晚点科技 (Jina)" title="晚点" type="rss" xmlUrl="https://r.jina.ai/https://www.latepost.com/" htmlUrl="https://www.latepost.com/" />
-      <outline text="Jazzyear (Jina)" title="Jazzyear" type="rss" xmlUrl="https://r.jina.ai/https://www.jazzyear.com/" htmlUrl="https://www.jazzyear.com/" />
-      <outline text="智东西-人形机器人 (Jina)" title="智东西-人形机器人" type="rss" xmlUrl="https://r.jina.ai/https://zhidx.com/p/category/%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%97%A0%E4%BA%BA%E6%9C%BA" htmlUrl="https://zhidx.com/p/category/%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%97%A0%E4%BA%BA%E6%9C%BA" />
-      <outline text="XZL Robot (Jina)" title="XZL Robot" type="rss" xmlUrl="https://r.jina.ai/http://www.xzlrobot.com/" htmlUrl="http://www.xzlrobot.com/" />
-      <outline text="Jushen研析社 (Jina)" title="Jushen研析社" type="rss" xmlUrl="https://r.jina.ai/http://www.jushenyanxishe.com/" htmlUrl="http://www.jushenyanxishe.com/" />
-      <outline text="Robowave Tech (Jina)" title="Robowave Tech" type="rss" xmlUrl="https://r.jina.ai/https://www.robowave.tech/" htmlUrl="https://www.robowave.tech/" />
-      <outline text="CSSN 机器人 (Jina)" title="CSSN机器人" type="rss" xmlUrl="https://r.jina.ai/https://www.cssn.cn/so/s?siteCode=cssn&amp;tab=all&amp;qt=%E6%9C%BA%E5%99%A8%E4%BA%BA" htmlUrl="https://www.cssn.cn/so/s?siteCode=cssn&amp;tab=all&amp;qt=%E6%9C%BA%E5%99%A8%E4%BA%BA" />
-      <outline text="雷锋网机器人 (Jina)" title="雷锋网机器人" type="rss" xmlUrl="https://r.jina.ai/https://www.leiphone.com/category/robot" htmlUrl="https://www.leiphone.com/category/robot" />
-      <outline text="机器之心 (Jina)" title="机器之心" type="rss" xmlUrl="https://r.jina.ai/https://www.jiqizhixin.com/" htmlUrl="https://www.jiqizhixin.com/" />
-      <outline text="量子位 (Jina)" title="量子位" type="rss" xmlUrl="https://r.jina.ai/https://www.qbitai.com/category/%e8%b5%84%e8%ae%af" htmlUrl="https://www.qbitai.com/category/%e8%b5%84%e8%ae%af" />
-    </outline>
+    <!-- ===== 国内机器人源 ===== -->
+    <outline text="晚点" title="晚点" type="rss" xmlUrl="https://r.jina.ai/https://www.latepost.com/" htmlUrl="https://www.latepost.com/" />
+    <outline text="Jazzyear" title="Jazzyear" type="rss" xmlUrl="https://r.jina.ai/https://www.jazzyear.com/" htmlUrl="https://www.jazzyear.com/" />
+    <outline text="智东西-人形机器人" title="智东西-人形机器人" type="rss" xmlUrl="https://r.jina.ai/https://zhidx.com/p/category/%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%97%A0%E4%BA%BA%E6%9C%BA" htmlUrl="https://zhidx.com/p/category/%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%97%A0%E4%BA%BA%E6%9C%BA" />
+    <outline text="XZL Robot" title="XZL Robot" type="rss" xmlUrl="https://r.jina.ai/http://www.xzlrobot.com/" htmlUrl="http://www.xzlrobot.com/" />
+    <outline text="Jushen研析社" title="Jushen研析社" type="rss" xmlUrl="https://r.jina.ai/http://www.jushenyanxishe.com/" htmlUrl="http://www.jushenyanxishe.com/" />
+    <outline text="Robowave Tech" title="Robowave Tech" type="rss" xmlUrl="https://r.jina.ai/https://www.robowave.tech/" htmlUrl="https://www.robowave.tech/" />
+    <outline text="CSSN机器人" title="CSSN机器人" type="rss" xmlUrl="https://r.jina.ai/https://www.cssn.cn/so/s?siteCode=cssn&amp;tab=all&amp;qt=%E6%9C%BA%E5%99%A8%E4%BA%BA" htmlUrl="https://www.cssn.cn/so/s?siteCode=cssn&amp;tab=all&amp;qt=%E6%9C%BA%E5%99%A8%E4%BA%BA" />
+    <outline text="雷锋网机器人" title="雷锋网机器人" type="rss" xmlUrl="https://r.jina.ai/https://www.leiphone.com/category/robot" htmlUrl="https://www.leiphone.com/category/robot" />
+    <outline text="机器之心" title="机器之心" type="rss" xmlUrl="https://r.jina.ai/https://www.jiqizhixin.com/" htmlUrl="https://www.jiqizhixin.com/" />
+    <outline text="量子位" title="量子位" type="rss" xmlUrl="https://r.jina.ai/https://www.qbitai.com/category/%e8%b5%84%e8%ae%af" htmlUrl="https://www.qbitai.com/category/%e8%b5%84%e8%ae%af" />
 
   </body>
 </opml>
