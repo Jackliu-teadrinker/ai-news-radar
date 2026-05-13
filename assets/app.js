@@ -11,6 +11,7 @@ const state = {
   allDataUrl: "data/latest-24h-all.json",
   allDataPromise: null,
   siteFilter: "",
+  categoryFilter: "",
   query: "",
   mode: "ai",
   waytoagiMode: "today",
@@ -67,7 +68,16 @@ const GN_PRIORITY = {
   "GN: 脑机接口": 3,
   "GN: 机器人": 4,
   "GN: Physical AI": 5,
+  "GN: 机器人政策": 6,
 };
+
+const GN_CATEGORIES = [
+  { id: "GN: 人形机器人", label: "人形机器人" },
+  { id: "GN: 具身智能",   label: "具身智能" },
+  { id: "GN: 脑机接口",   label: "脑机接口" },
+  { id: "GN: 机器人",     label: "机器人" },
+  { id: "GN: Physical AI", label: "Physical AI" },
+];
 
 function gnPriority(source) {
   return GN_PRIORITY[source] !== undefined ? GN_PRIORITY[source] : 999;
@@ -190,13 +200,15 @@ function renderAdvancedSummary() {
     ? (state.totalAllMode || state.itemsAll.length)
     : (state.totalRaw || state.itemsAllRaw.length);
   if (!status) {
-    advancedSummaryEl.textContent = `全量 ${fmtNumber(allCount)} 条`;
+    const catLabel = state.categoryFilter ? ` · 已筛选：${GN_CATEGORIES.find(c => c.id === state.categoryFilter)?.label || state.categoryFilter}` : "";
+    advancedSummaryEl.textContent = `全量 ${fmtNumber(allCount)} 条${catLabel}`;
     return;
   }
   const sites = Array.isArray(status.sites) ? status.sites : [];
   const totalSites = sites.length;
   const okSites = Number(status.successful_sites || 0);
-  advancedSummaryEl.textContent = `${fmtNumber(okSites)}/${fmtNumber(totalSites)} 源可用 · 全量 ${fmtNumber(allCount)} 条`;
+  const catLabel = state.categoryFilter ? ` · 已筛选：${GN_CATEGORIES.find(c => c.id === state.categoryFilter)?.label || state.categoryFilter}` : "";
+  advancedSummaryEl.textContent = `${fmtNumber(okSites)}/${fmtNumber(totalSites)} 源可用 · 全量 ${fmtNumber(allCount)} 条${catLabel}`;
 }
 
 function computeSiteStats(items) {
@@ -231,6 +243,37 @@ function renderSiteFilters() {
   siteSelectEl.value = state.siteFilter;
 
   sitePillsEl.innerHTML = "";
+
+  // GN category pills
+  const categoryAllPill = document.createElement("button");
+  categoryAllPill.className = `pill ${state.categoryFilter === "" ? "active" : ""}`;
+  categoryAllPill.textContent = "全部分区";
+  categoryAllPill.onclick = () => {
+    state.categoryFilter = "";
+    renderSiteFilters();
+    renderList();
+  };
+  sitePillsEl.appendChild(categoryAllPill);
+
+  GN_CATEGORIES.forEach((cat) => {
+    const btn = document.createElement("button");
+    btn.className = `pill ${state.categoryFilter === cat.id ? "active" : ""}`;
+    btn.textContent = cat.label;
+    btn.onclick = () => {
+      state.categoryFilter = cat.id;
+      renderSiteFilters();
+      renderList();
+    };
+    sitePillsEl.appendChild(btn);
+  });
+
+  // Divider
+  const divider = document.createElement("span");
+  divider.className = "pill-divider";
+  divider.textContent = "·";
+  sitePillsEl.appendChild(divider);
+
+  // Site pills
   const allPill = document.createElement("button");
   allPill.className = `pill ${state.siteFilter === "" ? "active" : ""}`;
   allPill.textContent = "全部";
@@ -286,6 +329,7 @@ function getFilteredItems() {
   const q = state.query.trim().toLowerCase();
   return modeItems().filter((item) => {
     if (state.siteFilter && item.site_id !== state.siteFilter) return false;
+    if (state.categoryFilter && item.source !== state.categoryFilter) return false;
     if (!q) return true;
     const hay = `${item.title || ""} ${item.title_zh || ""} ${item.title_en || ""} ${item.site_name || ""} ${item.source || ""}`.toLowerCase();
     return hay.includes(q);
@@ -697,6 +741,7 @@ searchInputEl.addEventListener("input", (e) => {
 
 siteSelectEl.addEventListener("change", (e) => {
   state.siteFilter = e.target.value;
+  state.categoryFilter = "";
   renderSiteFilters();
   renderList();
 });
