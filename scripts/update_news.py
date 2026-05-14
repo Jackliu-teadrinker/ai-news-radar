@@ -290,35 +290,37 @@ def parse_feed_entries_via_xml(feed_xml: bytes) -> list[dict[str, Any]]:
     return out
 
 
-def normalize_title_for_dedup(source: str, title: str) -> str:
-    """
-    Normalize title for deduplication.
-    Google News RSS appends publisher name as " - PublisherName" to the title.
-    Multiple publishers can republish the same article, creating duplicate entries
-    with identical URLs but different title suffixes. Strip this suffix for GN sources.
-    """
-    t = title.strip()
-    src = (source or "").strip()
-    if src.startswith("GN:"):
-        # Strip trailing " - PublisherName" where PublisherName is a domain-like string
-        # Examples: "... - bastillepost.com", "... - 巴士的報", "... - TechCrunch"
-        # Pattern: " - " followed by non-dash characters at the end
-        normalized = re.sub(r"\s+-\s+[^\-]+$", "", t)
-        if normalized != t:
-            return normalized
-    return t
+
+def normalize_gn_url(raw_url: str) -> str:
+    """Strip ?oc=N etc from Google News article cache URLs."""
+    url = raw_url.strip()
+    if "news.google.com" in url.lower() and "/articles/" in url:
+        return url.split("?")[0]
+    return url
 
 
 def make_item_id(site_id: str, source: str, title: str, url: str) -> str:
-    key = "||".join(
-        [
-            site_id.strip().lower(),
-            source.strip().lower(),
-            normalize_title_for_dedup(source, title).lower(),
-            normalize_url(url),
-        ]
-    )
+    src = (source or "").strip()
+    title_for_id = title.strip()
+    url_for_id = url.strip()
+    if src.startswith("GN:"):
+        # Strip " - PublisherName" suffix from GN RSS titles
+        t = title.strip()
+        # Match: whitespace + dash + non-dash chars at end of string
+        m = re.search(r"[ ][-][ ][^ -][^ -]*$", t)
+        if m:
+            title_for_id = t[:m.start()]
+        # Normalize GN article URLs: strip ?oc= query param
+        if "news.google.com" in url.lower() and "/articles/" in url:
+            url_for_id = url.split("?")[0]
+    key = "||".join([
+        site_id.strip().lower(),
+        source.strip().lower(),
+        title_for_id.lower(),
+        normalize_url(url_for_id),
+    ])
     return hashlib.sha1(key.encode("utf-8")).hexdigest()
+
 
 
 def parse_unix_timestamp(value: Any) -> datetime | None:
