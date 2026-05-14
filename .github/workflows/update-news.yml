@@ -86,7 +86,21 @@ jobs:
           fi
           if git diff --cached --quiet; then
             echo "No changes to commit"
-            exit 0
+          else
+            git commit -m "chore: update ai news snapshot"
+            git push
           fi
-          git commit -m "chore: update ai news snapshot"
-          git push
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+        with:
+          pagename: ""
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: "."
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
