@@ -290,12 +290,31 @@ def parse_feed_entries_via_xml(feed_xml: bytes) -> list[dict[str, Any]]:
     return out
 
 
+def normalize_title_for_dedup(source: str, title: str) -> str:
+    """
+    Normalize title for deduplication.
+    Google News RSS appends publisher name as " - PublisherName" to the title.
+    Multiple publishers can republish the same article, creating duplicate entries
+    with identical URLs but different title suffixes. Strip this suffix for GN sources.
+    """
+    t = title.strip()
+    src = (source or "").strip()
+    if src.startswith("GN:"):
+        # Strip trailing " - PublisherName" where PublisherName is a domain-like string
+        # Examples: "... - bastillepost.com", "... - 巴士的報", "... - TechCrunch"
+        # Pattern: " - " followed by non-dash characters at the end
+        normalized = re.sub(r"\s+-\s+[^\-]+$", "", t)
+        if normalized != t:
+            return normalized
+    return t
+
+
 def make_item_id(site_id: str, source: str, title: str, url: str) -> str:
     key = "||".join(
         [
             site_id.strip().lower(),
             source.strip().lower(),
-            title.strip().lower(),
+            normalize_title_for_dedup(source, title).lower(),
             normalize_url(url),
         ]
     )
