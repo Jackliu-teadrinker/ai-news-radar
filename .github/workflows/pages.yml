@@ -1,9 +1,9 @@
 name: Deploy to GitHub Pages
 
-on:
-  push:
-    branches: [master]
-  workflow_dispatch:
+# ⚠️ 已禁用：update-news.yml 已包含 deploy-pages 步骤，两者同时部署会冲突
+# 如需手动触发部署，请使用 update-news.yml 的 workflow_dispatch
+
+on: []
 
 permissions:
   contents: write

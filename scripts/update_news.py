@@ -3101,7 +3101,11 @@ def main() -> int:
                 # OPML RSS may fix previously wrong publish times; allow overwrite.
                 if raw.site_id == "opmlrss" or not existing.get("published_at"):
                     existing["published_at"] = iso(raw.published_at)
+            # Only refresh last_seen_at for items that were actually collected
+            # in this run. Items from deactivated feeds will NOT be refreshed and
+            # will age out of the 24h window naturally.
             existing["last_seen_at"] = iso(now)
+            existing["_refreshed_this_run"] = True
 
     # Prune old archive
     keep_after = now - timedelta(days=args.archive_days)
@@ -3123,6 +3127,11 @@ def main() -> int:
     for record in archive.values():
         ts = event_time(record)
         if not ts:
+            continue
+        # Skip items that have NOT been refreshed in this run AND are older than 2x window.
+        # This prevents stale items (from deactivated feeds) from persisting in the 24h view.
+        refreshed_this_run = record.get("_refreshed_this_run", False)
+        if not refreshed_this_run and ts < (now - timedelta(hours=args.window_hours * 2)):
             continue
         if ts >= window_start:
             normalized = dict(record)
