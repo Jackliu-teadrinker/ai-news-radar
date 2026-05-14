@@ -3004,6 +3004,7 @@ def main() -> int:
 
     archive_path = output_dir / "archive.json"
     latest_path = output_dir / "latest-24h.json"
+    latest_min_path = output_dir / "latest-24h-min.json"
     latest_all_path = output_dir / "latest-24h-all.json"
     status_path = output_dir / "source-status.json"
     waytoagi_path = output_dir / "waytoagi-7d.json"
@@ -3296,6 +3297,20 @@ def main() -> int:
     latest_payload, latest_all_payload = build_latest_payloads(latest_payload)
 
     latest_path.write_text(json.dumps(sanitize_public_payload(latest_payload), ensure_ascii=False, indent=2), encoding="utf-8")
+    # Jack 2026-05-14: 精简版（前端加载用，只保留展示必需字段，471KB→143KB）
+    MIN_ITEM_FIELDS = ("id", "site_id", "site_name", "source", "title",
+                      "title_zh", "title_en", "url", "published_at",
+                      "ai_score", "ai_label")
+    latest_min_payload = dict(latest_payload)
+    latest_min_payload["items"] = [
+        {k: v for k, v in item.items() if k in MIN_ITEM_FIELDS}
+        for item in latest_payload["items"]
+    ]
+    latest_min_path.write_text(
+        json.dumps(sanitize_public_payload(latest_min_payload), ensure_ascii=False, separators=(",", ":")),
+        encoding="utf-8",
+    )
+
     latest_all_path.write_text(json.dumps(sanitize_public_payload(latest_all_payload), ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     archive_path.write_text(
         json.dumps(sanitize_public_payload(archive_payload), ensure_ascii=False, separators=(",", ":")),

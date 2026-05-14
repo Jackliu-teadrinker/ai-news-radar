@@ -644,7 +644,7 @@ function renderSourceHealth(errorMessage = "") {
 }
 
 async function loadNewsData() {
-  const res = await fetch(`./data/latest-24h.json?t=${Date.now()}`);
+  const res = await fetch(`./data/latest-24h-min.json?t=${Date.now()}`);
   if (!res.ok) throw new Error(`加载 latest-24h.json 失败: ${res.status}`);
   return res.json();
 }
