@@ -14,6 +14,7 @@ const state = {
   categoryFilter: "",
   query: "",
   mode: "ai",
+  todayMode: true,   // Jack 2026-05-15: 默认只显示今日9点后的信号（流水线9:05接手前的盲区）
   waytoagiMode: "today",
   waytoagiData: null,
   sourceStatus: null,
@@ -201,14 +202,16 @@ function renderAdvancedSummary() {
     : (state.totalRaw || state.itemsAllRaw.length);
   if (!status) {
     const catLabel = state.categoryFilter ? ` · 已筛选：${GN_CATEGORIES.find(c => c.id === state.categoryFilter)?.label || state.categoryFilter}` : "";
-    advancedSummaryEl.textContent = `全量 ${fmtNumber(allCount)} 条${catLabel}`;
+    const todayLabel = state.todayMode ? " · 今日9点后" : "";
+    advancedSummaryEl.textContent = `全量 ${fmtNumber(allCount)} 条${catLabel}${todayLabel}`;
     return;
   }
   const sites = Array.isArray(status.sites) ? status.sites : [];
   const totalSites = sites.length;
   const okSites = Number(status.successful_sites || 0);
   const catLabel = state.categoryFilter ? ` · 已筛选：${GN_CATEGORIES.find(c => c.id === state.categoryFilter)?.label || state.categoryFilter}` : "";
-  advancedSummaryEl.textContent = `${fmtNumber(okSites)}/${fmtNumber(totalSites)} 源可用 · 全量 ${fmtNumber(allCount)} 条${catLabel}`;
+  const todayLabel = state.todayMode ? " · 今日9点后" : "";
+  advancedSummaryEl.textContent = `${fmtNumber(okSites)}/${fmtNumber(totalSites)} 源可用 · 全量 ${fmtNumber(allCount)} 条${catLabel}${todayLabel}`;
 }
 
 function computeSiteStats(items) {
@@ -327,9 +330,26 @@ function modeItems() {
 
 function getFilteredItems() {
   const q = state.query.trim().toLowerCase();
+
+  // Jack 2026-05-15: 今日9点CST分界线（默认开启）
+  let cutoffMs = null;
+  if (state.todayMode) {
+    const now = new Date();
+    const utcHour = now.getUTCHours();
+    // 9 AM CST = 1 AM UTC；小于1 AM UTC说明9 AM CST还没到，用昨天
+    const cst9base = utcHour < 1
+      ? new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate() - 1, 1, 0, 0))
+      : new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(), 1, 0, 0));
+    cutoffMs = cst9base.getTime();
+  }
+
   return modeItems().filter((item) => {
     if (state.siteFilter && item.site_id !== state.siteFilter) return false;
     if (state.categoryFilter && item.source !== state.categoryFilter) return false;
+    if (cutoffMs !== null) {
+      const itemMs = new Date(item.published_at || item.first_seen_at || 0).getTime();
+      if (itemMs < cutoffMs) return false;
+    }
     if (!q) return true;
     const hay = `${item.title || ""} ${item.title_zh || ""} ${item.title_en || ""} ${item.site_name || ""} ${item.source || ""}`.toLowerCase();
     return hay.includes(q);
@@ -780,6 +800,17 @@ if (allDedupeToggleEl) {
     renderModeSwitch();
     renderSiteFilters();
     renderList();
+  });
+}
+
+// Jack 2026-05-15: 今日9点CST分界线
+const todayCutoffToggleEl = document.getElementById("todayCutoffToggle");
+const todayCutoffWrapEl = document.getElementById("todayCutoffWrap");
+if (todayCutoffToggleEl) {
+  todayCutoffToggleEl.addEventListener("change", (e) => {
+    state.todayMode = Boolean(e.target.checked);
+    renderList();
+    renderAdvancedSummary();
   });
 }
 
