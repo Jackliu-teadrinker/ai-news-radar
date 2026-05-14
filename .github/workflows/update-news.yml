@@ -38,18 +38,15 @@ jobs:
         run: |
           mkdir -p feeds
           if [ -f feeds/follow.opml ]; then
-            echo "Using local feeds/follow.opml from repo (priority)"
-          elif [ -n "$FOLLOW_OPML_B64" ]; then
-            echo "$FOLLOW_OPML_B64" | base64 --decode > feeds/follow.opml
-            echo "Loaded feeds/follow.opml from FOLLOW_OPML_B64 secret"
+            echo "Using local feeds/follow.opml from repo"
+            GN_COUNT=$(grep -c "news.google.com" feeds/follow.opml || echo "0")
+            echo "OPML validation: $GN_COUNT GN sources found"
           elif [ -f feeds/follow.example.opml ]; then
             cp feeds/follow.example.opml feeds/follow.opml
-            echo "Loaded public demo OPML from feeds/follow.example.opml"
+            echo "WARNING: Using example OPML - no custom feeds configured"
           else
-            echo "No OPML file available"
+            echo "ERROR: No OPML file available"
           fi
-        env:
-          FOLLOW_OPML_B64: ${{ secrets.FOLLOW_OPML_B64 }}
 
       - name: Update data
         env:
