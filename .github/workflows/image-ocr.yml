@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       image_url:
-        description: "图片 URL (可选，不填则处理 reports/ 目录)"
+        description: "图片 URL"
         required: false
         default: ""
       lang:
@@ -12,7 +12,10 @@ on:
         required: false
         default: "chi_sim"
 
-# 手动触发: gh workflow run image-ocr.yml --repo Jackliu-teadrinker/ai-news-radar
+# 手动触发:
+# gh workflow run image-ocr.yml --repo Jackliu-teadrinker/ai-news-radar
+# 带参数:
+# gh workflow run image-ocr.yml --repo Jackliu-teadrinker/ai-news-radar --field image_url="https://..." --field lang=chi_sim
 
 concurrency:
   group: ocr-${{ github.ref }}-${{ github.run_id }}
@@ -34,19 +37,6 @@ jobs:
       - name: Install Tesseract.js
         run: npm install tesseract.js
 
-      - name: Install Tesseract language data (Chinese)
-        run: |
-          # Tesseract.js auto-downloads lang data, but pre-cache here for speed
-          mkdir -p ~/.tesseractrc/
-          node -e "
-            const {createWorker} = require('tesseract.js');
-            (async()=>{
-              const w = await createWorker('chi_sim');
-              await w.terminate();
-              console.log('chi_sim downloaded');
-            })();
-          " || true
-
       - name: Prepare output dir
         run: mkdir -p data/ocr-results
 
@@ -56,7 +46,7 @@ jobs:
           IMAGE_URL: ${{ github.event.inputs.image_url }}
           OCR_LANG: ${{ github.event.inputs.lang || 'chi_sim' }}
         run: |
-          node << 'EOF'
+          node << 'EOFNODE'
           const { createWorker } = require('tesseract.js');
           const fs = require('fs');
           const path = require('path');
@@ -73,17 +63,27 @@ jobs:
             return new Promise((resolve, reject) => {
               const parsed = new URL(url);
               const protocol = parsed.protocol === 'https:' ? https : http;
-              const req = protocol.get(url, { headers: { 'User-Agent': 'Mozilla/5.0' } }, (res) => {
+              const req = protocol.get(url, {
+                headers: { 'User-Agent': 'Mozilla/5.0 (compatible; OpenClaw-OCR/1.0)' }
+              }, (res) => {
+                // Handle redirects
                 if ([301, 302, 303, 307, 308].includes(res.statusCode) && res.headers.location) {
-                  return download(res.headers.location).then(resolve).catch(reject);
+                  req.destroy();
+                  download(res.headers.location).then(resolve).catch(reject);
+                  return;
                 }
-                // Detect extension from content-type
-                const ct = (res.headers['content-type'] || 'image/png').split(';')[0];
+                // Check content type
+                const ct = (res.headers['content-type'] || '').split(';')[0].trim();
+                if (!ct.startsWith('image/')) {
+                  req.destroy();
+                  reject(new Error('Non-image Content-Type: ' + ct + ' (URL: ' + url + ')'));
+                  return;
+                }
                 const ext = ct.replace('image/', '').replace('jpeg', 'jpg');
                 const filePath = tmpFile + '.' + ext;
                 const stream = fs.createWriteStream(filePath);
                 res.pipe(stream);
-                stream.on('close', () => resolve(filePath));
+                stream.on('finish', () => resolve(filePath));
                 stream.on('error', reject);
               });
               req.on('error', reject);
@@ -91,46 +91,53 @@ jobs:
           }
 
           (async () => {
-            console.log(`[OCR] Downloading: ${imageUrl}`);
+            console.log('[OCR] Downloading: ' + imageUrl);
             const downloadedFile = await download(imageUrl);
-            console.log(`[OCR] Recognizing (lang=${lang})...`);
+            console.log('[OCR] Saved to: ' + downloadedFile);
+            console.log('[OCR] Recognizing (lang=' + lang + ')...');
+
             const worker = await createWorker(lang, 1, {
               logger: m => {
                 if (m.status === 'recognizing text') {
-                  process.stderr.write(`\r[OCR] ${(m.progress*100).toFixed(0)}%`);
+                  process.stderr.write('\r[OCR] ' + (m.progress * 100).toFixed(0) + '%');
                 }
               }
             });
+
             const { data: { text, confidence } } = await worker.recognize(downloadedFile);
             await worker.terminate();
             process.stderr.write('\n');
 
             const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
-            const baseName = `ocr_${timestamp}`;
-            const resultFile = path.join(outDir, `${baseName}.txt`);
-            const metaFile = path.join(outDir, `${baseName}.meta.json`);
+            const baseName = 'ocr_' + timestamp;
+            const resultFile = path.join(outDir, baseName + '.txt');
+            const metaFile = path.join(outDir, baseName + '.meta.json');
 
             fs.writeFileSync(resultFile, text.trim() || '[No text detected]');
             fs.writeFileSync(metaFile, JSON.stringify({
               source: imageUrl,
               lang,
-              confidence,
+              confidence: confidence || 0,
               timestamp: new Date().toISOString()
             }, null, 2));
 
-            console.log(`[OCR] Done! Confidence: ${confidence.toFixed(1)}%`);
-            console.log(`[OCR] Result saved to ${resultFile}`);
-            console.log(`\n--- OCR Result ---\n${text.trim() || '[No text detected]'}`);
-            try { fs.unlinkSync(downloadedFile); } catch(e) {}
-          })().catch(e => { console.error(e); process.exit(1); });
-          EOF
+            console.log('[OCR] Done! Confidence: ' + (confidence || 0).toFixed(1) + '%');
+            console.log('[OCR] Result saved to: ' + resultFile);
+            console.log('\n--- OCR Result ---\n' + (text.trim() || '[No text detected]'));
 
-      - name: Scan reports/ directory for images
+            try { fs.unlinkSync(downloadedFile); } catch (e) {}
+          })().catch(e => {
+            console.error('[OCR] Error: ' + e.message);
+            process.exit(1);
+          });
+          EOFNODE
+
+      - name: Scan reports/ directory
         if: github.event.inputs.image_url == ''
         run: |
           echo "No image URL provided. To OCR a specific image, use the image_url input."
-          echo "Reports directory contents:"
-          ls -la reports/ 2>/dev/null | head -20 || echo "No reports/ directory found"
+          echo "Reports directory:"
+          ls -la reports/ 2>/dev/null | head -10 || echo "(empty or not found)"
 
       - name: Commit OCR results
         run: |
@@ -140,8 +147,7 @@ jobs:
             git add data/ocr-results/
             if ! git diff --cached --quiet; then
               git commit -m "chore: add OCR results $(date -u +%Y-%m-%d)"
-              git push
-              echo "OCR results committed"
+              git push && echo "OCR results committed" || echo "Push failed"
             else
               echo "No new OCR results to commit"
             fi
