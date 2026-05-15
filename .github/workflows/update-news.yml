@@ -53,24 +53,17 @@ jobs:
         with:
           node-version: '20'
 
-      # Jack 2026-05-15: Evening pipeline — skip Update data to avoid overwriting morning's full data
-      # Scoring reads LOCAL git-checked file (morning's committed version), injects scores in place
+      # Run update_news.py FIRST to generate fresh data, then score the new data
+      - name: Update data
+        run: |
+          echo "Running update_news.py to generate fresh snapshot..."
+          python scripts/update_news.py
       - name: Inject 5-dimension scores
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          echo "Reading local latest-24h-min.json (morning's committed data)..."
+          echo "Reading latest-24h-min.json (fresh from update_news.py)..."
           node scripts/score_injector_gh.js
-      - name: Inject 5-dimension scores
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          if [ -f data/classified.json ]; then
-            echo "classified.json found, running score injector..."
-            node scripts/score_injector_gh.js
-          else
-            echo "classified.json not found (morning pipeline not yet run), skipping scoring"
-          fi
 
       - name: Commit and push changes
         env:
