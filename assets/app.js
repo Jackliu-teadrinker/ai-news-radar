@@ -73,8 +73,7 @@ const GN_PRIORITY = {
   // Jack 2026-05-15: new OPML source categories
   "arXiv Robotics": 10,
   "arXiv Robot Perception": 11,
-  "36氪": 12,
-  "创业邦": 13,
+  "商业": 12,
 };
 
 const GN_CATEGORIES = [
@@ -83,13 +82,23 @@ const GN_CATEGORIES = [
   { id: "GN: 脑机接口",   label: "脑机接口" },
   { id: "GN: 机器人",     label: "机器人" },
   { id: "GN: Physical AI", label: "Physical AI" },
-  { id: "arXiv Robotics",       label: "学术" },
-  { id: "36氪",                 label: "36氪" },
-  { id: "创业邦",               label: "创业邦" },
+  { id: "arXiv Robotics", label: "学术" },
+  { id: "商业",           label: "商业" },
 ];
 
+// Jack 2026-05-15: map raw source names to canonical category IDs
+const SOURCE_TO_CATEGORY = {
+  "36氪":   "商业",
+  "创业邦": "商业",
+};
+
+function normalizeSourceCategory(source) {
+  return SOURCE_TO_CATEGORY[source] || source;
+}
+
 function gnPriority(source) {
-  return GN_PRIORITY[source] !== undefined ? GN_PRIORITY[source] : 999;
+  const norm = normalizeSourceCategory(source);
+  return GN_PRIORITY[norm] !== undefined ? GN_PRIORITY[norm] : 999;
 }
 
 
@@ -355,7 +364,7 @@ function getFilteredItems() {
 
   return modeItems().filter((item) => {
     if (state.siteFilter && item.site_id !== state.siteFilter) return false;
-    if (state.categoryFilter && item.source !== state.categoryFilter) return false;
+    if (state.categoryFilter && normalizeSourceCategory(item.source) !== state.categoryFilter) return false;
     if (cutoffMs !== null) {
       // Jack 2026-05-15 fix: use first_seen_at (when radar caught this item)
       // not published_at (when the article was originally published)
@@ -376,7 +385,7 @@ function renderItemNode(item) {
   const categoryEl = node.querySelector(".category");
   categoryEl.textContent = kind.label;
   categoryEl.classList.add(`kind-${kind.tone}`);
-  node.querySelector(".source").textContent = `分区: ${item.source}`;
+  node.querySelector(".source").textContent = `分区: ${normalizeSourceCategory(item.source)}`;
   node.querySelector(".time").textContent = fmtTime(item.published_at || item.first_seen_at);
 
   const titleEl = node.querySelector(".title");
