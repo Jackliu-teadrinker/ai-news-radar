@@ -159,6 +159,7 @@ async function main() {
       }
     }
     console.log('[SI-GH] 注入完成: 新注入', scored, '条, 已有分', already, '条');
+  }
   // 保存注入结果到本地文件
   const outPath = path.join(__dirname, '..', 'data', 'latest-24h-min.json');
   try {
