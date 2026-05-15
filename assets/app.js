@@ -70,6 +70,11 @@ const GN_PRIORITY = {
   "GN: 机器人": 4,
   "GN: Physical AI": 5,
   "GN: 机器人政策": 6,
+  // Jack 2026-05-15: new OPML source categories
+  "arXiv Robotics": 10,
+  "arXiv Robot Perception": 11,
+  "36氪": 12,
+  "创业邦": 13,
 };
 
 const GN_CATEGORIES = [
@@ -78,6 +83,9 @@ const GN_CATEGORIES = [
   { id: "GN: 脑机接口",   label: "脑机接口" },
   { id: "GN: 机器人",     label: "机器人" },
   { id: "GN: Physical AI", label: "Physical AI" },
+  { id: "arXiv Robotics",       label: "学术" },
+  { id: "36氪",                 label: "36氪" },
+  { id: "创业邦",               label: "创业邦" },
 ];
 
 function gnPriority(source) {
