@@ -36,8 +36,8 @@
   <outline text="GN: 脑机接口" title="GN: 脑机接口" type="rss" xmlUrl="https://news.google.com/rss/search?q=brain%20computer%20interface&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" htmlUrl="https://news.google.com/search?q=brain%20computer%20interface&amp;tbm=nws" />
 
   <!-- ========== 学术顶会/预印本 ========== -->
-  <outline text="arXiv Robotics (cs.RO)" title="arXiv Robotics" type="rss" xmlUrl="https://export.arxiv.org/api/query?search_query=cat:cs.RO+OR+cat:cs.AI&amp;start=0&amp;max_results=50&amp;sortBy=submittedDate&amp;sortOrder=descending" htmlUrl="https://arxiv.org/list/cs.RO/recent" />
-  <outline text="arXiv Computer Vision (cs.CV)" title="arXiv CV" type="rss" xmlUrl="https://export.arxiv.org/api/query?search_query=cat:cs.CV&amp;start=0&amp;max_results=30&amp;sortBy=submittedDate&amp;sortOrder=descending" htmlUrl="https://arxiv.org/list/cs.CV/recent" />
+  <outline text="arXiv Robotics (cs.RO)" title="arXiv Robotics" type="rss" xmlUrl="https://export.arxiv.org/api/query?search_query=cat:cs.RO&amp;start=0&amp;max_results=50&amp;sortBy=submittedDate&amp;sortOrder=descending" htmlUrl="https://arxiv.org/list/cs.RO/recent" />
+  <outline text="arXiv Robot Perception (cs.CV robot)" title="arXiv Robot Perception" type="rss" xmlUrl="https://export.arxiv.org/api/query?search_query=cat:cs.CV+AND+robot&amp;start=0&amp;max_results=30&amp;sortBy=submittedDate&amp;sortOrder=descending" htmlUrl="https://arxiv.org/list/cs.CV/recent" />
 
   <!-- ========== 融资/创业媒体 ========== -->
   <outline text="36氪" title="36氪" type="rss" xmlUrl="https://36kr.com/feed" htmlUrl="https://36kr.com/" />
