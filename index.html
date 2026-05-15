@@ -54,6 +54,14 @@
       <section class="primary-controls">
         <input id="searchInput" type="search" placeholder="搜索机器人信号 / 来源" />
         <div class="mode-hint" id="modeHint">机器人强相关</div>
+        <select id="sortSelect" title="排序方式">
+          <option value="priority">🔢 分区优先级</option>
+          <option value="total_score">⭐ 五维总分</option>
+          <option value="relevance">🎯 相关性</option>
+          <option value="authority">🏛️ 权威性</option>
+          <option value="depth">📊 内容深度</option>
+          <option value="timeliness">⏰ 时效性</option>
+        </select>
       </section>
 
       <details class="advanced-panel">
@@ -108,6 +116,7 @@
           <span class="site"></span>
           <span class="category"></span>
           <span class="source"></span>
+          <span class="score score-none">--</span>
           <time class="time"></time>
         </div>
         <a class="title" target="_blank" rel="noopener noreferrer"></a>

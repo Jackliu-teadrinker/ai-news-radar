@@ -14,11 +14,13 @@ const state = {
   categoryFilter: "",
   query: "",
   mode: "ai",
-  todayMode: true,   // Jack 2026-05-15: 默认隐藏昨日9点CST前的信号（即只展示昨天9点后的内容）
+  todayMode: true,
   waytoagiMode: "today",
   waytoagiData: null,
   sourceStatus: null,
   generatedAt: null,
+  // Jack 2026-05-15: 五维评分排序
+  sortMode: 'priority',  // 'priority' | 'total_score' | 'relevance' | 'authority' | 'depth' | 'timeliness'
 };
 
 const statsEl = document.getElementById("stats");
@@ -27,6 +29,7 @@ const sitePillsEl = document.getElementById("sitePills");
 const newsListEl = document.getElementById("newsList");
 const updatedAtEl = document.getElementById("updatedAt");
 const searchInputEl = document.getElementById("searchInput");
+const sortSelectEl = document.getElementById("sortSelect");
 const resultCountEl = document.getElementById("resultCount");
 const listTitleEl = document.getElementById("listTitle");
 const itemTpl = document.getElementById("itemTpl");
@@ -347,34 +350,42 @@ function modeItems() {
 
 function getFilteredItems() {
   const q = state.query.trim().toLowerCase();
-
-  // Jack 2026-05-15 v2: always yesterday 9 AM CST cutoff — independent of current time
-  // "不展示前一天早上9点前的数据" → hide anything before yesterday 9 AM CST
   let cutoffMs = null;
   if (state.todayMode) {
     const now = new Date();
     const cst9base = new Date(Date.UTC(
       now.getUTCFullYear(),
       now.getUTCMonth(),
-      now.getUTCDate() - 1,  // always previous calendar day = yesterday
-      1, 0, 0                 // 1 AM UTC = 9 AM CST
+      now.getUTCDate() - 1,
+      1, 0, 0
     ));
     cutoffMs = cst9base.getTime();
   }
-
-  return modeItems().filter((item) => {
+  const filtered = modeItems().filter((item) => {
     if (state.siteFilter && item.site_id !== state.siteFilter) return false;
     if (state.categoryFilter && normalizeSourceCategory(item.source) !== state.categoryFilter) return false;
     if (cutoffMs !== null) {
-      // Jack 2026-05-15 fix: use first_seen_at (when radar caught this item)
-      // not published_at (when the article was originally published)
-      // first_seen_at reflects the pipeline's rolling 24h discovery window
       const itemMs = new Date(item.first_seen_at || item.published_at || 0).getTime();
       if (itemMs < cutoffMs) return false;
     }
     if (!q) return true;
     const hay = `${item.title || ""} ${item.title_zh || ""} ${item.title_en || ""} ${item.site_name || ""} ${item.source || ""}`.toLowerCase();
     return hay.includes(q);
+  });
+  // Jack 2026-05-15: 五维评分排序
+  return sortByScore(filtered, state.sortMode);
+}
+
+// Jack 2026-05-15: 五维评分排序函数
+function sortByScore(items, sortMode) {
+  if (sortMode === 'priority') return items; // 保持原有优先级排序
+  return [...items].sort((a, b) => {
+    const scoreA = a[sortMode] !== undefined && a[sortMode] !== null ? a[sortMode] : -1;
+    const scoreB = b[sortMode] !== undefined && b[sortMode] !== null ? b[sortMode] : -1;
+    if (scoreA !== scoreB) return scoreB - scoreA;
+    const pa = gnPriority(a.source || ''), pb = gnPriority(b.source || '');
+    if (pa !== pb) return pa - pb;
+    return 0;
   });
 }
 
@@ -387,6 +398,22 @@ function renderItemNode(item) {
   categoryEl.classList.add(`kind-${kind.tone}`);
   node.querySelector(".source").textContent = `分区: ${normalizeSourceCategory(item.source)}`;
   node.querySelector(".time").textContent = fmtTime(item.published_at || item.first_seen_at);
+
+  // Jack 2026-05-15: 五维评分 badge
+  const scoreEl = node.querySelector(".score");
+  if (scoreEl) {
+    const totalScore = item.total_score;
+    if (totalScore !== undefined && totalScore !== null) {
+      const pct = Math.round(totalScore); // 0-100
+      const color = pct >= 60 ? 'score-high' : pct >= 40 ? 'score-mid' : 'score-low';
+      scoreEl.textContent = pct;
+      scoreEl.className = 'score ' + color;
+      scoreEl.title = `五维总分: ${pct}/100 (相关性${item.relevance || '?'} | 权威性${item.authority || '?'} | 深度${item.depth || '?'} | 时效性${item.timeliness || '?'} | 写作价值${item.writing_value || '?'})`;
+    } else {
+      scoreEl.textContent = '--';
+      scoreEl.className = 'score score-none';
+    }
+  }
 
   const titleEl = node.querySelector(".title");
   const zh = (item.title_zh || "").trim();
@@ -821,6 +848,14 @@ if (allDedupeToggleEl) {
     state.allDedup = Boolean(e.target.checked);
     renderModeSwitch();
     renderSiteFilters();
+    renderList();
+  });
+}
+
+// Jack 2026-05-15: 五维评分排序
+if (sortSelectEl) {
+  sortSelectEl.addEventListener("change", (e) => {
+    state.sortMode = e.target.value;
     renderList();
   });
 }
