@@ -14,7 +14,7 @@ const state = {
   categoryFilter: "",
   query: "",
   mode: "ai",
-  todayMode: true,   // Jack 2026-05-15: 默认只显示今日9点后的信号（流水线9:05接手前的盲区）
+  todayMode: true,   // Jack 2026-05-15: 默认隐藏昨日9点CST前的信号（即只展示昨天9点后的内容）
   waytoagiMode: "today",
   waytoagiData: null,
   sourceStatus: null,
@@ -202,7 +202,7 @@ function renderAdvancedSummary() {
     : (state.totalRaw || state.itemsAllRaw.length);
   if (!status) {
     const catLabel = state.categoryFilter ? ` · 已筛选：${GN_CATEGORIES.find(c => c.id === state.categoryFilter)?.label || state.categoryFilter}` : "";
-    const todayLabel = state.todayMode ? " · 今日9点后" : "";
+    const todayLabel = state.todayMode ? " · 昨日9点后" : "";
     advancedSummaryEl.textContent = `全量 ${fmtNumber(allCount)} 条${catLabel}${todayLabel}`;
     return;
   }
@@ -210,7 +210,7 @@ function renderAdvancedSummary() {
   const totalSites = sites.length;
   const okSites = Number(status.successful_sites || 0);
   const catLabel = state.categoryFilter ? ` · 已筛选：${GN_CATEGORIES.find(c => c.id === state.categoryFilter)?.label || state.categoryFilter}` : "";
-  const todayLabel = state.todayMode ? " · 今日9点后" : "";
+  const todayLabel = state.todayMode ? " · 昨日9点后" : "";
   advancedSummaryEl.textContent = `${fmtNumber(okSites)}/${fmtNumber(totalSites)} 源可用 · 全量 ${fmtNumber(allCount)} 条${catLabel}${todayLabel}`;
 }
 
