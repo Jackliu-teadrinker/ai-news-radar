@@ -159,6 +159,13 @@ async function main() {
       }
     }
     console.log('[SI-GH] 注入完成: 新注入', scored, '条, 已有分', already, '条');
+  // 保存注入结果到本地文件
+  const outPath = path.join(__dirname, '..', 'data', 'latest-24h-min.json');
+  try {
+    fs.writeFileSync(outPath, JSON.stringify(data24hMin, null, 2));
+    console.log('[SI-GH] 已保存到', outPath, '文件大小:', fs.statSync(outPath).size, 'bytes');
+  } catch (e) {
+    console.error('[SI-GH] 写回文件失败:', e.message);
   }
 }
 
