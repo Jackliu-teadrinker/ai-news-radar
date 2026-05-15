@@ -62,30 +62,37 @@ jobs:
           const path = require('path');
           const https = require('https');
           const http = require('http');
+          const { URL } = require('url');
 
           const imageUrl = process.env.IMAGE_URL;
           const lang = process.env.OCR_LANG || 'chi_sim';
           const outDir = 'data/ocr-results';
-          const tmpFile = `/tmp/ocr_input_${Date.now()}.png`;
+          const tmpFile = `/tmp/ocr_input_${Date.now()}`;
 
           function download(url) {
             return new Promise((resolve, reject) => {
-              const protocol = url.startsWith('https') ? https : http;
-              protocol.get(url, (res) => {
-                if ([301, 302].includes(res.statusCode)) {
+              const parsed = new URL(url);
+              const protocol = parsed.protocol === 'https:' ? https : http;
+              const req = protocol.get(url, { headers: { 'User-Agent': 'Mozilla/5.0' } }, (res) => {
+                if ([301, 302, 303, 307, 308].includes(res.statusCode) && res.headers.location) {
                   return download(res.headers.location).then(resolve).catch(reject);
                 }
-                const stream = fs.createWriteStream(tmpFile);
+                // Detect extension from content-type
+                const ct = (res.headers['content-type'] || 'image/png').split(';')[0];
+                const ext = ct.replace('image/', '').replace('jpeg', 'jpg');
+                const filePath = tmpFile + '.' + ext;
+                const stream = fs.createWriteStream(filePath);
                 res.pipe(stream);
-                stream.on('close', () => resolve(tmpFile));
+                stream.on('close', () => resolve(filePath));
                 stream.on('error', reject);
-              }).on('error', reject);
+              });
+              req.on('error', reject);
             });
           }
 
           (async () => {
             console.log(`[OCR] Downloading: ${imageUrl}`);
-            await download(imageUrl);
+            const downloadedFile = await download(imageUrl);
             console.log(`[OCR] Recognizing (lang=${lang})...`);
             const worker = await createWorker(lang, 1, {
               logger: m => {
@@ -94,7 +101,7 @@ jobs:
                 }
               }
             });
-            const { data: { text, confidence } } = await worker.recognize(tmpFile);
+            const { data: { text, confidence } } = await worker.recognize(downloadedFile);
             await worker.terminate();
             process.stderr.write('\n');
 
@@ -114,7 +121,7 @@ jobs:
             console.log(`[OCR] Done! Confidence: ${confidence.toFixed(1)}%`);
             console.log(`[OCR] Result saved to ${resultFile}`);
             console.log(`\n--- OCR Result ---\n${text.trim() || '[No text detected]'}`);
-            try { fs.unlinkSync(tmpFile); } catch(e) {}
+            try { fs.unlinkSync(downloadedFile); } catch(e) {}
           })().catch(e => { console.error(e); process.exit(1); });
           EOF
 
