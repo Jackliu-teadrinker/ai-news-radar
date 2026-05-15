@@ -79,6 +79,12 @@ jobs:
                   reject(new Error('Non-image Content-Type: ' + ct + ' (URL: ' + url + ')'));
                   return;
                 }
+                // SVG is not supported by Tesseract.js
+                if (ct === 'image/svg+xml' || ct === 'image/svg') {
+                  req.destroy();
+                  reject(new Error('SVG images are not supported by Tesseract. Please use PNG/JPG/WebP.'));
+                  return;
+                }
                 const ext = ct.replace('image/', '').replace('jpeg', 'jpg');
                 const filePath = tmpFile + '.' + ext;
                 const stream = fs.createWriteStream(filePath);
