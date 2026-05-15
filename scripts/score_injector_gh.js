@@ -14,7 +14,7 @@ const TARGET_DATE = process.env.TARGET_DATE || new Date().toISOString().slice(0,
 const GITHUB_TOKEN = process.env.GITHUB_TOKEN || process.env.GH_TOKEN || '';
 const REPO_OWNER = 'Jackliu-teadrinker';
 const REPO_NAME = 'ai-news-radar';
-const CLASSIFIED_JSON = path.join(__dirname, '..', 'data', 'classified.json');
+const CLASSIFIED_JSON = path.join(__dirname, '..', 'data', TARGET_DATE + '-classified.json');
 
 // ===== 工具函数 =====
 function httpGet(url, timeoutMs) {
