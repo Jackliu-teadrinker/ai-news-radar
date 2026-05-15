@@ -331,15 +331,17 @@ function modeItems() {
 function getFilteredItems() {
   const q = state.query.trim().toLowerCase();
 
-  // Jack 2026-05-15: 今日9点CST分界线（默认开启）
+  // Jack 2026-05-15 v2: always yesterday 9 AM CST cutoff — independent of current time
+  // "不展示前一天早上9点前的数据" → hide anything before yesterday 9 AM CST
   let cutoffMs = null;
   if (state.todayMode) {
     const now = new Date();
-    const utcHour = now.getUTCHours();
-    // 9 AM CST = 1 AM UTC；小于1 AM UTC说明9 AM CST还没到，用昨天
-    const cst9base = utcHour < 1
-      ? new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate() - 1, 1, 0, 0))
-      : new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(), 1, 0, 0));
+    const cst9base = new Date(Date.UTC(
+      now.getUTCFullYear(),
+      now.getUTCMonth(),
+      now.getUTCDate() - 1,  // always previous calendar day = yesterday
+      1, 0, 0                 // 1 AM UTC = 9 AM CST
+    ));
     cutoffMs = cst9base.getTime();
   }
 
