@@ -148,15 +148,13 @@ jobs:
       - name: Commit OCR results
         run: |
           if [ -d "data/ocr-results" ] && [ "$(ls -A data/ocr-results/*.txt 2>/dev/null)" ]; then
-            git config user.name "github-actions[bot]"
-            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add data/ocr-results/
-            if ! git diff --cached --quiet; then
-              git commit -m "chore: add OCR results $(date -u +%Y-%m-%d)"
-              git push && echo "OCR results committed" || echo "Push failed"
-            else
-              echo "No new OCR results to commit"
-            fi
+            echo "ocr_result<<EOF"
+            cat data/ocr-results/*.txt
+            echo "EOF"
+            echo "ocr_meta<<EOF"
+            cat data/ocr-results/*.meta.json
+            echo "EOF"
+            echo "::notice::OCR results generated successfully"
           else
-            echo "No OCR results to commit"
+            echo "No OCR results to show"
           fi
