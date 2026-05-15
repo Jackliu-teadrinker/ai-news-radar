@@ -347,7 +347,10 @@ function getFilteredItems() {
     if (state.siteFilter && item.site_id !== state.siteFilter) return false;
     if (state.categoryFilter && item.source !== state.categoryFilter) return false;
     if (cutoffMs !== null) {
-      const itemMs = new Date(item.published_at || item.first_seen_at || 0).getTime();
+      // Jack 2026-05-15 fix: use first_seen_at (when radar caught this item)
+      // not published_at (when the article was originally published)
+      // first_seen_at reflects the pipeline's rolling 24h discovery window
+      const itemMs = new Date(item.first_seen_at || item.published_at || 0).getTime();
       if (itemMs < cutoffMs) return false;
     }
     if (!q) return true;
