@@ -89,9 +89,8 @@ function normTitle(t) { return (t || '').toLowerCase().replace(/[''""'']/g, '').
 // ===== 评分注入 =====
 async function main() {
   console.log('[SI-GH] 开始评分注入...');
-  if (!GITHUB_TOKEN) { console.error('[SI-GH] 错误: GITHUB_TOKEN 未设置'); process.exit(1); }
-
-  // 读取本地 classified.json（由 g_aggregator 输出）
+  if (!GITHUB_TOKEN) { console.error('[SI-GH] 警告: GITHUB_TOKEN 未设置，跳过 GitHub API 操作（评分注入继续）'); }
+  // 如果 classified.json 不存在，优雅退出不阻塞 workflow
   if (!fs.existsSync(CLASSIFIED_JSON)) {
     console.log('[SI-GH] classified.json 不存在，跳过评分注入（本地 pipeline 未运行）');
     process.exit(0);
@@ -157,4 +156,4 @@ async function main() {
   }
 }
 
-main().catch(e => { console.error('[SI-GH] 错误:', e.message); process.exit(1); });
+main().catch(e => { console.error('[SI-GH] 错误（不阻断 workflow）:', e.message); process.exit(0); });
