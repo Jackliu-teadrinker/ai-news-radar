@@ -80,6 +80,8 @@ jobs:
 
       # Jack 2026-05-15: 五维评分注入（在 Commit 之前，Pages artifact 从 working dir 上传）
       - name: Inject 5-dimension scores
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           if [ -f data/classified.json ]; then
             echo "classified.json found, running score injector..."
