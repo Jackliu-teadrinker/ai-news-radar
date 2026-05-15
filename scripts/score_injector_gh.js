@@ -106,54 +106,59 @@ async function main() {
     byNorm[normTitle(title)] = info;
   }
 
-  // 从 GitHub Pages 拉取 JSON
-  let data24h = null, data24hMin = null;
-  try {
-    data24hMin = JSON.parse(await httpGet(`${GP}/latest-24h-min.json`, 15000));
-    console.log('[SI-GH] latest-24h-min.json:', (data24hMin.items_ai || []).length, 'items_ai');
-  } catch (e) { console.error('[SI-GH] 获取 latest-24h-min.json 失败:', e.message); }
+  // 优先读本地文件（workflow 中 Update data 步骤已更新），否则从 GitHub Pages 拉取
+  let data24hMin = null;
+  const localPath = path.join(__dirname, '..', 'data', 'latest-24h-min.json');
+  if (fs.existsSync(localPath)) {
+    try {
+      data24hMin = JSON.parse(fs.readFileSync(localPath, 'utf8'));
+      console.log('[SI-GH] loaded local latest-24h-min.json:', (data24hMin.items || data24hMin.items_ai || []).length, 'items');
+    } catch (e) { console.error('[SI-GH] 读本地文件失败:', e.message); }
+  }
+  if (!data24hMin) {
+    try {
+      data24hMin = JSON.parse(await httpGet(`${GP}/latest-24h-min.json`, 15000));
+      console.log('[SI-GH] loaded remote latest-24h-min.json:', (data24hMin.items || data24hMin.items_ai || []).length, 'items');
+    } catch (e) { console.error('[SI-GH] 获取 remote latest-24h-min.json 失败:', e.message); }
+  }
 
-  // 注入分数到 items_ai
-  if (data24hMin && data24hMin.items_ai) {
+  // 获取 items 数组（OPML RSS 输出为 items，AI 过滤输出为 items_ai）
+  const targetItems = data24hMin.items || data24hMin.items_ai || [];
+  console.log('[SI-GH] items array:', targetItems.length);
+
+  // 注入分数到 items
+  if (targetItems.length > 0) {
     let scored = 0, already = 0;
     const FIELDS = ['category', 'core_fact', 'importance', 'relevance', 'authority', 'depth', 'timeliness', 'writing_value', 'total_score'];
-    for (const item of data24hMin.items_ai) {
+    for (const item of targetItems) {
+      // 如果已有 total_score 说明已注入，跳过
+      if (item.total_score !== undefined && item.total_score !== null) { already++; continue; }
+
+      // 优先用 classified.json 的评分数据（按 URL 或标题匹配）
       const urlKey = urlToKey(item.url || '');
       const titleKey = normTitle(item.title_zh || item.title || '');
       const info = (urlKey && byUrl[urlKey]) ? byUrl[urlKey] : (titleKey && byNorm[titleKey] ? byNorm[titleKey] : null);
+
       if (info) {
-        if (info.total_score !== undefined && info.total_score !== null) { already++; }
-        else {
-          for (const k of FIELDS) { if (info[k] !== undefined) item[k] = info[k]; }
-          // 兜底：没有分数的用默认值
-          if (item.total_score === undefined) {
-            item.relevance = item.relevance || 15;
-            item.authority = item.authority || getDomainAuthority(item.url || '');
-            item.depth = item.depth || 12;
-            item.timeliness = item.timeliness || calcTimeliness(item.published_at);
-            item.writing_value = item.writing_value || 3;
-            item.total_score = item.total_score || 48;
-            item.category = item.category || 'general_robot';
-          }
-          scored++;
-        }
-      } else {
-        // 完全未匹配的用默认值
-        item.relevance = 15;
-        item.authority = getDomainAuthority(item.url || '');
-        item.depth = 12;
-        item.timeliness = calcTimeliness(item.published_at);
-        item.writing_value = 3;
-        item.total_score = 48;
-        item.category = 'general_robot';
+        for (const k of FIELDS) { if (info[k] !== undefined) item[k] = info[k]; }
+      }
+
+      // 兜底：没有任何分数的用默认值 + ai_score 基础分
+      if (item.total_score === undefined || item.total_score === null) {
+        const aiScore = item.ai_score || 0.5; // 0-1 浮点
+        item.relevance     = item.relevance     || Math.round((aiScore) * 25 + 10);  // 10-35
+        item.authority     = item.authority     || getDomainAuthority(item.url || '');
+        item.depth         = item.depth         || 12;
+        item.timeliness    = item.timeliness    || calcTimeliness(item.published_at);
+        item.writing_value = item.writing_value || 3;
+        item.total_score   = item.total_score   || Math.round(aiScore * 60 + 30);    // 30-90
+        item.category      = item.category      || 'general_robot';
         scored++;
+      } else {
+        already++;
       }
     }
     console.log('[SI-GH] 注入完成: 新注入', scored, '条, 已有分', already, '条');
-    // 写回本地文件
-    fs.writeFileSync(path.join(__dirname, '..', 'data', 'latest-24h-min.json'), JSON.stringify(data24hMin));
-    console.log('[SI-GH] latest-24h-min.json 已更新');
-  }
 }
 
 main().catch(e => { console.error('[SI-GH] 错误（不阻断 workflow）:', e.message); process.exit(0); });
