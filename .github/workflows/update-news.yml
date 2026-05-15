@@ -53,32 +53,14 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Update data
+      # Jack 2026-05-15: Evening pipeline — skip Update data to avoid overwriting morning's full data
+      # Scoring reads LOCAL git-checked file (morning's committed version), injects scores in place
+      - name: Inject 5-dimension scores
         env:
-          EMAIL_DIGEST_ENABLED: ${{ secrets.EMAIL_DIGEST_ENABLED || vars.EMAIL_DIGEST_ENABLED }}
-          AGENTMAIL_API_KEY: ${{ secrets.AGENTMAIL_API_KEY }}
-          AGENTMAIL_INBOX_ID: ${{ secrets.AGENTMAIL_INBOX_ID }}
-          AGENTMAIL_API_BASE_URL: ${{ vars.AGENTMAIL_API_BASE_URL }}
-          AGENTMAIL_LIMIT: ${{ vars.AGENTMAIL_LIMIT }}
-          AGENTMAIL_ALLOWED_SENDER_DOMAINS: ${{ vars.AGENTMAIL_ALLOWED_SENDER_DOMAINS }}
-          X_API_ENABLED: ${{ secrets.X_API_ENABLED || vars.X_API_ENABLED }}
-          X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
-          X_API_QUERY: ${{ vars.X_API_QUERY }}
-          X_API_MAX_RESULTS: ${{ vars.X_API_MAX_RESULTS }}
-          X_API_DAILY_POST_LIMIT: ${{ vars.X_API_DAILY_POST_LIMIT }}
-          X_API_RUN_UTC_HOUR: ${{ vars.X_API_RUN_UTC_HOUR }}
-          X_API_RUN_UTC_MINUTE_MAX: ${{ vars.X_API_RUN_UTC_MINUTE_MAX }}
-          RSS_MAX_FEEDS: ${{ vars.RSS_MAX_FEEDS || 0 }}
-          DISABLE_BUILTINS: ${{ vars.DISABLE_BUILTINS || 0 }}
-          DISABLE_WAYTOAGI: ${{ vars.DISABLE_WAYTOAGI || 0 }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          if [ -f feeds/follow.opml ]; then
-            DISABLE_BUILTINS=1 DISABLE_WAYTOAGI=1 python scripts/update_news.py --output-dir data --window-hours 24 --archive-days 21 --rss-opml feeds/follow.opml --rss-max-feeds "${RSS_MAX_FEEDS:-0}" --disable-builtins
-          else
-            python scripts/update_news.py --output-dir data --window-hours 24 --archive-days 21
-          fi
-
-      # Jack 2026-05-15: 五维评分注入（在 Commit 之前，Pages artifact 从 working dir 上传）
+          echo "Reading local latest-24h-min.json (morning's committed data)..."
+          node scripts/score_injector_gh.js
       - name: Inject 5-dimension scores
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
