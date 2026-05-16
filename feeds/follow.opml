@@ -28,33 +28,16 @@
     <outline text="Precision Neuroscience Newsroom" title="Precision Neuroscience" type="rss" xmlUrl="https://r.jina.ai/https://precisionneuro.io/newsroom" htmlUrl="https://precisionneuro.io/newsroom" />
     <outline text="Blackrock Neurotech News" title="Blackrock Neurotech" type="rss" xmlUrl="https://r.jina.ai/https://blackrockneurotech.com/news/" htmlUrl="https://blackrockneurotech.com/news/" />
     <outline text="BrainGate" title="BrainGate" type="rss" xmlUrl="https://r.jina.ai/https://www.braingate.org" htmlUrl="https://www.braingate.org" />
-    <outline text="MIT Brain &amp; Cognitive Sciences" title="MIT BCS" type="rss" xmlUrl="https://r.jina.ai/https://bcs.mit.edu/news-events/news" htmlUrl="https://bcs.mit.edu/news-events/news" />
     <outline text="IEEE Spectrum Neurotech" title="IEEE Spectrum Neurotech" type="rss" xmlUrl="https://r.jina.ai/https://spectrum.ieee.org/tag/brain-computer-interface" htmlUrl="https://spectrum.ieee.org/tag/brain-computer-interface" />
     <outline text="Medical Xpress BCI" title="Medical Xpress BCI" type="rss" xmlUrl="https://r.jina.ai/https://medicalxpress.com/tags/brain-computer+interface/" htmlUrl="https://medicalxpress.com/tags/brain-computer+interface/" />
     <outline text="arXiv BCI Papers" title="arXiv BCI" type="rss" xmlUrl="https://export.arxiv.org/api/query?search_query=ti:%22brain-computer%20interface%22%20OR%20ti:%22BCI%22%20OR%20ti:%22neural%20interface%22&amp;start=0&amp;max_results=30&amp;sortBy=submittedDate&amp;sortOrder=descending" htmlUrl="https://arxiv.org/search/?query=brain-computer+interface&amp;searchtype=all" />
     <outline text="BCI Society" title="BCI Society" type="rss" xmlUrl="https://r.jina.ai/https://www.bcisociety.org" htmlUrl="https://www.bcisociety.org" />
-    <outline text="TechCrunch Neurotech" title="TechCrunch Neurotech" type="rss" xmlUrl="https://r.jina.ai/https://techcrunch.com/tag/neurotechnology/" htmlUrl="https://techcrunch.com/tag/neurotechnology/" />
-    <outline text="Reuters Neurotechnology" title="Reuters Neurotechnology" type="rss" xmlUrl="https://r.jina.ai/https://www.reuters.com/technology/neuroscience/" htmlUrl="https://www.reuters.com/technology/neuroscience/" />
-
     <!-- ========== 泛机器人 / 行业媒体 ========== -->
     <outline text="The Robot Report" title="The Robot Report" type="rss" xmlUrl="https://www.therobotreport.com/feed/" htmlUrl="https://www.therobotreport.com" />
     <outline text="TechCrunch Robotics" title="TechCrunch Robotics" type="rss" xmlUrl="https://techcrunch.com/category/robotics/feed/" htmlUrl="https://techcrunch.com/category/robotics/" />
     <outline text="IEEE RAS" title="IEEE RAS" type="rss" xmlUrl="https://r.jina.ai/https://www.ieee-ras.org" htmlUrl="https://www.ieee-ras.org" />
-    <outline text="Open Robotics" title="Open Robotics" type="rss" xmlUrl="https://r.jina.ai/https://www.openrobotics.org" htmlUrl="https://www.openrobotics.org" />
     <outline text="Science Robotics" title="Science Robotics" type="rss" xmlUrl="https://r.jina.ai/https://www.science.org/journal/scirobotics" htmlUrl="https://www.science.org/journal/scirobotics" />
-    <outline text="Robotics Business Review" title="Robotics Business Review" type="rss" xmlUrl="https://r.jina.ai/https://www.roboticsbusinessreview.com" htmlUrl="https://www.roboticsbusinessreview.com" />
-    <outline text="Azorobotics" title="Azorobotics" type="rss" xmlUrl="https://r.jina.ai/https://www.azorobotics.com" htmlUrl="https://www.azorobotics.com" />
-    <outline text="Robotic Magazine" title="Robotic Magazine" type="rss" xmlUrl="https://r.jina.ai/https://robotmagazine.com" htmlUrl="https://robotmagazine.com" />
-    <outline text="The Robot Studio Blog" title="The Robot Studio" type="rss" xmlUrl="https://r.jina.ai/https://www.therobotstudio.com/blog" htmlUrl="https://www.therobotstudio.com/blog" />
-    <outline text="Universal Robots Blog" title="Universal Robots" type="rss" xmlUrl="https://r.jina.ai/https://www.universal-robots.com/blog/" htmlUrl="https://www.universal-robots.com/blog/" />
-    <outline text="Intuitive Surgical Newsroom" title="Intuitive Surgical" type="rss" xmlUrl="https://r.jina.ai/https://www.intuitive.com/en-us/about-us/newsroom" htmlUrl="https://www.intuitive.com/en-us/about-us/newsroom" />
     <outline text="NVIDIA Robotics Blog" title="NVIDIA Robotics" type="rss" xmlUrl="https://r.jina.ai/https://blogs.nvidia.com/blog/category/robotics/" htmlUrl="https://blogs.nvidia.com/blog/category/robotics/" />
-    <outline text="VentureBeat AI" title="VentureBeat AI" type="rss" xmlUrl="https://venturebeat.com/category/ai/feed/" htmlUrl="https://venturebeat.com/category/ai/" />
-    <outline text="CNBC Robotics" title="CNBC Robotics" type="rss" xmlUrl="https://r.jina.ai/https://www.cnbc.com/robotics/" htmlUrl="https://www.cnbc.com/robotics/" />
-    <outline text="New Scientist Robotics" title="New Scientist Robotics" type="rss" xmlUrl="https://r.jina.ai/https://www.newscientist.com/subject/robotics/" htmlUrl="https://www.newscientist.com/subject/robotics/" />
-    <outline text="MIT News Robotics" title="MIT News Robotics" type="rss" xmlUrl="https://news.mit.edu/topic/robotics" htmlUrl="https://news.mit.edu/topic/robotics" />
-    <outline text="Wired Robots" title="Wired Robots" type="rss" xmlUrl="https://r.jina.ai/https://www.wired.com/tag/robots/" htmlUrl="https://www.wired.com/tag/robots/" />
-    <outline text="Tom's Hardware BCI" title="Tom's Hardware BCI" type="rss" xmlUrl="https://r.jina.ai/https://www.tomshardware.com/tag/brain-computer-interface-bci" htmlUrl="https://www.tomshardware.com/tag/brain-computer-interface-bci" />
     <outline text="Humanoid Guide" title="Humanoid Guide" type="rss" xmlUrl="https://r.jina.ai/https://humanoid.guide" htmlUrl="https://humanoid.guide" />
 
     <!-- ========== 人形机器人公司博客 ========== -->
@@ -68,21 +51,8 @@
     <outline text="KUKA Press News" title="KUKA" type="rss" xmlUrl="https://r.jina.ai/https://www.kuka.com/en-de/company/press/news" htmlUrl="https://www.kuka.com/en-de/company/press/news" />
     <outline text="ABB Robotics News" title="ABB Robotics" type="rss" xmlUrl="https://r.jina.ai/https://www.abb.com/robotics/news-media" htmlUrl="https://www.abb.com/robotics/news-media" />
     <outline text="Yaskawa News" title="Yaskawa" type="rss" xmlUrl="https://r.jina.ai/https://www.yaskawa-global.com/news-events" htmlUrl="https://www.yaskawa-global.com/news-events" />
-    <outline text="IFR" title="IFR" type="rss" xmlUrl="https://r.jina.ai/https://ifr.org/" htmlUrl="https://ifr.org/" />
-    <outline text="Automate.org Robotics" title="Automate.org" type="rss" xmlUrl="https://r.jina.ai/https://www.automate.org/robotics" htmlUrl="https://www.automate.org/robotics" />
-
     <!-- ========== 国内媒体 ========== -->
     <outline text="晚点" title="晚点" type="rss" xmlUrl="https://r.jina.ai/https://www.latepost.com/" htmlUrl="https://www.latepost.com/" />
-    <outline text="Jazzyear" title="Jazzyear" type="rss" xmlUrl="https://r.jina.ai/https://www.jazzyear.com/" htmlUrl="https://www.jazzyear.com/" />
-    <outline text="智东西-人形机器人" title="智东西-人形机器人" type="rss" xmlUrl="https://r.jina.ai/https://zhidx.com/p/category/%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%97%A0%E4%BA%BA%E6%9C%BA" htmlUrl="https://zhidx.com/p/category/%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%97%A0%E4%BA%BA%E6%9C%BA" />
-    <outline text="XZL Robot" title="XZL Robot" type="rss" xmlUrl="https://r.jina.ai/http://www.xzlrobot.com/" htmlUrl="http://www.xzlrobot.com/" />
-    <outline text="Jushen研析社" title="Jushen研析社" type="rss" xmlUrl="https://r.jina.ai/http://www.jushenyanxishe.com/" htmlUrl="http://www.jushenyanxishe.com/" />
-    <outline text="Robowave Tech" title="Robowave Tech" type="rss" xmlUrl="https://r.jina.ai/https://www.robowave.tech/" htmlUrl="https://www.robowave.tech/" />
-    <outline text="CSSN机器人" title="CSSN机器人" type="rss" xmlUrl="https://r.jina.ai/https://www.cssn.cn/so/s?siteCode=cssn&amp;tab=all&amp;qt=%E6%9C%BA%E5%99%A8%E4%BA%BA" htmlUrl="https://www.cssn.cn/so/s?siteCode=cssn&amp;tab=all&amp;qt=%E6%9C%BA%E5%99%A8%E4%BA%BA" />
-    <outline text="雷锋网机器人" title="雷锋网机器人" type="rss" xmlUrl="https://r.jina.ai/https://www.leiphone.com/category/robot" htmlUrl="https://www.leiphone.com/category/robot" />
-    <outline text="机器之心" title="机器之心" type="rss" xmlUrl="https://r.jina.ai/https://www.jiqizhixin.com/" htmlUrl="https://www.jiqizhixin.com/" />
-    <outline text="量子位" title="量子位" type="rss" xmlUrl="https://r.jina.ai/https://www.qbitai.com/category/%e8%b5%84%e8%ae%af" htmlUrl="https://www.qbitai.com/category/%e8%b5%84%e8%ae%af" />
-
     <!-- ========== 学术顶会/预印本 ========== -->
     <outline text="arXiv Robotics (cs.RO)" title="arXiv Robotics" type="rss" xmlUrl="https://export.arxiv.org/api/query?search_query=cat:cs.RO&amp;start=0&amp;max_results=50&amp;sortBy=submittedDate&amp;sortOrder=descending" htmlUrl="https://arxiv.org/list/cs.RO/recent" />
     <outline text="arXiv Robot Perception (cs.CV robot)" title="arXiv Robot Perception" type="rss" xmlUrl="https://export.arxiv.org/api/query?search_query=cat:cs.CV+AND+robot&amp;start=0&amp;max_results=30&amp;sortBy=submittedDate&amp;sortOrder=descending" htmlUrl="https://arxiv.org/list/cs.CV/recent" />
