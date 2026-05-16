@@ -343,11 +343,11 @@ def parse_relative_time_zh(text: str, now: datetime) -> datetime | None:
     if not text:
         return None
 
-    m = re.search(r"(\d+)\s*分钟前", text)
+    m = re.search(r"(\d+)\s*分钟�?, text)
     if m:
         return now - timedelta(minutes=int(m.group(1)))
 
-    m = re.search(r"(\d+)\s*小时前", text)
+    m = re.search(r"(\d+)\s*小时�?, text)
     if m:
         return now - timedelta(hours=int(m.group(1)))
 
@@ -376,7 +376,7 @@ def parse_relative_time_zh(text: str, now: datetime) -> datetime | None:
         minute = int(m.group(2))
         return (now - timedelta(days=1)).replace(hour=hour, minute=minute, second=0, microsecond=0)
 
-    m = re.fullmatch(r"(?:\d{4}年\s*)?(\d{1,2})月(\d{1,2})日", text)
+    m = re.fullmatch(r"(?:\d{4}年\s*)?(\d{1,2})�?\d{1,2})�?, text)
     if m:
         month = int(m.group(1))
         day = int(m.group(2))
@@ -517,19 +517,19 @@ def block_text(block_data: dict[str, Any]) -> str:
 
 
 def clean_update_title(text: str) -> str:
-    text = text.replace("《 》", "").replace("《》", "")
+    text = text.replace("�?�?, "").replace("《�?, "")
     return re.sub(r"\s+", " ", text).strip()
 
 
 def parse_ym_heading(text: str) -> tuple[int, int] | None:
-    m = re.search(r"(20\d{2})\s*年\s*(\d{1,2})\s*月", text)
+    m = re.search(r"(20\d{2})\s*年\s*(\d{1,2})\s*�?, text)
     if not m:
         return None
     return int(m.group(1)), int(m.group(2))
 
 
 def parse_md_heading(text: str) -> tuple[int, int] | None:
-    m = re.search(r"(\d{1,2})\s*月\s*(\d{1,2})\s*日", text)
+    m = re.search(r"(\d{1,2})\s*月\s*(\d{1,2})\s*�?, text)
     if not m:
         return None
     return int(m.group(1)), int(m.group(2))
@@ -563,7 +563,7 @@ def extract_waytoagi_recent_updates_from_block_map(
         if btype not in {"heading1", "heading2", "heading3"}:
             continue
         heading_text = block_text(bd)
-        if "近7日更新日志" in heading_text or "近 7 日更新日志" in heading_text:
+        if "�?日更新日�? in heading_text or "�?7 日更新日�? in heading_text:
             parent_id = str(bd.get("parent_id") or "").strip()
             if parent_id:
                 near_log_parent_ids.add(parent_id)
@@ -674,7 +674,7 @@ def fetch_waytoagi_recent_7d(session: requests.Session, now_utc: datetime, root_
     latest_date = recent[0]["date"] if recent else None
     updates_today = [u for u in recent if u.get("date") == latest_date] if latest_date else []
 
-    warning = "近7日未解析到更新条目" if not recent else None
+    warning = "�?日未解析到更新条�? if not recent else None
     return {
         "generated_at": iso(now_utc),
         "timezone": "Asia/Shanghai",
@@ -1034,11 +1034,11 @@ def fetch_tophub(session: requests.Session, now: datetime) -> list[RawItem]:
     r = session.get("https://tophub.today/", timeout=30)
     r.raise_for_status()
     html = r.content.decode("utf-8", errors="replace")
-    if "�" in html:
+    if "�? in html:
         for enc in ("gb18030", "utf-8"):
             try:
                 candidate = r.content.decode(enc, errors="replace")
-                if candidate.count("�") < html.count("�"):
+                if candidate.count("�?) < html.count("�?):
                     html = candidate
             except Exception:
                 continue
@@ -1108,7 +1108,7 @@ def fetch_zeli(session: requests.Session, now: datetime) -> list[RawItem]:
             RawItem(
                 site_id=site_id,
                 site_name=site_name,
-                source="Hacker News · 24h最热",
+                source="Hacker News · 24h最�?,
                 title=title,
                 url=link,
                 published_at=published,
@@ -1462,7 +1462,7 @@ def is_hubtoday_placeholder_title(title: str) -> bool:
     t = (title or "").strip()
     if not t:
         return True
-    if "详情见官方介绍" in t:
+    if "详情见官方介�? in t:
         return True
     return t in {"原文链接", "查看详情", "点击查看", "详情"}
 
@@ -1539,7 +1539,7 @@ def fetch_ai_hubtoday(session: requests.Session, now: datetime) -> list[RawItem]
             title = fallback_title
         if len(title) < 5 or not href.startswith("http"):
             return
-        if title in {"自媒体账号"} or "source.hubtoday.app" in href or is_hubtoday_generic_anchor_title(title):
+        if title in {"自媒体账�?} or "source.hubtoday.app" in href or is_hubtoday_generic_anchor_title(title):
             return
         key_url = normalize_url(href)
         if key_url in seen_urls:
@@ -1878,7 +1878,7 @@ def collect_all(session: requests.Session, now: datetime) -> tuple[list[RawItem]
         ("buzzing", "Buzzing", fetch_buzzing),
         ("iris", "Info Flow", fetch_iris),
         ("bestblogs", "BestBlogs", fetch_bestblogs),
-        ("tophub", "TopHub", fetch_tophub),
+        # ("tophub", "TopHub", fetch_tophub),  # DISABLED 2026-05-16 - TopHub data not relevant for robotics radar
         ("zeli", "Zeli", fetch_zeli),
         ("aihubtoday", "AI HubToday", fetch_ai_hubtoday),
         ("aibase", "AIbase", fetch_aibase),
@@ -2011,7 +2011,7 @@ def compact_title(text: str, limit: int = 96) -> str:
     s = re.sub(r"\s+", " ", text or "").strip()
     if len(s) <= limit:
         return s
-    return s[: limit - 1].rstrip() + "…"
+    return s[: limit - 1].rstrip() + "�?
 
 
 def parse_telegram_public_items(
@@ -2340,13 +2340,13 @@ AI_KEYWORDS = [
     "prompt",
     "diffusion",
     "agent",
-    "多模态",
-    "大模型",
+    "多模�?,
+    "大模�?,
     "模型",
     "人工智能",
     "机器学习",
     "深度学习",
-    "智能体",
+    "智能�?,
     "算力",
     "推理",
     "微调",
@@ -2365,12 +2365,12 @@ TECH_KEYWORDS = [
     "gpu",
     "cloud",
     "developer",
-    "开源",
-    "技术",
+    "开�?,
+    "技�?,
     "编程",
     "软件",
     "芯片",
-    "机器人",
+    "机器�?,
     "具身",
 ]
 
@@ -2390,14 +2390,14 @@ COMMERCE_NOISE_KEYWORDS = [
     "淘宝",
     "天猫",
     "京东",
-    "拼多多",
+    "拼多�?,
     "券后",
     "热销总榜",
     "促销",
     "优惠",
     "补贴",
     "下单",
-    "首发价",
+    "首发�?,
 ]
 
 EN_SIGNAL_RE = re.compile(
@@ -2410,16 +2410,16 @@ TOPHUB_ALLOW_KEYWORDS = [
     "github",
     "product hunt",
     "v2ex",
-    "少数派",
+    "少数�?,
     "infoq",
-    "36氪",
+    "36�?,
     "机器之心",
-    "量子位",
+    "量子�?,
     "科技",
     "人工智能",
-    "机器人",
+    "机器�?,
     "具身",
-    "开源",
+    "开�?,
 ]
 
 TOPHUB_BLOCK_KEYWORDS = [
@@ -2427,11 +2427,11 @@ TOPHUB_BLOCK_KEYWORDS = [
     "淘宝",
     "天猫",
     "京东",
-    "拼多多",
+    "拼多�?,
     "抖音",
     "快手",
     "微博",
-    "小红书",
+    "小红�?,
 ]
 
 
@@ -2482,7 +2482,7 @@ def compact_public_snippet(text: str, max_chars: int = 240) -> str:
     snippet = redact_public_text(snippet)
     if len(snippet) <= max_chars:
         return snippet
-    return snippet[: max_chars - 1].rstrip() + "…"
+    return snippet[: max_chars - 1].rstrip() + "�?
 
 
 def sender_domain_from_address(raw_sender: str) -> str | None:
@@ -2814,7 +2814,7 @@ def maybe_fetch_x_api_updates(
 def has_mojibake_noise(text: str) -> bool:
     if not text:
         return False
-    return bool(re.search(r"(Ã|Â|â€|æ·|�)", text))
+    return bool(re.search(r"(Ã|Â|â€|æ·|�?", text))
 
 
 def normalize_source_for_display(site_id: str, source: str, url: str) -> str:
@@ -2823,7 +2823,7 @@ def normalize_source_for_display(site_id: str, source: str, url: str) -> str:
         host = host_of_url(url)
         if host.startswith("www."):
             host = host[4:]
-        return host or "未分区"
+        return host or "未分�?
     if site_id == "buzzing" and src.lower() == "buzzing":
         host = host_of_url(url)
         if host.startswith("www."):
@@ -3275,7 +3275,7 @@ def main() -> int:
             "window_days": 7,
             "count_7d": 0,
             "updates_7d": [],
-            "warning": "WaytoAGI 已禁用（DISABLE_WAYTOAGI=1）",
+            "warning": "WaytoAGI 已禁用（DISABLE_WAYTOAGI=1�?,
         }
     else:
         try:
@@ -3289,7 +3289,7 @@ def main() -> int:
                 "window_days": 7,
                 "count_7d": 0,
                 "updates_7d": [],
-                "warning": "WaytoAGI 近7日更新抓取失败",
+                "warning": "WaytoAGI �?日更新抓取失�?,
                 "has_error": True,
                 "error": str(exc),
             }
@@ -3297,7 +3297,7 @@ def main() -> int:
     latest_payload, latest_all_payload = build_latest_payloads(latest_payload)
 
     latest_path.write_text(json.dumps(sanitize_public_payload(latest_payload), ensure_ascii=False, indent=2), encoding="utf-8")
-    # Jack 2026-05-14: 精简版（前端加载用，只保留展示必需字段，471KB→143KB）
+    # Jack 2026-05-14: 精简版（前端加载用，只保留展示必需字段�?71KB�?43KB�?
     MIN_ITEM_FIELDS = ("id", "site_id", "site_name", "source", "title",
                       "title_zh", "title_en", "url", "published_at",
                       "ai_score", "ai_label")
