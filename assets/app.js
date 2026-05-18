@@ -371,27 +371,37 @@ function getFilteredItems() {
   let cutoffMs = null;
   if (state.todayMode) {
     const now = new Date();
+    // Jack 2026-05-18 fix: CST today 9am = UTC yesterday 1am
+    // now.getUTCDate() gives the UTC day (may differ from CST day)
+    // Use getDate() for local CST
+    const cstDate = new Date(now.getTime() + 8 * 3600000); // shift to CST
     const cst9base = new Date(Date.UTC(
-      now.getUTCFullYear(),
-      now.getUTCMonth(),
-      now.getUTCDate() - 1,
+      cstDate.getUTCFullYear(),
+      cstDate.getUTCMonth(),
+      cstDate.getUTCDate(),
       1, 0, 0
     ));
     cutoffMs = cst9base.getTime();
   }
   const filtered = modeItems().filter((item) => {
-    if (state.siteFilter && item.site_id !== state.siteFilter) return false;
-    if (state.categoryFilter) {
-      const itemCat = itemGnCategory(item);
-      if (itemCat !== state.categoryFilter) return false;
+    try {
+      if (state.siteFilter && item.site_id !== state.siteFilter) return false;
+      if (state.categoryFilter) {
+        let itemCat;
+        try { itemCat = itemGnCategory(item); } catch(e) { itemCat = item.source || ''; }
+        if (itemCat !== state.categoryFilter) return false;
+      }
+      if (cutoffMs !== null) {
+        const itemMs = new Date(item.first_seen_at || item.published_at || 0).getTime();
+        if (itemMs < cutoffMs) return false;
+      }
+      if (!q) return true;
+      const hay = `${item.title || ""} ${item.title_zh || ""} ${item.title_en || ""} ${item.site_name || ""} ${item.source || ""}`.toLowerCase();
+      return hay.includes(q);
+    } catch(e) {
+      console.error('[getFilteredItems] item error:', e.message, 'item:', item?.title?.substring(0,30));
+      return false;
     }
-    if (cutoffMs !== null) {
-      const itemMs = new Date(item.first_seen_at || item.published_at || 0).getTime();
-      if (itemMs < cutoffMs) return false;
-    }
-    if (!q) return true;
-    const hay = `${item.title || ""} ${item.title_zh || ""} ${item.title_en || ""} ${item.site_name || ""} ${item.source || ""}`.toLowerCase();
-    return hay.includes(q);
   });
   // Jack 2026-05-15: 五维评分排序
   return sortByScore(filtered, state.sortMode);
@@ -399,14 +409,19 @@ function getFilteredItems() {
 
 // Jack 2026-05-15: 五维评分排序函数
 function sortByScore(items, sortMode) {
-  if (sortMode === 'priority') return items; // 保持原有优先级排序
+  if (sortMode === 'priority') return items;
   return [...items].sort((a, b) => {
-    const scoreA = a[sortMode] !== undefined && a[sortMode] !== null ? a[sortMode] : -1;
-    const scoreB = b[sortMode] !== undefined && b[sortMode] !== null ? b[sortMode] : -1;
-    if (scoreA !== scoreB) return scoreB - scoreA;
-    const pa = gnPriority(itemGnCategory(a) || ''), pb = gnPriority(itemGnCategory(b) || '');
-    if (pa !== pb) return pa - pb;
-    return 0;
+    try {
+      const scoreA = a[sortMode] !== undefined && a[sortMode] !== null ? a[sortMode] : -1;
+      const scoreB = b[sortMode] !== undefined && b[sortMode] !== null ? b[sortMode] : -1;
+      if (scoreA !== scoreB) return scoreB - scoreA;
+      const pa = gnPriority(itemGnCategory(a) || ''), pb = gnPriority(itemGnCategory(b) || '');
+      if (pa !== pb) return pa - pb;
+      return 0;
+    } catch(e) {
+      console.error('[sortByScore] error:', e.message);
+      return 0;
+    }
   });
 }
 
@@ -549,11 +564,19 @@ function renderGroupedBySiteAndSource(items) {
 
 function renderList() {
   const filtered = getFilteredItems();
-  console.log('[RL] itemsAi=' + state.itemsAi.length + ' filtered=' + filtered.length + ' mode=' + state.mode + ' today=' + state.todayMode + ' siteF=' + state.siteFilter + ' catF=' + state.categoryFilter);
-  if (filtered.length > 0) console.log('[RL] OK, first:', filtered[0].title?.substring(0,40));
-  else { console.log('[RL] EMPTY! itemsAi sample:', state.itemsAi[0]?.title?.substring(0,40)); const t = getFilteredItems(); console.log('[RL] getFilteredItems recheck:', t.length); }
+  console.log('[RL] itemsAi=' + state.itemsAi.length + ' filtered=' + filtered.length + ' mode=' + state.mode + ' today=' + state.todayMode + ' siteF=' + state.siteFilter + ' catF=' + state.categoryFilter + ' newsListEl=' + !!newsListEl);
+  if (filtered.length > 0) {
+    console.log('[RL] OK, first:', filtered[0].title?.substring(0,40));
+  } else {
+    console.log('[RL] EMPTY! itemsAi[0]:', state.itemsAi[0]?.title?.substring(0,40));
+    // Show ALL items without date filter for debugging
+    const allItems = modeItems();
+    console.log('[RL] allItems without filter:', allItems.length);
+  }
   resultCountEl.textContent = `${fmtNumber(filtered.length)} 条`;
 
+  // Force clear and rebuild
+  if (!newsListEl) { console.error('[RL] newsListEl is NULL!'); return; }
   newsListEl.innerHTML = "";
 
   if (!filtered.length) {
