@@ -51,16 +51,16 @@ jobs:
         with:
           node-version: '20'
 
-      # Run update_news.py FIRST to generate fresh data, then score the new data
-      - name: Update data
+      # Run opml_to_radar_json.js to collect from our curated OPML feeds
+      - name: Update data from OPML
         run: |
-          echo "Running update_news.py to generate fresh snapshot..."
-          python scripts/update_news.py
+          echo "Running opml_to_radar_json.js to collect from curated feeds..."
+          node scripts/opml_to_radar_json.js
       - name: Inject 5-dimension scores
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          echo "Reading latest-24h-min.json (fresh from update_news.py)..."
+          echo "Reading latest-24h-min.json (fresh from opml_to_radar_json.js)..."
           node scripts/score_injector_gh.js
 
       - name: Commit and push changes
