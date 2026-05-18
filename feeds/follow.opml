@@ -5,61 +5,22 @@
   </head>
   <body>
 
-    <!-- ========== Google News 核心类别 ========== -->
+    <!-- ========== Google News 精准类别 ========== -->
+    <!-- 保留4个强相关，去掉泛robot/robot policy（已被具身/人形覆盖） -->
     <outline text="GN: 人形机器人" title="GN: 人形机器人" type="rss" xmlUrl="https://news.google.com/rss/search?q=humanoid%20robot&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" htmlUrl="https://news.google.com/search?q=humanoid%20robot&amp;tbm=nws" />
-    <outline text="GN: 机器人" title="GN: 机器人" type="rss" xmlUrl="https://news.google.com/rss/search?q=robot&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" htmlUrl="https://news.google.com/search?q=robot&amp;tbm=nws" />
-    <outline text="GN: Physical AI" title="GN: Physical AI" type="rss" xmlUrl="https://news.google.com/rss/search?q=physical%20AI&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" htmlUrl="https://news.google.com/search?q=physical%20AI&amp;tbm=nws" />
-    <outline text="GN: 机器人政策" title="GN: 机器人政策" type="rss" xmlUrl="https://news.google.com/rss/search?q=robot+policy+regulation+China+industry&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" htmlUrl="https://news.google.com/search?q=robot+policy+regulation+China+industry&amp;tbm=nws" />
-    <outline text="GN: 具身智能" title="GN: 具身智能" type="rss" xmlUrl="https://news.google.com/rss/search?q=%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD&amp;hl=zh-CN&amp;gl=CN&amp;ceid=CN:zh-Hans" htmlUrl="https://news.google.com/search?q=%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD&amp;tbm=nws" />
-    <outline text="GN: 脑机接口" title="GN: 脑机接口" type="rss" xmlUrl="https://news.google.com/rss/search?q=brain%20computer%20interface&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" htmlUrl="https://news.google.com/search?q=brain%20computer%20interface&amp;tbm=nws" />
+    <outline text="GN: 具身智能" title="GN: 具身智能" type="rss" xmlUrl="https://news.google.com/rss/search?q=embodied%20intelligence%20OR%20embodied%20AI&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" htmlUrl="https://news.google.com/search?q=embodied%20intelligence&amp;tbm=nws" />
+    <outline text="GN: Physical AI" title="GN: Physical AI" type="rss" xmlUrl="https://news.google.com/rss/search?q=physical%20AI%20robot&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" htmlUrl="https://news.google.com/search?q=physical%20AI&amp;tbm=nws" />
+    <outline text="GN: 脑机接口" title="GN: 脑机接口" type="rss" xmlUrl="https://news.google.com/rss/search?q=brain%20computer%20interface%20human%20robot&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" htmlUrl="https://news.google.com/search?q=brain%20computer%20interface&amp;tbm=nws" />
 
-    <!-- ========== BCI / 脑机接口 ========== -->
-    <outline text="BCI News" title="BCI News" type="rss" xmlUrl="https://r.jina.ai/https://www.bci-news.com" htmlUrl="https://www.bci-news.com" />
-    <outline text="Neurofounders" title="Neurofounders" type="rss" xmlUrl="https://r.jina.ai/https://www.neurofounders.co" htmlUrl="https://www.neurofounders.co" />
-    <outline text="Nature Brain–Machine Interface" title="Nature BCI" type="rss" xmlUrl="https://r.jina.ai/https://www.nature.com/subjects/brain-machine-interface" htmlUrl="https://www.nature.com/subjects/brain-machine-interface" />
-    <outline text="ScienceDaily BCI" title="ScienceDaily BCI" type="rss" xmlUrl="https://r.jina.ai/https://www.sciencedaily.com/news/mind_brain/brain-computer_interfaces/" htmlUrl="https://www.sciencedaily.com/news/mind_brain/brain-computer_interfaces/" />
-    <outline text="Neuroscience News BCI" title="Neuroscience News BCI" type="rss" xmlUrl="https://r.jina.ai/https://neurosciencenews.com/neuroscience-terms/brain-computer-interface/" htmlUrl="https://neurosciencenews.com/neuroscience-terms/brain-computer-interface/" />
-    <outline text="IEEE Brain Initiative" title="IEEE Brain Initiative" type="rss" xmlUrl="https://r.jina.ai/https://brain.ieee.org" htmlUrl="https://brain.ieee.org" />
-    <outline text="Frontiers Neurotechnology" title="Frontiers Neurotechnology" type="rss" xmlUrl="https://r.jina.ai/https://www.frontiersin.org/journals/neurotechnology" htmlUrl="https://www.frontiersin.org/journals/neurotechnology" />
-    <outline text="OpenBCI Blog" title="OpenBCI Blog" type="rss" xmlUrl="https://r.jina.ai/https://openbci.com/community/" htmlUrl="https://openbci.com/community/" />
-    <outline text="Neuralink News" title="Neuralink News" type="rss" xmlUrl="https://r.jina.ai/https://neuralink.com/blog/" htmlUrl="https://neuralink.com/blog/" />
-    <outline text="Synchron News" title="Synchron News" type="rss" xmlUrl="https://r.jina.ai/https://synchron.com/news/" htmlUrl="https://synchron.com/news/" />
-    <outline text="Paradromics News" title="Paradromics News" type="rss" xmlUrl="https://r.jina.ai/https://www.paradromics.com/news" htmlUrl="https://www.paradromics.com/news" />
-    <outline text="Precision Neuroscience Newsroom" title="Precision Neuroscience" type="rss" xmlUrl="https://r.jina.ai/https://precisionneuro.io/newsroom" htmlUrl="https://precisionneuro.io/newsroom" />
-    <outline text="Blackrock Neurotech News" title="Blackrock Neurotech" type="rss" xmlUrl="https://r.jina.ai/https://blackrockneurotech.com/news/" htmlUrl="https://blackrockneurotech.com/news/" />
-    <outline text="BrainGate" title="BrainGate" type="rss" xmlUrl="https://r.jina.ai/https://www.braingate.org" htmlUrl="https://www.braingate.org" />
-    <outline text="IEEE Spectrum Neurotech" title="IEEE Spectrum Neurotech" type="rss" xmlUrl="https://r.jina.ai/https://spectrum.ieee.org/tag/brain-computer-interface" htmlUrl="https://spectrum.ieee.org/tag/brain-computer-interface" />
-    <outline text="Medical Xpress BCI" title="Medical Xpress BCI" type="rss" xmlUrl="https://r.jina.ai/https://medicalxpress.com/tags/brain-computer+interface/" htmlUrl="https://medicalxpress.com/tags/brain-computer+interface/" />
-    <outline text="arXiv BCI Papers" title="arXiv BCI" type="rss" xmlUrl="https://export.arxiv.org/api/query?search_query=ti:%22brain-computer%20interface%22%20OR%20ti:%22BCI%22%20OR%20ti:%22neural%20interface%22&amp;start=0&amp;max_results=30&amp;sortBy=submittedDate&amp;sortOrder=descending" htmlUrl="https://arxiv.org/search/?query=brain-computer+interface&amp;searchtype=all" />
-    <outline text="BCI Society" title="BCI Society" type="rss" xmlUrl="https://r.jina.ai/https://www.bcisociety.org" htmlUrl="https://www.bcisociety.org" />
-    <!-- ========== 泛机器人 / 行业媒体 ========== -->
-    <outline text="The Robot Report" title="The Robot Report" type="rss" xmlUrl="https://www.therobotreport.com/feed/" htmlUrl="https://www.therobotreport.com" />
+    <!-- ========== 学术预印本 ========== -->
+    <outline text="arXiv Robotics (cs.RO)" title="arXiv Robotics" type="rss" xmlUrl="https://export.arxiv.org/rss/cs.RO" htmlUrl="https://arxiv.org/list/cs.RO/recent" />
+    <outline text="arXiv Embodied AI (cs.AI)" title="arXiv Embodied AI" type="rss" xmlUrl="https://export.arxiv.org/rss/cs.AI" htmlUrl="https://arxiv.org/list/cs.AI/recent" />
+
+    <!-- ========== 行业媒体 ========== -->
     <outline text="TechCrunch Robotics" title="TechCrunch Robotics" type="rss" xmlUrl="https://techcrunch.com/category/robotics/feed/" htmlUrl="https://techcrunch.com/category/robotics/" />
-    <outline text="IEEE RAS" title="IEEE RAS" type="rss" xmlUrl="https://r.jina.ai/https://www.ieee-ras.org" htmlUrl="https://www.ieee-ras.org" />
-    <outline text="Science Robotics" title="Science Robotics" type="rss" xmlUrl="https://r.jina.ai/https://www.science.org/journal/scirobotics" htmlUrl="https://www.science.org/journal/scirobotics" />
-    <outline text="NVIDIA Robotics Blog" title="NVIDIA Robotics" type="rss" xmlUrl="https://r.jina.ai/https://blogs.nvidia.com/blog/category/robotics/" htmlUrl="https://blogs.nvidia.com/blog/category/robotics/" />
-    <outline text="Humanoid Guide" title="Humanoid Guide" type="rss" xmlUrl="https://r.jina.ai/https://humanoid.guide" htmlUrl="https://humanoid.guide" />
 
-    <!-- ========== 人形机器人公司博客 ========== -->
-    <outline text="Boston Dynamics News" title="Boston Dynamics" type="rss" xmlUrl="https://bostondynamics.com/feed/" htmlUrl="https://bostondynamics.com/news/" />
-    <outline text="Figure AI News" title="Figure AI" type="rss" xmlUrl="https://r.jina.ai/https://www.figure.ai/news" htmlUrl="https://www.figure.ai/news" />
-    <outline text="Unitree News" title="Unitree" type="rss" xmlUrl="https://r.jina.ai/https://www.unitree.com/news/" htmlUrl="https://www.unitree.com/news/" />
-    <outline text="Agility Robotics Blog" title="Agility Robotics" type="rss" xmlUrl="https://r.jina.ai/https://agilityrobotics.com/blog/" htmlUrl="https://agilityrobotics.com/blog/" />
-    <outline text="1X Technologies Blog" title="1X Technologies" type="rss" xmlUrl="https://r.jina.ai/https://www.1x.tech/blog" htmlUrl="https://www.1x.tech/blog" />
-    <outline text="Apptronik News" title="Apptronik" type="rss" xmlUrl="https://r.jina.ai/https://apptronik.com/news/" htmlUrl="https://apptronik.com/news/" />
-    <outline text="Fanuc America News" title="Fanuc America" type="rss" xmlUrl="https://r.jina.ai/https://www.fanucamerica.com/news-resources/articles" htmlUrl="https://www.fanucamerica.com/news-resources/articles" />
-    <outline text="KUKA Press News" title="KUKA" type="rss" xmlUrl="https://r.jina.ai/https://www.kuka.com/en-de/company/press/news" htmlUrl="https://www.kuka.com/en-de/company/press/news" />
-    <outline text="ABB Robotics News" title="ABB Robotics" type="rss" xmlUrl="https://r.jina.ai/https://www.abb.com/robotics/news-media" htmlUrl="https://www.abb.com/robotics/news-media" />
-    <outline text="Yaskawa News" title="Yaskawa" type="rss" xmlUrl="https://r.jina.ai/https://www.yaskawa-global.com/news-events" htmlUrl="https://www.yaskawa-global.com/news-events" />
     <!-- ========== 国内媒体 ========== -->
-    <outline text="晚点" title="晚点" type="rss" xmlUrl="https://r.jina.ai/https://www.latepost.com/" htmlUrl="https://www.latepost.com/" />
-    <!-- ========== 学术顶会/预印本 ========== -->
-    <outline text="arXiv Robotics (cs.RO)" title="arXiv Robotics" type="rss" xmlUrl="https://export.arxiv.org/api/query?search_query=cat:cs.RO&amp;start=0&amp;max_results=50&amp;sortBy=submittedDate&amp;sortOrder=descending" htmlUrl="https://arxiv.org/list/cs.RO/recent" />
-    <outline text="arXiv Robot Perception (cs.CV robot)" title="arXiv Robot Perception" type="rss" xmlUrl="https://export.arxiv.org/api/query?search_query=cat:cs.CV+AND+robot&amp;start=0&amp;max_results=30&amp;sortBy=submittedDate&amp;sortOrder=descending" htmlUrl="https://arxiv.org/list/cs.CV/recent" />
-
-    <!-- ========== 融资/创业媒体 ========== -->
     <outline text="36氪" title="36氪" type="rss" xmlUrl="https://36kr.com/feed" htmlUrl="https://36kr.com/" />
-    <outline text="创业邦(cyzone)" title="创业邦" type="rss" xmlUrl="https://news.google.com/rss/search?q=%E5%88%9B%E4%B8%9A%E9%82%A6&amp;hl=zh-CN&amp;gl=CN&amp;ceid=CN:zh-Hans" htmlUrl="https://www.cyzone.cn/" />
 
   </body>
 </opml>
