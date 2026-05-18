@@ -32,54 +32,8 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Prepare OPML
-        run: |
-          mkdir -p feeds
-          if [ -f feeds/follow.opml ]; then
-            echo "Using local feeds/follow.opml from repo"
-            GN_COUNT=$(grep -c "news.google.com" feeds/follow.opml || echo "0")
-            echo "OPML validation: $GN_COUNT GN sources found"
-          elif [ -f feeds/follow.example.opml ]; then
-            cp feeds/follow.example.opml feeds/follow.opml
-            echo "WARNING: Using example OPML - no custom feeds configured"
-          else
-            echo "ERROR: No OPML file available"
-          fi
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-
-      # Run opml_to_radar_json.js to collect from our curated OPML feeds
-      - name: Update data from OPML
-        run: |
-          echo "Running opml_to_radar_json.js to collect from curated feeds..."
-          node scripts/opml_to_radar_json.js
-      - name: Inject 5-dimension scores
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          echo "Reading latest-24h-min.json (fresh from opml_to_radar_json.js)..."
-          node scripts/score_injector_gh.js
-
-      - name: Commit and push changes
-        env:
-          EMAIL_DIGEST_PUBLISH: ${{ secrets.EMAIL_DIGEST_PUBLISH || vars.EMAIL_DIGEST_PUBLISH }}
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/latest-24h.json data/latest-24h-all.json data/latest-24h-min.json data/archive.json data/source-status.json data/waytoagi-7d.json data/title-zh-cache.json
-          if [ -f data/email-digest.json ] && [ "$EMAIL_DIGEST_PUBLISH" = "1" ]; then
-            git add data/email-digest.json
-          fi
-          if git diff --cached --quiet; then
-            echo "No changes to commit"
-          else
-            git commit -m "chore: update ai news snapshot"
-            git push
-          fi
-
+      # Steps for data collection removed — data is now managed by local pipeline.
+      # This workflow only deploys the existing data/ directory to GitHub Pages.
       - name: Setup Pages
         uses: actions/configure-pages@v5
         with:
