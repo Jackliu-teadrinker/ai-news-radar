@@ -91,7 +91,7 @@ const GN_CATEGORIES = [
 
 // Jack 2026-05-18: map ai_label values to GN category IDs
 const AI_LABEL_TO_GN = {
-  "robotics":       "GN: 机器人",
+  "robotics":       "GN: Physical AI",
   "humanoid":       "GN: 人形机器人",
   "embodied_ai":    "GN: 具身智能",
   "brain_computer": "GN: 脑机接口",
