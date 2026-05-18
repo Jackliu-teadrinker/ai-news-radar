@@ -266,7 +266,14 @@ function computeSiteStats(items) {
 }
 
 function currentSiteStats() {
-  if (state.mode === "ai") return state.statsAi || [];
+  if (state.mode === "ai") {
+    const s = state.statsAi;
+    // statsAi should be an array; if it's an object or empty, compute from items
+    if (!Array.isArray(s) || s.length === 0) {
+      return computeSiteStats(state.itemsAi || []);
+    }
+    return s;
+  }
   return computeSiteStats(state.allDedup ? (state.itemsAll || []) : (state.itemsAllRaw || []));
 }
 
@@ -274,7 +281,9 @@ function renderSiteFilters() {
   const stats = currentSiteStats();
 
   siteSelectEl.innerHTML = '<option value="">全部站点</option>';
-  stats.forEach((s) => {
+  // Defensive: ensure stats is always an array
+  const safeStats = Array.isArray(stats) ? stats : [];
+  safeStats.forEach((s) => {
     const opt = document.createElement("option");
     opt.value = s.site_id;
     const raw = s.raw_count ?? s.count;
