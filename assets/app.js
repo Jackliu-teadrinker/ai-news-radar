@@ -89,6 +89,16 @@ const GN_CATEGORIES = [
   { id: "商业",           label: "商业" },
 ];
 
+// Jack 2026-05-18: map ai_label values to GN category IDs
+const AI_LABEL_TO_GN = {
+  "robotics":       "GN: 机器人",
+  "humanoid":       "GN: 人形机器人",
+  "embodied_ai":    "GN: 具身智能",
+  "brain_computer": "GN: 脑机接口",
+  "physical_ai":    "GN: Physical AI",
+  // Also support matching the category ID directly as ai_label
+};
+
 // Jack 2026-05-15: map raw source names to canonical category IDs
 const SOURCE_TO_CATEGORY = {
   "36氪":   "商业",
@@ -97,6 +107,14 @@ const SOURCE_TO_CATEGORY = {
 
 function normalizeSourceCategory(source) {
   return SOURCE_TO_CATEGORY[source] || source;
+}
+
+// Jack 2026-05-18: return the GN category for an item (checks ai_label first, then source)
+function itemGnCategory(item) {
+  const labelGn = AI_LABEL_TO_GN[item.ai_label];
+  if (labelGn) return labelGn;
+  if (Object.values(AI_LABEL_TO_GN).includes(item.ai_label)) return item.ai_label;
+  return normalizeSourceCategory(item.source);
 }
 
 function gnPriority(source) {
@@ -363,7 +381,10 @@ function getFilteredItems() {
   }
   const filtered = modeItems().filter((item) => {
     if (state.siteFilter && item.site_id !== state.siteFilter) return false;
-    if (state.categoryFilter && normalizeSourceCategory(item.source) !== state.categoryFilter) return false;
+    if (state.categoryFilter) {
+      const itemCat = itemGnCategory(item);
+      if (itemCat !== state.categoryFilter) return false;
+    }
     if (cutoffMs !== null) {
       const itemMs = new Date(item.first_seen_at || item.published_at || 0).getTime();
       if (itemMs < cutoffMs) return false;
@@ -383,7 +404,7 @@ function sortByScore(items, sortMode) {
     const scoreA = a[sortMode] !== undefined && a[sortMode] !== null ? a[sortMode] : -1;
     const scoreB = b[sortMode] !== undefined && b[sortMode] !== null ? b[sortMode] : -1;
     if (scoreA !== scoreB) return scoreB - scoreA;
-    const pa = gnPriority(a.source || ''), pb = gnPriority(b.source || '');
+    const pa = gnPriority(itemGnCategory(a) || ''), pb = gnPriority(itemGnCategory(b) || '');
     if (pa !== pb) return pa - pb;
     return 0;
   });
@@ -396,7 +417,7 @@ function renderItemNode(item) {
   const categoryEl = node.querySelector(".category");
   categoryEl.textContent = kind.label;
   categoryEl.classList.add(`kind-${kind.tone}`);
-  node.querySelector(".source").textContent = `分区: ${normalizeSourceCategory(item.source)}`;
+  node.querySelector(".source").textContent = `分区: ${itemGnCategory(item)}`;
   node.querySelector(".time").textContent = fmtTime(item.published_at || item.first_seen_at);
 
   // Jack 2026-05-15: 五维评分 badge
