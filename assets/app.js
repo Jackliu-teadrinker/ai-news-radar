@@ -468,7 +468,7 @@ function buildSourceGroupNode(source, items) {
   listEl.className = "source-group-list";
   header.append(title, count);
   section.append(header, listEl);
-  items.forEach((item) => listEl.appendChild(renderItemNode(item)));
+  items.forEach((item) => { try { listEl.appendChild(renderItemNode(item)); } catch(e) { console.error('[BSGN] error:', e.message, 'item:', item?.title?.substring(0,30)); } });
   return section;
 }
 
@@ -483,9 +483,11 @@ function groupBySource(items) {
   });
 
   return Array.from(groupMap.entries()).sort((a, b) => {
-    const pa = gnPriority(a[0]), pb = gnPriority(b[0]);
-    if (pa !== pb) return pa - pb;
-    return b[1].length - a[1].length;
+    try {
+      const pa = gnPriority(a[0]), pb = gnPriority(b[0]);
+      if (pa !== pb) return pa - pb;
+      return b[1].length - a[1].length;
+    } catch(e) { console.error('sort error:', e.message); return 0; }
   });
 }
 
@@ -547,6 +549,9 @@ function renderGroupedBySiteAndSource(items) {
 
 function renderList() {
   const filtered = getFilteredItems();
+  console.log('[RL] itemsAi=' + state.itemsAi.length + ' filtered=' + filtered.length + ' mode=' + state.mode + ' today=' + state.todayMode + ' siteF=' + state.siteFilter + ' catF=' + state.categoryFilter);
+  if (filtered.length > 0) console.log('[RL] OK, first:', filtered[0].title?.substring(0,40));
+  else { console.log('[RL] EMPTY! itemsAi sample:', state.itemsAi[0]?.title?.substring(0,40)); const t = getFilteredItems(); console.log('[RL] getFilteredItems recheck:', t.length); }
   resultCountEl.textContent = `${fmtNumber(filtered.length)} 条`;
 
   newsListEl.innerHTML = "";
@@ -784,6 +789,7 @@ async function init() {
   if (newsResult.status === "fulfilled") {
     const payload = newsResult.value;
     state.itemsAi = payload.items_ai || payload.items || [];
+    console.log('[INIT] itemsAi set: ' + state.itemsAi.length + ' items_ai: ' + (payload.items_ai||[]).length + ' items: ' + (payload.items||[]).length);
     state.itemsAllRaw = payload.items_all_raw || payload.items_all || [];
     state.itemsAll = payload.items_all || [];
     state.statsAi = payload.site_stats || [];
