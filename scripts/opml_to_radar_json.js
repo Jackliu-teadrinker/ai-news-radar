@@ -3,7 +3,7 @@
  * Reads feeds/follow.opml → fetches each feed via curl → outputs data/latest-24h-min.json
  * in the same schema as update_news.py so score_injector_gh.js can process it.
  * 
- * Run from repo root: node scripts/opml_to_radar_json.js
+ * Bilingual titles: title_en (original) + title_zh (Chinese translation via MyMemory API)
  */
 
 const { spawn } = require('child_process');
@@ -28,83 +28,148 @@ const SITE_NAME_MAP = {
   'GN: 具身智能': 'Google News (Embodied AI)',
   'GN: 脑机接口': 'Google News (BCI)',
   'GN: Physical AI': 'Google News (Physical AI)',
-  'arXiv Robotics': 'arXiv cs.RO',
-  'arXiv Embodied AI': 'arXiv cs.AI',
+  'arXiv Robotics': 'arXiv Robotics (cs.RO)',
+  'arXiv Embodied AI': 'arXiv Embodied AI (cs.AI)',
   'TechCrunch Robotics': 'TechCrunch Robotics',
-  '36kr': '36kr',
+  '36kr': '36Kr',
 };
 
-function decodeHtmlEntity(str) {
-  return str.replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&#39;/g, "'");
+// Sources that provide Chinese titles natively (no translation needed)
+const CHINESE_SOURCES = new Set(['36kr', '36Kr']);
+
+/**
+ * Translate text to Chinese using MyMemory free API.
+ * Returns Chinese translation or null on failure.
+ * Batches up to 5 titles per API call using langpair format.
+ */
+async function translateToChinese(texts) {
+  if (!texts || texts.length === 0) return texts.map(() => null);
+
+  const proxyArgs = PROXY ? ['-x', PROXY] : [];
+  const textsToTranslate = texts.filter(t => t && t.length > 0 && t.length < 500);
+  const results = new Array(texts.length).fill(null);
+
+  // Fill in non-translatable slots
+  texts.forEach((t, i) => {
+    if (!t || t.length === 0 || t.length >= 500) results[i] = t;
+  });
+
+  // Translate in batches of 5
+  const translatable = textsToTranslate.map((t, i) => ({ original: t, origIdx: texts.findIndex(ot => ot === t && ot === textsToTranslate[i]) })).filter(x => x.origIdx >= 0);
+
+  for (let i = 0; i < translatable.length; i += 5) {
+    const batch = translatable.slice(i, i + 5);
+    const q = batch.map(t => t.original).join(' | ');
+    const url = `https://api.mymemory.translated.net/get?q=${encodeURIComponent(q)}&langpair=en%7Czh-CN`;
+
+    try {
+      const args = [...proxyArgs, '-s', '-m', '5', '-o', '/dev/null', '-w', '%{http_code}', url];
+      const proc = spawn('curl.exe', args);
+      let output = '';
+      proc.stdout.on('data', d => output += d);
+
+      const code = await new Promise(resolve => {
+        proc.on('close', c => resolve(c));
+        setTimeout(() => { proc.kill(); resolve(999); }, 8000);
+      });
+
+      // Alternative: use curl to fetch and extract response directly
+      const fetchArgs = [...proxyArgs, '-s', url];
+      const fetchProc = spawn('curl.exe', fetchArgs);
+      let response = '';
+      fetchProc.stdout.on('data', d => response += d);
+
+      const respCode = await new Promise(resolve => {
+        fetchProc.on('close', c => resolve(c));
+        setTimeout(() => { fetchProc.kill(); resolve(999); }, 8000);
+      });
+
+      if (respCode === 200 && response.length > 10) {
+        try {
+          const parsed = JSON.parse(response);
+          const translatedText = parsed?.responseData?.translatedText;
+          if (translatedText) {
+            const parts = translatedText.split(' | ');
+            batch.forEach((item, bi) => {
+              if (results[item.origIdx] === null) {
+                results[item.origIdx] = parts[bi]?.trim() || texts[item.origIdx];
+              }
+            });
+          }
+        } catch(e) {
+          // JSON parse failed, try splitting by |
+          const parts = response.split(' | ');
+          batch.forEach((item, bi) => {
+            if (results[item.origIdx] === null && parts[bi]) {
+              results[item.origIdx] = parts[bi].trim();
+            }
+          });
+        }
+      }
+    } catch(e) {
+      // Translation failed, keep original title
+    }
+
+    // Rate limit: wait between batches
+    if (i + 5 < translatable.length) await new Promise(r => setTimeout(r, 500));
+  }
+
+  return results;
 }
+
+// ── Expose translateToChinese so opml_rss_collector.js can reuse it ──
+module.exports = { translateToChinese };
+
+/* ─── Rest of script (standalone mode) ─── */
 
 function parseOPML(xml) {
   const feeds = [];
-  const outlineRe = /<outline([^>]+)>/gi;
+  const re = /<outline[^>]+text="([^"]*)"[^>]+xmlUrl="([^"]*)"[^>]*>/g;
   let m;
-  while ((m = outlineRe.exec(xml)) !== null) {
-    const attrs = m[1];
-    const xmlUrlM = /xmlUrl="([^"]+)"/.exec(attrs);
-    const titleM = /title="([^"]+)"/.exec(attrs);
-    const textM = /text="([^"]+)"/.exec(attrs);
-    if (!xmlUrlM) continue;
-    const url = decodeHtmlEntity(xmlUrlM[1]);
-    const title = decodeHtmlEntity(titleM ? titleM[1] : (textM ? textM[1] : '未知'));
-    const text = decodeHtmlEntity(textM ? textM[1] : title);
-    feeds.push({ url, title, text });
+  while ((m = re.exec(xml)) !== null) {
+    feeds.push({ title: m[1], url: m[2] });
+  }
+  // Also handle outline with title attr
+  const re2 = /<outline[^>]+title="([^"]*)"[^>]+xmlUrl="([^"]*)"[^>]*>/g;
+  while ((m = re2.exec(xml)) !== null) {
+    if (!feeds.find(f => f.url === m[2])) feeds.push({ title: m[1], url: m[2] });
   }
   return feeds;
 }
 
 function curlFetch(url) {
   return new Promise((resolve) => {
-    const curlCmd = process.platform === 'win32' ? 'curl.exe' : 'curl';
-    const args = ['--connect-timeout', '12', '-L', '-s', url];
-    if (PROXY) {
-      if (process.platform === 'win32') {
-        args.unshift('-x', PROXY);
-      } else {
-        args.unshift('--proxy', PROXY);
-      }
-    }
-    const child = spawn(curlCmd, args, { windowsHide: true, stdio: ['ignore', 'pipe', 'pipe'] });
-    let d = '';
-    const timer = setTimeout(() => { child.kill(); resolve(''); }, 20000);
-    child.stdout.on('data', (c) => { d += c; });
-    child.on('error', () => { clearTimeout(timer); resolve(''); });
-    child.on('close', () => { clearTimeout(timer); resolve(d); });
+    const proxyArgs = PROXY ? ['-x', PROXY] : [];
+    const args = [...proxyArgs, '-s', '-L', '--max-time', '20', '-o', '-', url];
+    const proc = spawn('curl.exe', args);
+    let data = '';
+    proc.stdout.on('data', d => data += d);
+    proc.on('close', () => resolve(data));
+    proc.on('error', () => resolve(''));
+    setTimeout(() => { proc.kill(); resolve(''); }, 25000);
   });
 }
 
 function parseRSS(xml, source) {
-  if (!xml || xml.length < 50) return [];
   const items = [];
-  const itemRe = /<item>([\s\S]*?)<\/item>/gi;
-  let m;
-  while ((m = itemRe.exec(xml)) !== null) {
-    const b = m[1];
-    function get(tag) {
-      const re = new RegExp('<' + tag + '[^>]*>([\\s\\S]*?)<\\/' + tag + '>', 'i');
-      const m2 = b.match(re);
+  const itemMatches = xml.matchAll(/<item>([\s\S]*?)<\/item>/g);
+  for (const match of itemMatches) {
+    const itemXml = match[1];
+    const get = (tag) => {
+      const m = itemXml.match(new RegExp(`<${tag}[^>]*><!\[CDATA\[([\s\S]*?)\]\]><\/${tag}>`));
+      if (m) return m[1].trim();
+      const m2 = itemXml.match(new RegExp(`<${tag}[^>]*>([\s\S]*?)<\/${tag}>`));
       return m2 ? m2[1].replace(/<[^>]+>/g, '').trim() : '';
-    }
-    const title = decodeHtmlEntity(get('title'));
-    const link = decodeHtmlEntity(get('link') || get('guid'));
-    const desc = decodeHtmlEntity(get('description') || get('summary') || get('content'));
-    let pubDate = get('pubDate') || get('dc:date') || get('published');
-    // Parse date
-    let published_at = null;
-    if (pubDate) {
-      try {
-        const d = new Date(pubDate);
-        if (!isNaN(d)) published_at = d.toISOString();
-      } catch(e) {}
+    };
+    const title = get('title');
+    const link = get('link');
+    let published_at = '';
+    const pubMatch = itemXml.match(/<pubDate>([\s\S]*?)<\/pubDate>/);
+    if (pubMatch) {
+      try { published_at = new Date(pubMatch[1]).toISOString(); } catch(e) {}
     }
     if (!title || title.length < 6 || !link) continue;
-
-    // Generate stable id from link
     const id = crypto.createHash('sha1').update(link).digest('hex').substring(0, 32);
-
     const siteName = SITE_NAME_MAP[source] || source;
     const aiLabel = GN_LABEL_MAP[source] || 'robotics';
 
@@ -118,8 +183,8 @@ function parseRSS(xml, source) {
       published_at: published_at || new Date().toISOString(),
       ai_score: 0.5,
       ai_label: aiLabel,
-      title_en: null,
-      title_zh: title,
+      title_en: title,  // Store original English title
+      title_zh: null,  // Will be translated after collection
       relevance: 20,
       authority: 15,
       depth: 10,
@@ -134,7 +199,6 @@ function parseRSS(xml, source) {
 async function fetchFeed(feed) {
   const xml = await curlFetch(feed.url);
   if (!xml || xml.length < 100) return [];
-  // Detect if it's HTML (failed fetch)
   if (xml.trim().startsWith('<!') || xml.trim().startsWith('<html')) return [];
   const items = parseRSS(xml, feed.text || feed.title);
   return items;
@@ -144,7 +208,6 @@ async function run() {
   const opmlPath = path.join(__dirname, '..', 'feeds', 'follow.opml');
   const opmlXml = fs.readFileSync(opmlPath, 'utf8');
   const feeds = parseOPML(opmlXml);
-
   console.log(`OPML: ${feeds.length} feeds found`);
 
   const allItems = [];
@@ -159,38 +222,56 @@ async function run() {
     if (i + batchSize < feeds.length) await new Promise(r => setTimeout(r, 1000));
   }
 
+  console.log(`Collected ${allItems.length} raw items`);
+  fs.writeFileSync(path.join(__dirname, '..', 'data', `raw_${Date.now()}.json`), JSON.stringify(allItems, null, 2));
+
+  // ── Translate non-Chinese titles ──
+  console.log('Translating titles to Chinese...');
+  const nonZhSources = Object.keys(SITE_NAME_MAP).filter(s => !CHINESE_SOURCES.has(s));
+  const translateItems = allItems.filter(item => nonZhSources.some(s => item.site_name?.includes(SITE_NAME_MAP[s] || s)));
+
+  // Batch translate in groups of 5
+  const BATCH = 5;
+  let translated = 0;
+  for (let i = 0; i < translateItems.length; i += BATCH) {
+    const batch = translateItems.slice(i, i + BATCH);
+    const titles = batch.map(item => item.title);
+    const zhTitles = await translateToChinese(titles);
+    batch.forEach((item, bi) => {
+      item.title_zh = zhTitles[bi] || item.title;
+    });
+    translated += batch.length;
+    process.stdout.write(`\r  Translated ${translated}/${translateItems.length}...`);
+    if (i + BATCH < translateItems.length) await new Promise(r => setTimeout(r, 600));
+  }
+  console.log(`\nDone translating ${translated} titles`);
+
   // Deduplicate by id
   const seen = new Set();
-  const deduped = [];
-  for (const item of allItems) {
-    if (!seen.has(item.id)) {
-      seen.add(item.id);
-      deduped.push(item);
-    }
-  }
+  const deduped = allItems.filter(item => {
+    if (seen.has(item.id)) return false;
+    seen.add(item.id);
+    return true;
+  });
+  console.log(`Deduplicated: ${allItems.length} → ${deduped.length}`);
 
-  console.log(`Total items: ${allItems.length}, deduped: ${deduped.length}`);
-
-  const output = {
+  const result = {
     generated_at: new Date().toISOString(),
     window_hours: 24,
     total_items: deduped.length,
     total_items_ai_raw: deduped.length,
     total_items_raw: deduped.length,
     total_items_all_mode: deduped.length,
-    topic_filter: 'robotics embodied humanoid BCI physical_ai',
-    ai_relevance_threshold: 0.3,
-    archive_total: 16460,
-    site_count: feeds.length,
-    source_count: feeds.length,
+    site_count: new Set(deduped.map(i => i.site_id)).size,
+    source_count: new Set(deduped.map(i => i.source)).size,
     site_stats: {},
     items: deduped,
     items_ai: deduped,
   };
 
   const outPath = path.join(__dirname, '..', 'data', 'latest-24h-min.json');
-  fs.writeFileSync(outPath, JSON.stringify(output, null, 2), 'utf8');
-  console.log(`Written: ${outPath} (${deduped.length} items)`);
+  fs.writeFileSync(outPath, JSON.stringify(result));
+  console.log(`Written ${deduped.length} items to ${outPath}`);
 }
 
-run().catch(e => { console.error(e); process.exit(1); });
+run().catch(console.error);

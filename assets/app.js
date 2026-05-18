@@ -461,19 +461,21 @@ function renderItemNode(item) {
   }
 
   const titleEl = node.querySelector(".title");
+  const original = (item.title || "").trim();
   const zh = (item.title_zh || "").trim();
-  const en = (item.title_en || "").trim();
   titleEl.textContent = "";
-  if (zh && en && zh !== en) {
+  // Bilingual: show Chinese translation + original English as subtitle
+  // When title_zh is a genuine Chinese translation different from title
+  if (zh && original && zh !== original) {
     const primary = document.createElement("span");
     primary.textContent = zh;
     const sub = document.createElement("span");
     sub.className = "title-sub";
-    sub.textContent = en;
+    sub.textContent = original;
     titleEl.appendChild(primary);
     titleEl.appendChild(sub);
   } else {
-    titleEl.textContent = item.title || zh || en;
+    titleEl.textContent = original;
   }
   titleEl.href = item.url;
   return node;
