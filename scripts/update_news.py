@@ -231,6 +231,63 @@ def timeliness_score(published_at: str | None, now_ts: float) -> float:
     except Exception:
         return 0.0
 
+
+def is_english(title: str) -> bool:
+    """Returns True if title is predominantly English (fewer than 20% Chinese chars)."""
+    chinese = len(re.findall(r'[\u4e00-\u9fff]', title))
+    total = len(title.strip())
+    return total > 0 and chinese / total < 0.2
+
+def translate_text(text: str, target: str = 'zh') -> str:
+    """Translate text using Google Translate API (free, no key required)."""
+    if not text or not text.strip():
+        return text
+    url = 'https://translate.googleapis.com/translate_a/single'
+    params = {
+        'client': 'gtx', 'sl': 'auto', 'tl': target,
+        'dt': 't', 'q': text
+    }
+    try:
+        r = requests.get(url, params=params, timeout=8)
+        if r.status_code != 200:
+            return ''
+        data = r.json()
+        return ''.join(item[0] for item in data[0] if item[0])
+    except Exception:
+        return ''
+
+def translate_batch(texts: list[str], target: str = 'zh', max_workers: int = 8) -> dict[str, str]:
+    """Translate multiple texts concurrently using Google Translate.
+    Returns dict mapping original text to translated text.
+    """
+    if not texts:
+        return {}
+    # Deduplicate while preserving order
+    seen = set()
+    unique = []
+    for t in texts:
+        if t and t not in seen:
+            seen.add(t)
+            unique.append(t)
+
+    results = {}
+    from concurrent.futures import ThreadPoolExecutor, as_completed
+
+    def _translate(text):
+        return text, translate_text(text, target)
+
+    with ThreadPoolExecutor(max_workers=max_workers) as executor:
+        futures = {executor.submit(_translate, t): t for t in unique}
+        for future in as_completed(futures):
+            try:
+                orig, trans = future.result(timeout=15)
+                results[orig] = trans
+            except Exception:
+                orig = futures[future]
+                results[orig] = orig  # fallback to original
+
+    return results
+
 def score_item(item: dict, now_ts: float) -> dict:
     title = item['title']
     desc = item.get('description', '')
@@ -245,6 +302,7 @@ def score_item(item: dict, now_ts: float) -> dict:
     return {
         'id': item_id(title, item['url']),
         'title': title,
+        'title_zh': item.get('title_zh', ''),
         'url': item['url'],
         'published_at': item['published_at'],
         'category': source,
@@ -411,6 +469,15 @@ def run(output_dir: str, window_hours: int, opml_path: str, archive_days: int, w
     print(f"[INFO] Sorted by date (newest first)")
 
     # Score
+    # Pre-translate English titles
+    english_titles = [item['title'] for item in clean_items if is_english(item['title'])]
+    if english_titles:
+        print(f"[INFO] Translating {len(english_titles)} English titles...")
+        trans_map = translate_batch(english_titles)
+        for item in clean_items:
+            if item['title'] in trans_map:
+                item['title_zh'] = trans_map[item['title']]
+
     scored = [score_item(item, now_ts) for item in clean_items]
     scored.sort(key=lambda x: x['total_score'], reverse=True)
     print(f"[INFO] Scored: {len(scored)}")
