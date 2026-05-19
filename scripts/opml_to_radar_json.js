@@ -46,28 +46,39 @@ const OPML_DIR = path.join(__dirname, '..', 'feeds');
 const MIN_FILE = path.join(DATA_DIR, 'latest-24h-min.json');
 
 const GN_LABEL_MAP = {
-  'GN: 人形机器人': 'humanoid',
-  'GN: 具身智能': 'embodied_ai',
-  'GN: 脑机接口': 'brain_computer',
-  'GN: Physical AI': 'physical_ai',
-  'arXiv Robotics': 'robotics',
+  'GN: 人形机器人':    'humanoid',
+  'GN: 人形机器人-ZH': 'humanoid',
+  'GN: 具身智能':      'embodied_ai',
+  'GN: 具身智能-ZH':   'embodied_ai',
+  'GN: Physical AI':   'physical_ai',
+  'GN: 脑机接口':      'brain_computer',
+  'GN: 脑机接口-ZH':   'brain_computer',
+  'arXiv Robotics':    'robotics',
   'arXiv Embodied AI': 'robotics',
   'TechCrunch Robotics': 'robotics',
-  '36kr': 'robotics',
+  '36kr':             'robotics',
+  '36Kr':             'robotics',
 };
 
 const SITE_NAME_MAP = {
-  'GN: 人形机器人': 'Google News (Humanoid Robot)',
-  'GN: 具身智能': 'Google News (Embodied AI)',
-  'GN: 脑机接口': 'Google News (BCI)',
-  'GN: Physical AI': 'Google News (Physical AI)',
-  'arXiv Robotics': 'arXiv Robotics (cs.RO)',
+  'GN: 人形机器人':    'Google News (Humanoid Robot)',
+  'GN: 人形机器人-ZH': 'Google News (人形机器人)',
+  'GN: 具身智能':      'Google News (Embodied AI)',
+  'GN: 具身智能-ZH':   'Google News (具身智能)',
+  'GN: Physical AI':   'Google News (Physical AI)',
+  'GN: 脑机接口':      'Google News (BCI)',
+  'GN: 脑机接口-ZH':   'Google News (脑机接口)',
+  'arXiv Robotics':    'arXiv Robotics (cs.RO)',
   'arXiv Embodied AI': 'arXiv Embodied AI (cs.AI)',
   'TechCrunch Robotics': 'TechCrunch Robotics',
-  '36kr': '36Kr',
+  '36kr':             '36Kr',
+  '36Kr':             '36Kr',
 };
 
-const CHINESE_SOURCES = new Set(['36kr', '36Kr']);
+const CHINESE_SOURCES = new Set([
+  '36kr', '36Kr',
+  'GN: 人形机器人-ZH', 'GN: 具身智能-ZH', 'GN: 脑机接口-ZH',
+]);
 
 // ── 增量相关常量 ──
 const WINDOW_MS = 24 * 3600 * 1000;

@@ -10,15 +10,15 @@ const DATA_DIR = path.join(__dirname, '..', 'data');
 const MIN24H   = path.join(DATA_DIR, 'latest-24h-min.json');
 
 const AI_LABEL_TO_GN = {
-  robotics:       'GN: Physical AI',
   humanoid:       'GN: 人形机器人',
   embodied_ai:    'GN: 具身智能',
   brain_computer: 'GN: 脑机接口',
   physical_ai:    'GN: Physical AI',
+  robotics:       'GN: Physical AI',
 };
 
 const GN_KEYWORD_MAP = [
-  { gn: 'GN: 人形机器人', kw: ['人形机器人','humanoid','双足机器人','unitree','宇树','傅利叶','智元','星动纪元','逐际','松延','Figure AI','figure ai'] },
+  { gn: 'GN: 人形机器人', kw: ['人形机器人','humanoid','双足机器人','unitree','宇树','傅利叶','智元机器人','星动纪元','逐际','松延','Figure AI','figure ai'] },
   { gn: 'GN: 具身智能',   kw: ['具身智能','具身AI','embodied','VLA','世界模型','物理AI','physical ai','manipulation','灵巧手'] },
   { gn: 'GN: 脑机接口',   kw: ['脑机接口','brain-computer','neuralink','Neuralink','脑电','Synchron','BrainGate'] },
   { gn: 'GN: 机器人',     kw: ['robot','robots','机器人','机械臂','四足','cobot','service robot','industrial robot'] },
