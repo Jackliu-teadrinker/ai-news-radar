@@ -1,18 +1,39 @@
 {
-  "generated_at": "2026-05-19T20:28:23.458697+00:00",
+  "generated_at": "2026-05-19T21:54:26.026980+00:00",
   "feeds": [
     {
       "feed": "GN: 脑机接口",
       "success": true,
-      "items_total": 6,
-      "items_unique": 6,
+      "items_total": 7,
+      "items_unique": 7,
+      "error": null
+    },
+    {
+      "feed": "国外机器人资讯",
+      "success": true,
+      "items_total": 100,
+      "items_unique": 100,
+      "error": null
+    },
+    {
+      "feed": "GN: Physical AI",
+      "success": true,
+      "items_total": 100,
+      "items_unique": 98,
+      "error": null
+    },
+    {
+      "feed": "GN: embodied intelligence",
+      "success": true,
+      "items_total": 100,
+      "items_unique": 99,
       "error": null
     },
     {
       "feed": "GN: 人形机器人",
       "success": true,
-      "items_total": 101,
-      "items_unique": 101,
+      "items_total": 100,
+      "items_unique": 100,
       "error": null
     },
     {
@@ -23,17 +44,10 @@
       "error": null
     },
     {
-      "feed": "GN: Physical AI",
+      "feed": "国外人形机器人资讯",
       "success": true,
       "items_total": 100,
-      "items_unique": 100,
-      "error": null
-    },
-    {
-      "feed": "国外机器人资讯",
-      "success": true,
-      "items_total": 100,
-      "items_unique": 98,
+      "items_unique": 71,
       "error": null
     },
     {
@@ -44,24 +58,10 @@
       "error": null
     },
     {
-      "feed": "国外人形机器人资讯",
-      "success": true,
-      "items_total": 99,
-      "items_unique": 68,
-      "error": null
-    },
-    {
-      "feed": "GN: embodied intelligence",
-      "success": true,
-      "items_total": 100,
-      "items_unique": 98,
-      "error": null
-    },
-    {
       "feed": "GN: 机器人",
       "success": true,
-      "items_total": 101,
-      "items_unique": 70,
+      "items_total": 100,
+      "items_unique": 66,
       "error": null
     },
     {
