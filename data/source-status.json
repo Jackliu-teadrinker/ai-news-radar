@@ -1,11 +1,18 @@
 {
-  "generated_at": "2026-05-19T13:52:32.964651+00:00",
+  "generated_at": "2026-05-19T16:47:03.859632+00:00",
   "feeds": [
     {
       "feed": "GN: 脑机接口",
       "success": true,
       "items_total": 6,
       "items_unique": 6,
+      "error": null
+    },
+    {
+      "feed": "GN: 人形机器人",
+      "success": true,
+      "items_total": 101,
+      "items_unique": 101,
       "error": null
     },
     {
@@ -25,43 +32,36 @@
     {
       "feed": "国外人形机器人资讯",
       "success": true,
-      "items_total": 99,
-      "items_unique": 98,
-      "error": null
-    },
-    {
-      "feed": "GN: Physical AI",
-      "success": true,
-      "items_total": 100,
-      "items_unique": 95,
-      "error": null
-    },
-    {
-      "feed": "GN: 人形机器人",
-      "success": true,
-      "items_total": 100,
-      "items_unique": 100,
-      "error": null
-    },
-    {
-      "feed": "国外机器人资讯",
-      "success": true,
       "items_total": 101,
-      "items_unique": 66,
+      "items_unique": 100,
       "error": null
     },
     {
       "feed": "GN: 具身智能",
       "success": true,
       "items_total": 100,
-      "items_unique": 97,
+      "items_unique": 99,
+      "error": null
+    },
+    {
+      "feed": "国外机器人资讯",
+      "success": true,
+      "items_total": 99,
+      "items_unique": 73,
+      "error": null
+    },
+    {
+      "feed": "GN: Physical AI",
+      "success": true,
+      "items_total": 100,
+      "items_unique": 94,
       "error": null
     },
     {
       "feed": "GN: 机器人",
       "success": true,
       "items_total": 101,
-      "items_unique": 69,
+      "items_unique": 72,
       "error": null
     },
     {
@@ -76,9 +76,9 @@
     "total_feeds": 10,
     "successful_feeds": 10,
     "failed_feeds": 0,
-    "total_items": 829,
-    "deduplicated": 78,
-    "noise_filtered": 824,
+    "total_items": 843,
+    "deduplicated": 65,
+    "noise_filtered": 836,
     "short_filtered": 0
   }
 }
