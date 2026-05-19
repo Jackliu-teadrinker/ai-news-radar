@@ -7,6 +7,7 @@ import json
 import os
 import re
 import sys
+import html
 import time
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
@@ -104,11 +105,9 @@ def fetch_feed(feed: dict, timeout: int = 20) -> tuple[dict, list[dict]]:
                 site_name = entry.author
             else:
                 site_name = source_name
-            description = ''
-            if hasattr(entry, 'summary'):
-                description = entry.summary
-            elif hasattr(entry, 'description'):
-                description = entry.description
+            description = (entry.summary or entry.description or '')
+            if description:
+                description = html.unescape(re.sub(r'<[^>]+>', '', description)).strip()
             items.append({
                 'title': title,
                 'url': link,
@@ -183,7 +182,7 @@ NOISE_DOMAINS = [
     'stock.cnfol.com','guba.sina.com.cn','xueqiu.com',
 ]
 
-MIN_DESC_LEN = 200
+MIN_DESC_LEN = 0
 
 def is_noise(title: str, description: str, url: str) -> tuple[bool, str]:
     text = (title + ' ' + description).lower()
@@ -199,8 +198,8 @@ def is_noise(title: str, description: str, url: str) -> tuple[bool, str]:
     except Exception:
         pass
     desc_len = len(description.strip()) if description else 0
-    if desc_len < MIN_DESC_LEN and relevance_score(title, description) < 0.65:
-        return True, 'short_item'
+    # short_item filter disabled - GN RSS descriptions are inherently short
+    pass
     return False, ''
 
 def item_id(title: str, url: str) -> str:
@@ -252,6 +251,7 @@ def score_item(item: dict, now_ts: float) -> dict:
         'site_name': item['site_name'],
         'source': source,
         'site_id': source,
+        'description': item.get('description', ''),
         'ai_score': round(relevance * 100, 2),
         'ai_label': gn_label,
         'relevance': round(relevance, 3),
@@ -340,43 +340,41 @@ def run(output_dir: str, window_hours: int, opml_path: str, archive_days: int):
     archive_items, archive_seen = load_archive(archive_path)
     print(f"[INFO] Archive: {len(archive_items)} items ({ARCHIVE_DAYS}d)")
 
-    # Archive dedup
+    # Step 1: Archive dedup FIRST (dedup against ALL archive items for permanent dedup)
     final_items = []
     for item in all_items:
         sid = item_id(item['title'], item['url'])
         if sid not in archive_seen:
             final_items.append(item)
+    print(f"[INFO] After archive dedup: {len(final_items)} (from {len(all_items)} raw)")
 
-    print(f"[INFO] After archive dedup: {len(final_items)}")
-
-    # Noise filter
+    # Step 2: Noise filter (clean out low-quality items before time window)
     clean_items = []
     for item in final_items:
-        noisy, reason = is_noise(item['title'], item.get('description',''), item['url'])
+        noisy, reason = is_noise(item['title'], item.get('description', ''), item['url'])
         if noisy:
             total_noise += 1
-            if reason == 'short_item':
-                total_short += 1
-            t = item['title'][:35].encode('ascii','replace').decode('ascii')
+            t = item['title'][:35].encode('ascii', 'replace').decode('ascii')
             print(f"  [FILTER] {reason} | {t}")
         else:
             clean_items.append(item)
-    print(f"[INFO] After noise filter: {len(clean_items)} (-{total_noise} noise, -{total_short} short)")
+    print(f"[INFO] After noise filter: {len(clean_items)} (-{total_noise} noise)")
 
-    # Time window
+    # Step 3: Time window only for FINAL OUTPUT (not for archive dedup)
     cutoff = now_ts - (window_hours * 3600)
     time_filtered = []
     for item in clean_items:
-        if not item['published_at']:
+        if not item.get('published_at'):
             time_filtered.append(item)
             continue
         try:
-            dt = datetime.fromisoformat(item['published_at'].replace('Z','+00:00'))
+            dt = datetime.fromisoformat(item['published_at'].replace('Z', '+00:00'))
             if dt.timestamp() >= cutoff:
                 time_filtered.append(item)
         except Exception:
             time_filtered.append(item)
-    print(f"[INFO] After time window ({window_hours}h): {len(time_filtered)}")
+    print(f"[INFO] After time window ({window_hours}h): {len(time_filtered)} (from {len(clean_items)} clean)")
+    clean_items = time_filtered
 
     # Sort by date desc (newest first)
     def sort_key(item):
@@ -387,11 +385,11 @@ def run(output_dir: str, window_hours: int, opml_path: str, archive_days: int):
         except Exception:
             return datetime.min.replace(tzinfo=timezone.utc)
 
-    time_filtered.sort(key=sort_key, reverse=True)
+    clean_items.sort(key=sort_key, reverse=True)
     print(f"[INFO] Sorted by date (newest first)")
 
     # Score
-    scored = [score_item(item, now_ts) for item in time_filtered]
+    scored = [score_item(item, now_ts) for item in clean_items]
     scored.sort(key=lambda x: x['total_score'], reverse=True)
     print(f"[INFO] Scored: {len(scored)}")
 
