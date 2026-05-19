@@ -126,6 +126,7 @@ def fetch_feed(feed: dict, timeout: int = 20) -> tuple[dict, list[dict]]:
 
 GN_LABEL_MAP = {
     'GN: humanoid robot':        'humanoid',
+    '国外人形机器人资讯':           'humanoid',
     'GN: 人形机器人':              'humanoid',
     'GN: embodied intelligence':  'embodied_ai',
     'GN: 具身智能':              'embodied_ai',
@@ -133,6 +134,7 @@ GN_LABEL_MAP = {
     'GN: BCI':                   'brain_computer',
     'GN: 脑机接口':              'brain_computer',
     'GN: robot':                 'robotics',
+    '国外机器人资讯':               'robotics',
     'GN: 机器人':                'robotics',
 }
 
