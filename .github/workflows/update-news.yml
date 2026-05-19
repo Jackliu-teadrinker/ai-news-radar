@@ -1,10 +1,9 @@
 name: Update AI News Snapshot
 
 on:
-  # 定时触发：每30分钟自动更新一次
   schedule:
+    # 每30分钟由本地cron触发: gh workflow run ...
     - cron: "5,35 * * * *"
-  # 手动触发（保留）
   workflow_dispatch:
 
 concurrency:
@@ -18,41 +17,15 @@ permissions:
 
 jobs:
   update:
-    timeout-minutes: 12
+    timeout-minutes: 5
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v6
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: "20"
-
-      # ── 增量采集 RSS feeds ──
-      - name: Fetch RSS feeds (incremental)
-        run: |
-          node scripts/opml_to_radar_json.js
-          node scripts/inject_gn_min.js
-        env:
-          PROXY: ""
-        working-directory: .
-
-      # ── 提交更新的数据 ──
-      - name: Commit updated data
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/latest-24h-min.json data/latest-24h.json
-          git diff --cached --quiet && echo "No data changes, skip commit" || \
-            git commit -m "ci: auto-update radar data $(date -u +'%Y-%m-%dT%H:%M:%SZ')" && \
-            git push origin master
-
-      # ── 部署到 GitHub Pages ──
+      # ── 只做部署（数据由本地pipeline推送更新）──
       - name: Setup Pages
         uses: actions/configure-pages@v5
-        with:
-          pagename: ""
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
