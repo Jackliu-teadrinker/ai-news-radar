@@ -43,7 +43,7 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add data/latest-24h-min.json data/latest-24h-all.json data/archive.json data/source-status.json
+          git add data/latest-24h-min.json data/latest-24h-all.json data/source-status.json
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
