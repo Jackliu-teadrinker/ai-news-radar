@@ -1,46 +1,11 @@
 {
-  "generated_at": "2026-05-19T08:12:16.826917+00:00",
+  "generated_at": "2026-05-19T10:23:18.550472+00:00",
   "feeds": [
-    {
-      "feed": "GN: Physical AI",
-      "success": true,
-      "items_total": 100,
-      "items_unique": 100,
-      "error": null
-    },
-    {
-      "feed": "GN: 人形机器人",
-      "success": true,
-      "items_total": 102,
-      "items_unique": 102,
-      "error": null
-    },
-    {
-      "feed": "GN: embodied intelligence",
-      "success": true,
-      "items_total": 100,
-      "items_unique": 99,
-      "error": null
-    },
     {
       "feed": "GN: 脑机接口",
       "success": true,
       "items_total": 7,
       "items_unique": 7,
-      "error": null
-    },
-    {
-      "feed": "国外人形机器人资讯",
-      "success": true,
-      "items_total": 99,
-      "items_unique": 97,
-      "error": null
-    },
-    {
-      "feed": "国外机器人资讯",
-      "success": true,
-      "items_total": 102,
-      "items_unique": 61,
       "error": null
     },
     {
@@ -51,17 +16,52 @@
       "error": null
     },
     {
-      "feed": "GN: 机器人",
+      "feed": "GN: 具身智能",
       "success": true,
-      "items_total": 102,
-      "items_unique": 72,
+      "items_total": 100,
+      "items_unique": 100,
       "error": null
     },
     {
-      "feed": "GN: 具身智能",
+      "feed": "GN: 人形机器人",
       "success": true,
-      "items_total": 0,
-      "items_unique": 0,
+      "items_total": 102,
+      "items_unique": 98,
+      "error": null
+    },
+    {
+      "feed": "GN: Physical AI",
+      "success": true,
+      "items_total": 100,
+      "items_unique": 100,
+      "error": null
+    },
+    {
+      "feed": "国外机器人资讯",
+      "success": true,
+      "items_total": 102,
+      "items_unique": 100,
+      "error": null
+    },
+    {
+      "feed": "GN: embodied intelligence",
+      "success": true,
+      "items_total": 100,
+      "items_unique": 99,
+      "error": null
+    },
+    {
+      "feed": "国外人形机器人资讯",
+      "success": true,
+      "items_total": 98,
+      "items_unique": 60,
+      "error": null
+    },
+    {
+      "feed": "GN: 机器人",
+      "success": true,
+      "items_total": 100,
+      "items_unique": 65,
       "error": null
     }
   ],
@@ -69,9 +69,9 @@
     "total_feeds": 9,
     "successful_feeds": 9,
     "failed_feeds": 0,
-    "total_items": 638,
-    "deduplicated": 74,
-    "noise_filtered": 14,
+    "total_items": 729,
+    "deduplicated": 80,
+    "noise_filtered": 13,
     "short_filtered": 0
   }
 }
