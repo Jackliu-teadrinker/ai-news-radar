@@ -131,6 +131,7 @@ GN_LABEL_MAP = {
     'GN: embodied intelligence':  'embodied_ai',
     'GN: 具身智能':              'embodied_ai',
     'GN: Physical AI':           'physical_ai',
+    'GN: 物理AI':               'physical_ai',
     'GN: BCI':                   'brain_computer',
     'GN: 脑机接口':              'brain_computer',
     'GN: robot':                 'robotics',
@@ -186,7 +187,7 @@ NOISE_DOMAINS = [
     'stock.cnfol.com','guba.sina.com.cn','xueqiu.com',
 ]
 
-MIN_DESC_LEN = 0
+MIN_DESC_LEN = 200
 
 def is_noise(title: str, description: str, url: str) -> tuple[bool, str]:
     text = (title + ' ' + description).lower()
@@ -202,8 +203,9 @@ def is_noise(title: str, description: str, url: str) -> tuple[bool, str]:
     except Exception:
         pass
     desc_len = len(description.strip()) if description else 0
-    # short_item filter disabled - GN RSS descriptions are inherently short
-    pass
+    # short_item filter: description < 200 chars = low value content
+    if desc_len < MIN_DESC_LEN:
+        return True, "short_item"
     return False, ''
 
 def item_id(title: str, url: str) -> str:
