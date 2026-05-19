@@ -13,19 +13,34 @@
 const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
+const { spawn } = require('child_process');
 const https = require('https');
 const http = require('http');
 
-// ── 跨平台HTTP请求 ──
+// ── 跨平台HTTP请求（支持Windows代理） ──
 function httpGet(url, timeoutMs = 20000) {
   return new Promise((resolve, reject) => {
+    const isWin = process.platform === 'win32';
+
+    // Windows: 使用curl.exe走本地代理（7897），与本地浏览器共享代理
+    if (isWin && PROXY) {
+      const proxy = PROXY.replace('http://', '').replace('https://', '');
+      const args = ['-x', `http://${proxy}`, '-s', '-L', '--max-time', String(Math.floor(timeoutMs / 1000)), '-o', '-', url];
+      const child = spawn('curl.exe', args);
+      let data = '';
+      child.stdout.on('data', d => data += d);
+      child.on('close', code => resolve(data));
+      child.on('error', () => resolve(''));
+      return;
+    }
+
+    // Linux/macOS: Node.js原生HTTP
     const isHttps = url.startsWith('https://');
     const mod = isHttps ? https : http;
     const opts = {
       headers: {
         'User-Agent': 'Mozilla/5.0 (compatible; radar-bot/1.0)',
         'Accept': 'application/rss+xml, application/xml, text/xml, */*',
-        'Accept-Encoding': 'gzip, deflate',
       },
       timeout: timeoutMs,
     };
@@ -46,38 +61,36 @@ const OPML_DIR = path.join(__dirname, '..', 'feeds');
 const MIN_FILE = path.join(DATA_DIR, 'latest-24h-min.json');
 
 const GN_LABEL_MAP = {
-  'GN: 人形机器人':    'humanoid',
-  'GN: 人形机器人-ZH': 'humanoid',
-  'GN: 具身智能':      'embodied_ai',
-  'GN: 具身智能-ZH':   'embodied_ai',
-  'GN: Physical AI':   'physical_ai',
-  'GN: 脑机接口':      'brain_computer',
-  'GN: 脑机接口-ZH':   'brain_computer',
-  'arXiv Robotics':    'robotics',
-  'arXiv Embodied AI': 'robotics',
+  'GN: 人形机器人':      'humanoid',
+  'GN: 人形机器人-ZH':   'humanoid',
+  'GN: 具身智能':        'embodied_ai',
+  'GN: 具身智能-ZH':     'embodied_ai',
+  'GN: Physical AI':     'physical_ai',
+  'GN: 脑机接口':        'brain_computer',
+  'GN: 脑机接口-ZH':     'brain_computer',
+  'arXiv Robotics (cs.RO)':  'robotics',
+  'arXiv Embodied AI (cs.AI)': 'robotics',
   'TechCrunch Robotics': 'robotics',
-  '36kr':             'robotics',
-  '36Kr':             'robotics',
+  '36氪':               'robotics',
 };
 
 const SITE_NAME_MAP = {
-  'GN: 人形机器人':    'Google News (Humanoid Robot)',
-  'GN: 人形机器人-ZH': 'Google News (人形机器人)',
-  'GN: 具身智能':      'Google News (Embodied AI)',
-  'GN: 具身智能-ZH':   'Google News (具身智能)',
-  'GN: Physical AI':   'Google News (Physical AI)',
-  'GN: 脑机接口':      'Google News (BCI)',
-  'GN: 脑机接口-ZH':   'Google News (脑机接口)',
-  'arXiv Robotics':    'arXiv Robotics (cs.RO)',
-  'arXiv Embodied AI': 'arXiv Embodied AI (cs.AI)',
+  'GN: 人形机器人':      'Google News (Humanoid Robot)',
+  'GN: 人形机器人-ZH':   'Google News (人形机器人)',
+  'GN: 具身智能':        'Google News (Embodied AI)',
+  'GN: 具身智能-ZH':     'Google News (具身智能)',
+  'GN: Physical AI':     'Google News (Physical AI)',
+  'GN: 脑机接口':        'Google News (BCI)',
+  'GN: 脑机接口-ZH':     'Google News (脑机接口)',
+  'arXiv Robotics (cs.RO)':  'arXiv Robotics (cs.RO)',
+  'arXiv Embodied AI (cs.AI)': 'arXiv Embodied AI (cs.AI)',
   'TechCrunch Robotics': 'TechCrunch Robotics',
-  '36kr':             '36Kr',
-  '36Kr':             '36Kr',
+  '36氪':               '36Kr',
 };
 
 const CHINESE_SOURCES = new Set([
-  '36kr', '36Kr',
-  'GN: 人形机器人-ZH', 'GN: 具身智能-ZH', 'GN: 脑机接口-ZH',
+  '36Kr', '36kr',
+  'Google News (人形机器人)', 'Google News (具身智能)', 'Google News (脑机接口)',
 ]);
 
 // ── 增量相关常量 ──
@@ -165,8 +178,18 @@ function parseRSS(xml, source) {
     }
     if (!title || title.length < 6 || !link) continue;
     const id = crypto.createHash('sha1').update(link).digest('hex').substring(0, 32);
+    function norm(s) { return (s||'').trim().replace(/\s+/g,' ').toLowerCase(); }
     const siteName = SITE_NAME_MAP[source] || source;
-    const aiLabel = GN_LABEL_MAP[source] || 'robotics';
+    const aiLabel = (() => {
+      const src = source || '';
+      // 先精确匹配，再归一化匹配（处理大小写/空格差异）
+      if (GN_LABEL_MAP[src]) return GN_LABEL_MAP[src];
+      const key = norm(src);
+      for (const k of Object.keys(GN_LABEL_MAP)) {
+        if (norm(k) === key) return GN_LABEL_MAP[k];
+      }
+      return 'robotics';
+    })();
 
     items.push({
       id,
