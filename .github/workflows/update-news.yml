@@ -1,45 +1,34 @@
-name: Update AI News Snapshot
+name: Update AI News Radar
 
 on:
-  # push触发：本地cron推送新数据时自动部署
-  push:
-    branches:
-      - master
-    paths:
-      - data/latest-24h-min.json
-      - data/latest-24h.json
-  # 定时触发：每30分钟（作为备用兜底，本地cron优先）
   schedule:
-    - cron: "5,35 * * * *"
-  # 手动触发
+    - cron: "*/30 * * * *"
   workflow_dispatch:
-
-concurrency:
-  group: update-ai-news-${{ github.ref }}
-  cancel-in-progress: true
-
-permissions:
-  contents: write
-  pages: write
-  id-token: write
 
 jobs:
   update:
-    timeout-minutes: 5
     runs-on: ubuntu-latest
+    timeout-minutes: 15
+
     steps:
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v4
 
-      # ── 只做部署（数据由本地pipeline推送更新）──
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
         with:
-          path: "."
+          python-version: "3.11"
 
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run update
+        run: python scripts/update_news.py --output-dir data --window-hours 24 --rss-opml feeds/follow.example.opml
+
+      - name: Commit and push
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add data/latest-24h-min.json
+          git diff --staged --quiet || git commit -m "Update news radar $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
+          git push
