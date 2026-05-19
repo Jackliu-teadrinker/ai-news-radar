@@ -1,32 +1,38 @@
-# 机器人新闻雷达 · AI News Radar
-
-Forked from [robot-news-radar](https://github.com/LearnPrompt/ai-news-radar) · 已配置 53+ 个机器人/RSS 数据源
+# 机器人新闻雷达 · Humanoid Robot News Radar
 
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-green?style=flat-square)](https://jackliu-teadrinker.github.io/ai-news-radar/)
 [![Actions](https://img.shields.io/github/actions/workflow/status/Jackliu-teadrinker/ai-news-radar/update-news.yml?branch=master&label=update&style=flat-square)](https://github.com/Jackliu-teadrinker/ai-news-radar/actions/workflows/update-news.yml)
 [![License](https://img.shields.io/badge/license-MIT-green.svg?style=flat-square)](LICENSE)
 
-[在线站点](https://jackliu-teadrinker.github.io/ai-news-radar/) · [English](README.en.md) · [Scout Skill](skills/ai-news-radar/README.md)
+[在线站点](https://jackliu-teadrinker.github.io/ai-news-radar/) · [English](README.en.md)
 
 ---
 
 ## 这是什么
 
-机器人新闻雷达是一个**自动化更新的 24 小时机器人/具身智能资讯监控页面**。
+**人形机器人/具身智能专项新闻雷达**。
 
-打开页面即可浏览最近 24 小时全球机器人、人形机器人、具身智能、脑机接口等领域的最新动态。fork 本项目后可接入自己的 OPML/RSS 订阅源，打造专属资讯雷达。
-
-本项目的核心不是"又一个新闻聚合页"，而是 **Scout Skill（侦察技能）**——帮助你在海量信息源中识别真正值得长期追踪的优质来源，屏蔽噪声源。
+自动追踪全球人形机器人、具身智能、脑机接口、物理 AI（Physical AI）等领域的新动态，每天 09:00 - 20:00 区间每 30 分钟更新，数据覆盖前一天 9AM 至当前最新。
 
 ## 功能特性
 
-- **24h 自动更新**：GitHub Actions 每 30 分钟自动抓取，数据始终新鲜
+- **每 30 分钟自动更新**：GitHub Actions 驱动，零人工值守
 - **双语标题**：英文内容自动翻译为中文，标题对照阅读
-- **AI 相关性过滤**：自动识别高相关性内容，过滤噪声
-- **OPML/RSS 批量订阅**：将自己的 RSS 源导入，打造专属雷达
-- **多视图切换**：AI 精选视图 / 全量视图，按需切换
-- **信源健康监控**：实时追踪各来源的更新频率和覆盖质量
-- **零成本部署**：核心流程无需 LLM API key，纯规则运行
+- **行业专项过滤**：过滤股票涨跌、ETF、扫地机器人、快讯/短新闻等噪声
+- **Relevance 评分**：按行业相关性排序，重要文章优先展示
+- **多信源覆盖**：Google News 英文 ×5 + 中文 ×5 + TechCrunch + 36kr，共 10 条 RSS 源
+- **归档去重**：21 天归档，SWA1(title+url) 全局去重，避免重复推送
+
+## 覆盖领域
+
+| 分类 | 信源 |
+|------|------|
+| 人形机器人 | GN: humanoid robot / 国外人形机器人资讯 |
+| 具身智能 | GN: embodied intelligence / GN: 具身智能 |
+| 脑机接口 | GN: BCI / GN: 脑机接口 |
+| 物理 AI | GN: Physical AI / GN: 物理AI |
+| 机器人综合 | GN: robot / 国外机器人资讯 |
+| 行业媒体 | TechCrunch、36kr |
 
 ## 快速开始
 
@@ -35,9 +41,9 @@ Forked from [robot-news-radar](https://github.com/LearnPrompt/ai-news-radar) · 
 本地运行：
 
 ```bash
-git clone https://github.com/Jackliu-teadrinker/ai-news-radar.git
+git clone https://github.com/jackliu-teadrinker/ai-news-radar.git
 cd ai-news-radar
-python3 -m venv .venv
+python -m venv .venv
 source .venv/bin/activate        # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 python scripts/update_news.py --output-dir data --window-hours 24
@@ -45,99 +51,46 @@ python -m http.server 8080
 # 打开 http://localhost:8080
 ```
 
-接入自己的 OPML 订阅：
+修改信源：编辑 `feeds/follow.example.opml`，添加/删除 RSS 源后 commit 即可自动部署。
 
-```bash
-# 1. 将自己的 RSS 订阅导出为 OPML 文件
-# 2. 放到 feeds/follow.opml（不要提交到公开仓库）
-# 3. 运行时指定 OPML 文件
-python scripts/update_news.py --output-dir data --window-hours 24 --rss-opml feeds/follow.opml
-```
-
-## 数据源配置
-
-项目支持多种数据源接入方式，通过环境变量或 GitHub Secrets 配置：
-
-| 变量 | 说明 | 默认 |
-|------|------|------|
-| `FOLLOW_OPML_B64` | Base64 编码的 OPML 文件（隐私） | follow.example.opml |
-| `RSS_MAX_FEEDS` | 最大 RSS 源数量（0=无限制） | 0 |
-| `DISABLE_BUILTINS` | 禁用内置数据源 | 0 |
-| `X_API_ENABLED` | 启用 X (Twitter) API | 0 |
-| `X_BEARER_TOKEN` | X API Token | - |
-
-详细配置示例见 `examples/advanced-sources.env.example`。
-
-## 工作原理
+## 数据输出
 
 ```
-数据源列表
-    ↓
-Scout Skill 分类识别
-    ↓
-RSS/Changelog → 公共 OPML → GitHub JSON → 静态页面 → 跳过风险源
-    ↓
-抓取 + 去重 + AI相关性过滤
-    ↓
-data/*.json + GitHub Pages Web UI
+data/
+├── latest-24h-min.json   # AI 精选视图（ Relevance > 0.4，≤50 条）
+├── latest-24h-all.json   # 全量视图（全部去重条目）
+├── source-status.json    # 各信源健康状态
+└── archive.json          # 21 天归档
 ```
 
-信源分为五类：
-1. **官方 RSS/Changelog**：公司官方博客、发布日志
-2. **私人 OPML/RSS**：用户自己的订阅源
-3. **公共 GitHub Feed**：GitHub 项目的 release/issue 动态
-4. **静态页面**：无 RSS 的公开页面，Jina 读取
-5. **邮件订阅**：通过 AgentMail 接入高质量 Newsletter
-
-## GitHub Actions 自动化
+## GitHub Actions
 
 `.github/workflows/update-news.yml` 已预配置：
 
-- 每 30 分钟自动更新（cron: `*/30 * * * *`）
-- 自动提交 `data/*.json` 到 master 分支
-- 自动部署到 GitHub Pages
-- 无 API key 时使用公开演示 OPML 运行
+- cron: `*/30 * * * *`（每 30 分钟）
+- push 触发（任何 commit 自动运行）
+- `workflow_dispatch`（手动触发）
+- 自动 commit 数据文件 + Pages 部署
 
-手动触发：在 GitHub Actions 页面点击 `Update AI News Snapshot` → Run workflow
-
-## 机器人行业专用配置
-
-本 fork 在原版基础上针对机器人行业优化：
-
-- 53+ 机器人/具身智能专业 RSS 源
-- 人形机器人、协作机器人、医疗机器人、核心零部件专项覆盖
-- 脑机接口（BCI）专项追踪
-- 投融资动态关键词监控
-- 支持接入微信公众号、微博等中文源
+手动触发：
+```bash
+gh workflow run update-news.yml --repo Jackliu-teadrinker/ai-news-radar
+```
 
 ## 项目结构
 
 ```
 ai-news-radar/
-├── data/                    # 生成的 JSON 数据文件
-│   ├── latest-24h.json      # 24h 最新数据（GitHub Pages 读取）
-│   └── archive.json          # 历史归档
 ├── feeds/
-│   ├── follow.example.opml   # 演示 OPML（公开）
-│   └── follow.opml           # 私有 OPML（不提交）
+│   └── follow.example.opml    # RSS 信源配置
 ├── scripts/
-│   └── update_news.py        # 核心抓取脚本
-├── skills/
-│   └── ai-news-radar/        # Scout Skill（AI Agent 维护指南）
+│   └── update_news.py         # 采集脚本
+├── data/
+│   └── *.json                 # 输出数据（GitHub Pages 读取）
 ├── .github/workflows/
-│   ├── update-news.yml       # 30min 自动更新 + 部署
-│   └── pages.yml             # (已禁用，避免双部署冲突)
-├── docs/                     # 扩展文档
-└── README.md                 # 本文件
+│   └── update-news.yml        # 30min 自动更新 + 部署
+└── README.md
 ```
-
-## AI Agent 维护指南
-
-想让 AI Agent（如 Claude Code / OpenClaw / Hermes）帮你维护本项目？直接说：
-
-> "Use Scout Skill for AI News Radar. Ask me for my source list first, then decide whether each source should use RSS, public feeds, static pages, Jina fallback, AgentMail email, or be skipped. The goal is to deploy a serverless AI daily news site that updates automatically with GitHub Actions. Do not commit any API keys, cookies, tokens, or private email content into the repo."
-
-Scout Skill 路径：`skills/ai-news-radar/SKILL.md`
 
 ## License
 
