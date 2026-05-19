@@ -11,6 +11,7 @@ import html
 import time
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
+from zoneinfo import ZoneInfo
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from urllib.parse import urlparse
 
@@ -306,7 +307,7 @@ def save_archive(path: str, items: list[dict]):
                    'total_items': len(valid), 'items': valid},
                   f, ensure_ascii=False, indent=2)
 
-def run(output_dir: str, window_hours: int, opml_path: str, archive_days: int):
+def run(output_dir: str, window_hours: int, opml_path: str, archive_days: int, window_from: str = None):
     global ARCHIVE_DAYS
     ARCHIVE_DAYS = archive_days
 
@@ -361,7 +362,28 @@ def run(output_dir: str, window_hours: int, opml_path: str, archive_days: int):
     print(f"[INFO] After noise filter: {len(clean_items)} (-{total_noise} noise)")
 
     # Step 3: Time window only for FINAL OUTPUT (not for archive dedup)
-    cutoff = now_ts - (window_hours * 3600)
+    # Default: yesterday 9:00 AM CST to now
+    shanghai = ZoneInfo('Asia/Shanghai')
+    if window_from:
+        # Parse YYYY-MM-DD as yesterday 9:00 AM CST
+        try:
+            start_dt_naive = datetime.strptime(window_from, '%Y-%m-%d').replace(hour=9, minute=0, second=0)
+            start_dt = start_dt_naive.replace(tzinfo=shanghai)
+            start_ts = start_dt.timestamp()
+        except Exception as e:
+            print(f"[WARN] Could not parse --window-from '{window_from}': {e}")
+            start_ts = now_ts - (window_hours * 3600)
+    else:
+        # Default: yesterday 9:00 AM CST
+        now_sh = datetime.now(shanghai)
+        yesterday_date = now_sh.date() - timedelta(days=1)
+        start_dt = datetime.combine(yesterday_date, datetime.min.time().replace(hour=9, minute=0, second=0)).replace(tzinfo=shanghai)
+        start_ts = start_dt.timestamp()
+
+    start_utc = datetime.fromtimestamp(start_ts, timezone.utc)
+    end_utc = datetime.fromtimestamp(now_ts, timezone.utc)
+    print(f"[INFO] Time window: {start_utc.strftime('%Y-%m-%d %H:%M')} UTC to {end_utc.strftime('%Y-%m-%d %H:%M')} UTC")
+
     time_filtered = []
     for item in clean_items:
         if not item.get('published_at'):
@@ -369,11 +391,11 @@ def run(output_dir: str, window_hours: int, opml_path: str, archive_days: int):
             continue
         try:
             dt = datetime.fromisoformat(item['published_at'].replace('Z', '+00:00'))
-            if dt.timestamp() >= cutoff:
+            if start_ts <= dt.timestamp() <= now_ts:
                 time_filtered.append(item)
         except Exception:
             time_filtered.append(item)
-    print(f"[INFO] After time window ({window_hours}h): {len(time_filtered)} (from {len(clean_items)} clean)")
+    print(f"[INFO] After time window: {len(time_filtered)} (from {len(clean_items)} clean)")
     clean_items = time_filtered
 
     # Sort by date desc (newest first)
@@ -437,6 +459,8 @@ if __name__ == '__main__':
     p.add_argument('--output-dir', default='data')
     p.add_argument('--window-hours', type=int, default=24)
     p.add_argument('--rss-opml', default='feeds/follow.example.opml')
+    p.add_argument('--window-from', type=str, default=None,
+                        help='Start of time window (YYYY-MM-DD, defaults to yesterday 9AM CST)')
     p.add_argument('--archive-days', type=int, default=21)
     args = p.parse_args()
-    run(args.output_dir, args.window_hours, args.rss_opml, args.archive_days)
+    run(args.output_dir, args.window_hours, args.rss_opml, args.archive_days, args.window_from)
