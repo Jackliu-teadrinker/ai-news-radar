@@ -33,6 +33,7 @@ jobs:
       - name: Fetch RSS feeds (incremental)
         run: |
           node scripts/opml_to_radar_json.js
+          node scripts/inject_gn_min.js
         env:
           PROXY: ""
         working-directory: .
