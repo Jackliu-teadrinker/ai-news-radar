@@ -1,8 +1,5 @@
 #!/usr/bin/env python3
-"""
-AI News Radar - RSS Aggregation Pipeline
-Refactored from LearnPrompt/ai-news-radar architecture
-"""
+"""AI News Radar - RSS Aggregation Pipeline"""
 
 import argparse
 import hashlib
@@ -18,8 +15,6 @@ from urllib.parse import urlparse
 
 import feedparser
 import requests
-
-# ── URL normalization ────────────────────────────────────────────────────────
 
 STRIP_QUERY_PARAMS = {
     'utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content',
@@ -47,8 +42,6 @@ def normalize_url(url: str) -> str:
     except Exception:
         return url
 
-# ── OPML parsing ─────────────────────────────────────────────────────────────
-
 def parse_opml(opml_path: str) -> list[dict]:
     tree = ET.parse(opml_path)
     root = tree.getroot()
@@ -61,8 +54,6 @@ def parse_opml(opml_path: str) -> list[dict]:
                 'xmlUrl': xml_url,
             })
     return feeds
-
-# ── RSS fetching ─────────────────────────────────────────────────────────────
 
 def fetch_feed(feed: dict, timeout: int = 20) -> tuple[dict, list[dict]]:
     source_name = feed['text']
@@ -88,13 +79,11 @@ def fetch_feed(feed: dict, timeout: int = 20) -> tuple[dict, list[dict]]:
                 link = entry.id
             if not link:
                 continue
-
             title = None
             if hasattr(entry, 'title'):
                 title = entry.title.strip()
             if not title:
                 continue
-
             published_at = None
             if hasattr(entry, 'published_parsed') and entry.published_parsed:
                 try:
@@ -108,7 +97,6 @@ def fetch_feed(feed: dict, timeout: int = 20) -> tuple[dict, list[dict]]:
                     published_at = dt.isoformat()
                 except Exception:
                     pass
-
             site_name = None
             if hasattr(entry, 'author_detail') and hasattr(entry.author_detail, 'name'):
                 site_name = entry.author_detail.name
@@ -116,13 +104,11 @@ def fetch_feed(feed: dict, timeout: int = 20) -> tuple[dict, list[dict]]:
                 site_name = entry.author
             else:
                 site_name = source_name
-
             description = ''
             if hasattr(entry, 'summary'):
                 description = entry.summary
             elif hasattr(entry, 'description'):
                 description = entry.description
-
             items.append({
                 'title': title,
                 'url': link,
@@ -131,7 +117,6 @@ def fetch_feed(feed: dict, timeout: int = 20) -> tuple[dict, list[dict]]:
                 'site_name': site_name or source_name,
                 'description': description,
             })
-
         status['success'] = True
         status['items_total'] = len(items)
         return status, items
@@ -139,39 +124,39 @@ def fetch_feed(feed: dict, timeout: int = 20) -> tuple[dict, list[dict]]:
         status['error'] = str(e)[:200]
         return status, []
 
-# ── GN classification ────────────────────────────────────────────────────────
-
 GN_LABEL_MAP = {
-    'GN: 人形机器人':    'humanoid',
-    'GN: 人形机器人-ZH': 'humanoid',
-    'GN: 具身智能':      'embodied_ai',
-    'GN: 具身智能-ZH':   'embodied_ai',
-    'GN: Physical AI':  'physical_ai',
-    'GN: 脑机接口':      'brain_computer',
-    'GN: 脑机接口-ZH':   'brain_computer',
-    'GN: robot':        'robotics',
-    'GN: 机器人-ZH':     'robotics',
+    'GN: humanoid robot':        'humanoid',
+    'GN: 人形机器人':              'humanoid',
+    'GN: embodied intelligence':  'embodied_ai',
+    'GN: 具身智能':              'embodied_ai',
+    'GN: Physical AI':           'physical_ai',
+    'GN: BCI':                   'brain_computer',
+    'GN: 脑机接口':              'brain_computer',
+    'GN: robot':                 'robotics',
+    'GN: 机器人':                'robotics',
 }
 
-# ── Relevance scoring ────────────────────────────────────────────────────────
+TIER1 = ['humanoid robot','humanoid','embodied intelligence','embodied AI',
+         '具身智能','人形机器人','脑机接口','brain-computer interface',
+         'brain computer interface','bci']
+TIER2 = ['robot','robots','robotics','robotic',
+         'Tesla Optimus','Figure AI','Boston Dynamics',
+         'Unitree','Fourier','宇树','傅利叶','智元','星动纪元',
+         'agility robotics','1X Technologies',
+         '灵巧手','机械臂','双足','协作机器人','cobot']
+TIER3 = ['physical AI','dexterous manipulation','robot learning']
 
-RELEVANCE_KEYWORDS = [
-    'humanoid', 'robot', 'robots', 'robotics', 'embodied', 'embodied AI',
-    'embodied intelligence', 'bci', 'brain-computer', 'brain computer',
-    '具身', '具身智能', '人形机器人', '脑机接口', '机械臂',
-    '灵巧手', '双足', '宇树', '傅利叶', '智元', '星动纪元',
-    'Figure AI', 'Tesla Optimus', 'Boston Dynamics',
-    'agility robotics', '1X Technologies', 'Unitree', 'Fourier',
-    '机械手', '四足', '轮式', '协作机器人', 'cobot',
-]
-
-def relevance_score(title: str, description: str) -> float:
+def relevance_score(title: str, description: str = '') -> float:
     text = (title + ' ' + description).lower()
-    for kw in RELEVANCE_KEYWORDS:
+    for kw in TIER1:
         if kw.lower() in text:
-            if kw.lower() in ['humanoid', '具身', '人形机器人', '脑机接口']:
-                return 0.80
+            return 0.80
+    for kw in TIER2:
+        if kw.lower() in text:
             return 0.65
+    for kw in TIER3:
+        if kw.lower() in text:
+            return 0.50
     return 0.35
 
 AUTHORITY_MAP = {'Google News': 15}
@@ -182,27 +167,57 @@ def authority_score(source: str) -> int:
             return score
     return 10
 
-# ── ID generation ────────────────────────────────────────────────────────────
+# Noise patterns with word boundaries (avoid false matches like "Interface" matching "ETF")
+NOISE_PATTERNS = [
+    re.compile(r'\bETF\b', re.I),
+    re.compile(r'\b股票\b|\b股价\b|\b涨跌\b|\b上市\b|\bIPO\b', re.I),
+    re.compile(r'扫地机器人|扫地机|roomba|robovac', re.I),
+    re.compile(r'概念股', re.I),
+    re.compile(r'\b评级\b|\b买入\b|\b卖出\b|\b增持\b|\b目标价\b', re.I),
+    re.compile(r'财报|营收|利润|亏损|盈利', re.I),
+    re.compile(r'回购|分红|配股', re.I),
+]
+
+NOISE_DOMAINS = [
+    'eastmoney.com','finance.sina.com.cn','stock.hexun.com',
+    'stock.cnfol.com','guba.sina.com.cn','xueqiu.com',
+]
+
+MIN_DESC_LEN = 200
+
+def is_noise(title: str, description: str, url: str) -> tuple[bool, str]:
+    text = (title + ' ' + description).lower()
+    for pat in NOISE_PATTERNS:
+        if pat.search(text):
+            return True, pat.pattern
+    try:
+        parsed = urlparse(url)
+        domain = parsed.netloc.lower()
+        for nd in NOISE_DOMAINS:
+            if domain.endswith(nd):
+                return True, f'domain:{nd}'
+    except Exception:
+        pass
+    desc_len = len(description.strip()) if description else 0
+    if desc_len < MIN_DESC_LEN and relevance_score(title, description) < 0.65:
+        return True, 'short_item'
+    return False, ''
 
 def item_id(title: str, url: str) -> str:
     norm_title = re.sub(r'\s+', ' ', title.strip().lower())
     norm_url = normalize_url(url).lower()
     return hashlib.sha1(f"{norm_title}|{norm_url}".encode()).hexdigest()
 
-# ── Deduplication ────────────────────────────────────────────────────────────
-
-def deduplicate(items: list[dict], seen: set[str]) -> tuple[list[dict], int]:
+def deduplicate(items: list[dict], seen: dict[str, str]) -> tuple[list[dict], int]:
     unique, duplicates = [], 0
     for item in items:
         sid = item_id(item['title'], item['url'])
         if sid not in seen:
-            seen.add(sid)
+            seen[sid] = sid
             unique.append(item)
         else:
             duplicates += 1
     return unique, duplicates
-
-# ── Timeliness scoring ──────────────────────────────────────────────────────
 
 def timeliness_score(published_at: str | None, now_ts: float) -> float:
     if not published_at:
@@ -216,22 +231,17 @@ def timeliness_score(published_at: str | None, now_ts: float) -> float:
     except Exception:
         return 0.0
 
-# ── Scoring ─────────────────────────────────────────────────────────────────
-
 def score_item(item: dict, now_ts: float) -> dict:
     title = item['title']
     desc = item.get('description', '')
     source = item['source']
-
     relevance = relevance_score(title, desc)
     authority = authority_score(source)
-    depth = 5 if desc else 0
-    writing_value = 5 if desc else 0
+    depth = 5 if len(desc) >= 100 else 0
+    writing_value = 5 if len(desc) >= 100 else 0
     timeliness = timeliness_score(item['published_at'], now_ts)
     total = relevance * 100 + authority + depth + writing_value + timeliness
-
     gn_label = GN_LABEL_MAP.get(source, 'robotics')
-
     return {
         'id': item_id(title, item['url']),
         'title': title,
@@ -252,133 +262,161 @@ def score_item(item: dict, now_ts: float) -> dict:
         'total_score': round(total, 2),
     }
 
-# ── Archive management ─────────────────────────────────────────────────────
-
 ARCHIVE_DAYS = 21
 
-def load_archive(archive_path: str) -> tuple[list[dict], dict[str, str]]:
-    if not os.path.exists(archive_path):
+def load_archive(path: str) -> tuple[list[dict], dict[str, str]]:
+    if not os.path.exists(path):
         return [], {}
     try:
-        with open(archive_path, 'r', encoding='utf-8') as f:
+        with open(path, 'r', encoding='utf-8') as f:
             data = json.load(f)
-        seen_ids = {}
-        valid_items = []
+        seen, valid = {}, []
         cutoff = datetime.now(timezone.utc) - timedelta(days=ARCHIVE_DAYS)
         for item in data.get('items', []):
-            sid = item.get('id', '')
-            seen_ids[sid] = sid
+            sid = item.get('id', '') or item_id(item.get('title',''), item.get('url',''))
+            seen[sid] = sid
             if item.get('published_at'):
                 try:
-                    dt = datetime.fromisoformat(item['published_at'].replace('Z', '+00:00'))
+                    dt = datetime.fromisoformat(item['published_at'].replace('Z','+00:00'))
                     if dt >= cutoff:
-                        valid_items.append(item)
+                        valid.append(item)
                 except Exception:
-                    valid_items.append(item)
+                    valid.append(item)
             else:
-                valid_items.append(item)
-        return valid_items, seen_ids
+                valid.append(item)
+        return valid, seen
     except Exception:
         return [], {}
 
-def save_archive(archive_path: str, items: list[dict]):
+def save_archive(path: str, items: list[dict]):
     cutoff = datetime.now(timezone.utc) - timedelta(days=ARCHIVE_DAYS)
     valid = []
     for item in items:
         if item.get('published_at'):
             try:
-                dt = datetime.fromisoformat(item['published_at'].replace('Z', '+00:00'))
+                dt = datetime.fromisoformat(item['published_at'].replace('Z','+00:00'))
                 if dt >= cutoff:
                     valid.append(item)
             except Exception:
                 valid.append(item)
         else:
             valid.append(item)
-    data = {
-        'generated_at': datetime.now(timezone.utc).isoformat(),
-        'total_items': len(valid),
-        'items': valid,
-    }
-    with open(archive_path, 'w', encoding='utf-8') as f:
-        json.dump(data, f, ensure_ascii=False, indent=2)
-
-# ── Main pipeline ────────────────────────────────────────────────────────────
+    with open(path, 'w', encoding='utf-8') as f:
+        json.dump({'generated_at': datetime.now(timezone.utc).isoformat(),
+                   'total_items': len(valid), 'items': valid},
+                  f, ensure_ascii=False, indent=2)
 
 def run(output_dir: str, window_hours: int, opml_path: str, archive_days: int):
     global ARCHIVE_DAYS
     ARCHIVE_DAYS = archive_days
 
     feeds = parse_opml(opml_path)
-    print(f"[INFO] Loaded {len(feeds)} feeds from OPML")
+    print(f"[INFO] Loaded {len(feeds)} feeds")
 
-    all_items = []
-    seen_ids_global: set[str] = set()
+    all_items, seen_ids = [], {}
     now_ts = time.time()
-    feed_statuses = []
-    total_dedup = 0
+    feed_statuses, total_dedup = [], 0
+    total_noise, total_short = 0, 0
 
     print("[INFO] Fetching feeds...")
-    with ThreadPoolExecutor(max_workers=8) as executor:
-        futures = {executor.submit(fetch_feed, f): f for f in feeds}
+    with ThreadPoolExecutor(max_workers=8) as ex:
+        futures = {ex.submit(fetch_feed, f): f for f in feeds}
         for future in as_completed(futures):
             status, items = future.result()
-            unique, n_dup = deduplicate(items, seen_ids_global)
+            unique, n_dup = deduplicate(items, seen_ids)
             all_items.extend(unique)
             total_dedup += n_dup
             status['items_unique'] = len(unique)
             feed_statuses.append(status)
-            feed_name = futures[future]['text']
+            name = futures[future]['text']
             ok = '[OK]' if status['success'] else '[FAIL]'
-            dup_str = f", -{n_dup} duplicates" if n_dup else ""
-            print(f"  {ok} {feed_name}: +{status['items_total']} items, {len(unique)} unique{dup_str}")
+            d = f", -{n_dup} dup" if n_dup else ""
+            print(f"  {ok} {name}: +{status['items_total']} items, {len(unique)} unique{d}")
 
-    print(f"[INFO] Total: {len(all_items)} unique (after {total_dedup} intra-run dedup)")
+    print(f"[INFO] Raw unique: {len(all_items)} (intra-run dedup: {total_dedup})")
 
-    # Load existing archive
+    # Load archive
     archive_path = os.path.join(output_dir, 'archive.json')
     archive_items, archive_seen = load_archive(archive_path)
-    print(f"[INFO] Archive: {len(archive_items)} items (last {ARCHIVE_DAYS} days)")
+    print(f"[INFO] Archive: {len(archive_items)} items ({ARCHIVE_DAYS}d)")
 
-    # Global dedup against archive
+    # Archive dedup
     final_items = []
     for item in all_items:
         sid = item_id(item['title'], item['url'])
         if sid not in archive_seen:
             final_items.append(item)
 
-    scored = [score_item(item, now_ts) for item in final_items]
+    print(f"[INFO] After archive dedup: {len(final_items)}")
+
+    # Noise filter
+    clean_items = []
+    for item in final_items:
+        noisy, reason = is_noise(item['title'], item.get('description',''), item['url'])
+        if noisy:
+            total_noise += 1
+            if reason == 'short_item':
+                total_short += 1
+            t = item['title'][:35].encode('ascii','replace').decode('ascii')
+            print(f"  [FILTER] {reason} | {t}")
+        else:
+            clean_items.append(item)
+    print(f"[INFO] After noise filter: {len(clean_items)} (-{total_noise} noise, -{total_short} short)")
+
+    # Time window
+    cutoff = now_ts - (window_hours * 3600)
+    time_filtered = []
+    for item in clean_items:
+        if not item['published_at']:
+            time_filtered.append(item)
+            continue
+        try:
+            dt = datetime.fromisoformat(item['published_at'].replace('Z','+00:00'))
+            if dt.timestamp() >= cutoff:
+                time_filtered.append(item)
+        except Exception:
+            time_filtered.append(item)
+    print(f"[INFO] After time window ({window_hours}h): {len(time_filtered)}")
+
+    # Sort by date desc (newest first)
+    def sort_key(item):
+        if not item.get('published_at'):
+            return datetime.min.replace(tzinfo=timezone.utc)
+        try:
+            return datetime.fromisoformat(item['published_at'].replace('Z','+00:00'))
+        except Exception:
+            return datetime.min.replace(tzinfo=timezone.utc)
+
+    time_filtered.sort(key=sort_key, reverse=True)
+    print(f"[INFO] Sorted by date (newest first)")
+
+    # Score
+    scored = [score_item(item, now_ts) for item in time_filtered]
     scored.sort(key=lambda x: x['total_score'], reverse=True)
+    print(f"[INFO] Scored: {len(scored)}")
 
     generated_at = datetime.now(timezone.utc).isoformat()
     os.makedirs(output_dir, exist_ok=True)
 
     # latest-24h-min.json: top 500
-    min_output = {
-        'generated_at': generated_at,
-        'total_items': len(scored[:500]),
-        'items': scored[:500],
-    }
+    min_out = {'generated_at': generated_at, 'total_items': len(scored[:500]), 'items': scored[:500]}
     with open(os.path.join(output_dir, 'latest-24h-min.json'), 'w', encoding='utf-8') as f:
-        json.dump(min_output, f, ensure_ascii=False, indent=2)
-    print(f"[INFO] Wrote {len(scored[:500])} items to latest-24h-min.json")
+        json.dump(min_out, f, ensure_ascii=False, indent=2)
+    print(f"[INFO] latest-24h-min.json: {len(scored[:500])} items")
 
-    # latest-24h-all.json: all items this run
-    all_output = {
-        'generated_at': generated_at,
-        'total_items': len(scored),
-        'items': scored,
-    }
+    # latest-24h-all.json: all scored
+    all_out = {'generated_at': generated_at, 'total_items': len(scored), 'items': scored}
     with open(os.path.join(output_dir, 'latest-24h-all.json'), 'w', encoding='utf-8') as f:
-        json.dump(all_output, f, ensure_ascii=False, indent=2)
-    print(f"[INFO] Wrote {len(scored)} items to latest-24h-all.json")
+        json.dump(all_out, f, ensure_ascii=False, indent=2)
+    print(f"[INFO] latest-24h-all.json: {len(scored)} items")
 
     # Update archive
-    updated_archive = archive_items + scored
-    save_archive(archive_path, updated_archive)
-    print(f"[INFO] Updated archive: {len(updated_archive)} total items")
+    updated = archive_items + scored
+    save_archive(archive_path, updated)
+    print(f"[INFO] Archive updated: {len(updated)} total")
 
     # source-status.json
-    status_output = {
+    status_out = {
         'generated_at': generated_at,
         'feeds': feed_statuses,
         'summary': {
@@ -387,18 +425,20 @@ def run(output_dir: str, window_hours: int, opml_path: str, archive_days: int):
             'failed_feeds': sum(1 for s in feed_statuses if not s['success']),
             'total_items': len(all_items),
             'deduplicated': total_dedup,
+            'noise_filtered': total_noise,
+            'short_filtered': total_short,
         }
     }
     with open(os.path.join(output_dir, 'source-status.json'), 'w', encoding='utf-8') as f:
-        json.dump(status_output, f, ensure_ascii=False, indent=2)
-    print(f"[INFO] Wrote source-status.json ({status_output['summary']['successful_feeds']}/{len(feeds)} feeds OK)")
+        json.dump(status_out, f, ensure_ascii=False, indent=2)
+    ok_feeds = status_out['summary']['successful_feeds']
+    print(f"[INFO] source-status.json: {ok_feeds}/{len(feeds)} feeds OK")
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description='AI News Radar - RSS Aggregator')
-    parser.add_argument('--output-dir', default='data', help='Output directory')
-    parser.add_argument('--window-hours', type=int, default=24, help='Time window in hours')
-    parser.add_argument('--rss-opml', default='feeds/follow.example.opml', help='OPML file path')
-    parser.add_argument('--archive-days', type=int, default=21, help='Archive retention days')
-    args = parser.parse_args()
-
+    p = argparse.ArgumentParser()
+    p.add_argument('--output-dir', default='data')
+    p.add_argument('--window-hours', type=int, default=24)
+    p.add_argument('--rss-opml', default='feeds/follow.example.opml')
+    p.add_argument('--archive-days', type=int, default=21)
+    args = p.parse_args()
     run(args.output_dir, args.window_hours, args.rss_opml, args.archive_days)

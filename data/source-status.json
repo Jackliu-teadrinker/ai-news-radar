@@ -1,141 +1,77 @@
 {
-  "generated_at": "2026-05-18T05:35:32.896375Z",
-  "sites": [
+  "generated_at": "2026-05-19T03:56:10.486946+00:00",
+  "feeds": [
     {
-      "site_id": "official_ai",
-      "site_name": "Official AI Updates",
-      "ok": true,
-      "item_count": 198,
-      "duration_ms": 7224,
+      "feed": "GN: 脑机接口",
+      "success": true,
+      "items_total": 5,
+      "items_unique": 5,
       "error": null
     },
     {
-      "site_id": "aibreakfast",
-      "site_name": "AI Breakfast",
-      "ok": true,
-      "item_count": 9,
-      "duration_ms": 301,
+      "feed": "GN: embodied intelligence",
+      "success": true,
+      "items_total": 100,
+      "items_unique": 100,
       "error": null
     },
     {
-      "site_id": "followbuilders",
-      "site_name": "Follow Builders",
-      "ok": true,
-      "item_count": 19,
-      "duration_ms": 161,
+      "feed": "GN: Physical AI",
+      "success": true,
+      "items_total": 100,
+      "items_unique": 99,
       "error": null
     },
     {
-      "site_id": "techurls",
-      "site_name": "TechURLs",
-      "ok": true,
-      "item_count": 405,
-      "duration_ms": 497,
+      "feed": "GN: 人形机器人",
+      "success": true,
+      "items_total": 100,
+      "items_unique": 100,
       "error": null
     },
     {
-      "site_id": "buzzing",
-      "site_name": "Buzzing",
-      "ok": true,
-      "item_count": 744,
-      "duration_ms": 341,
+      "feed": "GN: 具身智能",
+      "success": true,
+      "items_total": 100,
+      "items_unique": 96,
       "error": null
     },
     {
-      "site_id": "iris",
-      "site_name": "Info Flow",
-      "ok": true,
-      "item_count": 405,
-      "duration_ms": 11770,
+      "feed": "GN: robot",
+      "success": true,
+      "items_total": 101,
+      "items_unique": 98,
       "error": null
     },
     {
-      "site_id": "bestblogs",
-      "site_name": "BestBlogs",
-      "ok": true,
-      "item_count": 1,
-      "duration_ms": 1027,
+      "feed": "GN: humanoid robot",
+      "success": true,
+      "items_total": 98,
+      "items_unique": 57,
       "error": null
     },
     {
-      "site_id": "zeli",
-      "site_name": "Zeli",
-      "ok": true,
-      "item_count": 55,
-      "duration_ms": 529,
+      "feed": "GN: BCI",
+      "success": true,
+      "items_total": 100,
+      "items_unique": 100,
       "error": null
     },
     {
-      "site_id": "aihubtoday",
-      "site_name": "AI HubToday",
-      "ok": true,
-      "item_count": 10,
-      "duration_ms": 392,
-      "error": null
-    },
-    {
-      "site_id": "aibase",
-      "site_name": "AIbase",
-      "ok": true,
-      "item_count": 20,
-      "duration_ms": 1267,
-      "error": null
-    },
-    {
-      "site_id": "aihot",
-      "site_name": "AI HOT",
-      "ok": true,
-      "item_count": 50,
-      "duration_ms": 3784,
-      "error": null
-    },
-    {
-      "site_id": "newsnow",
-      "site_name": "NewsNow",
-      "ok": true,
-      "item_count": 148,
-      "duration_ms": 412,
+      "feed": "GN: 机器人",
+      "success": true,
+      "items_total": 100,
+      "items_unique": 71,
       "error": null
     }
   ],
-  "successful_sites": 12,
-  "failed_sites": [],
-  "zero_item_sites": [],
-  "fetched_raw_items": 2064,
-  "items_before_topic_filter": 2953,
-  "items_in_24h": 409,
-  "rss_opml": {
-    "enabled": false,
-    "path": null,
-    "feed_total": 0,
-    "effective_feed_total": 0,
-    "ok_feeds": 0,
-    "failed_feeds": [],
-    "zero_item_feeds": [],
-    "skipped_feeds": [],
-    "replaced_feeds": [],
-    "feeds": []
-  },
-  "agentmail": {
-    "enabled": false,
-    "ok": null,
-    "item_count": 0,
-    "privacy": "metadata_only_no_body",
-    "published_by_default": false
-  },
-  "x_api": {
-    "enabled": false,
-    "ok": null,
-    "item_count": 0,
-    "privacy": "public_posts_metadata_only",
-    "published_by_default": false,
-    "official_free_read_quota": false,
-    "unit_cost_usd_per_post_read": 0.005,
-    "daily_post_limit": 20,
-    "max_results_per_run": 20,
-    "effective_result_cap": 20,
-    "estimated_max_cost_usd_per_run": 0.1,
-    "run_utc_hour": 0,
-    "generated_date_utc": "2026-05-18"
+  "summary": {
+    "total_feeds": 9,
+    "successful_feeds": 9,
+    "failed_feeds": 0,
+    "total_items": 726,
+    "deduplicated": 78,
+    "noise_filtered": 12,
+    "short_filtered": 0
   }
 }
