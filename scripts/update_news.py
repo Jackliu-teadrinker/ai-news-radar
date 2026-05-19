@@ -172,6 +172,7 @@ def authority_score(source: str) -> int:
 # Noise patterns with word boundaries (avoid false matches like "Interface" matching "ETF")
 NOISE_PATTERNS = [
     re.compile(r'\bETF\b', re.I),
+    re.compile(r'机器人ETF', re.I),
     re.compile(r'\b股票\b|\b股价\b|\b涨跌\b|\b上市\b|\bIPO\b', re.I),
     re.compile(r'扫地机器人|扫地机|roomba|robovac', re.I),
     re.compile(r'概念股', re.I),
