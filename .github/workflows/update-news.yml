@@ -39,17 +39,8 @@ jobs:
       - name: Run update
         run: python scripts/update_news.py --output-dir data --window-hours 24 --rss-opml feeds/follow.example.opml --archive-days 21
 
-      - name: Commit and push
-        run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-          git add data/latest-24h-min.json data/latest-24h-all.json data/source-status.json
-          if git diff --staged --quiet; then
-            echo "No changes to commit"
-          else
-            git commit -m "Update news radar $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
-            git push
-          fi
+      - name: Commit and push via gh api
+        run: python .github/workflows/gh_push_data.py
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
