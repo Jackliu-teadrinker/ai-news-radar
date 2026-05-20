@@ -187,7 +187,7 @@ NOISE_DOMAINS = [
     'stock.cnfol.com','guba.sina.com.cn','xueqiu.com',
 ]
 
-MIN_DESC_LEN = 200
+MIN_DESC_LEN = 0  # Disabled: GN RSS descriptions are inherently short snippets, not full article text
 
 def is_noise(title: str, description: str, url: str) -> tuple[bool, str]:
     text = (title + ' ' + description).lower()
