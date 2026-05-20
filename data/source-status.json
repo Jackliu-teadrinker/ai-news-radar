@@ -1,6 +1,27 @@
 {
-  "generated_at": "2026-05-20T08:19:58.995649+00:00",
+  "generated_at": "2026-05-20T08:21:15.119834+00:00",
   "feeds": [
+    {
+      "feed": "国外人形机器人资讯",
+      "success": true,
+      "items_total": 100,
+      "items_unique": 100,
+      "error": null
+    },
+    {
+      "feed": "GN: 脑机接口",
+      "success": true,
+      "items_total": 100,
+      "items_unique": 100,
+      "error": null
+    },
+    {
+      "feed": "国外机器人资讯",
+      "success": true,
+      "items_total": 100,
+      "items_unique": 74,
+      "error": null
+    },
     {
       "feed": "GN: 人形机器人",
       "success": true,
@@ -26,14 +47,7 @@
       "feed": "国外物理AI资讯",
       "success": true,
       "items_total": 100,
-      "items_unique": 100,
-      "error": null
-    },
-    {
-      "feed": "国外机器人资讯",
-      "success": true,
-      "items_total": 100,
-      "items_unique": 97,
+      "items_unique": 96,
       "error": null
     },
     {
@@ -44,17 +58,10 @@
       "error": null
     },
     {
-      "feed": "GN: 脑机接口",
+      "feed": "GN: 物理AI",
       "success": true,
       "items_total": 100,
-      "items_unique": 100,
-      "error": null
-    },
-    {
-      "feed": "国外人形机器人资讯",
-      "success": true,
-      "items_total": 100,
-      "items_unique": 73,
+      "items_unique": 99,
       "error": null
     },
     {
@@ -62,13 +69,6 @@
       "success": true,
       "items_total": 103,
       "items_unique": 77,
-      "error": null
-    },
-    {
-      "feed": "GN: 物理AI",
-      "success": true,
-      "items_total": 100,
-      "items_unique": 99,
       "error": null
     }
   ],
