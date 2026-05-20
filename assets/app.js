@@ -19,8 +19,8 @@ const state = {
   waytoagiData: null,
   sourceStatus: null,
   generatedAt: null,
-  // Jack 2026-05-15: 五维评分排序
-  sortMode: 'priority',  // 'priority' | 'total_score' | 'relevance' | 'authority' | 'depth' | 'timeliness'
+  // Jack 2026-05-20: 按时间最新排序
+  sortMode: 'time',  // 'time' | 'priority' | 'total_score' | 'relevance' | 'authority' | 'depth' | 'timeliness'
 };
 
 const statsEl = document.getElementById("stats");
@@ -71,7 +71,7 @@ const GN_PRIORITY = {
   "GN: 具身智能": 2,
   "GN: 脑机接口": 3,
   "GN: 机器人": 4,
-  "国外物理AI资讯": 5,
+  "GN: Physical AI": 5,
   "GN: 机器人政策": 6,
   // Jack 2026-05-15: new OPML source categories
   "arXiv Robotics": 10,
@@ -84,7 +84,7 @@ const GN_CATEGORIES = [
   { id: "GN: 具身智能",   label: "具身智能" },
   { id: "GN: 脑机接口",   label: "脑机接口" },
   { id: "GN: 机器人",     label: "机器人" },
-  { id: "国外物理AI资讯", label: "国外物理AI资讯" },
+  { id: "GN: Physical AI", label: "Physical AI" },
   { id: "arXiv Robotics", label: "学术" },
   { id: "商业",           label: "商业" },
 ];
@@ -93,9 +93,9 @@ const GN_CATEGORIES = [
 const AI_LABEL_TO_GN = {
   "robotics":       "GN: Physical AI",
   "humanoid":       "GN: 人形机器人",
-  "embodied_ai":    "国外具身智能资讯",
+  "embodied_ai":    "GN: 具身智能",
   "brain_computer": "GN: 脑机接口",
-  "physical_ai":    "国外物理AI资讯",
+  "physical_ai":    "GN: Physical AI",
   // Also support matching the category ID directly as ai_label
 };
 
@@ -380,13 +380,14 @@ function getFilteredItems() {
   let cutoffMs = null;
   if (state.todayMode) {
     const now = new Date();
-    // FIX 2026-05-20: CST yesterday 9am = UTC yesterday 01:00
-    // Subtract 1 day to get yesterday from current CST date
+    // Jack 2026-05-18 fix: CST today 9am = UTC yesterday 1am
+    // now.getUTCDate() gives the UTC day (may differ from CST day)
+    // Use getDate() for local CST
     const cstDate = new Date(now.getTime() + 8 * 3600000); // shift to CST
     const cst9base = new Date(Date.UTC(
       cstDate.getUTCFullYear(),
       cstDate.getUTCMonth(),
-      cstDate.getUTCDate() - 1,
+      cstDate.getUTCDate(),
       1, 0, 0
     ));
     cutoffMs = cst9base.getTime();
@@ -418,6 +419,13 @@ function getFilteredItems() {
 // Jack 2026-05-15: 五维评分排序函数
 function sortByScore(items, sortMode) {
   if (sortMode === 'priority') return items;
+  if (sortMode === 'time') {
+    return [...items].sort((a, b) => {
+      const ta = a.published_at ? new Date(a.published_at).getTime() : 0;
+      const tb = b.published_at ? new Date(b.published_at).getTime() : 0;
+      return tb - ta; // 降序：最新在前
+    });
+  }
   return [...items].sort((a, b) => {
     try {
       const scoreA = a[sortMode] !== undefined && a[sortMode] !== null ? a[sortMode] : -1;
