@@ -380,14 +380,13 @@ function getFilteredItems() {
   let cutoffMs = null;
   if (state.todayMode) {
     const now = new Date();
-    // Jack 2026-05-18 fix: CST today 9am = UTC yesterday 1am
-    // now.getUTCDate() gives the UTC day (may differ from CST day)
-    // Use getDate() for local CST
+    // FIX 2026-05-20: CST yesterday 9am = UTC yesterday 01:00
+    // Subtract 1 day to get yesterday from current CST date
     const cstDate = new Date(now.getTime() + 8 * 3600000); // shift to CST
     const cst9base = new Date(Date.UTC(
       cstDate.getUTCFullYear(),
       cstDate.getUTCMonth(),
-      cstDate.getUTCDate(),
+      cstDate.getUTCDate() - 1,)
       1, 0, 0
     ));
     cutoffMs = cst9base.getTime();
