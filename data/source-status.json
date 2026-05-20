@@ -1,24 +1,31 @@
 {
-  "generated_at": "2026-05-20T08:19:18.047696+00:00",
+  "generated_at": "2026-05-20T08:19:58.995649+00:00",
   "feeds": [
     {
-      "feed": "国外物理AI资讯",
+      "feed": "GN: 人形机器人",
       "success": true,
-      "items_total": 100,
-      "items_unique": 100,
+      "items_total": 102,
+      "items_unique": 102,
       "error": null
     },
     {
       "feed": "GN: 具身智能",
       "success": true,
       "items_total": 100,
+      "items_unique": 98,
+      "error": null
+    },
+    {
+      "feed": "GN: BCI",
+      "success": true,
+      "items_total": 100,
       "items_unique": 100,
       "error": null
     },
     {
-      "feed": "GN: 人形机器人",
+      "feed": "国外物理AI资讯",
       "success": true,
-      "items_total": 102,
+      "items_total": 100,
       "items_unique": 100,
       "error": null
     },
@@ -30,10 +37,10 @@
       "error": null
     },
     {
-      "feed": "GN: BCI",
+      "feed": "国外具身智能资讯",
       "success": true,
       "items_total": 100,
-      "items_unique": 100,
+      "items_unique": 98,
       "error": null
     },
     {
@@ -41,13 +48,6 @@
       "success": true,
       "items_total": 100,
       "items_unique": 100,
-      "error": null
-    },
-    {
-      "feed": "国外具身智能资讯",
-      "success": true,
-      "items_total": 100,
-      "items_unique": 98,
       "error": null
     },
     {
@@ -61,14 +61,14 @@
       "feed": "GN: 机器人",
       "success": true,
       "items_total": 103,
-      "items_unique": 78,
+      "items_unique": 77,
       "error": null
     },
     {
       "feed": "GN: 物理AI",
       "success": true,
       "items_total": 100,
-      "items_unique": 98,
+      "items_unique": 99,
       "error": null
     }
   ],
@@ -78,7 +78,7 @@
     "failed_feeds": 0,
     "total_items": 944,
     "deduplicated": 61,
-    "noise_filtered": 26,
+    "noise_filtered": 25,
     "short_filtered": 0
   }
 }
