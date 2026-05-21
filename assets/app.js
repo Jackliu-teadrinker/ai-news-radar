@@ -19,7 +19,8 @@ const state = {
   waytoagiData: null,
   sourceStatus: null,
   generatedAt: null,
-  // Jack 2026-05-20: 按时间最新排�?  sortMode: 'time',  // 'time' | 'priority' | 'total_score' | 'relevance' | 'authority' | 'depth' | 'timeliness'
+  // Jack 2026-05-20: 按时间最新排序
+  sortMode: 'time',  // 'time' | 'priority' | 'total_score' | 'relevance' | 'authority' | 'depth' | 'timeliness'
 };
 
 const statsEl = document.getElementById("stats");
@@ -66,9 +67,9 @@ const SOURCE_KINDS = {
 
 // Jack 2026-05-13: GN feed display priority (lower = shown first)
 const GN_PRIORITY = {
-  // Jack 2026-05-20: 国外机器人资�?+ 国外人形机器人资�?优先
-  "GN: ���器�?: 1,
-  "GN: 人形机器�?: 2,
+  // Jack 2026-05-20: 国外机器人资讯 + 国外人形机器人资讯 优先
+  "GN: 机器人": 1,
+  "GN: 人形机器人": 2,
   "GN: 具身智能": 3,
   "GN: 脑机接口": 4,
   "GN: Physical AI": 5,
@@ -79,9 +80,9 @@ const GN_PRIORITY = {
 };
 
 const GN_CATEGORIES = [
-  // Jack 2026-05-20: 国外机器人资�?+ 国外人形机器人资�?优先
-  { id: "GN: 机器�?,     label: "机器�? },
-  { id: "GN: 人形机器�?, label: "人形机器�? },
+  // Jack 2026-05-20: 国外机器人资讯 + 国外人形机器人资讯 优先
+  { id: "GN: 机器人",     label: "机器人" },
+  { id: "GN: 人形机器人", label: "人形机器人" },
   { id: "GN: 具身智能",   label: "具身智能" },
   { id: "GN: 脑机接口",   label: "脑机接口" },
   { id: "GN: Physical AI", label: "Physical AI" },
@@ -92,7 +93,7 @@ const GN_CATEGORIES = [
 // Jack 2026-05-18: map ai_label values to GN category IDs
 const AI_LABEL_TO_GN = {
   "robotics":       "GN: Physical AI",
-  "humanoid":       "GN: 人形机器�?,
+  "humanoid":       "GN: 人形机器人",
   "embodied_ai":    "GN: 具身智能",
   "brain_computer": "GN: 脑机接口",
   "physical_ai":    "GN: Physical AI",
@@ -101,8 +102,8 @@ const AI_LABEL_TO_GN = {
 
 // Jack 2026-05-15: map raw source names to canonical category IDs
 const SOURCE_TO_CATEGORY = {
-  "36�?:   "商业",
-  "创业�?: "商业",
+  "36氪":   "商业",
+  "创业邦": "商业",
 };
 
 function normalizeSourceCategory(source) {
@@ -152,7 +153,7 @@ function fmtDate(iso) {
 function setStats(payload) {
   const cards = [
     ["AI 信号", fmtNumber(payload.total_items)],
-    ["站点�?, fmtNumber(payload.site_count)],
+    ["站点数", fmtNumber(payload.site_count)],
     ["来源分组", fmtNumber(payload.source_count)],
     ["归档", fmtNumber(payload.archive_total || 0)]
   ];
@@ -211,20 +212,20 @@ function renderCoverageStrip(errorMessage = "") {
   const okSites = Number(state.sourceStatus?.successful_sites || 0);
   const opmlValue = rss.enabled ? `${fmtNumber(rss.ok_feeds || 0)}/${fmtNumber(rss.effective_feed_total || 0)}` : "OPML";
   const opmlMeta = rss.enabled ? "RSS示例/自定义订阅已接入" : "可用OPML批量接入RSS";
-  const xApiLabel = xApi.enabled ? `X ${xApi.skipped ? "待窗�? : fmtNumber(xApi.item_count || 0)}` : "X待配�?;
-  const mailLabel = agentmail.enabled ? `Mail ${fmtNumber(agentmail.item_count || 0)}` : "Mail待配�?;
+  const xApiLabel = xApi.enabled ? `X ${xApi.skipped ? "待窗口" : fmtNumber(xApi.item_count || 0)}` : "X待配置";
+  const mailLabel = agentmail.enabled ? `Mail ${fmtNumber(agentmail.item_count || 0)}` : "Mail待配置";
   const advancedMeta = xApi.enabled || agentmail.enabled
     ? `额度保护 · ${xApiLabel} / ${mailLabel}`
-    : "X API �?AgentMail 默认关闭";
+    : "X API 与 AgentMail 默认关闭";
 
   const cards = [
-    ["源健�?, totalSites ? `${fmtNumber(okSites)}/${fmtNumber(totalSites)}` : "加载�?, failedSites.length ? `${fmtNumber(failedSites.length)} 个失败源` : (errorMessage || "内置源正�?), failedSites.length ? "warn" : "ok"],
-    ["今日覆盖�?, `${fmtNumber(coverageCount)} 条`, allCount ? `全网抓取原始信号 · ${fmtNumber(allCount)} 条入池` : "全网抓取原始信号", "signal"],
-    ["AI精�?, `${fmtNumber(state.totalAi)} 条`, "24小时强相关信�?, "signal"],
+    ["源健康", totalSites ? `${fmtNumber(okSites)}/${fmtNumber(totalSites)}` : "加载中", failedSites.length ? `${fmtNumber(failedSites.length)} 个失败源` : (errorMessage || "内置源正常"), failedSites.length ? "warn" : "ok"],
+    ["今日覆盖池", `${fmtNumber(coverageCount)} 条`, allCount ? `全网抓取原始信号 · ${fmtNumber(allCount)} 条入池` : "全网抓取原始信号", "signal"],
+    ["AI精选", `${fmtNumber(state.totalAi)} 条`, "24小时强相关信号", "signal"],
     ["官方/日报源池", `${fmtNumber(officialCount + newsletterCount)} 条`, "官方节点 + AI Breakfast", "official"],
     ["Builders/X源池", `${fmtNumber(buildersCount)} 条`, "Follow Builders公开feed", "builders"],
     ["RSS/OPML扩展", opmlValue, opmlMeta, "private"],
-    ["高级�?, "X / Mail", advancedMeta, "private"],
+    ["高级源", "X / Mail", advancedMeta, "private"],
   ];
 
   cards.forEach(([label, value, meta, tone]) => {
@@ -241,7 +242,7 @@ function renderAdvancedSummary() {
   if (!status) {
     const catLabel = state.categoryFilter ? ` · 已筛选：${GN_CATEGORIES.find(c => c.id === state.categoryFilter)?.label || state.categoryFilter}` : "";
     const todayLabel = state.todayMode ? " · 昨日9点后" : "";
-    advancedSummaryEl.textContent = `全量 ${fmtNumber(allCount)} �?{catLabel}${todayLabel}`;
+    advancedSummaryEl.textContent = `全量 ${fmtNumber(allCount)} 条${catLabel}${todayLabel}`;
     return;
   }
   const sites = Array.isArray(status.sites) ? status.sites : [];
@@ -249,7 +250,7 @@ function renderAdvancedSummary() {
   const okSites = Number(status.successful_sites || 0);
   const catLabel = state.categoryFilter ? ` · 已筛选：${GN_CATEGORIES.find(c => c.id === state.categoryFilter)?.label || state.categoryFilter}` : "";
   const todayLabel = state.todayMode ? " · 昨日9点后" : "";
-  advancedSummaryEl.textContent = `${fmtNumber(okSites)}/${fmtNumber(totalSites)} 源可�?· 全量 ${fmtNumber(allCount)} �?{catLabel}${todayLabel}`;
+  advancedSummaryEl.textContent = `${fmtNumber(okSites)}/${fmtNumber(totalSites)} 源可用 · 全量 ${fmtNumber(allCount)} 条${catLabel}${todayLabel}`;
 }
 
 function computeSiteStats(items) {
@@ -353,15 +354,15 @@ function renderModeSwitch() {
   modeAllBtnEl.classList.toggle("active", state.mode === "all");
   if (allDedupeWrapEl) allDedupeWrapEl.classList.toggle("show", state.mode === "all");
   if (allDedupeToggleEl) allDedupeToggleEl.checked = state.allDedup;
-  if (allDedupeLabelEl) allDedupeLabelEl.textContent = state.allDedup ? "去重开" : "去重�?;
+  if (allDedupeLabelEl) allDedupeLabelEl.textContent = state.allDedup ? "去重开" : "去重关";
   if (state.mode === "ai") {
-    modeHintEl.textContent = `AI强相�?· ${fmtNumber(state.totalAi)} 条`;
-    if (listTitleEl) listTitleEl.textContent = "AI 信号�?;
+    modeHintEl.textContent = `AI强相关 · ${fmtNumber(state.totalAi)} 条`;
+    if (listTitleEl) listTitleEl.textContent = "AI 信号流";
   } else {
     const allCount = state.allDedup
       ? (state.totalAllMode || state.itemsAll.length)
       : (state.totalRaw || state.itemsAllRaw.length);
-    modeHintEl.textContent = `全量 · ${state.allDedup ? "去重开" : "去重�?} · ${fmtNumber(allCount)} 条`;
+    modeHintEl.textContent = `全量 · ${state.allDedup ? "去重开" : "去重关"} · ${fmtNumber(allCount)} 条`;
     if (listTitleEl) listTitleEl.textContent = "全量更新";
   }
   renderAdvancedSummary();
@@ -420,7 +421,7 @@ function getFilteredItems() {
 function sortByScore(items, sortMode) {
   if (sortMode === 'priority') return items;
   if (sortMode === 'time') {
-    // 先按 feed 分组：优�?feed 排前面，然后各组内按时间
+    // 先按 feed 分组：优先 feed 排前面，然后各组内按时间
     const PRIORITY_FEEDS = ['robotics', 'humanoid'];
     const isPriority = item => PRIORITY_FEEDS.includes(item.ai_label);
     const priorityItems = items.filter(isPriority);
@@ -466,7 +467,7 @@ function renderItemNode(item) {
       const color = pct >= 60 ? 'score-high' : pct >= 40 ? 'score-mid' : 'score-low';
       scoreEl.textContent = pct;
       scoreEl.className = 'score ' + color;
-      scoreEl.title = `五维总分: ${pct}/100 (相关�?{item.relevance || '?'} | 权威�?{item.authority || '?'} | 深度${item.depth || '?'} | 时效�?{item.timeliness || '?'} | 写作价�?{item.writing_value || '?'})`;
+      scoreEl.title = `五维总分: ${pct}/100 (相关性${item.relevance || '?'} | 权威性${item.authority || '?'} | 深度${item.depth || '?'} | 时效性${item.timeliness || '?'} | 写作价值${item.writing_value || '?'})`;
     } else {
       scoreEl.textContent = '--';
       scoreEl.className = 'score score-none';
@@ -514,7 +515,7 @@ function buildSourceGroupNode(source, items) {
 function groupBySource(items) {
   const groupMap = new Map();
   items.forEach((item) => {
-    const key = item.source || "未分�?;
+    const key = item.source || "未分区";
     if (!groupMap.has(key)) {
       groupMap.set(key, []);
     }
@@ -606,7 +607,7 @@ function renderList() {
   if (!filtered.length) {
     const empty = document.createElement("div");
     empty.className = "empty";
-    empty.textContent = "当前筛选条件下没有结果�?;
+    empty.textContent = "当前筛选条件下没有结果。";
     newsListEl.appendChild(empty);
     return;
   }
@@ -628,27 +629,27 @@ function waytoagiViews(waytoagi) {
   return { updates7d, updatesToday, latestDate };
 }
 
-function renderWaytoagi(waytoagi) { if (!waytoagi || !waytoagi.updates_7d || waytoagi.updates_7d.length === 0) { if (waytoagiUpdatedAtEl) waytoagiUpdatedAtEl.textContent = "WaytoAGI 已禁�?; if (waytoagiListEl) waytoagiListEl.innerHTML = ""; return; }
+function renderWaytoagi(waytoagi) { if (!waytoagi || !waytoagi.updates_7d || waytoagi.updates_7d.length === 0) { if (waytoagiUpdatedAtEl) waytoagiUpdatedAtEl.textContent = "WaytoAGI 已禁用"; if (waytoagiListEl) waytoagiListEl.innerHTML = ""; return; }
   const { updates7d, updatesToday, latestDate } = waytoagiViews(waytoagi);
   if (waytoagiTodayBtnEl) waytoagiTodayBtnEl.classList.toggle("active", state.waytoagiMode === "today");
   if (waytoagi7dBtnEl) waytoagi7dBtnEl.classList.toggle("active", state.waytoagiMode === "7d");
-  waytoagiUpdatedAtEl.textContent = `更新时间�?{fmtTime(waytoagi.generated_at)}`;
+  waytoagiUpdatedAtEl.textContent = `更新时间：${fmtTime(waytoagi.generated_at)}`;
 
   waytoagiMetaEl.innerHTML = "";
   const rootLink = document.createElement("a");
   rootLink.href = waytoagi.root_url || "#";
   rootLink.target = "_blank";
   rootLink.rel = "noopener noreferrer";
-  rootLink.textContent = "主页�?;
+  rootLink.textContent = "主页面";
   const historyLink = document.createElement("a");
   historyLink.href = waytoagi.history_url || "#";
   historyLink.target = "_blank";
   historyLink.rel = "noopener noreferrer";
-  historyLink.textContent = "历史更新�?;
+  historyLink.textContent = "历史更新页";
   const todayCount = document.createElement("span");
-  todayCount.textContent = `最近更新日(${latestDate || "--"})�?{fmtNumber(waytoagi.count_today || updatesToday.length)} 条`;
+  todayCount.textContent = `最近更新日(${latestDate || "--"})：${fmtNumber(waytoagi.count_today || updatesToday.length)} 条`;
   const weekCount = document.createElement("span");
-  weekCount.textContent = `�?7 日：${fmtNumber(waytoagi.count_7d || updates7d.length)} 条`;
+  weekCount.textContent = `近 7 日：${fmtNumber(waytoagi.count_7d || updates7d.length)} 条`;
   [rootLink, "·", historyLink, "·", todayCount, "·", weekCount].forEach((part) => {
     if (typeof part === "string") {
       const sep = document.createElement("span");
@@ -673,8 +674,8 @@ function renderWaytoagi(waytoagi) { if (!waytoagi || !waytoagi.updates_7d || way
     const div = document.createElement("div");
     div.className = "waytoagi-empty";
     div.textContent = state.waytoagiMode === "today"
-      ? "最近更新日没有更新，可切换到近7日查看�?
-      : (waytoagi.warning || "�?7 日没有更�?);
+      ? "最近更新日没有更新，可切换到近7日查看。"
+      : (waytoagi.warning || "近 7 日没有更新");
     waytoagiListEl.appendChild(div);
     return;
   }
@@ -756,11 +757,11 @@ function renderSourceHealth(errorMessage = "") {
   const metricGrid = document.createElement("div");
   metricGrid.className = "health-grid";
   metricGrid.append(
-    renderMetric("内置�?, `${fmtNumber(status.successful_sites || 0)}/${fmtNumber(sites.length)}`, failedSites.length ? "warn" : "ok"),
-    renderMetric("RSS", rss.enabled ? `${fmtNumber(rss.ok_feeds || 0)}/${fmtNumber(rss.effective_feed_total || 0)}` : "未启�?),
-    renderMetric("X API", xApi.enabled ? (xApi.skipped ? "待窗�? : `${fmtNumber(xApi.item_count || 0)}条`) : "未启�?, xApi.error ? "bad" : ""),
-    renderMetric("AgentMail", agentmail.enabled ? `${fmtNumber(agentmail.item_count || 0)}封` : "未启�?, agentmail.error ? "bad" : ""),
-    renderMetric("失败�?, fmtNumber(failedSites.length + failedFeeds.length), failedSites.length || failedFeeds.length ? "bad" : "ok"),
+    renderMetric("内置源", `${fmtNumber(status.successful_sites || 0)}/${fmtNumber(sites.length)}`, failedSites.length ? "warn" : "ok"),
+    renderMetric("RSS", rss.enabled ? `${fmtNumber(rss.ok_feeds || 0)}/${fmtNumber(rss.effective_feed_total || 0)}` : "未启用"),
+    renderMetric("X API", xApi.enabled ? (xApi.skipped ? "待窗口" : `${fmtNumber(xApi.item_count || 0)}条`) : "未启用", xApi.error ? "bad" : ""),
+    renderMetric("AgentMail", agentmail.enabled ? `${fmtNumber(agentmail.item_count || 0)}封` : "未启用", agentmail.error ? "bad" : ""),
+    renderMetric("失败源", fmtNumber(failedSites.length + failedFeeds.length), failedSites.length || failedFeeds.length ? "bad" : "ok"),
     renderMetric("替换/跳过", `${fmtNumber(replacedFeeds.length)}/${fmtNumber(skippedFeeds.length)}`)
   );
   sourceHealthEl.appendChild(metricGrid);
@@ -768,7 +769,7 @@ function renderSourceHealth(errorMessage = "") {
   const issues = document.createElement("div");
   issues.className = "health-issues";
   if (failedSites.length) issues.appendChild(renderIssueList("失败站点", failedSites));
-  if (zeroSites.length) issues.appendChild(renderIssueList("零结果站�?, zeroSites));
+  if (zeroSites.length) issues.appendChild(renderIssueList("零结果站点", zeroSites));
   if (failedFeeds.length) issues.appendChild(renderIssueList("失败 RSS", failedFeeds));
   if (skippedFeeds.length) {
     issues.appendChild(renderIssueList("跳过 RSS", skippedFeeds.map((item) => `${item.feed_url} · ${item.reason || "skipped"}`)));
@@ -779,7 +780,7 @@ function renderSourceHealth(errorMessage = "") {
   } else {
     const ok = document.createElement("div");
     ok.className = "health-ok";
-    ok.textContent = "源状态正�?;
+    ok.textContent = "源状态正常";
     sourceHealthEl.appendChild(ok);
   }
   renderAdvancedSummary();
@@ -852,7 +853,7 @@ async function init() {
     renderCoverageStrip();
     renderSiteFilters();
     renderList();
-    updatedAtEl.textContent = `更新时间�?{fmtTime(state.generatedAt)}`;
+    updatedAtEl.textContent = `更新时间：${fmtTime(state.generatedAt)}`;
   } else {
     updatedAtEl.textContent = "新闻数据加载失败";
     newsListEl.innerHTML = `<div class="empty">${newsResult.reason.message}</div>`;
@@ -934,7 +935,8 @@ if (sortSelectEl) {
   });
 }
 
-// Jack 2026-05-15: 今日9点CST分界�?const todayCutoffToggleEl = document.getElementById("todayCutoffToggle");
+// Jack 2026-05-15: 今日9点CST分界线
+const todayCutoffToggleEl = document.getElementById("todayCutoffToggle");
 const todayCutoffWrapEl = document.getElementById("todayCutoffWrap");
 if (todayCutoffToggleEl) {
   todayCutoffToggleEl.addEventListener("change", (e) => {
