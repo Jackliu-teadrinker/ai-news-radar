@@ -388,7 +388,7 @@ function getFilteredItems() {
     const cst9base = new Date(Date.UTC(
       cstDate.getUTCFullYear(),
       cstDate.getUTCMonth(),
-      cstDate.getUTCDate() - 1,
+      cstDate.getUTCDate(),
       1, 0, 0
     ));
     cutoffMs = cst9base.getTime();
@@ -629,7 +629,7 @@ function waytoagiViews(waytoagi) {
   return { updates7d, updatesToday, latestDate };
 }
 
-function renderWaytoagi(waytoagi) { if (!waytoagi || !waytoagi.updates_7d || waytoagi.updates_7d.length === 0) { if (waytoagiUpdatedAtEl) waytoagiUpdatedAtEl.textContent = "WaytoAGI 已禁用"; if (waytoagiListEl) waytoagiListEl.innerHTML = ""; return; }
+function renderWaytoagi(waytoagi) { if (!waytoagiUpdatedAtEl) return; if (!waytoagi || !waytoagi.updates_7d || waytoagi.updates_7d.length === 0) { waytoagiUpdatedAtEl.textContent = "WaytoAGI 已禁用"; if (waytoagiListEl) waytoagiListEl.innerHTML = ""; return; }
   const { updates7d, updatesToday, latestDate } = waytoagiViews(waytoagi);
   if (waytoagiTodayBtnEl) waytoagiTodayBtnEl.classList.toggle("active", state.waytoagiMode === "today");
   if (waytoagi7dBtnEl) waytoagi7dBtnEl.classList.toggle("active", state.waytoagiMode === "7d");
@@ -873,8 +873,8 @@ async function init() {
     state.waytoagiData = waytoagiResult.value;
     renderWaytoagi(state.waytoagiData);
   } else {
-    waytoagiUpdatedAtEl.textContent = "加载失败";
-    waytoagiListEl.innerHTML = `<div class="waytoagi-error">${waytoagiResult.reason.message}</div>`;
+    if (waytoagiUpdatedAtEl) waytoagiUpdatedAtEl.textContent = "加载失败";
+    if (waytoagiListEl) waytoagiListEl.innerHTML = `<div class="waytoagi-error">${waytoagiResult.reason.message}</div>`;
   }
 }
 
