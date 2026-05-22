@@ -1,9 +1,12 @@
 name: Update AI News Radar
 
 on:
+  workflow_dispatch:
   schedule:
     - cron: "*/30 * * * *"
-  workflow_dispatch:
+  push:
+    branches:
+      - master
 
 concurrency:
   group: update-ai-news-${{ github.ref }}
@@ -33,10 +36,35 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Run update (generates data files)
-        run: python scripts/update_news.py --output-dir data --window-hours 24 --rss-opml feeds/follow.example.opml --archive-days 21
+      - name: Run update + commit + push
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GIT_EMAIL: "865715887@qq.com"
+          GIT_NAME: "Jack"
+        run: |
+          git config --global user.email "$GIT_EMAIL"
+          git config --global user.name "$GIT_NAME"
 
-      - name: Update HTML cache buster (MUST run before artifact upload)
+          # Run Python script to generate data
+          python scripts/update_news.py --output-dir data --window-hours 24 --rss-opml feeds/follow.example.opml --archive-days 21
+
+          # Also save daily archive (pathA)
+          DATE_DIR=$(date +%Y-%m-%d)
+          mkdir -p "data/archives/$DATE_DIR"
+          cp data/latest-24h-min.json "data/archives/$DATE_DIR/latest-24h-min.json"
+          echo "[INFO] Daily archive saved to data/archives/$DATE_DIR/"
+
+          # Commit and push data + archives
+          git add data/latest-24h-min.json data/archives/
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: update news data $(date +%Y-%m-%d' '%H:%M)"
+            git push
+            echo "Committed and pushed successfully"
+          fi
+
+      - name: Update HTML cache buster
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GIT_EMAIL: "865715887@qq.com"
@@ -46,7 +74,7 @@ jobs:
           git config --global user.name "$GIT_NAME"
           python .github/workflows/gh_push_data.py
 
-      - name: Upload Pages artifact (uses updated HTML from previous step)
+      - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: "."
