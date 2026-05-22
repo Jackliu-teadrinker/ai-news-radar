@@ -36,8 +36,15 @@ jobs:
       - name: Run update
         run: python scripts/update_news.py --output-dir data --window-hours 24 --rss-opml feeds/follow.example.opml --archive-days 21
 
-      - name: Update HTML cache buster & push via gh api
-        run: python .github/workflows/gh_push_data.py
+      - name: Configure git and push data + HTML
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GIT_EMAIL: "865715887@qq.com"
+          GIT_NAME: "Jack"
+        run: |
+          git config --global user.email "$GIT_EMAIL"
+          git config --global user.name "$GIT_NAME"
+          python .github/workflows/gh_push_data.py
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
