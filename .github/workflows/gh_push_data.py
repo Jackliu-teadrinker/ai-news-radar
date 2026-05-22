@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
 """
-Push data files + HTML cache buster to GitHub via git push.
-Uses git credential helper configured by actions/checkout (GITHUB_TOKEN via git config).
-- Reads current git SHA and uses it as cache buster in index.html src URL
-- Only pushes index.html if the SHA actually changed (idempotent)
-Must be run from the repo root (where .git exists).
+Push data files + HTML cache buster to GitHub.
+- Uses gh api for GitHub API (authenticated via GH_TOKEN env or gh's default credential)
+- Falls back to git add/commit/push with configured git user
+- Must be run from repo root.
 """
 import base64
 import json
@@ -12,6 +11,8 @@ import os
 import re
 import subprocess
 import sys
+import urllib.request
+import urllib.error
 
 REPO = "jackliu-teadrinker/ai-news-radar"
 DATA_FILES = [
@@ -21,222 +22,204 @@ DATA_FILES = [
 ]
 HTML_FILE = "index.html"
 
+# Detect repo root (where .git exists)
+REPO_ROOT = None
+for candidate in [os.path.dirname(os.path.abspath(__file__)),
+                  os.getcwd(),
+                  os.path.expanduser("~")]:
+    if candidate and os.path.exists(os.path.join(candidate, ".git")):
+        REPO_ROOT = candidate
+        break
+if not REPO_ROOT:
+    REPO_ROOT = os.getcwd()
 
-def run_git(args: list, check=True) -> subprocess.CompletedProcess:
-    """Run a git command, return CompletedProcess."""
+
+def run_git(args, check=True, cwd=None):
     result = subprocess.run(
         ["git"] + args,
         capture_output=True, text=True,
-        cwd=os.path.dirname(os.path.abspath(__file__)) or "."
+        cwd=cwd or REPO_ROOT
     )
     if check and result.returncode != 0:
-        print(f"  git {' '.join(args)} FAILED: {result.stderr[:200]}", file=sys.stderr)
+        print(f"  git {' '.join(args)} FAILED: {result.stderr[:300]}", file=sys.stderr)
     return result
 
 
-def get_git_sha() -> str:
-    """Get current HEAD commit SHA."""
+def get_git_sha():
     result = run_git(["rev-parse", "HEAD"])
-    if result.returncode != 0:
-        return ""
-    return result.stdout.strip()
+    return result.stdout.strip() if result.returncode == 0 else ""
 
 
-def get_gh_token() -> str:
-    """Try to get GitHub token from git credential or env."""
-    # Try git credential
+def get_token():
+    return os.environ.get("GH_TOKEN", os.environ.get("GITHUB_TOKEN", ""))
+
+
+def api_get(path):
+    """GET via gh api (uses GH_TOKEN env or default gh credentials)."""
+    token = get_token()
+    # Use gh api for proper authentication
     result = subprocess.run(
-        ["git", "credential", "fill"],
-        input="url=https://github.com\n",
-        capture_output=True, text=True
+        ["gh", "api", f"repos/{REPO}/contents/{path}"],
+        capture_output=True, text=True,
+        cwd=REPO_ROOT
     )
-    if result.returncode == 0:
-        for line in result.stdout.strip().split("\n"):
-            if line.startswith("password="):
-                return line[9:]
-    # Fall back to env
-    return os.environ.get("GITHUB_TOKEN", os.environ.get("GH_TOKEN", ""))
-
-
-def api_get(path: str) -> dict:
-    """GET /repos/{owner}/{repo}/contents/{path} via GitHub API."""
-    token = get_gh_token()
-    if not token:
-        print("  [WARN] No GitHub token available for API calls", file=sys.stderr)
+    if result.returncode != 0:
+        print(f"  API GET {path}: gh failed", file=sys.stderr)
         return {}
-
-    import urllib.request
-    url = f"https://api.github.com/repos/{REPO}/contents/{path}"
-    req = urllib.request.Request(url)
-    req.add_header("Authorization", f"Bearer {token}")
-    req.add_header("Accept", "application/vnd.github+json")
     try:
-        with urllib.request.urlopen(req) as resp:
-            return json.loads(resp.read())
-    except Exception as e:
-        print(f"  API GET {path}: {e}", file=sys.stderr)
+        return json.loads(result.stdout)
+    except:
         return {}
 
 
-def api_put(path: str, content: bytes, sha: str, message: str) -> bool:
-    """PUT via GitHub API using curl (git credential-helper aware)."""
-    token = get_gh_token()
-    if not token:
-        print("  [WARN] No token for API, trying git push instead", file=sys.stderr)
-        return False
+def api_put(path, content, sha, message):
+    """PUT via gh api or git commit+push as fallback."""
+    token = get_token()
 
-    import urllib.request
-    url = f"https://api.github.com/repos/{REPO}/contents/{path}"
+    # Try gh api first
     b64 = base64.b64encode(content).decode("ascii")
     body = json.dumps({"message": message, "content": b64, "sha": sha})
-
     import tempfile
-    body_file = tempfile.NamedTemporaryFile(mode="w", suffix=".json", delete=False)
-    body_file.write(body)
-    body_file.close()
-
-    curl_cmd = [
-        "curl", "-s", "-X", "PUT",
-        "-H", f"Authorization: Bearer {token}",
-        "-H", "Accept: application/vnd.github+json",
-        "-H", "Content-Type: application/json",
-        "-d", f"@{body_file.name}",
-        url
-    ]
+    tmp = tempfile.NamedTemporaryFile(mode="w", suffix=".json", delete=False)
+    tmp.write(body)
+    tmp.close()
     try:
-        result = subprocess.run(curl_cmd, capture_output=True, text=True)
-        os.unlink(body_file.name)
-        if result.returncode != 0:
-            print(f"  curl FAILED: {result.stderr[:200]}", file=sys.stderr)
-            return False
-        resp = json.loads(result.stdout)
-        html_url = resp.get("commit", {}).get("html_url", "no url")
-        print(f"  OK: {path} -> {html_url}")
-        return True
+        result = subprocess.run(
+            ["gh", "api", f"repos/{REPO}/contents/{path}",
+             "--method", "PUT", "--input", tmp.name],
+            capture_output=True, text=True,
+            cwd=REPO_ROOT
+        )
+        os.unlink(tmp.name)
+        if result.returncode == 0:
+            resp = json.loads(result.stdout)
+            html_url = resp.get("commit", {}).get("html_url", "no url")
+            print(f"  OK: {path} -> {html_url}")
+            return True
+        print(f"  gh API {path} failed: {result.stderr[:200]}", file=sys.stderr)
     except Exception as e:
-        print(f"  API PUT {path}: {e}", file=sys.stderr)
-        try: os.unlink(body_file.name)
+        print(f"  gh API {path}: {e}", file=sys.stderr)
+        try: os.unlink(tmp.name)
         except: pass
+
+    # Fall back to git add/commit/push
+    print(f"  Falling back to git for {path}")
+    full_path = os.path.join(REPO_ROOT, path)
+    dir_path = os.path.dirname(full_path)
+    os.makedirs(dir_path, exist_ok=True)
+    with open(full_path, "wb") as f:
+        f.write(content)
+
+    run_git(["add", path], check=False)
+    commit_r = run_git(["commit", "-m", message], check=False)
+    if commit_r.returncode != 0:
+        if "nothing to commit" in commit_r.stdout:
+            print(f"  No change: {path}")
+            return True
+        print(f"  git commit failed: {commit_r.stderr[:200]}", file=sys.stderr)
         return False
 
+    push_r = run_git(["push"], check=False)
+    if push_r.returncode == 0:
+        print(f"  OK (git): {path}")
+        return True
+    print(f"  git push failed: {push_r.stderr[:200]}", file=sys.stderr)
+    return False
 
-def update_html_cache_buster(html_content: bytes, sha: str) -> tuple[bytes, bool]:
-    """Replace/update cache-buster query in app.js <script src> URL."""
+
+def update_html_cache_buster(html_content, sha):
+    """
+    Replace the query string in the app.js <script src="...assets/app.js?v=...">
+    to ?sha=<sha> using surgical string replacement.
+    """
     if not sha:
-        print("  [DEBUG] sha is empty, skip")
+        print("  [DEBUG] sha empty, skip")
         return html_content, False
 
     content_str = html_content.decode("utf-8")
 
-    # Find assets/app.js context
-    app_js_idx = content_str.find("assets/app.js")
-    if app_js_idx < 0:
-        print("  [ERROR] 'assets/app.js' NOT FOUND in HTML!")
+    # Find the script tag context
+    idx = content_str.find("assets/app.js")
+    if idx < 0:
+        print("  [ERROR] assets/app.js not found!")
         return html_content, False
 
-    print(f"  [DEBUG] Found 'assets/app.js' at offset {app_js_idx}")
+    # Find the src="...assets/app.js?v=..." and replace just the query part
+    # Pattern: src="...assets/app.js" followed by ?... and then "
+    app_js_in_src = 'assets/app.js'
+    old_src_marker = f'src="./{app_js_in_src}?v=20260520t"'
 
-    def replace_src(match):
-        tag = match.group(0)
-        new_tag = re.sub(
-            r'(src="[^"?]*assets/app\.js)(?:\?[^"]*)?(")',
-            rf'\1?sha={sha}\2',
-            tag
-        )
-        if new_tag != tag:
-            print(f"  [DEBUG] Replaced: {repr(tag[-60:])} -> {repr(new_tag[-60:])}")
-        return new_tag
+    if old_src_marker in content_str:
+        new_src = f'src="./{app_js_in_src}?sha={sha}"'
+        new_content = content_str.replace(old_src_marker, new_src)
+        changed = new_content != content_str
+        if changed:
+            print(f"  [DEBUG] Replaced fixed marker: {old_src_marker} -> {new_src}")
+        return new_content.encode("utf-8"), changed
 
-    # Match <script ... src="...assets/app.js..." ... >
-    pattern = r'<script[^>]+src="[^"]*assets/app\.js[^"]*"[^>]*>'
-    new_content_str, count = re.subn(pattern, replace_src, content_str)
+    # Generic approach: find src="...assets/app.js[?...]" and replace query
+    pattern = r'(src="[^"?]*assets/app\.js)\?[^"]*(")'
+    replacement = rf'\1?sha={sha}\2'
+    new_content_str, count = re.subn(pattern, replacement, content_str)
 
-    if count == 0:
-        print("  [ERROR] No script tag matched!")
-        return html_content, False
+    if count > 0:
+        changed = new_content_str != content_str
+        print(f"  [DEBUG] Generic replace: {count} matches, changed={changed}")
+        return new_content_str.encode("utf-8"), changed
 
-    changed = new_content_str != content_str
-    print(f"  [DEBUG] Changed={changed}, matched={count}")
-    return new_content_str.encode("utf-8"), changed
+    print("  [ERROR] No script tag match found!")
+    return html_content, False
 
 
 def main():
     current_sha = get_git_sha()
-    has_token = bool(get_gh_token())
+    token = get_token()
     print(f"[INFO] git SHA: {current_sha[:8] if current_sha else 'unknown'}")
-    print(f"[INFO] GitHub token: {'available (' + get_gh_token()[:4] + '...)' if has_token else 'NOT available'}")
+    print(f"[INFO] GH_TOKEN: {'set' if token else 'NOT set'}")
 
     # --- HTML cache buster ---
     html_changed = False
-    if os.path.exists(HTML_FILE):
-        html_content = open(HTML_FILE, "rb").read()
-        html_info = api_get(HTML_FILE)
-        html_sha = html_info.get("sha", "")
+    html_path = os.path.join(REPO_ROOT, HTML_FILE)
+    if os.path.exists(html_path):
+        html_content = open(html_path, "rb").read()
+        html_sha = api_get(HTML_FILE).get("sha", "")
 
         new_html, changed = update_html_cache_buster(html_content, current_sha)
         if changed:
-            print(f"[INFO] HTML cache buster update needed (sha={current_sha[:8]})")
+            print(f"[INFO] HTML cache buster: updating (sha={current_sha[:8]})")
             ok = api_put(
                 HTML_FILE, new_html, html_sha,
                 f"chore: update app.js cache buster to {current_sha[:8]}"
             )
             html_changed = ok
-            if not ok:
-                print("  [WARN] HTML API put failed — trying git add/commit/push")
-                # Write updated HTML locally
-                open(HTML_FILE, "wb").write(new_html)
-                run_git(["add", HTML_FILE])
-                commit_result = run_git(["commit", "-m", f"chore: update app.js cache buster to {current_sha[:8]}"])
-                if commit_result.returncode == 0:
-                    push_result = run_git(["push"])
-                    if push_result.returncode == 0:
-                        print(f"  [OK] HTML pushed via git push")
-                        html_changed = True
-                    else:
-                        print(f"  [FAIL] git push failed: {push_result.stderr[:200]}")
-                else:
-                    print(f"  [FAIL] git commit failed: {commit_result.stderr[:200]}")
         else:
-            print(f"[INFO] HTML cache buster already current — skip")
+            print(f"[INFO] HTML cache buster: already current or failed to match")
     else:
-        print(f"[WARN] index.html not found locally")
+        print(f"[WARN] {html_path} not found")
 
     # --- Data files ---
     pushed_data = []
     for df in DATA_FILES:
-        if not os.path.exists(df):
+        df_path = os.path.join(REPO_ROOT, df)
+        if not os.path.exists(df_path):
             print(f"Skip (not found): {df}")
             continue
-        content = open(df, "rb").read()
+        content = open(df_path, "rb").read()
         file_info = api_get(df)
         sha = file_info.get("sha", "")
-        msg = f"Update {df} via workflow $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
         old_size = file_info.get("size", 0)
+        msg = f"Update {df} via workflow $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
         if old_size == len(content) and sha:
             print(f"No change: {df} ({len(content)} bytes)")
             continue
         ok = api_put(df, content, sha, msg)
         if ok:
             pushed_data.append(df)
-        else:
-            # Fall back to git add/commit/push
-            run_git(["add", df])
-            commit_r = run_git(["commit", "-m", msg])
-            if commit_r.returncode == 0:
-                push_r = run_git(["push"])
-                if push_r.returncode == 0:
-                    print(f"  [OK] {df} pushed via git push")
-                    pushed_data.append(df)
-                else:
-                    print(f"  [FAIL] git push {df}: {push_r.stderr[:200]}")
-            else:
-                print(f"  [FAIL] git commit {df}: {commit_r.stderr[:200]}")
 
-    total_changed = len(pushed_data) + (1 if html_changed else 0)
-    if total_changed:
-        print(f"\nUpdated {total_changed} file(s)")
-    else:
-        print("\nNo files changed")
+    total = len(pushed_data) + (1 if html_changed else 0)
+    print(f"\n{'Updated' if total else 'No change'}: "
+          f"{'index.html ' if html_changed else ''}"
+          f"{' '.join(pushed_data)}")
 
 
 if __name__ == "__main__":
