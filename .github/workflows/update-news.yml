@@ -1,9 +1,6 @@
 name: Update AI News Radar
 
 on:
-  push:
-    branches:
-      - master
   schedule:
     - cron: "*/30 * * * *"
   workflow_dispatch:
@@ -39,7 +36,7 @@ jobs:
       - name: Run update
         run: python scripts/update_news.py --output-dir data --window-hours 24 --rss-opml feeds/follow.example.opml --archive-days 21
 
-      - name: Commit and push via gh api
+      - name: Update HTML cache buster & push via gh api
         run: python .github/workflows/gh_push_data.py
 
       - name: Setup Pages
