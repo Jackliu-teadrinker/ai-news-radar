@@ -388,7 +388,7 @@ function getFilteredItems() {
     const cst9base = new Date(Date.UTC(
       cstDate.getUTCFullYear(),
       cstDate.getUTCMonth(),
-      cstDate.getUTCDate(),
+      cstDate.getUTCDate() - 1,
       1, 0, 0
     ));
     cutoffMs = cst9base.getTime();
