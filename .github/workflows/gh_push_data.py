@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
 Push data files + HTML cache buster to GitHub via GitHub API.
-- Reads current git SHA and injects it as cache buster in index.html
-- Only pushes index.html if the SHA changed (idempotent)
+- Reads current git SHA and uses it as cache buster in index.html src URL
+- Only pushes index.html if the SHA actually changed (idempotent)
 - Bypasses git push TLS issues by using gh api.
 Must be run from the repo root (where .git exists).
 """
@@ -21,7 +21,7 @@ DATA_FILES = [
     "data/source-status.json",
 ]
 HTML_FILE = "index.html"
-CACHE_BUSTER_ATTR = "data-app-sha"   # attribute name in HTML tag
+APP_JS_PATH = "assets/app.js"   # relative to repo root
 
 
 def get_git_sha() -> str:
@@ -71,30 +71,32 @@ def gh_put(path: str, content: bytes, sha: str, message: str) -> bool:
 
 def update_html_cache_buster(html_content: bytes, sha: str) -> tuple[bytes, bool]:
     """
-    Inject/update data-app-sha attribute in the <script src="assets/app.js"> tag.
+    Replace the cache-buster query in the app.js <script src> URL.
+    Updates ?v=... or adds ?sha=... to assets/app.js script tag.
     Returns (new_content, changed).
-    If sha is empty, returns unchanged content.
     """
     if not sha:
         return html_content, False
 
     content_str = html_content.decode("utf-8")
-    sha_attr = f'{CACHE_BUSTER_ATTR}="{sha}"'
 
-    # Pattern: <script src="assets/app.js" ...>
-    # We need to add/update data-app-sha in that tag
-    pattern = r'(<script\s+[^>]*src="[^"]*assets/app\.js"[^>]*)'
-    replacement = rf'\1 {sha_attr}'
+    # Pattern to match the app.js <script src="...assets/app.js[?v=...]">
+    # Capture the opening <script ... src="URL" ... >
+    # We want to replace the query string in src with ?sha=<sha>
+    def replace_src(match):
+        tag = match.group(0)
+        # Replace existing ?v=... or add ?sha=...
+        # Remove existing query string (?...) before assets/app.js
+        new_tag = re.sub(r'(src="[^"?]*assets/app\.js)(?:\?[^"]*)?(")', rf'\1?sha={sha}\2', tag)
+        return new_tag
 
-    new_content_str, count = re.subn(pattern, replacement, content_str)
+    # Match <script ... src="...assets/app.js..." ... >
+    pattern = r'<script[^>]+src="[^"]*assets/app\.js[^"]*"[^>]*>'
+    new_content_str, count = re.subn(pattern, replace_src, content_str)
+
     if count == 0:
-        # Try alternate: script tag might not have other attrs
-        pattern2 = r'(<script\s+src="[^"]*assets/app\.js")(\s*>)'
-        replacement2 = rf'\1 {sha_attr}\2'
-        new_content_str, count2 = re.subn(pattern2, replacement2, content_str)
-        if count2 == 0:
-            print(f"  WARNING: could not find app.js script tag in index.html", file=sys.stderr)
-            return html_content, False
+        print(f"  WARNING: could not find app.js script tag in index.html", file=sys.stderr)
+        return html_content, False
 
     changed = (new_content_str != content_str)
     return new_content_str.encode("utf-8"), changed
@@ -104,7 +106,7 @@ def main():
     current_sha = get_git_sha()
     print(f"Current git SHA: {current_sha[:8] if current_sha else 'unknown'}")
 
-    # --- HTML cache buster ---
+    # --- HTML cache buster (push only if SHA changed) ---
     html_changed = False
     if os.path.exists(HTML_FILE):
         html_content = open(HTML_FILE, "rb").read()
@@ -115,7 +117,7 @@ def main():
         if changed:
             print(f"HTML cache buster update needed (sha={current_sha[:8]})")
             ok = gh_put(HTML_FILE, new_html, html_sha,
-                        f"chore: update HTML cache buster to {current_sha[:8]}")
+                        f"chore: update app.js cache buster to {current_sha[:8]}")
             html_changed = ok
         else:
             print(f"HTML cache buster already current — skip")
