@@ -1,15 +1,17 @@
 #!/usr/bin/env python3
 """
-Push data files + HTML cache buster to GitHub via raw GitHub API.
-Uses GITHUB_TOKEN env var (available in GitHub Actions).
+Push data files + HTML cache buster to GitHub via git push.
+Uses git credential helper configured by actions/checkout (GITHUB_TOKEN via git config).
+- Reads current git SHA and uses it as cache buster in index.html src URL
+- Only pushes index.html if the SHA actually changed (idempotent)
+Must be run from the repo root (where .git exists).
 """
 import base64
 import json
 import os
 import re
+import subprocess
 import sys
-import urllib.request
-import urllib.error
 
 REPO = "jackliu-teadrinker/ai-news-radar"
 DATA_FILES = [
@@ -18,86 +20,121 @@ DATA_FILES = [
     "data/source-status.json",
 ]
 HTML_FILE = "index.html"
-GITHUB_API = "https://api.github.com"
+
+
+def run_git(args: list, check=True) -> subprocess.CompletedProcess:
+    """Run a git command, return CompletedProcess."""
+    result = subprocess.run(
+        ["git"] + args,
+        capture_output=True, text=True,
+        cwd=os.path.dirname(os.path.abspath(__file__)) or "."
+    )
+    if check and result.returncode != 0:
+        print(f"  git {' '.join(args)} FAILED: {result.stderr[:200]}", file=sys.stderr)
+    return result
 
 
 def get_git_sha() -> str:
-    import subprocess
-    result = subprocess.run(
-        ["git", "rev-parse", "HEAD"],
-        capture_output=True, text=True
-    )
+    """Get current HEAD commit SHA."""
+    result = run_git(["rev-parse", "HEAD"])
     if result.returncode != 0:
         return ""
     return result.stdout.strip()
 
 
+def get_gh_token() -> str:
+    """Try to get GitHub token from git credential or env."""
+    # Try git credential
+    result = subprocess.run(
+        ["git", "credential", "fill"],
+        input="url=https://github.com\n",
+        capture_output=True, text=True
+    )
+    if result.returncode == 0:
+        for line in result.stdout.strip().split("\n"):
+            if line.startswith("password="):
+                return line[9:]
+    # Fall back to env
+    return os.environ.get("GITHUB_TOKEN", os.environ.get("GH_TOKEN", ""))
+
+
 def api_get(path: str) -> dict:
-    token = os.environ.get("GITHUB_TOKEN", "")
-    url = f"{GITHUB_API}/repos/{REPO}/contents/{path}"
+    """GET /repos/{owner}/{repo}/contents/{path} via GitHub API."""
+    token = get_gh_token()
+    if not token:
+        print("  [WARN] No GitHub token available for API calls", file=sys.stderr)
+        return {}
+
+    import urllib.request
+    url = f"https://api.github.com/repos/{REPO}/contents/{path}"
     req = urllib.request.Request(url)
-    if token:
-        req.add_header("Authorization", f"Bearer {token}")
+    req.add_header("Authorization", f"Bearer {token}")
     req.add_header("Accept", "application/vnd.github+json")
     try:
         with urllib.request.urlopen(req) as resp:
             return json.loads(resp.read())
-    except urllib.error.HTTPError as e:
-        print(f"  API GET {path}: HTTP {e.code}", file=sys.stderr)
-        return {}
     except Exception as e:
         print(f"  API GET {path}: {e}", file=sys.stderr)
         return {}
 
 
 def api_put(path: str, content: bytes, sha: str, message: str) -> bool:
-    token = os.environ.get("GITHUB_TOKEN", "")
-    url = f"{GITHUB_API}/repos/{REPO}/contents/{path}"
+    """PUT via GitHub API using curl (git credential-helper aware)."""
+    token = get_gh_token()
+    if not token:
+        print("  [WARN] No token for API, trying git push instead", file=sys.stderr)
+        return False
+
+    import urllib.request
+    url = f"https://api.github.com/repos/{REPO}/contents/{path}"
     b64 = base64.b64encode(content).decode("ascii")
     body = json.dumps({"message": message, "content": b64, "sha": sha})
-    req = urllib.request.Request(
-        url,
-        data=body.encode("utf-8"),
-        headers={
-            "Authorization": f"Bearer {token}",
-            "Accept": "application/vnd.github+json",
-            "Content-Type": "application/json",
-            "X-GitHub-Api-Version": "2022-11-28",
-        },
-        method="PUT",
-    )
+
+    import tempfile
+    body_file = tempfile.NamedTemporaryFile(mode="w", suffix=".json", delete=False)
+    body_file.write(body)
+    body_file.close()
+
+    curl_cmd = [
+        "curl", "-s", "-X", "PUT",
+        "-H", f"Authorization: Bearer {token}",
+        "-H", "Accept: application/vnd.github+json",
+        "-H", "Content-Type: application/json",
+        "-d", f"@{body_file.name}",
+        url
+    ]
     try:
-        with urllib.request.urlopen(req) as resp:
-            result = json.loads(resp.read())
-            html_url = result.get("commit", {}).get("html_url", "no url")
-            print(f"  OK: {path} -> {html_url}")
-            return True
-    except urllib.error.HTTPError as e:
-        body_err = e.read().decode("utf-8", errors="replace")
-        print(f"  FAILED PUT {path}: HTTP {e.code} - {body_err[:300]}", file=sys.stderr)
-        return False
+        result = subprocess.run(curl_cmd, capture_output=True, text=True)
+        os.unlink(body_file.name)
+        if result.returncode != 0:
+            print(f"  curl FAILED: {result.stderr[:200]}", file=sys.stderr)
+            return False
+        resp = json.loads(result.stdout)
+        html_url = resp.get("commit", {}).get("html_url", "no url")
+        print(f"  OK: {path} -> {html_url}")
+        return True
     except Exception as e:
-        print(f"  FAILED PUT {path}: {e}", file=sys.stderr)
+        print(f"  API PUT {path}: {e}", file=sys.stderr)
+        try: os.unlink(body_file.name)
+        except: pass
         return False
 
 
 def update_html_cache_buster(html_content: bytes, sha: str) -> tuple[bytes, bool]:
-    """Replace/update cache-buster query in app.js script src URL."""
+    """Replace/update cache-buster query in app.js <script src> URL."""
     if not sha:
-        print("  [DEBUG] sha is empty, skipping")
+        print("  [DEBUG] sha is empty, skip")
         return html_content, False
 
     content_str = html_content.decode("utf-8")
 
-    # Show what we're searching for
+    # Find assets/app.js context
     app_js_idx = content_str.find("assets/app.js")
     if app_js_idx < 0:
-        print("  [DEBUG] 'assets/app.js' NOT FOUND in HTML!")
+        print("  [ERROR] 'assets/app.js' NOT FOUND in HTML!")
         return html_content, False
 
-    snippet = content_str[max(0, app_js_idx-50):app_js_idx+80]
     print(f"  [DEBUG] Found 'assets/app.js' at offset {app_js_idx}")
-    print(f"  [DEBUG] Context: {repr(snippet)}")
 
     def replace_src(match):
         tag = match.group(0)
@@ -106,56 +143,63 @@ def update_html_cache_buster(html_content: bytes, sha: str) -> tuple[bytes, bool
             rf'\1?sha={sha}\2',
             tag
         )
-        print(f"  [DEBUG] Replace: {repr(tag)} -> {repr(new_tag)}")
+        if new_tag != tag:
+            print(f"  [DEBUG] Replaced: {repr(tag[-60:])} -> {repr(new_tag[-60:])}")
         return new_tag
 
+    # Match <script ... src="...assets/app.js..." ... >
     pattern = r'<script[^>]+src="[^"]*assets/app\.js[^"]*"[^>]*>'
     new_content_str, count = re.subn(pattern, replace_src, content_str)
 
     if count == 0:
-        # Try simpler pattern
-        pattern2 = r'<script[^>]*src="[^"]*assets/app\.js"[^>]*>'
-        new_content_str, count2 = re.subn(pattern2, replace_src, content_str)
-        print(f"  [DEBUG] Pattern2 matched {count2} times")
-        if count2 == 0:
-            print("  [DEBUG] Neither pattern matched!")
-            return html_content, False
+        print("  [ERROR] No script tag matched!")
+        return html_content, False
 
     changed = new_content_str != content_str
-    print(f"  [DEBUG] Changed: {changed}, count: {count + count2}")
+    print(f"  [DEBUG] Changed={changed}, matched={count}")
     return new_content_str.encode("utf-8"), changed
 
 
 def main():
     current_sha = get_git_sha()
-    token = os.environ.get("GITHUB_TOKEN", "")
-    print(f"[DEBUG] GITHUB_TOKEN set: {bool(token)}")
-    print(f"[DEBUG] GITHUB_TOKEN prefix: {token[:4] if token else 'EMPTY'}...")
-    print(f"[DEBUG] Current git SHA: {current_sha[:8] if current_sha else 'unknown'}")
+    has_token = bool(get_gh_token())
+    print(f"[INFO] git SHA: {current_sha[:8] if current_sha else 'unknown'}")
+    print(f"[INFO] GitHub token: {'available (' + get_gh_token()[:4] + '...)' if has_token else 'NOT available'}")
 
     # --- HTML cache buster ---
     html_changed = False
     if os.path.exists(HTML_FILE):
         html_content = open(HTML_FILE, "rb").read()
-        print(f"[DEBUG] index.html size: {len(html_content)} bytes")
         html_info = api_get(HTML_FILE)
         html_sha = html_info.get("sha", "")
-        print(f"[DEBUG] index.html sha on GitHub: {html_sha[:8] if html_sha else 'unknown'}")
 
         new_html, changed = update_html_cache_buster(html_content, current_sha)
         if changed:
-            print(f"HTML cache buster: UPDATE needed (sha={current_sha[:8]})")
+            print(f"[INFO] HTML cache buster update needed (sha={current_sha[:8]})")
             ok = api_put(
                 HTML_FILE, new_html, html_sha,
                 f"chore: update app.js cache buster to {current_sha[:8]}"
             )
             html_changed = ok
             if not ok:
-                print("  [ERROR] HTML API put returned False!")
+                print("  [WARN] HTML API put failed — trying git add/commit/push")
+                # Write updated HTML locally
+                open(HTML_FILE, "wb").write(new_html)
+                run_git(["add", HTML_FILE])
+                commit_result = run_git(["commit", "-m", f"chore: update app.js cache buster to {current_sha[:8]}"])
+                if commit_result.returncode == 0:
+                    push_result = run_git(["push"])
+                    if push_result.returncode == 0:
+                        print(f"  [OK] HTML pushed via git push")
+                        html_changed = True
+                    else:
+                        print(f"  [FAIL] git push failed: {push_result.stderr[:200]}")
+                else:
+                    print(f"  [FAIL] git commit failed: {commit_result.stderr[:200]}")
         else:
-            print("HTML cache buster: already current — skip")
+            print(f"[INFO] HTML cache buster already current — skip")
     else:
-        print(f"index.html not found locally — skip")
+        print(f"[WARN] index.html not found locally")
 
     # --- Data files ---
     pushed_data = []
@@ -171,15 +215,26 @@ def main():
         if old_size == len(content) and sha:
             print(f"No change: {df} ({len(content)} bytes)")
             continue
-        print(f"Push: {df} ({len(content)} bytes)")
         ok = api_put(df, content, sha, msg)
         if ok:
             pushed_data.append(df)
+        else:
+            # Fall back to git add/commit/push
+            run_git(["add", df])
+            commit_r = run_git(["commit", "-m", msg])
+            if commit_r.returncode == 0:
+                push_r = run_git(["push"])
+                if push_r.returncode == 0:
+                    print(f"  [OK] {df} pushed via git push")
+                    pushed_data.append(df)
+                else:
+                    print(f"  [FAIL] git push {df}: {push_r.stderr[:200]}")
+            else:
+                print(f"  [FAIL] git commit {df}: {commit_r.stderr[:200]}")
 
     total_changed = len(pushed_data) + (1 if html_changed else 0)
     if total_changed:
-        what = ["index.html" if html_changed else ""] + pushed_data
-        print(f"\nUpdated {total_changed} file(s): {', '.join(w for w in what if w)}")
+        print(f"\nUpdated {total_changed} file(s)")
     else:
         print("\nNo files changed")
 
