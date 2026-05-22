@@ -2,8 +2,6 @@
 """
 Push data files + HTML cache buster to GitHub via raw GitHub API.
 Uses GITHUB_TOKEN env var (available in GitHub Actions).
-- Reads current git SHA and uses it as cache buster in index.html src URL
-- Only pushes index.html if the SHA actually changed (idempotent)
 """
 import base64
 import json
@@ -11,6 +9,7 @@ import os
 import re
 import sys
 import urllib.request
+import urllib.error
 
 REPO = "jackliu-teadrinker/ai-news-radar"
 DATA_FILES = [
@@ -23,7 +22,6 @@ GITHUB_API = "https://api.github.com"
 
 
 def get_git_sha() -> str:
-    """Get current HEAD commit SHA via git command."""
     import subprocess
     result = subprocess.run(
         ["git", "rev-parse", "HEAD"],
@@ -35,7 +33,6 @@ def get_git_sha() -> str:
 
 
 def api_get(path: str) -> dict:
-    """GET /repos/{owner}/{repo}/contents/{path}"""
     token = os.environ.get("GITHUB_TOKEN", "")
     url = f"{GITHUB_API}/repos/{REPO}/contents/{path}"
     req = urllib.request.Request(url)
@@ -45,13 +42,15 @@ def api_get(path: str) -> dict:
     try:
         with urllib.request.urlopen(req) as resp:
             return json.loads(resp.read())
+    except urllib.error.HTTPError as e:
+        print(f"  API GET {path}: HTTP {e.code}", file=sys.stderr)
+        return {}
     except Exception as e:
-        print(f"  API GET failed for {path}: {e}", file=sys.stderr)
+        print(f"  API GET {path}: {e}", file=sys.stderr)
         return {}
 
 
 def api_put(path: str, content: bytes, sha: str, message: str) -> bool:
-    """PUT /repos/{owner}/{repo}/contents/{path}"""
     token = os.environ.get("GITHUB_TOKEN", "")
     url = f"{GITHUB_API}/repos/{REPO}/contents/{path}"
     b64 = base64.b64encode(content).decode("ascii")
@@ -75,70 +74,88 @@ def api_put(path: str, content: bytes, sha: str, message: str) -> bool:
             return True
     except urllib.error.HTTPError as e:
         body_err = e.read().decode("utf-8", errors="replace")
-        print(f"  FAILED: {path}: HTTP {e.code} - {body_err[:300]}", file=sys.stderr)
+        print(f"  FAILED PUT {path}: HTTP {e.code} - {body_err[:300]}", file=sys.stderr)
         return False
     except Exception as e:
-        print(f"  FAILED: {path}: {e}", file=sys.stderr)
+        print(f"  FAILED PUT {path}: {e}", file=sys.stderr)
         return False
 
 
 def update_html_cache_buster(html_content: bytes, sha: str) -> tuple[bytes, bool]:
-    """
-    Replace/update the cache-buster query in the app.js <script src> URL.
-    Sets ?sha=<sha> in the src attribute.
-    Returns (new_content, changed).
-    """
+    """Replace/update cache-buster query in app.js script src URL."""
     if not sha:
+        print("  [DEBUG] sha is empty, skipping")
         return html_content, False
 
     content_str = html_content.decode("utf-8")
 
+    # Show what we're searching for
+    app_js_idx = content_str.find("assets/app.js")
+    if app_js_idx < 0:
+        print("  [DEBUG] 'assets/app.js' NOT FOUND in HTML!")
+        return html_content, False
+
+    snippet = content_str[max(0, app_js_idx-50):app_js_idx+80]
+    print(f"  [DEBUG] Found 'assets/app.js' at offset {app_js_idx}")
+    print(f"  [DEBUG] Context: {repr(snippet)}")
+
     def replace_src(match):
         tag = match.group(0)
-        # Replace existing query (?v=...) with ?sha=<sha>
         new_tag = re.sub(
             r'(src="[^"?]*assets/app\.js)(?:\?[^"]*)?(")',
             rf'\1?sha={sha}\2',
             tag
         )
+        print(f"  [DEBUG] Replace: {repr(tag)} -> {repr(new_tag)}")
         return new_tag
 
     pattern = r'<script[^>]+src="[^"]*assets/app\.js[^"]*"[^>]*>'
     new_content_str, count = re.subn(pattern, replace_src, content_str)
 
     if count == 0:
-        print(f"  WARNING: could not find app.js script tag in index.html", file=sys.stderr)
-        return html_content, False
+        # Try simpler pattern
+        pattern2 = r'<script[^>]*src="[^"]*assets/app\.js"[^>]*>'
+        new_content_str, count2 = re.subn(pattern2, replace_src, content_str)
+        print(f"  [DEBUG] Pattern2 matched {count2} times")
+        if count2 == 0:
+            print("  [DEBUG] Neither pattern matched!")
+            return html_content, False
 
     changed = new_content_str != content_str
+    print(f"  [DEBUG] Changed: {changed}, count: {count + count2}")
     return new_content_str.encode("utf-8"), changed
 
 
 def main():
     current_sha = get_git_sha()
-    print(f"Current git SHA: {current_sha[:8] if current_sha else 'unknown'}")
-    has_token = bool(os.environ.get("GITHUB_TOKEN", ""))
-    print(f"GITHUB_TOKEN available: {has_token}")
+    token = os.environ.get("GITHUB_TOKEN", "")
+    print(f"[DEBUG] GITHUB_TOKEN set: {bool(token)}")
+    print(f"[DEBUG] GITHUB_TOKEN prefix: {token[:4] if token else 'EMPTY'}...")
+    print(f"[DEBUG] Current git SHA: {current_sha[:8] if current_sha else 'unknown'}")
 
-    # --- HTML cache buster (push only if SHA changed) ---
+    # --- HTML cache buster ---
     html_changed = False
     if os.path.exists(HTML_FILE):
         html_content = open(HTML_FILE, "rb").read()
+        print(f"[DEBUG] index.html size: {len(html_content)} bytes")
         html_info = api_get(HTML_FILE)
         html_sha = html_info.get("sha", "")
+        print(f"[DEBUG] index.html sha on GitHub: {html_sha[:8] if html_sha else 'unknown'}")
 
         new_html, changed = update_html_cache_buster(html_content, current_sha)
         if changed:
-            print(f"HTML cache buster update needed (sha={current_sha[:8]})")
+            print(f"HTML cache buster: UPDATE needed (sha={current_sha[:8]})")
             ok = api_put(
                 HTML_FILE, new_html, html_sha,
                 f"chore: update app.js cache buster to {current_sha[:8]}"
             )
             html_changed = ok
+            if not ok:
+                print("  [ERROR] HTML API put returned False!")
         else:
-            print(f"HTML cache buster already current — skip")
+            print("HTML cache buster: already current — skip")
     else:
-        print(f"index.html not found locally — skip HTML update")
+        print(f"index.html not found locally — skip")
 
     # --- Data files ---
     pushed_data = []
@@ -146,18 +163,15 @@ def main():
         if not os.path.exists(df):
             print(f"Skip (not found): {df}")
             continue
-
         content = open(df, "rb").read()
         file_info = api_get(df)
         sha = file_info.get("sha", "")
         msg = f"Update {df} via workflow $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
-
         old_size = file_info.get("size", 0)
         if old_size == len(content) and sha:
             print(f"No change: {df} ({len(content)} bytes)")
             continue
-
-        print(f"Push: {df} ({len(content)} bytes, sha={sha[:8] if sha else 'new'})")
+        print(f"Push: {df} ({len(content)} bytes)")
         ok = api_put(df, content, sha, msg)
         if ok:
             pushed_data.append(df)
@@ -167,7 +181,7 @@ def main():
         what = ["index.html" if html_changed else ""] + pushed_data
         print(f"\nUpdated {total_changed} file(s): {', '.join(w for w in what if w)}")
     else:
-        print("\nNo files changed — nothing to push")
+        print("\nNo files changed")
 
 
 if __name__ == "__main__":
