@@ -33,10 +33,10 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Run update
+      - name: Run update (generates data files)
         run: python scripts/update_news.py --output-dir data --window-hours 24 --rss-opml feeds/follow.example.opml --archive-days 21
 
-      - name: Configure git and push data + HTML
+      - name: Update HTML cache buster (MUST run before artifact upload)
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GIT_EMAIL: "865715887@qq.com"
@@ -46,10 +46,7 @@ jobs:
           git config --global user.name "$GIT_NAME"
           python .github/workflows/gh_push_data.py
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-
-      - name: Upload Pages artifact
+      - name: Upload Pages artifact (uses updated HTML from previous step)
         uses: actions/upload-pages-artifact@v3
         with:
           path: "."
