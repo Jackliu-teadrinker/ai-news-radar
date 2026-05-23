@@ -1,84 +1,84 @@
 {
-  "generated_at": "2026-05-23T13:07:23.469425+00:00",
+  "generated_at": "2026-05-23T14:46:21.928981+00:00",
   "feeds": [
     {
-      "feed": "GN: 人形机器人",
-      "success": false,
-      "items_total": 0,
-      "items_unique": 0,
-      "error": "503 Server Error: Service Unavailable for url: https://news.google.com/rss/search?q=%E4%BA%BA%E5%BD%A2%E6%9C%BA%E5%99%A8%E4%BA%BA&hl=zh-CN&gl=CN&ceid=CN:zh-Hans"
-    },
-    {
-      "feed": "国外物理AI资讯",
-      "success": false,
-      "items_total": 0,
-      "items_unique": 0,
-      "error": "503 Server Error: Service Unavailable for url: https://news.google.com/rss/search?q=physical+AI+robot&hl=en-US&gl=US&ceid=US:en"
-    },
-    {
       "feed": "GN: 脑机接口",
-      "success": false,
-      "items_total": 0,
-      "items_unique": 0,
-      "error": "503 Server Error: Service Unavailable for url: https://news.google.com/rss/search?q=%E8%84%B1%E6%9C%BA%E6%8E%A5%E5%8F%A3+OR+%E7%A5%9E%E7%BB%8F%E6%8E%A5%E5%8F%A3+OR+%E8%84%91%E7%94%B5%E6%8E%A5%E5%8F%A3"
-    },
-    {
-      "feed": "GN: BCI",
-      "success": false,
-      "items_total": 0,
-      "items_unique": 0,
-      "error": "503 Server Error: Service Unavailable for url: https://news.google.com/rss/search?q=brain+computer+interface+OR+BCI+OR+neural+interface&hl=en-US&gl=US&ceid=US:en"
-    },
-    {
-      "feed": "国外具身智能资讯",
-      "success": false,
-      "items_total": 0,
-      "items_unique": 0,
-      "error": "503 Server Error: Service Unavailable for url: https://news.google.com/rss/search?q=embodied+intelligence+OR+embodied+AI&hl=en-US&gl=US&ceid=US:en"
+      "success": true,
+      "items_total": 100,
+      "items_unique": 100,
+      "error": null
     },
     {
       "feed": "国外人形机器人资讯",
-      "success": false,
-      "items_total": 0,
-      "items_unique": 0,
-      "error": "503 Server Error: Service Unavailable for url: https://news.google.com/rss/search?q=humanoid+robot&hl=en-US&gl=US&ceid=US:en"
+      "success": true,
+      "items_total": 100,
+      "items_unique": 100,
+      "error": null
     },
     {
-      "feed": "国外机器人资讯",
-      "success": false,
-      "items_total": 0,
-      "items_unique": 0,
-      "error": "503 Server Error: Service Unavailable for url: https://news.google.com/rss/search?q=robot&hl=en-US&gl=US&ceid=US:en"
+      "feed": "国外具身智能资讯",
+      "success": true,
+      "items_total": 100,
+      "items_unique": 99,
+      "error": null
     },
     {
       "feed": "GN: 具身智能",
-      "success": false,
-      "items_total": 0,
-      "items_unique": 0,
-      "error": "503 Server Error: Service Unavailable for url: https://news.google.com/rss/search?q=%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD&hl=zh-CN&gl=CN&ceid=CN:zh-Hans"
+      "success": true,
+      "items_total": 100,
+      "items_unique": 100,
+      "error": null
     },
     {
-      "feed": "GN: 物理AI",
-      "success": false,
-      "items_total": 0,
-      "items_unique": 0,
-      "error": "503 Server Error: Service Unavailable for url: https://news.google.com/rss/search?q=%E7%89%A9%E7%90%86AI&hl=zh-CN&gl=CN&ceid=CN:zh-Hans"
+      "feed": "国外机器人资讯",
+      "success": true,
+      "items_total": 102,
+      "items_unique": 73,
+      "error": null
+    },
+    {
+      "feed": "GN: 人形机器人",
+      "success": true,
+      "items_total": 100,
+      "items_unique": 90,
+      "error": null
+    },
+    {
+      "feed": "国外物理AI资讯",
+      "success": true,
+      "items_total": 100,
+      "items_unique": 90,
+      "error": null
+    },
+    {
+      "feed": "GN: BCI",
+      "success": true,
+      "items_total": 100,
+      "items_unique": 99,
+      "error": null
     },
     {
       "feed": "GN: 机器人",
-      "success": false,
-      "items_total": 0,
-      "items_unique": 0,
-      "error": "503 Server Error: Service Unavailable for url: https://news.google.com/rss/search?q=%E6%9C%BA%E5%99%A8%E4%BA%BA&hl=zh-CN&gl=CN&ceid=CN:zh-Hans"
+      "success": true,
+      "items_total": 104,
+      "items_unique": 64,
+      "error": null
+    },
+    {
+      "feed": "GN: 物理AI",
+      "success": true,
+      "items_total": 100,
+      "items_unique": 97,
+      "error": null
     }
   ],
   "summary": {
     "total_feeds": 10,
-    "successful_feeds": 0,
-    "failed_feeds": 10,
-    "total_items": 0,
-    "deduplicated": 0,
-    "noise_filtered": 0,
+    "successful_feeds": 10,
+    "failed_feeds": 0,
+    "total_items": 912,
+    "deduplicated": 94,
+    "noise_filtered": 15,
     "short_filtered": 0
   }
 }
