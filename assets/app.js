@@ -67,10 +67,10 @@ const SOURCE_KINDS = {
 
 // Jack 2026-05-13: GN feed display priority (lower = shown first)
 const GN_PRIORITY = {
-  // Jack 2026-05-20: 国外机器人资讯 + 国外人形机器人资讯 优先
-  "GN: 机器人": 1,
-  "GN: 人形机器人": 2,
-  "GN: 具身智能": 3,
+  // Jack 2026-05-25: GN英文来源优先（人形机器人 + 具身智能 + 机器人），然后中文/其他来源
+  "GN: 人形机器人": 1,
+  "GN: 具身智能": 2,
+  "GN: 机器人": 3,
   "GN: 脑机接口": 4,
   "GN: Physical AI": 5,
   // Jack 2026-05-15: new OPML source categories
@@ -80,10 +80,10 @@ const GN_PRIORITY = {
 };
 
 const GN_CATEGORIES = [
-  // Jack 2026-05-20: 国外机器人资讯 + 国外人形机器人资讯 优先
-  { id: "GN: 机器人",     label: "机器人" },
+  // Jack 2026-05-25: GN英文来源优先（人形机器人 + 具身智能 + 机器人），然后中文/其他来源
   { id: "GN: 人形机器人", label: "人形机器人" },
   { id: "GN: 具身智能",   label: "具身智能" },
+  { id: "GN: 机器人",     label: "机器人" },
   { id: "GN: 脑机接口",   label: "脑机接口" },
   { id: "GN: Physical AI", label: "Physical AI" },
   { id: "arXiv Robotics", label: "学术" },
