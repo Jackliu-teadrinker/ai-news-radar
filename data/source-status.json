@@ -1,32 +1,11 @@
 {
-  "generated_at": "2026-05-25T02:22:44.661427+00:00",
+  "generated_at": "2026-05-25T02:43:35.942013+00:00",
   "feeds": [
-    {
-      "feed": "GN: 脑机接口",
-      "success": true,
-      "items_total": 100,
-      "items_unique": 100,
-      "error": null
-    },
-    {
-      "feed": "GN: 具身智能",
-      "success": true,
-      "items_total": 100,
-      "items_unique": 100,
-      "error": null
-    },
     {
       "feed": "国外具身智能资讯",
       "success": true,
       "items_total": 100,
       "items_unique": 100,
-      "error": null
-    },
-    {
-      "feed": "国外物理AI资讯",
-      "success": true,
-      "items_total": 100,
-      "items_unique": 99,
       "error": null
     },
     {
@@ -37,38 +16,59 @@
       "error": null
     },
     {
-      "feed": "国外机器人资讯",
+      "feed": "GN: 人形机器人",
       "success": true,
-      "items_total": 102,
-      "items_unique": 96,
+      "items_total": 100,
+      "items_unique": 100,
       "error": null
     },
     {
-      "feed": "GN: 人形机器人",
+      "feed": "GN: 具身智能",
       "success": true,
       "items_total": 100,
       "items_unique": 93,
       "error": null
     },
     {
+      "feed": "GN: 脑机接口",
+      "success": true,
+      "items_total": 100,
+      "items_unique": 100,
+      "error": null
+    },
+    {
       "feed": "国外人形机器人资讯",
       "success": true,
       "items_total": 100,
-      "items_unique": 65,
+      "items_unique": 99,
+      "error": null
+    },
+    {
+      "feed": "国外物理AI资讯",
+      "success": true,
+      "items_total": 100,
+      "items_unique": 93,
+      "error": null
+    },
+    {
+      "feed": "国外机器人资讯",
+      "success": true,
+      "items_total": 101,
+      "items_unique": 67,
       "error": null
     },
     {
       "feed": "GN: 机器人",
       "success": true,
       "items_total": 100,
-      "items_unique": 77,
+      "items_unique": 74,
       "error": null
     },
     {
       "feed": "GN: 物理AI",
       "success": true,
       "items_total": 100,
-      "items_unique": 96,
+      "items_unique": 95,
       "error": null
     }
   ],
@@ -76,9 +76,9 @@
     "total_feeds": 10,
     "successful_feeds": 10,
     "failed_feeds": 0,
-    "total_items": 926,
-    "deduplicated": 76,
-    "noise_filtered": 13,
+    "total_items": 921,
+    "deduplicated": 80,
+    "noise_filtered": 14,
     "short_filtered": 0
   }
 }
