@@ -67,16 +67,14 @@ const SOURCE_KINDS = {
 
 // Jack 2026-05-13: GN feed display priority (lower = shown first)
 const GN_PRIORITY = {
-  // Jack 2026-05-25: GN英文来源优先（人形机器人 + 具身智能 + 机器人），然后中文/其他来源
+  // Jack 2026-05-25: 国外来源优先，然后GN英文来源
   "GN: 人形机器人": 1,
   "GN: 具身智能": 2,
-  "GN: 机器人": 3,
-  "GN: 脑机接口": 4,
-  "GN: Physical AI": 5,
-  // Jack 2026-05-15: new OPML source categories
+  "GN: 物理AI": 3,
+  "GN: 机器人": 4,
+  "GN: 脑机接口": 5,
   "arXiv Robotics": 10,
-  "arXiv Robot Perception": 11,
-  "商业": 12,
+  "商业": 20,
 };
 
 const GN_CATEGORIES = [
@@ -109,6 +107,18 @@ const SOURCE_TO_CATEGORY = {
   "36氪":   "商业",
   "创业邦": "商业",
   "GN: BCI": "GN: 脑机接口",
+  // GN feeds
+  "国外人形机器人资讯": "GN: 人形机器人",
+  "国外具身智能资讯":   "GN: 具身智能",
+  "国外物理AI资讯":     "GN: 物理AI",
+  "国外机器人资讯":     "GN: 机器人",
+  // Explicit GN: category labels (in case items use these directly as source)
+  "GN: 机器人":     "GN: 机器人",
+  "GN: 人形机器人": "GN: 人形机器人",
+  "GN: 具身智能":   "GN: 具身智能",
+  "GN: 物理AI":     "GN: 物理AI",
+  "GN: 脑机接口":   "GN: 脑机接口",
+  "GN: BCI":        "GN: 脑机接口",
 };
 
 function normalizeSourceCategory(source) {
