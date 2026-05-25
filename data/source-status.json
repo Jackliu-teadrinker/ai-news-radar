@@ -1,29 +1,8 @@
 {
-  "generated_at": "2026-05-25T07:15:41.595408+00:00",
+  "generated_at": "2026-05-25T07:34:45.128947+00:00",
   "feeds": [
     {
-      "feed": "国外物理AI资讯",
-      "success": true,
-      "items_total": 100,
-      "items_unique": 100,
-      "error": null
-    },
-    {
-      "feed": "国外人形机器人资讯",
-      "success": true,
-      "items_total": 100,
-      "items_unique": 95,
-      "error": null
-    },
-    {
-      "feed": "国外具身智能资讯",
-      "success": true,
-      "items_total": 100,
-      "items_unique": 97,
-      "error": null
-    },
-    {
-      "feed": "GN: 具身智能",
+      "feed": "国外机器人资讯",
       "success": true,
       "items_total": 100,
       "items_unique": 100,
@@ -33,7 +12,21 @@
       "feed": "GN: 人形机器人",
       "success": true,
       "items_total": 100,
+      "items_unique": 100,
+      "error": null
+    },
+    {
+      "feed": "GN: 具身智能",
+      "success": true,
+      "items_total": 100,
       "items_unique": 96,
+      "error": null
+    },
+    {
+      "feed": "国外人形机器人资讯",
+      "success": true,
+      "items_total": 100,
+      "items_unique": 70,
       "error": null
     },
     {
@@ -44,6 +37,20 @@
       "error": null
     },
     {
+      "feed": "国外物理AI资讯",
+      "success": true,
+      "items_total": 100,
+      "items_unique": 93,
+      "error": null
+    },
+    {
+      "feed": "国外具身智能资讯",
+      "success": true,
+      "items_total": 100,
+      "items_unique": 97,
+      "error": null
+    },
+    {
       "feed": "GN: 脑机接口",
       "success": true,
       "items_total": 100,
@@ -51,17 +58,10 @@
       "error": null
     },
     {
-      "feed": "国外机器人资讯",
-      "success": true,
-      "items_total": 100,
-      "items_unique": 68,
-      "error": null
-    },
-    {
       "feed": "GN: 机器人",
       "success": true,
-      "items_total": 103,
-      "items_unique": 72,
+      "items_total": 102,
+      "items_unique": 73,
       "error": null
     },
     {
@@ -76,9 +76,9 @@
     "total_feeds": 10,
     "successful_feeds": 10,
     "failed_feeds": 0,
-    "total_items": 923,
-    "deduplicated": 80,
-    "noise_filtered": 25,
+    "total_items": 924,
+    "deduplicated": 78,
+    "noise_filtered": 23,
     "short_filtered": 0
   }
 }
