@@ -80,14 +80,18 @@ const GN_PRIORITY = {
 };
 
 const GN_CATEGORIES = [
-  // Jack 2026-05-25: GN英文来源优先（人形机器人 + 具身智能 + 机器人），然后中文/其他来源
-  { id: "GN: 人形机器人", label: "人形机器人" },
-  { id: "GN: 具身智能",   label: "具身智能" },
-  { id: "GN: 机器人",     label: "机器人" },
-  { id: "GN: 脑机接口",   label: "脑机接口" },
-  { id: "GN: Physical AI", label: "Physical AI" },
-  { id: "arXiv Robotics", label: "学术" },
-  { id: "商业",           label: "商业" },
+  // Jack 2026-05-25: 国外来源优先，然后GN英文来源
+  { id: "国外人形机器人资讯", label: "国外人形机器人资讯" },
+  { id: "国外具身智能资讯",   label: "国外具身智能资讯" },
+  { id: "国外物理AI资讯",     label: "国外物理AI资讯" },
+  { id: "国外机器人资讯",     label: "国外机器人资讯" },
+  { id: "GN: 机器人",        label: "GN: 机器人" },
+  { id: "GN: 人形机器人",    label: "GN: 人形机器人" },
+  { id: "GN: 具身智能",      label: "GN: 具身智能" },
+  { id: "GN: 物理AI",        label: "GN: 物理AI" },
+  { id: "GN: 脑机接口",      label: "GN: 脑机接口" },
+  { id: "arXiv Robotics",     label: "学术" },
+  { id: "商业",              label: "商业" },
 ];
 
 // Jack 2026-05-18: map ai_label values to GN category IDs
@@ -104,6 +108,7 @@ const AI_LABEL_TO_GN = {
 const SOURCE_TO_CATEGORY = {
   "36氪":   "商业",
   "创业邦": "商业",
+  "GN: BCI": "GN: 脑机接口",
 };
 
 function normalizeSourceCategory(source) {
