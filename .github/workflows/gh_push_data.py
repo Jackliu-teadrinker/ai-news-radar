@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """
-Push data files + HTML cache buster to GitHub.
-- Uses gh api for GitHub API (authenticated via GH_TOKEN env or gh's default credential)
-- Falls back to git add/commit/push with configured git user
-- Must be run from repo root.
+Push data files + HTML cache buster to GitHub via GIT (not gh api).
+===============================================================
+所有更新通过git add/commit/push完成，彻底消除gh api游离blob问题。
+
+用法：python gh_push_data.py
 """
 import base64
 import json
@@ -11,8 +12,8 @@ import os
 import re
 import subprocess
 import sys
-import urllib.request
-import urllib.error
+import tempfile
+from datetime import datetime
 
 REPO = "jackliu-teadrinker/ai-news-radar"
 DATA_FILES = [
@@ -21,205 +22,152 @@ DATA_FILES = [
     "data/source-status.json",
 ]
 HTML_FILE = "index.html"
+APP_JS_FILE = "assets/app.js"
+
+# 全局版本计数器文件（也存git）
+VERSION_FILE = ".radar_version"
 
 # Detect repo root (where .git exists)
 REPO_ROOT = None
 for candidate in [os.path.dirname(os.path.abspath(__file__)),
-                  os.getcwd(),
-                  os.path.expanduser("~")]:
-    if candidate and os.path.exists(os.path.join(candidate, ".git")):
+                  os.getcwd()]:
+    candidate = os.path.abspath(candidate)
+    if os.path.exists(os.path.join(candidate, ".git")):
         REPO_ROOT = candidate
         break
 if not REPO_ROOT:
     REPO_ROOT = os.getcwd()
 
 
-def run_git(args, check=True, cwd=None):
+def run_git(args, check=True, cwd=None, env=None):
+    full_env = {**os.environ, "GIT_TERMINAL_PROMPT": "0"}
+    if env:
+        full_env.update(env)
     result = subprocess.run(
         ["git"] + args,
         capture_output=True, text=True,
-        cwd=cwd or REPO_ROOT
+        cwd=cwd or REPO_ROOT, env=full_env
     )
+    for line in result.stdout.strip().split('\n'):
+        if line.strip():
+            print(f"  git {' '.join(args)}: {line}")
     if check and result.returncode != 0:
         print(f"  git {' '.join(args)} FAILED: {result.stderr[:300]}", file=sys.stderr)
     return result
 
 
-def get_git_sha():
-    result = run_git(["rev-parse", "HEAD"])
-    return result.stdout.strip() if result.returncode == 0 else ""
+def get_current_version():
+    """读取当前版本号（从VERSION_FILE）"""
+    vf = os.path.join(REPO_ROOT, VERSION_FILE)
+    if os.path.exists(vf):
+        try:
+            return int(open(vf).read().strip())
+        except:
+            pass
+    return 0
 
 
-def get_token():
-    return os.environ.get("GH_TOKEN", os.environ.get("GITHUB_TOKEN", ""))
+def bump_version():
+    """递增版本号，写入VERSION_FILE，git commit"""
+    ver = get_current_version() + 1
+    vf = os.path.join(REPO_ROOT, VERSION_FILE)
+    with open(vf, "w") as f:
+        f.write(str(ver))
+    print(f"  [VERSION] bumped to {ver}")
+    return ver
 
 
-def api_get(path):
-    """GET via gh api (uses GH_TOKEN env or default gh credentials)."""
-    token = get_token()
-    # Use gh api for proper authentication
-    result = subprocess.run(
-        ["gh", "api", f"repos/{REPO}/contents/{path}"],
-        capture_output=True, text=True,
-        cwd=REPO_ROOT
-    )
-    if result.returncode != 0:
-        print(f"  API GET {path}: gh failed", file=sys.stderr)
-        return {}
-    try:
-        return json.loads(result.stdout)
-    except:
-        return {}
+def get_app_js_sha():
+    """获取app.js的git blob SHA"""
+    result = run_git(["ls-files", "-s", APP_JS_FILE], check=False, cwd=REPO_ROOT)
+    if result.returncode == 0:
+        # output: "0 <sha> <stage> <path>"
+        parts = result.stdout.strip().split()
+        if len(parts) >= 2:
+            return parts[1]
+    return None
 
 
-def api_put(path, content, sha, message):
-    """PUT via gh api or git commit+push as fallback."""
-    token = get_token()
-
-    # Try gh api first
-    b64 = base64.b64encode(content).decode("ascii")
-    body = json.dumps({"message": message, "content": b64, "sha": sha})
-    import tempfile
-    tmp = tempfile.NamedTemporaryFile(mode="w", suffix=".json", delete=False)
-    tmp.write(body)
-    tmp.close()
-    try:
-        result = subprocess.run(
-            ["gh", "api", f"repos/{REPO}/contents/{path}",
-             "--method", "PUT", "--input", tmp.name],
-            capture_output=True, text=True,
-            cwd=REPO_ROOT
-        )
-        os.unlink(tmp.name)
-        if result.returncode == 0:
-            resp = json.loads(result.stdout)
-            html_url = resp.get("commit", {}).get("html_url", "no url")
-            print(f"  OK: {path} -> {html_url}")
-            return True
-        print(f"  gh API {path} failed: {result.stderr[:200]}", file=sys.stderr)
-    except Exception as e:
-        print(f"  gh API {path}: {e}", file=sys.stderr)
-        try: os.unlink(tmp.name)
-        except: pass
-
-    # Fall back to git add/commit/push
-    print(f"  Falling back to git for {path}")
-    full_path = os.path.join(REPO_ROOT, path)
-    dir_path = os.path.dirname(full_path)
-    os.makedirs(dir_path, exist_ok=True)
-    with open(full_path, "wb") as f:
-        f.write(content)
-
-    run_git(["add", path], check=False)
-    commit_r = run_git(["commit", "-m", message], check=False)
-    if commit_r.returncode != 0:
-        if "nothing to commit" in commit_r.stdout:
-            print(f"  No change: {path}")
-            return True
-        print(f"  git commit failed: {commit_r.stderr[:200]}", file=sys.stderr)
-        return False
-
-    push_r = run_git(["push"], check=False)
-    if push_r.returncode == 0:
-        print(f"  OK (git): {path}")
-        return True
-    print(f"  git push failed: {push_r.stderr[:200]}", file=sys.stderr)
-    return False
-
-
-def update_html_cache_buster(html_content, sha):
+def update_html_version(html_content, version):
     """
-    Replace the query string in the app.js <script src="...assets/app.js?v=...">
-    to ?sha=<sha> using surgical string replacement.
+    替换 index.html 中的 app.js 版本号为新的版本号。
+    兼容旧格式: ?sha=XXX 或 ?v=N
     """
-    if not sha:
-        print("  [DEBUG] sha empty, skip")
-        return html_content, False
-
-    content_str = html_content.decode("utf-8")
-
-    # Find the script tag context
-    idx = content_str.find("assets/app.js")
-    if idx < 0:
-        print("  [ERROR] assets/app.js not found!")
-        return html_content, False
-
-    # Find the src="...assets/app.js?v=..." and replace just the query part
-    # Pattern: src="...assets/app.js" followed by ?... and then "
-    app_js_in_src = 'assets/app.js'
-    old_src_marker = f'src="./{app_js_in_src}?v=20260520t"'
-
-    if old_src_marker in content_str:
-        new_src = f'src="./{app_js_in_src}?sha={sha}"'
-        new_content = content_str.replace(old_src_marker, new_src)
-        changed = new_content != content_str
-        if changed:
-            print(f"  [DEBUG] Replaced fixed marker: {old_src_marker} -> {new_src}")
-        return new_content.encode("utf-8"), changed
-
-    # Generic approach: find src="...assets/app.js[?...]" and replace query
-    pattern = r'(src="[^"?]*assets/app\.js)\?[^"]*(")'
-    replacement = rf'\1?sha={sha}\2'
-    new_content_str, count = re.subn(pattern, replacement, content_str)
-
+    content_str = html_content.decode("utf-8") if isinstance(html_content, bytes) else html_content
+    
+    # 新格式: app.js?v=123
+    new_marker = f'app.js?v={version}"'
+    
+    # 替换所有变体: ?sha=XXX, ?v=N, 各种长度
+    # 找 assets/app.js 所在的 script src 行
+    pattern = r'(src="[^"]*assets/app\.js)\?[^"]*(")'
+    
+    def replacer(m):
+        return m.group(1) + '?' + f'v={version}' + m.group(2)
+    
+    new_content, count = re.subn(pattern, replacer, content_str)
+    
     if count > 0:
-        changed = new_content_str != content_str
-        print(f"  [DEBUG] Generic replace: {count} matches, changed={changed}")
-        return new_content_str.encode("utf-8"), changed
-
-    print("  [ERROR] No script tag match found!")
-    return html_content, False
+        print(f"  [HTML] Updated app.js version marker {count}处 -> v={version}")
+        return new_content.encode("utf-8") if isinstance(html_content, bytes) else new_content
+    else:
+        # 找不到？尝试直接追加
+        print(f"  [HTML] 未找到 app.js marker，尝试直接在assets/app.js后加?v=")
+        new_content = content_str.replace(
+            'assets/app.js"', f'assets/app.js?v={version}"'
+        )
+        if new_content != content_str:
+            print(f"  [HTML] 直接追加版本号成功")
+            return new_content.encode("utf-8") if isinstance(html_content, bytes) else new_content
+        print(f"  [HTML] 警告: 无法更新版本号")
+        return html_content
 
 
 def main():
-    current_sha = get_git_sha()
-    token = get_token()
-    print(f"[INFO] git SHA: {current_sha[:8] if current_sha else 'unknown'}")
-    print(f"[INFO] GH_TOKEN: {'set' if token else 'NOT set'}")
-
-    # --- HTML cache buster ---
-    html_changed = False
+    print(f"[RADAR] gh_push_data.py (git-only mode)")
+    print(f"[INFO] Repo root: {REPO_ROOT}")
+    
+    # 1. Bump 版本号
+    new_version = bump_version()
+    
+    # 2. 更新 index.html 的 app.js 版本引用
     html_path = os.path.join(REPO_ROOT, HTML_FILE)
     if os.path.exists(html_path):
         html_content = open(html_path, "rb").read()
-        html_sha = api_get(HTML_FILE).get("sha", "")
-
-        new_html, changed = update_html_cache_buster(html_content, current_sha)
-        if changed:
-            print(f"[INFO] HTML cache buster: updating (sha={current_sha[:8]})")
-            ok = api_put(
-                HTML_FILE, new_html, html_sha,
-                f"chore: update app.js cache buster to {current_sha[:8]}"
-            )
-            html_changed = ok
-        else:
-            print(f"[INFO] HTML cache buster: already current or failed to match")
+        new_html = update_html_version(html_content, new_version)
+        with open(html_path, "wb") as f:
+            f.write(new_html)
+        print(f"  [OK] {HTML_FILE} updated with v={new_version}")
     else:
-        print(f"[WARN] {html_path} not found")
-
-    # --- Data files ---
-    pushed_data = []
+        print(f"  [WARN] {HTML_FILE} not found")
+    
+    # 3. git add + commit + push (统一commit，包含所有变更)
+    run_git(["add", "-A"], cwd=REPO_ROOT)
+    
+    # 检查是否有变更
+    diff = run_git(["diff", "--cached", "--stat"], check=False, cwd=REPO_ROOT)
+    if not diff.stdout.strip():
+        print(f"[INFO] No changes to commit")
+        return
+    
+    ts = datetime.now().strftime("%Y-%m-%d %H:%M")
+    msg = f"chore: radar update v{new_version} ({ts})"
+    run_git(["commit", "-m", msg], cwd=REPO_ROOT)
+    
+    push = run_git(["push"], cwd=REPO_ROOT)
+    if push.returncode == 0:
+        print(f"[+] Pushed: {msg}")
+    else:
+        print(f"[!] Push failed: {push.stderr[:200]}")
+    
+    # 4. Data files (已有workflow step commit，这里仅记录)
     for df in DATA_FILES:
         df_path = os.path.join(REPO_ROOT, df)
-        if not os.path.exists(df_path):
-            print(f"Skip (not found): {df}")
-            continue
-        content = open(df_path, "rb").read()
-        file_info = api_get(df)
-        sha = file_info.get("sha", "")
-        old_size = file_info.get("size", 0)
-        msg = f"Update {df} via workflow $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
-        if old_size == len(content) and sha:
-            print(f"No change: {df} ({len(content)} bytes)")
-            continue
-        ok = api_put(df, content, sha, msg)
-        if ok:
-            pushed_data.append(df)
+        if os.path.exists(df_path):
+            size = os.path.getsize(df_path)
+            print(f"  [DATA] {df}: {size} bytes")
 
-    total = len(pushed_data) + (1 if html_changed else 0)
-    print(f"\n{'Updated' if total else 'No change'}: "
-          f"{'index.html ' if html_changed else ''}"
-          f"{' '.join(pushed_data)}")
+    print(f"\n[OK] Done! app.js version = v={new_version}")
 
 
 if __name__ == "__main__":
