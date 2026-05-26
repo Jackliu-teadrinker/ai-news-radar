@@ -174,7 +174,7 @@ def authority_score(source: str) -> int:
     return 10
 
 # Noise patterns with word boundaries (avoid false matches like "Interface" matching "ETF")
-# Noise patterns — stock/financial noise + consumer appliance robots
+# Noise patterns — financial noise + consumer cleaning robots
 NOISE_PATTERNS = [
     # Financial/stock noise
     re.compile(r'\bETF\b', re.I),
@@ -185,8 +185,9 @@ NOISE_PATTERNS = [
     re.compile(r'财报|营收|利润|亏损|盈利', re.I),
     re.compile(r'回购|分红|配股', re.I),
     re.compile(r'主力净流入|北向资金|南向资金|沪指|深指|大盘|牛市|熊市', re.I),
-    # Consumer cleaning robots (no embodied AI)
-    re.compile(r'扫地机器人|扫地机|机器人吸尘器|扫拖机器人|拖地机器人|roomba|robovac', re.I),
+    re.compile(r'融资客|杠杆资金|融资余额', re.I),
+    # Consumer cleaning robots (not embodied AI)
+    re.compile(r'扫地机器人|扫地机|清洁机器人|扫拖机器人|拖地机器人|机器人吸尘器|扫拖一体|洗地机器人|roomba|robovac', re.I),
 ]
 
 NOISE_DOMAINS = [
