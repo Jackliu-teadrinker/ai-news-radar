@@ -78,9 +78,9 @@ const GN_PRIORITY = {
 };
 
 const GN_CATEGORIES = [
-  // Jack 2026-05-25: 国外来源优先，然后GN英文来源
-  { id: "国外人形机器人资讯", label: "国外人形机器人资讯" },
+  // Jack 2026-05-26: 国外具身智能资讯置顶（时效强、Jack重点关注）
   { id: "国外具身智能资讯",   label: "国外具身智能资讯" },
+  { id: "国外人形机器人资讯", label: "国外人形机器人资讯" },
   { id: "国外物理AI资讯",     label: "国外物理AI资讯" },
   { id: "国外机器人资讯",     label: "国外机器人资讯" },
   { id: "GN: 机器人",        label: "GN: 机器人" },
@@ -437,7 +437,8 @@ function sortByScore(items, sortMode) {
   if (sortMode === 'priority') return items;
   if (sortMode === 'time') {
     // 先按 feed 分组：优先 feed 排前面，然后各组内按时间
-    const PRIORITY_FEEDS = ['robotics', 'humanoid'];
+    // Jack 2026-05-26: embodied_ai 加入优先队列（时效性强，国际资讯核心赛道）
+    const PRIORITY_FEEDS = ['robotics', 'humanoid', 'embodied_ai'];
     const isPriority = item => PRIORITY_FEEDS.includes(item.ai_label);
     const priorityItems = items.filter(isPriority);
     const otherItems = items.filter(item => !isPriority(item));
