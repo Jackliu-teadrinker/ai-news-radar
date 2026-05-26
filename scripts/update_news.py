@@ -174,15 +174,28 @@ def authority_score(source: str) -> int:
     return 10
 
 # Noise patterns with word boundaries (avoid false matches like "Interface" matching "ETF")
+# Noise patterns — consumer appliance / non-embodied-AI robots
 NOISE_PATTERNS = [
+    # Financial/stock noise
     re.compile(r'\bETF\b', re.I),
     re.compile(r'机器人ETF', re.I),
     re.compile(r'\b股票\b|\b股价\b|\b涨跌\b|\b上市\b|\bIPO\b', re.I),
-    re.compile(r'扫地机器人|扫地机|roomba|robovac|robot vacuum', re.I),
     re.compile(r'概念股', re.I),
     re.compile(r'\b评级\b|\b买入\b|\b卖出\b|\b增持\b|\b目标价\b', re.I),
     re.compile(r'财报|营收|利润|亏损|盈利', re.I),
     re.compile(r'回购|分红|配股', re.I),
+    # Consumer cleaning robots (no embodied AI)
+    re.compile(r'扫地机器人|扫地机|roomba|robovac|robot vacuum|robot mop|擦地机器人|擦窗机器人', re.I),
+    re.compile(r'robot lawn mower|robotic lawn mower|割草机器人|除草机器人|园艺机器人', re.I),
+    re.compile(r'pool robot|泳池机器人|水池机器人', re.I),
+    # Non-embodied-AI robots
+    re.compile(r'agricultural robot|agri-robot|farming robot|农用机器人|农业机器人|农机机器人', re.I),
+    re.compile(r'delivery robot|递送机器人|配送机器人|物流机器人', re.I),
+    re.compile(r'companion robot|social robot|pet robot|陪伴机器人|机器宠物|机器伙伴', re.I),
+    re.compile(r'robot chef|cooking robot|厨房机器人|料理机器人|炒菜机器人', re.I),
+    re.compile(r'robot toy|robot dinosaur|机器玩具|玩具机器人|儿童机器人', re.I),
+    re.compile(r'security robot|安防机器人|巡逻机器人|保安机器人', re.I),
+    re.compile(r'教育机器人|教学机器人|编程机器人', re.I),
 ]
 
 NOISE_DOMAINS = [
