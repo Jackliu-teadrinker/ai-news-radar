@@ -178,7 +178,7 @@ NOISE_PATTERNS = [
     re.compile(r'\bETF\b', re.I),
     re.compile(r'机器人ETF', re.I),
     re.compile(r'\b股票\b|\b股价\b|\b涨跌\b|\b上市\b|\bIPO\b', re.I),
-    re.compile(r'扫地机器人|扫地机|roomba|robovac', re.I),
+    re.compile(r'扫地机器人|扫地机|roomba|robovac|robot vacuum', re.I),
     re.compile(r'概念股', re.I),
     re.compile(r'\b评级\b|\b买入\b|\b卖出\b|\b增持\b|\b目标价\b', re.I),
     re.compile(r'财报|营收|利润|亏损|盈利', re.I),
