@@ -147,7 +147,7 @@ SOURCE_PRIORS = {
     "aihot": 0.45,
     "aihubtoday": 0.45,
     "followbuilders": 0.25,
-    "opmlrss": 0.20,  # GN feeds: prior 0.20 (was 0.0, causing all GN items to be filtered out)
+    "opmlrss": 0.10,  # Non-GN opmlrss feeds (arXiv, etc.) use 0.10; GN feeds get 0.25 via is_gn boost
     "xapi": 0.15,
 }
 
@@ -156,6 +156,25 @@ GN_FEED_PATTERNS = ["GN:", "google news", "Google News", "news.google"]
 
 # arXiv site pattern — for capping academic papers
 ARXIV_URL_PATTERNS = ["arxiv.org"]
+
+# 4-category keywords for precise feed filtering
+CATEGORY_KEYWORDS = {
+    "具身智能": ["具身智能", "embodied intelligence", "embodied ai"],
+    "人形机器人": ["人形机器人", "humanoid robot", "humanoid"],
+    "Physical AI": ["physical ai", "physical AI"],
+    "脑机接口": ["脑机接口", "brain computer interface", "BCI"],
+}
+
+# Feeds that use 4-category keyword filter only (no score > 0.80 floor)
+# These feeds: give up score threshold, rely only on 4-category keyword match
+FEED_4CAT_BYPASS_SOURCES = {
+    "arXiv Embodied AI (cs.AI)",
+    "arXiv Robotics (cs.RO)",
+    "TechCrunch Robotics",
+    "TechCrunch",
+    "36kr",
+    "36氪",
+}
 
 # Max arXiv papers to keep in 24h window (to prevent academic flood)
 MAX_ARXIV_PAPERS = 20
@@ -233,6 +252,32 @@ def is_arxiv_paper(url: str) -> bool:
     return any(p in url.lower() for p in ARXIV_URL_PATTERNS)
 
 
+def matches_4_categories(text: str) -> list[str]:
+    """Return list of matched 4-category names. Empty list = no match."""
+    text_lower = text.lower()
+    matched = []
+    for cat, keywords in CATEGORY_KEYWORDS.items():
+        for kw in keywords:
+            if kw.lower() in text_lower:
+                matched.append(cat)
+                break
+    return matched
+
+
+def is_4cat_bypass_source(source: str) -> bool:
+    """Check if item is from a feed that uses 4-category filter only (no score floor)."""
+    if not source:
+        return False
+    # arXiv: check by source prefix (arXiv feeds contain 'arXiv')
+    if "arXiv" in source or "arxiv" in source.lower():
+        return True
+    # TechCrunch, 36kr: check by source string
+    src_lower = source.lower()
+    if "techcrunch" in src_lower or "36kr" in src_lower or "36氪" in src_lower:
+        return True
+    return False
+
+
 def score_ai_relevance(record: dict[str, Any]) -> dict[str, Any]:
     """Return an explainable relevance score while preserving the old keep/drop behavior."""
     site_id = str(record.get("site_id") or "")
@@ -249,7 +294,7 @@ def score_ai_relevance(record: dict[str, Any]) -> dict[str, Any]:
 
     # Boost GN (Google News) curated feeds — reliable news sources worth preserving
     if is_gn_feed(source):
-        source_prior = max(source_prior, 0.20)
+        source_prior = max(source_prior, 0.25)
 
     if site_id == "zeli":
         if "24h" in source.lower() or "24h最热" in source:
@@ -361,7 +406,10 @@ def score_ai_relevance(record: dict[str, Any]) -> dict[str, Any]:
     # arXiv papers: require minimum score of 0.70 to prevent academic flood.
     # Most arXiv papers score 0.65-0.68 (many academic keywords); only top papers
     # with strong company/product/person signals pass this threshold.
-    if is_arxiv and score < 0.70:
+    # EXCEPTION: for arXiv/TechCrunch/36kr feeds, give up score > 0.80 threshold,
+    # use 4-category keyword filter only, keep natural score.
+    use_4cat_filter = is_4cat_bypass_source(source)
+    if is_arxiv and not use_4cat_filter and score < 0.70:
         return _result(
             is_ai_related=False,
             score=score,
@@ -370,7 +418,20 @@ def score_ai_relevance(record: dict[str, Any]) -> dict[str, Any]:
             signals=ai_signals + tech_signals,
             noise=noise,
         )
-    if is_arxiv:
+    # For 4-cat bypass feeds (arXiv/TechCrunch/36kr): require 4-category keyword match
+    # If no category match, drop regardless of score
+    cats_matched = matches_4_categories(text)
+    if use_4cat_filter and not cats_matched:
+        return _result(
+            is_ai_related=False,
+            score=score,
+            label="research_paper",
+            reason="4cat_bypass_feed_no_category_match",
+            signals=ai_signals + tech_signals,
+            noise=noise,
+        )
+    # For 4-cat bypass feeds: no score floor, keep natural score
+    if not use_4cat_filter and is_arxiv:
         score = max(score, 0.80)
 
     return _result(
