@@ -48,21 +48,16 @@ jobs:
           # Run Python script to generate data — use follow.opml (has GN feeds)
           python scripts/update_news.py --output-dir data --window-hours 24 --rss-opml feeds/follow.opml --archive-days 21
 
-          # Also save daily archive (pathA)
+          # Also save daily archive
           DATE_DIR=$(date +%Y-%m-%d)
           mkdir -p "data/archives/$DATE_DIR"
           cp data/latest-24h.json "data/archives/$DATE_DIR/latest-24h.json"
           echo "[INFO] Daily archive saved to data/archives/$DATE_DIR/"
 
-          # Commit and push data + archives (latest-24h.json = AI filtered, latest-24h-all.json = unfiltered)
+          # Always commit data files (latest-24h.json = AI filtered, latest-24h-all.json = unfiltered)
           git add data/latest-24h.json data/latest-24h-all.json data/source-status.json data/archives/
-          if git diff --cached --quiet; then
-            echo "No changes to commit"
-          else
-            git commit -m "chore: update news data $(date +%Y-%m-%d' '%H:%M)"
-            git push
-            echo "Committed and pushed successfully"
-          fi
+          git commit -m "chore: update news data $(date +%Y-%m-%d' '%H:%M)" || echo "Nothing to commit"
+          git push || echo "Push failed (可能是无需更新)"
 
       - name: Update HTML cache buster
         env:
