@@ -45,17 +45,17 @@ jobs:
           git config --global user.email "$GIT_EMAIL"
           git config --global user.name "$GIT_NAME"
 
-          # Run Python script to generate data
-          python scripts/update_news.py --output-dir data --window-hours 24 --rss-opml feeds/follow.example.opml --archive-days 21
+          # Run Python script to generate data — use follow.opml (has GN feeds)
+          python scripts/update_news.py --output-dir data --window-hours 24 --rss-opml feeds/follow.opml --archive-days 21
 
           # Also save daily archive (pathA)
           DATE_DIR=$(date +%Y-%m-%d)
           mkdir -p "data/archives/$DATE_DIR"
-          cp data/latest-24h-min.json "data/archives/$DATE_DIR/latest-24h-min.json"
+          cp data/latest-24h.json "data/archives/$DATE_DIR/latest-24h.json"
           echo "[INFO] Daily archive saved to data/archives/$DATE_DIR/"
 
-          # Commit and push data + archives
-          git add data/latest-24h-min.json data/archives/
+          # Commit and push data + archives (latest-24h.json = AI filtered, latest-24h-all.json = unfiltered)
+          git add data/latest-24h.json data/latest-24h-all.json data/source-status.json data/archives/
           if git diff --cached --quiet; then
             echo "No changes to commit"
           else
