@@ -75,40 +75,6 @@ TECH_KEYWORDS = [
     "机器人",
     "具身",
 ]
-ROBOTICS_KEYWORDS = [
-    # English robotics core
-    "robot", "robotics", "humanoid", "bipedal robot", "quadruped robot",
-    "embodied", "embodied ai", "embodied intelligence", "physical ai", "physical intelligence",
-    "bionic", "dexterous", "grasping", "locomotion", "balancing",
-    "robot arm", "mobile manipulation", "whole-body control", "force control", "torque control",
-    "vision-language-action", "VLA model", "end effector", "contact impedance",
-    "teleoperation", "teleop", "bimanual",
-    # Companies
-    "Boston Dynamics", "Figure AI", "Tesla Optimus", "Unitree", "Agility Robotics",
-    "1X Technologies", "1X", "Apptronik", "Robotis", "PAL Robotics", "RoboSense",
-    # Chinese robotics
-    "宇树", "智元机器人", "傅利叶智能", "小米铁大", "追觅", "石头科技",
-    "机器人大讲堂", "具身智能", "人形机器人",
-    # BCI
-    "brain-computer interface", "neural interface", "neuroscience",
-    "spinal cord stimulation", "neural signal", "bci",
-]
-
-
-# Jack 2026-05-13: 扫地机器人/吸尘器强过滤（正文或标题含这些词则直接排除）
-ROBOTICS_EXCLUDE_KEYWORDS = [
-    "robot vacuum", "vacuum robot", "robotic vacuum", "roomba", "roborock", "ecovacs", "石头科技", "科沃斯", "扫地机器人", "扫地机", "扫拖一体", "智能扫地", "自动集尘", "吸尘器机器人", "iRobot", "Roborock", "ECOVACS", "Yeedi", "yeedi", "RoboVac", "机器人吸尘器", "清洁机器人", "扫街机器人", "泳池清洁机", "泳池机器人", "除草机器人", "割草机器人", "窗户清洁机器人", "擦窗机器人", "地板清洁机器人", "家用清洁机器人", "宠物毛发清理", "自动清洗拖布", "自动洗拖布", "扫地拖地", "智能清扫", "自动清扫", "智能清洁机器人", "清洁自动", "全屋清扫", "室内清扫", "户外清扫", "商用清扫", "物业清扫", "保洁机器人",
-    # English variants
-    "robot vacuum cleaner", "automated vacuum", "self-emptying vacuum", "robot mop", "robot sweeper", "floor cleaning robot", "carpet cleaner robot", "window cleaning robot", "pool cleaning robot", "lawn mowing robot", "grass cutting robot", "automated lawn mower",
-    # Chinese variants
-    "机器人扫地", "智能扫地机", "自动扫地机器人", "全自动扫地", "家用扫地机器人", "手持吸尘器", "无线吸尘器", "手持扫地机", "洗地机机器人", "扫拖机器人", "扫拖洗机器人", "全自动洗拖布",
-    # Brand names
-    "Roborock S", "Ecovacs Deebot", "iRobot Roomba", "Yeedi vac", "360 S", "小狗扫地机器人", "斐纳扫地机器人", "戴森扫地机器人", "松下扫地机器人", "三星扫地机器人", "LG扫地机器人", "华为扫地机器人", "小米扫地机器人", "米家扫地机", "海尔扫地机器人", "美的扫地机器人", "浦桑尼克扫地机器人", "福玛特扫地机器人", "乾阶扫地机器人", "ILIFE扫地机器人", "Xrobot", "Proscenic扫地机", "岚豹扫地机器人", "云鲸扫地机", "云鲸拖地机", "追觅扫地机", "石头扫地机", "米家扫地机",
-    # Generic consumer cleaning
-    "自动清洁机器人", "小型清扫机器人", "手持式清洁机", "无线清洁机器人", "智能清洁机", "懒人清洁神器", "扫地神器", "清扫神器", "解放双手扫地", "家务好帮手扫地", "家用智能清扫", "地面清洁神器", "地板清洁器智能",
-    # Misc non-robotics industrial robot terms to exclude
-    "工业吸尘器", "商业吸尘器", "工业清洁机器人", "商用清洁机器人", "专业清扫设备",
-]
 
 NOISE_KEYWORDS = [
     "娱乐",
@@ -181,9 +147,18 @@ SOURCE_PRIORS = {
     "aihot": 0.45,
     "aihubtoday": 0.45,
     "followbuilders": 0.25,
-    "opmlrss": 0.15,
+    "opmlrss": 0.20,  # GN feeds: prior 0.20 (was 0.0, causing all GN items to be filtered out)
     "xapi": 0.15,
 }
+
+# GN feed name patterns — these are reliable curated news sources
+GN_FEED_PATTERNS = ["GN:", "google news", "Google News", "news.google"]
+
+# arXiv site pattern — for capping academic papers
+ARXIV_URL_PATTERNS = ["arxiv.org"]
+
+# Max arXiv papers to keep in 24h window (to prevent academic flood)
+MAX_ARXIV_PAPERS = 20
 AI_DEFAULT_SOURCES = {"aibase", "aihot", "aihubtoday"}
 
 LABEL_KEYWORDS = [
@@ -243,6 +218,21 @@ def _result(
     }
 
 
+def is_gn_feed(source: str) -> bool:
+    """Check if item is from a curated GN (Google News) feed."""
+    if not source:
+        return False
+    s = source.lower()
+    return any(p.lower() in s for p in GN_FEED_PATTERNS)
+
+
+def is_arxiv_paper(url: str) -> bool:
+    """Check if item URL is from arXiv."""
+    if not url:
+        return False
+    return any(p in url.lower() for p in ARXIV_URL_PATTERNS)
+
+
 def score_ai_relevance(record: dict[str, Any]) -> dict[str, Any]:
     """Return an explainable relevance score while preserving the old keep/drop behavior."""
     site_id = str(record.get("site_id") or "")
@@ -256,6 +246,10 @@ def score_ai_relevance(record: dict[str, Any]) -> dict[str, Any]:
     tech_signals = matched_keywords(text, TECH_KEYWORDS)
     noise = matched_keywords(text, NOISE_KEYWORDS) + matched_keywords(text, COMMERCE_NOISE_KEYWORDS)
     source_prior = SOURCE_PRIORS.get(site_id, 0.0)
+
+    # Boost GN (Google News) curated feeds — reliable news sources worth preserving
+    if is_gn_feed(source):
+        source_prior = max(source_prior, 0.20)
 
     if site_id == "zeli":
         if "24h" in source.lower() or "24h最热" in source:
@@ -297,24 +291,7 @@ def score_ai_relevance(record: dict[str, Any]) -> dict[str, Any]:
                 noise=noise,
             )
 
-    # Plan B: opmlrss sources require at least one robotics keyword
-    if site_id.startswith("opmlrss"):
-        robotics_signals = [kw for kw in ROBOTICS_KEYWORDS if kw.lower() in text]
-        if not robotics_signals:
-            return _result(
-                is_ai_related=False,
-                score=source_prior + 0.05,
-                label="no_robotics_signal",
-                reason="opmlrss_requires_robotics_keyword",
-                signals=ai_signals + tech_signals,
-                noise=noise,
-            )
     if site_id in AI_DEFAULT_SOURCES:
-        # Jack 2026-05-13: reject robot vacuum / 扫地机器人 items
-        item_text = (record.get('title', '') + ' ' + record.get('description', '')).lower()
-        for excl in ROBOTICS_EXCLUDE_KEYWORDS:
-            if excl.lower() in item_text:
-                return 0
         return _result(
             is_ai_related=True,
             score=max(AI_RELEVANCE_THRESHOLD, 0.72 + source_prior),
@@ -358,13 +335,43 @@ def score_ai_relevance(record: dict[str, Any]) -> dict[str, Any]:
             noise=noise,
         )
 
-    score = source_prior + (0.52 if has_ai else 0.34) + min(0.18, 0.04 * len(ai_signals)) + min(0.12, 0.03 * len(tech_signals))
+    # arXiv papers: apply academic penalty (reduce score by 0.15) to prevent academic flood.
+    # GN (Google News) curated feeds: get prior boost of 0.25.
+    # Non-GN opmlrss feeds (e.g. arXiv): use lower prior to keep only high-signal items.
+    is_gn = is_gn_feed(source)
+    is_arxiv = is_arxiv_paper(url)
+    if is_gn:
+        source_prior = max(source_prior, 0.25)
+    elif site_id == "opmlrss":
+        source_prior = 0.10  # Lower prior for non-GN RSS (arXiv, etc.)
+
+    # Compute score
+    ai_weight = 0.52 if has_ai else 0.34
+    # Reduce ai_signals weight from 0.04 to 0.02: academic papers have many AI keywords
+    # but that shouldn't over-inflate their news relevance
+    sig_weight = 0.02
+    score = source_prior + ai_weight + min(0.10, sig_weight * len(ai_signals)) + min(0.12, 0.03 * len(tech_signals))
     if noise:
         score -= min(0.18, 0.04 * len(noise))
     if has_broad_ai and has_tech and not has_ai:
         score = max(score, AI_RELEVANCE_THRESHOLD)
     if has_ai:
         score = max(score, AI_RELEVANCE_THRESHOLD)
+
+    # arXiv papers: require minimum score of 0.70 to prevent academic flood.
+    # Most arXiv papers score 0.65-0.68 (many academic keywords); only top papers
+    # with strong company/product/person signals pass this threshold.
+    if is_arxiv and score < 0.70:
+        return _result(
+            is_ai_related=False,
+            score=score,
+            label="research_paper",
+            reason="arxiv_paper_below_threshold_0.70",
+            signals=ai_signals + tech_signals,
+            noise=noise,
+        )
+    if is_arxiv:
+        score = max(score, 0.80)
 
     return _result(
         is_ai_related=True,
