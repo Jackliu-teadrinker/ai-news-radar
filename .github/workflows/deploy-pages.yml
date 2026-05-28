@@ -1,6 +1,7 @@
 name: Deploy AI News Radar to Pages
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - radar-data
