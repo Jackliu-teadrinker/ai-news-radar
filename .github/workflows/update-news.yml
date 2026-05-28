@@ -12,6 +12,7 @@ concurrency:
   group: update-ai-news-${{ github.ref }}
   cancel-in-progress: true
 
+permissions:
   contents: write
   pages: write
   id-token: write
