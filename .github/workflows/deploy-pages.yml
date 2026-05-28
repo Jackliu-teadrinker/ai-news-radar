@@ -3,7 +3,7 @@ name: Deploy AI News Radar to Pages
 on:
   push:
     branches:
-      - master
+      - radar-data
     paths:
       - "data/**"
       - "index.html"
@@ -23,8 +23,10 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
-      - name: Checkout
+      - name: Checkout radar-data
         uses: actions/checkout@v4
+        with:
+          ref: radar-data
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
