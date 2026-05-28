@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-05-28T05:25:28.983240+00:00",
+  "generated_at": "2026-05-28T06:00:58.314796+00:00",
   "feeds": [
     {
-      "feed": "国外人形机器人资讯",
+      "feed": "GN: 人形机器人",
       "success": true,
-      "items_total": 102,
-      "items_unique": 102,
+      "items_total": 100,
+      "items_unique": 100,
       "error": null
     },
     {
       "feed": "国外物理AI资讯",
       "success": true,
       "items_total": 100,
-      "items_unique": 96,
+      "items_unique": 100,
       "error": null
     },
     {
@@ -20,20 +20,6 @@
       "success": true,
       "items_total": 100,
       "items_unique": 100,
-      "error": null
-    },
-    {
-      "feed": "GN: 具身智能",
-      "success": true,
-      "items_total": 100,
-      "items_unique": 100,
-      "error": null
-    },
-    {
-      "feed": "国外具身智能资讯",
-      "success": true,
-      "items_total": 100,
-      "items_unique": 97,
       "error": null
     },
     {
@@ -47,14 +33,35 @@
       "feed": "国外机器人资讯",
       "success": true,
       "items_total": 102,
-      "items_unique": 80,
+      "items_unique": 102,
       "error": null
     },
     {
-      "feed": "GN: 人形机器人",
+      "feed": "GN: 具身智能",
       "success": true,
       "items_total": 100,
-      "items_unique": 98,
+      "items_unique": 97,
+      "error": null
+    },
+    {
+      "feed": "国外人形机器人资讯",
+      "success": true,
+      "items_total": 102,
+      "items_unique": 76,
+      "error": null
+    },
+    {
+      "feed": "国外具身智能资讯",
+      "success": true,
+      "items_total": 100,
+      "items_unique": 95,
+      "error": null
+    },
+    {
+      "feed": "GN: 物理AI",
+      "success": true,
+      "items_total": 100,
+      "items_unique": 97,
       "error": null
     },
     {
@@ -63,22 +70,15 @@
       "items_total": 100,
       "items_unique": 81,
       "error": null
-    },
-    {
-      "feed": "GN: 物理AI",
-      "success": true,
-      "items_total": 100,
-      "items_unique": 96,
-      "error": null
     }
   ],
   "summary": {
     "total_feeds": 10,
     "successful_feeds": 10,
     "failed_feeds": 0,
-    "total_items": 950,
-    "deduplicated": 54,
-    "noise_filtered": 29,
+    "total_items": 948,
+    "deduplicated": 56,
+    "noise_filtered": 28,
     "short_filtered": 0
   }
 }
