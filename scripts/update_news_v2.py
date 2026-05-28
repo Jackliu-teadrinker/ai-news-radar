@@ -18,8 +18,15 @@ from collections import defaultdict
 # Paths
 # ─────────────────────────────────────────────
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-OUTPUT_FILE = os.path.join(SCRIPT_DIR, "data", "latest-24h.json")
-SEEN_URLS_FILE = os.path.join(SCRIPT_DIR, "data", "seen_urls.json")
+cwd = os.getcwd()
+if cwd.endswith("ai-news-radar"):
+    REPO_DIR = cwd
+elif os.path.basename(cwd) == "scripts":
+    REPO_DIR = os.path.dirname(cwd)
+else:
+    REPO_DIR = os.path.join(cwd, "ai-news-radar")
+OUTPUT_FILE = os.path.join(REPO_DIR, "data", "latest-24h.json")
+SEEN_URLS_FILE = os.path.join(REPO_DIR, "data", "seen_urls.json")
 
 # ─────────────────────────────────────────────
 # Time Window
@@ -570,11 +577,40 @@ def main():
     # Build output
     output = build_output(items)
 
-    # Save
+    # Save main output (categories format)
     os.makedirs(os.path.dirname(OUTPUT_FILE), exist_ok=True)
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         json.dump(output, f, ensure_ascii=False, indent=2)
     print(f"Output saved to: {OUTPUT_FILE}")
+
+    # Also write min.json and all.json (flat format, for app.js)
+    flat_items = []
+    for cat, cat_items in output["categories"].items():
+        for item in cat_items:
+            item["category"] = cat
+            flat_items.append(item)
+
+    min_data = {
+        "generated_at": output["generated_at"],
+        "total_items": output["total_items"],
+        "items": flat_items,
+    }
+    min_path = os.path.join(os.path.dirname(OUTPUT_FILE), "latest-24h-min.json")
+    with open(min_path, "w", encoding="utf-8") as f:
+        json.dump(min_data, f, ensure_ascii=False, indent=2)
+    print(f"Min saved to: {min_path}")
+
+    all_data = {
+        "generated_at": output["generated_at"],
+        "window_start": output.get("window_start"),
+        "window_end": output.get("window_end"),
+        "total_items": len(flat_items),
+        "items": flat_items,
+    }
+    all_path = os.path.join(os.path.dirname(OUTPUT_FILE), "latest-24h-all.json")
+    with open(all_path, "w", encoding="utf-8") as f:
+        json.dump(all_data, f, ensure_ascii=False, indent=2)
+    print(f"All saved to: {all_path}")
 
     # Update seen URLs
     urls = {item["url"] for item in items}
