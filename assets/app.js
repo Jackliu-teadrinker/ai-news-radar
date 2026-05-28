@@ -1,0 +1,969 @@
+const state = {
+  itemsAi: [],
+  itemsAll: [],
+  itemsAllRaw: [],
+  statsAi: [],
+  totalAi: 0,
+  totalRaw: 0,
+  totalAllMode: 0,
+  allDedup: true,
+  allDataLoaded: false,
+  allDataUrl: "data/latest-24h-all.json",
+  allDataPromise: null,
+  siteFilter: "",
+  categoryFilter: "",
+  query: "",
+  mode: "ai",
+  todayMode: true,
+  waytoagiMode: "today",
+  waytoagiData: null,
+  sourceStatus: null,
+  generatedAt: null,
+  // Jack 2026-05-20: 按时间最新排序
+  sortMode: 'time',  // 'time' | 'priority' | 'total_score' | 'relevance' | 'authority' | 'depth' | 'timeliness'
+};
+
+const statsEl = document.getElementById("stats");
+const siteSelectEl = document.getElementById("siteSelect");
+const sitePillsEl = document.getElementById("sitePills");
+const newsListEl = document.getElementById("newsList");
+const updatedAtEl = document.getElementById("updatedAt");
+const searchInputEl = document.getElementById("searchInput");
+const sortSelectEl = document.getElementById("sortSelect");
+const resultCountEl = document.getElementById("resultCount");
+const listTitleEl = document.getElementById("listTitle");
+const itemTpl = document.getElementById("itemTpl");
+const modeAiBtnEl = document.getElementById("modeAiBtn");
+const modeAllBtnEl = document.getElementById("modeAllBtn");
+const modeHintEl = document.getElementById("modeHint");
+const allDedupeWrapEl = document.getElementById("allDedupeWrap");
+const allDedupeToggleEl = document.getElementById("allDedupeToggle");
+const allDedupeLabelEl = document.getElementById("allDedupeLabel");
+const advancedSummaryEl = document.getElementById("advancedSummary");
+const sourceHealthEl = document.getElementById("sourceHealth");
+
+const waytoagiUpdatedAtEl = null;
+const waytoagiMetaEl = null;
+const waytoagiListEl = null;
+const waytoagiTodayBtnEl = null;
+const waytoagi7dBtnEl = null;
+const coverageStripEl = document.getElementById("coverageStrip");
+
+const SOURCE_KINDS = {
+  official_ai: { label: "官方", tone: "official" },
+  aibreakfast: { label: "日报", tone: "newsletter" },
+  followbuilders: { label: "Builders/X", tone: "builders" },
+  xapi: { label: "X API", tone: "builders" },
+  techurls: { label: "聚合", tone: "aggregate" },
+  buzzing: { label: "聚合", tone: "aggregate" },
+  iris: { label: "聚合", tone: "aggregate" },
+  bestblogs: { label: "博客", tone: "blogs" },
+  tophub: { label: "聚合", tone: "aggregate" },
+  zeli: { label: "聚合", tone: "aggregate" },
+  aihubtoday: { label: "AI站点", tone: "aihub" },
+  aibase: { label: "AI站点", tone: "aihub" },
+  newsnow: { label: "聚合", tone: "aggregate" },
+};
+
+// Jack 2026-05-13: GN feed display priority (lower = shown first)
+const GN_PRIORITY = {
+  // Jack 2026-05-25: 国外来源优先，然后GN英文来源
+  "GN: 人形机器人": 1,
+  "GN: 具身智能": 2,
+  "GN: 物理AI": 3,
+  "GN: 机器人": 4,
+  "GN: 脑机接口": 5,
+  "arXiv Robotics": 10,
+  "商业": 20,
+};
+
+const GN_CATEGORIES = [
+  // Jack 2026-05-26: 国外具身智能资讯置顶（时效强、Jack重点关注）
+  { id: "国外具身智能资讯",   label: "国外具身智能资讯" },
+  { id: "国外人形机器人资讯", label: "国外人形机器人资讯" },
+  { id: "国外物理AI资讯",     label: "国外物理AI资讯" },
+  { id: "国外机器人资讯",     label: "国外机器人资讯" },
+  { id: "GN: 机器人",        label: "GN: 机器人" },
+  { id: "GN: 人形机器人",    label: "GN: 人形机器人" },
+  { id: "GN: 具身智能",      label: "GN: 具身智能" },
+  { id: "GN: 物理AI",        label: "GN: 物理AI" },
+  { id: "GN: 脑机接口",      label: "GN: 脑机接口" },
+  { id: "arXiv Robotics",     label: "学术" },
+  { id: "商业",              label: "商业" },
+];
+
+// Jack 2026-05-18: map ai_label values to GN category IDs
+const AI_LABEL_TO_GN = {
+  "robotics":       "GN: Physical AI",
+  "humanoid":       "GN: 人形机器人",
+  "embodied_ai":    "GN: 具身智能",
+  "brain_computer": "GN: 脑机接口",
+  "physical_ai":    "GN: Physical AI",
+  // Also support matching the category ID directly as ai_label
+};
+
+// Jack 2026-05-15: map raw source names to canonical category IDs
+const SOURCE_TO_CATEGORY = {
+  "36氪":   "商业",
+  "创业邦": "商业",
+  "GN: BCI": "GN: 脑机接口",
+  // GN feeds
+  "国外人形机器人资讯": "GN: 人形机器人",
+  "国外具身智能资讯":   "GN: 具身智能",
+  "国外物理AI资讯":     "GN: 物理AI",
+  "国外机器人资讯":     "GN: 机器人",
+  // Explicit GN: category labels (in case items use these directly as source)
+  "GN: 机器人":     "GN: 机器人",
+  "GN: 人形机器人": "GN: 人形机器人",
+  "GN: 具身智能":   "GN: 具身智能",
+  "GN: 物理AI":     "GN: 物理AI",
+  "GN: 脑机接口":   "GN: 脑机接口",
+  "GN: BCI":        "GN: 脑机接口",
+};
+
+function normalizeSourceCategory(source) {
+  return SOURCE_TO_CATEGORY[source] || source;
+}
+
+// Jack 2026-05-18: return the GN category for an item (checks ai_label first, then source)
+function itemGnCategory(item) {
+  const labelGn = AI_LABEL_TO_GN[item.ai_label];
+  if (labelGn) return labelGn;
+  if (Object.values(AI_LABEL_TO_GN).includes(item.ai_label)) return item.ai_label;
+  return normalizeSourceCategory(item.source);
+}
+
+function gnPriority(source) {
+  const norm = normalizeSourceCategory(source);
+  return GN_PRIORITY[norm] !== undefined ? GN_PRIORITY[norm] : 999;
+}
+
+
+function fmtNumber(n) {
+  return new Intl.NumberFormat("zh-CN").format(n || 0);
+}
+
+function fmtTime(iso) {
+  if (!iso) return "时间未知";
+  const d = new Date(iso);
+  if (Number.isNaN(d.getTime())) return "时间未知";
+  return new Intl.DateTimeFormat("zh-CN", {
+    month: "2-digit",
+    day: "2-digit",
+    hour: "2-digit",
+    minute: "2-digit",
+  }).format(d);
+}
+
+function fmtDate(iso) {
+  if (!iso) return "未知日期";
+  const d = new Date(`${iso}T00:00:00`);
+  if (Number.isNaN(d.getTime())) return iso;
+  return new Intl.DateTimeFormat("zh-CN", {
+    month: "2-digit",
+    day: "2-digit",
+  }).format(d);
+}
+
+function setStats(payload) {
+  const cards = [
+    ["AI 信号", fmtNumber(payload.total_items)],
+    ["站点数", fmtNumber(payload.site_count)],
+    ["来源分组", fmtNumber(payload.source_count)],
+    ["归档", fmtNumber(payload.archive_total || 0)]
+  ];
+
+  statsEl.innerHTML = "";
+  cards.forEach(([k, v]) => {
+    const node = document.createElement("div");
+    node.className = "stat";
+    node.innerHTML = `<div class="k">${k}</div><div class="v">${v}</div>`;
+    statsEl.appendChild(node);
+  });
+}
+
+function sourceKind(siteId) {
+  return SOURCE_KINDS[siteId] || { label: "来源", tone: "default" };
+}
+
+function siteRows() {
+  return Array.isArray(state.sourceStatus?.sites) ? state.sourceStatus.sites : [];
+}
+
+function siteRow(siteId) {
+  return siteRows().find((site) => site.site_id === siteId) || null;
+}
+
+function renderCoverageCard(label, value, meta, tone = "") {
+  const node = document.createElement("div");
+  node.className = `coverage-card ${tone}`.trim();
+  const labelEl = document.createElement("span");
+  labelEl.className = "coverage-label";
+  labelEl.textContent = label;
+  const valueEl = document.createElement("strong");
+  valueEl.textContent = value;
+  const metaEl = document.createElement("span");
+  metaEl.className = "coverage-meta";
+  metaEl.textContent = meta;
+  node.append(labelEl, valueEl, metaEl);
+  return node;
+}
+
+function renderCoverageStrip(errorMessage = "") {
+  if (!coverageStripEl) return;
+  coverageStripEl.innerHTML = "";
+
+  const rows = siteRows();
+  const failedSites = Array.isArray(state.sourceStatus?.failed_sites) ? state.sourceStatus.failed_sites : [];
+  const rss = state.sourceStatus?.rss_opml || {};
+  const agentmail = state.sourceStatus?.agentmail || {};
+  const xApi = state.sourceStatus?.x_api || {};
+  const allCount = Number(state.sourceStatus?.items_before_topic_filter || state.totalAllMode || state.itemsAll.length || 0);
+  const coverageCount = Number(state.sourceStatus?.fetched_raw_items || state.totalRaw || allCount || 0);
+  const officialCount = Number(siteRow("official_ai")?.item_count || 0);
+  const newsletterCount = Number(siteRow("aibreakfast")?.item_count || 0);
+  const buildersCount = Number(siteRow("followbuilders")?.item_count || 0);
+  const totalSites = rows.length;
+  const okSites = Number(state.sourceStatus?.successful_sites || 0);
+  const opmlValue = rss.enabled ? `${fmtNumber(rss.ok_feeds || 0)}/${fmtNumber(rss.effective_feed_total || 0)}` : "OPML";
+  const opmlMeta = rss.enabled ? "RSS示例/自定义订阅已接入" : "可用OPML批量接入RSS";
+  const xApiLabel = xApi.enabled ? `X ${xApi.skipped ? "待窗口" : fmtNumber(xApi.item_count || 0)}` : "X待配置";
+  const mailLabel = agentmail.enabled ? `Mail ${fmtNumber(agentmail.item_count || 0)}` : "Mail待配置";
+  const advancedMeta = xApi.enabled || agentmail.enabled
+    ? `额度保护 · ${xApiLabel} / ${mailLabel}`
+    : "X API 与 AgentMail 默认关闭";
+
+  const cards = [
+    ["源健康", totalSites ? `${fmtNumber(okSites)}/${fmtNumber(totalSites)}` : "加载中", failedSites.length ? `${fmtNumber(failedSites.length)} 个失败源` : (errorMessage || "内置源正常"), failedSites.length ? "warn" : "ok"],
+    ["今日覆盖池", `${fmtNumber(coverageCount)} 条`, allCount ? `全网抓取原始信号 · ${fmtNumber(allCount)} 条入池` : "全网抓取原始信号", "signal"],
+    ["AI精选", `${fmtNumber(state.totalAi)} 条`, "24小时强相关信号", "signal"],
+    ["官方/日报源池", `${fmtNumber(officialCount + newsletterCount)} 条`, "官方节点 + AI Breakfast", "official"],
+    ["Builders/X源池", `${fmtNumber(buildersCount)} 条`, "Follow Builders公开feed", "builders"],
+    ["RSS/OPML扩展", opmlValue, opmlMeta, "private"],
+    ["高级源", "X / Mail", advancedMeta, "private"],
+  ];
+
+  cards.forEach(([label, value, meta, tone]) => {
+    coverageStripEl.appendChild(renderCoverageCard(label, value, meta, tone));
+  });
+}
+
+function renderAdvancedSummary() {
+  if (!advancedSummaryEl) return;
+  const status = state.sourceStatus;
+  const allCount = state.allDedup
+    ? (state.totalAllMode || state.itemsAll.length)
+    : (state.totalRaw || state.itemsAllRaw.length);
+  if (!status) {
+    const catLabel = state.categoryFilter ? ` · 已筛选：${GN_CATEGORIES.find(c => c.id === state.categoryFilter)?.label || state.categoryFilter}` : "";
+    const todayLabel = state.todayMode ? " · 昨日9点后" : "";
+    advancedSummaryEl.textContent = `全量 ${fmtNumber(allCount)} 条${catLabel}${todayLabel}`;
+    return;
+  }
+  const sites = Array.isArray(status.sites) ? status.sites : [];
+  const totalSites = sites.length;
+  const okSites = Number(status.successful_sites || 0);
+  const catLabel = state.categoryFilter ? ` · 已筛选：${GN_CATEGORIES.find(c => c.id === state.categoryFilter)?.label || state.categoryFilter}` : "";
+  const todayLabel = state.todayMode ? " · 昨日9点后" : "";
+  advancedSummaryEl.textContent = `${fmtNumber(okSites)}/${fmtNumber(totalSites)} 源可用 · 全量 ${fmtNumber(allCount)} 条${catLabel}${todayLabel}`;
+}
+
+function computeSiteStats(items) {
+  const m = new Map();
+  items.forEach((item) => {
+    if (!m.has(item.site_id)) {
+      m.set(item.site_id, { site_id: item.site_id, site_name: item.site_name, count: 0, raw_count: 0 });
+    }
+    const row = m.get(item.site_id);
+    row.count += 1;
+    row.raw_count += 1;
+  });
+  return Array.from(m.values()).sort((a, b) => b.count - a.count || a.site_name.localeCompare(b.site_name, "zh-CN"));
+}
+
+function currentSiteStats() {
+  if (state.mode === "ai") {
+    const s = state.statsAi;
+    // statsAi should be an array; if it's an object or empty, compute from items
+    if (!Array.isArray(s) || s.length === 0) {
+      return computeSiteStats(state.itemsAi || []);
+    }
+    return s;
+  }
+  return computeSiteStats(state.allDedup ? (state.itemsAll || []) : (state.itemsAllRaw || []));
+}
+
+function renderSiteFilters() {
+  const stats = currentSiteStats();
+
+  siteSelectEl.innerHTML = '<option value="">全部站点</option>';
+  // Defensive: ensure stats is always an array
+  const safeStats = Array.isArray(stats) ? stats : [];
+  safeStats.forEach((s) => {
+    const opt = document.createElement("option");
+    opt.value = s.site_id;
+    const raw = s.raw_count ?? s.count;
+    opt.textContent = `${s.site_name} (${s.count}/${raw})`;
+    siteSelectEl.appendChild(opt);
+  });
+  siteSelectEl.value = state.siteFilter;
+
+  sitePillsEl.innerHTML = "";
+
+  // GN category pills
+  const categoryAllPill = document.createElement("button");
+  categoryAllPill.className = `pill ${state.categoryFilter === "" ? "active" : ""}`;
+  categoryAllPill.textContent = "全部分区";
+  categoryAllPill.onclick = () => {
+    state.categoryFilter = "";
+    renderSiteFilters();
+    renderList();
+  };
+  sitePillsEl.appendChild(categoryAllPill);
+
+  GN_CATEGORIES.forEach((cat) => {
+    const btn = document.createElement("button");
+    btn.className = `pill ${state.categoryFilter === cat.id ? "active" : ""}`;
+    btn.textContent = cat.label;
+    btn.onclick = () => {
+      state.categoryFilter = cat.id;
+      renderSiteFilters();
+      renderList();
+    };
+    sitePillsEl.appendChild(btn);
+  });
+
+  // Divider
+  const divider = document.createElement("span");
+  divider.className = "pill-divider";
+  divider.textContent = "·";
+  sitePillsEl.appendChild(divider);
+
+  // Site pills
+  const allPill = document.createElement("button");
+  allPill.className = `pill ${state.siteFilter === "" ? "active" : ""}`;
+  allPill.textContent = "全部";
+  allPill.onclick = () => {
+    state.siteFilter = "";
+    renderSiteFilters();
+    renderList();
+  };
+  sitePillsEl.appendChild(allPill);
+
+  stats.forEach((s) => {
+    const btn = document.createElement("button");
+    btn.className = `pill ${state.siteFilter === s.site_id ? "active" : ""}`;
+    const raw = s.raw_count ?? s.count;
+    btn.textContent = `${s.site_name} ${s.count}/${raw}`;
+    btn.onclick = () => {
+      state.siteFilter = s.site_id;
+      renderSiteFilters();
+      renderList();
+    };
+    sitePillsEl.appendChild(btn);
+  });
+}
+
+function renderModeSwitch() {
+  modeAiBtnEl.classList.toggle("active", state.mode === "ai");
+  modeAllBtnEl.classList.toggle("active", state.mode === "all");
+  if (allDedupeWrapEl) allDedupeWrapEl.classList.toggle("show", state.mode === "all");
+  if (allDedupeToggleEl) allDedupeToggleEl.checked = state.allDedup;
+  if (allDedupeLabelEl) allDedupeLabelEl.textContent = state.allDedup ? "去重开" : "去重关";
+  if (state.mode === "ai") {
+    modeHintEl.textContent = `AI强相关 · ${fmtNumber(state.totalAi)} 条`;
+    if (listTitleEl) listTitleEl.textContent = "AI 信号流";
+  } else {
+    const allCount = state.allDedup
+      ? (state.totalAllMode || state.itemsAll.length)
+      : (state.totalRaw || state.itemsAllRaw.length);
+    modeHintEl.textContent = `全量 · ${state.allDedup ? "去重开" : "去重关"} · ${fmtNumber(allCount)} 条`;
+    if (listTitleEl) listTitleEl.textContent = "全量更新";
+  }
+  renderAdvancedSummary();
+}
+
+function effectiveAllItems() {
+  return state.allDedup ? state.itemsAll : state.itemsAllRaw;
+}
+
+function modeItems() {
+  return state.mode === "all" ? effectiveAllItems() : state.itemsAi;
+}
+
+function getFilteredItems() {
+  const q = state.query.trim().toLowerCase();
+  let cutoffMs = null;
+  if (state.todayMode) {
+    const now = new Date();
+    // Jack 2026-05-18 fix: CST today 9am = UTC yesterday 1am
+    // now.getUTCDate() gives the UTC day (may differ from CST day)
+    // Use getDate() for local CST
+    const cstDate = new Date(now.getTime() + 8 * 3600000); // shift to CST
+    const cst9base = new Date(Date.UTC(
+      cstDate.getUTCFullYear(),
+      cstDate.getUTCMonth(),
+      cstDate.getUTCDate() - 1,
+      1, 0, 0
+    ));
+    cutoffMs = cst9base.getTime();
+  }
+  const filtered = modeItems().filter((item) => {
+    try {
+      if (state.siteFilter && item.site_id !== state.siteFilter) return false;
+      if (state.categoryFilter) {
+        let itemCat;
+        try { itemCat = itemGnCategory(item); } catch(e) { itemCat = item.source || ''; }
+        if (itemCat !== state.categoryFilter) return false;
+      }
+      if (cutoffMs !== null) {
+        const itemMs = new Date(item.first_seen_at || item.published_at || 0).getTime();
+        if (itemMs < cutoffMs) return false;
+      }
+      if (!q) return true;
+      const hay = `${item.title || ""} ${item.title_zh || ""} ${item.title_en || ""} ${item.site_name || ""} ${item.source || ""}`.toLowerCase();
+      return hay.includes(q);
+    } catch(e) {
+      console.error('[getFilteredItems] item error:', e.message, 'item:', item?.title?.substring(0,30));
+      return false;
+    }
+  });
+  // Jack 2026-05-15: 五维评分排序
+  return sortByScore(filtered, state.sortMode);
+}
+
+// Jack 2026-05-15: 五维评分排序函数
+function sortByScore(items, sortMode) {
+  if (sortMode === 'priority') return items;
+  if (sortMode === 'time') {
+    // 先按 feed 分组：优先 feed 排前面，然后各组内按时间
+    // Jack 2026-05-26: embodied_ai 加入优先队列（时效性强，国际资讯核心赛道）
+    const PRIORITY_FEEDS = ['robotics', 'humanoid', 'embodied_ai'];
+    const isPriority = item => PRIORITY_FEEDS.includes(item.ai_label);
+    const priorityItems = items.filter(isPriority);
+    const otherItems = items.filter(item => !isPriority(item));
+    const cmp = (a, b) => {
+      const ta = a.published_at ? new Date(a.published_at).getTime() : 0;
+      const tb = b.published_at ? new Date(b.published_at).getTime() : 0;
+      return tb - ta;
+    };
+    return [...priorityItems.sort(cmp), ...otherItems.sort(cmp)];
+  }
+  return [...items].sort((a, b) => {
+    try {
+      const scoreA = a[sortMode] !== undefined && a[sortMode] !== null ? a[sortMode] : -1;
+      const scoreB = b[sortMode] !== undefined && b[sortMode] !== null ? b[sortMode] : -1;
+      if (scoreA !== scoreB) return scoreB - scoreA;
+      const pa = gnPriority(itemGnCategory(a) || ''), pb = gnPriority(itemGnCategory(b) || '');
+      if (pa !== pb) return pa - pb;
+      return 0;
+    } catch(e) {
+      console.error('[sortByScore] error:', e.message);
+      return 0;
+    }
+  });
+}
+
+function renderItemNode(item) {
+  const node = itemTpl.content.firstElementChild.cloneNode(true);
+  node.querySelector(".site").textContent = item.site_name;
+  const kind = sourceKind(item.site_id);
+  const categoryEl = node.querySelector(".category");
+  categoryEl.textContent = kind.label;
+  categoryEl.classList.add(`kind-${kind.tone}`);
+  node.querySelector(".source").textContent = `分区: ${itemGnCategory(item)}`;
+  node.querySelector(".time").textContent = fmtTime(item.published_at || item.first_seen_at);
+
+  // Jack 2026-05-15: 五维评分 badge
+  const scoreEl = node.querySelector(".score");
+  if (scoreEl) {
+    const totalScore = item.total_score;
+    if (totalScore !== undefined && totalScore !== null) {
+      const pct = Math.round(totalScore); // 0-100
+      const color = pct >= 60 ? 'score-high' : pct >= 40 ? 'score-mid' : 'score-low';
+      scoreEl.textContent = pct;
+      scoreEl.className = 'score ' + color;
+      scoreEl.title = `五维总分: ${pct}/100 (相关性${item.relevance || '?'} | 权威性${item.authority || '?'} | 深度${item.depth || '?'} | 时效性${item.timeliness || '?'} | 写作价值${item.writing_value || '?'})`;
+    } else {
+      scoreEl.textContent = '--';
+      scoreEl.className = 'score score-none';
+    }
+  }
+
+  const titleEl = node.querySelector(".title");
+  const original = (item.title || "").trim();
+  const zh = (item.title_zh || "").trim();
+  titleEl.textContent = "";
+  // Bilingual: show Chinese translation + original English as subtitle
+  // When title_zh is a genuine Chinese translation different from title
+  if (zh && original && zh !== original) {
+    const primary = document.createElement("span");
+    primary.textContent = zh;
+    const sub = document.createElement("span");
+    sub.className = "title-sub";
+    sub.textContent = original;
+    titleEl.appendChild(primary);
+    titleEl.appendChild(sub);
+  } else {
+    titleEl.textContent = original;
+  }
+  titleEl.href = item.url;
+  return node;
+}
+
+function buildSourceGroupNode(source, items) {
+  const section = document.createElement("section");
+  section.className = "source-group";
+  const header = document.createElement("header");
+  header.className = "source-group-head";
+  const title = document.createElement("h3");
+  title.textContent = source;
+  const count = document.createElement("span");
+  count.textContent = `${fmtNumber(items.length)} 条`;
+  const listEl = document.createElement("div");
+  listEl.className = "source-group-list";
+  header.append(title, count);
+  section.append(header, listEl);
+  items.forEach((item) => { try { listEl.appendChild(renderItemNode(item)); } catch(e) { console.error('[BSGN] error:', e.message, 'item:', item?.title?.substring(0,30)); } });
+  return section;
+}
+
+function groupBySource(items) {
+  const groupMap = new Map();
+  items.forEach((item) => {
+    const key = item.source || "未分区";
+    if (!groupMap.has(key)) {
+      groupMap.set(key, []);
+    }
+    groupMap.get(key).push(item);
+  });
+
+  return Array.from(groupMap.entries()).sort((a, b) => {
+    try {
+      const pa = gnPriority(a[0]), pb = gnPriority(b[0]);
+      if (pa !== pb) return pa - pb;
+      return b[1].length - a[1].length;
+    } catch(e) { console.error('sort error:', e.message); return 0; }
+  });
+}
+
+function renderGroupedBySource(items) {
+  const groups = groupBySource(items);
+  const frag = document.createDocumentFragment();
+
+  groups.forEach(([source, groupItems]) => {
+    frag.appendChild(buildSourceGroupNode(source, groupItems));
+  });
+
+  newsListEl.appendChild(frag);
+}
+
+function renderGroupedBySiteAndSource(items) {
+  const siteMap = new Map();
+  items.forEach((item) => {
+    if (!siteMap.has(item.site_id)) {
+      siteMap.set(item.site_id, {
+        siteName: item.site_name || item.site_id,
+        items: [],
+      });
+    }
+    siteMap.get(item.site_id).items.push(item);
+  });
+
+  const sites = Array.from(siteMap.entries()).sort((a, b) => {
+    const byCount = b[1].items.length - a[1].items.length;
+    if (byCount !== 0) return byCount;
+    const pa = gnPriority(a[1].siteName), pb = gnPriority(b[1].siteName);
+    if (pa !== pb) return pa - pb;
+    return a[1].siteName.localeCompare(b[1].siteName, "zh-CN");
+  });
+
+  const frag = document.createDocumentFragment();
+  sites.forEach(([, site]) => {
+    const siteSection = document.createElement("section");
+    siteSection.className = "site-group";
+    const header = document.createElement("header");
+    header.className = "site-group-head";
+    const title = document.createElement("h3");
+    title.textContent = site.siteName;
+    const count = document.createElement("span");
+    count.textContent = `${fmtNumber(site.items.length)} 条`;
+    const siteListEl = document.createElement("div");
+    siteListEl.className = "site-group-list";
+    header.append(title, count);
+    siteSection.append(header, siteListEl);
+
+    const sourceGroups = groupBySource(site.items);
+    sourceGroups.forEach(([source, groupItems]) => {
+      siteListEl.appendChild(buildSourceGroupNode(source, groupItems));
+    });
+    frag.appendChild(siteSection);
+  });
+
+  newsListEl.appendChild(frag);
+}
+
+function renderList() {
+  const filtered = getFilteredItems();
+  console.log('[RL] itemsAi=' + state.itemsAi.length + ' filtered=' + filtered.length + ' mode=' + state.mode + ' today=' + state.todayMode + ' siteF=' + state.siteFilter + ' catF=' + state.categoryFilter + ' newsListEl=' + !!newsListEl);
+  if (filtered.length > 0) {
+    console.log('[RL] OK, first:', filtered[0].title?.substring(0,40));
+  } else {
+    console.log('[RL] EMPTY! itemsAi[0]:', state.itemsAi[0]?.title?.substring(0,40));
+    // Show ALL items without date filter for debugging
+    const allItems = modeItems();
+    console.log('[RL] allItems without filter:', allItems.length);
+  }
+  resultCountEl.textContent = `${fmtNumber(filtered.length)} 条`;
+
+  // Force clear and rebuild
+  if (!newsListEl) { console.error('[RL] newsListEl is NULL!'); return; }
+  newsListEl.innerHTML = "";
+
+  if (!filtered.length) {
+    const empty = document.createElement("div");
+    empty.className = "empty";
+    empty.textContent = "当前筛选条件下没有结果。";
+    newsListEl.appendChild(empty);
+    return;
+  }
+
+  if (state.siteFilter) {
+    renderGroupedBySource(filtered);
+    return;
+  }
+
+  renderGroupedBySiteAndSource(filtered);
+}
+
+function waytoagiViews(waytoagi) {
+  const updates7d = Array.isArray(waytoagi?.updates_7d) ? waytoagi.updates_7d : [];
+  const latestDate = waytoagi?.latest_date || (updates7d.length ? updates7d[0].date : null);
+  const updatesToday = Array.isArray(waytoagi?.updates_today) && waytoagi.updates_today.length
+    ? waytoagi.updates_today
+    : (latestDate ? updates7d.filter((u) => u.date === latestDate) : []);
+  return { updates7d, updatesToday, latestDate };
+}
+
+function renderWaytoagi(waytoagi) { if (!waytoagiUpdatedAtEl) return; if (!waytoagi || !waytoagi.updates_7d || waytoagi.updates_7d.length === 0) { waytoagiUpdatedAtEl.textContent = "WaytoAGI 已禁用"; if (waytoagiListEl) waytoagiListEl.innerHTML = ""; return; }
+  const { updates7d, updatesToday, latestDate } = waytoagiViews(waytoagi);
+  if (waytoagiTodayBtnEl) waytoagiTodayBtnEl.classList.toggle("active", state.waytoagiMode === "today");
+  if (waytoagi7dBtnEl) waytoagi7dBtnEl.classList.toggle("active", state.waytoagiMode === "7d");
+  waytoagiUpdatedAtEl.textContent = `更新时间：${fmtTime(waytoagi.generated_at)}`;
+
+  waytoagiMetaEl.innerHTML = "";
+  const rootLink = document.createElement("a");
+  rootLink.href = waytoagi.root_url || "#";
+  rootLink.target = "_blank";
+  rootLink.rel = "noopener noreferrer";
+  rootLink.textContent = "主页面";
+  const historyLink = document.createElement("a");
+  historyLink.href = waytoagi.history_url || "#";
+  historyLink.target = "_blank";
+  historyLink.rel = "noopener noreferrer";
+  historyLink.textContent = "历史更新页";
+  const todayCount = document.createElement("span");
+  todayCount.textContent = `最近更新日(${latestDate || "--"})：${fmtNumber(waytoagi.count_today || updatesToday.length)} 条`;
+  const weekCount = document.createElement("span");
+  weekCount.textContent = `近 7 日：${fmtNumber(waytoagi.count_7d || updates7d.length)} 条`;
+  [rootLink, "·", historyLink, "·", todayCount, "·", weekCount].forEach((part) => {
+    if (typeof part === "string") {
+      const sep = document.createElement("span");
+      sep.textContent = part;
+      waytoagiMetaEl.appendChild(sep);
+    } else {
+      waytoagiMetaEl.appendChild(part);
+    }
+  });
+
+  waytoagiListEl.innerHTML = "";
+  if (waytoagi.has_error) {
+    const div = document.createElement("div");
+    div.className = "waytoagi-error";
+    div.textContent = waytoagi.error || "WaytoAGI 数据加载失败";
+    waytoagiListEl.appendChild(div);
+    return;
+  }
+
+  const updates = state.waytoagiMode === "today" ? updatesToday : updates7d;
+  if (!updates.length) {
+    const div = document.createElement("div");
+    div.className = "waytoagi-empty";
+    div.textContent = state.waytoagiMode === "today"
+      ? "最近更新日没有更新，可切换到近7日查看。"
+      : (waytoagi.warning || "近 7 日没有更新");
+    waytoagiListEl.appendChild(div);
+    return;
+  }
+
+  updates.forEach((u) => {
+    const row = document.createElement("a");
+    row.className = "waytoagi-item";
+    row.href = u.url || "#";
+    row.target = "_blank";
+    row.rel = "noopener noreferrer";
+    const dateEl = document.createElement("span");
+    dateEl.className = "d";
+    dateEl.textContent = fmtDate(u.date);
+    const titleEl = document.createElement("span");
+    titleEl.className = "t";
+    titleEl.textContent = u.title;
+    row.append(dateEl, titleEl);
+    waytoagiListEl.appendChild(row);
+  });
+}
+
+function renderMetric(label, value, tone = "") {
+  const node = document.createElement("div");
+  node.className = `health-metric ${tone}`.trim();
+  const labelEl = document.createElement("span");
+  labelEl.className = "health-label";
+  labelEl.textContent = label;
+  const valueEl = document.createElement("strong");
+  valueEl.textContent = value;
+  node.append(labelEl, valueEl);
+  return node;
+}
+
+function renderIssueList(title, items) {
+  const wrap = document.createElement("div");
+  wrap.className = "health-issue";
+  const titleEl = document.createElement("div");
+  titleEl.className = "health-issue-title";
+  titleEl.textContent = title;
+  const list = document.createElement("ul");
+  items.slice(0, 6).forEach((item) => {
+    const li = document.createElement("li");
+    li.textContent = typeof item === "string" ? item : JSON.stringify(item);
+    list.appendChild(li);
+  });
+  if (items.length > 6) {
+    const li = document.createElement("li");
+    li.textContent = `另有 ${fmtNumber(items.length - 6)} 项`;
+    list.appendChild(li);
+  }
+  wrap.append(titleEl, list);
+  return wrap;
+}
+
+function renderSourceHealth(errorMessage = "") {
+  if (!sourceHealthEl) return;
+  sourceHealthEl.innerHTML = "";
+
+  const status = state.sourceStatus;
+  if (!status) {
+    const empty = document.createElement("div");
+    empty.className = "health-empty";
+    empty.textContent = errorMessage || "源状态未生成";
+    sourceHealthEl.appendChild(empty);
+    renderAdvancedSummary();
+    return;
+  }
+
+  const sites = Array.isArray(status.sites) ? status.sites : [];
+  const failedSites = Array.isArray(status.failed_sites) ? status.failed_sites : [];
+  const zeroSites = Array.isArray(status.zero_item_sites) ? status.zero_item_sites : [];
+  const rss = status.rss_opml || {};
+  const agentmail = status.agentmail || {};
+  const xApi = status.x_api || {};
+  const failedFeeds = Array.isArray(rss.failed_feeds) ? rss.failed_feeds : [];
+  const skippedFeeds = Array.isArray(rss.skipped_feeds) ? rss.skipped_feeds : [];
+  const replacedFeeds = Array.isArray(rss.replaced_feeds) ? rss.replaced_feeds : [];
+
+  const metricGrid = document.createElement("div");
+  metricGrid.className = "health-grid";
+  metricGrid.append(
+    renderMetric("内置源", `${fmtNumber(status.successful_sites || 0)}/${fmtNumber(sites.length)}`, failedSites.length ? "warn" : "ok"),
+    renderMetric("RSS", rss.enabled ? `${fmtNumber(rss.ok_feeds || 0)}/${fmtNumber(rss.effective_feed_total || 0)}` : "未启用"),
+    renderMetric("X API", xApi.enabled ? (xApi.skipped ? "待窗口" : `${fmtNumber(xApi.item_count || 0)}条`) : "未启用", xApi.error ? "bad" : ""),
+    renderMetric("AgentMail", agentmail.enabled ? `${fmtNumber(agentmail.item_count || 0)}封` : "未启用", agentmail.error ? "bad" : ""),
+    renderMetric("失败源", fmtNumber(failedSites.length + failedFeeds.length), failedSites.length || failedFeeds.length ? "bad" : "ok"),
+    renderMetric("替换/跳过", `${fmtNumber(replacedFeeds.length)}/${fmtNumber(skippedFeeds.length)}`)
+  );
+  sourceHealthEl.appendChild(metricGrid);
+
+  const issues = document.createElement("div");
+  issues.className = "health-issues";
+  if (failedSites.length) issues.appendChild(renderIssueList("失败站点", failedSites));
+  if (zeroSites.length) issues.appendChild(renderIssueList("零结果站点", zeroSites));
+  if (failedFeeds.length) issues.appendChild(renderIssueList("失败 RSS", failedFeeds));
+  if (skippedFeeds.length) {
+    issues.appendChild(renderIssueList("跳过 RSS", skippedFeeds.map((item) => `${item.feed_url} · ${item.reason || "skipped"}`)));
+  }
+
+  if (issues.childElementCount) {
+    sourceHealthEl.appendChild(issues);
+  } else {
+    const ok = document.createElement("div");
+    ok.className = "health-ok";
+    ok.textContent = "源状态正常";
+    sourceHealthEl.appendChild(ok);
+  }
+  renderAdvancedSummary();
+}
+
+async function loadNewsData() {
+  const res = await fetch(`./data/latest-24h-min.json?t=${Date.now()}`);
+  if (!res.ok) throw new Error(`加载 latest-24h.json 失败: ${res.status}`);
+  return res.json();
+}
+
+async function loadAllModeData() {
+  if (state.allDataLoaded) return;
+  if (!state.allDataPromise) {
+    state.allDataPromise = fetch(`./${state.allDataUrl}?t=${Date.now()}`)
+      .then((res) => {
+        if (!res.ok) throw new Error(`加载 latest-24h-all.json 失败: ${res.status}`);
+        return res.json();
+      })
+      .then((payload) => {
+        state.itemsAllRaw = payload.items_all_raw || payload.items_all || state.itemsAi;
+        state.itemsAll = payload.items_all || state.itemsAi;
+        state.totalRaw = payload.total_items_raw || state.itemsAllRaw.length;
+        state.totalAllMode = payload.total_items_all_mode || state.itemsAll.length;
+        state.allDataLoaded = true;
+      })
+      .catch((err) => {
+        state.allDataPromise = null;
+        throw err;
+      });
+  }
+  return state.allDataPromise;
+}
+
+async function loadWaytoagiData() {
+  const res = await fetch(`./data/waytoagi-7d.json?t=${Date.now()}`);
+  if (!res.ok) throw new Error(`加载 waytoagi-7d.json 失败: ${res.status}`);
+  return res.json();
+}
+
+async function loadSourceStatusData() {
+  const res = await fetch(`./data/source-status.json?t=${Date.now()}`);
+  if (!res.ok) throw new Error(`加载 source-status.json 失败: ${res.status}`);
+  return res.json();
+}
+
+async function init() {
+  const [newsResult, waytoagiResult, statusResult] = await Promise.allSettled([
+    loadNewsData(),
+    loadWaytoagiData(),
+    loadSourceStatusData(),
+  ]);
+
+  if (newsResult.status === "fulfilled") {
+    const payload = newsResult.value;
+    state.itemsAi = payload.items_ai || payload.items || [];
+    console.log('[INIT] itemsAi set: ' + state.itemsAi.length + ' items_ai: ' + (payload.items_ai||[]).length + ' items: ' + (payload.items||[]).length);
+    state.itemsAllRaw = payload.items_all_raw || payload.items_all || [];
+    state.itemsAll = payload.items_all || [];
+    state.statsAi = payload.site_stats || [];
+    state.totalAi = payload.total_items || state.itemsAi.length;
+    state.totalRaw = payload.total_items_raw || state.itemsAllRaw.length;
+    state.totalAllMode = payload.total_items_all_mode || state.itemsAll.length;
+    state.allDataUrl = payload.all_mode_data_url || state.allDataUrl;
+    state.allDataLoaded = Boolean(payload.items_all || payload.items_all_raw);
+    state.generatedAt = payload.generated_at;
+
+    setStats(payload);
+    renderModeSwitch();
+    renderCoverageStrip();
+    renderSiteFilters();
+    renderList();
+    updatedAtEl.textContent = `更新时间：${fmtTime(state.generatedAt)}`;
+  } else {
+    updatedAtEl.textContent = "新闻数据加载失败";
+    newsListEl.innerHTML = `<div class="empty">${newsResult.reason.message}</div>`;
+    renderCoverageStrip(newsResult.reason.message);
+  }
+
+  if (statusResult.status === "fulfilled") {
+    state.sourceStatus = statusResult.value;
+    renderSourceHealth();
+    renderCoverageStrip();
+  } else {
+    renderSourceHealth(statusResult.reason.message);
+    renderCoverageStrip(statusResult.reason.message);
+  }
+
+  if (waytoagiResult.status === "fulfilled") {
+    state.waytoagiData = waytoagiResult.value;
+    renderWaytoagi(state.waytoagiData);
+  } else {
+    if (waytoagiUpdatedAtEl) waytoagiUpdatedAtEl.textContent = "加载失败";
+    if (waytoagiListEl) waytoagiListEl.innerHTML = `<div class="waytoagi-error">${waytoagiResult.reason.message}</div>`;
+  }
+}
+
+searchInputEl.addEventListener("input", (e) => {
+  state.query = e.target.value;
+  renderList();
+});
+
+siteSelectEl.addEventListener("change", (e) => {
+  state.siteFilter = e.target.value;
+  state.categoryFilter = "";
+  renderSiteFilters();
+  renderList();
+});
+
+modeAiBtnEl.addEventListener("click", () => {
+  state.mode = "ai";
+  renderModeSwitch();
+  renderSiteFilters();
+  renderList();
+});
+
+modeAllBtnEl.addEventListener("click", async () => {
+  state.mode = "all";
+  renderModeSwitch();
+  newsListEl.innerHTML = "";
+  const loading = document.createElement("div");
+  loading.className = "empty";
+  loading.textContent = "正在加载全量更新...";
+  newsListEl.appendChild(loading);
+  try {
+    await loadAllModeData();
+    renderSiteFilters();
+    renderList();
+  } catch (err) {
+    newsListEl.innerHTML = "";
+    const failed = document.createElement("div");
+    failed.className = "empty";
+    failed.textContent = err.message;
+    newsListEl.appendChild(failed);
+  }
+});
+
+if (allDedupeToggleEl) {
+  allDedupeToggleEl.addEventListener("change", (e) => {
+    state.allDedup = Boolean(e.target.checked);
+    renderModeSwitch();
+    renderSiteFilters();
+    renderList();
+  });
+}
+
+// Jack 2026-05-15: 五维评分排序
+if (sortSelectEl) {
+  sortSelectEl.addEventListener("change", (e) => {
+    state.sortMode = e.target.value;
+    renderList();
+  });
+}
+
+// Jack 2026-05-15: 今日9点CST分界线
+const todayCutoffToggleEl = document.getElementById("todayCutoffToggle");
+const todayCutoffWrapEl = document.getElementById("todayCutoffWrap");
+if (todayCutoffToggleEl) {
+  todayCutoffToggleEl.addEventListener("change", (e) => {
+    state.todayMode = Boolean(e.target.checked);
+    renderList();
+    renderAdvancedSummary();
+  });
+}
+
+
+
+
+
+init();
