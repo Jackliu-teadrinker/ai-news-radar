@@ -1,27 +1,6 @@
 {
-  "generated_at": "2026-05-27T03:16:24.674961+00:00",
+  "generated_at": "2026-05-28T03:21:46.872799+00:00",
   "feeds": [
-    {
-      "feed": "arXiv Robotics (cs.RO)",
-      "success": true,
-      "items_total": 129,
-      "items_unique": 129,
-      "error": null
-    },
-    {
-      "feed": "GN: 脑机接口-ZH",
-      "success": true,
-      "items_total": 100,
-      "items_unique": 100,
-      "error": null
-    },
-    {
-      "feed": "GN: Physical AI",
-      "success": true,
-      "items_total": 100,
-      "items_unique": 100,
-      "error": null
-    },
     {
       "feed": "GN: 具身智能",
       "success": true,
@@ -30,62 +9,76 @@
       "error": null
     },
     {
-      "feed": "GN: 具身智能-ZH",
+      "feed": "GN: BCI",
       "success": true,
       "items_total": 100,
       "items_unique": 100,
       "error": null
     },
     {
-      "feed": "GN: 人形机器人",
-      "success": true,
-      "items_total": 102,
-      "items_unique": 93,
-      "error": null
-    },
-    {
       "feed": "GN: 脑机接口",
       "success": true,
-      "items_total": 91,
-      "items_unique": 91,
-      "error": null
-    },
-    {
-      "feed": "TechCrunch Robotics",
-      "success": true,
-      "items_total": 20,
-      "items_unique": 20,
-      "error": null
-    },
-    {
-      "feed": "GN: 人形机器人-ZH",
-      "success": true,
-      "items_total": 102,
+      "items_total": 100,
       "items_unique": 100,
       "error": null
     },
     {
-      "feed": "arXiv Embodied AI (cs.AI)",
+      "feed": "国外机器人资讯",
       "success": true,
-      "items_total": 767,
-      "items_unique": 739,
+      "items_total": 102,
+      "items_unique": 102,
       "error": null
     },
     {
-      "feed": "36氪",
+      "feed": "国外具身智能资讯",
       "success": true,
-      "items_total": 30,
-      "items_unique": 30,
+      "items_total": 100,
+      "items_unique": 99,
+      "error": null
+    },
+    {
+      "feed": "国外物理AI资讯",
+      "success": true,
+      "items_total": 100,
+      "items_unique": 98,
+      "error": null
+    },
+    {
+      "feed": "GN: 人形机器人",
+      "success": true,
+      "items_total": 100,
+      "items_unique": 98,
+      "error": null
+    },
+    {
+      "feed": "国外人形机器人资讯",
+      "success": true,
+      "items_total": 102,
+      "items_unique": 75,
+      "error": null
+    },
+    {
+      "feed": "GN: 机器人",
+      "success": true,
+      "items_total": 101,
+      "items_unique": 81,
+      "error": null
+    },
+    {
+      "feed": "GN: 物理AI",
+      "success": true,
+      "items_total": 100,
+      "items_unique": 97,
       "error": null
     }
   ],
   "summary": {
-    "total_feeds": 11,
-    "successful_feeds": 11,
+    "total_feeds": 10,
+    "successful_feeds": 10,
     "failed_feeds": 0,
-    "total_items": 1602,
-    "deduplicated": 39,
-    "noise_filtered": 24,
+    "total_items": 950,
+    "deduplicated": 55,
+    "noise_filtered": 30,
     "short_filtered": 0
   }
 }
