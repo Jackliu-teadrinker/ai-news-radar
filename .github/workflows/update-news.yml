@@ -86,3 +86,12 @@ jobs:
           fi
           git commit -m "chore: update ai news snapshot"
           git push
+
+      - name: Deploy data to GitHub Pages
+        if: github.ref == 'refs/heads/master'
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./data
+          publish_branch: gh-pages
+          force_orphan: true
