@@ -1,0 +1,103 @@
+name: Update AI News Radar
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "*/30 * * * *"
+  push:
+    branches:
+      - master
+
+concurrency:
+  group: update-ai-news-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+          cache-dependency-path: "requirements.txt"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run update + commit + push
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GIT_EMAIL: "865715887@qq.com"
+          GIT_NAME: "Jack"
+        run: |
+          git config --global user.email "$GIT_EMAIL"
+          git config --global user.name "$GIT_NAME"
+
+          # Run Python script to generate data
+          python scripts/update_news.py --output-dir data --window-hours 24 --rss-opml feeds/follow.opml --archive-days 21
+
+          # DEBUG: Print GN and arXiv counts in latest-24h.json
+          echo "=== DEBUG: Checking latest-24h.json ==="
+          python -c "
+import json, sys
+with open('data/latest-24h.json') as f:
+    d = json.load(f)
+items = d.get('items', [])
+gn_items = [i for i in items if i.get('source','').startswith('GN:')]
+arxiv_items = [i for i in items if 'arxiv.org' in i.get('url','')]
+print(f'Total items: {len(items)}')
+print(f'GN items: {len(gn_items)}')
+print(f'arXiv items: {len(arxiv_items)}')
+if gn_items:
+    for i in gn_items[:3]: print(f'  GN: {i[\"title\"][:50]}')
+if arxiv_items:
+    for i in arxiv_items[:3]: print(f'  arXiv: {i[\"title\"][:50]}')
+with open('data/latest-24h-all.json') as f2:
+    d2 = json.load(f2)
+all_items = d2.get('items_all', [])
+gn_all = [i for i in all_items if i.get('source','').startswith('GN:')]
+print(f'GN items in latest-24h-all: {len(gn_all)}')
+"
+
+          # Save daily archive
+          DATE_DIR=$(date +%Y-%m-%d)
+          mkdir -p "data/archives/$DATE_DIR"
+          cp data/latest-24h.json "data/archives/$DATE_DIR/latest-24h.json"
+          echo "[INFO] Daily archive saved to data/archives/$DATE_DIR/"
+
+          # Always commit data files
+          git add data/latest-24h.json data/latest-24h-all.json data/source-status.json data/archives/
+          git commit -m "chore: update news data $(date +%Y-%m-%d' '%H:%M)" || echo "Nothing to commit"
+          git push || echo "Push failed"
+
+      - name: Update HTML cache buster
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GIT_EMAIL: "865715887@qq.com"
+          GIT_NAME: "Jack"
+        run: |
+          git config --global user.email "$GIT_EMAIL"
+          git config --global user.name "$GIT_NAME"
+          python .github/workflows/gh_push_data.py
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: "."
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
