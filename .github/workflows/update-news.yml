@@ -1,103 +1,92 @@
-name: Update AI News Radar
+name: Update AI News Snapshot
 
 on:
-  workflow_dispatch:
-  schedule:
-    - cron: "*/30 * * * *"
   push:
     branches:
       - master
+  workflow_dispatch:
+  schedule:
+    - cron: "*/30 * * * *"
 
 concurrency:
   group: update-ai-news-${{ github.ref }}
   cancel-in-progress: true
 
-permissions:
   contents: write
   pages: write
   id-token: write
 
 jobs:
   update:
-    runs-on: ubuntu-latest
     timeout-minutes: 15
-
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
-      - name: Set up Python 3.11
-        uses: actions/setup-python@v5
+      - name: Setup Python
+        uses: actions/setup-python@v6
         with:
           python-version: "3.11"
           cache: "pip"
           cache-dependency-path: "requirements.txt"
 
       - name: Install dependencies
-        run: pip install -r requirements.txt
-
-      - name: Run update + commit + push
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GIT_EMAIL: "865715887@qq.com"
-          GIT_NAME: "Jack"
         run: |
-          git config --global user.email "$GIT_EMAIL"
-          git config --global user.name "$GIT_NAME"
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
 
-          # Run Python script to generate data
-          python scripts/update_news.py --output-dir data --window-hours 24 --rss-opml feeds/follow.opml --archive-days 21
-
-          # DEBUG: Print GN and arXiv counts in latest-24h.json
-          echo "=== DEBUG: Checking latest-24h.json ==="
-          python -c "
-import json, sys
-with open('data/latest-24h.json') as f:
-    d = json.load(f)
-items = d.get('items', [])
-gn_items = [i for i in items if i.get('source','').startswith('GN:')]
-arxiv_items = [i for i in items if 'arxiv.org' in i.get('url','')]
-print(f'Total items: {len(items)}')
-print(f'GN items: {len(gn_items)}')
-print(f'arXiv items: {len(arxiv_items)}')
-if gn_items:
-    for i in gn_items[:3]: print(f'  GN: {i[\"title\"][:50]}')
-if arxiv_items:
-    for i in arxiv_items[:3]: print(f'  arXiv: {i[\"title\"][:50]}')
-with open('data/latest-24h-all.json') as f2:
-    d2 = json.load(f2)
-all_items = d2.get('items_all', [])
-gn_all = [i for i in all_items if i.get('source','').startswith('GN:')]
-print(f'GN items in latest-24h-all: {len(gn_all)}')
-"
-
-          # Save daily archive
-          DATE_DIR=$(date +%Y-%m-%d)
-          mkdir -p "data/archives/$DATE_DIR"
-          cp data/latest-24h.json "data/archives/$DATE_DIR/latest-24h.json"
-          echo "[INFO] Daily archive saved to data/archives/$DATE_DIR/"
-
-          # Always commit data files
-          git add data/latest-24h.json data/latest-24h-all.json data/source-status.json data/archives/
-          git commit -m "chore: update news data $(date +%Y-%m-%d' '%H:%M)" || echo "Nothing to commit"
-          git push || echo "Push failed"
-
-      - name: Update HTML cache buster
+      - name: Prepare OPML
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GIT_EMAIL: "865715887@qq.com"
-          GIT_NAME: "Jack"
+          FOLLOW_OPML_B64: ${{ secrets.FOLLOW_OPML_B64 }}
         run: |
-          git config --global user.email "$GIT_EMAIL"
-          git config --global user.name "$GIT_NAME"
-          python .github/workflows/gh_push_data.py
+          mkdir -p feeds
+          if [ -n "$FOLLOW_OPML_B64" ]; then
+            echo "$FOLLOW_OPML_B64" | base64 --decode > feeds/follow.opml
+            echo "Loaded feeds/follow.opml from FOLLOW_OPML_B64 secret"
+          elif [ -f feeds/follow.example.opml ]; then
+            cp feeds/follow.example.opml feeds/follow.opml
+            echo "Loaded public demo OPML from feeds/follow.example.opml"
+          else
+            echo "No OPML file available; RSS OPML is optional"
+          fi
 
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: "."
+      - name: Update data
+        env:
+          EMAIL_DIGEST_ENABLED: ${{ secrets.EMAIL_DIGEST_ENABLED || vars.EMAIL_DIGEST_ENABLED }}
+          AGENTMAIL_API_KEY: ${{ secrets.AGENTMAIL_API_KEY }}
+          AGENTMAIL_INBOX_ID: ${{ secrets.AGENTMAIL_INBOX_ID }}
+          AGENTMAIL_API_BASE_URL: ${{ vars.AGENTMAIL_API_BASE_URL }}
+          AGENTMAIL_LIMIT: ${{ vars.AGENTMAIL_LIMIT }}
+          AGENTMAIL_ALLOWED_SENDER_DOMAINS: ${{ vars.AGENTMAIL_ALLOWED_SENDER_DOMAINS }}
+          X_API_ENABLED: ${{ secrets.X_API_ENABLED || vars.X_API_ENABLED }}
+          X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
+          X_API_QUERY: ${{ vars.X_API_QUERY }}
+          X_API_MAX_RESULTS: ${{ vars.X_API_MAX_RESULTS }}
+          X_API_DAILY_POST_LIMIT: ${{ vars.X_API_DAILY_POST_LIMIT }}
+          X_API_RUN_UTC_HOUR: ${{ vars.X_API_RUN_UTC_HOUR }}
+          X_API_RUN_UTC_MINUTE_MAX: ${{ vars.X_API_RUN_UTC_MINUTE_MAX }}
+          RSS_MAX_FEEDS: ${{ vars.RSS_MAX_FEEDS || 10 }}
+        run: |
+          if [ -f feeds/follow.opml ]; then
+            python scripts/update_news.py --output-dir data --window-hours 24 --archive-days 21 --rss-opml feeds/follow.opml --rss-max-feeds "${RSS_MAX_FEEDS:-10}"
+          else
+            python scripts/update_news.py --output-dir data --window-hours 24 --archive-days 21
+          fi
 
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
-
+      - name: Commit and push changes
+        env:
+          EMAIL_DIGEST_PUBLISH: ${{ secrets.EMAIL_DIGEST_PUBLISH || vars.EMAIL_DIGEST_PUBLISH }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/latest-24h.json data/latest-24h-all.json data/archive.json data/source-status.json data/waytoagi-7d.json data/title-zh-cache.json
+          if [ -f data/email-digest.json ] && [ "$EMAIL_DIGEST_PUBLISH" = "1" ]; then
+            git add data/email-digest.json
+          fi
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git commit -m "chore: update ai news snapshot"
+          git push
