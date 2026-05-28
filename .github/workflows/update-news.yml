@@ -87,6 +87,9 @@ jobs:
           git commit -m "chore: update ai news snapshot"
           git push
 
+      - name: Copy index.html for GitHub Pages
+        run: cp index.html data/
+
       - name: Deploy data to GitHub Pages
         if: github.ref == 'refs/heads/master'
         uses: peaceiris/actions-gh-pages@v4
