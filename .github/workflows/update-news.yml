@@ -1,16 +1,46 @@
-name: Update AI News Snapshot
+# ============================================================
+# ai-news-radar v2 — GitHub Actions Workflow
+# Replaces: .github/workflows/update-news.yml
+#
+# What changed from v1:
+#   - Runs scripts/update_news_v2.py (not update_news.py)
+#   - No ai_relevance.py scoring (replaced by route_to_category in v2)
+#   - Outputs directly to data/latest-24h.json
+#   - RSSHub sources SKIPPED when RSSHUB_HOST="" (GitHub Actions environment)
+#   - arXiv will fail gracefully (blocked from GitHub Actions IPs)
+#   - No gh_push_data.py step — commit+push to master triggers Pages rebuild
+# ============================================================
+
+name: Update AI News Radar (v2)
 
 on:
   workflow_dispatch:
+    inputs:
+      skip_rsshub:
+        description: "Skip RSSHub sources (always on GitHub Actions)"
+        required: false
+        default: "true"
+        type: boolean
+
+  push:
+    branches:
+      - master
+    paths:
+      - scripts/update_news_v2.py
+      - .github/workflows/update-news-v2.yml
+      - data/**
+
   schedule:
     - cron: "*/30 * * * *"
 
 concurrency:
-  group: update-ai-news-${{ github.ref }}
+  group: update-ai-news-v2-${{ github.ref }}
   cancel-in-progress: true
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 jobs:
   update:
@@ -18,71 +48,59 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
 
-      - name: Setup Python
-        uses: actions/setup-python@v6
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-          cache: "pip"
-          cache-dependency-path: "requirements.txt"
 
       - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
+        run: pip install requests
 
-      - name: Prepare OPML
+      # --------------------------------------------------------
+      # Run radar v2 update
+      # RSSHUB_HOST="" tells update_news_v2.py to skip RSSHub
+      # sources (Baidu News, WeChat) since they're on Jack's
+      # localhost:1200 and not accessible from GitHub Actions.
+      # arXiv will also fail gracefully (blocked from GA IPs).
+      # --------------------------------------------------------
+      - name: Run radar update
+        run: python scripts/update_news_v2.py
         env:
-          FOLLOW_OPML_B64: ${{ secrets.FOLLOW_OPML_B64 }}
-        run: |
-          mkdir -p feeds
-          if [ -n "$FOLLOW_OPML_B64" ]; then
-            echo "$FOLLOW_OPML_B64" | base64 --decode > feeds/follow.opml
-            echo "Loaded feeds/follow.opml from FOLLOW_OPML_B64 secret"
-          elif [ -f feeds/follow.example.opml ]; then
-            cp feeds/follow.example.opml feeds/follow.opml
-            echo "Loaded public demo OPML from feeds/follow.example.opml"
-          else
-            echo "No OPML file available; RSS OPML is optional"
-          fi
+          RSSHUB_HOST: ""
+          # If RSSHUB_HOST is empty or unset, update_news_v2.py
+          # should skip RSSHub-based sources and continue with GN RSS.
+          # ArXiv is attempted but will fail gracefully if blocked.
 
-      - name: Update data
-        env:
-          EMAIL_DIGEST_ENABLED: ${{ secrets.EMAIL_DIGEST_ENABLED || vars.EMAIL_DIGEST_ENABLED }}
-          AGENTMAIL_API_KEY: ${{ secrets.AGENTMAIL_API_KEY }}
-          AGENTMAIL_INBOX_ID: ${{ secrets.AGENTMAIL_INBOX_ID }}
-          AGENTMAIL_API_BASE_URL: ${{ vars.AGENTMAIL_API_BASE_URL }}
-          AGENTMAIL_LIMIT: ${{ vars.AGENTMAIL_LIMIT }}
-          AGENTMAIL_ALLOWED_SENDER_DOMAINS: ${{ vars.AGENTMAIL_ALLOWED_SENDER_DOMAINS }}
-          X_API_ENABLED: ${{ secrets.X_API_ENABLED || vars.X_API_ENABLED }}
-          X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
-          X_API_QUERY: ${{ vars.X_API_QUERY }}
-          X_API_MAX_RESULTS: ${{ vars.X_API_MAX_RESULTS }}
-          X_API_DAILY_POST_LIMIT: ${{ vars.X_API_DAILY_POST_LIMIT }}
-          X_API_RUN_UTC_HOUR: ${{ vars.X_API_RUN_UTC_HOUR }}
-          X_API_RUN_UTC_MINUTE_MAX: ${{ vars.X_API_RUN_UTC_MINUTE_MAX }}
-          RSS_MAX_FEEDS: ${{ vars.RSS_MAX_FEEDS || 10 }}
-        run: |
-          if [ -f feeds/follow.opml ]; then
-            python scripts/update_news.py --output-dir data --window-hours 24 --archive-days 21 --rss-opml feeds/follow.opml --rss-max-feeds "${RSS_MAX_FEEDS:-10}"
-          else
-            python scripts/update_news.py --output-dir data --window-hours 24 --archive-days 21
-          fi
-
-      - name: Commit and push changes
-        env:
-          EMAIL_DIGEST_PUBLISH: ${{ secrets.EMAIL_DIGEST_PUBLISH || vars.EMAIL_DIGEST_PUBLISH }}
+      # --------------------------------------------------------
+      # Commit and push only data/latest-24h.json if it changed.
+      # This push to master triggers GitHub Pages rebuild.
+      # No gh_push_data.py needed — we're running in the main repo.
+      # --------------------------------------------------------
+      - name: Commit and push
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/latest-24h.json data/latest-24h-all.json data/archive.json data/source-status.json data/waytoagi-7d.json data/title-zh-cache.json
-          if [ -f data/email-digest.json ] && [ "$EMAIL_DIGEST_PUBLISH" = "1" ]; then
-            git add data/email-digest.json
-          fi
+          git add data/latest-24h.json
           if git diff --cached --quiet; then
-            echo "No changes to commit"
+            echo "No changes to data/latest-24h.json — skipping commit"
             exit 0
           fi
-          git commit -m "chore: update ai news snapshot"
+          git commit -m "chore: update radar data $(date -u +%Y-%m-%dT%H:%M:%SZ)"
           git push
+
+      # --------------------------------------------------------
+      # Optional: re-trigger Pages if the above push doesn't do it
+      # (Pages watches master branch by default).
+      # Commented out — Pages should auto-rebuild on master push.
+      # Uncomment only if Pages deploy is separate from the main push.
+      # --------------------------------------------------------
+      # - name: Trigger Pages rebuild
+      #   uses: actions/checkout@v4
+      #   with:
+      #     ref: gh-pages
+      #     fetch-depth: 0
+      #   if: false  # disabled — master push triggers Pages by default
