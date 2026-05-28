@@ -23,6 +23,8 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     timeout-minutes: 5
+    environment:
+      name: github-pages
     steps:
       - name: Checkout radar-data
         uses: actions/checkout@v4
