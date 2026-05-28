@@ -15,6 +15,94 @@ from datetime import datetime, timezone, timedelta
 from collections import defaultdict
 
 # ─────────────────────────────────────────────
+# Scoring (transplanted from update_news.py v1)
+# ─────────────────────────────────────────────
+
+GN_LABEL_MAP = {
+    'GN: humanoid robot':        'humanoid',
+    '国外人形机器人资讯':           'humanoid',
+    'GN: 人形机器人':              'humanoid',
+    'GN: embodied intelligence':  'embodied_ai',
+    '国外具身智能资讯':             'embodied_ai',
+    'GN: 具身智能':               'embodied_ai',
+    'GN: Physical AI':           'physical_ai',
+    '国外物理AI资讯':             'physical_ai',
+    'GN: 物理AI':                'physical_ai',
+    'GN: BCI':                   'brain_computer',
+    'GN: 脑机接口':               'brain_computer',
+    '国外脑机接口资讯':             'brain_computer',
+    'GN: robot':                 'robotics',
+    '国外机器人资讯':              'robotics',
+    'GN: 机器人':                'robotics',
+}
+
+TIER1 = ['humanoid robot','humanoid','embodied intelligence','embodied AI',
+         '具身智能','人形机器人','脑机接口','brain-computer interface',
+         'brain computer interface','bci']
+TIER2 = ['robot','robots','robotics','robotic',
+         'Tesla Optimus','Figure AI','Boston Dynamics',
+         'Unitree','Fourier','宇树','傅利叶','智元','星动纪元',
+         'agility robotics','1X Technologies',
+         '灵巧手','机械臂','双足','协作机器人','cobot']
+TIER3 = ['physical AI','dexterous manipulation','robot learning']
+
+def relevance_score(title: str, description: str = '') -> float:
+    text = (title + ' ' + description).lower()
+    for kw in TIER1:
+        if kw.lower() in text:
+            return 0.80
+    for kw in TIER2:
+        if kw.lower() in text:
+            return 0.65
+    for kw in TIER3:
+        if kw.lower() in text:
+            return 0.50
+    return 0.35
+
+AUTHORITY_MAP = {'Google News': 15}
+
+def authority_score(source: str) -> int:
+    for prefix, score in AUTHORITY_MAP.items():
+        if source.startswith(prefix):
+            return score
+    return 10
+
+def timeliness_score(published_at: str | None, now_ts: float) -> float:
+    if not published_at:
+        return 0.0
+    try:
+        dt = datetime.fromisoformat(published_at.replace('Z', '+00:00'))
+        age_hours = (now_ts - dt.timestamp()) / 3600
+        if age_hours < 0:
+            age_hours = 0
+        return max(0, 30 - age_hours)
+    except Exception:
+        return 0.0
+
+def score_item(item: dict, now_ts: float) -> dict:
+    """Compute 5-dimension scores and add to item. Returns updated item."""
+    title = item.get('title', '')
+    desc = item.get('summary', item.get('description', ''))
+    source = item.get('source', '')
+    relevance = relevance_score(title, desc)
+    authority = authority_score(source)
+    depth = 5 if len(desc) >= 100 else 0
+    writing_value = 5 if len(desc) >= 100 else 0
+    timeliness = timeliness_score(item.get('published_at'), now_ts)
+    total = relevance * 100 + authority + depth + writing_value + timeliness
+    gn_label = GN_LABEL_MAP.get(source, 'robotics')
+    return {
+        **item,
+        'gn_label': gn_label,
+        'relevance': round(relevance, 3),
+        'authority': authority,
+        'depth': depth,
+        'writing_value': writing_value,
+        'timeliness': round(timeliness, 2),
+        'total_score': round(total, 2),
+    }
+
+# ─────────────────────────────────────────────
 # Paths
 # ─────────────────────────────────────────────
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -583,12 +671,14 @@ def main():
         json.dump(output, f, ensure_ascii=False, indent=2)
     print(f"Output saved to: {OUTPUT_FILE}")
 
-    # Also write min.json and all.json (flat format, for app.js)
+    # Build flat_items with 5-dimension scoring (v1 algorithm)
+    now_ts = datetime.now().timestamp()
     flat_items = []
     for cat, cat_items in output["categories"].items():
         for item in cat_items:
             item["category"] = cat
-            flat_items.append(item)
+            scored = score_item(item, now_ts)
+            flat_items.append(scored)
 
     min_data = {
         "generated_at": output["generated_at"],
