@@ -1,82 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <opml version="2.0">
   <head>
-    <title>AI News Radar RSS Example</title>
+    <title>AI News Radar - Follow Feeds</title>
   </head>
   <body>
-    <outline text="Official AI Sources">
-      <outline
-        text="OpenAI News"
-        title="OpenAI News"
-        type="rss"
-        xmlUrl="https://openai.com/news/rss.xml"
-        htmlUrl="https://openai.com/news"
-      />
-      <outline
-        text="Hugging Face Blog"
-        title="Hugging Face Blog"
-        type="rss"
-        xmlUrl="https://huggingface.co/blog/feed.xml"
-        htmlUrl="https://huggingface.co/blog"
-      />
-      <outline
-        text="Google DeepMind Blog"
-        title="Google DeepMind Blog"
-        type="rss"
-        xmlUrl="https://deepmind.google/blog/rss.xml"
-        htmlUrl="https://deepmind.google/discover/blog/"
-      />
-      <outline
-        text="Google AI Blog"
-        title="Google AI Blog"
-        type="rss"
-        xmlUrl="https://blog.google/technology/ai/rss/"
-        htmlUrl="https://blog.google/technology/ai/"
-      />
-      <outline
-        text="Microsoft AI Blog"
-        title="Microsoft AI Blog"
-        type="rss"
-        xmlUrl="https://blogs.microsoft.com/ai/feed/"
-        htmlUrl="https://blogs.microsoft.com/ai/"
-      />
-    </outline>
-    <outline text="AI Media and Builders">
-      <outline
-        text="Wired AI"
-        title="Wired AI"
-        type="rss"
-        xmlUrl="https://www.wired.com/feed/tag/ai/latest/rss"
-        htmlUrl="https://www.wired.com/tag/artificial-intelligence/"
-      />
-      <outline
-        text="InfoQ CN"
-        title="InfoQ CN"
-        type="rss"
-        xmlUrl="https://www.infoq.cn/feed"
-        htmlUrl="https://www.infoq.cn/"
-      />
-      <outline
-        text="NVIDIA Generative AI Blog"
-        title="NVIDIA Generative AI Blog"
-        type="rss"
-        xmlUrl="https://developer.nvidia.com/blog/category/generative-ai/feed/"
-        htmlUrl="https://developer.nvidia.com/blog/category/generative-ai/"
-      />
-      <outline
-        text="宝玉"
-        title="宝玉"
-        type="rss"
-        xmlUrl="https://baoyu.io/feed.xml"
-        htmlUrl="https://baoyu.io/"
-      />
-      <outline
-        text="Simon Willison"
-        title="Simon Willison"
-        type="rss"
-        xmlUrl="https://simonwillison.net/atom/everything/"
-        htmlUrl="https://simonwillison.net/"
-      />
-    </outline>
+    <outline text="国外人形机器人资讯" xmlUrl="https://news.google.com/rss/search?q=humanoid+robot&amp;hl=en-US&amp;gl=US&amp;ceid=US:en"/>
+    <outline text="国外具身智能资讯" xmlUrl="https://news.google.com/rss/search?q=embodied+intelligence+OR+embodied+AI&amp;hl=en-US&amp;gl=US&amp;ceid=US:en"/>
+    <outline text="GN: BCI" xmlUrl="https://news.google.com/rss/search?q=brain+computer+interface+OR+BCI+OR+neural+interface&amp;hl=en-US&amp;gl=US&amp;ceid=US:en"/>
+    <outline text="国外机器人资讯" xmlUrl="https://news.google.com/rss/search?q=robot&amp;hl=en-US&amp;gl=US&amp;ceid=US:en"/>
+    <outline text="国外物理AI资讯" xmlUrl="https://news.google.com/rss/search?q=physical+AI+robot&amp;hl=en-US&amp;gl=US&amp;ceid=US:en"/>
+    <outline text="GN: 人形机器人" xmlUrl="https://news.google.com/rss/search?q=%E4%BA%BA%E5%BD%A2%E6%9C%BA%E5%99%A8%E4%BA%BA&amp;hl=zh-CN&amp;gl=CN&amp;ceid=CN:zh-Hans"/>
+    <outline text="GN: 具身智能" xmlUrl="https://news.google.com/rss/search?q=%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD&amp;hl=zh-CN&amp;gl=CN&amp;ceid=CN:zh-Hans"/>
+    <outline text="GN: 脑机接口" xmlUrl="https://news.google.com/rss/search?q=%E8%84%B1%E6%9C%BA%E6%8E%A5%E5%8F%A3+OR+%E7%A5%9E%E7%BB%8F%E6%8E%A5%E5%8F%A3+OR+%E8%84%91%E7%94%B5%E6%8E%A5%E5%8F%A3+OR+%E8%84%91%E6%8E%A5%E5%8F%A3+OR+BCI&amp;hl=zh-CN&amp;gl=CN&amp;ceid=CN:zh-Hans"/>
+    <outline text="GN: 机器人" xmlUrl="https://news.google.com/rss/search?q=%E6%9C%BA%E5%99%A8%E4%BA%BA&amp;hl=zh-CN&amp;gl=CN&amp;ceid=CN:zh-Hans"/>
+    <outline text="GN: 物理AI" xmlUrl="https://news.google.com/rss/search?q=%E7%89%A9%E7%90%86AI&amp;hl=zh-CN&amp;gl=CN&amp;ceid=CN:zh-Hans"/>
   </body>
 </opml>
