@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-05-28T04:25:15.409120+00:00",
+  "generated_at": "2026-05-28T04:28:02.132764+00:00",
   "feeds": [
     {
-      "feed": "国外物理AI资讯",
+      "feed": "国外具身智能资讯",
       "success": true,
       "items_total": 100,
       "items_unique": 100,
       "error": null
     },
     {
-      "feed": "GN: 具身智能",
+      "feed": "国外物理AI资讯",
       "success": true,
       "items_total": 100,
-      "items_unique": 100,
+      "items_unique": 97,
       "error": null
     },
     {
@@ -23,24 +23,10 @@
       "error": null
     },
     {
-      "feed": "国外具身智能资讯",
-      "success": true,
-      "items_total": 100,
-      "items_unique": 96,
-      "error": null
-    },
-    {
-      "feed": "国外机器人资讯",
+      "feed": "国外人形机器人资讯",
       "success": true,
       "items_total": 102,
-      "items_unique": 101,
-      "error": null
-    },
-    {
-      "feed": "GN: 人形机器人",
-      "success": true,
-      "items_total": 100,
-      "items_unique": 98,
+      "items_unique": 96,
       "error": null
     },
     {
@@ -51,10 +37,24 @@
       "error": null
     },
     {
-      "feed": "国外人形机器人资讯",
+      "feed": "国外机器人资讯",
       "success": true,
       "items_total": 102,
-      "items_unique": 75,
+      "items_unique": 80,
+      "error": null
+    },
+    {
+      "feed": "GN: 人形机器人",
+      "success": true,
+      "items_total": 100,
+      "items_unique": 100,
+      "error": null
+    },
+    {
+      "feed": "GN: 具身智能",
+      "success": true,
+      "items_total": 100,
+      "items_unique": 98,
       "error": null
     },
     {
@@ -67,8 +67,8 @@
     {
       "feed": "GN: 机器人",
       "success": true,
-      "items_total": 101,
-      "items_unique": 77,
+      "items_total": 102,
+      "items_unique": 78,
       "error": null
     }
   ],
@@ -76,9 +76,9 @@
     "total_feeds": 10,
     "successful_feeds": 10,
     "failed_feeds": 0,
-    "total_items": 944,
-    "deduplicated": 61,
-    "noise_filtered": 28,
+    "total_items": 946,
+    "deduplicated": 60,
+    "noise_filtered": 30,
     "short_filtered": 0
   }
 }
