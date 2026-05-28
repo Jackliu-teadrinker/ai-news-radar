@@ -5,6 +5,8 @@ on:
   schedule:
     - cron: "*/30 * * * *"
 
+# Don't cancel this workflow when new runs start (multiple collection runs can queue)
+
 concurrency:
   group: radar-collect-${{ github.ref }}
   cancel-in-progress: false
@@ -20,8 +22,10 @@ jobs:
     timeout-minutes: 15
 
     steps:
-      - name: Checkout
+      - name: Checkout radar-data branch
         uses: actions/checkout@v4
+        with:
+          ref: radar-data
 
       - name: Set up Python 3.11
         uses: actions/setup-python@v5
@@ -54,7 +58,7 @@ jobs:
           # Commit data files (v2 writes: latest-24h.json, latest-24h-min.json, latest-24h-all.json)
           git add data/latest-24h.json data/latest-24h-min.json data/latest-24h-all.json data/archives/
           git commit -m "chore: update news data $(date +%Y-%m-%d' '%H:%M)" || echo "Nothing to commit"
-          git push || echo "Push failed"
+          git push origin radar-data || echo "Push failed"
 
       - name: Update HTML cache buster
         env:
@@ -62,8 +66,9 @@ jobs:
           GIT_EMAIL: "865715887@qq.com"
           GIT_NAME: "Jack"
         run: |
-          git config --global user.email "$GIT_EMAIL"
-          git config --global user.name "$GIT_NAME"
           python .github/workflows/gh_push_data.py
+          git add assets/app.js
+          git commit -m "chore: bump app.js version" || echo "Nothing to commit"
+          git push origin radar-data || echo "Push failed"
 
 
