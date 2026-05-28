@@ -42,33 +42,8 @@ jobs:
           git config --global user.email "$GIT_EMAIL"
           git config --global user.name "$GIT_NAME"
 
-          # Run Python script to generate data (v2: GN feeds expanded + 5-cat bypass)
+          # Run v2: GN feeds expanded + 5-cat bypass
           python scripts/update_news_v2.py
-
-          # DEBUG: Print GN and arXiv counts in latest-24h.json
-          echo "=== DEBUG: Checking latest-24h.json ==="
-          python -c "
-import json, sys
-with open('data/latest-24h.json') as f:
-    d = json.load(f)
-# v2 format: categories dict, not items list
-cats = d.get('categories', {})
-total = sum(len(v) for v in cats.values()) if cats else 0
-print(f'Total items (from categories): {total}')
-# Check GN: look in category names or item sources
-for cat, items in cats.items():
-    if cat.startswith('GN:') or any('news.google' in str(i.get('url','')) for i in items[:2]):
-        print(f'  {cat}: {len(items)} items')
-# arXiv
-arxiv = [i for cat_items in cats.values() for i in cat_items if 'arxiv.org' in str(i.get('url',''))]
-print(f'arXiv items: {len(arxiv)}')
-if arxiv: print(f'  arXiv sample: {arxiv[0].get(\"title\",\"\")[:60]}')
-with open('data/latest-24h-all.json') as f2:
-    d2 = json.load(f2)
-all_items = d2.get('items', [])
-print(f'latest-24h-all items: {len(all_items)}')
-"
-
 
           # Save daily archive
           DATE_DIR=$(date +%Y-%m-%d)
@@ -76,7 +51,7 @@ print(f'latest-24h-all items: {len(all_items)}')
           cp data/latest-24h.json "data/archives/$DATE_DIR/latest-24h.json"
           echo "[INFO] Daily archive saved to data/archives/$DATE_DIR/"
 
-          # Always commit data files (v2 writes: latest-24h.json, latest-24h-min.json, latest-24h-all.json)
+          # Commit data files (v2 writes: latest-24h.json, latest-24h-min.json, latest-24h-all.json)
           git add data/latest-24h.json data/latest-24h-min.json data/latest-24h-all.json data/archives/
           git commit -m "chore: update news data $(date +%Y-%m-%d' '%H:%M)" || echo "Nothing to commit"
           git push || echo "Push failed"
