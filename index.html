@@ -3,25 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AI News Radar｜24 小时 AI 更新雷达</title>
+    <title>机器人新闻雷达｜24 小时机器人更新雷达</title>
     <meta
       name="description"
-      content="自动整理过去 24 小时值得看的 AI、模型和开发者工具更新；伯乐Skill（Scout Skill）帮你从一堆信源里选出千里马。"
+      content="自动整理过去 24 小时值得看的机器人、具身智能、脑机接口更新；由 Jack 团队精选精准来源。"
     />
-    <link rel="canonical" href="https://learnprompt.github.io/ai-news-radar/" />
-    <meta property="og:title" content="AI News Radar｜24 小时 AI 更新雷达" />
+    <link rel="canonical" href="https://jackliu-teadrinker.github.io/ai-news-radar/" />
+    <meta property="og:title" content="机器人新闻雷达｜24 小时机器人更新雷达" />
     <meta
       property="og:description"
-      content="自动整理过去 24 小时值得看的 AI、模型和开发者工具更新；伯乐Skill（Scout Skill）帮你从一堆信源里选出千里马。"
+      content="自动整理过去 24 小时值得看的机器人、具身智能、脑机接口更新；由 Jack 团队精选精准来源。"
     />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://learnprompt.github.io/ai-news-radar/" />
-    <meta property="og:site_name" content="AI News Radar" />
+    <meta property="og:url" content="https://jackliu-teadrinker.github.io/ai-news-radar/" />
+    <meta property="og:site_name" content="机器人新闻雷达" />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="AI News Radar｜24 小时 AI 更新雷达" />
+    <meta name="twitter:title" content="机器人新闻雷达｜24 小时机器人更新雷达" />
     <meta
       name="twitter:description"
-      content="自动整理过去 24 小时值得看的 AI、模型和开发者工具更新；伯乐Skill（Scout Skill）帮你从一堆信源里选出千里马。"
+      content="自动整理过去 24 小时值得看的机器人、具身智能、脑机接口更新；由 Jack 团队精选精准来源。"
     />
     <link rel="icon" href="./assets/logo.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="./assets/styles.css" />
@@ -31,14 +31,14 @@
       <header class="hero">
         <div class="hero-main">
           <div class="hero-headline">
-            <img class="hero-logo" src="./assets/logo.svg" alt="AI News Radar Logo" />
+            <img class="hero-logo" src="./assets/logo.svg" alt="机器人新闻雷达 Logo" />
             <div>
-              <p class="hero-tag">AI NEWS RADAR</p>
-              <h1>24 小时 AI 更新雷达</h1>
+              <p class="hero-tag">机器人新闻雷达</p>
+              <h1>24 小时机器人更新雷达</h1>
             </div>
           </div>
           <p class="hero-sub">
-            过去 24 小时值得看的 AI/科技更新，附 WaytoAGI 近 7 日变化。
+            过去 24 小时值得看的机器人、具身智能、脑机接口精准更新。
           </p>
         </div>
         <div class="hero-meta">
@@ -52,8 +52,17 @@
       </header>
 
       <section class="primary-controls">
-        <input id="searchInput" type="search" placeholder="搜索 AI 信号 / 来源" />
-        <div class="mode-hint" id="modeHint">AI强相关</div>
+        <input id="searchInput" type="search" placeholder="搜索机器人信号 / 来源" />
+        <div class="mode-hint" id="modeHint">机器人强相关</div>
+        <select id="sortSelect" title="排序方式">
+          <option value="time">🕐 时间最新</option>
+          <option value="priority">🔢 分区优先级</option>
+          <option value="total_score">⭐ 五维总分</option>
+          <option value="relevance">🎯 相关性</option>
+          <option value="authority">🏛️ 权威性</option>
+          <option value="depth">📊 内容深度</option>
+          <option value="timeliness">⏰ 时效性</option>
+        </select>
       </section>
 
       <details class="advanced-panel">
@@ -72,7 +81,7 @@
             <div class="field">
               <span>视图</span>
               <div class="mode-switch">
-                <button id="modeAiBtn" class="mode-btn active" type="button">AI强相关</button>
+                <button id="modeAiBtn" class="mode-btn active" type="button">机器人强相关</button>
                 <button id="modeAllBtn" class="mode-btn" type="button">全量</button>
               </div>
             </div>
@@ -81,30 +90,21 @@
               <span class="all-dedupe-dot"></span>
               <span id="allDedupeLabel">去重开</span>
             </label>
+            <!-- Jack 2026-05-15: 今日9点CST分界线 -->
+            <label id="todayCutoffWrap" class="all-dedupe" for="todayCutoffToggle">
+              <input id="todayCutoffToggle" type="checkbox" checked />
+              <span class="all-dedupe-dot"></span>
+              <span id="todayCutoffLabel">昨日9点后</span>
+            </label>
           </div>
           <div class="source-health" id="sourceHealth">源状态加载中...</div>
           <section class="site-pills" id="sitePills"></section>
         </div>
       </details>
 
-      <section class="waytoagi-wrap">
-        <div class="waytoagi-head">
-          <h2>WaytoAGI 更新日志</h2>
-          <div class="waytoagi-tools">
-            <div class="waytoagi-switch">
-              <button id="waytoagiTodayBtn" class="waytoagi-btn active" type="button">最近更新日</button>
-              <button id="waytoagi7dBtn" class="waytoagi-btn" type="button">近7日</button>
-            </div>
-            <span id="waytoagiUpdatedAt">加载中...</span>
-          </div>
-        </div>
-        <div id="waytoagiMeta" class="waytoagi-meta"></div>
-        <div id="waytoagiList" class="waytoagi-list"></div>
-      </section>
-
       <section class="list-wrap">
         <div class="list-head">
-          <h2 id="listTitle">AI 信号流</h2>
+          <h2 id="listTitle">机器人信号流</h2>
           <span id="resultCount">0 条</span>
         </div>
         <div id="newsList" class="news-list"></div>
@@ -117,12 +117,13 @@
           <span class="site"></span>
           <span class="category"></span>
           <span class="source"></span>
+          <span class="score score-none">--</span>
           <time class="time"></time>
         </div>
         <a class="title" target="_blank" rel="noopener noreferrer"></a>
       </article>
     </template>
 
-    <script src="./assets/app.js" defer></script>
+    <script src="./assets/app.js?v=49" defer></script>
   </body>
 </html>

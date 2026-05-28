@@ -205,7 +205,7 @@ button {
 .primary-controls {
   margin-top: 16px;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-columns: minmax(0, 1fr) auto auto;
   gap: 12px;
   align-items: center;
 }
@@ -233,6 +233,19 @@ summary:focus-visible {
   color: var(--muted);
   font-size: 13px;
   white-space: nowrap;
+}
+
+/* Jack 2026-05-15: 排序下拉 */
+#sortSelect {
+  width: auto;
+  min-width: 0;
+  padding: 10px 12px;
+  font-size: 13px;
+  cursor: pointer;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--ink);
 }
 
 .advanced-panel {
@@ -638,6 +651,37 @@ summary:focus-visible {
 .category.kind-blogs,
 .category.kind-aihub {
   color: var(--muted);
+}
+
+/* Jack 2026-05-15: 五维评分 badge */
+.score {
+  padding: 2px 7px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  min-width: 28px;
+  text-align: center;
+}
+.score.score-high {
+  border-color: rgba(31, 122, 77, 0.4);
+  color: var(--good);
+  background: rgba(31, 122, 77, 0.08);
+}
+.score.score-mid {
+  border-color: rgba(154, 103, 0, 0.4);
+  color: var(--warn);
+  background: rgba(154, 103, 0, 0.08);
+}
+.score.score-low {
+  border-color: rgba(181, 82, 49, 0.4);
+  color: var(--accent-warm);
+  background: rgba(181, 82, 49, 0.08);
+}
+.score.score-none {
+  color: var(--muted);
+  background: transparent;
 }
 
 .time {

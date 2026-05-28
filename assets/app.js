@@ -11,12 +11,16 @@ const state = {
   allDataUrl: "data/latest-24h-all.json",
   allDataPromise: null,
   siteFilter: "",
+  categoryFilter: "",
   query: "",
   mode: "ai",
+  todayMode: true,
   waytoagiMode: "today",
   waytoagiData: null,
   sourceStatus: null,
   generatedAt: null,
+  // Jack 2026-05-20: 按时间最新排序
+  sortMode: 'time',  // 'time' | 'priority' | 'total_score' | 'relevance' | 'authority' | 'depth' | 'timeliness'
 };
 
 const statsEl = document.getElementById("stats");
@@ -25,6 +29,7 @@ const sitePillsEl = document.getElementById("sitePills");
 const newsListEl = document.getElementById("newsList");
 const updatedAtEl = document.getElementById("updatedAt");
 const searchInputEl = document.getElementById("searchInput");
+const sortSelectEl = document.getElementById("sortSelect");
 const resultCountEl = document.getElementById("resultCount");
 const listTitleEl = document.getElementById("listTitle");
 const itemTpl = document.getElementById("itemTpl");
@@ -37,11 +42,11 @@ const allDedupeLabelEl = document.getElementById("allDedupeLabel");
 const advancedSummaryEl = document.getElementById("advancedSummary");
 const sourceHealthEl = document.getElementById("sourceHealth");
 
-const waytoagiUpdatedAtEl = document.getElementById("waytoagiUpdatedAt");
-const waytoagiMetaEl = document.getElementById("waytoagiMeta");
-const waytoagiListEl = document.getElementById("waytoagiList");
-const waytoagiTodayBtnEl = document.getElementById("waytoagiTodayBtn");
-const waytoagi7dBtnEl = document.getElementById("waytoagi7dBtn");
+const waytoagiUpdatedAtEl = null;
+const waytoagiMetaEl = null;
+const waytoagiListEl = null;
+const waytoagiTodayBtnEl = null;
+const waytoagi7dBtnEl = null;
 const coverageStripEl = document.getElementById("coverageStrip");
 
 const SOURCE_KINDS = {
@@ -59,6 +64,80 @@ const SOURCE_KINDS = {
   aibase: { label: "AI站点", tone: "aihub" },
   newsnow: { label: "聚合", tone: "aggregate" },
 };
+
+// Jack 2026-05-13: GN feed display priority (lower = shown first)
+const GN_PRIORITY = {
+  // Jack 2026-05-25: 国外来源优先，然后GN英文来源
+  "GN: 人形机器人": 1,
+  "GN: 具身智能": 2,
+  "GN: 物理AI": 3,
+  "GN: 机器人": 4,
+  "GN: 脑机接口": 5,
+  "arXiv Robotics": 10,
+  "商业": 20,
+};
+
+const GN_CATEGORIES = [
+  // Jack 2026-05-26: 国外具身智能资讯置顶（时效强、Jack重点关注）
+  { id: "国外具身智能资讯",   label: "国外具身智能资讯" },
+  { id: "国外人形机器人资讯", label: "国外人形机器人资讯" },
+  { id: "国外物理AI资讯",     label: "国外物理AI资讯" },
+  { id: "国外机器人资讯",     label: "国外机器人资讯" },
+  { id: "GN: 机器人",        label: "GN: 机器人" },
+  { id: "GN: 人形机器人",    label: "GN: 人形机器人" },
+  { id: "GN: 具身智能",      label: "GN: 具身智能" },
+  { id: "GN: 物理AI",        label: "GN: 物理AI" },
+  { id: "GN: 脑机接口",      label: "GN: 脑机接口" },
+  { id: "arXiv Robotics",     label: "学术" },
+  { id: "商业",              label: "商业" },
+];
+
+// Jack 2026-05-18: map ai_label values to GN category IDs
+const AI_LABEL_TO_GN = {
+  "robotics":       "GN: Physical AI",
+  "humanoid":       "GN: 人形机器人",
+  "embodied_ai":    "GN: 具身智能",
+  "brain_computer": "GN: 脑机接口",
+  "physical_ai":    "GN: Physical AI",
+  // Also support matching the category ID directly as ai_label
+};
+
+// Jack 2026-05-15: map raw source names to canonical category IDs
+const SOURCE_TO_CATEGORY = {
+  "36氪":   "商业",
+  "创业邦": "商业",
+  "GN: BCI": "GN: 脑机接口",
+  // GN feeds
+  "国外人形机器人资讯": "GN: 人形机器人",
+  "国外具身智能资讯":   "GN: 具身智能",
+  "国外物理AI资讯":     "GN: 物理AI",
+  "国外机器人资讯":     "GN: 机器人",
+  // Explicit GN: category labels (in case items use these directly as source)
+  "GN: 机器人":     "GN: 机器人",
+  "GN: 人形机器人": "GN: 人形机器人",
+  "GN: 具身智能":   "GN: 具身智能",
+  "GN: 物理AI":     "GN: 物理AI",
+  "GN: 脑机接口":   "GN: 脑机接口",
+  "GN: BCI":        "GN: 脑机接口",
+};
+
+function normalizeSourceCategory(source) {
+  return SOURCE_TO_CATEGORY[source] || source;
+}
+
+// Jack 2026-05-18: return the GN category for an item (checks ai_label first, then source)
+function itemGnCategory(item) {
+  const labelGn = AI_LABEL_TO_GN[item.ai_label];
+  if (labelGn) return labelGn;
+  if (Object.values(AI_LABEL_TO_GN).includes(item.ai_label)) return item.ai_label;
+  return normalizeSourceCategory(item.source);
+}
+
+function gnPriority(source) {
+  const norm = normalizeSourceCategory(source);
+  return GN_PRIORITY[norm] !== undefined ? GN_PRIORITY[norm] : 999;
+}
+
 
 function fmtNumber(n) {
   return new Intl.NumberFormat("zh-CN").format(n || 0);
@@ -176,13 +255,17 @@ function renderAdvancedSummary() {
     ? (state.totalAllMode || state.itemsAll.length)
     : (state.totalRaw || state.itemsAllRaw.length);
   if (!status) {
-    advancedSummaryEl.textContent = `全量 ${fmtNumber(allCount)} 条`;
+    const catLabel = state.categoryFilter ? ` · 已筛选：${GN_CATEGORIES.find(c => c.id === state.categoryFilter)?.label || state.categoryFilter}` : "";
+    const todayLabel = state.todayMode ? " · 昨日9点后" : "";
+    advancedSummaryEl.textContent = `全量 ${fmtNumber(allCount)} 条${catLabel}${todayLabel}`;
     return;
   }
   const sites = Array.isArray(status.sites) ? status.sites : [];
   const totalSites = sites.length;
   const okSites = Number(status.successful_sites || 0);
-  advancedSummaryEl.textContent = `${fmtNumber(okSites)}/${fmtNumber(totalSites)} 源可用 · 全量 ${fmtNumber(allCount)} 条`;
+  const catLabel = state.categoryFilter ? ` · 已筛选：${GN_CATEGORIES.find(c => c.id === state.categoryFilter)?.label || state.categoryFilter}` : "";
+  const todayLabel = state.todayMode ? " · 昨日9点后" : "";
+  advancedSummaryEl.textContent = `${fmtNumber(okSites)}/${fmtNumber(totalSites)} 源可用 · 全量 ${fmtNumber(allCount)} 条${catLabel}${todayLabel}`;
 }
 
 function computeSiteStats(items) {
@@ -199,7 +282,14 @@ function computeSiteStats(items) {
 }
 
 function currentSiteStats() {
-  if (state.mode === "ai") return state.statsAi || [];
+  if (state.mode === "ai") {
+    const s = state.statsAi;
+    // statsAi should be an array; if it's an object or empty, compute from items
+    if (!Array.isArray(s) || s.length === 0) {
+      return computeSiteStats(state.itemsAi || []);
+    }
+    return s;
+  }
   return computeSiteStats(state.allDedup ? (state.itemsAll || []) : (state.itemsAllRaw || []));
 }
 
@@ -207,7 +297,9 @@ function renderSiteFilters() {
   const stats = currentSiteStats();
 
   siteSelectEl.innerHTML = '<option value="">全部站点</option>';
-  stats.forEach((s) => {
+  // Defensive: ensure stats is always an array
+  const safeStats = Array.isArray(stats) ? stats : [];
+  safeStats.forEach((s) => {
     const opt = document.createElement("option");
     opt.value = s.site_id;
     const raw = s.raw_count ?? s.count;
@@ -217,6 +309,37 @@ function renderSiteFilters() {
   siteSelectEl.value = state.siteFilter;
 
   sitePillsEl.innerHTML = "";
+
+  // GN category pills
+  const categoryAllPill = document.createElement("button");
+  categoryAllPill.className = `pill ${state.categoryFilter === "" ? "active" : ""}`;
+  categoryAllPill.textContent = "全部分区";
+  categoryAllPill.onclick = () => {
+    state.categoryFilter = "";
+    renderSiteFilters();
+    renderList();
+  };
+  sitePillsEl.appendChild(categoryAllPill);
+
+  GN_CATEGORIES.forEach((cat) => {
+    const btn = document.createElement("button");
+    btn.className = `pill ${state.categoryFilter === cat.id ? "active" : ""}`;
+    btn.textContent = cat.label;
+    btn.onclick = () => {
+      state.categoryFilter = cat.id;
+      renderSiteFilters();
+      renderList();
+    };
+    sitePillsEl.appendChild(btn);
+  });
+
+  // Divider
+  const divider = document.createElement("span");
+  divider.className = "pill-divider";
+  divider.textContent = "·";
+  sitePillsEl.appendChild(divider);
+
+  // Site pills
   const allPill = document.createElement("button");
   allPill.className = `pill ${state.siteFilter === "" ? "active" : ""}`;
   allPill.textContent = "全部";
@@ -270,11 +393,74 @@ function modeItems() {
 
 function getFilteredItems() {
   const q = state.query.trim().toLowerCase();
-  return modeItems().filter((item) => {
-    if (state.siteFilter && item.site_id !== state.siteFilter) return false;
-    if (!q) return true;
-    const hay = `${item.title || ""} ${item.title_zh || ""} ${item.title_en || ""} ${item.site_name || ""} ${item.source || ""}`.toLowerCase();
-    return hay.includes(q);
+  let cutoffMs = null;
+  if (state.todayMode) {
+    const now = new Date();
+    // Jack 2026-05-18 fix: CST today 9am = UTC yesterday 1am
+    // now.getUTCDate() gives the UTC day (may differ from CST day)
+    // Use getDate() for local CST
+    const cstDate = new Date(now.getTime() + 8 * 3600000); // shift to CST
+    const cst9base = new Date(Date.UTC(
+      cstDate.getUTCFullYear(),
+      cstDate.getUTCMonth(),
+      cstDate.getUTCDate() - 1,
+      1, 0, 0
+    ));
+    cutoffMs = cst9base.getTime();
+  }
+  const filtered = modeItems().filter((item) => {
+    try {
+      if (state.siteFilter && item.site_id !== state.siteFilter) return false;
+      if (state.categoryFilter) {
+        let itemCat;
+        try { itemCat = itemGnCategory(item); } catch(e) { itemCat = item.source || ''; }
+        if (itemCat !== state.categoryFilter) return false;
+      }
+      if (cutoffMs !== null) {
+        const itemMs = new Date(item.first_seen_at || item.published_at || 0).getTime();
+        if (itemMs < cutoffMs) return false;
+      }
+      if (!q) return true;
+      const hay = `${item.title || ""} ${item.title_zh || ""} ${item.title_en || ""} ${item.site_name || ""} ${item.source || ""}`.toLowerCase();
+      return hay.includes(q);
+    } catch(e) {
+      console.error('[getFilteredItems] item error:', e.message, 'item:', item?.title?.substring(0,30));
+      return false;
+    }
+  });
+  // Jack 2026-05-15: 五维评分排序
+  return sortByScore(filtered, state.sortMode);
+}
+
+// Jack 2026-05-15: 五维评分排序函数
+function sortByScore(items, sortMode) {
+  if (sortMode === 'priority') return items;
+  if (sortMode === 'time') {
+    // 先按 feed 分组：优先 feed 排前面，然后各组内按时间
+    // Jack 2026-05-26: embodied_ai 加入优先队列（时效性强，国际资讯核心赛道）
+    const PRIORITY_FEEDS = ['robotics', 'humanoid', 'embodied_ai'];
+    const isPriority = item => PRIORITY_FEEDS.includes(item.ai_label);
+    const priorityItems = items.filter(isPriority);
+    const otherItems = items.filter(item => !isPriority(item));
+    const cmp = (a, b) => {
+      const ta = a.published_at ? new Date(a.published_at).getTime() : 0;
+      const tb = b.published_at ? new Date(b.published_at).getTime() : 0;
+      return tb - ta;
+    };
+    return [...priorityItems.sort(cmp), ...otherItems.sort(cmp)];
+  }
+  return [...items].sort((a, b) => {
+    try {
+      const scoreA = a[sortMode] !== undefined && a[sortMode] !== null ? a[sortMode] : -1;
+      const scoreB = b[sortMode] !== undefined && b[sortMode] !== null ? b[sortMode] : -1;
+      if (scoreA !== scoreB) return scoreB - scoreA;
+      const pa = gnPriority(itemGnCategory(a) || ''), pb = gnPriority(itemGnCategory(b) || '');
+      if (pa !== pb) return pa - pb;
+      return 0;
+    } catch(e) {
+      console.error('[sortByScore] error:', e.message);
+      return 0;
+    }
   });
 }
 
@@ -285,23 +471,41 @@ function renderItemNode(item) {
   const categoryEl = node.querySelector(".category");
   categoryEl.textContent = kind.label;
   categoryEl.classList.add(`kind-${kind.tone}`);
-  node.querySelector(".source").textContent = `分区: ${item.source}`;
+  node.querySelector(".source").textContent = `分区: ${itemGnCategory(item)}`;
   node.querySelector(".time").textContent = fmtTime(item.published_at || item.first_seen_at);
 
+  // Jack 2026-05-15: 五维评分 badge
+  const scoreEl = node.querySelector(".score");
+  if (scoreEl) {
+    const totalScore = item.total_score;
+    if (totalScore !== undefined && totalScore !== null) {
+      const pct = Math.round(totalScore); // 0-100
+      const color = pct >= 60 ? 'score-high' : pct >= 40 ? 'score-mid' : 'score-low';
+      scoreEl.textContent = pct;
+      scoreEl.className = 'score ' + color;
+      scoreEl.title = `五维总分: ${pct}/100 (相关性${item.relevance || '?'} | 权威性${item.authority || '?'} | 深度${item.depth || '?'} | 时效性${item.timeliness || '?'} | 写作价值${item.writing_value || '?'})`;
+    } else {
+      scoreEl.textContent = '--';
+      scoreEl.className = 'score score-none';
+    }
+  }
+
   const titleEl = node.querySelector(".title");
+  const original = (item.title || "").trim();
   const zh = (item.title_zh || "").trim();
-  const en = (item.title_en || "").trim();
   titleEl.textContent = "";
-  if (zh && en && zh !== en) {
+  // Bilingual: show Chinese translation + original English as subtitle
+  // When title_zh is a genuine Chinese translation different from title
+  if (zh && original && zh !== original) {
     const primary = document.createElement("span");
     primary.textContent = zh;
     const sub = document.createElement("span");
     sub.className = "title-sub";
-    sub.textContent = en;
+    sub.textContent = original;
     titleEl.appendChild(primary);
     titleEl.appendChild(sub);
   } else {
-    titleEl.textContent = item.title || zh || en;
+    titleEl.textContent = original;
   }
   titleEl.href = item.url;
   return node;
@@ -320,7 +524,7 @@ function buildSourceGroupNode(source, items) {
   listEl.className = "source-group-list";
   header.append(title, count);
   section.append(header, listEl);
-  items.forEach((item) => listEl.appendChild(renderItemNode(item)));
+  items.forEach((item) => { try { listEl.appendChild(renderItemNode(item)); } catch(e) { console.error('[BSGN] error:', e.message, 'item:', item?.title?.substring(0,30)); } });
   return section;
 }
 
@@ -334,7 +538,13 @@ function groupBySource(items) {
     groupMap.get(key).push(item);
   });
 
-  return Array.from(groupMap.entries()).sort((a, b) => b[1].length - a[1].length || a[0].localeCompare(b[0], "zh-CN"));
+  return Array.from(groupMap.entries()).sort((a, b) => {
+    try {
+      const pa = gnPriority(a[0]), pb = gnPriority(b[0]);
+      if (pa !== pb) return pa - pb;
+      return b[1].length - a[1].length;
+    } catch(e) { console.error('sort error:', e.message); return 0; }
+  });
 }
 
 function renderGroupedBySource(items) {
@@ -363,6 +573,8 @@ function renderGroupedBySiteAndSource(items) {
   const sites = Array.from(siteMap.entries()).sort((a, b) => {
     const byCount = b[1].items.length - a[1].items.length;
     if (byCount !== 0) return byCount;
+    const pa = gnPriority(a[1].siteName), pb = gnPriority(b[1].siteName);
+    if (pa !== pb) return pa - pb;
     return a[1].siteName.localeCompare(b[1].siteName, "zh-CN");
   });
 
@@ -393,8 +605,19 @@ function renderGroupedBySiteAndSource(items) {
 
 function renderList() {
   const filtered = getFilteredItems();
+  console.log('[RL] itemsAi=' + state.itemsAi.length + ' filtered=' + filtered.length + ' mode=' + state.mode + ' today=' + state.todayMode + ' siteF=' + state.siteFilter + ' catF=' + state.categoryFilter + ' newsListEl=' + !!newsListEl);
+  if (filtered.length > 0) {
+    console.log('[RL] OK, first:', filtered[0].title?.substring(0,40));
+  } else {
+    console.log('[RL] EMPTY! itemsAi[0]:', state.itemsAi[0]?.title?.substring(0,40));
+    // Show ALL items without date filter for debugging
+    const allItems = modeItems();
+    console.log('[RL] allItems without filter:', allItems.length);
+  }
   resultCountEl.textContent = `${fmtNumber(filtered.length)} 条`;
 
+  // Force clear and rebuild
+  if (!newsListEl) { console.error('[RL] newsListEl is NULL!'); return; }
   newsListEl.innerHTML = "";
 
   if (!filtered.length) {
@@ -422,7 +645,7 @@ function waytoagiViews(waytoagi) {
   return { updates7d, updatesToday, latestDate };
 }
 
-function renderWaytoagi(waytoagi) {
+function renderWaytoagi(waytoagi) { if (!waytoagiUpdatedAtEl) return; if (!waytoagi || !waytoagi.updates_7d || waytoagi.updates_7d.length === 0) { waytoagiUpdatedAtEl.textContent = "WaytoAGI 已禁用"; if (waytoagiListEl) waytoagiListEl.innerHTML = ""; return; }
   const { updates7d, updatesToday, latestDate } = waytoagiViews(waytoagi);
   if (waytoagiTodayBtnEl) waytoagiTodayBtnEl.classList.toggle("active", state.waytoagiMode === "today");
   if (waytoagi7dBtnEl) waytoagi7dBtnEl.classList.toggle("active", state.waytoagiMode === "7d");
@@ -580,7 +803,7 @@ function renderSourceHealth(errorMessage = "") {
 }
 
 async function loadNewsData() {
-  const res = await fetch(`./data/latest-24h.json?t=${Date.now()}`);
+  const res = await fetch(`./data/latest-24h-min.json?t=${Date.now()}`);
   if (!res.ok) throw new Error(`加载 latest-24h.json 失败: ${res.status}`);
   return res.json();
 }
@@ -630,6 +853,7 @@ async function init() {
   if (newsResult.status === "fulfilled") {
     const payload = newsResult.value;
     state.itemsAi = payload.items_ai || payload.items || [];
+    console.log('[INIT] itemsAi set: ' + state.itemsAi.length + ' items_ai: ' + (payload.items_ai||[]).length + ' items: ' + (payload.items||[]).length);
     state.itemsAllRaw = payload.items_all_raw || payload.items_all || [];
     state.itemsAll = payload.items_all || [];
     state.statsAi = payload.site_stats || [];
@@ -665,8 +889,8 @@ async function init() {
     state.waytoagiData = waytoagiResult.value;
     renderWaytoagi(state.waytoagiData);
   } else {
-    waytoagiUpdatedAtEl.textContent = "加载失败";
-    waytoagiListEl.innerHTML = `<div class="waytoagi-error">${waytoagiResult.reason.message}</div>`;
+    if (waytoagiUpdatedAtEl) waytoagiUpdatedAtEl.textContent = "加载失败";
+    if (waytoagiListEl) waytoagiListEl.innerHTML = `<div class="waytoagi-error">${waytoagiResult.reason.message}</div>`;
   }
 }
 
@@ -677,6 +901,7 @@ searchInputEl.addEventListener("input", (e) => {
 
 siteSelectEl.addEventListener("change", (e) => {
   state.siteFilter = e.target.value;
+  state.categoryFilter = "";
   renderSiteFilters();
   renderList();
 });
@@ -718,18 +943,27 @@ if (allDedupeToggleEl) {
   });
 }
 
-if (waytoagiTodayBtnEl) {
-  waytoagiTodayBtnEl.addEventListener("click", () => {
-    state.waytoagiMode = "today";
-    if (state.waytoagiData) renderWaytoagi(state.waytoagiData);
+// Jack 2026-05-15: 五维评分排序
+if (sortSelectEl) {
+  sortSelectEl.addEventListener("change", (e) => {
+    state.sortMode = e.target.value;
+    renderList();
   });
 }
 
-if (waytoagi7dBtnEl) {
-  waytoagi7dBtnEl.addEventListener("click", () => {
-    state.waytoagiMode = "7d";
-    if (state.waytoagiData) renderWaytoagi(state.waytoagiData);
+// Jack 2026-05-15: 今日9点CST分界线
+const todayCutoffToggleEl = document.getElementById("todayCutoffToggle");
+const todayCutoffWrapEl = document.getElementById("todayCutoffWrap");
+if (todayCutoffToggleEl) {
+  todayCutoffToggleEl.addEventListener("change", (e) => {
+    state.todayMode = Boolean(e.target.checked);
+    renderList();
+    renderAdvancedSummary();
   });
 }
+
+
+
+
 
 init();

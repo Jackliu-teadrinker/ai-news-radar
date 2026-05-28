@@ -1,18 +1,10 @@
-# Claude Code Notes
+# 项目说明
 
-Before changing this project, read:
+本项目为人形机器人/具身智能专项新闻雷达，基于 GitHub Actions 自动采集 + GitHub Pages 部署。
 
-- `skills/ai-news-radar/SKILL.md`
-- `docs/SOURCE_COVERAGE.md`
-- `README.md`
+修改前必读：
+- `README.md` — 项目概述
+- `AGENTS.md` — 开发规范
+- `scripts/update_news.py` — 采集逻辑
 
-Do not commit private OPML files, API keys, cookies, browser exports, or `.env`
-values. Keep the public repo usable without secrets.
-
-The product direction is a two-layer AI news tool:
-
-- Default layer: curated AI-focused view for ordinary AI enthusiasts.
-- Advanced layer: custom OPML/source configuration and source health details for maintainers.
-
-When adding sources, prefer official RSS/Atom feeds or OPML first. Add custom
-fetchers only for stable, public, high-signal sources.
+不提交：私有 OPML 文件、API Key、Token、Cookie、`.env` 值。

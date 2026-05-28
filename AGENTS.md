@@ -1,44 +1,49 @@
-# AI News Radar Agent Notes
+# AI News Radar — Humanoid Robot Focus
 
 ## Scope
 
-This repo powers the public AI News Radar static site and Scout Skill source workflow.
-Use it for high-signal AI/tech news aggregation, OPML-based custom feeds,
-GitHub Actions refresh jobs, and GitHub Pages publishing.
+本仓库驱动人形机器人/具身智能专项新闻雷达：
+- `scripts/update_news.py`：Python 采集脚本
+- `feeds/follow.example.opml`：RSS 信源配置
+- `.github/workflows/update-news.yml`：GitHub Actions 定时采集 + Pages 部署
 
-## Working Rules
+## 工作规则
 
-- Keep changes small and reviewable.
-- Search the repo before changing source fetchers or output schemas.
-- Do not commit private feeds, secrets, tokens, cookies, or `.env` values.
-- Do not commit `feeds/follow.opml`; use `feeds/follow.example.opml` as the public template.
-- Prefer stable public RSS/Atom/OPML sources before adding custom scrapers.
-- Keep the reader-facing product simple: default to a curated AI-focused view, hide noisy or advanced source details behind existing filters/docs.
+- 保持改动小、可审查
+- 修改信源前先检查 `feeds/follow.example.opml`
+- 不提交私有 OPML（使用 `feeds/follow.example.opml` 作为公开模板）
+- 不提交 API key、Token、Cookie 或 `.env` 内容
+- 优先使用公开 RSS/Atom/OPML 源，谨慎添加自定义爬虫
 
-## Source Strategy
+## 信源策略
 
-Read `docs/SOURCE_COVERAGE.md` before adding or removing sources.
+人形机器人、具身智能、脑机接口、物理 AI 领域优先。
+过滤：股票/ETF/扫地机器人/短快讯。
 
-Default source priority:
-
-1. Official RSS/Atom feeds and OPML collections.
-2. Stable public JSON APIs or static pages with timestamps.
-3. Curated newsletters or changelogs with public feeds.
-4. Manual/custom adapters only when the source is high-signal and stable.
-
-Avoid account-bound timelines, broad personal social feeds, login-gated pages,
-and fragile bridges unless the user explicitly accepts the maintenance cost.
-
-## Common Commands
+## 常用命令
 
 ```bash
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -r requirements-dev.txt
-python -m py_compile scripts/update_news.py
-python -m pytest -q
-python scripts/update_news.py --output-dir data --window-hours 24 --rss-opml feeds/follow.opml
+# 安装依赖
+pip install -r requirements.txt
+
+# 本地运行采集
+python scripts/update_news.py --output-dir data --window-hours 24
+
+# 启动本地预览
 python -m http.server 8080
+# 打开 http://localhost:8080
+
+# 手动触发 GitHub Actions
+gh workflow run update-news.yml --repo Jackliu-teadrinker/ai-news-radar
 ```
 
-For agent workflows, read `skills/ai-news-radar/SKILL.md`.
+## 项目结构
+
+```
+ai-news-radar/
+├── feeds/follow.example.opml    # RSS 信源
+├── scripts/update_news.py       # 采集脚本
+├── data/*.json                 # 输出数据
+└── .github/workflows/
+    └── update-news.yml         # 自动更新
+```
