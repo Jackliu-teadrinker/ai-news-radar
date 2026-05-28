@@ -76,12 +76,12 @@ ARXIV_CATEGORIES = {
 # ─────────────────────────────────────────────
 GN_FEEDS = [
     # (search_query, source_label)
-    # Use exact-phrase "term" + negative -term to reduce noise
-    ('"humanoid robot"',              "GN: humanoid robot"),
-    ('"embodied intelligence"',        "GN: embodied intelligence"),
-    ('"physical AI" -limitations',     "GN: physical AI"),
-    ('"brain computer interface"',     "GN: BCI"),
-    ('robot industry OR robotics news OR "service robot" OR "industrial robot"', "GN: robot"),
+    # Broader queries for quantity; specific terms only when reducing noise
+    ("humanoid robot",                                       "GN: humanoid robot"),
+    ("embodied intelligence OR embodied AI OR AI agent OR autonomous robot", "GN: embodied intelligence"),
+    ("physical AI OR physical AI robotics",                "GN: physical AI"),
+    ("BCI OR brain computer interface OR brain-machine OR neural interface OR neurotechnology", "GN: BCI"),
+    ("robotics OR robot news OR industrial robot OR service robot OR collaborative robot", "GN: robot"),
 ]
 
 RSSHUB_BAIDU_KEYWORDS = [
@@ -375,7 +375,7 @@ def gather_all() -> list[dict]:
     for keyword, label in GN_FEEDS:
         # Google News RSS: sortBy=s → Sort by Relevance (default latest can flood with old items)
         url = (f"https://news.google.com/rss/search?q={requests.utils.quote(keyword)}"
-               f"&hl=en-US&gl=US&ceid=US:en&sortBy=s")
+               f"&hl=en-US&gl=US&ceid=US:en")
         print(f"  → {label}")
         xml_text = fetch_url(url)
         items = parse_rss_items(xml_text, label)
