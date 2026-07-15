@@ -1,0 +1,26 @@
+# GitHub Pages cache-control headers
+# Prevent stale data from being served
+
+# Data files: no cache, always fetch fresh
+/data/*.json
+  Cache-Control: no-cache, no-store, must-revalidate
+  Pragma: no-cache
+  Expires: 0
+
+# JS/CSS: cache with version hash
+/assets/*.js
+  Cache-Control: max-age=86400, must-revalidate
+  Pragma: no-cache
+
+/assets/*.css
+  Cache-Control: max-age=86400, must-revalidate
+  Pragma: no-cache
+
+# HTML: short cache
+/*.html
+  Cache-Control: max-age=300, must-revalidate
+  Pragma: no-cache
+
+# Favicon/logo: longer cache
+/assets/*.svg
+  Cache-Control: max-age=604800

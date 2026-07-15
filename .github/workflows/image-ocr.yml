@@ -1,0 +1,160 @@
+name: Image OCR - Research Reports
+
+on:
+  workflow_dispatch:
+    inputs:
+      image_url:
+        description: "图片 URL"
+        required: false
+        default: ""
+      lang:
+        description: "OCR 语言 (eng/chi_sim/chi_tra/jpn/kor)"
+        required: false
+        default: "chi_sim"
+
+# 手动触发:
+# gh workflow run image-ocr.yml --repo Jackliu-teadrinker/ai-news-radar
+# 带参数:
+# gh workflow run image-ocr.yml --repo Jackliu-teadrinker/ai-news-radar --field image_url="https://..." --field lang=chi_sim
+
+concurrency:
+  group: ocr-${{ github.ref }}-${{ github.run_id }}
+  cancel-in-progress: true
+
+jobs:
+  ocr:
+    timeout-minutes: 10
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install Tesseract.js
+        run: npm install tesseract.js
+
+      - name: Prepare output dir
+        run: mkdir -p data/ocr-results
+
+      - name: Run OCR on single image URL
+        if: github.event.inputs.image_url != ''
+        env:
+          IMAGE_URL: ${{ github.event.inputs.image_url }}
+          OCR_LANG: ${{ github.event.inputs.lang || 'chi_sim' }}
+        run: |
+          node << 'EOFNODE'
+          const { createWorker } = require('tesseract.js');
+          const fs = require('fs');
+          const path = require('path');
+          const https = require('https');
+          const http = require('http');
+          const { URL } = require('url');
+
+          const imageUrl = process.env.IMAGE_URL;
+          const lang = process.env.OCR_LANG || 'chi_sim';
+          const outDir = 'data/ocr-results';
+          const tmpFile = `/tmp/ocr_input_${Date.now()}`;
+
+          function download(url) {
+            return new Promise((resolve, reject) => {
+              const parsed = new URL(url);
+              const protocol = parsed.protocol === 'https:' ? https : http;
+              const req = protocol.get(url, {
+                headers: { 'User-Agent': 'Mozilla/5.0 (compatible; OpenClaw-OCR/1.0)' }
+              }, (res) => {
+                // Handle redirects
+                if ([301, 302, 303, 307, 308].includes(res.statusCode) && res.headers.location) {
+                  req.destroy();
+                  download(res.headers.location).then(resolve).catch(reject);
+                  return;
+                }
+                // Check content type
+                const ct = (res.headers['content-type'] || '').split(';')[0].trim();
+                if (!ct.startsWith('image/')) {
+                  req.destroy();
+                  reject(new Error('Non-image Content-Type: ' + ct + ' (URL: ' + url + ')'));
+                  return;
+                }
+                // SVG is not supported by Tesseract.js
+                if (ct === 'image/svg+xml' || ct === 'image/svg') {
+                  req.destroy();
+                  reject(new Error('SVG images are not supported by Tesseract. Please use PNG/JPG/WebP.'));
+                  return;
+                }
+                const ext = ct.replace('image/', '').replace('jpeg', 'jpg');
+                const filePath = tmpFile + '.' + ext;
+                const stream = fs.createWriteStream(filePath);
+                res.pipe(stream);
+                stream.on('finish', () => resolve(filePath));
+                stream.on('error', reject);
+              });
+              req.on('error', reject);
+            });
+          }
+
+          (async () => {
+            console.log('[OCR] Downloading: ' + imageUrl);
+            const downloadedFile = await download(imageUrl);
+            console.log('[OCR] Saved to: ' + downloadedFile);
+            console.log('[OCR] Recognizing (lang=' + lang + ')...');
+
+            const worker = await createWorker(lang, 1, {
+              logger: m => {
+                if (m.status === 'recognizing text') {
+                  process.stderr.write('\r[OCR] ' + (m.progress * 100).toFixed(0) + '%');
+                }
+              }
+            });
+
+            const { data: { text, confidence } } = await worker.recognize(downloadedFile);
+            await worker.terminate();
+            process.stderr.write('\n');
+
+            const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
+            const baseName = 'ocr_' + timestamp;
+            const resultFile = path.join(outDir, baseName + '.txt');
+            const metaFile = path.join(outDir, baseName + '.meta.json');
+
+            fs.writeFileSync(resultFile, text.trim() || '[No text detected]');
+            fs.writeFileSync(metaFile, JSON.stringify({
+              source: imageUrl,
+              lang,
+              confidence: confidence || 0,
+              timestamp: new Date().toISOString()
+            }, null, 2));
+
+            console.log('[OCR] Done! Confidence: ' + (confidence || 0).toFixed(1) + '%');
+            console.log('[OCR] Result saved to: ' + resultFile);
+            console.log('\n--- OCR Result ---\n' + (text.trim() || '[No text detected]'));
+
+            try { fs.unlinkSync(downloadedFile); } catch (e) {}
+          })().catch(e => {
+            console.error('[OCR] Error: ' + e.message);
+            process.exit(1);
+          });
+          EOFNODE
+
+      - name: Scan reports/ directory
+        if: github.event.inputs.image_url == ''
+        run: |
+          echo "No image URL provided. To OCR a specific image, use the image_url input."
+          echo "Reports directory:"
+          ls -la reports/ 2>/dev/null | head -10 || echo "(empty or not found)"
+
+      - name: Commit OCR results
+        run: |
+          if [ -d "data/ocr-results" ] && [ "$(ls -A data/ocr-results/*.txt 2>/dev/null)" ]; then
+            echo "ocr_result<<EOF"
+            cat data/ocr-results/*.txt
+            echo "EOF"
+            echo "ocr_meta<<EOF"
+            cat data/ocr-results/*.meta.json
+            echo "EOF"
+            echo "::notice::OCR results generated successfully"
+          else
+            echo "No OCR results to show"
+          fi

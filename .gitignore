@@ -1,0 +1,46 @@
+# Generated data files
+data/latest-24h.json
+data/latest-24h-min.json
+data/latest-24h-all.json
+data/source-status.json
+data/seen_urls.json
+data/articles.json
+data/archive.json
+data/radar-health.json
+data/.radar_version
+data/test_*.json
+data/verify*.json
+data/raw_*.json
+data/pages_*.json
+data/github_*.json
+data/final_*.json
+data/headers.txt
+
+# Debug/test files
+test_*.js
+check_*.js
+fix_*.js
+check_*.py
+fix_*.py
+find_*.py
+restore_*.py
+update_*.py
+*.log
+*.tar
+
+# Build artifacts
+artifact.zip
+artifact-check/
+
+# Misc
+git_update_info.txt
+new_blob_sha.txt
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Backup prefixes
+*.pre_fix
+*.bak
