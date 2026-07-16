@@ -498,6 +498,18 @@ def run(output_dir: str, window_hours: int, opml_path: str, archive_days: int, w
             print(f"[WARN] WeChat collection skipped: {e}")
             wechat_articles = []
 
+    # ── WeChat cross-dedup ──
+    # Remove wechat articles that already exist in RSS (by URL)
+    rss_urls = {item.get('url') for item in all_items if item.get('url')}
+    wechat_deduped = []
+    for item in wechat_articles:
+        if item.get('url') not in rss_urls:
+            wechat_deduped.append(item)
+        else:
+            print(f"  [DEDUP] Skipping wechat dup URL: {item['url'][:60]}...")
+    print(f"[INFO] WeChat deduped: {len(wechat_articles)} → {len(wechat_deduped)} (removed {len(wechat_articles)-len(wechat_deduped)} RSS duplicates)")
+    wechat_articles = wechat_deduped
+
     # BUG#1 FIX: Cross-feed deduplication
     # Items from different feeds may have different item_id but same title
     all_items, cross_dup = cross_feed_deduplicate(all_items)
