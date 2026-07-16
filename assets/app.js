@@ -991,3 +991,152 @@ if (todayCutoffToggleEl) {
 
 
 init();
+
+// ═══════════════════════════════════════════════
+// 微信公众号专区 (2026-07-16)
+// ═══════════════════════════════════════════════
+
+async function loadWechatArticles() {
+  try {
+    const res = await fetchWithTimeout('./data/wechat-articles.json?t=' + Date.now());
+    if (!res.ok) return [];
+    const data = await res.json();
+    return data.articles || [];
+  } catch (e) {
+    console.log('[WECHAT] 未加载到公众号文章:', e.message);
+    return [];
+  }
+}
+
+function renderWechatArticle(item) {
+  const node = itemTpl.content.firstElementChild.cloneNode(true);
+  
+  // 站点标签
+  const siteEl = node.querySelector('.site');
+  siteEl.textContent = '微信公众号';
+  
+  // 分类 badge — 微信公众号专用样式
+  const categoryEl = node.querySelector('.category');
+  categoryEl.textContent = '公众号';
+  categoryEl.className = 'category kind-wechat';
+  
+  // 来源
+  node.querySelector('.source').textContent = `来源: ${item.source || '公众号'}`;
+  
+  // 时间
+  node.querySelector('.time').textContent = fmtTime(item.published_at || item.first_seen_at);
+  
+  // 五维评分 badge
+  const scoreEl = node.querySelector('.score');
+  if (scoreEl) {
+    const totalScore = item.total_score;
+    if (totalScore !== undefined && totalScore !== null) {
+      const pct = Math.round(totalScore);
+      const color = pct >= 60 ? 'score-high' : pct >= 40 ? 'score-mid' : 'score-low';
+      scoreEl.textContent = pct;
+      scoreEl.className = 'score ' + color;
+    } else {
+      scoreEl.textContent = '--';
+      scoreEl.className = 'score score-none';
+    }
+  }
+  
+  // 标题（双语）
+  const titleEl = node.querySelector('.title');
+  const original = (item.title || '').trim();
+  const zh = (item.title_zh || '').trim();
+  titleEl.textContent = '';
+  if (zh && original && zh !== original) {
+    const primary = document.createElement('span');
+    primary.textContent = zh;
+    const sub = document.createElement('span');
+    sub.className = 'title-sub';
+    sub.textContent = original;
+    titleEl.appendChild(primary);
+    titleEl.appendChild(sub);
+  } else {
+    titleEl.textContent = original || '（无标题）';
+  }
+  titleEl.href = item.url;
+  titleEl.target = '_blank';
+  titleEl.rel = 'noopener noreferrer';
+  
+  return node;
+}
+
+async function renderWechatSection(wechatArticles) {
+  const wechatSection = document.getElementById('wechatSection');
+  const wechatList = document.getElementById('wechatList');
+  const wechatCount = document.getElementById('wechatCount');
+  
+  if (!wechatSection || !wechatList || !wechatCount) return;
+  
+  if (!wechatArticles || wechatArticles.length === 0) {
+    wechatSection.style.display = 'none';
+    return;
+  }
+  
+  // 显示专区
+  wechatSection.style.display = '';
+  
+  // 排序：按时间最新
+  wechatArticles.sort((a, b) => {
+    const ta = a.published_at ? new Date(a.published_at).getTime() : 0;
+    const tb = b.published_at ? new Date(b.published_at).getTime() : 0;
+    return tb - ta;
+  });
+  
+  // 数量
+  wechatCount.textContent = `${wechatArticles.length} 篇`;
+  
+  // 清空并渲染
+  wechatList.innerHTML = '';
+  const fragment = document.createDocumentFragment();
+  for (const item of wechatArticles) {
+    try {
+      fragment.appendChild(renderWechatArticle(item));
+    } catch (e) {
+      console.error('[WECHAT] 渲染失败:', e.message, 'item:', item?.title?.substring(0, 30));
+    }
+  }
+  wechatList.appendChild(fragment);
+}
+
+// 在 init 完成后加载微信公众号文章
+async function initWechatSection() {
+  const wechatArticles = await loadWechatArticles();
+  await renderWechatSection(wechatArticles);
+  console.log('[WECHAT] 微信公众号专区渲染完成:', wechatArticles.length, '篇');
+}
+
+// 在 init 完成后异步加载微信公众号专区
+initWechatSection();
+
+// ═══════════════════════════════════════════════
+// 微信公众号专区实时轮询 (2026-07-16)
+// ═══════════════════════════════════════════════
+
+// 轮询间隔：30秒
+const WECHAT_POLL_INTERVAL_MS = 30000;
+
+async function pollWechatSection() {
+  try {
+    // 检查 manual 文件的最后修改时间
+    const res = await fetch('./data/wechat-manual.json?t=' + Date.now());
+    if (!res.ok) return;
+    const data = await res.json();
+    if (data && data.articles && data.articles.length > 0) {
+      // 更新 wechat 专区
+      await renderWechatSection(data.articles);
+    }
+  } catch (e) {
+    // 静默失败
+  }
+}
+
+// 启动轮询
+if (typeof pollWechatSection === 'function') {
+  setInterval(pollWechatSection, WECHAT_POLL_INTERVAL_MS);
+  // 首次立即加载
+  pollWechatSection();
+}

@@ -884,3 +884,75 @@ summary:focus-visible {
     flex-direction: column;
   }
 }
+
+/* ═══════════════════════════════════════════════
+   微信公众号专区样式 (2026-07-16)
+   ═══════════════════════════════════════════════ */
+
+.wechat-section {
+  margin-top: 16px;
+  border: 1px solid rgba(0, 128, 0, 0.2);
+  background: linear-gradient(135deg, var(--surface) 0%, rgba(0, 128, 0, 0.03) 100%);
+}
+
+.wechat-section .list-head {
+  background: linear-gradient(135deg, var(--surface-soft) 0%, rgba(0, 128, 0, 0.05) 100%);
+  border-bottom: 1px solid rgba(0, 128, 0, 0.15);
+}
+
+.wechat-section .list-head h2 {
+  font-size: 18px;
+}
+
+.wechat-section .wechat-list {
+  /* 复用 news-list 的 grid 布局 */
+}
+
+.wechat-section .wechat-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border: 1px solid rgba(0, 128, 0, 0.3);
+  border-radius: 999px;
+  font-size: 11px;
+  color: var(--good);
+  background: rgba(0, 128, 0, 0.06);
+  margin-right: 4px;
+}
+
+.wechat-section .news-card .category.kind-wechat {
+  border-color: rgba(0, 128, 0, 0.34);
+  color: var(--good);
+}
+
+/* 微信公众号来源高亮 */
+.wechat-section .site {
+  color: var(--good);
+  font-weight: 700;
+}
+
+/* 微信公众号文章标题稍小一号 */
+.wechat-section .title {
+  font-size: 15px;
+}
+
+/* 微信公众号专区折叠面板 */
+.wechat-toggle {
+  display: none; /* 默认隐藏，有数据时显示 */
+  margin-top: 8px;
+  padding: 8px 12px;
+  background: rgba(0, 128, 0, 0.05);
+  border: 1px dashed rgba(0, 128, 0, 0.2);
+  border-radius: var(--radius);
+  font-size: 13px;
+  color: var(--good);
+  cursor: pointer;
+  text-align: center;
+}
+
+.wechat-toggle:hover {
+  background: rgba(0, 128, 0, 0.1);
+}
+
+.wechat-toggle.show {
+  display: block;
+}

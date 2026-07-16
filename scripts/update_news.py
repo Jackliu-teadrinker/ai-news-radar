@@ -479,6 +479,25 @@ def run(output_dir: str, window_hours: int, opml_path: str, archive_days: int, w
 
     print(f"[INFO] Raw unique: {len(all_items)} (intra-run dedup: {total_dedup})")
 
+    # ── Inject WeChat articles (optional) ──
+    wechat_articles = []
+    wechat_enabled = os.environ.get('WECHAT_COLLECTOR_ENABLED', '1').lower() in ('1', 'true', 'yes')
+    if wechat_enabled:
+        try:
+            script_dir = os.path.dirname(os.path.abspath(__file__))
+            sys.path.insert(0, script_dir)
+            from wechat_collector import collect_wechat_articles as _collect_wechat
+            wechat_articles = _collect_wechat(
+                keywords=os.environ.get('WECHAT_KEYWORDS', '').split(',') if os.environ.get('WECHAT_KEYWORDS') else None,
+                hours=int(os.environ.get('WECHAT_HOURS', '24')),
+                max_per_keyword=int(os.environ.get('WECHAT_MAX_PER_KW', '10')),
+                include_manual=True,
+            )
+            print(f"[INFO] WeChat articles: {len(wechat_articles)} (WECHAT_COLLECTOR_ENABLED={wechat_enabled})")
+        except Exception as e:
+            print(f"[WARN] WeChat collection skipped: {e}")
+            wechat_articles = []
+
     # BUG#1 FIX: Cross-feed deduplication
     # Items from different feeds may have different item_id but same title
     all_items, cross_dup = cross_feed_deduplicate(all_items)
@@ -557,6 +576,11 @@ def run(output_dir: str, window_hours: int, opml_path: str, archive_days: int, w
         print(f"  [WARN] ... and {bad_ts_count - 3} more unparseable published_at")
     print(f"[INFO] After time window: {len(time_filtered)} (from {len(clean_items)} clean, {missing_ts_count} missing_ts, {bad_ts_count} bad_ts)")
     clean_items = time_filtered
+
+    # ── Merge WeChat articles (skip time window, already "today") ──
+    if wechat_articles:
+        clean_items.extend(wechat_articles)
+        print(f"[INFO] Merged {len(wechat_articles)} WeChat articles → {len(clean_items)} total")
 
     # Sort by date desc (newest first)
     def sort_key(item):
