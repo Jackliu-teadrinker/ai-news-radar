@@ -589,10 +589,22 @@ def run(output_dir: str, window_hours: int, opml_path: str, archive_days: int, w
     print(f"[INFO] After time window: {len(time_filtered)} (from {len(clean_items)} clean, {missing_ts_count} missing_ts, {bad_ts_count} bad_ts)")
     clean_items = time_filtered
 
-    # ── Merge WeChat articles (skip time window, already "today") ──
+    # ── Merge WeChat articles (also subject to time window) ──
+    # WeChat articles now have real published_at from web scraping.
+    # Apply the same 19:00 CST window filter as RSS articles.
     if wechat_articles:
-        clean_items.extend(wechat_articles)
-        print(f"[INFO] Merged {len(wechat_articles)} WeChat articles → {len(clean_items)} total")
+        wechat_filtered = []
+        for w in wechat_articles:
+            try:
+                dt = datetime.fromisoformat(w['published_at'].replace('Z', '+00:00'))
+                if start_ts <= dt.timestamp() <= now_ts:
+                    wechat_filtered.append(w)
+                else:
+                    print(f"  [WINDOW] Skipping wechat article (outside window): {w['title'][:50]} (published: {w['published_at']})")
+            except Exception:
+                wechat_filtered.append(w)
+        clean_items.extend(wechat_filtered)
+        print(f"[INFO] Merged {len(wechat_filtered)}/{len(wechat_articles)} WeChat articles (after time window filter) → {len(clean_items)} total")
 
     # Sort by date desc (newest first)
     def sort_key(item):
