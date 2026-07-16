@@ -1072,7 +1072,7 @@ async function renderWechatSection(wechatArticles) {
   if (!wechatSection || !wechatList || !wechatCount) return;
   
   if (!wechatArticles || wechatArticles.length === 0) {
-    wechatSection.style.display = 'none';
+    wechatSection.style.display = ''; wechatCount.textContent = '0 篇'; wechatList.innerHTML = '<div class="empty">暂无微信公众号文章。在微信中发送公众号文章链接即可自动添加。</div>';
     return;
   }
   
