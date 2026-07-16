@@ -639,17 +639,44 @@ def run(output_dir: str, window_hours: int, opml_path: str, archive_days: int, w
     generated_at = datetime.now(timezone.utc).isoformat()
     os.makedirs(output_dir, exist_ok=True)
 
-    # latest-24h-min.json: top 500
-    min_out = {'generated_at': generated_at, 'total_items': len(scored[:500]), 'items': scored[:500]}
+    # Compute site_stats for frontend
+    site_stat_map = {}
+    for item in scored:
+        sid = item['site_id']
+        if sid not in site_stat_map:
+            site_stat_map[sid] = {'site_id': sid, 'site_name': item['site_name'], 'count': 0}
+        site_stat_map[sid]['count'] += 1
+    site_stats = sorted(site_stat_map.values(), key=lambda x: -x['count'])
+
+    # latest-24h-min.json: top 500 (AI精选模式)
+    min_out = {
+        'generated_at': generated_at,
+        'total_items': len(scored[:500]),
+        'items_ai': scored[:500],
+        'items_all': scored[:500],
+        'items_all_raw': scored[:500],
+        'site_stats': site_stats,
+        'total_items_raw': len(scored[:500]),
+        'total_items_all_mode': len(scored[:500]),
+    }
     with open(os.path.join(output_dir, 'latest-24h-min.json'), 'w', encoding='utf-8') as f:
         json.dump(min_out, f, ensure_ascii=False, indent=2)
-    print(f"[INFO] latest-24h-min.json: {len(scored[:500])} items")
+    print(f"[INFO] latest-24h-min.json: {len(scored[:500])} items (AI精选)")
 
-    # latest-24h-all.json: all scored
-    all_out = {'generated_at': generated_at, 'total_items': len(scored), 'items': scored}
+    # latest-24h-all.json: all scored (全量模式)
+    all_out = {
+        'generated_at': generated_at,
+        'total_items': len(scored),
+        'items_ai': scored[:500],
+        'items_all': scored,
+        'items_all_raw': scored,
+        'site_stats': site_stats,
+        'total_items_raw': len(scored),
+        'total_items_all_mode': len(scored),
+    }
     with open(os.path.join(output_dir, 'latest-24h-all.json'), 'w', encoding='utf-8') as f:
         json.dump(all_out, f, ensure_ascii=False, indent=2)
-    print(f"[INFO] latest-24h-all.json: {len(scored)} items")
+    print(f"[INFO] latest-24h-all.json: {len(scored)} items (全量)")
 
     # Update archive
     updated = archive_items + scored
