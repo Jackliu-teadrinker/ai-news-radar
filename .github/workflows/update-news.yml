@@ -1,0 +1,104 @@
+name: Update AI News Radar
+
+on:
+  push:
+    branches:
+      - master
+  schedule:
+    - cron: "*/30 * * * *"
+    - cron: "0 3 * * *"
+    - cron: "0 20 * * *"
+  workflow_dispatch:
+
+concurrency:
+  group: update-ai-news-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  update:
+    name: Fetch & deploy
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+          cache-dependency-path: "requirements.txt"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Validate Python syntax
+        run: |
+          python -m py_compile scripts/update_news.py
+          python -m py_compile scripts/curated_collector.py
+
+      - name: Run update
+        env:
+          TZ: Asia/Shanghai
+        run: python scripts/update_news.py --output-dir data --window-hours 24 --rss-opml feeds/follow.example.opml --archive-days 21
+
+      - name: Curate high-quality articles
+        env:
+          TZ: Asia/Shanghai
+        run: python scripts/curated_collector.py --data-path data/latest-24h-min.json --curated-dir data/curated
+
+      - name: Update index.html version hash
+        run: |
+          python << 'PYEOF'
+import re
+from datetime import datetime, timezone
+with open('index.html','r',encoding='utf-8') as f: c=f.read()
+now=datetime.now(timezone.utc).strftime('%Y%m%d%H%M%S')
+c2=re.sub(r'(<script\s+src="\./assets/app\.js\?v=)[^"]*"', r'\g<1>'+now+'"', c)
+if c2==c: print('[WARN] no app.js tag found')
+with open('index.html','w',encoding='utf-8') as f: f.write(c2)
+print('[OK] version updated to', now)
+PYEOF
+
+      - name: Auto-push data
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          CHANGED=$(git diff --name-only HEAD -- data/ scripts/ index.html 2>/dev/null | grep -v "\.json$" || true)
+          if [ -n "$CHANGED" ] || ! git diff --quiet HEAD -- data/latest-24h-min.json data/latest-24h-all.json data/source-status.json 2>/dev/null; then
+            echo "[PUSH] committing data changes..."
+            git config user.email "radar-bot@users.noreply.github.com"
+            git config user.name "radar-bot"
+            git add data/ scripts/feeds/ index.html 2>/dev/null || true
+            git diff --cached --quiet && echo "[SKIP] no changes staged" || {
+              git commit -m "[radar-auto] data refresh $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+              git push origin master || echo "[WARN] push failed, data in artifact will still deploy"
+            }
+          else
+            echo "[SKIP] no data changes"
+          fi
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: "."
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
