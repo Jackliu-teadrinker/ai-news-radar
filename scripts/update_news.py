@@ -599,7 +599,11 @@ def run(output_dir: str, window_hours: int, opml_path: str, archive_days: int, w
         if not item.get('published_at'):
             return datetime.min.replace(tzinfo=timezone.utc)
         try:
-            return datetime.fromisoformat(item['published_at'].replace('Z','+00:00'))
+            dt = datetime.fromisoformat(item['published_at'].replace('Z','+00:00'))
+            # Ensure timezone-aware for safe comparison
+            if dt.tzinfo is None:
+                dt = dt.replace(tzinfo=timezone.utc)
+            return dt
         except Exception:
             return datetime.min.replace(tzinfo=timezone.utc)
 
