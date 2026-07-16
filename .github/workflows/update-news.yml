@@ -60,13 +60,13 @@ jobs:
           TZ: Asia/Shanghai
         run: python scripts/curated_collector.py --data-path data/latest-24h-min.json --curated-dir data/curated
 
-- name: Update index.html version hash
+      - name: Update index.html version hash
         run: python -c "
 import re, sys
 from datetime import datetime, timezone
 with open('index.html','r',encoding='utf-8') as f: c=f.read()
 now=datetime.now(timezone.utc).strftime('%Y%m%d%H%M%S')
-c2=re.sub(r'(<script\s+src=\"\./assets/app\.js\?v=)[^\"]*\"', r'\g<1>'+now+'"', c)
+c2=re.sub(r'(<script\s+src=\\\"./assets/app\.js\?v=)[^\\\"]*\\\"', r'\g<1>'+now+'\\\"', c)
 if c2==c: print('[WARN] no app.js tag found')
 with open('index.html','w',encoding='utf-8') as f: f.write(c2)
 print('[OK] version updated to', now)
@@ -79,7 +79,7 @@ print('[OK] version updated to', now)
           echo "Checking for changed data files..."
           CHANGED=$(git diff --name-only HEAD -- data/ scripts/ index.html 2>/dev/null | grep -v "latest-24h\.json$" | grep -v "\.json$" || true)
           echo "Changed: $CHANGED"
-          if [ -n "$CHANGED" ] || git diff --quiet HEAD -- data/latest-24h-min.json data/latest-24h-all.json data/source-status.json 2>/dev/null; then
+          if [ -n "$CHANGED" ] || ! git diff --quiet HEAD -- data/latest-24h-min.json data/latest-24h-all.json data/source-status.json 2>/dev/null; then
             echo "[PUSH] committing data changes..."
             git config user.email "radar-bot@users.noreply.github.com"
             git config user.name "radar-bot"
