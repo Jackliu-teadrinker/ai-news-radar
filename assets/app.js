@@ -998,7 +998,7 @@ init();
 
 async function loadWechatArticles() {
   try {
-    const res = await fetchWithTimeout('./data/wechat-articles.json?t=' + Date.now());
+    const res = await fetchWithTimeout('./data/wechat-manual.json?t=' + Date.now());
     if (!res.ok) return [];
     const data = await res.json();
     return data.articles || [];
