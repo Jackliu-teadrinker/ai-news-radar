@@ -678,6 +678,29 @@ def run(output_dir: str, window_hours: int, opml_path: str, archive_days: int, w
         json.dump(all_out, f, ensure_ascii=False, indent=2)
     print(f"[INFO] latest-24h-all.json: {len(scored)} items (全量)")
 
+    # Write wechat-articles.json: only articles within the current time window
+    if wechat_articles:
+        wechat_output = {
+            'articles': wechat_filtered,
+            'total_articles': len(wechat_filtered),
+            'last_updated': generated_at,
+            'source': 'auto_filtered_by_time_window',
+        }
+        with open(os.path.join(output_dir, 'wechat-articles.json'), 'w', encoding='utf-8') as f:
+            json.dump(wechat_output, f, ensure_ascii=False, indent=2)
+        print(f"[INFO] wechat-articles.json: {len(wechat_filtered)}/{len(wechat_articles)} articles (within time window)")
+    else:
+        # Write empty wechat-articles.json if no wechat articles
+        wechat_empty = {
+            'articles': [],
+            'total_articles': 0,
+            'last_updated': generated_at,
+            'source': 'auto_filtered_by_time_window',
+        }
+        with open(os.path.join(output_dir, 'wechat-articles.json'), 'w', encoding='utf-8') as f:
+            json.dump(wechat_empty, f, ensure_ascii=False, indent=2)
+        print("[INFO] wechat-articles.json: 0 articles (no wechat articles in time window)")
+
     # Update archive
     updated = archive_items + scored
     save_archive(archive_path, updated)
