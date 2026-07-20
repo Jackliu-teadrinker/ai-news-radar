@@ -998,7 +998,7 @@ init();
 
 async function loadWechatArticles() {
   try {
-    const res = await fetchWithTimeout('./data/wechat-manual.json?t=' + Date.now());
+    const res = await fetchWithTimeout('./data/wechat-articles.json?t=' + Date.now());
     if (!res.ok) return [];
     const data = await res.json();
     return data.articles || [];
@@ -1122,7 +1122,7 @@ const WECHAT_POLL_INTERVAL_MS = 30000;
 async function pollWechatSection() {
   try {
     // 检查 manual 文件的最后修改时间
-    const res = await fetch('./data/wechat-manual.json?t=' + Date.now());
+    const res = await fetch('./data/wechat-articles.json?t=' + Date.now());
     if (!res.ok) return;
     const data = await res.json();
     if (data && data.articles && data.articles.length > 0) {
