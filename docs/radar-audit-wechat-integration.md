@@ -32,8 +32,7 @@
 │  3. 微信公众号 (wechat_collector.py) ← 当前未集成到 workflow     │
 │     ├── 读取 data/wechat-manual.json (手动添加)                  │
 │     ├── 读取 data/wechat-articles.json (旧格式兼容)              │
-│     ├── 尝试抓取微信文章发布时间                                 │
-│     └── 标准化输出为雷达统一格式                                 │
+│     └── 标准化输出                                               │
 │                                                                 │
 │  4. 版本更新 + 推送                                              │
 │     ├── update-index-version.py → 更新 index.html 版本号         │
@@ -85,7 +84,7 @@
 {
   "generated_at": "2026-07-21T05:10:11.074680+00:00",
   "total_items": 281,
-  "items_ai": [...],        // 主列表
+  "items_ai": [...],        // 主列表（281条）
   "items_all": [...],       // 全量列表
   "items_all_raw": [...],   // 原始列表（未过滤）
   "site_stats": [...],
@@ -123,44 +122,60 @@
 
 ---
 
-## 三、已知问题与风险
+## 三、微信板块现状审计
 
-### 3.1 🔴 严重：微信板块未集成到 Workflow
+### 3.1 🔴 核心问题：微信板块未集成到 Workflow
 
-**问题**: `wechat_collector.py` 存在于 `scripts/` 目录，但 **`update-news.yml` 中没有任何步骤调用它**。
+`wechat_collector.py` 存在于 `scripts/` 目录，但 **`update-news.yml` 中没有任何步骤调用它**。
 
 **后果**:
 - `data/wechat-articles.json` 始终为空（`articles: []`）
 - 前端 "微信公众号" 专区显示 "暂无微信公众号文章"
 - `data/wechat-manual.json` 中的 10 篇文章从未被处理
+- 微信公众号板块完全不可用
 
 **根因**: 微信板块是独立开发的，但未纳入 CI/CD pipeline。
 
-### 3.2 🟡 中等：多个微信采集器共存
+### 3.2 🟡 三个微信采集器共存
 
 仓库中有三个微信采集脚本：
-- `scripts/wechat-collector.py` — 旧版（Exa MCP 搜索）
-- `scripts/wechat-collector-v2.py` — 中间版（含 relevance 关键词过滤）
-- `scripts/wechat_collector.py` — 当前版（仅加载手动文章）
 
-**建议**: 保留 `wechat_collector.py` 作为主版本，删除或标记废弃另外两个。
+| 文件 | 行数 | Exa MCP 搜索 | 正文抓取 | 相关性过滤 | 手动文章 | 旧格式兼容 | 复杂度 |
+|------|------|-------------|---------|-----------|---------|-----------|--------|
+| `scripts/wechat-collector.py` | 449 | ✅ 9关键词 | ✅ | ❌ | ✅ | ❌ | 高 |
+| `scripts/wechat-collector-v2.py` | 281 | ✅ 8关键词 | ✅ | ✅ relevance_score | ✅ | ❌ | 中 |
+| `scripts/wechat_collector.py` | 173 | ❌ | ❌ | ❌ | ✅ | ✅ | 低 |
 
-### 3.3 🟢 轻微：`gh_auto_push_data.py` 已不存在
+**推荐保留 `wechat-collector-v2.py`**，理由：
+- 功能最完整：Exa MCP 搜索 + 正文抓取 + 相关性过滤
+- 代码精炼（281行 vs 原版449行）
+- 有 `--no-filter` 开关灵活控制
+- 有 `--manual` 开关仅加载手动文章
+- 输出 `relevance_score` 便于后续评分
 
-- 文件已从仓库移除（commit `93aac2df`）
-- 取而代之的是 workflow 中内联的 `Auto-push data` 步骤
-- 该步骤直接 `git add data/` 推送所有数据文件
+**建议删除**：
+- `wechat-collector.py`（449行）— 已被 v2 取代
+- `wechat_collector.py`（173行）— 功能太弱，仅为手动文章加载
 
-### 3.4 🟡 潜在：`wechat-manual.json` 中有临时占位符
+### 3.3 🟡 手动文章中有占位符
 
-```json
-{
-  "url": "https://mp.weixin.qq.com/s/TEMP_PLACEHOLDER",
-  "title": "机器人奇妙夜落地贵阳..."
-}
+`wechat-manual.json` 中有 1 篇 `TEMP_PLACEHOLDER` URL 的文章：
+```
+"机器人奇妙夜"落地贵阳 擎天租打造"RaaS+文旅"商业新模型
+url: https://mp.weixin.qq.com/s/TEMP_PLACEHOLDER
 ```
 
-这个 `TEMP_PLACEHOLDER` URL 会被 `wechat_collector.py` 处理，可能导致异常。
+这篇文章的 URL 无效，`wechat-collector-v2.py` 会跳过它，但建议在清理旧文件时一并处理。
+
+### 3.4 🟢 前端兼容性好
+
+`app.js` 的 `loadWechatArticles()` 和 `renderWechatSection()` 已实现：
+- 从 `data/wechat-articles.json` 加载文章
+- 独立渲染 "微信公众号" 专区
+- 每 30 秒轮询更新
+- 文章为空时显示 "暂无微信公众号文章"
+
+**这个设计是正确的** — 微信板块与 RSS 板块并行运行，互不干扰。
 
 ---
 
@@ -171,13 +186,13 @@
 微信板块与 RSS 板块 **并行运行，互不干扰**：
 
 ```
-RSS 板块 (update_news.py)          微信板块 (wechat_collector.py)
+RSS 板块 (update_news.py)          微信板块 (wechat-collector-v2.py)
      │                                   │
      ▼                                   ▼
 Google News RSS              wechat-manual.json (手动添加)
-arXiv RSS                    wechat-articles.json (旧格式兼容)
-TechCrunch RSS               微信手机UA抓取 (预留)
-36氪 RSS                     Exa MCP 搜索 (预留)
+arXiv RSS                    Exa MCP 搜索 (可选)
+TechCrunch RSS               微信手机UA抓取正文
+36氪 RSS                     内容相关性过滤 (relevance_score)
      │                                   │
      ▼                                   ▼
 latest-24h-*.json          wechat-articles.json
@@ -186,9 +201,9 @@ latest-24h-*.json          wechat-articles.json
          app.js (前端) 分别渲染两个专区
 ```
 
-### 4.2 正确集成方式
+### 4.2 推荐集成方案
 
-**方案 A：在 workflow 中添加微信采集步骤**
+**方案：在 workflow 中添加微信采集步骤**
 
 在 `update-news.yml` 中，`Curate high-quality articles` 步骤之后添加：
 
@@ -196,72 +211,43 @@ latest-24h-*.json          wechat-articles.json
       - name: Collect WeChat articles
         env:
           TZ: Asia/Shanghai
-        run: python scripts/wechat_collector.py
-
-      - name: Collect WeChat articles (v2 - Exa MCP)
-        env:
-          TZ: Asia/Shanghai
-        run: python scripts/wechat-collector-v2.py
-```
-
-**方案 B：独立 workflow**
-
-创建 `.github/workflows/wechat-collect.yml`，独立调度微信采集：
-
-```yaml
-name: WeChat Article Collector
-on:
-  schedule:
-    - cron: "0 1 * * *"  # 每天北京时间 9:00
-    - cron: "0 13 * * *" # 每天北京时间 21:00
-  workflow_dispatch:
-
-jobs:
-  collect:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.11"
-      - run: pip install -r requirements.txt
-      - name: Run WeChat collector
-        run: python scripts/wechat_collector.py --all
-      - name: Push WeChat data
         run: |
-          git config user.email "radar-bot@users.noreply.github.com"
-          git config user.name "radar-bot"
-          git add data/wechat-articles.json data/wechat-manual.json
-          git commit -m "[wechat] article collection $(date -u +%Y-%m-%dT%H:%M:%SZ)" || echo "no changes"
-          git push origin master || echo "push failed"
+          python scripts/wechat-collector-v2.py \
+            --manual \
+            --output data/wechat-articles.json
 ```
+
+**说明**：
+- `--manual` 参数：只加载 `wechat-manual.json` 中的手动文章
+- `--output data/wechat-articles.json`：输出到前端读取的文件
+- 不需要 Exa MCP 搜索（受限于 GitHub Actions 环境）
+- 手动文章是主要来源，Exa MCP 搜索可在本地运行
 
 ### 4.3 数据格式标准化
 
-wechat_collector.py 输出的文章应与 RSS 文章格式一致：
+`wechat-collector-v2.py` 输出的文章格式与雷达统一格式兼容：
 
 ```python
 {
-    'id': hashlib.sha1(url.encode()).hexdigest()[:32],
+    'id': 'sha1(url)[:16]',
     'title': '文章标题',
     'title_zh': '',  # 微信文章默认中文
     'url': '原文链接',
     'published_at': 'ISO 时间 (UTC)',
-    'category': '微信公众号',
-    'gn_label': 'wechat',
-    'site_name': '公众号名称',
     'source': '微信公众号',
-    'site_id': 'wechat',
-    'description': '摘要/笔记',
-    'ai_score': 90,  # 手动添加的文章默认高分
-    'ai_label': '高价值',
-    'relevance': 0.9,
-    'authority': 0.8,
-    'depth': 0.85,
-    'timeliness': 1.0,
-    'total_score': 90,
+    'description': '摘要/正文片段',
+    'first_seen_at': '采集时间',
+    'relevance_score': 8,  # 内容相关性分数
 }
 ```
+
+前端 `renderWechatArticle()` 期望的字段：
+- `title` — 文章标题
+- `url` — 原文链接
+- `published_at` — 发布时间
+- `source` — 来源（公众号名称）
+- `total_score` — 可选，五维评分（微信文章无 RSS 评分）
+- `title_zh` — 可选，中文翻译
 
 ### 4.4 微信公众号文章采集 SOP
 
@@ -281,13 +267,16 @@ wechat_collector.py 输出的文章应与 RSS 文章格式一致：
 ```
 3. 提交并推送
 
-#### 4.4.2 微信手机UA抓取（备用）
+#### 4.4.2 Exa MCP 搜索（本地开发）
 
-当 `wechat-collector.py` 启用 Exa MCP 搜索时：
-1. 搜索关键词：`site:mp.weixin.qq.com 具身智能`
-2. 对每个结果调用 `wechat-fetch.py`（微信手机UA绕过验证码）
-3. 抓取正文，过滤无关内容
-4. 标准化输出
+在本地运行：
+```bash
+python scripts/wechat-collector-v2.py --search "具身智能" --output wechat-search.json
+```
+
+搜索关键词（DEFAULT_KEYWORDS）：
+- 具身智能、机器人、人形机器人、脑机接口
+- Physical AI、embodied AI、humanoid robot、AI 机器人
 
 #### 4.4.3 注意事项
 
@@ -295,6 +284,7 @@ wechat_collector.py 输出的文章应与 RSS 文章格式一致：
 - **发布时间**: 微信文章时间通常在 HTML 中以 `YYYY-MM-DD HH:MM` 格式出现
 - **验证码**: 微信有反爬机制，需要使用手机 UA 或 Cookie
 - **频率限制**: 建议每 30 秒请求一次，避免被封
+- **相关性过滤**: `wechat-collector-v2.py` 使用 `RELEVANCE_KEYWORDS` 过滤不相关内容
 
 ---
 
@@ -306,9 +296,9 @@ wechat_collector.py 输出的文章应与 RSS 文章格式一致：
 - [ ] 检查 `source-status.json` 中 10/10 feeds OK
 
 ### 5.2 定期维护
-- [ ] 清理 `scripts/wechat-collector.py` 和 `wechat-collector-v2.py`（标记废弃）
-- [ ] 审查 `curated/` 目录，删除过时文件
-- [ ] 检查 `data/` 中是否有重复存储
+- [ ] 删除 `scripts/wechat-collector.py`（449行）和 `scripts/wechat_collector.py`（173行）
+- [ ] 审查 `wechat-manual.json`，清理过期文章
+- [ ] 检查 `curated/` 目录，删除过时文件
 
 ### 5.3 故障排查
 1. **网站无数据**: 检查 `latest-24h-min.json` 的 `generated_at` 和 `items_ai` 长度
@@ -324,7 +314,7 @@ wechat_collector.py 输出的文章应与 RSS 文章格式一致：
 | 模块 | 负责人 | 说明 |
 |------|--------|------|
 | RSS 采集 + 评分 | OpenClaw | Google News/arXiv/TechCrunch/36氪 |
-| 微信采集 | Jack | 微信生态（手动添加 + 抓取） |
+| 微信采集 | Jack | 微信生态（手动添加 + Exa MCP 搜索） |
 | 前端展示 | 双方协商 | app.js 的渲染逻辑 |
 | 精选算法 | OpenClaw | curated_collector.py |
 | 基础设施 | 双方协商 | workflow, deployment |
@@ -332,7 +322,7 @@ wechat_collector.py 输出的文章应与 RSS 文章格式一致：
 ### 6.2 数据隔离原则
 
 - **RSS 板块**: 输出到 `latest-24h-*.json`，由 `update_news.py` 生成
-- **微信板块**: 输出到 `wechat-articles.json`，由 `wechat_collector.py` 生成
+- **微信板块**: 输出到 `wechat-articles.json`，由 `wechat-collector-v2.py` 生成
 - **两者不交叉**：微信文章不进入 RSS 评分系统，RSS 文章不进入微信专区
 
 ### 6.3 提交规范
@@ -361,7 +351,7 @@ wechat_collector.py 输出的文章应与 RSS 文章格式一致：
 .github/workflows/update-news.yml    # 主 workflow
 scripts/update_news.py               # RSS 采集 + 评分
 scripts/curated_collector.py         # 精选算法
-scripts/wechat_collector.py          # 微信采集
+scripts/wechat-collector-v2.py       # 微信采集（推荐）
 assets/app.js                        # 前端逻辑
 data/wechat-manual.json              # 手动微信文章
 data/wechat-articles.json            # 微信文章输出
@@ -373,8 +363,11 @@ data/wechat-articles.json            # 微信文章输出
 # 本地测试 RSS 采集
 python scripts/update_news.py --output-dir ./test-data
 
-# 本地测试微信采集
-python scripts/wechat_collector.py
+# 本地测试微信采集（仅手动文章）
+python scripts/wechat-collector-v2.py --manual --output data/wechat-articles.json
+
+# 本地测试微信采集（Exa MCP 搜索 + 手动）
+python scripts/wechat-collector-v2.py --search "具身智能" --output data/wechat-articles.json
 
 # 本地测试精选
 python scripts/curated_collector.py --data-path ./test-data/latest-24h-min.json
@@ -399,6 +392,7 @@ GITHUB_TOKEN              # GitHub API 令牌（workflow 中设置）
 | 2026-07-14 | v1.0 | 修复 ANCHOR_HOUR 缺失 bug |
 | 2026-07-14 | v1.1 | 修复 index.html 版本号不更新 bug |
 | 2026-07-21 | v1.2 | 审计文档创建，明确微信板块集成方案 |
+| 2026-07-21 | v1.3 | 推荐保留 wechat-collector-v2.py，删除另两个采集器 |
 
 ---
 
