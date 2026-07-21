@@ -6,8 +6,6 @@ on:
       - master
   schedule:
     - cron: "*/30 * * * *"
-    - cron: "0 3 * * *"
-    - cron: "0 20 * * *"
   workflow_dispatch:
 
 concurrency:
@@ -61,7 +59,7 @@ jobs:
         run: python scripts/curated_collector.py --data-path data/latest-24h-min.json --curated-dir data/curated
 
       - name: Update index.html version hash
-        run: python -c "import re; from datetime import datetime, timezone; c=open('index.html','r',encoding='utf-8').read(); now=datetime.now(timezone.utc).strftime('%Y%m%d%H%M%S'); c2=re.sub(r'(<script src=\"\\./assets/app\\.js\\?v=)[^\"]*\"', r'\g<1>'+now+'\"', c); open('index.html','w',encoding='utf-8').write(c2); print('[OK] version:',now)"
+        run: python -c "import re; from datetime import datetime, timezone; c=open('index.html','r',encoding='utf-8').read(); now=datetime.now(timezone.utc).strftime('%Y%m%d%H%M%S'); c2=re.sub(r'(<script src=\"./assets/app\\.js\\?v=)[^\"]*\"', r'\g<1>'+now+'\"', c); open('index.html','w',encoding='utf-8').write(c2); print('[OK] version:',now)"
 
       - name: Auto-push data
         env:
@@ -80,7 +78,7 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
         with:
-          build_type: none
+          enablement: false
         continue-on-error: true
 
       - name: Upload Pages artifact

@@ -31,7 +31,7 @@ def curate(data_path: str, curated_dir: str = CURATED_DIR) -> dict:
     with open(data_path, "r", encoding="utf-8") as f:
         payload = json.load(f)
 
-    items = payload.get("items", [])
+    items = payload.get("items_ai", payload.get("items", []))
     if not items:
         return {"status": "no_items", "added": 0, "total_today": 0}
 
