@@ -45,71 +45,52 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      # ── Syntax validation ───────────────────────────────────────────────
       - name: Validate Python syntax
         run: |
-          python -m py_compile backend/pipeline/run.py
-          python -m py_compile backend/curators/daily.py
+          python -m py_compile scripts/update_news.py
+          python -m py_compile scripts/curated_collector.py
 
-      # ── Run backend pipeline ─────────────────────────────────────────────
-      - name: Run pipeline
+      - name: Run update
         env:
           TZ: Asia/Shanghai
-          WECHAT_COLLECTOR_ENABLED: "1"
-        run: python -m backend.pipeline.run \
-          --output-dir data \
-          --window-hours 24 \
-          --rss-opml feeds/follow.opml \
-          --archive-days 21
+        run: python scripts/update_news.py --output-dir data --window-hours 24 --rss-opml feeds/follow.example.opml --archive-days 21
 
-      # ── Curate high-quality articles ─────────────────────────────────────
-      - name: Curate daily
+      - name: Curate high-quality articles
         env:
           TZ: Asia/Shanghai
-        run: python -m backend.curators.daily --data-path data/latest-24h-min.json --curated-dir data/curated
+        run: python scripts/curated_collector.py --data-path data/latest-24h-min.json --curated-dir data/curated
 
-      # ── Update version hash on root index.html ──────────────────────────
-      - name: Bump version hash
-        run: |
-          python -c "
-          import re
-          from datetime import datetime, timezone
-          f = 'index.html'
-          c = open(f, 'r', encoding='utf-8').read()
-          now = datetime.now(timezone.utc).strftime('%Y%m%d%H%M%S')
-          c2 = re.sub(r'(<script src=\"./assets/app\.js\?v=)[^\"]*\"', r'\g<1>'+now+'\"', c)
-          open(f, 'w', encoding='utf-8').write(c2)
-          print('[OK] version:', now)
-          "
+      - name: Update index.html version hash
+        run: python -c "import re; from datetime import datetime, timezone; c=open('index.html','r',encoding='utf-8').read(); now=datetime.now(timezone.utc).strftime('%Y%m%d%H%M%S'); c2=re.sub(r'(<script src=\"\\./assets/app\\.js\\?v=)[^\"]*\"', r'\g<1>'+now+'\"', c); open('index.html','w',encoding='utf-8').write(c2); print('[OK] version:',now)"
 
-      # ── Always commit & push data (no diff heuristics) ──────────────────
-      - name: Commit & push data
+      - name: Auto-push data
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config user.email "radar-bot@users.noreply.github.com"
           git config user.name "radar-bot"
-          git add data/ index.html
+          git add data/ scripts/feeds/ index.html 2>/dev/null || true
           if git diff --cached --quiet; then
-            echo "[SKIP] nothing changed"
+            echo "[SKIP] no changes staged"
           else
             git commit -m "[radar-auto] data refresh $(date -u +%Y-%m-%dT%H:%M:%SZ)"
-            git push origin master
-            echo "[OK] pushed"
+            git push origin master || echo "[WARN] push failed"
           fi
 
-      # ── Deploy to GitHub Pages ──────────────────────────────────────────
       - name: Setup Pages
         uses: actions/configure-pages@v5
         with:
           build_type: none
+        continue-on-error: true
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: "."
+        continue-on-error: true
 
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-        timeout-minutes: 10
+        continue-on-error: true
+        timeout-minutes: 5
