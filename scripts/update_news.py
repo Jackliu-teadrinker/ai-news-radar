@@ -486,7 +486,7 @@ def run(output_dir: str, window_hours: int, opml_path: str, archive_days: int, w
         try:
             script_dir = os.path.dirname(os.path.abspath(__file__))
             sys.path.insert(0, script_dir)
-            from wechat_collector import collect_wechat_articles as _collect_wechat
+            from wechat_collector_v2 import collect_wechat_articles as _collect_wechat
             wechat_articles = _collect_wechat(
                 keywords=os.environ.get('WECHAT_KEYWORDS', '').split(',') if os.environ.get('WECHAT_KEYWORDS') else None,
                 hours=int(os.environ.get('WECHAT_HOURS', '24')),
