@@ -388,22 +388,25 @@ function getFilteredItems() {
   const q = state.query.trim().toLowerCase();
   let cutoffMs = null;
   if (state.todayMode) {
-    const now = new Date();
     // Jack 2026-06-09: CST 7pm anchor (19:00). cutoff = previous 19:00 anchor in CST.
-    // Mirror Python script: if real now > today 19:00 CST, anchor = today 19:00; else yesterday 19:00.
-    // CST 19:00 = UTC 11:00.
-    // now.getUTCDate() gives the UTC day (may differ from CST day), so shift to CST first to get the CST date.
-    const cstDate = new Date(now.getTime() + 8 * 3600000); // shift to CST (read UTC fields to get CST date)
-    const today1900CstUtc = Date.UTC(
-      cstDate.getUTCFullYear(),
-      cstDate.getUTCMonth(),
-      cstDate.getUTCDate(),
-      11, 0, 0
-    );
-    // Strict > mirrors Python's "if now > today_anchor" (19:00 exact -> yesterday 19:00)
-    const dayOffset = now.getTime() > today1900CstUtc ? 0 : 1;
-    const cst19base = new Date(today1900CstUtc - dayOffset * 24 * 3600000);
-    cutoffMs = cst19base.getTime();
+    // CST 19:00 = UTC 11:00. Compute cutoff in UTC ms for direct getTime() comparison.
+    const now = new Date();
+    const nowUtcMs = now.getTime();
+    const utcHour = now.getUTCHours();
+    const utcMin = now.getUTCMinutes();
+    const utcMsInDay = utcHour * 3600000 + utcMin * 60000;
+    const today1900UtcMs = 11 * 3600000; // UTC 11:00 = CST 19:00
+    // If current UTC time >= 11:00 (CST >= 19:00), cutoff = today UTC 11:00
+    // Otherwise, cutoff = yesterday UTC 11:00
+    let cutoffMs;
+    if (utcMsInDay >= today1900UtcMs) {
+      const today = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate()));
+      cutoffMs = today.getTime() + today1900UtcMs;
+    } else {
+      const yesterday = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate() - 1));
+      cutoffMs = yesterday.getTime() + today1900UtcMs;
+    }
+    cutoffMs = cutoffMs;
   }
   const filtered = modeItems().filter((item) => {
     try {
