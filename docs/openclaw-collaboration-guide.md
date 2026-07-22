@@ -267,4 +267,6 @@ git log --oneline -5
 
 ---
 
+*本文档已合并到 `docs/radar-collaboration-guide.md`，请以该文件为准。本文件保留作为历史参考。*
+
 *本文档由 OpenClaw 创建，供所有维护者参考。如有更新请通知双方。*
