@@ -58,7 +58,8 @@ def parse_opml(opml_path: str) -> list[dict]:
             })
     return feeds
 
-def fetch_feed(feed: dict, timeout: int = 20) -> tuple[dict, list[dict]]:
+def fetch_feed(feed: dict, timeout: int = 20, max_retries: int = 3, base_delay: float = 1.0) -> tuple[dict, list[dict]]:
+    """Fetch RSS feed with exponential backoff retry logic."""
     source_name = feed['text']
     status = {
         'feed': source_name,
@@ -67,63 +68,113 @@ def fetch_feed(feed: dict, timeout: int = 20) -> tuple[dict, list[dict]]:
         'items_unique': 0,
         'error': None,
     }
-    try:
-        resp = requests.get(feed['xmlUrl'], timeout=timeout, headers={
-            'User-Agent': 'Mozilla/5.0 (compatible; AI-News-Radar/1.0)',
-        })
-        resp.raise_for_status()
-        parsed = feedparser.parse(resp.content)
-        items = []
-        for entry in parsed.entries:
-            link = None
-            if hasattr(entry, 'link'):
-                link = entry.link
-            elif hasattr(entry, 'id'):
-                link = entry.id
-            if not link:
-                continue
-            title = None
-            if hasattr(entry, 'title'):
-                title = entry.title.strip()
-            if not title:
-                continue
-            published_at = None
-            if hasattr(entry, 'published_parsed') and entry.published_parsed:
-                try:
-                    dt = datetime(*entry.published_parsed[:6], tzinfo=timezone.utc)
-                    published_at = dt.isoformat()
-                except Exception:
-                    pass
-            elif hasattr(entry, 'updated_parsed') and entry.updated_parsed:
-                try:
-                    dt = datetime(*entry.updated_parsed[:6], tzinfo=timezone.utc)
-                    published_at = dt.isoformat()
-                except Exception:
-                    pass
-            site_name = None
-            if hasattr(entry, 'author_detail') and hasattr(entry.author_detail, 'name'):
-                site_name = entry.author_detail.name
-            elif hasattr(entry, 'author'):
-                site_name = entry.author
+    
+    url = feed['xmlUrl']
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (compatible; AI-News-Radar/1.0)',
+    }
+    
+    last_error = None
+    
+    for attempt in range(max_retries):
+        try:
+            resp = requests.get(url, timeout=timeout, headers=headers)
+            resp.raise_for_status()
+            
+            # Check for rate limiting - retry on 429
+            if resp.status_code == 429:
+                if attempt < max_retries - 1:
+                    delay = base_delay * (2 ** attempt)
+                    print(f"[WARN] Rate limited ({url}), retrying in {delay:.1f}s...")
+                    time.sleep(delay)
+                    continue
+                else:
+                    last_error = f"Rate limited after {max_retries} attempts"
+                    break
+            
+            parsed = feedparser.parse(resp.content)
+            items = []
+            for entry in parsed.entries:
+                link = None
+                if hasattr(entry, 'link'):
+                    link = entry.link
+                elif hasattr(entry, 'id'):
+                    link = entry.id
+                if not link:
+                    continue
+                title = None
+                if hasattr(entry, 'title'):
+                    title = entry.title.strip()
+                if not title:
+                    continue
+                published_at = None
+                if hasattr(entry, 'published_parsed') and entry.published_parsed:
+                    try:
+                        dt = datetime(*entry.published_parsed[:6], tzinfo=timezone.utc)
+                        published_at = dt.isoformat()
+                    except Exception:
+                        pass
+                elif hasattr(entry, 'updated_parsed') and entry.updated_parsed:
+                    try:
+                        dt = datetime(*entry.updated_parsed[:6], tzinfo=timezone.utc)
+                        published_at = dt.isoformat()
+                    except Exception:
+                        pass
+                site_name = None
+                if hasattr(entry, 'author_detail') and hasattr(entry.author_detail, 'name'):
+                    site_name = entry.author_detail.name
+                elif hasattr(entry, 'author'):
+                    site_name = entry.author
+                else:
+                    site_name = source_name
+                description = (entry.summary or entry.description or '')
+                if description:
+                    description = html.unescape(re.sub(r'<[^>]+>', '', description)).strip()
+                items.append({
+                    'title': title,
+                    'url': link,
+                    'published_at': published_at,
+                    'source': source_name,
+                    'site_name': site_name or source_name,
+                    'description': description,
+                })
+            status['success'] = True
+            status['items_total'] = len(items)
+            return status, items
+            
+        except requests.exceptions.ConnectionError as e:
+            last_error = str(e)
+            if attempt < max_retries - 1:
+                delay = base_delay * (2 ** attempt)
+                print(f"[WARN] Connection error ({url}), retrying in {delay:.1f}s... ({attempt+1}/{max_retries})")
+                time.sleep(delay)
             else:
-                site_name = source_name
-            description = (entry.summary or entry.description or '')
-            if description:
-                description = html.unescape(re.sub(r'<[^>]+>', '', description)).strip()
-            items.append({
-                'title': title,
-                'url': link,
-                'published_at': published_at,
-                'source': source_name,
-                'site_name': site_name or source_name,
-                'description': description,
-            })
-        status['success'] = True
-        status['items_total'] = len(items)
-        return status, items
-    except Exception as e:
-        status['error'] = str(e)[:200]
-        return status, []
+                print(f"[ERROR] Max retries exceeded for {url}: {e}")
+        except requests.exceptions.HTTPError as e:
+            # Don't retry on client errors (4xx), only on server errors (5xx) or rate limiting (429)
+            if e.response.status_code >= 500 or e.response.status_code == 429:
+                last_error = str(e)
+                if attempt < max_retries - 1:
+                    delay = base_delay * (2 ** attempt)
+                    print(f"[WARN] HTTP Error {e.response.status_code} ({url}), retrying in {delay:.1f}s... ({attempt+1}/{max_retries})")
+                    time.sleep(delay)
+                else:
+                    print(f"[ERROR] Max retries exceeded for {url}: {e}")
+            else:
+                # Client errors like 404 don't retry
+                status['error'] = f"HTTP {e.response.status_code}"
+                break
+        except Exception as e:
+            last_error = str(e)
+            if attempt < max_retries - 1:
+                delay = base_delay * (2 ** attempt)
+                print(f"[WARN] Exception ({url}), retrying in {delay:.1f}s... ({attempt+1}/{max_retries})")
+                time.sleep(delay)
+            else:
+                print(f"[ERROR] Max retries exceeded for {url}: {e}")
+    
+    status['error'] = last_error if last_error else ("Unknown failure after {max_retries} attempts".format(max_retries=max_retries))
+    return status, []
 
 GN_LABEL_MAP = {
     'GN: humanoid robot':        'humanoid',
