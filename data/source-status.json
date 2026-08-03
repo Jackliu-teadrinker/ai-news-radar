@@ -1,25 +1,18 @@
 {
-  "generated_at": "2026-07-21T05:10:11.074680+00:00",
+  "generated_at": "2026-08-03T10:17:29.593966+00:00",
   "feeds": [
     {
       "feed": "GN: 人形机器人",
       "success": true,
-      "items_total": 104,
-      "items_unique": 104,
-      "error": null
-    },
-    {
-      "feed": "国外机器人资讯",
-      "success": true,
-      "items_total": 102,
-      "items_unique": 102,
+      "items_total": 100,
+      "items_unique": 100,
       "error": null
     },
     {
       "feed": "GN: 具身智能",
       "success": true,
-      "items_total": 102,
-      "items_unique": 94,
+      "items_total": 100,
+      "items_unique": 93,
       "error": null
     },
     {
@@ -27,13 +20,6 @@
       "success": true,
       "items_total": 100,
       "items_unique": 100,
-      "error": null
-    },
-    {
-      "feed": "GN: BCI",
-      "success": true,
-      "items_total": 100,
-      "items_unique": 99,
       "error": null
     },
     {
@@ -46,39 +32,207 @@
     {
       "feed": "国外人形机器人资讯",
       "success": true,
-      "items_total": 100,
-      "items_unique": 66,
+      "items_total": 98,
+      "items_unique": 95,
       "error": null
     },
     {
       "feed": "国外具身智能资讯",
       "success": true,
       "items_total": 100,
-      "items_unique": 97,
+      "items_unique": 99,
+      "error": null
+    },
+    {
+      "feed": "GN: BCI",
+      "success": true,
+      "items_total": 100,
+      "items_unique": 100,
+      "error": null
+    },
+    {
+      "feed": "国外机器人资讯",
+      "success": true,
+      "items_total": 103,
+      "items_unique": 66,
       "error": null
     },
     {
       "feed": "GN: 机器人",
       "success": true,
       "items_total": 100,
-      "items_unique": 75,
+      "items_unique": 59,
       "error": null
     },
     {
       "feed": "GN: 物理AI",
       "success": true,
       "items_total": 100,
-      "items_unique": 93,
+      "items_unique": 99,
       "error": null
+    },
+    {
+      "feed": "DeepMind Blog",
+      "success": false,
+      "items_total": 0,
+      "items_unique": 0,
+      "error": "Unknown failure after 2 attempts"
+    },
+    {
+      "feed": "Robot Report",
+      "success": false,
+      "items_total": 0,
+      "items_unique": 0,
+      "error": "Unknown failure after 2 attempts"
+    },
+    {
+      "feed": "Synchron",
+      "success": false,
+      "items_total": 0,
+      "items_unique": 0,
+      "error": "Unknown failure after 2 attempts"
+    },
+    {
+      "feed": "NVIDIA Blog Robotics",
+      "success": false,
+      "items_total": 0,
+      "items_unique": 0,
+      "error": "Unknown failure after 2 attempts"
+    },
+    {
+      "feed": "MIT News Robotics",
+      "success": false,
+      "items_total": 0,
+      "items_unique": 0,
+      "error": "Unknown failure after 2 attempts"
+    },
+    {
+      "feed": "Meta AI Blog",
+      "success": false,
+      "items_total": 0,
+      "items_unique": 0,
+      "error": "Unknown failure after 2 attempts"
+    },
+    {
+      "feed": "IEEE Spectrum",
+      "success": true,
+      "items_total": 30,
+      "items_unique": 30,
+      "error": null
+    },
+    {
+      "feed": "Neurofounders",
+      "success": false,
+      "items_total": 0,
+      "items_unique": 0,
+      "error": "Unknown failure after 2 attempts"
+    },
+    {
+      "feed": "Neuroscience News",
+      "success": false,
+      "items_total": 0,
+      "items_unique": 0,
+      "error": "Unknown failure after 2 attempts"
+    },
+    {
+      "feed": "ScienceDaily BCI",
+      "success": false,
+      "items_total": 0,
+      "items_unique": 0,
+      "error": "Unknown failure after 2 attempts"
+    },
+    {
+      "feed": "IEEE Brain",
+      "success": true,
+      "items_total": 10,
+      "items_unique": 10,
+      "error": null
+    },
+    {
+      "feed": "HuggingFace Blog",
+      "success": false,
+      "items_total": 0,
+      "items_unique": 0,
+      "error": "object has no attribute 'summary'"
+    },
+    {
+      "feed": "OpenBCI",
+      "success": true,
+      "items_total": 0,
+      "items_unique": 0,
+      "error": null
+    },
+    {
+      "feed": "Robot Magazine",
+      "success": false,
+      "items_total": 0,
+      "items_unique": 0,
+      "error": "Unknown failure after 2 attempts"
+    },
+    {
+      "feed": "雷锋网",
+      "success": true,
+      "items_total": 20,
+      "items_unique": 20,
+      "error": null
+    },
+    {
+      "feed": "Synchron",
+      "success": false,
+      "items_total": 0,
+      "items_unique": 0,
+      "error": "Unknown failure after 2 attempts"
+    },
+    {
+      "feed": "BCI News",
+      "success": false,
+      "items_total": 0,
+      "items_unique": 0,
+      "error": "HTTPSConnectionPool(host='www.bci-news.com', port=443): Max retries exceeded with url: /feeds/posts/default (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1082)')))"
+    },
+    {
+      "feed": "Neuralink",
+      "success": false,
+      "items_total": 0,
+      "items_unique": 0,
+      "error": "Unknown failure after 2 attempts"
+    },
+    {
+      "feed": "IEEE Spectrum Neuro",
+      "success": false,
+      "items_total": 0,
+      "items_unique": 0,
+      "error": "Unknown failure after 2 attempts"
+    },
+    {
+      "feed": "Medical Xpress BCI",
+      "success": false,
+      "items_total": 0,
+      "items_unique": 0,
+      "error": "Unknown failure after 2 attempts"
+    },
+    {
+      "feed": "Neurosity",
+      "success": false,
+      "items_total": 0,
+      "items_unique": 0,
+      "error": "Unknown failure after 2 attempts"
+    },
+    {
+      "feed": "EMOTIV",
+      "success": false,
+      "items_total": 0,
+      "items_unique": 0,
+      "error": "Unknown failure after 2 attempts"
     }
   ],
   "summary": {
     "total_feeds": 10,
-    "successful_feeds": 10,
-    "failed_feeds": 0,
-    "total_items": 864,
-    "deduplicated": 78,
-    "noise_filtered": 18,
+    "successful_feeds": 14,
+    "failed_feeds": 18,
+    "total_items": 943,
+    "deduplicated": 90,
+    "noise_filtered": 32,
     "short_filtered": 0
   }
 }

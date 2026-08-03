@@ -1129,30 +1129,13 @@ const ANCHOR_SOURCES = [
   '机器之心', '量子位', 'LatePost', '罗戈研究', '极链AI', '雷锋网'
 ];
 
-async function loadCustomAnchors() {
-  try {
-    const res = await fetchWithTimeout('./data/custom-anchors.json?t=' + Date.now());
-    if (!res.ok) return null;
-    return await res.json();
-  } catch (e) {
-    console.log('[ANCHOR] Failed to load custom-anchors.json:', e.message);
-    return null;
-  }
-}
-
 async function initAnchorSection() {
-  // Try loading from custom-anchors.json first (7-day window)
-  const customData = await loadCustomAnchors();
-  let anchorItems = [];
+  // Use itemsAll from main feed (same 24h window)
+  if (!state.itemsAll || state.itemsAll.length === 0) return;
   
-  if (customData && customData.items && customData.items.length > 0) {
-    anchorItems = customData.items.filter(item => ANCHOR_SOURCES.includes(item.source));
-  } else if (state.itemsAll && state.itemsAll.length > 0) {
-    // Fallback: use itemsAll from main feed
-    anchorItems = state.itemsAll.filter(item => ANCHOR_SOURCES.includes(item.source));
-  }
-  
+  const anchorItems = state.itemsAll.filter(item => ANCHOR_SOURCES.includes(item.source));
   const anchorSection = document.getElementById('anchorSection');
+  
   if (!anchorSection || anchorItems.length === 0) {
     if (anchorSection) anchorSection.style.display = 'none';
     return;

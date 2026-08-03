@@ -51,7 +51,7 @@ jobs:
       - name: Run update
         env:
           TZ: Asia/Shanghai
-        run: python scripts/update_news.py --output-dir data --window-hours 24 --rss-opml feeds/follow.example.opml --custom-opml feeds/custom.opml --custom-window-hours 168 --archive-days 21
+        run: python scripts/update_news.py --output-dir data --window-hours 24 --rss-opml feeds/follow.example.opml --custom-opml feeds/custom.opml --archive-days 21
 
       - name: Curate high-quality articles
         env:

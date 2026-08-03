@@ -641,7 +641,7 @@ def save_archive(path: str, items: list[dict]):
                    'total_items': len(valid), 'items': valid},
                   f, ensure_ascii=False, indent=2)
 
-def run(output_dir: str, window_hours: int, opml_path: str, archive_days: int, window_from: str = None, custom_opml_path: str = None, custom_window_hours: int = 168):
+def run(output_dir: str, window_hours: int, opml_path: str, archive_days: int, window_from: str = None, custom_opml_path: str = None):
     global ARCHIVE_DAYS
     ARCHIVE_DAYS = archive_days
 
@@ -676,9 +676,9 @@ def run(output_dir: str, window_hours: int, opml_path: str, archive_days: int, w
             d = f", -{n_dup} dup" if n_dup else ""
             print(f"  {ok} {name}: +{status['items_total']} items, {len(unique)} unique{d}")
 
-    # Fetch custom anchor sites (use longer time window for anchors)
+    # Fetch custom anchor sites (same 24h window as main feeds)
     if custom_feeds:
-        print(f"[INFO] Fetching custom anchor sites (window={custom_window_hours}h)...")
+        print(f"[INFO] Fetching custom anchor sites...")
         anchor_items, anchor_seen = [], {}
         now_ts = time.time()
         with ThreadPoolExecutor(max_workers=8) as ex:
@@ -695,11 +695,7 @@ def run(output_dir: str, window_hours: int, opml_path: str, archive_days: int, w
                 print(f"  {ok} {name}: +{status['items_total']} items, {len(unique)} unique{d}")
         print(f"[INFO] Custom anchors raw: {len(anchor_items)} items")
 
-        # Apply custom time window for anchor sites
-        shanghai = ZoneInfo('Asia/Shanghai')
-        now_sh = datetime.now(shanghai)
-        anchor_start = now_sh - timedelta(hours=custom_window_hours)
-        anchor_start_ts = anchor_start.timestamp()
+        # Apply same time window as main feeds
         anchor_filtered = []
         for item in anchor_items:
             if not item.get('published_at'):
@@ -707,28 +703,20 @@ def run(output_dir: str, window_hours: int, opml_path: str, archive_days: int, w
                 continue
             try:
                 dt = datetime.fromisoformat(item['published_at'].replace('Z', '+00:00'))
-                if dt.timestamp() >= anchor_start_ts:
+                if start_ts <= dt.timestamp() <= now_ts:
                     anchor_filtered.append(item)
+                else:
+                    print(f"  [WINDOW] Skipping anchor (outside window): {item.get('title', '')[:40]}")
             except Exception:
                 anchor_filtered.append(item)
-        print(f"[INFO] Custom anchors after {custom_window_hours}h window: {len(anchor_filtered)} items")
+        print(f"[INFO] Custom anchors after {window_hours}h window: {len(anchor_filtered)} items")
 
         # Cross-dedup with main items
         all_urls = {item.get('url') for item in all_items if item.get('url')}
         anchor_unique = [item for item in anchor_filtered if item.get('url') not in all_urls]
         print(f"[INFO] Custom anchors (unique, not in main): {len(anchor_unique)} items")
         all_items.extend(anchor_unique)
-
-        # Write custom-anchors.json for frontend
-        custom_generated_at = datetime.now(timezone.utc).isoformat()
-        custom_out = {
-            'generated_at': custom_generated_at,
-            'total_items': len(anchor_unique),
-            'items': [score_item(item, now_ts) for item in anchor_unique],
-        }
-        with open(os.path.join(output_dir, 'custom-anchors.json'), 'w', encoding='utf-8') as f:
-            json.dump(custom_out, f, ensure_ascii=False, indent=2)
-        print(f"[INFO] custom-anchors.json: {len(anchor_unique)} items")
+        print(f"[INFO] Total items after anchor merge: {len(all_items)}")
 
     print(f"[INFO] Raw unique: {len(all_items)} (intra-run dedup: {total_dedup})")
 
@@ -774,12 +762,23 @@ def run(output_dir: str, window_hours: int, opml_path: str, archive_days: int, w
     print(f"[INFO] Archive: {len(archive_items)} items ({ARCHIVE_DAYS}d)")
 
     # Step 1: Archive dedup FIRST (dedup against ALL archive items for permanent dedup)
+    # Special handling for custom anchor sites: skip archive dedup to ensure they appear daily
     final_items = []
+    anchor_urls = set()
+    if custom_feeds:
+        # Collect anchor URLs to exclude from archive dedup
+        for item in all_items:
+            if item.get('source') in [f['text'] for f in custom_feeds]:
+                anchor_urls.add(item.get('url', ''))
+    
     for item in all_items:
         sid = item_id(item['title'], item['url'])
-        if sid not in archive_seen:
+        # Skip archive dedup for custom anchor sites
+        if item.get('url') in anchor_urls:
             final_items.append(item)
-    print(f"[INFO] After archive dedup: {len(final_items)} (from {len(all_items)} raw)")
+        elif sid not in archive_seen:
+            final_items.append(item)
+    print(f"[INFO] After archive dedup: {len(final_items)} (from {len(all_items)} raw, {len(anchor_urls)} anchor items preserved)")
 
     # Step 2: Noise filter (clean out low-quality items before time window)
     clean_items = []
@@ -985,11 +984,9 @@ if __name__ == '__main__':
     p.add_argument('--rss-opml', default='feeds/follow.example.opml')
     p.add_argument('--custom-opml', default='feeds/custom.opml',
                    help='Path to custom anchor OPML file')
-    p.add_argument('--custom-window-hours', type=int, default=168,
-                   help='Time window for custom anchor sites (default: 168h = 7 days)')
     p.add_argument('--window-from', type=str, default=None,
                         help='Start of time window (YYYY-MM-DD, defaults to yesterday 9AM CST)')
     p.add_argument('--archive-days', type=int, default=21)
     args = p.parse_args()
     custom_opml = args.custom_opml if os.path.exists(args.custom_opml) else None
-    run(args.output_dir, args.window_hours, args.rss_opml, args.archive_days, args.window_from, custom_opml, custom_window_hours=args.custom_window_hours)
+    run(args.output_dir, args.window_hours, args.rss_opml, args.archive_days, args.window_from, custom_opml)
