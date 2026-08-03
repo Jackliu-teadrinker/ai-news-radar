@@ -1,90 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <opml version="2.0">
   <head>
-    <title>Custom Anchors — 机器人/BCI 锚点信源</title>
+    <title>Custom Anchors — 已验证可用源</title>
   </head>
   <body>
-    <!-- ══════════ 机器人锚点（优先 RSS） ══════════ -->
-    <outline text="Robot Report"         type="rss" xmlUrl="https://www.therobotreport.com/feeds/posts/default" />
+    <!-- ══════════ 已验证可用的 RSS ══════════ -->
+    <outline text="TechCrunch Robotics"  type="rss" xmlUrl="https://techcrunch.com/feed/" />
+    <outline text="VentureBeat AI"       type="rss" xmlUrl="https://venturebeat.com/feed/" />
     <outline text="IEEE Spectrum"        type="rss" xmlUrl="https://spectrum.ieee.org/rss/robotics" />
-    <outline text="TechCrunch Robotics"  type="page" />
-    <outline text="VentureBeat AI"       type="page" />
-    <outline text="MIT News Robotics"    type="rss" xmlUrl="https://news.mit.edu/rss/topic/robotics" />
-    <outline text="NVIDIA Blog Robotics" type="rss" xmlUrl="https://blogs.nvidia.com/blog/feed/" />
-    <outline text="DeepMind Blog"        type="rss" xmlUrl="https://deepmind.google/feed/" />
-    <outline text="Meta AI Blog"         type="rss" xmlUrl="https://ai.meta.com/blog/feed/" />
-    <outline text="HuggingFace Blog"     type="rss" xmlUrl="https://huggingface.co/blog/feed.xml" />
-    <outline text="Figure AI"            type="page" />
-    <outline text="Unitree"              type="page" />
-    <outline text="Boston Dynamics"      type="page" />
-    <outline text="Synchron"             type="rss" xmlUrl="https://synchron.com/feeds/posts/default" />
-    <outline text="ROS"                  type="page" />
-    <outline text="arXiv cs.RO"          type="page" />
-    <outline text="Science Robotics"     type="page" />
-    <outline text="Automate.org"         type="page" />
-    <outline text="IFR"                  type="page" />
-    <outline text="IEEE RAS"             type="page" />
-    <outline text="Open Robotics"        type="page" />
-    <outline text="Robot Magazine"       type="rss" xmlUrl="https://www.robotmagazine.com/feeds/posts/default" />
-    <outline text="Wired Robots"         type="page" />
-    <outline text="Reuters Tech"         type="page" />
-    <outline text="CNBC Robotics"        type="page" />
-    <outline text="FreeThink"            type="page" />
-    <outline text="New Scientist"        type="page" />
-    <outline text="Robotics Business Review" type="page" />
-    <outline text="All About Circuits"   type="page" />
-    <outline text="Control Eng"          type="page" />
-    <outline text="Design World"         type="page" />
-    <outline text="Engineering.com"      type="page" />
-    <outline text="Embodied AI"          type="page" />
-    <outline text="1X Technologies"      type="page" />
-    <outline text="Apptronik"            type="page" />
-    <outline text="Agility Robotics"     type="page" />
-    <outline text="Fanuc America"        type="page" />
-    <outline text="KUKA"                 type="page" />
-    <outline text="ABB Robotics"         type="page" />
-    <outline text="Yaskawa"              type="page" />
-    <outline text="Omron"                type="page" />
-    <outline text="Toyota Global"        type="page" />
-    <outline text="Universal Robots"     type="page" />
-    <outline text="Intuitive Surgical"   type="page" />
-    <outline text="TechXplore Robotics"  type="page" />
-
-    <!-- ══════════ BCI 锚点（优先 RSS） ══════════ -->
-    <outline text="BCI News"             type="rss" xmlUrl="https://www.bci-news.com/feeds/posts/default" />
-    <outline text="Neurofounders"        type="rss" xmlUrl="https://www.neurofounders.co/feeds/posts/default" />
-    <outline text="Nature BCI"           type="page" />
-    <outline text="ScienceDaily BCI"     type="rss" xmlUrl="https://www.sciencedaily.com/feeds/mind_brain/brain_computer_interfaces.rss" />
-    <outline text="Neuroscience News"    type="rss" xmlUrl="https://neurosciencenews.com/feeds/neuroscience-terms/brain-computer-interface/" />
     <outline text="IEEE Brain"           type="rss" xmlUrl="https://brain.ieee.org/feed/" />
-    <outline text="OpenBCI"              type="rss" xmlUrl="https://openbci.com/feeds/posts/default" />
-    <outline text="Neuralink"            type="rss" xmlUrl="https://neuralink.com/feeds/posts/default" />
-    <outline text="Synchron"             type="rss" xmlUrl="https://synchron.com/feeds/posts/default" />
-    <outline text="Paradromics"          type="page" />
-    <outline text="Precision Neuro"      type="page" />
-    <outline text="Blackrock Neuro"      type="page" />
-    <outline text="BrainGate"            type="page" />
-    <outline text="MIT BCS"              type="page" />
-    <outline text="IEEE Spectrum Neuro"  type="rss" xmlUrl="https://spectrum.ieee.org/rss/brain-computer-interface" />
-    <outline text="Medical Xpress BCI"   type="rss" xmlUrl="https://medicalxpress.com/feeds/brain-computer+interface/" />
-    <outline text="arXiv BCI"            type="page" />
-    <outline text="BCI Society"          type="page" />
-    <outline text="NextMind"             type="page" />
-    <outline text="Kernel"               type="page" />
-    <outline text="Neurable"             type="page" />
-    <outline text="EMOTIV"               type="rss" xmlUrl="https://www.emotiv.com/feed/" />
-    <outline text="Neurosity"            type="rss" xmlUrl="https://neurosity.co/feeds/posts/default" />
-    <outline text="TechCrunch Neuro"     type="page" />
-    <outline text="Reuters Neuro"        type="page" />
-    <outline text="Wired Neuro"          type="page" />
-    <outline text="Tom's Hardware BCI"   type="page" />
+    <outline text="HuggingFace Blog"     type="rss" xmlUrl="https://huggingface.co/blog/feed.xml" />
+    <outline text="量子位"               type="rss" xmlUrl="https://www.qbitai.com/rss" />
+    <outline text="极链AI"               type="rss" xmlUrl="https://zhidx.com/rss" />
+    <outline text="Wired"                type="rss" xmlUrl="https://www.wired.com/feed/rss" />
 
-    <!-- ══════════ 中文垂直媒体 ══════════ -->
-    <outline text="机器之心"       type="page" />
-    <outline text="量子位"         type="page" />
-    <outline text="LatePost"       type="page" />
-    <outline text="罗戈研究"       type="page" />
-    <outline text="极链AI"         type="page" />
-    <outline text="雷锋网"         type="rss" xmlUrl="https://www.leiphone.com/feed" />
+    <!-- ══════════ Google News RSS 源 (高价值) ══════════ -->
+    <outline text="GN: 人形机器人"           type="rss" xmlUrl="https://news.google.com/rss/search?q=humanoid+robot&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" />
+    <outline text="GN: 具身智能"             type="rss" xmlUrl="https://news.google.com/rss/search?q=embodied+intelligence+OR+embodied+AI&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" />
+    <outline text="GN: 脑机接口"             type="rss" xmlUrl="https://news.google.com/rss/search?q=brain+computer+interface+OR+BCI+OR+neural+interface&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" />
+    <outline text="GN: 机器人"               type="rss" xmlUrl="https://news.google.com/rss/search?q=robot&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" />
+    <outline text="GN: Physical AI"          type="rss" xmlUrl="https://news.google.com/rss/search?q=physical+AI&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" />
+    <outline text="GN: 人形机器人 (中文)"      type="rss" xmlUrl="https://news.google.com/rss/search?q=%E4%BA%BA%E5%BD%A2%E6%9C%BA%E5%99%A8%E4%BA%BA&amp;hl=zh-CN&amp;gl=CN&amp;ceid=CN:zh-Hans" />
+    <outline text="GN: 具身智能 (中文)"        type="rss" xmlUrl="https://news.google.com/rss/search?q=%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD&amp;hl=zh-CN&amp;gl=CN&amp;ceid=CN:zh-Hans" />
+    <outline text="GN: 脑机接口 (中文)"        type="rss" xmlUrl="https://news.google.com/rss/search?q=%E8%84%91%E6%9C%BA%E6%8E%A5%E5%8F%A3+OR+%E7%A5%9E%E7%BB%8F%E6%8E%A5%E5%8F%A3+OR+%E8%84%91%E7%94%B5%E6%8E%A5%E5%8F%A3+OR+%E8%84%91%E6%8E%A5%E5%8F%A3+OR+BCI&amp;hl=zh-CN&amp;gl=CN&amp;ceid=CN:zh-Hans" />
+    <outline text="GN: 机器人 (中文)"          type="rss" xmlUrl="https://news.google.com/rss/search?q=%E6%9C%BA%E5%99%A8%E4%BA%BA&amp;hl=zh-CN&amp;gl=CN&amp;ceid=CN:zh-Hans" />
+    <outline text="GN: 物理AI (中文)"          type="rss" xmlUrl="https://news.google.com/rss/search?q=%E7%89%A9%E7%90%86AI&amp;hl=zh-CN&amp;gl=CN&amp;ceid=CN:zh-Hans" />
   </body>
 </opml>

@@ -184,6 +184,7 @@ def _try_find_rss(base_url: str, timeout: int = 10) -> str | None:
         '/feed', '/feed.xml', '/rss', '/rss.xml', '/atom.xml',
         '/feeds/posts/default', '/feed/rss', '/rss.xml',
         '/feed/atom', '/rss.xml/', '/feed.xml/',
+        '/blog/feed', '/blog/feed.xml',
     ]
     parsed = urlparse(base_url)
     base = f"{parsed.scheme}://{parsed.netloc}"
@@ -193,7 +194,7 @@ def _try_find_rss(base_url: str, timeout: int = 10) -> str | None:
             r = requests.get(base + p, headers=headers, timeout=timeout, allow_redirects=True)
             if r.status_code == 200:
                 text = r.text[:500]
-                if '<?xml' in text or '<rss' in text.lower() or '<feed' in text.lower():
+                if '<?xml' in text or '<rss' in text.lower() or '<feed' in text:
                     return base + p
         except Exception:
             continue
@@ -208,31 +209,112 @@ def fetch_anchor_site(feed: dict, timeout: int = 30, max_items: int = 30) -> tup
 
     if feed_type == 'rss':
         # Direct RSS fetch (xmlUrl already set)
-        return fetch_feed(feed, timeout=timeout, max_retries=2)
-
-    # Try to find RSS first
-    rss_url = _try_find_rss(url, timeout=10)
-    if rss_url:
-        feed_copy = {**feed, 'xmlUrl': rss_url}
-        status_r, items_r = fetch_feed(feed_copy, timeout=timeout, max_retries=2)
-        if status_r['success'] and items_r:
-            status['success'] = True
-            status['items_total'] = len(items_r)
-            return status, items_r
+        try:
+            resp = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (compatible; AI-News-Radar/1.0)'}, timeout=timeout, allow_redirects=True)
+            resp.raise_for_status()
+            parsed = feedparser.parse(resp.content)
+            items = []
+            for entry in parsed.entries[:max_items]:
+                link = entry.get('link') or entry.get('id')
+                if not link:
+                    continue
+                title = entry.get('title', '').strip()
+                if not title:
+                    continue
+                published_at = None
+                if hasattr(entry, 'published_parsed') and entry.published_parsed:
+                    try:
+                        dt = datetime(*entry.published_parsed[:6], tzinfo=timezone.utc)
+                        published_at = dt.isoformat()
+                    except Exception:
+                        pass
+                elif hasattr(entry, 'updated_parsed') and entry.updated_parsed:
+                    try:
+                        dt = datetime(*entry.updated_parsed[:6], tzinfo=timezone.utc)
+                        published_at = dt.isoformat()
+                    except Exception:
+                        pass
+                description = (entry.get('summary') or entry.get('description') or '')
+                if description:
+                    description = html.unescape(re.sub(r'<[^>]+>', '', description)).strip()
+                items.append({
+                    'title': title,
+                    'url': link,
+                    'published_at': published_at,
+                    'source': source_name,
+                    'site_name': source_name,
+                    'description': description[:300],
+                })
+            if items:
+                status['success'] = True
+                status['items_total'] = len(items)
+                return status, items
+            else:
+                status['error'] = 'RSS parsed but no entries found'
+                return status, []
+        except Exception as e:
+            status['error'] = f'RSS fetch failed: {str(e)[:80]}'
+            # Fall through to HTML scraping
+    else:
+        # Try to find RSS first
+        rss_url = _try_find_rss(url, timeout=10)
+        if rss_url:
+            try:
+                resp = requests.get(rss_url, headers={'User-Agent': 'Mozilla/5.0 (compatible; AI-News-Radar/1.0)'}, timeout=timeout, allow_redirects=True)
+                parsed = feedparser.parse(resp.content)
+                items = []
+                for entry in parsed.entries[:max_items]:
+                    link = entry.get('link') or entry.get('id')
+                    if not link:
+                        continue
+                    title = entry.get('title', '').strip()
+                    if not title:
+                        continue
+                    published_at = None
+                    if hasattr(entry, 'published_parsed') and entry.published_parsed:
+                        try:
+                            dt = datetime(*entry.published_parsed[:6], tzinfo=timezone.utc)
+                            published_at = dt.isoformat()
+                        except Exception:
+                            pass
+                    description = (entry.get('summary') or entry.get('description') or '')
+                    if description:
+                        description = html.unescape(re.sub(r'<[^>]+>', '', description)).strip()
+                    items.append({
+                        'title': title,
+                        'url': link,
+                        'published_at': published_at,
+                        'source': source_name,
+                        'site_name': source_name,
+                        'description': description[:300],
+                    })
+                if items:
+                    status['success'] = True
+                    status['items_total'] = len(items)
+                    return status, items
+            except Exception:
+                pass  # Fall through to HTML scraping
 
     # Fallback: HTML scrape
     print(f"[ANCHOR] Scraping {source_name}: {url}")
     try:
-        resp = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (compatible; AI-News-Radar/1.0)'}, timeout=timeout, allow_redirects=True)
+        resp = requests.get(url, headers={
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+            'Accept-Language': 'en-US,en;q=0.5',
+        }, timeout=timeout, allow_redirects=True)
         resp.raise_for_status()
         content = resp.text
         items = []
-        # Try to extract articles from HTML
-        # Pattern 1: Look for article link blocks (common in blog/RSS-style pages)
-        link_pattern = re.compile(r'<a[^>]+href=["\']([^"\']+)["\'][^>]*>([^<]{5,120})</a>', re.I)
+        # Try multiple patterns for article links
+        patterns = [
+            re.compile(r'<a[^>]+href=["\']([^"\']+)["\'][^>]*class=["\'][^"\']*article[^"\']*["\'][^>]*>([^<]{5,120})</a>', re.I),
+            re.compile(r'<a[^>]+href=["\']([^"\']+)["\'][^>]*class=["\'][^"\']*post[^"\']*["\'][^>]*>([^<]{5,120})</a>', re.I),
+            re.compile(r'<a[^>]+href=["\']([^"\']+)["\'][^>]*title=["\']([^"\']+)["\'][^>]*>([^<]{5,120})</a>', re.I),
+            re.compile(r'<a[^>]+href=["\']([^"\']+)["\'][^>]*>([^<]{10,120})</a>', re.I),
+        ]
         title_pattern = re.compile(r'<title[^>]*>([^<]{3,100})</title>', re.I)
         meta_pattern = re.compile(r'<meta[^>]+name=["\']description["\'][^>]+content=["\']([^"\']+)["\']', re.I)
-        pubdate_pattern = re.compile(r'(<time[^>]+datetime=["\']([^"\']+)["\']|<meta[^>]+property=["\']article:published_time["\'][^>]+content=["\']([^"\']+)["\'])', re.I)
 
         # Extract title and description
         title_match = title_pattern.search(content)
@@ -240,34 +322,36 @@ def fetch_anchor_site(feed: dict, timeout: int = 30, max_items: int = 30) -> tup
         desc_match = meta_pattern.search(content)
         page_desc = desc_match.group(1).strip() if desc_match else ''
 
-        # Extract article links
-        links = link_pattern.findall(content)
+        # Try each pattern
         seen_urls = set()
-        for href, link_title in links[:max_items]:
-            # Filter: skip navigation, footer, etc.
-            if any(skip in href.lower() for skip in ['javascript:', '#', 'privacy', 'terms', 'about', 'contact']):
-                continue
-            if len(link_title.strip()) < 5:
-                continue
-            full_url = urljoin(url, href)
-            if full_url in seen_urls:
-                continue
-            seen_urls.add(full_url)
-            clean_title = re.sub(r'\s+', ' ', link_title).strip()
-            items.append({
-                'title': clean_title or page_title,
-                'url': full_url,
-                'published_at': None,
-                'source': source_name,
-                'site_name': source_name,
-                'description': page_desc[:200] if page_desc else '',
-            })
+        for pattern in patterns:
+            matches = pattern.findall(content)
+            for href, link_title in matches[:max_items]:
+                if any(skip in href.lower() for skip in ['javascript:', '#', 'privacy', 'terms', 'about', 'contact', 'feed']):
+                    continue
+                if len(link_title.strip()) < 5:
+                    continue
+                full_url = urljoin(url, href)
+                if full_url in seen_urls:
+                    continue
+                seen_urls.add(full_url)
+                clean_title = re.sub(r'\s+', ' ', link_title).strip()
+                items.append({
+                    'title': clean_title or page_title,
+                    'url': full_url,
+                    'published_at': None,
+                    'source': source_name,
+                    'site_name': source_name,
+                    'description': page_desc[:200] if page_desc else '',
+                })
+            if items:
+                break
+
         if items:
             status['success'] = True
             status['items_total'] = len(items)
             return status, items
         else:
-            # No links found, return empty
             status['error'] = 'No article links found in HTML'
             return status, []
     except Exception as e:

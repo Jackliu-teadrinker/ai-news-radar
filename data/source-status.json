@@ -1,39 +1,18 @@
 {
-  "generated_at": "2026-08-03T10:17:29.593966+00:00",
+  "generated_at": "2026-08-03T10:52:31.124692+00:00",
   "feeds": [
     {
-      "feed": "GN: 人形机器人",
+      "feed": "国外人形机器人资讯",
       "success": true,
-      "items_total": 100,
-      "items_unique": 100,
+      "items_total": 98,
+      "items_unique": 98,
       "error": null
     },
     {
       "feed": "GN: 具身智能",
       "success": true,
       "items_total": 100,
-      "items_unique": 93,
-      "error": null
-    },
-    {
-      "feed": "GN: 脑机接口",
-      "success": true,
-      "items_total": 100,
       "items_unique": 100,
-      "error": null
-    },
-    {
-      "feed": "国外物理AI资讯",
-      "success": true,
-      "items_total": 100,
-      "items_unique": 100,
-      "error": null
-    },
-    {
-      "feed": "国外人形机器人资讯",
-      "success": true,
-      "items_total": 98,
-      "items_unique": 95,
       "error": null
     },
     {
@@ -51,17 +30,17 @@
       "error": null
     },
     {
-      "feed": "国外机器人资讯",
+      "feed": "GN: 人形机器人",
       "success": true,
-      "items_total": 103,
-      "items_unique": 66,
+      "items_total": 100,
+      "items_unique": 94,
       "error": null
     },
     {
-      "feed": "GN: 机器人",
+      "feed": "国外物理AI资讯",
       "success": true,
       "items_total": 100,
-      "items_unique": 59,
+      "items_unique": 96,
       "error": null
     },
     {
@@ -72,74 +51,67 @@
       "error": null
     },
     {
-      "feed": "DeepMind Blog",
-      "success": false,
-      "items_total": 0,
-      "items_unique": 0,
-      "error": "Unknown failure after 2 attempts"
+      "feed": "GN: 脑机接口",
+      "success": true,
+      "items_total": 100,
+      "items_unique": 100,
+      "error": null
     },
     {
-      "feed": "Robot Report",
-      "success": false,
-      "items_total": 0,
-      "items_unique": 0,
-      "error": "Unknown failure after 2 attempts"
+      "feed": "国外机器人资讯",
+      "success": true,
+      "items_total": 100,
+      "items_unique": 63,
+      "error": null
     },
     {
-      "feed": "Synchron",
-      "success": false,
-      "items_total": 0,
-      "items_unique": 0,
-      "error": "Unknown failure after 2 attempts"
+      "feed": "GN: 机器人",
+      "success": true,
+      "items_total": 100,
+      "items_unique": 52,
+      "error": null
     },
     {
-      "feed": "NVIDIA Blog Robotics",
-      "success": false,
-      "items_total": 0,
-      "items_unique": 0,
-      "error": "Unknown failure after 2 attempts"
+      "feed": "TechCrunch Robotics",
+      "success": true,
+      "items_total": 20,
+      "items_unique": 20,
+      "error": null
     },
     {
-      "feed": "MIT News Robotics",
-      "success": false,
-      "items_total": 0,
-      "items_unique": 0,
-      "error": "Unknown failure after 2 attempts"
+      "feed": "极链AI",
+      "success": true,
+      "items_total": 20,
+      "items_unique": 20,
+      "error": null
     },
     {
-      "feed": "Meta AI Blog",
-      "success": false,
-      "items_total": 0,
-      "items_unique": 0,
-      "error": "Unknown failure after 2 attempts"
+      "feed": "量子位",
+      "success": true,
+      "items_total": 10,
+      "items_unique": 10,
+      "error": null
     },
     {
-      "feed": "IEEE Spectrum",
+      "feed": "Wired",
       "success": true,
       "items_total": 30,
       "items_unique": 30,
       "error": null
     },
     {
-      "feed": "Neurofounders",
+      "feed": "GN: 脑机接口",
       "success": false,
       "items_total": 0,
       "items_unique": 0,
-      "error": "Unknown failure after 2 attempts"
+      "error": "No article links found in HTML"
     },
     {
-      "feed": "Neuroscience News",
-      "success": false,
-      "items_total": 0,
-      "items_unique": 0,
-      "error": "Unknown failure after 2 attempts"
-    },
-    {
-      "feed": "ScienceDaily BCI",
-      "success": false,
-      "items_total": 0,
-      "items_unique": 0,
-      "error": "Unknown failure after 2 attempts"
+      "feed": "GN: 具身智能",
+      "success": true,
+      "items_total": 30,
+      "items_unique": 30,
+      "error": null
     },
     {
       "feed": "IEEE Brain",
@@ -150,89 +122,89 @@
     },
     {
       "feed": "HuggingFace Blog",
-      "success": false,
-      "items_total": 0,
-      "items_unique": 0,
-      "error": "object has no attribute 'summary'"
-    },
-    {
-      "feed": "OpenBCI",
       "success": true,
-      "items_total": 0,
-      "items_unique": 0,
+      "items_total": 30,
+      "items_unique": 30,
       "error": null
     },
     {
-      "feed": "Robot Magazine",
-      "success": false,
-      "items_total": 0,
-      "items_unique": 0,
-      "error": "Unknown failure after 2 attempts"
-    },
-    {
-      "feed": "雷锋网",
+      "feed": "GN: 机器人",
       "success": true,
-      "items_total": 20,
-      "items_unique": 20,
+      "items_total": 30,
+      "items_unique": 29,
       "error": null
     },
     {
-      "feed": "Synchron",
-      "success": false,
-      "items_total": 0,
-      "items_unique": 0,
-      "error": "Unknown failure after 2 attempts"
+      "feed": "VentureBeat AI",
+      "success": true,
+      "items_total": 7,
+      "items_unique": 7,
+      "error": null
     },
     {
-      "feed": "BCI News",
-      "success": false,
-      "items_total": 0,
-      "items_unique": 0,
-      "error": "HTTPSConnectionPool(host='www.bci-news.com', port=443): Max retries exceeded with url: /feeds/posts/default (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1082)')))"
+      "feed": "GN: Physical AI",
+      "success": true,
+      "items_total": 30,
+      "items_unique": 29,
+      "error": null
     },
     {
-      "feed": "Neuralink",
+      "feed": "GN: 人形机器人",
       "success": false,
       "items_total": 0,
       "items_unique": 0,
-      "error": "Unknown failure after 2 attempts"
+      "error": "No article links found in HTML"
     },
     {
-      "feed": "IEEE Spectrum Neuro",
-      "success": false,
-      "items_total": 0,
-      "items_unique": 0,
-      "error": "Unknown failure after 2 attempts"
+      "feed": "GN: 人形机器人 (中文)",
+      "success": true,
+      "items_total": 30,
+      "items_unique": 30,
+      "error": null
     },
     {
-      "feed": "Medical Xpress BCI",
-      "success": false,
-      "items_total": 0,
-      "items_unique": 0,
-      "error": "Unknown failure after 2 attempts"
+      "feed": "GN: 具身智能 (中文)",
+      "success": true,
+      "items_total": 30,
+      "items_unique": 28,
+      "error": null
     },
     {
-      "feed": "Neurosity",
-      "success": false,
-      "items_total": 0,
-      "items_unique": 0,
-      "error": "Unknown failure after 2 attempts"
+      "feed": "GN: 物理AI (中文)",
+      "success": true,
+      "items_total": 30,
+      "items_unique": 30,
+      "error": null
     },
     {
-      "feed": "EMOTIV",
-      "success": false,
-      "items_total": 0,
-      "items_unique": 0,
-      "error": "Unknown failure after 2 attempts"
+      "feed": "GN: 脑机接口 (中文)",
+      "success": true,
+      "items_total": 30,
+      "items_unique": 30,
+      "error": null
+    },
+    {
+      "feed": "IEEE Spectrum",
+      "success": true,
+      "items_total": 30,
+      "items_unique": 30,
+      "error": null
+    },
+    {
+      "feed": "GN: 机器人 (中文)",
+      "success": true,
+      "items_total": 30,
+      "items_unique": 15,
+      "error": null
     }
   ],
   "summary": {
     "total_feeds": 10,
-    "successful_feeds": 14,
-    "failed_feeds": 18,
-    "total_items": 943,
-    "deduplicated": 90,
-    "noise_filtered": 32,
+    "successful_feeds": 26,
+    "failed_feeds": 2,
+    "total_items": 1057,
+    "deduplicated": 97,
+    "noise_filtered": 27,
     "short_filtered": 0
   }
 }
