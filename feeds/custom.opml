@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <opml version="2.0">
   <head>
-    <title>Custom Anchors — 已验证可用源</title>
+    <title>Custom Anchors — Google News + 已验证 RSS</title>
   </head>
   <body>
     <!-- ══════════ 已验证可用的 RSS ══════════ -->
@@ -13,17 +13,45 @@
     <outline text="量子位"               type="rss" xmlUrl="https://www.qbitai.com/rss" />
     <outline text="极链AI"               type="rss" xmlUrl="https://zhidx.com/rss" />
     <outline text="Wired"                type="rss" xmlUrl="https://www.wired.com/feed/rss" />
+    <outline text="雷锋网"               type="rss" xmlUrl="https://www.leiphone.com/feed" />
 
-    <!-- ══════════ Google News RSS 源 (高价值) ══════════ -->
-    <outline text="GN: 人形机器人"           type="rss" xmlUrl="https://news.google.com/rss/search?q=humanoid+robot&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" />
-    <outline text="GN: 具身智能"             type="rss" xmlUrl="https://news.google.com/rss/search?q=embodied+intelligence+OR+embodied+AI&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" />
-    <outline text="GN: 脑机接口"             type="rss" xmlUrl="https://news.google.com/rss/search?q=brain+computer+interface+OR+BCI+OR+neural+interface&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" />
-    <outline text="GN: 机器人"               type="rss" xmlUrl="https://news.google.com/rss/search?q=robot&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" />
-    <outline text="GN: Physical AI"          type="rss" xmlUrl="https://news.google.com/rss/search?q=physical+AI&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" />
-    <outline text="GN: 人形机器人 (中文)"      type="rss" xmlUrl="https://news.google.com/rss/search?q=%E4%BA%BA%E5%BD%A2%E6%9C%BA%E5%99%A8%E4%BA%BA&amp;hl=zh-CN&amp;gl=CN&amp;ceid=CN:zh-Hans" />
-    <outline text="GN: 具身智能 (中文)"        type="rss" xmlUrl="https://news.google.com/rss/search?q=%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD&amp;hl=zh-CN&amp;gl=CN&amp;ceid=CN:zh-Hans" />
-    <outline text="GN: 脑机接口 (中文)"        type="rss" xmlUrl="https://news.google.com/rss/search?q=%E8%84%91%E6%9C%BA%E6%8E%A5%E5%8F%A3+OR+%E7%A5%9E%E7%BB%8F%E6%8E%A5%E5%8F%A3+OR+%E8%84%91%E7%94%B5%E6%8E%A5%E5%8F%A3+OR+%E8%84%91%E6%8E%A5%E5%8F%A3+OR+BCI&amp;hl=zh-CN&amp;gl=CN&amp;ceid=CN:zh-Hans" />
-    <outline text="GN: 机器人 (中文)"          type="rss" xmlUrl="https://news.google.com/rss/search?q=%E6%9C%BA%E5%99%A8%E4%BA%BA&amp;hl=zh-CN&amp;gl=CN&amp;ceid=CN:zh-Hans" />
-    <outline text="GN: 物理AI (中文)"          type="rss" xmlUrl="https://news.google.com/rss/search?q=%E7%89%A9%E7%90%86AI&amp;hl=zh-CN&amp;gl=CN&amp;ceid=CN:zh-Hans" />
+    <!-- ══════════ Google News RSS — 英文关键词 ══════════ -->
+    <outline text="GN: humanoid robot"           type="rss" xmlUrl="https://news.google.com/rss/search?q=humanoid+robot&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" />
+    <outline text="GN: embodied AI"              type="rss" xmlUrl="https://news.google.com/rss/search?q=embodied+intelligence+OR+embodied+AI&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" />
+    <outline text="GN: brain-computer interface" type="rss" xmlUrl="https://news.google.com/rss/search?q=brain+computer+interface+OR+BCI+OR+neural+interface&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" />
+    <outline text="GN: robot"                    type="rss" xmlUrl="https://news.google.com/rss/search?q=robot&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" />
+    <outline text="GN: Physical AI"              type="rss" xmlUrl="https://news.google.com/rss/search?q=physical+AI&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" />
+    <outline text="GN: Boston Dynamics"          type="rss" xmlUrl="https://news.google.com/rss/search?q=Boston+Dynamics&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" />
+    <outline text="GN: Figure AI"                type="rss" xmlUrl="https://news.google.com/rss/search?q=Figure+AI&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" />
+    <outline text="GN: Unitree"                  type="rss" xmlUrl="https://news.google.com/rss/search?q=Unitree&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" />
+    <outline text="GN: Tesla Optimus"            type="rss" xmlUrl="https://news.google.com/rss/search?q=Tesla+Optimus&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" />
+    <outline text="GN: neuralink"                type="rss" xmlUrl="https://news.google.com/rss/search?q=Neuralink&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" />
+    <outline text="GN: MIT robotics"             type="rss" xmlUrl="https://news.google.com/rss/search?q=MIT+robotics&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" />
+    <outline text="GN: Stanford robotics"        type="rss" xmlUrl="https://news.google.com/rss/search?q=Stanford+robotics&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" />
+    <outline text="GN: deep learning robot"      type="rss" xmlUrl="https://news.google.com/rss/search?q=deep+learning+robot&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" />
+    <outline text="GN: autonomous robot"         type="rss" xmlUrl="https://news.google.com/rss/search?q=autonomous+robot&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" />
+    <outline text="GN: robot vacuum"             type="rss" xmlUrl="https://news.google.com/rss/search?q=robot+vacuum&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" />
+    <outline text="GN: industrial robot"         type="rss" xmlUrl="https://news.google.com/rss/search?q=industrial+robot&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" />
+    <outline text="GN: surgical robot"           type="rss" xmlUrl="https://news.google.com/rss/search?q=surgical+robot&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" />
+    <outline text="GN: robot learning"           type="rss" xmlUrl="https://news.google.com/rss/search?q=robot+learning&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" />
+    <outline text="GN: collaborative robot"      type="rss" xmlUrl="https://news.google.com/rss/search?q=collaborative+robot+OR+cobot&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" />
+    <outline text="GN: robot manipulation"       type="rss" xmlUrl="https://news.google.com/rss/search?q=robot+manipulation&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" />
+
+    <!-- ══════════ Google News RSS — 中文关键词 ══════════ -->
+    <outline text="GN: 人形机器人"                 type="rss" xmlUrl="https://news.google.com/rss/search?q=%E4%BA%BA%E5%BD%A2%E6%9C%BA%E5%99%A8%E4%BA%BA&amp;hl=zh-CN&amp;gl=CN&amp;ceid=CN:zh-Hans" />
+    <outline text="GN: 具身智能"                   type="rss" xmlUrl="https://news.google.com/rss/search?q=%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD&amp;hl=zh-CN&amp;gl=CN&amp;ceid=CN:zh-Hans" />
+    <outline text="GN: 脑机接口"                   type="rss" xmlUrl="https://news.google.com/rss/search?q=%E8%84%91%E6%9C%BA%E6%8E%A5%E5%8F%A3+OR+%E7%A5%9E%E7%BB%8F%E6%8E%A5%E5%8F%A3+OR+%E8%84%91%E7%94%B5%E6%8E%A5%E5%8F%A3+OR+%E8%84%91%E6%8E%A5%E5%8F%A3+OR+BCI&amp;hl=zh-CN&amp;gl=CN&amp;ceid=CN:zh-Hans" />
+    <outline text="GN: 机器人"                     type="rss" xmlUrl="https://news.google.com/rss/search?q=%E6%9C%BA%E5%99%A8%E4%BA%BA&amp;hl=zh-CN&amp;gl=CN&amp;ceid=CN:zh-Hans" />
+    <outline text="GN: 物理AI"                     type="rss" xmlUrl="https://news.google.com/rss/search?q=%E7%89%A9%E7%90%86AI&amp;hl=zh-CN&amp;gl=CN&amp;ceid=CN:zh-Hans" />
+    <outline text="GN: 宇树科技"                   type="rss" xmlUrl="https://news.google.com/rss/search?q=%E5%AE%87%E6%9C%A8%E7%A7%91%E6%8A%80&amp;hl=zh-CN&amp;gl=CN&amp;ceid=CN:zh-Hans" />
+    <outline text="GN: 智元机器人"                 type="rss" xmlUrl="https://news.google.com/rss/search?q=%E6%99%BA%E5%85%83%E6%9C%BA%E5%99%A8%E4%BA%BA&amp;hl=zh-CN&amp;gl=CN&amp;ceid=CN:zh-Hans" />
+    <outline text="GN: 傅利叶智能"                 type="rss" xmlUrl="https://news.google.com/rss/search?q=%E5%82%85%E5%88%A9%E5%8F%B6%E6%99%BA%E8%83%BD&amp;hl=zh-CN&amp;gl=CN&amp;ceid=CN:zh-Hans" />
+    <outline text="GN: 优必选"                     type="rss" xmlUrl="https://news.google.com/rss/search?q=%E4%BC%98%E5%BF%85%E9%80%89&amp;hl=zh-CN&amp;gl=CN&amp;ceid=CN:zh-Hans" />
+    <outline text="GN: 机械臂"                     type="rss" xmlUrl="https://news.google.com/rss/search?q=%E6%9C%BA%E6%A2%B0%E8%87%82&amp;hl=zh-CN&amp;gl=CN&amp;ceid=CN:zh-Hans" />
+    <outline text="GN: 灵巧手"                     type="rss" xmlUrl="https://news.google.com/rss/search?q=%E7%81%B5%E5%B7%A7%E6%89%8B&amp;hl=zh-CN&amp;gl=CN&amp;ceid=CN:zh-Hans" />
+    <outline text="GN: 自动驾驶机器人"             type="rss" xmlUrl="https://news.google.com/rss/search?q=%E8%87%AA%E5%8A%A8%E9%A9%BE%E9%A9%B6+%E6%9C%BA%E5%99%A8%E4%BA%BA&amp;hl=zh-CN&amp;gl=CN&amp;ceid=CN:zh-Hans" />
+    <outline text="GN: 工业机器人与人"             type="rss" xmlUrl="https://news.google.com/rss/search?q=%E5%B7%A5%E4%B8%9A%E6%9C%BA%E5%99%A8%E4%BA%BA&amp;hl=zh-CN&amp;gl=CN&amp;ceid=CN:zh-Hans" />
+    <outline text="GN: 服务机器人"                 type="rss" xmlUrl="https://news.google.com/rss/search?q=%E6%9C%8D%E5%8A%A1%E6%9C%BA%E5%99%A8%E4%BA%BA&amp;hl=zh-CN&amp;gl=CN&amp;ceid=CN:zh-Hans" />
+    <outline text="GN: 人形机器人融资"             type="rss" xmlUrl="https://news.google.com/rss/search?q=%E4%BA%BA%E5%BD%A2%E6%9C%BA%E5%99%A8%E4%BA%BA+%E8%9E%8D%E8%B5%84&amp;hl=zh-CN&amp;gl=CN&amp;ceid=CN:zh-Hans" />
   </body>
 </opml>

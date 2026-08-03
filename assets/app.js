@@ -1120,22 +1120,46 @@ initWechatSection();
 // ═══════════════════════════════════════════════
 
 const ANCHOR_SOURCES = [
-  'Robot Report', 'IEEE Spectrum', 'MIT News Robotics', 'NVIDIA Blog Robotics',
-  'DeepMind Blog', 'Meta AI Blog', 'HuggingFace Blog', 'Figure AI', 'Unitree',
-  'Boston Dynamics', '1X Technologies', 'Apptronik', 'Agility Robotics',
-  'Embodied AI', 'BCI News', 'Neurofounders', 'ScienceDaily BCI',
-  'Neuroscience News', 'IEEE Brain', 'OpenBCI', 'Neuralink', 'Synchron',
-  'IEEE Spectrum Neuro', 'Medical Xpress BCI', 'EMOTIV', 'Neurosity',
-  '机器之心', '量子位', 'LatePost', '罗戈研究', '极链AI', '雷锋网'
+  'TechCrunch Robotics', 'VentureBeat AI', 'IEEE Spectrum', 'IEEE Brain',
+  'HuggingFace Blog', '量子位', '极链AI', 'Wired', '雷锋网',
+  'GN: 人形机器人', 'GN: 具身智能', 'GN: 脑机接口', 'GN: 机器人',
+  'GN: Physical AI', 'GN: 人形机器人 (中文)', 'GN: 具身智能 (中文)',
+  'GN: 脑机接口 (中文)', 'GN: 机器人 (中文)', 'GN: 物理AI (中文)',
+  'GN: humanoid robot', 'GN: embodied AI', 'GN: brain-computer interface',
+  'GN: robot', 'GN: Boston Dynamics', 'GN: Unitree', 'GN: Figure AI',
+  'GN: Tesla Optimus', 'GN: neuralink', 'GN: MIT robotics', 'GN: Stanford robotics',
+  'GN: autonomous robot', 'GN: surgical robot', 'GN: deep learning robot',
+  'GN: robot vacuum', 'GN: robot learning', 'GN: industrial robot',
+  'GN: collaborative robot', 'GN: robot manipulation',
+  'GN: 宇树科技', 'GN: 傅利叶智能', 'GN: 智元机器人',
+  'GN: 自动驾驶机器人', 'GN: 灵巧手', 'GN: 机械臂', 'GN: 优必选',
+  'GN: 工业机器人与人', 'GN: 服务机器人', 'GN: 人形机器人融资'
 ];
 
+async function loadCustomAnchors() {
+  try {
+    const res = await fetchWithTimeout('./data/custom-anchors.json?t=' + Date.now());
+    if (!res.ok) return null;
+    return await res.json();
+  } catch (e) {
+    console.log('[ANCHOR] Failed to load custom-anchors.json:', e.message);
+    return null;
+  }
+}
+
 async function initAnchorSection() {
-  // Use itemsAll from main feed (same 24h window)
-  if (!state.itemsAll || state.itemsAll.length === 0) return;
+  // Load from custom-anchors.json (7-day window)
+  const customData = await loadCustomAnchors();
+  let anchorItems = [];
 
-  const anchorItems = state.itemsAll.filter(item => ANCHOR_SOURCES.includes(item.source));
+  if (customData && customData.items && customData.items.length > 0) {
+    anchorItems = customData.items.filter(item => ANCHOR_SOURCES.includes(item.source));
+  } else if (state.itemsAll && state.itemsAll.length > 0) {
+    // Fallback: use itemsAll from main feed
+    anchorItems = state.itemsAll.filter(item => ANCHOR_SOURCES.includes(item.source));
+  }
+
   const anchorSection = document.getElementById('anchorSection');
-
   if (!anchorSection || anchorItems.length === 0) {
     if (anchorSection) anchorSection.style.display = 'none';
     return;

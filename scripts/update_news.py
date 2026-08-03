@@ -179,7 +179,6 @@ def fetch_feed(feed: dict, timeout: int = 20, max_retries: int = 3, base_delay: 
 # ── Custom anchor site fetcher (RSS + HTML page fallback) ──────────────
 def _try_find_rss(base_url: str, timeout: int = 10) -> str | None:
     """Try common RSS feed URLs and return the first successful one."""
-    import re as _re
     candidate_paths = [
         '/feed', '/feed.xml', '/rss', '/rss.xml', '/atom.xml',
         '/feeds/posts/default', '/feed/rss', '/rss.xml',
@@ -200,6 +199,85 @@ def _try_find_rss(base_url: str, timeout: int = 10) -> str | None:
             continue
     return None
 
+def _extract_articles_from_html(url: str, source_name: str, max_items: int = 30) -> list[dict]:
+    """Extract article links from HTML page using BeautifulSoup."""
+    try:
+        from bs4 import BeautifulSoup
+    except ImportError:
+        return []
+    
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+        'Accept-Language': 'en-US,en;q=0.9',
+    }
+    
+    try:
+        resp = requests.get(url, headers=headers, timeout=15, verify=False)
+        resp.raise_for_status()
+        content = resp.text
+        soup = BeautifulSoup(content, 'html.parser')
+        
+        items = []
+        seen_urls = set()
+        
+        # Pattern 1: Known article link classes
+        article_patterns = [
+            ('a', {'class': 'term-page--news-article--item--title--link'}),
+            ('a', {'class': 'article-link'}),
+            ('a', {'class': 'post-title'}),
+            ('a', {'class': 'news-title'}),
+            ('a', {'class': 'story-link'}),
+        ]
+        
+        # Try patterns
+        for tag, attrs in article_patterns:
+            links = soup.find_all(tag, attrs=attrs)
+            for a in links[:max_items]:
+                href = a.get('href', '')
+                title = a.get_text(strip=True)
+                if href and title and len(title) > 10:
+                    full_url = urljoin(url, href)
+                    if full_url not in seen_urls:
+                        seen_urls.add(full_url)
+                        items.append({
+                            'title': title[:120],
+                            'url': full_url,
+                            'published_at': None,
+                            'source': source_name,
+                            'site_name': source_name,
+                            'description': '',
+                        })
+            if items:
+                break
+        
+        # Fallback: find all links with date patterns in href
+        if not items:
+            for a in soup.find_all('a', href=True):
+                href = a.get('href', '')
+                title = a.get_text(strip=True)
+                if href and title and len(title) > 10:
+                    # Check if href contains date pattern
+                    if '/20' in href or '/blog/' in href or '/news/' in href or '/article' in href.lower():
+                        full_url = urljoin(url, href)
+                        if full_url not in seen_urls:
+                            seen_urls.add(full_url)
+                            items.append({
+                                'title': title[:120],
+                                'url': full_url,
+                                'published_at': None,
+                                'source': source_name,
+                                'site_name': source_name,
+                                'description': '',
+                            })
+                if len(items) >= max_items:
+                    break
+        
+        return items
+    except Exception as e:
+        print(f"[ANCHOR] HTML scrape error for {source_name}: {str(e)[:80]}")
+        return []
+
 def fetch_anchor_site(feed: dict, timeout: int = 30, max_items: int = 30) -> tuple[dict, list[dict]]:
     """Fetch a custom anchor site: try RSS first, fallback to HTML scraping."""
     source_name = feed['text']
@@ -208,9 +286,9 @@ def fetch_anchor_site(feed: dict, timeout: int = 30, max_items: int = 30) -> tup
     status = {'feed': source_name, 'success': False, 'items_total': 0, 'items_unique': 0, 'error': None}
 
     if feed_type == 'rss':
-        # Direct RSS fetch (xmlUrl already set)
+        # Direct RSS fetch
         try:
-            resp = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (compatible; AI-News-Radar/1.0)'}, timeout=timeout, allow_redirects=True)
+            resp = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (compatible; AI-News-Radar/1.0)'}, timeout=timeout, allow_redirects=True, verify=False)
             resp.raise_for_status()
             parsed = feedparser.parse(resp.content)
             items = []
@@ -225,12 +303,6 @@ def fetch_anchor_site(feed: dict, timeout: int = 30, max_items: int = 30) -> tup
                 if hasattr(entry, 'published_parsed') and entry.published_parsed:
                     try:
                         dt = datetime(*entry.published_parsed[:6], tzinfo=timezone.utc)
-                        published_at = dt.isoformat()
-                    except Exception:
-                        pass
-                elif hasattr(entry, 'updated_parsed') and entry.updated_parsed:
-                    try:
-                        dt = datetime(*entry.updated_parsed[:6], tzinfo=timezone.utc)
                         published_at = dt.isoformat()
                     except Exception:
                         pass
@@ -260,7 +332,7 @@ def fetch_anchor_site(feed: dict, timeout: int = 30, max_items: int = 30) -> tup
         rss_url = _try_find_rss(url, timeout=10)
         if rss_url:
             try:
-                resp = requests.get(rss_url, headers={'User-Agent': 'Mozilla/5.0 (compatible; AI-News-Radar/1.0)'}, timeout=timeout, allow_redirects=True)
+                resp = requests.get(rss_url, headers={'User-Agent': 'Mozilla/5.0 (compatible; AI-News-Radar/1.0)'}, timeout=timeout, allow_redirects=True, verify=False)
                 parsed = feedparser.parse(resp.content)
                 items = []
                 for entry in parsed.entries[:max_items]:
@@ -295,67 +367,15 @@ def fetch_anchor_site(feed: dict, timeout: int = 30, max_items: int = 30) -> tup
             except Exception:
                 pass  # Fall through to HTML scraping
 
-    # Fallback: HTML scrape
+    # Fallback: HTML scrape with BeautifulSoup
     print(f"[ANCHOR] Scraping {source_name}: {url}")
-    try:
-        resp = requests.get(url, headers={
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-            'Accept-Language': 'en-US,en;q=0.5',
-        }, timeout=timeout, allow_redirects=True)
-        resp.raise_for_status()
-        content = resp.text
-        items = []
-        # Try multiple patterns for article links
-        patterns = [
-            re.compile(r'<a[^>]+href=["\']([^"\']+)["\'][^>]*class=["\'][^"\']*article[^"\']*["\'][^>]*>([^<]{5,120})</a>', re.I),
-            re.compile(r'<a[^>]+href=["\']([^"\']+)["\'][^>]*class=["\'][^"\']*post[^"\']*["\'][^>]*>([^<]{5,120})</a>', re.I),
-            re.compile(r'<a[^>]+href=["\']([^"\']+)["\'][^>]*title=["\']([^"\']+)["\'][^>]*>([^<]{5,120})</a>', re.I),
-            re.compile(r'<a[^>]+href=["\']([^"\']+)["\'][^>]*>([^<]{10,120})</a>', re.I),
-        ]
-        title_pattern = re.compile(r'<title[^>]*>([^<]{3,100})</title>', re.I)
-        meta_pattern = re.compile(r'<meta[^>]+name=["\']description["\'][^>]+content=["\']([^"\']+)["\']', re.I)
-
-        # Extract title and description
-        title_match = title_pattern.search(content)
-        page_title = title_match.group(1).strip() if title_match else source_name
-        desc_match = meta_pattern.search(content)
-        page_desc = desc_match.group(1).strip() if desc_match else ''
-
-        # Try each pattern
-        seen_urls = set()
-        for pattern in patterns:
-            matches = pattern.findall(content)
-            for href, link_title in matches[:max_items]:
-                if any(skip in href.lower() for skip in ['javascript:', '#', 'privacy', 'terms', 'about', 'contact', 'feed']):
-                    continue
-                if len(link_title.strip()) < 5:
-                    continue
-                full_url = urljoin(url, href)
-                if full_url in seen_urls:
-                    continue
-                seen_urls.add(full_url)
-                clean_title = re.sub(r'\s+', ' ', link_title).strip()
-                items.append({
-                    'title': clean_title or page_title,
-                    'url': full_url,
-                    'published_at': None,
-                    'source': source_name,
-                    'site_name': source_name,
-                    'description': page_desc[:200] if page_desc else '',
-                })
-            if items:
-                break
-
-        if items:
-            status['success'] = True
-            status['items_total'] = len(items)
-            return status, items
-        else:
-            status['error'] = 'No article links found in HTML'
-            return status, []
-    except Exception as e:
-        status['error'] = str(e)[:100]
+    items = _extract_articles_from_html(url, source_name, max_items)
+    if items:
+        status['success'] = True
+        status['items_total'] = len(items)
+        return status, items
+    else:
+        status['error'] = 'No articles found in HTML'
         return status, []
 
 GN_LABEL_MAP = {
@@ -760,7 +780,7 @@ def run(output_dir: str, window_hours: int, opml_path: str, archive_days: int, w
             d = f", -{n_dup} dup" if n_dup else ""
             print(f"  {ok} {name}: +{status['items_total']} items, {len(unique)} unique{d}")
 
-    # Fetch custom anchor sites (same 24h window as main feeds)
+    # Fetch custom anchor sites (use 7-day window for anchors)
     if custom_feeds:
         print(f"[INFO] Fetching custom anchor sites...")
         anchor_items, anchor_seen = [], {}
@@ -779,7 +799,10 @@ def run(output_dir: str, window_hours: int, opml_path: str, archive_days: int, w
                 print(f"  {ok} {name}: +{status['items_total']} items, {len(unique)} unique{d}")
         print(f"[INFO] Custom anchors raw: {len(anchor_items)} items")
 
-        # Apply same time window as main feeds
+        # Apply 7-day time window for anchor sites (separate from main 24h window)
+        anchor_window_hours = 168  # 7 days
+        anchor_start = datetime.now(timezone.utc) - timedelta(hours=anchor_window_hours)
+        anchor_start_ts = anchor_start.timestamp()
         anchor_filtered = []
         for item in anchor_items:
             if not item.get('published_at'):
@@ -787,19 +810,31 @@ def run(output_dir: str, window_hours: int, opml_path: str, archive_days: int, w
                 continue
             try:
                 dt = datetime.fromisoformat(item['published_at'].replace('Z', '+00:00'))
-                if start_ts <= dt.timestamp() <= now_ts:
+                if anchor_start_ts <= dt.timestamp() <= now_ts:
                     anchor_filtered.append(item)
-                else:
-                    print(f"  [WINDOW] Skipping anchor (outside window): {item.get('title', '')[:40]}")
             except Exception:
                 anchor_filtered.append(item)
-        print(f"[INFO] Custom anchors after {window_hours}h window: {len(anchor_filtered)} items")
+        print(f"[INFO] Custom anchors after {anchor_window_hours}h window: {len(anchor_filtered)} items")
 
         # Cross-dedup with main items
         all_urls = {item.get('url') for item in all_items if item.get('url')}
         anchor_unique = [item for item in anchor_filtered if item.get('url') not in all_urls]
         print(f"[INFO] Custom anchors (unique, not in main): {len(anchor_unique)} items")
-        all_items.extend(anchor_unique)
+
+        # Save to custom-anchors.json (7-day window, independent of main data)
+        custom_generated_at = datetime.now(timezone.utc).isoformat()
+        custom_out = {
+            'generated_at': custom_generated_at,
+            'total_items': len(anchor_unique),
+            'items': [score_item(item, now_ts) for item in anchor_unique],
+        }
+        with open(os.path.join(output_dir, 'custom-anchors.json'), 'w', encoding='utf-8') as f:
+            json.dump(custom_out, f, ensure_ascii=False, indent=2)
+        print(f"[INFO] custom-anchors.json: {len(anchor_unique)} items")
+
+        # Also add anchors to main items (skip archive dedup for anchors)
+        anchor_urls = {item.get('url') for item in anchor_unique}
+        all_items.extend([item for item in anchor_unique if item.get('url') not in {i.get('url') for i in all_items}])
         print(f"[INFO] Total items after anchor merge: {len(all_items)}")
 
     print(f"[INFO] Raw unique: {len(all_items)} (intra-run dedup: {total_dedup})")
