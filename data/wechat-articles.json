@@ -1,6 +1,27 @@
 {
   "articles": [
     {
+      "id": "b6312bd73cfa0348ee9037fbad03450f",
+      "title": "[+] Length: 22808 chars | Source: wechat-mobile-ua (8.0.47.2504)",
+      "title_zh": "",
+      "url": "https://mp.weixin.qq.com/s/KsLUPUGHxOcBLfOXXJygQA",
+      "published_at": "2026-08-03T09:31:05+08:00",
+      "category": "微信公众号",
+      "gn_label": "wechat",
+      "site_name": "微信文章",
+      "source": "微信公众号",
+      "site_id": "wechat",
+      "description": "",
+      "ai_score": 90,
+      "ai_label": "高价值",
+      "relevance": 0.9,
+      "authority": 80,
+      "depth": 85,
+      "timeliness": 100,
+      "writing_value": 85,
+      "total_score": 90
+    },
+    {
       "id": "f37959b182d465ce3a90ee3e15369f6f",
       "title": "[+] Length: 1452 chars | Source: wechat-mobile-ua (8.0.47.2504)",
       "title_zh": "",
@@ -26,27 +47,6 @@
       "title": "[+] Length: 2213 chars | Source: wechat-mobile-ua (8.0.47.2504)",
       "title_zh": "",
       "url": "https://mp.weixin.qq.com/s/dxYaAvsRKEvawmyWoW1J-Q",
-      "published_at": "2026-08-03T01:00:00+00:00",
-      "category": "微信公众号",
-      "gn_label": "wechat",
-      "site_name": "微信文章",
-      "source": "微信公众号",
-      "site_id": "wechat",
-      "description": "",
-      "ai_score": 90,
-      "ai_label": "高价值",
-      "relevance": 0.9,
-      "authority": 80,
-      "depth": 85,
-      "timeliness": 100,
-      "writing_value": 85,
-      "total_score": 90
-    },
-    {
-      "id": "b6312bd73cfa0348ee9037fbad03450f",
-      "title": "[+] Length: 22808 chars | Source: wechat-mobile-ua (8.0.47.2504)",
-      "title_zh": "",
-      "url": "https://mp.weixin.qq.com/s/KsLUPUGHxOcBLfOXXJygQA",
       "published_at": "2026-08-03T01:00:00+00:00",
       "category": "微信公众号",
       "gn_label": "wechat",
@@ -169,11 +169,11 @@
       "total_score": 90
     },
     {
-      "id": "dcc9c7ae4873c57a7ef72d264efcb80a",
-      "title": "德塔智能完成近5亿元天使++轮融资，专注人形机器人基础模型",
+      "id": "58abd143038e46aaaa7b327a5c1cc9b5",
+      "title": "领湖智能完成数千万融资，海愿资本独家投资",
       "title_zh": "",
-      "url": "https://mp.weixin.qq.com/s/HFlhVGyVHAJzl4LD5ngC2A",
-      "published_at": "2026-07-28T01:00:00+00:00",
+      "url": "https://mp.weixin.qq.com/s/qSNKluxCE2Ldc8TIL1-Jlg",
+      "published_at": "2026-07-28T09:23:14+08:00",
       "category": "微信公众号",
       "gn_label": "wechat",
       "site_name": "微信公众号",
@@ -190,11 +190,11 @@
       "total_score": 90
     },
     {
-      "id": "58abd143038e46aaaa7b327a5c1cc9b5",
-      "title": "领湖智能完成数千万融资，海愿资本独家投资",
+      "id": "dcc9c7ae4873c57a7ef72d264efcb80a",
+      "title": "德塔智能完成近5亿元天使++轮融资，专注人形机器人基础模型",
       "title_zh": "",
-      "url": "https://mp.weixin.qq.com/s/qSNKluxCE2Ldc8TIL1-Jlg",
-      "published_at": "2026-07-28T00:19:00+00:00",
+      "url": "https://mp.weixin.qq.com/s/HFlhVGyVHAJzl4LD5ngC2A",
+      "published_at": "2026-07-28T01:00:00+00:00",
       "category": "微信公众号",
       "gn_label": "wechat",
       "site_name": "微信公众号",
@@ -422,6 +422,6 @@
     }
   ],
   "total_articles": 20,
-  "last_updated": "2026-08-03T01:36:36.849925+00:00",
+  "last_updated": "2026-08-03T01:37:48.786409+00:00",
   "source": "manual_addition"
 }
