@@ -1116,6 +1116,65 @@ async function initWechatSection() {
 initWechatSection();
 
 // ═══════════════════════════════════════════════
+// 精选锚点专区 (2026-08-03)
+// ═══════════════════════════════════════════════
+
+const ANCHOR_SOURCES = [
+  'Robot Report', 'IEEE Spectrum', 'MIT News Robotics', 'NVIDIA Blog Robotics',
+  'DeepMind Blog', 'Meta AI Blog', 'HuggingFace Blog', 'Figure AI', 'Unitree',
+  'Boston Dynamics', '1X Technologies', 'Apptronik', 'Agility Robotics',
+  'Embodied AI', 'BCI News', 'Neurofounders', 'ScienceDaily BCI',
+  'Neuroscience News', 'IEEE Brain', 'OpenBCI', 'Neuralink', 'Synchron',
+  'IEEE Spectrum Neuro', 'Medical Xpress BCI', 'EMOTIV', 'Neurosity',
+  '机器之心', '量子位', 'LatePost', '罗戈研究', '极链AI', '雷锋网'
+];
+
+async function loadCustomAnchors() {
+  try {
+    const res = await fetchWithTimeout('./data/custom-anchors.json?t=' + Date.now());
+    if (!res.ok) return null;
+    return await res.json();
+  } catch (e) {
+    console.log('[ANCHOR] Failed to load custom-anchors.json:', e.message);
+    return null;
+  }
+}
+
+async function initAnchorSection() {
+  // Try loading from custom-anchors.json first (7-day window)
+  const customData = await loadCustomAnchors();
+  let anchorItems = [];
+  
+  if (customData && customData.items && customData.items.length > 0) {
+    anchorItems = customData.items.filter(item => ANCHOR_SOURCES.includes(item.source));
+  } else if (state.itemsAll && state.itemsAll.length > 0) {
+    // Fallback: use itemsAll from main feed
+    anchorItems = state.itemsAll.filter(item => ANCHOR_SOURCES.includes(item.source));
+  }
+  
+  const anchorSection = document.getElementById('anchorSection');
+  if (!anchorSection || anchorItems.length === 0) {
+    if (anchorSection) anchorSection.style.display = 'none';
+    return;
+  }
+  
+  anchorSection.style.display = '';
+  document.getElementById('anchorCount').textContent = `${anchorItems.length} 条`;
+  const anchorList = document.getElementById('anchorList');
+  anchorList.innerHTML = '';
+  const fragment = document.createDocumentFragment();
+  anchorItems.forEach(item => {
+    try { fragment.appendChild(renderItemNode(item)); }
+    catch(e) { console.error('[ANCHOR] 渲染失败:', e.message); }
+  });
+  anchorList.appendChild(fragment);
+  console.log('[ANCHOR] 精选锚点专区渲染完成:', anchorItems.length, '条');
+}
+
+// 在 init 完成后异步加载精选锚点专区
+initAnchorSection();
+
+// ═══════════════════════════════════════════════
 // 微信公众号专区实时轮询 (2026-07-16)
 // ═══════════════════════════════════════════════
 

@@ -935,6 +935,37 @@ summary:focus-visible {
   font-size: 15px;
 }
 
+/* 精选锚点专区样式 */
+.anchor-section {
+  margin-top: 16px;
+  border: 1px solid rgba(0, 100, 200, 0.2);
+  background: linear-gradient(135deg, var(--surface) 0%, rgba(0, 100, 200, 0.03) 100%);
+}
+
+.anchor-section .list-head {
+  background: linear-gradient(135deg, var(--surface-soft) 0%, rgba(0, 100, 200, 0.05) 100%);
+  border-bottom: 1px solid rgba(0, 100, 200, 0.15);
+}
+
+.anchor-section .list-head h2 {
+  font-size: 18px;
+}
+
+.anchor-section .news-card .category.kind-robotics {
+  border-color: rgba(0, 100, 200, 0.34);
+  color: #2563eb;
+}
+
+.anchor-section .news-card .category.kind-brain_computer {
+  border-color: rgba(147, 51, 234, 0.34);
+  color: #9333ea;
+}
+
+.anchor-section .site {
+  color: #2563eb;
+  font-weight: 700;
+}
+
 /* 微信公众号专区折叠面板 */
 .wechat-toggle {
   display: none; /* 默认隐藏，有数据时显示 */

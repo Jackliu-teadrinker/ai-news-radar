@@ -14,7 +14,7 @@ import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
 from zoneinfo import ZoneInfo
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from urllib.parse import urlparse
+from urllib.parse import urlparse, urljoin
 
 import feedparser
 import requests
@@ -176,6 +176,104 @@ def fetch_feed(feed: dict, timeout: int = 20, max_retries: int = 3, base_delay: 
     status['error'] = last_error if last_error else ("Unknown failure after {max_retries} attempts".format(max_retries=max_retries))
     return status, []
 
+# ── Custom anchor site fetcher (RSS + HTML page fallback) ──────────────
+def _try_find_rss(base_url: str, timeout: int = 10) -> str | None:
+    """Try common RSS feed URLs and return the first successful one."""
+    import re as _re
+    candidate_paths = [
+        '/feed', '/feed.xml', '/rss', '/rss.xml', '/atom.xml',
+        '/feeds/posts/default', '/feed/rss', '/rss.xml',
+        '/feed/atom', '/rss.xml/', '/feed.xml/',
+    ]
+    parsed = urlparse(base_url)
+    base = f"{parsed.scheme}://{parsed.netloc}"
+    headers = {'User-Agent': 'Mozilla/5.0 (compatible; AI-News-Radar/1.0)'}
+    for p in candidate_paths:
+        try:
+            r = requests.get(base + p, headers=headers, timeout=timeout, allow_redirects=True)
+            if r.status_code == 200:
+                text = r.text[:500]
+                if '<?xml' in text or '<rss' in text.lower() or '<feed' in text.lower():
+                    return base + p
+        except Exception:
+            continue
+    return None
+
+def fetch_anchor_site(feed: dict, timeout: int = 30, max_items: int = 30) -> tuple[dict, list[dict]]:
+    """Fetch a custom anchor site: try RSS first, fallback to HTML scraping."""
+    source_name = feed['text']
+    url = feed.get('xmlUrl', feed.get('url', ''))
+    feed_type = feed.get('type', 'rss')
+    status = {'feed': source_name, 'success': False, 'items_total': 0, 'items_unique': 0, 'error': None}
+
+    if feed_type == 'rss':
+        # Direct RSS fetch (xmlUrl already set)
+        return fetch_feed(feed, timeout=timeout, max_retries=2)
+
+    # Try to find RSS first
+    rss_url = _try_find_rss(url, timeout=10)
+    if rss_url:
+        feed_copy = {**feed, 'xmlUrl': rss_url}
+        status_r, items_r = fetch_feed(feed_copy, timeout=timeout, max_retries=2)
+        if status_r['success'] and items_r:
+            status['success'] = True
+            status['items_total'] = len(items_r)
+            return status, items_r
+
+    # Fallback: HTML scrape
+    print(f"[ANCHOR] Scraping {source_name}: {url}")
+    try:
+        resp = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (compatible; AI-News-Radar/1.0)'}, timeout=timeout, allow_redirects=True)
+        resp.raise_for_status()
+        content = resp.text
+        items = []
+        # Try to extract articles from HTML
+        # Pattern 1: Look for article link blocks (common in blog/RSS-style pages)
+        link_pattern = re.compile(r'<a[^>]+href=["\']([^"\']+)["\'][^>]*>([^<]{5,120})</a>', re.I)
+        title_pattern = re.compile(r'<title[^>]*>([^<]{3,100})</title>', re.I)
+        meta_pattern = re.compile(r'<meta[^>]+name=["\']description["\'][^>]+content=["\']([^"\']+)["\']', re.I)
+        pubdate_pattern = re.compile(r'(<time[^>]+datetime=["\']([^"\']+)["\']|<meta[^>]+property=["\']article:published_time["\'][^>]+content=["\']([^"\']+)["\'])', re.I)
+
+        # Extract title and description
+        title_match = title_pattern.search(content)
+        page_title = title_match.group(1).strip() if title_match else source_name
+        desc_match = meta_pattern.search(content)
+        page_desc = desc_match.group(1).strip() if desc_match else ''
+
+        # Extract article links
+        links = link_pattern.findall(content)
+        seen_urls = set()
+        for href, link_title in links[:max_items]:
+            # Filter: skip navigation, footer, etc.
+            if any(skip in href.lower() for skip in ['javascript:', '#', 'privacy', 'terms', 'about', 'contact']):
+                continue
+            if len(link_title.strip()) < 5:
+                continue
+            full_url = urljoin(url, href)
+            if full_url in seen_urls:
+                continue
+            seen_urls.add(full_url)
+            clean_title = re.sub(r'\s+', ' ', link_title).strip()
+            items.append({
+                'title': clean_title or page_title,
+                'url': full_url,
+                'published_at': None,
+                'source': source_name,
+                'site_name': source_name,
+                'description': page_desc[:200] if page_desc else '',
+            })
+        if items:
+            status['success'] = True
+            status['items_total'] = len(items)
+            return status, items
+        else:
+            # No links found, return empty
+            status['error'] = 'No article links found in HTML'
+            return status, []
+    except Exception as e:
+        status['error'] = str(e)[:100]
+        return status, []
+
 GN_LABEL_MAP = {
     'GN: humanoid robot':        'humanoid',
     '国外人形机器人资讯':           'humanoid',
@@ -192,6 +290,47 @@ GN_LABEL_MAP = {
     'GN: robot':                 'robotics',
     '国外机器人资讯':               'robotics',
     'GN: 机器人':                'robotics',
+}
+
+# Custom anchors: map source name → gn_label (high authority sites get top-level labels)
+CUSTOM_ANCHOR_LABEL = {
+    # 机器人锚点
+    'Robot Report':             'robotics',
+    'IEEE Spectrum':            'robotics',
+    'MIT News Robotics':        'robotics',
+    'NVIDIA Blog Robotics':     'robotics',
+    'DeepMind Blog':            'robotics',
+    'Meta AI Blog':             'robotics',
+    'HuggingFace Blog':         'robotics',
+    'Synchron':                 'robotics',
+    'Robot Magazine':           'robotics',
+    'Figure AI':                'humanoid',
+    'Unitree':                  'humanoid',
+    'Boston Dynamics':          'humanoid',
+    '1X Technologies':          'humanoid',
+    'Apptronik':                'humanoid',
+    'Agility Robotics':         'humanoid',
+    'Embodied AI':              'embodied_ai',
+    # BCI 锚点
+    'BCI News':                 'brain_computer',
+    'Neurofounders':            'brain_computer',
+    'ScienceDaily BCI':         'brain_computer',
+    'Neuroscience News':        'brain_computer',
+    'IEEE Brain':               'brain_computer',
+    'OpenBCI':                  'brain_computer',
+    'Neuralink':                'brain_computer',
+    'Synchron':                 'brain_computer',
+    'IEEE Spectrum Neuro':      'brain_computer',
+    'Medical Xpress BCI':       'brain_computer',
+    'EMOTIV':                   'brain_computer',
+    'Neurosity':                'brain_computer',
+    # 中文媒体
+    '机器之心':                  'robotics',
+    '量子位':                    'robotics',
+    'LatePost':                  'robotics',
+    '罗戈研究':                  'robotics',
+    '极链AI':                    'robotics',
+    '雷锋网':                    'robotics',
 }
 
 TIER1 = ['humanoid robot','humanoid','embodied intelligence','embodied AI',
@@ -431,7 +570,8 @@ def score_item(item: dict, now_ts: float) -> dict:
     # If title has strong robot signal (机器人/人形/具身), don't let physical_ai override
     title_lower = title.lower()
     has_robot_signal = any(kw in title_lower for kw in ['机器人', '人形', '具身智能', 'humanoid', 'embodied'])
-    gn_label = GN_LABEL_MAP.get(source, 'robotics')
+    # Use CUSTOM_ANCHOR_LABEL for high-authority sites, fallback to GN_LABEL_MAP
+    gn_label = CUSTOM_ANCHOR_LABEL.get(source) or GN_LABEL_MAP.get(source, 'robotics')
     if has_robot_signal and gn_label == 'physical_ai':
         gn_label = 'robotics'  # downgrade physical_ai to generic robotics
     return {
@@ -501,12 +641,20 @@ def save_archive(path: str, items: list[dict]):
                    'total_items': len(valid), 'items': valid},
                   f, ensure_ascii=False, indent=2)
 
-def run(output_dir: str, window_hours: int, opml_path: str, archive_days: int, window_from: str = None):
+def run(output_dir: str, window_hours: int, opml_path: str, archive_days: int, window_from: str = None, custom_opml_path: str = None, custom_window_hours: int = 168):
     global ARCHIVE_DAYS
     ARCHIVE_DAYS = archive_days
 
     feeds = parse_opml(opml_path)
-    print(f"[INFO] Loaded {len(feeds)} feeds")
+    print(f"[INFO] Loaded {len(feeds)} feeds from {opml_path}")
+
+    # Load custom anchor feeds
+    custom_feeds = []
+    if custom_opml_path and os.path.exists(custom_opml_path):
+        custom_feeds = parse_opml(custom_opml_path)
+        print(f"[INFO] Loaded {len(custom_feeds)} custom anchor feeds from {custom_opml_path}")
+    elif custom_opml_path:
+        print(f"[WARN] Custom opml not found: {custom_opml_path}")
 
     all_items, seen_ids = [], {}
     now_ts = time.time()
@@ -527,6 +675,60 @@ def run(output_dir: str, window_hours: int, opml_path: str, archive_days: int, w
             ok = '[OK]' if status['success'] else '[FAIL]'
             d = f", -{n_dup} dup" if n_dup else ""
             print(f"  {ok} {name}: +{status['items_total']} items, {len(unique)} unique{d}")
+
+    # Fetch custom anchor sites (use longer time window for anchors)
+    if custom_feeds:
+        print(f"[INFO] Fetching custom anchor sites (window={custom_window_hours}h)...")
+        anchor_items, anchor_seen = [], {}
+        now_ts = time.time()
+        with ThreadPoolExecutor(max_workers=8) as ex:
+            futures = {ex.submit(fetch_anchor_site, f): f for f in custom_feeds}
+            for future in as_completed(futures):
+                status, items = future.result()
+                unique, n_dup = deduplicate(items, anchor_seen)
+                anchor_items.extend(unique)
+                status['items_unique'] = len(unique)
+                feed_statuses.append(status)
+                name = futures[future]['text']
+                ok = '[OK]' if status['success'] else '[FAIL]'
+                d = f", -{n_dup} dup" if n_dup else ""
+                print(f"  {ok} {name}: +{status['items_total']} items, {len(unique)} unique{d}")
+        print(f"[INFO] Custom anchors raw: {len(anchor_items)} items")
+
+        # Apply custom time window for anchor sites
+        shanghai = ZoneInfo('Asia/Shanghai')
+        now_sh = datetime.now(shanghai)
+        anchor_start = now_sh - timedelta(hours=custom_window_hours)
+        anchor_start_ts = anchor_start.timestamp()
+        anchor_filtered = []
+        for item in anchor_items:
+            if not item.get('published_at'):
+                anchor_filtered.append(item)
+                continue
+            try:
+                dt = datetime.fromisoformat(item['published_at'].replace('Z', '+00:00'))
+                if dt.timestamp() >= anchor_start_ts:
+                    anchor_filtered.append(item)
+            except Exception:
+                anchor_filtered.append(item)
+        print(f"[INFO] Custom anchors after {custom_window_hours}h window: {len(anchor_filtered)} items")
+
+        # Cross-dedup with main items
+        all_urls = {item.get('url') for item in all_items if item.get('url')}
+        anchor_unique = [item for item in anchor_filtered if item.get('url') not in all_urls]
+        print(f"[INFO] Custom anchors (unique, not in main): {len(anchor_unique)} items")
+        all_items.extend(anchor_unique)
+
+        # Write custom-anchors.json for frontend
+        custom_generated_at = datetime.now(timezone.utc).isoformat()
+        custom_out = {
+            'generated_at': custom_generated_at,
+            'total_items': len(anchor_unique),
+            'items': [score_item(item, now_ts) for item in anchor_unique],
+        }
+        with open(os.path.join(output_dir, 'custom-anchors.json'), 'w', encoding='utf-8') as f:
+            json.dump(custom_out, f, ensure_ascii=False, indent=2)
+        print(f"[INFO] custom-anchors.json: {len(anchor_unique)} items")
 
     print(f"[INFO] Raw unique: {len(all_items)} (intra-run dedup: {total_dedup})")
 
@@ -781,8 +983,13 @@ if __name__ == '__main__':
     p.add_argument('--output-dir', default='data')
     p.add_argument('--window-hours', type=int, default=24)
     p.add_argument('--rss-opml', default='feeds/follow.example.opml')
+    p.add_argument('--custom-opml', default='feeds/custom.opml',
+                   help='Path to custom anchor OPML file')
+    p.add_argument('--custom-window-hours', type=int, default=168,
+                   help='Time window for custom anchor sites (default: 168h = 7 days)')
     p.add_argument('--window-from', type=str, default=None,
                         help='Start of time window (YYYY-MM-DD, defaults to yesterday 9AM CST)')
     p.add_argument('--archive-days', type=int, default=21)
     args = p.parse_args()
-    run(args.output_dir, args.window_hours, args.rss_opml, args.archive_days, args.window_from)
+    custom_opml = args.custom_opml if os.path.exists(args.custom_opml) else None
+    run(args.output_dir, args.window_hours, args.rss_opml, args.archive_days, args.window_from, custom_opml, custom_window_hours=args.custom_window_hours)
