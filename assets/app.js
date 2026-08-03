@@ -1116,7 +1116,7 @@ async function initWechatSection() {
 initWechatSection();
 
 // ═══════════════════════════════════════════════
-// 精选锚点专区 (2026-08-03)
+// 精选锚点专区 - 底部板块 (2026-08-03)
 // ═══════════════════════════════════════════════
 
 const ANCHOR_SOURCES = [
@@ -1132,15 +1132,15 @@ const ANCHOR_SOURCES = [
 async function initAnchorSection() {
   // Use itemsAll from main feed (same 24h window)
   if (!state.itemsAll || state.itemsAll.length === 0) return;
-  
+
   const anchorItems = state.itemsAll.filter(item => ANCHOR_SOURCES.includes(item.source));
   const anchorSection = document.getElementById('anchorSection');
-  
+
   if (!anchorSection || anchorItems.length === 0) {
     if (anchorSection) anchorSection.style.display = 'none';
     return;
   }
-  
+
   anchorSection.style.display = '';
   document.getElementById('anchorCount').textContent = `${anchorItems.length} 条`;
   const anchorList = document.getElementById('anchorList');
