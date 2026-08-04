@@ -928,8 +928,6 @@ def run(output_dir: str, window_hours: int, opml_path: str, archive_days: int, w
         start_dt = today_anchor
     else:
         start_dt = today_anchor - timedelta(days=1)
-    # Extend window back 5 days to capture enough BCI/humanoid content
-    start_dt = start_dt - timedelta(days=5)
     start_ts = start_dt.timestamp()
 
     start_utc = datetime.fromtimestamp(start_ts, timezone.utc)

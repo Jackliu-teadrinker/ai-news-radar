@@ -53,6 +53,11 @@ jobs:
           TZ: Asia/Shanghai
         run: python scripts/update_news.py --output-dir data --window-hours 24 --rss-opml feeds/follow.example.opml --custom-opml feeds/custom.opml --archive-days 21
 
+      - name: Fetch arXiv papers
+        env:
+          TZ: Asia/Shanghai
+        run: python scripts/arxiv_fetcher.py --output-dir data --window-hours 24
+
       - name: Curate high-quality articles
         env:
           TZ: Asia/Shanghai

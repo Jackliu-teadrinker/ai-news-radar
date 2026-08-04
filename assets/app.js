@@ -1116,6 +1116,121 @@ async function initWechatSection() {
 initWechatSection();
 
 // ═══════════════════════════════════════════════
+// 学术专区 (2026-08-04) - arXiv cs.RO 机器人论文
+// ═══════════════════════════════════════════════
+
+async function loadArxivArticles() {
+  try {
+    const res = await fetchWithTimeout('./data/arxiv-papers.json?t=' + Date.now());
+    if (!res.ok) return null;
+    return await res.json();
+  } catch (e) {
+    console.log('[ARXIV] Failed to load arxiv-papers.json:', e.message);
+    return null;
+  }
+}
+
+async function initArxivSection() {
+  const arxivData = await loadArxivArticles();
+  const arxivSection = document.getElementById('arxivSection');
+  const arxivList = document.getElementById('arxivList');
+  const arxivCount = document.getElementById('arxivCount');
+
+  if (!arxivSection || !arxivList || !arxivCount) return;
+
+  if (!arxivData || !arxivData.items || arxivData.items.length === 0) {
+    arxivSection.style.display = 'none';
+    return;
+  }
+
+  arxivSection.style.display = '';
+  arxivCount.textContent = `${arxivData.items.length} 篇`;
+  arxivList.innerHTML = '';
+  const fragment = document.createDocumentFragment();
+  arxivData.items.forEach(item => {
+    try {
+      const node = renderArxivItem(item);
+      fragment.appendChild(node);
+    } catch (e) {
+      console.error('[ARXIV] 渲染失败:', e.message);
+    }
+  });
+  arxivList.appendChild(fragment);
+  console.log('[ARXIV] 学术专区渲染完成:', arxivData.items.length, '篇');
+}
+
+function renderArxivItem(item) {
+  const node = document.createElement('article');
+  node.className = 'news-card arxiv-card';
+
+  // Meta row
+  const metaRow = document.createElement('div');
+  metaRow.className = 'meta-row';
+
+  // 来源标签（紫色背景）
+  const source = document.createElement('span');
+  source.className = 'source';
+  source.textContent = 'arXiv';
+  source.style.color = '#7c3aed';
+  source.style.fontWeight = '600';
+  metaRow.appendChild(source);
+
+  // 分类标签
+  const category = document.createElement('span');
+  category.className = 'category kind-robotics';
+  category.textContent = item.category || 'cs.RO';
+  metaRow.appendChild(category);
+
+  // 作者
+  if (item.authors) {
+    const authors = document.createElement('span');
+    authors.className = 'arxiv-authors';
+    authors.textContent = item.authors;
+    authors.style.fontSize = '12px';
+    authors.style.color = '#6b7280';
+    metaRow.appendChild(authors);
+  }
+
+  // 时间
+  if (item.published_at) {
+    const time = document.createElement('time');
+    time.className = 'time';
+    time.textContent = item.published_at.slice(0, 10);
+    metaRow.appendChild(time);
+  }
+
+  node.appendChild(metaRow);
+
+  // 标题链接
+  const title = document.createElement('a');
+  title.className = 'title';
+  title.href = item.url;
+  title.target = '_blank';
+  title.rel = 'noopener noreferrer';
+  title.textContent = item.title;
+  node.appendChild(title);
+
+  // 摘要
+  if (item.summary) {
+    const summary = document.createElement('p');
+    summary.className = 'arxiv-summary';
+    summary.textContent = item.summary.length > 300
+      ? item.summary.slice(0, 300) + '...'
+      : item.summary;
+    summary.style.fontSize = '13px';
+    summary.style.color = '#4b5563';
+    summary.style.margin = '6px 0 0 0';
+    summary.style.lineHeight = '1.5';
+    node.appendChild(summary);
+  }
+
+  return node;
+}
+
+// 加载学术专区
+initArxivSection();
+
+// ═══════════════════════════════════════════════
 // 精选锚点专区 - 底部板块 (2026-08-03)
 // ═══════════════════════════════════════════════
 
