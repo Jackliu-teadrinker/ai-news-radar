@@ -822,15 +822,21 @@ def run(output_dir: str, window_hours: int, opml_path: str, archive_days: int, w
         print(f"[INFO] Custom anchors (unique, not in main): {len(anchor_unique)} items")
 
         # Save to custom-anchors.json (7-day window, independent of main data)
+        # Filter: only keep high-relevance items (ai_score >= 70)
+        ANCHOR_MIN_SCORE = 70
+        scored_anchors = [score_item(item, now_ts) for item in anchor_unique]
+        high_relevance_anchors = [item for item in scored_anchors if item.get('ai_score', 0) >= ANCHOR_MIN_SCORE]
+        print(f"[INFO] Anchor relevance filter (>= {ANCHOR_MIN_SCORE}): {len(high_relevance_anchors)}/{len(scored_anchors)} items passed")
+        
         custom_generated_at = datetime.now(timezone.utc).isoformat()
         custom_out = {
             'generated_at': custom_generated_at,
-            'total_items': len(anchor_unique),
-            'items': [score_item(item, now_ts) for item in anchor_unique],
+            'total_items': len(high_relevance_anchors),
+            'items': high_relevance_anchors,
         }
         with open(os.path.join(output_dir, 'custom-anchors.json'), 'w', encoding='utf-8') as f:
             json.dump(custom_out, f, ensure_ascii=False, indent=2)
-        print(f"[INFO] custom-anchors.json: {len(anchor_unique)} items")
+        print(f"[INFO] custom-anchors.json: {len(high_relevance_anchors)} items (filtered from {len(scored_anchors)})")
 
         # Also add anchors to main items (skip archive dedup for anchors)
         anchor_urls = {item.get('url') for item in anchor_unique}
