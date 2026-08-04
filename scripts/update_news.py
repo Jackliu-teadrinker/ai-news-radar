@@ -799,8 +799,8 @@ def run(output_dir: str, window_hours: int, opml_path: str, archive_days: int, w
                 print(f"  {ok} {name}: +{status['items_total']} items, {len(unique)} unique{d}")
         print(f"[INFO] Custom anchors raw: {len(anchor_items)} items")
 
-        # Apply 72-hour time window for anchor sites (3 days for fresh content)
-        anchor_window_hours = 72  # 3 days for fresh content
+        # Apply 24-hour time window for anchor sites (fresh news only)
+        anchor_window_hours = 24  # 1 day for fresh content
         anchor_start = datetime.now(timezone.utc) - timedelta(hours=anchor_window_hours)
         anchor_start_ts = anchor_start.timestamp()
         anchor_filtered = []
