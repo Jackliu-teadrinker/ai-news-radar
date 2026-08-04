@@ -837,11 +837,8 @@ def run(output_dir: str, window_hours: int, opml_path: str, archive_days: int, w
         with open(os.path.join(output_dir, 'custom-anchors.json'), 'w', encoding='utf-8') as f:
             json.dump(custom_out, f, ensure_ascii=False, indent=2)
         print(f"[INFO] custom-anchors.json: {len(high_relevance_anchors)} items (filtered from {len(scored_anchors)})")
-
-        # Also add anchors to main items (skip archive dedup for anchors)
-        anchor_urls = {item.get('url') for item in anchor_unique}
-        all_items.extend([item for item in anchor_unique if item.get('url') not in {i.get('url') for i in all_items}])
-        print(f"[INFO] Total items after anchor merge: {len(all_items)}")
+        # 锚点文章只输出到 custom-anchors.json，不进入主数据
+        # print(f"[INFO] Total items after anchor merge: {len(all_items)}")
 
     print(f"[INFO] Raw unique: {len(all_items)} (intra-run dedup: {total_dedup})")
 
