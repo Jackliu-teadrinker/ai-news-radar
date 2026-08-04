@@ -1172,14 +1172,8 @@ async function initAnchorSection() {
   const fragment = document.createDocumentFragment();
   anchorItems.forEach(item => {
     try {
-      // 锚点文章统一隐藏来源，显示为"精选锚点"
+      // 锚点文章显示具体来源（TechCrunch Robotics、GN: 智元机器人等）
       const node = renderItemNode(item);
-      const sourceEl = node.querySelector('.source');
-      if (sourceEl) {
-        sourceEl.textContent = '精选锚点';
-        sourceEl.style.color = '#2563eb';
-        sourceEl.style.fontWeight = '600';
-      }
       fragment.appendChild(node);
     }
     catch(e) { console.error('[ANCHOR] 渲染失败:', e.message); }
