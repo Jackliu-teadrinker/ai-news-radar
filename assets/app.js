@@ -1132,7 +1132,8 @@ const ANCHOR_SOURCES = [
   'GN: collaborative robot', 'GN: robot manipulation',
   'GN: 宇树科技', 'GN: 智元机器人',
   'GN: 自动驾驶机器人', 'GN: 灵巧手', 'GN: 机械臂', 'GN: 优必选',
-  'GN: 工业机器人与人', 'GN: 服务机器人', 'GN: 人形机器人融资'
+  'GN: 工业机器人与人', 'GN: 服务机器人', 'GN: 人形机器人融资',
+  'GN: TechXplore robotics', 'GN: TechXplore AI'
 ];
 
 async function loadCustomAnchors() {

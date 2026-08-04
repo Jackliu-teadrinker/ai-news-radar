@@ -22,6 +22,9 @@
     <outline text="GN: brain-computer interface" type="rss" xmlUrl="https://news.google.com/rss/search?q=brain+computer+interface+OR+BCI+OR+neural+interface&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" />
     <outline text="GN: robot"                    type="rss" xmlUrl="https://news.google.com/rss/search?q=robot&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" />
     <outline text="GN: Physical AI"              type="rss" xmlUrl="https://news.google.com/rss/search?q=physical+AI&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" />
+    <!-- TechXplore 相关 (Cloudflare 防护，用 Google News 代理) -->
+    <outline text="GN: TechXplore robotics"     type="rss" xmlUrl="https://news.google.com/rss/search?q=site%3Atechxplore.com+robotics&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" />
+    <outline text="GN: TechXplore AI"           type="rss" xmlUrl="https://news.google.com/rss/search?q=site%3Atechxplore.com+AI+robot&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" />
     <outline text="GN: MIT robotics"             type="rss" xmlUrl="https://news.google.com/rss/search?q=MIT+robotics&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" />
     <outline text="GN: Stanford robotics"        type="rss" xmlUrl="https://news.google.com/rss/search?q=Stanford+robotics&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" />
     <outline text="GN: deep learning robot"      type="rss" xmlUrl="https://news.google.com/rss/search?q=deep+learning+robot&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" />
