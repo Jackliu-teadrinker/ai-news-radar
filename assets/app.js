@@ -1171,7 +1171,17 @@ async function initAnchorSection() {
   anchorList.innerHTML = '';
   const fragment = document.createDocumentFragment();
   anchorItems.forEach(item => {
-    try { fragment.appendChild(renderItemNode(item)); }
+    try {
+      // 锚点文章统一隐藏来源，显示为"精选锚点"
+      const node = renderItemNode(item);
+      const sourceEl = node.querySelector('.source');
+      if (sourceEl) {
+        sourceEl.textContent = '精选锚点';
+        sourceEl.style.color = '#2563eb';
+        sourceEl.style.fontWeight = '600';
+      }
+      fragment.appendChild(node);
+    }
     catch(e) { console.error('[ANCHOR] 渲染失败:', e.message); }
   });
   anchorList.appendChild(fragment);
