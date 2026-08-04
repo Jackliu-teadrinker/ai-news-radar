@@ -801,6 +801,8 @@ def run(output_dir: str, window_hours: int, opml_path: str, archive_days: int, w
 
         # Apply 24-hour time window for anchor sites (fresh news only)
         anchor_window_hours = 24  # 1 day for fresh content
+        # Fallback to 3-day window if too few items pass score filter
+        anchor_window_hours_fallback = 72  # 3 days fallback
         anchor_start = datetime.now(timezone.utc) - timedelta(hours=anchor_window_hours)
         anchor_start_ts = anchor_start.timestamp()
         anchor_filtered = []
@@ -827,7 +829,28 @@ def run(output_dir: str, window_hours: int, opml_path: str, archive_days: int, w
         scored_anchors = [score_item(item, now_ts) for item in anchor_unique]
         high_relevance_anchors = [item for item in scored_anchors if item.get('ai_score', 0) >= ANCHOR_MIN_SCORE]
         print(f"[INFO] Anchor relevance filter (>= {ANCHOR_MIN_SCORE}): {len(high_relevance_anchors)}/{len(scored_anchors)} items passed")
-        
+
+        # Fallback: if too few items, expand window to capture more relevant content
+        if len(high_relevance_anchors) < 5:
+            print(f"[INFO] Anchor items too few ({len(high_relevance_anchors)}), expanding window to {anchor_window_hours_fallback}h...")
+            anchor_start_fb = datetime.now(timezone.utc) - timedelta(hours=anchor_window_hours_fallback)
+            anchor_start_fb_ts = anchor_start_fb.timestamp()
+            anchor_filtered_fb = []
+            for item in anchor_items:
+                if not item.get('published_at'):
+                    anchor_filtered_fb.append(item)
+                    continue
+                try:
+                    dt = datetime.fromisoformat(item['published_at'].replace('Z', '+00:00'))
+                    if anchor_start_fb_ts <= dt.timestamp() <= now_ts:
+                        anchor_filtered_fb.append(item)
+                except Exception:
+                    anchor_filtered_fb.append(item)
+            anchor_unique_fb = [item for item in anchor_filtered_fb if item.get('url') not in all_urls]
+            scored_anchors_fb = [score_item(item, now_ts) for item in anchor_unique_fb]
+            high_relevance_anchors = [item for item in scored_anchors_fb if item.get('ai_score', 0) >= ANCHOR_MIN_SCORE]
+            print(f"[INFO] Fallback result: {len(high_relevance_anchors)} items (after {anchor_window_hours_fallback}h window)")
+
         custom_generated_at = datetime.now(timezone.utc).isoformat()
         custom_out = {
             'generated_at': custom_generated_at,
