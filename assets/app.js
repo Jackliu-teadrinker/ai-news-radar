@@ -1121,17 +1121,16 @@ initWechatSection();
 
 const ANCHOR_SOURCES = [
   'TechCrunch Robotics', 'VentureBeat AI', 'IEEE Spectrum', 'IEEE Brain',
-  'HuggingFace Blog', '量子位', '极链AI', 'Wired', '雷锋网',
-  'GN: 人形机器人', 'GN: 具身智能', 'GN: 脑机接口', 'GN: 机器人',
+  'HuggingFace Blog', '量子位', '极链AI', 'Wired', '雷锋网', 'TechXplore Robotics',
+  'GN: 人形机器人', 'GN: 具身智能', 'GN: 机器人',
   'GN: Physical AI', 'GN: 人形机器人 (中文)', 'GN: 具身智能 (中文)',
-  'GN: 脑机接口 (中文)', 'GN: 机器人 (中文)', 'GN: 物理AI (中文)',
+  'GN: 机器人 (中文)', 'GN: 物理AI (中文)',
   'GN: humanoid robot', 'GN: embodied AI', 'GN: brain-computer interface',
-  'GN: robot', 'GN: Boston Dynamics', 'GN: Unitree', 'GN: Figure AI',
-  'GN: Tesla Optimus', 'GN: neuralink', 'GN: MIT robotics', 'GN: Stanford robotics',
+  'GN: robot', 'GN: MIT robotics', 'GN: Stanford robotics',
   'GN: autonomous robot', 'GN: surgical robot', 'GN: deep learning robot',
   'GN: robot vacuum', 'GN: robot learning', 'GN: industrial robot',
   'GN: collaborative robot', 'GN: robot manipulation',
-  'GN: 宇树科技', 'GN: 傅利叶智能', 'GN: 智元机器人',
+  'GN: 宇树科技', 'GN: 智元机器人',
   'GN: 自动驾驶机器人', 'GN: 灵巧手', 'GN: 机械臂', 'GN: 优必选',
   'GN: 工业机器人与人', 'GN: 服务机器人', 'GN: 人形机器人融资'
 ];
