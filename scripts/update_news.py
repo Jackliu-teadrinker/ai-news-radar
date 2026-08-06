@@ -835,7 +835,7 @@ def run(output_dir: str, window_hours: int, opml_path: str, archive_days: int, w
         print(f"[INFO] Custom anchors (unique, not in main): {len(anchor_unique)} items")
 
         # Score + filter (ai_score >= 70)
-        ANCHOR_MIN_SCORE = 70
+        ANCHOR_MIN_SCORE = 60  # 降低门槛以捕获更多优质锚点（原 70 导致 8/6 只有 3 条）
         scored_anchors = [score_item(item, now_ts) for item in anchor_unique]
         high_relevance_anchors = [item for item in scored_anchors if item.get('ai_score', 0) >= ANCHOR_MIN_SCORE]
         print(f"[INFO] Anchor relevance filter (>= {ANCHOR_MIN_SCORE}): {len(high_relevance_anchors)}/{len(scored_anchors)} items passed")

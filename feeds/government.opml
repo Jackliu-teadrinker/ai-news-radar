@@ -66,5 +66,17 @@
     <!-- 行业组织 -->
     <outline text="GN: 中国电子报 机器人" type="rss"
       xmlUrl="https://news.google.com/rss/search?q=site%3Aepaper.cena.com.cn+机器人+政策&amp;hl=zh-CN&amp;gl=CN&amp;ceid=CN:zh-Hans" />
+
+    <!-- ══════════ 更多地方政策（增加覆盖）══════════ -->
+    <outline text="GN: 江苏 机器人政策" type="rss"
+      xmlUrl="https://news.google.com/rss/search?q=site%3Ajs.gov.cn+机器人+政策+规划&amp;hl=zh-CN&amp;gl=CN&amp;ceid=CN:zh-Hans" />
+    <outline text="GN: 广东 机器人政策" type="rss"
+      xmlUrl="https://news.google.com/rss/search?q=site%3Agd.gov.cn+机器人+政策+规划&amp;hl=zh-CN&amp;gl=CN&amp;ceid=CN:zh-Hans" />
+    <outline text="GN: 四川 机器人政策" type="rss"
+      xmlUrl="https://news.google.com/rss/search?q=site%3Asichuan.gov.cn+机器人+政策&amp;hl=zh-CN&amp;gl=CN&amp;ceid=CN:zh-Hans" />
+    <outline text="GN: 武汉 机器人政策" type="rss"
+      xmlUrl="https://news.google.com/rss/search?q=site%3Awh.gov.cn+机器人+政策&amp;hl=zh-CN&amp;gl=CN&amp;ceid=CN:zh-Hans" />
+    <outline text="GN: 合肥 具身智能" type="rss"
+      xmlUrl="https://news.google.com/rss/search?q=site%3Ahefei.gov.cn+具身智能+机器人&amp;hl=zh-CN&amp;gl=CN&amp;ceid=CN:zh-Hans" />
   </body>
 </opml>

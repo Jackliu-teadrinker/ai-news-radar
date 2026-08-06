@@ -254,7 +254,7 @@ def main():
     # Fallback: expand to 7d if < 5 items (policy news is infrequent)
     fallback_used = False
     if len(high) < 5:
-        fb_window = 168  # 7d
+        fb_window = 336  # 14d（政策新闻发布频率低，需展示历史积累）
         print(f"[GOV] Too few items ({len(high)}), expanding to {fb_window}h fallback...")
         fb_start = now_sh - timedelta(hours=fb_window)
         fb_start_ts = fb_start.timestamp()
