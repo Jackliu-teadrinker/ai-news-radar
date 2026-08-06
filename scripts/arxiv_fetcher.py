@@ -127,23 +127,26 @@ def parse_entry(entry_xml: str) -> dict | None:
 
 
 def filter_by_time_window(items: list[dict], window_hours: int = 24) -> list[dict]:
-    """Filter papers to the time window (CST 19:00 anchor + window_hours)."""
+    """Filter papers to the time window.
+
+    FIX (2026-08-06): 用滑动窗口 (默认 36h) 替代 19:00 anchor。
+    原因：arXiv 每日新论文约在北京时间 02:00 发布（美国东部 14:00 EST）。
+    19:00 anchor 早晨跑会错过整整一个发布日的数据，导致页面 0 条。
+    滑动 36h 保证覆盖一次完整发布周期（>24h），又不会展示太旧的。
+    """
     shanghai = ZoneInfo('Asia/Shanghai')
     now_sh = datetime.now(shanghai)
-    ANCHOR_HOUR = 19
-    today_anchor = now_sh.replace(hour=ANCHOR_HOUR, minute=0, second=0, microsecond=0)
-    if now_sh > today_anchor:
-        start_dt = today_anchor
-    else:
-        start_dt = today_anchor - timedelta(days=1)
-    start_ts = start_dt.timestamp()
     now_ts = datetime.now(timezone.utc).timestamp()
+
+    # 滑动窗口：默认 36h（覆盖 arXiv 一次完整发布日 + 缓冲）
+    effective_hours = max(window_hours, 36)
+    start_dt = now_sh - timedelta(hours=effective_hours)
+    start_ts = start_dt.timestamp()
 
     filtered = []
     for item in items:
         pub = item.get("published_at")
         if not pub:
-            # Include items without date
             filtered.append(item)
             continue
         try:
