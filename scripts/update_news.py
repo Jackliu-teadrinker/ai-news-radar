@@ -382,18 +382,23 @@ GN_LABEL_MAP = {
     'GN: humanoid robot':        'humanoid',
     '国外人形机器人资讯':           'humanoid',
     'GN: 人形机器人':              'humanoid',
+    '国内人形机器人资讯':          'humanoid',
     'GN: embodied intelligence':  'embodied_ai',
     '国外具身智能资讯':          'embodied_ai',
     'GN: 具身智能':              'embodied_ai',
+    '国内具身智能资讯':          'embodied_ai',
     'GN: Physical AI':           'physical_ai',  # BUG#2 FIX: removed 'robot' keyword to prevent misclassification
     '国外物理AI资讯':            'physical_ai',
     'GN: 物理AI':               'physical_ai',
+    '国内物理AI资讯':            'physical_ai',
     'GN: BCI':                   'brain_computer',
     'GN: 脑机接口':              'brain_computer',
     '国外脑机接口资讯':          'brain_computer',
+    '国内脑机接口资讯':          'brain_computer',
     'GN: robot':                 'robotics',
     '国外机器人资讯':               'robotics',
     'GN: 机器人':                'robotics',
+    '国内机器人资讯':            'robotics',
 }
 
 # Custom anchors: map source name → gn_label (high authority sites get top-level labels)
