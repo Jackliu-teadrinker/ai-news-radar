@@ -799,12 +799,23 @@ def run(output_dir: str, window_hours: int, opml_path: str, archive_days: int, w
                 print(f"  {ok} {name}: +{status['items_total']} items, {len(unique)} unique{d}")
         print(f"[INFO] Custom anchors raw: {len(anchor_items)} items")
 
-        # Apply 24-hour time window for anchor sites (fresh news only)
-        anchor_window_hours = 24  # 1 day for fresh content
-        # Fallback to 3-day window if too few items pass score filter
-        anchor_window_hours_fallback = 72  # 3 days fallback
-        anchor_start = datetime.now(timezone.utc) - timedelta(hours=anchor_window_hours)
-        anchor_start_ts = anchor_start.timestamp()
+        # FIX (2026-08-06): 对齐微信 ANCHOR_HOUR=19 规则
+        # 窗口 = 昨天 19:00 CST → 现在（早 19:00 前）；今天 19:00 CST → 现在（晚 19:00 后）
+        # 原因：RSS 文章集中在白天发布；纯 24h sliding 早上跑会错过前晚内容，且旧文 fallback 到 72h 穿透
+        try:
+            from zoneinfo import ZoneInfo
+            _shanghai = ZoneInfo('Asia/Shanghai')
+        except Exception:
+            from datetime import timezone as _tz
+            _shanghai = _tz(timedelta(hours=8))
+        _now_sh = datetime.now(_shanghai)
+        _today_anchor = _now_sh.replace(hour=ANCHOR_HOUR, minute=0, second=0, microsecond=0)
+        if _now_sh < _today_anchor:
+            _start_dt = _today_anchor - timedelta(days=1)
+        else:
+            _start_dt = _today_anchor
+        anchor_start_ts = _start_dt.timestamp()
+        anchor_window_hours = max(1, int((_now_sh - _start_dt).total_seconds() / 3600))
         anchor_filtered = []
         for item in anchor_items:
             if not item.get('published_at'):
@@ -816,24 +827,28 @@ def run(output_dir: str, window_hours: int, opml_path: str, archive_days: int, w
                     anchor_filtered.append(item)
             except Exception:
                 anchor_filtered.append(item)
-        print(f"[INFO] Custom anchors after {anchor_window_hours}h window: {len(anchor_filtered)} items")
+        print(f"[INFO] Custom anchors after {anchor_window_hours}h anchor window ({_start_dt.strftime('%Y-%m-%d %H:%M')} CST): {len(anchor_filtered)} items")
 
         # Cross-dedup with main items
         all_urls = {item.get('url') for item in all_items if item.get('url')}
         anchor_unique = [item for item in anchor_filtered if item.get('url') not in all_urls]
         print(f"[INFO] Custom anchors (unique, not in main): {len(anchor_unique)} items")
 
-        # Save to custom-anchors.json (7-day window, independent of main data)
-        # Filter: only keep high-relevance items (ai_score >= 70)
+        # Score + filter (ai_score >= 70)
         ANCHOR_MIN_SCORE = 70
         scored_anchors = [score_item(item, now_ts) for item in anchor_unique]
         high_relevance_anchors = [item for item in scored_anchors if item.get('ai_score', 0) >= ANCHOR_MIN_SCORE]
         print(f"[INFO] Anchor relevance filter (>= {ANCHOR_MIN_SCORE}): {len(high_relevance_anchors)}/{len(scored_anchors)} items passed")
 
-        # Fallback: if too few items, expand window to capture more relevant content
-        if len(high_relevance_anchors) < 5:
-            print(f"[INFO] Anchor items too few ({len(high_relevance_anchors)}), expanding window to {anchor_window_hours_fallback}h...")
-            anchor_start_fb = datetime.now(timezone.utc) - timedelta(hours=anchor_window_hours_fallback)
+        # FIX (2026-08-06): Fallback 策略重写
+        # 原策略：24h 内 <5 条 → 72h → 旧文穿透（8/4 23:54 触发，导致页面展示 8/2~8/4 旧文）
+        # 新策略：anchor 窗口内 0 条才允许 fallback，且 fallback 窗口严格按 7d 上限，
+        #         标记 fallback_used=True（前端可据此降权展示），绝不显示超过 7 天的旧文
+        fallback_used = False
+        if len(high_relevance_anchors) == 0:
+            print(f"[INFO] Anchor window empty, fallback to 7d...")
+            anchor_window_hours_fallback = 168  # 7d hard cap
+            anchor_start_fb = datetime.now(_shanghai) - timedelta(hours=anchor_window_hours_fallback)
             anchor_start_fb_ts = anchor_start_fb.timestamp()
             anchor_filtered_fb = []
             for item in anchor_items:
@@ -849,13 +864,19 @@ def run(output_dir: str, window_hours: int, opml_path: str, archive_days: int, w
             anchor_unique_fb = [item for item in anchor_filtered_fb if item.get('url') not in all_urls]
             scored_anchors_fb = [score_item(item, now_ts) for item in anchor_unique_fb]
             high_relevance_anchors = [item for item in scored_anchors_fb if item.get('ai_score', 0) >= ANCHOR_MIN_SCORE]
-            print(f"[INFO] Fallback result: {len(high_relevance_anchors)} items (after {anchor_window_hours_fallback}h window)")
+            high_relevance_anchors.sort(key=lambda x: x.get('published_at',''), reverse=True)
+            high_relevance_anchors = high_relevance_anchors[:30]
+            fallback_used = True
+            print(f"[INFO] Fallback result: {len(high_relevance_anchors)} items (after 7d window)")
 
         custom_generated_at = datetime.now(timezone.utc).isoformat()
         custom_out = {
             'generated_at': custom_generated_at,
+            'window_start': _start_dt.isoformat(),
+            'window_end': _now_sh.isoformat(),
             'total_items': len(high_relevance_anchors),
             'items': high_relevance_anchors,
+            'fallback_used': fallback_used,
         }
         with open(os.path.join(output_dir, 'custom-anchors.json'), 'w', encoding='utf-8') as f:
             json.dump(custom_out, f, ensure_ascii=False, indent=2)
