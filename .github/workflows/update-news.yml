@@ -58,6 +58,11 @@ jobs:
           TZ: Asia/Shanghai
         run: python scripts/arxiv_fetcher.py --output-dir data --window-hours 24
 
+      - name: Fetch government news
+        env:
+          TZ: Asia/Shanghai
+        run: python scripts/government_fetcher.py
+
       - name: Curate high-quality articles
         env:
           TZ: Asia/Shanghai

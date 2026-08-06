@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="2.0">
+  <head>
+    <title>Government Policy — 中国机器人与具身智能政策新闻</title>
+  </head>
+  <body>
+    <!-- ══════════ 国家部委官方发布渠道 ══════════ -->
+    <!-- 中国政府网 — 国务院及各部门政策的统一发布平台 -->
+    <outline text="GN: gov.cn 人形机器人政策" type="rss"
+      xmlUrl="https://news.google.com/rss/search?q=site%3Agov.cn+人形机器人+政策+规划+通知+意见&amp;hl=zh-CN&amp;gl=CN&amp;ceid=CN:zh-Hans" />
+    <outline text="GN: gov.cn 具身智能政策" type="rss"
+      xmlUrl="https://news.google.com/rss/search?q=site%3Agov.cn+具身智能+政策+规划+通知&amp;hl=zh-CN&amp;gl=CN&amp;ceid=CN:zh-Hans" />
+    <outline text="GN: gov.cn 机器人规划" type="rss"
+      xmlUrl="https://news.google.com/rss/search?q=site%3Agov.cn+机器人+规划+行动+实施方案&amp;hl=zh-CN&amp;gl=CN&amp;ceid=CN:zh-Hans" />
+
+    <!-- 工业和信息化部 — 机器人/具身智能主要政策制定机构 -->
+    <outline text="GN: miit.gov.cn 机器人政策" type="rss"
+      xmlUrl="https://news.google.com/rss/search?q=site%3Amiit.gov.cn+机器人+政策+通知+规划&amp;hl=zh-CN&amp;gl=CN&amp;ceid=CN:zh-Hans" />
+    <outline text="GN: miit.gov.cn 具身智能" type="rss"
+      xmlUrl="https://news.google.com/rss/search?q=site%3Amiit.gov.cn+具身智能+政策+通知&amp;hl=zh-CN&amp;gl=CN&amp;ceid=CN:zh-Hans" />
+    <outline text="GN: miit.gov.cn 人形机器人" type="rss"
+      xmlUrl="https://news.google.com/rss/search?q=site%3Amiit.gov.cn+人形机器人+通知+规划&amp;hl=zh-CN&amp;gl=CN&amp;ceid=CN:zh-Hans" />
+    <outline text="GN: miit.gov.cn 实景实训" type="rss"
+      xmlUrl="https://news.google.com/rss/search?q=site%3Amiit.gov.cn+实景实训+专项行动&amp;hl=zh-CN&amp;gl=CN&amp;ceid=CN:zh-Hans" />
+
+    <!-- 科技部 — 科技创新相关政策 -->
+    <outline text="GN: ncsti.gov.cn 机器人" type="rss"
+      xmlUrl="https://news.google.com/rss/search?q=site%3Ancsti.gov.cn+机器人+政策+专项+通知&amp;hl=zh-CN&amp;gl=CN&amp;ceid=CN:zh-Hans" />
+    <outline text="GN: ncsti.gov.cn 具身智能" type="rss"
+      xmlUrl="https://news.google.com/rss/search?q=site%3Ancsti.gov.cn+具身智能+政策+专项&amp;hl=zh-CN&amp;gl=CN&amp;ceid=CN:zh-Hans" />
+
+    <!-- 国务院国资委 — 央企产业政策 -->
+    <outline text="GN: sasac.gov.cn 机器人" type="rss"
+      xmlUrl="https://news.google.com/rss/search?q=site%3Asasac.gov.cn+机器人+具身智能+政策&amp;hl=zh-CN&amp;gl=CN&amp;ceid=CN:zh-Hans" />
+
+    <!-- ══════════ 主流新闻媒体与行业平台 ══════════ -->
+    <!-- 国家级通讯社 -->
+    <outline text="GN: 新华社 机器人政策" type="rss"
+      xmlUrl="https://news.google.com/rss/search?q=site%3Axinhuanet.com+机器人+政策+规划+通知&amp;hl=zh-CN&amp;gl=CN&amp;ceid=CN:zh-Hans" />
+    <outline text="GN: 央广网 机器人政策" type="rss"
+      xmlUrl="https://news.google.com/rss/search?q=site%3Acnr.cn+机器人+具身智能+政策&amp;hl=zh-CN&amp;gl=CN&amp;ceid=CN:zh-Hans" />
+    <outline text="GN: 中国网 机器人政策" type="rss"
+      xmlUrl="https://news.google.com/rss/search?q=site%3Achinanews.com.cn+机器人+政策+规划&amp;hl=zh-CN&amp;gl=CN&amp;ceid=CN:zh-Hans" />
+
+    <!-- 财经/产业媒体 -->
+    <outline text="GN: 经济日报 机器人" type="rss"
+      xmlUrl="https://news.google.com/rss/search?q=site%3Aeeelink.com.cn+机器人+政策&amp;hl=zh-CN&amp;gl=CN&amp;ceid=CN:zh-Hans" />
+    <outline text="GN: 科技日报 机器人" type="rss"
+      xmlUrl="https://news.google.com/rss/search?q=site%3Astdaily.com+机器人+具身智能+政策&amp;hl=zh-CN&amp;gl=CN&amp;ceid=CN:zh-Hans" />
+    <outline text="GN: 中国新闻网 具身智能" type="rss"
+      xmlUrl="https://news.google.com/rss/search?q=site%3Achinanews.com+具身智能+政策+机器人&amp;hl=zh-CN&amp;gl=CN&amp;ceid=CN:zh-Hans" />
+
+    <!-- ══════════ 地方政策与行业组织 ══════════ -->
+    <!-- 先行地区地方政策 -->
+    <outline text="GN: 杭州 具身智能政策" type="rss"
+      xmlUrl="https://news.google.com/rss/search?q=site%3Ahangzhou.gov.cn+具身智能+机器人+政策&amp;hl=zh-CN&amp;gl=CN&amp;ceid=CN:zh-Hans" />
+    <outline text="GN: 广州 机器人政策" type="rss"
+      xmlUrl="https://news.google.com/rss/search?q=site%3Aguangzhou.gov.cn+机器人+政策+通知&amp;hl=zh-CN&amp;gl=CN&amp;ceid=CN:zh-Hans" />
+    <outline text="GN: 上海 机器人政策" type="rss"
+      xmlUrl="https://news.google.com/rss/search?q=site%3Ashanghai.gov.cn+机器人+具身智能+政策&amp;hl=zh-CN&amp;gl=CN&amp;ceid=CN:zh-Hans" />
+    <outline text="GN: 深圳 机器人政策" type="rss"
+      xmlUrl="https://news.google.com/rss/search?q=site%3Ashenzhen.gov.cn+机器人+具身智能+政策&amp;hl=zh-CN&amp;gl=CN&amp;ceid=CN:zh-Hans" />
+    <outline text="GN: 北京 具身智能" type="rss"
+      xmlUrl="https://news.google.com/rss/search?q=site%3Abeijing.gov.cn+具身智能+机器人+政策&amp;hl=zh-CN&amp;gl=CN&amp;ceid=CN:zh-Hans" />
+
+    <!-- 行业组织 -->
+    <outline text="GN: 中国电子报 机器人" type="rss"
+      xmlUrl="https://news.google.com/rss/search?q=site%3Aepaper.cena.com.cn+机器人+政策&amp;hl=zh-CN&amp;gl=CN&amp;ceid=CN:zh-Hans" />
+  </body>
+</opml>
