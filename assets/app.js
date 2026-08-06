@@ -1308,7 +1308,7 @@ function renderGovItem(item) {
   if (pubDate) {
     const time = document.createElement('time');
     time.className = 'time';
-    time.textContent = formatRelativeTime(pubDate);
+    time.textContent = fmtTime(pubDate.toISOString());
     metaRow.appendChild(time);
   }
 
