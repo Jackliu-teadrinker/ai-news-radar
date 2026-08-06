@@ -1237,6 +1237,17 @@ function renderArxivItem(item) {
 initArxivSection();
 
 
+
+function formatRelativeTime(date) {
+  const now = new Date();
+  const diff = Math.floor((now - date) / 1000);
+  if (diff < 60) return '刚刚';
+  if (diff < 3600) return Math.floor(diff / 60) + '分钟前';
+  if (diff < 86400) return Math.floor(diff / 3600) + '小时前';
+  if (diff < 172800) return '昨天';
+  return Math.floor(diff / 86400) + '天前';
+}
+
 // ═══════════════════════════════════════════════
 // 政府专区 - 政策新闻 (2026-08-06)
 // ═══════════════════════════════════════════════
