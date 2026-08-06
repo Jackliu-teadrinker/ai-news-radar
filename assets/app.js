@@ -1230,6 +1230,107 @@ function renderArxivItem(item) {
 // 加载学术专区
 initArxivSection();
 
+
+// ═══════════════════════════════════════════════
+// 政府专区 - 政策新闻 (2026-08-06)
+// ═══════════════════════════════════════════════
+
+async function loadGovArticles() {
+  try {
+    const res = await fetchWithTimeout('./data/government-news.json?t=' + Date.now());
+    if (!res.ok) return null;
+    return await res.json();
+  } catch (e) {
+    console.log('[GOV] Failed to load government-news.json:', e.message);
+    return null;
+  }
+}
+
+async function initGovSection() {
+  const govData = await loadGovArticles();
+  const govSection = document.getElementById('govSection');
+  const govList = document.getElementById('govList');
+  const govCount = document.getElementById('govCount');
+
+  if (!govSection || !govList || !govCount) return;
+
+  if (!govData || !govData.items || govData.items.length === 0) {
+    govSection.style.display = 'none';
+    return;
+  }
+
+  govSection.style.display = '';
+  govCount.textContent = `${govData.items.length} 条`;
+  govList.innerHTML = '';
+  const fragment = document.createDocumentFragment();
+  govData.items.forEach(item => {
+    try {
+      const node = renderGovItem(item);
+      fragment.appendChild(node);
+    } catch (e) {
+      console.error('[GOV] 渲染失败:', e.message);
+    }
+  });
+  govList.appendChild(fragment);
+  console.log('[GOV] 政府专区渲染完成:', govData.items.length, '条');
+}
+
+function renderGovItem(item) {
+  const node = document.createElement('article');
+  node.className = 'news-card gov-card';
+
+  const metaRow = document.createElement('div');
+  metaRow.className = 'meta-row';
+
+  // 来源标签（金色背景）
+  const source = document.createElement('span');
+  source.className = 'source';
+  source.textContent = '政府政策';
+  source.style.color = '#d97706';
+  source.style.fontWeight = '600';
+  metaRow.appendChild(source);
+
+  // 相关度
+  const relevance = document.createElement('span');
+  relevance.className = 'category kind-policy';
+  relevance.textContent = `${Math.round((item.relevance || 0) * 100)}%`;
+  relevance.style.color = '#d97706';
+  metaRow.appendChild(relevance);
+
+  // 时间
+  const pubDate = item.published_at ? new Date(item.published_at.replace('Z', '+00:00')) : null;
+  if (pubDate) {
+    const time = document.createElement('time');
+    time.className = 'time';
+    time.textContent = formatRelativeTime(pubDate);
+    metaRow.appendChild(time);
+  }
+
+  node.appendChild(metaRow);
+
+  // 标题
+  const title = document.createElement('a');
+  title.className = 'title';
+  title.href = item.url;
+  title.target = '_blank';
+  title.rel = 'noopener noreferrer';
+  title.textContent = item.title;
+  node.appendChild(title);
+
+  // 描述（如有）
+  if (item.description) {
+    const desc = document.createElement('p');
+    desc.className = 'description';
+    desc.textContent = item.description.substring(0, 150) + (item.description.length > 150 ? '...' : '');
+    node.appendChild(desc);
+  }
+
+  return node;
+}
+
+// 在 init 完成后异步加载政府专区
+initGovSection();
+
 // ═══════════════════════════════════════════════
 // 精选锚点专区 - 底部板块 (2026-08-03)
 // ═══════════════════════════════════════════════
