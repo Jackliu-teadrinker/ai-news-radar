@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-08-07T22:03:22.764150+00:00",
+  "generated_at": "2026-08-07T23:02:22.745448+00:00",
   "window_start": "2026-08-07T19:00:00+08:00",
-  "window_end": "2026-08-08T06:03:21.747253+08:00",
-  "total_items": 18,
+  "window_end": "2026-08-08T07:02:21.361020+08:00",
+  "total_items": 20,
   "items": [
     {
       "id": "56482782fddb7f3739851f3d57eb8d04ee103d91",
       "title": "Video Friday: Drones Go Heavy in DARPA Lift Challenge",
-      "title_zh": "周五视频：无人机在 DARPA Lift 挑战赛中表现强劲",
+      "title_zh": "周五视频：无人机在 DARPA Lift 挑战赛中举足轻重",
       "url": "https://spectrum.ieee.org/video-friday-heavy-lift-drone",
       "published_at": "2026-08-07T16:00:01+00:00",
       "category": "IEEE Spectrum",
@@ -21,14 +21,14 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 23.95,
+      "timeliness": 22.96,
       "writing_value": 5,
-      "total_score": 108.95
+      "total_score": 107.96
     },
     {
-      "id": "ba139404e997b46482f34a4b69472f958a549cbb",
-      "title": "NAUB student develops autonomous robot to fight indoor fires - Vanguard News",
-      "title_zh": "NAUB 学生开发自主机器人来扑灭室内火灾 - Vanguard News",
+      "id": "d127387a585b76874c7f8922a57e90d2c1191919",
+      "title": "NAUB student develops autonomous robot to fight indoor fires - vanguardngr.com",
+      "title_zh": "NAUB 学生开发自主机器人来扑灭室内火灾 - vanguardngr.com",
       "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPVlJibzViWW1ONWZ1TU10ODFLcE1kZEhabmh6SWhmZS0zdzk4X05mSWpvcjhvdUlRNFo0Qmc5UDBHNkxIcEtCSVRwUHdtcEJLQ3ZGVU1JS1lGbjI5b2FXRVo3eG1pcGN6T3FqOWsyVlRfNzNnbGVZQUtoZWN6UWVjdHhjSlFYSkZjeFF3LTN5YzN5QWdyeUcyUGlLdTQ5Z9IBowFBVV95cUxPbHNrVnpuTjlNRG9yUEFjOHBaQlVEMmRYaFhRM252ZzZTQkdVOUI3OVo0d2JqcXprU0NuMU9zZEhXdXdZTjAzQWppWFVsY2xlYllGZDI5Ujd0bkNONFZLOHlFVUFfWnJRbHB0ZnFSTGlIYUVKVTNYb1FPVXlEWTZ3OXlZaGhaRUx5d2huMXQ0OF9wbnAxbGVvNUZHbkU0TkNpMzUw?oc=5",
       "published_at": "2026-08-07T21:11:15+00:00",
       "category": "GN: autonomous robot",
@@ -36,15 +36,15 @@
       "site_name": "GN: autonomous robot",
       "source": "GN: autonomous robot",
       "site_id": "GN: autonomous robot",
-      "description": "NAUB student develops autonomous robot to fight indoor fires  Vanguard News",
+      "description": "NAUB student develops autonomous robot to fight indoor fires  vanguardngr.com",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.13,
+      "timeliness": 28.15,
       "writing_value": 0,
-      "total_score": 104.13
+      "total_score": 103.15
     },
     {
       "id": "369c33fe4669e10d98d37e35c8eb977bf055118b",
@@ -63,9 +63,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.26,
+      "timeliness": 22.28,
       "writing_value": 0,
-      "total_score": 98.26
+      "total_score": 97.28
+    },
+    {
+      "id": "3f7a4d2886fd7dedc11f75691ba0f02427ba4064",
+      "title": "Experts call FCC’s block on foreign robotics a nearshoring tactic - manufacturingdive.com",
+      "title_zh": "专家称 FCC 对外国机器人的封锁是一种近岸策略 - Manufacturingdive.com",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNbXNpa29tSl9FRWVlTWNCLWdoOTQ1cTBXYmViaGN0WmVLdG9DU1ZjYmIwM3RnNEFPYzBsN21qeDhPcDF3dzlpNzRPU3NoXzdzMWVGMUQwaW94ZmltUlVZWm5GMUFUaXFRQXFnd0dhMVdnY2N6NWlQcGRDWGtGdTYzS09rUUo1RTNxUDFEdTFtZHRGT1ZaZ1FuSWtfMG9fcDVzMmdYb29WakxWdw?oc=5",
+      "published_at": "2026-08-07T15:57:53+00:00",
+      "category": "GN: industrial robot",
+      "gn_label": "robotics",
+      "site_name": "GN: industrial robot",
+      "source": "GN: industrial robot",
+      "site_id": "GN: industrial robot",
+      "description": "Experts call FCC’s block on foreign robotics a nearshoring tactic  manufacturingdive.com",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 22.93,
+      "writing_value": 0,
+      "total_score": 97.93
     },
     {
       "id": "0f51cde3d2ab4f270d72277cf991dae893d23904",
@@ -84,9 +105,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 21.12,
+      "timeliness": 20.14,
       "writing_value": 5,
-      "total_score": 106.12
+      "total_score": 105.14
     },
     {
       "id": "dd5ab0872fc800c1d6cde5c97cbd399974be8f37",
@@ -105,9 +126,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 19.98,
+      "timeliness": 19.0,
       "writing_value": 0,
-      "total_score": 94.98
+      "total_score": 94.0
     },
     {
       "id": "3636a093e562dac0e587da7b3966867c9c1b364c",
@@ -126,9 +147,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 20.63,
+      "timeliness": 19.65,
       "writing_value": 0,
-      "total_score": 95.63
+      "total_score": 94.65
     },
     {
       "id": "627df3f03488393eda5e170f488316fe1fb7aeab",
@@ -147,9 +168,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 20.49,
+      "timeliness": 19.51,
       "writing_value": 0,
-      "total_score": 95.49
+      "total_score": 94.51
     },
     {
       "id": "c9b9fab22a9ea49c2b746cee3fea28f5fbb0736f",
@@ -168,14 +189,35 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 27.95,
+      "timeliness": 26.96,
       "writing_value": 5,
-      "total_score": 112.95
+      "total_score": 111.96
+    },
+    {
+      "id": "c872ca2027f623b430f004ef0a7f44cadb444f8e",
+      "title": "Huntsman Cancer Institute performs region's first robotic mastectomy, reducing scarring - KMYU",
+      "title_zh": "亨斯曼癌症研究所进行了该地区首例机器人乳房切除术，减少了疤痕 - KMYU",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOZ0hfYS00bG9CWmJqcFp1aTN4STFORnRSb0lQT0EtblFMNTB6aG9ndEJFaTRsTTdvbWQxbVEzTG5RcWxEelE3R3Z1eURDVk5kTmprQWwzbVRRWU51VUVtQjR4LThmeHl4Mm5TZXNrSFBONUJON29lLU91cHBaY2tLemdHQVVRZXFQYnA1akw0bndJcjlQZzBZMTFPR3JBSWQyd2k4WDJ1cmNNMlpXc2VRS2pB?oc=5",
+      "published_at": "2026-08-07T17:21:09+00:00",
+      "category": "GN: surgical robot",
+      "gn_label": "robotics",
+      "site_name": "GN: surgical robot",
+      "source": "GN: surgical robot",
+      "site_id": "GN: surgical robot",
+      "description": "Huntsman Cancer Institute performs region's first robotic mastectomy, reducing scarring  KMYU",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 24.32,
+      "writing_value": 0,
+      "total_score": 99.32
     },
     {
       "id": "533389b9efdebd8949e5fe07cd96877585a0cec4",
-      "title": "Huntington Hospital Adds 4 New Robotic Surgery Systems - dailyvoice.com",
-      "title_zh": "亨廷顿医院新增 4 套机器人手术系统 - dailyvoice.com",
+      "title": "Huntington Hospital Adds 4 New Robotic Surgery Systems - DailyVoice.com",
+      "title_zh": "亨廷顿医院新增 4 套机器人手术系统 - DailyVoice.com",
       "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPUlV6VWszdmZwYUMzU3kyQVpBMy1NcjZLNHNhYnVLbllGSDJ5XzczQlR1QldmWmFqbVFVV0lvZVYyMXRyS1BrYjFwQ0l4dll4bXZlbENWVUtveWV4Y0xXRDhMTmpOTWN6S01ySXpJVTItQXFZSFY0UHB5aG1uRHBtY0dYS3c2V3ZxczVRTE1rMA?oc=5",
       "published_at": "2026-08-07T15:11:43+00:00",
       "category": "GN: surgical robot",
@@ -183,15 +225,15 @@
       "site_name": "GN: surgical robot",
       "source": "GN: surgical robot",
       "site_id": "GN: surgical robot",
-      "description": "Huntington Hospital Adds 4 New Robotic Surgery Systems  dailyvoice.com",
+      "description": "Huntington Hospital Adds 4 New Robotic Surgery Systems  DailyVoice.com",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.14,
+      "timeliness": 22.16,
       "writing_value": 0,
-      "total_score": 98.14
+      "total_score": 97.16
     },
     {
       "id": "63e6aab860a62c439f0c26668a92c388899222bf",
@@ -210,9 +252,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 20.69,
+      "timeliness": 19.7,
       "writing_value": 0,
-      "total_score": 95.69
+      "total_score": 94.7
     },
     {
       "id": "53c7c2e5fe490dbfde8f2e696cdccc5d4687892f",
@@ -231,9 +273,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 22.51,
+      "timeliness": 21.52,
       "writing_value": 0,
-      "total_score": 97.51
+      "total_score": 96.52
     },
     {
       "id": "335ecff8523c71a4d3f8b79e3b8551888e3dcad8",
@@ -252,9 +294,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 21.66,
+      "timeliness": 20.68,
       "writing_value": 0,
-      "total_score": 96.66
+      "total_score": 95.68
     },
     {
       "id": "1e73069999a3ac0e4dd5b8a14213d05e75428a1d",
@@ -273,9 +315,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 22.24,
+      "timeliness": 21.26,
       "writing_value": 0,
-      "total_score": 97.24
+      "total_score": 96.26
     },
     {
       "id": "81959d4b87b4615d9c2e61dadc11fcfe40aea4b5",
@@ -294,9 +336,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 19.32,
+      "timeliness": 18.33,
       "writing_value": 0,
-      "total_score": 94.32
+      "total_score": 93.33
     },
     {
       "id": "b630c3e5e8e284bdb01a9cc1ad9fa474e9cd301d",
@@ -315,9 +357,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 22.12,
+      "timeliness": 21.14,
       "writing_value": 0,
-      "total_score": 97.12
+      "total_score": 96.14
     },
     {
       "id": "7d245459f5e91787f5c719892bcd952865ff4e73",
@@ -336,9 +378,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.17,
+      "timeliness": 23.19,
       "writing_value": 0,
-      "total_score": 99.17
+      "total_score": 98.19
     },
     {
       "id": "0dafd4469395526f1408dfcdd8b8a59995fd44f2",
@@ -357,9 +399,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 22.41,
+      "timeliness": 21.43,
       "writing_value": 0,
-      "total_score": 97.41
+      "total_score": 96.43
     },
     {
       "id": "720167706670436efc824b637985b570cd26a8dc",
@@ -378,9 +420,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.68,
+      "timeliness": 22.7,
       "writing_value": 0,
-      "total_score": 113.68
+      "total_score": 112.7
     }
   ],
   "fallback_used": false

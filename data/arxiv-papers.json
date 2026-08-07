@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-07T22:04:30.230328+00:00",
-  "total_items": 20,
+  "generated_at": "2026-08-07T23:03:20.686901+00:00",
+  "total_items": 19,
   "items": [
     {
       "id": "http://arxiv.org/abs/2608.06375v1",
@@ -210,17 +210,6 @@
       "published_at": "2026-08-06T11:31:56+00:00",
       "updated_at": "2026-08-06T11:31:56Z",
       "title_zh": "Robust-WAM：在世界动作模型中桥接生成预训练和语义预见"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.05858v1",
-      "title": "Shape-Aware Oriented Bounding Box (OBB) to Horizontal Bounding Box (HBB) Conversion",
-      "url": "https://arxiv.org/abs/2608.05858",
-      "summary": "Accurate object detection in aerial and satellite imagery is dependent upon the bounding box representation. This is especially true for spatially oriented objects such as ships or aircrafts. Oriented Bounding Boxes (OBB) have a tighter fit and more robust non-max suppression compared to Horizontal Bounding Boxes (HBB), any current post-processing conversion from OBB to HBB either introduces excess empty and background space or removes data from the detection. This paper introduces a novel approach for a shape-aware OBB-to-HBB conversion for ship detection in remote sensing imagery. It leverages hull shape, hull fullness, and the bounding box orientation to produce a tighter axis-aligned HBB representation. The proposed method is benchmarked against three baselines methods for OBBto-HBB conversion, Outer HBB which uses minimum and maximum, Area Equivalent HBB and GBB Marginalized HBB.",
-      "authors": "Badha Rathna Sabhapathy, Gotam Dahiya, Vishesh Vatsal",
-      "category": "cs.CV",
-      "published_at": "2026-08-06T10:39:12+00:00",
-      "updated_at": "2026-08-06T10:39:12Z",
-      "title_zh": "形状感知定向边界框 (OBB) 到水平边界框 (HBB) 的转换"
     }
   ]
 }
