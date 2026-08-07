@@ -1,0 +1,19 @@
+"""搜索专区静态示例数据"""
+import json
+
+# 搜索专区示例数据
+SAMPLE_DATA = {
+    "generated_at": "2026-08-07T04:18:01.909771+00:00",
+    "window_start": "2026-08-06T12:18:00.895113+08:00",
+    "window_end": "2026-08-07T12:18:00.895113+08:00",
+    "total_items": 10,
+    "items": [
+        {"title": "什么是"具身智能"? 和人形机器人有什么关系？-新华网", "url": "https://www.xinhuanet.com/", "description": "具身智能是人工智能与机器人学交叉的前沿领域...", "source": "Bing: 具身智能", "site_name": "新华网", "date_str": "2025年10月23日"},
+        {"title": "DeepSeek投资Unitree上海IPO，签署人形机器人AI合作协议", "url": "https://www.unite.ai/", "description": "DeepSeek已投资140.8百万元人民币于Unitree Robotics...", "source": "Bing: 人形机器人", "site_name": "Unitree", "date_str": "1天前"},
+        {"title": "物理AI≠具身智能≠世界模型：一文看懂三者的本质区别", "url": "https://news.sina.cn/", "description": "物理AI、具身智能、世界模型这三个概念经常混用...", "source": "Bing: 物理AI", "site_name": "新浪新闻", "date_str": "2026年2月27日"},
+        {"title": "脑机接口技术突破：Neuralink患者首次用意念控制电脑", "url": "https://www.sohu.com/", "description": "Neuralink脑机接口设备帮助瘫痪患者实现意念控制...", "source": "Bing: 脑机接口", "site_name": "搜狐", "date_str": ""},
+        {"title": "宇树科技完成B+轮融资，估值超百亿人民币", "url": "https://www.36kr.com/", "description": "人形机器人独角兽宇树科技获得新一轮融资...", "source": "Bing: 机器人融资", "site_name": "36氪", "date_str": ""},
+    ]
+}
+
+print(json.dumps(SAMPLE_DATA, ensure_ascii=False, indent=2))
