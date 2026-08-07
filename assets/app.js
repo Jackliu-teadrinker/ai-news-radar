@@ -1415,6 +1415,107 @@ async function initAnchorSection() {
   console.log('[ANCHOR] 精选锚点专区渲染完成:', anchorItems.length, '条');
 }
 
+
+// ═══════════════════════════════════════════════
+// 搜索专区 - Bing 搜索新闻 (2026-08-07)
+// ═══════════════════════════════════════════════
+
+async function loadSearchArticles() {
+  try {
+    const res = await fetchWithTimeout('./data/search-news.json?t=' + Date.now());
+    if (!res.ok) return null;
+    return await res.json();
+  } catch (e) {
+    console.log('[SEARCH] Failed to load search-news.json:', e.message);
+    return null;
+  }
+}
+
+async function initSearchSection() {
+  const searchData = await loadSearchArticles();
+  const searchSection = document.getElementById('searchSection');
+  const searchList = document.getElementById('searchList');
+  const searchCount = document.getElementById('searchCount');
+
+  if (!searchSection || !searchList || !searchCount) return;
+
+  if (!searchData || !searchData.items || searchData.items.length === 0) {
+    searchSection.style.display = 'none';
+    return;
+  }
+
+  searchSection.style.display = '';
+  searchCount.textContent = `${searchData.items.length} 条`;
+  searchList.innerHTML = '';
+  const fragment = document.createDocumentFragment();
+  searchData.items.forEach(item => {
+    try {
+      const node = renderSearchItem(item);
+      fragment.appendChild(node);
+    } catch (e) {
+      console.error('[SEARCH] 渲染失败:', e.message);
+    }
+  });
+  searchList.appendChild(fragment);
+  console.log('[SEARCH] 搜索专区渲染完成:', searchData.items.length, '条');
+}
+
+function renderSearchItem(item) {
+  const node = document.createElement('article');
+  node.className = 'news-card search-card';
+
+  const metaRow = document.createElement('div');
+  metaRow.className = 'meta-row';
+
+  // 来源标签（蓝色背景）
+  const source = document.createElement('span');
+  source.className = 'source';
+  source.textContent = 'Bing搜索';
+  source.style.color = '#2563eb';
+  source.style.fontWeight = '600';
+  metaRow.appendChild(source);
+
+  // 关键词标签
+  const keyword = document.createElement('span');
+  keyword.className = 'category kind-search';
+  keyword.textContent = item.source.replace('Bing: ', '');
+  keyword.style.color = '#2563eb';
+  metaRow.appendChild(keyword);
+
+  // 时间
+  if (item.date_str) {
+    const time = document.createElement('time');
+    time.className = 'time';
+    time.textContent = item.date_str;
+    metaRow.appendChild(time);
+  }
+
+  node.appendChild(metaRow);
+
+  // 标题
+  const title = document.createElement('a');
+  title.className = 'title';
+  title.href = item.url;
+  title.target = '_blank';
+  title.rel = 'noopener noreferrer';
+  title.textContent = item.title;
+  node.appendChild(title);
+
+  // 描述
+  if (item.description) {
+    const desc = document.createElement('p');
+    desc.className = 'description';
+    desc.textContent = item.description.substring(0, 120) + (item.description.length > 120 ? '...' : '');
+    node.appendChild(desc);
+  }
+
+  return node;
+}
+
+// 在 init 完成后异步加载搜索专区
+initSearchSection();
+
+// 在 init 完成后异步加载精选锚点专区
 // 在 init 完成后异步加载精选锚点专区
 initAnchorSection();
 
