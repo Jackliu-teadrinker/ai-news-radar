@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-07T18:41:12.081879+00:00",
-  "total_items": 30,
+  "generated_at": "2026-08-07T19:45:26.442560+00:00",
+  "total_items": 27,
   "items": [
     {
       "id": "http://arxiv.org/abs/2608.06375v1",
@@ -298,39 +298,6 @@
       "published_at": "2026-08-06T07:52:55+00:00",
       "updated_at": "2026-08-06T07:52:55Z",
       "title_zh": "用一张纸劫持机器人：VLM控制机器人物理即时注入的系统研究"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.05684v1",
-      "title": "Nonvisual Classification of Ground-Condition by Artificial Proprioception in an Amoeba-Inspired Autonomous Walking Robot",
-      "url": "https://arxiv.org/abs/2608.05684",
-      "summary": "Nonvisual classification of ground condition based on a multimodal sensing approach was investigated for an amoeba-inspired autonomous walking robot. To classify ground condition without image sensing and processing, we implemented artificial proprioception by integrating a three-axis accelerometer, eight foot pressure sensors, and reservoir computing (RC). Even when large fluctuations in the sensor outputs are caused by dynamic motions of a four-legged robot in walking, our system can classify the ground condition, flat or rough, with high accuracy. We demonstrate on-site switching of walking gait depending on ground condition in the robot. We also discuss the contribution of each sensor to ground condition classification.",
-      "authors": "Hyoto Yamaguchi, Zenji Yatabe, Seiya Kasai",
-      "category": "cs.RO",
-      "published_at": "2026-08-06T07:19:02+00:00",
-      "updated_at": "2026-08-06T07:19:02Z",
-      "title_zh": "受阿米巴启发的自主行走机器人通过人工本体感觉对地面状况进行非视觉分类"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.05674v1",
-      "title": "JoyAI-RA 0.5: Scaling Robot Manipulation Learning via Dual Action Alignment",
-      "url": "https://arxiv.org/abs/2608.05674",
-      "summary": "Robot data is scarce, so generalist policies need to learn from heterogeneous sources, including human egocentric video, simulation, and real robots, which differ in supervision and embodiment, with action labels missing or mutually incompatible. Human egocentric data scale best but sit farthest from robot data, and naive pooling causes negative transfer rather than knowledge sharing. We propose JoyAI-RA 0.5, a generalist Vision-Language-World-Action (VLWA) framework that couples physical world-dynamics priors with visual semantics and scales manipulation learning across such data via dual action alignment. Implicit action alignment infers latent actions from visual transitions, enabling action-free human, simulation, and robot data to guide a latent-action-conditioned world model in learning physical dynamics. Explicit alignment grounds reliable human and robot trajectories in a unified physical action space through a canonical action representation and camera-frame chunk-relative end-effector actions. An inner-outer-loop reinforcement stage then pairs efficient task adaptation with foundation-policy improvement. On a real-world AgiBot benchmark, JoyAI-RA performs strongly on both seen tasks and unseen variations. The task score improves consistently as the volume of human egocentric pretraining data increases and shows no sign of plateauing at our largest scale. This suggests that abundant but weakly labeled human experience can be converted into a transferable training signal, making human video not merely a weak auxiliary source but a primary axis along which manipulation capability can be scaled. Project page can be found at https://joyai-ra-05.github.io/.",
-      "authors": "JoyAI-RA Team",
-      "category": "cs.RO",
-      "published_at": "2026-08-06T07:14:55+00:00",
-      "updated_at": "2026-08-06T07:14:55Z",
-      "title_zh": "JoyAI-RA 0.5：通过双动作对齐扩展机器人操作学习"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.05647v1",
-      "title": "KILVO: Kinematic-Inertial-LiDAR-Visual Odometry with Robust Multimodal Adaptation for Humanoid Robots",
-      "url": "https://arxiv.org/abs/2608.05647",
-      "summary": "This article presents a kinematic-inertial-LiDAR-visual odometry for humanoid robots, called KILVO. Tailored to the platform features, requirements, and real-world complexity, it fully utilizes the sensors commonly equipped on humanoid robots, including joint encoders, IMU, LiDAR, and camera, within an asynchronous-sequential hybrid error-state iterated Kalman filter (ESIKF). Specifically, inertial data are used for prediction, leg kinematics are processed asynchronously at a high rate and provide proprioceptive constraints, while exteroception is updated sequentially, first by registering LiDAR points for geometric priors and then by updating the visual component via photometric errors. Moreover, the framework is elaborately designed with multimodal adaptation for resilience to sensor failures. A compact contact estimation module is also developed, sharing information with state estimation without additional sensors. Extensive experiments on public datasets and in the real world across multiple humanoid robots, gait patterns, and scenarios demonstrate that KILVO achieves highly competitive accuracy, efficiency, and output rates, with strong robustness against sensor degradation and failures, making it more suitable for humanoid robots than state-of-the-art fusion methods. Our code and datasets are released on GitHub.",
-      "authors": "Jixin Gao, Fucheng Liu, Teng Zhang et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-06T06:43:09+00:00",
-      "updated_at": "2026-08-06T06:43:09Z",
-      "title_zh": "KILVO：具有强大多模态适应能力的人形机器人运动惯性激光雷达视觉里程计"
     }
   ]
 }
