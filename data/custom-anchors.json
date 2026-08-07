@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-08-07T21:11:37.599449+00:00",
+  "generated_at": "2026-08-07T22:03:22.764150+00:00",
   "window_start": "2026-08-07T19:00:00+08:00",
-  "window_end": "2026-08-08T05:11:35.935624+08:00",
+  "window_end": "2026-08-08T06:03:21.747253+08:00",
   "total_items": 18,
   "items": [
     {
       "id": "56482782fddb7f3739851f3d57eb8d04ee103d91",
       "title": "Video Friday: Drones Go Heavy in DARPA Lift Challenge",
-      "title_zh": "周五视频：无人机在 DARPA Lift 挑战赛中举足轻重",
+      "title_zh": "周五视频：无人机在 DARPA Lift 挑战赛中表现强劲",
       "url": "https://spectrum.ieee.org/video-friday-heavy-lift-drone",
       "published_at": "2026-08-07T16:00:01+00:00",
       "category": "IEEE Spectrum",
@@ -21,9 +21,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 24.81,
+      "timeliness": 23.95,
       "writing_value": 5,
-      "total_score": 109.81
+      "total_score": 108.95
+    },
+    {
+      "id": "ba139404e997b46482f34a4b69472f958a549cbb",
+      "title": "NAUB student develops autonomous robot to fight indoor fires - Vanguard News",
+      "title_zh": "NAUB 学生开发自主机器人来扑灭室内火灾 - Vanguard News",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPVlJibzViWW1ONWZ1TU10ODFLcE1kZEhabmh6SWhmZS0zdzk4X05mSWpvcjhvdUlRNFo0Qmc5UDBHNkxIcEtCSVRwUHdtcEJLQ3ZGVU1JS1lGbjI5b2FXRVo3eG1pcGN6T3FqOWsyVlRfNzNnbGVZQUtoZWN6UWVjdHhjSlFYSkZjeFF3LTN5YzN5QWdyeUcyUGlLdTQ5Z9IBowFBVV95cUxPbHNrVnpuTjlNRG9yUEFjOHBaQlVEMmRYaFhRM252ZzZTQkdVOUI3OVo0d2JqcXprU0NuMU9zZEhXdXdZTjAzQWppWFVsY2xlYllGZDI5Ujd0bkNONFZLOHlFVUFfWnJRbHB0ZnFSTGlIYUVKVTNYb1FPVXlEWTZ3OXlZaGhaRUx5d2huMXQ0OF9wbnAxbGVvNUZHbkU0TkNpMzUw?oc=5",
+      "published_at": "2026-08-07T21:11:15+00:00",
+      "category": "GN: autonomous robot",
+      "gn_label": "robotics",
+      "site_name": "GN: autonomous robot",
+      "source": "GN: autonomous robot",
+      "site_id": "GN: autonomous robot",
+      "description": "NAUB student develops autonomous robot to fight indoor fires  Vanguard News",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.13,
+      "writing_value": 0,
+      "total_score": 104.13
     },
     {
       "id": "369c33fe4669e10d98d37e35c8eb977bf055118b",
@@ -42,14 +63,14 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.13,
+      "timeliness": 23.26,
       "writing_value": 0,
-      "total_score": 99.13
+      "total_score": 98.26
     },
     {
-      "id": "4059521a79f593b002a6ed83cdff4e2223e73d8d",
-      "title": "Avatar Robotics Raises $6.5 Million Seed to Build the Unlimited Industrial Workforce - roboticstomorrow.com",
-      "title_zh": "Avatar Robotics 筹集了 650 万美元种子资金以建立无限的工业劳动力 - robotstomorrow.com",
+      "id": "0f51cde3d2ab4f270d72277cf991dae893d23904",
+      "title": "Avatar Robotics Raises $6.5 Million Seed to Build the Unlimited Industrial Workforce - Robotics Tomorrow",
+      "title_zh": "Avatar Robotics 筹集了 650 万美元种子资金，以打造无限的工业劳动力 - Robotics Tomorrow",
       "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOWlJ1UC00d3VJaUVVLUlDZXpRNTNGVHUwY1JwNkRfWTk5amV1NUNEVm55dVFFN05KeTNidmg2clhmdGMyeHZ0WHFTUTFnOC1LWHFGN05LM1k3S055QnZCZElMd2RRbVlFRXEyM09sWXZvY1BxX2p5QW9fTTk2ZTNYa3E1bzY1Um9BNDlvRDlEOE80ZU41dVQ3SmZiRjNUNUVkMzk0Z0Y2VjRPOXNRdkJ1YkJVMkFvMURod2IxOTc4SFZ0bUdQV2lneUZXR2FVLU5USVE?oc=5",
       "published_at": "2026-08-07T13:10:35+00:00",
       "category": "GN: industrial robot",
@@ -57,15 +78,15 @@
       "site_name": "GN: industrial robot",
       "source": "GN: industrial robot",
       "site_id": "GN: industrial robot",
-      "description": "Avatar Robotics Raises $6.5 Million Seed to Build the Unlimited Industrial Workforce  roboticstomorrow.com",
+      "description": "Avatar Robotics Raises $6.5 Million Seed to Build the Unlimited Industrial Workforce  Robotics Tomorrow",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 21.99,
+      "timeliness": 21.12,
       "writing_value": 5,
-      "total_score": 106.99
+      "total_score": 106.12
     },
     {
       "id": "dd5ab0872fc800c1d6cde5c97cbd399974be8f37",
@@ -84,9 +105,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 20.85,
+      "timeliness": 19.98,
       "writing_value": 0,
-      "total_score": 95.85
+      "total_score": 94.98
     },
     {
       "id": "3636a093e562dac0e587da7b3966867c9c1b364c",
@@ -105,9 +126,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 21.49,
+      "timeliness": 20.63,
       "writing_value": 0,
-      "total_score": 96.49
+      "total_score": 95.63
     },
     {
       "id": "627df3f03488393eda5e170f488316fe1fb7aeab",
@@ -126,9 +147,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 21.35,
+      "timeliness": 20.49,
       "writing_value": 0,
-      "total_score": 96.35
+      "total_score": 95.49
     },
     {
       "id": "c9b9fab22a9ea49c2b746cee3fea28f5fbb0736f",
@@ -147,14 +168,14 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 28.81,
+      "timeliness": 27.95,
       "writing_value": 5,
-      "total_score": 113.81
+      "total_score": 112.95
     },
     {
       "id": "533389b9efdebd8949e5fe07cd96877585a0cec4",
-      "title": "Huntington Hospital Adds 4 New Robotic Surgery Systems - DailyVoice.com",
-      "title_zh": "亨廷顿医院新增 4 套机器人手术系统 - DailyVoice.com",
+      "title": "Huntington Hospital Adds 4 New Robotic Surgery Systems - dailyvoice.com",
+      "title_zh": "亨廷顿医院新增 4 套机器人手术系统 - dailyvoice.com",
       "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPUlV6VWszdmZwYUMzU3kyQVpBMy1NcjZLNHNhYnVLbllGSDJ5XzczQlR1QldmWmFqbVFVV0lvZVYyMXRyS1BrYjFwQ0l4dll4bXZlbENWVUtveWV4Y0xXRDhMTmpOTWN6S01ySXpJVTItQXFZSFY0UHB5aG1uRHBtY0dYS3c2V3ZxczVRTE1rMA?oc=5",
       "published_at": "2026-08-07T15:11:43+00:00",
       "category": "GN: surgical robot",
@@ -162,15 +183,15 @@
       "site_name": "GN: surgical robot",
       "source": "GN: surgical robot",
       "site_id": "GN: surgical robot",
-      "description": "Huntington Hospital Adds 4 New Robotic Surgery Systems  DailyVoice.com",
+      "description": "Huntington Hospital Adds 4 New Robotic Surgery Systems  dailyvoice.com",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.0,
+      "timeliness": 23.14,
       "writing_value": 0,
-      "total_score": 99.0
+      "total_score": 98.14
     },
     {
       "id": "63e6aab860a62c439f0c26668a92c388899222bf",
@@ -189,9 +210,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 21.55,
+      "timeliness": 20.69,
       "writing_value": 0,
-      "total_score": 96.55
+      "total_score": 95.69
     },
     {
       "id": "53c7c2e5fe490dbfde8f2e696cdccc5d4687892f",
@@ -210,13 +231,13 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.37,
+      "timeliness": 22.51,
       "writing_value": 0,
-      "total_score": 98.37
+      "total_score": 97.51
     },
     {
-      "id": "e44c40e549da69058c9ff73e5ab2b114ab60fcd5",
-      "title": "IPO仅次长鑫科技，宇树超募45%！DeepSeek、全国社保基金当股东 - jfdaily.com",
+      "id": "335ecff8523c71a4d3f8b79e3b8551888e3dcad8",
+      "title": "IPO仅次长鑫科技，宇树超募45%！DeepSeek、全国社保基金当股东 - 上观新闻",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBXWlFvdnk2M3hGRTBPNnlXX0hwTV85LVUxenoxRUVXT1Nsd0l4VlptZ3ZEY3VhTXBJLW5vWjhnaHV0djVHcDA5Zl9OaUl2Sk43bXdubkZUV1M1QQ?oc=5",
       "published_at": "2026-08-07T13:43:00+00:00",
@@ -225,15 +246,15 @@
       "site_name": "GN: 宇树科技",
       "source": "GN: 宇树科技",
       "site_id": "GN: 宇树科技",
-      "description": "IPO仅次长鑫科技，宇树超募45%！DeepSeek、全国社保基金当股东  jfdaily.com",
+      "description": "IPO仅次长鑫科技，宇树超募45%！DeepSeek、全国社保基金当股东  上观新闻",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 22.53,
+      "timeliness": 21.66,
       "writing_value": 0,
-      "total_score": 97.53
+      "total_score": 96.66
     },
     {
       "id": "1e73069999a3ac0e4dd5b8a14213d05e75428a1d",
@@ -252,30 +273,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.11,
+      "timeliness": 22.24,
       "writing_value": 0,
-      "total_score": 98.11
-    },
-    {
-      "id": "03bc986d645948068df7222be374076a3539b011",
-      "title": "宇树科技IPO路演：王兴兴定调“全新起点”，社保基金领衔战投 - 风闻",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBOdXR2UnhHdnBTVGlod1FPa0ZpZERqVzRnUmxDV1ZtMzIzOTlFN2V0S2NQQjlycFBmeDhCSWNxRGxwVFBPUXdSZmFFNHZ5UHNtblM4eVVjUXhKa2M?oc=5",
-      "published_at": "2026-08-07T15:15:11+00:00",
-      "category": "GN: 宇树科技",
-      "gn_label": "robotics",
-      "site_name": "GN: 宇树科技",
-      "source": "GN: 宇树科技",
-      "site_id": "GN: 宇树科技",
-      "description": "宇树科技IPO路演：王兴兴定调“全新起点”，社保基金领衔战投  风闻",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 24.06,
-      "writing_value": 0,
-      "total_score": 99.06
+      "total_score": 97.24
     },
     {
       "id": "81959d4b87b4615d9c2e61dadc11fcfe40aea4b5",
@@ -294,9 +294,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 20.18,
+      "timeliness": 19.32,
       "writing_value": 0,
-      "total_score": 95.18
+      "total_score": 94.32
     },
     {
       "id": "b630c3e5e8e284bdb01a9cc1ad9fa474e9cd301d",
@@ -315,9 +315,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 22.99,
+      "timeliness": 22.12,
       "writing_value": 0,
-      "total_score": 97.99
+      "total_score": 97.12
     },
     {
       "id": "7d245459f5e91787f5c719892bcd952865ff4e73",
@@ -336,30 +336,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.03,
+      "timeliness": 24.17,
       "writing_value": 0,
-      "total_score": 100.03
-    },
-    {
-      "id": "720167706670436efc824b637985b570cd26a8dc",
-      "title": "安徽人形机器人加速迈向商用 - 搜狐网",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPSEpoZWtGdF9DdGoxeVc0Sk1fTWU4UWwxVEY3a2lYSkd6VVRpN2tWVElIdlRKYTRvVVZKblFQckJhZEJTeURDUzZ0Z2x3ZXBmRTFncXB3ek9fWWUwOW4wTUM3MkU5OWJpQ1Q3NHFRdTljMUFvcHVrU0ttMUJoZDBVTFFVc2ZVZDFuaDRHMA?oc=5",
-      "published_at": "2026-08-07T15:44:05+00:00",
-      "category": "GN: 服务机器人",
-      "gn_label": "robotics",
-      "site_name": "GN: 服务机器人",
-      "source": "GN: 服务机器人",
-      "site_id": "GN: 服务机器人",
-      "description": "安徽人形机器人加速迈向商用  搜狐网",
-      "ai_score": 80.0,
-      "ai_label": "robotics",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 24.54,
-      "writing_value": 0,
-      "total_score": 114.54
+      "total_score": 99.17
     },
     {
       "id": "0dafd4469395526f1408dfcdd8b8a59995fd44f2",
@@ -378,9 +357,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.28,
+      "timeliness": 22.41,
       "writing_value": 0,
-      "total_score": 98.28
+      "total_score": 97.41
+    },
+    {
+      "id": "720167706670436efc824b637985b570cd26a8dc",
+      "title": "安徽人形机器人加速迈向商用 - 搜狐网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPSEpoZWtGdF9DdGoxeVc0Sk1fTWU4UWwxVEY3a2lYSkd6VVRpN2tWVElIdlRKYTRvVVZKblFQckJhZEJTeURDUzZ0Z2x3ZXBmRTFncXB3ek9fWWUwOW4wTUM3MkU5OWJpQ1Q3NHFRdTljMUFvcHVrU0ttMUJoZDBVTFFVc2ZVZDFuaDRHMA?oc=5",
+      "published_at": "2026-08-07T15:44:05+00:00",
+      "category": "GN: 服务机器人",
+      "gn_label": "robotics",
+      "site_name": "GN: 服务机器人",
+      "source": "GN: 服务机器人",
+      "site_id": "GN: 服务机器人",
+      "description": "安徽人形机器人加速迈向商用  搜狐网",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 23.68,
+      "writing_value": 0,
+      "total_score": 113.68
     }
   ],
   "fallback_used": false

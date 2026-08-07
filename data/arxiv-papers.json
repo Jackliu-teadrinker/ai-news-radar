@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-07T21:12:49.589586+00:00",
-  "total_items": 22,
+  "generated_at": "2026-08-07T22:04:30.230328+00:00",
+  "total_items": 20,
   "items": [
     {
       "id": "http://arxiv.org/abs/2608.06375v1",
@@ -221,28 +221,6 @@
       "published_at": "2026-08-06T10:39:12+00:00",
       "updated_at": "2026-08-06T10:39:12Z",
       "title_zh": "形状感知定向边界框 (OBB) 到水平边界框 (HBB) 的转换"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.05830v1",
-      "title": "Coordinated Multi-Robot Disassembly for Makespan Optimization of Large-Scale Assemblies",
-      "url": "https://arxiv.org/abs/2608.05830",
-      "summary": "Multi-robot task and motion planning for disassembly tasks requires robots to operate in confined workspaces while coordinating their motions with other robots. To tackle this problem, we propose a planning method called coordinated multi-robot disassembly (CoMuDi). CoMuDi coordinates a team of robots for disassembly tasks. The input is a team of robots, an assembly of objects, and a dependency graph. Based on this information, we create compound tasks for pick, place, and exit motions. By propagating temporal constraints, we ensure that each robot can start and end their tasks as early as possible while avoiding collisions with nearby robots. By integrating the space-time RRT* planner (ST-RRT*) into CoMuDi, we ensure that individual tasks minimize arrival time and thereby help us minimize overall makespan. We compare the performance of CoMuDi using both ST-RRT* and RRT* planners with varying time bounds, demonstrating that the combination of CoMuDi and ST-RRT* leads to a higher success rate while minimizing makespan. Finally, we evaluate CoMuDi on six assemblies with up to 49 pieces and up to 9 robots. In those scenarios, we show that CoMuDi returns robot paths that exhibit low idle times, thereby demonstrating that CoMuDi can reliably solve large-scale assemblies.",
-      "authors": "Niklas Hargus, Andreas Orthey, Marc Toussaint",
-      "category": "cs.RO",
-      "published_at": "2026-08-06T09:59:42+00:00",
-      "updated_at": "2026-08-06T09:59:42Z",
-      "title_zh": "协调多机器人拆卸，实现大型装配的完工时间优化"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.05799v1",
-      "title": "XEWorld: Can Action-Conditioned World Models Generalize to Unseen Robot Embodiments?",
-      "url": "https://arxiv.org/abs/2608.05799",
-      "summary": "Action-conditioned world models are promising learned simulators for robotic manipulation, yet evaluating them exclusively on training robots fails to reveal whether they capture physical dynamics or merely memorize visual patterns. To answer whether a model can faithfully render a robot it has never seen, we introduce XEWorld, a controlled cross-embodiment testbed for world models that isolates embodiments by evaluating held-out robots within physically identical scenes. Our systematic analysis uncovers a shared architectural bottleneck: current models act primarily as 2D visual pattern matchers whose generalization is governed by visual similarity rather than physical kinematic similarity. Driven by this limitation, they struggle to translate abstract numeric joint actions into coherent visual trajectories, and fail to predict dynamic visual changes from static initial observations. Consequently, successfully rendering an unseen embodiment zero-shot strictly requires heavily grounded cues, specifically pixel-space actions and explicit spatial-temporal alignment. Even when bypassing this zero-shot barrier via few-shot adaptation, the forced appearance recovery triggers catastrophic forgetting of seen embodiments. Together, these failures expose a critical inability to apply learned physical dynamics to novel visual appearances, highlighting that achieving true cross-embodiment generalization requires architectural innovations that decouple visual appearance from underlying physical dynamics.",
-      "authors": "Yixiang Chen, Jiabing Yang, Yuan Xu et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-06T09:35:33+00:00",
-      "updated_at": "2026-08-06T09:35:33Z",
-      "title_zh": "XEWorld：动作条件世界模型可以推广到看不见的机器人实例吗？"
     }
   ]
 }
