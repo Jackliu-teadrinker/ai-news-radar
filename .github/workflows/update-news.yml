@@ -63,10 +63,10 @@ jobs:
           TZ: Asia/Shanghai
         run: python scripts/government_fetcher.py
 
-      - name: Fetch Bing search results
+      - name: Fetch Toutiao news
         env:
           TZ: Asia/Shanghai
-        run: python scripts/search_fetcher.py
+        run: python scripts/toutiao_fetcher.py
 
       - name: Curate high-quality articles
         env:

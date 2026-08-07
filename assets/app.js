@@ -1417,21 +1417,21 @@ async function initAnchorSection() {
 
 
 // ═══════════════════════════════════════════════
-// 搜索专区 - Bing 搜索新闻 (2026-08-07)
+// 今日头条专区 - 头条号机器人资讯 (2026-08-07)
 // ═══════════════════════════════════════════════
 
-async function loadSearchArticles() {
+async function loadToutiaoArticles() {
   try {
-    const res = await fetchWithTimeout('./data/search-news.json?t=' + Date.now());
+    const res = await fetchWithTimeout('./data/toutiao-news.json?t=' + Date.now());
     if (!res.ok) return null;
     return await res.json();
   } catch (e) {
-    console.log('[SEARCH] Failed to load search-news.json:', e.message);
+    console.log('[TOUTIAO] Failed to load search-news.json:', e.message);
     return null;
   }
 }
 
-async function initSearchSection() {
+async function initToutiaoSection() {
   const searchData = await loadSearchArticles();
   const searchSection = document.getElementById('searchSection');
   const searchList = document.getElementById('searchList');
@@ -1453,11 +1453,11 @@ async function initSearchSection() {
       const node = renderSearchItem(item);
       fragment.appendChild(node);
     } catch (e) {
-      console.error('[SEARCH] 渲染失败:', e.message);
+      console.error('[TOUTIAO] 渲染失败:', e.message);
     }
   });
   searchList.appendChild(fragment);
-  console.log('[SEARCH] 搜索专区渲染完成:', searchData.items.length, '条');
+  console.log('[TOUTIAO] 搜索专区渲染完成:', searchData.items.length, '条');
 }
 
 function renderSearchItem(item) {
@@ -1512,8 +1512,8 @@ function renderSearchItem(item) {
   return node;
 }
 
-// 在 init 完成后异步加载搜索专区
-initSearchSection();
+// 在 init 完成后异步加载今日头条专区
+initToutiaoSection();
 
 // 在 init 完成后异步加载精选锚点专区
 // 在 init 完成后异步加载精选锚点专区
