@@ -28,6 +28,10 @@ import feedparser
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
+# 添加 scripts 目录到路径以导入翻译工具
+sys.path.insert(0, os.path.dirname(__file__))
+from translate_utils import is_english, translate_batch
+
 # ── 配置 ──
 ANCHOR_HOUR = 19
 GOV_MIN_SCORE = 45          # 相关度阈值（政策新闻更新慢，放宽以覆盖历史重要政策）
@@ -273,6 +277,15 @@ def main():
         high = [it for it in scored_fb if it.get('ai_score', 0) >= GOV_MIN_SCORE]
         fallback_used = True
         print(f"[GOV] Fallback result: {len(high)} items (window={fb_window}h)")
+
+    # 翻译英文标题
+    english_titles = [it['title'] for it in high if is_english(it['title'])]
+    if english_titles:
+        print(f"[GOV] Translating {len(english_titles)} English titles...")
+        trans_map = translate_batch(english_titles)
+        for it in high:
+            if it['title'] in trans_map and trans_map[it['title']]:
+                it['title_zh'] = trans_map[it['title']]
 
     # Sort by published date (newest first), limit
     high.sort(key=lambda x: x.get('published_at', ''), reverse=True)

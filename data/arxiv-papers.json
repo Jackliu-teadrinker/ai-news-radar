@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-07T01:37:18.115114+00:00",
+  "generated_at": "2026-08-07T02:18:01.835850+00:00",
   "total_items": 30,
   "items": [
     {
@@ -10,7 +10,8 @@
       "authors": "Alperen Kenan, Paul Bremner, Manuel Giuliani",
       "category": "cs.RO",
       "published_at": "2026-08-06T16:12:18+00:00",
-      "updated_at": "2026-08-06T16:12:18Z"
+      "updated_at": "2026-08-06T16:12:18Z",
+      "title_zh": "机器人从人类演示中学习：手写字母轨迹和人类相似性评估"
     },
     {
       "id": "http://arxiv.org/abs/2608.06219v1",
@@ -20,7 +21,8 @@
       "authors": "Juan José García Cárdenas, Alperen Kenan, Hamidreza Raei et al.",
       "category": "cs.RO",
       "published_at": "2026-08-06T16:10:02+00:00",
-      "updated_at": "2026-08-06T16:10:02Z"
+      "updated_at": "2026-08-06T16:10:02Z",
+      "title_zh": "基于触摸屏的机器人操纵器远程操作界面的设计和评估"
     },
     {
       "id": "http://arxiv.org/abs/2608.06210v1",
@@ -30,7 +32,8 @@
       "authors": "Hisham Khalil, Neil Fernandes, Thomas M. Kwok et al.",
       "category": "cs.RO",
       "published_at": "2026-08-06T16:03:00+00:00",
-      "updated_at": "2026-08-06T16:03:00Z"
+      "updated_at": "2026-08-06T16:03:00Z",
+      "title_zh": "VIDP：来自不同演示的合规机器人操纵的可变阻抗扩散策略"
     },
     {
       "id": "http://arxiv.org/abs/2608.06208v1",
@@ -40,7 +43,8 @@
       "authors": "Stefan Schneyer, Timo Bachmann, Maged Iskandar et al.",
       "category": "cs.RO",
       "published_at": "2026-08-06T16:01:21+00:00",
-      "updated_at": "2026-08-06T16:01:21Z"
+      "updated_at": "2026-08-06T16:01:21Z",
+      "title_zh": "ErgoSurf：未知表面覆盖范围的遍历控制"
     },
     {
       "id": "http://arxiv.org/abs/2608.06170v1",
@@ -50,7 +54,8 @@
       "authors": "Giorgio Tonetti, Laurent Kneip, Abel Gawel et al.",
       "category": "cs.RO",
       "published_at": "2026-08-06T15:36:12+00:00",
-      "updated_at": "2026-08-06T15:36:12Z"
+      "updated_at": "2026-08-06T15:36:12Z",
+      "title_zh": "Prior-SG：任意结构环境中场景图的任务和先验驱动区域分割"
     },
     {
       "id": "http://arxiv.org/abs/2608.06154v1",
@@ -60,7 +65,8 @@
       "authors": "J. de Curtò, Dayani Plasencia, Diego Sánchez et al.",
       "category": "cs.RO",
       "published_at": "2026-08-06T15:21:42+00:00",
-      "updated_at": "2026-08-06T15:21:42Z"
+      "updated_at": "2026-08-06T15:21:42Z",
+      "title_zh": "零射击视觉语言控制中的视觉基础"
     },
     {
       "id": "http://arxiv.org/abs/2608.06088v1",
@@ -70,7 +76,8 @@
       "authors": "Zhixiang Chen, Zhuangbin Chen, Ruoxi Jia et al.",
       "category": "cs.RO",
       "published_at": "2026-08-06T14:29:05+00:00",
-      "updated_at": "2026-08-06T14:29:05Z"
+      "updated_at": "2026-08-06T14:29:05Z",
+      "title_zh": "IcFuzz：利用语义阶段指导和多级突变对 Isaac Sim 进行模糊测试"
     },
     {
       "id": "http://arxiv.org/abs/2608.06021v1",
@@ -80,7 +87,8 @@
       "authors": "Eulogio Quemada-Torres, Alberto Jaenal, Francisco-Angel Moreno et al.",
       "category": "cs.RO",
       "published_at": "2026-08-06T13:26:47+00:00",
-      "updated_at": "2026-08-06T13:26:47Z"
+      "updated_at": "2026-08-06T13:26:47Z",
+      "title_zh": "通过结合视觉嵌入和前馈 3D 模型进行拓扑自动车辆定位"
     },
     {
       "id": "http://arxiv.org/abs/2608.06008v1",
@@ -90,7 +98,8 @@
       "authors": "Sining Ang, Yuguang Yang, Yan Wang",
       "category": "cs.RO",
       "published_at": "2026-08-06T13:13:07+00:00",
-      "updated_at": "2026-08-06T13:13:07Z"
+      "updated_at": "2026-08-06T13:13:07Z",
+      "title_zh": "Adaptive-WAM：根据中间视频扩散功能进行质量引导的提前退出规划"
     },
     {
       "id": "http://arxiv.org/abs/2608.05999v1",
@@ -100,7 +109,8 @@
       "authors": "He Kong, Zengjue Chen, Qi Wang et al.",
       "category": "cs.RO",
       "published_at": "2026-08-06T13:07:56+00:00",
-      "updated_at": "2026-08-06T13:07:56Z"
+      "updated_at": "2026-08-06T13:07:56Z",
+      "title_zh": "超越平面策略：机器人操作中实体代理的分层后期培训"
     },
     {
       "id": "http://arxiv.org/abs/2608.05989v1",
@@ -110,7 +120,8 @@
       "authors": "Xinwei Liu, Junyuan Liang, Jianting Zhang et al.",
       "category": "cs.LG",
       "published_at": "2026-08-06T13:02:59+00:00",
-      "updated_at": "2026-08-06T13:02:59Z"
+      "updated_at": "2026-08-06T13:02:59Z",
+      "title_zh": "用于视觉连续控制的基于观察的自我预测强化学习"
     },
     {
       "id": "http://arxiv.org/abs/2608.05975v1",
@@ -120,7 +131,8 @@
       "authors": "Taehyeon Kong, Woojin Kim, Jemin Hwangbo",
       "category": "cs.RO",
       "published_at": "2026-08-06T12:53:33+00:00",
-      "updated_at": "2026-08-06T12:53:33Z"
+      "updated_at": "2026-08-06T12:53:33Z",
+      "title_zh": "TRACE：在不可靠的接触条件下学习腿式机器人的本体感受里程计"
     },
     {
       "id": "http://arxiv.org/abs/2608.05970v1",
@@ -130,7 +142,8 @@
       "authors": "Changyuan Wang, Chubin Zhang, Zhenyu Wu et al.",
       "category": "cs.RO",
       "published_at": "2026-08-06T12:46:13+00:00",
-      "updated_at": "2026-08-06T12:46:13Z"
+      "updated_at": "2026-08-06T12:46:13Z",
+      "title_zh": "SkillMemo：专家指导的组合体现操作的技能记忆框架"
     },
     {
       "id": "http://arxiv.org/abs/2608.05948v1",
@@ -140,7 +153,8 @@
       "authors": "Shuai Wang, Yaxin Feng, Xuekun Jiang et al.",
       "category": "cs.AI",
       "published_at": "2026-08-06T12:19:38+00:00",
-      "updated_at": "2026-08-06T12:19:38Z"
+      "updated_at": "2026-08-06T12:19:38Z",
+      "title_zh": "GAUGE：模拟引擎和视频世界模型中物理保真度的测量基准"
     },
     {
       "id": "http://arxiv.org/abs/2608.05903v1",
@@ -150,7 +164,8 @@
       "authors": "Haodong Yan, Junfeng Li, Junjie He et al.",
       "category": "cs.CV",
       "published_at": "2026-08-06T11:31:56+00:00",
-      "updated_at": "2026-08-06T11:31:56Z"
+      "updated_at": "2026-08-06T11:31:56Z",
+      "title_zh": "Robust-WAM：在世界动作模型中桥接生成预训练和语义预见"
     },
     {
       "id": "http://arxiv.org/abs/2608.05858v1",
@@ -160,7 +175,8 @@
       "authors": "Badha Rathna Sabhapathy, Gotam Dahiya, Vishesh Vatsal",
       "category": "cs.CV",
       "published_at": "2026-08-06T10:39:12+00:00",
-      "updated_at": "2026-08-06T10:39:12Z"
+      "updated_at": "2026-08-06T10:39:12Z",
+      "title_zh": "形状感知定向边界框 (OBB) 到水平边界框 (HBB) 的转换"
     },
     {
       "id": "http://arxiv.org/abs/2608.05830v1",
@@ -170,7 +186,8 @@
       "authors": "Niklas Hargus, Andreas Orthey, Marc Toussaint",
       "category": "cs.RO",
       "published_at": "2026-08-06T09:59:42+00:00",
-      "updated_at": "2026-08-06T09:59:42Z"
+      "updated_at": "2026-08-06T09:59:42Z",
+      "title_zh": "协调多机器人拆卸，实现大型装配的完工时间优化"
     },
     {
       "id": "http://arxiv.org/abs/2608.05799v1",
@@ -180,7 +197,8 @@
       "authors": "Yixiang Chen, Jiabing Yang, Yuan Xu et al.",
       "category": "cs.RO",
       "published_at": "2026-08-06T09:35:33+00:00",
-      "updated_at": "2026-08-06T09:35:33Z"
+      "updated_at": "2026-08-06T09:35:33Z",
+      "title_zh": "XEWorld：动作条件世界模型可以推广到看不见的机器人实例吗？"
     },
     {
       "id": "http://arxiv.org/abs/2608.05746v1",
@@ -190,7 +208,8 @@
       "authors": "Hanlin Wang, Xin Wang, Xinwei Wei et al.",
       "category": "cs.RO",
       "published_at": "2026-08-06T08:30:52+00:00",
-      "updated_at": "2026-08-06T08:30:52Z"
+      "updated_at": "2026-08-06T08:30:52Z",
+      "title_zh": "声驱动毫米螺旋机器人：受限流体环境中的超声协同操纵"
     },
     {
       "id": "http://arxiv.org/abs/2608.05738v1",
@@ -200,7 +219,8 @@
       "authors": "Jiarui Yang, Wen Huang, Jiale Zhang et al.",
       "category": "cs.RO",
       "published_at": "2026-08-06T08:21:02+00:00",
-      "updated_at": "2026-08-06T08:21:02Z"
+      "updated_at": "2026-08-06T08:21:02Z",
+      "title_zh": "上下文 VLA：通过上下文后训练和代理工具使用为视觉-语言-动作模型赋予语言"
     },
     {
       "id": "http://arxiv.org/abs/2608.05725v1",
@@ -210,7 +230,8 @@
       "authors": "Zhengying Zhu, Ruilin Zhang, Runze Hu et al.",
       "category": "cs.RO",
       "published_at": "2026-08-06T08:08:45+00:00",
-      "updated_at": "2026-08-06T08:08:45Z"
+      "updated_at": "2026-08-06T08:08:45Z",
+      "title_zh": "用于快速视觉触觉感知的近传感器计算"
     },
     {
       "id": "http://arxiv.org/abs/2608.05723v1",
@@ -220,7 +241,8 @@
       "authors": "Yu Chen, Gong Chen, Xiang Li",
       "category": "cs.RO",
       "published_at": "2026-08-06T08:06:40+00:00",
-      "updated_at": "2026-08-06T08:06:40Z"
+      "updated_at": "2026-08-06T08:06:40Z",
+      "title_zh": "ATP：具有基于被动性的控制框架的解剖扭矩，用于安全上肢外骨骼辅助"
     },
     {
       "id": "http://arxiv.org/abs/2608.05715v1",
@@ -230,7 +252,8 @@
       "authors": "S. M . Bhagya P. Samarakoon, M. A. Viraj J. Muthugala, W. K. R. Sachinthana et al.",
       "category": "cs.RO",
       "published_at": "2026-08-06T07:52:55+00:00",
-      "updated_at": "2026-08-06T07:52:55Z"
+      "updated_at": "2026-08-06T07:52:55Z",
+      "title_zh": "用一张纸劫持机器人：VLM控制机器人物理即时注入的系统研究"
     },
     {
       "id": "http://arxiv.org/abs/2608.05684v1",
@@ -240,7 +263,8 @@
       "authors": "Hyoto Yamaguchi, Zenji Yatabe, Seiya Kasai",
       "category": "cs.RO",
       "published_at": "2026-08-06T07:19:02+00:00",
-      "updated_at": "2026-08-06T07:19:02Z"
+      "updated_at": "2026-08-06T07:19:02Z",
+      "title_zh": "受阿米巴启发的自主行走机器人通过人工本体感觉对地面状况进行非视觉分类"
     },
     {
       "id": "http://arxiv.org/abs/2608.05674v1",
@@ -250,7 +274,8 @@
       "authors": "JoyAI-RA Team",
       "category": "cs.RO",
       "published_at": "2026-08-06T07:14:55+00:00",
-      "updated_at": "2026-08-06T07:14:55Z"
+      "updated_at": "2026-08-06T07:14:55Z",
+      "title_zh": "JoyAI-RA 0.5：通过双动作对齐扩展机器人操作学习"
     },
     {
       "id": "http://arxiv.org/abs/2608.05647v1",
@@ -260,7 +285,8 @@
       "authors": "Jixin Gao, Fucheng Liu, Teng Zhang et al.",
       "category": "cs.RO",
       "published_at": "2026-08-06T06:43:09+00:00",
-      "updated_at": "2026-08-06T06:43:09Z"
+      "updated_at": "2026-08-06T06:43:09Z",
+      "title_zh": "KILVO：具有强大多模态适应能力的人形机器人运动惯性激光雷达视觉里程计"
     },
     {
       "id": "http://arxiv.org/abs/2608.05635v1",
@@ -270,7 +296,8 @@
       "authors": "Christopher A. Johnson, Andria J. Farrens, Parastoo Ali Pour et al.",
       "category": "q-bio.NC",
       "published_at": "2026-08-06T06:08:08+00:00",
-      "updated_at": "2026-08-06T06:08:08Z"
+      "updated_at": "2026-08-06T06:08:08Z",
+      "title_zh": "经皮脊髓刺激会破坏有意识的踝关节本体感觉，并在未受损的成年人中产生更受限的运动模式"
     },
     {
       "id": "http://arxiv.org/abs/2608.05594v1",
@@ -280,7 +307,8 @@
       "authors": "Wenyao Xue, Jiandi Wang, Yichen Wang",
       "category": "cs.SE",
       "published_at": "2026-08-06T04:35:38+00:00",
-      "updated_at": "2026-08-06T04:35:38Z"
+      "updated_at": "2026-08-06T04:35:38Z",
+      "title_zh": "JTA：用于基于场景的安全关键软件验证的联合可测试性架构"
     },
     {
       "id": "http://arxiv.org/abs/2608.05588v1",
@@ -290,7 +318,8 @@
       "authors": "He Jiang, Jingtian Yan, Yulun Zhang et al.",
       "category": "cs.RO",
       "published_at": "2026-08-06T04:17:38+00:00",
-      "updated_at": "2026-08-06T04:17:38Z"
+      "updated_at": "2026-08-06T04:17:38Z",
+      "title_zh": "搜索辅助联合智能体环境强化学习，用于鲁棒的终身多智能体旋转路径查找"
     },
     {
       "id": "http://arxiv.org/abs/2608.05586v1",
@@ -300,7 +329,8 @@
       "authors": "Kunal S. Narkhede, Abhijeet M. Kulkarni, Guoquan Huang et al.",
       "category": "cs.RO",
       "published_at": "2026-08-06T04:17:13+00:00",
-      "updated_at": "2026-08-06T04:17:13Z"
+      "updated_at": "2026-08-06T04:17:13Z",
+      "title_zh": "PathCover：通过点云上的随机迭代空间分区 (RISP) 沿路径进行快速凸分解"
     }
   ]
 }

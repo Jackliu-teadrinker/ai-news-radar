@@ -13,6 +13,9 @@ import requests
 from datetime import datetime, timezone, timedelta
 from zoneinfo import ZoneInfo
 
+# 添加 scripts 目录到路径以导入翻译工具
+sys.path.insert(0, os.path.dirname(__file__))
+from translate_utils import is_english, translate_batch
 
 ARXIV_API = "https://export.arxiv.org/api/query"
 CATEGORIES = {
@@ -165,6 +168,15 @@ def main(output_dir: str = "data", window_hours: int = 24):
 
     filtered = filter_by_time_window(items, window_hours=window_hours)
     print(f"[ARXIV] After {window_hours}h window filter: {len(filtered)} papers")
+
+    # 翻译英文标题
+    english_titles = [item['title'] for item in filtered if is_english(item['title'])]
+    if english_titles:
+        print(f"[ARXIV] Translating {len(english_titles)} English titles...")
+        trans_map = translate_batch(english_titles)
+        for item in filtered:
+            if item['title'] in trans_map and trans_map[item['title']]:
+                item['title_zh'] = trans_map[item['title']]
 
     os.makedirs(output_dir, exist_ok=True)
     output = {
