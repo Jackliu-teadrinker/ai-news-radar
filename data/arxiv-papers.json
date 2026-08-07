@@ -1,7 +1,51 @@
 {
-  "generated_at": "2026-08-07T02:18:01.835850+00:00",
+  "generated_at": "2026-08-07T08:51:51.765874+00:00",
   "total_items": 30,
   "items": [
+    {
+      "id": "http://arxiv.org/abs/2608.06375v1",
+      "title": "$ω$-0: A Latent Predictive World Action Model for Concurrent Humanoid Loco-Manipulation",
+      "url": "https://arxiv.org/abs/2608.06375",
+      "summary": "Humanoid household tasks often require concurrent loco-manipulation, where the robot must move, adjust posture, maintain balance, and manipulate objects as a single coordinated behavior. Yet existing humanoid policies typically decompose locomotion and manipulation, while recent world-action models remain either arm-centric or video-centered. We present $ω$-0, a latent predictive whole-body world-action model for real-world humanoid concurrent loco-manipulation. Given a language instruction, current visual observation, and robot proprioceptive state, $ω$-0 directly predicts controller-compatible whole-body action latents for real-robot execution. Rather than reconstructing future videos, $ω$-0 learns compact future observation embeddings as a lightweight predictive objective, coupling latent visual foresight with diffusion-based whole-body action generation. The model supports egocentric RGB, exocentric RGB, and exocentric depth inputs, and leverages controller-based simulation replay to ground human/public visual-motion priors into robot-executable action latents. We further collect $ω$-HOME, a 40+ hour real-world household humanoid dataset with synchronized multi-view observations, whole-body SMPL motions, robot states, and action latents. Real-world experiments on 11 household tasks demonstrate that a single $ω$-0 model can produce smooth manipulate-while-moving behaviors and consistently outperform representative imitation learning, VLA, humanoid, and WAM baselines.",
+      "authors": "Zhe Li, Zhenzhe Zhang, Yangyang Wei et al.",
+      "category": "cs.RO",
+      "published_at": "2026-08-06T17:59:31+00:00",
+      "updated_at": "2026-08-06T17:59:31Z",
+      "title_zh": "$ω$-0：并发人形机器人操纵的潜在预测世界动作模型"
+    },
+    {
+      "id": "http://arxiv.org/abs/2608.06374v1",
+      "title": "DyPES-VLA: Learning Shared Dynamics Priors and Embodiment-Specific Control for Cross-Embodiment Manipulation",
+      "url": "https://arxiv.org/abs/2608.06374",
+      "summary": "Vision-Language-Action (VLA) models have become a powerful paradigm for robot manipulation, but training a single generalist policy for heterogeneous robot embodiments remains an open problem. Existing methods have two main limitations. First, they underuse dynamics priors shared across diverse visual and interaction data, limiting cross-embodiment transfer. Second, they require extensive manual preprocessing to convert embodiment-specific actions into a common format. To overcome these limitations, we propose DyPES-VLA, a cross-embodiment VLA that learns shared Dynamics Priors and Embodiment-Specific control. First, we learn shared dynamics priors by training the vision-language model (VLM) with a future-prediction objective on cross-embodiment data, driving the shared query representation to capture object motion, contact, and interaction-induced scene changes. Second, an embodiment-specific Mixture-of-Experts (MoE) action head translates these shared dynamics priors into executable controls directly in each embodiment's native action space, without manually pre-aligning heterogeneous actions into a common format. This head shares attention layers to capture common temporal action structures, while its embodiment-specific feed-forward experts resolve the unique kinematic constraints and control semantics of distinct embodiments. As a generalist policy, our \\ourmethod achieves state-of-the-art performance across simulation and real-world evaluations, reaching 98.0% success on LIBERO, 59.25% on RoboCasa-GR1, and 89.02% on RoboTwin~2.0.",
+      "authors": "Junfeng Li, Junjie He, Zhide Zhong et al.",
+      "category": "cs.RO",
+      "published_at": "2026-08-06T17:59:20+00:00",
+      "updated_at": "2026-08-06T17:59:20Z",
+      "title_zh": "DyPES-VLA：学习共享动态先验和跨实施例操作的特定实施例控制"
+    },
+    {
+      "id": "http://arxiv.org/abs/2608.06354v1",
+      "title": "A Master-Salve Robot Manipulator for Needle-Based Teleoperation in MRI Chamber",
+      "url": "https://arxiv.org/abs/2608.06354",
+      "summary": "We present a MR safe, master-slave robot manipulator for abdominal interventions in the MRI chamber. A human operated 2+1-DoF master controller manipulator transmits motion and force to a 2+1-DoF slave manipulator via fluid transmission. Jointly, a digital master controller provides multimodal control capability beyond common split axis or mode switchable hybrid human-digital controller configurations found in previous studies. High input impedance, low-leakage, elastomeric fluid actuators are delegated to remote angulation control. Low-friction graphite piston cylinders are delegated to needle insertion axis remote actuation given the sub-newton force transparency and sub-millimeter motion transmission over bedside fluid piping lengths. The device enables real-time MRI guided interventions allowing manual, digital, hybrid, and collaborative control modes. Collaborative tasks such as assisted tissue penetration, fault-driven virtual fixture, and motion compensation through feedback control are presented in this paper. Preliminary MR scanner results demonstrate manipulator functional viability for an in-vivo pig experiment in bedside, manual control mode configuration.",
+      "authors": "Omar Curiel, Jing-Yuan Huang, Po-Chih Chen et al.",
+      "category": "cs.RO",
+      "published_at": "2026-08-06T17:53:32+00:00",
+      "updated_at": "2026-08-06T17:53:32Z",
+      "title_zh": "用于 MRI 室内针基远程操作的主从机器人机械手"
+    },
+    {
+      "id": "http://arxiv.org/abs/2608.06332v1",
+      "title": "GeniWorld: A Generalizable Interactive World Model for Robotic Manipulation via Visual Actions",
+      "url": "https://arxiv.org/abs/2608.06332",
+      "summary": "Generalist robot policies exhibit strong capabilities, but their robustness in complex and unseen environments remains limited. Scaling robot learning and evaluation in diverse real-world environments remains costly and challenging. Action-conditioned world models offer a promising alternative, but they often suffer from limited action controllability and poor generalization to out-of-distribution (OOD) scenarios. To this end, we present GeniWorld, an interactive world model for robots that generalizes robustly across unseen scenarios. Building on pretrained video generative models, we use URDF-based rendering to transform numerical actions into visual action representations, enabling spatially grounded action control. By explicitly decoupling embodiment kinematics from environmental dynamics, our model mitigates scene overfitting and facilitates modeling of robot-environment interactions. To achieve closed-loop control, we construct an autoregressive video prediction model integrated with high-frequency robot kinematic control, enabling interaction with both robot policies and human teleoperators. In our experiments, even when trained solely on limited fixed-scene data, our model achieves superior in-domain performance and robust zero-shot generalization to highly randomized, unseen environments. For downstream applications, GeniWorld serves as a scalable policy evaluator that remains reliable under environmental perturbations. Furthermore, even with limited real-world demonstrations, GeniWorld generates diverse manipulation trajectories within the world model, improving downstream policy performance and robustness in complex environments.",
+      "authors": "Chenghao Gu, Hanyang Yu, Jingbo Zhang et al.",
+      "category": "cs.RO",
+      "published_at": "2026-08-06T17:40:32+00:00",
+      "updated_at": "2026-08-06T17:40:32Z",
+      "title_zh": "GeniWorld：通过视觉动作进行机器人操作的通用交互式世界模型"
+    },
     {
       "id": "http://arxiv.org/abs/2608.06221v1",
       "title": "Robot Learning from Human Demonstrations: Handwritten Alphabet Trajectories and Human-Likeness Evaluation",
@@ -287,50 +331,6 @@
       "published_at": "2026-08-06T06:43:09+00:00",
       "updated_at": "2026-08-06T06:43:09Z",
       "title_zh": "KILVO：具有强大多模态适应能力的人形机器人运动惯性激光雷达视觉里程计"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.05635v1",
-      "title": "Transcutaneous Spinal Cord Stimulation Disrupts Conscious Ankle Proprioception and Produces a More Constrained Locomotor Pattern in Unimpaired Adults",
-      "url": "https://arxiv.org/abs/2608.05635",
-      "summary": "Transcutaneous spinal cord stimulation (tSCS) modulates spinal sensorimotor circuits primarily through activation of afferent networks. While prior work has emphasized locomotor performance and spinal excitability, how tSCS affects conscious proprioceptive perception and the extent to which such effects parallel changes in locomotor control remain unclear. We investigated the acute and training-related effects of tSCS on ankle proprioception and gait in unimpaired adults (n = 14), with an independent control group (n = 14) completing identical proprioceptive training without stimulation. Proprioception was quantified using a bilateral robotic assessment of dynamic ankle localization ability (Crisscross), gross motor output using maximum dorsiflexion strength, and gait during normal and tandem treadmill walking using spatiotemporal, trunk-sway, and mediolateral center-of-mass (CoM) excursion measures. Acute tSCS increased ankle proprioceptive error (p &lt; 0.001) while dorsiflexion strength was unchanged (p = 0.30). Gait shifted toward a modestly more constrained locomotor pattern, characterized by reduced step width and ML CoM excursion (p &lt; 0.05). With continued training under stimulation, proprioceptive error decreased and, unlike the control group, the tSCS group showed progressive improvement that persisted after stimulation ended. Sagittal-plane gait measures recovered toward or beyond baseline, whereas mediolateral measures remained constrained, revealing a direction-dependent reorganization of locomotor control. Together, these findings show that tSCS influences multiple aspects of the sensorimotor control loop, disrupting conscious proprioception while reshaping locomotor behavior, and that the nervous system can adapt to altered afferent input through training.",
-      "authors": "Christopher A. Johnson, Andria J. Farrens, Parastoo Ali Pour et al.",
-      "category": "q-bio.NC",
-      "published_at": "2026-08-06T06:08:08+00:00",
-      "updated_at": "2026-08-06T06:08:08Z",
-      "title_zh": "经皮脊髓刺激会破坏有意识的踝关节本体感觉，并在未受损的成年人中产生更受限的运动模式"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.05594v1",
-      "title": "JTA: Joint Testability Architecture for Scenario-Based Validation of Safety-Critical Software",
-      "url": "https://arxiv.org/abs/2608.05594",
-      "summary": "Validation adequacy in safety-critical software depends on more than the system under test. Critical scenarios must be constructed under controlled conditions, execution evidence must be aligned into verdict-ready form, and abnormal outcomes must be attributable to actionable causes. Existing testability research remains largely artifact-centric and offers little architectural support for reasoning about the combined capability of the scenario, the test system, and the system under test. Joint Testability Architecture (JTA) addresses this gap by treating those three elements as a single object of analysis and design. It characterizes validation capability along three dimensions--controllability, observability, and isolability--and organizes them through three domains, three bridges, and an analysis-design-evaluation-refinement loop. JTA also introduces scenario contracts, joint capability assessment, validation blind-spot identification, and bridge-oriented design actions that map capability gaps to concrete improvements in control points, evidence organization, and attribution boundaries. An illustrative analysis of ArduPilot failsafe validation shows that link-loss scenarios are comparatively mature, whereas state-estimation anomaly scenarios remain harder to validate because evidence alignment and attribution semantics are weaker. JTA is not a replacement for existing testing or safety-analysis techniques; it provides an architectural basis for modeling, designing, and assessing scenario-based validation in safety-critical software.",
-      "authors": "Wenyao Xue, Jiandi Wang, Yichen Wang",
-      "category": "cs.SE",
-      "published_at": "2026-08-06T04:35:38+00:00",
-      "updated_at": "2026-08-06T04:35:38Z",
-      "title_zh": "JTA：用于基于场景的安全关键软件验证的联合可测试性架构"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.05588v1",
-      "title": "Search-Aided Joint Agent-Environment Reinforcement Learning for Robust Lifelong Multi-Agent Path Finding with Rotations",
-      "url": "https://arxiv.org/abs/2608.05588",
-      "summary": "Lifelong Multi-Agent Path Finding (LMAPF) requires repeatedly planning collision-free paths for agents that continuously receive new goals upon reaching their current ones. While many learning-based planners have been proposed for LMAPF, most rely on oversimplified kinematic assumptions that may overlook motion constraints critical to real-world performance. In this work, we study a more realistic LMAPF model derived from many real-world automated warehouse systems, termed LMAPF-R2, which incorporates robust safety constraints and in-place rotation constraints. These constraints substantially increase coordination difficulty, particularly in highly constrained spaces. To address these challenges, we propose Search-Aided Joint Reinforcement Learning (SJRL). We first augment neural policies with Causal PIBT, a single-step search-based planner that resolves agents' collisions and propagates their intentions. We then introduce a unified RL formulation that jointly optimizes agent and environment policies, where the environment policy learns graph edge costs to provide global movement guidance via backward Dijkstra search. Experiments demonstrate that SJRL achieves significant improvements over the strong search-based planner, Causal-PIBT, across multiple high-density maps. We further validate SJRL in a challenging mixed-reality warehouse environment with 8 physical robots and 248 virtual robots.",
-      "authors": "He Jiang, Jingtian Yan, Yulun Zhang et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-06T04:17:38+00:00",
-      "updated_at": "2026-08-06T04:17:38Z",
-      "title_zh": "搜索辅助联合智能体环境强化学习，用于鲁棒的终身多智能体旋转路径查找"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.05586v1",
-      "title": "PathCover: A Fast Convex Decomposition along a Path via Randomized Iterative Space Partitioning (RISP) on Point Clouds",
-      "url": "https://arxiv.org/abs/2608.05586",
-      "summary": "Autonomous robot navigation requires the rapid generation of obstacle-free regions for trajectory planning. However, existing corridor generators struggle to meet real-time, sensor-rate computational constraints. To resolve this bottleneck, we introduce PathCover, a framework driven by RISP; a novel randomized algorithm that constructs convex polytopes directly from raw point cloud data in expected linear time under a mild probabilistic elimination condition. PathCover generates sequences of overlapping, obstacle-free polytopes that safely constrain downstream MPC and trajectory optimization. We mathematically guarantee that the algorithm terminates in finite steps while ensuring continuous progress along any obstacle-free reference path. Extensive benchmarks on synthetic and real-world LiDAR datasets demonstrate an order-of-magnitude speedup over state-of-the-art methods while maintaining comparable corridor volumes. The complete pipeline is validated via high-fidelity quadrotor simulations and physical deployment on a quadrupedal robot navigating constrained environments using live LiDAR perception.",
-      "authors": "Kunal S. Narkhede, Abhijeet M. Kulkarni, Guoquan Huang et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-06T04:17:13+00:00",
-      "updated_at": "2026-08-06T04:17:13Z",
-      "title_zh": "PathCover：通过点云上的随机迭代空间分区 (RISP) 沿路径进行快速凸分解"
     }
   ]
 }
