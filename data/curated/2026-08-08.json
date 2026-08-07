@@ -1,9 +1,9 @@
 {
   "date": "2026-08-08",
-  "generated_at": "2026-08-07T23:03:23.474844+00:00",
+  "generated_at": "2026-08-07T23:56:30.429913+00:00",
   "score_threshold": 80,
   "total_items": 50,
-  "new_added": 4,
+  "new_added": 1,
   "items": [
     {
       "id": "c6af90216c80ff87",
@@ -214,6 +214,27 @@
       "timeliness": 28.16,
       "writing_value": 0,
       "total_score": 118.16
+    },
+    {
+      "id": "ba594ab016cfcc34",
+      "title": "海外研选 | 巴克莱：自动化3.0时代开启 人形机器人市场10年后或达2000亿美元 - cls.cn",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE12ZjBIMXNiQVEtUTZXbHRaMTFFNGtGVjdUM1hLY3RwSm9lcS15Z1k4WkgzdW9LT3Y4ZUJyN3hjUjhDTHNaOWhzcg?oc=5",
+      "published_at": "2026-08-07T21:28:46+00:00",
+      "category": "国内人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国内人形机器人资讯",
+      "source": "国内人形机器人资讯",
+      "site_id": "国内人形机器人资讯",
+      "description": "海外研选 | 巴克莱：自动化3.0时代开启 人形机器人市场10年后或达2000亿美元  cls.cn",
+      "ai_score": 80.0,
+      "ai_label": "humanoid",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 27.56,
+      "writing_value": 0,
+      "total_score": 117.56
     },
     {
       "id": "9eb9f71467abfe16",
@@ -1033,27 +1054,6 @@
       "timeliness": 29.22,
       "writing_value": 0,
       "total_score": 104.22
-    },
-    {
-      "id": "7348edc582bef48e",
-      "title": "All Our Broken Parts Earns 100% Steam Reviews: Free Robot-Doctor Demo Live Now - Tech Times",
-      "title_zh": "我们所有损坏的零件都获得了 100% Steam 评论：免费机器人医生演示现已上线 - Tech Times",
-      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQdWhDZHVBaFB2TWJaYTlvMEVWa21KWHdzckxoUlZCZnRBTGZtX3dnendxMU1rWXhpeVBhWXVGd3ZseEZIV3BQc1NFblFCMi00YVJqMmhqZXFRMzBhUWRzS2hEMUhmQnp3c0xSRHU0YWlGN2Y0WURBNWhyeFhSWm5PUmlzVHByeWdEYmoyOFVKbWtnR0JKX2RPSTJ5bVdvTktRdlpibGZHTHQ0dC1XTXRRcmkwa3NWX1diVlAyRzUwN1oyRHRsakdhWEF4Zw?oc=5",
-      "published_at": "2026-08-07T18:50:34+00:00",
-      "category": "国外机器人资讯",
-      "gn_label": "robotics",
-      "site_name": "国外机器人资讯",
-      "source": "国外机器人资讯",
-      "site_id": "国外机器人资讯",
-      "description": "All Our Broken Parts Earns 100% Steam Reviews: Free Robot-Doctor Demo Live Now  Tech Times",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 29.1,
-      "writing_value": 0,
-      "total_score": 104.1
     }
   ]
 }

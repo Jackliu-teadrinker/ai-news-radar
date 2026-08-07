@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-07T23:03:20.686901+00:00",
-  "total_items": 19,
+  "generated_at": "2026-08-07T23:56:27.798879+00:00",
+  "total_items": 18,
   "items": [
     {
       "id": "http://arxiv.org/abs/2608.06375v1",
@@ -199,17 +199,6 @@
       "published_at": "2026-08-06T12:19:38+00:00",
       "updated_at": "2026-08-06T12:19:38Z",
       "title_zh": "GAUGE：模拟引擎和视频世界模型中物理保真度的测量基准"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.05903v1",
-      "title": "Robust-WAM: Bridging Generative Pretraining and Semantic Foresight in World-Action Models",
-      "url": "https://arxiv.org/abs/2608.05903",
-      "summary": "Mainstream World-Action Models (WAMs) adapt pretrained video generation models (VGMs) for robot control, transferring their learned dynamics prior for action prediction. These VGMs are typically trained in a variational autoencoder (VAE) latent space. However, the VAE latent space is optimized for pixel reconstruction, which rewards fine appearance detail and leaves the action prediction fragile under visual shifts. Recent works build WAMs in semantic latent space, which are more robust to appearance shifts. However, these models cannot leverage the large-scale VGM pretraining that exists only in VAE space. To overcome this dilemma, we propose Robust-WAM, a general post-training method for video-generation-based WAMs that preserves the VAE-based generative path and adds a lightweight semantic foresight alignment objective on the action stream. This retains the large-scale VGM pretraining while grounding actions in appearance-invariant dynamics that stay reliable under illumination shifts and other visual out-of-distribution conditions. Specifically, we employ learnable query tokens to bring future-scene semantics into the action stream by aligning their output hidden states with the semantic foresight of future ground-truth frames. To establish the temporal correspondence between each query and the future step it describes, we give it the positional encoding of the matching action tokens. Experiments on out-of-distribution generalization simulation benchmarks and a real-robot setup show that our Robust-WAM consistently improves the success rates of multiple WAM baselines without sacrificing in-distribution performance.",
-      "authors": "Haodong Yan, Junfeng Li, Junjie He et al.",
-      "category": "cs.CV",
-      "published_at": "2026-08-06T11:31:56+00:00",
-      "updated_at": "2026-08-06T11:31:56Z",
-      "title_zh": "Robust-WAM：在世界动作模型中桥接生成预训练和语义预见"
     }
   ]
 }
