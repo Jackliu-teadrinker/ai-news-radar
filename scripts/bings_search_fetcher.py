@@ -35,8 +35,9 @@ OUTPUT_FILE = os.path.join(OUTPUT_DIR, 'search-news.json')
 
 
 def search_bing(keyword: str, max_results: int = 10) -> list[dict]:
-    """搜索 Bing，返回结果列表。"""
-    url = f"https://cn.bing.com/search?q={urllib.parse.quote(keyword)}"
+    """搜索 Bing（国际版），返回结果列表。"""
+    # 使用国际版 Bing（在海外服务器上可访问）
+    url = f"https://www.bing.com/search?q={urllib.parse.quote(keyword + ' 中国')}&setlang=zh-CN"
     
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
