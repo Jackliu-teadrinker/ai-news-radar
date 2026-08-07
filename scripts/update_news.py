@@ -845,6 +845,15 @@ def run(output_dir: str, window_hours: int, opml_path: str, archive_days: int, w
         high_relevance_anchors = [item for item in scored_anchors if item.get('ai_score', 0) >= ANCHOR_MIN_SCORE]
         print(f"[INFO] Anchor relevance filter (>= {ANCHOR_MIN_SCORE}): {len(high_relevance_anchors)}/{len(scored_anchors)} items passed")
 
+        # 翻译锚点英文标题
+        english_anchor_titles = [it['title'] for it in high_relevance_anchors if is_english(it['title'])]
+        if english_anchor_titles:
+            print(f"[INFO] Translating {len(english_anchor_titles)} anchor titles...")
+            anchor_trans_map = translate_batch(english_anchor_titles)
+            for it in high_relevance_anchors:
+                if it['title'] in anchor_trans_map and anchor_trans_map[it['title']]:
+                    it['title_zh'] = anchor_trans_map[it['title']]
+
         # FIX (2026-08-06): Fallback 策略重写
         # 原策略：24h 内 <5 条 → 72h → 旧文穿透（8/4 23:54 触发，导致页面展示 8/2~8/4 旧文）
         # 新策略：anchor 窗口内 0 条才允许 fallback，且 fallback 窗口严格按 7d 上限，
@@ -873,6 +882,15 @@ def run(output_dir: str, window_hours: int, opml_path: str, archive_days: int, w
             high_relevance_anchors = high_relevance_anchors[:30]
             fallback_used = True
             print(f"[INFO] Fallback result: {len(high_relevance_anchors)} items (after 7d window)")
+
+        # 翻译锚点英文标题
+        english_anchor_titles = [it['title'] for it in high_relevance_anchors if is_english(it['title'])]
+        if english_anchor_titles:
+            print(f"[INFO] Translating {len(english_anchor_titles)} anchor titles...")
+            anchor_trans_map = translate_batch(english_anchor_titles)
+            for it in high_relevance_anchors:
+                if it['title'] in anchor_trans_map and anchor_trans_map[it['title']]:
+                    it['title_zh'] = anchor_trans_map[it['title']]
 
         custom_generated_at = datetime.now(timezone.utc).isoformat()
         custom_out = {
