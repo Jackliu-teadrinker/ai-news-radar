@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Bing 搜索抓取器 — 机器人/具身智能/脑机接口 实时资讯
 
-用 Bing 搜索替代搜狗，抓取最新新闻到雷达搜索专区。
+用 Google News RSS 作为主要数据源（Bing 在海外被屏蔽），
+Bing 搜索作为备选。
 输出到 data/search-news.json，供前端展示。
 """
 import os
@@ -35,9 +36,8 @@ OUTPUT_FILE = os.path.join(OUTPUT_DIR, 'search-news.json')
 
 
 def search_bing(keyword: str, max_results: int = 10) -> list[dict]:
-    """搜索 Bing（国际版），返回结果列表。"""
-    # 使用国际版 Bing（在海外服务器上可访问）
-    url = f"https://www.bing.com/search?q={urllib.parse.quote(keyword + ' 中国')}&setlang=zh-CN"
+    """搜索 Bing 国际版，返回结果列表。"""
+    url = f"https://www.bing.com/search?q={urllib.parse.quote(keyword)}&setlang=zh-CN"
     
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
@@ -103,6 +103,62 @@ def search_bing(keyword: str, max_results: int = 10) -> list[dict]:
         return []
 
 
+def search_google_news(keyword: str, max_results: int = 10) -> list[dict]:
+    """搜索 Google News，返回结果列表。"""
+    url = f"https://news.google.com/rss/search?q={urllib.parse.quote(keyword)}&hl=zh-CN&gl=CN&ceid=CN:zh-Hans"
+    
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
+        'Accept': 'application/rss+xml, application/xml, text/xml',
+    }
+    
+    try:
+        resp = requests.get(url, headers=headers, timeout=15, verify=False)
+        if resp.status_code != 200:
+            print(f"  [FAIL] GN:{keyword}: HTTP {resp.status_code}")
+            return []
+        
+        # 解析 RSS
+        import feedparser
+        parsed = feedparser.parse(resp.text)
+        
+        items = []
+        for entry in parsed.entries[:max_results]:
+            link = entry.get('link', '')
+            title = entry.get('title', '').strip()
+            snippet = entry.get('summary', '') or entry.get('description', '')
+            
+            # 清理 HTML
+            import re
+            snippet = re.sub(r'<[^>]+>', '', snippet).strip()[:200]
+            
+            # 提取域名
+            domain = ''
+            try:
+                from urllib.parse import urlparse
+                domain = urlparse(link).hostname or ''
+            except:
+                pass
+            
+            if title and link:
+                items.append({
+                    'title': title,
+                    'url': link,
+                    'description': snippet,
+                    'source': f'Google News: {keyword}',
+                    'site_name': domain,
+                    'date_str': None,
+                    'published_at': None,
+                })
+        
+        print(f"  [OK] GN:{keyword}: {len(items)} results")
+        return items
+        
+    except Exception as e:
+        print(f"  [FAIL] GN:{keyword}: {e}")
+        return []
+
+
 def get_sample_data() -> dict:
     """获取示例数据（Bing 不可用时的 fallback）。"""
     return {
@@ -124,16 +180,17 @@ def main():
     CST = timezone(timedelta(hours=8))
     now_sh = datetime.now(CST)
     window_start = now_sh - timedelta(hours=WINDOW_HOURS)
-    
+
     print(f"[SEARCH] 开始搜索，窗口: {window_start.strftime('%Y-%m-%d %H:%M')} → {now_sh.strftime('%Y-%m-%d %H:%M')}")
     print(f"[SEARCH] 关键词: {SEARCH_KEYWORDS}")
-    
+
     all_items = []
     seen_urls = set()
-    
-    # 并发搜索
+
+    # 优先使用 Google News RSS（在海外可访问）
+    print("\n[SEARCH] 尝试 Google News RSS...")
     with ThreadPoolExecutor(max_workers=3) as executor:
-        futures = {executor.submit(search_bing, kw, SEARCH_MAX_PER_KW): kw for kw in SEARCH_KEYWORDS}
+        futures = {executor.submit(search_google_news, kw, SEARCH_MAX_PER_KW): kw for kw in SEARCH_KEYWORDS}
         for future in as_completed(futures):
             kw = futures[future]
             try:
@@ -144,12 +201,30 @@ def main():
                         all_items.append(item)
             except Exception as e:
                 print(f"  [ERROR] {kw}: {e}")
-    
-    print(f"\n[SEARCH] 总计: {len(all_items)} 条去重后结果")
-    
-    # 如果 Bing 搜索返回 0 条，使用示例数据
+
+    print(f"\n[SEARCH] Google News 总计: {len(all_items)} 条")
+
+    # 如果 Google News 返回 0 条，尝试 Bing
     if len(all_items) == 0:
-        print("[SEARCH] Bing 搜索返回 0 条，使用示例数据 fallback")
+        print("\n[SEARCH] Google News 无结果，尝试 Bing...")
+        with ThreadPoolExecutor(max_workers=3) as executor:
+            futures = {executor.submit(search_bing, kw, SEARCH_MAX_PER_KW): kw for kw in SEARCH_KEYWORDS}
+            for future in as_completed(futures):
+                kw = futures[future]
+                try:
+                    items = future.result()
+                    for item in items:
+                        if item['url'] not in seen_urls:
+                            seen_urls.add(item['url'])
+                            all_items.append(item)
+                except Exception as e:
+                    print(f"  [ERROR] {kw}: {e}")
+
+        print(f"\n[SEARCH] Bing 总计: {len(all_items)} 条")
+
+    # 如果都为 0，使用示例数据
+    if len(all_items) == 0:
+        print("[SEARCH] 所有搜索源均无结果，使用示例数据 fallback")
         output = get_sample_data()
     else:
         output = {
