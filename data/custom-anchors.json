@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-07T01:29:09.032353+00:00",
+  "generated_at": "2026-08-07T01:35:12.663383+00:00",
   "window_start": "2026-08-06T19:00:00+08:00",
-  "window_end": "2026-08-07T09:29:09.028530+08:00",
+  "window_end": "2026-08-07T09:35:12.659515+08:00",
   "total_items": 47,
   "items": [
     {
@@ -21,114 +21,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 21.39,
+      "timeliness": 21.29,
       "writing_value": 0,
-      "total_score": 96.39
+      "total_score": 96.29
     },
     {
-      "id": "34ed67d10f33a472133f056785d315416b9070dd",
-      "title": "00后天才少女官宣，已离开OpenAI加入脑机接口创企",
+      "id": "19387f3373523826ec51145ccb4b07fb626eca7e",
+      "title": "The FCC bans all robot vacuums made outside the U.S. - Mashable",
       "title_zh": "",
-      "url": "https://zhidx.com/p/582841.html",
-      "published_at": "2026-08-06T14:12:44+00:00",
-      "category": "极链AI",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBtRGhKRk45WEJVY2hXZXgyczNhWUtnWWlSNHcxaWdab2l1eHVTOXFLcExaQ2R0bExibkREaFpIM1NmRmpSSUdXWnpOd3htWWlvSFZzYlhJdHZ0N0FnSzRoN1IxbFd4ZEUx?oc=5",
+      "published_at": "2026-08-06T23:51:45+00:00",
+      "category": "GN: robot vacuum",
       "gn_label": "robotics",
-      "site_name": "极链AI",
-      "source": "极链AI",
-      "site_id": "极链AI",
-      "description": "智东西\n 编译 | 茄子\n 编辑 | 程茜\n智东西8月6日消息，今天，前OpenAI研究员娜奥米·巴什坎斯基（Naomi Bashkansky）在X宣布，她已在两周前离开OpenAI，加入脑机接口初创公司Conduit并担任创始研究员，参与训练能够以非侵入方式读取人类思维的模型。\n\n▲巴什坎斯基官宣离开OpenAI加入Conduit（图源：X）\n巴什坎斯基于2025年1月休学，并以驻留研究员身份加入OpenAI对齐团队。除核心研究外，她还参与制作面向新人的内部AGI培训材料，并为OpenAI基金会AI Resilience部门提供建议。加入OpenAI前，她的研究主要涉及大模型指令偏移和神经网",
-      "ai_score": 80.0,
-      "ai_label": "robotics",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 5,
-      "timeliness": 18.73,
-      "writing_value": 5,
-      "total_score": 118.73
-    },
-    {
-      "id": "c48a7460b47df036dd9966dc4b92e7aa96f3b33d",
-      "title": "HII Locking In Autonomous Robotic Help For Shipbuilding With $900 Million In Production Agreements - Defense Daily",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxNRjhsakltRHJ4a1BRZ2plQWFvdnFsbUVqSGQ4V0UzaW5pSjkxRkpiaEREejZWYVZROHVfRVZpRGZtZVk5d0RNYmU0S25ZZWZjY29xak1oQ1dsMXZuMnVRQ2VCZ2ZnaDR2eWhLbkhwenNVejF4ajNtT0JfRFpuWlhWcUNCVWxTWTEyTWtGRnViQnFNRkpacGl1N2g1YnlRWGJCdWp3UFdEUDh0YlpsN3BfYjlRZExvcnJmZWFmOGQwWTRKcWNFUG1RLWNvVWdVMVAzX0V4aG1pbDRSMFFlbEVZR2NWdl93SDdIa0JCX2hUNFJVekllR21z?oc=5",
-      "published_at": "2026-08-06T20:50:41+00:00",
-      "category": "GN: autonomous robot",
-      "gn_label": "robotics",
-      "site_name": "GN: autonomous robot",
-      "source": "GN: autonomous robot",
-      "site_id": "GN: autonomous robot",
-      "description": "HII Locking In Autonomous Robotic Help For Shipbuilding With $900 Million In Production Agreements  Defense Daily",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 5,
-      "timeliness": 25.36,
-      "writing_value": 5,
-      "total_score": 110.36
-    },
-    {
-      "id": "ca723d52317a4207c5e65a2fd2bb48e9a7cb98d3",
-      "title": "Brain Corp Reports 68% Growth in Global Deployments as Enterprise Robots Log More Than 5.3 Million Autonomous Hours in H1 2026 - StreetInsider",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxPc09iYldrcXJlTXhmLTR2NHVtQU5VRklvcmFXZWtNVWgtamNFOXQxSnYxYW91MVVlZzcyUEIwcHlISDVFQmtXZnlHb21MdFRfSmJEOW5TZjQzWGMwR2ZmRHJyVUJhdlBORThYcnFsZHdPTkM1b1VXbjhUUlpHd1YyRGx1dHo1aUFlN19PX2ZoTGdYWVpkQ180a2FLMmxLaVRtck50OFEzaGYyY0lKRWZXT2pqMlVHSHUzU2FRa0NteTFxN3ctdG9qeUdNYl8tX09nTmNMQ2NrNTdzY0RqZldNekU4ZHN0ZUtBLWFPdGhoVE13aVE0ZFdCdGp3MlBUZ1EwMUcwQm9POFFkM3NJaUJIaA?oc=5",
-      "published_at": "2026-08-06T13:04:25+00:00",
-      "category": "GN: autonomous robot",
-      "gn_label": "robotics",
-      "site_name": "GN: autonomous robot",
-      "source": "GN: autonomous robot",
-      "site_id": "GN: autonomous robot",
-      "description": "Brain Corp Reports 68% Growth in Global Deployments as Enterprise Robots Log More Than 5.3 Million Autonomous Hours in H1 2026  StreetInsider",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 5,
-      "timeliness": 17.59,
-      "writing_value": 5,
-      "total_score": 102.59
-    },
-    {
-      "id": "bde8334d923b8c9cd314f77684fb36834dc61f62",
-      "title": "Up To $27.2 Million Awarded For AI-powered Micro-robot - Mirage News",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxObGZJWmlGUVFOTXpXLWJpV3BRZXdKekVZLUdqaUg4LVVBbTY0azFIWHNVRGNyWEFaTGJjcHM2LWRReVJfdFA1T1g2SzQxRnh6T1V2VlJjbjhIanpJTjYwcUFRTTJ2QVh0VnVoRkFNRll4UmxNVFJrRHB2a3JlTFUwd0FBVzZaaTJwNUpF?oc=5",
-      "published_at": "2026-08-06T16:48:00+00:00",
-      "category": "GN: autonomous robot",
-      "gn_label": "robotics",
-      "site_name": "GN: autonomous robot",
-      "source": "GN: autonomous robot",
-      "site_id": "GN: autonomous robot",
-      "description": "Up To $27.2 Million Awarded For AI-powered Micro-robot  Mirage News",
+      "site_name": "GN: robot vacuum",
+      "source": "GN: robot vacuum",
+      "site_id": "GN: robot vacuum",
+      "description": "The FCC bans all robot vacuums made outside the U.S.  Mashable",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 21.32,
+      "timeliness": 28.28,
       "writing_value": 0,
-      "total_score": 96.32
-    },
-    {
-      "id": "a02e11af21e20e456833c45a6a1039078c8808b5",
-      "title": "DeepSeek豪掷1.4亿护航宇树IPO，杭州绝代双骄战略合体",
-      "title_zh": "",
-      "url": "https://www.qbitai.com/2026/08/467487.html",
-      "published_at": "2026-08-07T00:25:07+00:00",
-      "category": "量子位",
-      "gn_label": "robotics",
-      "site_name": "量子位",
-      "source": "量子位",
-      "site_id": "量子位",
-      "description": "此后模型、算力、数据中心都在合作范围内",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 28.93,
-      "writing_value": 0,
-      "total_score": 103.93
+      "total_score": 103.28
     },
     {
       "id": "e4ae6f5ceb296a1fb0f014bb47825f1151e53794",
@@ -147,9 +63,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.11,
+      "timeliness": 27.01,
       "writing_value": 0,
-      "total_score": 102.11
+      "total_score": 102.01
     },
     {
       "id": "0073f84502f8f2ddb9ec27f32b03b3071f354503",
@@ -168,30 +84,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 18.53,
+      "timeliness": 18.43,
       "writing_value": 0,
-      "total_score": 93.53
-    },
-    {
-      "id": "ad5d13861d8b465753c168e661e8da3138bbdf77",
-      "title": "Best robot vacuum deal: Save $700 on roborock Qrevo CurvX - Mashable",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5vcUd0SFJVM0JISGpVVndzdWhqU3AxLWgxY1lseGFTcVlYS3NRREVUbE9OQVRkQnNuLUhXSWZ0NWpCcXlyVWVGRVdKZVowME1mYzRxT2h4QTFHa3laZExNdUdlT0hJeXdVWXNFdldDM29YT1lF?oc=5",
-      "published_at": "2026-08-06T20:16:59+00:00",
-      "category": "GN: robot vacuum",
-      "gn_label": "robotics",
-      "site_name": "GN: robot vacuum",
-      "source": "GN: robot vacuum",
-      "site_id": "GN: robot vacuum",
-      "description": "Best robot vacuum deal: Save $700 on roborock Qrevo CurvX  Mashable",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 24.8,
-      "writing_value": 0,
-      "total_score": 99.8
+      "total_score": 93.43
     },
     {
       "id": "7ea61198247d9a750e1c6defc7d49b8607fe8b19",
@@ -210,13 +105,34 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.0,
+      "timeliness": 26.9,
       "writing_value": 0,
-      "total_score": 102.0
+      "total_score": 101.9
     },
     {
-      "id": "3d512a23bc6a4bc6f923faca18c8802e55eab24c",
-      "title": "Target slashes top-rated robot vacuum from $505 to $111 in exclusive online deal - geekspin",
+      "id": "ad5d13861d8b465753c168e661e8da3138bbdf77",
+      "title": "Best robot vacuum deal: Save $700 on roborock Qrevo CurvX - Mashable",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5vcUd0SFJVM0JISGpVVndzdWhqU3AxLWgxY1lseGFTcVlYS3NRREVUbE9OQVRkQnNuLUhXSWZ0NWpCcXlyVWVGRVdKZVowME1mYzRxT2h4QTFHa3laZExNdUdlT0hJeXdVWXNFdldDM29YT1lF?oc=5",
+      "published_at": "2026-08-06T20:16:59+00:00",
+      "category": "GN: robot vacuum",
+      "gn_label": "robotics",
+      "site_name": "GN: robot vacuum",
+      "source": "GN: robot vacuum",
+      "site_id": "GN: robot vacuum",
+      "description": "Best robot vacuum deal: Save $700 on roborock Qrevo CurvX  Mashable",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 24.7,
+      "writing_value": 0,
+      "total_score": 99.7
+    },
+    {
+      "id": "755f0c9622a1019265d7302447b539c6905e859f",
+      "title": "Target slashes top-rated robot vacuum from $505 to $111 in exclusive online deal - geekspin.co",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOa1QtT2Q5bVpjQURCTnZFeGhLS2Y0azFsYTd1THlScFkyTjVYOGpfSzMyQzkyS2k0SlNub25TQVBVaXY2NVdhQVJOM2RBbGpXY1FMMWQ0cHc1dDVXV1M5YVlnTmFMNTNLa0cxTDBHYXRHMVdSVkN6Sk9uUmZSc1hNRThKa2c0azBObEdtRm16U1pvUV9ZS1VJWDNRZlhZTWNM?oc=5",
       "published_at": "2026-08-06T20:30:51+00:00",
@@ -225,15 +141,78 @@
       "site_name": "GN: robot vacuum",
       "source": "GN: robot vacuum",
       "site_id": "GN: robot vacuum",
-      "description": "Target slashes top-rated robot vacuum from $505 to $111 in exclusive online deal  geekspin",
+      "description": "Target slashes top-rated robot vacuum from $505 to $111 in exclusive online deal  geekspin.co",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.03,
+      "timeliness": 24.93,
       "writing_value": 0,
-      "total_score": 100.03
+      "total_score": 99.93
+    },
+    {
+      "id": "c48a7460b47df036dd9966dc4b92e7aa96f3b33d",
+      "title": "HII Locking In Autonomous Robotic Help For Shipbuilding With $900 Million In Production Agreements - Defense Daily",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxNRjhsakltRHJ4a1BRZ2plQWFvdnFsbUVqSGQ4V0UzaW5pSjkxRkpiaEREejZWYVZROHVfRVZpRGZtZVk5d0RNYmU0S25ZZWZjY29xak1oQ1dsMXZuMnVRQ2VCZ2ZnaDR2eWhLbkhwenNVejF4ajNtT0JfRFpuWlhWcUNCVWxTWTEyTWtGRnViQnFNRkpacGl1N2g1YnlRWGJCdWp3UFdEUDh0YlpsN3BfYjlRZExvcnJmZWFmOGQwWTRKcWNFUG1RLWNvVWdVMVAzX0V4aG1pbDRSMFFlbEVZR2NWdl93SDdIa0JCX2hUNFJVekllR21z?oc=5",
+      "published_at": "2026-08-06T20:50:41+00:00",
+      "category": "GN: autonomous robot",
+      "gn_label": "robotics",
+      "site_name": "GN: autonomous robot",
+      "source": "GN: autonomous robot",
+      "site_id": "GN: autonomous robot",
+      "description": "HII Locking In Autonomous Robotic Help For Shipbuilding With $900 Million In Production Agreements  Defense Daily",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 25.26,
+      "writing_value": 5,
+      "total_score": 110.26
+    },
+    {
+      "id": "ca723d52317a4207c5e65a2fd2bb48e9a7cb98d3",
+      "title": "Brain Corp Reports 68% Growth in Global Deployments as Enterprise Robots Log More Than 5.3 Million Autonomous Hours in H1 2026 - StreetInsider",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxPc09iYldrcXJlTXhmLTR2NHVtQU5VRklvcmFXZWtNVWgtamNFOXQxSnYxYW91MVVlZzcyUEIwcHlISDVFQmtXZnlHb21MdFRfSmJEOW5TZjQzWGMwR2ZmRHJyVUJhdlBORThYcnFsZHdPTkM1b1VXbjhUUlpHd1YyRGx1dHo1aUFlN19PX2ZoTGdYWVpkQ180a2FLMmxLaVRtck50OFEzaGYyY0lKRWZXT2pqMlVHSHUzU2FRa0NteTFxN3ctdG9qeUdNYl8tX09nTmNMQ2NrNTdzY0RqZldNekU4ZHN0ZUtBLWFPdGhoVE13aVE0ZFdCdGp3MlBUZ1EwMUcwQm9POFFkM3NJaUJIaA?oc=5",
+      "published_at": "2026-08-06T13:04:25+00:00",
+      "category": "GN: autonomous robot",
+      "gn_label": "robotics",
+      "site_name": "GN: autonomous robot",
+      "source": "GN: autonomous robot",
+      "site_id": "GN: autonomous robot",
+      "description": "Brain Corp Reports 68% Growth in Global Deployments as Enterprise Robots Log More Than 5.3 Million Autonomous Hours in H1 2026  StreetInsider",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 17.49,
+      "writing_value": 5,
+      "total_score": 102.49
+    },
+    {
+      "id": "bde8334d923b8c9cd314f77684fb36834dc61f62",
+      "title": "Up To $27.2 Million Awarded For AI-powered Micro-robot - Mirage News",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxObGZJWmlGUVFOTXpXLWJpV3BRZXdKekVZLUdqaUg4LVVBbTY0azFIWHNVRGNyWEFaTGJjcHM2LWRReVJfdFA1T1g2SzQxRnh6T1V2VlJjbjhIanpJTjYwcUFRTTJ2QVh0VnVoRkFNRll4UmxNVFJrRHB2a3JlTFUwd0FBVzZaaTJwNUpF?oc=5",
+      "published_at": "2026-08-06T16:48:00+00:00",
+      "category": "GN: autonomous robot",
+      "gn_label": "robotics",
+      "site_name": "GN: autonomous robot",
+      "source": "GN: autonomous robot",
+      "site_id": "GN: autonomous robot",
+      "description": "Up To $27.2 Million Awarded For AI-powered Micro-robot  Mirage News",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 21.21,
+      "writing_value": 0,
+      "total_score": 96.21
     },
     {
       "id": "1b9f3b714e423ab3bcb54754450b3ecdd731963b",
@@ -252,9 +231,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 19.88,
+      "timeliness": 19.77,
       "writing_value": 0,
-      "total_score": 94.88
+      "total_score": 94.77
     },
     {
       "id": "e197c71485715643b375a5965912180a78dfe0ac",
@@ -273,9 +252,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 26.88,
+      "timeliness": 26.78,
       "writing_value": 5,
-      "total_score": 111.88
+      "total_score": 111.78
     },
     {
       "id": "9ae110d10eeaed48188528d219c34e9d3e565e9d",
@@ -294,9 +273,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 19.02,
+      "timeliness": 18.91,
       "writing_value": 0,
-      "total_score": 94.02
+      "total_score": 93.91
     },
     {
       "id": "73badbfd7ba0fe3509e830991cf52b55441bad7d",
@@ -315,9 +294,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 19.93,
+      "timeliness": 19.83,
       "writing_value": 5,
-      "total_score": 104.93
+      "total_score": 104.83
     },
     {
       "id": "38fc01a8b4fd5fb1a53969811ab8f2cce44023d3",
@@ -336,9 +315,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.3,
+      "timeliness": 25.2,
       "writing_value": 0,
-      "total_score": 100.3
+      "total_score": 100.2
     },
     {
       "id": "fff266cbeed47665d724a038f16cd769383f5414",
@@ -357,9 +336,51 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 19.41,
+      "timeliness": 19.31,
       "writing_value": 5,
-      "total_score": 104.41
+      "total_score": 104.31
+    },
+    {
+      "id": "a02e11af21e20e456833c45a6a1039078c8808b5",
+      "title": "DeepSeek豪掷1.4亿护航宇树IPO，杭州绝代双骄战略合体",
+      "title_zh": "",
+      "url": "https://www.qbitai.com/2026/08/467487.html",
+      "published_at": "2026-08-07T00:25:07+00:00",
+      "category": "量子位",
+      "gn_label": "robotics",
+      "site_name": "量子位",
+      "source": "量子位",
+      "site_id": "量子位",
+      "description": "此后模型、算力、数据中心都在合作范围内",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 28.83,
+      "writing_value": 0,
+      "total_score": 103.83
+    },
+    {
+      "id": "34ed67d10f33a472133f056785d315416b9070dd",
+      "title": "00后天才少女官宣，已离开OpenAI加入脑机接口创企",
+      "title_zh": "",
+      "url": "https://zhidx.com/p/582841.html",
+      "published_at": "2026-08-06T14:12:44+00:00",
+      "category": "极链AI",
+      "gn_label": "robotics",
+      "site_name": "极链AI",
+      "source": "极链AI",
+      "site_id": "极链AI",
+      "description": "智东西\n 编译 | 茄子\n 编辑 | 程茜\n智东西8月6日消息，今天，前OpenAI研究员娜奥米·巴什坎斯基（Naomi Bashkansky）在X宣布，她已在两周前离开OpenAI，加入脑机接口初创公司Conduit并担任创始研究员，参与训练能够以非侵入方式读取人类思维的模型。\n\n▲巴什坎斯基官宣离开OpenAI加入Conduit（图源：X）\n巴什坎斯基于2025年1月休学，并以驻留研究员身份加入OpenAI对齐团队。除核心研究外，她还参与制作面向新人的内部AGI培训材料，并为OpenAI基金会AI Resilience部门提供建议。加入OpenAI前，她的研究主要涉及大模型指令偏移和神经网",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 18.63,
+      "writing_value": 5,
+      "total_score": 118.63
     },
     {
       "id": "5aa81b5626961ceab646868e2750db410ae86c56",
@@ -378,9 +399,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 15.68,
+      "timeliness": 15.58,
       "writing_value": 0,
-      "total_score": 90.68
+      "total_score": 90.58
     },
     {
       "id": "90aa7f715c8e712725dd3ef1684ddd410ebd7fbe",
@@ -399,9 +420,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 15.65,
+      "timeliness": 15.55,
       "writing_value": 0,
-      "total_score": 90.65
+      "total_score": 90.55
     },
     {
       "id": "0a77389493a47e098c197dd10a97d161347c4bb0",
@@ -420,9 +441,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 18.68,
+      "timeliness": 18.58,
       "writing_value": 0,
-      "total_score": 93.68
+      "total_score": 93.58
     },
     {
       "id": "65817386fad76dce2471b732c0b0d8a7fe2ca9fb",
@@ -441,9 +462,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 16.01,
+      "timeliness": 15.91,
       "writing_value": 0,
-      "total_score": 91.01
+      "total_score": 90.91
     },
     {
       "id": "6d78e9cd4bb3e2c149177f62c556e8da66b9cbe6",
@@ -462,9 +483,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 17.89,
+      "timeliness": 17.79,
       "writing_value": 0,
-      "total_score": 92.89
+      "total_score": 92.79
     },
     {
       "id": "3463daa22610d90bddb885adf32c8268416504a6",
@@ -483,9 +504,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 18.25,
+      "timeliness": 18.15,
       "writing_value": 0,
-      "total_score": 93.25
+      "total_score": 93.15
     },
     {
       "id": "c5dfd6c00ce9039e581ff5e515aa5e77a8c900d8",
@@ -504,9 +525,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 20.56,
+      "timeliness": 20.46,
       "writing_value": 0,
-      "total_score": 95.56
+      "total_score": 95.46
     },
     {
       "id": "687fa3c07303db2cb26926d0b472cd9624325b52",
@@ -525,9 +546,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 16.62,
+      "timeliness": 16.52,
       "writing_value": 0,
-      "total_score": 91.62
+      "total_score": 91.52
     },
     {
       "id": "4edc74f3ebaaf64ec17284f3ae335fa4926efc4d",
@@ -546,13 +567,13 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.48,
+      "timeliness": 26.38,
       "writing_value": 0,
-      "total_score": 101.48
+      "total_score": 101.38
     },
     {
-      "id": "db52cd16759394ff5e575f2dec27e024b3ff541d",
-      "title": "宇树科技发行价定了：150.8元/股！一签需缴7.54万元 - 东方财富",
+      "id": "f4559131ebf058d7668a2d62a5fa90b636466ff7",
+      "title": "宇树科技发行价定了：150.8元/股！一签需缴7.54万元 - finance.eastmoney.com",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9FRTdaTjNnR0dLVng0clJsd0oza2Zfd1RsdmFQcGFwLUszbEdZREtKbDlWTjFZRmJJQmZnR0J6YVdSRVk4NFJFYVhVcENMOTlNQ2FubHpnVDRTTjJjLWFqMVNaYVAtQQ?oc=5",
       "published_at": "2026-08-07T01:07:07+00:00",
@@ -561,15 +582,15 @@
       "site_name": "GN: 宇树科技",
       "source": "GN: 宇树科技",
       "site_id": "GN: 宇树科技",
-      "description": "宇树科技发行价定了：150.8元/股！一签需缴7.54万元  东方财富",
+      "description": "宇树科技发行价定了：150.8元/股！一签需缴7.54万元  finance.eastmoney.com",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.63,
+      "timeliness": 29.53,
       "writing_value": 0,
-      "total_score": 104.63
+      "total_score": 104.53
     },
     {
       "id": "c4038c3b5f9924bca1da3887adb3ba7918178703",
@@ -588,9 +609,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 15.92,
+      "timeliness": 15.81,
       "writing_value": 0,
-      "total_score": 90.92
+      "total_score": 90.81
     },
     {
       "id": "27790584f41c2fc300be8a0635782644c7304a45",
@@ -609,30 +630,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 17.95,
+      "timeliness": 17.85,
       "writing_value": 0,
-      "total_score": 92.95
-    },
-    {
-      "id": "8b5431cff7320bca4e5e0369c64e676d383d0cb5",
-      "title": "8月7日投资日历 | 宇树科技网上路演将于今日举行 - 东方财富",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE04ekZBTzhCY2t2dUo5SWtyQ3NrRGkzYmEyMW8tZUktUzVvWlJ6WkwzZDZzaHpocXBhQ2VRVGJWbjZkODRWcU1lRVQwNTQ4NGpHaU1VMW5Uc0VZek9aZ3pwMGJfZHZYQQ?oc=5",
-      "published_at": "2026-08-07T00:12:53+00:00",
-      "category": "GN: 宇树科技",
-      "gn_label": "robotics",
-      "site_name": "GN: 宇树科技",
-      "source": "GN: 宇树科技",
-      "site_id": "GN: 宇树科技",
-      "description": "8月7日投资日历 | 宇树科技网上路演将于今日举行  东方财富",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 28.73,
-      "writing_value": 0,
-      "total_score": 103.73
+      "total_score": 92.85
     },
     {
       "id": "002eb3b30bcebee12d7acb96c1cdc75f8c3fbf1b",
@@ -651,9 +651,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 16.28,
+      "timeliness": 16.18,
       "writing_value": 0,
-      "total_score": 91.28
+      "total_score": 91.18
+    },
+    {
+      "id": "6ca42599478e845e9cc6e40b701b6425fc494941",
+      "title": "8月7日投资日历 | 宇树科技网上路演将于今日举行 - finance.eastmoney.com",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE04ekZBTzhCY2t2dUo5SWtyQ3NrRGkzYmEyMW8tZUktUzVvWlJ6WkwzZDZzaHpocXBhQ2VRVGJWbjZkODRWcU1lRVQwNTQ4NGpHaU1VMW5Uc0VZek9aZ3pwMGJfZHZYQQ?oc=5",
+      "published_at": "2026-08-07T00:12:53+00:00",
+      "category": "GN: 宇树科技",
+      "gn_label": "robotics",
+      "site_name": "GN: 宇树科技",
+      "source": "GN: 宇树科技",
+      "site_id": "GN: 宇树科技",
+      "description": "8月7日投资日历 | 宇树科技网上路演将于今日举行  finance.eastmoney.com",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 28.63,
+      "writing_value": 0,
+      "total_score": 103.63
     },
     {
       "id": "9504f8503aa2f7ca98747d9c3433fd98439eeab9",
@@ -672,9 +693,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 19.06,
+      "timeliness": 18.96,
       "writing_value": 0,
-      "total_score": 94.06
+      "total_score": 93.96
     },
     {
       "id": "94a0dd77f23509ec44ef600a9204d94dc25e578a",
@@ -693,9 +714,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 19.38,
+      "timeliness": 19.28,
       "writing_value": 0,
-      "total_score": 94.38
+      "total_score": 94.28
     },
     {
       "id": "ccfbb803b1e1abb8a3047c93c07211d84ed49d50",
@@ -714,30 +735,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 18.96,
+      "timeliness": 18.86,
       "writing_value": 0,
-      "total_score": 93.96
-    },
-    {
-      "id": "6a9a9916617bf3f457dceea7e14ba9397e17272d",
-      "title": "宇树科技背后供应链企业曝光 - 新浪财经",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBPZDNMQ1dSdnBHN0FKcENxZWFRTVhnQ2xCbVhEc3lhc3FWWkdTV0pDZERVZ1A5aFpCc3I4QnQtOTZNU0VtQVJMby1aQXpIVkhBOUJ6U20wQldQUmxsME1Jam5RczZaSEdIcVNUMDJWYTd2RVVJc3c?oc=5",
-      "published_at": "2026-08-06T13:45:00+00:00",
-      "category": "GN: 宇树科技",
-      "gn_label": "robotics",
-      "site_name": "GN: 宇树科技",
-      "source": "GN: 宇树科技",
-      "site_id": "GN: 宇树科技",
-      "description": "宇树科技背后供应链企业曝光  新浪财经",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 18.27,
-      "writing_value": 0,
-      "total_score": 93.27
+      "total_score": 93.86
     },
     {
       "id": "d812995940c9654839a6fb5d977a3926880952e2",
@@ -756,9 +756,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 16.45,
+      "timeliness": 16.35,
       "writing_value": 0,
-      "total_score": 91.45
+      "total_score": 91.35
     },
     {
       "id": "ae27d4faeb6e3020c8d97f1c398d46d1c9b009a0",
@@ -777,9 +777,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 16.8,
+      "timeliness": 16.7,
       "writing_value": 0,
-      "total_score": 91.8
+      "total_score": 91.7
     },
     {
       "id": "af4a4355876960fde7ab85975a04d3673f2a4594",
@@ -798,9 +798,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.88,
+      "timeliness": 29.78,
       "writing_value": 0,
-      "total_score": 104.88
+      "total_score": 104.78
     },
     {
       "id": "535e783fa90c8a17345fa51febba1102bb4d725e",
@@ -819,13 +819,13 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 17.15,
+      "timeliness": 17.05,
       "writing_value": 0,
-      "total_score": 92.15
+      "total_score": 92.05
     },
     {
-      "id": "a75e0c33007a4e631d965618cab45069bd3b3209",
-      "title": "宇树科技王兴兴，身家已超180亿元 - 每日经济新闻",
+      "id": "eb0802897599574c4f028dfc2bd521cd34e2111d",
+      "title": "宇树科技王兴兴，身家已超180亿元 - nbd.com.cn",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5NYXgwZFprbkJiQnpmNWNTTEhEaHhhamZneTJLNl84cnF6XzFMRDFxT1Byc2pnYlZ1ZC1WcjJuTERJLW1RR2JZY2lYR1lreTBsRjdUaFNVRlFEMGJaOUx4ckpBUGFUQQ?oc=5",
       "published_at": "2026-08-06T13:29:00+00:00",
@@ -834,19 +834,19 @@
       "site_name": "GN: 宇树科技",
       "source": "GN: 宇树科技",
       "site_id": "GN: 宇树科技",
-      "description": "宇树科技王兴兴，身家已超180亿元  每日经济新闻",
+      "description": "宇树科技王兴兴，身家已超180亿元  nbd.com.cn",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 18.0,
+      "timeliness": 17.9,
       "writing_value": 0,
-      "total_score": 93.0
+      "total_score": 92.9
     },
     {
-      "id": "fca80671c8e121deac6c4d320eee63ee4b62ffb1",
-      "title": "宇树科技发行价150.80元／股 DeepSeek、腾讯等参与战略配售 - 东方财富",
+      "id": "a589f5104642b0390c22aa2892ad115e411f6175",
+      "title": "宇树科技发行价150.80元／股 DeepSeek、腾讯等参与战略配售 - finance.eastmoney.com",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE51Zk9IYy03MHFNU3FXY0VrVUlvQWdRZExzQmEwQWVrV1AxVks1bkZHcnFjbERsNEFVazF5ZUJvRE5NNDUzZHVFd0phc1ZTRnFGOV9YRTIyaEpnUjBhbktKT3Vjd1RCZw?oc=5",
       "published_at": "2026-08-06T11:02:52+00:00",
@@ -855,15 +855,36 @@
       "site_name": "GN: 宇树科技",
       "source": "GN: 宇树科技",
       "site_id": "GN: 宇树科技",
-      "description": "宇树科技发行价150.80元／股 DeepSeek、腾讯等参与战略配售  东方财富",
+      "description": "宇树科技发行价150.80元／股 DeepSeek、腾讯等参与战略配售  finance.eastmoney.com",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 15.56,
+      "timeliness": 15.46,
       "writing_value": 0,
-      "total_score": 90.56
+      "total_score": 90.46
+    },
+    {
+      "id": "54215a7f68c65ef0a45e478242182517defde661",
+      "title": "宇树科技超百名员工参与IPO“盛宴” 一批年轻科技新贵或诞生 - finance.eastmoney.com",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1pX3FTVElmTEV6UnRBTFV0NENxeG9mQktWbXAwRVRuZzhIQUV3WlFDSFlTSG1IU0RURHhhd3FxeXg0cDdSWGQzTnhGUzlxVm1BOGg5VGZvVHVKSUJzTUdiZE9qN3U2UQ?oc=5",
+      "published_at": "2026-08-06T15:07:07+00:00",
+      "category": "GN: 宇树科技",
+      "gn_label": "robotics",
+      "site_name": "GN: 宇树科技",
+      "source": "GN: 宇树科技",
+      "site_id": "GN: 宇树科技",
+      "description": "宇树科技超百名员工参与IPO“盛宴” 一批年轻科技新贵或诞生  finance.eastmoney.com",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 19.53,
+      "writing_value": 0,
+      "total_score": 94.53
     },
     {
       "id": "97ddd229e6e532f49715d2ed3548dfca2d1f316a",
@@ -882,9 +903,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 17.3,
+      "timeliness": 17.2,
       "writing_value": 0,
-      "total_score": 92.3
+      "total_score": 92.2
     },
     {
       "id": "6a8c8b51e6d7acbcbcc656eecc05944a62b5bce7",
@@ -903,51 +924,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 21.88,
+      "timeliness": 21.78,
       "writing_value": 0,
-      "total_score": 96.88
+      "total_score": 96.78
     },
     {
-      "id": "62ef0a5d20b80c8c06e45165899f1c32a4d1c60e",
-      "title": "机器人能拆成“两个”用？乐享科技首创异构机械臂方案-中国经营网 - cb.com.cn",
+      "id": "c37274611fb612c10fd888dd1651f009e5ce3b9a",
+      "title": "大疆前高管再创业：把自动驾驶塞进轮椅，若创科技完成Pre-A+轮融资 - leaderobot.com",
       "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE40aTFlbUxtc0RCdGg1V3JKOEIxWUkybkwxRXpEb1pKX0FPZ1owNnFlUmZ2dXhjUUdNWlBoUTI1TUZhVDJSLVhhNXBFTWlLZ1FVMFVvbG8tVjdXOFltRVhCdmJn?oc=5",
-      "published_at": "2026-08-06T23:12:00+00:00",
-      "category": "GN: 机械臂",
+      "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE56Y0lzX1pKbnVxWm9lekg4QU5RdWRONmwycE9IRDRyNzhTdEpRZ3NacVBmZVdhRV9LQlNqa1YwN0lJdmppYnNkZlptSmU?oc=5",
+      "published_at": "2026-08-06T11:56:29+00:00",
+      "category": "GN: 自动驾驶机器人",
       "gn_label": "robotics",
-      "site_name": "GN: 机械臂",
-      "source": "GN: 机械臂",
-      "site_id": "GN: 机械臂",
-      "description": "机器人能拆成“两个”用？乐享科技首创异构机械臂方案-中国经营网  cb.com.cn",
+      "site_name": "GN: 自动驾驶机器人",
+      "source": "GN: 自动驾驶机器人",
+      "site_id": "GN: 自动驾驶机器人",
+      "description": "大疆前高管再创业：把自动驾驶塞进轮椅，若创科技完成Pre-A+轮融资  leaderobot.com",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.72,
+      "timeliness": 16.36,
       "writing_value": 0,
-      "total_score": 102.72
-    },
-    {
-      "id": "205b902b2c359b6c0a56f2bb5918e2a06f5e7932",
-      "title": "150.8元/股！宇树科技超百名员工参与IPO「盛宴」，一批90后千万富豪或将诞生；DeepSeek拟上调API服务定价；字节拟训练超5万亿参数大模型",
-      "title_zh": "",
-      "url": "https://www.leiphone.com/category/zaobao/jTnxUYfadwnDJtNd.html",
-      "published_at": "2026-08-07T00:32:00+00:00",
-      "category": "雷锋网",
-      "gn_label": "robotics",
-      "site_name": "雷锋网",
-      "source": "雷锋网",
-      "site_id": "雷锋网",
-      "description": "要闻提示1.OpenAI 披露攻击 Hugging Face 前，AI 智能体秘密建立内部留言板2.150.8元/股！宇树科技超百名员工参与IPO“盛宴”，一批90后千万富豪或将诞生3.DeepSeek拟上调API服务定价，预计涨幅较大4.小红书高薪招募AI人才，主导AI社交类产品5.曝字节拟训练超5万亿参数大模型，参数规模超Kimi K36.前小鹏副总裁陈永海加入众擎机器人，担任运营总裁7.王腾回应“SU7 Ultra 泊车异常”：小米汽车已迅速跟进分析，边界场景有 Bug 很正常8.谷歌Gemini换帅，首席科学家Jeff Dean离职创业今日头条OpenAI 披露攻击 Hugging F",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 5,
-      "timeliness": 29.05,
-      "writing_value": 5,
-      "total_score": 114.05
+      "total_score": 91.36
     },
     {
       "id": "9b9a6e6637173911d669abcb67c2058d6cb5802c",
@@ -966,9 +966,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 5,
-      "timeliness": 16.78,
+      "timeliness": 16.68,
       "writing_value": 5,
-      "total_score": 116.78
+      "total_score": 116.68
     },
     {
       "id": "a3f9bbb42881a7a38bf84c67af34170b7f89d328",
@@ -987,9 +987,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 16.43,
+      "timeliness": 16.33,
       "writing_value": 5,
-      "total_score": 101.43
+      "total_score": 101.33
     }
   ],
   "fallback_used": false
