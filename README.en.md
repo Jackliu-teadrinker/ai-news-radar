@@ -1,6 +1,10 @@
-# Humanoid Robot News Radar
+# 🤖 AI News Radar — Humanoid Robot & Embodied AI News Radar
 
-[中文版](README.md) · [在线站点](https://jackliu-teadrinker.github.io/ai-news-radar/)
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-green?style=flat-square)](https://jackliu-teadrinker.github.io/ai-news-radar/)
+[![Actions](https://img.shields.io/badge/Actions-Running-blue?style=flat-square)](https://github.com/Jackliu-teadrinker/ai-news-radar/actions)
+[![Update Frequency](https://img.shields.io/badge/Update-Every%2030min-purple?style=flat-square)](https://github.com/Jackliu-teadrinker/ai-news-radar/actions)
+
+[中文版](README.md) · [Live Site](https://jackliu-teadrinker.github.io/ai-news-radar/) · [Collaboration Guide](docs/radar-collaboration-guide.md)
 
 ---
 
@@ -8,53 +12,59 @@
 
 A global news radar for **humanoid robots, embodied AI, brain-computer interfaces, and physical AI**.
 
-Automatically tracks the latest developments in humanoid robotics, embodied intelligence, BCI, and physical AI every 30 minutes via GitHub Actions, covering content from the past 24 hours.
+Automatically collects, scores, deduplicates, and deploys the latest news every **30 minutes** via GitHub Actions, covering both Chinese and English sources with zero manual intervention.
+
+**Page sections**:
+
+| Section | Content |
+|---------|---------|
+| 📰 Main Feed | Full deduplicated news (CST 19:00 anchor + 24h window) |
+| 📱 WeChat | Curated WeChat articles |
+| 🏛️ Policy | Chinese government robotics/embodied AI policy news |
+| 🎓 Academic | arXiv cs.RO papers |
+| 🔗 Anchors | High-priority sites (TechCrunch / IEEE / 量子位, etc.) |
 
 ## Features
 
-- **Auto-updates every 30 min**: GitHub Actions powered, zero manual intervention
-- **Multi-source coverage**: Google News (EN/CN), RSSHub (Baidu/WeChat), arXiv papers
-- **Industry-specific filtering**: Filters out stock tickers, ETFs, robot vacuums, and spam
-- **Relevance scoring**: Important articles ranked by domain relevance
-- **Deduplication**: SHA1-based global dedup across 21-day archive
-- **Health monitoring**: Independent watchdog detects stale data and alerts
-
-## Coverage Domains
-
-| Domain | Sources |
-|--------|---------|
-| Humanoid Robots | GN: humanoid robot / 国外人形机器人资讯 |
-| Embodied AI | GN: embodied intelligence / GN: 具身智能 |
-| Brain-Computer Interface | GN: BCI / GN: 脑机接口 |
-| Physical AI | GN: Physical AI / GN: 物理AI |
-| Robotics | GN: robot / 国外机器人资讯 |
-| Industry Media | TechCrunch, 36kr |
+- **Auto-updates every 30 min**: GitHub Actions powered
+- **Dual CN/EN sources**: 5 English + 5 Chinese Google News groups, clearly labeled 国外/国内
+- **Bilingual titles**: English titles auto-translated to Chinese
+- **Noise filtering**: stock tickers, ETFs, robot vacuums, short news filtered out
+- **Five-dimension scoring**: relevance / authority / depth / timeliness / writing value
+- **21-day archive dedup**: SHA1(title+url) global dedup
+- **Self-healing watchdog**: auto-triggers workflow when data is stale >90min
 
 ## Quick Start
 
-Visit: [https://jackliu-teadrinker.github.io/ai-news-radar/](https://jackliu-teadrinker.github.io/ai-news-radar/)
+Visit the live site: <https://jackliu-teadrinker.github.io/ai-news-radar/>
 
 Run locally:
 
 ```bash
 git clone https://github.com/jackliu-teadrinker/ai-news-radar.git
 cd ai-news-radar
+python -m venv .venv
+source .venv/bin/activate
 pip install -r requirements.txt
 python scripts/update_news.py --output-dir data --window-hours 24
 python -m http.server 8080
-# Open http://localhost:8080
 ```
 
-## Data Output
+Edit feeds in `feeds/follow.example.opml` (main) or `feeds/custom.opml` (anchors), commit, and auto-deploy.
+
+## Project Layout
 
 ```
-data/
-├── latest-24h-min.json   # Curated view (Relevance > 0.4, ≤50 items)
-├── latest-24h-all.json   # Full view (all deduplicated items)
-├── source-status.json    # Source health status
-└── archive.json          # 21-day archive
+ai-news-radar/
+├── feeds/                      # RSS source config (OPML)
+├── scripts/                    # update_news / arxiv / government / curated / wechat
+├── data/                       # Output JSON (served by Pages)
+├── assets/                     # Frontend (index.html / app.js / styles.css)
+├── docs/                       # Collaboration & postmortem docs
+└── .github/workflows/
+    └── update-news.yml         # 30-min auto update + deploy
 ```
 
 ## License
 
-[MIT](LICENSE)
+MIT

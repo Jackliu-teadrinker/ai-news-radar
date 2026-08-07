@@ -1,4 +1,4 @@
-# AI News Radar 工作流文档
+﻿# AI News Radar 工作流文档
 
 > 本文档记录雷达从数据采集到网站发布的完整流程，包括架构设计、各环节逻辑、数据格式和复用指南。
 > 最后更新：2026-07-20
@@ -87,14 +87,14 @@
 |------|-----------|------|
 | 国外人形机器人资讯 | humanoid robot | EN |
 | 国外具身智能资讯 | embodied intelligence OR embodied AI | EN |
-| GN: BCI | brain computer interface OR BCI OR neural interface | EN |
+| 国外脑机接口资讯 | BCI OR brain computer interface OR neural interface | EN |
 | 国外机器人资讯 | robot | EN |
 | 国外物理AI资讯 | physical AI | EN |
-| GN: 人形机器人 | 人形机器人 | CN |
-| GN: 具身智能 | 具身智能 | CN |
-| GN: 脑机接口 | 脑机接口 OR 神经接口 OR 脑电接口 | CN |
-| GN: 机器人 | 机器人 | CN |
-| GN: 物理AI | 物理AI | CN |
+| 国内人形机器人资讯 | 人形机器人 | CN |
+| 国内具身智能资讯 | 具身智能 | CN |
+| 国内脑机接口资讯 | 脑机接口 OR 神经接口 OR 脑电接口 OR BCI | CN |
+| 国内机器人资讯 | 机器人 | CN |
+| 国内物理AI资讯 | 物理AI | CN |
 
 ### 2.2 添加新信源
 

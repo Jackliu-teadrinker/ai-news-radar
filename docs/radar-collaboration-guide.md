@@ -94,7 +94,7 @@ GitHub Actions (每30分钟自动执行)
 
 > 修改任何文件前，先读本指南确认边界。
 
-1. **OpenClaw 修改前**：读 `docs/collaboration-guide.md` 确认不碰微信模块
+1. **OpenClaw 修改前**：读本指南（`docs/radar-collaboration-guide.md`）确认不碰微信模块
 2. **Hermes 修改前**：读本指南确认不碰 RSS 核心代码
 3. **共同文件**（`app.js`、`index.html`、`update-news.yml`）：先知会对方，再动手
 
@@ -170,6 +170,25 @@ GitHub Actions (每30分钟自动执行)
 **自动补救（2026-08-07 已上线）**：
 - Hermes watchdog（`radar_freshness_watchdog.py` + `check_pages_freshness.py`）在数据 stale >90min 时**自动触发 workflow_dispatch** 自愈，不用等人发现
 - 微信文章 0 条是设计（anchor 窗口），不触发补救
+
+---
+
+## 六·FAQ（2026-08-07 从旧版 guide 合并）
+
+### Q: 微信文章为什么不进入 RSS 评分？
+A: 微信文章是独立板块，由 Jack 手动添加，不经过 RSS 采集和评分流程。保持微信内容的独立性和可控性。
+
+### Q: 为什么有三个微信采集器？
+A: 历史遗留。`wechat-collector.py`（449行）→ `wechat-collector-v2.py`（281行）→ `wechat_collector.py`（173行）。**推荐只保留 v2 版本**（workflow 实际调用 v2），其余两个是历史残留。
+
+### Q: 微信板块能自动搜索吗？
+A: 可以。`wechat-collector-v2.py` 支持 Exa MCP 搜索，但 GitHub Actions 环境中可能受限。建议本地运行搜索，只将结果提交到 `wechat-manual.json`。
+
+### Q: OpenClaw 能修改微信相关代码吗？
+A: 不建议。微信板块是 Jack 专属领域，OpenClaw 专注 RSS 采集和评分。微信 bug 报告给 Jack 修复。
+
+### Q: Jack 能修改 RSS 相关代码吗？
+A: 不建议。RSS 采集和评分是 OpenClaw 专属领域，Jack 专注微信板块。RSS bug 报告给 OpenClaw 修复。
 
 ---
 
