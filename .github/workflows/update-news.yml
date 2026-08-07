@@ -78,7 +78,10 @@ jobs:
           git config user.email "radar-bot@users.noreply.github.com"
           git config user.name "radar-bot"
           touch data/wechat-articles.json
-          git add data/ scripts/feeds/ index.html 2>/dev/null || true
+          # FIX(2026-08-07): scripts/feeds/ 路径不存在（feeds/ 在仓库根目录），导致 git add
+          # 整体 fatal 失败 → 数据从 2026-07-21 起从未 push 到 git。已改回正确路径。
+          # 同时移除 2>/dev/null || true：git add 失败必须显式报错，不能静默吞掉。
+          git add data/ feeds/ index.html
           if git diff --cached --quiet; then
             echo "[SKIP] no changes staged"
           else
