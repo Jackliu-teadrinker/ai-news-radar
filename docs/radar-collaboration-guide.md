@@ -140,6 +140,37 @@ GitHub Actions (每30分钟自动执行)
 2. 检查 `concurrency` 配置是否导致任务被取消
 3. Ctrl+Shift+R 强制刷新浏览器
 
+### 🔴 2026-08-06/07 事故复盘：雷达卡 14 小时（最高优先级参考）
+
+**症状**：用户报"更新时间卡在 08/06"，Pages 数据 `generated_at` 停在旧时间，主区块/微信/锚点/学术全线不动。
+
+**三层根因**（按重要性排序）：
+
+1. **GitHub Actions runner 池不可用**（主因，GitHub 侧临时问题）
+   - `gh run list` 出现 queued 卡 1h+ 的 run；failure run 注解 "The job was not acquired by Runner of type hosted even after multiple attempts"
+   - 叠加 `concurrency: cancel-in-progress: true`：新 run 抢占旧 run，旧 run 被 cancelled
+   - **修复**：等 runner 恢复后手动 `gh workflow run update-news.yml --ref master` 触发一次即可，不需要改代码
+
+2. **workflow Auto-push 步骤 git add 路径写错（隐藏 bug，2026-07-21 引入）**
+   ```yaml
+   # ❌ 错误：scripts/feeds/ 不存在（feeds/ 在仓库根目录）
+   git add data/ scripts/feeds/ index.html 2>/dev/null || true
+   # ✅ 修复（2026-08-07 commit 2a934b66）
+   git add data/ feeds/ index.html
+   ```
+   - git add 遇到不存在的 pathspec **整体 fatal 失败** → 什么都没 stage → `[SKIP] no changes staged` → **数据从 7/21 起从未 push 到 git**
+   - `2>/dev/null || true` 把 fatal 错误吞掉，掩盖根因
+   - Pages 数据靠 `upload-pages-artifact` 部署（不依赖 git push），所以一直有数据，只有 git 分支数据陈旧
+   - **铁律**：workflow 里 git add **永远不要** `2>/dev/null || true` 吞错误；git add 路径必须和仓库真实结构核对
+
+3. **ANCHOR_HOUR=19 CST 窗口骤缩**（设计副作用，非 bug）
+   - 每天 CST 19:00 之后跑的 run，时间窗口只有"现在-19:00"几小时（实测 12:25Z run 窗口 1.4h 只抓 21 条，10:27Z run 窗口 23.5h 抓 254 条）
+   - 主数据窗口规则是铁律（CST 19:00 anchor + 24h），不修改；只通过 Google News `when=1d` 参数优化抓取端
+
+**自动补救（2026-08-07 已上线）**：
+- Hermes watchdog（`radar_freshness_watchdog.py` + `check_pages_freshness.py`）在数据 stale >90min 时**自动触发 workflow_dispatch** 自愈，不用等人发现
+- 微信文章 0 条是设计（anchor 窗口），不触发补救
+
 ---
 
 ## 七、关键文件索引
