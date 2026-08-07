@@ -1213,7 +1213,7 @@ function renderArxivItem(item) {
   title.href = item.url;
   title.target = '_blank';
   title.rel = 'noopener noreferrer';
-  title.textContent = item.title;
+  title.textContent = item.title_zh || item.title;
   node.appendChild(title);
 
   // 摘要
@@ -1331,7 +1331,7 @@ function renderGovItem(item) {
   title.href = item.url;
   title.target = '_blank';
   title.rel = 'noopener noreferrer';
-  title.textContent = item.title;
+  title.textContent = item.title_zh || item.title;
   node.appendChild(title);
 
   // 描述（如有）
