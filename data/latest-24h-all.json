@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-08T17:01:23.214099+00:00",
+  "generated_at": "2026-08-08T17:34:46.039967+00:00",
   "total_items": 43,
   "items_ai": [
     {
@@ -8,20 +8,20 @@
       "title_zh": "华尔街看到了价值数万亿美元的人形机器人市场。这两只工业股票出售零部件。 - 雅虎财经",
       "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNVENJd29fY1dFQUxQcV9IWFlNQ1VWVHVmTFlLbjgyY1RPbmNjc05QNDFYUGhGTFBTN0Z1Y2RTTkhCOUJEMmpqWU9CYVZwZElKblM0TUJXMFVKX3NxY1J1bG8zRnB2QmtpUExJNmlYZ0JKUEtuVFZiMUF4cXd6OXRCZE9pWjlmWGJkSTlnRHlNUlFyV1p2ZTBaS08zUjBDYTMxNi1N?oc=5",
       "published_at": "2026-08-08T13:25:00+00:00",
-      "category": "国外机器人资讯",
-      "gn_label": "robotics",
-      "site_name": "国外机器人资讯",
-      "source": "国外机器人资讯",
-      "site_id": "国外机器人资讯",
+      "category": "国外人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国外人形机器人资讯",
+      "source": "国外人形机器人资讯",
+      "site_id": "国外人形机器人资讯",
       "description": "Wall Street Sees a Multitrillion-Dollar Humanoid Robot Market. These 2 Industrial Stocks Sell the Parts.  Yahoo Finance",
       "ai_score": 80.0,
-      "ai_label": "robotics",
+      "ai_label": "humanoid",
       "relevance": 0.8,
       "authority": 10,
       "depth": 5,
-      "timeliness": 26.41,
+      "timeliness": 25.85,
       "writing_value": 5,
-      "total_score": 126.41
+      "total_score": 125.85
     },
     {
       "id": "77553565b3c47f94ad55dc2e4cb569412a563a68",
@@ -40,9 +40,30 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.36,
+      "timeliness": 27.8,
       "writing_value": 0,
-      "total_score": 118.36
+      "total_score": 117.8
+    },
+    {
+      "id": "ee7047163c8731d3f29689e5c4f2a45b7fb49650",
+      "title": "【汽车校友百校联盟】优必选机器人战略蓝图：以“工业先行”铸就中国具身智能的产业样本 - 电子工程专辑",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBhY1pmVTRxazhoQ3FoSVl2Y2hobk9ZYk9HMGZtREt1aXduOGl5ell5aVhvVndmSk81OEV3V09XSjZ0RUJtQlRwNVJjY3Atam1ObGZ3?oc=5",
+      "published_at": "2026-08-08T14:30:00+00:00",
+      "category": "国内具身智能资讯",
+      "gn_label": "embodied_ai",
+      "site_name": "国内具身智能资讯",
+      "source": "国内具身智能资讯",
+      "site_id": "国内具身智能资讯",
+      "description": "【汽车校友百校联盟】优必选机器人战略蓝图：以“工业先行”铸就中国具身智能的产业样本  电子工程专辑",
+      "ai_score": 80.0,
+      "ai_label": "embodied_ai",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 26.94,
+      "writing_value": 0,
+      "total_score": 116.94
     },
     {
       "id": "a499dd152b2919dfac591c1b51b6f6ff1fd4a529",
@@ -61,30 +82,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.5,
+      "timeliness": 26.94,
       "writing_value": 0,
-      "total_score": 117.5
-    },
-    {
-      "id": "ee7047163c8731d3f29689e5c4f2a45b7fb49650",
-      "title": "【汽车校友百校联盟】优必选机器人战略蓝图：以“工业先行”铸就中国具身智能的产业样本 - 电子工程专辑",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBhY1pmVTRxazhoQ3FoSVl2Y2hobk9ZYk9HMGZtREt1aXduOGl5ell5aVhvVndmSk81OEV3V09XSjZ0RUJtQlRwNVJjY3Atam1ObGZ3?oc=5",
-      "published_at": "2026-08-08T14:30:00+00:00",
-      "category": "国内人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国内人形机器人资讯",
-      "source": "国内人形机器人资讯",
-      "site_id": "国内人形机器人资讯",
-      "description": "【汽车校友百校联盟】优必选机器人战略蓝图：以“工业先行”铸就中国具身智能的产业样本  电子工程专辑",
-      "ai_score": 80.0,
-      "ai_label": "humanoid",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 27.5,
-      "writing_value": 0,
-      "total_score": 117.5
+      "total_score": 116.94
     },
     {
       "id": "6044ab6ccafa0450f28b23555816b869c0c52053",
@@ -103,9 +103,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.45,
+      "timeliness": 25.89,
       "writing_value": 0,
-      "total_score": 116.45
+      "total_score": 115.89
     },
     {
       "id": "1bc45b932c84261ec0838f4de014e83c94fe73a6",
@@ -124,9 +124,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.13,
+      "timeliness": 25.57,
       "writing_value": 0,
-      "total_score": 116.13
+      "total_score": 115.57
     },
     {
       "id": "d60547b35f226bba5f702e8a109ea121ec4ec2da",
@@ -145,9 +145,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.0,
+      "timeliness": 25.44,
       "writing_value": 0,
-      "total_score": 116.0
+      "total_score": 115.44
     },
     {
       "id": "8c90c60746798039624ba277f912181967c02524",
@@ -166,9 +166,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.9,
+      "timeliness": 24.34,
       "writing_value": 0,
-      "total_score": 114.9
+      "total_score": 114.34
     },
     {
       "id": "a7a088f2c66e6380379d575eb5594858a45d882c",
@@ -187,9 +187,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 28.65,
+      "timeliness": 28.09,
       "writing_value": 5,
-      "total_score": 113.65
+      "total_score": 113.09
     },
     {
       "id": "d5f2953ae6e96f665a1434f81d35b4518d714c76",
@@ -208,9 +208,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 25.73,
+      "timeliness": 25.17,
       "writing_value": 5,
-      "total_score": 110.73
+      "total_score": 110.17
     },
     {
       "id": "49f53687a2daa782e1b40c25f64c0a60b069b18d",
@@ -229,9 +229,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 25.0,
+      "timeliness": 24.44,
       "writing_value": 5,
-      "total_score": 110.0
+      "total_score": 109.44
     },
     {
       "id": "f90738055e4ac8515707dd79a01786c4011d4d8f",
@@ -250,9 +250,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 24.09,
+      "timeliness": 23.53,
       "writing_value": 5,
-      "total_score": 109.09
+      "total_score": 108.53
     },
     {
       "id": "9b00d7df7290160417f13af0855941076a7b3aea",
@@ -271,9 +271,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.41,
+      "timeliness": 28.85,
       "writing_value": 0,
-      "total_score": 104.41
+      "total_score": 103.85
     },
     {
       "id": "7a2a84a94930d6a61fc9e640e3b2b9ee309e67ed",
@@ -292,9 +292,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.11,
+      "timeliness": 27.55,
       "writing_value": 0,
-      "total_score": 103.11
+      "total_score": 102.55
     },
     {
       "id": "ee80cf218bc3542f7a3560f75dd50e129f33be6e",
@@ -313,9 +313,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.5,
+      "timeliness": 26.94,
       "writing_value": 0,
-      "total_score": 102.5
+      "total_score": 101.94
     },
     {
       "id": "82200091ba80ff5609ba8e0bbc202e521a8bda43",
@@ -334,9 +334,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.79,
+      "timeliness": 25.23,
       "writing_value": 0,
-      "total_score": 100.79
+      "total_score": 100.23
     },
     {
       "id": "ef020ba9d6c178c2e729fd51b0fe060ae49658d5",
@@ -355,9 +355,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.66,
+      "timeliness": 25.1,
       "writing_value": 0,
-      "total_score": 100.66
+      "total_score": 100.1
     },
     {
       "id": "d9edcc61535982fe22bed3c9d12ea1a6b6579b3c",
@@ -365,20 +365,20 @@
       "title_zh": "RoboBusiness 专家展望机器人技术的未来 20 年 - 机器人报告",
       "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPdVJSNU9LZTNFb2F2NFVUcjZ4RHhFOVdwcUlhVS1IcjhUTWtWYkJLWXBuZG1TUVFSU1VPckdxRUtEN1FuYmlkaXhJSUg1aDU3ampWVjlRZnNwdVVkSGNaQmZnTllmT1h1RkU1Zmplc1IxYVlVRHFPRTdIS1FzbG1lOGpVVEI1MkN4TmFOTWF5VXE3Mm1yajdFc2RyTGg5YURh?oc=5",
       "published_at": "2026-08-08T12:35:25+00:00",
-      "category": "国外机器人资讯",
-      "gn_label": "robotics",
-      "site_name": "国外机器人资讯",
-      "source": "国外机器人资讯",
-      "site_id": "国外机器人资讯",
+      "category": "国外人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国外人形机器人资讯",
+      "source": "国外人形机器人资讯",
+      "site_id": "国外人形机器人资讯",
       "description": "Experts look ahead at the next 20 years of robotics at RoboBusiness  The Robot Report",
       "ai_score": 65.0,
-      "ai_label": "robotics",
+      "ai_label": "humanoid",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.59,
+      "timeliness": 25.03,
       "writing_value": 0,
-      "total_score": 100.59
+      "total_score": 100.03
     },
     {
       "id": "4027f4074891dcbdde5d8b6325331c274dd45a7b",
@@ -397,9 +397,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.05,
+      "timeliness": 24.49,
       "writing_value": 0,
-      "total_score": 100.05
+      "total_score": 99.49
     },
     {
       "id": "cd7f1d0f5039065446831d9e840923ab975b8fa4",
@@ -418,13 +418,13 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.79,
+      "timeliness": 24.22,
       "writing_value": 0,
-      "total_score": 99.79
+      "total_score": 99.22
     },
     {
-      "id": "7a548bd7bf8243a6f1da3b9301c9637c02b0176a",
-      "title": "首席科学家被“下架”，智元机器人IPO出现迷雾-观察者网 - 观察者",
+      "id": "2090ff8a0f00623854d0c853cb2ee7f443b74869",
+      "title": "首席科学家被“下架”，智元机器人IPO出现迷雾-观察者网 - guancha.cn",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBzX2FWelliM3U5ek1OR00tY19Qc1FrZ3l4d3JwVk9ucHdLbXQwOFExRXBMTFJvWEtnNGk2SFFZcE1TU29VM2xJU3pabU1Wby1kMVZ3YnJmUy1jTUM3WmI5ZDJsMHA?oc=5",
       "published_at": "2026-08-08T11:36:00+00:00",
@@ -433,15 +433,15 @@
       "site_name": "国内具身智能资讯",
       "source": "国内具身智能资讯",
       "site_id": "国内具身智能资讯",
-      "description": "首席科学家被“下架”，智元机器人IPO出现迷雾-观察者网  观察者",
+      "description": "首席科学家被“下架”，智元机器人IPO出现迷雾-观察者网  guancha.cn",
       "ai_score": 65.0,
       "ai_label": "embodied_ai",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.6,
+      "timeliness": 24.04,
       "writing_value": 0,
-      "total_score": 99.6
+      "total_score": 99.04
     },
     {
       "id": "5ad2c0e66f9d71c9d299fc6a1dab1e878e69e081",
@@ -460,30 +460,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.59,
+      "timeliness": 24.02,
       "writing_value": 0,
-      "total_score": 99.59
-    },
-    {
-      "id": "8da04feaabb7fe29406dce18bbbf0c3a570ffb87",
-      "title": "文科生也能拿百万大奖，科目三脱口秀全网整活！智元灵创创意大赛来了 - 新浪财经",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFB1MzhFQ2JJQWw3U2trQ3h5SVZOZFB2S0dIQ2EzbGZoM1hQNzRQWVJpM3hIRWltdU1VVHpLX3ZydVV3RnpjdktFRjdsVG9TbjlWd1dBRWVYdF91SnpxdjNsNksyZjlIbUYzVk12bm92Z3ZNX3lDTU41dXVUR0M?oc=5",
-      "published_at": "2026-08-08T11:11:00+00:00",
-      "category": "国内人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国内人形机器人资讯",
-      "source": "国内人形机器人资讯",
-      "site_id": "国内人形机器人资讯",
-      "description": "文科生也能拿百万大奖，科目三脱口秀全网整活！智元灵创创意大赛来了  新浪财经",
-      "ai_score": 65.0,
-      "ai_label": "humanoid",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 24.18,
-      "writing_value": 0,
-      "total_score": 99.18
+      "total_score": 99.02
     },
     {
       "id": "22892ad7c22bbe68d77f92f85c38ece6d9c4818b",
@@ -502,9 +481,9 @@
       "relevance": 0.5,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.25,
+      "timeliness": 24.69,
       "writing_value": 0,
-      "total_score": 85.25
+      "total_score": 84.69
     },
     {
       "id": "da392d9063dc6996c1b33ffb1d1f1ccdd8e95f43",
@@ -523,9 +502,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 5,
-      "timeliness": 29.66,
+      "timeliness": 29.1,
       "writing_value": 5,
-      "total_score": 84.66
+      "total_score": 84.1
     },
     {
       "id": "2aabae3c9744bc9c4212687afae8929ad240937d",
@@ -544,9 +523,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.08,
+      "timeliness": 28.52,
       "writing_value": 0,
-      "total_score": 74.08
+      "total_score": 73.52
     },
     {
       "id": "3ae265fc93bffd27d6c78894eac48760f1e1e4f4",
@@ -565,9 +544,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.58,
+      "timeliness": 28.02,
       "writing_value": 0,
-      "total_score": 73.58
+      "total_score": 73.02
     },
     {
       "id": "cc4d4f4974d41e1b82eb67472fcc1c574817014a",
@@ -586,9 +565,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.35,
+      "timeliness": 27.79,
       "writing_value": 0,
-      "total_score": 73.35
+      "total_score": 72.79
     },
     {
       "id": "1ba7fb26717fea34a320620e4d1c90ff443b45e3",
@@ -607,9 +586,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.33,
+      "timeliness": 27.77,
       "writing_value": 0,
-      "total_score": 73.33
+      "total_score": 72.77
     },
     {
       "id": "0359936c1308d750cc586fff214284eb92865590",
@@ -628,9 +607,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.26,
+      "timeliness": 26.7,
       "writing_value": 0,
-      "total_score": 72.26
+      "total_score": 71.7
     },
     {
       "id": "c387f2004bd8ede2c26845d77a339982969a01e3",
@@ -649,9 +628,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.96,
+      "timeliness": 26.4,
       "writing_value": 0,
-      "total_score": 71.96
+      "total_score": 71.4
     },
     {
       "id": "a27d1c17e57296a9ee505da1738eaf6ffa5c28ae",
@@ -670,9 +649,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.55,
+      "timeliness": 25.99,
       "writing_value": 0,
-      "total_score": 71.55
+      "total_score": 70.99
     },
     {
       "id": "c44528d4359940893332640c6cdfb975bd50a0ab",
@@ -691,9 +670,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.3,
+      "timeliness": 25.74,
       "writing_value": 0,
-      "total_score": 71.3
+      "total_score": 70.74
     },
     {
       "id": "769b3433ec137e40d320f5c2e7e98c16d5a05e2b",
@@ -712,9 +691,30 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.73,
+      "timeliness": 25.17,
       "writing_value": 0,
-      "total_score": 70.73
+      "total_score": 70.17
+    },
+    {
+      "id": "84eb436e21c944e3f87b2329daf7e66138899e2d",
+      "title": "日本押注的“物理AI”到底是什么？和通用AI有何不同？ - 新浪网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBxNlJxYmhfQUNtU01NdGRUbUM4MC1yWVpSQ2JYRTJLRFY5MFFpM3V6ZUVqQ0FzODY2dWtRTUZ6bWVENnNwWW5BMW1Jel9yZlJUblVnQUVkSjR6VlhIWU53T3g0ZlpxOE1WTWRuRmxBVDcycUlXRkU0dF9waGlpd0E?oc=5",
+      "published_at": "2026-08-08T12:37:47+00:00",
+      "category": "国内物理AI资讯",
+      "gn_label": "physical_ai",
+      "site_name": "国内物理AI资讯",
+      "source": "国内物理AI资讯",
+      "site_id": "国内物理AI资讯",
+      "description": "日本押注的“物理AI”到底是什么？和通用AI有何不同？  新浪网",
+      "ai_score": 35.0,
+      "ai_label": "physical_ai",
+      "relevance": 0.35,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 25.07,
+      "writing_value": 0,
+      "total_score": 70.07
     },
     {
       "id": "5222ddd8c91822d711fbdb54ac5c0c8352244b6e",
@@ -733,9 +733,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.56,
+      "timeliness": 25.0,
       "writing_value": 0,
-      "total_score": 70.56
+      "total_score": 70.0
     },
     {
       "id": "af9287ed0ac644ee17f47d714d4393df61cfb11c",
@@ -754,9 +754,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.01,
+      "timeliness": 24.45,
       "writing_value": 0,
-      "total_score": 70.01
+      "total_score": 69.45
     },
     {
       "id": "b9cfd2846fc73924404300e986a3b9d0951afc48",
@@ -775,9 +775,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.97,
+      "timeliness": 24.41,
       "writing_value": 0,
-      "total_score": 69.97
+      "total_score": 69.41
     },
     {
       "id": "2c1e28ef2023a56726496520ec40fa6fcf7b848b",
@@ -796,9 +796,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.83,
+      "timeliness": 24.27,
       "writing_value": 0,
-      "total_score": 69.83
+      "total_score": 69.27
     },
     {
       "id": "48bac0ab75fb3df59b867e019d7391120dd0f08d",
@@ -817,9 +817,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.8,
+      "timeliness": 24.24,
       "writing_value": 0,
-      "total_score": 69.8
+      "total_score": 69.24
     },
     {
       "id": "0ce8999e01fb2027e39828617be8a0ce3f2c6fbf",
@@ -838,9 +838,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.64,
+      "timeliness": 24.08,
       "writing_value": 0,
-      "total_score": 69.64
+      "total_score": 69.08
     },
     {
       "id": "1b0b15dc0fa649d99bc2530d7965376dead78c77",
@@ -859,9 +859,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.36,
+      "timeliness": 23.8,
       "writing_value": 0,
-      "total_score": 69.36
+      "total_score": 68.8
     },
     {
       "id": "8849520425aa7248e3ea010e232b469535881f24",
@@ -880,9 +880,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.27,
+      "timeliness": 23.71,
       "writing_value": 0,
-      "total_score": 69.27
+      "total_score": 68.71
     },
     {
       "id": "3d004b2888ac4be141a6d71d39519e5d1fd3b9db",
@@ -901,9 +901,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.26,
+      "timeliness": 23.7,
       "writing_value": 0,
-      "total_score": 69.26
+      "total_score": 68.7
     }
   ],
   "items_all": [
@@ -913,20 +913,20 @@
       "title_zh": "华尔街看到了价值数万亿美元的人形机器人市场。这两只工业股票出售零部件。 - 雅虎财经",
       "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNVENJd29fY1dFQUxQcV9IWFlNQ1VWVHVmTFlLbjgyY1RPbmNjc05QNDFYUGhGTFBTN0Z1Y2RTTkhCOUJEMmpqWU9CYVZwZElKblM0TUJXMFVKX3NxY1J1bG8zRnB2QmtpUExJNmlYZ0JKUEtuVFZiMUF4cXd6OXRCZE9pWjlmWGJkSTlnRHlNUlFyV1p2ZTBaS08zUjBDYTMxNi1N?oc=5",
       "published_at": "2026-08-08T13:25:00+00:00",
-      "category": "国外机器人资讯",
-      "gn_label": "robotics",
-      "site_name": "国外机器人资讯",
-      "source": "国外机器人资讯",
-      "site_id": "国外机器人资讯",
+      "category": "国外人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国外人形机器人资讯",
+      "source": "国外人形机器人资讯",
+      "site_id": "国外人形机器人资讯",
       "description": "Wall Street Sees a Multitrillion-Dollar Humanoid Robot Market. These 2 Industrial Stocks Sell the Parts.  Yahoo Finance",
       "ai_score": 80.0,
-      "ai_label": "robotics",
+      "ai_label": "humanoid",
       "relevance": 0.8,
       "authority": 10,
       "depth": 5,
-      "timeliness": 26.41,
+      "timeliness": 25.85,
       "writing_value": 5,
-      "total_score": 126.41
+      "total_score": 125.85
     },
     {
       "id": "77553565b3c47f94ad55dc2e4cb569412a563a68",
@@ -945,9 +945,30 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.36,
+      "timeliness": 27.8,
       "writing_value": 0,
-      "total_score": 118.36
+      "total_score": 117.8
+    },
+    {
+      "id": "ee7047163c8731d3f29689e5c4f2a45b7fb49650",
+      "title": "【汽车校友百校联盟】优必选机器人战略蓝图：以“工业先行”铸就中国具身智能的产业样本 - 电子工程专辑",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBhY1pmVTRxazhoQ3FoSVl2Y2hobk9ZYk9HMGZtREt1aXduOGl5ell5aVhvVndmSk81OEV3V09XSjZ0RUJtQlRwNVJjY3Atam1ObGZ3?oc=5",
+      "published_at": "2026-08-08T14:30:00+00:00",
+      "category": "国内具身智能资讯",
+      "gn_label": "embodied_ai",
+      "site_name": "国内具身智能资讯",
+      "source": "国内具身智能资讯",
+      "site_id": "国内具身智能资讯",
+      "description": "【汽车校友百校联盟】优必选机器人战略蓝图：以“工业先行”铸就中国具身智能的产业样本  电子工程专辑",
+      "ai_score": 80.0,
+      "ai_label": "embodied_ai",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 26.94,
+      "writing_value": 0,
+      "total_score": 116.94
     },
     {
       "id": "a499dd152b2919dfac591c1b51b6f6ff1fd4a529",
@@ -966,30 +987,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.5,
+      "timeliness": 26.94,
       "writing_value": 0,
-      "total_score": 117.5
-    },
-    {
-      "id": "ee7047163c8731d3f29689e5c4f2a45b7fb49650",
-      "title": "【汽车校友百校联盟】优必选机器人战略蓝图：以“工业先行”铸就中国具身智能的产业样本 - 电子工程专辑",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBhY1pmVTRxazhoQ3FoSVl2Y2hobk9ZYk9HMGZtREt1aXduOGl5ell5aVhvVndmSk81OEV3V09XSjZ0RUJtQlRwNVJjY3Atam1ObGZ3?oc=5",
-      "published_at": "2026-08-08T14:30:00+00:00",
-      "category": "国内人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国内人形机器人资讯",
-      "source": "国内人形机器人资讯",
-      "site_id": "国内人形机器人资讯",
-      "description": "【汽车校友百校联盟】优必选机器人战略蓝图：以“工业先行”铸就中国具身智能的产业样本  电子工程专辑",
-      "ai_score": 80.0,
-      "ai_label": "humanoid",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 27.5,
-      "writing_value": 0,
-      "total_score": 117.5
+      "total_score": 116.94
     },
     {
       "id": "6044ab6ccafa0450f28b23555816b869c0c52053",
@@ -1008,9 +1008,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.45,
+      "timeliness": 25.89,
       "writing_value": 0,
-      "total_score": 116.45
+      "total_score": 115.89
     },
     {
       "id": "1bc45b932c84261ec0838f4de014e83c94fe73a6",
@@ -1029,9 +1029,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.13,
+      "timeliness": 25.57,
       "writing_value": 0,
-      "total_score": 116.13
+      "total_score": 115.57
     },
     {
       "id": "d60547b35f226bba5f702e8a109ea121ec4ec2da",
@@ -1050,9 +1050,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.0,
+      "timeliness": 25.44,
       "writing_value": 0,
-      "total_score": 116.0
+      "total_score": 115.44
     },
     {
       "id": "8c90c60746798039624ba277f912181967c02524",
@@ -1071,9 +1071,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.9,
+      "timeliness": 24.34,
       "writing_value": 0,
-      "total_score": 114.9
+      "total_score": 114.34
     },
     {
       "id": "a7a088f2c66e6380379d575eb5594858a45d882c",
@@ -1092,9 +1092,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 28.65,
+      "timeliness": 28.09,
       "writing_value": 5,
-      "total_score": 113.65
+      "total_score": 113.09
     },
     {
       "id": "d5f2953ae6e96f665a1434f81d35b4518d714c76",
@@ -1113,9 +1113,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 25.73,
+      "timeliness": 25.17,
       "writing_value": 5,
-      "total_score": 110.73
+      "total_score": 110.17
     },
     {
       "id": "49f53687a2daa782e1b40c25f64c0a60b069b18d",
@@ -1134,9 +1134,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 25.0,
+      "timeliness": 24.44,
       "writing_value": 5,
-      "total_score": 110.0
+      "total_score": 109.44
     },
     {
       "id": "f90738055e4ac8515707dd79a01786c4011d4d8f",
@@ -1155,9 +1155,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 24.09,
+      "timeliness": 23.53,
       "writing_value": 5,
-      "total_score": 109.09
+      "total_score": 108.53
     },
     {
       "id": "9b00d7df7290160417f13af0855941076a7b3aea",
@@ -1176,9 +1176,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.41,
+      "timeliness": 28.85,
       "writing_value": 0,
-      "total_score": 104.41
+      "total_score": 103.85
     },
     {
       "id": "7a2a84a94930d6a61fc9e640e3b2b9ee309e67ed",
@@ -1197,9 +1197,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.11,
+      "timeliness": 27.55,
       "writing_value": 0,
-      "total_score": 103.11
+      "total_score": 102.55
     },
     {
       "id": "ee80cf218bc3542f7a3560f75dd50e129f33be6e",
@@ -1218,9 +1218,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.5,
+      "timeliness": 26.94,
       "writing_value": 0,
-      "total_score": 102.5
+      "total_score": 101.94
     },
     {
       "id": "82200091ba80ff5609ba8e0bbc202e521a8bda43",
@@ -1239,9 +1239,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.79,
+      "timeliness": 25.23,
       "writing_value": 0,
-      "total_score": 100.79
+      "total_score": 100.23
     },
     {
       "id": "ef020ba9d6c178c2e729fd51b0fe060ae49658d5",
@@ -1260,9 +1260,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.66,
+      "timeliness": 25.1,
       "writing_value": 0,
-      "total_score": 100.66
+      "total_score": 100.1
     },
     {
       "id": "d9edcc61535982fe22bed3c9d12ea1a6b6579b3c",
@@ -1270,20 +1270,20 @@
       "title_zh": "RoboBusiness 专家展望机器人技术的未来 20 年 - 机器人报告",
       "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPdVJSNU9LZTNFb2F2NFVUcjZ4RHhFOVdwcUlhVS1IcjhUTWtWYkJLWXBuZG1TUVFSU1VPckdxRUtEN1FuYmlkaXhJSUg1aDU3ampWVjlRZnNwdVVkSGNaQmZnTllmT1h1RkU1Zmplc1IxYVlVRHFPRTdIS1FzbG1lOGpVVEI1MkN4TmFOTWF5VXE3Mm1yajdFc2RyTGg5YURh?oc=5",
       "published_at": "2026-08-08T12:35:25+00:00",
-      "category": "国外机器人资讯",
-      "gn_label": "robotics",
-      "site_name": "国外机器人资讯",
-      "source": "国外机器人资讯",
-      "site_id": "国外机器人资讯",
+      "category": "国外人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国外人形机器人资讯",
+      "source": "国外人形机器人资讯",
+      "site_id": "国外人形机器人资讯",
       "description": "Experts look ahead at the next 20 years of robotics at RoboBusiness  The Robot Report",
       "ai_score": 65.0,
-      "ai_label": "robotics",
+      "ai_label": "humanoid",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.59,
+      "timeliness": 25.03,
       "writing_value": 0,
-      "total_score": 100.59
+      "total_score": 100.03
     },
     {
       "id": "4027f4074891dcbdde5d8b6325331c274dd45a7b",
@@ -1302,9 +1302,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.05,
+      "timeliness": 24.49,
       "writing_value": 0,
-      "total_score": 100.05
+      "total_score": 99.49
     },
     {
       "id": "cd7f1d0f5039065446831d9e840923ab975b8fa4",
@@ -1323,13 +1323,13 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.79,
+      "timeliness": 24.22,
       "writing_value": 0,
-      "total_score": 99.79
+      "total_score": 99.22
     },
     {
-      "id": "7a548bd7bf8243a6f1da3b9301c9637c02b0176a",
-      "title": "首席科学家被“下架”，智元机器人IPO出现迷雾-观察者网 - 观察者",
+      "id": "2090ff8a0f00623854d0c853cb2ee7f443b74869",
+      "title": "首席科学家被“下架”，智元机器人IPO出现迷雾-观察者网 - guancha.cn",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBzX2FWelliM3U5ek1OR00tY19Qc1FrZ3l4d3JwVk9ucHdLbXQwOFExRXBMTFJvWEtnNGk2SFFZcE1TU29VM2xJU3pabU1Wby1kMVZ3YnJmUy1jTUM3WmI5ZDJsMHA?oc=5",
       "published_at": "2026-08-08T11:36:00+00:00",
@@ -1338,15 +1338,15 @@
       "site_name": "国内具身智能资讯",
       "source": "国内具身智能资讯",
       "site_id": "国内具身智能资讯",
-      "description": "首席科学家被“下架”，智元机器人IPO出现迷雾-观察者网  观察者",
+      "description": "首席科学家被“下架”，智元机器人IPO出现迷雾-观察者网  guancha.cn",
       "ai_score": 65.0,
       "ai_label": "embodied_ai",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.6,
+      "timeliness": 24.04,
       "writing_value": 0,
-      "total_score": 99.6
+      "total_score": 99.04
     },
     {
       "id": "5ad2c0e66f9d71c9d299fc6a1dab1e878e69e081",
@@ -1365,30 +1365,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.59,
+      "timeliness": 24.02,
       "writing_value": 0,
-      "total_score": 99.59
-    },
-    {
-      "id": "8da04feaabb7fe29406dce18bbbf0c3a570ffb87",
-      "title": "文科生也能拿百万大奖，科目三脱口秀全网整活！智元灵创创意大赛来了 - 新浪财经",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFB1MzhFQ2JJQWw3U2trQ3h5SVZOZFB2S0dIQ2EzbGZoM1hQNzRQWVJpM3hIRWltdU1VVHpLX3ZydVV3RnpjdktFRjdsVG9TbjlWd1dBRWVYdF91SnpxdjNsNksyZjlIbUYzVk12bm92Z3ZNX3lDTU41dXVUR0M?oc=5",
-      "published_at": "2026-08-08T11:11:00+00:00",
-      "category": "国内人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国内人形机器人资讯",
-      "source": "国内人形机器人资讯",
-      "site_id": "国内人形机器人资讯",
-      "description": "文科生也能拿百万大奖，科目三脱口秀全网整活！智元灵创创意大赛来了  新浪财经",
-      "ai_score": 65.0,
-      "ai_label": "humanoid",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 24.18,
-      "writing_value": 0,
-      "total_score": 99.18
+      "total_score": 99.02
     },
     {
       "id": "22892ad7c22bbe68d77f92f85c38ece6d9c4818b",
@@ -1407,9 +1386,9 @@
       "relevance": 0.5,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.25,
+      "timeliness": 24.69,
       "writing_value": 0,
-      "total_score": 85.25
+      "total_score": 84.69
     },
     {
       "id": "da392d9063dc6996c1b33ffb1d1f1ccdd8e95f43",
@@ -1428,9 +1407,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 5,
-      "timeliness": 29.66,
+      "timeliness": 29.1,
       "writing_value": 5,
-      "total_score": 84.66
+      "total_score": 84.1
     },
     {
       "id": "2aabae3c9744bc9c4212687afae8929ad240937d",
@@ -1449,9 +1428,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.08,
+      "timeliness": 28.52,
       "writing_value": 0,
-      "total_score": 74.08
+      "total_score": 73.52
     },
     {
       "id": "3ae265fc93bffd27d6c78894eac48760f1e1e4f4",
@@ -1470,9 +1449,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.58,
+      "timeliness": 28.02,
       "writing_value": 0,
-      "total_score": 73.58
+      "total_score": 73.02
     },
     {
       "id": "cc4d4f4974d41e1b82eb67472fcc1c574817014a",
@@ -1491,9 +1470,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.35,
+      "timeliness": 27.79,
       "writing_value": 0,
-      "total_score": 73.35
+      "total_score": 72.79
     },
     {
       "id": "1ba7fb26717fea34a320620e4d1c90ff443b45e3",
@@ -1512,9 +1491,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.33,
+      "timeliness": 27.77,
       "writing_value": 0,
-      "total_score": 73.33
+      "total_score": 72.77
     },
     {
       "id": "0359936c1308d750cc586fff214284eb92865590",
@@ -1533,9 +1512,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.26,
+      "timeliness": 26.7,
       "writing_value": 0,
-      "total_score": 72.26
+      "total_score": 71.7
     },
     {
       "id": "c387f2004bd8ede2c26845d77a339982969a01e3",
@@ -1554,9 +1533,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.96,
+      "timeliness": 26.4,
       "writing_value": 0,
-      "total_score": 71.96
+      "total_score": 71.4
     },
     {
       "id": "a27d1c17e57296a9ee505da1738eaf6ffa5c28ae",
@@ -1575,9 +1554,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.55,
+      "timeliness": 25.99,
       "writing_value": 0,
-      "total_score": 71.55
+      "total_score": 70.99
     },
     {
       "id": "c44528d4359940893332640c6cdfb975bd50a0ab",
@@ -1596,9 +1575,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.3,
+      "timeliness": 25.74,
       "writing_value": 0,
-      "total_score": 71.3
+      "total_score": 70.74
     },
     {
       "id": "769b3433ec137e40d320f5c2e7e98c16d5a05e2b",
@@ -1617,9 +1596,30 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.73,
+      "timeliness": 25.17,
       "writing_value": 0,
-      "total_score": 70.73
+      "total_score": 70.17
+    },
+    {
+      "id": "84eb436e21c944e3f87b2329daf7e66138899e2d",
+      "title": "日本押注的“物理AI”到底是什么？和通用AI有何不同？ - 新浪网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBxNlJxYmhfQUNtU01NdGRUbUM4MC1yWVpSQ2JYRTJLRFY5MFFpM3V6ZUVqQ0FzODY2dWtRTUZ6bWVENnNwWW5BMW1Jel9yZlJUblVnQUVkSjR6VlhIWU53T3g0ZlpxOE1WTWRuRmxBVDcycUlXRkU0dF9waGlpd0E?oc=5",
+      "published_at": "2026-08-08T12:37:47+00:00",
+      "category": "国内物理AI资讯",
+      "gn_label": "physical_ai",
+      "site_name": "国内物理AI资讯",
+      "source": "国内物理AI资讯",
+      "site_id": "国内物理AI资讯",
+      "description": "日本押注的“物理AI”到底是什么？和通用AI有何不同？  新浪网",
+      "ai_score": 35.0,
+      "ai_label": "physical_ai",
+      "relevance": 0.35,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 25.07,
+      "writing_value": 0,
+      "total_score": 70.07
     },
     {
       "id": "5222ddd8c91822d711fbdb54ac5c0c8352244b6e",
@@ -1638,9 +1638,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.56,
+      "timeliness": 25.0,
       "writing_value": 0,
-      "total_score": 70.56
+      "total_score": 70.0
     },
     {
       "id": "af9287ed0ac644ee17f47d714d4393df61cfb11c",
@@ -1659,9 +1659,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.01,
+      "timeliness": 24.45,
       "writing_value": 0,
-      "total_score": 70.01
+      "total_score": 69.45
     },
     {
       "id": "b9cfd2846fc73924404300e986a3b9d0951afc48",
@@ -1680,9 +1680,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.97,
+      "timeliness": 24.41,
       "writing_value": 0,
-      "total_score": 69.97
+      "total_score": 69.41
     },
     {
       "id": "2c1e28ef2023a56726496520ec40fa6fcf7b848b",
@@ -1701,9 +1701,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.83,
+      "timeliness": 24.27,
       "writing_value": 0,
-      "total_score": 69.83
+      "total_score": 69.27
     },
     {
       "id": "48bac0ab75fb3df59b867e019d7391120dd0f08d",
@@ -1722,9 +1722,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.8,
+      "timeliness": 24.24,
       "writing_value": 0,
-      "total_score": 69.8
+      "total_score": 69.24
     },
     {
       "id": "0ce8999e01fb2027e39828617be8a0ce3f2c6fbf",
@@ -1743,9 +1743,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.64,
+      "timeliness": 24.08,
       "writing_value": 0,
-      "total_score": 69.64
+      "total_score": 69.08
     },
     {
       "id": "1b0b15dc0fa649d99bc2530d7965376dead78c77",
@@ -1764,9 +1764,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.36,
+      "timeliness": 23.8,
       "writing_value": 0,
-      "total_score": 69.36
+      "total_score": 68.8
     },
     {
       "id": "8849520425aa7248e3ea010e232b469535881f24",
@@ -1785,9 +1785,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.27,
+      "timeliness": 23.71,
       "writing_value": 0,
-      "total_score": 69.27
+      "total_score": 68.71
     },
     {
       "id": "3d004b2888ac4be141a6d71d39519e5d1fd3b9db",
@@ -1806,9 +1806,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.26,
+      "timeliness": 23.7,
       "writing_value": 0,
-      "total_score": 69.26
+      "total_score": 68.7
     }
   ],
   "items_all_raw": [
@@ -1818,20 +1818,20 @@
       "title_zh": "华尔街看到了价值数万亿美元的人形机器人市场。这两只工业股票出售零部件。 - 雅虎财经",
       "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNVENJd29fY1dFQUxQcV9IWFlNQ1VWVHVmTFlLbjgyY1RPbmNjc05QNDFYUGhGTFBTN0Z1Y2RTTkhCOUJEMmpqWU9CYVZwZElKblM0TUJXMFVKX3NxY1J1bG8zRnB2QmtpUExJNmlYZ0JKUEtuVFZiMUF4cXd6OXRCZE9pWjlmWGJkSTlnRHlNUlFyV1p2ZTBaS08zUjBDYTMxNi1N?oc=5",
       "published_at": "2026-08-08T13:25:00+00:00",
-      "category": "国外机器人资讯",
-      "gn_label": "robotics",
-      "site_name": "国外机器人资讯",
-      "source": "国外机器人资讯",
-      "site_id": "国外机器人资讯",
+      "category": "国外人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国外人形机器人资讯",
+      "source": "国外人形机器人资讯",
+      "site_id": "国外人形机器人资讯",
       "description": "Wall Street Sees a Multitrillion-Dollar Humanoid Robot Market. These 2 Industrial Stocks Sell the Parts.  Yahoo Finance",
       "ai_score": 80.0,
-      "ai_label": "robotics",
+      "ai_label": "humanoid",
       "relevance": 0.8,
       "authority": 10,
       "depth": 5,
-      "timeliness": 26.41,
+      "timeliness": 25.85,
       "writing_value": 5,
-      "total_score": 126.41
+      "total_score": 125.85
     },
     {
       "id": "77553565b3c47f94ad55dc2e4cb569412a563a68",
@@ -1850,9 +1850,30 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.36,
+      "timeliness": 27.8,
       "writing_value": 0,
-      "total_score": 118.36
+      "total_score": 117.8
+    },
+    {
+      "id": "ee7047163c8731d3f29689e5c4f2a45b7fb49650",
+      "title": "【汽车校友百校联盟】优必选机器人战略蓝图：以“工业先行”铸就中国具身智能的产业样本 - 电子工程专辑",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBhY1pmVTRxazhoQ3FoSVl2Y2hobk9ZYk9HMGZtREt1aXduOGl5ell5aVhvVndmSk81OEV3V09XSjZ0RUJtQlRwNVJjY3Atam1ObGZ3?oc=5",
+      "published_at": "2026-08-08T14:30:00+00:00",
+      "category": "国内具身智能资讯",
+      "gn_label": "embodied_ai",
+      "site_name": "国内具身智能资讯",
+      "source": "国内具身智能资讯",
+      "site_id": "国内具身智能资讯",
+      "description": "【汽车校友百校联盟】优必选机器人战略蓝图：以“工业先行”铸就中国具身智能的产业样本  电子工程专辑",
+      "ai_score": 80.0,
+      "ai_label": "embodied_ai",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 26.94,
+      "writing_value": 0,
+      "total_score": 116.94
     },
     {
       "id": "a499dd152b2919dfac591c1b51b6f6ff1fd4a529",
@@ -1871,30 +1892,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.5,
+      "timeliness": 26.94,
       "writing_value": 0,
-      "total_score": 117.5
-    },
-    {
-      "id": "ee7047163c8731d3f29689e5c4f2a45b7fb49650",
-      "title": "【汽车校友百校联盟】优必选机器人战略蓝图：以“工业先行”铸就中国具身智能的产业样本 - 电子工程专辑",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBhY1pmVTRxazhoQ3FoSVl2Y2hobk9ZYk9HMGZtREt1aXduOGl5ell5aVhvVndmSk81OEV3V09XSjZ0RUJtQlRwNVJjY3Atam1ObGZ3?oc=5",
-      "published_at": "2026-08-08T14:30:00+00:00",
-      "category": "国内人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国内人形机器人资讯",
-      "source": "国内人形机器人资讯",
-      "site_id": "国内人形机器人资讯",
-      "description": "【汽车校友百校联盟】优必选机器人战略蓝图：以“工业先行”铸就中国具身智能的产业样本  电子工程专辑",
-      "ai_score": 80.0,
-      "ai_label": "humanoid",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 27.5,
-      "writing_value": 0,
-      "total_score": 117.5
+      "total_score": 116.94
     },
     {
       "id": "6044ab6ccafa0450f28b23555816b869c0c52053",
@@ -1913,9 +1913,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.45,
+      "timeliness": 25.89,
       "writing_value": 0,
-      "total_score": 116.45
+      "total_score": 115.89
     },
     {
       "id": "1bc45b932c84261ec0838f4de014e83c94fe73a6",
@@ -1934,9 +1934,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.13,
+      "timeliness": 25.57,
       "writing_value": 0,
-      "total_score": 116.13
+      "total_score": 115.57
     },
     {
       "id": "d60547b35f226bba5f702e8a109ea121ec4ec2da",
@@ -1955,9 +1955,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.0,
+      "timeliness": 25.44,
       "writing_value": 0,
-      "total_score": 116.0
+      "total_score": 115.44
     },
     {
       "id": "8c90c60746798039624ba277f912181967c02524",
@@ -1976,9 +1976,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.9,
+      "timeliness": 24.34,
       "writing_value": 0,
-      "total_score": 114.9
+      "total_score": 114.34
     },
     {
       "id": "a7a088f2c66e6380379d575eb5594858a45d882c",
@@ -1997,9 +1997,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 28.65,
+      "timeliness": 28.09,
       "writing_value": 5,
-      "total_score": 113.65
+      "total_score": 113.09
     },
     {
       "id": "d5f2953ae6e96f665a1434f81d35b4518d714c76",
@@ -2018,9 +2018,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 25.73,
+      "timeliness": 25.17,
       "writing_value": 5,
-      "total_score": 110.73
+      "total_score": 110.17
     },
     {
       "id": "49f53687a2daa782e1b40c25f64c0a60b069b18d",
@@ -2039,9 +2039,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 25.0,
+      "timeliness": 24.44,
       "writing_value": 5,
-      "total_score": 110.0
+      "total_score": 109.44
     },
     {
       "id": "f90738055e4ac8515707dd79a01786c4011d4d8f",
@@ -2060,9 +2060,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 24.09,
+      "timeliness": 23.53,
       "writing_value": 5,
-      "total_score": 109.09
+      "total_score": 108.53
     },
     {
       "id": "9b00d7df7290160417f13af0855941076a7b3aea",
@@ -2081,9 +2081,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.41,
+      "timeliness": 28.85,
       "writing_value": 0,
-      "total_score": 104.41
+      "total_score": 103.85
     },
     {
       "id": "7a2a84a94930d6a61fc9e640e3b2b9ee309e67ed",
@@ -2102,9 +2102,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.11,
+      "timeliness": 27.55,
       "writing_value": 0,
-      "total_score": 103.11
+      "total_score": 102.55
     },
     {
       "id": "ee80cf218bc3542f7a3560f75dd50e129f33be6e",
@@ -2123,9 +2123,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.5,
+      "timeliness": 26.94,
       "writing_value": 0,
-      "total_score": 102.5
+      "total_score": 101.94
     },
     {
       "id": "82200091ba80ff5609ba8e0bbc202e521a8bda43",
@@ -2144,9 +2144,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.79,
+      "timeliness": 25.23,
       "writing_value": 0,
-      "total_score": 100.79
+      "total_score": 100.23
     },
     {
       "id": "ef020ba9d6c178c2e729fd51b0fe060ae49658d5",
@@ -2165,9 +2165,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.66,
+      "timeliness": 25.1,
       "writing_value": 0,
-      "total_score": 100.66
+      "total_score": 100.1
     },
     {
       "id": "d9edcc61535982fe22bed3c9d12ea1a6b6579b3c",
@@ -2175,20 +2175,20 @@
       "title_zh": "RoboBusiness 专家展望机器人技术的未来 20 年 - 机器人报告",
       "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPdVJSNU9LZTNFb2F2NFVUcjZ4RHhFOVdwcUlhVS1IcjhUTWtWYkJLWXBuZG1TUVFSU1VPckdxRUtEN1FuYmlkaXhJSUg1aDU3ampWVjlRZnNwdVVkSGNaQmZnTllmT1h1RkU1Zmplc1IxYVlVRHFPRTdIS1FzbG1lOGpVVEI1MkN4TmFOTWF5VXE3Mm1yajdFc2RyTGg5YURh?oc=5",
       "published_at": "2026-08-08T12:35:25+00:00",
-      "category": "国外机器人资讯",
-      "gn_label": "robotics",
-      "site_name": "国外机器人资讯",
-      "source": "国外机器人资讯",
-      "site_id": "国外机器人资讯",
+      "category": "国外人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国外人形机器人资讯",
+      "source": "国外人形机器人资讯",
+      "site_id": "国外人形机器人资讯",
       "description": "Experts look ahead at the next 20 years of robotics at RoboBusiness  The Robot Report",
       "ai_score": 65.0,
-      "ai_label": "robotics",
+      "ai_label": "humanoid",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.59,
+      "timeliness": 25.03,
       "writing_value": 0,
-      "total_score": 100.59
+      "total_score": 100.03
     },
     {
       "id": "4027f4074891dcbdde5d8b6325331c274dd45a7b",
@@ -2207,9 +2207,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.05,
+      "timeliness": 24.49,
       "writing_value": 0,
-      "total_score": 100.05
+      "total_score": 99.49
     },
     {
       "id": "cd7f1d0f5039065446831d9e840923ab975b8fa4",
@@ -2228,13 +2228,13 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.79,
+      "timeliness": 24.22,
       "writing_value": 0,
-      "total_score": 99.79
+      "total_score": 99.22
     },
     {
-      "id": "7a548bd7bf8243a6f1da3b9301c9637c02b0176a",
-      "title": "首席科学家被“下架”，智元机器人IPO出现迷雾-观察者网 - 观察者",
+      "id": "2090ff8a0f00623854d0c853cb2ee7f443b74869",
+      "title": "首席科学家被“下架”，智元机器人IPO出现迷雾-观察者网 - guancha.cn",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBzX2FWelliM3U5ek1OR00tY19Qc1FrZ3l4d3JwVk9ucHdLbXQwOFExRXBMTFJvWEtnNGk2SFFZcE1TU29VM2xJU3pabU1Wby1kMVZ3YnJmUy1jTUM3WmI5ZDJsMHA?oc=5",
       "published_at": "2026-08-08T11:36:00+00:00",
@@ -2243,15 +2243,15 @@
       "site_name": "国内具身智能资讯",
       "source": "国内具身智能资讯",
       "site_id": "国内具身智能资讯",
-      "description": "首席科学家被“下架”，智元机器人IPO出现迷雾-观察者网  观察者",
+      "description": "首席科学家被“下架”，智元机器人IPO出现迷雾-观察者网  guancha.cn",
       "ai_score": 65.0,
       "ai_label": "embodied_ai",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.6,
+      "timeliness": 24.04,
       "writing_value": 0,
-      "total_score": 99.6
+      "total_score": 99.04
     },
     {
       "id": "5ad2c0e66f9d71c9d299fc6a1dab1e878e69e081",
@@ -2270,30 +2270,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.59,
+      "timeliness": 24.02,
       "writing_value": 0,
-      "total_score": 99.59
-    },
-    {
-      "id": "8da04feaabb7fe29406dce18bbbf0c3a570ffb87",
-      "title": "文科生也能拿百万大奖，科目三脱口秀全网整活！智元灵创创意大赛来了 - 新浪财经",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFB1MzhFQ2JJQWw3U2trQ3h5SVZOZFB2S0dIQ2EzbGZoM1hQNzRQWVJpM3hIRWltdU1VVHpLX3ZydVV3RnpjdktFRjdsVG9TbjlWd1dBRWVYdF91SnpxdjNsNksyZjlIbUYzVk12bm92Z3ZNX3lDTU41dXVUR0M?oc=5",
-      "published_at": "2026-08-08T11:11:00+00:00",
-      "category": "国内人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国内人形机器人资讯",
-      "source": "国内人形机器人资讯",
-      "site_id": "国内人形机器人资讯",
-      "description": "文科生也能拿百万大奖，科目三脱口秀全网整活！智元灵创创意大赛来了  新浪财经",
-      "ai_score": 65.0,
-      "ai_label": "humanoid",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 24.18,
-      "writing_value": 0,
-      "total_score": 99.18
+      "total_score": 99.02
     },
     {
       "id": "22892ad7c22bbe68d77f92f85c38ece6d9c4818b",
@@ -2312,9 +2291,9 @@
       "relevance": 0.5,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.25,
+      "timeliness": 24.69,
       "writing_value": 0,
-      "total_score": 85.25
+      "total_score": 84.69
     },
     {
       "id": "da392d9063dc6996c1b33ffb1d1f1ccdd8e95f43",
@@ -2333,9 +2312,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 5,
-      "timeliness": 29.66,
+      "timeliness": 29.1,
       "writing_value": 5,
-      "total_score": 84.66
+      "total_score": 84.1
     },
     {
       "id": "2aabae3c9744bc9c4212687afae8929ad240937d",
@@ -2354,9 +2333,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.08,
+      "timeliness": 28.52,
       "writing_value": 0,
-      "total_score": 74.08
+      "total_score": 73.52
     },
     {
       "id": "3ae265fc93bffd27d6c78894eac48760f1e1e4f4",
@@ -2375,9 +2354,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.58,
+      "timeliness": 28.02,
       "writing_value": 0,
-      "total_score": 73.58
+      "total_score": 73.02
     },
     {
       "id": "cc4d4f4974d41e1b82eb67472fcc1c574817014a",
@@ -2396,9 +2375,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.35,
+      "timeliness": 27.79,
       "writing_value": 0,
-      "total_score": 73.35
+      "total_score": 72.79
     },
     {
       "id": "1ba7fb26717fea34a320620e4d1c90ff443b45e3",
@@ -2417,9 +2396,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.33,
+      "timeliness": 27.77,
       "writing_value": 0,
-      "total_score": 73.33
+      "total_score": 72.77
     },
     {
       "id": "0359936c1308d750cc586fff214284eb92865590",
@@ -2438,9 +2417,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.26,
+      "timeliness": 26.7,
       "writing_value": 0,
-      "total_score": 72.26
+      "total_score": 71.7
     },
     {
       "id": "c387f2004bd8ede2c26845d77a339982969a01e3",
@@ -2459,9 +2438,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.96,
+      "timeliness": 26.4,
       "writing_value": 0,
-      "total_score": 71.96
+      "total_score": 71.4
     },
     {
       "id": "a27d1c17e57296a9ee505da1738eaf6ffa5c28ae",
@@ -2480,9 +2459,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.55,
+      "timeliness": 25.99,
       "writing_value": 0,
-      "total_score": 71.55
+      "total_score": 70.99
     },
     {
       "id": "c44528d4359940893332640c6cdfb975bd50a0ab",
@@ -2501,9 +2480,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.3,
+      "timeliness": 25.74,
       "writing_value": 0,
-      "total_score": 71.3
+      "total_score": 70.74
     },
     {
       "id": "769b3433ec137e40d320f5c2e7e98c16d5a05e2b",
@@ -2522,9 +2501,30 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.73,
+      "timeliness": 25.17,
       "writing_value": 0,
-      "total_score": 70.73
+      "total_score": 70.17
+    },
+    {
+      "id": "84eb436e21c944e3f87b2329daf7e66138899e2d",
+      "title": "日本押注的“物理AI”到底是什么？和通用AI有何不同？ - 新浪网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBxNlJxYmhfQUNtU01NdGRUbUM4MC1yWVpSQ2JYRTJLRFY5MFFpM3V6ZUVqQ0FzODY2dWtRTUZ6bWVENnNwWW5BMW1Jel9yZlJUblVnQUVkSjR6VlhIWU53T3g0ZlpxOE1WTWRuRmxBVDcycUlXRkU0dF9waGlpd0E?oc=5",
+      "published_at": "2026-08-08T12:37:47+00:00",
+      "category": "国内物理AI资讯",
+      "gn_label": "physical_ai",
+      "site_name": "国内物理AI资讯",
+      "source": "国内物理AI资讯",
+      "site_id": "国内物理AI资讯",
+      "description": "日本押注的“物理AI”到底是什么？和通用AI有何不同？  新浪网",
+      "ai_score": 35.0,
+      "ai_label": "physical_ai",
+      "relevance": 0.35,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 25.07,
+      "writing_value": 0,
+      "total_score": 70.07
     },
     {
       "id": "5222ddd8c91822d711fbdb54ac5c0c8352244b6e",
@@ -2543,9 +2543,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.56,
+      "timeliness": 25.0,
       "writing_value": 0,
-      "total_score": 70.56
+      "total_score": 70.0
     },
     {
       "id": "af9287ed0ac644ee17f47d714d4393df61cfb11c",
@@ -2564,9 +2564,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.01,
+      "timeliness": 24.45,
       "writing_value": 0,
-      "total_score": 70.01
+      "total_score": 69.45
     },
     {
       "id": "b9cfd2846fc73924404300e986a3b9d0951afc48",
@@ -2585,9 +2585,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.97,
+      "timeliness": 24.41,
       "writing_value": 0,
-      "total_score": 69.97
+      "total_score": 69.41
     },
     {
       "id": "2c1e28ef2023a56726496520ec40fa6fcf7b848b",
@@ -2606,9 +2606,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.83,
+      "timeliness": 24.27,
       "writing_value": 0,
-      "total_score": 69.83
+      "total_score": 69.27
     },
     {
       "id": "48bac0ab75fb3df59b867e019d7391120dd0f08d",
@@ -2627,9 +2627,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.8,
+      "timeliness": 24.24,
       "writing_value": 0,
-      "total_score": 69.8
+      "total_score": 69.24
     },
     {
       "id": "0ce8999e01fb2027e39828617be8a0ce3f2c6fbf",
@@ -2648,9 +2648,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.64,
+      "timeliness": 24.08,
       "writing_value": 0,
-      "total_score": 69.64
+      "total_score": 69.08
     },
     {
       "id": "1b0b15dc0fa649d99bc2530d7965376dead78c77",
@@ -2669,9 +2669,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.36,
+      "timeliness": 23.8,
       "writing_value": 0,
-      "total_score": 69.36
+      "total_score": 68.8
     },
     {
       "id": "8849520425aa7248e3ea010e232b469535881f24",
@@ -2690,9 +2690,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.27,
+      "timeliness": 23.71,
       "writing_value": 0,
-      "total_score": 69.27
+      "total_score": 68.71
     },
     {
       "id": "3d004b2888ac4be141a6d71d39519e5d1fd3b9db",
@@ -2711,21 +2711,26 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.26,
+      "timeliness": 23.7,
       "writing_value": 0,
-      "total_score": 69.26
+      "total_score": 68.7
     }
   ],
   "site_stats": [
     {
       "site_id": "国内人形机器人资讯",
       "site_name": "国内人形机器人资讯",
-      "count": 12
+      "count": 10
+    },
+    {
+      "site_id": "国内具身智能资讯",
+      "site_name": "国内具身智能资讯",
+      "count": 9
     },
     {
       "site_id": "国外机器人资讯",
       "site_name": "国外机器人资讯",
-      "count": 11
+      "count": 9
     },
     {
       "site_id": "国内机器人资讯",
@@ -2733,13 +2738,13 @@
       "count": 9
     },
     {
-      "site_id": "国内具身智能资讯",
-      "site_name": "国内具身智能资讯",
-      "count": 8
-    },
-    {
       "site_id": "国内物理AI资讯",
       "site_name": "国内物理AI资讯",
+      "count": 3
+    },
+    {
+      "site_id": "国外人形机器人资讯",
+      "site_name": "国外人形机器人资讯",
       "count": 2
     },
     {
