@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-08T14:05:32.504767+00:00",
-  "total_items": 26,
+  "generated_at": "2026-08-08T14:57:10.397038+00:00",
+  "total_items": 32,
   "items_ai": [
     {
       "id": "4b54988d9ff96421ed733c075baf2bfb632edf74",
@@ -8,20 +8,41 @@
       "title_zh": "华尔街看到了价值数万亿美元的人形机器人市场。这两只工业股票出售零部件。 - 雅虎财经",
       "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNVENJd29fY1dFQUxQcV9IWFlNQ1VWVHVmTFlLbjgyY1RPbmNjc05QNDFYUGhGTFBTN0Z1Y2RTTkhCOUJEMmpqWU9CYVZwZElKblM0TUJXMFVKX3NxY1J1bG8zRnB2QmtpUExJNmlYZ0JKUEtuVFZiMUF4cXd6OXRCZE9pWjlmWGJkSTlnRHlNUlFyV1p2ZTBaS08zUjBDYTMxNi1N?oc=5",
       "published_at": "2026-08-08T13:25:00+00:00",
-      "category": "国外人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国外人形机器人资讯",
-      "source": "国外人形机器人资讯",
-      "site_id": "国外人形机器人资讯",
+      "category": "国外机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国外机器人资讯",
+      "source": "国外机器人资讯",
+      "site_id": "国外机器人资讯",
       "description": "Wall Street Sees a Multitrillion-Dollar Humanoid Robot Market. These 2 Industrial Stocks Sell the Parts.  Yahoo Finance",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 28.49,
+      "writing_value": 5,
+      "total_score": 128.49
+    },
+    {
+      "id": "1bc45b932c84261ec0838f4de014e83c94fe73a6",
+      "title": "海外研选 | 巴克莱：自动化3.0时代开启 人形机器人市场10年后或达2000亿美元 - 财联社",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE12ZjBIMXNiQVEtUTZXbHRaMTFFNGtGVjdUM1hLY3RwSm9lcS15Z1k4WkgzdW9LT3Y4ZUJyN3hjUjhDTHNaOWhzcg?oc=5",
+      "published_at": "2026-08-08T13:08:07+00:00",
+      "category": "国内人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国内人形机器人资讯",
+      "source": "国内人形机器人资讯",
+      "site_id": "国内人形机器人资讯",
+      "description": "海外研选 | 巴克莱：自动化3.0时代开启 人形机器人市场10年后或达2000亿美元  财联社",
       "ai_score": 80.0,
       "ai_label": "humanoid",
       "relevance": 0.8,
       "authority": 10,
-      "depth": 5,
-      "timeliness": 29.34,
-      "writing_value": 5,
-      "total_score": 129.34
+      "depth": 0,
+      "timeliness": 28.2,
+      "writing_value": 0,
+      "total_score": 118.2
     },
     {
       "id": "d60547b35f226bba5f702e8a109ea121ec4ec2da",
@@ -40,9 +61,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.93,
+      "timeliness": 28.07,
       "writing_value": 0,
-      "total_score": 118.93
+      "total_score": 118.07
     },
     {
       "id": "de24513f40ce676526c5818b5a676e3d584515c6",
@@ -61,9 +82,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.54,
+      "timeliness": 26.68,
       "writing_value": 0,
-      "total_score": 117.54
+      "total_score": 116.68
     },
     {
       "id": "49f53687a2daa782e1b40c25f64c0a60b069b18d",
@@ -82,9 +103,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 27.93,
+      "timeliness": 27.07,
       "writing_value": 5,
-      "total_score": 112.93
+      "total_score": 112.07
     },
     {
       "id": "f90738055e4ac8515707dd79a01786c4011d4d8f",
@@ -103,9 +124,51 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 27.02,
+      "timeliness": 26.17,
       "writing_value": 5,
-      "total_score": 112.02
+      "total_score": 111.17
+    },
+    {
+      "id": "ee80cf218bc3542f7a3560f75dd50e129f33be6e",
+      "title": "This new robot centaur designed to save lives is pure nightmare fuel - LinkedIn",
+      "title_zh": "这款旨在拯救生命的新型半人马机器人纯粹是噩梦的燃料 - LinkedIn",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPekZNUmRzU2RybXNQclVvbGwxODJyY0FzVGFFcWFyWTRPdjJyaXhJVHBOdVhSM2ZONnhqUV9HSUoxYVdFX0l5enBudmVQTFJhbG9aSEdPY0FyXzNCc3ZFSjh5Y2hQNG81Vy1GQ1FEa0w3M0F4bUtJTjFmLVN1TUNwX25iRS1yeTZTTDN4N2FjdUV4MWkwRzkwR0ln?oc=5",
+      "published_at": "2026-08-08T14:30:02+00:00",
+      "category": "国外机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国外机器人资讯",
+      "source": "国外机器人资讯",
+      "site_id": "国外机器人资讯",
+      "description": "This new robot centaur designed to save lives is pure nightmare fuel  LinkedIn",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.57,
+      "writing_value": 0,
+      "total_score": 104.57
+    },
+    {
+      "id": "39c39586b08262fdfc00787bb13221eef28ff219",
+      "title": "机器人真“打工”！星动纪元进驻十多个物流中心 - 新浪新闻_手机新浪网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBMQklONmtFYWZhYlJmcmtkUDh5dzlqaVJ1VHdkSjRSVkZ6NzFOcmdoN3VUdkI2VmlUWTV5MkwxSVJUMmVLSUgtNHhFdDJnS0FGOU12LXNMZWJIWkprejZSc2tlWHNyVEtTVGRjMC1rcl9ZekoteUE?oc=5",
+      "published_at": "2026-08-08T14:22:37+00:00",
+      "category": "国内机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国内机器人资讯",
+      "source": "国内机器人资讯",
+      "site_id": "国内机器人资讯",
+      "description": "机器人真“打工”！星动纪元进驻十多个物流中心  新浪新闻_手机新浪网",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.45,
+      "writing_value": 0,
+      "total_score": 104.45
     },
     {
       "id": "82200091ba80ff5609ba8e0bbc202e521a8bda43",
@@ -124,9 +187,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.72,
+      "timeliness": 27.86,
       "writing_value": 0,
-      "total_score": 103.72
+      "total_score": 102.86
     },
     {
       "id": "49c5c2506f58b42a773ffc7a0883f907ef0b5301",
@@ -145,9 +208,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.66,
+      "timeliness": 27.8,
       "writing_value": 0,
-      "total_score": 103.66
+      "total_score": 102.8
     },
     {
       "id": "ef020ba9d6c178c2e729fd51b0fe060ae49658d5",
@@ -166,9 +229,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.59,
+      "timeliness": 27.74,
       "writing_value": 0,
-      "total_score": 103.59
+      "total_score": 102.74
     },
     {
       "id": "d9edcc61535982fe22bed3c9d12ea1a6b6579b3c",
@@ -176,20 +239,20 @@
       "title_zh": "RoboBusiness 专家展望机器人技术的未来 20 年 - 机器人报告",
       "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPdVJSNU9LZTNFb2F2NFVUcjZ4RHhFOVdwcUlhVS1IcjhUTWtWYkJLWXBuZG1TUVFSU1VPckdxRUtEN1FuYmlkaXhJSUg1aDU3ampWVjlRZnNwdVVkSGNaQmZnTllmT1h1RkU1Zmplc1IxYVlVRHFPRTdIS1FzbG1lOGpVVEI1MkN4TmFOTWF5VXE3Mm1yajdFc2RyTGg5YURh?oc=5",
       "published_at": "2026-08-08T12:35:25+00:00",
-      "category": "国外人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国外人形机器人资讯",
-      "source": "国外人形机器人资讯",
-      "site_id": "国外人形机器人资讯",
+      "category": "国外机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国外机器人资讯",
+      "source": "国外机器人资讯",
+      "site_id": "国外机器人资讯",
       "description": "Experts look ahead at the next 20 years of robotics at RoboBusiness  The Robot Report",
       "ai_score": 65.0,
-      "ai_label": "humanoid",
+      "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.52,
+      "timeliness": 27.66,
       "writing_value": 0,
-      "total_score": 103.52
+      "total_score": 102.66
     },
     {
       "id": "7ffedc3905a1f1e3642acbfe5c8365b0e1598519",
@@ -208,9 +271,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.23,
+      "timeliness": 27.37,
       "writing_value": 0,
-      "total_score": 103.23
+      "total_score": 102.37
     },
     {
       "id": "4027f4074891dcbdde5d8b6325331c274dd45a7b",
@@ -229,30 +292,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.98,
+      "timeliness": 27.12,
       "writing_value": 0,
-      "total_score": 102.98
+      "total_score": 102.12
     },
     {
-      "id": "3211006c0618dfa727972471ba54bbefd2f4e0dc",
-      "title": "除了宇树科技，中国还有7家机器人企业，估值超过了200亿元 - 搜狐网",
+      "id": "cd7f1d0f5039065446831d9e840923ab975b8fa4",
+      "title": "首席科学家被“下架”，智元机器人IPO出现迷雾 - 凤凰网",
       "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQUkc4RE9Xc1VqR19vR0ZBNFJlMzZYZ0hNOEdFTnlQZThsVTF4YXNTTzVTeE9UZUNlOWRBcV9ZS1N6Mk9UVEt4SWh6ekhFUWVocnAtVjk5SGQ0UGJneklnMlV6ZlBfTTl6MFpLcVJ6Y05KVW91ZHpaMkM0Sl9ldlFFLU1DdHYwQ2xVb09DTw?oc=5",
-      "published_at": "2026-08-08T11:36:00+00:00",
-      "category": "国内人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国内人形机器人资讯",
-      "source": "国内人形机器人资讯",
-      "site_id": "国内人形机器人资讯",
-      "description": "除了宇树科技，中国还有7家机器人企业，估值超过了200亿元  搜狐网",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1HR09aY09jcGwyNU1wSGYwNGZvRzVUV2FhSjZTYjhxOWxUVmNVZ2JYYTZyQ1V4bVlhME9BV2JkOV8xR0pLYmVDekwxSDVrUFdR?oc=5",
+      "published_at": "2026-08-08T11:47:18+00:00",
+      "category": "国内机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国内机器人资讯",
+      "source": "国内机器人资讯",
+      "site_id": "国内机器人资讯",
+      "description": "首席科学家被“下架”，智元机器人IPO出现迷雾  凤凰网",
       "ai_score": 65.0,
-      "ai_label": "humanoid",
+      "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.53,
+      "timeliness": 26.86,
       "writing_value": 0,
-      "total_score": 102.53
+      "total_score": 101.86
     },
     {
       "id": "7a548bd7bf8243a6f1da3b9301c9637c02b0176a",
@@ -271,9 +334,51 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.53,
+      "timeliness": 26.67,
       "writing_value": 0,
-      "total_score": 102.53
+      "total_score": 101.67
+    },
+    {
+      "id": "3211006c0618dfa727972471ba54bbefd2f4e0dc",
+      "title": "除了宇树科技，中国还有7家机器人企业，估值超过了200亿元 - 搜狐网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQUkc4RE9Xc1VqR19vR0ZBNFJlMzZYZ0hNOEdFTnlQZThsVTF4YXNTTzVTeE9UZUNlOWRBcV9ZS1N6Mk9UVEt4SWh6ekhFUWVocnAtVjk5SGQ0UGJneklnMlV6ZlBfTTl6MFpLcVJ6Y05KVW91ZHpaMkM0Sl9ldlFFLU1DdHYwQ2xVb09DTw?oc=5",
+      "published_at": "2026-08-08T11:36:00+00:00",
+      "category": "国内人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国内人形机器人资讯",
+      "source": "国内人形机器人资讯",
+      "site_id": "国内人形机器人资讯",
+      "description": "除了宇树科技，中国还有7家机器人企业，估值超过了200亿元  搜狐网",
+      "ai_score": 65.0,
+      "ai_label": "humanoid",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 26.67,
+      "writing_value": 0,
+      "total_score": 101.67
+    },
+    {
+      "id": "8da04feaabb7fe29406dce18bbbf0c3a570ffb87",
+      "title": "文科生也能拿百万大奖，科目三脱口秀全网整活！智元灵创创意大赛来了 - 新浪财经",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFB1MzhFQ2JJQWw3U2trQ3h5SVZOZFB2S0dIQ2EzbGZoM1hQNzRQWVJpM3hIRWltdU1VVHpLX3ZydVV3RnpjdktFRjdsVG9TbjlWd1dBRWVYdF91SnpxdjNsNksyZjlIbUYzVk12bm92Z3ZNX3lDTU41dXVUR0M?oc=5",
+      "published_at": "2026-08-08T11:11:00+00:00",
+      "category": "国内人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国内人形机器人资讯",
+      "source": "国内人形机器人资讯",
+      "site_id": "国内人形机器人资讯",
+      "description": "文科生也能拿百万大奖，科目三脱口秀全网整活！智元灵创创意大赛来了  新浪财经",
+      "ai_score": 65.0,
+      "ai_label": "humanoid",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 26.25,
+      "writing_value": 0,
+      "total_score": 101.25
     },
     {
       "id": "22892ad7c22bbe68d77f92f85c38ece6d9c4818b",
@@ -292,9 +397,51 @@
       "relevance": 0.5,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.18,
+      "timeliness": 27.32,
       "writing_value": 0,
-      "total_score": 88.18
+      "total_score": 87.32
+    },
+    {
+      "id": "c387f2004bd8ede2c26845d77a339982969a01e3",
+      "title": "腾讯的野心藏不住了 - 搜狐网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNU3dqelVnUlUtdnhqQTFkVEs2aHdFV1pUMjB0aTE0dllJaHZSUW1kV3VjRTFrbVZMRHI4bzA3TWR6TlMwclp1N3hQejVEOFpHcU9NYkFXQzlxUnBnanpVSFR5SmN4S3BUeTRGNTh2VENzWHdtcFM0eTQ2dGR3bEMxX2FYWmlVaTF6?oc=5",
+      "published_at": "2026-08-08T13:58:02+00:00",
+      "category": "国内具身智能资讯",
+      "gn_label": "embodied_ai",
+      "site_name": "国内具身智能资讯",
+      "source": "国内具身智能资讯",
+      "site_id": "国内具身智能资讯",
+      "description": "腾讯的野心藏不住了  搜狐网",
+      "ai_score": 35.0,
+      "ai_label": "embodied_ai",
+      "relevance": 0.35,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.04,
+      "writing_value": 0,
+      "total_score": 74.04
+    },
+    {
+      "id": "a27d1c17e57296a9ee505da1738eaf6ffa5c28ae",
+      "title": "羊圈里来了“机器人” - 中国科技网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1KVDhUaDRDR0NJTm9kVUZ1UkhWdzg0c2xjTkU1U3M2WXFlbzZjclJjc0pTd1RCUjhMZWVFTXNsOTI3eVNwMEVkaTBSVGM0NnBPSU1sQUo1bXhnNW5rc21TNnZreHF1TVg2c2NvQ3JUWnY?oc=5",
+      "published_at": "2026-08-08T13:33:21+00:00",
+      "category": "国内机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国内机器人资讯",
+      "source": "国内机器人资讯",
+      "site_id": "国内机器人资讯",
+      "description": "羊圈里来了“机器人”  中国科技网",
+      "ai_score": 35.0,
+      "ai_label": "robotics",
+      "relevance": 0.35,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 28.63,
+      "writing_value": 0,
+      "total_score": 73.63
     },
     {
       "id": "e75cc6d2bf198937978ad7ee30210660d31f5455",
@@ -313,9 +460,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.11,
+      "timeliness": 28.26,
       "writing_value": 0,
-      "total_score": 74.11
+      "total_score": 73.26
     },
     {
       "id": "769b3433ec137e40d320f5c2e7e98c16d5a05e2b",
@@ -334,30 +481,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.66,
+      "timeliness": 27.81,
       "writing_value": 0,
-      "total_score": 73.66
-    },
-    {
-      "id": "84eb436e21c944e3f87b2329daf7e66138899e2d",
-      "title": "日本押注的“物理AI”到底是什么？和通用AI有何不同？ - 新浪网",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBxNlJxYmhfQUNtU01NdGRUbUM4MC1yWVpSQ2JYRTJLRFY5MFFpM3V6ZUVqQ0FzODY2dWtRTUZ6bWVENnNwWW5BMW1Jel9yZlJUblVnQUVkSjR6VlhIWU53T3g0ZlpxOE1WTWRuRmxBVDcycUlXRkU0dF9waGlpd0E?oc=5",
-      "published_at": "2026-08-08T12:38:27+00:00",
-      "category": "国内机器人资讯",
-      "gn_label": "robotics",
-      "site_name": "国内机器人资讯",
-      "source": "国内机器人资讯",
-      "site_id": "国内机器人资讯",
-      "description": "日本押注的“物理AI”到底是什么？和通用AI有何不同？  新浪网",
-      "ai_score": 35.0,
-      "ai_label": "robotics",
-      "relevance": 0.35,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 28.57,
-      "writing_value": 0,
-      "total_score": 73.57
+      "total_score": 72.81
     },
     {
       "id": "5222ddd8c91822d711fbdb54ac5c0c8352244b6e",
@@ -376,9 +502,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.49,
+      "timeliness": 27.64,
       "writing_value": 0,
-      "total_score": 73.49
+      "total_score": 72.64
     },
     {
       "id": "af9287ed0ac644ee17f47d714d4393df61cfb11c",
@@ -397,9 +523,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.94,
+      "timeliness": 27.08,
       "writing_value": 0,
-      "total_score": 72.94
+      "total_score": 72.08
     },
     {
       "id": "b9cfd2846fc73924404300e986a3b9d0951afc48",
@@ -418,9 +544,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.9,
+      "timeliness": 27.05,
       "writing_value": 0,
-      "total_score": 72.9
+      "total_score": 72.05
     },
     {
       "id": "2c1e28ef2023a56726496520ec40fa6fcf7b848b",
@@ -439,9 +565,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.76,
+      "timeliness": 26.9,
       "writing_value": 0,
-      "total_score": 72.76
+      "total_score": 71.9
     },
     {
       "id": "48bac0ab75fb3df59b867e019d7391120dd0f08d",
@@ -460,9 +586,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.73,
+      "timeliness": 26.87,
       "writing_value": 0,
-      "total_score": 72.73
+      "total_score": 71.87
     },
     {
       "id": "0ce8999e01fb2027e39828617be8a0ce3f2c6fbf",
@@ -481,9 +607,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.57,
+      "timeliness": 26.71,
       "writing_value": 0,
-      "total_score": 72.57
+      "total_score": 71.71
     },
     {
       "id": "1b0b15dc0fa649d99bc2530d7965376dead78c77",
@@ -502,13 +628,13 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.29,
+      "timeliness": 26.44,
       "writing_value": 0,
-      "total_score": 72.29
+      "total_score": 71.44
     },
     {
-      "id": "e0af093d0a113d352b77d705f0451040b0ead5bd",
-      "title": "硬核启航·域见未来——硬之城启用YZCX.com，加速迈向物理AI智造引擎 - tech.china.com",
+      "id": "8849520425aa7248e3ea010e232b469535881f24",
+      "title": "硬核启航·域见未来——硬之城启用YZCX.com，加速迈向物理AI智造引擎 - 中华网科技频道",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE04NVhfSkFWS2tWQXZfQWJId25vNGRYQTJoYTh3NHRZN3FYOFBSNGU1LTg1RVRGODZiS2FwTnhPWWk2Q1Zta0tTX0xWWnFYeHBiSXFyV2drcTU2czJ6RzR1WjFXS3hZUUpHajctdVpB?oc=5",
       "published_at": "2026-08-08T11:16:10+00:00",
@@ -517,15 +643,15 @@
       "site_name": "国内物理AI资讯",
       "source": "国内物理AI资讯",
       "site_id": "国内物理AI资讯",
-      "description": "硬核启航·域见未来——硬之城启用YZCX.com，加速迈向物理AI智造引擎  tech.china.com",
+      "description": "硬核启航·域见未来——硬之城启用YZCX.com，加速迈向物理AI智造引擎  中华网科技频道",
       "ai_score": 35.0,
       "ai_label": "physical_ai",
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.2,
+      "timeliness": 26.34,
       "writing_value": 0,
-      "total_score": 72.2
+      "total_score": 71.34
     },
     {
       "id": "3d004b2888ac4be141a6d71d39519e5d1fd3b9db",
@@ -544,9 +670,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.19,
+      "timeliness": 26.34,
       "writing_value": 0,
-      "total_score": 72.19
+      "total_score": 71.34
     }
   ],
   "items_all": [
@@ -556,20 +682,41 @@
       "title_zh": "华尔街看到了价值数万亿美元的人形机器人市场。这两只工业股票出售零部件。 - 雅虎财经",
       "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNVENJd29fY1dFQUxQcV9IWFlNQ1VWVHVmTFlLbjgyY1RPbmNjc05QNDFYUGhGTFBTN0Z1Y2RTTkhCOUJEMmpqWU9CYVZwZElKblM0TUJXMFVKX3NxY1J1bG8zRnB2QmtpUExJNmlYZ0JKUEtuVFZiMUF4cXd6OXRCZE9pWjlmWGJkSTlnRHlNUlFyV1p2ZTBaS08zUjBDYTMxNi1N?oc=5",
       "published_at": "2026-08-08T13:25:00+00:00",
-      "category": "国外人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国外人形机器人资讯",
-      "source": "国外人形机器人资讯",
-      "site_id": "国外人形机器人资讯",
+      "category": "国外机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国外机器人资讯",
+      "source": "国外机器人资讯",
+      "site_id": "国外机器人资讯",
       "description": "Wall Street Sees a Multitrillion-Dollar Humanoid Robot Market. These 2 Industrial Stocks Sell the Parts.  Yahoo Finance",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 28.49,
+      "writing_value": 5,
+      "total_score": 128.49
+    },
+    {
+      "id": "1bc45b932c84261ec0838f4de014e83c94fe73a6",
+      "title": "海外研选 | 巴克莱：自动化3.0时代开启 人形机器人市场10年后或达2000亿美元 - 财联社",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE12ZjBIMXNiQVEtUTZXbHRaMTFFNGtGVjdUM1hLY3RwSm9lcS15Z1k4WkgzdW9LT3Y4ZUJyN3hjUjhDTHNaOWhzcg?oc=5",
+      "published_at": "2026-08-08T13:08:07+00:00",
+      "category": "国内人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国内人形机器人资讯",
+      "source": "国内人形机器人资讯",
+      "site_id": "国内人形机器人资讯",
+      "description": "海外研选 | 巴克莱：自动化3.0时代开启 人形机器人市场10年后或达2000亿美元  财联社",
       "ai_score": 80.0,
       "ai_label": "humanoid",
       "relevance": 0.8,
       "authority": 10,
-      "depth": 5,
-      "timeliness": 29.34,
-      "writing_value": 5,
-      "total_score": 129.34
+      "depth": 0,
+      "timeliness": 28.2,
+      "writing_value": 0,
+      "total_score": 118.2
     },
     {
       "id": "d60547b35f226bba5f702e8a109ea121ec4ec2da",
@@ -588,9 +735,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.93,
+      "timeliness": 28.07,
       "writing_value": 0,
-      "total_score": 118.93
+      "total_score": 118.07
     },
     {
       "id": "de24513f40ce676526c5818b5a676e3d584515c6",
@@ -609,9 +756,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.54,
+      "timeliness": 26.68,
       "writing_value": 0,
-      "total_score": 117.54
+      "total_score": 116.68
     },
     {
       "id": "49f53687a2daa782e1b40c25f64c0a60b069b18d",
@@ -630,9 +777,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 27.93,
+      "timeliness": 27.07,
       "writing_value": 5,
-      "total_score": 112.93
+      "total_score": 112.07
     },
     {
       "id": "f90738055e4ac8515707dd79a01786c4011d4d8f",
@@ -651,9 +798,51 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 27.02,
+      "timeliness": 26.17,
       "writing_value": 5,
-      "total_score": 112.02
+      "total_score": 111.17
+    },
+    {
+      "id": "ee80cf218bc3542f7a3560f75dd50e129f33be6e",
+      "title": "This new robot centaur designed to save lives is pure nightmare fuel - LinkedIn",
+      "title_zh": "这款旨在拯救生命的新型半人马机器人纯粹是噩梦的燃料 - LinkedIn",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPekZNUmRzU2RybXNQclVvbGwxODJyY0FzVGFFcWFyWTRPdjJyaXhJVHBOdVhSM2ZONnhqUV9HSUoxYVdFX0l5enBudmVQTFJhbG9aSEdPY0FyXzNCc3ZFSjh5Y2hQNG81Vy1GQ1FEa0w3M0F4bUtJTjFmLVN1TUNwX25iRS1yeTZTTDN4N2FjdUV4MWkwRzkwR0ln?oc=5",
+      "published_at": "2026-08-08T14:30:02+00:00",
+      "category": "国外机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国外机器人资讯",
+      "source": "国外机器人资讯",
+      "site_id": "国外机器人资讯",
+      "description": "This new robot centaur designed to save lives is pure nightmare fuel  LinkedIn",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.57,
+      "writing_value": 0,
+      "total_score": 104.57
+    },
+    {
+      "id": "39c39586b08262fdfc00787bb13221eef28ff219",
+      "title": "机器人真“打工”！星动纪元进驻十多个物流中心 - 新浪新闻_手机新浪网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBMQklONmtFYWZhYlJmcmtkUDh5dzlqaVJ1VHdkSjRSVkZ6NzFOcmdoN3VUdkI2VmlUWTV5MkwxSVJUMmVLSUgtNHhFdDJnS0FGOU12LXNMZWJIWkprejZSc2tlWHNyVEtTVGRjMC1rcl9ZekoteUE?oc=5",
+      "published_at": "2026-08-08T14:22:37+00:00",
+      "category": "国内机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国内机器人资讯",
+      "source": "国内机器人资讯",
+      "site_id": "国内机器人资讯",
+      "description": "机器人真“打工”！星动纪元进驻十多个物流中心  新浪新闻_手机新浪网",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.45,
+      "writing_value": 0,
+      "total_score": 104.45
     },
     {
       "id": "82200091ba80ff5609ba8e0bbc202e521a8bda43",
@@ -672,9 +861,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.72,
+      "timeliness": 27.86,
       "writing_value": 0,
-      "total_score": 103.72
+      "total_score": 102.86
     },
     {
       "id": "49c5c2506f58b42a773ffc7a0883f907ef0b5301",
@@ -693,9 +882,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.66,
+      "timeliness": 27.8,
       "writing_value": 0,
-      "total_score": 103.66
+      "total_score": 102.8
     },
     {
       "id": "ef020ba9d6c178c2e729fd51b0fe060ae49658d5",
@@ -714,9 +903,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.59,
+      "timeliness": 27.74,
       "writing_value": 0,
-      "total_score": 103.59
+      "total_score": 102.74
     },
     {
       "id": "d9edcc61535982fe22bed3c9d12ea1a6b6579b3c",
@@ -724,20 +913,20 @@
       "title_zh": "RoboBusiness 专家展望机器人技术的未来 20 年 - 机器人报告",
       "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPdVJSNU9LZTNFb2F2NFVUcjZ4RHhFOVdwcUlhVS1IcjhUTWtWYkJLWXBuZG1TUVFSU1VPckdxRUtEN1FuYmlkaXhJSUg1aDU3ampWVjlRZnNwdVVkSGNaQmZnTllmT1h1RkU1Zmplc1IxYVlVRHFPRTdIS1FzbG1lOGpVVEI1MkN4TmFOTWF5VXE3Mm1yajdFc2RyTGg5YURh?oc=5",
       "published_at": "2026-08-08T12:35:25+00:00",
-      "category": "国外人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国外人形机器人资讯",
-      "source": "国外人形机器人资讯",
-      "site_id": "国外人形机器人资讯",
+      "category": "国外机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国外机器人资讯",
+      "source": "国外机器人资讯",
+      "site_id": "国外机器人资讯",
       "description": "Experts look ahead at the next 20 years of robotics at RoboBusiness  The Robot Report",
       "ai_score": 65.0,
-      "ai_label": "humanoid",
+      "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.52,
+      "timeliness": 27.66,
       "writing_value": 0,
-      "total_score": 103.52
+      "total_score": 102.66
     },
     {
       "id": "7ffedc3905a1f1e3642acbfe5c8365b0e1598519",
@@ -756,9 +945,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.23,
+      "timeliness": 27.37,
       "writing_value": 0,
-      "total_score": 103.23
+      "total_score": 102.37
     },
     {
       "id": "4027f4074891dcbdde5d8b6325331c274dd45a7b",
@@ -777,30 +966,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.98,
+      "timeliness": 27.12,
       "writing_value": 0,
-      "total_score": 102.98
+      "total_score": 102.12
     },
     {
-      "id": "3211006c0618dfa727972471ba54bbefd2f4e0dc",
-      "title": "除了宇树科技，中国还有7家机器人企业，估值超过了200亿元 - 搜狐网",
+      "id": "cd7f1d0f5039065446831d9e840923ab975b8fa4",
+      "title": "首席科学家被“下架”，智元机器人IPO出现迷雾 - 凤凰网",
       "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQUkc4RE9Xc1VqR19vR0ZBNFJlMzZYZ0hNOEdFTnlQZThsVTF4YXNTTzVTeE9UZUNlOWRBcV9ZS1N6Mk9UVEt4SWh6ekhFUWVocnAtVjk5SGQ0UGJneklnMlV6ZlBfTTl6MFpLcVJ6Y05KVW91ZHpaMkM0Sl9ldlFFLU1DdHYwQ2xVb09DTw?oc=5",
-      "published_at": "2026-08-08T11:36:00+00:00",
-      "category": "国内人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国内人形机器人资讯",
-      "source": "国内人形机器人资讯",
-      "site_id": "国内人形机器人资讯",
-      "description": "除了宇树科技，中国还有7家机器人企业，估值超过了200亿元  搜狐网",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1HR09aY09jcGwyNU1wSGYwNGZvRzVUV2FhSjZTYjhxOWxUVmNVZ2JYYTZyQ1V4bVlhME9BV2JkOV8xR0pLYmVDekwxSDVrUFdR?oc=5",
+      "published_at": "2026-08-08T11:47:18+00:00",
+      "category": "国内机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国内机器人资讯",
+      "source": "国内机器人资讯",
+      "site_id": "国内机器人资讯",
+      "description": "首席科学家被“下架”，智元机器人IPO出现迷雾  凤凰网",
       "ai_score": 65.0,
-      "ai_label": "humanoid",
+      "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.53,
+      "timeliness": 26.86,
       "writing_value": 0,
-      "total_score": 102.53
+      "total_score": 101.86
     },
     {
       "id": "7a548bd7bf8243a6f1da3b9301c9637c02b0176a",
@@ -819,9 +1008,51 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.53,
+      "timeliness": 26.67,
       "writing_value": 0,
-      "total_score": 102.53
+      "total_score": 101.67
+    },
+    {
+      "id": "3211006c0618dfa727972471ba54bbefd2f4e0dc",
+      "title": "除了宇树科技，中国还有7家机器人企业，估值超过了200亿元 - 搜狐网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQUkc4RE9Xc1VqR19vR0ZBNFJlMzZYZ0hNOEdFTnlQZThsVTF4YXNTTzVTeE9UZUNlOWRBcV9ZS1N6Mk9UVEt4SWh6ekhFUWVocnAtVjk5SGQ0UGJneklnMlV6ZlBfTTl6MFpLcVJ6Y05KVW91ZHpaMkM0Sl9ldlFFLU1DdHYwQ2xVb09DTw?oc=5",
+      "published_at": "2026-08-08T11:36:00+00:00",
+      "category": "国内人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国内人形机器人资讯",
+      "source": "国内人形机器人资讯",
+      "site_id": "国内人形机器人资讯",
+      "description": "除了宇树科技，中国还有7家机器人企业，估值超过了200亿元  搜狐网",
+      "ai_score": 65.0,
+      "ai_label": "humanoid",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 26.67,
+      "writing_value": 0,
+      "total_score": 101.67
+    },
+    {
+      "id": "8da04feaabb7fe29406dce18bbbf0c3a570ffb87",
+      "title": "文科生也能拿百万大奖，科目三脱口秀全网整活！智元灵创创意大赛来了 - 新浪财经",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFB1MzhFQ2JJQWw3U2trQ3h5SVZOZFB2S0dIQ2EzbGZoM1hQNzRQWVJpM3hIRWltdU1VVHpLX3ZydVV3RnpjdktFRjdsVG9TbjlWd1dBRWVYdF91SnpxdjNsNksyZjlIbUYzVk12bm92Z3ZNX3lDTU41dXVUR0M?oc=5",
+      "published_at": "2026-08-08T11:11:00+00:00",
+      "category": "国内人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国内人形机器人资讯",
+      "source": "国内人形机器人资讯",
+      "site_id": "国内人形机器人资讯",
+      "description": "文科生也能拿百万大奖，科目三脱口秀全网整活！智元灵创创意大赛来了  新浪财经",
+      "ai_score": 65.0,
+      "ai_label": "humanoid",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 26.25,
+      "writing_value": 0,
+      "total_score": 101.25
     },
     {
       "id": "22892ad7c22bbe68d77f92f85c38ece6d9c4818b",
@@ -840,9 +1071,51 @@
       "relevance": 0.5,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.18,
+      "timeliness": 27.32,
       "writing_value": 0,
-      "total_score": 88.18
+      "total_score": 87.32
+    },
+    {
+      "id": "c387f2004bd8ede2c26845d77a339982969a01e3",
+      "title": "腾讯的野心藏不住了 - 搜狐网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNU3dqelVnUlUtdnhqQTFkVEs2aHdFV1pUMjB0aTE0dllJaHZSUW1kV3VjRTFrbVZMRHI4bzA3TWR6TlMwclp1N3hQejVEOFpHcU9NYkFXQzlxUnBnanpVSFR5SmN4S3BUeTRGNTh2VENzWHdtcFM0eTQ2dGR3bEMxX2FYWmlVaTF6?oc=5",
+      "published_at": "2026-08-08T13:58:02+00:00",
+      "category": "国内具身智能资讯",
+      "gn_label": "embodied_ai",
+      "site_name": "国内具身智能资讯",
+      "source": "国内具身智能资讯",
+      "site_id": "国内具身智能资讯",
+      "description": "腾讯的野心藏不住了  搜狐网",
+      "ai_score": 35.0,
+      "ai_label": "embodied_ai",
+      "relevance": 0.35,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.04,
+      "writing_value": 0,
+      "total_score": 74.04
+    },
+    {
+      "id": "a27d1c17e57296a9ee505da1738eaf6ffa5c28ae",
+      "title": "羊圈里来了“机器人” - 中国科技网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1KVDhUaDRDR0NJTm9kVUZ1UkhWdzg0c2xjTkU1U3M2WXFlbzZjclJjc0pTd1RCUjhMZWVFTXNsOTI3eVNwMEVkaTBSVGM0NnBPSU1sQUo1bXhnNW5rc21TNnZreHF1TVg2c2NvQ3JUWnY?oc=5",
+      "published_at": "2026-08-08T13:33:21+00:00",
+      "category": "国内机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国内机器人资讯",
+      "source": "国内机器人资讯",
+      "site_id": "国内机器人资讯",
+      "description": "羊圈里来了“机器人”  中国科技网",
+      "ai_score": 35.0,
+      "ai_label": "robotics",
+      "relevance": 0.35,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 28.63,
+      "writing_value": 0,
+      "total_score": 73.63
     },
     {
       "id": "e75cc6d2bf198937978ad7ee30210660d31f5455",
@@ -861,9 +1134,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.11,
+      "timeliness": 28.26,
       "writing_value": 0,
-      "total_score": 74.11
+      "total_score": 73.26
     },
     {
       "id": "769b3433ec137e40d320f5c2e7e98c16d5a05e2b",
@@ -882,30 +1155,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.66,
+      "timeliness": 27.81,
       "writing_value": 0,
-      "total_score": 73.66
-    },
-    {
-      "id": "84eb436e21c944e3f87b2329daf7e66138899e2d",
-      "title": "日本押注的“物理AI”到底是什么？和通用AI有何不同？ - 新浪网",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBxNlJxYmhfQUNtU01NdGRUbUM4MC1yWVpSQ2JYRTJLRFY5MFFpM3V6ZUVqQ0FzODY2dWtRTUZ6bWVENnNwWW5BMW1Jel9yZlJUblVnQUVkSjR6VlhIWU53T3g0ZlpxOE1WTWRuRmxBVDcycUlXRkU0dF9waGlpd0E?oc=5",
-      "published_at": "2026-08-08T12:38:27+00:00",
-      "category": "国内机器人资讯",
-      "gn_label": "robotics",
-      "site_name": "国内机器人资讯",
-      "source": "国内机器人资讯",
-      "site_id": "国内机器人资讯",
-      "description": "日本押注的“物理AI”到底是什么？和通用AI有何不同？  新浪网",
-      "ai_score": 35.0,
-      "ai_label": "robotics",
-      "relevance": 0.35,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 28.57,
-      "writing_value": 0,
-      "total_score": 73.57
+      "total_score": 72.81
     },
     {
       "id": "5222ddd8c91822d711fbdb54ac5c0c8352244b6e",
@@ -924,9 +1176,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.49,
+      "timeliness": 27.64,
       "writing_value": 0,
-      "total_score": 73.49
+      "total_score": 72.64
     },
     {
       "id": "af9287ed0ac644ee17f47d714d4393df61cfb11c",
@@ -945,9 +1197,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.94,
+      "timeliness": 27.08,
       "writing_value": 0,
-      "total_score": 72.94
+      "total_score": 72.08
     },
     {
       "id": "b9cfd2846fc73924404300e986a3b9d0951afc48",
@@ -966,9 +1218,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.9,
+      "timeliness": 27.05,
       "writing_value": 0,
-      "total_score": 72.9
+      "total_score": 72.05
     },
     {
       "id": "2c1e28ef2023a56726496520ec40fa6fcf7b848b",
@@ -987,9 +1239,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.76,
+      "timeliness": 26.9,
       "writing_value": 0,
-      "total_score": 72.76
+      "total_score": 71.9
     },
     {
       "id": "48bac0ab75fb3df59b867e019d7391120dd0f08d",
@@ -1008,9 +1260,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.73,
+      "timeliness": 26.87,
       "writing_value": 0,
-      "total_score": 72.73
+      "total_score": 71.87
     },
     {
       "id": "0ce8999e01fb2027e39828617be8a0ce3f2c6fbf",
@@ -1029,9 +1281,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.57,
+      "timeliness": 26.71,
       "writing_value": 0,
-      "total_score": 72.57
+      "total_score": 71.71
     },
     {
       "id": "1b0b15dc0fa649d99bc2530d7965376dead78c77",
@@ -1050,13 +1302,13 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.29,
+      "timeliness": 26.44,
       "writing_value": 0,
-      "total_score": 72.29
+      "total_score": 71.44
     },
     {
-      "id": "e0af093d0a113d352b77d705f0451040b0ead5bd",
-      "title": "硬核启航·域见未来——硬之城启用YZCX.com，加速迈向物理AI智造引擎 - tech.china.com",
+      "id": "8849520425aa7248e3ea010e232b469535881f24",
+      "title": "硬核启航·域见未来——硬之城启用YZCX.com，加速迈向物理AI智造引擎 - 中华网科技频道",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE04NVhfSkFWS2tWQXZfQWJId25vNGRYQTJoYTh3NHRZN3FYOFBSNGU1LTg1RVRGODZiS2FwTnhPWWk2Q1Zta0tTX0xWWnFYeHBiSXFyV2drcTU2czJ6RzR1WjFXS3hZUUpHajctdVpB?oc=5",
       "published_at": "2026-08-08T11:16:10+00:00",
@@ -1065,15 +1317,15 @@
       "site_name": "国内物理AI资讯",
       "source": "国内物理AI资讯",
       "site_id": "国内物理AI资讯",
-      "description": "硬核启航·域见未来——硬之城启用YZCX.com，加速迈向物理AI智造引擎  tech.china.com",
+      "description": "硬核启航·域见未来——硬之城启用YZCX.com，加速迈向物理AI智造引擎  中华网科技频道",
       "ai_score": 35.0,
       "ai_label": "physical_ai",
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.2,
+      "timeliness": 26.34,
       "writing_value": 0,
-      "total_score": 72.2
+      "total_score": 71.34
     },
     {
       "id": "3d004b2888ac4be141a6d71d39519e5d1fd3b9db",
@@ -1092,9 +1344,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.19,
+      "timeliness": 26.34,
       "writing_value": 0,
-      "total_score": 72.19
+      "total_score": 71.34
     }
   ],
   "items_all_raw": [
@@ -1104,20 +1356,41 @@
       "title_zh": "华尔街看到了价值数万亿美元的人形机器人市场。这两只工业股票出售零部件。 - 雅虎财经",
       "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNVENJd29fY1dFQUxQcV9IWFlNQ1VWVHVmTFlLbjgyY1RPbmNjc05QNDFYUGhGTFBTN0Z1Y2RTTkhCOUJEMmpqWU9CYVZwZElKblM0TUJXMFVKX3NxY1J1bG8zRnB2QmtpUExJNmlYZ0JKUEtuVFZiMUF4cXd6OXRCZE9pWjlmWGJkSTlnRHlNUlFyV1p2ZTBaS08zUjBDYTMxNi1N?oc=5",
       "published_at": "2026-08-08T13:25:00+00:00",
-      "category": "国外人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国外人形机器人资讯",
-      "source": "国外人形机器人资讯",
-      "site_id": "国外人形机器人资讯",
+      "category": "国外机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国外机器人资讯",
+      "source": "国外机器人资讯",
+      "site_id": "国外机器人资讯",
       "description": "Wall Street Sees a Multitrillion-Dollar Humanoid Robot Market. These 2 Industrial Stocks Sell the Parts.  Yahoo Finance",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 28.49,
+      "writing_value": 5,
+      "total_score": 128.49
+    },
+    {
+      "id": "1bc45b932c84261ec0838f4de014e83c94fe73a6",
+      "title": "海外研选 | 巴克莱：自动化3.0时代开启 人形机器人市场10年后或达2000亿美元 - 财联社",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE12ZjBIMXNiQVEtUTZXbHRaMTFFNGtGVjdUM1hLY3RwSm9lcS15Z1k4WkgzdW9LT3Y4ZUJyN3hjUjhDTHNaOWhzcg?oc=5",
+      "published_at": "2026-08-08T13:08:07+00:00",
+      "category": "国内人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国内人形机器人资讯",
+      "source": "国内人形机器人资讯",
+      "site_id": "国内人形机器人资讯",
+      "description": "海外研选 | 巴克莱：自动化3.0时代开启 人形机器人市场10年后或达2000亿美元  财联社",
       "ai_score": 80.0,
       "ai_label": "humanoid",
       "relevance": 0.8,
       "authority": 10,
-      "depth": 5,
-      "timeliness": 29.34,
-      "writing_value": 5,
-      "total_score": 129.34
+      "depth": 0,
+      "timeliness": 28.2,
+      "writing_value": 0,
+      "total_score": 118.2
     },
     {
       "id": "d60547b35f226bba5f702e8a109ea121ec4ec2da",
@@ -1136,9 +1409,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.93,
+      "timeliness": 28.07,
       "writing_value": 0,
-      "total_score": 118.93
+      "total_score": 118.07
     },
     {
       "id": "de24513f40ce676526c5818b5a676e3d584515c6",
@@ -1157,9 +1430,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.54,
+      "timeliness": 26.68,
       "writing_value": 0,
-      "total_score": 117.54
+      "total_score": 116.68
     },
     {
       "id": "49f53687a2daa782e1b40c25f64c0a60b069b18d",
@@ -1178,9 +1451,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 27.93,
+      "timeliness": 27.07,
       "writing_value": 5,
-      "total_score": 112.93
+      "total_score": 112.07
     },
     {
       "id": "f90738055e4ac8515707dd79a01786c4011d4d8f",
@@ -1199,9 +1472,51 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 27.02,
+      "timeliness": 26.17,
       "writing_value": 5,
-      "total_score": 112.02
+      "total_score": 111.17
+    },
+    {
+      "id": "ee80cf218bc3542f7a3560f75dd50e129f33be6e",
+      "title": "This new robot centaur designed to save lives is pure nightmare fuel - LinkedIn",
+      "title_zh": "这款旨在拯救生命的新型半人马机器人纯粹是噩梦的燃料 - LinkedIn",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPekZNUmRzU2RybXNQclVvbGwxODJyY0FzVGFFcWFyWTRPdjJyaXhJVHBOdVhSM2ZONnhqUV9HSUoxYVdFX0l5enBudmVQTFJhbG9aSEdPY0FyXzNCc3ZFSjh5Y2hQNG81Vy1GQ1FEa0w3M0F4bUtJTjFmLVN1TUNwX25iRS1yeTZTTDN4N2FjdUV4MWkwRzkwR0ln?oc=5",
+      "published_at": "2026-08-08T14:30:02+00:00",
+      "category": "国外机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国外机器人资讯",
+      "source": "国外机器人资讯",
+      "site_id": "国外机器人资讯",
+      "description": "This new robot centaur designed to save lives is pure nightmare fuel  LinkedIn",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.57,
+      "writing_value": 0,
+      "total_score": 104.57
+    },
+    {
+      "id": "39c39586b08262fdfc00787bb13221eef28ff219",
+      "title": "机器人真“打工”！星动纪元进驻十多个物流中心 - 新浪新闻_手机新浪网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBMQklONmtFYWZhYlJmcmtkUDh5dzlqaVJ1VHdkSjRSVkZ6NzFOcmdoN3VUdkI2VmlUWTV5MkwxSVJUMmVLSUgtNHhFdDJnS0FGOU12LXNMZWJIWkprejZSc2tlWHNyVEtTVGRjMC1rcl9ZekoteUE?oc=5",
+      "published_at": "2026-08-08T14:22:37+00:00",
+      "category": "国内机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国内机器人资讯",
+      "source": "国内机器人资讯",
+      "site_id": "国内机器人资讯",
+      "description": "机器人真“打工”！星动纪元进驻十多个物流中心  新浪新闻_手机新浪网",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.45,
+      "writing_value": 0,
+      "total_score": 104.45
     },
     {
       "id": "82200091ba80ff5609ba8e0bbc202e521a8bda43",
@@ -1220,9 +1535,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.72,
+      "timeliness": 27.86,
       "writing_value": 0,
-      "total_score": 103.72
+      "total_score": 102.86
     },
     {
       "id": "49c5c2506f58b42a773ffc7a0883f907ef0b5301",
@@ -1241,9 +1556,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.66,
+      "timeliness": 27.8,
       "writing_value": 0,
-      "total_score": 103.66
+      "total_score": 102.8
     },
     {
       "id": "ef020ba9d6c178c2e729fd51b0fe060ae49658d5",
@@ -1262,9 +1577,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.59,
+      "timeliness": 27.74,
       "writing_value": 0,
-      "total_score": 103.59
+      "total_score": 102.74
     },
     {
       "id": "d9edcc61535982fe22bed3c9d12ea1a6b6579b3c",
@@ -1272,20 +1587,20 @@
       "title_zh": "RoboBusiness 专家展望机器人技术的未来 20 年 - 机器人报告",
       "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPdVJSNU9LZTNFb2F2NFVUcjZ4RHhFOVdwcUlhVS1IcjhUTWtWYkJLWXBuZG1TUVFSU1VPckdxRUtEN1FuYmlkaXhJSUg1aDU3ampWVjlRZnNwdVVkSGNaQmZnTllmT1h1RkU1Zmplc1IxYVlVRHFPRTdIS1FzbG1lOGpVVEI1MkN4TmFOTWF5VXE3Mm1yajdFc2RyTGg5YURh?oc=5",
       "published_at": "2026-08-08T12:35:25+00:00",
-      "category": "国外人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国外人形机器人资讯",
-      "source": "国外人形机器人资讯",
-      "site_id": "国外人形机器人资讯",
+      "category": "国外机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国外机器人资讯",
+      "source": "国外机器人资讯",
+      "site_id": "国外机器人资讯",
       "description": "Experts look ahead at the next 20 years of robotics at RoboBusiness  The Robot Report",
       "ai_score": 65.0,
-      "ai_label": "humanoid",
+      "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.52,
+      "timeliness": 27.66,
       "writing_value": 0,
-      "total_score": 103.52
+      "total_score": 102.66
     },
     {
       "id": "7ffedc3905a1f1e3642acbfe5c8365b0e1598519",
@@ -1304,9 +1619,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.23,
+      "timeliness": 27.37,
       "writing_value": 0,
-      "total_score": 103.23
+      "total_score": 102.37
     },
     {
       "id": "4027f4074891dcbdde5d8b6325331c274dd45a7b",
@@ -1325,30 +1640,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.98,
+      "timeliness": 27.12,
       "writing_value": 0,
-      "total_score": 102.98
+      "total_score": 102.12
     },
     {
-      "id": "3211006c0618dfa727972471ba54bbefd2f4e0dc",
-      "title": "除了宇树科技，中国还有7家机器人企业，估值超过了200亿元 - 搜狐网",
+      "id": "cd7f1d0f5039065446831d9e840923ab975b8fa4",
+      "title": "首席科学家被“下架”，智元机器人IPO出现迷雾 - 凤凰网",
       "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQUkc4RE9Xc1VqR19vR0ZBNFJlMzZYZ0hNOEdFTnlQZThsVTF4YXNTTzVTeE9UZUNlOWRBcV9ZS1N6Mk9UVEt4SWh6ekhFUWVocnAtVjk5SGQ0UGJneklnMlV6ZlBfTTl6MFpLcVJ6Y05KVW91ZHpaMkM0Sl9ldlFFLU1DdHYwQ2xVb09DTw?oc=5",
-      "published_at": "2026-08-08T11:36:00+00:00",
-      "category": "国内人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国内人形机器人资讯",
-      "source": "国内人形机器人资讯",
-      "site_id": "国内人形机器人资讯",
-      "description": "除了宇树科技，中国还有7家机器人企业，估值超过了200亿元  搜狐网",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1HR09aY09jcGwyNU1wSGYwNGZvRzVUV2FhSjZTYjhxOWxUVmNVZ2JYYTZyQ1V4bVlhME9BV2JkOV8xR0pLYmVDekwxSDVrUFdR?oc=5",
+      "published_at": "2026-08-08T11:47:18+00:00",
+      "category": "国内机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国内机器人资讯",
+      "source": "国内机器人资讯",
+      "site_id": "国内机器人资讯",
+      "description": "首席科学家被“下架”，智元机器人IPO出现迷雾  凤凰网",
       "ai_score": 65.0,
-      "ai_label": "humanoid",
+      "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.53,
+      "timeliness": 26.86,
       "writing_value": 0,
-      "total_score": 102.53
+      "total_score": 101.86
     },
     {
       "id": "7a548bd7bf8243a6f1da3b9301c9637c02b0176a",
@@ -1367,9 +1682,51 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.53,
+      "timeliness": 26.67,
       "writing_value": 0,
-      "total_score": 102.53
+      "total_score": 101.67
+    },
+    {
+      "id": "3211006c0618dfa727972471ba54bbefd2f4e0dc",
+      "title": "除了宇树科技，中国还有7家机器人企业，估值超过了200亿元 - 搜狐网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQUkc4RE9Xc1VqR19vR0ZBNFJlMzZYZ0hNOEdFTnlQZThsVTF4YXNTTzVTeE9UZUNlOWRBcV9ZS1N6Mk9UVEt4SWh6ekhFUWVocnAtVjk5SGQ0UGJneklnMlV6ZlBfTTl6MFpLcVJ6Y05KVW91ZHpaMkM0Sl9ldlFFLU1DdHYwQ2xVb09DTw?oc=5",
+      "published_at": "2026-08-08T11:36:00+00:00",
+      "category": "国内人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国内人形机器人资讯",
+      "source": "国内人形机器人资讯",
+      "site_id": "国内人形机器人资讯",
+      "description": "除了宇树科技，中国还有7家机器人企业，估值超过了200亿元  搜狐网",
+      "ai_score": 65.0,
+      "ai_label": "humanoid",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 26.67,
+      "writing_value": 0,
+      "total_score": 101.67
+    },
+    {
+      "id": "8da04feaabb7fe29406dce18bbbf0c3a570ffb87",
+      "title": "文科生也能拿百万大奖，科目三脱口秀全网整活！智元灵创创意大赛来了 - 新浪财经",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFB1MzhFQ2JJQWw3U2trQ3h5SVZOZFB2S0dIQ2EzbGZoM1hQNzRQWVJpM3hIRWltdU1VVHpLX3ZydVV3RnpjdktFRjdsVG9TbjlWd1dBRWVYdF91SnpxdjNsNksyZjlIbUYzVk12bm92Z3ZNX3lDTU41dXVUR0M?oc=5",
+      "published_at": "2026-08-08T11:11:00+00:00",
+      "category": "国内人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国内人形机器人资讯",
+      "source": "国内人形机器人资讯",
+      "site_id": "国内人形机器人资讯",
+      "description": "文科生也能拿百万大奖，科目三脱口秀全网整活！智元灵创创意大赛来了  新浪财经",
+      "ai_score": 65.0,
+      "ai_label": "humanoid",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 26.25,
+      "writing_value": 0,
+      "total_score": 101.25
     },
     {
       "id": "22892ad7c22bbe68d77f92f85c38ece6d9c4818b",
@@ -1388,9 +1745,51 @@
       "relevance": 0.5,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.18,
+      "timeliness": 27.32,
       "writing_value": 0,
-      "total_score": 88.18
+      "total_score": 87.32
+    },
+    {
+      "id": "c387f2004bd8ede2c26845d77a339982969a01e3",
+      "title": "腾讯的野心藏不住了 - 搜狐网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNU3dqelVnUlUtdnhqQTFkVEs2aHdFV1pUMjB0aTE0dllJaHZSUW1kV3VjRTFrbVZMRHI4bzA3TWR6TlMwclp1N3hQejVEOFpHcU9NYkFXQzlxUnBnanpVSFR5SmN4S3BUeTRGNTh2VENzWHdtcFM0eTQ2dGR3bEMxX2FYWmlVaTF6?oc=5",
+      "published_at": "2026-08-08T13:58:02+00:00",
+      "category": "国内具身智能资讯",
+      "gn_label": "embodied_ai",
+      "site_name": "国内具身智能资讯",
+      "source": "国内具身智能资讯",
+      "site_id": "国内具身智能资讯",
+      "description": "腾讯的野心藏不住了  搜狐网",
+      "ai_score": 35.0,
+      "ai_label": "embodied_ai",
+      "relevance": 0.35,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.04,
+      "writing_value": 0,
+      "total_score": 74.04
+    },
+    {
+      "id": "a27d1c17e57296a9ee505da1738eaf6ffa5c28ae",
+      "title": "羊圈里来了“机器人” - 中国科技网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1KVDhUaDRDR0NJTm9kVUZ1UkhWdzg0c2xjTkU1U3M2WXFlbzZjclJjc0pTd1RCUjhMZWVFTXNsOTI3eVNwMEVkaTBSVGM0NnBPSU1sQUo1bXhnNW5rc21TNnZreHF1TVg2c2NvQ3JUWnY?oc=5",
+      "published_at": "2026-08-08T13:33:21+00:00",
+      "category": "国内机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国内机器人资讯",
+      "source": "国内机器人资讯",
+      "site_id": "国内机器人资讯",
+      "description": "羊圈里来了“机器人”  中国科技网",
+      "ai_score": 35.0,
+      "ai_label": "robotics",
+      "relevance": 0.35,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 28.63,
+      "writing_value": 0,
+      "total_score": 73.63
     },
     {
       "id": "e75cc6d2bf198937978ad7ee30210660d31f5455",
@@ -1409,9 +1808,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.11,
+      "timeliness": 28.26,
       "writing_value": 0,
-      "total_score": 74.11
+      "total_score": 73.26
     },
     {
       "id": "769b3433ec137e40d320f5c2e7e98c16d5a05e2b",
@@ -1430,30 +1829,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.66,
+      "timeliness": 27.81,
       "writing_value": 0,
-      "total_score": 73.66
-    },
-    {
-      "id": "84eb436e21c944e3f87b2329daf7e66138899e2d",
-      "title": "日本押注的“物理AI”到底是什么？和通用AI有何不同？ - 新浪网",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBxNlJxYmhfQUNtU01NdGRUbUM4MC1yWVpSQ2JYRTJLRFY5MFFpM3V6ZUVqQ0FzODY2dWtRTUZ6bWVENnNwWW5BMW1Jel9yZlJUblVnQUVkSjR6VlhIWU53T3g0ZlpxOE1WTWRuRmxBVDcycUlXRkU0dF9waGlpd0E?oc=5",
-      "published_at": "2026-08-08T12:38:27+00:00",
-      "category": "国内机器人资讯",
-      "gn_label": "robotics",
-      "site_name": "国内机器人资讯",
-      "source": "国内机器人资讯",
-      "site_id": "国内机器人资讯",
-      "description": "日本押注的“物理AI”到底是什么？和通用AI有何不同？  新浪网",
-      "ai_score": 35.0,
-      "ai_label": "robotics",
-      "relevance": 0.35,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 28.57,
-      "writing_value": 0,
-      "total_score": 73.57
+      "total_score": 72.81
     },
     {
       "id": "5222ddd8c91822d711fbdb54ac5c0c8352244b6e",
@@ -1472,9 +1850,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.49,
+      "timeliness": 27.64,
       "writing_value": 0,
-      "total_score": 73.49
+      "total_score": 72.64
     },
     {
       "id": "af9287ed0ac644ee17f47d714d4393df61cfb11c",
@@ -1493,9 +1871,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.94,
+      "timeliness": 27.08,
       "writing_value": 0,
-      "total_score": 72.94
+      "total_score": 72.08
     },
     {
       "id": "b9cfd2846fc73924404300e986a3b9d0951afc48",
@@ -1514,9 +1892,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.9,
+      "timeliness": 27.05,
       "writing_value": 0,
-      "total_score": 72.9
+      "total_score": 72.05
     },
     {
       "id": "2c1e28ef2023a56726496520ec40fa6fcf7b848b",
@@ -1535,9 +1913,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.76,
+      "timeliness": 26.9,
       "writing_value": 0,
-      "total_score": 72.76
+      "total_score": 71.9
     },
     {
       "id": "48bac0ab75fb3df59b867e019d7391120dd0f08d",
@@ -1556,9 +1934,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.73,
+      "timeliness": 26.87,
       "writing_value": 0,
-      "total_score": 72.73
+      "total_score": 71.87
     },
     {
       "id": "0ce8999e01fb2027e39828617be8a0ce3f2c6fbf",
@@ -1577,9 +1955,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.57,
+      "timeliness": 26.71,
       "writing_value": 0,
-      "total_score": 72.57
+      "total_score": 71.71
     },
     {
       "id": "1b0b15dc0fa649d99bc2530d7965376dead78c77",
@@ -1598,13 +1976,13 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.29,
+      "timeliness": 26.44,
       "writing_value": 0,
-      "total_score": 72.29
+      "total_score": 71.44
     },
     {
-      "id": "e0af093d0a113d352b77d705f0451040b0ead5bd",
-      "title": "硬核启航·域见未来——硬之城启用YZCX.com，加速迈向物理AI智造引擎 - tech.china.com",
+      "id": "8849520425aa7248e3ea010e232b469535881f24",
+      "title": "硬核启航·域见未来——硬之城启用YZCX.com，加速迈向物理AI智造引擎 - 中华网科技频道",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE04NVhfSkFWS2tWQXZfQWJId25vNGRYQTJoYTh3NHRZN3FYOFBSNGU1LTg1RVRGODZiS2FwTnhPWWk2Q1Zta0tTX0xWWnFYeHBiSXFyV2drcTU2czJ6RzR1WjFXS3hZUUpHajctdVpB?oc=5",
       "published_at": "2026-08-08T11:16:10+00:00",
@@ -1613,15 +1991,15 @@
       "site_name": "国内物理AI资讯",
       "source": "国内物理AI资讯",
       "site_id": "国内物理AI资讯",
-      "description": "硬核启航·域见未来——硬之城启用YZCX.com，加速迈向物理AI智造引擎  tech.china.com",
+      "description": "硬核启航·域见未来——硬之城启用YZCX.com，加速迈向物理AI智造引擎  中华网科技频道",
       "ai_score": 35.0,
       "ai_label": "physical_ai",
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.2,
+      "timeliness": 26.34,
       "writing_value": 0,
-      "total_score": 72.2
+      "total_score": 71.34
     },
     {
       "id": "3d004b2888ac4be141a6d71d39519e5d1fd3b9db",
@@ -1640,36 +2018,31 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.19,
+      "timeliness": 26.34,
       "writing_value": 0,
-      "total_score": 72.19
+      "total_score": 71.34
     }
   ],
   "site_stats": [
     {
       "site_id": "国内机器人资讯",
       "site_name": "国内机器人资讯",
-      "count": 7
+      "count": 9
     },
     {
       "site_id": "国内人形机器人资讯",
       "site_name": "国内人形机器人资讯",
-      "count": 6
+      "count": 8
     },
     {
       "site_id": "国外机器人资讯",
       "site_name": "国外机器人资讯",
-      "count": 4
+      "count": 7
     },
     {
       "site_id": "国内具身智能资讯",
       "site_name": "国内具身智能资讯",
-      "count": 4
-    },
-    {
-      "site_id": "国外人形机器人资讯",
-      "site_name": "国外人形机器人资讯",
-      "count": 2
+      "count": 5
     },
     {
       "site_id": "国内物理AI资讯",
@@ -1682,6 +2055,6 @@
       "count": 1
     }
   ],
-  "total_items_raw": 26,
-  "total_items_all_mode": 26
+  "total_items_raw": 32,
+  "total_items_all_mode": 32
 }

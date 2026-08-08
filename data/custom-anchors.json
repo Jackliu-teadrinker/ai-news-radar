@@ -1,9 +1,30 @@
 {
-  "generated_at": "2026-08-08T14:04:30.350071+00:00",
+  "generated_at": "2026-08-08T14:55:54.670403+00:00",
   "window_start": "2026-08-08T19:00:00+08:00",
-  "window_end": "2026-08-08T22:04:30.348441+08:00",
-  "total_items": 2,
+  "window_end": "2026-08-08T22:55:54.503865+08:00",
+  "total_items": 3,
   "items": [
+    {
+      "id": "ed8f8f982d96ee983edb87f6c0d6bb47074bf320",
+      "title": "Wall Street Sees a Multitrillion-Dollar Humanoid Robot Market. These 2 Industrial Stocks Sell the Parts. - The Motley Fool",
+      "title_zh": "华尔街看到了价值数万亿美元的人形机器人市场。这两只工业股票出售零部件。 - 杂七杂八的傻瓜",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPSElMOV9fQXlVbGN5V1NlVG53cjlHVXJTUEJwRzFaa0xWYnJLQmZLWTBLajlsMmtiT09qamNzUW90R08tZm5QMkRDTVh6MEMzVHNuUGJuLWpFdV85QzZ4WEF3cGxfTGVNbzVvM3BLQkdVU3ZpajZNZk5oT1NpT3dOTjJqVm1PZ0xNQlhmYloyb2V3UFNCU3l3?oc=5",
+      "published_at": "2026-08-08T13:41:01+00:00",
+      "category": "GN: industrial robot",
+      "gn_label": "robotics",
+      "site_name": "GN: industrial robot",
+      "source": "GN: industrial robot",
+      "site_id": "GN: industrial robot",
+      "description": "Wall Street Sees a Multitrillion-Dollar Humanoid Robot Market. These 2 Industrial Stocks Sell the Parts.  The Motley Fool",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 28.75,
+      "writing_value": 5,
+      "total_score": 128.75
+    },
     {
       "id": "71bc62c96b0eea7ef2279eb93f165f1581be3786",
       "title": "宇树10日开启申购，具身智能迎来IPO密集期 - 电子工程专辑",
@@ -21,9 +42,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.99,
+      "timeliness": 27.14,
       "writing_value": 0,
-      "total_score": 117.99
+      "total_score": 117.14
     },
     {
       "id": "5d23c6ba1cd7d7a417e06dfdca5e9367732ff454",
@@ -42,9 +63,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 5,
-      "timeliness": 28.93,
+      "timeliness": 28.07,
       "writing_value": 5,
-      "total_score": 128.93
+      "total_score": 128.07
     }
   ],
   "fallback_used": false
