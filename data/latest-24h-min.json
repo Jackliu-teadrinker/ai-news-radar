@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-08T17:34:46.039967+00:00",
-  "total_items": 43,
+  "generated_at": "2026-08-08T18:23:15.533482+00:00",
+  "total_items": 44,
   "items_ai": [
     {
       "id": "4b54988d9ff96421ed733c075baf2bfb632edf74",
@@ -19,9 +19,30 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 5,
-      "timeliness": 25.85,
+      "timeliness": 25.05,
       "writing_value": 5,
-      "total_score": 125.85
+      "total_score": 125.05
+    },
+    {
+      "id": "96aadab660811217aaf6d807a32c17270435afc6",
+      "title": "今年上半年人形机器人领域 新设企业11.6万户 - 新浪财经",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPTmFJdUJERDd2eFExbHpMcXhpNzZya0xoZW9Edjd4cGZVX18tR2lXZVM1OU1UTGtrS1ItN2hueXJwVlRrMXV5VERWQUNyU3RZLUQ5R1dyelRWUVlDTV9OeEUyX3VlMUhwMzR6RVl4T0xoUXc3LW9pVTVUbWIwblBoUTlGem1MT2pHcVJXT1phVW84bVlyRGxSbg?oc=5",
+      "published_at": "2026-08-08T18:01:55+00:00",
+      "category": "国内人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国内人形机器人资讯",
+      "source": "国内人形机器人资讯",
+      "site_id": "国内人形机器人资讯",
+      "description": "今年上半年人形机器人领域 新设企业11.6万户  新浪财经",
+      "ai_score": 80.0,
+      "ai_label": "humanoid",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.66,
+      "writing_value": 0,
+      "total_score": 119.66
     },
     {
       "id": "77553565b3c47f94ad55dc2e4cb569412a563a68",
@@ -40,30 +61,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.8,
+      "timeliness": 26.99,
       "writing_value": 0,
-      "total_score": 117.8
-    },
-    {
-      "id": "ee7047163c8731d3f29689e5c4f2a45b7fb49650",
-      "title": "【汽车校友百校联盟】优必选机器人战略蓝图：以“工业先行”铸就中国具身智能的产业样本 - 电子工程专辑",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBhY1pmVTRxazhoQ3FoSVl2Y2hobk9ZYk9HMGZtREt1aXduOGl5ell5aVhvVndmSk81OEV3V09XSjZ0RUJtQlRwNVJjY3Atam1ObGZ3?oc=5",
-      "published_at": "2026-08-08T14:30:00+00:00",
-      "category": "国内具身智能资讯",
-      "gn_label": "embodied_ai",
-      "site_name": "国内具身智能资讯",
-      "source": "国内具身智能资讯",
-      "site_id": "国内具身智能资讯",
-      "description": "【汽车校友百校联盟】优必选机器人战略蓝图：以“工业先行”铸就中国具身智能的产业样本  电子工程专辑",
-      "ai_score": 80.0,
-      "ai_label": "embodied_ai",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 26.94,
-      "writing_value": 0,
-      "total_score": 116.94
+      "total_score": 116.99
     },
     {
       "id": "a499dd152b2919dfac591c1b51b6f6ff1fd4a529",
@@ -82,9 +82,30 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.94,
+      "timeliness": 26.13,
       "writing_value": 0,
-      "total_score": 116.94
+      "total_score": 116.13
+    },
+    {
+      "id": "ee7047163c8731d3f29689e5c4f2a45b7fb49650",
+      "title": "【汽车校友百校联盟】优必选机器人战略蓝图：以“工业先行”铸就中国具身智能的产业样本 - 电子工程专辑",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBhY1pmVTRxazhoQ3FoSVl2Y2hobk9ZYk9HMGZtREt1aXduOGl5ell5aVhvVndmSk81OEV3V09XSjZ0RUJtQlRwNVJjY3Atam1ObGZ3?oc=5",
+      "published_at": "2026-08-08T14:30:00+00:00",
+      "category": "国内人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国内人形机器人资讯",
+      "source": "国内人形机器人资讯",
+      "site_id": "国内人形机器人资讯",
+      "description": "【汽车校友百校联盟】优必选机器人战略蓝图：以“工业先行”铸就中国具身智能的产业样本  电子工程专辑",
+      "ai_score": 80.0,
+      "ai_label": "humanoid",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 26.13,
+      "writing_value": 0,
+      "total_score": 116.13
     },
     {
       "id": "6044ab6ccafa0450f28b23555816b869c0c52053",
@@ -103,9 +124,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.89,
+      "timeliness": 25.08,
       "writing_value": 0,
-      "total_score": 115.89
+      "total_score": 115.08
     },
     {
       "id": "1bc45b932c84261ec0838f4de014e83c94fe73a6",
@@ -124,9 +145,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.57,
+      "timeliness": 24.76,
       "writing_value": 0,
-      "total_score": 115.57
+      "total_score": 114.76
     },
     {
       "id": "d60547b35f226bba5f702e8a109ea121ec4ec2da",
@@ -145,9 +166,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.44,
+      "timeliness": 24.63,
       "writing_value": 0,
-      "total_score": 115.44
+      "total_score": 114.63
     },
     {
       "id": "8c90c60746798039624ba277f912181967c02524",
@@ -166,9 +187,30 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.34,
+      "timeliness": 23.53,
       "writing_value": 0,
-      "total_score": 114.34
+      "total_score": 113.53
+    },
+    {
+      "id": "5067e93ce9263e47d5b1deb8e2aa798d101f1a93",
+      "title": "脑机接口进课堂 校企共建实验平台 - 搜狐网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxON09HcDhwWmFzRnE0NlkxSTdNUzgzZ1VVcmVOU3p1MW9ZZHJTOGxkcENGSlNuanBtQ1FEaDdHSF9mbXk3d1NJYnloZkRRNDMxXzk5V1JjeFdONGxGbm5pRWd4QWQ0NHJUSUJoZXU4UERnQTlnUnZRd1pFVkN6QzFsVFgyTVZtUDEtcEUySg?oc=5",
+      "published_at": "2026-08-08T11:52:54+00:00",
+      "category": "国内脑机接口资讯",
+      "gn_label": "brain_computer",
+      "site_name": "国内脑机接口资讯",
+      "source": "国内脑机接口资讯",
+      "site_id": "国内脑机接口资讯",
+      "description": "脑机接口进课堂 校企共建实验平台  搜狐网",
+      "ai_score": 80.0,
+      "ai_label": "brain_computer",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 23.51,
+      "writing_value": 0,
+      "total_score": 113.51
     },
     {
       "id": "a7a088f2c66e6380379d575eb5594858a45d882c",
@@ -187,9 +229,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 28.09,
+      "timeliness": 27.28,
       "writing_value": 5,
-      "total_score": 113.09
+      "total_score": 112.28
     },
     {
       "id": "d5f2953ae6e96f665a1434f81d35b4518d714c76",
@@ -208,9 +250,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 25.17,
+      "timeliness": 24.36,
       "writing_value": 5,
-      "total_score": 110.17
+      "total_score": 109.36
     },
     {
       "id": "49f53687a2daa782e1b40c25f64c0a60b069b18d",
@@ -229,9 +271,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 24.44,
+      "timeliness": 23.63,
       "writing_value": 5,
-      "total_score": 109.44
+      "total_score": 108.63
     },
     {
       "id": "f90738055e4ac8515707dd79a01786c4011d4d8f",
@@ -250,9 +292,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 23.53,
+      "timeliness": 22.73,
       "writing_value": 5,
-      "total_score": 108.53
+      "total_score": 107.73
     },
     {
       "id": "9b00d7df7290160417f13af0855941076a7b3aea",
@@ -271,9 +313,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.85,
+      "timeliness": 28.05,
       "writing_value": 0,
-      "total_score": 103.85
+      "total_score": 103.05
     },
     {
       "id": "7a2a84a94930d6a61fc9e640e3b2b9ee309e67ed",
@@ -292,9 +334,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.55,
+      "timeliness": 26.74,
       "writing_value": 0,
-      "total_score": 102.55
+      "total_score": 101.74
     },
     {
       "id": "ee80cf218bc3542f7a3560f75dd50e129f33be6e",
@@ -313,9 +355,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.94,
+      "timeliness": 26.13,
       "writing_value": 0,
-      "total_score": 101.94
+      "total_score": 101.13
     },
     {
       "id": "82200091ba80ff5609ba8e0bbc202e521a8bda43",
@@ -334,9 +376,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.23,
+      "timeliness": 24.42,
       "writing_value": 0,
-      "total_score": 100.23
+      "total_score": 99.42
     },
     {
       "id": "ef020ba9d6c178c2e729fd51b0fe060ae49658d5",
@@ -355,9 +397,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.1,
+      "timeliness": 24.3,
       "writing_value": 0,
-      "total_score": 100.1
+      "total_score": 99.3
     },
     {
       "id": "d9edcc61535982fe22bed3c9d12ea1a6b6579b3c",
@@ -376,9 +418,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.03,
+      "timeliness": 24.22,
       "writing_value": 0,
-      "total_score": 100.03
+      "total_score": 99.22
     },
     {
       "id": "4027f4074891dcbdde5d8b6325331c274dd45a7b",
@@ -397,9 +439,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.49,
+      "timeliness": 23.68,
       "writing_value": 0,
-      "total_score": 99.49
+      "total_score": 98.68
     },
     {
       "id": "cd7f1d0f5039065446831d9e840923ab975b8fa4",
@@ -418,30 +460,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.22,
+      "timeliness": 23.42,
       "writing_value": 0,
-      "total_score": 99.22
+      "total_score": 98.42
     },
     {
-      "id": "2090ff8a0f00623854d0c853cb2ee7f443b74869",
-      "title": "首席科学家被“下架”，智元机器人IPO出现迷雾-观察者网 - guancha.cn",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBzX2FWelliM3U5ek1OR00tY19Qc1FrZ3l4d3JwVk9ucHdLbXQwOFExRXBMTFJvWEtnNGk2SFFZcE1TU29VM2xJU3pabU1Wby1kMVZ3YnJmUy1jTUM3WmI5ZDJsMHA?oc=5",
-      "published_at": "2026-08-08T11:36:00+00:00",
-      "category": "国内具身智能资讯",
-      "gn_label": "embodied_ai",
-      "site_name": "国内具身智能资讯",
-      "source": "国内具身智能资讯",
-      "site_id": "国内具身智能资讯",
-      "description": "首席科学家被“下架”，智元机器人IPO出现迷雾-观察者网  guancha.cn",
+      "id": "828d05752642435bc972800e7ff80e8d552ddf40",
+      "title": "Borno Students Develop AI Robot Teacher For Insecure Communities #trusttvnews - instagram.com",
+      "title_zh": "博尔诺学生为不安全的社区开发人工智能机器人老师#trusttvnews - instagram.com",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5SS0pZc3hJcjFCSXlwZXdyLWE4NmMxcEtEVkI1QlRRVV9GUUgwdjhoSS1wVVRhUVU4U3hMNC1CcVpZcDJqdHZGak1RUnlnd0JlUVhFYVJ3?oc=5",
+      "published_at": "2026-08-08T11:36:46+00:00",
+      "category": "国外机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国外机器人资讯",
+      "source": "国外机器人资讯",
+      "site_id": "国外机器人资讯",
+      "description": "Borno Students Develop AI Robot Teacher For Insecure Communities #trusttvnews  instagram.com",
       "ai_score": 65.0,
-      "ai_label": "embodied_ai",
+      "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.04,
+      "timeliness": 23.24,
       "writing_value": 0,
-      "total_score": 99.04
+      "total_score": 98.24
     },
     {
       "id": "5ad2c0e66f9d71c9d299fc6a1dab1e878e69e081",
@@ -460,9 +502,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.02,
+      "timeliness": 23.22,
       "writing_value": 0,
-      "total_score": 99.02
+      "total_score": 98.22
     },
     {
       "id": "22892ad7c22bbe68d77f92f85c38ece6d9c4818b",
@@ -481,9 +523,9 @@
       "relevance": 0.5,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.69,
+      "timeliness": 23.88,
       "writing_value": 0,
-      "total_score": 84.69
+      "total_score": 83.88
     },
     {
       "id": "da392d9063dc6996c1b33ffb1d1f1ccdd8e95f43",
@@ -502,30 +544,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 5,
-      "timeliness": 29.1,
+      "timeliness": 28.29,
       "writing_value": 5,
-      "total_score": 84.1
-    },
-    {
-      "id": "2aabae3c9744bc9c4212687afae8929ad240937d",
-      "title": "2026 山西大学 AI 与机器人前沿技术海内外交流论坛在并举办 - 新浪网",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxObUxiMWtQdE9tdW5rRUNTWGoyYUpLSFZYZmdPeUdfVWdUbHFaNkdaTkh3RmdOV0RfYjJsVUZzR0p0Q2xYSkI3SGUzdUtieDh4S0dpUUVidGhNZTNfN2Q0X0MwVW9KYUF2R1NJUDZVYk1Tdk41UXliekFHTXFReFlvZ0huTDZvQXpMZlFQNjBn?oc=5",
-      "published_at": "2026-08-08T16:04:57+00:00",
-      "category": "国内具身智能资讯",
-      "gn_label": "embodied_ai",
-      "site_name": "国内具身智能资讯",
-      "source": "国内具身智能资讯",
-      "site_id": "国内具身智能资讯",
-      "description": "2026 山西大学 AI 与机器人前沿技术海内外交流论坛在并举办  新浪网",
-      "ai_score": 35.0,
-      "ai_label": "embodied_ai",
-      "relevance": 0.35,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 28.52,
-      "writing_value": 0,
-      "total_score": 73.52
+      "total_score": 83.29
     },
     {
       "id": "3ae265fc93bffd27d6c78894eac48760f1e1e4f4",
@@ -544,9 +565,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.02,
+      "timeliness": 27.21,
       "writing_value": 0,
-      "total_score": 73.02
+      "total_score": 72.21
     },
     {
       "id": "cc4d4f4974d41e1b82eb67472fcc1c574817014a",
@@ -565,9 +586,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.79,
+      "timeliness": 26.98,
       "writing_value": 0,
-      "total_score": 72.79
+      "total_score": 71.98
     },
     {
       "id": "1ba7fb26717fea34a320620e4d1c90ff443b45e3",
@@ -586,9 +607,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.77,
+      "timeliness": 26.96,
       "writing_value": 0,
-      "total_score": 72.77
+      "total_score": 71.96
     },
     {
       "id": "0359936c1308d750cc586fff214284eb92865590",
@@ -607,9 +628,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.7,
+      "timeliness": 25.89,
       "writing_value": 0,
-      "total_score": 71.7
+      "total_score": 70.89
     },
     {
       "id": "c387f2004bd8ede2c26845d77a339982969a01e3",
@@ -628,9 +649,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.4,
+      "timeliness": 25.6,
       "writing_value": 0,
-      "total_score": 71.4
+      "total_score": 70.6
     },
     {
       "id": "a27d1c17e57296a9ee505da1738eaf6ffa5c28ae",
@@ -649,9 +670,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.99,
+      "timeliness": 25.18,
       "writing_value": 0,
-      "total_score": 70.99
+      "total_score": 70.18
     },
     {
       "id": "c44528d4359940893332640c6cdfb975bd50a0ab",
@@ -670,9 +691,30 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.74,
+      "timeliness": 24.93,
       "writing_value": 0,
-      "total_score": 70.74
+      "total_score": 69.93
+    },
+    {
+      "id": "0ce8999e01fb2027e39828617be8a0ce3f2c6fbf",
+      "title": "机器人空竹舞龙齐上阵 全民健身日河南玩出新花样 - 新体育网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBFajhxc2kzaGFDMWNxallnVTd4TTQ5WmdpYnF3NldRdVdSTFZhR3p5OUJCZzVvVWRWUVl6d0t4TThWSWtmNWtBZDAxb2FMTWhWZjZPSjhzMTJVTkhSUWpoSWdGV0VpOTBCdnFnVHN3Yw?oc=5",
+      "published_at": "2026-08-08T12:48:36+00:00",
+      "category": "国内机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国内机器人资讯",
+      "source": "国内机器人资讯",
+      "site_id": "国内机器人资讯",
+      "description": "机器人空竹舞龙齐上阵 全民健身日河南玩出新花样  新体育网",
+      "ai_score": 35.0,
+      "ai_label": "robotics",
+      "relevance": 0.35,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 24.44,
+      "writing_value": 0,
+      "total_score": 69.44
     },
     {
       "id": "769b3433ec137e40d320f5c2e7e98c16d5a05e2b",
@@ -691,9 +733,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.17,
+      "timeliness": 24.37,
       "writing_value": 0,
-      "total_score": 70.17
+      "total_score": 69.37
     },
     {
       "id": "84eb436e21c944e3f87b2329daf7e66138899e2d",
@@ -712,9 +754,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.07,
+      "timeliness": 24.26,
       "writing_value": 0,
-      "total_score": 70.07
+      "total_score": 69.26
     },
     {
       "id": "5222ddd8c91822d711fbdb54ac5c0c8352244b6e",
@@ -733,9 +775,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.0,
+      "timeliness": 24.2,
       "writing_value": 0,
-      "total_score": 70.0
+      "total_score": 69.2
     },
     {
       "id": "af9287ed0ac644ee17f47d714d4393df61cfb11c",
@@ -754,9 +796,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.45,
+      "timeliness": 23.64,
       "writing_value": 0,
-      "total_score": 69.45
+      "total_score": 68.64
     },
     {
       "id": "b9cfd2846fc73924404300e986a3b9d0951afc48",
@@ -775,9 +817,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.41,
+      "timeliness": 23.61,
       "writing_value": 0,
-      "total_score": 69.41
+      "total_score": 68.61
     },
     {
       "id": "2c1e28ef2023a56726496520ec40fa6fcf7b848b",
@@ -796,9 +838,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.27,
+      "timeliness": 23.46,
       "writing_value": 0,
-      "total_score": 69.27
+      "total_score": 68.46
     },
     {
       "id": "48bac0ab75fb3df59b867e019d7391120dd0f08d",
@@ -817,30 +859,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.24,
+      "timeliness": 23.43,
       "writing_value": 0,
-      "total_score": 69.24
-    },
-    {
-      "id": "0ce8999e01fb2027e39828617be8a0ce3f2c6fbf",
-      "title": "机器人空竹舞龙齐上阵 全民健身日河南玩出新花样 - 新体育网",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBFajhxc2kzaGFDMWNxallnVTd4TTQ5WmdpYnF3NldRdVdSTFZhR3p5OUJCZzVvVWRWUVl6d0t4TThWSWtmNWtBZDAxb2FMTWhWZjZPSjhzMTJVTkhSUWpoSWdGV0VpOTBCdnFnVHN3Yw?oc=5",
-      "published_at": "2026-08-08T11:38:29+00:00",
-      "category": "国内机器人资讯",
-      "gn_label": "robotics",
-      "site_name": "国内机器人资讯",
-      "source": "国内机器人资讯",
-      "site_id": "国内机器人资讯",
-      "description": "机器人空竹舞龙齐上阵 全民健身日河南玩出新花样  新体育网",
-      "ai_score": 35.0,
-      "ai_label": "robotics",
-      "relevance": 0.35,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 24.08,
-      "writing_value": 0,
-      "total_score": 69.08
+      "total_score": 68.43
     },
     {
       "id": "1b0b15dc0fa649d99bc2530d7965376dead78c77",
@@ -859,9 +880,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.8,
+      "timeliness": 22.99,
       "writing_value": 0,
-      "total_score": 68.8
+      "total_score": 67.99
     },
     {
       "id": "8849520425aa7248e3ea010e232b469535881f24",
@@ -880,9 +901,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.71,
+      "timeliness": 22.9,
       "writing_value": 0,
-      "total_score": 68.71
+      "total_score": 67.9
     },
     {
       "id": "3d004b2888ac4be141a6d71d39519e5d1fd3b9db",
@@ -901,9 +922,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.7,
+      "timeliness": 22.9,
       "writing_value": 0,
-      "total_score": 68.7
+      "total_score": 67.9
     }
   ],
   "items_all": [
@@ -924,9 +945,30 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 5,
-      "timeliness": 25.85,
+      "timeliness": 25.05,
       "writing_value": 5,
-      "total_score": 125.85
+      "total_score": 125.05
+    },
+    {
+      "id": "96aadab660811217aaf6d807a32c17270435afc6",
+      "title": "今年上半年人形机器人领域 新设企业11.6万户 - 新浪财经",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPTmFJdUJERDd2eFExbHpMcXhpNzZya0xoZW9Edjd4cGZVX18tR2lXZVM1OU1UTGtrS1ItN2hueXJwVlRrMXV5VERWQUNyU3RZLUQ5R1dyelRWUVlDTV9OeEUyX3VlMUhwMzR6RVl4T0xoUXc3LW9pVTVUbWIwblBoUTlGem1MT2pHcVJXT1phVW84bVlyRGxSbg?oc=5",
+      "published_at": "2026-08-08T18:01:55+00:00",
+      "category": "国内人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国内人形机器人资讯",
+      "source": "国内人形机器人资讯",
+      "site_id": "国内人形机器人资讯",
+      "description": "今年上半年人形机器人领域 新设企业11.6万户  新浪财经",
+      "ai_score": 80.0,
+      "ai_label": "humanoid",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.66,
+      "writing_value": 0,
+      "total_score": 119.66
     },
     {
       "id": "77553565b3c47f94ad55dc2e4cb569412a563a68",
@@ -945,30 +987,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.8,
+      "timeliness": 26.99,
       "writing_value": 0,
-      "total_score": 117.8
-    },
-    {
-      "id": "ee7047163c8731d3f29689e5c4f2a45b7fb49650",
-      "title": "【汽车校友百校联盟】优必选机器人战略蓝图：以“工业先行”铸就中国具身智能的产业样本 - 电子工程专辑",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBhY1pmVTRxazhoQ3FoSVl2Y2hobk9ZYk9HMGZtREt1aXduOGl5ell5aVhvVndmSk81OEV3V09XSjZ0RUJtQlRwNVJjY3Atam1ObGZ3?oc=5",
-      "published_at": "2026-08-08T14:30:00+00:00",
-      "category": "国内具身智能资讯",
-      "gn_label": "embodied_ai",
-      "site_name": "国内具身智能资讯",
-      "source": "国内具身智能资讯",
-      "site_id": "国内具身智能资讯",
-      "description": "【汽车校友百校联盟】优必选机器人战略蓝图：以“工业先行”铸就中国具身智能的产业样本  电子工程专辑",
-      "ai_score": 80.0,
-      "ai_label": "embodied_ai",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 26.94,
-      "writing_value": 0,
-      "total_score": 116.94
+      "total_score": 116.99
     },
     {
       "id": "a499dd152b2919dfac591c1b51b6f6ff1fd4a529",
@@ -987,9 +1008,30 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.94,
+      "timeliness": 26.13,
       "writing_value": 0,
-      "total_score": 116.94
+      "total_score": 116.13
+    },
+    {
+      "id": "ee7047163c8731d3f29689e5c4f2a45b7fb49650",
+      "title": "【汽车校友百校联盟】优必选机器人战略蓝图：以“工业先行”铸就中国具身智能的产业样本 - 电子工程专辑",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBhY1pmVTRxazhoQ3FoSVl2Y2hobk9ZYk9HMGZtREt1aXduOGl5ell5aVhvVndmSk81OEV3V09XSjZ0RUJtQlRwNVJjY3Atam1ObGZ3?oc=5",
+      "published_at": "2026-08-08T14:30:00+00:00",
+      "category": "国内人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国内人形机器人资讯",
+      "source": "国内人形机器人资讯",
+      "site_id": "国内人形机器人资讯",
+      "description": "【汽车校友百校联盟】优必选机器人战略蓝图：以“工业先行”铸就中国具身智能的产业样本  电子工程专辑",
+      "ai_score": 80.0,
+      "ai_label": "humanoid",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 26.13,
+      "writing_value": 0,
+      "total_score": 116.13
     },
     {
       "id": "6044ab6ccafa0450f28b23555816b869c0c52053",
@@ -1008,9 +1050,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.89,
+      "timeliness": 25.08,
       "writing_value": 0,
-      "total_score": 115.89
+      "total_score": 115.08
     },
     {
       "id": "1bc45b932c84261ec0838f4de014e83c94fe73a6",
@@ -1029,9 +1071,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.57,
+      "timeliness": 24.76,
       "writing_value": 0,
-      "total_score": 115.57
+      "total_score": 114.76
     },
     {
       "id": "d60547b35f226bba5f702e8a109ea121ec4ec2da",
@@ -1050,9 +1092,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.44,
+      "timeliness": 24.63,
       "writing_value": 0,
-      "total_score": 115.44
+      "total_score": 114.63
     },
     {
       "id": "8c90c60746798039624ba277f912181967c02524",
@@ -1071,9 +1113,30 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.34,
+      "timeliness": 23.53,
       "writing_value": 0,
-      "total_score": 114.34
+      "total_score": 113.53
+    },
+    {
+      "id": "5067e93ce9263e47d5b1deb8e2aa798d101f1a93",
+      "title": "脑机接口进课堂 校企共建实验平台 - 搜狐网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxON09HcDhwWmFzRnE0NlkxSTdNUzgzZ1VVcmVOU3p1MW9ZZHJTOGxkcENGSlNuanBtQ1FEaDdHSF9mbXk3d1NJYnloZkRRNDMxXzk5V1JjeFdONGxGbm5pRWd4QWQ0NHJUSUJoZXU4UERnQTlnUnZRd1pFVkN6QzFsVFgyTVZtUDEtcEUySg?oc=5",
+      "published_at": "2026-08-08T11:52:54+00:00",
+      "category": "国内脑机接口资讯",
+      "gn_label": "brain_computer",
+      "site_name": "国内脑机接口资讯",
+      "source": "国内脑机接口资讯",
+      "site_id": "国内脑机接口资讯",
+      "description": "脑机接口进课堂 校企共建实验平台  搜狐网",
+      "ai_score": 80.0,
+      "ai_label": "brain_computer",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 23.51,
+      "writing_value": 0,
+      "total_score": 113.51
     },
     {
       "id": "a7a088f2c66e6380379d575eb5594858a45d882c",
@@ -1092,9 +1155,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 28.09,
+      "timeliness": 27.28,
       "writing_value": 5,
-      "total_score": 113.09
+      "total_score": 112.28
     },
     {
       "id": "d5f2953ae6e96f665a1434f81d35b4518d714c76",
@@ -1113,9 +1176,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 25.17,
+      "timeliness": 24.36,
       "writing_value": 5,
-      "total_score": 110.17
+      "total_score": 109.36
     },
     {
       "id": "49f53687a2daa782e1b40c25f64c0a60b069b18d",
@@ -1134,9 +1197,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 24.44,
+      "timeliness": 23.63,
       "writing_value": 5,
-      "total_score": 109.44
+      "total_score": 108.63
     },
     {
       "id": "f90738055e4ac8515707dd79a01786c4011d4d8f",
@@ -1155,9 +1218,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 23.53,
+      "timeliness": 22.73,
       "writing_value": 5,
-      "total_score": 108.53
+      "total_score": 107.73
     },
     {
       "id": "9b00d7df7290160417f13af0855941076a7b3aea",
@@ -1176,9 +1239,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.85,
+      "timeliness": 28.05,
       "writing_value": 0,
-      "total_score": 103.85
+      "total_score": 103.05
     },
     {
       "id": "7a2a84a94930d6a61fc9e640e3b2b9ee309e67ed",
@@ -1197,9 +1260,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.55,
+      "timeliness": 26.74,
       "writing_value": 0,
-      "total_score": 102.55
+      "total_score": 101.74
     },
     {
       "id": "ee80cf218bc3542f7a3560f75dd50e129f33be6e",
@@ -1218,9 +1281,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.94,
+      "timeliness": 26.13,
       "writing_value": 0,
-      "total_score": 101.94
+      "total_score": 101.13
     },
     {
       "id": "82200091ba80ff5609ba8e0bbc202e521a8bda43",
@@ -1239,9 +1302,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.23,
+      "timeliness": 24.42,
       "writing_value": 0,
-      "total_score": 100.23
+      "total_score": 99.42
     },
     {
       "id": "ef020ba9d6c178c2e729fd51b0fe060ae49658d5",
@@ -1260,9 +1323,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.1,
+      "timeliness": 24.3,
       "writing_value": 0,
-      "total_score": 100.1
+      "total_score": 99.3
     },
     {
       "id": "d9edcc61535982fe22bed3c9d12ea1a6b6579b3c",
@@ -1281,9 +1344,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.03,
+      "timeliness": 24.22,
       "writing_value": 0,
-      "total_score": 100.03
+      "total_score": 99.22
     },
     {
       "id": "4027f4074891dcbdde5d8b6325331c274dd45a7b",
@@ -1302,9 +1365,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.49,
+      "timeliness": 23.68,
       "writing_value": 0,
-      "total_score": 99.49
+      "total_score": 98.68
     },
     {
       "id": "cd7f1d0f5039065446831d9e840923ab975b8fa4",
@@ -1323,30 +1386,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.22,
+      "timeliness": 23.42,
       "writing_value": 0,
-      "total_score": 99.22
+      "total_score": 98.42
     },
     {
-      "id": "2090ff8a0f00623854d0c853cb2ee7f443b74869",
-      "title": "首席科学家被“下架”，智元机器人IPO出现迷雾-观察者网 - guancha.cn",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBzX2FWelliM3U5ek1OR00tY19Qc1FrZ3l4d3JwVk9ucHdLbXQwOFExRXBMTFJvWEtnNGk2SFFZcE1TU29VM2xJU3pabU1Wby1kMVZ3YnJmUy1jTUM3WmI5ZDJsMHA?oc=5",
-      "published_at": "2026-08-08T11:36:00+00:00",
-      "category": "国内具身智能资讯",
-      "gn_label": "embodied_ai",
-      "site_name": "国内具身智能资讯",
-      "source": "国内具身智能资讯",
-      "site_id": "国内具身智能资讯",
-      "description": "首席科学家被“下架”，智元机器人IPO出现迷雾-观察者网  guancha.cn",
+      "id": "828d05752642435bc972800e7ff80e8d552ddf40",
+      "title": "Borno Students Develop AI Robot Teacher For Insecure Communities #trusttvnews - instagram.com",
+      "title_zh": "博尔诺学生为不安全的社区开发人工智能机器人老师#trusttvnews - instagram.com",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5SS0pZc3hJcjFCSXlwZXdyLWE4NmMxcEtEVkI1QlRRVV9GUUgwdjhoSS1wVVRhUVU4U3hMNC1CcVpZcDJqdHZGak1RUnlnd0JlUVhFYVJ3?oc=5",
+      "published_at": "2026-08-08T11:36:46+00:00",
+      "category": "国外机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国外机器人资讯",
+      "source": "国外机器人资讯",
+      "site_id": "国外机器人资讯",
+      "description": "Borno Students Develop AI Robot Teacher For Insecure Communities #trusttvnews  instagram.com",
       "ai_score": 65.0,
-      "ai_label": "embodied_ai",
+      "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.04,
+      "timeliness": 23.24,
       "writing_value": 0,
-      "total_score": 99.04
+      "total_score": 98.24
     },
     {
       "id": "5ad2c0e66f9d71c9d299fc6a1dab1e878e69e081",
@@ -1365,9 +1428,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.02,
+      "timeliness": 23.22,
       "writing_value": 0,
-      "total_score": 99.02
+      "total_score": 98.22
     },
     {
       "id": "22892ad7c22bbe68d77f92f85c38ece6d9c4818b",
@@ -1386,9 +1449,9 @@
       "relevance": 0.5,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.69,
+      "timeliness": 23.88,
       "writing_value": 0,
-      "total_score": 84.69
+      "total_score": 83.88
     },
     {
       "id": "da392d9063dc6996c1b33ffb1d1f1ccdd8e95f43",
@@ -1407,30 +1470,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 5,
-      "timeliness": 29.1,
+      "timeliness": 28.29,
       "writing_value": 5,
-      "total_score": 84.1
-    },
-    {
-      "id": "2aabae3c9744bc9c4212687afae8929ad240937d",
-      "title": "2026 山西大学 AI 与机器人前沿技术海内外交流论坛在并举办 - 新浪网",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxObUxiMWtQdE9tdW5rRUNTWGoyYUpLSFZYZmdPeUdfVWdUbHFaNkdaTkh3RmdOV0RfYjJsVUZzR0p0Q2xYSkI3SGUzdUtieDh4S0dpUUVidGhNZTNfN2Q0X0MwVW9KYUF2R1NJUDZVYk1Tdk41UXliekFHTXFReFlvZ0huTDZvQXpMZlFQNjBn?oc=5",
-      "published_at": "2026-08-08T16:04:57+00:00",
-      "category": "国内具身智能资讯",
-      "gn_label": "embodied_ai",
-      "site_name": "国内具身智能资讯",
-      "source": "国内具身智能资讯",
-      "site_id": "国内具身智能资讯",
-      "description": "2026 山西大学 AI 与机器人前沿技术海内外交流论坛在并举办  新浪网",
-      "ai_score": 35.0,
-      "ai_label": "embodied_ai",
-      "relevance": 0.35,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 28.52,
-      "writing_value": 0,
-      "total_score": 73.52
+      "total_score": 83.29
     },
     {
       "id": "3ae265fc93bffd27d6c78894eac48760f1e1e4f4",
@@ -1449,9 +1491,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.02,
+      "timeliness": 27.21,
       "writing_value": 0,
-      "total_score": 73.02
+      "total_score": 72.21
     },
     {
       "id": "cc4d4f4974d41e1b82eb67472fcc1c574817014a",
@@ -1470,9 +1512,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.79,
+      "timeliness": 26.98,
       "writing_value": 0,
-      "total_score": 72.79
+      "total_score": 71.98
     },
     {
       "id": "1ba7fb26717fea34a320620e4d1c90ff443b45e3",
@@ -1491,9 +1533,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.77,
+      "timeliness": 26.96,
       "writing_value": 0,
-      "total_score": 72.77
+      "total_score": 71.96
     },
     {
       "id": "0359936c1308d750cc586fff214284eb92865590",
@@ -1512,9 +1554,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.7,
+      "timeliness": 25.89,
       "writing_value": 0,
-      "total_score": 71.7
+      "total_score": 70.89
     },
     {
       "id": "c387f2004bd8ede2c26845d77a339982969a01e3",
@@ -1533,9 +1575,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.4,
+      "timeliness": 25.6,
       "writing_value": 0,
-      "total_score": 71.4
+      "total_score": 70.6
     },
     {
       "id": "a27d1c17e57296a9ee505da1738eaf6ffa5c28ae",
@@ -1554,9 +1596,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.99,
+      "timeliness": 25.18,
       "writing_value": 0,
-      "total_score": 70.99
+      "total_score": 70.18
     },
     {
       "id": "c44528d4359940893332640c6cdfb975bd50a0ab",
@@ -1575,9 +1617,30 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.74,
+      "timeliness": 24.93,
       "writing_value": 0,
-      "total_score": 70.74
+      "total_score": 69.93
+    },
+    {
+      "id": "0ce8999e01fb2027e39828617be8a0ce3f2c6fbf",
+      "title": "机器人空竹舞龙齐上阵 全民健身日河南玩出新花样 - 新体育网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBFajhxc2kzaGFDMWNxallnVTd4TTQ5WmdpYnF3NldRdVdSTFZhR3p5OUJCZzVvVWRWUVl6d0t4TThWSWtmNWtBZDAxb2FMTWhWZjZPSjhzMTJVTkhSUWpoSWdGV0VpOTBCdnFnVHN3Yw?oc=5",
+      "published_at": "2026-08-08T12:48:36+00:00",
+      "category": "国内机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国内机器人资讯",
+      "source": "国内机器人资讯",
+      "site_id": "国内机器人资讯",
+      "description": "机器人空竹舞龙齐上阵 全民健身日河南玩出新花样  新体育网",
+      "ai_score": 35.0,
+      "ai_label": "robotics",
+      "relevance": 0.35,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 24.44,
+      "writing_value": 0,
+      "total_score": 69.44
     },
     {
       "id": "769b3433ec137e40d320f5c2e7e98c16d5a05e2b",
@@ -1596,9 +1659,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.17,
+      "timeliness": 24.37,
       "writing_value": 0,
-      "total_score": 70.17
+      "total_score": 69.37
     },
     {
       "id": "84eb436e21c944e3f87b2329daf7e66138899e2d",
@@ -1617,9 +1680,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.07,
+      "timeliness": 24.26,
       "writing_value": 0,
-      "total_score": 70.07
+      "total_score": 69.26
     },
     {
       "id": "5222ddd8c91822d711fbdb54ac5c0c8352244b6e",
@@ -1638,9 +1701,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.0,
+      "timeliness": 24.2,
       "writing_value": 0,
-      "total_score": 70.0
+      "total_score": 69.2
     },
     {
       "id": "af9287ed0ac644ee17f47d714d4393df61cfb11c",
@@ -1659,9 +1722,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.45,
+      "timeliness": 23.64,
       "writing_value": 0,
-      "total_score": 69.45
+      "total_score": 68.64
     },
     {
       "id": "b9cfd2846fc73924404300e986a3b9d0951afc48",
@@ -1680,9 +1743,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.41,
+      "timeliness": 23.61,
       "writing_value": 0,
-      "total_score": 69.41
+      "total_score": 68.61
     },
     {
       "id": "2c1e28ef2023a56726496520ec40fa6fcf7b848b",
@@ -1701,9 +1764,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.27,
+      "timeliness": 23.46,
       "writing_value": 0,
-      "total_score": 69.27
+      "total_score": 68.46
     },
     {
       "id": "48bac0ab75fb3df59b867e019d7391120dd0f08d",
@@ -1722,30 +1785,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.24,
+      "timeliness": 23.43,
       "writing_value": 0,
-      "total_score": 69.24
-    },
-    {
-      "id": "0ce8999e01fb2027e39828617be8a0ce3f2c6fbf",
-      "title": "机器人空竹舞龙齐上阵 全民健身日河南玩出新花样 - 新体育网",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBFajhxc2kzaGFDMWNxallnVTd4TTQ5WmdpYnF3NldRdVdSTFZhR3p5OUJCZzVvVWRWUVl6d0t4TThWSWtmNWtBZDAxb2FMTWhWZjZPSjhzMTJVTkhSUWpoSWdGV0VpOTBCdnFnVHN3Yw?oc=5",
-      "published_at": "2026-08-08T11:38:29+00:00",
-      "category": "国内机器人资讯",
-      "gn_label": "robotics",
-      "site_name": "国内机器人资讯",
-      "source": "国内机器人资讯",
-      "site_id": "国内机器人资讯",
-      "description": "机器人空竹舞龙齐上阵 全民健身日河南玩出新花样  新体育网",
-      "ai_score": 35.0,
-      "ai_label": "robotics",
-      "relevance": 0.35,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 24.08,
-      "writing_value": 0,
-      "total_score": 69.08
+      "total_score": 68.43
     },
     {
       "id": "1b0b15dc0fa649d99bc2530d7965376dead78c77",
@@ -1764,9 +1806,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.8,
+      "timeliness": 22.99,
       "writing_value": 0,
-      "total_score": 68.8
+      "total_score": 67.99
     },
     {
       "id": "8849520425aa7248e3ea010e232b469535881f24",
@@ -1785,9 +1827,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.71,
+      "timeliness": 22.9,
       "writing_value": 0,
-      "total_score": 68.71
+      "total_score": 67.9
     },
     {
       "id": "3d004b2888ac4be141a6d71d39519e5d1fd3b9db",
@@ -1806,9 +1848,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.7,
+      "timeliness": 22.9,
       "writing_value": 0,
-      "total_score": 68.7
+      "total_score": 67.9
     }
   ],
   "items_all_raw": [
@@ -1829,9 +1871,30 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 5,
-      "timeliness": 25.85,
+      "timeliness": 25.05,
       "writing_value": 5,
-      "total_score": 125.85
+      "total_score": 125.05
+    },
+    {
+      "id": "96aadab660811217aaf6d807a32c17270435afc6",
+      "title": "今年上半年人形机器人领域 新设企业11.6万户 - 新浪财经",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPTmFJdUJERDd2eFExbHpMcXhpNzZya0xoZW9Edjd4cGZVX18tR2lXZVM1OU1UTGtrS1ItN2hueXJwVlRrMXV5VERWQUNyU3RZLUQ5R1dyelRWUVlDTV9OeEUyX3VlMUhwMzR6RVl4T0xoUXc3LW9pVTVUbWIwblBoUTlGem1MT2pHcVJXT1phVW84bVlyRGxSbg?oc=5",
+      "published_at": "2026-08-08T18:01:55+00:00",
+      "category": "国内人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国内人形机器人资讯",
+      "source": "国内人形机器人资讯",
+      "site_id": "国内人形机器人资讯",
+      "description": "今年上半年人形机器人领域 新设企业11.6万户  新浪财经",
+      "ai_score": 80.0,
+      "ai_label": "humanoid",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.66,
+      "writing_value": 0,
+      "total_score": 119.66
     },
     {
       "id": "77553565b3c47f94ad55dc2e4cb569412a563a68",
@@ -1850,30 +1913,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.8,
+      "timeliness": 26.99,
       "writing_value": 0,
-      "total_score": 117.8
-    },
-    {
-      "id": "ee7047163c8731d3f29689e5c4f2a45b7fb49650",
-      "title": "【汽车校友百校联盟】优必选机器人战略蓝图：以“工业先行”铸就中国具身智能的产业样本 - 电子工程专辑",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBhY1pmVTRxazhoQ3FoSVl2Y2hobk9ZYk9HMGZtREt1aXduOGl5ell5aVhvVndmSk81OEV3V09XSjZ0RUJtQlRwNVJjY3Atam1ObGZ3?oc=5",
-      "published_at": "2026-08-08T14:30:00+00:00",
-      "category": "国内具身智能资讯",
-      "gn_label": "embodied_ai",
-      "site_name": "国内具身智能资讯",
-      "source": "国内具身智能资讯",
-      "site_id": "国内具身智能资讯",
-      "description": "【汽车校友百校联盟】优必选机器人战略蓝图：以“工业先行”铸就中国具身智能的产业样本  电子工程专辑",
-      "ai_score": 80.0,
-      "ai_label": "embodied_ai",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 26.94,
-      "writing_value": 0,
-      "total_score": 116.94
+      "total_score": 116.99
     },
     {
       "id": "a499dd152b2919dfac591c1b51b6f6ff1fd4a529",
@@ -1892,9 +1934,30 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.94,
+      "timeliness": 26.13,
       "writing_value": 0,
-      "total_score": 116.94
+      "total_score": 116.13
+    },
+    {
+      "id": "ee7047163c8731d3f29689e5c4f2a45b7fb49650",
+      "title": "【汽车校友百校联盟】优必选机器人战略蓝图：以“工业先行”铸就中国具身智能的产业样本 - 电子工程专辑",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBhY1pmVTRxazhoQ3FoSVl2Y2hobk9ZYk9HMGZtREt1aXduOGl5ell5aVhvVndmSk81OEV3V09XSjZ0RUJtQlRwNVJjY3Atam1ObGZ3?oc=5",
+      "published_at": "2026-08-08T14:30:00+00:00",
+      "category": "国内人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国内人形机器人资讯",
+      "source": "国内人形机器人资讯",
+      "site_id": "国内人形机器人资讯",
+      "description": "【汽车校友百校联盟】优必选机器人战略蓝图：以“工业先行”铸就中国具身智能的产业样本  电子工程专辑",
+      "ai_score": 80.0,
+      "ai_label": "humanoid",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 26.13,
+      "writing_value": 0,
+      "total_score": 116.13
     },
     {
       "id": "6044ab6ccafa0450f28b23555816b869c0c52053",
@@ -1913,9 +1976,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.89,
+      "timeliness": 25.08,
       "writing_value": 0,
-      "total_score": 115.89
+      "total_score": 115.08
     },
     {
       "id": "1bc45b932c84261ec0838f4de014e83c94fe73a6",
@@ -1934,9 +1997,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.57,
+      "timeliness": 24.76,
       "writing_value": 0,
-      "total_score": 115.57
+      "total_score": 114.76
     },
     {
       "id": "d60547b35f226bba5f702e8a109ea121ec4ec2da",
@@ -1955,9 +2018,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.44,
+      "timeliness": 24.63,
       "writing_value": 0,
-      "total_score": 115.44
+      "total_score": 114.63
     },
     {
       "id": "8c90c60746798039624ba277f912181967c02524",
@@ -1976,9 +2039,30 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.34,
+      "timeliness": 23.53,
       "writing_value": 0,
-      "total_score": 114.34
+      "total_score": 113.53
+    },
+    {
+      "id": "5067e93ce9263e47d5b1deb8e2aa798d101f1a93",
+      "title": "脑机接口进课堂 校企共建实验平台 - 搜狐网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxON09HcDhwWmFzRnE0NlkxSTdNUzgzZ1VVcmVOU3p1MW9ZZHJTOGxkcENGSlNuanBtQ1FEaDdHSF9mbXk3d1NJYnloZkRRNDMxXzk5V1JjeFdONGxGbm5pRWd4QWQ0NHJUSUJoZXU4UERnQTlnUnZRd1pFVkN6QzFsVFgyTVZtUDEtcEUySg?oc=5",
+      "published_at": "2026-08-08T11:52:54+00:00",
+      "category": "国内脑机接口资讯",
+      "gn_label": "brain_computer",
+      "site_name": "国内脑机接口资讯",
+      "source": "国内脑机接口资讯",
+      "site_id": "国内脑机接口资讯",
+      "description": "脑机接口进课堂 校企共建实验平台  搜狐网",
+      "ai_score": 80.0,
+      "ai_label": "brain_computer",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 23.51,
+      "writing_value": 0,
+      "total_score": 113.51
     },
     {
       "id": "a7a088f2c66e6380379d575eb5594858a45d882c",
@@ -1997,9 +2081,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 28.09,
+      "timeliness": 27.28,
       "writing_value": 5,
-      "total_score": 113.09
+      "total_score": 112.28
     },
     {
       "id": "d5f2953ae6e96f665a1434f81d35b4518d714c76",
@@ -2018,9 +2102,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 25.17,
+      "timeliness": 24.36,
       "writing_value": 5,
-      "total_score": 110.17
+      "total_score": 109.36
     },
     {
       "id": "49f53687a2daa782e1b40c25f64c0a60b069b18d",
@@ -2039,9 +2123,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 24.44,
+      "timeliness": 23.63,
       "writing_value": 5,
-      "total_score": 109.44
+      "total_score": 108.63
     },
     {
       "id": "f90738055e4ac8515707dd79a01786c4011d4d8f",
@@ -2060,9 +2144,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 23.53,
+      "timeliness": 22.73,
       "writing_value": 5,
-      "total_score": 108.53
+      "total_score": 107.73
     },
     {
       "id": "9b00d7df7290160417f13af0855941076a7b3aea",
@@ -2081,9 +2165,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.85,
+      "timeliness": 28.05,
       "writing_value": 0,
-      "total_score": 103.85
+      "total_score": 103.05
     },
     {
       "id": "7a2a84a94930d6a61fc9e640e3b2b9ee309e67ed",
@@ -2102,9 +2186,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.55,
+      "timeliness": 26.74,
       "writing_value": 0,
-      "total_score": 102.55
+      "total_score": 101.74
     },
     {
       "id": "ee80cf218bc3542f7a3560f75dd50e129f33be6e",
@@ -2123,9 +2207,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.94,
+      "timeliness": 26.13,
       "writing_value": 0,
-      "total_score": 101.94
+      "total_score": 101.13
     },
     {
       "id": "82200091ba80ff5609ba8e0bbc202e521a8bda43",
@@ -2144,9 +2228,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.23,
+      "timeliness": 24.42,
       "writing_value": 0,
-      "total_score": 100.23
+      "total_score": 99.42
     },
     {
       "id": "ef020ba9d6c178c2e729fd51b0fe060ae49658d5",
@@ -2165,9 +2249,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.1,
+      "timeliness": 24.3,
       "writing_value": 0,
-      "total_score": 100.1
+      "total_score": 99.3
     },
     {
       "id": "d9edcc61535982fe22bed3c9d12ea1a6b6579b3c",
@@ -2186,9 +2270,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.03,
+      "timeliness": 24.22,
       "writing_value": 0,
-      "total_score": 100.03
+      "total_score": 99.22
     },
     {
       "id": "4027f4074891dcbdde5d8b6325331c274dd45a7b",
@@ -2207,9 +2291,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.49,
+      "timeliness": 23.68,
       "writing_value": 0,
-      "total_score": 99.49
+      "total_score": 98.68
     },
     {
       "id": "cd7f1d0f5039065446831d9e840923ab975b8fa4",
@@ -2228,30 +2312,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.22,
+      "timeliness": 23.42,
       "writing_value": 0,
-      "total_score": 99.22
+      "total_score": 98.42
     },
     {
-      "id": "2090ff8a0f00623854d0c853cb2ee7f443b74869",
-      "title": "首席科学家被“下架”，智元机器人IPO出现迷雾-观察者网 - guancha.cn",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBzX2FWelliM3U5ek1OR00tY19Qc1FrZ3l4d3JwVk9ucHdLbXQwOFExRXBMTFJvWEtnNGk2SFFZcE1TU29VM2xJU3pabU1Wby1kMVZ3YnJmUy1jTUM3WmI5ZDJsMHA?oc=5",
-      "published_at": "2026-08-08T11:36:00+00:00",
-      "category": "国内具身智能资讯",
-      "gn_label": "embodied_ai",
-      "site_name": "国内具身智能资讯",
-      "source": "国内具身智能资讯",
-      "site_id": "国内具身智能资讯",
-      "description": "首席科学家被“下架”，智元机器人IPO出现迷雾-观察者网  guancha.cn",
+      "id": "828d05752642435bc972800e7ff80e8d552ddf40",
+      "title": "Borno Students Develop AI Robot Teacher For Insecure Communities #trusttvnews - instagram.com",
+      "title_zh": "博尔诺学生为不安全的社区开发人工智能机器人老师#trusttvnews - instagram.com",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5SS0pZc3hJcjFCSXlwZXdyLWE4NmMxcEtEVkI1QlRRVV9GUUgwdjhoSS1wVVRhUVU4U3hMNC1CcVpZcDJqdHZGak1RUnlnd0JlUVhFYVJ3?oc=5",
+      "published_at": "2026-08-08T11:36:46+00:00",
+      "category": "国外机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国外机器人资讯",
+      "source": "国外机器人资讯",
+      "site_id": "国外机器人资讯",
+      "description": "Borno Students Develop AI Robot Teacher For Insecure Communities #trusttvnews  instagram.com",
       "ai_score": 65.0,
-      "ai_label": "embodied_ai",
+      "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.04,
+      "timeliness": 23.24,
       "writing_value": 0,
-      "total_score": 99.04
+      "total_score": 98.24
     },
     {
       "id": "5ad2c0e66f9d71c9d299fc6a1dab1e878e69e081",
@@ -2270,9 +2354,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.02,
+      "timeliness": 23.22,
       "writing_value": 0,
-      "total_score": 99.02
+      "total_score": 98.22
     },
     {
       "id": "22892ad7c22bbe68d77f92f85c38ece6d9c4818b",
@@ -2291,9 +2375,9 @@
       "relevance": 0.5,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.69,
+      "timeliness": 23.88,
       "writing_value": 0,
-      "total_score": 84.69
+      "total_score": 83.88
     },
     {
       "id": "da392d9063dc6996c1b33ffb1d1f1ccdd8e95f43",
@@ -2312,30 +2396,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 5,
-      "timeliness": 29.1,
+      "timeliness": 28.29,
       "writing_value": 5,
-      "total_score": 84.1
-    },
-    {
-      "id": "2aabae3c9744bc9c4212687afae8929ad240937d",
-      "title": "2026 山西大学 AI 与机器人前沿技术海内外交流论坛在并举办 - 新浪网",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxObUxiMWtQdE9tdW5rRUNTWGoyYUpLSFZYZmdPeUdfVWdUbHFaNkdaTkh3RmdOV0RfYjJsVUZzR0p0Q2xYSkI3SGUzdUtieDh4S0dpUUVidGhNZTNfN2Q0X0MwVW9KYUF2R1NJUDZVYk1Tdk41UXliekFHTXFReFlvZ0huTDZvQXpMZlFQNjBn?oc=5",
-      "published_at": "2026-08-08T16:04:57+00:00",
-      "category": "国内具身智能资讯",
-      "gn_label": "embodied_ai",
-      "site_name": "国内具身智能资讯",
-      "source": "国内具身智能资讯",
-      "site_id": "国内具身智能资讯",
-      "description": "2026 山西大学 AI 与机器人前沿技术海内外交流论坛在并举办  新浪网",
-      "ai_score": 35.0,
-      "ai_label": "embodied_ai",
-      "relevance": 0.35,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 28.52,
-      "writing_value": 0,
-      "total_score": 73.52
+      "total_score": 83.29
     },
     {
       "id": "3ae265fc93bffd27d6c78894eac48760f1e1e4f4",
@@ -2354,9 +2417,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.02,
+      "timeliness": 27.21,
       "writing_value": 0,
-      "total_score": 73.02
+      "total_score": 72.21
     },
     {
       "id": "cc4d4f4974d41e1b82eb67472fcc1c574817014a",
@@ -2375,9 +2438,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.79,
+      "timeliness": 26.98,
       "writing_value": 0,
-      "total_score": 72.79
+      "total_score": 71.98
     },
     {
       "id": "1ba7fb26717fea34a320620e4d1c90ff443b45e3",
@@ -2396,9 +2459,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.77,
+      "timeliness": 26.96,
       "writing_value": 0,
-      "total_score": 72.77
+      "total_score": 71.96
     },
     {
       "id": "0359936c1308d750cc586fff214284eb92865590",
@@ -2417,9 +2480,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.7,
+      "timeliness": 25.89,
       "writing_value": 0,
-      "total_score": 71.7
+      "total_score": 70.89
     },
     {
       "id": "c387f2004bd8ede2c26845d77a339982969a01e3",
@@ -2438,9 +2501,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.4,
+      "timeliness": 25.6,
       "writing_value": 0,
-      "total_score": 71.4
+      "total_score": 70.6
     },
     {
       "id": "a27d1c17e57296a9ee505da1738eaf6ffa5c28ae",
@@ -2459,9 +2522,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.99,
+      "timeliness": 25.18,
       "writing_value": 0,
-      "total_score": 70.99
+      "total_score": 70.18
     },
     {
       "id": "c44528d4359940893332640c6cdfb975bd50a0ab",
@@ -2480,9 +2543,30 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.74,
+      "timeliness": 24.93,
       "writing_value": 0,
-      "total_score": 70.74
+      "total_score": 69.93
+    },
+    {
+      "id": "0ce8999e01fb2027e39828617be8a0ce3f2c6fbf",
+      "title": "机器人空竹舞龙齐上阵 全民健身日河南玩出新花样 - 新体育网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBFajhxc2kzaGFDMWNxallnVTd4TTQ5WmdpYnF3NldRdVdSTFZhR3p5OUJCZzVvVWRWUVl6d0t4TThWSWtmNWtBZDAxb2FMTWhWZjZPSjhzMTJVTkhSUWpoSWdGV0VpOTBCdnFnVHN3Yw?oc=5",
+      "published_at": "2026-08-08T12:48:36+00:00",
+      "category": "国内机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国内机器人资讯",
+      "source": "国内机器人资讯",
+      "site_id": "国内机器人资讯",
+      "description": "机器人空竹舞龙齐上阵 全民健身日河南玩出新花样  新体育网",
+      "ai_score": 35.0,
+      "ai_label": "robotics",
+      "relevance": 0.35,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 24.44,
+      "writing_value": 0,
+      "total_score": 69.44
     },
     {
       "id": "769b3433ec137e40d320f5c2e7e98c16d5a05e2b",
@@ -2501,9 +2585,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.17,
+      "timeliness": 24.37,
       "writing_value": 0,
-      "total_score": 70.17
+      "total_score": 69.37
     },
     {
       "id": "84eb436e21c944e3f87b2329daf7e66138899e2d",
@@ -2522,9 +2606,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.07,
+      "timeliness": 24.26,
       "writing_value": 0,
-      "total_score": 70.07
+      "total_score": 69.26
     },
     {
       "id": "5222ddd8c91822d711fbdb54ac5c0c8352244b6e",
@@ -2543,9 +2627,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.0,
+      "timeliness": 24.2,
       "writing_value": 0,
-      "total_score": 70.0
+      "total_score": 69.2
     },
     {
       "id": "af9287ed0ac644ee17f47d714d4393df61cfb11c",
@@ -2564,9 +2648,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.45,
+      "timeliness": 23.64,
       "writing_value": 0,
-      "total_score": 69.45
+      "total_score": 68.64
     },
     {
       "id": "b9cfd2846fc73924404300e986a3b9d0951afc48",
@@ -2585,9 +2669,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.41,
+      "timeliness": 23.61,
       "writing_value": 0,
-      "total_score": 69.41
+      "total_score": 68.61
     },
     {
       "id": "2c1e28ef2023a56726496520ec40fa6fcf7b848b",
@@ -2606,9 +2690,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.27,
+      "timeliness": 23.46,
       "writing_value": 0,
-      "total_score": 69.27
+      "total_score": 68.46
     },
     {
       "id": "48bac0ab75fb3df59b867e019d7391120dd0f08d",
@@ -2627,30 +2711,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.24,
+      "timeliness": 23.43,
       "writing_value": 0,
-      "total_score": 69.24
-    },
-    {
-      "id": "0ce8999e01fb2027e39828617be8a0ce3f2c6fbf",
-      "title": "机器人空竹舞龙齐上阵 全民健身日河南玩出新花样 - 新体育网",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBFajhxc2kzaGFDMWNxallnVTd4TTQ5WmdpYnF3NldRdVdSTFZhR3p5OUJCZzVvVWRWUVl6d0t4TThWSWtmNWtBZDAxb2FMTWhWZjZPSjhzMTJVTkhSUWpoSWdGV0VpOTBCdnFnVHN3Yw?oc=5",
-      "published_at": "2026-08-08T11:38:29+00:00",
-      "category": "国内机器人资讯",
-      "gn_label": "robotics",
-      "site_name": "国内机器人资讯",
-      "source": "国内机器人资讯",
-      "site_id": "国内机器人资讯",
-      "description": "机器人空竹舞龙齐上阵 全民健身日河南玩出新花样  新体育网",
-      "ai_score": 35.0,
-      "ai_label": "robotics",
-      "relevance": 0.35,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 24.08,
-      "writing_value": 0,
-      "total_score": 69.08
+      "total_score": 68.43
     },
     {
       "id": "1b0b15dc0fa649d99bc2530d7965376dead78c77",
@@ -2669,9 +2732,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.8,
+      "timeliness": 22.99,
       "writing_value": 0,
-      "total_score": 68.8
+      "total_score": 67.99
     },
     {
       "id": "8849520425aa7248e3ea010e232b469535881f24",
@@ -2690,9 +2753,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.71,
+      "timeliness": 22.9,
       "writing_value": 0,
-      "total_score": 68.71
+      "total_score": 67.9
     },
     {
       "id": "3d004b2888ac4be141a6d71d39519e5d1fd3b9db",
@@ -2711,31 +2774,31 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.7,
+      "timeliness": 22.9,
       "writing_value": 0,
-      "total_score": 68.7
+      "total_score": 67.9
     }
   ],
   "site_stats": [
     {
       "site_id": "国内人形机器人资讯",
       "site_name": "国内人形机器人资讯",
-      "count": 10
-    },
-    {
-      "site_id": "国内具身智能资讯",
-      "site_name": "国内具身智能资讯",
-      "count": 9
+      "count": 12
     },
     {
       "site_id": "国外机器人资讯",
       "site_name": "国外机器人资讯",
-      "count": 9
+      "count": 10
     },
     {
       "site_id": "国内机器人资讯",
       "site_name": "国内机器人资讯",
       "count": 9
+    },
+    {
+      "site_id": "国内具身智能资讯",
+      "site_name": "国内具身智能资讯",
+      "count": 6
     },
     {
       "site_id": "国内物理AI资讯",
@@ -2748,11 +2811,16 @@
       "count": 2
     },
     {
+      "site_id": "国内脑机接口资讯",
+      "site_name": "国内脑机接口资讯",
+      "count": 1
+    },
+    {
       "site_id": "国外物理AI资讯",
       "site_name": "国外物理AI资讯",
       "count": 1
     }
   ],
-  "total_items_raw": 43,
-  "total_items_all_mode": 43
+  "total_items_raw": 44,
+  "total_items_all_mode": 44
 }
