@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-08T18:23:15.533482+00:00",
-  "total_items": 44,
+  "generated_at": "2026-08-08T19:07:44.038659+00:00",
+  "total_items": 47,
   "items_ai": [
     {
       "id": "4b54988d9ff96421ed733c075baf2bfb632edf74",
@@ -8,20 +8,20 @@
       "title_zh": "华尔街看到了价值数万亿美元的人形机器人市场。这两只工业股票出售零部件。 - 雅虎财经",
       "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNVENJd29fY1dFQUxQcV9IWFlNQ1VWVHVmTFlLbjgyY1RPbmNjc05QNDFYUGhGTFBTN0Z1Y2RTTkhCOUJEMmpqWU9CYVZwZElKblM0TUJXMFVKX3NxY1J1bG8zRnB2QmtpUExJNmlYZ0JKUEtuVFZiMUF4cXd6OXRCZE9pWjlmWGJkSTlnRHlNUlFyV1p2ZTBaS08zUjBDYTMxNi1N?oc=5",
       "published_at": "2026-08-08T13:25:00+00:00",
-      "category": "国外人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国外人形机器人资讯",
-      "source": "国外人形机器人资讯",
-      "site_id": "国外人形机器人资讯",
+      "category": "国外机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国外机器人资讯",
+      "source": "国外机器人资讯",
+      "site_id": "国外机器人资讯",
       "description": "Wall Street Sees a Multitrillion-Dollar Humanoid Robot Market. These 2 Industrial Stocks Sell the Parts.  Yahoo Finance",
       "ai_score": 80.0,
-      "ai_label": "humanoid",
+      "ai_label": "robotics",
       "relevance": 0.8,
       "authority": 10,
       "depth": 5,
-      "timeliness": 25.05,
+      "timeliness": 24.32,
       "writing_value": 5,
-      "total_score": 125.05
+      "total_score": 124.32
     },
     {
       "id": "96aadab660811217aaf6d807a32c17270435afc6",
@@ -40,13 +40,13 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.66,
+      "timeliness": 28.93,
       "writing_value": 0,
-      "total_score": 119.66
+      "total_score": 118.93
     },
     {
-      "id": "77553565b3c47f94ad55dc2e4cb569412a563a68",
-      "title": "“人形机器人第一股”即将打新 这些细节你了解吗？ - 搜狐网",
+      "id": "99c21af352b49436e616bb64d80ac52d4280bf01",
+      "title": "“人形机器人第一股”即将打新 这些细节你了解吗？ - sohu.com",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPQmZBSjNhcUNmZlhkcC1ZRU5KM2R5TVNhNTlmajVUX2tBM0lISE9Ea0xHYVFSazlKN29NNDN5eDVfS0RlT1p6YXNpQ3l1M1h2UFhlMU11YmI1QjhHQjRCcmpMaURzcTk4OEdRMnRQVkFid2MtUm91M2NYNElscFdhVFgxNlJHemZO?oc=5",
       "published_at": "2026-08-08T15:21:37+00:00",
@@ -55,15 +55,36 @@
       "site_name": "国内人形机器人资讯",
       "source": "国内人形机器人资讯",
       "site_id": "国内人形机器人资讯",
-      "description": "“人形机器人第一股”即将打新 这些细节你了解吗？  搜狐网",
+      "description": "“人形机器人第一股”即将打新 这些细节你了解吗？  sohu.com",
       "ai_score": 80.0,
       "ai_label": "humanoid",
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.99,
+      "timeliness": 26.26,
       "writing_value": 0,
-      "total_score": 116.99
+      "total_score": 116.26
+    },
+    {
+      "id": "ee7047163c8731d3f29689e5c4f2a45b7fb49650",
+      "title": "【汽车校友百校联盟】优必选机器人战略蓝图：以“工业先行”铸就中国具身智能的产业样本 - 电子工程专辑",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBhY1pmVTRxazhoQ3FoSVl2Y2hobk9ZYk9HMGZtREt1aXduOGl5ell5aVhvVndmSk81OEV3V09XSjZ0RUJtQlRwNVJjY3Atam1ObGZ3?oc=5",
+      "published_at": "2026-08-08T14:30:00+00:00",
+      "category": "国内具身智能资讯",
+      "gn_label": "embodied_ai",
+      "site_name": "国内具身智能资讯",
+      "source": "国内具身智能资讯",
+      "site_id": "国内具身智能资讯",
+      "description": "【汽车校友百校联盟】优必选机器人战略蓝图：以“工业先行”铸就中国具身智能的产业样本  电子工程专辑",
+      "ai_score": 80.0,
+      "ai_label": "embodied_ai",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 25.4,
+      "writing_value": 0,
+      "total_score": 115.4
     },
     {
       "id": "a499dd152b2919dfac591c1b51b6f6ff1fd4a529",
@@ -82,51 +103,51 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.13,
+      "timeliness": 25.4,
       "writing_value": 0,
-      "total_score": 116.13
+      "total_score": 115.4
     },
     {
-      "id": "ee7047163c8731d3f29689e5c4f2a45b7fb49650",
-      "title": "【汽车校友百校联盟】优必选机器人战略蓝图：以“工业先行”铸就中国具身智能的产业样本 - 电子工程专辑",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBhY1pmVTRxazhoQ3FoSVl2Y2hobk9ZYk9HMGZtREt1aXduOGl5ell5aVhvVndmSk81OEV3V09XSjZ0RUJtQlRwNVJjY3Atam1ObGZ3?oc=5",
-      "published_at": "2026-08-08T14:30:00+00:00",
-      "category": "国内人形机器人资讯",
+      "id": "1d28b94d24d8b2c0dba82a11644edbcfce7c7226",
+      "title": "Humanoid Robots Don't Fit in Store Aisles, So Robbyant Fixed That - Yanko Design",
+      "title_zh": "人形机器人不适合商店过道，所以 Robbyant 解决了这个问题 - Yanko Design",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNOFdvT3VQaGU5V3otcHAxVW1jQXh5OU80RjJ1OWxab2c0NVhzUjNpSVZGdzQ5ckwxRXdDNjFXdzQ4aDQ1cGpvSUc4Uk9PVHBYWnkzN2xWY1ZqdUtzdmtIaHBlaFRudkZWSERydWRXblRYcWhMenNVWF9WbVNvZmlkRW9yVWpaYTVlc1VfQzV3cGR0aWZPak53UkM3cjloVXdyRHp0bjJB0gGrAUFVX3lxTE1iUUYtZ241b2Y3Y3NHZHYzLTNjSVlGZGkxWTl3U05OOEtjU0ttcGVhdGNuRDdjaDloMXcwRjE3TUxpcHUyRC16ZThLTm9MQ0dXNVg0RjBMVWtiX3RaUnMtVkxrb0JNQ2dMZzBmSlk4anJhR2VyR0FVeldkRGdvUU9HeDQ0bTlmQ1l1MDlIa29iaUdfLWtOdW1DSEdoTjJmUlcxRWgxZl9mNklfSQ?oc=5",
+      "published_at": "2026-08-08T13:20:11+00:00",
+      "category": "国外人形机器人资讯",
       "gn_label": "humanoid",
-      "site_name": "国内人形机器人资讯",
-      "source": "国内人形机器人资讯",
-      "site_id": "国内人形机器人资讯",
-      "description": "【汽车校友百校联盟】优必选机器人战略蓝图：以“工业先行”铸就中国具身智能的产业样本  电子工程专辑",
+      "site_name": "国外人形机器人资讯",
+      "source": "国外人形机器人资讯",
+      "site_id": "国外人形机器人资讯",
+      "description": "Humanoid Robots Don't Fit in Store Aisles, So Robbyant Fixed That  Yanko Design",
       "ai_score": 80.0,
       "ai_label": "humanoid",
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.13,
+      "timeliness": 24.24,
       "writing_value": 0,
-      "total_score": 116.13
+      "total_score": 114.24
     },
     {
-      "id": "6044ab6ccafa0450f28b23555816b869c0c52053",
-      "title": "宇树科技破发？笑的合不拢嘴。进来了解一下具身智能的未来。 - 财富号",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE4yMlYyNTl1bFFLakVSeU5CeUJkVzZyTU1nQW1Hel9WSGIyMGJYLUtvYjhTQ3RPV0FLQ1BUVExIckFMT3VlTEtCbGwyRTVKWkYxTzROMEtQcENfdGZmaE5LMTAxa1ViblhBdVhF?oc=5",
-      "published_at": "2026-08-08T13:27:00+00:00",
-      "category": "国内具身智能资讯",
-      "gn_label": "embodied_ai",
-      "site_name": "国内具身智能资讯",
-      "source": "国内具身智能资讯",
-      "site_id": "国内具身智能资讯",
-      "description": "宇树科技破发？笑的合不拢嘴。进来了解一下具身智能的未来。  财富号",
-      "ai_score": 80.0,
-      "ai_label": "embodied_ai",
-      "relevance": 0.8,
+      "id": "4fd7ee417573c5b47c234195744b9d5407d276ac",
+      "title": "2,000+ Robots Abroad. 60+ Nations on Board. EXEED AiMOGA Going Farther, Growing Faster - Yahoo Finance",
+      "title_zh": "国外有 2,000 多个机器人。船上有 60 多个国家。 EXEED AiMOGA 走得更远，成长更快 - 雅虎财经",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNeUVHaFZaRU1pcnUwRTJGVnlVYjM3cjl6ZUhRSDh2ZjFxRUNmZGpkSHo5TWdEVXI1b3Q0VzY4WGxRd19UUzVzMl9IaDdBYld0cXZvTFh0aWQtbGpYR3Y2RlVjRWlYTjVWQTQ2Y2tSTTZOdnhHMDc1OU5oQXN4QlJNX2xYRXNZZzlteG40WlRGMA?oc=5",
+      "published_at": "2026-08-08T18:13:00+00:00",
+      "category": "国外机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国外机器人资讯",
+      "source": "国外机器人资讯",
+      "site_id": "国外机器人资讯",
+      "description": "2,000+ Robots Abroad. 60+ Nations on Board. EXEED AiMOGA Going Farther, Growing Faster  Yahoo Finance",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
       "authority": 10,
-      "depth": 0,
-      "timeliness": 25.08,
-      "writing_value": 0,
-      "total_score": 115.08
+      "depth": 5,
+      "timeliness": 29.12,
+      "writing_value": 5,
+      "total_score": 114.12
     },
     {
       "id": "1bc45b932c84261ec0838f4de014e83c94fe73a6",
@@ -145,13 +166,13 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.76,
+      "timeliness": 24.03,
       "writing_value": 0,
-      "total_score": 114.76
+      "total_score": 114.03
     },
     {
-      "id": "d60547b35f226bba5f702e8a109ea121ec4ec2da",
-      "title": "AMD为什么要押注人形机器人大脑？ - 搜狐网",
+      "id": "b2b96611d66853be466dc9084ef74205126c4474",
+      "title": "AMD为什么要押注人形机器人大脑？ - sohu.com",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQOVFjOG5acV9MU09TdFhxa2ZoeDh2OWR1Nk5RRlBwaVNzcHFIcm5GOE5XbzNSZ2V3TkxmTUcybnphZFRxYnd3UjZRZ0dRbThFMlBTMkhFWDlWTExTRDBJZWV0WUg5Unh1WFM5OThNXzlGeHVPeE1LZUpZZ0o0ZXRwR0F0UjRCbnYt?oc=5",
       "published_at": "2026-08-08T13:00:00+00:00",
@@ -160,15 +181,15 @@
       "site_name": "国内人形机器人资讯",
       "source": "国内人形机器人资讯",
       "site_id": "国内人形机器人资讯",
-      "description": "AMD为什么要押注人形机器人大脑？  搜狐网",
+      "description": "AMD为什么要押注人形机器人大脑？  sohu.com",
       "ai_score": 80.0,
       "ai_label": "humanoid",
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.63,
+      "timeliness": 23.9,
       "writing_value": 0,
-      "total_score": 114.63
+      "total_score": 113.9
     },
     {
       "id": "8c90c60746798039624ba277f912181967c02524",
@@ -187,13 +208,13 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.53,
+      "timeliness": 22.8,
       "writing_value": 0,
-      "total_score": 113.53
+      "total_score": 112.8
     },
     {
-      "id": "5067e93ce9263e47d5b1deb8e2aa798d101f1a93",
-      "title": "脑机接口进课堂 校企共建实验平台 - 搜狐网",
+      "id": "8dc844179897e1fbfcffcabc845af9fc4ac6ca75",
+      "title": "脑机接口进课堂 校企共建实验平台 - sohu.com",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxON09HcDhwWmFzRnE0NlkxSTdNUzgzZ1VVcmVOU3p1MW9ZZHJTOGxkcENGSlNuanBtQ1FEaDdHSF9mbXk3d1NJYnloZkRRNDMxXzk5V1JjeFdONGxGbm5pRWd4QWQ0NHJUSUJoZXU4UERnQTlnUnZRd1pFVkN6QzFsVFgyTVZtUDEtcEUySg?oc=5",
       "published_at": "2026-08-08T11:52:54+00:00",
@@ -202,15 +223,15 @@
       "site_name": "国内脑机接口资讯",
       "source": "国内脑机接口资讯",
       "site_id": "国内脑机接口资讯",
-      "description": "脑机接口进课堂 校企共建实验平台  搜狐网",
+      "description": "脑机接口进课堂 校企共建实验平台  sohu.com",
       "ai_score": 80.0,
       "ai_label": "brain_computer",
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.51,
+      "timeliness": 22.78,
       "writing_value": 0,
-      "total_score": 113.51
+      "total_score": 112.78
     },
     {
       "id": "a7a088f2c66e6380379d575eb5594858a45d882c",
@@ -229,9 +250,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 27.28,
+      "timeliness": 26.55,
       "writing_value": 5,
-      "total_score": 112.28
+      "total_score": 111.55
     },
     {
       "id": "d5f2953ae6e96f665a1434f81d35b4518d714c76",
@@ -250,9 +271,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 24.36,
+      "timeliness": 23.63,
       "writing_value": 5,
-      "total_score": 109.36
+      "total_score": 108.63
     },
     {
       "id": "49f53687a2daa782e1b40c25f64c0a60b069b18d",
@@ -271,30 +292,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 23.63,
+      "timeliness": 22.9,
       "writing_value": 5,
-      "total_score": 108.63
+      "total_score": 107.9
     },
     {
-      "id": "f90738055e4ac8515707dd79a01786c4011d4d8f",
-      "title": "The Robotic Surgery Leader: Intuitive Surgical Slides Further But One Wall Street Bull Pegs Returns at 85% - 24/7 Wall St.",
-      "title_zh": "机器人手术领导者：直观手术进一步下滑，但华尔街牛钉的回报率为 85% - 24/7 Wall St.",
-      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOM19Fc1dyd0lXQ0NxajUyS1QwLXJRLXMxQnl4aGx3SDRmbE54YkJLUTRsVzFyNEVEdE0waV9LemdiaEhoTFNsWmdGUEsxNUNLcmIyMlQwLVNaLXA1X0E4YTdCVHhvMC1UYjJLR3RHVzN1QlhFS2dqWmtKXzI3enY1R1VJSFBWS04xdnhublJJa0dBR0FMVEg4VWNrUmJPSVg3bXM5eXgyb2M4SHFWMnBmckg5b2M5R0Izay1PTUwxNlZNN0E3VXJjZmd3clpsUndDU0MzWHVnVVF6RkFNVXJLZVh3?oc=5",
-      "published_at": "2026-08-08T11:05:49+00:00",
+      "id": "41227edc3b4ac2c611a264853325f0c8c9dd3c62",
+      "title": "Robot Dogs Suddenly Taking Jobs From Human Security Guards - Futurism",
+      "title_zh": "机器狗突然抢走了人类保安的工作 - 未来主义",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOV1JJSkxXSFJNWmEybHJPcGd4N1pvbDZTMm9wZjVOQy1YVGU4bGhQREQtaHRxYzl4d3p3dFBqNFYxWHJuSjhndUsybFliOTNIVktad2ZvSng4R0lKM29DZ3Z4R3BrMDNsS3NPcW94b0NXeHFCOW9ZYjVlN3RaSC1MNjJzOG5uRmRPcF9XRA?oc=5",
+      "published_at": "2026-08-08T19:02:00+00:00",
       "category": "国外机器人资讯",
       "gn_label": "robotics",
       "site_name": "国外机器人资讯",
       "source": "国外机器人资讯",
       "site_id": "国外机器人资讯",
-      "description": "The Robotic Surgery Leader: Intuitive Surgical Slides Further But One Wall Street Bull Pegs Returns at 85%  24/7 Wall St.",
+      "description": "Robot Dogs Suddenly Taking Jobs From Human Security Guards  Futurism",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
-      "depth": 5,
-      "timeliness": 22.73,
-      "writing_value": 5,
-      "total_score": 107.73
+      "depth": 0,
+      "timeliness": 29.93,
+      "writing_value": 0,
+      "total_score": 104.93
     },
     {
       "id": "9b00d7df7290160417f13af0855941076a7b3aea",
@@ -313,9 +334,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.05,
+      "timeliness": 27.32,
       "writing_value": 0,
-      "total_score": 103.05
+      "total_score": 102.32
     },
     {
       "id": "7a2a84a94930d6a61fc9e640e3b2b9ee309e67ed",
@@ -334,9 +355,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.74,
+      "timeliness": 26.01,
       "writing_value": 0,
-      "total_score": 101.74
+      "total_score": 101.01
     },
     {
       "id": "ee80cf218bc3542f7a3560f75dd50e129f33be6e",
@@ -355,13 +376,13 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.13,
+      "timeliness": 25.4,
       "writing_value": 0,
-      "total_score": 101.13
+      "total_score": 100.4
     },
     {
-      "id": "82200091ba80ff5609ba8e0bbc202e521a8bda43",
-      "title": "宇树科技600亿估值，美团系获利超12倍，专项国资基金均超10倍，核心供应链的β行情抬升 - 搜狐网",
+      "id": "b53c28e08805c716d75f0438712ee4996133a871",
+      "title": "宇树科技600亿估值，美团系获利超12倍，专项国资基金均超10倍，核心供应链的β行情抬升 - sohu.com",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxORjVYMlUwMlhLcTYwZWdaM2NDQVJXZk5wNHlPSXViZUplUnpMc1lMcDhEeEdRZHNPOE9jdDc0cHdDbWpDdVJIMlEzODhxUzhnR2hFQ3pIOGY2VnQ5YmFBSkUwOHV6czFfR2xNeWliam5sdWh6cGpVaXlPQzlybnI4Sm9yb2NscUxk?oc=5",
       "published_at": "2026-08-08T12:47:27+00:00",
@@ -370,15 +391,15 @@
       "site_name": "国内人形机器人资讯",
       "source": "国内人形机器人资讯",
       "site_id": "国内人形机器人资讯",
-      "description": "宇树科技600亿估值，美团系获利超12倍，专项国资基金均超10倍，核心供应链的β行情抬升  搜狐网",
+      "description": "宇树科技600亿估值，美团系获利超12倍，专项国资基金均超10倍，核心供应链的β行情抬升  sohu.com",
       "ai_score": 65.0,
       "ai_label": "humanoid",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.42,
+      "timeliness": 23.69,
       "writing_value": 0,
-      "total_score": 99.42
+      "total_score": 98.69
     },
     {
       "id": "ef020ba9d6c178c2e729fd51b0fe060ae49658d5",
@@ -397,9 +418,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.3,
+      "timeliness": 23.57,
       "writing_value": 0,
-      "total_score": 99.3
+      "total_score": 98.57
     },
     {
       "id": "d9edcc61535982fe22bed3c9d12ea1a6b6579b3c",
@@ -407,24 +428,24 @@
       "title_zh": "RoboBusiness 专家展望机器人技术的未来 20 年 - 机器人报告",
       "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPdVJSNU9LZTNFb2F2NFVUcjZ4RHhFOVdwcUlhVS1IcjhUTWtWYkJLWXBuZG1TUVFSU1VPckdxRUtEN1FuYmlkaXhJSUg1aDU3ampWVjlRZnNwdVVkSGNaQmZnTllmT1h1RkU1Zmplc1IxYVlVRHFPRTdIS1FzbG1lOGpVVEI1MkN4TmFOTWF5VXE3Mm1yajdFc2RyTGg5YURh?oc=5",
       "published_at": "2026-08-08T12:35:25+00:00",
-      "category": "国外人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国外人形机器人资讯",
-      "source": "国外人形机器人资讯",
-      "site_id": "国外人形机器人资讯",
+      "category": "国外机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国外机器人资讯",
+      "source": "国外机器人资讯",
+      "site_id": "国外机器人资讯",
       "description": "Experts look ahead at the next 20 years of robotics at RoboBusiness  The Robot Report",
       "ai_score": 65.0,
-      "ai_label": "humanoid",
+      "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.22,
+      "timeliness": 23.49,
       "writing_value": 0,
-      "total_score": 99.22
+      "total_score": 98.49
     },
     {
-      "id": "4027f4074891dcbdde5d8b6325331c274dd45a7b",
-      "title": "两年三次募资，协作机器人第一股越疆科技从港回A - 搜狐网",
+      "id": "54889eabd72182888565479f353ca905e6b3a7f7",
+      "title": "两年三次募资，协作机器人第一股越疆科技从港回A - sohu.com",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNSzJRVUVjMzVJamdnNFJJa2tFMUY4U01PanliaGdZT2tBU3RYVmgzVUJGVElWQ0xCNWpaYmY0c2ZWdGdRTDFWRGJuRGNZaXo4UmE4LVN2Y0NZMC1pcE4zR3FNc2pOV3h1YXZYODVhTWJfbllXakFNNnczeHFnc0FSTzMxMnNzdUVxSVlIdQ?oc=5",
       "published_at": "2026-08-08T12:03:02+00:00",
@@ -433,36 +454,15 @@
       "site_name": "国内机器人资讯",
       "source": "国内机器人资讯",
       "site_id": "国内机器人资讯",
-      "description": "两年三次募资，协作机器人第一股越疆科技从港回A  搜狐网",
+      "description": "两年三次募资，协作机器人第一股越疆科技从港回A  sohu.com",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.68,
+      "timeliness": 22.95,
       "writing_value": 0,
-      "total_score": 98.68
-    },
-    {
-      "id": "cd7f1d0f5039065446831d9e840923ab975b8fa4",
-      "title": "首席科学家被“下架”，智元机器人IPO出现迷雾 - 凤凰网",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1HR09aY09jcGwyNU1wSGYwNGZvRzVUV2FhSjZTYjhxOWxUVmNVZ2JYYTZyQ1V4bVlhME9BV2JkOV8xR0pLYmVDekwxSDVrUFdR?oc=5",
-      "published_at": "2026-08-08T11:47:18+00:00",
-      "category": "国内人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国内人形机器人资讯",
-      "source": "国内人形机器人资讯",
-      "site_id": "国内人形机器人资讯",
-      "description": "首席科学家被“下架”，智元机器人IPO出现迷雾  凤凰网",
-      "ai_score": 65.0,
-      "ai_label": "humanoid",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 23.42,
-      "writing_value": 0,
-      "total_score": 98.42
+      "total_score": 97.95
     },
     {
       "id": "828d05752642435bc972800e7ff80e8d552ddf40",
@@ -481,13 +481,34 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.24,
+      "timeliness": 22.51,
       "writing_value": 0,
-      "total_score": 98.24
+      "total_score": 97.51
     },
     {
-      "id": "5ad2c0e66f9d71c9d299fc6a1dab1e878e69e081",
-      "title": "除了宇树科技，中国还有7家机器人企业，估值超过了200亿元 - 搜狐网",
+      "id": "63b36f7af167d2ca98168f6336c4f71fa0431597",
+      "title": "首席科学家被“下架”，智元机器人IPO出现迷雾 - 观察者",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBzX2FWelliM3U5ek1OR00tY19Qc1FrZ3l4d3JwVk9ucHdLbXQwOFExRXBMTFJvWEtnNGk2SFFZcE1TU29VM2xJU3pabU1Wby1kMVZ3YnJmUy1jTUM3WmI5ZDJsMHA?oc=5",
+      "published_at": "2026-08-08T11:36:00+00:00",
+      "category": "国内具身智能资讯",
+      "gn_label": "embodied_ai",
+      "site_name": "国内具身智能资讯",
+      "source": "国内具身智能资讯",
+      "site_id": "国内具身智能资讯",
+      "description": "首席科学家被“下架”，智元机器人IPO出现迷雾  观察者",
+      "ai_score": 65.0,
+      "ai_label": "embodied_ai",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 22.5,
+      "writing_value": 0,
+      "total_score": 97.5
+    },
+    {
+      "id": "3e9e9bec9065206961ee9b1201dea0fc21acf56f",
+      "title": "除了宇树科技，中国还有7家机器人企业，估值超过了200亿元 - sohu.com",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPS20wWURKZVFRbFBFYl83WnRocl9aR2YtSFVCbkZrUG9adjBVdXF1cjJ0NlNZMXliLTYyU0FCcVpkcUJReXh2ZUphbTdsTXZ0UjhHaWxzaHdRZTFickZsbXFLNEVjX21NdGJOZmZhdmV3OHBYVFpTTW42alBEaTM4WWpGQWZSRklZQTZHdg?oc=5",
       "published_at": "2026-08-08T11:35:18+00:00",
@@ -496,15 +517,36 @@
       "site_name": "国内人形机器人资讯",
       "source": "国内人形机器人资讯",
       "site_id": "国内人形机器人资讯",
-      "description": "除了宇树科技，中国还有7家机器人企业，估值超过了200亿元  搜狐网",
+      "description": "除了宇树科技，中国还有7家机器人企业，估值超过了200亿元  sohu.com",
       "ai_score": 65.0,
       "ai_label": "humanoid",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.22,
+      "timeliness": 22.49,
       "writing_value": 0,
-      "total_score": 98.22
+      "total_score": 97.49
+    },
+    {
+      "id": "8da04feaabb7fe29406dce18bbbf0c3a570ffb87",
+      "title": "文科生也能拿百万大奖，科目三脱口秀全网整活！智元灵创创意大赛来了 - 新浪财经",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFB1MzhFQ2JJQWw3U2trQ3h5SVZOZFB2S0dIQ2EzbGZoM1hQNzRQWVJpM3hIRWltdU1VVHpLX3ZydVV3RnpjdktFRjdsVG9TbjlWd1dBRWVYdF91SnpxdjNsNksyZjlIbUYzVk12bm92Z3ZNX3lDTU41dXVUR0M?oc=5",
+      "published_at": "2026-08-08T11:11:00+00:00",
+      "category": "国内人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国内人形机器人资讯",
+      "source": "国内人形机器人资讯",
+      "site_id": "国内人形机器人资讯",
+      "description": "文科生也能拿百万大奖，科目三脱口秀全网整活！智元灵创创意大赛来了  新浪财经",
+      "ai_score": 65.0,
+      "ai_label": "humanoid",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 22.08,
+      "writing_value": 0,
+      "total_score": 97.08
     },
     {
       "id": "22892ad7c22bbe68d77f92f85c38ece6d9c4818b",
@@ -523,9 +565,9 @@
       "relevance": 0.5,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.88,
+      "timeliness": 23.15,
       "writing_value": 0,
-      "total_score": 83.88
+      "total_score": 83.15
     },
     {
       "id": "da392d9063dc6996c1b33ffb1d1f1ccdd8e95f43",
@@ -544,13 +586,34 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 5,
-      "timeliness": 28.29,
+      "timeliness": 27.56,
       "writing_value": 5,
-      "total_score": 83.29
+      "total_score": 82.56
     },
     {
-      "id": "3ae265fc93bffd27d6c78894eac48760f1e1e4f4",
-      "title": "青年鲁班颁奖典礼在港举办 首度增设建筑机器人竞赛项目 - 搜狐网",
+      "id": "e556be507ba3e8491fcb5e399b6d1b8062ccf93c",
+      "title": "福州第一高塔桥梁迎来“机器人医生” - fznews.com.cn",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9KSGpzcW1reUdyOENCTXN2endnWHdnakhXM2huMEgxbVFxODgydko3dHBpcTRHZFo0VXUzdFhpbVBjQVNoWFBrdjFPc3QzUDBJU3VqaXFLbTljZnpFaHd6MWNUdWw?oc=5",
+      "published_at": "2026-08-08T16:31:09+00:00",
+      "category": "国内机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国内机器人资讯",
+      "source": "国内机器人资讯",
+      "site_id": "国内机器人资讯",
+      "description": "福州第一高塔桥梁迎来“机器人医生”  fznews.com.cn",
+      "ai_score": 35.0,
+      "ai_label": "robotics",
+      "relevance": 0.35,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 27.42,
+      "writing_value": 0,
+      "total_score": 72.42
+    },
+    {
+      "id": "6d9bfd28c7097dd7b82416ceae45c6f754e38b5f",
+      "title": "青年鲁班颁奖典礼在港举办 首度增设建筑机器人竞赛项目 - sohu.com",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPakFpWGdraHZaallVakpRbUZyRWV6MS1rNGh5UGhGeG9aWUtQVVltNTdNb1VZd2gwZzBOdzBDeDd2cnZiMTlGN2RxZWo3emszRnM5WW03X0xZa0Vqcks3UWdBaTlCSG5CTlp3X213ckdIX3FDUmNtNDFaQ0RQdDV0c1cyUVBhV0xBMjB6NQ?oc=5",
       "published_at": "2026-08-08T15:35:04+00:00",
@@ -559,19 +622,19 @@
       "site_name": "国内机器人资讯",
       "source": "国内机器人资讯",
       "site_id": "国内机器人资讯",
-      "description": "青年鲁班颁奖典礼在港举办 首度增设建筑机器人竞赛项目  搜狐网",
+      "description": "青年鲁班颁奖典礼在港举办 首度增设建筑机器人竞赛项目  sohu.com",
       "ai_score": 35.0,
       "ai_label": "robotics",
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.21,
+      "timeliness": 26.48,
       "writing_value": 0,
-      "total_score": 72.21
+      "total_score": 71.48
     },
     {
-      "id": "cc4d4f4974d41e1b82eb67472fcc1c574817014a",
-      "title": "青岛首个机器人6S体验店启幕！百年中山路再添未来科技新地标 - 搜狐网",
+      "id": "f23b1033851a74bb0afc4b459687a3a2ef7a37a5",
+      "title": "青岛首个机器人6S体验店启幕！百年中山路再添未来科技新地标 - sohu.com",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOX0hiQzd4Q3pKbm5odC1hSDF4X0N2YTd4ckx5X1J0aDB4RFBjLTBBc1FhMzVGMkttdk1XbUVKQk5zNC1qcm5tTl9oOWhKT2xOR0NuMUN2NVluMmgybFEtSVhXMk03eEprMS1ZRDYzSEVIYVg5dkxsTU5fb0lvbzB0alJBMkhiRDd3VUk2Vw?oc=5",
       "published_at": "2026-08-08T15:21:04+00:00",
@@ -580,19 +643,19 @@
       "site_name": "国内具身智能资讯",
       "source": "国内具身智能资讯",
       "site_id": "国内具身智能资讯",
-      "description": "青岛首个机器人6S体验店启幕！百年中山路再添未来科技新地标  搜狐网",
+      "description": "青岛首个机器人6S体验店启幕！百年中山路再添未来科技新地标  sohu.com",
       "ai_score": 35.0,
       "ai_label": "embodied_ai",
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.98,
+      "timeliness": 26.25,
       "writing_value": 0,
-      "total_score": 71.98
+      "total_score": 71.25
     },
     {
-      "id": "1ba7fb26717fea34a320620e4d1c90ff443b45e3",
-      "title": "AI机器人终极对决 - 新浪财经",
+      "id": "62a6f93defcd1d94129d846f2ddee610e61b5288",
+      "title": "AI机器人终极对决 - t.cj.sina.cn",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNc1N2OGZlaGhMX3FXS2dkWnVyeTZKWmxzZWZDdkxHUC0zdnRib2JzUGFUc1FReUJMNV95dUI3Y2hOeUVLR0U2M2paMTMwb3d0U0JRLUV2QlBnMkF1RFBLM19EdEhEekwyR3g2MmRfOXZSQnVPVWJoMDhSQThZLTl2WndqNVlKVkU?oc=5",
       "published_at": "2026-08-08T15:19:58+00:00",
@@ -601,15 +664,15 @@
       "site_name": "国内机器人资讯",
       "source": "国内机器人资讯",
       "site_id": "国内机器人资讯",
-      "description": "AI机器人终极对决  新浪财经",
+      "description": "AI机器人终极对决  t.cj.sina.cn",
       "ai_score": 35.0,
       "ai_label": "robotics",
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.96,
+      "timeliness": 26.23,
       "writing_value": 0,
-      "total_score": 71.96
+      "total_score": 71.23
     },
     {
       "id": "0359936c1308d750cc586fff214284eb92865590",
@@ -628,13 +691,13 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.89,
+      "timeliness": 25.16,
       "writing_value": 0,
-      "total_score": 70.89
+      "total_score": 70.16
     },
     {
-      "id": "c387f2004bd8ede2c26845d77a339982969a01e3",
-      "title": "腾讯的野心藏不住了 - 搜狐网",
+      "id": "e2134e34f8b6373363cbac6ed8c46391b12d99c5",
+      "title": "腾讯的野心藏不住了 - sohu.com",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNU3dqelVnUlUtdnhqQTFkVEs2aHdFV1pUMjB0aTE0dllJaHZSUW1kV3VjRTFrbVZMRHI4bzA3TWR6TlMwclp1N3hQejVEOFpHcU9NYkFXQzlxUnBnanpVSFR5SmN4S3BUeTRGNTh2VENzWHdtcFM0eTQ2dGR3bEMxX2FYWmlVaTF6?oc=5",
       "published_at": "2026-08-08T13:58:02+00:00",
@@ -643,15 +706,15 @@
       "site_name": "国内具身智能资讯",
       "source": "国内具身智能资讯",
       "site_id": "国内具身智能资讯",
-      "description": "腾讯的野心藏不住了  搜狐网",
+      "description": "腾讯的野心藏不住了  sohu.com",
       "ai_score": 35.0,
       "ai_label": "embodied_ai",
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.6,
+      "timeliness": 24.87,
       "writing_value": 0,
-      "total_score": 70.6
+      "total_score": 69.87
     },
     {
       "id": "a27d1c17e57296a9ee505da1738eaf6ffa5c28ae",
@@ -670,9 +733,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.18,
+      "timeliness": 24.45,
       "writing_value": 0,
-      "total_score": 70.18
+      "total_score": 69.45
     },
     {
       "id": "c44528d4359940893332640c6cdfb975bd50a0ab",
@@ -691,9 +754,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.93,
+      "timeliness": 24.2,
       "writing_value": 0,
-      "total_score": 69.93
+      "total_score": 69.2
     },
     {
       "id": "0ce8999e01fb2027e39828617be8a0ce3f2c6fbf",
@@ -712,9 +775,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.44,
+      "timeliness": 23.71,
       "writing_value": 0,
-      "total_score": 69.44
+      "total_score": 68.71
     },
     {
       "id": "769b3433ec137e40d320f5c2e7e98c16d5a05e2b",
@@ -733,9 +796,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.37,
+      "timeliness": 23.64,
       "writing_value": 0,
-      "total_score": 69.37
+      "total_score": 68.64
     },
     {
       "id": "84eb436e21c944e3f87b2329daf7e66138899e2d",
@@ -754,13 +817,13 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.26,
+      "timeliness": 23.53,
       "writing_value": 0,
-      "total_score": 69.26
+      "total_score": 68.53
     },
     {
-      "id": "5222ddd8c91822d711fbdb54ac5c0c8352244b6e",
-      "title": "近40家企业决战智慧康养机器人应用大赛 互动陪伴机器人有望成为可靠“养老搭子” - 搜狐网",
+      "id": "6b717baa348b5ee0d0490c42e6386a91409a50e2",
+      "title": "近40家企业决战智慧康养机器人应用大赛 互动陪伴机器人有望成为可靠“养老搭子” - sohu.com",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOTDh1SS1zbEZrRnlwQ242ZHdVbWZmV1BVQl8wa1dlSDhaV0FPTVJGWlMwY0RxTFpTUWt5ZnNYTXhOWHk0dUladlBkMUFJcjFLcVRxN1V1cVZ6SmVNUUg3a2dxY2kwdzdRLUwwM2xpRVBHVzNqblRKVEYwY21sMHRlRV96Y29JUXlONms4Mg?oc=5",
       "published_at": "2026-08-08T12:34:01+00:00",
@@ -769,19 +832,19 @@
       "site_name": "国内机器人资讯",
       "source": "国内机器人资讯",
       "site_id": "国内机器人资讯",
-      "description": "近40家企业决战智慧康养机器人应用大赛 互动陪伴机器人有望成为可靠“养老搭子”  搜狐网",
+      "description": "近40家企业决战智慧康养机器人应用大赛 互动陪伴机器人有望成为可靠“养老搭子”  sohu.com",
       "ai_score": 35.0,
       "ai_label": "robotics",
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.2,
+      "timeliness": 23.47,
       "writing_value": 0,
-      "total_score": 69.2
+      "total_score": 68.47
     },
     {
-      "id": "af9287ed0ac644ee17f47d714d4393df61cfb11c",
-      "title": "松延动力的阳谋：挟春晚之势把\"陪伴\"做成一门生意 - 搜狐网",
+      "id": "d81a5de1455354e1c400ab23061c39a911a8ef6b",
+      "title": "松延动力的阳谋：挟春晚之势把\"陪伴\"做成一门生意 - sohu.com",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQazg3QVdwRkJjdjJkZnpPbURHcTRmcUhlTFRiMl9nNmVKVXp4UHI2cThfdEJlS1dpcWdpMVEtQmgycEpKZng0RnUtakpBNnVHTnpfVllDc1lTbkhtb1pGODV0RDk5ZFBySUY4cjlYdVFtZVNvcDFlaEIyZUdva05OVnhvaEQyNnkwQ0hYdg?oc=5",
       "published_at": "2026-08-08T12:00:33+00:00",
@@ -790,19 +853,19 @@
       "site_name": "国内人形机器人资讯",
       "source": "国内人形机器人资讯",
       "site_id": "国内人形机器人资讯",
-      "description": "松延动力的阳谋：挟春晚之势把\"陪伴\"做成一门生意  搜狐网",
+      "description": "松延动力的阳谋：挟春晚之势把\"陪伴\"做成一门生意  sohu.com",
       "ai_score": 35.0,
       "ai_label": "humanoid",
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.64,
+      "timeliness": 22.91,
       "writing_value": 0,
-      "total_score": 68.64
+      "total_score": 67.91
     },
     {
-      "id": "b9cfd2846fc73924404300e986a3b9d0951afc48",
-      "title": "一年建成上海工厂的特斯拉，为何在Optimus身上栽了？真相远没那么简单 - 搜狐网",
+      "id": "3849614d8fc81490f47bb2dd85021f947ddf23f6",
+      "title": "一年建成上海工厂的特斯拉，为何在Optimus身上栽了？真相远没那么简单 - sohu.com",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOX0l3Sk15RVVjVnBlaDlnSmctdjI0dlctRUFDdFY0WXBFUE9DckJDcEJ5SV9mTkVSY1FtWGhNVkxtOU1xaFhEMnZBWC1PTFk2VWtMZVNBakwzZmM4YzNONVRUZ3Vaa0RWSzZSR1pSWDhVRGx0U3JTRDY4dHQ3Y3Z3eURobzA0dExfWFhRag?oc=5",
       "published_at": "2026-08-08T11:58:40+00:00",
@@ -811,19 +874,19 @@
       "site_name": "国内人形机器人资讯",
       "source": "国内人形机器人资讯",
       "site_id": "国内人形机器人资讯",
-      "description": "一年建成上海工厂的特斯拉，为何在Optimus身上栽了？真相远没那么简单  搜狐网",
+      "description": "一年建成上海工厂的特斯拉，为何在Optimus身上栽了？真相远没那么简单  sohu.com",
       "ai_score": 35.0,
       "ai_label": "humanoid",
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.61,
+      "timeliness": 22.88,
       "writing_value": 0,
-      "total_score": 68.61
+      "total_score": 67.88
     },
     {
-      "id": "2c1e28ef2023a56726496520ec40fa6fcf7b848b",
-      "title": "硅基「大考」来了！机器人进厂打工，抢千万级实景订单 - 智源社区",
+      "id": "54c7c33b9d884305708e6437162ac648d34db486",
+      "title": "硅基「大考」来了！机器人进厂打工，抢千万级实景订单 - hub.baai.ac.cn",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBIS3Q1dFYxblhoMDhtZGxQUGhCeU9qRDVQbDl6LV9oVzBocy1OX0JEdlFoQ3dSVnd4VVBnb2JIMURKUk9QWVdwVQ?oc=5",
       "published_at": "2026-08-08T11:50:00+00:00",
@@ -832,19 +895,19 @@
       "site_name": "国内机器人资讯",
       "source": "国内机器人资讯",
       "site_id": "国内机器人资讯",
-      "description": "硅基「大考」来了！机器人进厂打工，抢千万级实景订单  智源社区",
+      "description": "硅基「大考」来了！机器人进厂打工，抢千万级实景订单  hub.baai.ac.cn",
       "ai_score": 35.0,
       "ai_label": "robotics",
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.46,
+      "timeliness": 22.73,
       "writing_value": 0,
-      "total_score": 68.46
+      "total_score": 67.73
     },
     {
-      "id": "48bac0ab75fb3df59b867e019d7391120dd0f08d",
-      "title": "企业家说 | 群核科技联合创始人兼董事长黄晓煌：拿着技术的“锤子”，去找产业的“钉子” - 搜狐网",
+      "id": "b2478fab87d053e971929281a1fd2f8e2edaeb70",
+      "title": "企业家说 | 群核科技联合创始人兼董事长黄晓煌：拿着技术的“锤子”，去找产业的“钉子” - sohu.com",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNclhwR1M5RFZINzVTWWxlZlpFTWEzZ0t4SzBFeGpIQmRFWWh0QnhMMm9tY2ctV2kzTWxHUkZTVk1sNzc3LVRmaG83Z21UOGwwTkhZUkxFdllvTXdUUkVlRjN6ODAtZGNkUFI0R3Q3RjMzV3hSM3dKRzNUZVB0OUk2YUZVM0J2Wm5wRkRmbA?oc=5",
       "published_at": "2026-08-08T11:48:01+00:00",
@@ -853,19 +916,19 @@
       "site_name": "国内物理AI资讯",
       "source": "国内物理AI资讯",
       "site_id": "国内物理AI资讯",
-      "description": "企业家说 | 群核科技联合创始人兼董事长黄晓煌：拿着技术的“锤子”，去找产业的“钉子”  搜狐网",
+      "description": "企业家说 | 群核科技联合创始人兼董事长黄晓煌：拿着技术的“锤子”，去找产业的“钉子”  sohu.com",
       "ai_score": 35.0,
       "ai_label": "physical_ai",
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.43,
+      "timeliness": 22.7,
       "writing_value": 0,
-      "total_score": 68.43
+      "total_score": 67.7
     },
     {
-      "id": "1b0b15dc0fa649d99bc2530d7965376dead78c77",
-      "title": "地瓜机器人「地心引力DemoDay」收官，欧拉万象、巡领科技、眺月科技斩获前三 - 搜狐网",
+      "id": "b35ab18e15512297843f020e7a0160e2a2858823",
+      "title": "地瓜机器人「地心引力DemoDay」收官，欧拉万象、巡领科技、眺月科技斩获前三 - sohu.com",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNYjNZS2NxX0lCNEYwNjRGNVEteERxVGFycXdFMmZjcHNmWDM5SFNhYlRlVlJfRG91ZWhWZERMQ2VITy1xdUJtNXNkYUNHbTVQaWViVl9jN2x6VnpVMXZJUVljbldTQjF5cHN0dXRmamFJQ1g0U3FKQjhBVHZqUnRwZmpJQlBhVF95dTRqTw?oc=5",
       "published_at": "2026-08-08T11:21:56+00:00",
@@ -874,15 +937,15 @@
       "site_name": "国内机器人资讯",
       "source": "国内机器人资讯",
       "site_id": "国内机器人资讯",
-      "description": "地瓜机器人「地心引力DemoDay」收官，欧拉万象、巡领科技、眺月科技斩获前三  搜狐网",
+      "description": "地瓜机器人「地心引力DemoDay」收官，欧拉万象、巡领科技、眺月科技斩获前三  sohu.com",
       "ai_score": 35.0,
       "ai_label": "robotics",
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 22.99,
+      "timeliness": 22.26,
       "writing_value": 0,
-      "total_score": 67.99
+      "total_score": 67.26
     },
     {
       "id": "8849520425aa7248e3ea010e232b469535881f24",
@@ -901,9 +964,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 22.9,
+      "timeliness": 22.17,
       "writing_value": 0,
-      "total_score": 67.9
+      "total_score": 67.17
     },
     {
       "id": "3d004b2888ac4be141a6d71d39519e5d1fd3b9db",
@@ -922,9 +985,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 22.9,
+      "timeliness": 22.17,
       "writing_value": 0,
-      "total_score": 67.9
+      "total_score": 67.17
     }
   ],
   "items_all": [
@@ -934,20 +997,20 @@
       "title_zh": "华尔街看到了价值数万亿美元的人形机器人市场。这两只工业股票出售零部件。 - 雅虎财经",
       "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNVENJd29fY1dFQUxQcV9IWFlNQ1VWVHVmTFlLbjgyY1RPbmNjc05QNDFYUGhGTFBTN0Z1Y2RTTkhCOUJEMmpqWU9CYVZwZElKblM0TUJXMFVKX3NxY1J1bG8zRnB2QmtpUExJNmlYZ0JKUEtuVFZiMUF4cXd6OXRCZE9pWjlmWGJkSTlnRHlNUlFyV1p2ZTBaS08zUjBDYTMxNi1N?oc=5",
       "published_at": "2026-08-08T13:25:00+00:00",
-      "category": "国外人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国外人形机器人资讯",
-      "source": "国外人形机器人资讯",
-      "site_id": "国外人形机器人资讯",
+      "category": "国外机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国外机器人资讯",
+      "source": "国外机器人资讯",
+      "site_id": "国外机器人资讯",
       "description": "Wall Street Sees a Multitrillion-Dollar Humanoid Robot Market. These 2 Industrial Stocks Sell the Parts.  Yahoo Finance",
       "ai_score": 80.0,
-      "ai_label": "humanoid",
+      "ai_label": "robotics",
       "relevance": 0.8,
       "authority": 10,
       "depth": 5,
-      "timeliness": 25.05,
+      "timeliness": 24.32,
       "writing_value": 5,
-      "total_score": 125.05
+      "total_score": 124.32
     },
     {
       "id": "96aadab660811217aaf6d807a32c17270435afc6",
@@ -966,13 +1029,13 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.66,
+      "timeliness": 28.93,
       "writing_value": 0,
-      "total_score": 119.66
+      "total_score": 118.93
     },
     {
-      "id": "77553565b3c47f94ad55dc2e4cb569412a563a68",
-      "title": "“人形机器人第一股”即将打新 这些细节你了解吗？ - 搜狐网",
+      "id": "99c21af352b49436e616bb64d80ac52d4280bf01",
+      "title": "“人形机器人第一股”即将打新 这些细节你了解吗？ - sohu.com",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPQmZBSjNhcUNmZlhkcC1ZRU5KM2R5TVNhNTlmajVUX2tBM0lISE9Ea0xHYVFSazlKN29NNDN5eDVfS0RlT1p6YXNpQ3l1M1h2UFhlMU11YmI1QjhHQjRCcmpMaURzcTk4OEdRMnRQVkFid2MtUm91M2NYNElscFdhVFgxNlJHemZO?oc=5",
       "published_at": "2026-08-08T15:21:37+00:00",
@@ -981,15 +1044,36 @@
       "site_name": "国内人形机器人资讯",
       "source": "国内人形机器人资讯",
       "site_id": "国内人形机器人资讯",
-      "description": "“人形机器人第一股”即将打新 这些细节你了解吗？  搜狐网",
+      "description": "“人形机器人第一股”即将打新 这些细节你了解吗？  sohu.com",
       "ai_score": 80.0,
       "ai_label": "humanoid",
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.99,
+      "timeliness": 26.26,
       "writing_value": 0,
-      "total_score": 116.99
+      "total_score": 116.26
+    },
+    {
+      "id": "ee7047163c8731d3f29689e5c4f2a45b7fb49650",
+      "title": "【汽车校友百校联盟】优必选机器人战略蓝图：以“工业先行”铸就中国具身智能的产业样本 - 电子工程专辑",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBhY1pmVTRxazhoQ3FoSVl2Y2hobk9ZYk9HMGZtREt1aXduOGl5ell5aVhvVndmSk81OEV3V09XSjZ0RUJtQlRwNVJjY3Atam1ObGZ3?oc=5",
+      "published_at": "2026-08-08T14:30:00+00:00",
+      "category": "国内具身智能资讯",
+      "gn_label": "embodied_ai",
+      "site_name": "国内具身智能资讯",
+      "source": "国内具身智能资讯",
+      "site_id": "国内具身智能资讯",
+      "description": "【汽车校友百校联盟】优必选机器人战略蓝图：以“工业先行”铸就中国具身智能的产业样本  电子工程专辑",
+      "ai_score": 80.0,
+      "ai_label": "embodied_ai",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 25.4,
+      "writing_value": 0,
+      "total_score": 115.4
     },
     {
       "id": "a499dd152b2919dfac591c1b51b6f6ff1fd4a529",
@@ -1008,51 +1092,51 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.13,
+      "timeliness": 25.4,
       "writing_value": 0,
-      "total_score": 116.13
+      "total_score": 115.4
     },
     {
-      "id": "ee7047163c8731d3f29689e5c4f2a45b7fb49650",
-      "title": "【汽车校友百校联盟】优必选机器人战略蓝图：以“工业先行”铸就中国具身智能的产业样本 - 电子工程专辑",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBhY1pmVTRxazhoQ3FoSVl2Y2hobk9ZYk9HMGZtREt1aXduOGl5ell5aVhvVndmSk81OEV3V09XSjZ0RUJtQlRwNVJjY3Atam1ObGZ3?oc=5",
-      "published_at": "2026-08-08T14:30:00+00:00",
-      "category": "国内人形机器人资讯",
+      "id": "1d28b94d24d8b2c0dba82a11644edbcfce7c7226",
+      "title": "Humanoid Robots Don't Fit in Store Aisles, So Robbyant Fixed That - Yanko Design",
+      "title_zh": "人形机器人不适合商店过道，所以 Robbyant 解决了这个问题 - Yanko Design",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNOFdvT3VQaGU5V3otcHAxVW1jQXh5OU80RjJ1OWxab2c0NVhzUjNpSVZGdzQ5ckwxRXdDNjFXdzQ4aDQ1cGpvSUc4Uk9PVHBYWnkzN2xWY1ZqdUtzdmtIaHBlaFRudkZWSERydWRXblRYcWhMenNVWF9WbVNvZmlkRW9yVWpaYTVlc1VfQzV3cGR0aWZPak53UkM3cjloVXdyRHp0bjJB0gGrAUFVX3lxTE1iUUYtZ241b2Y3Y3NHZHYzLTNjSVlGZGkxWTl3U05OOEtjU0ttcGVhdGNuRDdjaDloMXcwRjE3TUxpcHUyRC16ZThLTm9MQ0dXNVg0RjBMVWtiX3RaUnMtVkxrb0JNQ2dMZzBmSlk4anJhR2VyR0FVeldkRGdvUU9HeDQ0bTlmQ1l1MDlIa29iaUdfLWtOdW1DSEdoTjJmUlcxRWgxZl9mNklfSQ?oc=5",
+      "published_at": "2026-08-08T13:20:11+00:00",
+      "category": "国外人形机器人资讯",
       "gn_label": "humanoid",
-      "site_name": "国内人形机器人资讯",
-      "source": "国内人形机器人资讯",
-      "site_id": "国内人形机器人资讯",
-      "description": "【汽车校友百校联盟】优必选机器人战略蓝图：以“工业先行”铸就中国具身智能的产业样本  电子工程专辑",
+      "site_name": "国外人形机器人资讯",
+      "source": "国外人形机器人资讯",
+      "site_id": "国外人形机器人资讯",
+      "description": "Humanoid Robots Don't Fit in Store Aisles, So Robbyant Fixed That  Yanko Design",
       "ai_score": 80.0,
       "ai_label": "humanoid",
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.13,
+      "timeliness": 24.24,
       "writing_value": 0,
-      "total_score": 116.13
+      "total_score": 114.24
     },
     {
-      "id": "6044ab6ccafa0450f28b23555816b869c0c52053",
-      "title": "宇树科技破发？笑的合不拢嘴。进来了解一下具身智能的未来。 - 财富号",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE4yMlYyNTl1bFFLakVSeU5CeUJkVzZyTU1nQW1Hel9WSGIyMGJYLUtvYjhTQ3RPV0FLQ1BUVExIckFMT3VlTEtCbGwyRTVKWkYxTzROMEtQcENfdGZmaE5LMTAxa1ViblhBdVhF?oc=5",
-      "published_at": "2026-08-08T13:27:00+00:00",
-      "category": "国内具身智能资讯",
-      "gn_label": "embodied_ai",
-      "site_name": "国内具身智能资讯",
-      "source": "国内具身智能资讯",
-      "site_id": "国内具身智能资讯",
-      "description": "宇树科技破发？笑的合不拢嘴。进来了解一下具身智能的未来。  财富号",
-      "ai_score": 80.0,
-      "ai_label": "embodied_ai",
-      "relevance": 0.8,
+      "id": "4fd7ee417573c5b47c234195744b9d5407d276ac",
+      "title": "2,000+ Robots Abroad. 60+ Nations on Board. EXEED AiMOGA Going Farther, Growing Faster - Yahoo Finance",
+      "title_zh": "国外有 2,000 多个机器人。船上有 60 多个国家。 EXEED AiMOGA 走得更远，成长更快 - 雅虎财经",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNeUVHaFZaRU1pcnUwRTJGVnlVYjM3cjl6ZUhRSDh2ZjFxRUNmZGpkSHo5TWdEVXI1b3Q0VzY4WGxRd19UUzVzMl9IaDdBYld0cXZvTFh0aWQtbGpYR3Y2RlVjRWlYTjVWQTQ2Y2tSTTZOdnhHMDc1OU5oQXN4QlJNX2xYRXNZZzlteG40WlRGMA?oc=5",
+      "published_at": "2026-08-08T18:13:00+00:00",
+      "category": "国外机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国外机器人资讯",
+      "source": "国外机器人资讯",
+      "site_id": "国外机器人资讯",
+      "description": "2,000+ Robots Abroad. 60+ Nations on Board. EXEED AiMOGA Going Farther, Growing Faster  Yahoo Finance",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
       "authority": 10,
-      "depth": 0,
-      "timeliness": 25.08,
-      "writing_value": 0,
-      "total_score": 115.08
+      "depth": 5,
+      "timeliness": 29.12,
+      "writing_value": 5,
+      "total_score": 114.12
     },
     {
       "id": "1bc45b932c84261ec0838f4de014e83c94fe73a6",
@@ -1071,13 +1155,13 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.76,
+      "timeliness": 24.03,
       "writing_value": 0,
-      "total_score": 114.76
+      "total_score": 114.03
     },
     {
-      "id": "d60547b35f226bba5f702e8a109ea121ec4ec2da",
-      "title": "AMD为什么要押注人形机器人大脑？ - 搜狐网",
+      "id": "b2b96611d66853be466dc9084ef74205126c4474",
+      "title": "AMD为什么要押注人形机器人大脑？ - sohu.com",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQOVFjOG5acV9MU09TdFhxa2ZoeDh2OWR1Nk5RRlBwaVNzcHFIcm5GOE5XbzNSZ2V3TkxmTUcybnphZFRxYnd3UjZRZ0dRbThFMlBTMkhFWDlWTExTRDBJZWV0WUg5Unh1WFM5OThNXzlGeHVPeE1LZUpZZ0o0ZXRwR0F0UjRCbnYt?oc=5",
       "published_at": "2026-08-08T13:00:00+00:00",
@@ -1086,15 +1170,15 @@
       "site_name": "国内人形机器人资讯",
       "source": "国内人形机器人资讯",
       "site_id": "国内人形机器人资讯",
-      "description": "AMD为什么要押注人形机器人大脑？  搜狐网",
+      "description": "AMD为什么要押注人形机器人大脑？  sohu.com",
       "ai_score": 80.0,
       "ai_label": "humanoid",
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.63,
+      "timeliness": 23.9,
       "writing_value": 0,
-      "total_score": 114.63
+      "total_score": 113.9
     },
     {
       "id": "8c90c60746798039624ba277f912181967c02524",
@@ -1113,13 +1197,13 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.53,
+      "timeliness": 22.8,
       "writing_value": 0,
-      "total_score": 113.53
+      "total_score": 112.8
     },
     {
-      "id": "5067e93ce9263e47d5b1deb8e2aa798d101f1a93",
-      "title": "脑机接口进课堂 校企共建实验平台 - 搜狐网",
+      "id": "8dc844179897e1fbfcffcabc845af9fc4ac6ca75",
+      "title": "脑机接口进课堂 校企共建实验平台 - sohu.com",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxON09HcDhwWmFzRnE0NlkxSTdNUzgzZ1VVcmVOU3p1MW9ZZHJTOGxkcENGSlNuanBtQ1FEaDdHSF9mbXk3d1NJYnloZkRRNDMxXzk5V1JjeFdONGxGbm5pRWd4QWQ0NHJUSUJoZXU4UERnQTlnUnZRd1pFVkN6QzFsVFgyTVZtUDEtcEUySg?oc=5",
       "published_at": "2026-08-08T11:52:54+00:00",
@@ -1128,15 +1212,15 @@
       "site_name": "国内脑机接口资讯",
       "source": "国内脑机接口资讯",
       "site_id": "国内脑机接口资讯",
-      "description": "脑机接口进课堂 校企共建实验平台  搜狐网",
+      "description": "脑机接口进课堂 校企共建实验平台  sohu.com",
       "ai_score": 80.0,
       "ai_label": "brain_computer",
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.51,
+      "timeliness": 22.78,
       "writing_value": 0,
-      "total_score": 113.51
+      "total_score": 112.78
     },
     {
       "id": "a7a088f2c66e6380379d575eb5594858a45d882c",
@@ -1155,9 +1239,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 27.28,
+      "timeliness": 26.55,
       "writing_value": 5,
-      "total_score": 112.28
+      "total_score": 111.55
     },
     {
       "id": "d5f2953ae6e96f665a1434f81d35b4518d714c76",
@@ -1176,9 +1260,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 24.36,
+      "timeliness": 23.63,
       "writing_value": 5,
-      "total_score": 109.36
+      "total_score": 108.63
     },
     {
       "id": "49f53687a2daa782e1b40c25f64c0a60b069b18d",
@@ -1197,30 +1281,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 23.63,
+      "timeliness": 22.9,
       "writing_value": 5,
-      "total_score": 108.63
+      "total_score": 107.9
     },
     {
-      "id": "f90738055e4ac8515707dd79a01786c4011d4d8f",
-      "title": "The Robotic Surgery Leader: Intuitive Surgical Slides Further But One Wall Street Bull Pegs Returns at 85% - 24/7 Wall St.",
-      "title_zh": "机器人手术领导者：直观手术进一步下滑，但华尔街牛钉的回报率为 85% - 24/7 Wall St.",
-      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOM19Fc1dyd0lXQ0NxajUyS1QwLXJRLXMxQnl4aGx3SDRmbE54YkJLUTRsVzFyNEVEdE0waV9LemdiaEhoTFNsWmdGUEsxNUNLcmIyMlQwLVNaLXA1X0E4YTdCVHhvMC1UYjJLR3RHVzN1QlhFS2dqWmtKXzI3enY1R1VJSFBWS04xdnhublJJa0dBR0FMVEg4VWNrUmJPSVg3bXM5eXgyb2M4SHFWMnBmckg5b2M5R0Izay1PTUwxNlZNN0E3VXJjZmd3clpsUndDU0MzWHVnVVF6RkFNVXJLZVh3?oc=5",
-      "published_at": "2026-08-08T11:05:49+00:00",
+      "id": "41227edc3b4ac2c611a264853325f0c8c9dd3c62",
+      "title": "Robot Dogs Suddenly Taking Jobs From Human Security Guards - Futurism",
+      "title_zh": "机器狗突然抢走了人类保安的工作 - 未来主义",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOV1JJSkxXSFJNWmEybHJPcGd4N1pvbDZTMm9wZjVOQy1YVGU4bGhQREQtaHRxYzl4d3p3dFBqNFYxWHJuSjhndUsybFliOTNIVktad2ZvSng4R0lKM29DZ3Z4R3BrMDNsS3NPcW94b0NXeHFCOW9ZYjVlN3RaSC1MNjJzOG5uRmRPcF9XRA?oc=5",
+      "published_at": "2026-08-08T19:02:00+00:00",
       "category": "国外机器人资讯",
       "gn_label": "robotics",
       "site_name": "国外机器人资讯",
       "source": "国外机器人资讯",
       "site_id": "国外机器人资讯",
-      "description": "The Robotic Surgery Leader: Intuitive Surgical Slides Further But One Wall Street Bull Pegs Returns at 85%  24/7 Wall St.",
+      "description": "Robot Dogs Suddenly Taking Jobs From Human Security Guards  Futurism",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
-      "depth": 5,
-      "timeliness": 22.73,
-      "writing_value": 5,
-      "total_score": 107.73
+      "depth": 0,
+      "timeliness": 29.93,
+      "writing_value": 0,
+      "total_score": 104.93
     },
     {
       "id": "9b00d7df7290160417f13af0855941076a7b3aea",
@@ -1239,9 +1323,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.05,
+      "timeliness": 27.32,
       "writing_value": 0,
-      "total_score": 103.05
+      "total_score": 102.32
     },
     {
       "id": "7a2a84a94930d6a61fc9e640e3b2b9ee309e67ed",
@@ -1260,9 +1344,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.74,
+      "timeliness": 26.01,
       "writing_value": 0,
-      "total_score": 101.74
+      "total_score": 101.01
     },
     {
       "id": "ee80cf218bc3542f7a3560f75dd50e129f33be6e",
@@ -1281,13 +1365,13 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.13,
+      "timeliness": 25.4,
       "writing_value": 0,
-      "total_score": 101.13
+      "total_score": 100.4
     },
     {
-      "id": "82200091ba80ff5609ba8e0bbc202e521a8bda43",
-      "title": "宇树科技600亿估值，美团系获利超12倍，专项国资基金均超10倍，核心供应链的β行情抬升 - 搜狐网",
+      "id": "b53c28e08805c716d75f0438712ee4996133a871",
+      "title": "宇树科技600亿估值，美团系获利超12倍，专项国资基金均超10倍，核心供应链的β行情抬升 - sohu.com",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxORjVYMlUwMlhLcTYwZWdaM2NDQVJXZk5wNHlPSXViZUplUnpMc1lMcDhEeEdRZHNPOE9jdDc0cHdDbWpDdVJIMlEzODhxUzhnR2hFQ3pIOGY2VnQ5YmFBSkUwOHV6czFfR2xNeWliam5sdWh6cGpVaXlPQzlybnI4Sm9yb2NscUxk?oc=5",
       "published_at": "2026-08-08T12:47:27+00:00",
@@ -1296,15 +1380,15 @@
       "site_name": "国内人形机器人资讯",
       "source": "国内人形机器人资讯",
       "site_id": "国内人形机器人资讯",
-      "description": "宇树科技600亿估值，美团系获利超12倍，专项国资基金均超10倍，核心供应链的β行情抬升  搜狐网",
+      "description": "宇树科技600亿估值，美团系获利超12倍，专项国资基金均超10倍，核心供应链的β行情抬升  sohu.com",
       "ai_score": 65.0,
       "ai_label": "humanoid",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.42,
+      "timeliness": 23.69,
       "writing_value": 0,
-      "total_score": 99.42
+      "total_score": 98.69
     },
     {
       "id": "ef020ba9d6c178c2e729fd51b0fe060ae49658d5",
@@ -1323,9 +1407,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.3,
+      "timeliness": 23.57,
       "writing_value": 0,
-      "total_score": 99.3
+      "total_score": 98.57
     },
     {
       "id": "d9edcc61535982fe22bed3c9d12ea1a6b6579b3c",
@@ -1333,24 +1417,24 @@
       "title_zh": "RoboBusiness 专家展望机器人技术的未来 20 年 - 机器人报告",
       "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPdVJSNU9LZTNFb2F2NFVUcjZ4RHhFOVdwcUlhVS1IcjhUTWtWYkJLWXBuZG1TUVFSU1VPckdxRUtEN1FuYmlkaXhJSUg1aDU3ampWVjlRZnNwdVVkSGNaQmZnTllmT1h1RkU1Zmplc1IxYVlVRHFPRTdIS1FzbG1lOGpVVEI1MkN4TmFOTWF5VXE3Mm1yajdFc2RyTGg5YURh?oc=5",
       "published_at": "2026-08-08T12:35:25+00:00",
-      "category": "国外人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国外人形机器人资讯",
-      "source": "国外人形机器人资讯",
-      "site_id": "国外人形机器人资讯",
+      "category": "国外机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国外机器人资讯",
+      "source": "国外机器人资讯",
+      "site_id": "国外机器人资讯",
       "description": "Experts look ahead at the next 20 years of robotics at RoboBusiness  The Robot Report",
       "ai_score": 65.0,
-      "ai_label": "humanoid",
+      "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.22,
+      "timeliness": 23.49,
       "writing_value": 0,
-      "total_score": 99.22
+      "total_score": 98.49
     },
     {
-      "id": "4027f4074891dcbdde5d8b6325331c274dd45a7b",
-      "title": "两年三次募资，协作机器人第一股越疆科技从港回A - 搜狐网",
+      "id": "54889eabd72182888565479f353ca905e6b3a7f7",
+      "title": "两年三次募资，协作机器人第一股越疆科技从港回A - sohu.com",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNSzJRVUVjMzVJamdnNFJJa2tFMUY4U01PanliaGdZT2tBU3RYVmgzVUJGVElWQ0xCNWpaYmY0c2ZWdGdRTDFWRGJuRGNZaXo4UmE4LVN2Y0NZMC1pcE4zR3FNc2pOV3h1YXZYODVhTWJfbllXakFNNnczeHFnc0FSTzMxMnNzdUVxSVlIdQ?oc=5",
       "published_at": "2026-08-08T12:03:02+00:00",
@@ -1359,36 +1443,15 @@
       "site_name": "国内机器人资讯",
       "source": "国内机器人资讯",
       "site_id": "国内机器人资讯",
-      "description": "两年三次募资，协作机器人第一股越疆科技从港回A  搜狐网",
+      "description": "两年三次募资，协作机器人第一股越疆科技从港回A  sohu.com",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.68,
+      "timeliness": 22.95,
       "writing_value": 0,
-      "total_score": 98.68
-    },
-    {
-      "id": "cd7f1d0f5039065446831d9e840923ab975b8fa4",
-      "title": "首席科学家被“下架”，智元机器人IPO出现迷雾 - 凤凰网",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1HR09aY09jcGwyNU1wSGYwNGZvRzVUV2FhSjZTYjhxOWxUVmNVZ2JYYTZyQ1V4bVlhME9BV2JkOV8xR0pLYmVDekwxSDVrUFdR?oc=5",
-      "published_at": "2026-08-08T11:47:18+00:00",
-      "category": "国内人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国内人形机器人资讯",
-      "source": "国内人形机器人资讯",
-      "site_id": "国内人形机器人资讯",
-      "description": "首席科学家被“下架”，智元机器人IPO出现迷雾  凤凰网",
-      "ai_score": 65.0,
-      "ai_label": "humanoid",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 23.42,
-      "writing_value": 0,
-      "total_score": 98.42
+      "total_score": 97.95
     },
     {
       "id": "828d05752642435bc972800e7ff80e8d552ddf40",
@@ -1407,13 +1470,34 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.24,
+      "timeliness": 22.51,
       "writing_value": 0,
-      "total_score": 98.24
+      "total_score": 97.51
     },
     {
-      "id": "5ad2c0e66f9d71c9d299fc6a1dab1e878e69e081",
-      "title": "除了宇树科技，中国还有7家机器人企业，估值超过了200亿元 - 搜狐网",
+      "id": "63b36f7af167d2ca98168f6336c4f71fa0431597",
+      "title": "首席科学家被“下架”，智元机器人IPO出现迷雾 - 观察者",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBzX2FWelliM3U5ek1OR00tY19Qc1FrZ3l4d3JwVk9ucHdLbXQwOFExRXBMTFJvWEtnNGk2SFFZcE1TU29VM2xJU3pabU1Wby1kMVZ3YnJmUy1jTUM3WmI5ZDJsMHA?oc=5",
+      "published_at": "2026-08-08T11:36:00+00:00",
+      "category": "国内具身智能资讯",
+      "gn_label": "embodied_ai",
+      "site_name": "国内具身智能资讯",
+      "source": "国内具身智能资讯",
+      "site_id": "国内具身智能资讯",
+      "description": "首席科学家被“下架”，智元机器人IPO出现迷雾  观察者",
+      "ai_score": 65.0,
+      "ai_label": "embodied_ai",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 22.5,
+      "writing_value": 0,
+      "total_score": 97.5
+    },
+    {
+      "id": "3e9e9bec9065206961ee9b1201dea0fc21acf56f",
+      "title": "除了宇树科技，中国还有7家机器人企业，估值超过了200亿元 - sohu.com",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPS20wWURKZVFRbFBFYl83WnRocl9aR2YtSFVCbkZrUG9adjBVdXF1cjJ0NlNZMXliLTYyU0FCcVpkcUJReXh2ZUphbTdsTXZ0UjhHaWxzaHdRZTFickZsbXFLNEVjX21NdGJOZmZhdmV3OHBYVFpTTW42alBEaTM4WWpGQWZSRklZQTZHdg?oc=5",
       "published_at": "2026-08-08T11:35:18+00:00",
@@ -1422,15 +1506,36 @@
       "site_name": "国内人形机器人资讯",
       "source": "国内人形机器人资讯",
       "site_id": "国内人形机器人资讯",
-      "description": "除了宇树科技，中国还有7家机器人企业，估值超过了200亿元  搜狐网",
+      "description": "除了宇树科技，中国还有7家机器人企业，估值超过了200亿元  sohu.com",
       "ai_score": 65.0,
       "ai_label": "humanoid",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.22,
+      "timeliness": 22.49,
       "writing_value": 0,
-      "total_score": 98.22
+      "total_score": 97.49
+    },
+    {
+      "id": "8da04feaabb7fe29406dce18bbbf0c3a570ffb87",
+      "title": "文科生也能拿百万大奖，科目三脱口秀全网整活！智元灵创创意大赛来了 - 新浪财经",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFB1MzhFQ2JJQWw3U2trQ3h5SVZOZFB2S0dIQ2EzbGZoM1hQNzRQWVJpM3hIRWltdU1VVHpLX3ZydVV3RnpjdktFRjdsVG9TbjlWd1dBRWVYdF91SnpxdjNsNksyZjlIbUYzVk12bm92Z3ZNX3lDTU41dXVUR0M?oc=5",
+      "published_at": "2026-08-08T11:11:00+00:00",
+      "category": "国内人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国内人形机器人资讯",
+      "source": "国内人形机器人资讯",
+      "site_id": "国内人形机器人资讯",
+      "description": "文科生也能拿百万大奖，科目三脱口秀全网整活！智元灵创创意大赛来了  新浪财经",
+      "ai_score": 65.0,
+      "ai_label": "humanoid",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 22.08,
+      "writing_value": 0,
+      "total_score": 97.08
     },
     {
       "id": "22892ad7c22bbe68d77f92f85c38ece6d9c4818b",
@@ -1449,9 +1554,9 @@
       "relevance": 0.5,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.88,
+      "timeliness": 23.15,
       "writing_value": 0,
-      "total_score": 83.88
+      "total_score": 83.15
     },
     {
       "id": "da392d9063dc6996c1b33ffb1d1f1ccdd8e95f43",
@@ -1470,13 +1575,34 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 5,
-      "timeliness": 28.29,
+      "timeliness": 27.56,
       "writing_value": 5,
-      "total_score": 83.29
+      "total_score": 82.56
     },
     {
-      "id": "3ae265fc93bffd27d6c78894eac48760f1e1e4f4",
-      "title": "青年鲁班颁奖典礼在港举办 首度增设建筑机器人竞赛项目 - 搜狐网",
+      "id": "e556be507ba3e8491fcb5e399b6d1b8062ccf93c",
+      "title": "福州第一高塔桥梁迎来“机器人医生” - fznews.com.cn",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9KSGpzcW1reUdyOENCTXN2endnWHdnakhXM2huMEgxbVFxODgydko3dHBpcTRHZFo0VXUzdFhpbVBjQVNoWFBrdjFPc3QzUDBJU3VqaXFLbTljZnpFaHd6MWNUdWw?oc=5",
+      "published_at": "2026-08-08T16:31:09+00:00",
+      "category": "国内机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国内机器人资讯",
+      "source": "国内机器人资讯",
+      "site_id": "国内机器人资讯",
+      "description": "福州第一高塔桥梁迎来“机器人医生”  fznews.com.cn",
+      "ai_score": 35.0,
+      "ai_label": "robotics",
+      "relevance": 0.35,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 27.42,
+      "writing_value": 0,
+      "total_score": 72.42
+    },
+    {
+      "id": "6d9bfd28c7097dd7b82416ceae45c6f754e38b5f",
+      "title": "青年鲁班颁奖典礼在港举办 首度增设建筑机器人竞赛项目 - sohu.com",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPakFpWGdraHZaallVakpRbUZyRWV6MS1rNGh5UGhGeG9aWUtQVVltNTdNb1VZd2gwZzBOdzBDeDd2cnZiMTlGN2RxZWo3emszRnM5WW03X0xZa0Vqcks3UWdBaTlCSG5CTlp3X213ckdIX3FDUmNtNDFaQ0RQdDV0c1cyUVBhV0xBMjB6NQ?oc=5",
       "published_at": "2026-08-08T15:35:04+00:00",
@@ -1485,19 +1611,19 @@
       "site_name": "国内机器人资讯",
       "source": "国内机器人资讯",
       "site_id": "国内机器人资讯",
-      "description": "青年鲁班颁奖典礼在港举办 首度增设建筑机器人竞赛项目  搜狐网",
+      "description": "青年鲁班颁奖典礼在港举办 首度增设建筑机器人竞赛项目  sohu.com",
       "ai_score": 35.0,
       "ai_label": "robotics",
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.21,
+      "timeliness": 26.48,
       "writing_value": 0,
-      "total_score": 72.21
+      "total_score": 71.48
     },
     {
-      "id": "cc4d4f4974d41e1b82eb67472fcc1c574817014a",
-      "title": "青岛首个机器人6S体验店启幕！百年中山路再添未来科技新地标 - 搜狐网",
+      "id": "f23b1033851a74bb0afc4b459687a3a2ef7a37a5",
+      "title": "青岛首个机器人6S体验店启幕！百年中山路再添未来科技新地标 - sohu.com",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOX0hiQzd4Q3pKbm5odC1hSDF4X0N2YTd4ckx5X1J0aDB4RFBjLTBBc1FhMzVGMkttdk1XbUVKQk5zNC1qcm5tTl9oOWhKT2xOR0NuMUN2NVluMmgybFEtSVhXMk03eEprMS1ZRDYzSEVIYVg5dkxsTU5fb0lvbzB0alJBMkhiRDd3VUk2Vw?oc=5",
       "published_at": "2026-08-08T15:21:04+00:00",
@@ -1506,19 +1632,19 @@
       "site_name": "国内具身智能资讯",
       "source": "国内具身智能资讯",
       "site_id": "国内具身智能资讯",
-      "description": "青岛首个机器人6S体验店启幕！百年中山路再添未来科技新地标  搜狐网",
+      "description": "青岛首个机器人6S体验店启幕！百年中山路再添未来科技新地标  sohu.com",
       "ai_score": 35.0,
       "ai_label": "embodied_ai",
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.98,
+      "timeliness": 26.25,
       "writing_value": 0,
-      "total_score": 71.98
+      "total_score": 71.25
     },
     {
-      "id": "1ba7fb26717fea34a320620e4d1c90ff443b45e3",
-      "title": "AI机器人终极对决 - 新浪财经",
+      "id": "62a6f93defcd1d94129d846f2ddee610e61b5288",
+      "title": "AI机器人终极对决 - t.cj.sina.cn",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNc1N2OGZlaGhMX3FXS2dkWnVyeTZKWmxzZWZDdkxHUC0zdnRib2JzUGFUc1FReUJMNV95dUI3Y2hOeUVLR0U2M2paMTMwb3d0U0JRLUV2QlBnMkF1RFBLM19EdEhEekwyR3g2MmRfOXZSQnVPVWJoMDhSQThZLTl2WndqNVlKVkU?oc=5",
       "published_at": "2026-08-08T15:19:58+00:00",
@@ -1527,15 +1653,15 @@
       "site_name": "国内机器人资讯",
       "source": "国内机器人资讯",
       "site_id": "国内机器人资讯",
-      "description": "AI机器人终极对决  新浪财经",
+      "description": "AI机器人终极对决  t.cj.sina.cn",
       "ai_score": 35.0,
       "ai_label": "robotics",
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.96,
+      "timeliness": 26.23,
       "writing_value": 0,
-      "total_score": 71.96
+      "total_score": 71.23
     },
     {
       "id": "0359936c1308d750cc586fff214284eb92865590",
@@ -1554,13 +1680,13 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.89,
+      "timeliness": 25.16,
       "writing_value": 0,
-      "total_score": 70.89
+      "total_score": 70.16
     },
     {
-      "id": "c387f2004bd8ede2c26845d77a339982969a01e3",
-      "title": "腾讯的野心藏不住了 - 搜狐网",
+      "id": "e2134e34f8b6373363cbac6ed8c46391b12d99c5",
+      "title": "腾讯的野心藏不住了 - sohu.com",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNU3dqelVnUlUtdnhqQTFkVEs2aHdFV1pUMjB0aTE0dllJaHZSUW1kV3VjRTFrbVZMRHI4bzA3TWR6TlMwclp1N3hQejVEOFpHcU9NYkFXQzlxUnBnanpVSFR5SmN4S3BUeTRGNTh2VENzWHdtcFM0eTQ2dGR3bEMxX2FYWmlVaTF6?oc=5",
       "published_at": "2026-08-08T13:58:02+00:00",
@@ -1569,15 +1695,15 @@
       "site_name": "国内具身智能资讯",
       "source": "国内具身智能资讯",
       "site_id": "国内具身智能资讯",
-      "description": "腾讯的野心藏不住了  搜狐网",
+      "description": "腾讯的野心藏不住了  sohu.com",
       "ai_score": 35.0,
       "ai_label": "embodied_ai",
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.6,
+      "timeliness": 24.87,
       "writing_value": 0,
-      "total_score": 70.6
+      "total_score": 69.87
     },
     {
       "id": "a27d1c17e57296a9ee505da1738eaf6ffa5c28ae",
@@ -1596,9 +1722,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.18,
+      "timeliness": 24.45,
       "writing_value": 0,
-      "total_score": 70.18
+      "total_score": 69.45
     },
     {
       "id": "c44528d4359940893332640c6cdfb975bd50a0ab",
@@ -1617,9 +1743,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.93,
+      "timeliness": 24.2,
       "writing_value": 0,
-      "total_score": 69.93
+      "total_score": 69.2
     },
     {
       "id": "0ce8999e01fb2027e39828617be8a0ce3f2c6fbf",
@@ -1638,9 +1764,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.44,
+      "timeliness": 23.71,
       "writing_value": 0,
-      "total_score": 69.44
+      "total_score": 68.71
     },
     {
       "id": "769b3433ec137e40d320f5c2e7e98c16d5a05e2b",
@@ -1659,9 +1785,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.37,
+      "timeliness": 23.64,
       "writing_value": 0,
-      "total_score": 69.37
+      "total_score": 68.64
     },
     {
       "id": "84eb436e21c944e3f87b2329daf7e66138899e2d",
@@ -1680,13 +1806,13 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.26,
+      "timeliness": 23.53,
       "writing_value": 0,
-      "total_score": 69.26
+      "total_score": 68.53
     },
     {
-      "id": "5222ddd8c91822d711fbdb54ac5c0c8352244b6e",
-      "title": "近40家企业决战智慧康养机器人应用大赛 互动陪伴机器人有望成为可靠“养老搭子” - 搜狐网",
+      "id": "6b717baa348b5ee0d0490c42e6386a91409a50e2",
+      "title": "近40家企业决战智慧康养机器人应用大赛 互动陪伴机器人有望成为可靠“养老搭子” - sohu.com",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOTDh1SS1zbEZrRnlwQ242ZHdVbWZmV1BVQl8wa1dlSDhaV0FPTVJGWlMwY0RxTFpTUWt5ZnNYTXhOWHk0dUladlBkMUFJcjFLcVRxN1V1cVZ6SmVNUUg3a2dxY2kwdzdRLUwwM2xpRVBHVzNqblRKVEYwY21sMHRlRV96Y29JUXlONms4Mg?oc=5",
       "published_at": "2026-08-08T12:34:01+00:00",
@@ -1695,19 +1821,19 @@
       "site_name": "国内机器人资讯",
       "source": "国内机器人资讯",
       "site_id": "国内机器人资讯",
-      "description": "近40家企业决战智慧康养机器人应用大赛 互动陪伴机器人有望成为可靠“养老搭子”  搜狐网",
+      "description": "近40家企业决战智慧康养机器人应用大赛 互动陪伴机器人有望成为可靠“养老搭子”  sohu.com",
       "ai_score": 35.0,
       "ai_label": "robotics",
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.2,
+      "timeliness": 23.47,
       "writing_value": 0,
-      "total_score": 69.2
+      "total_score": 68.47
     },
     {
-      "id": "af9287ed0ac644ee17f47d714d4393df61cfb11c",
-      "title": "松延动力的阳谋：挟春晚之势把\"陪伴\"做成一门生意 - 搜狐网",
+      "id": "d81a5de1455354e1c400ab23061c39a911a8ef6b",
+      "title": "松延动力的阳谋：挟春晚之势把\"陪伴\"做成一门生意 - sohu.com",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQazg3QVdwRkJjdjJkZnpPbURHcTRmcUhlTFRiMl9nNmVKVXp4UHI2cThfdEJlS1dpcWdpMVEtQmgycEpKZng0RnUtakpBNnVHTnpfVllDc1lTbkhtb1pGODV0RDk5ZFBySUY4cjlYdVFtZVNvcDFlaEIyZUdva05OVnhvaEQyNnkwQ0hYdg?oc=5",
       "published_at": "2026-08-08T12:00:33+00:00",
@@ -1716,19 +1842,19 @@
       "site_name": "国内人形机器人资讯",
       "source": "国内人形机器人资讯",
       "site_id": "国内人形机器人资讯",
-      "description": "松延动力的阳谋：挟春晚之势把\"陪伴\"做成一门生意  搜狐网",
+      "description": "松延动力的阳谋：挟春晚之势把\"陪伴\"做成一门生意  sohu.com",
       "ai_score": 35.0,
       "ai_label": "humanoid",
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.64,
+      "timeliness": 22.91,
       "writing_value": 0,
-      "total_score": 68.64
+      "total_score": 67.91
     },
     {
-      "id": "b9cfd2846fc73924404300e986a3b9d0951afc48",
-      "title": "一年建成上海工厂的特斯拉，为何在Optimus身上栽了？真相远没那么简单 - 搜狐网",
+      "id": "3849614d8fc81490f47bb2dd85021f947ddf23f6",
+      "title": "一年建成上海工厂的特斯拉，为何在Optimus身上栽了？真相远没那么简单 - sohu.com",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOX0l3Sk15RVVjVnBlaDlnSmctdjI0dlctRUFDdFY0WXBFUE9DckJDcEJ5SV9mTkVSY1FtWGhNVkxtOU1xaFhEMnZBWC1PTFk2VWtMZVNBakwzZmM4YzNONVRUZ3Vaa0RWSzZSR1pSWDhVRGx0U3JTRDY4dHQ3Y3Z3eURobzA0dExfWFhRag?oc=5",
       "published_at": "2026-08-08T11:58:40+00:00",
@@ -1737,19 +1863,19 @@
       "site_name": "国内人形机器人资讯",
       "source": "国内人形机器人资讯",
       "site_id": "国内人形机器人资讯",
-      "description": "一年建成上海工厂的特斯拉，为何在Optimus身上栽了？真相远没那么简单  搜狐网",
+      "description": "一年建成上海工厂的特斯拉，为何在Optimus身上栽了？真相远没那么简单  sohu.com",
       "ai_score": 35.0,
       "ai_label": "humanoid",
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.61,
+      "timeliness": 22.88,
       "writing_value": 0,
-      "total_score": 68.61
+      "total_score": 67.88
     },
     {
-      "id": "2c1e28ef2023a56726496520ec40fa6fcf7b848b",
-      "title": "硅基「大考」来了！机器人进厂打工，抢千万级实景订单 - 智源社区",
+      "id": "54c7c33b9d884305708e6437162ac648d34db486",
+      "title": "硅基「大考」来了！机器人进厂打工，抢千万级实景订单 - hub.baai.ac.cn",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBIS3Q1dFYxblhoMDhtZGxQUGhCeU9qRDVQbDl6LV9oVzBocy1OX0JEdlFoQ3dSVnd4VVBnb2JIMURKUk9QWVdwVQ?oc=5",
       "published_at": "2026-08-08T11:50:00+00:00",
@@ -1758,19 +1884,19 @@
       "site_name": "国内机器人资讯",
       "source": "国内机器人资讯",
       "site_id": "国内机器人资讯",
-      "description": "硅基「大考」来了！机器人进厂打工，抢千万级实景订单  智源社区",
+      "description": "硅基「大考」来了！机器人进厂打工，抢千万级实景订单  hub.baai.ac.cn",
       "ai_score": 35.0,
       "ai_label": "robotics",
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.46,
+      "timeliness": 22.73,
       "writing_value": 0,
-      "total_score": 68.46
+      "total_score": 67.73
     },
     {
-      "id": "48bac0ab75fb3df59b867e019d7391120dd0f08d",
-      "title": "企业家说 | 群核科技联合创始人兼董事长黄晓煌：拿着技术的“锤子”，去找产业的“钉子” - 搜狐网",
+      "id": "b2478fab87d053e971929281a1fd2f8e2edaeb70",
+      "title": "企业家说 | 群核科技联合创始人兼董事长黄晓煌：拿着技术的“锤子”，去找产业的“钉子” - sohu.com",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNclhwR1M5RFZINzVTWWxlZlpFTWEzZ0t4SzBFeGpIQmRFWWh0QnhMMm9tY2ctV2kzTWxHUkZTVk1sNzc3LVRmaG83Z21UOGwwTkhZUkxFdllvTXdUUkVlRjN6ODAtZGNkUFI0R3Q3RjMzV3hSM3dKRzNUZVB0OUk2YUZVM0J2Wm5wRkRmbA?oc=5",
       "published_at": "2026-08-08T11:48:01+00:00",
@@ -1779,19 +1905,19 @@
       "site_name": "国内物理AI资讯",
       "source": "国内物理AI资讯",
       "site_id": "国内物理AI资讯",
-      "description": "企业家说 | 群核科技联合创始人兼董事长黄晓煌：拿着技术的“锤子”，去找产业的“钉子”  搜狐网",
+      "description": "企业家说 | 群核科技联合创始人兼董事长黄晓煌：拿着技术的“锤子”，去找产业的“钉子”  sohu.com",
       "ai_score": 35.0,
       "ai_label": "physical_ai",
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.43,
+      "timeliness": 22.7,
       "writing_value": 0,
-      "total_score": 68.43
+      "total_score": 67.7
     },
     {
-      "id": "1b0b15dc0fa649d99bc2530d7965376dead78c77",
-      "title": "地瓜机器人「地心引力DemoDay」收官，欧拉万象、巡领科技、眺月科技斩获前三 - 搜狐网",
+      "id": "b35ab18e15512297843f020e7a0160e2a2858823",
+      "title": "地瓜机器人「地心引力DemoDay」收官，欧拉万象、巡领科技、眺月科技斩获前三 - sohu.com",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNYjNZS2NxX0lCNEYwNjRGNVEteERxVGFycXdFMmZjcHNmWDM5SFNhYlRlVlJfRG91ZWhWZERMQ2VITy1xdUJtNXNkYUNHbTVQaWViVl9jN2x6VnpVMXZJUVljbldTQjF5cHN0dXRmamFJQ1g0U3FKQjhBVHZqUnRwZmpJQlBhVF95dTRqTw?oc=5",
       "published_at": "2026-08-08T11:21:56+00:00",
@@ -1800,15 +1926,15 @@
       "site_name": "国内机器人资讯",
       "source": "国内机器人资讯",
       "site_id": "国内机器人资讯",
-      "description": "地瓜机器人「地心引力DemoDay」收官，欧拉万象、巡领科技、眺月科技斩获前三  搜狐网",
+      "description": "地瓜机器人「地心引力DemoDay」收官，欧拉万象、巡领科技、眺月科技斩获前三  sohu.com",
       "ai_score": 35.0,
       "ai_label": "robotics",
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 22.99,
+      "timeliness": 22.26,
       "writing_value": 0,
-      "total_score": 67.99
+      "total_score": 67.26
     },
     {
       "id": "8849520425aa7248e3ea010e232b469535881f24",
@@ -1827,9 +1953,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 22.9,
+      "timeliness": 22.17,
       "writing_value": 0,
-      "total_score": 67.9
+      "total_score": 67.17
     },
     {
       "id": "3d004b2888ac4be141a6d71d39519e5d1fd3b9db",
@@ -1848,9 +1974,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 22.9,
+      "timeliness": 22.17,
       "writing_value": 0,
-      "total_score": 67.9
+      "total_score": 67.17
     }
   ],
   "items_all_raw": [
@@ -1860,20 +1986,20 @@
       "title_zh": "华尔街看到了价值数万亿美元的人形机器人市场。这两只工业股票出售零部件。 - 雅虎财经",
       "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNVENJd29fY1dFQUxQcV9IWFlNQ1VWVHVmTFlLbjgyY1RPbmNjc05QNDFYUGhGTFBTN0Z1Y2RTTkhCOUJEMmpqWU9CYVZwZElKblM0TUJXMFVKX3NxY1J1bG8zRnB2QmtpUExJNmlYZ0JKUEtuVFZiMUF4cXd6OXRCZE9pWjlmWGJkSTlnRHlNUlFyV1p2ZTBaS08zUjBDYTMxNi1N?oc=5",
       "published_at": "2026-08-08T13:25:00+00:00",
-      "category": "国外人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国外人形机器人资讯",
-      "source": "国外人形机器人资讯",
-      "site_id": "国外人形机器人资讯",
+      "category": "国外机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国外机器人资讯",
+      "source": "国外机器人资讯",
+      "site_id": "国外机器人资讯",
       "description": "Wall Street Sees a Multitrillion-Dollar Humanoid Robot Market. These 2 Industrial Stocks Sell the Parts.  Yahoo Finance",
       "ai_score": 80.0,
-      "ai_label": "humanoid",
+      "ai_label": "robotics",
       "relevance": 0.8,
       "authority": 10,
       "depth": 5,
-      "timeliness": 25.05,
+      "timeliness": 24.32,
       "writing_value": 5,
-      "total_score": 125.05
+      "total_score": 124.32
     },
     {
       "id": "96aadab660811217aaf6d807a32c17270435afc6",
@@ -1892,13 +2018,13 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.66,
+      "timeliness": 28.93,
       "writing_value": 0,
-      "total_score": 119.66
+      "total_score": 118.93
     },
     {
-      "id": "77553565b3c47f94ad55dc2e4cb569412a563a68",
-      "title": "“人形机器人第一股”即将打新 这些细节你了解吗？ - 搜狐网",
+      "id": "99c21af352b49436e616bb64d80ac52d4280bf01",
+      "title": "“人形机器人第一股”即将打新 这些细节你了解吗？ - sohu.com",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPQmZBSjNhcUNmZlhkcC1ZRU5KM2R5TVNhNTlmajVUX2tBM0lISE9Ea0xHYVFSazlKN29NNDN5eDVfS0RlT1p6YXNpQ3l1M1h2UFhlMU11YmI1QjhHQjRCcmpMaURzcTk4OEdRMnRQVkFid2MtUm91M2NYNElscFdhVFgxNlJHemZO?oc=5",
       "published_at": "2026-08-08T15:21:37+00:00",
@@ -1907,15 +2033,36 @@
       "site_name": "国内人形机器人资讯",
       "source": "国内人形机器人资讯",
       "site_id": "国内人形机器人资讯",
-      "description": "“人形机器人第一股”即将打新 这些细节你了解吗？  搜狐网",
+      "description": "“人形机器人第一股”即将打新 这些细节你了解吗？  sohu.com",
       "ai_score": 80.0,
       "ai_label": "humanoid",
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.99,
+      "timeliness": 26.26,
       "writing_value": 0,
-      "total_score": 116.99
+      "total_score": 116.26
+    },
+    {
+      "id": "ee7047163c8731d3f29689e5c4f2a45b7fb49650",
+      "title": "【汽车校友百校联盟】优必选机器人战略蓝图：以“工业先行”铸就中国具身智能的产业样本 - 电子工程专辑",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBhY1pmVTRxazhoQ3FoSVl2Y2hobk9ZYk9HMGZtREt1aXduOGl5ell5aVhvVndmSk81OEV3V09XSjZ0RUJtQlRwNVJjY3Atam1ObGZ3?oc=5",
+      "published_at": "2026-08-08T14:30:00+00:00",
+      "category": "国内具身智能资讯",
+      "gn_label": "embodied_ai",
+      "site_name": "国内具身智能资讯",
+      "source": "国内具身智能资讯",
+      "site_id": "国内具身智能资讯",
+      "description": "【汽车校友百校联盟】优必选机器人战略蓝图：以“工业先行”铸就中国具身智能的产业样本  电子工程专辑",
+      "ai_score": 80.0,
+      "ai_label": "embodied_ai",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 25.4,
+      "writing_value": 0,
+      "total_score": 115.4
     },
     {
       "id": "a499dd152b2919dfac591c1b51b6f6ff1fd4a529",
@@ -1934,51 +2081,51 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.13,
+      "timeliness": 25.4,
       "writing_value": 0,
-      "total_score": 116.13
+      "total_score": 115.4
     },
     {
-      "id": "ee7047163c8731d3f29689e5c4f2a45b7fb49650",
-      "title": "【汽车校友百校联盟】优必选机器人战略蓝图：以“工业先行”铸就中国具身智能的产业样本 - 电子工程专辑",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBhY1pmVTRxazhoQ3FoSVl2Y2hobk9ZYk9HMGZtREt1aXduOGl5ell5aVhvVndmSk81OEV3V09XSjZ0RUJtQlRwNVJjY3Atam1ObGZ3?oc=5",
-      "published_at": "2026-08-08T14:30:00+00:00",
-      "category": "国内人形机器人资讯",
+      "id": "1d28b94d24d8b2c0dba82a11644edbcfce7c7226",
+      "title": "Humanoid Robots Don't Fit in Store Aisles, So Robbyant Fixed That - Yanko Design",
+      "title_zh": "人形机器人不适合商店过道，所以 Robbyant 解决了这个问题 - Yanko Design",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNOFdvT3VQaGU5V3otcHAxVW1jQXh5OU80RjJ1OWxab2c0NVhzUjNpSVZGdzQ5ckwxRXdDNjFXdzQ4aDQ1cGpvSUc4Uk9PVHBYWnkzN2xWY1ZqdUtzdmtIaHBlaFRudkZWSERydWRXblRYcWhMenNVWF9WbVNvZmlkRW9yVWpaYTVlc1VfQzV3cGR0aWZPak53UkM3cjloVXdyRHp0bjJB0gGrAUFVX3lxTE1iUUYtZ241b2Y3Y3NHZHYzLTNjSVlGZGkxWTl3U05OOEtjU0ttcGVhdGNuRDdjaDloMXcwRjE3TUxpcHUyRC16ZThLTm9MQ0dXNVg0RjBMVWtiX3RaUnMtVkxrb0JNQ2dMZzBmSlk4anJhR2VyR0FVeldkRGdvUU9HeDQ0bTlmQ1l1MDlIa29iaUdfLWtOdW1DSEdoTjJmUlcxRWgxZl9mNklfSQ?oc=5",
+      "published_at": "2026-08-08T13:20:11+00:00",
+      "category": "国外人形机器人资讯",
       "gn_label": "humanoid",
-      "site_name": "国内人形机器人资讯",
-      "source": "国内人形机器人资讯",
-      "site_id": "国内人形机器人资讯",
-      "description": "【汽车校友百校联盟】优必选机器人战略蓝图：以“工业先行”铸就中国具身智能的产业样本  电子工程专辑",
+      "site_name": "国外人形机器人资讯",
+      "source": "国外人形机器人资讯",
+      "site_id": "国外人形机器人资讯",
+      "description": "Humanoid Robots Don't Fit in Store Aisles, So Robbyant Fixed That  Yanko Design",
       "ai_score": 80.0,
       "ai_label": "humanoid",
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.13,
+      "timeliness": 24.24,
       "writing_value": 0,
-      "total_score": 116.13
+      "total_score": 114.24
     },
     {
-      "id": "6044ab6ccafa0450f28b23555816b869c0c52053",
-      "title": "宇树科技破发？笑的合不拢嘴。进来了解一下具身智能的未来。 - 财富号",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE4yMlYyNTl1bFFLakVSeU5CeUJkVzZyTU1nQW1Hel9WSGIyMGJYLUtvYjhTQ3RPV0FLQ1BUVExIckFMT3VlTEtCbGwyRTVKWkYxTzROMEtQcENfdGZmaE5LMTAxa1ViblhBdVhF?oc=5",
-      "published_at": "2026-08-08T13:27:00+00:00",
-      "category": "国内具身智能资讯",
-      "gn_label": "embodied_ai",
-      "site_name": "国内具身智能资讯",
-      "source": "国内具身智能资讯",
-      "site_id": "国内具身智能资讯",
-      "description": "宇树科技破发？笑的合不拢嘴。进来了解一下具身智能的未来。  财富号",
-      "ai_score": 80.0,
-      "ai_label": "embodied_ai",
-      "relevance": 0.8,
+      "id": "4fd7ee417573c5b47c234195744b9d5407d276ac",
+      "title": "2,000+ Robots Abroad. 60+ Nations on Board. EXEED AiMOGA Going Farther, Growing Faster - Yahoo Finance",
+      "title_zh": "国外有 2,000 多个机器人。船上有 60 多个国家。 EXEED AiMOGA 走得更远，成长更快 - 雅虎财经",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNeUVHaFZaRU1pcnUwRTJGVnlVYjM3cjl6ZUhRSDh2ZjFxRUNmZGpkSHo5TWdEVXI1b3Q0VzY4WGxRd19UUzVzMl9IaDdBYld0cXZvTFh0aWQtbGpYR3Y2RlVjRWlYTjVWQTQ2Y2tSTTZOdnhHMDc1OU5oQXN4QlJNX2xYRXNZZzlteG40WlRGMA?oc=5",
+      "published_at": "2026-08-08T18:13:00+00:00",
+      "category": "国外机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国外机器人资讯",
+      "source": "国外机器人资讯",
+      "site_id": "国外机器人资讯",
+      "description": "2,000+ Robots Abroad. 60+ Nations on Board. EXEED AiMOGA Going Farther, Growing Faster  Yahoo Finance",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
       "authority": 10,
-      "depth": 0,
-      "timeliness": 25.08,
-      "writing_value": 0,
-      "total_score": 115.08
+      "depth": 5,
+      "timeliness": 29.12,
+      "writing_value": 5,
+      "total_score": 114.12
     },
     {
       "id": "1bc45b932c84261ec0838f4de014e83c94fe73a6",
@@ -1997,13 +2144,13 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.76,
+      "timeliness": 24.03,
       "writing_value": 0,
-      "total_score": 114.76
+      "total_score": 114.03
     },
     {
-      "id": "d60547b35f226bba5f702e8a109ea121ec4ec2da",
-      "title": "AMD为什么要押注人形机器人大脑？ - 搜狐网",
+      "id": "b2b96611d66853be466dc9084ef74205126c4474",
+      "title": "AMD为什么要押注人形机器人大脑？ - sohu.com",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQOVFjOG5acV9MU09TdFhxa2ZoeDh2OWR1Nk5RRlBwaVNzcHFIcm5GOE5XbzNSZ2V3TkxmTUcybnphZFRxYnd3UjZRZ0dRbThFMlBTMkhFWDlWTExTRDBJZWV0WUg5Unh1WFM5OThNXzlGeHVPeE1LZUpZZ0o0ZXRwR0F0UjRCbnYt?oc=5",
       "published_at": "2026-08-08T13:00:00+00:00",
@@ -2012,15 +2159,15 @@
       "site_name": "国内人形机器人资讯",
       "source": "国内人形机器人资讯",
       "site_id": "国内人形机器人资讯",
-      "description": "AMD为什么要押注人形机器人大脑？  搜狐网",
+      "description": "AMD为什么要押注人形机器人大脑？  sohu.com",
       "ai_score": 80.0,
       "ai_label": "humanoid",
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.63,
+      "timeliness": 23.9,
       "writing_value": 0,
-      "total_score": 114.63
+      "total_score": 113.9
     },
     {
       "id": "8c90c60746798039624ba277f912181967c02524",
@@ -2039,13 +2186,13 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.53,
+      "timeliness": 22.8,
       "writing_value": 0,
-      "total_score": 113.53
+      "total_score": 112.8
     },
     {
-      "id": "5067e93ce9263e47d5b1deb8e2aa798d101f1a93",
-      "title": "脑机接口进课堂 校企共建实验平台 - 搜狐网",
+      "id": "8dc844179897e1fbfcffcabc845af9fc4ac6ca75",
+      "title": "脑机接口进课堂 校企共建实验平台 - sohu.com",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxON09HcDhwWmFzRnE0NlkxSTdNUzgzZ1VVcmVOU3p1MW9ZZHJTOGxkcENGSlNuanBtQ1FEaDdHSF9mbXk3d1NJYnloZkRRNDMxXzk5V1JjeFdONGxGbm5pRWd4QWQ0NHJUSUJoZXU4UERnQTlnUnZRd1pFVkN6QzFsVFgyTVZtUDEtcEUySg?oc=5",
       "published_at": "2026-08-08T11:52:54+00:00",
@@ -2054,15 +2201,15 @@
       "site_name": "国内脑机接口资讯",
       "source": "国内脑机接口资讯",
       "site_id": "国内脑机接口资讯",
-      "description": "脑机接口进课堂 校企共建实验平台  搜狐网",
+      "description": "脑机接口进课堂 校企共建实验平台  sohu.com",
       "ai_score": 80.0,
       "ai_label": "brain_computer",
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.51,
+      "timeliness": 22.78,
       "writing_value": 0,
-      "total_score": 113.51
+      "total_score": 112.78
     },
     {
       "id": "a7a088f2c66e6380379d575eb5594858a45d882c",
@@ -2081,9 +2228,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 27.28,
+      "timeliness": 26.55,
       "writing_value": 5,
-      "total_score": 112.28
+      "total_score": 111.55
     },
     {
       "id": "d5f2953ae6e96f665a1434f81d35b4518d714c76",
@@ -2102,9 +2249,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 24.36,
+      "timeliness": 23.63,
       "writing_value": 5,
-      "total_score": 109.36
+      "total_score": 108.63
     },
     {
       "id": "49f53687a2daa782e1b40c25f64c0a60b069b18d",
@@ -2123,30 +2270,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 23.63,
+      "timeliness": 22.9,
       "writing_value": 5,
-      "total_score": 108.63
+      "total_score": 107.9
     },
     {
-      "id": "f90738055e4ac8515707dd79a01786c4011d4d8f",
-      "title": "The Robotic Surgery Leader: Intuitive Surgical Slides Further But One Wall Street Bull Pegs Returns at 85% - 24/7 Wall St.",
-      "title_zh": "机器人手术领导者：直观手术进一步下滑，但华尔街牛钉的回报率为 85% - 24/7 Wall St.",
-      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOM19Fc1dyd0lXQ0NxajUyS1QwLXJRLXMxQnl4aGx3SDRmbE54YkJLUTRsVzFyNEVEdE0waV9LemdiaEhoTFNsWmdGUEsxNUNLcmIyMlQwLVNaLXA1X0E4YTdCVHhvMC1UYjJLR3RHVzN1QlhFS2dqWmtKXzI3enY1R1VJSFBWS04xdnhublJJa0dBR0FMVEg4VWNrUmJPSVg3bXM5eXgyb2M4SHFWMnBmckg5b2M5R0Izay1PTUwxNlZNN0E3VXJjZmd3clpsUndDU0MzWHVnVVF6RkFNVXJLZVh3?oc=5",
-      "published_at": "2026-08-08T11:05:49+00:00",
+      "id": "41227edc3b4ac2c611a264853325f0c8c9dd3c62",
+      "title": "Robot Dogs Suddenly Taking Jobs From Human Security Guards - Futurism",
+      "title_zh": "机器狗突然抢走了人类保安的工作 - 未来主义",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOV1JJSkxXSFJNWmEybHJPcGd4N1pvbDZTMm9wZjVOQy1YVGU4bGhQREQtaHRxYzl4d3p3dFBqNFYxWHJuSjhndUsybFliOTNIVktad2ZvSng4R0lKM29DZ3Z4R3BrMDNsS3NPcW94b0NXeHFCOW9ZYjVlN3RaSC1MNjJzOG5uRmRPcF9XRA?oc=5",
+      "published_at": "2026-08-08T19:02:00+00:00",
       "category": "国外机器人资讯",
       "gn_label": "robotics",
       "site_name": "国外机器人资讯",
       "source": "国外机器人资讯",
       "site_id": "国外机器人资讯",
-      "description": "The Robotic Surgery Leader: Intuitive Surgical Slides Further But One Wall Street Bull Pegs Returns at 85%  24/7 Wall St.",
+      "description": "Robot Dogs Suddenly Taking Jobs From Human Security Guards  Futurism",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
-      "depth": 5,
-      "timeliness": 22.73,
-      "writing_value": 5,
-      "total_score": 107.73
+      "depth": 0,
+      "timeliness": 29.93,
+      "writing_value": 0,
+      "total_score": 104.93
     },
     {
       "id": "9b00d7df7290160417f13af0855941076a7b3aea",
@@ -2165,9 +2312,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.05,
+      "timeliness": 27.32,
       "writing_value": 0,
-      "total_score": 103.05
+      "total_score": 102.32
     },
     {
       "id": "7a2a84a94930d6a61fc9e640e3b2b9ee309e67ed",
@@ -2186,9 +2333,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.74,
+      "timeliness": 26.01,
       "writing_value": 0,
-      "total_score": 101.74
+      "total_score": 101.01
     },
     {
       "id": "ee80cf218bc3542f7a3560f75dd50e129f33be6e",
@@ -2207,13 +2354,13 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.13,
+      "timeliness": 25.4,
       "writing_value": 0,
-      "total_score": 101.13
+      "total_score": 100.4
     },
     {
-      "id": "82200091ba80ff5609ba8e0bbc202e521a8bda43",
-      "title": "宇树科技600亿估值，美团系获利超12倍，专项国资基金均超10倍，核心供应链的β行情抬升 - 搜狐网",
+      "id": "b53c28e08805c716d75f0438712ee4996133a871",
+      "title": "宇树科技600亿估值，美团系获利超12倍，专项国资基金均超10倍，核心供应链的β行情抬升 - sohu.com",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxORjVYMlUwMlhLcTYwZWdaM2NDQVJXZk5wNHlPSXViZUplUnpMc1lMcDhEeEdRZHNPOE9jdDc0cHdDbWpDdVJIMlEzODhxUzhnR2hFQ3pIOGY2VnQ5YmFBSkUwOHV6czFfR2xNeWliam5sdWh6cGpVaXlPQzlybnI4Sm9yb2NscUxk?oc=5",
       "published_at": "2026-08-08T12:47:27+00:00",
@@ -2222,15 +2369,15 @@
       "site_name": "国内人形机器人资讯",
       "source": "国内人形机器人资讯",
       "site_id": "国内人形机器人资讯",
-      "description": "宇树科技600亿估值，美团系获利超12倍，专项国资基金均超10倍，核心供应链的β行情抬升  搜狐网",
+      "description": "宇树科技600亿估值，美团系获利超12倍，专项国资基金均超10倍，核心供应链的β行情抬升  sohu.com",
       "ai_score": 65.0,
       "ai_label": "humanoid",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.42,
+      "timeliness": 23.69,
       "writing_value": 0,
-      "total_score": 99.42
+      "total_score": 98.69
     },
     {
       "id": "ef020ba9d6c178c2e729fd51b0fe060ae49658d5",
@@ -2249,9 +2396,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.3,
+      "timeliness": 23.57,
       "writing_value": 0,
-      "total_score": 99.3
+      "total_score": 98.57
     },
     {
       "id": "d9edcc61535982fe22bed3c9d12ea1a6b6579b3c",
@@ -2259,24 +2406,24 @@
       "title_zh": "RoboBusiness 专家展望机器人技术的未来 20 年 - 机器人报告",
       "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPdVJSNU9LZTNFb2F2NFVUcjZ4RHhFOVdwcUlhVS1IcjhUTWtWYkJLWXBuZG1TUVFSU1VPckdxRUtEN1FuYmlkaXhJSUg1aDU3ampWVjlRZnNwdVVkSGNaQmZnTllmT1h1RkU1Zmplc1IxYVlVRHFPRTdIS1FzbG1lOGpVVEI1MkN4TmFOTWF5VXE3Mm1yajdFc2RyTGg5YURh?oc=5",
       "published_at": "2026-08-08T12:35:25+00:00",
-      "category": "国外人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国外人形机器人资讯",
-      "source": "国外人形机器人资讯",
-      "site_id": "国外人形机器人资讯",
+      "category": "国外机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国外机器人资讯",
+      "source": "国外机器人资讯",
+      "site_id": "国外机器人资讯",
       "description": "Experts look ahead at the next 20 years of robotics at RoboBusiness  The Robot Report",
       "ai_score": 65.0,
-      "ai_label": "humanoid",
+      "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.22,
+      "timeliness": 23.49,
       "writing_value": 0,
-      "total_score": 99.22
+      "total_score": 98.49
     },
     {
-      "id": "4027f4074891dcbdde5d8b6325331c274dd45a7b",
-      "title": "两年三次募资，协作机器人第一股越疆科技从港回A - 搜狐网",
+      "id": "54889eabd72182888565479f353ca905e6b3a7f7",
+      "title": "两年三次募资，协作机器人第一股越疆科技从港回A - sohu.com",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNSzJRVUVjMzVJamdnNFJJa2tFMUY4U01PanliaGdZT2tBU3RYVmgzVUJGVElWQ0xCNWpaYmY0c2ZWdGdRTDFWRGJuRGNZaXo4UmE4LVN2Y0NZMC1pcE4zR3FNc2pOV3h1YXZYODVhTWJfbllXakFNNnczeHFnc0FSTzMxMnNzdUVxSVlIdQ?oc=5",
       "published_at": "2026-08-08T12:03:02+00:00",
@@ -2285,36 +2432,15 @@
       "site_name": "国内机器人资讯",
       "source": "国内机器人资讯",
       "site_id": "国内机器人资讯",
-      "description": "两年三次募资，协作机器人第一股越疆科技从港回A  搜狐网",
+      "description": "两年三次募资，协作机器人第一股越疆科技从港回A  sohu.com",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.68,
+      "timeliness": 22.95,
       "writing_value": 0,
-      "total_score": 98.68
-    },
-    {
-      "id": "cd7f1d0f5039065446831d9e840923ab975b8fa4",
-      "title": "首席科学家被“下架”，智元机器人IPO出现迷雾 - 凤凰网",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1HR09aY09jcGwyNU1wSGYwNGZvRzVUV2FhSjZTYjhxOWxUVmNVZ2JYYTZyQ1V4bVlhME9BV2JkOV8xR0pLYmVDekwxSDVrUFdR?oc=5",
-      "published_at": "2026-08-08T11:47:18+00:00",
-      "category": "国内人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国内人形机器人资讯",
-      "source": "国内人形机器人资讯",
-      "site_id": "国内人形机器人资讯",
-      "description": "首席科学家被“下架”，智元机器人IPO出现迷雾  凤凰网",
-      "ai_score": 65.0,
-      "ai_label": "humanoid",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 23.42,
-      "writing_value": 0,
-      "total_score": 98.42
+      "total_score": 97.95
     },
     {
       "id": "828d05752642435bc972800e7ff80e8d552ddf40",
@@ -2333,13 +2459,34 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.24,
+      "timeliness": 22.51,
       "writing_value": 0,
-      "total_score": 98.24
+      "total_score": 97.51
     },
     {
-      "id": "5ad2c0e66f9d71c9d299fc6a1dab1e878e69e081",
-      "title": "除了宇树科技，中国还有7家机器人企业，估值超过了200亿元 - 搜狐网",
+      "id": "63b36f7af167d2ca98168f6336c4f71fa0431597",
+      "title": "首席科学家被“下架”，智元机器人IPO出现迷雾 - 观察者",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBzX2FWelliM3U5ek1OR00tY19Qc1FrZ3l4d3JwVk9ucHdLbXQwOFExRXBMTFJvWEtnNGk2SFFZcE1TU29VM2xJU3pabU1Wby1kMVZ3YnJmUy1jTUM3WmI5ZDJsMHA?oc=5",
+      "published_at": "2026-08-08T11:36:00+00:00",
+      "category": "国内具身智能资讯",
+      "gn_label": "embodied_ai",
+      "site_name": "国内具身智能资讯",
+      "source": "国内具身智能资讯",
+      "site_id": "国内具身智能资讯",
+      "description": "首席科学家被“下架”，智元机器人IPO出现迷雾  观察者",
+      "ai_score": 65.0,
+      "ai_label": "embodied_ai",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 22.5,
+      "writing_value": 0,
+      "total_score": 97.5
+    },
+    {
+      "id": "3e9e9bec9065206961ee9b1201dea0fc21acf56f",
+      "title": "除了宇树科技，中国还有7家机器人企业，估值超过了200亿元 - sohu.com",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPS20wWURKZVFRbFBFYl83WnRocl9aR2YtSFVCbkZrUG9adjBVdXF1cjJ0NlNZMXliLTYyU0FCcVpkcUJReXh2ZUphbTdsTXZ0UjhHaWxzaHdRZTFickZsbXFLNEVjX21NdGJOZmZhdmV3OHBYVFpTTW42alBEaTM4WWpGQWZSRklZQTZHdg?oc=5",
       "published_at": "2026-08-08T11:35:18+00:00",
@@ -2348,15 +2495,36 @@
       "site_name": "国内人形机器人资讯",
       "source": "国内人形机器人资讯",
       "site_id": "国内人形机器人资讯",
-      "description": "除了宇树科技，中国还有7家机器人企业，估值超过了200亿元  搜狐网",
+      "description": "除了宇树科技，中国还有7家机器人企业，估值超过了200亿元  sohu.com",
       "ai_score": 65.0,
       "ai_label": "humanoid",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.22,
+      "timeliness": 22.49,
       "writing_value": 0,
-      "total_score": 98.22
+      "total_score": 97.49
+    },
+    {
+      "id": "8da04feaabb7fe29406dce18bbbf0c3a570ffb87",
+      "title": "文科生也能拿百万大奖，科目三脱口秀全网整活！智元灵创创意大赛来了 - 新浪财经",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFB1MzhFQ2JJQWw3U2trQ3h5SVZOZFB2S0dIQ2EzbGZoM1hQNzRQWVJpM3hIRWltdU1VVHpLX3ZydVV3RnpjdktFRjdsVG9TbjlWd1dBRWVYdF91SnpxdjNsNksyZjlIbUYzVk12bm92Z3ZNX3lDTU41dXVUR0M?oc=5",
+      "published_at": "2026-08-08T11:11:00+00:00",
+      "category": "国内人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国内人形机器人资讯",
+      "source": "国内人形机器人资讯",
+      "site_id": "国内人形机器人资讯",
+      "description": "文科生也能拿百万大奖，科目三脱口秀全网整活！智元灵创创意大赛来了  新浪财经",
+      "ai_score": 65.0,
+      "ai_label": "humanoid",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 22.08,
+      "writing_value": 0,
+      "total_score": 97.08
     },
     {
       "id": "22892ad7c22bbe68d77f92f85c38ece6d9c4818b",
@@ -2375,9 +2543,9 @@
       "relevance": 0.5,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.88,
+      "timeliness": 23.15,
       "writing_value": 0,
-      "total_score": 83.88
+      "total_score": 83.15
     },
     {
       "id": "da392d9063dc6996c1b33ffb1d1f1ccdd8e95f43",
@@ -2396,13 +2564,34 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 5,
-      "timeliness": 28.29,
+      "timeliness": 27.56,
       "writing_value": 5,
-      "total_score": 83.29
+      "total_score": 82.56
     },
     {
-      "id": "3ae265fc93bffd27d6c78894eac48760f1e1e4f4",
-      "title": "青年鲁班颁奖典礼在港举办 首度增设建筑机器人竞赛项目 - 搜狐网",
+      "id": "e556be507ba3e8491fcb5e399b6d1b8062ccf93c",
+      "title": "福州第一高塔桥梁迎来“机器人医生” - fznews.com.cn",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9KSGpzcW1reUdyOENCTXN2endnWHdnakhXM2huMEgxbVFxODgydko3dHBpcTRHZFo0VXUzdFhpbVBjQVNoWFBrdjFPc3QzUDBJU3VqaXFLbTljZnpFaHd6MWNUdWw?oc=5",
+      "published_at": "2026-08-08T16:31:09+00:00",
+      "category": "国内机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国内机器人资讯",
+      "source": "国内机器人资讯",
+      "site_id": "国内机器人资讯",
+      "description": "福州第一高塔桥梁迎来“机器人医生”  fznews.com.cn",
+      "ai_score": 35.0,
+      "ai_label": "robotics",
+      "relevance": 0.35,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 27.42,
+      "writing_value": 0,
+      "total_score": 72.42
+    },
+    {
+      "id": "6d9bfd28c7097dd7b82416ceae45c6f754e38b5f",
+      "title": "青年鲁班颁奖典礼在港举办 首度增设建筑机器人竞赛项目 - sohu.com",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPakFpWGdraHZaallVakpRbUZyRWV6MS1rNGh5UGhGeG9aWUtQVVltNTdNb1VZd2gwZzBOdzBDeDd2cnZiMTlGN2RxZWo3emszRnM5WW03X0xZa0Vqcks3UWdBaTlCSG5CTlp3X213ckdIX3FDUmNtNDFaQ0RQdDV0c1cyUVBhV0xBMjB6NQ?oc=5",
       "published_at": "2026-08-08T15:35:04+00:00",
@@ -2411,19 +2600,19 @@
       "site_name": "国内机器人资讯",
       "source": "国内机器人资讯",
       "site_id": "国内机器人资讯",
-      "description": "青年鲁班颁奖典礼在港举办 首度增设建筑机器人竞赛项目  搜狐网",
+      "description": "青年鲁班颁奖典礼在港举办 首度增设建筑机器人竞赛项目  sohu.com",
       "ai_score": 35.0,
       "ai_label": "robotics",
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.21,
+      "timeliness": 26.48,
       "writing_value": 0,
-      "total_score": 72.21
+      "total_score": 71.48
     },
     {
-      "id": "cc4d4f4974d41e1b82eb67472fcc1c574817014a",
-      "title": "青岛首个机器人6S体验店启幕！百年中山路再添未来科技新地标 - 搜狐网",
+      "id": "f23b1033851a74bb0afc4b459687a3a2ef7a37a5",
+      "title": "青岛首个机器人6S体验店启幕！百年中山路再添未来科技新地标 - sohu.com",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOX0hiQzd4Q3pKbm5odC1hSDF4X0N2YTd4ckx5X1J0aDB4RFBjLTBBc1FhMzVGMkttdk1XbUVKQk5zNC1qcm5tTl9oOWhKT2xOR0NuMUN2NVluMmgybFEtSVhXMk03eEprMS1ZRDYzSEVIYVg5dkxsTU5fb0lvbzB0alJBMkhiRDd3VUk2Vw?oc=5",
       "published_at": "2026-08-08T15:21:04+00:00",
@@ -2432,19 +2621,19 @@
       "site_name": "国内具身智能资讯",
       "source": "国内具身智能资讯",
       "site_id": "国内具身智能资讯",
-      "description": "青岛首个机器人6S体验店启幕！百年中山路再添未来科技新地标  搜狐网",
+      "description": "青岛首个机器人6S体验店启幕！百年中山路再添未来科技新地标  sohu.com",
       "ai_score": 35.0,
       "ai_label": "embodied_ai",
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.98,
+      "timeliness": 26.25,
       "writing_value": 0,
-      "total_score": 71.98
+      "total_score": 71.25
     },
     {
-      "id": "1ba7fb26717fea34a320620e4d1c90ff443b45e3",
-      "title": "AI机器人终极对决 - 新浪财经",
+      "id": "62a6f93defcd1d94129d846f2ddee610e61b5288",
+      "title": "AI机器人终极对决 - t.cj.sina.cn",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNc1N2OGZlaGhMX3FXS2dkWnVyeTZKWmxzZWZDdkxHUC0zdnRib2JzUGFUc1FReUJMNV95dUI3Y2hOeUVLR0U2M2paMTMwb3d0U0JRLUV2QlBnMkF1RFBLM19EdEhEekwyR3g2MmRfOXZSQnVPVWJoMDhSQThZLTl2WndqNVlKVkU?oc=5",
       "published_at": "2026-08-08T15:19:58+00:00",
@@ -2453,15 +2642,15 @@
       "site_name": "国内机器人资讯",
       "source": "国内机器人资讯",
       "site_id": "国内机器人资讯",
-      "description": "AI机器人终极对决  新浪财经",
+      "description": "AI机器人终极对决  t.cj.sina.cn",
       "ai_score": 35.0,
       "ai_label": "robotics",
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.96,
+      "timeliness": 26.23,
       "writing_value": 0,
-      "total_score": 71.96
+      "total_score": 71.23
     },
     {
       "id": "0359936c1308d750cc586fff214284eb92865590",
@@ -2480,13 +2669,13 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.89,
+      "timeliness": 25.16,
       "writing_value": 0,
-      "total_score": 70.89
+      "total_score": 70.16
     },
     {
-      "id": "c387f2004bd8ede2c26845d77a339982969a01e3",
-      "title": "腾讯的野心藏不住了 - 搜狐网",
+      "id": "e2134e34f8b6373363cbac6ed8c46391b12d99c5",
+      "title": "腾讯的野心藏不住了 - sohu.com",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNU3dqelVnUlUtdnhqQTFkVEs2aHdFV1pUMjB0aTE0dllJaHZSUW1kV3VjRTFrbVZMRHI4bzA3TWR6TlMwclp1N3hQejVEOFpHcU9NYkFXQzlxUnBnanpVSFR5SmN4S3BUeTRGNTh2VENzWHdtcFM0eTQ2dGR3bEMxX2FYWmlVaTF6?oc=5",
       "published_at": "2026-08-08T13:58:02+00:00",
@@ -2495,15 +2684,15 @@
       "site_name": "国内具身智能资讯",
       "source": "国内具身智能资讯",
       "site_id": "国内具身智能资讯",
-      "description": "腾讯的野心藏不住了  搜狐网",
+      "description": "腾讯的野心藏不住了  sohu.com",
       "ai_score": 35.0,
       "ai_label": "embodied_ai",
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.6,
+      "timeliness": 24.87,
       "writing_value": 0,
-      "total_score": 70.6
+      "total_score": 69.87
     },
     {
       "id": "a27d1c17e57296a9ee505da1738eaf6ffa5c28ae",
@@ -2522,9 +2711,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.18,
+      "timeliness": 24.45,
       "writing_value": 0,
-      "total_score": 70.18
+      "total_score": 69.45
     },
     {
       "id": "c44528d4359940893332640c6cdfb975bd50a0ab",
@@ -2543,9 +2732,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.93,
+      "timeliness": 24.2,
       "writing_value": 0,
-      "total_score": 69.93
+      "total_score": 69.2
     },
     {
       "id": "0ce8999e01fb2027e39828617be8a0ce3f2c6fbf",
@@ -2564,9 +2753,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.44,
+      "timeliness": 23.71,
       "writing_value": 0,
-      "total_score": 69.44
+      "total_score": 68.71
     },
     {
       "id": "769b3433ec137e40d320f5c2e7e98c16d5a05e2b",
@@ -2585,9 +2774,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.37,
+      "timeliness": 23.64,
       "writing_value": 0,
-      "total_score": 69.37
+      "total_score": 68.64
     },
     {
       "id": "84eb436e21c944e3f87b2329daf7e66138899e2d",
@@ -2606,13 +2795,13 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.26,
+      "timeliness": 23.53,
       "writing_value": 0,
-      "total_score": 69.26
+      "total_score": 68.53
     },
     {
-      "id": "5222ddd8c91822d711fbdb54ac5c0c8352244b6e",
-      "title": "近40家企业决战智慧康养机器人应用大赛 互动陪伴机器人有望成为可靠“养老搭子” - 搜狐网",
+      "id": "6b717baa348b5ee0d0490c42e6386a91409a50e2",
+      "title": "近40家企业决战智慧康养机器人应用大赛 互动陪伴机器人有望成为可靠“养老搭子” - sohu.com",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOTDh1SS1zbEZrRnlwQ242ZHdVbWZmV1BVQl8wa1dlSDhaV0FPTVJGWlMwY0RxTFpTUWt5ZnNYTXhOWHk0dUladlBkMUFJcjFLcVRxN1V1cVZ6SmVNUUg3a2dxY2kwdzdRLUwwM2xpRVBHVzNqblRKVEYwY21sMHRlRV96Y29JUXlONms4Mg?oc=5",
       "published_at": "2026-08-08T12:34:01+00:00",
@@ -2621,19 +2810,19 @@
       "site_name": "国内机器人资讯",
       "source": "国内机器人资讯",
       "site_id": "国内机器人资讯",
-      "description": "近40家企业决战智慧康养机器人应用大赛 互动陪伴机器人有望成为可靠“养老搭子”  搜狐网",
+      "description": "近40家企业决战智慧康养机器人应用大赛 互动陪伴机器人有望成为可靠“养老搭子”  sohu.com",
       "ai_score": 35.0,
       "ai_label": "robotics",
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.2,
+      "timeliness": 23.47,
       "writing_value": 0,
-      "total_score": 69.2
+      "total_score": 68.47
     },
     {
-      "id": "af9287ed0ac644ee17f47d714d4393df61cfb11c",
-      "title": "松延动力的阳谋：挟春晚之势把\"陪伴\"做成一门生意 - 搜狐网",
+      "id": "d81a5de1455354e1c400ab23061c39a911a8ef6b",
+      "title": "松延动力的阳谋：挟春晚之势把\"陪伴\"做成一门生意 - sohu.com",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQazg3QVdwRkJjdjJkZnpPbURHcTRmcUhlTFRiMl9nNmVKVXp4UHI2cThfdEJlS1dpcWdpMVEtQmgycEpKZng0RnUtakpBNnVHTnpfVllDc1lTbkhtb1pGODV0RDk5ZFBySUY4cjlYdVFtZVNvcDFlaEIyZUdva05OVnhvaEQyNnkwQ0hYdg?oc=5",
       "published_at": "2026-08-08T12:00:33+00:00",
@@ -2642,19 +2831,19 @@
       "site_name": "国内人形机器人资讯",
       "source": "国内人形机器人资讯",
       "site_id": "国内人形机器人资讯",
-      "description": "松延动力的阳谋：挟春晚之势把\"陪伴\"做成一门生意  搜狐网",
+      "description": "松延动力的阳谋：挟春晚之势把\"陪伴\"做成一门生意  sohu.com",
       "ai_score": 35.0,
       "ai_label": "humanoid",
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.64,
+      "timeliness": 22.91,
       "writing_value": 0,
-      "total_score": 68.64
+      "total_score": 67.91
     },
     {
-      "id": "b9cfd2846fc73924404300e986a3b9d0951afc48",
-      "title": "一年建成上海工厂的特斯拉，为何在Optimus身上栽了？真相远没那么简单 - 搜狐网",
+      "id": "3849614d8fc81490f47bb2dd85021f947ddf23f6",
+      "title": "一年建成上海工厂的特斯拉，为何在Optimus身上栽了？真相远没那么简单 - sohu.com",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOX0l3Sk15RVVjVnBlaDlnSmctdjI0dlctRUFDdFY0WXBFUE9DckJDcEJ5SV9mTkVSY1FtWGhNVkxtOU1xaFhEMnZBWC1PTFk2VWtMZVNBakwzZmM4YzNONVRUZ3Vaa0RWSzZSR1pSWDhVRGx0U3JTRDY4dHQ3Y3Z3eURobzA0dExfWFhRag?oc=5",
       "published_at": "2026-08-08T11:58:40+00:00",
@@ -2663,19 +2852,19 @@
       "site_name": "国内人形机器人资讯",
       "source": "国内人形机器人资讯",
       "site_id": "国内人形机器人资讯",
-      "description": "一年建成上海工厂的特斯拉，为何在Optimus身上栽了？真相远没那么简单  搜狐网",
+      "description": "一年建成上海工厂的特斯拉，为何在Optimus身上栽了？真相远没那么简单  sohu.com",
       "ai_score": 35.0,
       "ai_label": "humanoid",
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.61,
+      "timeliness": 22.88,
       "writing_value": 0,
-      "total_score": 68.61
+      "total_score": 67.88
     },
     {
-      "id": "2c1e28ef2023a56726496520ec40fa6fcf7b848b",
-      "title": "硅基「大考」来了！机器人进厂打工，抢千万级实景订单 - 智源社区",
+      "id": "54c7c33b9d884305708e6437162ac648d34db486",
+      "title": "硅基「大考」来了！机器人进厂打工，抢千万级实景订单 - hub.baai.ac.cn",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBIS3Q1dFYxblhoMDhtZGxQUGhCeU9qRDVQbDl6LV9oVzBocy1OX0JEdlFoQ3dSVnd4VVBnb2JIMURKUk9QWVdwVQ?oc=5",
       "published_at": "2026-08-08T11:50:00+00:00",
@@ -2684,19 +2873,19 @@
       "site_name": "国内机器人资讯",
       "source": "国内机器人资讯",
       "site_id": "国内机器人资讯",
-      "description": "硅基「大考」来了！机器人进厂打工，抢千万级实景订单  智源社区",
+      "description": "硅基「大考」来了！机器人进厂打工，抢千万级实景订单  hub.baai.ac.cn",
       "ai_score": 35.0,
       "ai_label": "robotics",
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.46,
+      "timeliness": 22.73,
       "writing_value": 0,
-      "total_score": 68.46
+      "total_score": 67.73
     },
     {
-      "id": "48bac0ab75fb3df59b867e019d7391120dd0f08d",
-      "title": "企业家说 | 群核科技联合创始人兼董事长黄晓煌：拿着技术的“锤子”，去找产业的“钉子” - 搜狐网",
+      "id": "b2478fab87d053e971929281a1fd2f8e2edaeb70",
+      "title": "企业家说 | 群核科技联合创始人兼董事长黄晓煌：拿着技术的“锤子”，去找产业的“钉子” - sohu.com",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNclhwR1M5RFZINzVTWWxlZlpFTWEzZ0t4SzBFeGpIQmRFWWh0QnhMMm9tY2ctV2kzTWxHUkZTVk1sNzc3LVRmaG83Z21UOGwwTkhZUkxFdllvTXdUUkVlRjN6ODAtZGNkUFI0R3Q3RjMzV3hSM3dKRzNUZVB0OUk2YUZVM0J2Wm5wRkRmbA?oc=5",
       "published_at": "2026-08-08T11:48:01+00:00",
@@ -2705,19 +2894,19 @@
       "site_name": "国内物理AI资讯",
       "source": "国内物理AI资讯",
       "site_id": "国内物理AI资讯",
-      "description": "企业家说 | 群核科技联合创始人兼董事长黄晓煌：拿着技术的“锤子”，去找产业的“钉子”  搜狐网",
+      "description": "企业家说 | 群核科技联合创始人兼董事长黄晓煌：拿着技术的“锤子”，去找产业的“钉子”  sohu.com",
       "ai_score": 35.0,
       "ai_label": "physical_ai",
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.43,
+      "timeliness": 22.7,
       "writing_value": 0,
-      "total_score": 68.43
+      "total_score": 67.7
     },
     {
-      "id": "1b0b15dc0fa649d99bc2530d7965376dead78c77",
-      "title": "地瓜机器人「地心引力DemoDay」收官，欧拉万象、巡领科技、眺月科技斩获前三 - 搜狐网",
+      "id": "b35ab18e15512297843f020e7a0160e2a2858823",
+      "title": "地瓜机器人「地心引力DemoDay」收官，欧拉万象、巡领科技、眺月科技斩获前三 - sohu.com",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNYjNZS2NxX0lCNEYwNjRGNVEteERxVGFycXdFMmZjcHNmWDM5SFNhYlRlVlJfRG91ZWhWZERMQ2VITy1xdUJtNXNkYUNHbTVQaWViVl9jN2x6VnpVMXZJUVljbldTQjF5cHN0dXRmamFJQ1g0U3FKQjhBVHZqUnRwZmpJQlBhVF95dTRqTw?oc=5",
       "published_at": "2026-08-08T11:21:56+00:00",
@@ -2726,15 +2915,15 @@
       "site_name": "国内机器人资讯",
       "source": "国内机器人资讯",
       "site_id": "国内机器人资讯",
-      "description": "地瓜机器人「地心引力DemoDay」收官，欧拉万象、巡领科技、眺月科技斩获前三  搜狐网",
+      "description": "地瓜机器人「地心引力DemoDay」收官，欧拉万象、巡领科技、眺月科技斩获前三  sohu.com",
       "ai_score": 35.0,
       "ai_label": "robotics",
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 22.99,
+      "timeliness": 22.26,
       "writing_value": 0,
-      "total_score": 67.99
+      "total_score": 67.26
     },
     {
       "id": "8849520425aa7248e3ea010e232b469535881f24",
@@ -2753,9 +2942,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 22.9,
+      "timeliness": 22.17,
       "writing_value": 0,
-      "total_score": 67.9
+      "total_score": 67.17
     },
     {
       "id": "3d004b2888ac4be141a6d71d39519e5d1fd3b9db",
@@ -2774,31 +2963,31 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 22.9,
+      "timeliness": 22.17,
       "writing_value": 0,
-      "total_score": 67.9
+      "total_score": 67.17
     }
   ],
   "site_stats": [
     {
-      "site_id": "国内人形机器人资讯",
-      "site_name": "国内人形机器人资讯",
-      "count": 12
-    },
-    {
       "site_id": "国外机器人资讯",
       "site_name": "国外机器人资讯",
-      "count": 10
+      "count": 13
+    },
+    {
+      "site_id": "国内人形机器人资讯",
+      "site_name": "国内人形机器人资讯",
+      "count": 11
     },
     {
       "site_id": "国内机器人资讯",
       "site_name": "国内机器人资讯",
-      "count": 9
+      "count": 10
     },
     {
       "site_id": "国内具身智能资讯",
       "site_name": "国内具身智能资讯",
-      "count": 6
+      "count": 7
     },
     {
       "site_id": "国内物理AI资讯",
@@ -2808,7 +2997,7 @@
     {
       "site_id": "国外人形机器人资讯",
       "site_name": "国外人形机器人资讯",
-      "count": 2
+      "count": 1
     },
     {
       "site_id": "国内脑机接口资讯",
@@ -2821,6 +3010,6 @@
       "count": 1
     }
   ],
-  "total_items_raw": 44,
-  "total_items_all_mode": 44
+  "total_items_raw": 47,
+  "total_items_all_mode": 47
 }
