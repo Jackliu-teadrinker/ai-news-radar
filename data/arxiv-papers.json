@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-08T04:06:06.085951+00:00",
-  "total_items": 6,
+  "generated_at": "2026-08-08T05:14:34.317173+00:00",
+  "total_items": 4,
   "items": [
     {
       "id": "http://arxiv.org/abs/2608.06375v1",
@@ -45,28 +45,6 @@
       "published_at": "2026-08-06T17:40:32+00:00",
       "updated_at": "2026-08-06T17:40:32Z",
       "title_zh": "GeniWorld：通过视觉动作进行机器人操作的通用交互式世界模型"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.06221v1",
-      "title": "Robot Learning from Human Demonstrations: Handwritten Alphabet Trajectories and Human-Likeness Evaluation",
-      "url": "https://arxiv.org/abs/2608.06221",
-      "summary": "Learning from demonstration (LfD) provides a developmental framework through which robots can develop motor skills by observing and imitating human dynamics, reducing reliance on explicit programming to teach a skill to a robot. The resulting human-like robot motion is recognised as a key factor in building trust and enabling natural collaboration in human-robot interaction. This paper presents a framework for learning human-like robot motion from demonstration, including data collection, probabilistic trajectory learning, and perceptual user evaluation. A dataset of 3,142 handwriting demonstrations was collected from 22 participants across all 52 Latin alphabet character-case combinations via a touchscreen teleoperation interface, capturing planar position, contact force, and timing. Building on the widely used Gaussian Mixture Model and Gaussian Mixture Regression approach for learning from demonstration, the framework is extended in this work by incorporating force and normalised time dimensions to enable richer representation of human dynamics, and adapting it to handle non-continuous, multi-segment trajectories, enabling generalisation across demonstrations. A user study with 21 participants evaluated the perceived human-likeness of the generated trajectories using a continuous scale anchored between robotic and human-like motion, normalised to 0-100 where 50 represents the neutral midpoint. The generated trajectories achieved an overall human-likeness score of 71.50 (SD=22.56), indicating that the majority of trajectories were perceived as more human-like. Participants identified geometric positioning and trajectory sequence as the most influential perceptual factors, and reported positive attitudes toward human-like robot behaviour. The datasets are released as open-source, providing a reproducible benchmark for developing and evaluating human-like robot motion methods.",
-      "authors": "Alperen Kenan, Paul Bremner, Manuel Giuliani",
-      "category": "cs.RO",
-      "published_at": "2026-08-06T16:12:18+00:00",
-      "updated_at": "2026-08-06T16:12:18Z",
-      "title_zh": "机器人从人类演示中学习：手写字母轨迹和人类相似性评估"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.06219v1",
-      "title": "Design and Evaluation of a Touchscreen-Based Teleoperation Interface for Robotic Manipulators",
-      "url": "https://arxiv.org/abs/2608.06219",
-      "summary": "Intuitive teleoperation interfaces are crucial for the safe and effective operation of robotic manipulators in challenging environments. In the nuclear industry, surface contact tasks such as swab sampling require precise path and force tracking, obstacle avoidance, and sustained operator attention, which conventional joystick interfaces struggle to support effectively. This study designs and evaluates a novel touchscreen teleoperation interface that maps continuous finger movements directly to robotic manipulator motions, provides finer velocity control, and integrates control with visualization, enabling more natural, precise, and intuitive surface interaction than conventional controllers. A comparative user study with 20 participants evaluated task performance and workload using the proposed touchscreen, a conventional joystick, and a single-click autonomous mode. Tasks simulated realistic surface manipulation using a Franka Emika Panda arm, remotely controlled from another country. Kinematic, physiological, and behavioral data were recorded to comprehensively assess task performance, cognitive load, and operator trust across each control condition. Participants completed teleoperation tasks more efficiently and accurately with the touchscreen interface, achieving a 53.5% reduction in completion time (median: 2.50 vs. 5.38 min), higher in-area coverage on the sinusoidal path (90.7% vs. 84.1%), and lower overshoot on both path geometries compared with the joystick. Cognitive load, quantified via NASA-TLX (0-100), decreased from joystick to touchscreen (mean TLX 52 to 43; -9 points, -17.3%) and was lowest under the autonomous one-click mode (31; -21 points vs. joystick, -40.4%; -12 vs. touchscreen, -27.9%). This research presents an easy-to-implement touchscreen interface that improves performance in teleoperated surface tasks while reducing cognitive load.",
-      "authors": "Juan José García Cárdenas, Alperen Kenan, Hamidreza Raei et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-06T16:10:02+00:00",
-      "updated_at": "2026-08-06T16:10:02Z",
-      "title_zh": "基于触摸屏的机器人操纵器远程操作界面的设计和评估"
     }
   ]
 }

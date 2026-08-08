@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-08T04:04:59.211971+00:00",
+  "generated_at": "2026-08-08T05:13:40.679273+00:00",
   "window_start": "2026-08-07T19:00:00+08:00",
-  "window_end": "2026-08-08T12:04:57.736171+08:00",
-  "total_items": 26,
+  "window_end": "2026-08-08T13:13:39.587971+08:00",
+  "total_items": 25,
   "items": [
     {
       "id": "56482782fddb7f3739851f3d57eb8d04ee103d91",
@@ -21,9 +21,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 17.92,
+      "timeliness": 16.77,
       "writing_value": 5,
-      "total_score": 102.92
+      "total_score": 101.77
+    },
+    {
+      "id": "dc64789041bd02283685518a659c337425ce3e2a",
+      "title": "Robots Are Coming — but Not Everywhere - MIT Sloan Management Review Middle East",
+      "title_zh": "机器人即将到来——但并非无处不在 - 麻省理工学院斯隆管理评论中东",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE41T2JpYXQwbU5pTGxvblVaLWFtMTlLWlUzd3FpdjVtUGhfTlN6QmRPaWpkSmQ3MEItT3ZyNHNheC01TmNnUHEtMGVwcG9LZzFIMnJDZnRicTJJQ0c4UlBkbndqTWp4c3pRa05IM3JsYVdtc0luSDhqUWcyU3Y?oc=5",
+      "published_at": "2026-08-08T03:30:39+00:00",
+      "category": "GN: MIT robotics",
+      "gn_label": "robotics",
+      "site_name": "GN: MIT robotics",
+      "source": "GN: MIT robotics",
+      "site_id": "GN: MIT robotics",
+      "description": "Robots Are Coming — but Not Everywhere  MIT Sloan Management Review Middle East",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 28.28,
+      "writing_value": 0,
+      "total_score": 103.28
     },
     {
       "id": "ac5ce1400352e9004f7792f7bd45651ebc0de7db",
@@ -42,9 +63,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.24,
+      "timeliness": 22.09,
       "writing_value": 0,
-      "total_score": 98.24
+      "total_score": 97.09
     },
     {
       "id": "7f7289ee703a83c1e97c94ed13f651b94c6a7f4f",
@@ -63,9 +84,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 18.32,
+      "timeliness": 17.17,
       "writing_value": 0,
-      "total_score": 93.32
+      "total_score": 92.17
     },
     {
       "id": "ad5d13861d8b465753c168e661e8da3138bbdf77",
@@ -84,9 +105,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 20.74,
+      "timeliness": 19.6,
       "writing_value": 0,
-      "total_score": 95.74
+      "total_score": 94.6
     },
     {
       "id": "2c84137322e162398607b871415a364d6fbb0523",
@@ -105,9 +126,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 14.53,
+      "timeliness": 13.39,
       "writing_value": 0,
-      "total_score": 89.53
+      "total_score": 88.39
     },
     {
       "id": "fbea5bf8d0249e51de3662c6c11d0ed9c4a509db",
@@ -126,9 +147,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 17.88,
+      "timeliness": 16.74,
       "writing_value": 0,
-      "total_score": 92.88
+      "total_score": 91.74
     },
     {
       "id": "0f51cde3d2ab4f270d72277cf991dae893d23904",
@@ -147,30 +168,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 15.1,
+      "timeliness": 13.95,
       "writing_value": 5,
-      "total_score": 100.1
-    },
-    {
-      "id": "dd5ab0872fc800c1d6cde5c97cbd399974be8f37",
-      "title": "Robotics industry thriving in China's Tianjin - Xinhua",
-      "title_zh": "天津机器人产业蓬勃发展-新华社",
-      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1UQVlIcnNIWUE1bXdCNXJJRFpvaGsteC1QQlREczg3Z0Vod2ljaHBBVC1YcXNENkZ4XzZ1czJZVHBPaUdmUkVVdTktc1FnN2FiQmhRczJVOXhoZWVCb192RkJPdG52dFdYa3BKakJ3d3Y4eDVUdEx0X0Jac2Q?oc=5",
-      "published_at": "2026-08-07T12:02:18+00:00",
-      "category": "GN: industrial robot",
-      "gn_label": "robotics",
-      "site_name": "GN: industrial robot",
-      "source": "GN: industrial robot",
-      "site_id": "GN: industrial robot",
-      "description": "Robotics industry thriving in China's Tianjin  Xinhua",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 13.96,
-      "writing_value": 0,
-      "total_score": 88.96
+      "total_score": 98.95
     },
     {
       "id": "3636a093e562dac0e587da7b3966867c9c1b364c",
@@ -189,9 +189,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 14.6,
+      "timeliness": 13.46,
       "writing_value": 0,
-      "total_score": 89.6
+      "total_score": 88.46
     },
     {
       "id": "c9b9fab22a9ea49c2b746cee3fea28f5fbb0736f",
@@ -210,30 +210,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 21.92,
+      "timeliness": 20.77,
       "writing_value": 5,
-      "total_score": 106.92
-    },
-    {
-      "id": "caf4019362eadce894e119c77697722f4d6396b0",
-      "title": "Huntsman Cancer Institute performs region's first robotic mastectomy, reducing scarring - kjzz.com",
-      "title_zh": "亨斯曼癌症研究所进行了该地区首例机器人乳房切除术，减少了疤痕 - kjzz.com",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPc0FEVW9Sd3NvNnJkQ1p1elFjZkg1ZUJ6SmRYeUhyTmNEXzZpdUJlTVo4TElyT1g3Q2xmYjE3aFN1bUdTN01ueUtpbFp3cm5kX2dOcG84d1RkVEZBV1FJZFhpWGpEdC0yRkJ5emQ5WVlSWGxCT0pMay12R2ozWFZrQWh4M1lfd2o3U0pVUlAxaVZCZi10OGQzdWhveEg2a21oNi1uMzhSUlJiaHRNemlUcUdmdw?oc=5",
-      "published_at": "2026-08-07T21:21:16+00:00",
-      "category": "GN: surgical robot",
-      "gn_label": "robotics",
-      "site_name": "GN: surgical robot",
-      "source": "GN: surgical robot",
-      "site_id": "GN: surgical robot",
-      "description": "Huntsman Cancer Institute performs region's first robotic mastectomy, reducing scarring  kjzz.com",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 23.27,
-      "writing_value": 0,
-      "total_score": 98.27
+      "total_score": 105.77
     },
     {
       "id": "627df3f03488393eda5e170f488316fe1fb7aeab",
@@ -252,9 +231,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 14.46,
+      "timeliness": 13.32,
       "writing_value": 0,
-      "total_score": 89.46
+      "total_score": 88.32
+    },
+    {
+      "id": "caf4019362eadce894e119c77697722f4d6396b0",
+      "title": "Huntsman Cancer Institute performs region's first robotic mastectomy, reducing scarring - kjzz.com",
+      "title_zh": "亨斯曼癌症研究所进行了该地区首例机器人乳房切除术，减少了疤痕 - kjzz.com",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPc0FEVW9Sd3NvNnJkQ1p1elFjZkg1ZUJ6SmRYeUhyTmNEXzZpdUJlTVo4TElyT1g3Q2xmYjE3aFN1bUdTN01ueUtpbFp3cm5kX2dOcG84d1RkVEZBV1FJZFhpWGpEdC0yRkJ5emQ5WVlSWGxCT0pMay12R2ozWFZrQWh4M1lfd2o3U0pVUlAxaVZCZi10OGQzdWhveEg2a21oNi1uMzhSUlJiaHRNemlUcUdmdw?oc=5",
+      "published_at": "2026-08-07T21:21:16+00:00",
+      "category": "GN: surgical robot",
+      "gn_label": "robotics",
+      "site_name": "GN: surgical robot",
+      "source": "GN: surgical robot",
+      "site_id": "GN: surgical robot",
+      "description": "Huntsman Cancer Institute performs region's first robotic mastectomy, reducing scarring  kjzz.com",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 22.13,
+      "writing_value": 0,
+      "total_score": 97.13
     },
     {
       "id": "557dfbf9be849e90371b0b82ac8d531deb0ade61",
@@ -273,13 +273,13 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 16.55,
+      "timeliness": 15.41,
       "writing_value": 5,
-      "total_score": 101.55
+      "total_score": 100.41
     },
     {
-      "id": "5b962cdeee25157751efb91b506bf91c170daf3f",
-      "title": "宇树科技IPO路演 募资近半投向“大脑”研发 - 21jingji.com",
+      "id": "05c9224bf85ced65c635f69fb88313e9b7b41ad8",
+      "title": "宇树科技IPO路演 募资近半投向“大脑”研发 - 21财经",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNMU95dkdEVTQyd2d6YnQ2VDRfSm9sTUM1YUdZa25uTGRQX3ZSSXN5NHdWSGxaUUlST2s0MHk5RTJ4N0JlWnJmakFzZW9kc1U1QWVFVTc1X3lxdG5OY0llUkNucEdEMWdCbDFEbGZfS3VwZzhRcUpkdHRUR09ZYkZocHBVV1JaLUJ6ME9TMw?oc=5",
       "published_at": "2026-08-08T02:33:00+00:00",
@@ -288,15 +288,15 @@
       "site_name": "GN: 宇树科技",
       "source": "GN: 宇树科技",
       "site_id": "GN: 宇树科技",
-      "description": "宇树科技IPO路演 募资近半投向“大脑”研发  21jingji.com",
+      "description": "宇树科技IPO路演 募资近半投向“大脑”研发  21财经",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.47,
+      "timeliness": 27.32,
       "writing_value": 0,
-      "total_score": 103.47
+      "total_score": 102.32
     },
     {
       "id": "63e6aab860a62c439f0c26668a92c388899222bf",
@@ -315,9 +315,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 14.66,
+      "timeliness": 13.52,
       "writing_value": 0,
-      "total_score": 89.66
+      "total_score": 88.52
     },
     {
       "id": "53c7c2e5fe490dbfde8f2e696cdccc5d4687892f",
@@ -336,9 +336,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 16.48,
+      "timeliness": 15.34,
       "writing_value": 0,
-      "total_score": 91.48
+      "total_score": 90.34
     },
     {
       "id": "335ecff8523c71a4d3f8b79e3b8551888e3dcad8",
@@ -357,9 +357,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 15.64,
+      "timeliness": 14.49,
       "writing_value": 0,
-      "total_score": 90.64
+      "total_score": 89.49
     },
     {
       "id": "1e73069999a3ac0e4dd5b8a14213d05e75428a1d",
@@ -378,9 +378,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 16.22,
+      "timeliness": 15.07,
       "writing_value": 0,
-      "total_score": 91.22
+      "total_score": 90.07
     },
     {
       "id": "d07f9aab1b6ffea4b61355ce2f068517d4097005",
@@ -399,9 +399,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 15.62,
+      "timeliness": 14.47,
       "writing_value": 0,
-      "total_score": 90.62
+      "total_score": 89.47
     },
     {
       "id": "81959d4b87b4615d9c2e61dadc11fcfe40aea4b5",
@@ -420,9 +420,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 13.29,
+      "timeliness": 12.14,
       "writing_value": 0,
-      "total_score": 88.29
+      "total_score": 87.14
     },
     {
       "id": "c1b78af390e3a72389c5ee6801b7bbd9d4ad1fc5",
@@ -441,13 +441,13 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 14.87,
+      "timeliness": 13.72,
       "writing_value": 0,
-      "total_score": 89.87
+      "total_score": 88.72
     },
     {
-      "id": "3343435b34ca4b6d000208dccfa6b340a23f99b3",
-      "title": "三年从6台到1.5万台 智元闯过具身机器人量产关？ - cls.cn",
+      "id": "6a8c8b51e6d7acbcbcc656eecc05944a62b5bce7",
+      "title": "三年从6台到1.5万台 智元闯过具身机器人量产关？ - 财联社",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9NbUo0VEd3WTVtbE5BVEdvVzhUUGd3RXQwQnRqSGdCUWQzNUZpNnZmTm5BQlpBeXBvSjllM2RENWNyTWRuUGtoYw?oc=5",
       "published_at": "2026-08-08T01:10:26+00:00",
@@ -456,78 +456,15 @@
       "site_name": "GN: 智元机器人",
       "source": "GN: 智元机器人",
       "site_id": "GN: 智元机器人",
-      "description": "三年从6台到1.5万台 智元闯过具身机器人量产关？  cls.cn",
+      "description": "三年从6台到1.5万台 智元闯过具身机器人量产关？  财联社",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.09,
+      "timeliness": 25.95,
       "writing_value": 0,
-      "total_score": 102.09
-    },
-    {
-      "id": "307a8f8891e8b7a2338ba08e234e8cdb2c44ee2c",
-      "title": "具身智能的“形态之争”：轮子比腿更加务实？ - sohu.com",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOVV9La2xrSDBrN2VtckdHWGJQb1BjUTY4bkpaRk91clFPbkhoWVV6Q0cwV0xCbEk3WFk2NllzVUp3WjdxaHpWTTdXdVJCNE0yUm9SV3ZaY2F5Q01vQ00zblFodTJ6QmtvMG1UNHhndmtZOVZCdUdfUzRnYV96U1ZHYXpUNE0teHB1?oc=5",
-      "published_at": "2026-08-08T02:09:00+00:00",
-      "category": "GN: 傅利叶智能",
-      "gn_label": "robotics",
-      "site_name": "GN: 傅利叶智能",
-      "source": "GN: 傅利叶智能",
-      "site_id": "GN: 傅利叶智能",
-      "description": "具身智能的“形态之争”：轮子比腿更加务实？  sohu.com",
-      "ai_score": 80.0,
-      "ai_label": "robotics",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 28.07,
-      "writing_value": 0,
-      "total_score": 118.07
-    },
-    {
-      "id": "7d245459f5e91787f5c719892bcd952865ff4e73",
-      "title": "一场发布会亮相4款灵巧手，中科慧思让机器人拥有真正“干活”的手 - 凤凰网科技",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5kM2tlSG5JUXQ2azBPQzBfM21FOWVzWEt5LWxxa2w5TXZJaldDYkRCS0RDUFVVNGNvQ2hZVDgwRktFaWxMU0dwVF9PeXo?oc=5",
-      "published_at": "2026-08-07T16:13:23+00:00",
-      "category": "GN: 灵巧手",
-      "gn_label": "robotics",
-      "site_name": "GN: 灵巧手",
-      "source": "GN: 灵巧手",
-      "site_id": "GN: 灵巧手",
-      "description": "一场发布会亮相4款灵巧手，中科慧思让机器人拥有真正“干活”的手  凤凰网科技",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 18.14,
-      "writing_value": 0,
-      "total_score": 93.14
-    },
-    {
-      "id": "f7d316fe0e989399b5cf2108180715c473c7e59c",
-      "title": "安徽人形机器人加速迈向商用 - sohu.com",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPSEpoZWtGdF9DdGoxeVc0Sk1fTWU4UWwxVEY3a2lYSkd6VVRpN2tWVElIdlRKYTRvVVZKblFQckJhZEJTeURDUzZ0Z2x3ZXBmRTFncXB3ek9fWWUwOW4wTUM3MkU5OWJpQ1Q3NHFRdTljMUFvcHVrU0ttMUJoZDBVTFFVc2ZVZDFuaDRHMA?oc=5",
-      "published_at": "2026-08-07T15:44:05+00:00",
-      "category": "GN: 服务机器人",
-      "gn_label": "robotics",
-      "site_name": "GN: 服务机器人",
-      "source": "GN: 服务机器人",
-      "site_id": "GN: 服务机器人",
-      "description": "安徽人形机器人加速迈向商用  sohu.com",
-      "ai_score": 80.0,
-      "ai_label": "robotics",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 17.65,
-      "writing_value": 0,
-      "total_score": 107.65
+      "total_score": 100.95
     },
     {
       "id": "f99c5dc22a82f84ec25d9f2a75790686f2cee02a",
@@ -546,9 +483,51 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 16.39,
+      "timeliness": 15.24,
       "writing_value": 0,
-      "total_score": 91.39
+      "total_score": 90.24
+    },
+    {
+      "id": "319273fbaa769ca73dd327e811fba108295595a0",
+      "title": "一场发布会亮相4款灵巧手，中科慧思让机器人拥有真正“干活”的手 - tech.ifeng.com",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5kM2tlSG5JUXQ2azBPQzBfM21FOWVzWEt5LWxxa2w5TXZJaldDYkRCS0RDUFVVNGNvQ2hZVDgwRktFaWxMU0dwVF9PeXo?oc=5",
+      "published_at": "2026-08-07T16:13:23+00:00",
+      "category": "GN: 灵巧手",
+      "gn_label": "robotics",
+      "site_name": "GN: 灵巧手",
+      "source": "GN: 灵巧手",
+      "site_id": "GN: 灵巧手",
+      "description": "一场发布会亮相4款灵巧手，中科慧思让机器人拥有真正“干活”的手  tech.ifeng.com",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 17.0,
+      "writing_value": 0,
+      "total_score": 92.0
+    },
+    {
+      "id": "f7d316fe0e989399b5cf2108180715c473c7e59c",
+      "title": "安徽人形机器人加速迈向商用 - sohu.com",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPSEpoZWtGdF9DdGoxeVc0Sk1fTWU4UWwxVEY3a2lYSkd6VVRpN2tWVElIdlRKYTRvVVZKblFQckJhZEJTeURDUzZ0Z2x3ZXBmRTFncXB3ek9fWWUwOW4wTUM3MkU5OWJpQ1Q3NHFRdTljMUFvcHVrU0ttMUJoZDBVTFFVc2ZVZDFuaDRHMA?oc=5",
+      "published_at": "2026-08-07T15:44:05+00:00",
+      "category": "GN: 服务机器人",
+      "gn_label": "robotics",
+      "site_name": "GN: 服务机器人",
+      "source": "GN: 服务机器人",
+      "site_id": "GN: 服务机器人",
+      "description": "安徽人形机器人加速迈向商用  sohu.com",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 16.51,
+      "writing_value": 0,
+      "total_score": 106.51
     }
   ],
   "fallback_used": false
