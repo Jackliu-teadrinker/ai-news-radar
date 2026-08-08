@@ -1,9 +1,9 @@
 {
   "date": "2026-08-08",
-  "generated_at": "2026-08-08T11:25:31.387120+00:00",
+  "generated_at": "2026-08-08T11:52:55.648446+00:00",
   "score_threshold": 80,
   "total_items": 50,
-  "new_added": 0,
+  "new_added": 1,
   "items": [
     {
       "id": "d3ef2e09cad554e6",
@@ -151,6 +151,27 @@
       "timeliness": 29.78,
       "writing_value": 0,
       "total_score": 119.78
+    },
+    {
+      "id": "936f57e6e53776b0",
+      "title": "多项竞技比拼！第二届世界人形机器人运动会将于8月22日开赛 - sohu.com",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNY0kzV1c4Q1hUVmxHWmFXVy05ZzZiSGh4WHlsWWNaZDI3d2ZlOVJ5b0ZvM3ozZEJFSzlYVW1DeWRBNUZnSllqQUtNQUJnTFI1dE1BelFJZUQ2ZTkyMTBvLU5rcFFhbVJDRnVoTnhuSHZ2TFcxLTlJRFNGVzVFTTNiVW1NdVVLd0M2emg0bw?oc=5",
+      "published_at": "2026-08-08T11:36:31+00:00",
+      "category": "国内机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国内机器人资讯",
+      "source": "国内机器人资讯",
+      "site_id": "国内机器人资讯",
+      "description": "多项竞技比拼！第二届世界人形机器人运动会将于8月22日开赛  sohu.com",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.75,
+      "writing_value": 0,
+      "total_score": 119.75
     },
     {
       "id": "13a5c2d9373c4993",
@@ -1033,27 +1054,6 @@
       "timeliness": 26.97,
       "writing_value": 0,
       "total_score": 116.97
-    },
-    {
-      "id": "91363767dea3ac15",
-      "title": "具身智能，在物理世界中成长（院士讲科普·未来产业） - 人民网",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1TenV5N0NVRjN1OTdUandiYngtdFBzRWExODg5MXd4YmxEdk5Pa044aGJ5MXJPX2NIQ2Q4SFFjMjhJMlJtM1JGaVp3czNMODNraTZab2Y5V3c4NWlxSFFxM21kWnNGNlNQNWc?oc=5",
-      "published_at": "2026-08-08T01:01:00+00:00",
-      "category": "国内具身智能资讯",
-      "gn_label": "embodied_ai",
-      "site_name": "国内具身智能资讯",
-      "source": "国内具身智能资讯",
-      "site_id": "国内具身智能资讯",
-      "description": "具身智能，在物理世界中成长（院士讲科普·未来产业）  人民网",
-      "ai_score": 80.0,
-      "ai_label": "embodied_ai",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 26.94,
-      "writing_value": 0,
-      "total_score": 116.94
     }
   ]
 }
