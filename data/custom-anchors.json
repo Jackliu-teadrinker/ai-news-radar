@@ -1,30 +1,9 @@
 {
-  "generated_at": "2026-08-08T13:25:43.972731+00:00",
+  "generated_at": "2026-08-08T14:04:30.350071+00:00",
   "window_start": "2026-08-08T19:00:00+08:00",
-  "window_end": "2026-08-08T21:25:43.970020+08:00",
+  "window_end": "2026-08-08T22:04:30.348441+08:00",
   "total_items": 2,
   "items": [
-    {
-      "id": "7ffedc3905a1f1e3642acbfe5c8365b0e1598519",
-      "title": "宇树科技，下周打新！这些公司将受益 - 21财经",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQX09hT194TWpvWmpvU0p1MDF1bDVYc3RyZlBmNFZyNXRYOW1NX1J3Um1ucU1oQjlhLW9lQlpFQ3RCV1EyQUp4VWZMdTdrTHpHcVN3QXVUSkRGaTdReVdiVnBqVEN2LXVpeVgxdnRjT01JU2hva1JvdG5KejlTbWtFbFNQS1psRl95Q19JMA?oc=5",
-      "published_at": "2026-08-08T12:18:00+00:00",
-      "category": "GN: 宇树科技",
-      "gn_label": "robotics",
-      "site_name": "GN: 宇树科技",
-      "source": "GN: 宇树科技",
-      "site_id": "GN: 宇树科技",
-      "description": "宇树科技，下周打新！这些公司将受益  21财经",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 28.87,
-      "writing_value": 0,
-      "total_score": 103.87
-    },
     {
       "id": "71bc62c96b0eea7ef2279eb93f165f1581be3786",
       "title": "宇树10日开启申购，具身智能迎来IPO密集期 - 电子工程专辑",
@@ -42,9 +21,30 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.64,
+      "timeliness": 27.99,
       "writing_value": 0,
-      "total_score": 118.64
+      "total_score": 117.99
+    },
+    {
+      "id": "5d23c6ba1cd7d7a417e06dfdca5e9367732ff454",
+      "title": "【宇树科技219倍PE到底贵不贵】拿宇树和通用设备行业平均38倍PE比，说高估五六倍，算法本身就偏了。传统设备厂跟具身智能机器人根本不在一个阶段。把同行拉出来排排坐更直观：汇川技术34倍，绿的谐波448倍，埃斯顿696倍，优必选还在亏损。219倍远高于成熟 - 新浪网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE40cnhFVHpqV01tX0RtaUZZNko2TjhTNFQ5UjdfS2taNFBJcHp2T2R1b3NMRHBQbUlFWERReWdqTDJURzQ1N0M0RVpKSFUtczlzc3lEV3NNeGpYVm9aWEdBeEJobw?oc=5",
+      "published_at": "2026-08-08T13:00:00+00:00",
+      "category": "GN: 优必选",
+      "gn_label": "robotics",
+      "site_name": "GN: 优必选",
+      "source": "GN: 优必选",
+      "site_id": "GN: 优必选",
+      "description": "【宇树科技219倍PE到底贵不贵】拿宇树和通用设备行业平均38倍PE比，说高估五六倍，算法本身就偏了。传统设备厂跟具身智能机器人根本不在一个阶段。把同行拉出来排排坐更直观：汇川技术34倍，绿的谐波448倍，埃斯顿696倍，优必选还在亏损。219倍远高于成熟  新浪网",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 28.93,
+      "writing_value": 5,
+      "total_score": 128.93
     }
   ],
   "fallback_used": false

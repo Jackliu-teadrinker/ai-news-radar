@@ -1,9 +1,9 @@
 {
   "date": "2026-08-08",
-  "generated_at": "2026-08-08T13:26:47.161721+00:00",
+  "generated_at": "2026-08-08T14:05:35.725367+00:00",
   "score_threshold": 80,
   "total_items": 50,
-  "new_added": 2,
+  "new_added": 1,
   "items": [
     {
       "id": "ffeb6ef6d456e1f7",
@@ -25,6 +25,27 @@
       "timeliness": 29.77,
       "writing_value": 5,
       "total_score": 129.77
+    },
+    {
+      "id": "c1f434f639681880",
+      "title": "Wall Street Sees a Multitrillion-Dollar Humanoid Robot Market. These 2 Industrial Stocks Sell the Parts. - Yahoo Finance",
+      "title_zh": "华尔街看到了价值数万亿美元的人形机器人市场。这两只工业股票出售零部件。 - 雅虎财经",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNVENJd29fY1dFQUxQcV9IWFlNQ1VWVHVmTFlLbjgyY1RPbmNjc05QNDFYUGhGTFBTN0Z1Y2RTTkhCOUJEMmpqWU9CYVZwZElKblM0TUJXMFVKX3NxY1J1bG8zRnB2QmtpUExJNmlYZ0JKUEtuVFZiMUF4cXd6OXRCZE9pWjlmWGJkSTlnRHlNUlFyV1p2ZTBaS08zUjBDYTMxNi1N?oc=5",
+      "published_at": "2026-08-08T13:25:00+00:00",
+      "category": "国外人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国外人形机器人资讯",
+      "source": "国外人形机器人资讯",
+      "site_id": "国外人形机器人资讯",
+      "description": "Wall Street Sees a Multitrillion-Dollar Humanoid Robot Market. These 2 Industrial Stocks Sell the Parts.  Yahoo Finance",
+      "ai_score": 80.0,
+      "ai_label": "humanoid",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 29.34,
+      "writing_value": 5,
+      "total_score": 129.34
     },
     {
       "id": "d3ef2e09cad554e6",
@@ -1033,27 +1054,6 @@
       "timeliness": 27.56,
       "writing_value": 0,
       "total_score": 117.56
-    },
-    {
-      "id": "9eb9f71467abfe16",
-      "title": "In the Doghouse: FCC Bans New Foreign-Made Humanoid, Quadruped Robots - ASIS International",
-      "title_zh": "在狗窝里：FCC 禁止新型外国制造的人形四足机器人 - ASIS International",
-      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOUDVER1JyWW1mb3M0R180Sko0NFY4MmxGeVNrRXJhYWNCWkFJbWwtN25jcVpOX25Vd19SMVBtTGFDNkdweXZRaXVsRGs0ZmRCZW9kQjlNdVdkdzQxenUzd2M1LXVmMUNwcFFGakptUmJPeFZUc2VOelB2em9LcklzMW9OSnpYTVU2UFlLVGxCY2NIaWNNX2NySEdOcmxXcl9yUXZ0Y0s3R0oybXltVzlNM1J2bkZDd2NQSFpra1JfZnE3WnZ3UDY3U09GOGFUQQ?oc=5",
-      "published_at": "2026-08-07T14:12:29+00:00",
-      "category": "国外机器人资讯",
-      "gn_label": "robotics",
-      "site_name": "国外机器人资讯",
-      "source": "国外机器人资讯",
-      "site_id": "国外机器人资讯",
-      "description": "In the Doghouse: FCC Bans New Foreign-Made Humanoid, Quadruped Robots  ASIS International",
-      "ai_score": 80.0,
-      "ai_label": "robotics",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 27.51,
-      "writing_value": 0,
-      "total_score": 117.51
     }
   ]
 }
