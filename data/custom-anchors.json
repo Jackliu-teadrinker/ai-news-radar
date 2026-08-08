@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-08T22:54:08.119988+00:00",
+  "generated_at": "2026-08-08T23:18:43.573005+00:00",
   "window_start": "2026-08-08T19:00:00+08:00",
-  "window_end": "2026-08-09T06:54:07.953818+08:00",
-  "total_items": 5,
+  "window_end": "2026-08-09T07:18:43.383026+08:00",
+  "total_items": 4,
   "items": [
     {
       "id": "8d6438db0e0d02a42bbd5382b213c84a90fadfe4",
@@ -21,9 +21,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 21.74,
+      "timeliness": 21.33,
       "writing_value": 0,
-      "total_score": 96.74
+      "total_score": 96.33
     },
     {
       "id": "f90738055e4ac8515707dd79a01786c4011d4d8f",
@@ -42,9 +42,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 18.2,
+      "timeliness": 17.79,
       "writing_value": 5,
-      "total_score": 103.2
+      "total_score": 102.79
     },
     {
       "id": "f9589327d4bf4a5963bb09d6e9dd5c02ce69db29",
@@ -63,9 +63,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 20.35,
+      "timeliness": 19.94,
       "writing_value": 0,
-      "total_score": 95.35
+      "total_score": 94.94
     },
     {
       "id": "71bc62c96b0eea7ef2279eb93f165f1581be3786",
@@ -84,30 +84,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 19.17,
+      "timeliness": 18.76,
       "writing_value": 0,
-      "total_score": 109.17
-    },
-    {
-      "id": "afc8065f92553e621a0939c19c2e4a3011bfd141",
-      "title": "除了宇树科技，中国还有7家机器人企业，估值超过了200亿元 - sohu.com",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQUkc4RE9Xc1VqR19vR0ZBNFJlMzZYZ0hNOEdFTnlQZThsVTF4YXNTTzVTeE9UZUNlOWRBcV9ZS1N6Mk9UVEt4SWh6ekhFUWVocnAtVjk5SGQ0UGJneklnMlV6ZlBfTTl6MFpLcVJ6Y05KVW91ZHpaMkM0Sl9ldlFFLU1DdHYwQ2xVb09DTw?oc=5",
-      "published_at": "2026-08-08T11:36:00+00:00",
-      "category": "GN: 智元机器人",
-      "gn_label": "robotics",
-      "site_name": "GN: 智元机器人",
-      "source": "GN: 智元机器人",
-      "site_id": "GN: 智元机器人",
-      "description": "除了宇树科技，中国还有7家机器人企业，估值超过了200亿元  sohu.com",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 18.7,
-      "writing_value": 0,
-      "total_score": 93.7
+      "total_score": 108.76
     }
   ],
   "fallback_used": false
