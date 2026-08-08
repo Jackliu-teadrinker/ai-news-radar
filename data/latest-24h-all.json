@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-08T16:21:58.270858+00:00",
-  "total_items": 40,
+  "generated_at": "2026-08-08T17:01:23.214099+00:00",
+  "total_items": 43,
   "items_ai": [
     {
       "id": "4b54988d9ff96421ed733c075baf2bfb632edf74",
@@ -8,20 +8,20 @@
       "title_zh": "华尔街看到了价值数万亿美元的人形机器人市场。这两只工业股票出售零部件。 - 雅虎财经",
       "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNVENJd29fY1dFQUxQcV9IWFlNQ1VWVHVmTFlLbjgyY1RPbmNjc05QNDFYUGhGTFBTN0Z1Y2RTTkhCOUJEMmpqWU9CYVZwZElKblM0TUJXMFVKX3NxY1J1bG8zRnB2QmtpUExJNmlYZ0JKUEtuVFZiMUF4cXd6OXRCZE9pWjlmWGJkSTlnRHlNUlFyV1p2ZTBaS08zUjBDYTMxNi1N?oc=5",
       "published_at": "2026-08-08T13:25:00+00:00",
-      "category": "国外人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国外人形机器人资讯",
-      "source": "国外人形机器人资讯",
-      "site_id": "国外人形机器人资讯",
+      "category": "国外机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国外机器人资讯",
+      "source": "国外机器人资讯",
+      "site_id": "国外机器人资讯",
       "description": "Wall Street Sees a Multitrillion-Dollar Humanoid Robot Market. These 2 Industrial Stocks Sell the Parts.  Yahoo Finance",
       "ai_score": 80.0,
-      "ai_label": "humanoid",
+      "ai_label": "robotics",
       "relevance": 0.8,
       "authority": 10,
       "depth": 5,
-      "timeliness": 27.07,
+      "timeliness": 26.41,
       "writing_value": 5,
-      "total_score": 127.07
+      "total_score": 126.41
     },
     {
       "id": "77553565b3c47f94ad55dc2e4cb569412a563a68",
@@ -40,30 +40,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.01,
+      "timeliness": 28.36,
       "writing_value": 0,
-      "total_score": 119.01
-    },
-    {
-      "id": "ee7047163c8731d3f29689e5c4f2a45b7fb49650",
-      "title": "【汽车校友百校联盟】优必选机器人战略蓝图：以“工业先行”铸就中国具身智能的产业样本 - 电子工程专辑",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBhY1pmVTRxazhoQ3FoSVl2Y2hobk9ZYk9HMGZtREt1aXduOGl5ell5aVhvVndmSk81OEV3V09XSjZ0RUJtQlRwNVJjY3Atam1ObGZ3?oc=5",
-      "published_at": "2026-08-08T14:30:00+00:00",
-      "category": "国内具身智能资讯",
-      "gn_label": "embodied_ai",
-      "site_name": "国内具身智能资讯",
-      "source": "国内具身智能资讯",
-      "site_id": "国内具身智能资讯",
-      "description": "【汽车校友百校联盟】优必选机器人战略蓝图：以“工业先行”铸就中国具身智能的产业样本  电子工程专辑",
-      "ai_score": 80.0,
-      "ai_label": "embodied_ai",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 28.15,
-      "writing_value": 0,
-      "total_score": 118.15
+      "total_score": 118.36
     },
     {
       "id": "a499dd152b2919dfac591c1b51b6f6ff1fd4a529",
@@ -82,9 +61,51 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.15,
+      "timeliness": 27.5,
       "writing_value": 0,
-      "total_score": 118.15
+      "total_score": 117.5
+    },
+    {
+      "id": "ee7047163c8731d3f29689e5c4f2a45b7fb49650",
+      "title": "【汽车校友百校联盟】优必选机器人战略蓝图：以“工业先行”铸就中国具身智能的产业样本 - 电子工程专辑",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBhY1pmVTRxazhoQ3FoSVl2Y2hobk9ZYk9HMGZtREt1aXduOGl5ell5aVhvVndmSk81OEV3V09XSjZ0RUJtQlRwNVJjY3Atam1ObGZ3?oc=5",
+      "published_at": "2026-08-08T14:30:00+00:00",
+      "category": "国内人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国内人形机器人资讯",
+      "source": "国内人形机器人资讯",
+      "site_id": "国内人形机器人资讯",
+      "description": "【汽车校友百校联盟】优必选机器人战略蓝图：以“工业先行”铸就中国具身智能的产业样本  电子工程专辑",
+      "ai_score": 80.0,
+      "ai_label": "humanoid",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 27.5,
+      "writing_value": 0,
+      "total_score": 117.5
+    },
+    {
+      "id": "6044ab6ccafa0450f28b23555816b869c0c52053",
+      "title": "宇树科技破发？笑的合不拢嘴。进来了解一下具身智能的未来。 - 财富号",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE4yMlYyNTl1bFFLakVSeU5CeUJkVzZyTU1nQW1Hel9WSGIyMGJYLUtvYjhTQ3RPV0FLQ1BUVExIckFMT3VlTEtCbGwyRTVKWkYxTzROMEtQcENfdGZmaE5LMTAxa1ViblhBdVhF?oc=5",
+      "published_at": "2026-08-08T13:27:00+00:00",
+      "category": "国内具身智能资讯",
+      "gn_label": "embodied_ai",
+      "site_name": "国内具身智能资讯",
+      "source": "国内具身智能资讯",
+      "site_id": "国内具身智能资讯",
+      "description": "宇树科技破发？笑的合不拢嘴。进来了解一下具身智能的未来。  财富号",
+      "ai_score": 80.0,
+      "ai_label": "embodied_ai",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 26.45,
+      "writing_value": 0,
+      "total_score": 116.45
     },
     {
       "id": "1bc45b932c84261ec0838f4de014e83c94fe73a6",
@@ -103,9 +124,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.78,
+      "timeliness": 26.13,
       "writing_value": 0,
-      "total_score": 116.78
+      "total_score": 116.13
     },
     {
       "id": "d60547b35f226bba5f702e8a109ea121ec4ec2da",
@@ -124,9 +145,30 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.65,
+      "timeliness": 26.0,
       "writing_value": 0,
-      "total_score": 116.65
+      "total_score": 116.0
+    },
+    {
+      "id": "8c90c60746798039624ba277f912181967c02524",
+      "title": "宇树科技10日开启IPO申购 具身智能赛道迎来IPO密集期|深度 - 财联社",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE02cVFsT2xpazRNMWZKcVJIbHJEQ1JPd01zQ09SOVR6aEdjYzNUTTRTS25hVktlNzBTV1JCaVkyS0NKLWRucGtCMg?oc=5",
+      "published_at": "2026-08-08T11:54:00+00:00",
+      "category": "国内具身智能资讯",
+      "gn_label": "embodied_ai",
+      "site_name": "国内具身智能资讯",
+      "source": "国内具身智能资讯",
+      "site_id": "国内具身智能资讯",
+      "description": "宇树科技10日开启IPO申购 具身智能赛道迎来IPO密集期|深度  财联社",
+      "ai_score": 80.0,
+      "ai_label": "embodied_ai",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 24.9,
+      "writing_value": 0,
+      "total_score": 114.9
     },
     {
       "id": "a7a088f2c66e6380379d575eb5594858a45d882c",
@@ -145,9 +187,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 29.3,
+      "timeliness": 28.65,
       "writing_value": 5,
-      "total_score": 114.3
+      "total_score": 113.65
+    },
+    {
+      "id": "d5f2953ae6e96f665a1434f81d35b4518d714c76",
+      "title": "US backs autonomous stroke treatment robot from MIT spinout with $32 million funding - Interesting Engineering",
+      "title_zh": "美国资助麻省理工学院衍生的自主中风治疗机器人 3200 万美元 - 有趣的工程",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPcTkxdzMwMzNnRFhuQTlnZThPV2JrcDBQQVFHUFdzU0FjbU1tenBGVDVKbEx6QU1VY25YMjRaSUdIZk5zSXNqdW5qS0Vaei1IN2FtME5kZmhnSmcxbE9rNDhDalNlbWk4UU9PaWlPcEN4NE13bWY2Rm45U2FiV1NmQmFvd18tbkdkTnhkblgtZGE5V1U?oc=5",
+      "published_at": "2026-08-08T12:44:00+00:00",
+      "category": "国外机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国外机器人资讯",
+      "source": "国外机器人资讯",
+      "site_id": "国外机器人资讯",
+      "description": "US backs autonomous stroke treatment robot from MIT spinout with $32 million funding  Interesting Engineering",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 25.73,
+      "writing_value": 5,
+      "total_score": 110.73
     },
     {
       "id": "49f53687a2daa782e1b40c25f64c0a60b069b18d",
@@ -166,9 +229,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 25.65,
+      "timeliness": 25.0,
       "writing_value": 5,
-      "total_score": 110.65
+      "total_score": 110.0
     },
     {
       "id": "f90738055e4ac8515707dd79a01786c4011d4d8f",
@@ -187,9 +250,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 24.75,
+      "timeliness": 24.09,
       "writing_value": 5,
-      "total_score": 109.75
+      "total_score": 109.09
+    },
+    {
+      "id": "9b00d7df7290160417f13af0855941076a7b3aea",
+      "title": "Tested: Beatbot AquaSense X, the AI powered, self-cleaning pool robot [Video] - 9to5Toys",
+      "title_zh": "已测试：Beatbot AquaSense X，人工智能驱动的自清洁泳池机器人 [视频] - 9to5Toys",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPVTBxbFNqZVlRb3Z4dWFLU29uSFRZeGpSa0hnbXZnMk4wTXZsVDV4T0V0UUlRQlNmZlZQeDQ0Z1kzNDZ6bVBMUzkzVV9mNHlDUmNhUVhFZFdFVHVwel9Nc0pGX21ENlFnTnlzSERvU1NNS0RTTlhyX0VXTDFyeXZ2QXRYZ2lwYTR3QVZaU09RdkVsa0x0UnRCM25WQkZQWHZUVkdSOUVNTm0?oc=5",
+      "published_at": "2026-08-08T16:25:00+00:00",
+      "category": "国外机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国外机器人资讯",
+      "source": "国外机器人资讯",
+      "site_id": "国外机器人资讯",
+      "description": "Tested: Beatbot AquaSense X, the AI powered, self-cleaning pool robot [Video]  9to5Toys",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.41,
+      "writing_value": 0,
+      "total_score": 104.41
     },
     {
       "id": "7a2a84a94930d6a61fc9e640e3b2b9ee309e67ed",
@@ -208,9 +292,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.76,
+      "timeliness": 28.11,
       "writing_value": 0,
-      "total_score": 103.76
+      "total_score": 103.11
     },
     {
       "id": "ee80cf218bc3542f7a3560f75dd50e129f33be6e",
@@ -229,9 +313,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.15,
+      "timeliness": 27.5,
       "writing_value": 0,
-      "total_score": 103.15
+      "total_score": 102.5
     },
     {
       "id": "82200091ba80ff5609ba8e0bbc202e521a8bda43",
@@ -250,30 +334,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.44,
+      "timeliness": 25.79,
       "writing_value": 0,
-      "total_score": 101.44
-    },
-    {
-      "id": "49c5c2506f58b42a773ffc7a0883f907ef0b5301",
-      "title": "US backs MIT spinout's autonomous stroke treatment robot with $32M - Interesting Engineering",
-      "title_zh": "美国斥资3200万美元支持麻省理工学院的自主中风治疗机器人 - 有趣的工程",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPcTkxdzMwMzNnRFhuQTlnZThPV2JrcDBQQVFHUFdzU0FjbU1tenBGVDVKbEx6QU1VY25YMjRaSUdIZk5zSXNqdW5qS0Vaei1IN2FtME5kZmhnSmcxbE9rNDhDalNlbWk4UU9PaWlPcEN4NE13bWY2Rm45U2FiV1NmQmFvd18tbkdkTnhkblgtZGE5V1U?oc=5",
-      "published_at": "2026-08-08T12:44:00+00:00",
-      "category": "国外机器人资讯",
-      "gn_label": "robotics",
-      "site_name": "国外机器人资讯",
-      "source": "国外机器人资讯",
-      "site_id": "国外机器人资讯",
-      "description": "US backs MIT spinout's autonomous stroke treatment robot with $32M  Interesting Engineering",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 26.38,
-      "writing_value": 0,
-      "total_score": 101.38
+      "total_score": 100.79
     },
     {
       "id": "ef020ba9d6c178c2e729fd51b0fe060ae49658d5",
@@ -292,9 +355,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.32,
+      "timeliness": 25.66,
       "writing_value": 0,
-      "total_score": 101.32
+      "total_score": 100.66
     },
     {
       "id": "d9edcc61535982fe22bed3c9d12ea1a6b6579b3c",
@@ -302,20 +365,20 @@
       "title_zh": "RoboBusiness 专家展望机器人技术的未来 20 年 - 机器人报告",
       "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPdVJSNU9LZTNFb2F2NFVUcjZ4RHhFOVdwcUlhVS1IcjhUTWtWYkJLWXBuZG1TUVFSU1VPckdxRUtEN1FuYmlkaXhJSUg1aDU3ampWVjlRZnNwdVVkSGNaQmZnTllmT1h1RkU1Zmplc1IxYVlVRHFPRTdIS1FzbG1lOGpVVEI1MkN4TmFOTWF5VXE3Mm1yajdFc2RyTGg5YURh?oc=5",
       "published_at": "2026-08-08T12:35:25+00:00",
-      "category": "国外人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国外人形机器人资讯",
-      "source": "国外人形机器人资讯",
-      "site_id": "国外人形机器人资讯",
+      "category": "国外机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国外机器人资讯",
+      "source": "国外机器人资讯",
+      "site_id": "国外机器人资讯",
       "description": "Experts look ahead at the next 20 years of robotics at RoboBusiness  The Robot Report",
       "ai_score": 65.0,
-      "ai_label": "humanoid",
+      "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.24,
+      "timeliness": 25.59,
       "writing_value": 0,
-      "total_score": 101.24
+      "total_score": 100.59
     },
     {
       "id": "4027f4074891dcbdde5d8b6325331c274dd45a7b",
@@ -334,9 +397,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.7,
+      "timeliness": 25.05,
       "writing_value": 0,
-      "total_score": 100.7
+      "total_score": 100.05
     },
     {
       "id": "cd7f1d0f5039065446831d9e840923ab975b8fa4",
@@ -344,20 +407,20 @@
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1HR09aY09jcGwyNU1wSGYwNGZvRzVUV2FhSjZTYjhxOWxUVmNVZ2JYYTZyQ1V4bVlhME9BV2JkOV8xR0pLYmVDekwxSDVrUFdR?oc=5",
       "published_at": "2026-08-08T11:47:18+00:00",
-      "category": "国内机器人资讯",
-      "gn_label": "robotics",
-      "site_name": "国内机器人资讯",
-      "source": "国内机器人资讯",
-      "site_id": "国内机器人资讯",
+      "category": "国内人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国内人形机器人资讯",
+      "source": "国内人形机器人资讯",
+      "site_id": "国内人形机器人资讯",
       "description": "首席科学家被“下架”，智元机器人IPO出现迷雾  凤凰网",
       "ai_score": 65.0,
-      "ai_label": "robotics",
+      "ai_label": "humanoid",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.44,
+      "timeliness": 24.79,
       "writing_value": 0,
-      "total_score": 100.44
+      "total_score": 99.79
     },
     {
       "id": "7a548bd7bf8243a6f1da3b9301c9637c02b0176a",
@@ -376,9 +439,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.25,
+      "timeliness": 24.6,
       "writing_value": 0,
-      "total_score": 100.25
+      "total_score": 99.6
     },
     {
       "id": "5ad2c0e66f9d71c9d299fc6a1dab1e878e69e081",
@@ -397,9 +460,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.24,
+      "timeliness": 24.59,
       "writing_value": 0,
-      "total_score": 100.24
+      "total_score": 99.59
     },
     {
       "id": "8da04feaabb7fe29406dce18bbbf0c3a570ffb87",
@@ -418,9 +481,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.83,
+      "timeliness": 24.18,
       "writing_value": 0,
-      "total_score": 99.83
+      "total_score": 99.18
     },
     {
       "id": "22892ad7c22bbe68d77f92f85c38ece6d9c4818b",
@@ -439,13 +502,34 @@
       "relevance": 0.5,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.9,
+      "timeliness": 25.25,
       "writing_value": 0,
-      "total_score": 85.9
+      "total_score": 85.25
     },
     {
-      "id": "38a8ee9c4990a0ca9c1c7ea77825ef38fa57add5",
-      "title": "2026 山西大学 AI 与机器人前沿技术海内外交流论坛在并举办 - k.sina.com.cn",
+      "id": "da392d9063dc6996c1b33ffb1d1f1ccdd8e95f43",
+      "title": "Competition Is Heating Up, but Here's Why Intuitive Surgical Might Still Be the Smartest Bet in MedTech - The Motley Fool",
+      "title_zh": "竞争正在升温，但这就是为什么直观手术可能仍然是医疗科技领域最明智的选择 - 91配资",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOMEo5c0xxVmgxMUpOV3R3bHJpbFlmTU9LVFNJdFJkeXJSZ2xhMlF0dS03Mm13RUQ5eFFrTmVnRFNyOC0wQjBpVjFCOW15ZERwUjgyX0wyRTlsTWpIUWpJbnhPYm1wSjk1cnBpZXpwSEJIZHVMLWJNVjByV0JEUDVfR2xGX0hCOGhsZHZEOVlpcVFHZUVFcGhZ?oc=5",
+      "published_at": "2026-08-08T16:39:47+00:00",
+      "category": "国外机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国外机器人资讯",
+      "source": "国外机器人资讯",
+      "site_id": "国外机器人资讯",
+      "description": "Competition Is Heating Up, but Here's Why Intuitive Surgical Might Still Be the Smartest Bet in MedTech  The Motley Fool",
+      "ai_score": 35.0,
+      "ai_label": "robotics",
+      "relevance": 0.35,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 29.66,
+      "writing_value": 5,
+      "total_score": 84.66
+    },
+    {
+      "id": "2aabae3c9744bc9c4212687afae8929ad240937d",
+      "title": "2026 山西大学 AI 与机器人前沿技术海内外交流论坛在并举办 - 新浪网",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxObUxiMWtQdE9tdW5rRUNTWGoyYUpLSFZYZmdPeUdfVWdUbHFaNkdaTkh3RmdOV0RfYjJsVUZzR0p0Q2xYSkI3SGUzdUtieDh4S0dpUUVidGhNZTNfN2Q0X0MwVW9KYUF2R1NJUDZVYk1Tdk41UXliekFHTXFReFlvZ0huTDZvQXpMZlFQNjBn?oc=5",
       "published_at": "2026-08-08T16:04:57+00:00",
@@ -454,15 +538,15 @@
       "site_name": "国内具身智能资讯",
       "source": "国内具身智能资讯",
       "site_id": "国内具身智能资讯",
-      "description": "2026 山西大学 AI 与机器人前沿技术海内外交流论坛在并举办  k.sina.com.cn",
+      "description": "2026 山西大学 AI 与机器人前沿技术海内外交流论坛在并举办  新浪网",
       "ai_score": 35.0,
       "ai_label": "embodied_ai",
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.73,
+      "timeliness": 29.08,
       "writing_value": 0,
-      "total_score": 74.73
+      "total_score": 74.08
     },
     {
       "id": "3ae265fc93bffd27d6c78894eac48760f1e1e4f4",
@@ -481,30 +565,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.23,
+      "timeliness": 28.58,
       "writing_value": 0,
-      "total_score": 74.23
-    },
-    {
-      "id": "7f393daf51fb415db0d58087f97b5fa8fcb62583",
-      "title": "介绍一下日本AI发展的历史 - k.sina.com.cn",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBZZXJPcjJKYlFZR3p0MDBSRXFSZ2N4UGRJdWxIZnJvaklsSXotUVJDSktqeFNPZzZJU2JEUjBJLXFGaHVmdG91NkEyeW5id0FfUElJNzU5cTRqSENZSGFpbDY3NUxaNmhPQnFRSzFQV0JYZnpMSkptYXNSNXk5LU0?oc=5",
-      "published_at": "2026-08-08T15:28:03+00:00",
-      "category": "国内物理AI资讯",
-      "gn_label": "physical_ai",
-      "site_name": "国内物理AI资讯",
-      "source": "国内物理AI资讯",
-      "site_id": "国内物理AI资讯",
-      "description": "介绍一下日本AI发展的历史  k.sina.com.cn",
-      "ai_score": 35.0,
-      "ai_label": "physical_ai",
-      "relevance": 0.35,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 29.12,
-      "writing_value": 0,
-      "total_score": 74.12
+      "total_score": 73.58
     },
     {
       "id": "cc4d4f4974d41e1b82eb67472fcc1c574817014a",
@@ -523,9 +586,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.0,
+      "timeliness": 28.35,
       "writing_value": 0,
-      "total_score": 74.0
+      "total_score": 73.35
     },
     {
       "id": "1ba7fb26717fea34a320620e4d1c90ff443b45e3",
@@ -533,24 +596,24 @@
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNc1N2OGZlaGhMX3FXS2dkWnVyeTZKWmxzZWZDdkxHUC0zdnRib2JzUGFUc1FReUJMNV95dUI3Y2hOeUVLR0U2M2paMTMwb3d0U0JRLUV2QlBnMkF1RFBLM19EdEhEekwyR3g2MmRfOXZSQnVPVWJoMDhSQThZLTl2WndqNVlKVkU?oc=5",
       "published_at": "2026-08-08T15:19:58+00:00",
-      "category": "国内人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国内人形机器人资讯",
-      "source": "国内人形机器人资讯",
-      "site_id": "国内人形机器人资讯",
+      "category": "国内机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国内机器人资讯",
+      "source": "国内机器人资讯",
+      "site_id": "国内机器人资讯",
       "description": "AI机器人终极对决  新浪财经",
       "ai_score": 35.0,
-      "ai_label": "humanoid",
+      "ai_label": "robotics",
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.98,
+      "timeliness": 28.33,
       "writing_value": 0,
-      "total_score": 73.98
+      "total_score": 73.33
     },
     {
-      "id": "8ae266eb5165016d1d40d9cc27bbde4b0bcecac9",
-      "title": "机器人零售店开进商场，深圳科技产品进一步走向世界 - mp.oeeee.com",
+      "id": "0359936c1308d750cc586fff214284eb92865590",
+      "title": "机器人零售店开进商场，深圳科技产品进一步走向世界 - 奥一网",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE96d2h3XzBjTnhfVXpuRWZBcEtCT3p2UW9BVWpzNDVWaWUydUNHR3JaOHFqdHpBdVoyUmxsWkFJbGNZNzc1THQxSUNlWG9UX3JvNGMzX243RmdkanFBNTgxQXB6N3drZw?oc=5",
       "published_at": "2026-08-08T14:15:39+00:00",
@@ -559,15 +622,15 @@
       "site_name": "国内机器人资讯",
       "source": "国内机器人资讯",
       "site_id": "国内机器人资讯",
-      "description": "机器人零售店开进商场，深圳科技产品进一步走向世界  mp.oeeee.com",
+      "description": "机器人零售店开进商场，深圳科技产品进一步走向世界  奥一网",
       "ai_score": 35.0,
       "ai_label": "robotics",
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.91,
+      "timeliness": 27.26,
       "writing_value": 0,
-      "total_score": 72.91
+      "total_score": 72.26
     },
     {
       "id": "c387f2004bd8ede2c26845d77a339982969a01e3",
@@ -586,9 +649,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.62,
+      "timeliness": 26.96,
       "writing_value": 0,
-      "total_score": 72.62
+      "total_score": 71.96
     },
     {
       "id": "a27d1c17e57296a9ee505da1738eaf6ffa5c28ae",
@@ -607,9 +670,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.21,
+      "timeliness": 26.55,
       "writing_value": 0,
-      "total_score": 72.21
+      "total_score": 71.55
     },
     {
       "id": "c44528d4359940893332640c6cdfb975bd50a0ab",
@@ -628,9 +691,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.95,
+      "timeliness": 26.3,
       "writing_value": 0,
-      "total_score": 71.95
+      "total_score": 71.3
     },
     {
       "id": "769b3433ec137e40d320f5c2e7e98c16d5a05e2b",
@@ -649,9 +712,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.39,
+      "timeliness": 25.73,
       "writing_value": 0,
-      "total_score": 71.39
+      "total_score": 70.73
     },
     {
       "id": "5222ddd8c91822d711fbdb54ac5c0c8352244b6e",
@@ -670,9 +733,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.22,
+      "timeliness": 25.56,
       "writing_value": 0,
-      "total_score": 71.22
+      "total_score": 70.56
     },
     {
       "id": "af9287ed0ac644ee17f47d714d4393df61cfb11c",
@@ -691,9 +754,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.66,
+      "timeliness": 25.01,
       "writing_value": 0,
-      "total_score": 70.66
+      "total_score": 70.01
     },
     {
       "id": "b9cfd2846fc73924404300e986a3b9d0951afc48",
@@ -712,9 +775,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.63,
+      "timeliness": 24.97,
       "writing_value": 0,
-      "total_score": 70.63
+      "total_score": 69.97
     },
     {
       "id": "2c1e28ef2023a56726496520ec40fa6fcf7b848b",
@@ -733,9 +796,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.48,
+      "timeliness": 24.83,
       "writing_value": 0,
-      "total_score": 70.48
+      "total_score": 69.83
     },
     {
       "id": "48bac0ab75fb3df59b867e019d7391120dd0f08d",
@@ -754,9 +817,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.45,
+      "timeliness": 24.8,
       "writing_value": 0,
-      "total_score": 70.45
+      "total_score": 69.8
     },
     {
       "id": "0ce8999e01fb2027e39828617be8a0ce3f2c6fbf",
@@ -775,9 +838,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.29,
+      "timeliness": 24.64,
       "writing_value": 0,
-      "total_score": 70.29
+      "total_score": 69.64
     },
     {
       "id": "1b0b15dc0fa649d99bc2530d7965376dead78c77",
@@ -796,9 +859,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.02,
+      "timeliness": 24.36,
       "writing_value": 0,
-      "total_score": 70.02
+      "total_score": 69.36
     },
     {
       "id": "8849520425aa7248e3ea010e232b469535881f24",
@@ -817,9 +880,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.92,
+      "timeliness": 24.27,
       "writing_value": 0,
-      "total_score": 69.92
+      "total_score": 69.27
     },
     {
       "id": "3d004b2888ac4be141a6d71d39519e5d1fd3b9db",
@@ -838,9 +901,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.92,
+      "timeliness": 24.26,
       "writing_value": 0,
-      "total_score": 69.92
+      "total_score": 69.26
     }
   ],
   "items_all": [
@@ -850,20 +913,20 @@
       "title_zh": "华尔街看到了价值数万亿美元的人形机器人市场。这两只工业股票出售零部件。 - 雅虎财经",
       "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNVENJd29fY1dFQUxQcV9IWFlNQ1VWVHVmTFlLbjgyY1RPbmNjc05QNDFYUGhGTFBTN0Z1Y2RTTkhCOUJEMmpqWU9CYVZwZElKblM0TUJXMFVKX3NxY1J1bG8zRnB2QmtpUExJNmlYZ0JKUEtuVFZiMUF4cXd6OXRCZE9pWjlmWGJkSTlnRHlNUlFyV1p2ZTBaS08zUjBDYTMxNi1N?oc=5",
       "published_at": "2026-08-08T13:25:00+00:00",
-      "category": "国外人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国外人形机器人资讯",
-      "source": "国外人形机器人资讯",
-      "site_id": "国外人形机器人资讯",
+      "category": "国外机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国外机器人资讯",
+      "source": "国外机器人资讯",
+      "site_id": "国外机器人资讯",
       "description": "Wall Street Sees a Multitrillion-Dollar Humanoid Robot Market. These 2 Industrial Stocks Sell the Parts.  Yahoo Finance",
       "ai_score": 80.0,
-      "ai_label": "humanoid",
+      "ai_label": "robotics",
       "relevance": 0.8,
       "authority": 10,
       "depth": 5,
-      "timeliness": 27.07,
+      "timeliness": 26.41,
       "writing_value": 5,
-      "total_score": 127.07
+      "total_score": 126.41
     },
     {
       "id": "77553565b3c47f94ad55dc2e4cb569412a563a68",
@@ -882,30 +945,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.01,
+      "timeliness": 28.36,
       "writing_value": 0,
-      "total_score": 119.01
-    },
-    {
-      "id": "ee7047163c8731d3f29689e5c4f2a45b7fb49650",
-      "title": "【汽车校友百校联盟】优必选机器人战略蓝图：以“工业先行”铸就中国具身智能的产业样本 - 电子工程专辑",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBhY1pmVTRxazhoQ3FoSVl2Y2hobk9ZYk9HMGZtREt1aXduOGl5ell5aVhvVndmSk81OEV3V09XSjZ0RUJtQlRwNVJjY3Atam1ObGZ3?oc=5",
-      "published_at": "2026-08-08T14:30:00+00:00",
-      "category": "国内具身智能资讯",
-      "gn_label": "embodied_ai",
-      "site_name": "国内具身智能资讯",
-      "source": "国内具身智能资讯",
-      "site_id": "国内具身智能资讯",
-      "description": "【汽车校友百校联盟】优必选机器人战略蓝图：以“工业先行”铸就中国具身智能的产业样本  电子工程专辑",
-      "ai_score": 80.0,
-      "ai_label": "embodied_ai",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 28.15,
-      "writing_value": 0,
-      "total_score": 118.15
+      "total_score": 118.36
     },
     {
       "id": "a499dd152b2919dfac591c1b51b6f6ff1fd4a529",
@@ -924,9 +966,51 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.15,
+      "timeliness": 27.5,
       "writing_value": 0,
-      "total_score": 118.15
+      "total_score": 117.5
+    },
+    {
+      "id": "ee7047163c8731d3f29689e5c4f2a45b7fb49650",
+      "title": "【汽车校友百校联盟】优必选机器人战略蓝图：以“工业先行”铸就中国具身智能的产业样本 - 电子工程专辑",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBhY1pmVTRxazhoQ3FoSVl2Y2hobk9ZYk9HMGZtREt1aXduOGl5ell5aVhvVndmSk81OEV3V09XSjZ0RUJtQlRwNVJjY3Atam1ObGZ3?oc=5",
+      "published_at": "2026-08-08T14:30:00+00:00",
+      "category": "国内人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国内人形机器人资讯",
+      "source": "国内人形机器人资讯",
+      "site_id": "国内人形机器人资讯",
+      "description": "【汽车校友百校联盟】优必选机器人战略蓝图：以“工业先行”铸就中国具身智能的产业样本  电子工程专辑",
+      "ai_score": 80.0,
+      "ai_label": "humanoid",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 27.5,
+      "writing_value": 0,
+      "total_score": 117.5
+    },
+    {
+      "id": "6044ab6ccafa0450f28b23555816b869c0c52053",
+      "title": "宇树科技破发？笑的合不拢嘴。进来了解一下具身智能的未来。 - 财富号",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE4yMlYyNTl1bFFLakVSeU5CeUJkVzZyTU1nQW1Hel9WSGIyMGJYLUtvYjhTQ3RPV0FLQ1BUVExIckFMT3VlTEtCbGwyRTVKWkYxTzROMEtQcENfdGZmaE5LMTAxa1ViblhBdVhF?oc=5",
+      "published_at": "2026-08-08T13:27:00+00:00",
+      "category": "国内具身智能资讯",
+      "gn_label": "embodied_ai",
+      "site_name": "国内具身智能资讯",
+      "source": "国内具身智能资讯",
+      "site_id": "国内具身智能资讯",
+      "description": "宇树科技破发？笑的合不拢嘴。进来了解一下具身智能的未来。  财富号",
+      "ai_score": 80.0,
+      "ai_label": "embodied_ai",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 26.45,
+      "writing_value": 0,
+      "total_score": 116.45
     },
     {
       "id": "1bc45b932c84261ec0838f4de014e83c94fe73a6",
@@ -945,9 +1029,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.78,
+      "timeliness": 26.13,
       "writing_value": 0,
-      "total_score": 116.78
+      "total_score": 116.13
     },
     {
       "id": "d60547b35f226bba5f702e8a109ea121ec4ec2da",
@@ -966,9 +1050,30 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.65,
+      "timeliness": 26.0,
       "writing_value": 0,
-      "total_score": 116.65
+      "total_score": 116.0
+    },
+    {
+      "id": "8c90c60746798039624ba277f912181967c02524",
+      "title": "宇树科技10日开启IPO申购 具身智能赛道迎来IPO密集期|深度 - 财联社",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE02cVFsT2xpazRNMWZKcVJIbHJEQ1JPd01zQ09SOVR6aEdjYzNUTTRTS25hVktlNzBTV1JCaVkyS0NKLWRucGtCMg?oc=5",
+      "published_at": "2026-08-08T11:54:00+00:00",
+      "category": "国内具身智能资讯",
+      "gn_label": "embodied_ai",
+      "site_name": "国内具身智能资讯",
+      "source": "国内具身智能资讯",
+      "site_id": "国内具身智能资讯",
+      "description": "宇树科技10日开启IPO申购 具身智能赛道迎来IPO密集期|深度  财联社",
+      "ai_score": 80.0,
+      "ai_label": "embodied_ai",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 24.9,
+      "writing_value": 0,
+      "total_score": 114.9
     },
     {
       "id": "a7a088f2c66e6380379d575eb5594858a45d882c",
@@ -987,9 +1092,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 29.3,
+      "timeliness": 28.65,
       "writing_value": 5,
-      "total_score": 114.3
+      "total_score": 113.65
+    },
+    {
+      "id": "d5f2953ae6e96f665a1434f81d35b4518d714c76",
+      "title": "US backs autonomous stroke treatment robot from MIT spinout with $32 million funding - Interesting Engineering",
+      "title_zh": "美国资助麻省理工学院衍生的自主中风治疗机器人 3200 万美元 - 有趣的工程",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPcTkxdzMwMzNnRFhuQTlnZThPV2JrcDBQQVFHUFdzU0FjbU1tenBGVDVKbEx6QU1VY25YMjRaSUdIZk5zSXNqdW5qS0Vaei1IN2FtME5kZmhnSmcxbE9rNDhDalNlbWk4UU9PaWlPcEN4NE13bWY2Rm45U2FiV1NmQmFvd18tbkdkTnhkblgtZGE5V1U?oc=5",
+      "published_at": "2026-08-08T12:44:00+00:00",
+      "category": "国外机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国外机器人资讯",
+      "source": "国外机器人资讯",
+      "site_id": "国外机器人资讯",
+      "description": "US backs autonomous stroke treatment robot from MIT spinout with $32 million funding  Interesting Engineering",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 25.73,
+      "writing_value": 5,
+      "total_score": 110.73
     },
     {
       "id": "49f53687a2daa782e1b40c25f64c0a60b069b18d",
@@ -1008,9 +1134,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 25.65,
+      "timeliness": 25.0,
       "writing_value": 5,
-      "total_score": 110.65
+      "total_score": 110.0
     },
     {
       "id": "f90738055e4ac8515707dd79a01786c4011d4d8f",
@@ -1029,9 +1155,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 24.75,
+      "timeliness": 24.09,
       "writing_value": 5,
-      "total_score": 109.75
+      "total_score": 109.09
+    },
+    {
+      "id": "9b00d7df7290160417f13af0855941076a7b3aea",
+      "title": "Tested: Beatbot AquaSense X, the AI powered, self-cleaning pool robot [Video] - 9to5Toys",
+      "title_zh": "已测试：Beatbot AquaSense X，人工智能驱动的自清洁泳池机器人 [视频] - 9to5Toys",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPVTBxbFNqZVlRb3Z4dWFLU29uSFRZeGpSa0hnbXZnMk4wTXZsVDV4T0V0UUlRQlNmZlZQeDQ0Z1kzNDZ6bVBMUzkzVV9mNHlDUmNhUVhFZFdFVHVwel9Nc0pGX21ENlFnTnlzSERvU1NNS0RTTlhyX0VXTDFyeXZ2QXRYZ2lwYTR3QVZaU09RdkVsa0x0UnRCM25WQkZQWHZUVkdSOUVNTm0?oc=5",
+      "published_at": "2026-08-08T16:25:00+00:00",
+      "category": "国外机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国外机器人资讯",
+      "source": "国外机器人资讯",
+      "site_id": "国外机器人资讯",
+      "description": "Tested: Beatbot AquaSense X, the AI powered, self-cleaning pool robot [Video]  9to5Toys",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.41,
+      "writing_value": 0,
+      "total_score": 104.41
     },
     {
       "id": "7a2a84a94930d6a61fc9e640e3b2b9ee309e67ed",
@@ -1050,9 +1197,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.76,
+      "timeliness": 28.11,
       "writing_value": 0,
-      "total_score": 103.76
+      "total_score": 103.11
     },
     {
       "id": "ee80cf218bc3542f7a3560f75dd50e129f33be6e",
@@ -1071,9 +1218,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.15,
+      "timeliness": 27.5,
       "writing_value": 0,
-      "total_score": 103.15
+      "total_score": 102.5
     },
     {
       "id": "82200091ba80ff5609ba8e0bbc202e521a8bda43",
@@ -1092,30 +1239,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.44,
+      "timeliness": 25.79,
       "writing_value": 0,
-      "total_score": 101.44
-    },
-    {
-      "id": "49c5c2506f58b42a773ffc7a0883f907ef0b5301",
-      "title": "US backs MIT spinout's autonomous stroke treatment robot with $32M - Interesting Engineering",
-      "title_zh": "美国斥资3200万美元支持麻省理工学院的自主中风治疗机器人 - 有趣的工程",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPcTkxdzMwMzNnRFhuQTlnZThPV2JrcDBQQVFHUFdzU0FjbU1tenBGVDVKbEx6QU1VY25YMjRaSUdIZk5zSXNqdW5qS0Vaei1IN2FtME5kZmhnSmcxbE9rNDhDalNlbWk4UU9PaWlPcEN4NE13bWY2Rm45U2FiV1NmQmFvd18tbkdkTnhkblgtZGE5V1U?oc=5",
-      "published_at": "2026-08-08T12:44:00+00:00",
-      "category": "国外机器人资讯",
-      "gn_label": "robotics",
-      "site_name": "国外机器人资讯",
-      "source": "国外机器人资讯",
-      "site_id": "国外机器人资讯",
-      "description": "US backs MIT spinout's autonomous stroke treatment robot with $32M  Interesting Engineering",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 26.38,
-      "writing_value": 0,
-      "total_score": 101.38
+      "total_score": 100.79
     },
     {
       "id": "ef020ba9d6c178c2e729fd51b0fe060ae49658d5",
@@ -1134,9 +1260,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.32,
+      "timeliness": 25.66,
       "writing_value": 0,
-      "total_score": 101.32
+      "total_score": 100.66
     },
     {
       "id": "d9edcc61535982fe22bed3c9d12ea1a6b6579b3c",
@@ -1144,20 +1270,20 @@
       "title_zh": "RoboBusiness 专家展望机器人技术的未来 20 年 - 机器人报告",
       "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPdVJSNU9LZTNFb2F2NFVUcjZ4RHhFOVdwcUlhVS1IcjhUTWtWYkJLWXBuZG1TUVFSU1VPckdxRUtEN1FuYmlkaXhJSUg1aDU3ampWVjlRZnNwdVVkSGNaQmZnTllmT1h1RkU1Zmplc1IxYVlVRHFPRTdIS1FzbG1lOGpVVEI1MkN4TmFOTWF5VXE3Mm1yajdFc2RyTGg5YURh?oc=5",
       "published_at": "2026-08-08T12:35:25+00:00",
-      "category": "国外人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国外人形机器人资讯",
-      "source": "国外人形机器人资讯",
-      "site_id": "国外人形机器人资讯",
+      "category": "国外机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国外机器人资讯",
+      "source": "国外机器人资讯",
+      "site_id": "国外机器人资讯",
       "description": "Experts look ahead at the next 20 years of robotics at RoboBusiness  The Robot Report",
       "ai_score": 65.0,
-      "ai_label": "humanoid",
+      "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.24,
+      "timeliness": 25.59,
       "writing_value": 0,
-      "total_score": 101.24
+      "total_score": 100.59
     },
     {
       "id": "4027f4074891dcbdde5d8b6325331c274dd45a7b",
@@ -1176,9 +1302,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.7,
+      "timeliness": 25.05,
       "writing_value": 0,
-      "total_score": 100.7
+      "total_score": 100.05
     },
     {
       "id": "cd7f1d0f5039065446831d9e840923ab975b8fa4",
@@ -1186,20 +1312,20 @@
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1HR09aY09jcGwyNU1wSGYwNGZvRzVUV2FhSjZTYjhxOWxUVmNVZ2JYYTZyQ1V4bVlhME9BV2JkOV8xR0pLYmVDekwxSDVrUFdR?oc=5",
       "published_at": "2026-08-08T11:47:18+00:00",
-      "category": "国内机器人资讯",
-      "gn_label": "robotics",
-      "site_name": "国内机器人资讯",
-      "source": "国内机器人资讯",
-      "site_id": "国内机器人资讯",
+      "category": "国内人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国内人形机器人资讯",
+      "source": "国内人形机器人资讯",
+      "site_id": "国内人形机器人资讯",
       "description": "首席科学家被“下架”，智元机器人IPO出现迷雾  凤凰网",
       "ai_score": 65.0,
-      "ai_label": "robotics",
+      "ai_label": "humanoid",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.44,
+      "timeliness": 24.79,
       "writing_value": 0,
-      "total_score": 100.44
+      "total_score": 99.79
     },
     {
       "id": "7a548bd7bf8243a6f1da3b9301c9637c02b0176a",
@@ -1218,9 +1344,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.25,
+      "timeliness": 24.6,
       "writing_value": 0,
-      "total_score": 100.25
+      "total_score": 99.6
     },
     {
       "id": "5ad2c0e66f9d71c9d299fc6a1dab1e878e69e081",
@@ -1239,9 +1365,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.24,
+      "timeliness": 24.59,
       "writing_value": 0,
-      "total_score": 100.24
+      "total_score": 99.59
     },
     {
       "id": "8da04feaabb7fe29406dce18bbbf0c3a570ffb87",
@@ -1260,9 +1386,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.83,
+      "timeliness": 24.18,
       "writing_value": 0,
-      "total_score": 99.83
+      "total_score": 99.18
     },
     {
       "id": "22892ad7c22bbe68d77f92f85c38ece6d9c4818b",
@@ -1281,13 +1407,34 @@
       "relevance": 0.5,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.9,
+      "timeliness": 25.25,
       "writing_value": 0,
-      "total_score": 85.9
+      "total_score": 85.25
     },
     {
-      "id": "38a8ee9c4990a0ca9c1c7ea77825ef38fa57add5",
-      "title": "2026 山西大学 AI 与机器人前沿技术海内外交流论坛在并举办 - k.sina.com.cn",
+      "id": "da392d9063dc6996c1b33ffb1d1f1ccdd8e95f43",
+      "title": "Competition Is Heating Up, but Here's Why Intuitive Surgical Might Still Be the Smartest Bet in MedTech - The Motley Fool",
+      "title_zh": "竞争正在升温，但这就是为什么直观手术可能仍然是医疗科技领域最明智的选择 - 91配资",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOMEo5c0xxVmgxMUpOV3R3bHJpbFlmTU9LVFNJdFJkeXJSZ2xhMlF0dS03Mm13RUQ5eFFrTmVnRFNyOC0wQjBpVjFCOW15ZERwUjgyX0wyRTlsTWpIUWpJbnhPYm1wSjk1cnBpZXpwSEJIZHVMLWJNVjByV0JEUDVfR2xGX0hCOGhsZHZEOVlpcVFHZUVFcGhZ?oc=5",
+      "published_at": "2026-08-08T16:39:47+00:00",
+      "category": "国外机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国外机器人资讯",
+      "source": "国外机器人资讯",
+      "site_id": "国外机器人资讯",
+      "description": "Competition Is Heating Up, but Here's Why Intuitive Surgical Might Still Be the Smartest Bet in MedTech  The Motley Fool",
+      "ai_score": 35.0,
+      "ai_label": "robotics",
+      "relevance": 0.35,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 29.66,
+      "writing_value": 5,
+      "total_score": 84.66
+    },
+    {
+      "id": "2aabae3c9744bc9c4212687afae8929ad240937d",
+      "title": "2026 山西大学 AI 与机器人前沿技术海内外交流论坛在并举办 - 新浪网",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxObUxiMWtQdE9tdW5rRUNTWGoyYUpLSFZYZmdPeUdfVWdUbHFaNkdaTkh3RmdOV0RfYjJsVUZzR0p0Q2xYSkI3SGUzdUtieDh4S0dpUUVidGhNZTNfN2Q0X0MwVW9KYUF2R1NJUDZVYk1Tdk41UXliekFHTXFReFlvZ0huTDZvQXpMZlFQNjBn?oc=5",
       "published_at": "2026-08-08T16:04:57+00:00",
@@ -1296,15 +1443,15 @@
       "site_name": "国内具身智能资讯",
       "source": "国内具身智能资讯",
       "site_id": "国内具身智能资讯",
-      "description": "2026 山西大学 AI 与机器人前沿技术海内外交流论坛在并举办  k.sina.com.cn",
+      "description": "2026 山西大学 AI 与机器人前沿技术海内外交流论坛在并举办  新浪网",
       "ai_score": 35.0,
       "ai_label": "embodied_ai",
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.73,
+      "timeliness": 29.08,
       "writing_value": 0,
-      "total_score": 74.73
+      "total_score": 74.08
     },
     {
       "id": "3ae265fc93bffd27d6c78894eac48760f1e1e4f4",
@@ -1323,30 +1470,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.23,
+      "timeliness": 28.58,
       "writing_value": 0,
-      "total_score": 74.23
-    },
-    {
-      "id": "7f393daf51fb415db0d58087f97b5fa8fcb62583",
-      "title": "介绍一下日本AI发展的历史 - k.sina.com.cn",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBZZXJPcjJKYlFZR3p0MDBSRXFSZ2N4UGRJdWxIZnJvaklsSXotUVJDSktqeFNPZzZJU2JEUjBJLXFGaHVmdG91NkEyeW5id0FfUElJNzU5cTRqSENZSGFpbDY3NUxaNmhPQnFRSzFQV0JYZnpMSkptYXNSNXk5LU0?oc=5",
-      "published_at": "2026-08-08T15:28:03+00:00",
-      "category": "国内物理AI资讯",
-      "gn_label": "physical_ai",
-      "site_name": "国内物理AI资讯",
-      "source": "国内物理AI资讯",
-      "site_id": "国内物理AI资讯",
-      "description": "介绍一下日本AI发展的历史  k.sina.com.cn",
-      "ai_score": 35.0,
-      "ai_label": "physical_ai",
-      "relevance": 0.35,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 29.12,
-      "writing_value": 0,
-      "total_score": 74.12
+      "total_score": 73.58
     },
     {
       "id": "cc4d4f4974d41e1b82eb67472fcc1c574817014a",
@@ -1365,9 +1491,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.0,
+      "timeliness": 28.35,
       "writing_value": 0,
-      "total_score": 74.0
+      "total_score": 73.35
     },
     {
       "id": "1ba7fb26717fea34a320620e4d1c90ff443b45e3",
@@ -1375,24 +1501,24 @@
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNc1N2OGZlaGhMX3FXS2dkWnVyeTZKWmxzZWZDdkxHUC0zdnRib2JzUGFUc1FReUJMNV95dUI3Y2hOeUVLR0U2M2paMTMwb3d0U0JRLUV2QlBnMkF1RFBLM19EdEhEekwyR3g2MmRfOXZSQnVPVWJoMDhSQThZLTl2WndqNVlKVkU?oc=5",
       "published_at": "2026-08-08T15:19:58+00:00",
-      "category": "国内人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国内人形机器人资讯",
-      "source": "国内人形机器人资讯",
-      "site_id": "国内人形机器人资讯",
+      "category": "国内机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国内机器人资讯",
+      "source": "国内机器人资讯",
+      "site_id": "国内机器人资讯",
       "description": "AI机器人终极对决  新浪财经",
       "ai_score": 35.0,
-      "ai_label": "humanoid",
+      "ai_label": "robotics",
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.98,
+      "timeliness": 28.33,
       "writing_value": 0,
-      "total_score": 73.98
+      "total_score": 73.33
     },
     {
-      "id": "8ae266eb5165016d1d40d9cc27bbde4b0bcecac9",
-      "title": "机器人零售店开进商场，深圳科技产品进一步走向世界 - mp.oeeee.com",
+      "id": "0359936c1308d750cc586fff214284eb92865590",
+      "title": "机器人零售店开进商场，深圳科技产品进一步走向世界 - 奥一网",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE96d2h3XzBjTnhfVXpuRWZBcEtCT3p2UW9BVWpzNDVWaWUydUNHR3JaOHFqdHpBdVoyUmxsWkFJbGNZNzc1THQxSUNlWG9UX3JvNGMzX243RmdkanFBNTgxQXB6N3drZw?oc=5",
       "published_at": "2026-08-08T14:15:39+00:00",
@@ -1401,15 +1527,15 @@
       "site_name": "国内机器人资讯",
       "source": "国内机器人资讯",
       "site_id": "国内机器人资讯",
-      "description": "机器人零售店开进商场，深圳科技产品进一步走向世界  mp.oeeee.com",
+      "description": "机器人零售店开进商场，深圳科技产品进一步走向世界  奥一网",
       "ai_score": 35.0,
       "ai_label": "robotics",
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.91,
+      "timeliness": 27.26,
       "writing_value": 0,
-      "total_score": 72.91
+      "total_score": 72.26
     },
     {
       "id": "c387f2004bd8ede2c26845d77a339982969a01e3",
@@ -1428,9 +1554,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.62,
+      "timeliness": 26.96,
       "writing_value": 0,
-      "total_score": 72.62
+      "total_score": 71.96
     },
     {
       "id": "a27d1c17e57296a9ee505da1738eaf6ffa5c28ae",
@@ -1449,9 +1575,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.21,
+      "timeliness": 26.55,
       "writing_value": 0,
-      "total_score": 72.21
+      "total_score": 71.55
     },
     {
       "id": "c44528d4359940893332640c6cdfb975bd50a0ab",
@@ -1470,9 +1596,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.95,
+      "timeliness": 26.3,
       "writing_value": 0,
-      "total_score": 71.95
+      "total_score": 71.3
     },
     {
       "id": "769b3433ec137e40d320f5c2e7e98c16d5a05e2b",
@@ -1491,9 +1617,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.39,
+      "timeliness": 25.73,
       "writing_value": 0,
-      "total_score": 71.39
+      "total_score": 70.73
     },
     {
       "id": "5222ddd8c91822d711fbdb54ac5c0c8352244b6e",
@@ -1512,9 +1638,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.22,
+      "timeliness": 25.56,
       "writing_value": 0,
-      "total_score": 71.22
+      "total_score": 70.56
     },
     {
       "id": "af9287ed0ac644ee17f47d714d4393df61cfb11c",
@@ -1533,9 +1659,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.66,
+      "timeliness": 25.01,
       "writing_value": 0,
-      "total_score": 70.66
+      "total_score": 70.01
     },
     {
       "id": "b9cfd2846fc73924404300e986a3b9d0951afc48",
@@ -1554,9 +1680,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.63,
+      "timeliness": 24.97,
       "writing_value": 0,
-      "total_score": 70.63
+      "total_score": 69.97
     },
     {
       "id": "2c1e28ef2023a56726496520ec40fa6fcf7b848b",
@@ -1575,9 +1701,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.48,
+      "timeliness": 24.83,
       "writing_value": 0,
-      "total_score": 70.48
+      "total_score": 69.83
     },
     {
       "id": "48bac0ab75fb3df59b867e019d7391120dd0f08d",
@@ -1596,9 +1722,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.45,
+      "timeliness": 24.8,
       "writing_value": 0,
-      "total_score": 70.45
+      "total_score": 69.8
     },
     {
       "id": "0ce8999e01fb2027e39828617be8a0ce3f2c6fbf",
@@ -1617,9 +1743,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.29,
+      "timeliness": 24.64,
       "writing_value": 0,
-      "total_score": 70.29
+      "total_score": 69.64
     },
     {
       "id": "1b0b15dc0fa649d99bc2530d7965376dead78c77",
@@ -1638,9 +1764,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.02,
+      "timeliness": 24.36,
       "writing_value": 0,
-      "total_score": 70.02
+      "total_score": 69.36
     },
     {
       "id": "8849520425aa7248e3ea010e232b469535881f24",
@@ -1659,9 +1785,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.92,
+      "timeliness": 24.27,
       "writing_value": 0,
-      "total_score": 69.92
+      "total_score": 69.27
     },
     {
       "id": "3d004b2888ac4be141a6d71d39519e5d1fd3b9db",
@@ -1680,9 +1806,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.92,
+      "timeliness": 24.26,
       "writing_value": 0,
-      "total_score": 69.92
+      "total_score": 69.26
     }
   ],
   "items_all_raw": [
@@ -1692,20 +1818,20 @@
       "title_zh": "华尔街看到了价值数万亿美元的人形机器人市场。这两只工业股票出售零部件。 - 雅虎财经",
       "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNVENJd29fY1dFQUxQcV9IWFlNQ1VWVHVmTFlLbjgyY1RPbmNjc05QNDFYUGhGTFBTN0Z1Y2RTTkhCOUJEMmpqWU9CYVZwZElKblM0TUJXMFVKX3NxY1J1bG8zRnB2QmtpUExJNmlYZ0JKUEtuVFZiMUF4cXd6OXRCZE9pWjlmWGJkSTlnRHlNUlFyV1p2ZTBaS08zUjBDYTMxNi1N?oc=5",
       "published_at": "2026-08-08T13:25:00+00:00",
-      "category": "国外人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国外人形机器人资讯",
-      "source": "国外人形机器人资讯",
-      "site_id": "国外人形机器人资讯",
+      "category": "国外机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国外机器人资讯",
+      "source": "国外机器人资讯",
+      "site_id": "国外机器人资讯",
       "description": "Wall Street Sees a Multitrillion-Dollar Humanoid Robot Market. These 2 Industrial Stocks Sell the Parts.  Yahoo Finance",
       "ai_score": 80.0,
-      "ai_label": "humanoid",
+      "ai_label": "robotics",
       "relevance": 0.8,
       "authority": 10,
       "depth": 5,
-      "timeliness": 27.07,
+      "timeliness": 26.41,
       "writing_value": 5,
-      "total_score": 127.07
+      "total_score": 126.41
     },
     {
       "id": "77553565b3c47f94ad55dc2e4cb569412a563a68",
@@ -1724,30 +1850,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.01,
+      "timeliness": 28.36,
       "writing_value": 0,
-      "total_score": 119.01
-    },
-    {
-      "id": "ee7047163c8731d3f29689e5c4f2a45b7fb49650",
-      "title": "【汽车校友百校联盟】优必选机器人战略蓝图：以“工业先行”铸就中国具身智能的产业样本 - 电子工程专辑",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBhY1pmVTRxazhoQ3FoSVl2Y2hobk9ZYk9HMGZtREt1aXduOGl5ell5aVhvVndmSk81OEV3V09XSjZ0RUJtQlRwNVJjY3Atam1ObGZ3?oc=5",
-      "published_at": "2026-08-08T14:30:00+00:00",
-      "category": "国内具身智能资讯",
-      "gn_label": "embodied_ai",
-      "site_name": "国内具身智能资讯",
-      "source": "国内具身智能资讯",
-      "site_id": "国内具身智能资讯",
-      "description": "【汽车校友百校联盟】优必选机器人战略蓝图：以“工业先行”铸就中国具身智能的产业样本  电子工程专辑",
-      "ai_score": 80.0,
-      "ai_label": "embodied_ai",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 28.15,
-      "writing_value": 0,
-      "total_score": 118.15
+      "total_score": 118.36
     },
     {
       "id": "a499dd152b2919dfac591c1b51b6f6ff1fd4a529",
@@ -1766,9 +1871,51 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.15,
+      "timeliness": 27.5,
       "writing_value": 0,
-      "total_score": 118.15
+      "total_score": 117.5
+    },
+    {
+      "id": "ee7047163c8731d3f29689e5c4f2a45b7fb49650",
+      "title": "【汽车校友百校联盟】优必选机器人战略蓝图：以“工业先行”铸就中国具身智能的产业样本 - 电子工程专辑",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBhY1pmVTRxazhoQ3FoSVl2Y2hobk9ZYk9HMGZtREt1aXduOGl5ell5aVhvVndmSk81OEV3V09XSjZ0RUJtQlRwNVJjY3Atam1ObGZ3?oc=5",
+      "published_at": "2026-08-08T14:30:00+00:00",
+      "category": "国内人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国内人形机器人资讯",
+      "source": "国内人形机器人资讯",
+      "site_id": "国内人形机器人资讯",
+      "description": "【汽车校友百校联盟】优必选机器人战略蓝图：以“工业先行”铸就中国具身智能的产业样本  电子工程专辑",
+      "ai_score": 80.0,
+      "ai_label": "humanoid",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 27.5,
+      "writing_value": 0,
+      "total_score": 117.5
+    },
+    {
+      "id": "6044ab6ccafa0450f28b23555816b869c0c52053",
+      "title": "宇树科技破发？笑的合不拢嘴。进来了解一下具身智能的未来。 - 财富号",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE4yMlYyNTl1bFFLakVSeU5CeUJkVzZyTU1nQW1Hel9WSGIyMGJYLUtvYjhTQ3RPV0FLQ1BUVExIckFMT3VlTEtCbGwyRTVKWkYxTzROMEtQcENfdGZmaE5LMTAxa1ViblhBdVhF?oc=5",
+      "published_at": "2026-08-08T13:27:00+00:00",
+      "category": "国内具身智能资讯",
+      "gn_label": "embodied_ai",
+      "site_name": "国内具身智能资讯",
+      "source": "国内具身智能资讯",
+      "site_id": "国内具身智能资讯",
+      "description": "宇树科技破发？笑的合不拢嘴。进来了解一下具身智能的未来。  财富号",
+      "ai_score": 80.0,
+      "ai_label": "embodied_ai",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 26.45,
+      "writing_value": 0,
+      "total_score": 116.45
     },
     {
       "id": "1bc45b932c84261ec0838f4de014e83c94fe73a6",
@@ -1787,9 +1934,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.78,
+      "timeliness": 26.13,
       "writing_value": 0,
-      "total_score": 116.78
+      "total_score": 116.13
     },
     {
       "id": "d60547b35f226bba5f702e8a109ea121ec4ec2da",
@@ -1808,9 +1955,30 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.65,
+      "timeliness": 26.0,
       "writing_value": 0,
-      "total_score": 116.65
+      "total_score": 116.0
+    },
+    {
+      "id": "8c90c60746798039624ba277f912181967c02524",
+      "title": "宇树科技10日开启IPO申购 具身智能赛道迎来IPO密集期|深度 - 财联社",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE02cVFsT2xpazRNMWZKcVJIbHJEQ1JPd01zQ09SOVR6aEdjYzNUTTRTS25hVktlNzBTV1JCaVkyS0NKLWRucGtCMg?oc=5",
+      "published_at": "2026-08-08T11:54:00+00:00",
+      "category": "国内具身智能资讯",
+      "gn_label": "embodied_ai",
+      "site_name": "国内具身智能资讯",
+      "source": "国内具身智能资讯",
+      "site_id": "国内具身智能资讯",
+      "description": "宇树科技10日开启IPO申购 具身智能赛道迎来IPO密集期|深度  财联社",
+      "ai_score": 80.0,
+      "ai_label": "embodied_ai",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 24.9,
+      "writing_value": 0,
+      "total_score": 114.9
     },
     {
       "id": "a7a088f2c66e6380379d575eb5594858a45d882c",
@@ -1829,9 +1997,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 29.3,
+      "timeliness": 28.65,
       "writing_value": 5,
-      "total_score": 114.3
+      "total_score": 113.65
+    },
+    {
+      "id": "d5f2953ae6e96f665a1434f81d35b4518d714c76",
+      "title": "US backs autonomous stroke treatment robot from MIT spinout with $32 million funding - Interesting Engineering",
+      "title_zh": "美国资助麻省理工学院衍生的自主中风治疗机器人 3200 万美元 - 有趣的工程",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPcTkxdzMwMzNnRFhuQTlnZThPV2JrcDBQQVFHUFdzU0FjbU1tenBGVDVKbEx6QU1VY25YMjRaSUdIZk5zSXNqdW5qS0Vaei1IN2FtME5kZmhnSmcxbE9rNDhDalNlbWk4UU9PaWlPcEN4NE13bWY2Rm45U2FiV1NmQmFvd18tbkdkTnhkblgtZGE5V1U?oc=5",
+      "published_at": "2026-08-08T12:44:00+00:00",
+      "category": "国外机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国外机器人资讯",
+      "source": "国外机器人资讯",
+      "site_id": "国外机器人资讯",
+      "description": "US backs autonomous stroke treatment robot from MIT spinout with $32 million funding  Interesting Engineering",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 25.73,
+      "writing_value": 5,
+      "total_score": 110.73
     },
     {
       "id": "49f53687a2daa782e1b40c25f64c0a60b069b18d",
@@ -1850,9 +2039,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 25.65,
+      "timeliness": 25.0,
       "writing_value": 5,
-      "total_score": 110.65
+      "total_score": 110.0
     },
     {
       "id": "f90738055e4ac8515707dd79a01786c4011d4d8f",
@@ -1871,9 +2060,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 24.75,
+      "timeliness": 24.09,
       "writing_value": 5,
-      "total_score": 109.75
+      "total_score": 109.09
+    },
+    {
+      "id": "9b00d7df7290160417f13af0855941076a7b3aea",
+      "title": "Tested: Beatbot AquaSense X, the AI powered, self-cleaning pool robot [Video] - 9to5Toys",
+      "title_zh": "已测试：Beatbot AquaSense X，人工智能驱动的自清洁泳池机器人 [视频] - 9to5Toys",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPVTBxbFNqZVlRb3Z4dWFLU29uSFRZeGpSa0hnbXZnMk4wTXZsVDV4T0V0UUlRQlNmZlZQeDQ0Z1kzNDZ6bVBMUzkzVV9mNHlDUmNhUVhFZFdFVHVwel9Nc0pGX21ENlFnTnlzSERvU1NNS0RTTlhyX0VXTDFyeXZ2QXRYZ2lwYTR3QVZaU09RdkVsa0x0UnRCM25WQkZQWHZUVkdSOUVNTm0?oc=5",
+      "published_at": "2026-08-08T16:25:00+00:00",
+      "category": "国外机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国外机器人资讯",
+      "source": "国外机器人资讯",
+      "site_id": "国外机器人资讯",
+      "description": "Tested: Beatbot AquaSense X, the AI powered, self-cleaning pool robot [Video]  9to5Toys",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.41,
+      "writing_value": 0,
+      "total_score": 104.41
     },
     {
       "id": "7a2a84a94930d6a61fc9e640e3b2b9ee309e67ed",
@@ -1892,9 +2102,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.76,
+      "timeliness": 28.11,
       "writing_value": 0,
-      "total_score": 103.76
+      "total_score": 103.11
     },
     {
       "id": "ee80cf218bc3542f7a3560f75dd50e129f33be6e",
@@ -1913,9 +2123,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.15,
+      "timeliness": 27.5,
       "writing_value": 0,
-      "total_score": 103.15
+      "total_score": 102.5
     },
     {
       "id": "82200091ba80ff5609ba8e0bbc202e521a8bda43",
@@ -1934,30 +2144,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.44,
+      "timeliness": 25.79,
       "writing_value": 0,
-      "total_score": 101.44
-    },
-    {
-      "id": "49c5c2506f58b42a773ffc7a0883f907ef0b5301",
-      "title": "US backs MIT spinout's autonomous stroke treatment robot with $32M - Interesting Engineering",
-      "title_zh": "美国斥资3200万美元支持麻省理工学院的自主中风治疗机器人 - 有趣的工程",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPcTkxdzMwMzNnRFhuQTlnZThPV2JrcDBQQVFHUFdzU0FjbU1tenBGVDVKbEx6QU1VY25YMjRaSUdIZk5zSXNqdW5qS0Vaei1IN2FtME5kZmhnSmcxbE9rNDhDalNlbWk4UU9PaWlPcEN4NE13bWY2Rm45U2FiV1NmQmFvd18tbkdkTnhkblgtZGE5V1U?oc=5",
-      "published_at": "2026-08-08T12:44:00+00:00",
-      "category": "国外机器人资讯",
-      "gn_label": "robotics",
-      "site_name": "国外机器人资讯",
-      "source": "国外机器人资讯",
-      "site_id": "国外机器人资讯",
-      "description": "US backs MIT spinout's autonomous stroke treatment robot with $32M  Interesting Engineering",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 26.38,
-      "writing_value": 0,
-      "total_score": 101.38
+      "total_score": 100.79
     },
     {
       "id": "ef020ba9d6c178c2e729fd51b0fe060ae49658d5",
@@ -1976,9 +2165,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.32,
+      "timeliness": 25.66,
       "writing_value": 0,
-      "total_score": 101.32
+      "total_score": 100.66
     },
     {
       "id": "d9edcc61535982fe22bed3c9d12ea1a6b6579b3c",
@@ -1986,20 +2175,20 @@
       "title_zh": "RoboBusiness 专家展望机器人技术的未来 20 年 - 机器人报告",
       "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPdVJSNU9LZTNFb2F2NFVUcjZ4RHhFOVdwcUlhVS1IcjhUTWtWYkJLWXBuZG1TUVFSU1VPckdxRUtEN1FuYmlkaXhJSUg1aDU3ampWVjlRZnNwdVVkSGNaQmZnTllmT1h1RkU1Zmplc1IxYVlVRHFPRTdIS1FzbG1lOGpVVEI1MkN4TmFOTWF5VXE3Mm1yajdFc2RyTGg5YURh?oc=5",
       "published_at": "2026-08-08T12:35:25+00:00",
-      "category": "国外人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国外人形机器人资讯",
-      "source": "国外人形机器人资讯",
-      "site_id": "国外人形机器人资讯",
+      "category": "国外机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国外机器人资讯",
+      "source": "国外机器人资讯",
+      "site_id": "国外机器人资讯",
       "description": "Experts look ahead at the next 20 years of robotics at RoboBusiness  The Robot Report",
       "ai_score": 65.0,
-      "ai_label": "humanoid",
+      "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.24,
+      "timeliness": 25.59,
       "writing_value": 0,
-      "total_score": 101.24
+      "total_score": 100.59
     },
     {
       "id": "4027f4074891dcbdde5d8b6325331c274dd45a7b",
@@ -2018,9 +2207,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.7,
+      "timeliness": 25.05,
       "writing_value": 0,
-      "total_score": 100.7
+      "total_score": 100.05
     },
     {
       "id": "cd7f1d0f5039065446831d9e840923ab975b8fa4",
@@ -2028,20 +2217,20 @@
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1HR09aY09jcGwyNU1wSGYwNGZvRzVUV2FhSjZTYjhxOWxUVmNVZ2JYYTZyQ1V4bVlhME9BV2JkOV8xR0pLYmVDekwxSDVrUFdR?oc=5",
       "published_at": "2026-08-08T11:47:18+00:00",
-      "category": "国内机器人资讯",
-      "gn_label": "robotics",
-      "site_name": "国内机器人资讯",
-      "source": "国内机器人资讯",
-      "site_id": "国内机器人资讯",
+      "category": "国内人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国内人形机器人资讯",
+      "source": "国内人形机器人资讯",
+      "site_id": "国内人形机器人资讯",
       "description": "首席科学家被“下架”，智元机器人IPO出现迷雾  凤凰网",
       "ai_score": 65.0,
-      "ai_label": "robotics",
+      "ai_label": "humanoid",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.44,
+      "timeliness": 24.79,
       "writing_value": 0,
-      "total_score": 100.44
+      "total_score": 99.79
     },
     {
       "id": "7a548bd7bf8243a6f1da3b9301c9637c02b0176a",
@@ -2060,9 +2249,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.25,
+      "timeliness": 24.6,
       "writing_value": 0,
-      "total_score": 100.25
+      "total_score": 99.6
     },
     {
       "id": "5ad2c0e66f9d71c9d299fc6a1dab1e878e69e081",
@@ -2081,9 +2270,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.24,
+      "timeliness": 24.59,
       "writing_value": 0,
-      "total_score": 100.24
+      "total_score": 99.59
     },
     {
       "id": "8da04feaabb7fe29406dce18bbbf0c3a570ffb87",
@@ -2102,9 +2291,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.83,
+      "timeliness": 24.18,
       "writing_value": 0,
-      "total_score": 99.83
+      "total_score": 99.18
     },
     {
       "id": "22892ad7c22bbe68d77f92f85c38ece6d9c4818b",
@@ -2123,13 +2312,34 @@
       "relevance": 0.5,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.9,
+      "timeliness": 25.25,
       "writing_value": 0,
-      "total_score": 85.9
+      "total_score": 85.25
     },
     {
-      "id": "38a8ee9c4990a0ca9c1c7ea77825ef38fa57add5",
-      "title": "2026 山西大学 AI 与机器人前沿技术海内外交流论坛在并举办 - k.sina.com.cn",
+      "id": "da392d9063dc6996c1b33ffb1d1f1ccdd8e95f43",
+      "title": "Competition Is Heating Up, but Here's Why Intuitive Surgical Might Still Be the Smartest Bet in MedTech - The Motley Fool",
+      "title_zh": "竞争正在升温，但这就是为什么直观手术可能仍然是医疗科技领域最明智的选择 - 91配资",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOMEo5c0xxVmgxMUpOV3R3bHJpbFlmTU9LVFNJdFJkeXJSZ2xhMlF0dS03Mm13RUQ5eFFrTmVnRFNyOC0wQjBpVjFCOW15ZERwUjgyX0wyRTlsTWpIUWpJbnhPYm1wSjk1cnBpZXpwSEJIZHVMLWJNVjByV0JEUDVfR2xGX0hCOGhsZHZEOVlpcVFHZUVFcGhZ?oc=5",
+      "published_at": "2026-08-08T16:39:47+00:00",
+      "category": "国外机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国外机器人资讯",
+      "source": "国外机器人资讯",
+      "site_id": "国外机器人资讯",
+      "description": "Competition Is Heating Up, but Here's Why Intuitive Surgical Might Still Be the Smartest Bet in MedTech  The Motley Fool",
+      "ai_score": 35.0,
+      "ai_label": "robotics",
+      "relevance": 0.35,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 29.66,
+      "writing_value": 5,
+      "total_score": 84.66
+    },
+    {
+      "id": "2aabae3c9744bc9c4212687afae8929ad240937d",
+      "title": "2026 山西大学 AI 与机器人前沿技术海内外交流论坛在并举办 - 新浪网",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxObUxiMWtQdE9tdW5rRUNTWGoyYUpLSFZYZmdPeUdfVWdUbHFaNkdaTkh3RmdOV0RfYjJsVUZzR0p0Q2xYSkI3SGUzdUtieDh4S0dpUUVidGhNZTNfN2Q0X0MwVW9KYUF2R1NJUDZVYk1Tdk41UXliekFHTXFReFlvZ0huTDZvQXpMZlFQNjBn?oc=5",
       "published_at": "2026-08-08T16:04:57+00:00",
@@ -2138,15 +2348,15 @@
       "site_name": "国内具身智能资讯",
       "source": "国内具身智能资讯",
       "site_id": "国内具身智能资讯",
-      "description": "2026 山西大学 AI 与机器人前沿技术海内外交流论坛在并举办  k.sina.com.cn",
+      "description": "2026 山西大学 AI 与机器人前沿技术海内外交流论坛在并举办  新浪网",
       "ai_score": 35.0,
       "ai_label": "embodied_ai",
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.73,
+      "timeliness": 29.08,
       "writing_value": 0,
-      "total_score": 74.73
+      "total_score": 74.08
     },
     {
       "id": "3ae265fc93bffd27d6c78894eac48760f1e1e4f4",
@@ -2165,30 +2375,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.23,
+      "timeliness": 28.58,
       "writing_value": 0,
-      "total_score": 74.23
-    },
-    {
-      "id": "7f393daf51fb415db0d58087f97b5fa8fcb62583",
-      "title": "介绍一下日本AI发展的历史 - k.sina.com.cn",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBZZXJPcjJKYlFZR3p0MDBSRXFSZ2N4UGRJdWxIZnJvaklsSXotUVJDSktqeFNPZzZJU2JEUjBJLXFGaHVmdG91NkEyeW5id0FfUElJNzU5cTRqSENZSGFpbDY3NUxaNmhPQnFRSzFQV0JYZnpMSkptYXNSNXk5LU0?oc=5",
-      "published_at": "2026-08-08T15:28:03+00:00",
-      "category": "国内物理AI资讯",
-      "gn_label": "physical_ai",
-      "site_name": "国内物理AI资讯",
-      "source": "国内物理AI资讯",
-      "site_id": "国内物理AI资讯",
-      "description": "介绍一下日本AI发展的历史  k.sina.com.cn",
-      "ai_score": 35.0,
-      "ai_label": "physical_ai",
-      "relevance": 0.35,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 29.12,
-      "writing_value": 0,
-      "total_score": 74.12
+      "total_score": 73.58
     },
     {
       "id": "cc4d4f4974d41e1b82eb67472fcc1c574817014a",
@@ -2207,9 +2396,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.0,
+      "timeliness": 28.35,
       "writing_value": 0,
-      "total_score": 74.0
+      "total_score": 73.35
     },
     {
       "id": "1ba7fb26717fea34a320620e4d1c90ff443b45e3",
@@ -2217,24 +2406,24 @@
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNc1N2OGZlaGhMX3FXS2dkWnVyeTZKWmxzZWZDdkxHUC0zdnRib2JzUGFUc1FReUJMNV95dUI3Y2hOeUVLR0U2M2paMTMwb3d0U0JRLUV2QlBnMkF1RFBLM19EdEhEekwyR3g2MmRfOXZSQnVPVWJoMDhSQThZLTl2WndqNVlKVkU?oc=5",
       "published_at": "2026-08-08T15:19:58+00:00",
-      "category": "国内人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国内人形机器人资讯",
-      "source": "国内人形机器人资讯",
-      "site_id": "国内人形机器人资讯",
+      "category": "国内机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国内机器人资讯",
+      "source": "国内机器人资讯",
+      "site_id": "国内机器人资讯",
       "description": "AI机器人终极对决  新浪财经",
       "ai_score": 35.0,
-      "ai_label": "humanoid",
+      "ai_label": "robotics",
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.98,
+      "timeliness": 28.33,
       "writing_value": 0,
-      "total_score": 73.98
+      "total_score": 73.33
     },
     {
-      "id": "8ae266eb5165016d1d40d9cc27bbde4b0bcecac9",
-      "title": "机器人零售店开进商场，深圳科技产品进一步走向世界 - mp.oeeee.com",
+      "id": "0359936c1308d750cc586fff214284eb92865590",
+      "title": "机器人零售店开进商场，深圳科技产品进一步走向世界 - 奥一网",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE96d2h3XzBjTnhfVXpuRWZBcEtCT3p2UW9BVWpzNDVWaWUydUNHR3JaOHFqdHpBdVoyUmxsWkFJbGNZNzc1THQxSUNlWG9UX3JvNGMzX243RmdkanFBNTgxQXB6N3drZw?oc=5",
       "published_at": "2026-08-08T14:15:39+00:00",
@@ -2243,15 +2432,15 @@
       "site_name": "国内机器人资讯",
       "source": "国内机器人资讯",
       "site_id": "国内机器人资讯",
-      "description": "机器人零售店开进商场，深圳科技产品进一步走向世界  mp.oeeee.com",
+      "description": "机器人零售店开进商场，深圳科技产品进一步走向世界  奥一网",
       "ai_score": 35.0,
       "ai_label": "robotics",
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.91,
+      "timeliness": 27.26,
       "writing_value": 0,
-      "total_score": 72.91
+      "total_score": 72.26
     },
     {
       "id": "c387f2004bd8ede2c26845d77a339982969a01e3",
@@ -2270,9 +2459,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.62,
+      "timeliness": 26.96,
       "writing_value": 0,
-      "total_score": 72.62
+      "total_score": 71.96
     },
     {
       "id": "a27d1c17e57296a9ee505da1738eaf6ffa5c28ae",
@@ -2291,9 +2480,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.21,
+      "timeliness": 26.55,
       "writing_value": 0,
-      "total_score": 72.21
+      "total_score": 71.55
     },
     {
       "id": "c44528d4359940893332640c6cdfb975bd50a0ab",
@@ -2312,9 +2501,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.95,
+      "timeliness": 26.3,
       "writing_value": 0,
-      "total_score": 71.95
+      "total_score": 71.3
     },
     {
       "id": "769b3433ec137e40d320f5c2e7e98c16d5a05e2b",
@@ -2333,9 +2522,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.39,
+      "timeliness": 25.73,
       "writing_value": 0,
-      "total_score": 71.39
+      "total_score": 70.73
     },
     {
       "id": "5222ddd8c91822d711fbdb54ac5c0c8352244b6e",
@@ -2354,9 +2543,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.22,
+      "timeliness": 25.56,
       "writing_value": 0,
-      "total_score": 71.22
+      "total_score": 70.56
     },
     {
       "id": "af9287ed0ac644ee17f47d714d4393df61cfb11c",
@@ -2375,9 +2564,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.66,
+      "timeliness": 25.01,
       "writing_value": 0,
-      "total_score": 70.66
+      "total_score": 70.01
     },
     {
       "id": "b9cfd2846fc73924404300e986a3b9d0951afc48",
@@ -2396,9 +2585,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.63,
+      "timeliness": 24.97,
       "writing_value": 0,
-      "total_score": 70.63
+      "total_score": 69.97
     },
     {
       "id": "2c1e28ef2023a56726496520ec40fa6fcf7b848b",
@@ -2417,9 +2606,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.48,
+      "timeliness": 24.83,
       "writing_value": 0,
-      "total_score": 70.48
+      "total_score": 69.83
     },
     {
       "id": "48bac0ab75fb3df59b867e019d7391120dd0f08d",
@@ -2438,9 +2627,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.45,
+      "timeliness": 24.8,
       "writing_value": 0,
-      "total_score": 70.45
+      "total_score": 69.8
     },
     {
       "id": "0ce8999e01fb2027e39828617be8a0ce3f2c6fbf",
@@ -2459,9 +2648,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.29,
+      "timeliness": 24.64,
       "writing_value": 0,
-      "total_score": 70.29
+      "total_score": 69.64
     },
     {
       "id": "1b0b15dc0fa649d99bc2530d7965376dead78c77",
@@ -2480,9 +2669,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.02,
+      "timeliness": 24.36,
       "writing_value": 0,
-      "total_score": 70.02
+      "total_score": 69.36
     },
     {
       "id": "8849520425aa7248e3ea010e232b469535881f24",
@@ -2501,9 +2690,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.92,
+      "timeliness": 24.27,
       "writing_value": 0,
-      "total_score": 69.92
+      "total_score": 69.27
     },
     {
       "id": "3d004b2888ac4be141a6d71d39519e5d1fd3b9db",
@@ -2522,15 +2711,20 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.92,
+      "timeliness": 24.26,
       "writing_value": 0,
-      "total_score": 69.92
+      "total_score": 69.26
     }
   ],
   "site_stats": [
     {
       "site_id": "国内人形机器人资讯",
       "site_name": "国内人形机器人资讯",
+      "count": 12
+    },
+    {
+      "site_id": "国外机器人资讯",
+      "site_name": "国外机器人资讯",
       "count": 11
     },
     {
@@ -2541,21 +2735,11 @@
     {
       "site_id": "国内具身智能资讯",
       "site_name": "国内具身智能资讯",
-      "count": 7
-    },
-    {
-      "site_id": "国外机器人资讯",
-      "site_name": "国外机器人资讯",
-      "count": 7
+      "count": 8
     },
     {
       "site_id": "国内物理AI资讯",
       "site_name": "国内物理AI资讯",
-      "count": 3
-    },
-    {
-      "site_id": "国外人形机器人资讯",
-      "site_name": "国外人形机器人资讯",
       "count": 2
     },
     {
@@ -2564,6 +2748,6 @@
       "count": 1
     }
   ],
-  "total_items_raw": 40,
-  "total_items_all_mode": 40
+  "total_items_raw": 43,
+  "total_items_all_mode": 43
 }
