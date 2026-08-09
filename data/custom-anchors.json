@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-09T13:31:04.661458+00:00",
+  "generated_at": "2026-08-09T14:24:54.731305+00:00",
   "window_start": "2026-08-09T19:00:00+08:00",
-  "window_end": "2026-08-09T21:31:04.506665+08:00",
-  "total_items": 3,
+  "window_end": "2026-08-09T22:24:54.560693+08:00",
+  "total_items": 4,
   "items": [
     {
       "id": "b073b56743c15c934ad68d4590303ef3cbae4fec",
@@ -21,9 +21,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.56,
+      "timeliness": 26.66,
       "writing_value": 0,
-      "total_score": 102.56
+      "total_score": 101.66
     },
     {
       "id": "f5f3f1e3697d4e8e1c63600d1f7d5739c3fb21b9",
@@ -42,16 +42,16 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.26,
+      "timeliness": 28.36,
       "writing_value": 0,
-      "total_score": 104.26
+      "total_score": 103.36
     },
     {
-      "id": "db51da4996c0cd48884e29df3e3ff002bd069662",
+      "id": "0937742450c4959799568d3950f46f0cfc8854dd",
       "title": "超30家借道私募布局，宇树科技背后的险资曝光 - 新浪财经",
       "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQZXdwLUtjYzBjenZ2OS1RT19icGFzNVB2S3gtcmNzcHY5c2ZoQTJuYUx6My1MNGRiYzU2MFpWbjY5dXVVeVh4aHYtSkY5ejdGajRKSjNQUmhtRU9LTC1PM183MDRGRXJLa1YyQkl5eVpwWXFMNmhSdzhKckZiRC1RMERmXzBoeWZzZ2tjZHRSa2cxY3ByTzA5T2oweU82S3FpSEtZ?oc=5",
-      "published_at": "2026-08-09T13:13:07+00:00",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOSFY3bGJzQVNwS0JNUGhzZERFY1hPT2lTM25IYlBIemw3am45NjRhRzA3cU5aUjRiSElWelpia0M3bU1Bb29mcldNQ0F4Y1FHOFdMRWpOdWR2LXVqeFQxWDNBVGFYbkp3OFNqZ2F2dDhIUV8zblhUaGRtZzMweUlYZjFvRHh5UUwwTVEtS3o0dEl6Sy0y?oc=5",
+      "published_at": "2026-08-09T14:03:45+00:00",
       "category": "GN: 宇树科技",
       "gn_label": "robotics",
       "site_name": "GN: 宇树科技",
@@ -63,9 +63,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.7,
+      "timeliness": 29.65,
       "writing_value": 0,
-      "total_score": 104.7
+      "total_score": 104.65
+    },
+    {
+      "id": "5eff57e3701d8cdfbf85959c8bfebba34ace5f81",
+      "title": "IPO前夜，智元机器人高管团队悄然调整 - 新浪财经",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNekJia20teHlIeGhKLWgzcHd1dm1EcWc0WE44dzVqMncyVHd1NkVSY2s1a1BOMmZLM2dGQm14TVhQbkgyMEhPTFVWUnZrdkRLcXRaeXVVRk45aEZlSTJSLTVUcDZGMG16ZExLWkpKUF9KSVA0N0JHMksyU0I3MTItZU5ZOVZ6alpLMm9yR1VnUXVaMzFKWmNHMzlsYkpYY2ctMjBPZzhvNA?oc=5",
+      "published_at": "2026-08-09T13:21:09+00:00",
+      "category": "GN: 智元机器人",
+      "gn_label": "robotics",
+      "site_name": "GN: 智元机器人",
+      "source": "GN: 智元机器人",
+      "site_id": "GN: 智元机器人",
+      "description": "IPO前夜，智元机器人高管团队悄然调整  新浪财经",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 28.94,
+      "writing_value": 0,
+      "total_score": 103.94
     }
   ],
   "fallback_used": false
