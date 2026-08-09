@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-09T11:31:16.337281+00:00",
+  "generated_at": "2026-08-09T12:29:33.424276+00:00",
   "window_start": "2026-08-09T19:00:00+08:00",
-  "window_end": "2026-08-09T19:31:16.117935+08:00",
-  "total_items": 1,
+  "window_end": "2026-08-09T20:29:33.253842+08:00",
+  "total_items": 2,
   "items": [
     {
       "id": "b073b56743c15c934ad68d4590303ef3cbae4fec",
@@ -21,9 +21,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.56,
+      "timeliness": 28.59,
       "writing_value": 0,
-      "total_score": 104.56
+      "total_score": 103.59
+    },
+    {
+      "id": "e69e4d75a3ffd63bbea48cb27f519b97ee18607f",
+      "title": "超30家借道私募布局，宇树科技背后的险资曝光 - finance.sina.cn",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMimwJBVV95cUxPZktsajhrSzBWa1laVTFqMjJ2RGpEUnpVOXN3cXUydy0yLUZCMXF2cnBrSEplNnVoQ25OOWhBVzJWR09HT05PaDJYUGF3TmVuZzlHRnlVaU1WUDRYZ3RhUGdLUUk4ZzFUMHF2TGxXVDBfOUFFdGdJRXkxdTBLMmh6NjdTZ3lOSnlyV1hRcGJ3NjJuclhlM0R5WGQtb3V2WDhxVElpTWNQaDlEd3g4aFlIN1Npd1BRSkFGcHhiTDZGRGFFRC1hNnl4Z2tIeVU0S2Z6MHRJNmp1RkYzMWlMVnpuZGt5SEg4WE9kdXVYNzlCN3FQVjc4bzlQbWpwZ2p2eGpIbTRxMHh1VXQ0RlpMMWJPQlNJM3lQaTduU3pF?oc=5",
+      "published_at": "2026-08-09T12:26:15+00:00",
+      "category": "GN: 宇树科技",
+      "gn_label": "robotics",
+      "site_name": "GN: 宇树科技",
+      "source": "GN: 宇树科技",
+      "site_id": "GN: 宇树科技",
+      "description": "超30家借道私募布局，宇树科技背后的险资曝光  finance.sina.cn",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.95,
+      "writing_value": 0,
+      "total_score": 104.95
     }
   ],
   "fallback_used": false
