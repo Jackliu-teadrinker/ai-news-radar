@@ -1,9 +1,9 @@
 {
   "date": "2026-08-11",
-  "generated_at": "2026-08-10T22:06:40.130636+00:00",
+  "generated_at": "2026-08-10T23:05:09.650687+00:00",
   "score_threshold": 80,
   "total_items": 50,
-  "new_added": 3,
+  "new_added": 1,
   "items": [
     {
       "id": "56b3802cd9d34c7f",
@@ -193,6 +193,27 @@
       "timeliness": 29.8,
       "writing_value": 0,
       "total_score": 119.8
+    },
+    {
+      "id": "697c1da60242e05a",
+      "title": "山东完成首例脑机接口临床手术 - 搜狐网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxON3kwNy1XNnNLeWZ4Nmh4cEQtZ082UGZ3WUUtdnNGVkZVMGdYLTczcVpfenlOYnNKRUQzX1lZQU1SaWE2SjVTVHIyUDVfbklLeWFRTzJnZGhoVDJTYmxIZ0kzUWtrWWVveUpSUC1KS2xpb1BrbElqZG54SnR4bm1HcFYwaHlaUkt6R1BpMg?oc=5",
+      "published_at": "2026-08-10T22:50:37+00:00",
+      "category": "国内脑机接口资讯",
+      "gn_label": "brain_computer",
+      "site_name": "国内脑机接口资讯",
+      "source": "国内脑机接口资讯",
+      "site_id": "国内脑机接口资讯",
+      "description": "山东完成首例脑机接口临床手术  搜狐网",
+      "ai_score": 80.0,
+      "ai_label": "brain_computer",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.78,
+      "writing_value": 0,
+      "total_score": 119.78
     },
     {
       "id": "06a614eb89ba09fa",
@@ -1033,27 +1054,6 @@
       "timeliness": 29.22,
       "writing_value": 5,
       "total_score": 114.22
-    },
-    {
-      "id": "e9e73ba552ec09c5",
-      "title": "This trend is more worthy of attention than Unitree Robotics going public: Global Times editorial - Global Times",
-      "title_zh": "环球时报社论：这一趋势比Unitree Robotics上市更值得关注 - 环球时报",
-      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1IWTVuT1BTLThDNm92YTJ5WmYwMklqMkhjUGlQdWNNZUNlVkJVd2RFWWFGZjQxSlRBWXAxVTlXb21PVnBMV2ZVVmFKSENTVnY5SzBGay1nMl9mQlVtNXNIbWhR?oc=5",
-      "published_at": "2026-08-10T16:16:00+00:00",
-      "category": "国外人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国外人形机器人资讯",
-      "source": "国外人形机器人资讯",
-      "site_id": "国外人形机器人资讯",
-      "description": "This trend is more worthy of attention than Unitree Robotics going public: Global Times editorial  Global Times",
-      "ai_score": 65.0,
-      "ai_label": "humanoid",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 5,
-      "timeliness": 28.9,
-      "writing_value": 5,
-      "total_score": 113.9
     }
   ]
 }

@@ -1,30 +1,9 @@
 {
-  "generated_at": "2026-08-10T22:04:54.385905+00:00",
+  "generated_at": "2026-08-10T23:03:44.384082+00:00",
   "window_start": "2026-08-10T19:00:00+08:00",
-  "window_end": "2026-08-11T06:04:52.785674+08:00",
-  "total_items": 24,
+  "window_end": "2026-08-11T07:03:39.925674+08:00",
+  "total_items": 27,
   "items": [
-    {
-      "id": "0f5adab787918e5610de7d2bd41b8f890fa0e7e0",
-      "title": "Robot Recycler Salvages Parts from Broken Machines",
-      "title_zh": "机器人回收商从损坏的机器中回收零件",
-      "url": "https://spectrum.ieee.org/recycling-robot",
-      "published_at": "2026-08-10T18:01:25+00:00",
-      "category": "IEEE Spectrum",
-      "gn_label": "robotics",
-      "site_name": "IEEE Spectrum",
-      "source": "IEEE Spectrum",
-      "site_id": "IEEE Spectrum",
-      "description": "Objects constructed by robots are ubiquitous. If you’ve used a car, household appliance, or smartphone today, you’ve used an object constructed at least in part by robots. The more products that manufacturers want to produce (and consumers want to consume) at lower costs, the more industrial robots ",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 5,
-      "timeliness": 25.94,
-      "writing_value": 5,
-      "total_score": 110.94
-    },
     {
       "id": "5c0ce81f1977efc5aaadd02c7e7dd8820e60406b",
       "title": "Autonomous welding startup TetraGen Robotics raises $1.8 million - BetaKit",
@@ -42,9 +21,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.31,
+      "timeliness": 25.33,
       "writing_value": 0,
-      "total_score": 101.31
+      "total_score": 100.33
     },
     {
       "id": "3d88fcc703a3349dc0be4a55ace15b7d1460be29",
@@ -63,9 +42,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.17,
+      "timeliness": 28.19,
       "writing_value": 0,
-      "total_score": 104.17
+      "total_score": 103.19
     },
     {
       "id": "488b3f57f4d7c2310ca3915404bab940b9d80c90",
@@ -84,9 +63,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 20.55,
+      "timeliness": 19.57,
       "writing_value": 5,
-      "total_score": 105.55
+      "total_score": 104.57
     },
     {
       "id": "61dae60d53d6e1a261d44c713baf99420e8b72e1",
@@ -105,9 +84,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 24.03,
+      "timeliness": 23.05,
       "writing_value": 5,
-      "total_score": 109.03
+      "total_score": 108.05
     },
     {
       "id": "bda05ff198a7defb728d5d56081e5713349c29a8",
@@ -126,9 +105,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 24.47,
+      "timeliness": 23.49,
       "writing_value": 5,
-      "total_score": 109.47
+      "total_score": 108.49
+    },
+    {
+      "id": "7f9af80cf96e76a248087a25262956024d5f58a2",
+      "title": "GNA Universitys robotics lab to bridge industry-academia gap - The Tribune",
+      "title_zh": "GNA 大学机器人实验室将弥合产学界差距 - 论坛报",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQM1hXb2gyMTlQa0Z1cWFLLXdIUmd5RkZkTUhzYUM4YjdHSUJKOUhHdVhJNkhKbnZKV2JfczJhQzRNcHpiTFNjakljQ01VLUJSM2xkcHM4SmtYeHFZai1OVlAtaXRuY2N3bEdOV19YRl8wWXdkRjVoQm96WjBZdXkzYmVrYW5pWlhheDFVdkQ5eFM3M2JLcGpTcnNTR0I4S1MwS000N2pVbXhBQmN2VDl6eXZKRi1LNmxKSmhIOXFaVlo4Sno5V1E2R9IByAFBVV95cUxQM1hXb2gyMTlQa0Z1cWFLLXdIUmd5RkZkTUhzYUM4YjdHSUJKOUhHdVhJNkhKbnZKV2JfczJhQzRNcHpiTFNjakljQ01VLUJSM2xkcHM4SmtYeHFZai1OVlAtaXRuY2N3bEdOV19YRl8wWXdkRjVoQm96WjBZdXkzYmVrYW5pWlhheDFVdkQ5eFM3M2JLcGpTcnNTR0I4S1MwS000N2pVbXhBQmN2VDl6eXZKRi1LNmxKSmhIOXFaVlo4Sno5V1E2Rw?oc=5",
+      "published_at": "2026-08-10T22:40:27+00:00",
+      "category": "GN: industrial robot",
+      "gn_label": "robotics",
+      "site_name": "GN: industrial robot",
+      "source": "GN: industrial robot",
+      "site_id": "GN: industrial robot",
+      "description": "GNA Universitys robotics lab to bridge industry-academia gap  The Tribune",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.61,
+      "writing_value": 0,
+      "total_score": 104.61
     },
     {
       "id": "18245ac774bab53d1ecafef847438187ce2d91cc",
@@ -147,9 +147,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.07,
+      "timeliness": 22.09,
       "writing_value": 0,
-      "total_score": 98.07
+      "total_score": 97.09
     },
     {
       "id": "ec60fd1329dff3f635171e52c4889ab94cdc92be",
@@ -168,9 +168,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 21.11,
+      "timeliness": 20.13,
       "writing_value": 5,
-      "total_score": 106.11
+      "total_score": 105.13
     },
     {
       "id": "87b235aca7eae615e7c895ac70aff881c82a68bd",
@@ -189,9 +189,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 18.99,
+      "timeliness": 18.01,
       "writing_value": 0,
-      "total_score": 93.99
+      "total_score": 93.01
     },
     {
       "id": "a8dfbc2f3147656aa694fb1c553c7f65b7f65d35",
@@ -210,14 +210,14 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 19.71,
+      "timeliness": 18.73,
       "writing_value": 0,
-      "total_score": 94.71
+      "total_score": 93.73
     },
     {
-      "id": "744f2957c893e1a2fd24b3373c3a14cc0664f182",
-      "title": "A Robot That Learns from Short Videos in 29 Seconds — X Square Robot's HOST Changes the Embodied-AI Recipe - pandaily.com",
-      "title_zh": "29秒短视频学习的机器人——X Square Robot的HOST改变了​​Embodied-AI的配方 - pandaily.com",
+      "id": "672334de51796371d99bdc6c3d87fe8c5c974afe",
+      "title": "A Robot That Learns from Short Videos in 29 Seconds — X Square Robot's HOST Changes the Embodied-AI Recipe - Pandaily",
+      "title_zh": "29秒短视频学习的机器人——X Square Robot的HOST改变了​​Embodied-AI配方 - Pandaily",
       "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQZmVMYjlmbUlod2kwYUFST2pkMTdONVFic0JpbVozbmh3Q1R1ZmlsTnQ4aGhVWG5GOENPdnRZdlBRRl92a3ZpQTJ0WHNCbHpvUWdVTWhORkNocWJiQjlreGZqQk5BODduSk5BVDBNNHNKNUJkUWpSUGR3VGxnd3BrT3pwdjl0Zw?oc=5",
       "published_at": "2026-08-10T13:36:31+00:00",
       "category": "GN: robot learning",
@@ -225,15 +225,15 @@
       "site_name": "GN: robot learning",
       "source": "GN: robot learning",
       "site_id": "GN: robot learning",
-      "description": "A Robot That Learns from Short Videos in 29 Seconds — X Square Robot's HOST Changes the Embodied-AI Recipe  pandaily.com",
+      "description": "A Robot That Learns from Short Videos in 29 Seconds — X Square Robot's HOST Changes the Embodied-AI Recipe  Pandaily",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 21.53,
+      "timeliness": 20.55,
       "writing_value": 5,
-      "total_score": 106.53
+      "total_score": 105.55
     },
     {
       "id": "d0d1786e652ab74e1300775869042369078d39cc",
@@ -252,9 +252,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 19.17,
+      "timeliness": 18.19,
       "writing_value": 0,
-      "total_score": 94.17
+      "total_score": 93.19
     },
     {
       "id": "662e2c9f741429d8badc72079d69af8fb1966e66",
@@ -273,9 +273,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 20.84,
+      "timeliness": 19.86,
       "writing_value": 0,
-      "total_score": 95.84
+      "total_score": 94.86
+    },
+    {
+      "id": "c30c98ec37758a3101035cb9dcece7c99c1112ac",
+      "title": "比起宇树科技上市，这一风向更值得关注 - 新浪军事_手机新浪网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFAxR1BRRlRBWXpfRzE1VFdoeWNwak1sOEF1T1NCTERWX3EwRk8zZzdQWTB0YUVPbzN6UGpVS0tCaXNRc2Ixd0ZlR0ZVY0pqMGg5QzI3Sm5pVEViY2g3b1JHS1dlSXFRbVg4RWIxX05KVHoxQTg?oc=5",
+      "published_at": "2026-08-10T22:48:00+00:00",
+      "category": "GN: 宇树科技",
+      "gn_label": "robotics",
+      "site_name": "GN: 宇树科技",
+      "source": "GN: 宇树科技",
+      "site_id": "GN: 宇树科技",
+      "description": "比起宇树科技上市，这一风向更值得关注  新浪军事_手机新浪网",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.74,
+      "writing_value": 0,
+      "total_score": 104.74
     },
     {
       "id": "de36725d6f91610d5936faf786edb00381559159",
@@ -294,9 +315,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 19.22,
+      "timeliness": 18.24,
       "writing_value": 0,
-      "total_score": 94.22
+      "total_score": 93.24
     },
     {
       "id": "e7d0913471226adb15aba1557da70b46a0ce293d",
@@ -315,9 +336,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 21.31,
+      "timeliness": 20.33,
       "writing_value": 0,
-      "total_score": 96.31
+      "total_score": 95.33
     },
     {
       "id": "890e0d9d39b269bf2bfdcc18a1a1da455ad9efc1",
@@ -336,9 +357,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 19.53,
+      "timeliness": 18.55,
       "writing_value": 0,
-      "total_score": 94.53
+      "total_score": 93.55
     },
     {
       "id": "547a36ccd0710c2089f2246365925a5219b4caab",
@@ -357,30 +378,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 20.34,
+      "timeliness": 19.36,
       "writing_value": 0,
-      "total_score": 95.34
-    },
-    {
-      "id": "ff4aea32484e6a5ef6d9d01f605459927d8b5940",
-      "title": "宇树科技申购大戏开演！四川资本纷纷入局，大疆错失37亿“红利”丨川观解盘 - 四川新闻",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1Wai1IR2tFalRKVG1adDlONjVET0tCd2xaNEJWYU1EWkViWWZfbzU5Mm1MZktXTHB4LU1VdXJNYWpISHpHclpac3p3OFgzTGRnRGs2a0Z1RTlpQWl5WlFiY1p4VQ?oc=5",
-      "published_at": "2026-08-10T11:41:10+00:00",
-      "category": "GN: 宇树科技",
-      "gn_label": "robotics",
-      "site_name": "GN: 宇树科技",
-      "source": "GN: 宇树科技",
-      "site_id": "GN: 宇树科技",
-      "description": "宇树科技申购大戏开演！四川资本纷纷入局，大疆错失37亿“红利”丨川观解盘  四川新闻",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 19.61,
-      "writing_value": 0,
-      "total_score": 94.61
+      "total_score": 94.36
     },
     {
       "id": "713d147585b5a84579ec6247c99b79ade2de19b1",
@@ -399,13 +399,13 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 22.96,
+      "timeliness": 21.98,
       "writing_value": 0,
-      "total_score": 97.96
+      "total_score": 96.98
     },
     {
-      "id": "ea8483d0f35b80781fadb184576b34d2ad8f1c80",
-      "title": "宇树科技网上发行中签率：0.01809759% - 证券时报",
+      "id": "8465e3df788219b153ad952d5bc4c5bb3a2a8b43",
+      "title": "宇树科技网上发行中签率：0.01809759% - stcn.com",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5KeV9fY2ZlR2IzSnk4aDVYVjJxWHQ4QWRmaERxRUtmamROemVsaXR2N1Izazd5enZNOXEwalRQMlhweGxXdzE3R09Hclp6SWZ0UjM0Wk9qQTM5N3EzcFE?oc=5",
       "published_at": "2026-08-10T15:03:00+00:00",
@@ -414,15 +414,15 @@
       "site_name": "GN: 宇树科技",
       "source": "GN: 宇树科技",
       "site_id": "GN: 宇树科技",
-      "description": "宇树科技网上发行中签率：0.01809759%  证券时报",
+      "description": "宇树科技网上发行中签率：0.01809759%  stcn.com",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 22.97,
+      "timeliness": 21.99,
       "writing_value": 0,
-      "total_score": 97.97
+      "total_score": 96.99
     },
     {
       "id": "9396d22636ecf3a39fa614080fa8394f1b37016d",
@@ -441,9 +441,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 19.11,
+      "timeliness": 18.13,
       "writing_value": 0,
-      "total_score": 94.11
+      "total_score": 93.13
+    },
+    {
+      "id": "fd9fb97ee7737adc6271cf47c49b9a856b30818d",
+      "title": "宇树科技申购大戏开演！四川资本纷纷入局，大疆错失37亿“红利”丨川观解盘 - 川观新闻",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5zaG1VWHBNU3RPeDNGdlVhc0JWOG4zNWpMUldrVEhEMWdIQzlCUVFBUm1hOVVpaDZiUTNIUUlYQVBxSDNYM3gxN21EU202dw?oc=5",
+      "published_at": "2026-08-10T11:41:00+00:00",
+      "category": "GN: 宇树科技",
+      "gn_label": "robotics",
+      "site_name": "GN: 宇树科技",
+      "source": "GN: 宇树科技",
+      "site_id": "GN: 宇树科技",
+      "description": "宇树科技申购大戏开演！四川资本纷纷入局，大疆错失37亿“红利”丨川观解盘  川观新闻",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 18.62,
+      "writing_value": 0,
+      "total_score": 93.62
     },
     {
       "id": "3da281addbe5580c097f300e41ff2322dfe98eb5",
@@ -462,9 +483,30 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 21.7,
+      "timeliness": 20.72,
       "writing_value": 0,
-      "total_score": 111.7
+      "total_score": 110.72
+    },
+    {
+      "id": "1ba26770c211939e72bc8fc6af1e6893308d12d3",
+      "title": "宇树科技热闹打新，美团或是最大外部赢家 - 新浪财经",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1ybWt4U05tZGstc0dQWFFHTVkwZ25ENjVKaHdhZVRqVXV5NXN1aWVzVThYQmY2TURPeUE4QmtzWEZLS3k5dndqNjIteFZ3N3F3aUJDZkdDZkRiTllVd29aNXpJa01xV0doZmY5aWNsZGRLNHVzWGtjUw?oc=5",
+      "published_at": "2026-08-10T12:22:00+00:00",
+      "category": "GN: 宇树科技",
+      "gn_label": "robotics",
+      "site_name": "GN: 宇树科技",
+      "source": "GN: 宇树科技",
+      "site_id": "GN: 宇树科技",
+      "description": "宇树科技热闹打新，美团或是最大外部赢家  新浪财经",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 19.31,
+      "writing_value": 0,
+      "total_score": 94.31
     },
     {
       "id": "6a8c8b51e6d7acbcbcc656eecc05944a62b5bce7",
@@ -483,9 +525,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 22.65,
+      "timeliness": 21.67,
       "writing_value": 0,
-      "total_score": 97.65
+      "total_score": 96.67
     },
     {
       "id": "e31fe152fcfb4aca56d31908a6e96f3256fefe63",
@@ -504,9 +546,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 21.14,
+      "timeliness": 20.16,
       "writing_value": 0,
-      "total_score": 96.14
+      "total_score": 95.16
+    },
+    {
+      "id": "78d738a942ec05adcdde5c592b4a247a45aa4b94",
+      "title": "行业新选手登场！中科慧思一口气发三款灵巧手新品，机器人也能组乐队现场演奏 - InfoQ 中文",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5mbWNJbmtrWFp1dkR5VkFBNTdBVVFfRXljMEFRa0VlejhxTFVwbmN5aHdCRGxCTW52Mjc5eHI4NTV4bldERF9iSmVPd2F1VWlmd1dseVM0a25aOGVNWlE?oc=5",
+      "published_at": "2026-08-10T13:12:05+00:00",
+      "category": "GN: 灵巧手",
+      "gn_label": "robotics",
+      "site_name": "GN: 灵巧手",
+      "source": "GN: 灵巧手",
+      "site_id": "GN: 灵巧手",
+      "description": "行业新选手登场！中科慧思一口气发三款灵巧手新品，机器人也能组乐队现场演奏  InfoQ 中文",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 20.14,
+      "writing_value": 0,
+      "total_score": 95.14
     }
   ],
   "fallback_used": false
