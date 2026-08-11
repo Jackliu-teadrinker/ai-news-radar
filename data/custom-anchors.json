@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-11T21:35:47.558137+00:00",
+  "generated_at": "2026-08-11T22:32:17.630440+00:00",
   "window_start": "2026-08-11T19:00:00+08:00",
-  "window_end": "2026-08-12T05:35:45.797137+08:00",
-  "total_items": 30,
+  "window_end": "2026-08-12T06:32:16.093978+08:00",
+  "total_items": 35,
   "items": [
     {
       "id": "038439b912ed770cea24d6d05bab48794553fdf6",
@@ -21,9 +21,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.44,
+      "timeliness": 27.5,
       "writing_value": 0,
-      "total_score": 103.44
+      "total_score": 102.5
     },
     {
       "id": "8eb3ca4244f9ad6eca53502b970b8c633038af54",
@@ -42,16 +42,37 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 23.9,
+      "timeliness": 22.96,
       "writing_value": 5,
-      "total_score": 108.9
+      "total_score": 107.96
+    },
+    {
+      "id": "7fc1edb302aaa9d2393e912cbfbfd9ba4ccc57d3",
+      "title": "Uber sells entire stake in Serve Robotics - 디지털투데이",
+      "title_zh": "Uber 出售 Serve Robotics 全部股份 - 디지털투데 Been",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPRzYyTTh1UWZlbHBQX1RlSkVJSXJERmVybFFhMkZ4YkM3dTM2SUZPSkJmLW5kYmJNSFBYWnZNQ3QtTEdaSWEzYnhjTjhrZ2VQN1ZLSFVJSUlrUjBpQ0J0cVRfZHFvQ3ZhT25BblUwN0U5YmtRdGdMbW5pR0gxVEFyYTN3SkV2WTRmeWZvYUFmOA?oc=5",
+      "published_at": "2026-08-11T21:57:26+00:00",
+      "category": "GN: autonomous robot",
+      "gn_label": "robotics",
+      "site_name": "GN: autonomous robot",
+      "source": "GN: autonomous robot",
+      "site_id": "GN: autonomous robot",
+      "description": "Uber sells entire stake in Serve Robotics  디지털투데이",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.42,
+      "writing_value": 0,
+      "total_score": 104.42
     },
     {
       "id": "7cee11a1ccfc6bea5fc7a7ea3f062c45d6eee40c",
       "title": "Dreame L60 Ultra robot vacuum now $130 off at Amazon - mashable.com",
       "title_zh": "亚马逊 Dreame L60 Ultra 扫地机器人现立减 130 美元 - mashable.com",
       "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9pSnJkeGZaNVFaMnJpeFI1X21EVzVNSVNFdmljVWNkSUhkQWwtUGs0X1BjUXB3TEdGcHNSX3NJY09jcV9vZTVTbVRvVHQ1OUxkVTNxdS05eUVIS1VReW53QXE5bDIwU0tZdkNwX3J4dlVmVklR?oc=5",
-      "published_at": "2026-08-11T20:09:37+00:00",
+      "published_at": "2026-08-11T21:57:45+00:00",
       "category": "GN: robot vacuum",
       "gn_label": "robotics",
       "site_name": "GN: robot vacuum",
@@ -63,9 +84,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.57,
+      "timeliness": 29.43,
       "writing_value": 0,
-      "total_score": 103.57
+      "total_score": 104.43
     },
     {
       "id": "f90278adb1a079e06f32eef8490c6422de56369d",
@@ -84,9 +105,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 21.41,
+      "timeliness": 20.47,
       "writing_value": 5,
-      "total_score": 106.41
+      "total_score": 105.47
     },
     {
       "id": "bd0996ebda9e4faaede68ddf1e619710db8d203c",
@@ -105,9 +126,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 20.62,
+      "timeliness": 19.68,
       "writing_value": 0,
-      "total_score": 95.62
+      "total_score": 94.68
     },
     {
       "id": "0bcd05e3e7fed1489d5b6bc7cbab0f1d5cce44e6",
@@ -126,9 +147,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 21.4,
+      "timeliness": 20.46,
       "writing_value": 5,
-      "total_score": 106.4
+      "total_score": 105.46
+    },
+    {
+      "id": "72a5a517a9ba9ab29f0504a3e8f38e5fa0b5e514",
+      "title": "KIT Robot Adapts Mid-Task to Disassemble Broken Machines - eweek.com",
+      "title_zh": "KIT 机器人适应中期任务以拆卸损坏的机器 - eweek.com",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1HY3daZTNnVW9wMDhiQ2JIUUVjYXF5VWdqc2Mtd0VPUWdjSUtxQTV0RUdSN2dScEp0RnJIWEExQlhJWk52UlgzVmlGUC1WTW5jcG1COTZ2YzBGOFBzdl91Wg?oc=5",
+      "published_at": "2026-08-11T18:23:18+00:00",
+      "category": "GN: industrial robot",
+      "gn_label": "robotics",
+      "site_name": "GN: industrial robot",
+      "source": "GN: industrial robot",
+      "site_id": "GN: industrial robot",
+      "description": "KIT Robot Adapts Mid-Task to Disassemble Broken Machines  eweek.com",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 25.85,
+      "writing_value": 0,
+      "total_score": 100.85
     },
     {
       "id": "628fa9dd7e32c1ed1a9f8c93af9743845f613538",
@@ -147,9 +189,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 20.34,
+      "timeliness": 19.4,
       "writing_value": 5,
-      "total_score": 105.34
+      "total_score": 104.4
     },
     {
       "id": "1f7fd82c71c0a4e0287b2c1949fac55981e23158",
@@ -168,9 +210,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.6,
+      "timeliness": 23.66,
       "writing_value": 0,
-      "total_score": 99.6
+      "total_score": 98.66
     },
     {
       "id": "edc7ba171b69ca5c3c10a3ebdfdb2754c06b670d",
@@ -189,9 +231,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 19.9,
+      "timeliness": 18.96,
       "writing_value": 0,
-      "total_score": 94.9
+      "total_score": 93.96
+    },
+    {
+      "id": "9fdea527f84700465ba09b514a4b487462bfb2ed",
+      "title": "Roen Surgical Wins First-Ever FDA Clearance for AI Kidney Stone Robot - Seoul Economic Daily",
+      "title_zh": "Roen Surgical 的 AI 肾结石机器人首次获得 FDA 批准 - 首尔经济日报",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOUmNLcWhMMlc3OFZBMlZIczUzLS13MEluZXBoN3hhOVkwdzNabTZtZ0dwNWxuRmlvam1vNFZlS1hYY0ZDeXYtRDNJYWNUMV84Z1NuTElfV1dVcm1EMEpMSFN3V3lYejJXNDF2V0VMdEN4ZUNYeWpqLWhVdDI2S2JFNTVoVjd5bVloWDdsZ1RPbEJFNmNZbHRBODVZdzFRZ2pE?oc=5",
+      "published_at": "2026-08-11T22:01:05+00:00",
+      "category": "GN: surgical robot",
+      "gn_label": "robotics",
+      "site_name": "GN: surgical robot",
+      "source": "GN: surgical robot",
+      "site_id": "GN: surgical robot",
+      "description": "Roen Surgical Wins First-Ever FDA Clearance for AI Kidney Stone Robot  Seoul Economic Daily",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.48,
+      "writing_value": 0,
+      "total_score": 104.48
     },
     {
       "id": "e95e9ce255efa9544c52377a05f33d7d37951b07",
@@ -210,9 +273,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 22.47,
+      "timeliness": 21.53,
       "writing_value": 0,
-      "total_score": 97.47
+      "total_score": 96.53
     },
     {
       "id": "9a526d73b7771157345778dfa2f43f1c3937687d",
@@ -231,9 +294,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 19.66,
+      "timeliness": 18.72,
       "writing_value": 0,
-      "total_score": 94.66
+      "total_score": 93.72
     },
     {
       "id": "bfc901d932e14dc32cf8d4b74d253c0124ea50df",
@@ -252,9 +315,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.06,
+      "timeliness": 22.12,
       "writing_value": 0,
-      "total_score": 98.06
+      "total_score": 97.12
     },
     {
       "id": "0b1819f1a44eed8d9ad42ebfa5dccb49bf25e656",
@@ -273,9 +336,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 19.52,
+      "timeliness": 18.58,
       "writing_value": 0,
-      "total_score": 94.52
+      "total_score": 93.58
     },
     {
       "id": "c2621764b1419e7bd2e1adb169db90262bef2c2a",
@@ -294,9 +357,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 21.32,
+      "timeliness": 20.38,
       "writing_value": 0,
-      "total_score": 96.32
+      "total_score": 95.38
     },
     {
       "id": "7d109e7acf6b34a3e7b88b2034d83df69655d485",
@@ -315,9 +378,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.44,
+      "timeliness": 22.5,
       "writing_value": 0,
-      "total_score": 98.44
+      "total_score": 97.5
     },
     {
       "id": "16f7ac1fcba261066d2bc3fa3f81d8fe3490c2cd",
@@ -336,30 +399,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 22.95,
+      "timeliness": 22.01,
       "writing_value": 0,
-      "total_score": 97.95
-    },
-    {
-      "id": "2da815f8a83e138779dd64509e2a9b752ec9f2c0",
-      "title": "宇树科技中签号出炉 - 新京报",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE53eWtCUXhQWWFuWExiekNVQWRUVmRaME9kN3pUWGNrbXAxeUtVbzZFUEZabzZ1bG9XazRPZDk0QkFjSXY1TnZlSGxfb05oQ2NMakJBdDVwdTJaQm1HNnVsRHB5NnA?oc=5",
-      "published_at": "2026-08-11T11:26:00+00:00",
-      "category": "GN: 宇树科技",
-      "gn_label": "robotics",
-      "site_name": "GN: 宇树科技",
-      "source": "GN: 宇树科技",
-      "site_id": "GN: 宇树科技",
-      "description": "宇树科技中签号出炉  新京报",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 19.84,
-      "writing_value": 0,
-      "total_score": 94.84
+      "total_score": 97.01
     },
     {
       "id": "ec5efba318625d537e748bec6a14242446ecb4af",
@@ -378,9 +420,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 19.56,
+      "timeliness": 18.62,
       "writing_value": 0,
-      "total_score": 94.56
+      "total_score": 93.62
     },
     {
       "id": "f2438fa3f945484eee92906f88715168ccbf4211",
@@ -399,30 +441,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 20.64,
+      "timeliness": 19.7,
       "writing_value": 0,
-      "total_score": 95.64
-    },
-    {
-      "id": "23a6a371f0be5aff24579328d2a9bc6b4e7aa08c",
-      "title": "宇树科技中签号出炉 中签号码共19414个 - 观点网",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE15dXdiZUdkb1VlSXMxVm84V2ZhNEc2OUlVczdDbnlENGppUXZHTG9aVlgxaURvbEx6RXNLRHo0U1Z3T1BtM25yWmV6NDB1QQ?oc=5",
-      "published_at": "2026-08-11T11:43:32+00:00",
-      "category": "GN: 宇树科技",
-      "gn_label": "robotics",
-      "site_name": "GN: 宇树科技",
-      "source": "GN: 宇树科技",
-      "site_id": "GN: 宇树科技",
-      "description": "宇树科技中签号出炉 中签号码共19414个  观点网",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 20.13,
-      "writing_value": 0,
-      "total_score": 95.13
+      "total_score": 94.7
     },
     {
       "id": "1566de102cd9ed16fb83daed7d519c9364665481",
@@ -441,9 +462,72 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 22.37,
+      "timeliness": 21.43,
       "writing_value": 0,
-      "total_score": 97.37
+      "total_score": 96.43
+    },
+    {
+      "id": "23a6a371f0be5aff24579328d2a9bc6b4e7aa08c",
+      "title": "宇树科技中签号出炉 中签号码共19414个 - 观点网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE15dXdiZUdkb1VlSXMxVm84V2ZhNEc2OUlVczdDbnlENGppUXZHTG9aVlgxaURvbEx6RXNLRHo0U1Z3T1BtM25yWmV6NDB1QQ?oc=5",
+      "published_at": "2026-08-11T11:43:32+00:00",
+      "category": "GN: 宇树科技",
+      "gn_label": "robotics",
+      "site_name": "GN: 宇树科技",
+      "source": "GN: 宇树科技",
+      "site_id": "GN: 宇树科技",
+      "description": "宇树科技中签号出炉 中签号码共19414个  观点网",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 19.19,
+      "writing_value": 0,
+      "total_score": 94.19
+    },
+    {
+      "id": "ba362e4e4d97a8afda0023efa5b77c8dcf6d9336",
+      "title": "宇树科技中签号出炉！共19414个 - 东方财富",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9zamlPal9zT1lPWExfVk1CcXhiVks0blNWbmpOYjlObFpKclNpM1dZMExTYWQzX1R6ZlB4NkRnbnVEeGtNT29SLUZWeUZJbWV0VWJ2UWlmVUhiSVVfQmF4UWZSbS04dw?oc=5",
+      "published_at": "2026-08-11T11:16:31+00:00",
+      "category": "GN: 宇树科技",
+      "gn_label": "robotics",
+      "site_name": "GN: 宇树科技",
+      "source": "GN: 宇树科技",
+      "site_id": "GN: 宇树科技",
+      "description": "宇树科技中签号出炉！共19414个  东方财富",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 18.74,
+      "writing_value": 0,
+      "total_score": 93.74
+    },
+    {
+      "id": "5a68dc455337b2e9cf2beae4bfe0afa7766605ac",
+      "title": "宇树科技中签结果出炉 - 四川在线",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBFLWg1Ty0yTVNwQkQwS215TTRmY3VOaVppSjRDcEJGNFZLTkw4UDZzaUQxRV9YcXF2QXowaVl6NzYxalQ3UmR1aDBJN3hIMXhuTTMxbTZEVF93c2ZqTU9Hdg?oc=5",
+      "published_at": "2026-08-11T12:42:48+00:00",
+      "category": "GN: 宇树科技",
+      "gn_label": "robotics",
+      "site_name": "GN: 宇树科技",
+      "source": "GN: 宇树科技",
+      "site_id": "GN: 宇树科技",
+      "description": "宇树科技中签结果出炉  四川在线",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 20.18,
+      "writing_value": 0,
+      "total_score": 95.18
     },
     {
       "id": "f021f2e985806ae3f92ef7a462566c9195e27168",
@@ -462,9 +546,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 21.12,
+      "timeliness": 20.18,
       "writing_value": 0,
-      "total_score": 96.12
+      "total_score": 95.18
+    },
+    {
+      "id": "f25489c4dfafb2ccee84ac7c9c7a5ad6d48d49c1",
+      "title": "宇树科技中签号码公布，共19414个，每个中签号码只能认购500股 - 新浪财经",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9UZGVlVGVsRXM2eUdDLUd0cTREcFFQX3lYd1doWFExNlhzSzUxQjRNOTJQN2d3M1hqdGJkTUNKZFQzWnJGNkUxMW9BRGJINHBZY2wzY2NxRnF1R0plU2h2UTFzZWd1NkxoUm00N3h2ZDBOTkhtd1NWRQ?oc=5",
+      "published_at": "2026-08-11T11:27:00+00:00",
+      "category": "GN: 宇树科技",
+      "gn_label": "robotics",
+      "site_name": "GN: 宇树科技",
+      "source": "GN: 宇树科技",
+      "site_id": "GN: 宇树科技",
+      "description": "宇树科技中签号码公布，共19414个，每个中签号码只能认购500股  新浪财经",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 18.91,
+      "writing_value": 0,
+      "total_score": 93.91
     },
     {
       "id": "8706b5fc80f719696d3405514642033d6d2a6855",
@@ -483,30 +588,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 21.43,
+      "timeliness": 20.49,
       "writing_value": 0,
-      "total_score": 96.43
+      "total_score": 95.49
     },
     {
-      "id": "8e3cd402c531349590bc12525d829a09ee43dce1",
-      "title": "宇树科技中签号出炉；工业富联上半年净赚237亿元丨公告精选 - 凤凰网财经",
+      "id": "f0becf5233cab575e425ab00d4532c2b00877165",
+      "title": "宇树科技中签者弃购会有什么影响？ - 新浪网",
       "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9SWmkyTlBYcVF0T2Nad1c1aW5BaTk1WWkzdXB5WWxhSnZDNnNUQ2psZzBrQTB4SjVkTUg5VVRPdll5Wkh0NHRNRzFIV20zVXFG?oc=5",
-      "published_at": "2026-08-11T12:40:11+00:00",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1ydEV1WnZ4dUR0T3lXTmZMUUhIaFpkcTBINnN2Mzl4ZkM1YU51UmhKSGtSWm9TRHdYMzVxaHM2czNrM1dsQ0QtQW1xTjF1ZnA2aWswRmpEc09rNFIzd052RzRmSy1aandfRW4xOVdUd3dGdw?oc=5",
+      "published_at": "2026-08-11T22:05:28+00:00",
       "category": "GN: 宇树科技",
       "gn_label": "robotics",
       "site_name": "GN: 宇树科技",
       "source": "GN: 宇树科技",
       "site_id": "GN: 宇树科技",
-      "description": "宇树科技中签号出炉；工业富联上半年净赚237亿元丨公告精选  凤凰网财经",
+      "description": "宇树科技中签者弃购会有什么影响？  新浪网",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 21.07,
+      "timeliness": 29.55,
       "writing_value": 0,
-      "total_score": 96.07
+      "total_score": 104.55
     },
     {
       "id": "1671a8a3e3cd98bb407499bc5892496d7fdbd743",
@@ -525,30 +630,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.8,
+      "timeliness": 25.86,
       "writing_value": 0,
-      "total_score": 116.8
-    },
-    {
-      "id": "747c990dd9a2e7fa415a6bf183eefe8da47c69d9",
-      "title": "茶颜悦色机械臂流水线运转，机械臂上阵制作奶茶 - 网易新闻客户端",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1aSURVMmRvejQyMlJXLWwzY1J4T0M3eXhOeGtIcEpTN1Rhc2JXNlYxbUxvQTNPQlZnZndRbnV4LXRnTy16SmVka3VWYjdOR1lTZHJTdVUza3R2clYxNGV1MzJBSWdid1J4V2FmdGdGM090VlJXYWpOcA?oc=5",
-      "published_at": "2026-08-11T13:41:38+00:00",
-      "category": "GN: 机械臂",
-      "gn_label": "robotics",
-      "site_name": "GN: 机械臂",
-      "source": "GN: 机械臂",
-      "site_id": "GN: 机械臂",
-      "description": "茶颜悦色机械臂流水线运转，机械臂上阵制作奶茶  网易新闻客户端",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 22.1,
-      "writing_value": 0,
-      "total_score": 97.1
+      "total_score": 115.86
     },
     {
       "id": "aeda58f1bc710e5df4c200fe707f64bfb2bfb37d",
@@ -567,51 +651,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 22.52,
+      "timeliness": 21.58,
       "writing_value": 0,
-      "total_score": 97.52
+      "total_score": 96.58
     },
     {
-      "id": "27592824ed1e46be5f75fc7ea35c1ff6118a2667",
-      "title": "广汽旗下人形机器人公司慧仑科技完成亿元融资 - 同花顺",
+      "id": "747c990dd9a2e7fa415a6bf183eefe8da47c69d9",
+      "title": "茶颜悦色机械臂流水线运转，机械臂上阵制作奶茶 - 网易新闻客户端",
       "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBlVXZWaXdia2p1YjI4V1BGNzJLRU9xWVVYWkdBSHZXOXpORUVEY1lCQTZULW03WEVkcGFqQVV2Z0lsRHctdEVMYlhWalV5SVpHVXBNeWZBUnlWX2F5RkE?oc=5",
-      "published_at": "2026-08-11T15:32:52+00:00",
-      "category": "GN: 人形机器人融资",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1aSURVMmRvejQyMlJXLWwzY1J4T0M3eXhOeGtIcEpTN1Rhc2JXNlYxbUxvQTNPQlZnZndRbnV4LXRnTy16SmVka3VWYjdOR1lTZHJTdVUza3R2clYxNGV1MzJBSWdid1J4V2FmdGdGM090VlJXYWpOcA?oc=5",
+      "published_at": "2026-08-11T13:41:38+00:00",
+      "category": "GN: 机械臂",
       "gn_label": "robotics",
-      "site_name": "GN: 人形机器人融资",
-      "source": "GN: 人形机器人融资",
-      "site_id": "GN: 人形机器人融资",
-      "description": "广汽旗下人形机器人公司慧仑科技完成亿元融资  同花顺",
-      "ai_score": 80.0,
+      "site_name": "GN: 机械臂",
+      "source": "GN: 机械臂",
+      "site_id": "GN: 机械臂",
+      "description": "茶颜悦色机械臂流水线运转，机械臂上阵制作奶茶  网易新闻客户端",
+      "ai_score": 65.0,
       "ai_label": "robotics",
-      "relevance": 0.8,
+      "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.95,
+      "timeliness": 21.16,
       "writing_value": 0,
-      "total_score": 113.95
-    },
-    {
-      "id": "151697bba4f82f1446a6caaf778dc2eba396f574",
-      "title": "广汽旗下人形机器人公司慧仑科技完成亿元融资 - 新浪网",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9BT2tYdXg5ZWRYYm5QTld4dEtLcDdfcjBENGd4TkNRMmlkZjEwaEFfOVdRb1VLMjQxRzRCb1N4NkdlNVRJRnpkX1dxOFh0eEhxbFlScm12MW12clZaRHhyNnZR?oc=5",
-      "published_at": "2026-08-11T14:12:00+00:00",
-      "category": "GN: 人形机器人融资",
-      "gn_label": "robotics",
-      "site_name": "GN: 人形机器人融资",
-      "source": "GN: 人形机器人融资",
-      "site_id": "GN: 人形机器人融资",
-      "description": "广汽旗下人形机器人公司慧仑科技完成亿元融资  新浪网",
-      "ai_score": 80.0,
-      "ai_label": "robotics",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 22.6,
-      "writing_value": 0,
-      "total_score": 112.6
+      "total_score": 96.16
     },
     {
       "id": "8c9386761cb64ee90196a1ba513dd4ac56790af0",
@@ -630,9 +693,51 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.34,
+      "timeliness": 22.4,
       "writing_value": 0,
-      "total_score": 98.34
+      "total_score": 97.4
+    },
+    {
+      "id": "27592824ed1e46be5f75fc7ea35c1ff6118a2667",
+      "title": "广汽旗下人形机器人公司慧仑科技完成亿元融资 - 同花顺",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBlVXZWaXdia2p1YjI4V1BGNzJLRU9xWVVYWkdBSHZXOXpORUVEY1lCQTZULW03WEVkcGFqQVV2Z0lsRHctdEVMYlhWalV5SVpHVXBNeWZBUnlWX2F5RkE?oc=5",
+      "published_at": "2026-08-11T15:32:52+00:00",
+      "category": "GN: 人形机器人融资",
+      "gn_label": "robotics",
+      "site_name": "GN: 人形机器人融资",
+      "source": "GN: 人形机器人融资",
+      "site_id": "GN: 人形机器人融资",
+      "description": "广汽旗下人形机器人公司慧仑科技完成亿元融资  同花顺",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 23.01,
+      "writing_value": 0,
+      "total_score": 113.01
+    },
+    {
+      "id": "151697bba4f82f1446a6caaf778dc2eba396f574",
+      "title": "广汽旗下人形机器人公司慧仑科技完成亿元融资 - 新浪网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9BT2tYdXg5ZWRYYm5QTld4dEtLcDdfcjBENGd4TkNRMmlkZjEwaEFfOVdRb1VLMjQxRzRCb1N4NkdlNVRJRnpkX1dxOFh0eEhxbFlScm12MW12clZaRHhyNnZR?oc=5",
+      "published_at": "2026-08-11T14:12:00+00:00",
+      "category": "GN: 人形机器人融资",
+      "gn_label": "robotics",
+      "site_name": "GN: 人形机器人融资",
+      "source": "GN: 人形机器人融资",
+      "site_id": "GN: 人形机器人融资",
+      "description": "广汽旗下人形机器人公司慧仑科技完成亿元融资  新浪网",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 21.66,
+      "writing_value": 0,
+      "total_score": 111.66
     }
   ],
   "fallback_used": false
