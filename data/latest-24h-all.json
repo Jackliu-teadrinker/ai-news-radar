@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-11T14:51:13.977534+00:00",
-  "total_items": 70,
+  "generated_at": "2026-08-11T15:52:04.418366+00:00",
+  "total_items": 86,
   "items_ai": [
     {
       "id": "562212c7f16f2c551623bd62f096962517f3ff90",
@@ -19,9 +19,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 5,
-      "timeliness": 29.5,
+      "timeliness": 28.49,
       "writing_value": 5,
-      "total_score": 129.5
+      "total_score": 128.49
     },
     {
       "id": "2e54964a2b48f166ab5b974fc807d62ed7a20d6b",
@@ -40,9 +40,72 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 5,
-      "timeliness": 26.31,
+      "timeliness": 25.3,
       "writing_value": 5,
-      "total_score": 126.31
+      "total_score": 125.3
+    },
+    {
+      "id": "98efe38f9385a2f2a63be32159affb0aeb08ec58",
+      "title": "Samsung has been quietly working on humanoid robots for years - Android Headlines",
+      "title_zh": "三星多年来一直在悄悄研发人形机器人 - Android Headlines",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQUUphS24yajdhRmt6X3ItYkk3MXR4aG1RNHBGMzRpUjctaFg3bGtrcW1xTlk0ZEd3T3BRem9YaGVrWmRsMnZWdWk5ODc2YTltY01YaUtxMGY3c2hCblMwcTZqSElwdWNWUjNlcWFtY3VlUTJOdlRFWVdscEpVMHBKS0tOa0NNSHJOdU5rbXRQQjAwdXRGUG9XN0NnVk9kVTBFa1F5VmNoWjItT1E?oc=5",
+      "published_at": "2026-08-11T15:44:18+00:00",
+      "category": "国外人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国外人形机器人资讯",
+      "source": "国外人形机器人资讯",
+      "site_id": "国外人形机器人资讯",
+      "description": "Samsung has been quietly working on humanoid robots for years  Android Headlines",
+      "ai_score": 80.0,
+      "ai_label": "humanoid",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.89,
+      "writing_value": 0,
+      "total_score": 119.89
+    },
+    {
+      "id": "547159e119539b97d8373755d0e2e6baa039c8a3",
+      "title": "三星押注人形机器人：整合半导体、AI与制造能力，或打造韩国版“机器人帝国” - 搜狐网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOcHUtdmRDVHRTTGMzNkdYTGJ5ZWluTlNTT1cwblU5MVVocUZ2ZFFCVGpqVkhQSm5QVmg4enhFYUVvb3JjX0I4LTJtSUIzNW5lOVU1cWd6STNqOXpERjE2MlVYRl9pSklYV0NQR0VVUEtzMzVmNGo2TFFlSFMtTXVjSGtqX0k1NWdD?oc=5",
+      "published_at": "2026-08-11T15:34:24+00:00",
+      "category": "国内人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国内人形机器人资讯",
+      "source": "国内人形机器人资讯",
+      "site_id": "国内人形机器人资讯",
+      "description": "三星押注人形机器人：整合半导体、AI与制造能力，或打造韩国版“机器人帝国”  搜狐网",
+      "ai_score": 80.0,
+      "ai_label": "humanoid",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.73,
+      "writing_value": 0,
+      "total_score": 119.73
+    },
+    {
+      "id": "98cdf70d67b180f9ec8e4a10f4bda92dd57c6e57",
+      "title": "Are humanoid robots ready to scrub your kitchen and take out the trash? Not quite. - CBS News",
+      "title_zh": "人形机器人准备好擦洗你的厨房并倒垃圾了吗？不完全是。 - 哥伦比亚广播公司新闻",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPeXlSVDAzaHN5My1SLUpqQnpxcmdzUXZyU2Zia3M2eHZTM1VuY0hOOVRuWG9LRkkxTERQZ3ZMOE93WGtEVHc5NXk5azIxYTFuS2NCZ082SlpiVFAxNndySXBZcmJrTEFFTFVNOEx1aGQtazZqTnBwWEZSQXA2UDRuRXFMNFA2Ni1tMjBvcA?oc=5",
+      "published_at": "2026-08-11T15:23:08+00:00",
+      "category": "国外机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国外机器人资讯",
+      "source": "国外机器人资讯",
+      "site_id": "国外机器人资讯",
+      "description": "Are humanoid robots ready to scrub your kitchen and take out the trash? Not quite.  CBS News",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.54,
+      "writing_value": 0,
+      "total_score": 119.54
     },
     {
       "id": "3c85f9f977593a920649b7a9f227be3f057263a9",
@@ -61,9 +124,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.77,
+      "timeliness": 28.76,
       "writing_value": 0,
-      "total_score": 119.77
+      "total_score": 118.76
     },
     {
       "id": "9928341fe47216bd5dbaaf6f1b66105d83a58fcb",
@@ -82,30 +145,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.46,
+      "timeliness": 28.45,
       "writing_value": 0,
-      "total_score": 119.46
-    },
-    {
-      "id": "d40d0c74fba4e911e7ca50fbc6d71c20c81f80e6",
-      "title": "网上中签率 0.018% 仅为长鑫 3.8%：“人形机器人第一股”宇树科技公布中签结果，超 978 万户参与申购 - 新浪网",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxPUE1paXo4NGhmXzlSV3pYQVpOSWZnQ210YWh1OHdHNUhRWnNrWVBIeWlYbVpTV1Y3VmZRZ3dSR25CR09FVkhtazhDcndQYW5Iejk3Y2NtaEJCcjRoR3VYMV9NY1UzSVJLaXM2WjRGSjhadFE1cHBvTUMtai0wejk4QVBPTTk1ZVJ1Rm5hY0t5ZWIyYnBqTGxfTWRZTElSYTlkZ1BhelQxaS10aWZlNFBjbTVMVkw4bURIUWlacFJlM2pIdkNmQThXQ3MtQ203eGNWajc2QzZVWWVKWTJIcVQzMk9KRTEtNTNQTEZRZ0FnTjdfbnZQdkhVQk95M2MzUQ?oc=5",
-      "published_at": "2026-08-11T13:51:03+00:00",
-      "category": "国内人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国内人形机器人资讯",
-      "source": "国内人形机器人资讯",
-      "site_id": "国内人形机器人资讯",
-      "description": "网上中签率 0.018% 仅为长鑫 3.8%：“人形机器人第一股”宇树科技公布中签结果，超 978 万户参与申购  新浪网",
-      "ai_score": 80.0,
-      "ai_label": "humanoid",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 29.01,
-      "writing_value": 0,
-      "total_score": 119.01
+      "total_score": 118.45
     },
     {
       "id": "277555bc35932052759d837400ed2a43a36fb73a",
@@ -124,9 +166,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.74,
+      "timeliness": 27.73,
       "writing_value": 0,
-      "total_score": 118.74
+      "total_score": 117.73
     },
     {
       "id": "d2456e2787855a86fe2ba9ca11779e0bc36e5d8c",
@@ -145,13 +187,34 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.71,
+      "timeliness": 27.7,
       "writing_value": 0,
-      "total_score": 118.71
+      "total_score": 117.7
     },
     {
-      "id": "3748aa6813f515eed2c93ad938cb308cbc1461c6",
-      "title": "人形机器人走强！股价直线涨停，封单逾140万手 - 新浪财经",
+      "id": "5432c965df417f61aa8fc49d58949ede51cacd86",
+      "title": "网上中签率 0.018% 仅为长鑫 3.8%：“人形机器人第一股”宇树科技公布中签结果，超 978 万户参与申购 - 新浪网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9QSExZQlpWcWl0eDJxR2xhRnNNOU9iOHY1VU1rWTlYMG5nZ3BobTBiSU84dXZsNUJjUmVseGFyVVNudDBHdmZ1MFNiYzk2YTNadGNaaUMxbU5hT2x4dDViQVV3?oc=5",
+      "published_at": "2026-08-11T13:25:00+00:00",
+      "category": "国内人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国内人形机器人资讯",
+      "source": "国内人形机器人资讯",
+      "site_id": "国内人形机器人资讯",
+      "description": "网上中签率 0.018% 仅为长鑫 3.8%：“人形机器人第一股”宇树科技公布中签结果，超 978 万户参与申购  新浪网",
+      "ai_score": 80.0,
+      "ai_label": "humanoid",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 27.57,
+      "writing_value": 0,
+      "total_score": 117.57
+    },
+    {
+      "id": "ee8dc439453f99b9e695749c6c699e85380684b7",
+      "title": "人形机器人走强！股价直线涨停，封单逾140万手 - 新浪网",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNU2k0cHgtaHlPaUZWbGV6REZfdDEwX0oyUGJoOGQ1MzZEcHRfT2dtRFZ3M0JnVXpZUVRsbW5RVmhEODFudEdNbzRJTkxBX2Z4X2FTSkJobURMR2Z4amd5YmVibDlPdGFOcDEycHhwYWMyVjRKbkxxNFZsOVlvcU1DV09EZ0xTN08xM3BUd2ktTnlhSmxaalhvMEtGeG4?oc=5",
       "published_at": "2026-08-11T13:18:45+00:00",
@@ -160,15 +223,15 @@
       "site_name": "国内人形机器人资讯",
       "source": "国内人形机器人资讯",
       "site_id": "国内人形机器人资讯",
-      "description": "人形机器人走强！股价直线涨停，封单逾140万手  新浪财经",
+      "description": "人形机器人走强！股价直线涨停，封单逾140万手  新浪网",
       "ai_score": 80.0,
       "ai_label": "humanoid",
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.48,
+      "timeliness": 27.47,
       "writing_value": 0,
-      "total_score": 118.48
+      "total_score": 117.47
     },
     {
       "id": "33659c14b126af881b59a97016f53ce2b34f6b2d",
@@ -187,9 +250,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.45,
+      "timeliness": 27.44,
       "writing_value": 0,
-      "total_score": 118.45
+      "total_score": 117.44
     },
     {
       "id": "ba8330f7f54b5b4a6bec144162f482a36fda9fef",
@@ -208,9 +271,30 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.11,
+      "timeliness": 27.1,
       "writing_value": 0,
-      "total_score": 118.11
+      "total_score": 117.1
+    },
+    {
+      "id": "1278fc3bcd9082120e67fc4ae52bec6d3c581535",
+      "title": "活力中国调研行丨更炸的来了！中联重科人形机器人年底量产 - 华声在线",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE96V0MtNWFybU14OER3ZlZBbXFrdGt0RWZ2dGNoQm1Hd2RvcUQ2R2FxSFRlRXhhZGFyYnFIbXNjQWdSUnBSaGkzZXBRRjB0WGM3NW5qQ2FNdjV5VjRUZGNz?oc=5",
+      "published_at": "2026-08-11T12:54:47+00:00",
+      "category": "国内人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国内人形机器人资讯",
+      "source": "国内人形机器人资讯",
+      "site_id": "国内人形机器人资讯",
+      "description": "活力中国调研行丨更炸的来了！中联重科人形机器人年底量产  华声在线",
+      "ai_score": 80.0,
+      "ai_label": "humanoid",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 27.07,
+      "writing_value": 0,
+      "total_score": 117.07
     },
     {
       "id": "24b6d09b355801cf9686a6b10e52635e59dcbac9",
@@ -229,9 +313,30 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.05,
+      "timeliness": 27.04,
       "writing_value": 0,
-      "total_score": 118.05
+      "total_score": 117.04
+    },
+    {
+      "id": "1bc45b932c84261ec0838f4de014e83c94fe73a6",
+      "title": "海外研选 | 巴克莱：自动化3.0时代开启 人形机器人市场10年后或达2000亿美元 - 财联社",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE12ZjBIMXNiQVEtUTZXbHRaMTFFNGtGVjdUM1hLY3RwSm9lcS15Z1k4WkgzdW9LT3Y4ZUJyN3hjUjhDTHNaOWhzcg?oc=5",
+      "published_at": "2026-08-11T12:48:26+00:00",
+      "category": "国内人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国内人形机器人资讯",
+      "source": "国内人形机器人资讯",
+      "site_id": "国内人形机器人资讯",
+      "description": "海外研选 | 巴克莱：自动化3.0时代开启 人形机器人市场10年后或达2000亿美元  财联社",
+      "ai_score": 80.0,
+      "ai_label": "humanoid",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 26.96,
+      "writing_value": 0,
+      "total_score": 116.96
     },
     {
       "id": "45e4ca93768237ed54c832da249553d872c44e36",
@@ -250,9 +355,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.3,
+      "timeliness": 26.29,
       "writing_value": 0,
-      "total_score": 117.3
+      "total_score": 116.29
     },
     {
       "id": "c097bd03dffa1296c628c4d6d7351d2dc52a81c6",
@@ -271,9 +376,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.79,
+      "timeliness": 25.78,
       "writing_value": 0,
-      "total_score": 116.79
+      "total_score": 115.78
     },
     {
       "id": "19687004a8574e6a5a1bef64cfc155d8f7a45e31",
@@ -292,9 +397,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.73,
+      "timeliness": 25.72,
       "writing_value": 0,
-      "total_score": 116.73
+      "total_score": 115.72
     },
     {
       "id": "36587312260fae6fdb07fb289042a9bc74dc0df1",
@@ -313,9 +418,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.7,
+      "timeliness": 25.69,
       "writing_value": 0,
-      "total_score": 116.7
+      "total_score": 115.69
     },
     {
       "id": "54f3c1c35591c569cf90eb904256349c78f23863",
@@ -334,9 +439,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.69,
+      "timeliness": 25.68,
       "writing_value": 0,
-      "total_score": 116.69
+      "total_score": 115.68
     },
     {
       "id": "7c0095f8519fb6319b7096c28de9324fa1a14454",
@@ -355,9 +460,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.61,
+      "timeliness": 25.6,
       "writing_value": 0,
-      "total_score": 116.61
+      "total_score": 115.6
     },
     {
       "id": "99e1a7d377942e2d5ef44e29de647f0d39e69b1e",
@@ -376,9 +481,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 29.5,
+      "timeliness": 28.49,
       "writing_value": 5,
-      "total_score": 114.5
+      "total_score": 113.49
     },
     {
       "id": "f5c0a66d209bba8d6e454ff5669e3466e3f21472",
@@ -397,9 +502,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 29.41,
+      "timeliness": 28.4,
       "writing_value": 5,
-      "total_score": 114.41
+      "total_score": 113.4
     },
     {
       "id": "ed4564ff970c4e90af82b9f968b2f6bc4b98df73",
@@ -418,16 +523,16 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 28.62,
+      "timeliness": 27.61,
       "writing_value": 5,
-      "total_score": 113.62
+      "total_score": 112.61
     },
     {
       "id": "b01ca8fca8b5a27a7d48ac12c91f571f1f707b9f",
       "title": "Ukrainian troops are buying war robots from their digital marketplace in record numbers - Business Insider",
       "title_zh": "乌克兰军队从数字市场购买战争机器人的数量创历史新高",
       "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQYjVEWkVwbTFzMnVpem5lX2NQWmp5Vm9Kd0hxSGFkbUZINnNlNEJXRVVqNzZ3TlloeFVsN1dyTnNZOVg5MGgzY0NwLUtOMVh2OW1rM2otY0ItVVA0dlppU3k1ZjU4bXQyaDZrWXZTQTFzdjlhZTAxekRCQ3BZSlNZRnFrejNCc2ZQVkk4VV9yNDBES2w3MzI5eHdMYXZINFVaUTNKSXRB?oc=5",
-      "published_at": "2026-08-11T11:50:34+00:00",
+      "published_at": "2026-08-11T11:48:00+00:00",
       "category": "国外机器人资讯",
       "gn_label": "robotics",
       "site_name": "国外机器人资讯",
@@ -439,9 +544,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 27.01,
+      "timeliness": 25.95,
       "writing_value": 5,
-      "total_score": 112.01
+      "total_score": 110.95
     },
     {
       "id": "95d5da86255664152d4293dbb605001330e9068e",
@@ -460,9 +565,72 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 26.66,
+      "timeliness": 25.65,
       "writing_value": 5,
-      "total_score": 111.66
+      "total_score": 110.65
+    },
+    {
+      "id": "c27612e8e204d5f46a273369fcbae9c4ab125e8a",
+      "title": "New Food Delivery Robots to Arrive on Campus - University of North Carolina Wilmington",
+      "title_zh": "新型送餐机器人将登陆校园 - 北卡罗来纳大学威尔明顿分校",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFA3YUk4Rjk1dFZNUFJXbUdhQ1hTQ2F5YTMtQnlmcnNWS3pPYzNlLVRBdFZ0UlNXMi10S0sya203am5aT3hCYjlfbTRyUW1rU3JjTFJILU1NVXpkMHo2Tld4ZkJTWlZtMTNfSEpMVURDb0R6Zjk2eU9xeUEwRGJkNFk?oc=5",
+      "published_at": "2026-08-11T15:42:18+00:00",
+      "category": "国外机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国外机器人资讯",
+      "source": "国外机器人资讯",
+      "site_id": "国外机器人资讯",
+      "description": "New Food Delivery Robots to Arrive on Campus  University of North Carolina Wilmington",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.86,
+      "writing_value": 0,
+      "total_score": 104.86
+    },
+    {
+      "id": "c5a4ab479abc5d0bee8e721359acb72f00865e4d",
+      "title": "清华腾讯RoboticsX港科大联手发布，世界模型能看懂机器人未来动作了 - 智东西",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE42TmtlaXZOYTZuNzQyb1NkUTMxdFFSVlgyUXNLMkJ4RmRBVTBxeUtmNVdmTG9TRGRud2xKVzltdHhiNDE2LUE?oc=5",
+      "published_at": "2026-08-11T15:08:56+00:00",
+      "category": "国内机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国内机器人资讯",
+      "source": "国内机器人资讯",
+      "site_id": "国内机器人资讯",
+      "description": "清华腾讯RoboticsX港科大联手发布，世界模型能看懂机器人未来动作了  智东西",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.3,
+      "writing_value": 0,
+      "total_score": 104.3
+    },
+    {
+      "id": "ddcc06f33477ed9836b9248c0da0cb3f0e08f312",
+      "title": "Robots Could Build Massive Metamaterial Radars in Orbit - Universe Today",
+      "title_zh": "机器人可以在轨道上建造大型超材料雷达 - 今日宇宙",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQM3F4WnBwcWEzME5sVHZMNlZneXV4VmFralQ3VTQ1UG4yVktURVhWUDRJRU1Bc19FQ25mRTBlUDIwYjc2RzhsdjY2ZXdvQ3VPR3dKN0NBY25BYjdxNWw3Yzc1Wm1zYTRRQWwtcVo4NWRERk8tUFh4SEJCYnhSeFBubm1ZUV8xSFl4NFZlVGQ3RzlTLXVudTdrOWVR?oc=5",
+      "published_at": "2026-08-11T15:03:00+00:00",
+      "category": "国外机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国外机器人资讯",
+      "source": "国外机器人资讯",
+      "site_id": "国外机器人资讯",
+      "description": "Robots Could Build Massive Metamaterial Radars in Orbit  Universe Today",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.2,
+      "writing_value": 0,
+      "total_score": 104.2
     },
     {
       "id": "c7f6c484eb954ea99a9c67557322538b2940922a",
@@ -481,9 +649,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.93,
+      "timeliness": 28.92,
       "writing_value": 0,
-      "total_score": 104.93
+      "total_score": 103.92
     },
     {
       "id": "5ee18ec0872cd0845e90fa5e8f3454bfe350aa36",
@@ -502,14 +670,14 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.84,
+      "timeliness": 28.83,
       "writing_value": 0,
-      "total_score": 104.84
+      "total_score": 103.83
     },
     {
-      "id": "a6916f87bd6a37fb2071f017a3ac66b4767ef44b",
-      "title": "Robot Orders Increase in Q2 as Automation Demand Broadens Across Industries - businesswire.com",
-      "title_zh": "随着各行业自动化需求的扩大，第二季度机器人订单增加 - Businesswire.com",
+      "id": "e95e9ce255efa9544c52377a05f33d7d37951b07",
+      "title": "Robot Orders Increase in Q2 as Automation Demand Broadens Across Industries - Business Wire",
+      "title_zh": "随着各行业自动化需求的扩大，第二季度机器人订单增加 - 美国商业资讯",
       "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQd2E0V3RjZFhfUFdOTVZzcFNJZk1PTXM4OGlCdWhFbE9JS1lMWFdMUmc5VEtPM3V2QVVieXNua2ZIOF9weklGQWtXczZRTU1sTkhRWGhCenJxX2FENEtXbm1OZXhqU0NCWTlwMTBkam5xWmVMUzJzOUJnZE83OENtamREVThiQ1hUQWYxMUhldUpQNXRWNU9YZ1J4aXpDd0lTZ0xCM1RoZUxkR2RIM05uZHFoUUZ0dkcyR3pyQlVyNEFNTlF4MjZOTV84Nlk?oc=5",
       "published_at": "2026-08-11T14:04:00+00:00",
       "category": "国外机器人资讯",
@@ -517,22 +685,22 @@
       "site_name": "国外机器人资讯",
       "source": "国外机器人资讯",
       "site_id": "国外机器人资讯",
-      "description": "Robot Orders Increase in Q2 as Automation Demand Broadens Across Industries  businesswire.com",
+      "description": "Robot Orders Increase in Q2 as Automation Demand Broadens Across Industries  Business Wire",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.23,
+      "timeliness": 28.22,
       "writing_value": 0,
-      "total_score": 104.23
+      "total_score": 103.22
     },
     {
       "id": "09edc417049ab91c15f1844b48cd20f0c4d5de45",
       "title": "Robots That Walk and Talk Are Coming to Car Factories - The New York Times",
       "title_zh": "会走路和说话的机器人即将进入汽车工厂 - 纽约时报中文网",
       "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOZnEtWlI4Wm95WjdVYlhRUEhKZEV1cFYwOW4zd0N4Mmx2ZXp5X2tLT2xlU1VqZ1dnRDFPV1hhSk1rVHFaMTBpNEtObzdOSkNEZm1BY0owcXpVNW1vcThOX0Vzd1pSVXZZZlkxVzNORTRxWXNGWW5TZ0sxRk9xeDNIcFlJbGM?oc=5",
-      "published_at": "2026-08-11T13:45:33+00:00",
+      "published_at": "2026-08-11T13:45:34+00:00",
       "category": "国外机器人资讯",
       "gn_label": "robotics",
       "site_name": "国外机器人资讯",
@@ -544,13 +712,13 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.92,
+      "timeliness": 27.91,
       "writing_value": 0,
-      "total_score": 103.92
+      "total_score": 102.91
     },
     {
-      "id": "7cea6fd0f5b7bd116cd0fad90e30c0a3a46f0a1d",
-      "title": "上市在即，宇树科技在制造业重镇疯狂“抢人” - 21jingji.com",
+      "id": "ccc0b35e516e5a89ec271b48b226ebc7f2484f6d",
+      "title": "上市在即，宇树科技在制造业重镇疯狂“抢人” - 21财经",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNdHdpNDlfYkVNSHJXNTFZVmRDblhPVzlxNzJqaXRvc0RGLWFZNGxOc2tZRzZJWjZhQmtPTDFYZzlsNFBKQU9JaXFoT2YyejUwdDlCTnNyekg4N2hyNGVTQ1NGQmpxTXR6LXJKYlNsV28tYUFCbVpRSWtNZ0U4VExrLXdoR2RBUnhXel9mLQ?oc=5",
       "published_at": "2026-08-11T13:30:00+00:00",
@@ -559,20 +727,20 @@
       "site_name": "国内具身智能资讯",
       "source": "国内具身智能资讯",
       "site_id": "国内具身智能资讯",
-      "description": "上市在即，宇树科技在制造业重镇疯狂“抢人”  21jingji.com",
+      "description": "上市在即，宇树科技在制造业重镇疯狂“抢人”  21财经",
       "ai_score": 65.0,
       "ai_label": "embodied_ai",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.66,
+      "timeliness": 27.65,
       "writing_value": 0,
-      "total_score": 103.66
+      "total_score": 102.65
     },
     {
-      "id": "1f6f81841cd84a0e8f9dfbb7bcc3671e7a41c695",
-      "title": "America unleashes AI robots on shipbuilding crisis as China widens production race - foxbusiness.com",
-      "title_zh": "中国扩大生产竞赛，美国推出人工智能机器人应对造船危机 - Foxbusiness.com",
+      "id": "9e23a323626100a70e4b2718b1abfbb20e8a3313",
+      "title": "America unleashes AI robots on shipbuilding crisis as China widens production race - Fox Business",
+      "title_zh": "随着中国扩大生产竞赛，美国推出人工智能机器人应对造船危机 - 福克斯商业频道",
       "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9fS2NzMFVLZ3BMS2hCNUh6U3ZBVWZ1WkFaUHBvblpWakZUQzlOMGNCQ2tDV3NIa0V1QmIzYVZWZ2FTSWg3cU9FSENIVkxZVHg4SGRSRk5zdC1wTjg?oc=5",
       "published_at": "2026-08-11T13:16:50+00:00",
       "category": "国外机器人资讯",
@@ -580,15 +748,15 @@
       "site_name": "国外机器人资讯",
       "source": "国外机器人资讯",
       "site_id": "国外机器人资讯",
-      "description": "America unleashes AI robots on shipbuilding crisis as China widens production race  foxbusiness.com",
+      "description": "America unleashes AI robots on shipbuilding crisis as China widens production race  Fox Business",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.44,
+      "timeliness": 27.43,
       "writing_value": 0,
-      "total_score": 103.44
+      "total_score": 102.43
     },
     {
       "id": "a31e47c63f791fb8ba178673cf73b99a2c532403",
@@ -607,13 +775,13 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.25,
+      "timeliness": 27.24,
       "writing_value": 0,
-      "total_score": 103.25
+      "total_score": 102.24
     },
     {
-      "id": "2b64080098c6cbb314fe11512c3e2bd8a47519fd",
-      "title": "长江工程职院牵手宇树科技共建产业学院 - 新浪财经",
+      "id": "2ac0c90bc6995d592f5b637ae39e34eaa6859912",
+      "title": "长江工程职院牵手宇树科技共建产业学院 - 新浪网",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOSjUzU3JrdHc2X2d5Y0J3d0c0TEk2OFc3VEE5b1VjSE01UjJ5X04xNnFFWmhCSmRVb2Q3YTJLcTV6SVBDcjJ0OV9NWlFnSEliOXFpaV9xWGFPeGRyTmZpN293LWowT1gyZ3FOS0s1M3JFOFpwSVJUZS00b0xPMFM4ZS03cktsWElUSzItN0d2VnlBc1piMUtpWg?oc=5",
       "published_at": "2026-08-11T13:00:39+00:00",
@@ -622,15 +790,15 @@
       "site_name": "国内具身智能资讯",
       "source": "国内具身智能资讯",
       "site_id": "国内具身智能资讯",
-      "description": "长江工程职院牵手宇树科技共建产业学院  新浪财经",
+      "description": "长江工程职院牵手宇树科技共建产业学院  新浪网",
       "ai_score": 65.0,
       "ai_label": "embodied_ai",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.17,
+      "timeliness": 27.16,
       "writing_value": 0,
-      "total_score": 103.17
+      "total_score": 102.16
     },
     {
       "id": "c1ac899847d2a83c9aa15abb170ecc1392ac70a3",
@@ -649,9 +817,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.16,
+      "timeliness": 27.15,
       "writing_value": 0,
-      "total_score": 103.16
+      "total_score": 102.15
     },
     {
       "id": "9599453f7976cc8a80e888ea5a5173c883d53474",
@@ -670,9 +838,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.57,
+      "timeliness": 26.56,
       "writing_value": 0,
-      "total_score": 102.57
+      "total_score": 101.56
     },
     {
       "id": "9ddd0ecacc96470a1ff7b5099cec938a4f9637be",
@@ -691,9 +859,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.56,
+      "timeliness": 26.55,
       "writing_value": 0,
-      "total_score": 102.56
+      "total_score": 101.55
     },
     {
       "id": "6154cf74a7447b864bfac33aef641f565a8c1c32",
@@ -712,9 +880,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.23,
+      "timeliness": 26.22,
       "writing_value": 0,
-      "total_score": 102.23
+      "total_score": 101.22
     },
     {
       "id": "9c75b3208d8930f8b3f1011d09c3b7f1b6dfd2af",
@@ -733,9 +901,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.16,
+      "timeliness": 26.15,
       "writing_value": 0,
-      "total_score": 102.16
+      "total_score": 101.15
     },
     {
       "id": "fbaf326becc6f69d7164ee2d47a58437a638930e",
@@ -754,30 +922,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.94,
+      "timeliness": 25.93,
       "writing_value": 0,
-      "total_score": 101.94
-    },
-    {
-      "id": "36ee95c86e196d68b8f359178e331acf9eb43ebe",
-      "title": "Guao Technology raises nearly ¥100M Series A+ as its robots reach Bosch's lines - Dealroom",
-      "title_zh": "瓜奥科技获近亿元A+轮融资，机器人登陆博世生产线 - 知乎",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOenpHYUYxY3hIdS1pNVpObS1aSF9NS2JQbUdBVThhRi1WMnV4Y0hvM2doY0g0MG1KWEFTMjVmbWU1Yi1zODBxSm5jb2ZCOVFKcEFHUUswbXdtcHVaMk85M2RMSTViQ2dKWVNBWERGYVNtUFk3NkJWbkhUYURGNXNGcS1lbHFhUURJeVpFdHVyNjB0dUZkYUl0b25xU2VVY1pOcmFsVjFsdUltZjRSNTA5ag?oc=5",
-      "published_at": "2026-08-11T11:38:07+00:00",
-      "category": "国外机器人资讯",
-      "gn_label": "robotics",
-      "site_name": "国外机器人资讯",
-      "source": "国外机器人资讯",
-      "site_id": "国外机器人资讯",
-      "description": "Guao Technology raises nearly ¥100M Series A+ as its robots reach Bosch's lines  Dealroom",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 26.8,
-      "writing_value": 0,
-      "total_score": 101.8
+      "total_score": 100.93
     },
     {
       "id": "8861139e9691390a5168c9eed912d31fbbfd7e7c",
@@ -796,30 +943,93 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.79,
+      "timeliness": 25.78,
       "writing_value": 0,
-      "total_score": 101.79
+      "total_score": 100.78
     },
     {
-      "id": "2a8d3ce40155b9f34e674f02fb0c3300a8ec76c6",
-      "title": "Robot book club - Yahoo Tech",
-      "title_zh": "机器人读书俱乐部 - 雅虎科技",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBsZDRRTlM1bEtQbVNOdTl1N0FsRDNMZkFVUUpDaFhBMW5aRUZCaktzTGZTVmRZck5HcmNpMTJZSnZwaHNzMy05YnpXVkNfdG1yTUJ5ZzBBcnVVZW5Xa1ZVOXpBWVJ4Q2pyVC01VHNqS01qVjBIVm8yeUFvVQ?oc=5",
-      "published_at": "2026-08-11T11:31:42+00:00",
+      "id": "cae7d96bb9786da5273dd928835a5276752ccd70",
+      "title": "Robot book club - Axios",
+      "title_zh": "机器人读书俱乐部 - Axios",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE0yRWF1RGJHUVlzZmtUSkMwZXF2YUhaTWgtRFlMZkZDU0IzSmNzYlRnUGpJOWhvWlZBN2pUZHZXUUo0eVhVWERXOWtXYnJ5ZjVDRUIxUUZ3SUNxai1W?oc=5",
+      "published_at": "2026-08-11T11:36:01+00:00",
       "category": "国外机器人资讯",
       "gn_label": "robotics",
       "site_name": "国外机器人资讯",
       "source": "国外机器人资讯",
       "site_id": "国外机器人资讯",
-      "description": "Robot book club  Yahoo Tech",
+      "description": "Robot book club  Axios",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.69,
+      "timeliness": 25.75,
       "writing_value": 0,
-      "total_score": 101.69
+      "total_score": 100.75
+    },
+    {
+      "id": "546976ddb021ac56f290b899aefc98d6f98f456a",
+      "title": "Archer to Shape Physical AI Future of Aerospace and Defense with Acquisition of Boeing’s Wisk Aero, Insitu and SkyGrid Subsidiaries; Boeing to Invest in Archer and Collaborate - suasnews.com",
+      "title_zh": "Archer 收购波音旗下 Wisk Aero、Insitu 和 SkyGrid 子公司，塑造航空航天和国防的物理人工智能未来；波音公司将投资 Archer 并与其展开合作 - suasnews.com",
+      "url": "https://news.google.com/rss/articles/CBMirwJBVV95cUxNQzRKRFZhcEhnR19XbXFRN05iVHlDMWxVczQ4UVZoX3dFWGlZazdvaVNJZk50dTV4Rlc3aVFzenA5VTlibW0wcndaU19XaThQZFV5bjJGZzlmcXoxME5UVDVtMEpyelgtVDRXMFZOYUdnS2twOUE2OTZFeDhDOWNKM19OMk1QMVJ3UGx1STBCcU5hVTRSX1NjWFZ1NFZrX25GbTFPTEFrZWtkczVKRHBZWG9IdE1oVDhKZEV6SWZyNGNPa1ZrSzVzY0xiemctY3RlOXNuQ25tbGZkNXZSLXFLUWMtUzJmdDlneU42SmZXM3JqT04weUZXT0xsZ19BQ0ItVTY5eUxfNDU4blFhMGJUOVJKN00wbDNIdWJUbUVnVnBMMEZkZS1LMFVjZ1k5dXM?oc=5",
+      "published_at": "2026-08-11T15:00:31+00:00",
+      "category": "国外物理AI资讯",
+      "gn_label": "physical_ai",
+      "site_name": "国外物理AI资讯",
+      "source": "国外物理AI资讯",
+      "site_id": "国外物理AI资讯",
+      "description": "Archer to Shape Physical AI Future of Aerospace and Defense with Acquisition of Boeing’s Wisk Aero, Insitu and SkyGrid Subsidiaries; Boeing to Invest in Archer and Collaborate  suasnews.com",
+      "ai_score": 50.0,
+      "ai_label": "physical_ai",
+      "relevance": 0.5,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 29.16,
+      "writing_value": 5,
+      "total_score": 99.16
+    },
+    {
+      "id": "c6542613299e7cf1f86fe8a6a71b75b7b77f2dcc",
+      "title": "The cost floor under the physical AI boom - Tech Funding News",
+      "title_zh": "物理人工智能热潮下的成本底线 - 科技融资新闻",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5ON3B1Szg0REROa2NGenhMdzk5V0hxVUh2UVh6bDVPbk53Z3NJTHNvR3RSVnl1TGVFZG1XdHRNLUd5RDRiUExueHdVNjZvd25qME9lNHNhcXVRZ25IV2l6RS03T3RydnROeFFpek0xaF9KRXZPaU10bldn?oc=5",
+      "published_at": "2026-08-11T15:34:39+00:00",
+      "category": "国外物理AI资讯",
+      "gn_label": "physical_ai",
+      "site_name": "国外物理AI资讯",
+      "source": "国外物理AI资讯",
+      "site_id": "国外物理AI资讯",
+      "description": "The cost floor under the physical AI boom  Tech Funding News",
+      "ai_score": 50.0,
+      "ai_label": "physical_ai",
+      "relevance": 0.5,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.73,
+      "writing_value": 0,
+      "total_score": 89.73
+    },
+    {
+      "id": "f8321f235a50558d712db83a2419dfdcf8ad81e3",
+      "title": "Can physical AI save Korea’s economic future? - koreajoongangdaily.com",
+      "title_zh": "物理人工智能能否拯救韩国的经济未来？ - 韩国中央日报.com",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNaXktdnRaMUFXbTk4cktnT3FBZEttN2R4aDR0Vk9teUo1MGFEclh3YWpKUlAwWjhNbXdSeWZPeEpOZk1Fakpjb1RRUDd3TU56b0R3anR4N0hSbFdBbmU4TFlaX0xDck1abU5TbVk0UFJhRmlMblFTUWlpLWNpakNTalA4U3EteTRlZFJlZjFlSEdlQ2JiZXFRbkNrUFVrazg?oc=5",
+      "published_at": "2026-08-11T15:07:49+00:00",
+      "category": "国外物理AI资讯",
+      "gn_label": "physical_ai",
+      "site_name": "国外物理AI资讯",
+      "source": "国外物理AI资讯",
+      "site_id": "国外物理AI资讯",
+      "description": "Can physical AI save Korea’s economic future?  koreajoongangdaily.com",
+      "ai_score": 50.0,
+      "ai_label": "physical_ai",
+      "relevance": 0.5,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.28,
+      "writing_value": 0,
+      "total_score": 89.28
     },
     {
       "id": "6c902dcca86ad2421f25af3fc4407004918c5073",
@@ -838,9 +1048,9 @@
       "relevance": 0.5,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.5,
+      "timeliness": 28.49,
       "writing_value": 0,
-      "total_score": 89.5
+      "total_score": 88.49
     },
     {
       "id": "20e5793920b3bc25baf4a7b0272a5b82e847abf8",
@@ -859,9 +1069,9 @@
       "relevance": 0.5,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.66,
+      "timeliness": 27.65,
       "writing_value": 0,
-      "total_score": 88.66
+      "total_score": 87.65
     },
     {
       "id": "9e6e3114981066e4365dbcaf6182391c6b0ecb95",
@@ -880,9 +1090,9 @@
       "relevance": 0.5,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.16,
+      "timeliness": 27.15,
       "writing_value": 0,
-      "total_score": 88.16
+      "total_score": 87.15
     },
     {
       "id": "e70ef8ae1b390d9b148360e12a87a1a2a3716ff9",
@@ -901,13 +1111,139 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 5,
-      "timeliness": 27.16,
+      "timeliness": 26.15,
       "writing_value": 5,
-      "total_score": 82.16
+      "total_score": 81.15
     },
     {
-      "id": "735178b8417fb3b87298c32ba9ee9413a67bc854",
-      "title": "灵猴机器人完成C轮融资|宁德时代|投资基金|资本|黑马|上市公司_手机新浪网 - 新浪财经",
+      "id": "ace813eddf31e51b37ce0f734d101c9f7f0f9e5d",
+      "title": "黑马频出、AI 赋能！RoboMaster 不止机器人大赛，更是工程师摇篮 - 新浪网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNNTR6LWdfR0JPRW00aFI0N0lqd0xtXzN6aVRtMTJ5REtTSGhSeTZkZ0NOVVBLOTNxUmFFVzR2VHh2R3puaThLTE0yZ0p3TTJFb2tNc0ZKNUFfT3YzNVdTSlpPM2pCcVpFZWZoX2RiWVdGTXRmUTZuS1BTdzJNQUhGWnBXZWJzQV9tZ2RHcjdzck9tVzVSSVBWa0c0bV9lU1o5VVdUV19FQQ?oc=5",
+      "published_at": "2026-08-11T15:22:30+00:00",
+      "category": "国内机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国内机器人资讯",
+      "source": "国内机器人资讯",
+      "site_id": "国内机器人资讯",
+      "description": "黑马频出、AI 赋能！RoboMaster 不止机器人大赛，更是工程师摇篮  新浪网",
+      "ai_score": 35.0,
+      "ai_label": "robotics",
+      "relevance": 0.35,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.53,
+      "writing_value": 0,
+      "total_score": 74.53
+    },
+    {
+      "id": "0ba7cac5f8e6df96d0bdb290ef7446f67589e23c",
+      "title": "多亏了Anduril，这正式成为 $Archer Aviation (ACHR.US)$ 战争、机器人与死亡卡特尔军团的一员。 - Moomoo",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPUUZCWjVXZS13aGdzQWhRZS1veTNwT2VPT3BTM3hQTnl3eG4yRGs2NFJDRFRjZ3FZSjBZZnJRRXc0cHJNWVJJVmg0V0lRQld6ODlDX1Z5ekNYUXdFd25JLXkyd0VwUjJsSzBVUVBqYzlSVnRucUlsYk8tcWpPcnFhR0J2OXVPMGNucWJ1SVBfRmVqMm43Skxydk40cEprUzVfWWRfT1hwOEdPUEM5RDJqcDVDZ0hIdm8?oc=5",
+      "published_at": "2026-08-11T15:21:29+00:00",
+      "category": "国内机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国内机器人资讯",
+      "source": "国内机器人资讯",
+      "site_id": "国内机器人资讯",
+      "description": "多亏了Anduril，这正式成为 $Archer Aviation (ACHR.US)$ 战争、机器人与死亡卡特尔军团的一员。  Moomoo",
+      "ai_score": 35.0,
+      "ai_label": "robotics",
+      "relevance": 0.35,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.51,
+      "writing_value": 0,
+      "total_score": 74.51
+    },
+    {
+      "id": "fa7854d3af90f157558412cd7b9d88f34459cd1d",
+      "title": "冲锋舟、水下机器人等装备助力，丰台蓝天救援队全力防汛备战 （北京日报客户端记者 刘平 孙颖） - 搜狐网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQam4xMS1iRUtLUHUwdUtKR2plcWhmaWV0aEFUbkdRc2FXV0NYZ01ZUDI5WWVYTHJvMktwTnFQcFFubUtBRkZ1Y05rcTItLTFTRGdPQVBjZmpCUFR2QlZDSHo3eW4yT2djTjVzVV9hV0UyVXhSY05GeUJyTE5ELUFKdWZQWVlqcjhX?oc=5",
+      "published_at": "2026-08-11T15:10:42+00:00",
+      "category": "国内机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国内机器人资讯",
+      "source": "国内机器人资讯",
+      "site_id": "国内机器人资讯",
+      "description": "冲锋舟、水下机器人等装备助力，丰台蓝天救援队全力防汛备战 （北京日报客户端记者 刘平 孙颖）  搜狐网",
+      "ai_score": 35.0,
+      "ai_label": "robotics",
+      "relevance": 0.35,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.33,
+      "writing_value": 0,
+      "total_score": 74.33
+    },
+    {
+      "id": "3019d83caa82543f6b39dcb31f2e456a8fe6b179",
+      "title": "当机器人有了统一的\"大脑\"：一个万亿级生态的雏形已经出现 - 新浪网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxPS3Q3X0lLVUhtaUtVMklXZnhUMEQ3ck1sLXBKQWdUdWhHOXJRcnA1NTJVdE5nTVlMWDlKN05WTHh1SHByWFhhUld3eGN4aDJfUnJPQXlIQU0zRE9mN043cng2TGJqZnBUZllYSE1pQ0JfVVhxbWlkd1QtWlJONlk4UUNQRS1oRjFjZDNucDFXRU8wMXhPNHFEMUxSbm5tRFlIb1BSaWQzNXBZVllEd0Y0UFhEcy1tNnhpOEF0NTVoaVNZV2E2X0FyNVVQVXRUQ0s0bkVrTFRHeWdKcmZwajF0MlZ2azNPTlVycS0zYXpydlpyRUw4LVlZX1pn?oc=5",
+      "published_at": "2026-08-11T14:46:42+00:00",
+      "category": "国内机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国内机器人资讯",
+      "source": "国内机器人资讯",
+      "site_id": "国内机器人资讯",
+      "description": "当机器人有了统一的\"大脑\"：一个万亿级生态的雏形已经出现  新浪网",
+      "ai_score": 35.0,
+      "ai_label": "robotics",
+      "relevance": 0.35,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 28.93,
+      "writing_value": 0,
+      "total_score": 73.93
+    },
+    {
+      "id": "49bbf246ae0638d3fcb04ecd8a9707e398448ab9",
+      "title": "一家手术机器人公司，海外收入暴增超450% - 新浪网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9pOXpoeG52X1ZlOTFTLUhZUGQycEtnYWd0ekNsbWZqZWxwSUhqMW1TZlJJQkljd0o3eWxGS3VKbVExR1A3TUs4SDQtZzFZYTNBRVdxbE1lTGJ1MTdDS013SndsR2hHUnBYaUVwMFBRSQ?oc=5",
+      "published_at": "2026-08-11T14:43:52+00:00",
+      "category": "国内机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国内机器人资讯",
+      "source": "国内机器人资讯",
+      "site_id": "国内机器人资讯",
+      "description": "一家手术机器人公司，海外收入暴增超450%  新浪网",
+      "ai_score": 35.0,
+      "ai_label": "robotics",
+      "relevance": 0.35,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 28.88,
+      "writing_value": 0,
+      "total_score": 73.88
+    },
+    {
+      "id": "68758070f8afc4a64fe3df533699900d0878488d",
+      "title": "Korea’s No-Foreign-Weights Rule Earns All Four Sovereign AI Teams Global Recognition - Tech Times",
+      "title_zh": "韩国的无外国权重规则为所有四个主权人工智能团队赢得了全球认可 - Tech Times",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNZVBqNkY4OUFQVHVsYkY5NE9KYjl4ZHBhbWFlQWhFRGJGWHNSNDBIVFJrcFRHRWp0UmFUMkdpUjc1MlBsNi03UGc2azVjaDVaR2dkbnA4d3NIVEktU0tzYXBRY19QQjEtNEpzcjZNNTY2NGtMZ3laeW9lM0xEV0NBc1NoYldtcC1FLXRtYWw0XzRmc0d1SVk1Um8teWxyOEtCT0h0c3FUSTYwbERQUS1weUJXLVhFd05pU0x2OGxGNk1FU3h2YlpGZ3U5M21xZGxtYzBoaA?oc=5",
+      "published_at": "2026-08-11T14:42:16+00:00",
+      "category": "国外人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国外人形机器人资讯",
+      "source": "国外人形机器人资讯",
+      "site_id": "国外人形机器人资讯",
+      "description": "Korea’s No-Foreign-Weights Rule Earns All Four Sovereign AI Teams Global Recognition  Tech Times",
+      "ai_score": 35.0,
+      "ai_label": "humanoid",
+      "relevance": 0.35,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 28.86,
+      "writing_value": 0,
+      "total_score": 73.86
+    },
+    {
+      "id": "b5f9524e1337918f37c4007aa2c58dc88b7b5dd5",
+      "title": "灵猴机器人完成C轮融资|宁德时代|投资基金|资本|黑马|上市公司_手机新浪网 - 新浪网",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1LSTJxN1JxN3ZQZDFHRjVQVUVnT2JIaG9mNGNBb2ZYZXFRQjNDVnNmTE1XbmVlemVTcW5GUjdCUV8tZmt4V1NfLWVGT21ZRTBCbm1LS1lwUFY1OGYwSzRyQWxvYlN3eTN4OTJ0dG4wbVN1QTQ0UXI0Z19CMTdsYlE?oc=5",
       "published_at": "2026-08-11T14:37:30+00:00",
@@ -916,15 +1252,36 @@
       "site_name": "国内机器人资讯",
       "source": "国内机器人资讯",
       "site_id": "国内机器人资讯",
-      "description": "灵猴机器人完成C轮融资|宁德时代|投资基金|资本|黑马|上市公司_手机新浪网  新浪财经",
+      "description": "灵猴机器人完成C轮融资|宁德时代|投资基金|资本|黑马|上市公司_手机新浪网  新浪网",
       "ai_score": 35.0,
       "ai_label": "robotics",
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.79,
+      "timeliness": 28.78,
       "writing_value": 0,
-      "total_score": 74.79
+      "total_score": 73.78
+    },
+    {
+      "id": "c0925dad7ad343206cece16ad88a8c25d42adccb",
+      "title": "外交部发言人推荐！广州邮区中心分拣机器人火了 - 奥一网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE52X2YzczF4UkFHTjJBMktTR19KWGhnMU9kbjNiYXVaMVNKM2VuaXI1MlJ4R3hBWnFkSDMtN3R5SkJqSEJjaUNZWWdOMm1hZ3BVeFJBekNwQ2ZXX0VvdWVNM1k2Vno1QQ?oc=5",
+      "published_at": "2026-08-11T14:30:11+00:00",
+      "category": "国内机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国内机器人资讯",
+      "source": "国内机器人资讯",
+      "site_id": "国内机器人资讯",
+      "description": "外交部发言人推荐！广州邮区中心分拣机器人火了  奥一网",
+      "ai_score": 35.0,
+      "ai_label": "robotics",
+      "relevance": 0.35,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 28.66,
+      "writing_value": 0,
+      "total_score": 73.66
     },
     {
       "id": "d603cf717778e7a69858ac1c0cf0957c88de0eb8",
@@ -943,30 +1300,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.65,
+      "timeliness": 28.64,
       "writing_value": 0,
-      "total_score": 74.65
-    },
-    {
-      "id": "9e51c8e8cc0e1e2c577e35248f57e671c9ae3300",
-      "title": "创业板智能驾驶指数、创业板机器人指数、创业板光伏指数等3条创业板主题指数陆续发布中国基金报 - chnfund.com",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE54X3hDaGt5R3RrdVY2VDcxcWpKSzFjSDRqeW9NTXB5TVBBeFNxSjlrUHRtNTZVUElBNVdvMkFkYm4zWnZDaFhxUkZYUWZDVE40OU42OU8zbExRNEl0X0paUU5oaFdldzdqUkEzbFlIdVRrR1NGYzQ0UUtR?oc=5",
-      "published_at": "2026-08-11T14:29:00+00:00",
-      "category": "国内机器人资讯",
-      "gn_label": "robotics",
-      "site_name": "国内机器人资讯",
-      "source": "国内机器人资讯",
-      "site_id": "国内机器人资讯",
-      "description": "创业板智能驾驶指数、创业板机器人指数、创业板光伏指数等3条创业板主题指数陆续发布中国基金报  chnfund.com",
-      "ai_score": 35.0,
-      "ai_label": "robotics",
-      "relevance": 0.35,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 29.65,
-      "writing_value": 0,
-      "total_score": 74.65
+      "total_score": 73.64
     },
     {
       "id": "4b7c94373d1b900859b32c585e23e0ae3cd2cac1",
@@ -974,20 +1310,20 @@
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNRlU5RHQ5alViTnNCNVZJMlNKUDctUFFMOGpfaWc3dTUyRGZtTG5VcGdGdXZrSXZnWk5vTnVzVDU5TXBSeXh1UlRDN0lVa3JtM2F4N1NDamhleHBTaFlkSExuZmw5ajBvWjcyWHZ1QnF4amt6MXlPTmtFM3RXb1BIeHJjbXJxUDl4YjZwUA?oc=5",
       "published_at": "2026-08-11T14:24:13+00:00",
-      "category": "国内人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国内人形机器人资讯",
-      "source": "国内人形机器人资讯",
-      "site_id": "国内人形机器人资讯",
+      "category": "国内机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国内机器人资讯",
+      "source": "国内机器人资讯",
+      "site_id": "国内机器人资讯",
       "description": "北京“冰丝带”上演机器人“全自主”足球赛  搜狐网",
       "ai_score": 35.0,
-      "ai_label": "humanoid",
+      "ai_label": "robotics",
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.57,
+      "timeliness": 28.56,
       "writing_value": 0,
-      "total_score": 74.57
+      "total_score": 73.56
     },
     {
       "id": "9253b5908d37229cce5af6fe4a88f7cabdddb10f",
@@ -1006,9 +1342,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.3,
+      "timeliness": 28.29,
       "writing_value": 0,
-      "total_score": 74.3
+      "total_score": 73.29
     },
     {
       "id": "574c169f97bad0d896127fe812a317c51ceaab86",
@@ -1027,13 +1363,34 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.16,
+      "timeliness": 28.15,
       "writing_value": 0,
-      "total_score": 74.16
+      "total_score": 73.15
     },
     {
-      "id": "5b5383fd9710fec0668379548d56d2060dbdddfa",
-      "title": "海柔创新闪攀机器人全球合作规模破万 - 新浪财经",
+      "id": "eac4642b79ebf2943ed78e7cc902813ea9a94908",
+      "title": "平均6分钟下线1台挖掘机，中联重科具身机器人加速“上岗”｜活力中国调研行 - 华声在线",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFA0bjJIRFVFenlJNDg5b3lWNUgzang5V0k5Q2FJd2JvcFY2bEVmZXl0TU15NEhlck0xZHdPNnM2ODBES0VJVUFDRzEwQmxiQXNIMFpLUDBhQ29BSzNXbVBj?oc=5",
+      "published_at": "2026-08-11T13:55:54+00:00",
+      "category": "国内机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国内机器人资讯",
+      "source": "国内机器人资讯",
+      "site_id": "国内机器人资讯",
+      "description": "平均6分钟下线1台挖掘机，中联重科具身机器人加速“上岗”｜活力中国调研行  华声在线",
+      "ai_score": 35.0,
+      "ai_label": "robotics",
+      "relevance": 0.35,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 28.08,
+      "writing_value": 0,
+      "total_score": 73.08
+    },
+    {
+      "id": "3d9f6b5c65899d8f39f2dce0ee695f9225ce7508",
+      "title": "海柔创新闪攀机器人全球合作规模破万 - 新浪网",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9oUGlVT0dVZXhoQV9hSG1hcmx4NzJjZEk3ZHRtWmVtNXZlVDFueV91X1paSVZfSWlYLVl5Nmo1MjNZRmxVd3BtZkxDUEtZT3QtRHZJTzktTU5uYkFpWVk0cjRvNXk1dFd1dmdZWGh1b3U?oc=5",
       "published_at": "2026-08-11T13:55:21+00:00",
@@ -1042,15 +1399,15 @@
       "site_name": "国内机器人资讯",
       "source": "国内机器人资讯",
       "site_id": "国内机器人资讯",
-      "description": "海柔创新闪攀机器人全球合作规模破万  新浪财经",
+      "description": "海柔创新闪攀机器人全球合作规模破万  新浪网",
       "ai_score": 35.0,
       "ai_label": "robotics",
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.09,
+      "timeliness": 28.08,
       "writing_value": 0,
-      "total_score": 74.09
+      "total_score": 73.08
     },
     {
       "id": "c177c5be9e443827283ca3cf7ba6f63a55c215f6",
@@ -1069,9 +1426,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.06,
+      "timeliness": 28.05,
       "writing_value": 0,
-      "total_score": 74.06
+      "total_score": 73.05
     },
     {
       "id": "171af2bdf844c2bc500b99daea79c19ff4becce5",
@@ -1090,51 +1447,30 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.02,
+      "timeliness": 28.01,
       "writing_value": 0,
-      "total_score": 74.02
+      "total_score": 73.01
     },
     {
-      "id": "745b2b24ae75fee108cb05335f6a9847f8b8025e",
-      "title": "昆医大附一院完成云南首例机器人辅助脑肿瘤激光消融术 - 搜狐网",
+      "id": "7116531b29fb4b9ba8e8cc867f73f8c0d9325e60",
+      "title": "冲锋舟、水下机器人等装备助力，丰台蓝天救援队全力防汛备战 - 京报网",
       "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPTnY4SnVhUjdPRUVZUEFvMC1xWks2bFFiV1Y3TkhmRkgydGVHR0FVYXRWbGhXdnlNcmlVOVEtUFVkbjAyWHFDS29aT0xkWlFPdE0wVnpJZjNXcjVJLS1OVTBZa1JYZXNvNXQ5d0JoY3ItNU5lYTk3TTRXejRWMEI4NkNXdTMyX1g2YmtYRw?oc=5",
-      "published_at": "2026-08-11T13:45:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5oajk4VmNsTjB6b1lEWHZMYkEtNlU3c3ZweWlKYU0xc0FxVzBpQUJnUlRCQWVnR0J6cHl4ZVhramlxRG91bVd0TFFIRkdJdWVMMUlKQUU2ekE0cTBZa2c?oc=5",
+      "published_at": "2026-08-11T13:18:12+00:00",
       "category": "国内机器人资讯",
       "gn_label": "robotics",
       "site_name": "国内机器人资讯",
       "source": "国内机器人资讯",
       "site_id": "国内机器人资讯",
-      "description": "昆医大附一院完成云南首例机器人辅助脑肿瘤激光消融术  搜狐网",
+      "description": "冲锋舟、水下机器人等装备助力，丰台蓝天救援队全力防汛备战  京报网",
       "ai_score": 35.0,
       "ai_label": "robotics",
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.91,
+      "timeliness": 27.46,
       "writing_value": 0,
-      "total_score": 73.91
-    },
-    {
-      "id": "aa89688efa6b6757aadd5bff4f18458da25d6a78",
-      "title": "冲锋舟、水下机器人等装备助力，丰台蓝天救援队全力防汛备战 - 搜狐网",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOMkFjRkgyYmVsY0hRSllOcHpac0N1dngxSEVweG1BS1hGX29QVTJEdUNiclJ1bG1yVk8tTzRRMHJTdy1ldkxoQTZPcWpMVnRwc1dXSzMxSnRSMFFvLU9NR1JraktRY3BXcTZwODVfOWg2SnJYYkVmTHhCcHV4RzZoMTc2MnRBZG1p?oc=5",
-      "published_at": "2026-08-11T13:24:00+00:00",
-      "category": "国内机器人资讯",
-      "gn_label": "robotics",
-      "site_name": "国内机器人资讯",
-      "source": "国内机器人资讯",
-      "site_id": "国内机器人资讯",
-      "description": "冲锋舟、水下机器人等装备助力，丰台蓝天救援队全力防汛备战  搜狐网",
-      "ai_score": 35.0,
-      "ai_label": "robotics",
-      "relevance": 0.35,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 28.56,
-      "writing_value": 0,
-      "total_score": 73.56
+      "total_score": 72.46
     },
     {
       "id": "5c995150f8da5600262dd09d6449b7337766179d",
@@ -1153,9 +1489,30 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.4,
+      "timeliness": 27.39,
       "writing_value": 0,
-      "total_score": 73.4
+      "total_score": 72.39
+    },
+    {
+      "id": "84588fe63f372a035837b0f7aa42b2d489a0ccd4",
+      "title": "“物理AI真正上车”ID.ERA 9X，Momenta R7世界模型即将OTA - 新浪网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFAxcG9nbnU4VHhnSGZEMWxlNUpWMzJNNVd3dkdGY0RoODJyMFQwMVJuU1R5dlItSHgyc2UxSU96eWNHcGIzTzJIaUpoLWx5WURpRFgxSTA0WVk4dzM3UGNNUXF3?oc=5",
+      "published_at": "2026-08-11T13:13:00+00:00",
+      "category": "国内物理AI资讯",
+      "gn_label": "physical_ai",
+      "site_name": "国内物理AI资讯",
+      "source": "国内物理AI资讯",
+      "site_id": "国内物理AI资讯",
+      "description": "“物理AI真正上车”ID.ERA 9X，Momenta R7世界模型即将OTA  新浪网",
+      "ai_score": 35.0,
+      "ai_label": "physical_ai",
+      "relevance": 0.35,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 27.37,
+      "writing_value": 0,
+      "total_score": 72.37
     },
     {
       "id": "fe84bdfd7c56761d1a38a11e7d80555c1c205663",
@@ -1163,20 +1520,20 @@
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1feXRLUW5oOWpXVTNOQTFobUZTQ1FKT1ViNGxKQXV0TGpFY2hRZTQtQnpCTldMc3lTempIUTZEVjhpVFVrcjZEdHFJa0VKTDdHc3hWWG5DMDlZckhRaW1J?oc=5",
       "published_at": "2026-08-11T13:07:54+00:00",
-      "category": "国内人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国内人形机器人资讯",
-      "source": "国内人形机器人资讯",
-      "site_id": "国内人形机器人资讯",
+      "category": "国内机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国内机器人资讯",
+      "source": "国内机器人资讯",
+      "site_id": "国内机器人资讯",
       "description": "全球首条全自动机器人关节模组产线已在蓝思智能诞生 ｜活力中国调研行  华声在线",
       "ai_score": 35.0,
-      "ai_label": "humanoid",
+      "ai_label": "robotics",
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.29,
+      "timeliness": 27.28,
       "writing_value": 0,
-      "total_score": 73.29
+      "total_score": 72.28
     },
     {
       "id": "b5be4442d9b643d95ea69a56131489be6de0fa05",
@@ -1195,9 +1552,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.21,
+      "timeliness": 27.2,
       "writing_value": 0,
-      "total_score": 73.21
+      "total_score": 72.2
     },
     {
       "id": "a16bf679cdef6f3ca78cd2f19b54a747e4cf5bee",
@@ -1216,9 +1573,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.14,
+      "timeliness": 27.13,
       "writing_value": 0,
-      "total_score": 73.14
+      "total_score": 72.13
     },
     {
       "id": "728e778d30c372895c8c217c89be139309a872c0",
@@ -1237,34 +1594,13 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.03,
+      "timeliness": 27.02,
       "writing_value": 0,
-      "total_score": 73.03
+      "total_score": 72.02
     },
     {
-      "id": "92a2450ac7ea759c708ca6fa4ee5fbd3d19880e5",
-      "title": "格力博(301260.SZ)：四驱割草机器人相关研发、测试工作已基本完成 - 新浪财经",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBzdFpRTTc5bGlNMGV6VGpob0xWbEJsQ1NHZGxBZzhLY2tkWEtDb19sYjFFM0FsMVFEczBPREkzaUVaUExCTnFnRk5vTWRwaXRDUUVubjB6ZFU5Xy0zd2dCZVA3T210TEpEa3RhSENWMA?oc=5",
-      "published_at": "2026-08-11T12:50:11+00:00",
-      "category": "国内机器人资讯",
-      "gn_label": "robotics",
-      "site_name": "国内机器人资讯",
-      "source": "国内机器人资讯",
-      "site_id": "国内机器人资讯",
-      "description": "格力博(301260.SZ)：四驱割草机器人相关研发、测试工作已基本完成  新浪财经",
-      "ai_score": 35.0,
-      "ai_label": "robotics",
-      "relevance": 0.35,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 28.0,
-      "writing_value": 0,
-      "total_score": 73.0
-    },
-    {
-      "id": "6bcf6602c0b1692ed3c27b1f3f2331369b830bd9",
-      "title": "密集上新！创业板智能驾驶、机器人、光伏主题指数来了 - 新浪财经",
+      "id": "0df8a9a2ecbe067d19a6fad1f22f3316f31ae6b9",
+      "title": "密集上新！创业板智能驾驶、机器人、光伏主题指数来了 - 新浪网",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBZakllT2czMFhkR1ZDZ084bnRHZnRHaGsxVzFzQTBwM05aTWgyX0RaRnQ5THBISG45TmJkRkZHMzg1UGpLNXpjRkVMVEM0MEtrcVNQdTBNZFZuNDVUWTNxajB4QlNDNktRUDhaMXVn?oc=5",
       "published_at": "2026-08-11T12:41:00+00:00",
@@ -1273,15 +1609,15 @@
       "site_name": "国内机器人资讯",
       "source": "国内机器人资讯",
       "site_id": "国内机器人资讯",
-      "description": "密集上新！创业板智能驾驶、机器人、光伏主题指数来了  新浪财经",
+      "description": "密集上新！创业板智能驾驶、机器人、光伏主题指数来了  新浪网",
       "ai_score": 35.0,
       "ai_label": "robotics",
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.85,
+      "timeliness": 26.84,
       "writing_value": 0,
-      "total_score": 72.85
+      "total_score": 71.84
     },
     {
       "id": "d025b4ea4832f0c50f617e3fd318f01b89b7e672",
@@ -1300,9 +1636,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.83,
+      "timeliness": 26.82,
       "writing_value": 0,
-      "total_score": 72.83
+      "total_score": 71.82
     },
     {
       "id": "af23ee0124fa1226aa88b03718a8d1be4ecca53d",
@@ -1321,9 +1657,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.74,
+      "timeliness": 26.73,
       "writing_value": 0,
-      "total_score": 72.74
+      "total_score": 71.73
     },
     {
       "id": "9888521637ad019ca8fcbad48c0fe86a20ef5472",
@@ -1342,9 +1678,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.54,
+      "timeliness": 26.53,
       "writing_value": 0,
-      "total_score": 72.54
+      "total_score": 71.53
     },
     {
       "id": "37d7c123aaaff74adca3cd47bbd2d2d99bb024bb",
@@ -1363,9 +1699,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.19,
+      "timeliness": 26.18,
       "writing_value": 0,
-      "total_score": 72.19
+      "total_score": 71.18
     },
     {
       "id": "2c7a4cc107db68f4e5fa4ccb9437e604dd3fa83b",
@@ -1384,9 +1720,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.1,
+      "timeliness": 26.09,
       "writing_value": 0,
-      "total_score": 72.1
+      "total_score": 71.09
     },
     {
       "id": "b479c855a7a3268c12247df12f029cee4e3c4fc9",
@@ -1405,9 +1741,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.9,
+      "timeliness": 25.89,
       "writing_value": 0,
-      "total_score": 71.9
+      "total_score": 70.89
     },
     {
       "id": "7ed7775d3c762286954a42b5c7f6bd49e5563fd6",
@@ -1426,13 +1762,13 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.9,
+      "timeliness": 25.89,
       "writing_value": 0,
-      "total_score": 71.9
+      "total_score": 70.89
     },
     {
-      "id": "c70350e8af1f8e6edbfa4fcdd1d336e521e6b96b",
-      "title": "蚂蚁首次投向机器人“指尖”！数亿元押注，全球首个物理交互脑发布 - 新浪财经",
+      "id": "bc8bd2a50626ce8e53e2a556e61e113d36f07b99",
+      "title": "蚂蚁首次投向机器人“指尖”！数亿元押注，全球首个物理交互脑发布 - 新浪网",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9kUGtGV3JjMmw3WHhfLTVEdnF1cmFtVDM5bjhYSG40QnhYOEZ0OUFiaF8waFdiMHNhRVBWb0ttM0puN1E0cWVUUW1yTmxzaHhOS3p6Y1Q4WU50dFJVZ1JkXy1xeFBNQTA0NldDcUM5aGpFUQ?oc=5",
       "published_at": "2026-08-11T11:24:17+00:00",
@@ -1441,15 +1777,15 @@
       "site_name": "国内机器人资讯",
       "source": "国内机器人资讯",
       "site_id": "国内机器人资讯",
-      "description": "蚂蚁首次投向机器人“指尖”！数亿元押注，全球首个物理交互脑发布  新浪财经",
+      "description": "蚂蚁首次投向机器人“指尖”！数亿元押注，全球首个物理交互脑发布  新浪网",
       "ai_score": 35.0,
       "ai_label": "robotics",
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.57,
+      "timeliness": 25.56,
       "writing_value": 0,
-      "total_score": 71.57
+      "total_score": 70.56
     },
     {
       "id": "059b29572b612fbf18a7214cc9465263133818a5",
@@ -1468,9 +1804,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.38,
+      "timeliness": 25.37,
       "writing_value": 0,
-      "total_score": 71.38
+      "total_score": 70.37
     }
   ],
   "items_all": [
@@ -1491,9 +1827,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 5,
-      "timeliness": 29.5,
+      "timeliness": 28.49,
       "writing_value": 5,
-      "total_score": 129.5
+      "total_score": 128.49
     },
     {
       "id": "2e54964a2b48f166ab5b974fc807d62ed7a20d6b",
@@ -1512,9 +1848,72 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 5,
-      "timeliness": 26.31,
+      "timeliness": 25.3,
       "writing_value": 5,
-      "total_score": 126.31
+      "total_score": 125.3
+    },
+    {
+      "id": "98efe38f9385a2f2a63be32159affb0aeb08ec58",
+      "title": "Samsung has been quietly working on humanoid robots for years - Android Headlines",
+      "title_zh": "三星多年来一直在悄悄研发人形机器人 - Android Headlines",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQUUphS24yajdhRmt6X3ItYkk3MXR4aG1RNHBGMzRpUjctaFg3bGtrcW1xTlk0ZEd3T3BRem9YaGVrWmRsMnZWdWk5ODc2YTltY01YaUtxMGY3c2hCblMwcTZqSElwdWNWUjNlcWFtY3VlUTJOdlRFWVdscEpVMHBKS0tOa0NNSHJOdU5rbXRQQjAwdXRGUG9XN0NnVk9kVTBFa1F5VmNoWjItT1E?oc=5",
+      "published_at": "2026-08-11T15:44:18+00:00",
+      "category": "国外人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国外人形机器人资讯",
+      "source": "国外人形机器人资讯",
+      "site_id": "国外人形机器人资讯",
+      "description": "Samsung has been quietly working on humanoid robots for years  Android Headlines",
+      "ai_score": 80.0,
+      "ai_label": "humanoid",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.89,
+      "writing_value": 0,
+      "total_score": 119.89
+    },
+    {
+      "id": "547159e119539b97d8373755d0e2e6baa039c8a3",
+      "title": "三星押注人形机器人：整合半导体、AI与制造能力，或打造韩国版“机器人帝国” - 搜狐网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOcHUtdmRDVHRTTGMzNkdYTGJ5ZWluTlNTT1cwblU5MVVocUZ2ZFFCVGpqVkhQSm5QVmg4enhFYUVvb3JjX0I4LTJtSUIzNW5lOVU1cWd6STNqOXpERjE2MlVYRl9pSklYV0NQR0VVUEtzMzVmNGo2TFFlSFMtTXVjSGtqX0k1NWdD?oc=5",
+      "published_at": "2026-08-11T15:34:24+00:00",
+      "category": "国内人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国内人形机器人资讯",
+      "source": "国内人形机器人资讯",
+      "site_id": "国内人形机器人资讯",
+      "description": "三星押注人形机器人：整合半导体、AI与制造能力，或打造韩国版“机器人帝国”  搜狐网",
+      "ai_score": 80.0,
+      "ai_label": "humanoid",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.73,
+      "writing_value": 0,
+      "total_score": 119.73
+    },
+    {
+      "id": "98cdf70d67b180f9ec8e4a10f4bda92dd57c6e57",
+      "title": "Are humanoid robots ready to scrub your kitchen and take out the trash? Not quite. - CBS News",
+      "title_zh": "人形机器人准备好擦洗你的厨房并倒垃圾了吗？不完全是。 - 哥伦比亚广播公司新闻",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPeXlSVDAzaHN5My1SLUpqQnpxcmdzUXZyU2Zia3M2eHZTM1VuY0hOOVRuWG9LRkkxTERQZ3ZMOE93WGtEVHc5NXk5azIxYTFuS2NCZ082SlpiVFAxNndySXBZcmJrTEFFTFVNOEx1aGQtazZqTnBwWEZSQXA2UDRuRXFMNFA2Ni1tMjBvcA?oc=5",
+      "published_at": "2026-08-11T15:23:08+00:00",
+      "category": "国外机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国外机器人资讯",
+      "source": "国外机器人资讯",
+      "site_id": "国外机器人资讯",
+      "description": "Are humanoid robots ready to scrub your kitchen and take out the trash? Not quite.  CBS News",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.54,
+      "writing_value": 0,
+      "total_score": 119.54
     },
     {
       "id": "3c85f9f977593a920649b7a9f227be3f057263a9",
@@ -1533,9 +1932,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.77,
+      "timeliness": 28.76,
       "writing_value": 0,
-      "total_score": 119.77
+      "total_score": 118.76
     },
     {
       "id": "9928341fe47216bd5dbaaf6f1b66105d83a58fcb",
@@ -1554,30 +1953,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.46,
+      "timeliness": 28.45,
       "writing_value": 0,
-      "total_score": 119.46
-    },
-    {
-      "id": "d40d0c74fba4e911e7ca50fbc6d71c20c81f80e6",
-      "title": "网上中签率 0.018% 仅为长鑫 3.8%：“人形机器人第一股”宇树科技公布中签结果，超 978 万户参与申购 - 新浪网",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxPUE1paXo4NGhmXzlSV3pYQVpOSWZnQ210YWh1OHdHNUhRWnNrWVBIeWlYbVpTV1Y3VmZRZ3dSR25CR09FVkhtazhDcndQYW5Iejk3Y2NtaEJCcjRoR3VYMV9NY1UzSVJLaXM2WjRGSjhadFE1cHBvTUMtai0wejk4QVBPTTk1ZVJ1Rm5hY0t5ZWIyYnBqTGxfTWRZTElSYTlkZ1BhelQxaS10aWZlNFBjbTVMVkw4bURIUWlacFJlM2pIdkNmQThXQ3MtQ203eGNWajc2QzZVWWVKWTJIcVQzMk9KRTEtNTNQTEZRZ0FnTjdfbnZQdkhVQk95M2MzUQ?oc=5",
-      "published_at": "2026-08-11T13:51:03+00:00",
-      "category": "国内人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国内人形机器人资讯",
-      "source": "国内人形机器人资讯",
-      "site_id": "国内人形机器人资讯",
-      "description": "网上中签率 0.018% 仅为长鑫 3.8%：“人形机器人第一股”宇树科技公布中签结果，超 978 万户参与申购  新浪网",
-      "ai_score": 80.0,
-      "ai_label": "humanoid",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 29.01,
-      "writing_value": 0,
-      "total_score": 119.01
+      "total_score": 118.45
     },
     {
       "id": "277555bc35932052759d837400ed2a43a36fb73a",
@@ -1596,9 +1974,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.74,
+      "timeliness": 27.73,
       "writing_value": 0,
-      "total_score": 118.74
+      "total_score": 117.73
     },
     {
       "id": "d2456e2787855a86fe2ba9ca11779e0bc36e5d8c",
@@ -1617,13 +1995,34 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.71,
+      "timeliness": 27.7,
       "writing_value": 0,
-      "total_score": 118.71
+      "total_score": 117.7
     },
     {
-      "id": "3748aa6813f515eed2c93ad938cb308cbc1461c6",
-      "title": "人形机器人走强！股价直线涨停，封单逾140万手 - 新浪财经",
+      "id": "5432c965df417f61aa8fc49d58949ede51cacd86",
+      "title": "网上中签率 0.018% 仅为长鑫 3.8%：“人形机器人第一股”宇树科技公布中签结果，超 978 万户参与申购 - 新浪网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9QSExZQlpWcWl0eDJxR2xhRnNNOU9iOHY1VU1rWTlYMG5nZ3BobTBiSU84dXZsNUJjUmVseGFyVVNudDBHdmZ1MFNiYzk2YTNadGNaaUMxbU5hT2x4dDViQVV3?oc=5",
+      "published_at": "2026-08-11T13:25:00+00:00",
+      "category": "国内人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国内人形机器人资讯",
+      "source": "国内人形机器人资讯",
+      "site_id": "国内人形机器人资讯",
+      "description": "网上中签率 0.018% 仅为长鑫 3.8%：“人形机器人第一股”宇树科技公布中签结果，超 978 万户参与申购  新浪网",
+      "ai_score": 80.0,
+      "ai_label": "humanoid",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 27.57,
+      "writing_value": 0,
+      "total_score": 117.57
+    },
+    {
+      "id": "ee8dc439453f99b9e695749c6c699e85380684b7",
+      "title": "人形机器人走强！股价直线涨停，封单逾140万手 - 新浪网",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNU2k0cHgtaHlPaUZWbGV6REZfdDEwX0oyUGJoOGQ1MzZEcHRfT2dtRFZ3M0JnVXpZUVRsbW5RVmhEODFudEdNbzRJTkxBX2Z4X2FTSkJobURMR2Z4amd5YmVibDlPdGFOcDEycHhwYWMyVjRKbkxxNFZsOVlvcU1DV09EZ0xTN08xM3BUd2ktTnlhSmxaalhvMEtGeG4?oc=5",
       "published_at": "2026-08-11T13:18:45+00:00",
@@ -1632,15 +2031,15 @@
       "site_name": "国内人形机器人资讯",
       "source": "国内人形机器人资讯",
       "site_id": "国内人形机器人资讯",
-      "description": "人形机器人走强！股价直线涨停，封单逾140万手  新浪财经",
+      "description": "人形机器人走强！股价直线涨停，封单逾140万手  新浪网",
       "ai_score": 80.0,
       "ai_label": "humanoid",
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.48,
+      "timeliness": 27.47,
       "writing_value": 0,
-      "total_score": 118.48
+      "total_score": 117.47
     },
     {
       "id": "33659c14b126af881b59a97016f53ce2b34f6b2d",
@@ -1659,9 +2058,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.45,
+      "timeliness": 27.44,
       "writing_value": 0,
-      "total_score": 118.45
+      "total_score": 117.44
     },
     {
       "id": "ba8330f7f54b5b4a6bec144162f482a36fda9fef",
@@ -1680,9 +2079,30 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.11,
+      "timeliness": 27.1,
       "writing_value": 0,
-      "total_score": 118.11
+      "total_score": 117.1
+    },
+    {
+      "id": "1278fc3bcd9082120e67fc4ae52bec6d3c581535",
+      "title": "活力中国调研行丨更炸的来了！中联重科人形机器人年底量产 - 华声在线",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE96V0MtNWFybU14OER3ZlZBbXFrdGt0RWZ2dGNoQm1Hd2RvcUQ2R2FxSFRlRXhhZGFyYnFIbXNjQWdSUnBSaGkzZXBRRjB0WGM3NW5qQ2FNdjV5VjRUZGNz?oc=5",
+      "published_at": "2026-08-11T12:54:47+00:00",
+      "category": "国内人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国内人形机器人资讯",
+      "source": "国内人形机器人资讯",
+      "site_id": "国内人形机器人资讯",
+      "description": "活力中国调研行丨更炸的来了！中联重科人形机器人年底量产  华声在线",
+      "ai_score": 80.0,
+      "ai_label": "humanoid",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 27.07,
+      "writing_value": 0,
+      "total_score": 117.07
     },
     {
       "id": "24b6d09b355801cf9686a6b10e52635e59dcbac9",
@@ -1701,9 +2121,30 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.05,
+      "timeliness": 27.04,
       "writing_value": 0,
-      "total_score": 118.05
+      "total_score": 117.04
+    },
+    {
+      "id": "1bc45b932c84261ec0838f4de014e83c94fe73a6",
+      "title": "海外研选 | 巴克莱：自动化3.0时代开启 人形机器人市场10年后或达2000亿美元 - 财联社",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE12ZjBIMXNiQVEtUTZXbHRaMTFFNGtGVjdUM1hLY3RwSm9lcS15Z1k4WkgzdW9LT3Y4ZUJyN3hjUjhDTHNaOWhzcg?oc=5",
+      "published_at": "2026-08-11T12:48:26+00:00",
+      "category": "国内人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国内人形机器人资讯",
+      "source": "国内人形机器人资讯",
+      "site_id": "国内人形机器人资讯",
+      "description": "海外研选 | 巴克莱：自动化3.0时代开启 人形机器人市场10年后或达2000亿美元  财联社",
+      "ai_score": 80.0,
+      "ai_label": "humanoid",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 26.96,
+      "writing_value": 0,
+      "total_score": 116.96
     },
     {
       "id": "45e4ca93768237ed54c832da249553d872c44e36",
@@ -1722,9 +2163,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.3,
+      "timeliness": 26.29,
       "writing_value": 0,
-      "total_score": 117.3
+      "total_score": 116.29
     },
     {
       "id": "c097bd03dffa1296c628c4d6d7351d2dc52a81c6",
@@ -1743,9 +2184,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.79,
+      "timeliness": 25.78,
       "writing_value": 0,
-      "total_score": 116.79
+      "total_score": 115.78
     },
     {
       "id": "19687004a8574e6a5a1bef64cfc155d8f7a45e31",
@@ -1764,9 +2205,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.73,
+      "timeliness": 25.72,
       "writing_value": 0,
-      "total_score": 116.73
+      "total_score": 115.72
     },
     {
       "id": "36587312260fae6fdb07fb289042a9bc74dc0df1",
@@ -1785,9 +2226,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.7,
+      "timeliness": 25.69,
       "writing_value": 0,
-      "total_score": 116.7
+      "total_score": 115.69
     },
     {
       "id": "54f3c1c35591c569cf90eb904256349c78f23863",
@@ -1806,9 +2247,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.69,
+      "timeliness": 25.68,
       "writing_value": 0,
-      "total_score": 116.69
+      "total_score": 115.68
     },
     {
       "id": "7c0095f8519fb6319b7096c28de9324fa1a14454",
@@ -1827,9 +2268,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.61,
+      "timeliness": 25.6,
       "writing_value": 0,
-      "total_score": 116.61
+      "total_score": 115.6
     },
     {
       "id": "99e1a7d377942e2d5ef44e29de647f0d39e69b1e",
@@ -1848,9 +2289,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 29.5,
+      "timeliness": 28.49,
       "writing_value": 5,
-      "total_score": 114.5
+      "total_score": 113.49
     },
     {
       "id": "f5c0a66d209bba8d6e454ff5669e3466e3f21472",
@@ -1869,9 +2310,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 29.41,
+      "timeliness": 28.4,
       "writing_value": 5,
-      "total_score": 114.41
+      "total_score": 113.4
     },
     {
       "id": "ed4564ff970c4e90af82b9f968b2f6bc4b98df73",
@@ -1890,16 +2331,16 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 28.62,
+      "timeliness": 27.61,
       "writing_value": 5,
-      "total_score": 113.62
+      "total_score": 112.61
     },
     {
       "id": "b01ca8fca8b5a27a7d48ac12c91f571f1f707b9f",
       "title": "Ukrainian troops are buying war robots from their digital marketplace in record numbers - Business Insider",
       "title_zh": "乌克兰军队从数字市场购买战争机器人的数量创历史新高",
       "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQYjVEWkVwbTFzMnVpem5lX2NQWmp5Vm9Kd0hxSGFkbUZINnNlNEJXRVVqNzZ3TlloeFVsN1dyTnNZOVg5MGgzY0NwLUtOMVh2OW1rM2otY0ItVVA0dlppU3k1ZjU4bXQyaDZrWXZTQTFzdjlhZTAxekRCQ3BZSlNZRnFrejNCc2ZQVkk4VV9yNDBES2w3MzI5eHdMYXZINFVaUTNKSXRB?oc=5",
-      "published_at": "2026-08-11T11:50:34+00:00",
+      "published_at": "2026-08-11T11:48:00+00:00",
       "category": "国外机器人资讯",
       "gn_label": "robotics",
       "site_name": "国外机器人资讯",
@@ -1911,9 +2352,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 27.01,
+      "timeliness": 25.95,
       "writing_value": 5,
-      "total_score": 112.01
+      "total_score": 110.95
     },
     {
       "id": "95d5da86255664152d4293dbb605001330e9068e",
@@ -1932,9 +2373,72 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 26.66,
+      "timeliness": 25.65,
       "writing_value": 5,
-      "total_score": 111.66
+      "total_score": 110.65
+    },
+    {
+      "id": "c27612e8e204d5f46a273369fcbae9c4ab125e8a",
+      "title": "New Food Delivery Robots to Arrive on Campus - University of North Carolina Wilmington",
+      "title_zh": "新型送餐机器人将登陆校园 - 北卡罗来纳大学威尔明顿分校",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFA3YUk4Rjk1dFZNUFJXbUdhQ1hTQ2F5YTMtQnlmcnNWS3pPYzNlLVRBdFZ0UlNXMi10S0sya203am5aT3hCYjlfbTRyUW1rU3JjTFJILU1NVXpkMHo2Tld4ZkJTWlZtMTNfSEpMVURDb0R6Zjk2eU9xeUEwRGJkNFk?oc=5",
+      "published_at": "2026-08-11T15:42:18+00:00",
+      "category": "国外机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国外机器人资讯",
+      "source": "国外机器人资讯",
+      "site_id": "国外机器人资讯",
+      "description": "New Food Delivery Robots to Arrive on Campus  University of North Carolina Wilmington",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.86,
+      "writing_value": 0,
+      "total_score": 104.86
+    },
+    {
+      "id": "c5a4ab479abc5d0bee8e721359acb72f00865e4d",
+      "title": "清华腾讯RoboticsX港科大联手发布，世界模型能看懂机器人未来动作了 - 智东西",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE42TmtlaXZOYTZuNzQyb1NkUTMxdFFSVlgyUXNLMkJ4RmRBVTBxeUtmNVdmTG9TRGRud2xKVzltdHhiNDE2LUE?oc=5",
+      "published_at": "2026-08-11T15:08:56+00:00",
+      "category": "国内机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国内机器人资讯",
+      "source": "国内机器人资讯",
+      "site_id": "国内机器人资讯",
+      "description": "清华腾讯RoboticsX港科大联手发布，世界模型能看懂机器人未来动作了  智东西",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.3,
+      "writing_value": 0,
+      "total_score": 104.3
+    },
+    {
+      "id": "ddcc06f33477ed9836b9248c0da0cb3f0e08f312",
+      "title": "Robots Could Build Massive Metamaterial Radars in Orbit - Universe Today",
+      "title_zh": "机器人可以在轨道上建造大型超材料雷达 - 今日宇宙",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQM3F4WnBwcWEzME5sVHZMNlZneXV4VmFralQ3VTQ1UG4yVktURVhWUDRJRU1Bc19FQ25mRTBlUDIwYjc2RzhsdjY2ZXdvQ3VPR3dKN0NBY25BYjdxNWw3Yzc1Wm1zYTRRQWwtcVo4NWRERk8tUFh4SEJCYnhSeFBubm1ZUV8xSFl4NFZlVGQ3RzlTLXVudTdrOWVR?oc=5",
+      "published_at": "2026-08-11T15:03:00+00:00",
+      "category": "国外机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国外机器人资讯",
+      "source": "国外机器人资讯",
+      "site_id": "国外机器人资讯",
+      "description": "Robots Could Build Massive Metamaterial Radars in Orbit  Universe Today",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.2,
+      "writing_value": 0,
+      "total_score": 104.2
     },
     {
       "id": "c7f6c484eb954ea99a9c67557322538b2940922a",
@@ -1953,9 +2457,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.93,
+      "timeliness": 28.92,
       "writing_value": 0,
-      "total_score": 104.93
+      "total_score": 103.92
     },
     {
       "id": "5ee18ec0872cd0845e90fa5e8f3454bfe350aa36",
@@ -1974,14 +2478,14 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.84,
+      "timeliness": 28.83,
       "writing_value": 0,
-      "total_score": 104.84
+      "total_score": 103.83
     },
     {
-      "id": "a6916f87bd6a37fb2071f017a3ac66b4767ef44b",
-      "title": "Robot Orders Increase in Q2 as Automation Demand Broadens Across Industries - businesswire.com",
-      "title_zh": "随着各行业自动化需求的扩大，第二季度机器人订单增加 - Businesswire.com",
+      "id": "e95e9ce255efa9544c52377a05f33d7d37951b07",
+      "title": "Robot Orders Increase in Q2 as Automation Demand Broadens Across Industries - Business Wire",
+      "title_zh": "随着各行业自动化需求的扩大，第二季度机器人订单增加 - 美国商业资讯",
       "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQd2E0V3RjZFhfUFdOTVZzcFNJZk1PTXM4OGlCdWhFbE9JS1lMWFdMUmc5VEtPM3V2QVVieXNua2ZIOF9weklGQWtXczZRTU1sTkhRWGhCenJxX2FENEtXbm1OZXhqU0NCWTlwMTBkam5xWmVMUzJzOUJnZE83OENtamREVThiQ1hUQWYxMUhldUpQNXRWNU9YZ1J4aXpDd0lTZ0xCM1RoZUxkR2RIM05uZHFoUUZ0dkcyR3pyQlVyNEFNTlF4MjZOTV84Nlk?oc=5",
       "published_at": "2026-08-11T14:04:00+00:00",
       "category": "国外机器人资讯",
@@ -1989,22 +2493,22 @@
       "site_name": "国外机器人资讯",
       "source": "国外机器人资讯",
       "site_id": "国外机器人资讯",
-      "description": "Robot Orders Increase in Q2 as Automation Demand Broadens Across Industries  businesswire.com",
+      "description": "Robot Orders Increase in Q2 as Automation Demand Broadens Across Industries  Business Wire",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.23,
+      "timeliness": 28.22,
       "writing_value": 0,
-      "total_score": 104.23
+      "total_score": 103.22
     },
     {
       "id": "09edc417049ab91c15f1844b48cd20f0c4d5de45",
       "title": "Robots That Walk and Talk Are Coming to Car Factories - The New York Times",
       "title_zh": "会走路和说话的机器人即将进入汽车工厂 - 纽约时报中文网",
       "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOZnEtWlI4Wm95WjdVYlhRUEhKZEV1cFYwOW4zd0N4Mmx2ZXp5X2tLT2xlU1VqZ1dnRDFPV1hhSk1rVHFaMTBpNEtObzdOSkNEZm1BY0owcXpVNW1vcThOX0Vzd1pSVXZZZlkxVzNORTRxWXNGWW5TZ0sxRk9xeDNIcFlJbGM?oc=5",
-      "published_at": "2026-08-11T13:45:33+00:00",
+      "published_at": "2026-08-11T13:45:34+00:00",
       "category": "国外机器人资讯",
       "gn_label": "robotics",
       "site_name": "国外机器人资讯",
@@ -2016,13 +2520,13 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.92,
+      "timeliness": 27.91,
       "writing_value": 0,
-      "total_score": 103.92
+      "total_score": 102.91
     },
     {
-      "id": "7cea6fd0f5b7bd116cd0fad90e30c0a3a46f0a1d",
-      "title": "上市在即，宇树科技在制造业重镇疯狂“抢人” - 21jingji.com",
+      "id": "ccc0b35e516e5a89ec271b48b226ebc7f2484f6d",
+      "title": "上市在即，宇树科技在制造业重镇疯狂“抢人” - 21财经",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNdHdpNDlfYkVNSHJXNTFZVmRDblhPVzlxNzJqaXRvc0RGLWFZNGxOc2tZRzZJWjZhQmtPTDFYZzlsNFBKQU9JaXFoT2YyejUwdDlCTnNyekg4N2hyNGVTQ1NGQmpxTXR6LXJKYlNsV28tYUFCbVpRSWtNZ0U4VExrLXdoR2RBUnhXel9mLQ?oc=5",
       "published_at": "2026-08-11T13:30:00+00:00",
@@ -2031,20 +2535,20 @@
       "site_name": "国内具身智能资讯",
       "source": "国内具身智能资讯",
       "site_id": "国内具身智能资讯",
-      "description": "上市在即，宇树科技在制造业重镇疯狂“抢人”  21jingji.com",
+      "description": "上市在即，宇树科技在制造业重镇疯狂“抢人”  21财经",
       "ai_score": 65.0,
       "ai_label": "embodied_ai",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.66,
+      "timeliness": 27.65,
       "writing_value": 0,
-      "total_score": 103.66
+      "total_score": 102.65
     },
     {
-      "id": "1f6f81841cd84a0e8f9dfbb7bcc3671e7a41c695",
-      "title": "America unleashes AI robots on shipbuilding crisis as China widens production race - foxbusiness.com",
-      "title_zh": "中国扩大生产竞赛，美国推出人工智能机器人应对造船危机 - Foxbusiness.com",
+      "id": "9e23a323626100a70e4b2718b1abfbb20e8a3313",
+      "title": "America unleashes AI robots on shipbuilding crisis as China widens production race - Fox Business",
+      "title_zh": "随着中国扩大生产竞赛，美国推出人工智能机器人应对造船危机 - 福克斯商业频道",
       "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9fS2NzMFVLZ3BMS2hCNUh6U3ZBVWZ1WkFaUHBvblpWakZUQzlOMGNCQ2tDV3NIa0V1QmIzYVZWZ2FTSWg3cU9FSENIVkxZVHg4SGRSRk5zdC1wTjg?oc=5",
       "published_at": "2026-08-11T13:16:50+00:00",
       "category": "国外机器人资讯",
@@ -2052,15 +2556,15 @@
       "site_name": "国外机器人资讯",
       "source": "国外机器人资讯",
       "site_id": "国外机器人资讯",
-      "description": "America unleashes AI robots on shipbuilding crisis as China widens production race  foxbusiness.com",
+      "description": "America unleashes AI robots on shipbuilding crisis as China widens production race  Fox Business",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.44,
+      "timeliness": 27.43,
       "writing_value": 0,
-      "total_score": 103.44
+      "total_score": 102.43
     },
     {
       "id": "a31e47c63f791fb8ba178673cf73b99a2c532403",
@@ -2079,13 +2583,13 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.25,
+      "timeliness": 27.24,
       "writing_value": 0,
-      "total_score": 103.25
+      "total_score": 102.24
     },
     {
-      "id": "2b64080098c6cbb314fe11512c3e2bd8a47519fd",
-      "title": "长江工程职院牵手宇树科技共建产业学院 - 新浪财经",
+      "id": "2ac0c90bc6995d592f5b637ae39e34eaa6859912",
+      "title": "长江工程职院牵手宇树科技共建产业学院 - 新浪网",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOSjUzU3JrdHc2X2d5Y0J3d0c0TEk2OFc3VEE5b1VjSE01UjJ5X04xNnFFWmhCSmRVb2Q3YTJLcTV6SVBDcjJ0OV9NWlFnSEliOXFpaV9xWGFPeGRyTmZpN293LWowT1gyZ3FOS0s1M3JFOFpwSVJUZS00b0xPMFM4ZS03cktsWElUSzItN0d2VnlBc1piMUtpWg?oc=5",
       "published_at": "2026-08-11T13:00:39+00:00",
@@ -2094,15 +2598,15 @@
       "site_name": "国内具身智能资讯",
       "source": "国内具身智能资讯",
       "site_id": "国内具身智能资讯",
-      "description": "长江工程职院牵手宇树科技共建产业学院  新浪财经",
+      "description": "长江工程职院牵手宇树科技共建产业学院  新浪网",
       "ai_score": 65.0,
       "ai_label": "embodied_ai",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.17,
+      "timeliness": 27.16,
       "writing_value": 0,
-      "total_score": 103.17
+      "total_score": 102.16
     },
     {
       "id": "c1ac899847d2a83c9aa15abb170ecc1392ac70a3",
@@ -2121,9 +2625,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.16,
+      "timeliness": 27.15,
       "writing_value": 0,
-      "total_score": 103.16
+      "total_score": 102.15
     },
     {
       "id": "9599453f7976cc8a80e888ea5a5173c883d53474",
@@ -2142,9 +2646,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.57,
+      "timeliness": 26.56,
       "writing_value": 0,
-      "total_score": 102.57
+      "total_score": 101.56
     },
     {
       "id": "9ddd0ecacc96470a1ff7b5099cec938a4f9637be",
@@ -2163,9 +2667,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.56,
+      "timeliness": 26.55,
       "writing_value": 0,
-      "total_score": 102.56
+      "total_score": 101.55
     },
     {
       "id": "6154cf74a7447b864bfac33aef641f565a8c1c32",
@@ -2184,9 +2688,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.23,
+      "timeliness": 26.22,
       "writing_value": 0,
-      "total_score": 102.23
+      "total_score": 101.22
     },
     {
       "id": "9c75b3208d8930f8b3f1011d09c3b7f1b6dfd2af",
@@ -2205,9 +2709,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.16,
+      "timeliness": 26.15,
       "writing_value": 0,
-      "total_score": 102.16
+      "total_score": 101.15
     },
     {
       "id": "fbaf326becc6f69d7164ee2d47a58437a638930e",
@@ -2226,30 +2730,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.94,
+      "timeliness": 25.93,
       "writing_value": 0,
-      "total_score": 101.94
-    },
-    {
-      "id": "36ee95c86e196d68b8f359178e331acf9eb43ebe",
-      "title": "Guao Technology raises nearly ¥100M Series A+ as its robots reach Bosch's lines - Dealroom",
-      "title_zh": "瓜奥科技获近亿元A+轮融资，机器人登陆博世生产线 - 知乎",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOenpHYUYxY3hIdS1pNVpObS1aSF9NS2JQbUdBVThhRi1WMnV4Y0hvM2doY0g0MG1KWEFTMjVmbWU1Yi1zODBxSm5jb2ZCOVFKcEFHUUswbXdtcHVaMk85M2RMSTViQ2dKWVNBWERGYVNtUFk3NkJWbkhUYURGNXNGcS1lbHFhUURJeVpFdHVyNjB0dUZkYUl0b25xU2VVY1pOcmFsVjFsdUltZjRSNTA5ag?oc=5",
-      "published_at": "2026-08-11T11:38:07+00:00",
-      "category": "国外机器人资讯",
-      "gn_label": "robotics",
-      "site_name": "国外机器人资讯",
-      "source": "国外机器人资讯",
-      "site_id": "国外机器人资讯",
-      "description": "Guao Technology raises nearly ¥100M Series A+ as its robots reach Bosch's lines  Dealroom",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 26.8,
-      "writing_value": 0,
-      "total_score": 101.8
+      "total_score": 100.93
     },
     {
       "id": "8861139e9691390a5168c9eed912d31fbbfd7e7c",
@@ -2268,30 +2751,93 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.79,
+      "timeliness": 25.78,
       "writing_value": 0,
-      "total_score": 101.79
+      "total_score": 100.78
     },
     {
-      "id": "2a8d3ce40155b9f34e674f02fb0c3300a8ec76c6",
-      "title": "Robot book club - Yahoo Tech",
-      "title_zh": "机器人读书俱乐部 - 雅虎科技",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBsZDRRTlM1bEtQbVNOdTl1N0FsRDNMZkFVUUpDaFhBMW5aRUZCaktzTGZTVmRZck5HcmNpMTJZSnZwaHNzMy05YnpXVkNfdG1yTUJ5ZzBBcnVVZW5Xa1ZVOXpBWVJ4Q2pyVC01VHNqS01qVjBIVm8yeUFvVQ?oc=5",
-      "published_at": "2026-08-11T11:31:42+00:00",
+      "id": "cae7d96bb9786da5273dd928835a5276752ccd70",
+      "title": "Robot book club - Axios",
+      "title_zh": "机器人读书俱乐部 - Axios",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE0yRWF1RGJHUVlzZmtUSkMwZXF2YUhaTWgtRFlMZkZDU0IzSmNzYlRnUGpJOWhvWlZBN2pUZHZXUUo0eVhVWERXOWtXYnJ5ZjVDRUIxUUZ3SUNxai1W?oc=5",
+      "published_at": "2026-08-11T11:36:01+00:00",
       "category": "国外机器人资讯",
       "gn_label": "robotics",
       "site_name": "国外机器人资讯",
       "source": "国外机器人资讯",
       "site_id": "国外机器人资讯",
-      "description": "Robot book club  Yahoo Tech",
+      "description": "Robot book club  Axios",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.69,
+      "timeliness": 25.75,
       "writing_value": 0,
-      "total_score": 101.69
+      "total_score": 100.75
+    },
+    {
+      "id": "546976ddb021ac56f290b899aefc98d6f98f456a",
+      "title": "Archer to Shape Physical AI Future of Aerospace and Defense with Acquisition of Boeing’s Wisk Aero, Insitu and SkyGrid Subsidiaries; Boeing to Invest in Archer and Collaborate - suasnews.com",
+      "title_zh": "Archer 收购波音旗下 Wisk Aero、Insitu 和 SkyGrid 子公司，塑造航空航天和国防的物理人工智能未来；波音公司将投资 Archer 并与其展开合作 - suasnews.com",
+      "url": "https://news.google.com/rss/articles/CBMirwJBVV95cUxNQzRKRFZhcEhnR19XbXFRN05iVHlDMWxVczQ4UVZoX3dFWGlZazdvaVNJZk50dTV4Rlc3aVFzenA5VTlibW0wcndaU19XaThQZFV5bjJGZzlmcXoxME5UVDVtMEpyelgtVDRXMFZOYUdnS2twOUE2OTZFeDhDOWNKM19OMk1QMVJ3UGx1STBCcU5hVTRSX1NjWFZ1NFZrX25GbTFPTEFrZWtkczVKRHBZWG9IdE1oVDhKZEV6SWZyNGNPa1ZrSzVzY0xiemctY3RlOXNuQ25tbGZkNXZSLXFLUWMtUzJmdDlneU42SmZXM3JqT04weUZXT0xsZ19BQ0ItVTY5eUxfNDU4blFhMGJUOVJKN00wbDNIdWJUbUVnVnBMMEZkZS1LMFVjZ1k5dXM?oc=5",
+      "published_at": "2026-08-11T15:00:31+00:00",
+      "category": "国外物理AI资讯",
+      "gn_label": "physical_ai",
+      "site_name": "国外物理AI资讯",
+      "source": "国外物理AI资讯",
+      "site_id": "国外物理AI资讯",
+      "description": "Archer to Shape Physical AI Future of Aerospace and Defense with Acquisition of Boeing’s Wisk Aero, Insitu and SkyGrid Subsidiaries; Boeing to Invest in Archer and Collaborate  suasnews.com",
+      "ai_score": 50.0,
+      "ai_label": "physical_ai",
+      "relevance": 0.5,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 29.16,
+      "writing_value": 5,
+      "total_score": 99.16
+    },
+    {
+      "id": "c6542613299e7cf1f86fe8a6a71b75b7b77f2dcc",
+      "title": "The cost floor under the physical AI boom - Tech Funding News",
+      "title_zh": "物理人工智能热潮下的成本底线 - 科技融资新闻",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5ON3B1Szg0REROa2NGenhMdzk5V0hxVUh2UVh6bDVPbk53Z3NJTHNvR3RSVnl1TGVFZG1XdHRNLUd5RDRiUExueHdVNjZvd25qME9lNHNhcXVRZ25IV2l6RS03T3RydnROeFFpek0xaF9KRXZPaU10bldn?oc=5",
+      "published_at": "2026-08-11T15:34:39+00:00",
+      "category": "国外物理AI资讯",
+      "gn_label": "physical_ai",
+      "site_name": "国外物理AI资讯",
+      "source": "国外物理AI资讯",
+      "site_id": "国外物理AI资讯",
+      "description": "The cost floor under the physical AI boom  Tech Funding News",
+      "ai_score": 50.0,
+      "ai_label": "physical_ai",
+      "relevance": 0.5,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.73,
+      "writing_value": 0,
+      "total_score": 89.73
+    },
+    {
+      "id": "f8321f235a50558d712db83a2419dfdcf8ad81e3",
+      "title": "Can physical AI save Korea’s economic future? - koreajoongangdaily.com",
+      "title_zh": "物理人工智能能否拯救韩国的经济未来？ - 韩国中央日报.com",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNaXktdnRaMUFXbTk4cktnT3FBZEttN2R4aDR0Vk9teUo1MGFEclh3YWpKUlAwWjhNbXdSeWZPeEpOZk1Fakpjb1RRUDd3TU56b0R3anR4N0hSbFdBbmU4TFlaX0xDck1abU5TbVk0UFJhRmlMblFTUWlpLWNpakNTalA4U3EteTRlZFJlZjFlSEdlQ2JiZXFRbkNrUFVrazg?oc=5",
+      "published_at": "2026-08-11T15:07:49+00:00",
+      "category": "国外物理AI资讯",
+      "gn_label": "physical_ai",
+      "site_name": "国外物理AI资讯",
+      "source": "国外物理AI资讯",
+      "site_id": "国外物理AI资讯",
+      "description": "Can physical AI save Korea’s economic future?  koreajoongangdaily.com",
+      "ai_score": 50.0,
+      "ai_label": "physical_ai",
+      "relevance": 0.5,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.28,
+      "writing_value": 0,
+      "total_score": 89.28
     },
     {
       "id": "6c902dcca86ad2421f25af3fc4407004918c5073",
@@ -2310,9 +2856,9 @@
       "relevance": 0.5,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.5,
+      "timeliness": 28.49,
       "writing_value": 0,
-      "total_score": 89.5
+      "total_score": 88.49
     },
     {
       "id": "20e5793920b3bc25baf4a7b0272a5b82e847abf8",
@@ -2331,9 +2877,9 @@
       "relevance": 0.5,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.66,
+      "timeliness": 27.65,
       "writing_value": 0,
-      "total_score": 88.66
+      "total_score": 87.65
     },
     {
       "id": "9e6e3114981066e4365dbcaf6182391c6b0ecb95",
@@ -2352,9 +2898,9 @@
       "relevance": 0.5,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.16,
+      "timeliness": 27.15,
       "writing_value": 0,
-      "total_score": 88.16
+      "total_score": 87.15
     },
     {
       "id": "e70ef8ae1b390d9b148360e12a87a1a2a3716ff9",
@@ -2373,13 +2919,139 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 5,
-      "timeliness": 27.16,
+      "timeliness": 26.15,
       "writing_value": 5,
-      "total_score": 82.16
+      "total_score": 81.15
     },
     {
-      "id": "735178b8417fb3b87298c32ba9ee9413a67bc854",
-      "title": "灵猴机器人完成C轮融资|宁德时代|投资基金|资本|黑马|上市公司_手机新浪网 - 新浪财经",
+      "id": "ace813eddf31e51b37ce0f734d101c9f7f0f9e5d",
+      "title": "黑马频出、AI 赋能！RoboMaster 不止机器人大赛，更是工程师摇篮 - 新浪网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNNTR6LWdfR0JPRW00aFI0N0lqd0xtXzN6aVRtMTJ5REtTSGhSeTZkZ0NOVVBLOTNxUmFFVzR2VHh2R3puaThLTE0yZ0p3TTJFb2tNc0ZKNUFfT3YzNVdTSlpPM2pCcVpFZWZoX2RiWVdGTXRmUTZuS1BTdzJNQUhGWnBXZWJzQV9tZ2RHcjdzck9tVzVSSVBWa0c0bV9lU1o5VVdUV19FQQ?oc=5",
+      "published_at": "2026-08-11T15:22:30+00:00",
+      "category": "国内机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国内机器人资讯",
+      "source": "国内机器人资讯",
+      "site_id": "国内机器人资讯",
+      "description": "黑马频出、AI 赋能！RoboMaster 不止机器人大赛，更是工程师摇篮  新浪网",
+      "ai_score": 35.0,
+      "ai_label": "robotics",
+      "relevance": 0.35,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.53,
+      "writing_value": 0,
+      "total_score": 74.53
+    },
+    {
+      "id": "0ba7cac5f8e6df96d0bdb290ef7446f67589e23c",
+      "title": "多亏了Anduril，这正式成为 $Archer Aviation (ACHR.US)$ 战争、机器人与死亡卡特尔军团的一员。 - Moomoo",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPUUZCWjVXZS13aGdzQWhRZS1veTNwT2VPT3BTM3hQTnl3eG4yRGs2NFJDRFRjZ3FZSjBZZnJRRXc0cHJNWVJJVmg0V0lRQld6ODlDX1Z5ekNYUXdFd25JLXkyd0VwUjJsSzBVUVBqYzlSVnRucUlsYk8tcWpPcnFhR0J2OXVPMGNucWJ1SVBfRmVqMm43Skxydk40cEprUzVfWWRfT1hwOEdPUEM5RDJqcDVDZ0hIdm8?oc=5",
+      "published_at": "2026-08-11T15:21:29+00:00",
+      "category": "国内机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国内机器人资讯",
+      "source": "国内机器人资讯",
+      "site_id": "国内机器人资讯",
+      "description": "多亏了Anduril，这正式成为 $Archer Aviation (ACHR.US)$ 战争、机器人与死亡卡特尔军团的一员。  Moomoo",
+      "ai_score": 35.0,
+      "ai_label": "robotics",
+      "relevance": 0.35,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.51,
+      "writing_value": 0,
+      "total_score": 74.51
+    },
+    {
+      "id": "fa7854d3af90f157558412cd7b9d88f34459cd1d",
+      "title": "冲锋舟、水下机器人等装备助力，丰台蓝天救援队全力防汛备战 （北京日报客户端记者 刘平 孙颖） - 搜狐网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQam4xMS1iRUtLUHUwdUtKR2plcWhmaWV0aEFUbkdRc2FXV0NYZ01ZUDI5WWVYTHJvMktwTnFQcFFubUtBRkZ1Y05rcTItLTFTRGdPQVBjZmpCUFR2QlZDSHo3eW4yT2djTjVzVV9hV0UyVXhSY05GeUJyTE5ELUFKdWZQWVlqcjhX?oc=5",
+      "published_at": "2026-08-11T15:10:42+00:00",
+      "category": "国内机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国内机器人资讯",
+      "source": "国内机器人资讯",
+      "site_id": "国内机器人资讯",
+      "description": "冲锋舟、水下机器人等装备助力，丰台蓝天救援队全力防汛备战 （北京日报客户端记者 刘平 孙颖）  搜狐网",
+      "ai_score": 35.0,
+      "ai_label": "robotics",
+      "relevance": 0.35,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.33,
+      "writing_value": 0,
+      "total_score": 74.33
+    },
+    {
+      "id": "3019d83caa82543f6b39dcb31f2e456a8fe6b179",
+      "title": "当机器人有了统一的\"大脑\"：一个万亿级生态的雏形已经出现 - 新浪网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxPS3Q3X0lLVUhtaUtVMklXZnhUMEQ3ck1sLXBKQWdUdWhHOXJRcnA1NTJVdE5nTVlMWDlKN05WTHh1SHByWFhhUld3eGN4aDJfUnJPQXlIQU0zRE9mN043cng2TGJqZnBUZllYSE1pQ0JfVVhxbWlkd1QtWlJONlk4UUNQRS1oRjFjZDNucDFXRU8wMXhPNHFEMUxSbm5tRFlIb1BSaWQzNXBZVllEd0Y0UFhEcy1tNnhpOEF0NTVoaVNZV2E2X0FyNVVQVXRUQ0s0bkVrTFRHeWdKcmZwajF0MlZ2azNPTlVycS0zYXpydlpyRUw4LVlZX1pn?oc=5",
+      "published_at": "2026-08-11T14:46:42+00:00",
+      "category": "国内机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国内机器人资讯",
+      "source": "国内机器人资讯",
+      "site_id": "国内机器人资讯",
+      "description": "当机器人有了统一的\"大脑\"：一个万亿级生态的雏形已经出现  新浪网",
+      "ai_score": 35.0,
+      "ai_label": "robotics",
+      "relevance": 0.35,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 28.93,
+      "writing_value": 0,
+      "total_score": 73.93
+    },
+    {
+      "id": "49bbf246ae0638d3fcb04ecd8a9707e398448ab9",
+      "title": "一家手术机器人公司，海外收入暴增超450% - 新浪网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9pOXpoeG52X1ZlOTFTLUhZUGQycEtnYWd0ekNsbWZqZWxwSUhqMW1TZlJJQkljd0o3eWxGS3VKbVExR1A3TUs4SDQtZzFZYTNBRVdxbE1lTGJ1MTdDS013SndsR2hHUnBYaUVwMFBRSQ?oc=5",
+      "published_at": "2026-08-11T14:43:52+00:00",
+      "category": "国内机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国内机器人资讯",
+      "source": "国内机器人资讯",
+      "site_id": "国内机器人资讯",
+      "description": "一家手术机器人公司，海外收入暴增超450%  新浪网",
+      "ai_score": 35.0,
+      "ai_label": "robotics",
+      "relevance": 0.35,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 28.88,
+      "writing_value": 0,
+      "total_score": 73.88
+    },
+    {
+      "id": "68758070f8afc4a64fe3df533699900d0878488d",
+      "title": "Korea’s No-Foreign-Weights Rule Earns All Four Sovereign AI Teams Global Recognition - Tech Times",
+      "title_zh": "韩国的无外国权重规则为所有四个主权人工智能团队赢得了全球认可 - Tech Times",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNZVBqNkY4OUFQVHVsYkY5NE9KYjl4ZHBhbWFlQWhFRGJGWHNSNDBIVFJrcFRHRWp0UmFUMkdpUjc1MlBsNi03UGc2azVjaDVaR2dkbnA4d3NIVEktU0tzYXBRY19QQjEtNEpzcjZNNTY2NGtMZ3laeW9lM0xEV0NBc1NoYldtcC1FLXRtYWw0XzRmc0d1SVk1Um8teWxyOEtCT0h0c3FUSTYwbERQUS1weUJXLVhFd05pU0x2OGxGNk1FU3h2YlpGZ3U5M21xZGxtYzBoaA?oc=5",
+      "published_at": "2026-08-11T14:42:16+00:00",
+      "category": "国外人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国外人形机器人资讯",
+      "source": "国外人形机器人资讯",
+      "site_id": "国外人形机器人资讯",
+      "description": "Korea’s No-Foreign-Weights Rule Earns All Four Sovereign AI Teams Global Recognition  Tech Times",
+      "ai_score": 35.0,
+      "ai_label": "humanoid",
+      "relevance": 0.35,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 28.86,
+      "writing_value": 0,
+      "total_score": 73.86
+    },
+    {
+      "id": "b5f9524e1337918f37c4007aa2c58dc88b7b5dd5",
+      "title": "灵猴机器人完成C轮融资|宁德时代|投资基金|资本|黑马|上市公司_手机新浪网 - 新浪网",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1LSTJxN1JxN3ZQZDFHRjVQVUVnT2JIaG9mNGNBb2ZYZXFRQjNDVnNmTE1XbmVlemVTcW5GUjdCUV8tZmt4V1NfLWVGT21ZRTBCbm1LS1lwUFY1OGYwSzRyQWxvYlN3eTN4OTJ0dG4wbVN1QTQ0UXI0Z19CMTdsYlE?oc=5",
       "published_at": "2026-08-11T14:37:30+00:00",
@@ -2388,15 +3060,36 @@
       "site_name": "国内机器人资讯",
       "source": "国内机器人资讯",
       "site_id": "国内机器人资讯",
-      "description": "灵猴机器人完成C轮融资|宁德时代|投资基金|资本|黑马|上市公司_手机新浪网  新浪财经",
+      "description": "灵猴机器人完成C轮融资|宁德时代|投资基金|资本|黑马|上市公司_手机新浪网  新浪网",
       "ai_score": 35.0,
       "ai_label": "robotics",
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.79,
+      "timeliness": 28.78,
       "writing_value": 0,
-      "total_score": 74.79
+      "total_score": 73.78
+    },
+    {
+      "id": "c0925dad7ad343206cece16ad88a8c25d42adccb",
+      "title": "外交部发言人推荐！广州邮区中心分拣机器人火了 - 奥一网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE52X2YzczF4UkFHTjJBMktTR19KWGhnMU9kbjNiYXVaMVNKM2VuaXI1MlJ4R3hBWnFkSDMtN3R5SkJqSEJjaUNZWWdOMm1hZ3BVeFJBekNwQ2ZXX0VvdWVNM1k2Vno1QQ?oc=5",
+      "published_at": "2026-08-11T14:30:11+00:00",
+      "category": "国内机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国内机器人资讯",
+      "source": "国内机器人资讯",
+      "site_id": "国内机器人资讯",
+      "description": "外交部发言人推荐！广州邮区中心分拣机器人火了  奥一网",
+      "ai_score": 35.0,
+      "ai_label": "robotics",
+      "relevance": 0.35,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 28.66,
+      "writing_value": 0,
+      "total_score": 73.66
     },
     {
       "id": "d603cf717778e7a69858ac1c0cf0957c88de0eb8",
@@ -2415,30 +3108,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.65,
+      "timeliness": 28.64,
       "writing_value": 0,
-      "total_score": 74.65
-    },
-    {
-      "id": "9e51c8e8cc0e1e2c577e35248f57e671c9ae3300",
-      "title": "创业板智能驾驶指数、创业板机器人指数、创业板光伏指数等3条创业板主题指数陆续发布中国基金报 - chnfund.com",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE54X3hDaGt5R3RrdVY2VDcxcWpKSzFjSDRqeW9NTXB5TVBBeFNxSjlrUHRtNTZVUElBNVdvMkFkYm4zWnZDaFhxUkZYUWZDVE40OU42OU8zbExRNEl0X0paUU5oaFdldzdqUkEzbFlIdVRrR1NGYzQ0UUtR?oc=5",
-      "published_at": "2026-08-11T14:29:00+00:00",
-      "category": "国内机器人资讯",
-      "gn_label": "robotics",
-      "site_name": "国内机器人资讯",
-      "source": "国内机器人资讯",
-      "site_id": "国内机器人资讯",
-      "description": "创业板智能驾驶指数、创业板机器人指数、创业板光伏指数等3条创业板主题指数陆续发布中国基金报  chnfund.com",
-      "ai_score": 35.0,
-      "ai_label": "robotics",
-      "relevance": 0.35,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 29.65,
-      "writing_value": 0,
-      "total_score": 74.65
+      "total_score": 73.64
     },
     {
       "id": "4b7c94373d1b900859b32c585e23e0ae3cd2cac1",
@@ -2446,20 +3118,20 @@
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNRlU5RHQ5alViTnNCNVZJMlNKUDctUFFMOGpfaWc3dTUyRGZtTG5VcGdGdXZrSXZnWk5vTnVzVDU5TXBSeXh1UlRDN0lVa3JtM2F4N1NDamhleHBTaFlkSExuZmw5ajBvWjcyWHZ1QnF4amt6MXlPTmtFM3RXb1BIeHJjbXJxUDl4YjZwUA?oc=5",
       "published_at": "2026-08-11T14:24:13+00:00",
-      "category": "国内人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国内人形机器人资讯",
-      "source": "国内人形机器人资讯",
-      "site_id": "国内人形机器人资讯",
+      "category": "国内机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国内机器人资讯",
+      "source": "国内机器人资讯",
+      "site_id": "国内机器人资讯",
       "description": "北京“冰丝带”上演机器人“全自主”足球赛  搜狐网",
       "ai_score": 35.0,
-      "ai_label": "humanoid",
+      "ai_label": "robotics",
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.57,
+      "timeliness": 28.56,
       "writing_value": 0,
-      "total_score": 74.57
+      "total_score": 73.56
     },
     {
       "id": "9253b5908d37229cce5af6fe4a88f7cabdddb10f",
@@ -2478,9 +3150,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.3,
+      "timeliness": 28.29,
       "writing_value": 0,
-      "total_score": 74.3
+      "total_score": 73.29
     },
     {
       "id": "574c169f97bad0d896127fe812a317c51ceaab86",
@@ -2499,13 +3171,34 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.16,
+      "timeliness": 28.15,
       "writing_value": 0,
-      "total_score": 74.16
+      "total_score": 73.15
     },
     {
-      "id": "5b5383fd9710fec0668379548d56d2060dbdddfa",
-      "title": "海柔创新闪攀机器人全球合作规模破万 - 新浪财经",
+      "id": "eac4642b79ebf2943ed78e7cc902813ea9a94908",
+      "title": "平均6分钟下线1台挖掘机，中联重科具身机器人加速“上岗”｜活力中国调研行 - 华声在线",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFA0bjJIRFVFenlJNDg5b3lWNUgzang5V0k5Q2FJd2JvcFY2bEVmZXl0TU15NEhlck0xZHdPNnM2ODBES0VJVUFDRzEwQmxiQXNIMFpLUDBhQ29BSzNXbVBj?oc=5",
+      "published_at": "2026-08-11T13:55:54+00:00",
+      "category": "国内机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国内机器人资讯",
+      "source": "国内机器人资讯",
+      "site_id": "国内机器人资讯",
+      "description": "平均6分钟下线1台挖掘机，中联重科具身机器人加速“上岗”｜活力中国调研行  华声在线",
+      "ai_score": 35.0,
+      "ai_label": "robotics",
+      "relevance": 0.35,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 28.08,
+      "writing_value": 0,
+      "total_score": 73.08
+    },
+    {
+      "id": "3d9f6b5c65899d8f39f2dce0ee695f9225ce7508",
+      "title": "海柔创新闪攀机器人全球合作规模破万 - 新浪网",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9oUGlVT0dVZXhoQV9hSG1hcmx4NzJjZEk3ZHRtWmVtNXZlVDFueV91X1paSVZfSWlYLVl5Nmo1MjNZRmxVd3BtZkxDUEtZT3QtRHZJTzktTU5uYkFpWVk0cjRvNXk1dFd1dmdZWGh1b3U?oc=5",
       "published_at": "2026-08-11T13:55:21+00:00",
@@ -2514,15 +3207,15 @@
       "site_name": "国内机器人资讯",
       "source": "国内机器人资讯",
       "site_id": "国内机器人资讯",
-      "description": "海柔创新闪攀机器人全球合作规模破万  新浪财经",
+      "description": "海柔创新闪攀机器人全球合作规模破万  新浪网",
       "ai_score": 35.0,
       "ai_label": "robotics",
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.09,
+      "timeliness": 28.08,
       "writing_value": 0,
-      "total_score": 74.09
+      "total_score": 73.08
     },
     {
       "id": "c177c5be9e443827283ca3cf7ba6f63a55c215f6",
@@ -2541,9 +3234,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.06,
+      "timeliness": 28.05,
       "writing_value": 0,
-      "total_score": 74.06
+      "total_score": 73.05
     },
     {
       "id": "171af2bdf844c2bc500b99daea79c19ff4becce5",
@@ -2562,51 +3255,30 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.02,
+      "timeliness": 28.01,
       "writing_value": 0,
-      "total_score": 74.02
+      "total_score": 73.01
     },
     {
-      "id": "745b2b24ae75fee108cb05335f6a9847f8b8025e",
-      "title": "昆医大附一院完成云南首例机器人辅助脑肿瘤激光消融术 - 搜狐网",
+      "id": "7116531b29fb4b9ba8e8cc867f73f8c0d9325e60",
+      "title": "冲锋舟、水下机器人等装备助力，丰台蓝天救援队全力防汛备战 - 京报网",
       "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPTnY4SnVhUjdPRUVZUEFvMC1xWks2bFFiV1Y3TkhmRkgydGVHR0FVYXRWbGhXdnlNcmlVOVEtUFVkbjAyWHFDS29aT0xkWlFPdE0wVnpJZjNXcjVJLS1OVTBZa1JYZXNvNXQ5d0JoY3ItNU5lYTk3TTRXejRWMEI4NkNXdTMyX1g2YmtYRw?oc=5",
-      "published_at": "2026-08-11T13:45:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5oajk4VmNsTjB6b1lEWHZMYkEtNlU3c3ZweWlKYU0xc0FxVzBpQUJnUlRCQWVnR0J6cHl4ZVhramlxRG91bVd0TFFIRkdJdWVMMUlKQUU2ekE0cTBZa2c?oc=5",
+      "published_at": "2026-08-11T13:18:12+00:00",
       "category": "国内机器人资讯",
       "gn_label": "robotics",
       "site_name": "国内机器人资讯",
       "source": "国内机器人资讯",
       "site_id": "国内机器人资讯",
-      "description": "昆医大附一院完成云南首例机器人辅助脑肿瘤激光消融术  搜狐网",
+      "description": "冲锋舟、水下机器人等装备助力，丰台蓝天救援队全力防汛备战  京报网",
       "ai_score": 35.0,
       "ai_label": "robotics",
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.91,
+      "timeliness": 27.46,
       "writing_value": 0,
-      "total_score": 73.91
-    },
-    {
-      "id": "aa89688efa6b6757aadd5bff4f18458da25d6a78",
-      "title": "冲锋舟、水下机器人等装备助力，丰台蓝天救援队全力防汛备战 - 搜狐网",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOMkFjRkgyYmVsY0hRSllOcHpac0N1dngxSEVweG1BS1hGX29QVTJEdUNiclJ1bG1yVk8tTzRRMHJTdy1ldkxoQTZPcWpMVnRwc1dXSzMxSnRSMFFvLU9NR1JraktRY3BXcTZwODVfOWg2SnJYYkVmTHhCcHV4RzZoMTc2MnRBZG1p?oc=5",
-      "published_at": "2026-08-11T13:24:00+00:00",
-      "category": "国内机器人资讯",
-      "gn_label": "robotics",
-      "site_name": "国内机器人资讯",
-      "source": "国内机器人资讯",
-      "site_id": "国内机器人资讯",
-      "description": "冲锋舟、水下机器人等装备助力，丰台蓝天救援队全力防汛备战  搜狐网",
-      "ai_score": 35.0,
-      "ai_label": "robotics",
-      "relevance": 0.35,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 28.56,
-      "writing_value": 0,
-      "total_score": 73.56
+      "total_score": 72.46
     },
     {
       "id": "5c995150f8da5600262dd09d6449b7337766179d",
@@ -2625,9 +3297,30 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.4,
+      "timeliness": 27.39,
       "writing_value": 0,
-      "total_score": 73.4
+      "total_score": 72.39
+    },
+    {
+      "id": "84588fe63f372a035837b0f7aa42b2d489a0ccd4",
+      "title": "“物理AI真正上车”ID.ERA 9X，Momenta R7世界模型即将OTA - 新浪网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFAxcG9nbnU4VHhnSGZEMWxlNUpWMzJNNVd3dkdGY0RoODJyMFQwMVJuU1R5dlItSHgyc2UxSU96eWNHcGIzTzJIaUpoLWx5WURpRFgxSTA0WVk4dzM3UGNNUXF3?oc=5",
+      "published_at": "2026-08-11T13:13:00+00:00",
+      "category": "国内物理AI资讯",
+      "gn_label": "physical_ai",
+      "site_name": "国内物理AI资讯",
+      "source": "国内物理AI资讯",
+      "site_id": "国内物理AI资讯",
+      "description": "“物理AI真正上车”ID.ERA 9X，Momenta R7世界模型即将OTA  新浪网",
+      "ai_score": 35.0,
+      "ai_label": "physical_ai",
+      "relevance": 0.35,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 27.37,
+      "writing_value": 0,
+      "total_score": 72.37
     },
     {
       "id": "fe84bdfd7c56761d1a38a11e7d80555c1c205663",
@@ -2635,20 +3328,20 @@
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1feXRLUW5oOWpXVTNOQTFobUZTQ1FKT1ViNGxKQXV0TGpFY2hRZTQtQnpCTldMc3lTempIUTZEVjhpVFVrcjZEdHFJa0VKTDdHc3hWWG5DMDlZckhRaW1J?oc=5",
       "published_at": "2026-08-11T13:07:54+00:00",
-      "category": "国内人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国内人形机器人资讯",
-      "source": "国内人形机器人资讯",
-      "site_id": "国内人形机器人资讯",
+      "category": "国内机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国内机器人资讯",
+      "source": "国内机器人资讯",
+      "site_id": "国内机器人资讯",
       "description": "全球首条全自动机器人关节模组产线已在蓝思智能诞生 ｜活力中国调研行  华声在线",
       "ai_score": 35.0,
-      "ai_label": "humanoid",
+      "ai_label": "robotics",
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.29,
+      "timeliness": 27.28,
       "writing_value": 0,
-      "total_score": 73.29
+      "total_score": 72.28
     },
     {
       "id": "b5be4442d9b643d95ea69a56131489be6de0fa05",
@@ -2667,9 +3360,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.21,
+      "timeliness": 27.2,
       "writing_value": 0,
-      "total_score": 73.21
+      "total_score": 72.2
     },
     {
       "id": "a16bf679cdef6f3ca78cd2f19b54a747e4cf5bee",
@@ -2688,9 +3381,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.14,
+      "timeliness": 27.13,
       "writing_value": 0,
-      "total_score": 73.14
+      "total_score": 72.13
     },
     {
       "id": "728e778d30c372895c8c217c89be139309a872c0",
@@ -2709,34 +3402,13 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.03,
+      "timeliness": 27.02,
       "writing_value": 0,
-      "total_score": 73.03
+      "total_score": 72.02
     },
     {
-      "id": "92a2450ac7ea759c708ca6fa4ee5fbd3d19880e5",
-      "title": "格力博(301260.SZ)：四驱割草机器人相关研发、测试工作已基本完成 - 新浪财经",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBzdFpRTTc5bGlNMGV6VGpob0xWbEJsQ1NHZGxBZzhLY2tkWEtDb19sYjFFM0FsMVFEczBPREkzaUVaUExCTnFnRk5vTWRwaXRDUUVubjB6ZFU5Xy0zd2dCZVA3T210TEpEa3RhSENWMA?oc=5",
-      "published_at": "2026-08-11T12:50:11+00:00",
-      "category": "国内机器人资讯",
-      "gn_label": "robotics",
-      "site_name": "国内机器人资讯",
-      "source": "国内机器人资讯",
-      "site_id": "国内机器人资讯",
-      "description": "格力博(301260.SZ)：四驱割草机器人相关研发、测试工作已基本完成  新浪财经",
-      "ai_score": 35.0,
-      "ai_label": "robotics",
-      "relevance": 0.35,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 28.0,
-      "writing_value": 0,
-      "total_score": 73.0
-    },
-    {
-      "id": "6bcf6602c0b1692ed3c27b1f3f2331369b830bd9",
-      "title": "密集上新！创业板智能驾驶、机器人、光伏主题指数来了 - 新浪财经",
+      "id": "0df8a9a2ecbe067d19a6fad1f22f3316f31ae6b9",
+      "title": "密集上新！创业板智能驾驶、机器人、光伏主题指数来了 - 新浪网",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBZakllT2czMFhkR1ZDZ084bnRHZnRHaGsxVzFzQTBwM05aTWgyX0RaRnQ5THBISG45TmJkRkZHMzg1UGpLNXpjRkVMVEM0MEtrcVNQdTBNZFZuNDVUWTNxajB4QlNDNktRUDhaMXVn?oc=5",
       "published_at": "2026-08-11T12:41:00+00:00",
@@ -2745,15 +3417,15 @@
       "site_name": "国内机器人资讯",
       "source": "国内机器人资讯",
       "site_id": "国内机器人资讯",
-      "description": "密集上新！创业板智能驾驶、机器人、光伏主题指数来了  新浪财经",
+      "description": "密集上新！创业板智能驾驶、机器人、光伏主题指数来了  新浪网",
       "ai_score": 35.0,
       "ai_label": "robotics",
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.85,
+      "timeliness": 26.84,
       "writing_value": 0,
-      "total_score": 72.85
+      "total_score": 71.84
     },
     {
       "id": "d025b4ea4832f0c50f617e3fd318f01b89b7e672",
@@ -2772,9 +3444,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.83,
+      "timeliness": 26.82,
       "writing_value": 0,
-      "total_score": 72.83
+      "total_score": 71.82
     },
     {
       "id": "af23ee0124fa1226aa88b03718a8d1be4ecca53d",
@@ -2793,9 +3465,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.74,
+      "timeliness": 26.73,
       "writing_value": 0,
-      "total_score": 72.74
+      "total_score": 71.73
     },
     {
       "id": "9888521637ad019ca8fcbad48c0fe86a20ef5472",
@@ -2814,9 +3486,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.54,
+      "timeliness": 26.53,
       "writing_value": 0,
-      "total_score": 72.54
+      "total_score": 71.53
     },
     {
       "id": "37d7c123aaaff74adca3cd47bbd2d2d99bb024bb",
@@ -2835,9 +3507,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.19,
+      "timeliness": 26.18,
       "writing_value": 0,
-      "total_score": 72.19
+      "total_score": 71.18
     },
     {
       "id": "2c7a4cc107db68f4e5fa4ccb9437e604dd3fa83b",
@@ -2856,9 +3528,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.1,
+      "timeliness": 26.09,
       "writing_value": 0,
-      "total_score": 72.1
+      "total_score": 71.09
     },
     {
       "id": "b479c855a7a3268c12247df12f029cee4e3c4fc9",
@@ -2877,9 +3549,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.9,
+      "timeliness": 25.89,
       "writing_value": 0,
-      "total_score": 71.9
+      "total_score": 70.89
     },
     {
       "id": "7ed7775d3c762286954a42b5c7f6bd49e5563fd6",
@@ -2898,13 +3570,13 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.9,
+      "timeliness": 25.89,
       "writing_value": 0,
-      "total_score": 71.9
+      "total_score": 70.89
     },
     {
-      "id": "c70350e8af1f8e6edbfa4fcdd1d336e521e6b96b",
-      "title": "蚂蚁首次投向机器人“指尖”！数亿元押注，全球首个物理交互脑发布 - 新浪财经",
+      "id": "bc8bd2a50626ce8e53e2a556e61e113d36f07b99",
+      "title": "蚂蚁首次投向机器人“指尖”！数亿元押注，全球首个物理交互脑发布 - 新浪网",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9kUGtGV3JjMmw3WHhfLTVEdnF1cmFtVDM5bjhYSG40QnhYOEZ0OUFiaF8waFdiMHNhRVBWb0ttM0puN1E0cWVUUW1yTmxzaHhOS3p6Y1Q4WU50dFJVZ1JkXy1xeFBNQTA0NldDcUM5aGpFUQ?oc=5",
       "published_at": "2026-08-11T11:24:17+00:00",
@@ -2913,15 +3585,15 @@
       "site_name": "国内机器人资讯",
       "source": "国内机器人资讯",
       "site_id": "国内机器人资讯",
-      "description": "蚂蚁首次投向机器人“指尖”！数亿元押注，全球首个物理交互脑发布  新浪财经",
+      "description": "蚂蚁首次投向机器人“指尖”！数亿元押注，全球首个物理交互脑发布  新浪网",
       "ai_score": 35.0,
       "ai_label": "robotics",
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.57,
+      "timeliness": 25.56,
       "writing_value": 0,
-      "total_score": 71.57
+      "total_score": 70.56
     },
     {
       "id": "059b29572b612fbf18a7214cc9465263133818a5",
@@ -2940,9 +3612,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.38,
+      "timeliness": 25.37,
       "writing_value": 0,
-      "total_score": 71.38
+      "total_score": 70.37
     }
   ],
   "items_all_raw": [
@@ -2963,9 +3635,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 5,
-      "timeliness": 29.5,
+      "timeliness": 28.49,
       "writing_value": 5,
-      "total_score": 129.5
+      "total_score": 128.49
     },
     {
       "id": "2e54964a2b48f166ab5b974fc807d62ed7a20d6b",
@@ -2984,9 +3656,72 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 5,
-      "timeliness": 26.31,
+      "timeliness": 25.3,
       "writing_value": 5,
-      "total_score": 126.31
+      "total_score": 125.3
+    },
+    {
+      "id": "98efe38f9385a2f2a63be32159affb0aeb08ec58",
+      "title": "Samsung has been quietly working on humanoid robots for years - Android Headlines",
+      "title_zh": "三星多年来一直在悄悄研发人形机器人 - Android Headlines",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQUUphS24yajdhRmt6X3ItYkk3MXR4aG1RNHBGMzRpUjctaFg3bGtrcW1xTlk0ZEd3T3BRem9YaGVrWmRsMnZWdWk5ODc2YTltY01YaUtxMGY3c2hCblMwcTZqSElwdWNWUjNlcWFtY3VlUTJOdlRFWVdscEpVMHBKS0tOa0NNSHJOdU5rbXRQQjAwdXRGUG9XN0NnVk9kVTBFa1F5VmNoWjItT1E?oc=5",
+      "published_at": "2026-08-11T15:44:18+00:00",
+      "category": "国外人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国外人形机器人资讯",
+      "source": "国外人形机器人资讯",
+      "site_id": "国外人形机器人资讯",
+      "description": "Samsung has been quietly working on humanoid robots for years  Android Headlines",
+      "ai_score": 80.0,
+      "ai_label": "humanoid",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.89,
+      "writing_value": 0,
+      "total_score": 119.89
+    },
+    {
+      "id": "547159e119539b97d8373755d0e2e6baa039c8a3",
+      "title": "三星押注人形机器人：整合半导体、AI与制造能力，或打造韩国版“机器人帝国” - 搜狐网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOcHUtdmRDVHRTTGMzNkdYTGJ5ZWluTlNTT1cwblU5MVVocUZ2ZFFCVGpqVkhQSm5QVmg4enhFYUVvb3JjX0I4LTJtSUIzNW5lOVU1cWd6STNqOXpERjE2MlVYRl9pSklYV0NQR0VVUEtzMzVmNGo2TFFlSFMtTXVjSGtqX0k1NWdD?oc=5",
+      "published_at": "2026-08-11T15:34:24+00:00",
+      "category": "国内人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国内人形机器人资讯",
+      "source": "国内人形机器人资讯",
+      "site_id": "国内人形机器人资讯",
+      "description": "三星押注人形机器人：整合半导体、AI与制造能力，或打造韩国版“机器人帝国”  搜狐网",
+      "ai_score": 80.0,
+      "ai_label": "humanoid",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.73,
+      "writing_value": 0,
+      "total_score": 119.73
+    },
+    {
+      "id": "98cdf70d67b180f9ec8e4a10f4bda92dd57c6e57",
+      "title": "Are humanoid robots ready to scrub your kitchen and take out the trash? Not quite. - CBS News",
+      "title_zh": "人形机器人准备好擦洗你的厨房并倒垃圾了吗？不完全是。 - 哥伦比亚广播公司新闻",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPeXlSVDAzaHN5My1SLUpqQnpxcmdzUXZyU2Zia3M2eHZTM1VuY0hOOVRuWG9LRkkxTERQZ3ZMOE93WGtEVHc5NXk5azIxYTFuS2NCZ082SlpiVFAxNndySXBZcmJrTEFFTFVNOEx1aGQtazZqTnBwWEZSQXA2UDRuRXFMNFA2Ni1tMjBvcA?oc=5",
+      "published_at": "2026-08-11T15:23:08+00:00",
+      "category": "国外机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国外机器人资讯",
+      "source": "国外机器人资讯",
+      "site_id": "国外机器人资讯",
+      "description": "Are humanoid robots ready to scrub your kitchen and take out the trash? Not quite.  CBS News",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.54,
+      "writing_value": 0,
+      "total_score": 119.54
     },
     {
       "id": "3c85f9f977593a920649b7a9f227be3f057263a9",
@@ -3005,9 +3740,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.77,
+      "timeliness": 28.76,
       "writing_value": 0,
-      "total_score": 119.77
+      "total_score": 118.76
     },
     {
       "id": "9928341fe47216bd5dbaaf6f1b66105d83a58fcb",
@@ -3026,30 +3761,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.46,
+      "timeliness": 28.45,
       "writing_value": 0,
-      "total_score": 119.46
-    },
-    {
-      "id": "d40d0c74fba4e911e7ca50fbc6d71c20c81f80e6",
-      "title": "网上中签率 0.018% 仅为长鑫 3.8%：“人形机器人第一股”宇树科技公布中签结果，超 978 万户参与申购 - 新浪网",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxPUE1paXo4NGhmXzlSV3pYQVpOSWZnQ210YWh1OHdHNUhRWnNrWVBIeWlYbVpTV1Y3VmZRZ3dSR25CR09FVkhtazhDcndQYW5Iejk3Y2NtaEJCcjRoR3VYMV9NY1UzSVJLaXM2WjRGSjhadFE1cHBvTUMtai0wejk4QVBPTTk1ZVJ1Rm5hY0t5ZWIyYnBqTGxfTWRZTElSYTlkZ1BhelQxaS10aWZlNFBjbTVMVkw4bURIUWlacFJlM2pIdkNmQThXQ3MtQ203eGNWajc2QzZVWWVKWTJIcVQzMk9KRTEtNTNQTEZRZ0FnTjdfbnZQdkhVQk95M2MzUQ?oc=5",
-      "published_at": "2026-08-11T13:51:03+00:00",
-      "category": "国内人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国内人形机器人资讯",
-      "source": "国内人形机器人资讯",
-      "site_id": "国内人形机器人资讯",
-      "description": "网上中签率 0.018% 仅为长鑫 3.8%：“人形机器人第一股”宇树科技公布中签结果，超 978 万户参与申购  新浪网",
-      "ai_score": 80.0,
-      "ai_label": "humanoid",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 29.01,
-      "writing_value": 0,
-      "total_score": 119.01
+      "total_score": 118.45
     },
     {
       "id": "277555bc35932052759d837400ed2a43a36fb73a",
@@ -3068,9 +3782,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.74,
+      "timeliness": 27.73,
       "writing_value": 0,
-      "total_score": 118.74
+      "total_score": 117.73
     },
     {
       "id": "d2456e2787855a86fe2ba9ca11779e0bc36e5d8c",
@@ -3089,13 +3803,34 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.71,
+      "timeliness": 27.7,
       "writing_value": 0,
-      "total_score": 118.71
+      "total_score": 117.7
     },
     {
-      "id": "3748aa6813f515eed2c93ad938cb308cbc1461c6",
-      "title": "人形机器人走强！股价直线涨停，封单逾140万手 - 新浪财经",
+      "id": "5432c965df417f61aa8fc49d58949ede51cacd86",
+      "title": "网上中签率 0.018% 仅为长鑫 3.8%：“人形机器人第一股”宇树科技公布中签结果，超 978 万户参与申购 - 新浪网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9QSExZQlpWcWl0eDJxR2xhRnNNOU9iOHY1VU1rWTlYMG5nZ3BobTBiSU84dXZsNUJjUmVseGFyVVNudDBHdmZ1MFNiYzk2YTNadGNaaUMxbU5hT2x4dDViQVV3?oc=5",
+      "published_at": "2026-08-11T13:25:00+00:00",
+      "category": "国内人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国内人形机器人资讯",
+      "source": "国内人形机器人资讯",
+      "site_id": "国内人形机器人资讯",
+      "description": "网上中签率 0.018% 仅为长鑫 3.8%：“人形机器人第一股”宇树科技公布中签结果，超 978 万户参与申购  新浪网",
+      "ai_score": 80.0,
+      "ai_label": "humanoid",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 27.57,
+      "writing_value": 0,
+      "total_score": 117.57
+    },
+    {
+      "id": "ee8dc439453f99b9e695749c6c699e85380684b7",
+      "title": "人形机器人走强！股价直线涨停，封单逾140万手 - 新浪网",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNU2k0cHgtaHlPaUZWbGV6REZfdDEwX0oyUGJoOGQ1MzZEcHRfT2dtRFZ3M0JnVXpZUVRsbW5RVmhEODFudEdNbzRJTkxBX2Z4X2FTSkJobURMR2Z4amd5YmVibDlPdGFOcDEycHhwYWMyVjRKbkxxNFZsOVlvcU1DV09EZ0xTN08xM3BUd2ktTnlhSmxaalhvMEtGeG4?oc=5",
       "published_at": "2026-08-11T13:18:45+00:00",
@@ -3104,15 +3839,15 @@
       "site_name": "国内人形机器人资讯",
       "source": "国内人形机器人资讯",
       "site_id": "国内人形机器人资讯",
-      "description": "人形机器人走强！股价直线涨停，封单逾140万手  新浪财经",
+      "description": "人形机器人走强！股价直线涨停，封单逾140万手  新浪网",
       "ai_score": 80.0,
       "ai_label": "humanoid",
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.48,
+      "timeliness": 27.47,
       "writing_value": 0,
-      "total_score": 118.48
+      "total_score": 117.47
     },
     {
       "id": "33659c14b126af881b59a97016f53ce2b34f6b2d",
@@ -3131,9 +3866,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.45,
+      "timeliness": 27.44,
       "writing_value": 0,
-      "total_score": 118.45
+      "total_score": 117.44
     },
     {
       "id": "ba8330f7f54b5b4a6bec144162f482a36fda9fef",
@@ -3152,9 +3887,30 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.11,
+      "timeliness": 27.1,
       "writing_value": 0,
-      "total_score": 118.11
+      "total_score": 117.1
+    },
+    {
+      "id": "1278fc3bcd9082120e67fc4ae52bec6d3c581535",
+      "title": "活力中国调研行丨更炸的来了！中联重科人形机器人年底量产 - 华声在线",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE96V0MtNWFybU14OER3ZlZBbXFrdGt0RWZ2dGNoQm1Hd2RvcUQ2R2FxSFRlRXhhZGFyYnFIbXNjQWdSUnBSaGkzZXBRRjB0WGM3NW5qQ2FNdjV5VjRUZGNz?oc=5",
+      "published_at": "2026-08-11T12:54:47+00:00",
+      "category": "国内人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国内人形机器人资讯",
+      "source": "国内人形机器人资讯",
+      "site_id": "国内人形机器人资讯",
+      "description": "活力中国调研行丨更炸的来了！中联重科人形机器人年底量产  华声在线",
+      "ai_score": 80.0,
+      "ai_label": "humanoid",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 27.07,
+      "writing_value": 0,
+      "total_score": 117.07
     },
     {
       "id": "24b6d09b355801cf9686a6b10e52635e59dcbac9",
@@ -3173,9 +3929,30 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.05,
+      "timeliness": 27.04,
       "writing_value": 0,
-      "total_score": 118.05
+      "total_score": 117.04
+    },
+    {
+      "id": "1bc45b932c84261ec0838f4de014e83c94fe73a6",
+      "title": "海外研选 | 巴克莱：自动化3.0时代开启 人形机器人市场10年后或达2000亿美元 - 财联社",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE12ZjBIMXNiQVEtUTZXbHRaMTFFNGtGVjdUM1hLY3RwSm9lcS15Z1k4WkgzdW9LT3Y4ZUJyN3hjUjhDTHNaOWhzcg?oc=5",
+      "published_at": "2026-08-11T12:48:26+00:00",
+      "category": "国内人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国内人形机器人资讯",
+      "source": "国内人形机器人资讯",
+      "site_id": "国内人形机器人资讯",
+      "description": "海外研选 | 巴克莱：自动化3.0时代开启 人形机器人市场10年后或达2000亿美元  财联社",
+      "ai_score": 80.0,
+      "ai_label": "humanoid",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 26.96,
+      "writing_value": 0,
+      "total_score": 116.96
     },
     {
       "id": "45e4ca93768237ed54c832da249553d872c44e36",
@@ -3194,9 +3971,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.3,
+      "timeliness": 26.29,
       "writing_value": 0,
-      "total_score": 117.3
+      "total_score": 116.29
     },
     {
       "id": "c097bd03dffa1296c628c4d6d7351d2dc52a81c6",
@@ -3215,9 +3992,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.79,
+      "timeliness": 25.78,
       "writing_value": 0,
-      "total_score": 116.79
+      "total_score": 115.78
     },
     {
       "id": "19687004a8574e6a5a1bef64cfc155d8f7a45e31",
@@ -3236,9 +4013,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.73,
+      "timeliness": 25.72,
       "writing_value": 0,
-      "total_score": 116.73
+      "total_score": 115.72
     },
     {
       "id": "36587312260fae6fdb07fb289042a9bc74dc0df1",
@@ -3257,9 +4034,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.7,
+      "timeliness": 25.69,
       "writing_value": 0,
-      "total_score": 116.7
+      "total_score": 115.69
     },
     {
       "id": "54f3c1c35591c569cf90eb904256349c78f23863",
@@ -3278,9 +4055,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.69,
+      "timeliness": 25.68,
       "writing_value": 0,
-      "total_score": 116.69
+      "total_score": 115.68
     },
     {
       "id": "7c0095f8519fb6319b7096c28de9324fa1a14454",
@@ -3299,9 +4076,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.61,
+      "timeliness": 25.6,
       "writing_value": 0,
-      "total_score": 116.61
+      "total_score": 115.6
     },
     {
       "id": "99e1a7d377942e2d5ef44e29de647f0d39e69b1e",
@@ -3320,9 +4097,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 29.5,
+      "timeliness": 28.49,
       "writing_value": 5,
-      "total_score": 114.5
+      "total_score": 113.49
     },
     {
       "id": "f5c0a66d209bba8d6e454ff5669e3466e3f21472",
@@ -3341,9 +4118,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 29.41,
+      "timeliness": 28.4,
       "writing_value": 5,
-      "total_score": 114.41
+      "total_score": 113.4
     },
     {
       "id": "ed4564ff970c4e90af82b9f968b2f6bc4b98df73",
@@ -3362,16 +4139,16 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 28.62,
+      "timeliness": 27.61,
       "writing_value": 5,
-      "total_score": 113.62
+      "total_score": 112.61
     },
     {
       "id": "b01ca8fca8b5a27a7d48ac12c91f571f1f707b9f",
       "title": "Ukrainian troops are buying war robots from their digital marketplace in record numbers - Business Insider",
       "title_zh": "乌克兰军队从数字市场购买战争机器人的数量创历史新高",
       "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQYjVEWkVwbTFzMnVpem5lX2NQWmp5Vm9Kd0hxSGFkbUZINnNlNEJXRVVqNzZ3TlloeFVsN1dyTnNZOVg5MGgzY0NwLUtOMVh2OW1rM2otY0ItVVA0dlppU3k1ZjU4bXQyaDZrWXZTQTFzdjlhZTAxekRCQ3BZSlNZRnFrejNCc2ZQVkk4VV9yNDBES2w3MzI5eHdMYXZINFVaUTNKSXRB?oc=5",
-      "published_at": "2026-08-11T11:50:34+00:00",
+      "published_at": "2026-08-11T11:48:00+00:00",
       "category": "国外机器人资讯",
       "gn_label": "robotics",
       "site_name": "国外机器人资讯",
@@ -3383,9 +4160,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 27.01,
+      "timeliness": 25.95,
       "writing_value": 5,
-      "total_score": 112.01
+      "total_score": 110.95
     },
     {
       "id": "95d5da86255664152d4293dbb605001330e9068e",
@@ -3404,9 +4181,72 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 26.66,
+      "timeliness": 25.65,
       "writing_value": 5,
-      "total_score": 111.66
+      "total_score": 110.65
+    },
+    {
+      "id": "c27612e8e204d5f46a273369fcbae9c4ab125e8a",
+      "title": "New Food Delivery Robots to Arrive on Campus - University of North Carolina Wilmington",
+      "title_zh": "新型送餐机器人将登陆校园 - 北卡罗来纳大学威尔明顿分校",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFA3YUk4Rjk1dFZNUFJXbUdhQ1hTQ2F5YTMtQnlmcnNWS3pPYzNlLVRBdFZ0UlNXMi10S0sya203am5aT3hCYjlfbTRyUW1rU3JjTFJILU1NVXpkMHo2Tld4ZkJTWlZtMTNfSEpMVURDb0R6Zjk2eU9xeUEwRGJkNFk?oc=5",
+      "published_at": "2026-08-11T15:42:18+00:00",
+      "category": "国外机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国外机器人资讯",
+      "source": "国外机器人资讯",
+      "site_id": "国外机器人资讯",
+      "description": "New Food Delivery Robots to Arrive on Campus  University of North Carolina Wilmington",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.86,
+      "writing_value": 0,
+      "total_score": 104.86
+    },
+    {
+      "id": "c5a4ab479abc5d0bee8e721359acb72f00865e4d",
+      "title": "清华腾讯RoboticsX港科大联手发布，世界模型能看懂机器人未来动作了 - 智东西",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE42TmtlaXZOYTZuNzQyb1NkUTMxdFFSVlgyUXNLMkJ4RmRBVTBxeUtmNVdmTG9TRGRud2xKVzltdHhiNDE2LUE?oc=5",
+      "published_at": "2026-08-11T15:08:56+00:00",
+      "category": "国内机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国内机器人资讯",
+      "source": "国内机器人资讯",
+      "site_id": "国内机器人资讯",
+      "description": "清华腾讯RoboticsX港科大联手发布，世界模型能看懂机器人未来动作了  智东西",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.3,
+      "writing_value": 0,
+      "total_score": 104.3
+    },
+    {
+      "id": "ddcc06f33477ed9836b9248c0da0cb3f0e08f312",
+      "title": "Robots Could Build Massive Metamaterial Radars in Orbit - Universe Today",
+      "title_zh": "机器人可以在轨道上建造大型超材料雷达 - 今日宇宙",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQM3F4WnBwcWEzME5sVHZMNlZneXV4VmFralQ3VTQ1UG4yVktURVhWUDRJRU1Bc19FQ25mRTBlUDIwYjc2RzhsdjY2ZXdvQ3VPR3dKN0NBY25BYjdxNWw3Yzc1Wm1zYTRRQWwtcVo4NWRERk8tUFh4SEJCYnhSeFBubm1ZUV8xSFl4NFZlVGQ3RzlTLXVudTdrOWVR?oc=5",
+      "published_at": "2026-08-11T15:03:00+00:00",
+      "category": "国外机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国外机器人资讯",
+      "source": "国外机器人资讯",
+      "site_id": "国外机器人资讯",
+      "description": "Robots Could Build Massive Metamaterial Radars in Orbit  Universe Today",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.2,
+      "writing_value": 0,
+      "total_score": 104.2
     },
     {
       "id": "c7f6c484eb954ea99a9c67557322538b2940922a",
@@ -3425,9 +4265,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.93,
+      "timeliness": 28.92,
       "writing_value": 0,
-      "total_score": 104.93
+      "total_score": 103.92
     },
     {
       "id": "5ee18ec0872cd0845e90fa5e8f3454bfe350aa36",
@@ -3446,14 +4286,14 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.84,
+      "timeliness": 28.83,
       "writing_value": 0,
-      "total_score": 104.84
+      "total_score": 103.83
     },
     {
-      "id": "a6916f87bd6a37fb2071f017a3ac66b4767ef44b",
-      "title": "Robot Orders Increase in Q2 as Automation Demand Broadens Across Industries - businesswire.com",
-      "title_zh": "随着各行业自动化需求的扩大，第二季度机器人订单增加 - Businesswire.com",
+      "id": "e95e9ce255efa9544c52377a05f33d7d37951b07",
+      "title": "Robot Orders Increase in Q2 as Automation Demand Broadens Across Industries - Business Wire",
+      "title_zh": "随着各行业自动化需求的扩大，第二季度机器人订单增加 - 美国商业资讯",
       "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQd2E0V3RjZFhfUFdOTVZzcFNJZk1PTXM4OGlCdWhFbE9JS1lMWFdMUmc5VEtPM3V2QVVieXNua2ZIOF9weklGQWtXczZRTU1sTkhRWGhCenJxX2FENEtXbm1OZXhqU0NCWTlwMTBkam5xWmVMUzJzOUJnZE83OENtamREVThiQ1hUQWYxMUhldUpQNXRWNU9YZ1J4aXpDd0lTZ0xCM1RoZUxkR2RIM05uZHFoUUZ0dkcyR3pyQlVyNEFNTlF4MjZOTV84Nlk?oc=5",
       "published_at": "2026-08-11T14:04:00+00:00",
       "category": "国外机器人资讯",
@@ -3461,22 +4301,22 @@
       "site_name": "国外机器人资讯",
       "source": "国外机器人资讯",
       "site_id": "国外机器人资讯",
-      "description": "Robot Orders Increase in Q2 as Automation Demand Broadens Across Industries  businesswire.com",
+      "description": "Robot Orders Increase in Q2 as Automation Demand Broadens Across Industries  Business Wire",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.23,
+      "timeliness": 28.22,
       "writing_value": 0,
-      "total_score": 104.23
+      "total_score": 103.22
     },
     {
       "id": "09edc417049ab91c15f1844b48cd20f0c4d5de45",
       "title": "Robots That Walk and Talk Are Coming to Car Factories - The New York Times",
       "title_zh": "会走路和说话的机器人即将进入汽车工厂 - 纽约时报中文网",
       "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOZnEtWlI4Wm95WjdVYlhRUEhKZEV1cFYwOW4zd0N4Mmx2ZXp5X2tLT2xlU1VqZ1dnRDFPV1hhSk1rVHFaMTBpNEtObzdOSkNEZm1BY0owcXpVNW1vcThOX0Vzd1pSVXZZZlkxVzNORTRxWXNGWW5TZ0sxRk9xeDNIcFlJbGM?oc=5",
-      "published_at": "2026-08-11T13:45:33+00:00",
+      "published_at": "2026-08-11T13:45:34+00:00",
       "category": "国外机器人资讯",
       "gn_label": "robotics",
       "site_name": "国外机器人资讯",
@@ -3488,13 +4328,13 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.92,
+      "timeliness": 27.91,
       "writing_value": 0,
-      "total_score": 103.92
+      "total_score": 102.91
     },
     {
-      "id": "7cea6fd0f5b7bd116cd0fad90e30c0a3a46f0a1d",
-      "title": "上市在即，宇树科技在制造业重镇疯狂“抢人” - 21jingji.com",
+      "id": "ccc0b35e516e5a89ec271b48b226ebc7f2484f6d",
+      "title": "上市在即，宇树科技在制造业重镇疯狂“抢人” - 21财经",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNdHdpNDlfYkVNSHJXNTFZVmRDblhPVzlxNzJqaXRvc0RGLWFZNGxOc2tZRzZJWjZhQmtPTDFYZzlsNFBKQU9JaXFoT2YyejUwdDlCTnNyekg4N2hyNGVTQ1NGQmpxTXR6LXJKYlNsV28tYUFCbVpRSWtNZ0U4VExrLXdoR2RBUnhXel9mLQ?oc=5",
       "published_at": "2026-08-11T13:30:00+00:00",
@@ -3503,20 +4343,20 @@
       "site_name": "国内具身智能资讯",
       "source": "国内具身智能资讯",
       "site_id": "国内具身智能资讯",
-      "description": "上市在即，宇树科技在制造业重镇疯狂“抢人”  21jingji.com",
+      "description": "上市在即，宇树科技在制造业重镇疯狂“抢人”  21财经",
       "ai_score": 65.0,
       "ai_label": "embodied_ai",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.66,
+      "timeliness": 27.65,
       "writing_value": 0,
-      "total_score": 103.66
+      "total_score": 102.65
     },
     {
-      "id": "1f6f81841cd84a0e8f9dfbb7bcc3671e7a41c695",
-      "title": "America unleashes AI robots on shipbuilding crisis as China widens production race - foxbusiness.com",
-      "title_zh": "中国扩大生产竞赛，美国推出人工智能机器人应对造船危机 - Foxbusiness.com",
+      "id": "9e23a323626100a70e4b2718b1abfbb20e8a3313",
+      "title": "America unleashes AI robots on shipbuilding crisis as China widens production race - Fox Business",
+      "title_zh": "随着中国扩大生产竞赛，美国推出人工智能机器人应对造船危机 - 福克斯商业频道",
       "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9fS2NzMFVLZ3BMS2hCNUh6U3ZBVWZ1WkFaUHBvblpWakZUQzlOMGNCQ2tDV3NIa0V1QmIzYVZWZ2FTSWg3cU9FSENIVkxZVHg4SGRSRk5zdC1wTjg?oc=5",
       "published_at": "2026-08-11T13:16:50+00:00",
       "category": "国外机器人资讯",
@@ -3524,15 +4364,15 @@
       "site_name": "国外机器人资讯",
       "source": "国外机器人资讯",
       "site_id": "国外机器人资讯",
-      "description": "America unleashes AI robots on shipbuilding crisis as China widens production race  foxbusiness.com",
+      "description": "America unleashes AI robots on shipbuilding crisis as China widens production race  Fox Business",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.44,
+      "timeliness": 27.43,
       "writing_value": 0,
-      "total_score": 103.44
+      "total_score": 102.43
     },
     {
       "id": "a31e47c63f791fb8ba178673cf73b99a2c532403",
@@ -3551,13 +4391,13 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.25,
+      "timeliness": 27.24,
       "writing_value": 0,
-      "total_score": 103.25
+      "total_score": 102.24
     },
     {
-      "id": "2b64080098c6cbb314fe11512c3e2bd8a47519fd",
-      "title": "长江工程职院牵手宇树科技共建产业学院 - 新浪财经",
+      "id": "2ac0c90bc6995d592f5b637ae39e34eaa6859912",
+      "title": "长江工程职院牵手宇树科技共建产业学院 - 新浪网",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOSjUzU3JrdHc2X2d5Y0J3d0c0TEk2OFc3VEE5b1VjSE01UjJ5X04xNnFFWmhCSmRVb2Q3YTJLcTV6SVBDcjJ0OV9NWlFnSEliOXFpaV9xWGFPeGRyTmZpN293LWowT1gyZ3FOS0s1M3JFOFpwSVJUZS00b0xPMFM4ZS03cktsWElUSzItN0d2VnlBc1piMUtpWg?oc=5",
       "published_at": "2026-08-11T13:00:39+00:00",
@@ -3566,15 +4406,15 @@
       "site_name": "国内具身智能资讯",
       "source": "国内具身智能资讯",
       "site_id": "国内具身智能资讯",
-      "description": "长江工程职院牵手宇树科技共建产业学院  新浪财经",
+      "description": "长江工程职院牵手宇树科技共建产业学院  新浪网",
       "ai_score": 65.0,
       "ai_label": "embodied_ai",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.17,
+      "timeliness": 27.16,
       "writing_value": 0,
-      "total_score": 103.17
+      "total_score": 102.16
     },
     {
       "id": "c1ac899847d2a83c9aa15abb170ecc1392ac70a3",
@@ -3593,9 +4433,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.16,
+      "timeliness": 27.15,
       "writing_value": 0,
-      "total_score": 103.16
+      "total_score": 102.15
     },
     {
       "id": "9599453f7976cc8a80e888ea5a5173c883d53474",
@@ -3614,9 +4454,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.57,
+      "timeliness": 26.56,
       "writing_value": 0,
-      "total_score": 102.57
+      "total_score": 101.56
     },
     {
       "id": "9ddd0ecacc96470a1ff7b5099cec938a4f9637be",
@@ -3635,9 +4475,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.56,
+      "timeliness": 26.55,
       "writing_value": 0,
-      "total_score": 102.56
+      "total_score": 101.55
     },
     {
       "id": "6154cf74a7447b864bfac33aef641f565a8c1c32",
@@ -3656,9 +4496,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.23,
+      "timeliness": 26.22,
       "writing_value": 0,
-      "total_score": 102.23
+      "total_score": 101.22
     },
     {
       "id": "9c75b3208d8930f8b3f1011d09c3b7f1b6dfd2af",
@@ -3677,9 +4517,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.16,
+      "timeliness": 26.15,
       "writing_value": 0,
-      "total_score": 102.16
+      "total_score": 101.15
     },
     {
       "id": "fbaf326becc6f69d7164ee2d47a58437a638930e",
@@ -3698,30 +4538,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.94,
+      "timeliness": 25.93,
       "writing_value": 0,
-      "total_score": 101.94
-    },
-    {
-      "id": "36ee95c86e196d68b8f359178e331acf9eb43ebe",
-      "title": "Guao Technology raises nearly ¥100M Series A+ as its robots reach Bosch's lines - Dealroom",
-      "title_zh": "瓜奥科技获近亿元A+轮融资，机器人登陆博世生产线 - 知乎",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOenpHYUYxY3hIdS1pNVpObS1aSF9NS2JQbUdBVThhRi1WMnV4Y0hvM2doY0g0MG1KWEFTMjVmbWU1Yi1zODBxSm5jb2ZCOVFKcEFHUUswbXdtcHVaMk85M2RMSTViQ2dKWVNBWERGYVNtUFk3NkJWbkhUYURGNXNGcS1lbHFhUURJeVpFdHVyNjB0dUZkYUl0b25xU2VVY1pOcmFsVjFsdUltZjRSNTA5ag?oc=5",
-      "published_at": "2026-08-11T11:38:07+00:00",
-      "category": "国外机器人资讯",
-      "gn_label": "robotics",
-      "site_name": "国外机器人资讯",
-      "source": "国外机器人资讯",
-      "site_id": "国外机器人资讯",
-      "description": "Guao Technology raises nearly ¥100M Series A+ as its robots reach Bosch's lines  Dealroom",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 26.8,
-      "writing_value": 0,
-      "total_score": 101.8
+      "total_score": 100.93
     },
     {
       "id": "8861139e9691390a5168c9eed912d31fbbfd7e7c",
@@ -3740,30 +4559,93 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.79,
+      "timeliness": 25.78,
       "writing_value": 0,
-      "total_score": 101.79
+      "total_score": 100.78
     },
     {
-      "id": "2a8d3ce40155b9f34e674f02fb0c3300a8ec76c6",
-      "title": "Robot book club - Yahoo Tech",
-      "title_zh": "机器人读书俱乐部 - 雅虎科技",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBsZDRRTlM1bEtQbVNOdTl1N0FsRDNMZkFVUUpDaFhBMW5aRUZCaktzTGZTVmRZck5HcmNpMTJZSnZwaHNzMy05YnpXVkNfdG1yTUJ5ZzBBcnVVZW5Xa1ZVOXpBWVJ4Q2pyVC01VHNqS01qVjBIVm8yeUFvVQ?oc=5",
-      "published_at": "2026-08-11T11:31:42+00:00",
+      "id": "cae7d96bb9786da5273dd928835a5276752ccd70",
+      "title": "Robot book club - Axios",
+      "title_zh": "机器人读书俱乐部 - Axios",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE0yRWF1RGJHUVlzZmtUSkMwZXF2YUhaTWgtRFlMZkZDU0IzSmNzYlRnUGpJOWhvWlZBN2pUZHZXUUo0eVhVWERXOWtXYnJ5ZjVDRUIxUUZ3SUNxai1W?oc=5",
+      "published_at": "2026-08-11T11:36:01+00:00",
       "category": "国外机器人资讯",
       "gn_label": "robotics",
       "site_name": "国外机器人资讯",
       "source": "国外机器人资讯",
       "site_id": "国外机器人资讯",
-      "description": "Robot book club  Yahoo Tech",
+      "description": "Robot book club  Axios",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.69,
+      "timeliness": 25.75,
       "writing_value": 0,
-      "total_score": 101.69
+      "total_score": 100.75
+    },
+    {
+      "id": "546976ddb021ac56f290b899aefc98d6f98f456a",
+      "title": "Archer to Shape Physical AI Future of Aerospace and Defense with Acquisition of Boeing’s Wisk Aero, Insitu and SkyGrid Subsidiaries; Boeing to Invest in Archer and Collaborate - suasnews.com",
+      "title_zh": "Archer 收购波音旗下 Wisk Aero、Insitu 和 SkyGrid 子公司，塑造航空航天和国防的物理人工智能未来；波音公司将投资 Archer 并与其展开合作 - suasnews.com",
+      "url": "https://news.google.com/rss/articles/CBMirwJBVV95cUxNQzRKRFZhcEhnR19XbXFRN05iVHlDMWxVczQ4UVZoX3dFWGlZazdvaVNJZk50dTV4Rlc3aVFzenA5VTlibW0wcndaU19XaThQZFV5bjJGZzlmcXoxME5UVDVtMEpyelgtVDRXMFZOYUdnS2twOUE2OTZFeDhDOWNKM19OMk1QMVJ3UGx1STBCcU5hVTRSX1NjWFZ1NFZrX25GbTFPTEFrZWtkczVKRHBZWG9IdE1oVDhKZEV6SWZyNGNPa1ZrSzVzY0xiemctY3RlOXNuQ25tbGZkNXZSLXFLUWMtUzJmdDlneU42SmZXM3JqT04weUZXT0xsZ19BQ0ItVTY5eUxfNDU4blFhMGJUOVJKN00wbDNIdWJUbUVnVnBMMEZkZS1LMFVjZ1k5dXM?oc=5",
+      "published_at": "2026-08-11T15:00:31+00:00",
+      "category": "国外物理AI资讯",
+      "gn_label": "physical_ai",
+      "site_name": "国外物理AI资讯",
+      "source": "国外物理AI资讯",
+      "site_id": "国外物理AI资讯",
+      "description": "Archer to Shape Physical AI Future of Aerospace and Defense with Acquisition of Boeing’s Wisk Aero, Insitu and SkyGrid Subsidiaries; Boeing to Invest in Archer and Collaborate  suasnews.com",
+      "ai_score": 50.0,
+      "ai_label": "physical_ai",
+      "relevance": 0.5,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 29.16,
+      "writing_value": 5,
+      "total_score": 99.16
+    },
+    {
+      "id": "c6542613299e7cf1f86fe8a6a71b75b7b77f2dcc",
+      "title": "The cost floor under the physical AI boom - Tech Funding News",
+      "title_zh": "物理人工智能热潮下的成本底线 - 科技融资新闻",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5ON3B1Szg0REROa2NGenhMdzk5V0hxVUh2UVh6bDVPbk53Z3NJTHNvR3RSVnl1TGVFZG1XdHRNLUd5RDRiUExueHdVNjZvd25qME9lNHNhcXVRZ25IV2l6RS03T3RydnROeFFpek0xaF9KRXZPaU10bldn?oc=5",
+      "published_at": "2026-08-11T15:34:39+00:00",
+      "category": "国外物理AI资讯",
+      "gn_label": "physical_ai",
+      "site_name": "国外物理AI资讯",
+      "source": "国外物理AI资讯",
+      "site_id": "国外物理AI资讯",
+      "description": "The cost floor under the physical AI boom  Tech Funding News",
+      "ai_score": 50.0,
+      "ai_label": "physical_ai",
+      "relevance": 0.5,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.73,
+      "writing_value": 0,
+      "total_score": 89.73
+    },
+    {
+      "id": "f8321f235a50558d712db83a2419dfdcf8ad81e3",
+      "title": "Can physical AI save Korea’s economic future? - koreajoongangdaily.com",
+      "title_zh": "物理人工智能能否拯救韩国的经济未来？ - 韩国中央日报.com",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNaXktdnRaMUFXbTk4cktnT3FBZEttN2R4aDR0Vk9teUo1MGFEclh3YWpKUlAwWjhNbXdSeWZPeEpOZk1Fakpjb1RRUDd3TU56b0R3anR4N0hSbFdBbmU4TFlaX0xDck1abU5TbVk0UFJhRmlMblFTUWlpLWNpakNTalA4U3EteTRlZFJlZjFlSEdlQ2JiZXFRbkNrUFVrazg?oc=5",
+      "published_at": "2026-08-11T15:07:49+00:00",
+      "category": "国外物理AI资讯",
+      "gn_label": "physical_ai",
+      "site_name": "国外物理AI资讯",
+      "source": "国外物理AI资讯",
+      "site_id": "国外物理AI资讯",
+      "description": "Can physical AI save Korea’s economic future?  koreajoongangdaily.com",
+      "ai_score": 50.0,
+      "ai_label": "physical_ai",
+      "relevance": 0.5,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.28,
+      "writing_value": 0,
+      "total_score": 89.28
     },
     {
       "id": "6c902dcca86ad2421f25af3fc4407004918c5073",
@@ -3782,9 +4664,9 @@
       "relevance": 0.5,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.5,
+      "timeliness": 28.49,
       "writing_value": 0,
-      "total_score": 89.5
+      "total_score": 88.49
     },
     {
       "id": "20e5793920b3bc25baf4a7b0272a5b82e847abf8",
@@ -3803,9 +4685,9 @@
       "relevance": 0.5,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.66,
+      "timeliness": 27.65,
       "writing_value": 0,
-      "total_score": 88.66
+      "total_score": 87.65
     },
     {
       "id": "9e6e3114981066e4365dbcaf6182391c6b0ecb95",
@@ -3824,9 +4706,9 @@
       "relevance": 0.5,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.16,
+      "timeliness": 27.15,
       "writing_value": 0,
-      "total_score": 88.16
+      "total_score": 87.15
     },
     {
       "id": "e70ef8ae1b390d9b148360e12a87a1a2a3716ff9",
@@ -3845,13 +4727,139 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 5,
-      "timeliness": 27.16,
+      "timeliness": 26.15,
       "writing_value": 5,
-      "total_score": 82.16
+      "total_score": 81.15
     },
     {
-      "id": "735178b8417fb3b87298c32ba9ee9413a67bc854",
-      "title": "灵猴机器人完成C轮融资|宁德时代|投资基金|资本|黑马|上市公司_手机新浪网 - 新浪财经",
+      "id": "ace813eddf31e51b37ce0f734d101c9f7f0f9e5d",
+      "title": "黑马频出、AI 赋能！RoboMaster 不止机器人大赛，更是工程师摇篮 - 新浪网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNNTR6LWdfR0JPRW00aFI0N0lqd0xtXzN6aVRtMTJ5REtTSGhSeTZkZ0NOVVBLOTNxUmFFVzR2VHh2R3puaThLTE0yZ0p3TTJFb2tNc0ZKNUFfT3YzNVdTSlpPM2pCcVpFZWZoX2RiWVdGTXRmUTZuS1BTdzJNQUhGWnBXZWJzQV9tZ2RHcjdzck9tVzVSSVBWa0c0bV9lU1o5VVdUV19FQQ?oc=5",
+      "published_at": "2026-08-11T15:22:30+00:00",
+      "category": "国内机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国内机器人资讯",
+      "source": "国内机器人资讯",
+      "site_id": "国内机器人资讯",
+      "description": "黑马频出、AI 赋能！RoboMaster 不止机器人大赛，更是工程师摇篮  新浪网",
+      "ai_score": 35.0,
+      "ai_label": "robotics",
+      "relevance": 0.35,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.53,
+      "writing_value": 0,
+      "total_score": 74.53
+    },
+    {
+      "id": "0ba7cac5f8e6df96d0bdb290ef7446f67589e23c",
+      "title": "多亏了Anduril，这正式成为 $Archer Aviation (ACHR.US)$ 战争、机器人与死亡卡特尔军团的一员。 - Moomoo",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPUUZCWjVXZS13aGdzQWhRZS1veTNwT2VPT3BTM3hQTnl3eG4yRGs2NFJDRFRjZ3FZSjBZZnJRRXc0cHJNWVJJVmg0V0lRQld6ODlDX1Z5ekNYUXdFd25JLXkyd0VwUjJsSzBVUVBqYzlSVnRucUlsYk8tcWpPcnFhR0J2OXVPMGNucWJ1SVBfRmVqMm43Skxydk40cEprUzVfWWRfT1hwOEdPUEM5RDJqcDVDZ0hIdm8?oc=5",
+      "published_at": "2026-08-11T15:21:29+00:00",
+      "category": "国内机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国内机器人资讯",
+      "source": "国内机器人资讯",
+      "site_id": "国内机器人资讯",
+      "description": "多亏了Anduril，这正式成为 $Archer Aviation (ACHR.US)$ 战争、机器人与死亡卡特尔军团的一员。  Moomoo",
+      "ai_score": 35.0,
+      "ai_label": "robotics",
+      "relevance": 0.35,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.51,
+      "writing_value": 0,
+      "total_score": 74.51
+    },
+    {
+      "id": "fa7854d3af90f157558412cd7b9d88f34459cd1d",
+      "title": "冲锋舟、水下机器人等装备助力，丰台蓝天救援队全力防汛备战 （北京日报客户端记者 刘平 孙颖） - 搜狐网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQam4xMS1iRUtLUHUwdUtKR2plcWhmaWV0aEFUbkdRc2FXV0NYZ01ZUDI5WWVYTHJvMktwTnFQcFFubUtBRkZ1Y05rcTItLTFTRGdPQVBjZmpCUFR2QlZDSHo3eW4yT2djTjVzVV9hV0UyVXhSY05GeUJyTE5ELUFKdWZQWVlqcjhX?oc=5",
+      "published_at": "2026-08-11T15:10:42+00:00",
+      "category": "国内机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国内机器人资讯",
+      "source": "国内机器人资讯",
+      "site_id": "国内机器人资讯",
+      "description": "冲锋舟、水下机器人等装备助力，丰台蓝天救援队全力防汛备战 （北京日报客户端记者 刘平 孙颖）  搜狐网",
+      "ai_score": 35.0,
+      "ai_label": "robotics",
+      "relevance": 0.35,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.33,
+      "writing_value": 0,
+      "total_score": 74.33
+    },
+    {
+      "id": "3019d83caa82543f6b39dcb31f2e456a8fe6b179",
+      "title": "当机器人有了统一的\"大脑\"：一个万亿级生态的雏形已经出现 - 新浪网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxPS3Q3X0lLVUhtaUtVMklXZnhUMEQ3ck1sLXBKQWdUdWhHOXJRcnA1NTJVdE5nTVlMWDlKN05WTHh1SHByWFhhUld3eGN4aDJfUnJPQXlIQU0zRE9mN043cng2TGJqZnBUZllYSE1pQ0JfVVhxbWlkd1QtWlJONlk4UUNQRS1oRjFjZDNucDFXRU8wMXhPNHFEMUxSbm5tRFlIb1BSaWQzNXBZVllEd0Y0UFhEcy1tNnhpOEF0NTVoaVNZV2E2X0FyNVVQVXRUQ0s0bkVrTFRHeWdKcmZwajF0MlZ2azNPTlVycS0zYXpydlpyRUw4LVlZX1pn?oc=5",
+      "published_at": "2026-08-11T14:46:42+00:00",
+      "category": "国内机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国内机器人资讯",
+      "source": "国内机器人资讯",
+      "site_id": "国内机器人资讯",
+      "description": "当机器人有了统一的\"大脑\"：一个万亿级生态的雏形已经出现  新浪网",
+      "ai_score": 35.0,
+      "ai_label": "robotics",
+      "relevance": 0.35,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 28.93,
+      "writing_value": 0,
+      "total_score": 73.93
+    },
+    {
+      "id": "49bbf246ae0638d3fcb04ecd8a9707e398448ab9",
+      "title": "一家手术机器人公司，海外收入暴增超450% - 新浪网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9pOXpoeG52X1ZlOTFTLUhZUGQycEtnYWd0ekNsbWZqZWxwSUhqMW1TZlJJQkljd0o3eWxGS3VKbVExR1A3TUs4SDQtZzFZYTNBRVdxbE1lTGJ1MTdDS013SndsR2hHUnBYaUVwMFBRSQ?oc=5",
+      "published_at": "2026-08-11T14:43:52+00:00",
+      "category": "国内机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国内机器人资讯",
+      "source": "国内机器人资讯",
+      "site_id": "国内机器人资讯",
+      "description": "一家手术机器人公司，海外收入暴增超450%  新浪网",
+      "ai_score": 35.0,
+      "ai_label": "robotics",
+      "relevance": 0.35,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 28.88,
+      "writing_value": 0,
+      "total_score": 73.88
+    },
+    {
+      "id": "68758070f8afc4a64fe3df533699900d0878488d",
+      "title": "Korea’s No-Foreign-Weights Rule Earns All Four Sovereign AI Teams Global Recognition - Tech Times",
+      "title_zh": "韩国的无外国权重规则为所有四个主权人工智能团队赢得了全球认可 - Tech Times",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNZVBqNkY4OUFQVHVsYkY5NE9KYjl4ZHBhbWFlQWhFRGJGWHNSNDBIVFJrcFRHRWp0UmFUMkdpUjc1MlBsNi03UGc2azVjaDVaR2dkbnA4d3NIVEktU0tzYXBRY19QQjEtNEpzcjZNNTY2NGtMZ3laeW9lM0xEV0NBc1NoYldtcC1FLXRtYWw0XzRmc0d1SVk1Um8teWxyOEtCT0h0c3FUSTYwbERQUS1weUJXLVhFd05pU0x2OGxGNk1FU3h2YlpGZ3U5M21xZGxtYzBoaA?oc=5",
+      "published_at": "2026-08-11T14:42:16+00:00",
+      "category": "国外人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国外人形机器人资讯",
+      "source": "国外人形机器人资讯",
+      "site_id": "国外人形机器人资讯",
+      "description": "Korea’s No-Foreign-Weights Rule Earns All Four Sovereign AI Teams Global Recognition  Tech Times",
+      "ai_score": 35.0,
+      "ai_label": "humanoid",
+      "relevance": 0.35,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 28.86,
+      "writing_value": 0,
+      "total_score": 73.86
+    },
+    {
+      "id": "b5f9524e1337918f37c4007aa2c58dc88b7b5dd5",
+      "title": "灵猴机器人完成C轮融资|宁德时代|投资基金|资本|黑马|上市公司_手机新浪网 - 新浪网",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1LSTJxN1JxN3ZQZDFHRjVQVUVnT2JIaG9mNGNBb2ZYZXFRQjNDVnNmTE1XbmVlemVTcW5GUjdCUV8tZmt4V1NfLWVGT21ZRTBCbm1LS1lwUFY1OGYwSzRyQWxvYlN3eTN4OTJ0dG4wbVN1QTQ0UXI0Z19CMTdsYlE?oc=5",
       "published_at": "2026-08-11T14:37:30+00:00",
@@ -3860,15 +4868,36 @@
       "site_name": "国内机器人资讯",
       "source": "国内机器人资讯",
       "site_id": "国内机器人资讯",
-      "description": "灵猴机器人完成C轮融资|宁德时代|投资基金|资本|黑马|上市公司_手机新浪网  新浪财经",
+      "description": "灵猴机器人完成C轮融资|宁德时代|投资基金|资本|黑马|上市公司_手机新浪网  新浪网",
       "ai_score": 35.0,
       "ai_label": "robotics",
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.79,
+      "timeliness": 28.78,
       "writing_value": 0,
-      "total_score": 74.79
+      "total_score": 73.78
+    },
+    {
+      "id": "c0925dad7ad343206cece16ad88a8c25d42adccb",
+      "title": "外交部发言人推荐！广州邮区中心分拣机器人火了 - 奥一网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE52X2YzczF4UkFHTjJBMktTR19KWGhnMU9kbjNiYXVaMVNKM2VuaXI1MlJ4R3hBWnFkSDMtN3R5SkJqSEJjaUNZWWdOMm1hZ3BVeFJBekNwQ2ZXX0VvdWVNM1k2Vno1QQ?oc=5",
+      "published_at": "2026-08-11T14:30:11+00:00",
+      "category": "国内机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国内机器人资讯",
+      "source": "国内机器人资讯",
+      "site_id": "国内机器人资讯",
+      "description": "外交部发言人推荐！广州邮区中心分拣机器人火了  奥一网",
+      "ai_score": 35.0,
+      "ai_label": "robotics",
+      "relevance": 0.35,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 28.66,
+      "writing_value": 0,
+      "total_score": 73.66
     },
     {
       "id": "d603cf717778e7a69858ac1c0cf0957c88de0eb8",
@@ -3887,30 +4916,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.65,
+      "timeliness": 28.64,
       "writing_value": 0,
-      "total_score": 74.65
-    },
-    {
-      "id": "9e51c8e8cc0e1e2c577e35248f57e671c9ae3300",
-      "title": "创业板智能驾驶指数、创业板机器人指数、创业板光伏指数等3条创业板主题指数陆续发布中国基金报 - chnfund.com",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE54X3hDaGt5R3RrdVY2VDcxcWpKSzFjSDRqeW9NTXB5TVBBeFNxSjlrUHRtNTZVUElBNVdvMkFkYm4zWnZDaFhxUkZYUWZDVE40OU42OU8zbExRNEl0X0paUU5oaFdldzdqUkEzbFlIdVRrR1NGYzQ0UUtR?oc=5",
-      "published_at": "2026-08-11T14:29:00+00:00",
-      "category": "国内机器人资讯",
-      "gn_label": "robotics",
-      "site_name": "国内机器人资讯",
-      "source": "国内机器人资讯",
-      "site_id": "国内机器人资讯",
-      "description": "创业板智能驾驶指数、创业板机器人指数、创业板光伏指数等3条创业板主题指数陆续发布中国基金报  chnfund.com",
-      "ai_score": 35.0,
-      "ai_label": "robotics",
-      "relevance": 0.35,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 29.65,
-      "writing_value": 0,
-      "total_score": 74.65
+      "total_score": 73.64
     },
     {
       "id": "4b7c94373d1b900859b32c585e23e0ae3cd2cac1",
@@ -3918,20 +4926,20 @@
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNRlU5RHQ5alViTnNCNVZJMlNKUDctUFFMOGpfaWc3dTUyRGZtTG5VcGdGdXZrSXZnWk5vTnVzVDU5TXBSeXh1UlRDN0lVa3JtM2F4N1NDamhleHBTaFlkSExuZmw5ajBvWjcyWHZ1QnF4amt6MXlPTmtFM3RXb1BIeHJjbXJxUDl4YjZwUA?oc=5",
       "published_at": "2026-08-11T14:24:13+00:00",
-      "category": "国内人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国内人形机器人资讯",
-      "source": "国内人形机器人资讯",
-      "site_id": "国内人形机器人资讯",
+      "category": "国内机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国内机器人资讯",
+      "source": "国内机器人资讯",
+      "site_id": "国内机器人资讯",
       "description": "北京“冰丝带”上演机器人“全自主”足球赛  搜狐网",
       "ai_score": 35.0,
-      "ai_label": "humanoid",
+      "ai_label": "robotics",
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.57,
+      "timeliness": 28.56,
       "writing_value": 0,
-      "total_score": 74.57
+      "total_score": 73.56
     },
     {
       "id": "9253b5908d37229cce5af6fe4a88f7cabdddb10f",
@@ -3950,9 +4958,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.3,
+      "timeliness": 28.29,
       "writing_value": 0,
-      "total_score": 74.3
+      "total_score": 73.29
     },
     {
       "id": "574c169f97bad0d896127fe812a317c51ceaab86",
@@ -3971,13 +4979,34 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.16,
+      "timeliness": 28.15,
       "writing_value": 0,
-      "total_score": 74.16
+      "total_score": 73.15
     },
     {
-      "id": "5b5383fd9710fec0668379548d56d2060dbdddfa",
-      "title": "海柔创新闪攀机器人全球合作规模破万 - 新浪财经",
+      "id": "eac4642b79ebf2943ed78e7cc902813ea9a94908",
+      "title": "平均6分钟下线1台挖掘机，中联重科具身机器人加速“上岗”｜活力中国调研行 - 华声在线",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFA0bjJIRFVFenlJNDg5b3lWNUgzang5V0k5Q2FJd2JvcFY2bEVmZXl0TU15NEhlck0xZHdPNnM2ODBES0VJVUFDRzEwQmxiQXNIMFpLUDBhQ29BSzNXbVBj?oc=5",
+      "published_at": "2026-08-11T13:55:54+00:00",
+      "category": "国内机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国内机器人资讯",
+      "source": "国内机器人资讯",
+      "site_id": "国内机器人资讯",
+      "description": "平均6分钟下线1台挖掘机，中联重科具身机器人加速“上岗”｜活力中国调研行  华声在线",
+      "ai_score": 35.0,
+      "ai_label": "robotics",
+      "relevance": 0.35,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 28.08,
+      "writing_value": 0,
+      "total_score": 73.08
+    },
+    {
+      "id": "3d9f6b5c65899d8f39f2dce0ee695f9225ce7508",
+      "title": "海柔创新闪攀机器人全球合作规模破万 - 新浪网",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9oUGlVT0dVZXhoQV9hSG1hcmx4NzJjZEk3ZHRtWmVtNXZlVDFueV91X1paSVZfSWlYLVl5Nmo1MjNZRmxVd3BtZkxDUEtZT3QtRHZJTzktTU5uYkFpWVk0cjRvNXk1dFd1dmdZWGh1b3U?oc=5",
       "published_at": "2026-08-11T13:55:21+00:00",
@@ -3986,15 +5015,15 @@
       "site_name": "国内机器人资讯",
       "source": "国内机器人资讯",
       "site_id": "国内机器人资讯",
-      "description": "海柔创新闪攀机器人全球合作规模破万  新浪财经",
+      "description": "海柔创新闪攀机器人全球合作规模破万  新浪网",
       "ai_score": 35.0,
       "ai_label": "robotics",
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.09,
+      "timeliness": 28.08,
       "writing_value": 0,
-      "total_score": 74.09
+      "total_score": 73.08
     },
     {
       "id": "c177c5be9e443827283ca3cf7ba6f63a55c215f6",
@@ -4013,9 +5042,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.06,
+      "timeliness": 28.05,
       "writing_value": 0,
-      "total_score": 74.06
+      "total_score": 73.05
     },
     {
       "id": "171af2bdf844c2bc500b99daea79c19ff4becce5",
@@ -4034,51 +5063,30 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.02,
+      "timeliness": 28.01,
       "writing_value": 0,
-      "total_score": 74.02
+      "total_score": 73.01
     },
     {
-      "id": "745b2b24ae75fee108cb05335f6a9847f8b8025e",
-      "title": "昆医大附一院完成云南首例机器人辅助脑肿瘤激光消融术 - 搜狐网",
+      "id": "7116531b29fb4b9ba8e8cc867f73f8c0d9325e60",
+      "title": "冲锋舟、水下机器人等装备助力，丰台蓝天救援队全力防汛备战 - 京报网",
       "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPTnY4SnVhUjdPRUVZUEFvMC1xWks2bFFiV1Y3TkhmRkgydGVHR0FVYXRWbGhXdnlNcmlVOVEtUFVkbjAyWHFDS29aT0xkWlFPdE0wVnpJZjNXcjVJLS1OVTBZa1JYZXNvNXQ5d0JoY3ItNU5lYTk3TTRXejRWMEI4NkNXdTMyX1g2YmtYRw?oc=5",
-      "published_at": "2026-08-11T13:45:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5oajk4VmNsTjB6b1lEWHZMYkEtNlU3c3ZweWlKYU0xc0FxVzBpQUJnUlRCQWVnR0J6cHl4ZVhramlxRG91bVd0TFFIRkdJdWVMMUlKQUU2ekE0cTBZa2c?oc=5",
+      "published_at": "2026-08-11T13:18:12+00:00",
       "category": "国内机器人资讯",
       "gn_label": "robotics",
       "site_name": "国内机器人资讯",
       "source": "国内机器人资讯",
       "site_id": "国内机器人资讯",
-      "description": "昆医大附一院完成云南首例机器人辅助脑肿瘤激光消融术  搜狐网",
+      "description": "冲锋舟、水下机器人等装备助力，丰台蓝天救援队全力防汛备战  京报网",
       "ai_score": 35.0,
       "ai_label": "robotics",
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.91,
+      "timeliness": 27.46,
       "writing_value": 0,
-      "total_score": 73.91
-    },
-    {
-      "id": "aa89688efa6b6757aadd5bff4f18458da25d6a78",
-      "title": "冲锋舟、水下机器人等装备助力，丰台蓝天救援队全力防汛备战 - 搜狐网",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOMkFjRkgyYmVsY0hRSllOcHpac0N1dngxSEVweG1BS1hGX29QVTJEdUNiclJ1bG1yVk8tTzRRMHJTdy1ldkxoQTZPcWpMVnRwc1dXSzMxSnRSMFFvLU9NR1JraktRY3BXcTZwODVfOWg2SnJYYkVmTHhCcHV4RzZoMTc2MnRBZG1p?oc=5",
-      "published_at": "2026-08-11T13:24:00+00:00",
-      "category": "国内机器人资讯",
-      "gn_label": "robotics",
-      "site_name": "国内机器人资讯",
-      "source": "国内机器人资讯",
-      "site_id": "国内机器人资讯",
-      "description": "冲锋舟、水下机器人等装备助力，丰台蓝天救援队全力防汛备战  搜狐网",
-      "ai_score": 35.0,
-      "ai_label": "robotics",
-      "relevance": 0.35,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 28.56,
-      "writing_value": 0,
-      "total_score": 73.56
+      "total_score": 72.46
     },
     {
       "id": "5c995150f8da5600262dd09d6449b7337766179d",
@@ -4097,9 +5105,30 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.4,
+      "timeliness": 27.39,
       "writing_value": 0,
-      "total_score": 73.4
+      "total_score": 72.39
+    },
+    {
+      "id": "84588fe63f372a035837b0f7aa42b2d489a0ccd4",
+      "title": "“物理AI真正上车”ID.ERA 9X，Momenta R7世界模型即将OTA - 新浪网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFAxcG9nbnU4VHhnSGZEMWxlNUpWMzJNNVd3dkdGY0RoODJyMFQwMVJuU1R5dlItSHgyc2UxSU96eWNHcGIzTzJIaUpoLWx5WURpRFgxSTA0WVk4dzM3UGNNUXF3?oc=5",
+      "published_at": "2026-08-11T13:13:00+00:00",
+      "category": "国内物理AI资讯",
+      "gn_label": "physical_ai",
+      "site_name": "国内物理AI资讯",
+      "source": "国内物理AI资讯",
+      "site_id": "国内物理AI资讯",
+      "description": "“物理AI真正上车”ID.ERA 9X，Momenta R7世界模型即将OTA  新浪网",
+      "ai_score": 35.0,
+      "ai_label": "physical_ai",
+      "relevance": 0.35,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 27.37,
+      "writing_value": 0,
+      "total_score": 72.37
     },
     {
       "id": "fe84bdfd7c56761d1a38a11e7d80555c1c205663",
@@ -4107,20 +5136,20 @@
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1feXRLUW5oOWpXVTNOQTFobUZTQ1FKT1ViNGxKQXV0TGpFY2hRZTQtQnpCTldMc3lTempIUTZEVjhpVFVrcjZEdHFJa0VKTDdHc3hWWG5DMDlZckhRaW1J?oc=5",
       "published_at": "2026-08-11T13:07:54+00:00",
-      "category": "国内人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国内人形机器人资讯",
-      "source": "国内人形机器人资讯",
-      "site_id": "国内人形机器人资讯",
+      "category": "国内机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国内机器人资讯",
+      "source": "国内机器人资讯",
+      "site_id": "国内机器人资讯",
       "description": "全球首条全自动机器人关节模组产线已在蓝思智能诞生 ｜活力中国调研行  华声在线",
       "ai_score": 35.0,
-      "ai_label": "humanoid",
+      "ai_label": "robotics",
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.29,
+      "timeliness": 27.28,
       "writing_value": 0,
-      "total_score": 73.29
+      "total_score": 72.28
     },
     {
       "id": "b5be4442d9b643d95ea69a56131489be6de0fa05",
@@ -4139,9 +5168,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.21,
+      "timeliness": 27.2,
       "writing_value": 0,
-      "total_score": 73.21
+      "total_score": 72.2
     },
     {
       "id": "a16bf679cdef6f3ca78cd2f19b54a747e4cf5bee",
@@ -4160,9 +5189,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.14,
+      "timeliness": 27.13,
       "writing_value": 0,
-      "total_score": 73.14
+      "total_score": 72.13
     },
     {
       "id": "728e778d30c372895c8c217c89be139309a872c0",
@@ -4181,34 +5210,13 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.03,
+      "timeliness": 27.02,
       "writing_value": 0,
-      "total_score": 73.03
+      "total_score": 72.02
     },
     {
-      "id": "92a2450ac7ea759c708ca6fa4ee5fbd3d19880e5",
-      "title": "格力博(301260.SZ)：四驱割草机器人相关研发、测试工作已基本完成 - 新浪财经",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBzdFpRTTc5bGlNMGV6VGpob0xWbEJsQ1NHZGxBZzhLY2tkWEtDb19sYjFFM0FsMVFEczBPREkzaUVaUExCTnFnRk5vTWRwaXRDUUVubjB6ZFU5Xy0zd2dCZVA3T210TEpEa3RhSENWMA?oc=5",
-      "published_at": "2026-08-11T12:50:11+00:00",
-      "category": "国内机器人资讯",
-      "gn_label": "robotics",
-      "site_name": "国内机器人资讯",
-      "source": "国内机器人资讯",
-      "site_id": "国内机器人资讯",
-      "description": "格力博(301260.SZ)：四驱割草机器人相关研发、测试工作已基本完成  新浪财经",
-      "ai_score": 35.0,
-      "ai_label": "robotics",
-      "relevance": 0.35,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 28.0,
-      "writing_value": 0,
-      "total_score": 73.0
-    },
-    {
-      "id": "6bcf6602c0b1692ed3c27b1f3f2331369b830bd9",
-      "title": "密集上新！创业板智能驾驶、机器人、光伏主题指数来了 - 新浪财经",
+      "id": "0df8a9a2ecbe067d19a6fad1f22f3316f31ae6b9",
+      "title": "密集上新！创业板智能驾驶、机器人、光伏主题指数来了 - 新浪网",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBZakllT2czMFhkR1ZDZ084bnRHZnRHaGsxVzFzQTBwM05aTWgyX0RaRnQ5THBISG45TmJkRkZHMzg1UGpLNXpjRkVMVEM0MEtrcVNQdTBNZFZuNDVUWTNxajB4QlNDNktRUDhaMXVn?oc=5",
       "published_at": "2026-08-11T12:41:00+00:00",
@@ -4217,15 +5225,15 @@
       "site_name": "国内机器人资讯",
       "source": "国内机器人资讯",
       "site_id": "国内机器人资讯",
-      "description": "密集上新！创业板智能驾驶、机器人、光伏主题指数来了  新浪财经",
+      "description": "密集上新！创业板智能驾驶、机器人、光伏主题指数来了  新浪网",
       "ai_score": 35.0,
       "ai_label": "robotics",
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.85,
+      "timeliness": 26.84,
       "writing_value": 0,
-      "total_score": 72.85
+      "total_score": 71.84
     },
     {
       "id": "d025b4ea4832f0c50f617e3fd318f01b89b7e672",
@@ -4244,9 +5252,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.83,
+      "timeliness": 26.82,
       "writing_value": 0,
-      "total_score": 72.83
+      "total_score": 71.82
     },
     {
       "id": "af23ee0124fa1226aa88b03718a8d1be4ecca53d",
@@ -4265,9 +5273,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.74,
+      "timeliness": 26.73,
       "writing_value": 0,
-      "total_score": 72.74
+      "total_score": 71.73
     },
     {
       "id": "9888521637ad019ca8fcbad48c0fe86a20ef5472",
@@ -4286,9 +5294,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.54,
+      "timeliness": 26.53,
       "writing_value": 0,
-      "total_score": 72.54
+      "total_score": 71.53
     },
     {
       "id": "37d7c123aaaff74adca3cd47bbd2d2d99bb024bb",
@@ -4307,9 +5315,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.19,
+      "timeliness": 26.18,
       "writing_value": 0,
-      "total_score": 72.19
+      "total_score": 71.18
     },
     {
       "id": "2c7a4cc107db68f4e5fa4ccb9437e604dd3fa83b",
@@ -4328,9 +5336,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.1,
+      "timeliness": 26.09,
       "writing_value": 0,
-      "total_score": 72.1
+      "total_score": 71.09
     },
     {
       "id": "b479c855a7a3268c12247df12f029cee4e3c4fc9",
@@ -4349,9 +5357,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.9,
+      "timeliness": 25.89,
       "writing_value": 0,
-      "total_score": 71.9
+      "total_score": 70.89
     },
     {
       "id": "7ed7775d3c762286954a42b5c7f6bd49e5563fd6",
@@ -4370,13 +5378,13 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.9,
+      "timeliness": 25.89,
       "writing_value": 0,
-      "total_score": 71.9
+      "total_score": 70.89
     },
     {
-      "id": "c70350e8af1f8e6edbfa4fcdd1d336e521e6b96b",
-      "title": "蚂蚁首次投向机器人“指尖”！数亿元押注，全球首个物理交互脑发布 - 新浪财经",
+      "id": "bc8bd2a50626ce8e53e2a556e61e113d36f07b99",
+      "title": "蚂蚁首次投向机器人“指尖”！数亿元押注，全球首个物理交互脑发布 - 新浪网",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9kUGtGV3JjMmw3WHhfLTVEdnF1cmFtVDM5bjhYSG40QnhYOEZ0OUFiaF8waFdiMHNhRVBWb0ttM0puN1E0cWVUUW1yTmxzaHhOS3p6Y1Q4WU50dFJVZ1JkXy1xeFBNQTA0NldDcUM5aGpFUQ?oc=5",
       "published_at": "2026-08-11T11:24:17+00:00",
@@ -4385,15 +5393,15 @@
       "site_name": "国内机器人资讯",
       "source": "国内机器人资讯",
       "site_id": "国内机器人资讯",
-      "description": "蚂蚁首次投向机器人“指尖”！数亿元押注，全球首个物理交互脑发布  新浪财经",
+      "description": "蚂蚁首次投向机器人“指尖”！数亿元押注，全球首个物理交互脑发布  新浪网",
       "ai_score": 35.0,
       "ai_label": "robotics",
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.57,
+      "timeliness": 25.56,
       "writing_value": 0,
-      "total_score": 71.57
+      "total_score": 70.56
     },
     {
       "id": "059b29572b612fbf18a7214cc9465263133818a5",
@@ -4412,21 +5420,21 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.38,
+      "timeliness": 25.37,
       "writing_value": 0,
-      "total_score": 71.38
+      "total_score": 70.37
     }
   ],
   "site_stats": [
     {
       "site_id": "国外机器人资讯",
       "site_name": "国外机器人资讯",
-      "count": 22
+      "count": 24
     },
     {
       "site_id": "国内机器人资讯",
       "site_name": "国内机器人资讯",
-      "count": 17
+      "count": 24
     },
     {
       "site_id": "国内具身智能资讯",
@@ -4436,17 +5444,22 @@
     {
       "site_id": "国内人形机器人资讯",
       "site_name": "国内人形机器人资讯",
-      "count": 8
+      "count": 9
     },
     {
       "site_id": "国外物理AI资讯",
       "site_name": "国外物理AI资讯",
-      "count": 6
+      "count": 9
     },
     {
       "site_id": "国内物理AI资讯",
       "site_name": "国内物理AI资讯",
-      "count": 3
+      "count": 4
+    },
+    {
+      "site_id": "国外人形机器人资讯",
+      "site_name": "国外人形机器人资讯",
+      "count": 2
     },
     {
       "site_id": "国内脑机接口资讯",
@@ -4454,6 +5467,6 @@
       "count": 1
     }
   ],
-  "total_items_raw": 70,
-  "total_items_all_mode": 70
+  "total_items_raw": 86,
+  "total_items_all_mode": 86
 }
