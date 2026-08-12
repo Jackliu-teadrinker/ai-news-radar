@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-12T10:53:22.267000+00:00",
+  "generated_at": "2026-08-12T11:40:34.015732+00:00",
   "feeds": [
     {
       "feed": "国内具身智能资讯",
@@ -16,24 +16,38 @@
       "error": null
     },
     {
-      "feed": "国内脑机接口资讯",
+      "feed": "国外具身智能资讯",
       "success": true,
       "items_total": 100,
       "items_unique": 100,
+      "error": null
+    },
+    {
+      "feed": "国外人形机器人资讯",
+      "success": true,
+      "items_total": 100,
+      "items_unique": 99,
+      "error": null
+    },
+    {
+      "feed": "国外机器人资讯",
+      "success": true,
+      "items_total": 103,
+      "items_unique": 76,
       "error": null
     },
     {
       "feed": "国外物理AI资讯",
       "success": true,
       "items_total": 100,
-      "items_unique": 100,
+      "items_unique": 97,
       "error": null
     },
     {
-      "feed": "国外具身智能资讯",
+      "feed": "国内脑机接口资讯",
       "success": true,
       "items_total": 100,
-      "items_unique": 99,
+      "items_unique": 100,
       "error": null
     },
     {
@@ -44,31 +58,17 @@
       "error": null
     },
     {
-      "feed": "国外人形机器人资讯",
-      "success": true,
-      "items_total": 100,
-      "items_unique": 97,
-      "error": null
-    },
-    {
-      "feed": "国外机器人资讯",
-      "success": true,
-      "items_total": 104,
-      "items_unique": 76,
-      "error": null
-    },
-    {
       "feed": "国内机器人资讯",
       "success": true,
-      "items_total": 100,
-      "items_unique": 59,
+      "items_total": 102,
+      "items_unique": 67,
       "error": null
     },
     {
       "feed": "国内物理AI资讯",
       "success": true,
       "items_total": 100,
-      "items_unique": 96,
+      "items_unique": 95,
       "error": null
     },
     {
@@ -86,24 +86,10 @@
       "error": null
     },
     {
-      "feed": "HuggingFace Blog",
-      "success": true,
-      "items_total": 30,
-      "items_unique": 30,
-      "error": null
-    },
-    {
       "feed": "VentureBeat AI",
       "success": true,
       "items_total": 7,
       "items_unique": 7,
-      "error": null
-    },
-    {
-      "feed": "IEEE Spectrum",
-      "success": true,
-      "items_total": 30,
-      "items_unique": 30,
       "error": null
     },
     {
@@ -114,10 +100,24 @@
       "error": "No articles found in HTML"
     },
     {
+      "feed": "HuggingFace Blog",
+      "success": true,
+      "items_total": 30,
+      "items_unique": 30,
+      "error": null
+    },
+    {
       "feed": "IEEE Brain",
       "success": true,
       "items_total": 10,
       "items_unique": 10,
+      "error": null
+    },
+    {
+      "feed": "IEEE Spectrum",
+      "success": true,
+      "items_total": 30,
+      "items_unique": 30,
       "error": null
     },
     {
@@ -135,17 +135,17 @@
       "error": null
     },
     {
+      "feed": "GN: robot",
+      "success": true,
+      "items_total": 30,
+      "items_unique": 21,
+      "error": null
+    },
+    {
       "feed": "GN: brain-computer interface",
       "success": true,
       "items_total": 30,
       "items_unique": 30,
-      "error": null
-    },
-    {
-      "feed": "GN: robot",
-      "success": true,
-      "items_total": 30,
-      "items_unique": 20,
       "error": null
     },
     {
@@ -219,24 +219,10 @@
       "error": null
     },
     {
-      "feed": "GN: 人形机器人",
+      "feed": "GN: robot learning",
       "success": true,
       "items_total": 30,
-      "items_unique": 30,
-      "error": null
-    },
-    {
-      "feed": "量子位",
-      "success": true,
-      "items_total": 10,
-      "items_unique": 10,
-      "error": null
-    },
-    {
-      "feed": "GN: 具身智能",
-      "success": true,
-      "items_total": 30,
-      "items_unique": 30,
+      "items_unique": 29,
       "error": null
     },
     {
@@ -247,52 +233,10 @@
       "error": null
     },
     {
-      "feed": "GN: robot learning",
+      "feed": "量子位",
       "success": true,
-      "items_total": 30,
-      "items_unique": 29,
-      "error": null
-    },
-    {
-      "feed": "GN: 机器人",
-      "success": true,
-      "items_total": 30,
-      "items_unique": 16,
-      "error": null
-    },
-    {
-      "feed": "GN: robot manipulation",
-      "success": true,
-      "items_total": 30,
-      "items_unique": 25,
-      "error": null
-    },
-    {
-      "feed": "GN: 物理AI",
-      "success": true,
-      "items_total": 30,
-      "items_unique": 29,
-      "error": null
-    },
-    {
-      "feed": "GN: 傅利叶智能",
-      "success": true,
-      "items_total": 30,
-      "items_unique": 30,
-      "error": null
-    },
-    {
-      "feed": "GN: 宇树科技",
-      "success": true,
-      "items_total": 30,
-      "items_unique": 26,
-      "error": null
-    },
-    {
-      "feed": "GN: 智元机器人",
-      "success": true,
-      "items_total": 30,
-      "items_unique": 27,
+      "items_total": 10,
+      "items_unique": 10,
       "error": null
     },
     {
@@ -303,7 +247,70 @@
       "error": null
     },
     {
+      "feed": "GN: robot manipulation",
+      "success": true,
+      "items_total": 30,
+      "items_unique": 25,
+      "error": null
+    },
+    {
+      "feed": "GN: 人形机器人",
+      "success": true,
+      "items_total": 30,
+      "items_unique": 30,
+      "error": null
+    },
+    {
+      "feed": "GN: 具身智能",
+      "success": true,
+      "items_total": 30,
+      "items_unique": 30,
+      "error": null
+    },
+    {
+      "feed": "GN: 物理AI",
+      "success": true,
+      "items_total": 30,
+      "items_unique": 29,
+      "error": null
+    },
+    {
+      "feed": "雷锋网",
+      "success": true,
+      "items_total": 20,
+      "items_unique": 20,
+      "error": null
+    },
+    {
+      "feed": "GN: 机器人",
+      "success": true,
+      "items_total": 30,
+      "items_unique": 17,
+      "error": null
+    },
+    {
+      "feed": "GN: 智元机器人",
+      "success": true,
+      "items_total": 30,
+      "items_unique": 27,
+      "error": null
+    },
+    {
+      "feed": "GN: 宇树科技",
+      "success": true,
+      "items_total": 30,
+      "items_unique": 26,
+      "error": null
+    },
+    {
       "feed": "GN: 优必选",
+      "success": true,
+      "items_total": 30,
+      "items_unique": 30,
+      "error": null
+    },
+    {
+      "feed": "GN: 傅利叶智能",
       "success": true,
       "items_total": 30,
       "items_unique": 30,
@@ -314,13 +321,6 @@
       "success": true,
       "items_total": 30,
       "items_unique": 30,
-      "error": null
-    },
-    {
-      "feed": "GN: 工业机器人与人",
-      "success": true,
-      "items_total": 30,
-      "items_unique": 27,
       "error": null
     },
     {
@@ -338,24 +338,24 @@
       "error": null
     },
     {
-      "feed": "GN: 服务机器人",
+      "feed": "GN: 人形机器人融资",
+      "success": true,
+      "items_total": 30,
+      "items_unique": 24,
+      "error": null
+    },
+    {
+      "feed": "GN: 工业机器人与人",
       "success": true,
       "items_total": 30,
       "items_unique": 29,
       "error": null
     },
     {
-      "feed": "GN: 人形机器人融资",
+      "feed": "GN: 服务机器人",
       "success": true,
       "items_total": 30,
-      "items_unique": 23,
-      "error": null
-    },
-    {
-      "feed": "雷锋网",
-      "success": true,
-      "items_total": 20,
-      "items_unique": 20,
+      "items_unique": 30,
       "error": null
     }
   ],
@@ -363,9 +363,9 @@
     "total_feeds": 10,
     "successful_feeds": 50,
     "failed_feeds": 1,
-    "total_items": 890,
-    "deduplicated": 80,
-    "noise_filtered": 39,
+    "total_items": 895,
+    "deduplicated": 74,
+    "noise_filtered": 40,
     "short_filtered": 0
   }
 }
