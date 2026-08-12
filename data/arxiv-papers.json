@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-12T16:25:53.560026+00:00",
-  "total_items": 25,
+  "generated_at": "2026-08-12T17:27:19.127557+00:00",
+  "total_items": 23,
   "items": [
     {
       "id": "http://arxiv.org/abs/2608.11204v1",
@@ -254,28 +254,6 @@
       "published_at": "2026-08-11T06:27:45+00:00",
       "updated_at": "2026-08-11T06:27:45Z",
       "title_zh": "通过顺序凸规划进行无人机对无人机对接的非线性模型预测控制"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.10485v1",
-      "title": "JitTrack: Onboard Multi-Object Tracking Against Viewpoint Jitter for Agile UAVs",
-      "url": "https://arxiv.org/abs/2608.10485",
-      "summary": "Multi-object tracking (MOT) onboard agile unmanned aerial vehicles (UAVs) remains challenging due to severe viewpoint jitter induced by camera ego-motion. Rapid attitude changes during flight often lead to significant target displacement across frames, causing inaccurate target association and degraded tracking performance. Existing UAV MOT methods are primarily evaluated on offline benchmarks and seldom address the practical requirements of real-world onboard deployment, including robustness to camera motion and active target following. To address these challenges, we propose JitTrack, an active onboard multi-object tracking framework that accommodates drone dynamics and camera ego-motion. Built upon a query-based transformer tracker, JitTrack introduces semantic refinement to improve the detection of emerging targets, motion-aware query rectification to compensate for target misalignment caused by viewpoint jitter, and a motion-inspired denoising training strategy that simulates camera motion patterns for robust supervision. Furthermore, we develop a perception-planning-control closed-loop tracking pipeline for real-world deployment, enabling collision-free and physically feasible target following on agile UAVs. Extensive experiments on public UAV MOT benchmarks demonstrate consistent improvements over the baseline method, while real-world flight experiments validate the effectiveness and practicality of JitTrack for robust onboard visual tracking under viewpoint jitter.",
-      "authors": "Yachun Shan, Feitian Zhang",
-      "category": "cs.RO",
-      "published_at": "2026-08-11T05:00:31+00:00",
-      "updated_at": "2026-08-11T05:00:31Z",
-      "title_zh": "JitTrack：针对敏捷无人机视点抖动的机载多目标跟踪"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.10484v1",
-      "title": "Lost in Reconstruction: Aligning Action Representations with Language in Vision-Language-Action Models",
-      "url": "https://arxiv.org/abs/2608.10484",
-      "summary": "Action verbs describe not only the physical outcomes of actions, but also how those actions are performed. Yet action representations in vision-language-action models (VLAs) are typically optimized for reconstruction under L1/L2 losses in raw action space, where numerical proximity need not reflect linguistically meaningful distinctions. On BridgeV2, we show that action trajectories contain verb-grounding information beyond visual state changes, and that reconstruction-only discrete tokenization systematically erodes this information. To address this problem, we introduce SALT, a Semantically ALigned action Tokenizer that augments a VQ-VAE-style tokenizer with an auxiliary objective requiring a frozen vision-language model to recover the episode instruction from quantized action latents. Policies trained with SALT achieve 71.9% average success in SimplerEnv, compared with 42.7% for a reconstruction-only VQ-VAE tokenizer and 31.2% for FAST. SALT also develops verb-specialized codes while maintaining reconstruction fidelity. These results show that robot action trajectories provide a source of language grounding and that preserving this structure in action representations can substantially improve language-conditioned control.",
-      "authors": "Li Wenjie, Yash Jangir, Ignacy Stepka et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-11T04:57:17+00:00",
-      "updated_at": "2026-08-11T04:57:17Z",
-      "title_zh": "迷失在重建中：在视觉-语言-动作模型中将动作表示与语言对齐"
     }
   ]
 }
