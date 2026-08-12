@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-12T21:36:31.488007+00:00",
-  "total_items": 15,
+  "generated_at": "2026-08-12T22:31:58.980544+00:00",
+  "total_items": 14,
   "items": [
     {
       "id": "http://arxiv.org/abs/2608.11204v1",
@@ -155,17 +155,6 @@
       "published_at": "2026-08-11T10:33:12+00:00",
       "updated_at": "2026-08-11T10:33:12Z",
       "title_zh": "JEPA-WAM：机器人操作中世界动作模型的阶段级联合嵌入预测"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.10756v1",
-      "title": "Embodied Multimodal Grounding for Open-Vocabulary Mobile Manipulation via Semantic 3D Gaussian Splatting",
-      "url": "https://arxiv.org/abs/2608.10756",
-      "summary": "Embodied mobile manipulation requires language, visual observations, three-dimensional scene structure, and action feasibility to be aligned before execution. We study open-vocabulary target grounding with few-shot manipulation in local household workspaces and present an embodied multimodal grounding framework that integrates active multi-view Semantic 3D Gaussian Splatting (Semantic-3DGS), reachability-aware base positioning, and a diffusion-based vision-language-action policy. A task-driven local Semantic-3DGS serves as a shared interface across active sensing, language-conditioned 3D localization, obstacle-aware scene reasoning, base preparation, and semantic conditioning of the action model. To preserve pretrained action priors, the 3D semantic cues are injected only into the late action-expert blocks. In expanded 50-trial real-robot evaluations against representative vision-language-action (VLA) approaches, the full system achieves 60% long-horizon success compared with 40% for PointVLA and 28% for DexVLA, and reaches 74% success in heavily cluttered manipulation compared with 52% for the single-view variant and 46% for PointVLA. It also maintains 75% success under a 75 cm height shift and eliminates photo-induced false grasps. These results indicate that explicit, refreshable 3D semantic grounding can improve robustness under clutter, occlusion, viewpoint variation, and embodiment constraints.",
-      "authors": "Huosen Ou, Dongni Song, Yuncong Wang et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-11T10:16:30+00:00",
-      "updated_at": "2026-08-11T10:16:30Z",
-      "title_zh": "通过语义 3D 高斯泼溅实现开放词汇移动操作的具体多模态基础"
     }
   ]
 }
