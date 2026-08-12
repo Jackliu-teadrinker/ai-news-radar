@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-12T22:31:58.980544+00:00",
-  "total_items": 14,
+  "generated_at": "2026-08-12T23:31:46.806703+00:00",
+  "total_items": 12,
   "items": [
     {
       "id": "http://arxiv.org/abs/2608.11204v1",
@@ -133,28 +133,6 @@
       "published_at": "2026-08-11T11:40:05+00:00",
       "updated_at": "2026-08-11T11:40:05Z",
       "title_zh": "AECNav：有效的零样本开放词汇对象导航的主动证据整合"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.10791v1",
-      "title": "Dual Stress: Runtime Safety Monitoring for Safety-Constrained MPC Navigation",
-      "url": "https://arxiv.org/abs/2608.10791",
-      "summary": "Runtime hazard monitors for autonomous naviga- tion are conventionally built from geometric quantities: predicted clearance, time to collision, and required deceleration. A model-predictive controller that enforces safety through explicit con- straints computes, as a by-product of every control step, a second information channel that such monitors ignore: the Karush-Kuhn-Tucker multipliers of its constrained optimization, which measure the marginal control effort spent to maintain safety against each obstacle. This paper evaluates whether a horizon-weighted sum of those multipliers, a dual stress signal, provides a hazard monitor complementary to the geometric warnings the same state already supports. We compare it against a battery of fifteen geometric detectors tuned to a matched false-alarm budget, on preregistered held-out crossing scenarios driven through a physics simulator. The stress alarm actionably flags 4.7 times as many collisions missed by the entire geometric battery as the geometric battery flags in return (85 versus 18); combined, the two channels warn of three quarters of the collisions for which braking remained feasible, against under half for the geometric battery alone.",
-      "authors": "Jamil Chahine, Wenqi Cai, John Abanes et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-11T10:53:24+00:00",
-      "updated_at": "2026-08-11T10:53:24Z",
-      "title_zh": "双重压力：安全约束 MPC 导航的运行时安全监控"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.10780v1",
-      "title": "JEPA-WAM: Stage-Level Joint-Embedding Prediction for World-Action Models in Robot Manipulation",
-      "url": "https://arxiv.org/abs/2608.10780",
-      "summary": "Generalist robot policies aim to map multimodal observations and linguistic task instructions to actions across diverse tasks. However, existing methods typically represent the future as a fixed, short video-action chunk. This short-term future captures local scene evolution for action execution, but it does not explicitly describe the stage-level future that specifies how a task should progress from its current stage to the next. We therefore distinguish two complementary futures for robot manipulation: a short-term physical future to capture local scene evolution and a stage-level semantic future to represent task progress. We introduce JEPA-WAM, which augments a Motus-based World Action Model (WAM) with Stage-JEPA, a goal-conditioned Joint-Embedding Predictive Architecture (JEPA) predictor. Given the current observation and task instruction, Stage-JEPA uses a frozen V-JEPA2 encoder to extract the current-state representation and predicts the latent target of the next inferred stage. Across 50 RoboTwin 2.0 tasks in clean and randomized environments, JEPA-WAM achieves 90.25% overall success and reduces the mean number of execution steps in successful rollouts by 5.97% relative to the strongest baseline.",
-      "authors": "Xiao Liu, Yuguang Yang, Xi Wang et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-11T10:33:12+00:00",
-      "updated_at": "2026-08-11T10:33:12Z",
-      "title_zh": "JEPA-WAM：机器人操作中世界动作模型的阶段级联合嵌入预测"
     }
   ]
 }
