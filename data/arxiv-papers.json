@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-12T19:34:55.440428+00:00",
-  "total_items": 22,
+  "generated_at": "2026-08-12T20:34:13.384275+00:00",
+  "total_items": 18,
   "items": [
     {
       "id": "http://arxiv.org/abs/2608.11204v1",
@@ -199,50 +199,6 @@
       "published_at": "2026-08-11T08:35:08+00:00",
       "updated_at": "2026-08-11T08:35:08Z",
       "title_zh": "OAA：人机远程操作中语音引导的三个阶段"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.10648v1",
-      "title": "Precise Top-Layer Fabric Segmentation for Fabric Destacking with Edge- and Shape-Aware Deep Networks",
-      "url": "https://arxiv.org/abs/2608.10648",
-      "summary": "Fabric destacking requires precise segmentation of the topmost fabric layer, a task complicated by subtle fabric boundaries and high visual similarity between fabric layers. Existing semantic and edge-based segmentation approaches often struggle with these complexities, limiting the performance of robotic manipulation for different tasks. In this work, a novel segmentation training architecture tailored for top-layer fabric segmentation in stacked fabrics is proposed. The method extends the classical encoder-decoder framework by introducing two specialized branches - an edge-aware branch and a shape-aware branch - that are used to supervise the backbone network for better tuning. The edge-aware branch enhances boundary delineation, while the shape-aware branch guides the network to capture and align the overall fabric shape with reference masks derived from Computer Aided Design (CAD) models. Experiments on a real-world fabric dataset demonstrate that the training approach outperforms established baselines, verifying the effectiveness of the multi-branch design through both quantitative results and ablation studies.",
-      "authors": "Wenbo Dong, Dipankar Bhattacharya, Akinari Kobayashi et al.",
-      "category": "cs.CV",
-      "published_at": "2026-08-11T08:32:28+00:00",
-      "updated_at": "2026-08-11T08:32:28Z",
-      "title_zh": "通过边缘和形状感知深度网络进行精确的顶层结构分割，实现结构拆垛"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.10623v1",
-      "title": "When Your State Estimator Has Lost The Plot: Detecting Estimator Failures Via Spectral Analysis",
-      "url": "https://arxiv.org/abs/2608.10623",
-      "summary": "Reliable onboard state estimation is essential for safe robotic operation, yet unmodeled disturbances, such as sensor aliasing or out-of-distribution noise, still cause estimators to degrade or fail completely. While many methods aim to improve estimator robustness, only a few provide introspective mechanisms to assess estimate quality. Existing uncertainty measures, such as covariances, rely on idealized assumptions and tend to be overconfident, and more recent data-driven approaches are typically tied to their training data distributions. We propose a sensor-agnostic introspective method that assesses estimator health by analyzing the frequency-domain power distribution of recent velocity estimates. The method is evaluated using outdoor flight data from an aerial robot running visual-inertial, LiDAR-inertial, and radar-inertial odometry. The dataset includes multiple estimator failures, enabling analysis of several frequency-domain indicators, such as signal power, spectral bandwidth, and entropy. We observe consistent spectral power differences between healthy and degraded estimates, allowing detection of 51%-58% of labeled failures with 60%-84% precision across three fundamentally different state estimation frameworks. Our results show that even a simple frequency-domain analysis of a state estimator's output can serve as a lightweight introspective tool to complement existing robustness techniques in real-world robotic deployments, and opens promising avenues for future investigation.",
-      "authors": "Christian Lanegger, Helen Oleynikova, Roland Siegwart et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-11T08:08:53+00:00",
-      "updated_at": "2026-08-11T08:08:53Z",
-      "title_zh": "当您的状态估计器迷失方向时：通过频谱分析检测估计器故障"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.10618v1",
-      "title": "Toward the Cognitive--Physical Limits of Embodied Intelligence through a World-Model-Centric Autonomous Racing Agent",
-      "url": "https://arxiv.org/abs/2608.10618",
-      "summary": "Embodied artificial intelligence aims to develop agents that perceive, reason, and act through continuous interaction with the physical world. However, most embodied systems are still evaluated within conservative safety margins or moderate interaction regimes, leaving their capability boundaries under extreme conditions insufficiently understood. Autonomous racing provides a stringent testbed by combining high-frequency localization and perception, adversarial interaction, near-saturated vehicle dynamics, and strict safety constraints. Existing systems push high-speed performance but rarely model and refine cognitive and physical limits jointly. Here we show that a world-model-centric autonomous racing agent provides a concrete step toward exploring these coupled limits. The framework learns predictive world models from near-limit successes and failures to capture interaction evolution, ego dynamics, and feasible-motion boundaries, coupling world-state construction, future-aware reasoning, and near-limit control in a closed-loop refinement process. Training data were collected from real-vehicle autonomous racing, where the onboard system maintained robust localization and perception at speeds up to 256.3 km/h and peak lateral acceleration of 26.8 m/s$^2$. In full-scale simulated racing, the well trained world-model-centric agent achieves an 88.3% interaction success rate across various challenging simulated racing scenarios. Closed-loop refinement of the world model and policy further improved utilization of cognitive-physical limits, recovery from failure modes, and generalization across varying conditions and unseen circuits. These results suggest a boundary-aware methodology in which world models help embodied agents represent, predict, and continually refine their capability boundaries for safer real-world deployment.",
-      "authors": "Unknown",
-      "category": "cs.RO",
-      "published_at": "2026-08-11T08:01:35+00:00",
-      "updated_at": "2026-08-11T08:01:35Z",
-      "title_zh": "通过以世界模型为中心的自主赛车代理迈向实体智能的认知-物理极限"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.10600v1",
-      "title": "BooST: Bridging Semantics and Motions for Efficient Skill Transfer",
-      "url": "https://arxiv.org/abs/2608.10600",
-      "summary": "Skill abstraction---the process of learning reusable and temporally extended behaviors---has emerged as a key paradigm for improving sample efficiency and generalization in robot learning. For efficient skill transfer to real robots, learned skills must generalize across tasks and domains, remain robust to visual and dynamic perturbations, and be efficient enough for practical deployment. However, existing methods typically satisfy only a subset of these properties, as they capture either high-level semantic intent (what) or low-level motion dynamics (how). This incomplete skill transfer yields weak priors for policy learning, thereby demanding substantial in-domain data for downstream adaptation. To address these challenges, we introduce BooST, a two-stage framework that explicitly bridges semantics and motions to satisfy all three desiderata. BooST first leverages a cross-modal VQ-VAE to capture both semantic intent and motion dynamics, yielding a unified skill representation. It then distills this representation into a lightweight policy for efficient downstream adaptation to new tasks. Extensive experiments across simulation and real-robot settings demonstrate that BooST achieves superior few-shot adaptation, cross-domain skill transfer, and robustness to dynamic visual distractors, while maintaining a lightweight yet expressive design suitable for real-world deployment.",
-      "authors": "Jusuk Lee, Daesol Cho, Jonghun Shin et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-11T07:35:12+00:00",
-      "updated_at": "2026-08-11T07:35:12Z",
-      "title_zh": "BooST：连接语义和动作以实现高效的技能转移"
     }
   ]
 }
