@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-12T14:15:13.190846+00:00",
-  "total_items": 30,
+  "generated_at": "2026-08-12T15:36:40.779885+00:00",
+  "total_items": 26,
   "items": [
     {
       "id": "http://arxiv.org/abs/2608.11204v1",
@@ -287,50 +287,6 @@
       "published_at": "2026-08-11T04:03:54+00:00",
       "updated_at": "2026-08-11T04:03:54Z",
       "title_zh": "PBD-AG：持久基线 Delta 活动图，具有长视野服务机器人的不确定性感知检查"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.10404v1",
-      "title": "Elbow Angle Guidance System Based on Surface Haptic Sensations Elicited by Lightweight Wearable Fabric Actuator",
-      "url": "https://arxiv.org/abs/2608.10404",
-      "summary": "The demand for wearable haptic devices has rapidly increased for various applications. However, many haptic devices interfere with the wearer's activities and movements. In addition, several haptic devices fail to elicit intuitive haptic sensations by adjusting to the natural posture of the wearer. To address these issues, we propose an elbow angle guidance system using a lightweight wearable fabric actuator. The proposed actuator is made of fabric and has two McKibben-type artificial muscles attached to it, rendering it extremely lightweight and facilitating the delivery of surface haptic sensations to intuitively induce elbow extension and flexion. The surface haptic sensation elicited by the fabric actuator is adjusted to natural body movements without interfering with the wearer's movements. Moreover, the proposed system measures and guides the elbow angle by changing the intensity of the surface haptic sensation delivered to users in real time. The accuracy of the proposed system is demonstrated through experiments involving human participants.",
-      "authors": "Kenta Yokoe, Tadayoshi Aoyama, Yuki Funabora et al.",
-      "category": "cs.HC",
-      "published_at": "2026-08-11T02:49:57+00:00",
-      "updated_at": "2026-08-11T02:49:57Z",
-      "title_zh": "基于轻型可穿戴织物致动器引起的表面触觉感觉的肘部角度引导系统"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.10401v1",
-      "title": "Automatic Field-of-View Adjustment for a View-Expansive Microscope via LSTM-Based Gaze and Pipette Motion Interpretation",
-      "url": "https://arxiv.org/abs/2608.10401",
-      "summary": "Intracytoplasmic sperm injection (ICSI) operators frequently adjust the field-of-view (FOV) during procedures, which interrupts workflow and increases procedure time. Conventional microscopes require manual objective lens switching and illumination adjustments to achieve different FOV sizes. We propose an AI-based automatic FOV adjustment method integrated with a view-expansive microscope. This microscope enables the simultaneous acquisition of a large FOV and high-resolution images using a single objective lens through multiview imaging with galvanometer mirrors and high-speed vision, thereby eliminating the need for physical lens exchanges. Our method utilizes a long short-term memory (LSTM) model to predict the appropriate FOV size based on real-time analysis of the pipette's position and velocity, combined with the operator's gaze position. The AI model is trained using ICSI procedure data from an expert with over five years of micromanipulation experience. Experimental evaluation with novice operators reveals that the proposed automatic FOV adjustment system significantly improves the ICSI procedure speed, reducing the average task completion time from 60.5 to 48.0 s (p &lt; 0.001). The experiments also demonstrate that this improvement enables novice operators to achieve ICSI working speeds equivalent to those of expert operators.",
-      "authors": "Kenta Yokoe, Takuya Hara, Tadayoshi Aoyama",
-      "category": "cs.HC",
-      "published_at": "2026-08-11T02:49:27+00:00",
-      "updated_at": "2026-08-11T02:49:27Z",
-      "title_zh": "通过基于 LSTM 的注视和移液器运动解释自动调整视野扩展显微镜的视场"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.10393v1",
-      "title": "Hidden in Plain Sight: Diffusion-Based Unrestricted Robotic Attacks on Vision-Language-Action Models",
-      "url": "https://arxiv.org/abs/2608.10393",
-      "summary": "Vision-Language-Action (VLA) models have shown strong capabilities in controlling robots across diverse manipulation tasks. However, their adversarial robustness remains largely underexplored, and exploiting this weakness can lead to physical-world harm. Existing attacks on VLA models often rely on pixel-space perturbations or white-box access, resulting in noticeable artifacts and limited deployability in real-world robotic systems. In this work, we propose DURA, a diffusion-based unrestricted robotic attack that generates visually natural adversarial patches for VLA models. DURA supports both white-box and black-box attack settings, where the black-box setting requires only the predicted actions of the victim model. By optimizing along the latent trajectory of a pretrained diffusion model, DURA generates visually natural patches while steering the robot toward attacker-specified target actions. Extensive experiments in both simulation and the real physical world show that DURA consistently outperforms existing methods. Our findings expose a safety risk for physically deployed VLA models and call for stronger defenses.",
-      "authors": "Jiahui Han, Yuhui Yao, Xin Wang et al.",
-      "category": "cs.AI",
-      "published_at": "2026-08-11T02:41:08+00:00",
-      "updated_at": "2026-08-11T02:41:08Z",
-      "title_zh": "隐藏在视线中：对视觉-语言-动作模型的基于扩散的无限制机器人攻击"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.10387v1",
-      "title": "Hip Energized Monopedal Hopping",
-      "url": "https://arxiv.org/abs/2608.10387",
-      "summary": "We present a novel stepping strategy for pitch unlocked planar monopeds where the reaction torques from stabilizing pitch with a conventional PD + feedfoward controller are recruited to counteract energetic losses from damping. By moving the location of the mass center, our controller increases the pitch stabilization torque, thereby adding energy to the gait. A new stepping policy adjusts the distribution of energy between the radial and angular degrees of freedom to counteract dissipative losses and achieve a user specified balance between steady state fore-aft speed and apex height. Hybrid averaging analysis yields closed form expressions for the fixed points and eigenvalues of the resulting gait, lending insight into the interplay between the physical and control parameters' influence on performance. Simulation studies on a generic 5 link biped and a careful model of the Penn Jerboa reveal a useful correspondence to these analytical predictions. Physical experiments on the Penn Jerboa exhibit stable locomotion with speeds ranging from 1.02 m/s to 1.77 m/s (5.10 leg lengths/s to 8.85 leg lengths/s) in a manner effectively approximated by the mathematical analysis.",
-      "authors": "Shane Rozen-Levy, Griffon McMahon, Daniel Koditschek",
-      "category": "cs.RO",
-      "published_at": "2026-08-11T02:28:04+00:00",
-      "updated_at": "2026-08-11T02:28:04Z",
-      "title_zh": "髋部活力单足跳跃"
     }
   ]
 }
