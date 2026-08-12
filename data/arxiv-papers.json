@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-12T20:34:13.384275+00:00",
-  "total_items": 18,
+  "generated_at": "2026-08-12T21:36:31.488007+00:00",
+  "total_items": 15,
   "items": [
     {
       "id": "http://arxiv.org/abs/2608.11204v1",
@@ -166,39 +166,6 @@
       "published_at": "2026-08-11T10:16:30+00:00",
       "updated_at": "2026-08-11T10:16:30Z",
       "title_zh": "通过语义 3D 高斯泼溅实现开放词汇移动操作的具体多模态基础"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.10718v1",
-      "title": "TCAM for Autonomous Deformable Manipulation: The RMC2 Champion System for WBCD 2026 Track 4",
-      "url": "https://arxiv.org/abs/2608.10718",
-      "summary": "This technical report describes the RMC2 Team's champion solution for the WBCD 2026 Track 4: Deformable Manipulation Challenge. The task requires a robot to pick a single T-shirt from a stack, load it onto a printing pallet, align the collar with a target area, and smooth the printing region, a sequence that involves single-layer separation, deformable transport, precise placement, and contact-rich surface adjustment. The competition strongly incentivizes fully autonomous execution, motivating the development of an autonomous solution. We built a fully autonomous system around the TCAM (TermiBrain Causal Action Model) framework, with the design principle that hardware, perception, data, and learning should jointly reduce the physical interaction complexity the policy must handle. A custom 3D-printed gripper designed for single-layer fabric separation improves picking reliability on a dual-arm ARX X5 platform. A wrist-centric four-camera setup pairs upper fisheye cameras for task-level context with lower RGB cameras for close-range gripper-cloth contact observation. We combine portable UMI-style demonstrations with real-robot demonstrations collected on the deployable platform to provide both broad manipulation priors and deployment-specific dynamics. TCAM ties these components into a closed loop: each trajectory is analyzed to identify the physical factors contributing to its outcome, driving targeted data recollection and policy fine-tuning. The policy outputs 30-step end-effector delta-pose action chunks from a multi-view VLA backbone. In the final competition, our system loaded 25 T-shirts at an average of approximately 23 seconds per attempt, with 22 achieving the required surface smoothness, securing first place in Track 4.",
-      "authors": "Guangrui Shen, Zhili He, Shigang Wang et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-11T09:35:39+00:00",
-      "updated_at": "2026-08-11T09:35:39Z",
-      "title_zh": "用于自主变形操纵的 TCAM：WBCD 2026 Track 4 的 RMC2 冠军系统"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.10656v1",
-      "title": "Robust Sliding Mode and Admittance Control of Underactuated Aerial Manipulators for Contact-Based Inspection",
-      "url": "https://arxiv.org/abs/2608.10656",
-      "summary": "Contact-based industrial inspection requires aerial platforms to maintain stable interaction while rejecting disturbances. Underactuated aerial manipulators present control challenges due to the dynamic coupling between vehicle attitude and force generation. This paper proposes a robust control framework for an underactuated hexarotor equipped with a 1-DoF manipulator to perform sustained contact inspection. The architecture integrates integral-augmented Sliding Mode Control (SMC) for trajectory tracking with an admittance control law for force regulation. The contact force is mapped to a feedforward attitude term, while the 1-DoF arm actively compensates for the tilt to maintain surface alignment. Software-in-the-loop simulations demonstrate that the SMC-based approach achieves superior tracking and coupling rejection compared to traditional PID. Furthermore, the interaction strategy achieved precise force regulation with an RMSE of 0.12N and was able to stably exert up to 20N force, confirming the system's efficacy for stable, reliable contact-based inspection.",
-      "authors": "Tareq Aziz Alqutami, Yvan Petillot, Matthew W. Dunnigan et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-11T08:39:05+00:00",
-      "updated_at": "2026-08-11T08:39:05Z",
-      "title_zh": "用于接触式检测的欠驱动空中机械手的鲁棒滑模和导纳控制"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.10651v1",
-      "title": "OAA: Three Phases of Vocal Guidance in Human-Drone Teleoperation",
-      "url": "https://arxiv.org/abs/2608.10651",
-      "summary": "Voice-guided teleoperation requires systems that adapt to the evolving dynamics of human guidance. Yet most voice-controlled robot systems treat spoken commands as a stationary stream, ignoring how the guide's communicative behavior changes as the task progresses. Using motion capture and speech data from two experimental configurations, humanhuman guidance (finger pointing, N =10 dyads) and humandrone teleoperation (gamepad control, N =29 dyads), we show that spontaneous vocal guidance consistently organizes into three kinematically and linguistically distinct phases: Orientation, Approach, and Adjustment. These phases are identified automatically via change point detection on 3D trajectory signals, and validated statistically (Kruskal-Wallis, p&lt;.001). Three lexical families replicate across configurations: rotation vocabulary marks Orientation, translation vocabulary is scarce there, and attenuators accumulate toward Adjustment. Together with inter-utterance silence, these cues mark the Orientation boundary that speech rate alone leaves unmarked. The same three-phase structure emerges in both configurations despite radically different motor interfaces, suggesting it is an intrinsic property of human spatial guidance rather than an artifact of the experimental setup. We discuss implications for OAA-aware adaptive control in voice-guided teleoperation.",
-      "authors": "Unknown",
-      "category": "cs.RO",
-      "published_at": "2026-08-11T08:35:08+00:00",
-      "updated_at": "2026-08-11T08:35:08Z",
-      "title_zh": "OAA：人机远程操作中语音引导的三个阶段"
     }
   ]
 }
