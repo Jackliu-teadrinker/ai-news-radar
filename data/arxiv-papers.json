@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-12T15:36:40.779885+00:00",
-  "total_items": 26,
+  "generated_at": "2026-08-12T16:25:53.560026+00:00",
+  "total_items": 25,
   "items": [
     {
       "id": "http://arxiv.org/abs/2608.11204v1",
@@ -276,17 +276,6 @@
       "published_at": "2026-08-11T04:57:17+00:00",
       "updated_at": "2026-08-11T04:57:17Z",
       "title_zh": "迷失在重建中：在视觉-语言-动作模型中将动作表示与语言对齐"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.10449v1",
-      "title": "PBD-AG: Persistent Baseline-Delta Active Graphs with Uncertainty-Aware Inspection for Long-Horizon Service Robots",
-      "url": "https://arxiv.org/abs/2608.10449",
-      "summary": "Long-horizon service robots require persistent world models that can be built autonomously in unseen environments and revised as task-relevant objects change. Existing methods rely on online mapping, which accumulates localization and observation errors, static scene representations that cannot capture persistent object changes, or holistic vision-language predictions that lack verifiable 3D geometric evidence. We present PBD-AG, a persistent baseline-delta active graph framework that decouples robot-verified stable fixtures from revisable dynamic object events. Under our framework, the robot autonomously bootstraps the structural baseline from onboard exploration and inspects discovered fixtures to ground hierarchical object beliefs. PBD-AG maintains reliability-weighted object states over geometry, semantics, identity, existence, and support relations, utilizing a geometric visibility gate to mitigate false deletions under occlusion. Inspection viewpoints are selected by a graph-conditioned policy that balances target coverage, travel cost, collision risk, and redundant observation. Simulation experiments in multiple environments and under controlled dynamic evaluation show higher aggregate coarse-fixture F1 than capability-matched controls, as well as stronger identity continuity and event recall. A qualitative physical-robot demonstration further illustrates integration with onboard sensing, providing a traceable world model for long-horizon robotic perception.The project page of PBD-AG is available at https://shuobao214.github.io/PBD-AG/",
-      "authors": "Shuo Bao, Wei Dong, Shuyue Zhang et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-11T04:03:54+00:00",
-      "updated_at": "2026-08-11T04:03:54Z",
-      "title_zh": "PBD-AG：持久基线 Delta 活动图，具有长视野服务机器人的不确定性感知检查"
     }
   ]
 }
