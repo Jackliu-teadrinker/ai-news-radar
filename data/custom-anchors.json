@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-11T23:30:23.785717+00:00",
+  "generated_at": "2026-08-12T00:08:34.529485+00:00",
   "window_start": "2026-08-11T19:00:00+08:00",
-  "window_end": "2026-08-12T07:30:22.472024+08:00",
-  "total_items": 33,
+  "window_end": "2026-08-12T08:08:32.104507+08:00",
+  "total_items": 40,
   "items": [
     {
       "id": "038439b912ed770cea24d6d05bab48794553fdf6",
@@ -21,9 +21,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.53,
+      "timeliness": 25.9,
       "writing_value": 0,
-      "total_score": 101.53
+      "total_score": 100.9
     },
     {
       "id": "8eb3ca4244f9ad6eca53502b970b8c633038af54",
@@ -42,9 +42,51 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 22.0,
+      "timeliness": 21.37,
       "writing_value": 5,
-      "total_score": 107.0
+      "total_score": 106.37
+    },
+    {
+      "id": "63bb7d13880a42529108fe6203548a26696a9604",
+      "title": "Humanoid Robots Need 10x the Memory of a Self-Driving Car. Micron Is Positioned to Win - Yahoo Finance",
+      "title_zh": "人形机器人需要的内存是自动驾驶汽车的 10 倍。美光科技有望获胜 - 雅虎财经",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOaThQTm5RSFAwRnRKNWdaQkMzc2RqaTRTcGg5bzBFSUlwQ2p2ZXhsM2JsbXQ0RkFWcHBHT29nd1VZSnc0REY2aHR2dk1fUmZZQnI0Zzcwa3NIUEl0SDNqNDFQWi03Q0FtRGNncEowSE5ndkZBZVFDWGYwNVJRRFU1a0czS20tWGE0SlB1MklCcEZ2cE9UZUZjbUZ5MA?oc=5",
+      "published_at": "2026-08-11T16:33:46+00:00",
+      "category": "GN: humanoid robot",
+      "gn_label": "humanoid",
+      "site_name": "GN: humanoid robot",
+      "source": "GN: humanoid robot",
+      "site_id": "GN: humanoid robot",
+      "description": "Humanoid Robots Need 10x the Memory of a Self-Driving Car. Micron Is Positioned to Win  Yahoo Finance",
+      "ai_score": 80.0,
+      "ai_label": "humanoid",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 22.43,
+      "writing_value": 5,
+      "total_score": 122.43
+    },
+    {
+      "id": "e341a28b034015fe060ecf9533724b437999daa4",
+      "title": "Uber surprised robotics company Serve by selling its entire stake - TechCrunch",
+      "title_zh": "Uber 出售其全部股份，令机器人公司 Serve 感到惊讶 - TechCrunch",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNaUZIQ09idEhaS2MtekVFbnVPMUxJbUhvM0dUT3lnWm9VYXpxSEpMQUk3MERxTTZha3lsbHhHemw4WjE2TV9DVWZhOEdtYzE5b29tQUpBdktSRXhXSkcxZ2pDRWhIMVNlU0MwQlNrdUM1QWtGWjRydUh1OTAzMmxIb2M0RUNZLVVMZ2ppYW1ZTlN5RnNTSTdTZnpnWjhOV3Mta0E?oc=5",
+      "published_at": "2026-08-11T20:02:02+00:00",
+      "category": "GN: autonomous robot",
+      "gn_label": "robotics",
+      "site_name": "GN: autonomous robot",
+      "source": "GN: autonomous robot",
+      "site_id": "GN: autonomous robot",
+      "description": "Uber surprised robotics company Serve by selling its entire stake  TechCrunch",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 25.9,
+      "writing_value": 0,
+      "total_score": 100.9
     },
     {
       "id": "7fc1edb302aaa9d2393e912cbfbfd9ba4ccc57d3",
@@ -63,16 +105,16 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.45,
+      "timeliness": 27.82,
       "writing_value": 0,
-      "total_score": 103.45
+      "total_score": 102.82
     },
     {
       "id": "b5d09c19dbb78bd580c69e2415bb52afe502b087",
       "title": "Dreame L60 Ultra robot vacuum now $130 off at Amazon - Mashable",
       "title_zh": "亚马逊 Dreame L60 Ultra 扫地机器人现立减 130 美元 - Mashable",
       "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9pSnJkeGZaNVFaMnJpeFI1X21EVzVNSVNFdmljVWNkSUhkQWwtUGs0X1BjUXB3TEdGcHNSX3NJY09jcV9vZTVTbVRvVHQ1OUxkVTNxdS05eUVIS1VReW53QXE5bDIwU0tZdkNwX3J4dlVmVklR?oc=5",
-      "published_at": "2026-08-11T22:56:03+00:00",
+      "published_at": "2026-08-11T23:55:24+00:00",
       "category": "GN: robot vacuum",
       "gn_label": "robotics",
       "site_name": "GN: robot vacuum",
@@ -84,9 +126,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.43,
+      "timeliness": 29.79,
       "writing_value": 0,
-      "total_score": 104.43
+      "total_score": 104.79
+    },
+    {
+      "id": "0db5c18e0c9853a687d41b341e81529515a714ce",
+      "title": "Best robot vacuum deal: Save $190.99 on Ecovacs Deebot T90 - Mashable",
+      "title_zh": "最佳扫地机器人优惠：购买 Ecovacs Deebot T90 可节省 190.99 美元 - Mashable",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFA2LUFLLTJfWHJwUVBxUjk0VXRNVTdBRU9tV2NTdG9vQ0dOVjgyeTVXS29NNzhZaEdnb0o1OGlKMXdFUXM4RzgyQ0x2cWtJaFlKNmtSWE9jZjBENDJLM0x4MzExZDJlSkFnT181RnZjTi02TG5uQ2FsOTZ3?oc=5",
+      "published_at": "2026-08-11T21:41:43+00:00",
+      "category": "GN: robot vacuum",
+      "gn_label": "robotics",
+      "site_name": "GN: robot vacuum",
+      "source": "GN: robot vacuum",
+      "site_id": "GN: robot vacuum",
+      "description": "Best robot vacuum deal: Save $190.99 on Ecovacs Deebot T90  Mashable",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 27.56,
+      "writing_value": 0,
+      "total_score": 102.56
     },
     {
       "id": "f90278adb1a079e06f32eef8490c6422de56369d",
@@ -105,9 +168,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 19.5,
+      "timeliness": 18.87,
       "writing_value": 5,
-      "total_score": 104.5
+      "total_score": 103.87
     },
     {
       "id": "bd0996ebda9e4faaede68ddf1e619710db8d203c",
@@ -126,9 +189,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 18.71,
+      "timeliness": 18.08,
       "writing_value": 0,
-      "total_score": 93.71
+      "total_score": 93.08
     },
     {
       "id": "0bcd05e3e7fed1489d5b6bc7cbab0f1d5cce44e6",
@@ -147,9 +210,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 19.5,
+      "timeliness": 18.87,
       "writing_value": 5,
-      "total_score": 104.5
+      "total_score": 103.87
+    },
+    {
+      "id": "9599453f7976cc8a80e888ea5a5173c883d53474",
+      "title": "Robbyant R2 Revolutionizes Robotics with Elegant, Adaptable Design for Tight Spaces - freeyork",
+      "title_zh": "Robbyant R2 凭借优雅、适应性强的狭小空间设计彻底改变了机器人技术 - freeyork",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQNmxhVzhEQ2I5cHE3SVBmQUZYcTkzaDUyQXByNklabk5zTzF4ai11akJhQldZaWF2UjA1amk0dVFMaFRvNEpGc2s5YnNNS3dhWlNnamY2Y3JpVFlhWVR6aGZkQ3FhdEYxdWZ1MnUwUU1Gakg0R2tIQ1RPOHdUZmo2dU9B?oc=5",
+      "published_at": "2026-08-11T12:24:31+00:00",
+      "category": "GN: industrial robot",
+      "gn_label": "robotics",
+      "site_name": "GN: industrial robot",
+      "source": "GN: industrial robot",
+      "site_id": "GN: industrial robot",
+      "description": "Robbyant R2 Revolutionizes Robotics with Elegant, Adaptable Design for Tight Spaces  freeyork",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 18.27,
+      "writing_value": 0,
+      "total_score": 93.27
     },
     {
       "id": "fbc67dcfc8a0d509ea8df144cab8bbf5d5e3338b",
@@ -168,9 +252,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.88,
+      "timeliness": 24.25,
       "writing_value": 0,
-      "total_score": 99.88
+      "total_score": 99.25
+    },
+    {
+      "id": "fe76ca4e24fd7ab59f47e9e83a2f09633ee64da4",
+      "title": "Korean AI Integrator Solves Factory Robot Orchestration for HD Hyundai Electric - Tech Times",
+      "title_zh": "韩国人工智能集成商为 HD 现代电气解决工厂机器人编排问题 - Tech Times",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQZjVzZ21uZmxGMTl2aVRkQjVPVV9MSkZCMjRRN2h5TEtlcnB3V2h1Tk5XTXNvMjZVckYzZjdiVDZrMFdRRlVKMmJhYU8zNnYxWUpSUWJtTFdVTzZ0SVlzX0ZNMGpQT241OEJXV0J3VGtoVndTTXJpSDAtb0dnMU9zeDdvbWNzWXBqNEloajNvR2x3XzBpLWF3djdOZlV5cGowc3JTWFdwMmxreEIxdTFSU1BGYXkzN013SDZzMDd5TE9RVzAzc2FycEN3?oc=5",
+      "published_at": "2026-08-11T14:13:46+00:00",
+      "category": "GN: industrial robot",
+      "gn_label": "robotics",
+      "site_name": "GN: industrial robot",
+      "source": "GN: industrial robot",
+      "site_id": "GN: industrial robot",
+      "description": "Korean AI Integrator Solves Factory Robot Orchestration for HD Hyundai Electric  Tech Times",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 20.1,
+      "writing_value": 0,
+      "total_score": 95.1
     },
     {
       "id": "628fa9dd7e32c1ed1a9f8c93af9743845f613538",
@@ -189,9 +294,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 18.43,
+      "timeliness": 17.8,
       "writing_value": 5,
-      "total_score": 103.43
+      "total_score": 102.8
     },
     {
       "id": "1f7fd82c71c0a4e0287b2c1949fac55981e23158",
@@ -210,9 +315,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 22.69,
+      "timeliness": 22.06,
       "writing_value": 0,
-      "total_score": 97.69
+      "total_score": 97.06
     },
     {
       "id": "9fdea527f84700465ba09b514a4b487462bfb2ed",
@@ -231,9 +336,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.51,
+      "timeliness": 27.88,
       "writing_value": 0,
-      "total_score": 103.51
+      "total_score": 102.88
     },
     {
       "id": "edc7ba171b69ca5c3c10a3ebdfdb2754c06b670d",
@@ -252,9 +357,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 18.0,
+      "timeliness": 17.37,
       "writing_value": 0,
-      "total_score": 93.0
+      "total_score": 92.37
     },
     {
       "id": "e95e9ce255efa9544c52377a05f33d7d37951b07",
@@ -273,30 +378,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 20.56,
+      "timeliness": 19.93,
       "writing_value": 0,
-      "total_score": 95.56
-    },
-    {
-      "id": "1671a8a3e3cd98bb407499bc5892496d7fdbd743",
-      "title": "中国人形机器人市占洗牌 智元年增5倍超越宇树 - DIGITIMES",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNUEFwaVZYbl9PTWpfamNmaXpZSmZYcXRPQnJTWUZXZTd4X2NvLW5YaXJGZ3JGTURhXzhjaVdlQUVmT1Q0RWhSOUlXN0ZxR3BrQ3ZrUzVKUnVsR2x0M1NkQXpidmIwSy1JNU1TXzNmWHlqYlRrRjlBUzFLc1VGb21janRReTFyOFJINHpUcVdkWlZGSFBxWF9laHVodWU?oc=5",
-      "published_at": "2026-08-11T18:24:00+00:00",
-      "category": "GN: 智元机器人",
-      "gn_label": "robotics",
-      "site_name": "GN: 智元机器人",
-      "source": "GN: 智元机器人",
-      "site_id": "GN: 智元机器人",
-      "description": "中国人形机器人市占洗牌 智元年增5倍超越宇树  DIGITIMES",
-      "ai_score": 80.0,
-      "ai_label": "robotics",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 24.9,
-      "writing_value": 0,
-      "total_score": 114.9
+      "total_score": 94.93
     },
     {
       "id": "9a526d73b7771157345778dfa2f43f1c3937687d",
@@ -315,9 +399,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 17.75,
+      "timeliness": 17.12,
       "writing_value": 0,
-      "total_score": 92.75
+      "total_score": 92.12
     },
     {
       "id": "412ff2ae9ed66795f3a886efe21d67c9805679bd",
@@ -336,9 +420,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 19.12,
+      "timeliness": 18.49,
       "writing_value": 0,
-      "total_score": 94.12
+      "total_score": 93.49
     },
     {
       "id": "47dcd8d222c56c62de92a65594d79cf64dc85a69",
@@ -357,9 +441,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 21.15,
+      "timeliness": 20.52,
       "writing_value": 0,
-      "total_score": 96.15
+      "total_score": 95.52
     },
     {
       "id": "c2621764b1419e7bd2e1adb169db90262bef2c2a",
@@ -378,9 +462,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 19.41,
+      "timeliness": 18.78,
       "writing_value": 0,
-      "total_score": 94.41
+      "total_score": 93.78
     },
     {
       "id": "579cf17cbc10786441ad77bf6fa485c141a7cfb5",
@@ -399,51 +483,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 17.65,
+      "timeliness": 17.02,
       "writing_value": 0,
-      "total_score": 92.65
-    },
-    {
-      "id": "2da815f8a83e138779dd64509e2a9b752ec9f2c0",
-      "title": "宇树科技中签号出炉 - 新京报",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE53eWtCUXhQWWFuWExiekNVQWRUVmRaME9kN3pUWGNrbXAxeUtVbzZFUEZabzZ1bG9XazRPZDk0QkFjSXY1TnZlSGxfb05oQ2NMakJBdDVwdTJaQm1HNnVsRHB5NnA?oc=5",
-      "published_at": "2026-08-11T11:26:00+00:00",
-      "category": "GN: 宇树科技",
-      "gn_label": "robotics",
-      "site_name": "GN: 宇树科技",
-      "source": "GN: 宇树科技",
-      "site_id": "GN: 宇树科技",
-      "description": "宇树科技中签号出炉  新京报",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 17.93,
-      "writing_value": 0,
-      "total_score": 92.93
-    },
-    {
-      "id": "7d109e7acf6b34a3e7b88b2034d83df69655d485",
-      "title": "19414个，宇树科技公布中签结果 - 盖世汽车社区",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9ISmxnVXBGUXZwUG0wNzJPek1HWHVPZ29JelpjaDc2N0xpbUQ2R1BBM1dtTDg1Q201OU5MeGdPVVRaeFFiNnBQcktzMXJDaTZv?oc=5",
-      "published_at": "2026-08-11T15:02:08+00:00",
-      "category": "GN: 宇树科技",
-      "gn_label": "robotics",
-      "site_name": "GN: 宇树科技",
-      "source": "GN: 宇树科技",
-      "site_id": "GN: 宇树科技",
-      "description": "19414个，宇树科技公布中签结果  盖世汽车社区",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 21.53,
-      "writing_value": 0,
-      "total_score": 96.53
+      "total_score": 92.02
     },
     {
       "id": "16f7ac1fcba261066d2bc3fa3f81d8fe3490c2cd",
@@ -462,9 +504,51 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 21.05,
+      "timeliness": 20.42,
       "writing_value": 0,
-      "total_score": 96.05
+      "total_score": 95.42
+    },
+    {
+      "id": "2da815f8a83e138779dd64509e2a9b752ec9f2c0",
+      "title": "宇树科技中签号出炉 - 新京报",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE53eWtCUXhQWWFuWExiekNVQWRUVmRaME9kN3pUWGNrbXAxeUtVbzZFUEZabzZ1bG9XazRPZDk0QkFjSXY1TnZlSGxfb05oQ2NMakJBdDVwdTJaQm1HNnVsRHB5NnA?oc=5",
+      "published_at": "2026-08-11T11:26:00+00:00",
+      "category": "GN: 宇树科技",
+      "gn_label": "robotics",
+      "site_name": "GN: 宇树科技",
+      "source": "GN: 宇树科技",
+      "site_id": "GN: 宇树科技",
+      "description": "宇树科技中签号出炉  新京报",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 17.3,
+      "writing_value": 0,
+      "total_score": 92.3
+    },
+    {
+      "id": "7d109e7acf6b34a3e7b88b2034d83df69655d485",
+      "title": "19414个，宇树科技公布中签结果 - 盖世汽车社区",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9ISmxnVXBGUXZwUG0wNzJPek1HWHVPZ29JelpjaDc2N0xpbUQ2R1BBM1dtTDg1Q201OU5MeGdPVVRaeFFiNnBQcktzMXJDaTZv?oc=5",
+      "published_at": "2026-08-11T15:02:08+00:00",
+      "category": "GN: 宇树科技",
+      "gn_label": "robotics",
+      "site_name": "GN: 宇树科技",
+      "source": "GN: 宇树科技",
+      "site_id": "GN: 宇树科技",
+      "description": "19414个，宇树科技公布中签结果  盖世汽车社区",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 20.9,
+      "writing_value": 0,
+      "total_score": 95.9
     },
     {
       "id": "1566de102cd9ed16fb83daed7d519c9364665481",
@@ -483,9 +567,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 20.46,
+      "timeliness": 19.83,
       "writing_value": 0,
-      "total_score": 95.46
+      "total_score": 94.83
     },
     {
       "id": "4ac5987b4d25bc4f77ccd9ce1962f69cf9ca62b5",
@@ -504,9 +588,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 18.22,
+      "timeliness": 17.59,
       "writing_value": 0,
-      "total_score": 93.22
+      "total_score": 92.59
     },
     {
       "id": "ba362e4e4d97a8afda0023efa5b77c8dcf6d9336",
@@ -525,9 +609,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 17.77,
+      "timeliness": 17.14,
       "writing_value": 0,
-      "total_score": 92.77
+      "total_score": 92.14
     },
     {
       "id": "f2438fa3f945484eee92906f88715168ccbf4211",
@@ -546,9 +630,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 18.73,
+      "timeliness": 18.1,
       "writing_value": 0,
-      "total_score": 93.73
+      "total_score": 93.1
+    },
+    {
+      "id": "afcb0d1d12fd4cecacf144eed44b2a755bba7e62",
+      "title": "一共有19414个幸运儿！宇树科技中签号公布，一万名散户中不到两人中签，中一签收益有望突破20万元，宇树科技将诞生多位亿万富豪-手机金融界 - 金融界",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5aakxPeVZrZ3d6QnVVeXNyUmRhYWV4QkowdFBTaGR2dWFhZ1M0T2t0Q0VyRVgxeXhqT2J0NW5yMWpzRWJZSVNmamxSQlVINnlLcXZMdGNLbkNWRERVVm9IeDJZLTdmZWs2QUxHa0VNZHhsUQ?oc=5",
+      "published_at": "2026-08-11T11:29:27+00:00",
+      "category": "GN: 宇树科技",
+      "gn_label": "robotics",
+      "site_name": "GN: 宇树科技",
+      "source": "GN: 宇树科技",
+      "site_id": "GN: 宇树科技",
+      "description": "一共有19414个幸运儿！宇树科技中签号公布，一万名散户中不到两人中签，中一签收益有望突破20万元，宇树科技将诞生多位亿万富豪-手机金融界  金融界",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 17.36,
+      "writing_value": 0,
+      "total_score": 92.36
     },
     {
       "id": "5a68dc455337b2e9cf2beae4bfe0afa7766605ac",
@@ -567,9 +672,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 19.21,
+      "timeliness": 18.58,
       "writing_value": 0,
-      "total_score": 94.21
+      "total_score": 93.58
     },
     {
       "id": "2ecb70f0eb987b4c47f80a3640137c58fd9a9e38",
@@ -588,30 +693,51 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 19.21,
+      "timeliness": 18.58,
       "writing_value": 0,
-      "total_score": 94.21
+      "total_score": 93.58
     },
     {
-      "id": "747c990dd9a2e7fa415a6bf183eefe8da47c69d9",
-      "title": "茶颜悦色机械臂流水线运转，机械臂上阵制作奶茶 - 网易新闻客户端",
+      "id": "eb65b8735acd3f2f44e19049965c01b0f4354076",
+      "title": "中国人形机器人市占洗牌 智元年增5倍超越宇树 - DIGITIMES",
       "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1aSURVMmRvejQyMlJXLWwzY1J4T0M3eXhOeGtIcEpTN1Rhc2JXNlYxbUxvQTNPQlZnZndRbnV4LXRnTy16SmVka3VWYjdOR1lTZHJTdVUza3R2clYxNGV1MzJBSWdid1J4V2FmdGdGM090VlJXYWpOcA?oc=5",
-      "published_at": "2026-08-11T13:41:38+00:00",
-      "category": "GN: 机械臂",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPaEo0ekxIZUVlTkhJc0VsQUNvYjg2SFdnZ3d4eGxHOEp4cEdEbzUyNkIwMzlJWF9zWkVTTXdvcTV5cXZwczVVQWhxMnd2ZzhnNk96d0xpZTZPNzNwMDYxNjdYQnpzS1IzOEJBd0Y2MG5UY0NlMWtwOTRheGpVczJlY3hveDRWVmVSWEZvX29KN3pkQndVNnRpZnlLbUQ?oc=5",
+      "published_at": "2026-08-11T18:24:00+00:00",
+      "category": "GN: 智元机器人",
       "gn_label": "robotics",
-      "site_name": "GN: 机械臂",
-      "source": "GN: 机械臂",
-      "site_id": "GN: 机械臂",
-      "description": "茶颜悦色机械臂流水线运转，机械臂上阵制作奶茶  网易新闻客户端",
+      "site_name": "GN: 智元机器人",
+      "source": "GN: 智元机器人",
+      "site_id": "GN: 智元机器人",
+      "description": "中国人形机器人市占洗牌 智元年增5倍超越宇树  DIGITIMES",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 24.27,
+      "writing_value": 0,
+      "total_score": 114.27
+    },
+    {
+      "id": "6045ef3cb78fe138107035099976d912e4351901",
+      "title": "宇树成了400亿灵心巧手的软肋吗 供应链自主化挑战 - 中华网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1ZTzk0RGZ0enNmcWNKXzJOcl9hYXZSWXZvQ2NzcVVzN1VmOXJiSUR3VEU5QVVwUXZDRTg1OFdCUnpQM28zZmVXU2ZFcUhYTlgwSml4cEZwQk5wYzBsZTZDZlptU19hckk2VDZjT3ZzVms?oc=5",
+      "published_at": "2026-08-11T23:43:29+00:00",
+      "category": "GN: 灵巧手",
+      "gn_label": "robotics",
+      "site_name": "GN: 灵巧手",
+      "source": "GN: 灵巧手",
+      "site_id": "GN: 灵巧手",
+      "description": "宇树成了400亿灵心巧手的软肋吗 供应链自主化挑战  中华网",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 20.19,
+      "timeliness": 29.59,
       "writing_value": 0,
-      "total_score": 95.19
+      "total_score": 104.59
     },
     {
       "id": "aeda58f1bc710e5df4c200fe707f64bfb2bfb37d",
@@ -630,9 +756,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 20.61,
+      "timeliness": 19.98,
       "writing_value": 0,
-      "total_score": 95.61
+      "total_score": 94.98
+    },
+    {
+      "id": "747c990dd9a2e7fa415a6bf183eefe8da47c69d9",
+      "title": "茶颜悦色机械臂流水线运转，机械臂上阵制作奶茶 - 网易新闻客户端",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1aSURVMmRvejQyMlJXLWwzY1J4T0M3eXhOeGtIcEpTN1Rhc2JXNlYxbUxvQTNPQlZnZndRbnV4LXRnTy16SmVka3VWYjdOR1lTZHJTdVUza3R2clYxNGV1MzJBSWdid1J4V2FmdGdGM090VlJXYWpOcA?oc=5",
+      "published_at": "2026-08-11T13:41:38+00:00",
+      "category": "GN: 机械臂",
+      "gn_label": "robotics",
+      "site_name": "GN: 机械臂",
+      "source": "GN: 机械臂",
+      "site_id": "GN: 机械臂",
+      "description": "茶颜悦色机械臂流水线运转，机械臂上阵制作奶茶  网易新闻客户端",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 19.56,
+      "writing_value": 0,
+      "total_score": 94.56
     },
     {
       "id": "8c9386761cb64ee90196a1ba513dd4ac56790af0",
@@ -651,9 +798,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 21.43,
+      "timeliness": 20.81,
       "writing_value": 0,
-      "total_score": 96.43
+      "total_score": 95.81
     },
     {
       "id": "27592824ed1e46be5f75fc7ea35c1ff6118a2667",
@@ -672,9 +819,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 22.04,
+      "timeliness": 21.41,
       "writing_value": 0,
-      "total_score": 112.04
+      "total_score": 111.41
     },
     {
       "id": "151697bba4f82f1446a6caaf778dc2eba396f574",
@@ -693,9 +840,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 20.7,
+      "timeliness": 20.07,
       "writing_value": 0,
-      "total_score": 110.7
+      "total_score": 110.07
     }
   ],
   "fallback_used": false
