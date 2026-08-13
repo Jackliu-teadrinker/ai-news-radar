@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-13T16:24:06.818132+00:00",
+  "generated_at": "2026-08-13T17:25:56.607792+00:00",
   "window_start": "2026-08-13T19:00:00+08:00",
-  "window_end": "2026-08-14T00:24:05.712898+08:00",
-  "total_items": 11,
+  "window_end": "2026-08-14T01:25:56.223950+08:00",
+  "total_items": 12,
   "items": [
     {
       "id": "d14db1286dc1733b9cb46304f13dff11c3fb74b7",
@@ -21,9 +21,51 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 28.6,
+      "timeliness": 27.57,
       "writing_value": 5,
-      "total_score": 113.6
+      "total_score": 112.57
+    },
+    {
+      "id": "bb4abd4a869e32c61afda1d892ade146129db101",
+      "title": "Record, train, and deploy from one place with Strands Agents, LeRobot, and Hugging Face Storage Buckets",
+      "title_zh": "使用 Strands Agents、LeRobot 和 Hugging Face Storage Buckets 从一处进行记录、训练和部署",
+      "url": "https://huggingface.co/blog/amazon/strands-lerobot-streaming-data-loop",
+      "published_at": "2026-08-13T17:16:04+00:00",
+      "category": "HuggingFace Blog",
+      "gn_label": "robotics",
+      "site_name": "HuggingFace Blog",
+      "source": "HuggingFace Blog",
+      "site_id": "HuggingFace Blog",
+      "description": "",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.84,
+      "writing_value": 0,
+      "total_score": 104.84
+    },
+    {
+      "id": "0db5c18e0c9853a687d41b341e81529515a714ce",
+      "title": "Best robot vacuum deal: Save $190.99 on Ecovacs Deebot T90 - Mashable",
+      "title_zh": "最佳扫地机器人优惠：购买 Ecovacs Deebot T90 可节省 190.99 美元 - Mashable",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFA2LUFLLTJfWHJwUVBxUjk0VXRNVTdBRU9tV2NTdG9vQ0dOVjgyeTVXS29NNzhZaEdnb0o1OGlKMXdFUXM4RzgyQ0x2cWtJaFlKNmtSWE9jZjBENDJLM0x4MzExZDJlSkFnT181RnZjTi02TG5uQ2FsOTZ3?oc=5",
+      "published_at": "2026-08-13T15:32:17+00:00",
+      "category": "GN: robot vacuum",
+      "gn_label": "robotics",
+      "site_name": "GN: robot vacuum",
+      "source": "GN: robot vacuum",
+      "site_id": "GN: robot vacuum",
+      "description": "Best robot vacuum deal: Save $190.99 on Ecovacs Deebot T90  Mashable",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 28.11,
+      "writing_value": 0,
+      "total_score": 103.11
     },
     {
       "id": "4d4f7e64e5c02ae1adc151935ebc21d6c9ba0e05",
@@ -42,51 +84,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 26.12,
+      "timeliness": 25.09,
       "writing_value": 5,
-      "total_score": 111.12
-    },
-    {
-      "id": "c7136796c796acb5f33b1e01ecab480d68e85fb2",
-      "title": "Selling fast: 38% off the Eufy Omni C20 robot vac and mop in Lightning Deal - Android Authority",
-      "title_zh": "销售火爆：Eufy Omni C20 扫地机器人秒杀优惠 38% - Android Authority",
-      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE01b0NBX0FXekJRRXd6dG1RM3p0WTBPZVJBUGczNmtOb0NlN2dsWkRUNnZMcHZJN1MyXzhuWTYzak9QaGtTc1JDbVFySUFRejBXRFJ4MEpWUHZyUkFiaWVEOE9nbmhxYTRsc3NrRzNRUmFoREItdDFGeXBqbmdaUQ?oc=5",
-      "published_at": "2026-08-13T15:18:00+00:00",
-      "category": "GN: robot vacuum",
-      "gn_label": "robotics",
-      "site_name": "GN: robot vacuum",
-      "source": "GN: robot vacuum",
-      "site_id": "GN: robot vacuum",
-      "description": "Selling fast: 38% off the Eufy Omni C20 robot vac and mop in Lightning Deal  Android Authority",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 28.9,
-      "writing_value": 0,
-      "total_score": 103.9
-    },
-    {
-      "id": "ca62eecf7088f2c0bec33ee9590f6420f55ac4c3",
-      "title": "Vision Wide Korea - [New] CR10 Collaborative Robot with DOBOT Stand - daara.co.kr",
-      "title_zh": "Vision Wide Korea - [新款] CR10 协作机器人，带 DOBOT 支架 - daara.co.kr",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQSFlDcnlMUjhtNDhzZWllcEdIRVRGWUZ6OWtxcFh1STZ3YXF6bENYMlN0c2w0MExNZzlxY0k5ejBWRlZTNFBnRGlYeEtNYjN4TUY1bHNFWlBCWU9xci0yRlJnS1NxSnA3RjdQRW5TR3JsV2M4T0JURHM3Z0dfLXZOYjRDQ080SWIwS3F3ZUlkSWlqMUd5YjhJMHBB?oc=5",
-      "published_at": "2026-08-13T11:26:41+00:00",
-      "category": "GN: collaborative robot",
-      "gn_label": "robotics",
-      "site_name": "GN: collaborative robot",
-      "source": "GN: collaborative robot",
-      "site_id": "GN: collaborative robot",
-      "description": "Vision Wide Korea - [New] CR10 Collaborative Robot with DOBOT Stand  daara.co.kr",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 25.04,
-      "writing_value": 0,
-      "total_score": 100.04
+      "total_score": 110.09
     },
     {
       "id": "f4105a20e768aa0b6305d4a712611092f7b1aca2",
@@ -105,9 +105,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.42,
+      "timeliness": 24.39,
       "writing_value": 0,
-      "total_score": 100.42
+      "total_score": 99.39
     },
     {
       "id": "654f05bde7dccd67e907a06a049fc7a30fa75fe8",
@@ -126,9 +126,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.9,
+      "timeliness": 24.87,
       "writing_value": 0,
-      "total_score": 100.9
+      "total_score": 99.87
     },
     {
       "id": "efe55fa7058fd953e5ea79475e644519dc58ffad",
@@ -147,13 +147,13 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.97,
+      "timeliness": 27.94,
       "writing_value": 0,
-      "total_score": 103.97
+      "total_score": 102.94
     },
     {
-      "id": "9e9d8cdc419ea1a844cd902dae20870ed9f8d66a",
-      "title": "宇树科技，被弃购8734股 - 新浪财经",
+      "id": "401c35146947741a088ad4be8f431b1209b1fc23",
+      "title": "宇树科技，被弃购8734股 - 新浪财经_金融信息服务商",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1zb2hVVEdjeGxadkxiYWpfYW1aTzJkWFFXVUI3eEVqRFVPTFFhS3FIalFfMWJvVGFLTFJ4SDU0emFROHZobWNuazdzdUdEQk8wT0toUHZ6Q042RDdibG1hdGJsZjRyeGNKejh1WHNUSG9UNHdhSWc?oc=5",
       "published_at": "2026-08-13T12:14:00+00:00",
@@ -162,15 +162,15 @@
       "site_name": "GN: 宇树科技",
       "source": "GN: 宇树科技",
       "site_id": "GN: 宇树科技",
-      "description": "宇树科技，被弃购8734股  新浪财经",
+      "description": "宇树科技，被弃购8734股  新浪财经_金融信息服务商",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.83,
+      "timeliness": 24.8,
       "writing_value": 0,
-      "total_score": 100.83
+      "total_score": 99.8
     },
     {
       "id": "99df838c134cf2da68d0cbeb265fbd7695ab9d0b",
@@ -189,9 +189,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.42,
+      "timeliness": 24.38,
       "writing_value": 0,
-      "total_score": 100.42
+      "total_score": 99.38
+    },
+    {
+      "id": "cabc61d2e026f56a4223615f475511952a1704eb",
+      "title": "宇树科技公告：8734股遭弃购！中一签需缴款7.54万元，有人中签后不敢发朋友圈：怕同事嫉妒，也怕亲戚借钱 - 新浪财经_金融信息服务商",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5pR2szUmRLeThIQkZ1VENmMkxtRlBZZ245SUZfT19NeDRlbC02eWpSQW5YdGJBWUhTcmRNcjl0NThRNE56NS1qbFBoTTd6aWVUbHllUlNqTWN0R09SSXJhQnRrOVhsd29Cd2I0Y0d6Zi04eXJOMkJBMQ?oc=5",
+      "published_at": "2026-08-13T13:45:00+00:00",
+      "category": "GN: 宇树科技",
+      "gn_label": "robotics",
+      "site_name": "GN: 宇树科技",
+      "source": "GN: 宇树科技",
+      "site_id": "GN: 宇树科技",
+      "description": "宇树科技公告：8734股遭弃购！中一签需缴款7.54万元，有人中签后不敢发朋友圈：怕同事嫉妒，也怕亲戚借钱  新浪财经_金融信息服务商",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 26.32,
+      "writing_value": 0,
+      "total_score": 101.32
     },
     {
       "id": "963ec3e0161ac4f5407d7ab71996df4c87eca844",
@@ -210,9 +231,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.39,
+      "timeliness": 26.36,
       "writing_value": 0,
-      "total_score": 102.39
+      "total_score": 101.36
     },
     {
       "id": "05c806ae4944e0af0a55c8f08b29d4799d6bc822",
@@ -231,9 +252,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.74,
+      "timeliness": 27.71,
       "writing_value": 0,
-      "total_score": 103.74
+      "total_score": 102.71
     }
   ],
   "fallback_used": false

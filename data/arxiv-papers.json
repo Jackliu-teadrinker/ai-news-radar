@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-13T16:25:21.912763+00:00",
-  "total_items": 12,
+  "generated_at": "2026-08-13T17:26:59.583521+00:00",
+  "total_items": 11,
   "items": [
     {
       "id": "http://arxiv.org/abs/2608.12198v1",
@@ -122,17 +122,6 @@
       "published_at": "2026-08-12T05:30:53+00:00",
       "updated_at": "2026-08-12T05:30:53Z",
       "title_zh": "StellaVLA：可泛化视觉-语言-动作模型的上下文结构化演示"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.11641v1",
-      "title": "Energy-Aware Wind-Resilient Routing for Truck-Assisted Multi-UAV Delivery under Wind Uncertainty",
-      "url": "https://arxiv.org/abs/2608.11641",
-      "summary": "Energy feasibility under wind uncertainty is a critical safety issue for low-altitude air-ground delivery. In truck-UAV systems, UAVs complete assigned deliveries and safely return to a mobile truck or depot, while wind-induced propulsion costs vary online and are only partially observable. Existing routing methods often rely on static or deterministic energy models, which may underestimate headwind, crosswind, battery-voltage, and return-feasibility risks. This paper proposes Energy-Aware Wind-Resilient Routing (EWR), an online risk-sensitive planning framework for wind-aware and energy-safe UAV routing. The delivery environment is represented as a time-dependent directed energy graph whose edge costs are updated using delayed noisy wind estimates, payload states, and conservative uncertainty margins. Experiments using synthetic delivery graphs with replayed wind logs from a public truck-UAV delivery dataset show that EWR improves mission success rates and reduces wind-induced return failures.",
-      "authors": "Tianshun Li, Yanggang Sheng, Hongliang Lu et al.",
-      "category": "eess.SY",
-      "published_at": "2026-08-12T04:40:48+00:00",
-      "updated_at": "2026-08-12T04:40:48Z",
-      "title_zh": "风力不确定性下卡车辅助多无人机交付的能量感知抗风路由"
     }
   ]
 }
