@@ -1,9 +1,9 @@
 {
   "date": "2026-08-14",
-  "generated_at": "2026-08-13T21:35:59.950659+00:00",
+  "generated_at": "2026-08-13T22:31:51.657459+00:00",
   "score_threshold": 80,
   "total_items": 50,
-  "new_added": 4,
+  "new_added": 1,
   "items": [
     {
       "id": "31412c0cc3924618",
@@ -460,6 +460,27 @@
       "description": "荣耀将亮相第二届世界人形机器人运动会  新浪财经",
       "ai_score": 80.0,
       "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 28.95,
+      "writing_value": 0,
+      "total_score": 118.95
+    },
+    {
+      "id": "46146b63ba559b32",
+      "title": "工业级全功能全尺寸人形机器人在津量产 - 新浪财经",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFB1REtiZ2p0SlFRYXlld3VJZlJqQjYtTC1EdHVLS3gwQTJTRjZWdDlDYnJyVnRXVVE2WHRlMFhVMWNVVnhxV19jcllJT0pqcnpxeGE5dkU4UUN1UkYzTUdnaDJpY0NucEtUdm51WnEwMm1CQVFqSHJrOQ?oc=5",
+      "published_at": "2026-08-13T21:28:00+00:00",
+      "category": "国内人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国内人形机器人资讯",
+      "source": "国内人形机器人资讯",
+      "site_id": "国内人形机器人资讯",
+      "description": "工业级全功能全尺寸人形机器人在津量产  新浪财经",
+      "ai_score": 80.0,
+      "ai_label": "humanoid",
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
@@ -1033,27 +1054,6 @@
       "timeliness": 25.92,
       "writing_value": 0,
       "total_score": 115.92
-    },
-    {
-      "id": "8fc84e440dd778f4",
-      "title": "秦安股份：公司主营业务不涉及人形机器人及零配件的生产制造 - 东方财富",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBtb0FEX1FoUXgySVpGVFVkRmVJY2FSQVRNdG8zQ0tHZy1pOU1MTHpaUXR5X2tNZk9zUTFmZVE5blpJeThiUWNMaUZYbl8ybER0dTBpcTBqNW1Zbkg3bnhWU3AyNFNVdw?oc=5",
-      "published_at": "2026-08-13T12:14:05+00:00",
-      "category": "国内人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国内人形机器人资讯",
-      "source": "国内人形机器人资讯",
-      "site_id": "国内人形机器人资讯",
-      "description": "秦安股份：公司主营业务不涉及人形机器人及零配件的生产制造  东方财富",
-      "ai_score": 80.0,
-      "ai_label": "humanoid",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 25.83,
-      "writing_value": 0,
-      "total_score": 115.83
     }
   ]
 }

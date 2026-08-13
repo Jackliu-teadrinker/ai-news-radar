@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-13T21:35:57.150942+00:00",
-  "total_items": 7,
+  "generated_at": "2026-08-13T22:31:49.230493+00:00",
+  "total_items": 3,
   "items": [
     {
       "id": "http://arxiv.org/abs/2608.12198v1",
@@ -34,50 +34,6 @@
       "published_at": "2026-08-12T13:48:56+00:00",
       "updated_at": "2026-08-12T13:48:56Z",
       "title_zh": "使用稀疏离线到在线 RL 从 SMPC 演示中学习局部操作"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.11901v1",
-      "title": "DaViNCi: A Dataset Towards Outdoor Vision-and-Language Navigation with Continuous Actions and Dynamic Elements",
-      "url": "https://arxiv.org/abs/2608.11901",
-      "summary": "Vision-and-Language Navigation (VLN) has progressively expanded from indoor to outdoor environments. However, existing outdoor VLN datasets still rely on fixed discrete topological graphs for construction. It fails to align with the rapidly changing real-world outdoor environments and impedes the sim-to-real transfer of VLN agents. To address this limitation, we propose DaViNCi (\\textbf{D}yn\\textbf{a}mic \\textbf{Vi}sion-and-Language \\textbf{N}avigation in \\textbf{C}ont\\textbf{i}nuous Environment), the first outdoor VLN dataset that simultaneously introduces both continuous and dynamic factors. The agent not only moves in the outdoor environment using continuous actions but is also required to handle unpredictable dynamic elements. The dataset encompasses six distinct maps with a total of 6,933 trajectories. Through comprehensive comparative experiments, we find that the success rate on DaViNCi decreased by more than 10\\% in discrete environments compared to previous datasets. And there is an even greater decline in continuous settings, demonstrating the challenge of DaViNCi. Furthermore, we clarify the impact of action granularity and dynamic elements. These results demonstrate the practical value of DaViNCi in advancing outdoor VLN toward more realistic environments. The website is https://xzh0312.github.io/DaViNCi/.",
-      "authors": "Zihao Xie, Pingrui Lai, Yitong Wu et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-12T10:27:48+00:00",
-      "updated_at": "2026-08-12T10:27:48Z",
-      "title_zh": "DaViNCi：具有连续动作和动态元素的户外视觉和语言导航数据集"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.11895v1",
-      "title": "Scalable Multi-Agent Maze Traversal with Local Communication",
-      "url": "https://arxiv.org/abs/2608.11895",
-      "summary": "Cave networks, pipe systems, and similar maze-like environments pose significant challenges for multi-agent navigation in unknown settings with limited communication. We propose a distributed algorithm that enables agents to collectively traverse an unknown, possibly cyclic graph. Agents enter sequentially at a designated start node and are tasked to localize and reach an undisclosed goal while avoiding collisions. They coordinate via local communication using leader-follower relationships and leader switching. At any moment in time, exploration is performed by only one of the agents, which runs a single-agent maze solver. We prove that the algorithm is complete, that its makespan is asymptotically equivalent (in the number of agents) to that of an optimal full-knowledge strategy, and derive its time and space complexity. Simulations with up to $625$ agents show a decreasing average sum-of-fuels as the number of agents increases and demonstrate that the proposed approach outperforms a naïve baseline in which all agents independently execute the single-agent solver.",
-      "authors": "Julian Rau, Jahir Argote-Gerald, Grace McFassel et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-12T10:21:26+00:00",
-      "updated_at": "2026-08-12T10:21:26Z",
-      "title_zh": "具有本地通信的可扩展多代理迷宫遍历"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.11876v1",
-      "title": "D3D-GEN: Robot-Aware Domain-Grounded Interactive 3D World Generation for Social Robotics",
-      "url": "https://arxiv.org/abs/2608.11876",
-      "summary": "Training and validation of Embodied AI for social navigation critically depends on realistic simulation environments, yet many current approaches fail to find a balance between realism and simulability. We propose D3D-GEN, a novel world generation system that combines a domain agent with a retrieval-augmented generation (RAG) pipeline grounded in that domain. Our system enables users to rapidly generate domain-grounded, fully interactive 3D worlds by automating both the collection of domain knowledge and the synthesis of realistic floorplans and object placements, without dependence on any fixed 3D model database. Given a domain description prompt, the research agent collects publicly accessible domain-specific data and constructs a persistent domain database. Using this database, our RAG pipeline generates plausible floorplans and object placements by dynamically querying a user-provided semantic database, which can be easily extended or modified. The output is a fully interactive 3D world loadable by the popular simulators Isaac Sim and Gazebo. With our approach, we have built databases for several common domains (indoor residential, hospital, office) and generated dozens of distinct, plausible simulation environments for each domain. We present D3D-GEN with a local web frontend that facilitates rapid, interactive world generation for robot simulation.",
-      "authors": "Anh Duc Do, Volodymyr Scherbyna, Tai Duc Nguyen et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-12T10:03:01+00:00",
-      "updated_at": "2026-08-12T10:03:01Z",
-      "title_zh": "D3D-GEN：社交机器人的机器人感知、基于领域的交互式 3D 世界生成"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.11870v1",
-      "title": "Enhancing Visual Domain Robustness in Behaviour Cloning via Saliency-Guided Augmentation",
-      "url": "https://arxiv.org/abs/2608.11870",
-      "summary": "In vision-based behavior cloning (BC), conventional image augmentations such as Random Crop and Color Jitter often fall short under substantial visual domain shifts, including changes in shadows, distractors, and backgrounds. Superimposition-based augmentations, which blend in-domain and out-of-domain images, have shown promise for improving generalization in computer vision, but their suitability for BC remains uncertain because task-critical semantics, spatiotemporal relationships, and agent-target interactions must be preserved. To address this, we introduce RoboSaGA, a Saliency-Guided Augmentation method within the superimposition family tailored for vision-based BC. RoboSaGA dynamically adjusts augmentation intensity at the pixel level using policy-driven saliency, enabling aggressive augmentation in task-irrelevant regions while preserving task-critical information. It integrates seamlessly into existing architectures without requiring structural modifications or additional learning objectives. Experiments in both simulated and real-world settings show that RoboSaGA preserves in-domain performance while substantially improving robustness to visual domain shifts, including distractor and background changes, as well as lighting and shadow variations. Code is available at https://github.com/Zheyu-Zhuang/RoboSaGA.",
-      "authors": "Zheyu Zhuang, Ruiyu Wang, Nils Ingelhag et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-12T09:55:07+00:00",
-      "updated_at": "2026-08-12T09:55:07Z",
-      "title_zh": "通过显着性引导增强增强行为克隆中的视觉域鲁棒性"
     }
   ]
 }
