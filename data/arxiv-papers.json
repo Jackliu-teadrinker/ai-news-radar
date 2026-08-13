@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-13T12:47:50.299514+00:00",
-  "total_items": 16,
+  "generated_at": "2026-08-13T14:16:53.203453+00:00",
+  "total_items": 15,
   "items": [
     {
       "id": "http://arxiv.org/abs/2608.12198v1",
@@ -166,17 +166,6 @@
       "published_at": "2026-08-12T02:39:14+00:00",
       "updated_at": "2026-08-12T02:39:14Z",
       "title_zh": "RoadWeaver：从头开始生成大规模车道级高清地图，用于自动驾驶模拟"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.11564v1",
-      "title": "Repurposing RGB-based Foundation Model for Depth Estimation on Thermal Images Using Hierarchical Supervision",
-      "url": "https://arxiv.org/abs/2608.11564",
-      "summary": "Depth estimation from thermal images is highly valuable for robotic applications in adverse conditions, such as nighttime and rainy weather. Recent studies have sought to transfer knowledge from RGB-based foundation models to thermal modalities, yet the rich hierarchical representations these models encode remain underutilized. To address this limitation, we propose RGB-HS, a novel framework for thermal-image depth estimation that leverages hierarchical supervision from an RGB-based foundation model. Specifically, we first replace the baseline thermal encoder with a foundational model and introduce a parallel RGB branch that also employs a foundational model as an encoder of the same architecture, taking RGB images as input. The alignment is then performed across multiple levels between the tokens of the two encoders, allowing the thermal student branch to capture both structural precision and semantic abstraction from the RGB teacher branch. Furthermore, we introduce verification to refine the alignment process by weighting tokens from the RGB branch based on RGB image quality. Extensive experiments on the popular benchmark demonstrate that RGB-HS achieves competitive performance and more effectively exploits the representational capacity of RGB-based foundation models for depth estimation on thermal images.",
-      "authors": "Jie Hong, Tingtian Li, Xuesong Li et al.",
-      "category": "cs.CV",
-      "published_at": "2026-08-12T02:10:58+00:00",
-      "updated_at": "2026-08-12T02:10:58Z",
-      "title_zh": "使用分层监督重新利用基于 RGB 的基础模型进行热图像深度估计"
     }
   ]
 }
