@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-13T09:39:23.574030+00:00",
-  "total_items": 18,
+  "generated_at": "2026-08-13T10:54:28.623394+00:00",
+  "total_items": 17,
   "items": [
     {
       "id": "http://arxiv.org/abs/2608.12198v1",
@@ -188,17 +188,6 @@
       "published_at": "2026-08-12T00:17:30+00:00",
       "updated_at": "2026-08-12T00:17:30Z",
       "title_zh": "保留未来，放弃推出：世界行动模型的 RIFT"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.11461v1",
-      "title": "Koopman Representation of Nonlinear Virtual Environments in Kinesthetic Haptic Systems",
-      "url": "https://arxiv.org/abs/2608.11461",
-      "summary": "Rendering haptic feedback with nonlinear virtual environments (VEs) is important in many applications that require highly accurate force feedback. This paper considers the use of the Koopman operator to represent a nonlinear VE interacting with a haptic system. Simulation and experimental results demonstrated that the proposed method provides an effective representation of the nonlinear dynamics of a Duffing-oscillator VE. A multi-user study further confirmed this conclusion. In addition, a closed-loop (CL) stability analysis is performed leveraging the Koopman representation of the nonlinear VE to access stability of the overall haptic system. This alternative way of representing nonlinear VEs enables a convenient CL stability analysis that is less conservative than traditional passivity-based methods. Since a linear combination of all lifted states is used to represent the nonlinearity, such representation is also more robust to uncertainties in the modeling of the haptic device than a traditional nonlinear model.",
-      "authors": "Yanting Zhou, Jozsef Kövecses, James Richard Forbes",
-      "category": "cs.RO",
-      "published_at": "2026-08-11T21:55:37+00:00",
-      "updated_at": "2026-08-11T21:55:37Z",
-      "title_zh": "动觉触觉系统中非线性虚拟环境的库普曼表示"
     }
   ]
 }
