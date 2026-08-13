@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-13T19:33:10.545610+00:00",
-  "total_items": 8,
+  "generated_at": "2026-08-13T20:32:06.840011+00:00",
+  "total_items": 7,
   "items": [
     {
       "id": "http://arxiv.org/abs/2608.12198v1",
@@ -78,17 +78,6 @@
       "published_at": "2026-08-12T09:55:07+00:00",
       "updated_at": "2026-08-12T09:55:07Z",
       "title_zh": "通过显着性引导增强增强行为克隆中的视觉域鲁棒性"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.11769v1",
-      "title": "Policy-Induced Hand Priors in Humanoid Dual-Arm Manipulation: Diagnosing and Mitigating Initial-Pose Dependence",
-      "url": "https://arxiv.org/abs/2608.11769",
-      "summary": "Vision-language-action (VLA) policies are expected to operate robustly across variations in the robot's initial configuration, yet aggregate task success can conceal pose-specific failures and inappropriate hand selection. This work investigates initial-pose dependence in VLA-based humanoid dual-arm manipulation. We characterize the initial-condition-dependent early hand preference as a policy-induced hand prior and quantify it using HandPriorScore, residual hand bias, and target responsiveness. Evaluations across multiple policies and 17 initial configurations reveal strong initial-pose--policy interactions: the same pose produces substantially different success rates across policies, while a single policy exhibits large performance variation across poses. Specific initial arm configurations can suppress or induce an asymmetric hand preference, with the resulting effect varying in direction and strength across policies. Wrist-camera observations also influence hand selection and task performance. Expanding initial-pose coverage in the training dataset substantially improves robustness, while targeted augmentation around a low-performing configuration increases its success rate. Comparisons across training configurations show that sufficient exposure to the target simulation task is beneficial, whereas the effect of real or auxiliary data depends on pose coverage, simulation ratio, and observation availability. These findings characterize a pose-conditioned hand prior, identify a localized initial arm configuration as a causal handle on hand-selection behavior, and demonstrate how data coverage and training composition affect initial-pose robustness.",
-      "authors": "Chaeyeon Jung, Juyoun Park",
-      "category": "cs.RO",
-      "published_at": "2026-08-12T08:13:44+00:00",
-      "updated_at": "2026-08-12T08:13:44Z",
-      "title_zh": "人形双臂操作中策略诱导的手部先验：诊断和减轻初始姿势依赖性"
     }
   ]
 }
