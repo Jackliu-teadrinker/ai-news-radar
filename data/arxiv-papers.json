@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-13T08:12:48.998105+00:00",
-  "total_items": 22,
+  "generated_at": "2026-08-13T09:39:23.574030+00:00",
+  "total_items": 18,
   "items": [
     {
       "id": "http://arxiv.org/abs/2608.12198v1",
@@ -199,50 +199,6 @@
       "published_at": "2026-08-11T21:55:37+00:00",
       "updated_at": "2026-08-11T21:55:37Z",
       "title_zh": "动觉触觉系统中非线性虚拟环境的库普曼表示"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.11451v1",
-      "title": "Herding End-to-End Autonomous Driving via Neuro-Symbolic Safety Guards",
-      "url": "https://arxiv.org/abs/2608.11451",
-      "summary": "Modern end-to-end driving agents can achieve high average performance yet still violate basic traffic rules that a human driver would never miss. The reason is structural: they learn statistical patterns rather than the physical conditions that guarantee safe driving, leaving their decision-making process opaque and safety constraints unenforced. We introduce a neuro-symbolic safety guard, a lightweight module that attaches to the final command interface of an already-trained agent. Immediately before a command reaches the vehicle, it checks the command against explicit safety rules and, only when necessary, replaces it with the nearest safe alternative. Each intervention is directly executable and traceable to the rule that triggered it, while the guard itself requires no retraining and adds no learned component. Evaluated on the long-tail benchmarks Fail2Drive and Bench2Drive using the state-of-the-art TransFuser v6 (TFv6) as a case study, the guard improves Success Rate by 15% and reduces safety-critical collisions by up to 53%, while preserving the original Driving Score.",
-      "authors": "Simón Patiño Idarraga, Erick Silva, Rehana Yasmin et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-11T21:27:27+00:00",
-      "updated_at": "2026-08-11T21:27:27Z",
-      "title_zh": "通过神经符号安全防护装置实现端到端自动驾驶"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.11417v1",
-      "title": "Locomotion Variability and User Experience in Smart Wheelchair Human-Robot Interaction",
-      "url": "https://arxiv.org/abs/2608.11417",
-      "summary": "Human movement is inherently variable, with variability structured according to task relevance: movements are typically more consistent at task-critical points and more flexible elsewhere. In human-robot interaction (HRI), however, model-based assistance strategies commonly assume deterministic human behavior and suppress such variability, potentially altering how interactions are experienced and lowering sense of agency. While movement variability is increasingly recognized as functionally meaningful, its deliberate preservation in assisted interaction, and its consequences for user experience, remain underexplored. In this paper, we empirically investigate how different assistance strategies shape human movement variability, task performance, and subjective interaction experience in a shared control setting. We introduce an autonomy-supportive shared control strategy that preserves users' natural movement structure. This approach is evaluated in a user study in which participants push an intelligent powered wheelchair under three conditions: no assistance, conventional variability-reducing assistance, and variability-preserving assistance. While task-relevant performance remained comparable across assisted modes, preserving natural movement variability led to more favorable interaction experiences. In particular, participants reported significantly higher perceived agency compared to conventional assistance and highest perceived usefulness. These findings suggest that variability-aware assistance can support both performance and user autonomy in physical human-robot collaboration. More broadly, the results highlight the importance of designing assistive robotic systems that respect the embodied structure of human movement rather than treating variability as noise to be neglected or eliminated.",
-      "authors": "Sean Kille, Adina M. Panchea, Balint Varga et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-11T20:33:26+00:00",
-      "updated_at": "2026-08-11T20:33:26Z",
-      "title_zh": "智能轮椅人机交互中的运动变异性和用户体验"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.11409v1",
-      "title": "From Self-Normal-Positioning to Omni-Directional Tracking: Real-Time Surface Modeling Enabled Probe Tilt Control for Robotic Ultrasound Imaging",
-      "url": "https://arxiv.org/abs/2608.11409",
-      "summary": "Ultrasound (US) provides real-time, radiation-free imaging, but the image quality depends strongly on how the probe is oriented against the patient body. Robotic US can reduce operator workload and improve acquisition consistency; however, most existing systems focus on normal positioning, where the probe is maintained perpendicular to the local surface. This constraint is inadequate for examinations like echocardiography, where obtaining a diagnostic view requires a non-normal probe angle. Consequently, a clinically useful robotic system must sense the local surface in real-time and preserve the desired probe orientation. Here, we propose an omni-directional probe-orientation control framework that integrates RGB-D perception, local-surface modeling, and task-space orientation control. The surface model fuses multi-view point clouds and provides a quadratic estimate of the local surface. A desired imaging direction is then encoded relative to the normal, enabling the probe to track arbitrary angles. The framework was evaluated through flat-surface tracking, phantom target-angle recovery, and in-vivo tracking of an expert selected view. Results show that the mean angular tracking error was 1.06 +- 0.66 deg. The system recovered a non-normal tilt angle of up to 44.39 +- 2.59 deg relative to the surface normal, and acquired the desired heart chamber view in the phantom and in-vivo experiments.",
-      "authors": "Xihan Ma, Haichong Zhang",
-      "category": "cs.RO",
-      "published_at": "2026-08-11T20:16:39+00:00",
-      "updated_at": "2026-08-11T20:16:39Z",
-      "title_zh": "从自我法线定位到全向跟踪：实时表面建模支持机器人超声成像的探头倾斜控制"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.11407v1",
-      "title": "Top-down Traffic Scenario Generation via Joint Initial-Goal Diffusion and Trajectory Infilling",
-      "url": "https://arxiv.org/abs/2608.11407",
-      "summary": "Robust traffic simulators are crucial for developing and testing autonomous vehicles to reduce the costly, labor-intensive real-world data collection process and the need for physical presence on the road. However, existing simulators require agents' initial states to generate trajectories, which limits scalability and diversity due to restrictions on the given initial states. While data-driven agent initialization has been widely studied, the generated initial states are not interpretable in terms of why the agents are initialized at those specific locations. Given known initial states, trajectory generation is also a challenging problem, as the model must learn the variability of the destination and how agents should reach it over time. In this paper, we propose TrafficDiffuser, a top-down traffic scenario generation framework that generates high-level traffic scenarios, defined by initial and goal state pairs, by jointly modeling them. The high-level scenario generation makes initial states better interpretable and reduces trajectory generation into as simple as an infilling problem. We demonstrate how the generated high-level traffic scenarios can be used, including constraining based on different trajectory modes and integrating them with existing trajectory generation models. We conduct extensive experiments on the Argoverse 2 motion prediction dataset to evaluate how well the generated outputs capture real-world distributions. In addition to generating goal states, TrafficDiffuser outperforms the next-best approach for agent initialization, reducing speed distribution distance by 55.3% and the off-road rate by 2.8%.",
-      "authors": "Da Saem Lee, Yash Vardhan Pant, Sebastian Fischmeister",
-      "category": "cs.RO",
-      "published_at": "2026-08-11T20:13:51+00:00",
-      "updated_at": "2026-08-11T20:13:51Z",
-      "title_zh": "通过联合初始目标扩散和轨迹填充生成自上而下的交通场景"
     }
   ]
 }
