@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-13T05:28:17.981399+00:00",
-  "total_items": 27,
+  "generated_at": "2026-08-13T06:56:15.703300+00:00",
+  "total_items": 23,
   "items": [
     {
       "id": "http://arxiv.org/abs/2608.12198v1",
@@ -254,50 +254,6 @@
       "published_at": "2026-08-11T19:15:26+00:00",
       "updated_at": "2026-08-11T19:15:26Z",
       "title_zh": "用最少的数据适应通用机器人策略"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.11350v1",
-      "title": "Self-Evolving Embodied Agents via Skill-Harness Evolution",
-      "url": "https://arxiv.org/abs/2608.11350",
-      "summary": "Embodied agents are increasingly built as systems around foundation models, where performance depends not only on model weights but also on the skills, context, action interfaces, and execution harness surrounding the model. While supervised fine-tuning and reinforcement learning can adapt agents to new environments, they require additional data, rewards, and training runs; meanwhile, many train-free code-centric approaches rely on programmable robot APIs that may be unavailable in fixed-interface settings. We propose SHAPER, a self-evolving framework for train-free embodied adaptation that keeps model parameters frozen and improves the non-parametric agent system by evolving reusable skills and a context-code harness through target-environment rollouts. In SHAPER, the same frozen model can serve as both planner and optimizer, refining its external skills and context-code harness without parameter updates. We evaluate SHAPER on VLABench and ESI-Bench, covering embodied agents with different low-level action interfaces, and compare against pure execution, supervised fine-tuning, and test-time-scaling baselines such as verifier-free selection and voting. Our results suggest that skill-and-harness optimization is a practical route to self-evolving embodied agents when model training is expensive, unavailable, or undesirable.",
-      "authors": "Peidong Wang, Zhiming Ma, Ying Chang et al.",
-      "category": "cs.CL",
-      "published_at": "2026-08-11T18:55:58+00:00",
-      "updated_at": "2026-08-11T18:55:58Z",
-      "title_zh": "通过技能进化实现自我进化的具体代理"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.11204v1",
-      "title": "Surgical WAM: A World-Action Model for Data-Efficient Surgical Robot Learning",
-      "url": "https://arxiv.org/abs/2608.11204",
-      "summary": "Learning reliable surgical manipulation policies is bottlenecked by the scarcity of action-labeled demonstrations: teleoperated surgical robot (e.g., dVRK) trajectories with synchronized kinematics are costly to collect, while surgical tasks demand precise contact handling, long-horizon reasoning, and bimanual coordination. Endoscopic video is comparatively inexpensive and abundant relative to synchronized video--kinematics trajectories, and a natural way to exploit it is to learn world models of surgical scenes. However, existing surgical world models use video primarily for simulation or policy evaluation, and rarely translate the learned dynamics into closed-loop control. This gap raises our central question: under a fixed budget of action-labeled demonstrations, does action-free video pretraining improve closed-loop surgical manipulation? To answer it, we introduce the Surgical World-Action Model (Surgical WAM), a unified generative model built on Cosmos Policy that jointly predicts future endoscopic observations and executable surgical robot action chunks. Surgical WAM first learns surgical visual dynamics from action-free video and is then fine-tuned on the fixed action-labeled budget; at deployment, it acts as a closed-loop, receding-horizon controller that executes a short prefix of each predicted action chunk and replans from the resulting observation. On a suite of four simulated surgical manipulation tasks, video pretraining improves the average success rate from 63.5% to 77.8%, including an absolute gain of 20 percentage points on PegTransfer, with the largest improvements on contact-rich and bimanual tasks. These results demonstrate that action-free video provides transferable visual dynamics priors for learning surgical robot control with limited action supervision, positioning data-efficient video pretraining as a practical path toward scaling up surgical robot learning.",
-      "authors": "Wenrui Bao, Tianyun Jiang, Zhiben Chen et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-11T17:59:13+00:00",
-      "updated_at": "2026-08-11T17:59:13Z",
-      "title_zh": "手术 WAM：用于数据高效手术机器人学习的世界行动模型"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.11175v1",
-      "title": "Risk-Aware Kinodynamic Motion Planning Under Uncertainty For Safe Navigation on Planetary Environments",
-      "url": "https://arxiv.org/abs/2608.11175",
-      "summary": "For autonomous space exploration, robotic agents need to perform motion planning in which environmental interactions may be unknown. Learning these interactions, such as terrain mechanics for wheeled robots, can introduce uncertainties that lead to risky motion plans and potentially hazardous operations or mission failures. Moreover, uncertainties induced by perception-based systems can exacerbate the problem of safe motion planning. In this letter, we address the problem of performing cost-optimal kinodynamic motion planning with risk awareness. We approach this in two steps. First, a sampling-based planner (AO-RRT) generates a dynamically feasible, risk-aware, and asymptotically cost-optimal trajectory. Second, we formulate motion planning as a nonlinear optimization problem and solve it using sequential convex programming (SCP), using the AO-RRT trajectory as an initial solution. By quantifying risk using conditional value-at-risk (CVaR), we demonstrate a reduction in risk by over $\\sim$97\\% across trajectories in simulation and hardware experiments.",
-      "authors": "Sachin Sunil Kelkar, Tanmay Dokania, Yashwanth Kumar Nakka",
-      "category": "cs.RO",
-      "published_at": "2026-08-11T17:34:56+00:00",
-      "updated_at": "2026-08-11T17:34:56Z",
-      "title_zh": "不确定性下的风险意识运动动力学运动规划以实现行星环境中的安全导航"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.11174v2",
-      "title": "VIScore: Diagnosing Planning-Relevant Quality in Latent World Models",
-      "url": "https://arxiv.org/abs/2608.11174",
-      "summary": "Regulating the latent space to an isotropic Gaussian distribution provides a stable and information-maximized landscape for world model planning. However, the latent space property and successful planning remain disconnected. We first study this by comparing SIGReg and VISReg, two regularization loss functions with the same distribution target but different properties. Compared with SIGReg, VISReg has more flexibility in controlling the weights of center, scale, and shape regularization, and a larger batch size brings a finer distribution approximation. We find that the former, despite being beneficial in self-supervised learning (SSL), does not help the planning, whereas the latter improves the planning success on out-of-domain (OOD) datasets. This motivates a deep understanding of the factors that correlate with the success rate. Unlike the previous metrics focusing on the encoded latent only, we propose the Veracity-Influence-Sobriety score (VIScore), a metric that quantifies the reachability and capacity of a predictor given the encoded feature, and the hallucination of the searching-based planner. Compared with straightness, physical-state probing, and empowerment, we show that, with the measurement covering encoder, predictor, and planner, VIScore explains the success rate better than the others, as reflected by a strong Spearman correlation. Specifically, VIScore consistently achieves a Spearman correlation over 0.75 on both seen and unseen models and datasets on the cross-task success rate pool. Moreover, VIScore is the only metric that has a calibration error below the constant fit across all testing scenarios, showcasing the importance of these three aspects in planning success. We hope this metric can help future studies on world model design and diagnosis.",
-      "authors": "Haiyu Wu, Randall Balestriero, Morgan Levine",
-      "category": "cs.RO",
-      "published_at": "2026-08-11T17:34:10+00:00",
-      "updated_at": "2026-08-12T16:51:58Z",
-      "title_zh": "VIScore：诊断潜在世界模型中与规划相关的质量"
     }
   ]
 }
