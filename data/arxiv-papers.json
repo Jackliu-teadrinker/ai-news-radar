@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-12T23:31:46.806703+00:00",
-  "total_items": 12,
+  "generated_at": "2026-08-13T01:07:35.456298+00:00",
+  "total_items": 6,
   "items": [
     {
       "id": "http://arxiv.org/abs/2608.11204v1",
@@ -67,72 +67,6 @@
       "published_at": "2026-08-11T14:41:29+00:00",
       "updated_at": "2026-08-11T14:41:29Z",
       "title_zh": "空中布局：设计和控制顺从驱动的末端执行器，用于在天花板上进行精确的飞行标记"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.10886v1",
-      "title": "GESTO: Human-Centric Spatio-Temporal Memory for Reasoning in Dynamic Scenes",
-      "url": "https://arxiv.org/abs/2608.10886",
-      "summary": "Robots operating in human environments need memories that capture not only what objects exist and where, but also how people use them over time and how individual interactions compose into goal-directed activities. Existing 4D scene graphs preserve object and place histories but omit activity structure, whereas activity representations are either not grounded in persistent 3D scenes or rely on externally provided event boundaries and object associations. We present GESTO (Grounded Event and Spatio-Temporal memOry), a spatio-temporal memory that couples a persistent 4D scene graph with a two-level hierarchy of atomic human--object interactions and goal-driven events. From an RGB-D observation stream, GESTO automatically extracts timestamped interactions, grounds them to persistent scene entities, groups them into events, and uses event context to refine uncertain object associations. A relation-aware tool-calling agent queries the resulting memory for activity-centric spatio-temporal reasoning. We evaluate GESTO on the reproducible text, binary, and time categories of an existing benchmark, together with 40 new Space2Event and Event2Space queries. GESTO achieves scores of 0.71, 0.75, and 0.70 on the standard categories, approaching a method supplied with ground-truth event and object grounding, while substantially outperforming the same reasoning framework when these inputs are removed. It further achieves 0.73 and 0.75 on Space2Event and Event2Space queries. Ablations show that hierarchical event structure and context-aware grounding refinement provide complementary benefits, supporting activity-grounded hierarchical memory for retrospective reasoning in dynamic human environments.",
-      "authors": "Ermanno Bartoli, Buwei He, Dennis Rotondi et al.",
-      "category": "cs.CV",
-      "published_at": "2026-08-11T13:03:33+00:00",
-      "updated_at": "2026-08-11T13:03:33Z",
-      "title_zh": "GESTO：以人为中心的时空记忆，用于动态场景中的推理"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.10872v1",
-      "title": "Robust Safety Filtering for Input-Constrained Underactuated Linear Systems",
-      "url": "https://arxiv.org/abs/2608.10872",
-      "summary": "We present a robust safety-filtering framework for input-constrained underactuated linear systems subject to unknown disturbances. A baseline H-$\\infty$ input is derived from a zero-sum differential game, while a disturbance observer supplies an estimate and a transient error bound. The baseline input is adjusted using the disturbance estimate, while the estimate and its error bound are used to define robust high-order control barrier function constraints; forward invariance holds as long as the admissible-input set remains nonempty. For scalar-input systems, pointwise feasibility is determined from an exact input interval, and the interval width defines the feasibility margin. A finite-horizon H-$\\infty$ performance balance accounts for the accumulated deviation of the applied input from the baseline H-$\\infty$ policy. Simulations on a linearized two-wheeled balancing robot show how position and body-pitch constraints compete for the same bounded wheel-torque input.",
-      "authors": "Muhamad Rausyan Fikri",
-      "category": "eess.SY",
-      "published_at": "2026-08-11T12:47:44+00:00",
-      "updated_at": "2026-08-11T12:47:44Z",
-      "title_zh": "输入受限欠驱动线性系统的鲁棒安全滤波"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.10860v1",
-      "title": "Flex-$π$: A Multi-Stream World-Action Model with Compute Flexibility",
-      "url": "https://arxiv.org/abs/2608.10860",
-      "summary": "World-action models (WAMs) predict the future to act better, but nearly all of them predict only RGB latents, trained purely for pixel reconstruction, with no explicit signal for the 3D geometry or object semantics manipulation needs. We find a surprising free lunch: the same frozen video-generation VAE that encodes RGB also encodes 3D pointmaps almost losslessly, with no pointmap-specific training at all. This lets us supervise Flex-$π$, a 6B-parameter WAM, on 3D geometry and object-centric DINO semantics alongside RGB, at no cost in new sensors, new pre-training, or inference latency. Every visual signal is projected into this shared latent space and denoised jointly with actions inside a Mixture-of-Transformers backbone; per-stream dropout with cross-modality forcing then lets a single trained checkpoint run on any subset of these streams, from a fast action-only mode to full joint generation. The result is a policy that is exceptionally demonstration-efficient and generalizes well, beating the strongest baselines by up to 2-7$\\times$ on dexterous, precise, real-world bimanual manipulation tasks both in and out of distribution, all while running faster than $π_{0.5}$. Our project website: https://flex-pi.github.io/",
-      "authors": "Ge Yan, Jinghao Liu, Yuzhi Fan et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-11T12:33:51+00:00",
-      "updated_at": "2026-08-11T12:33:51Z",
-      "title_zh": "Flex-$π$：具有计算灵活性的多流世界动作模型"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.10847v1",
-      "title": "Enabling Scalable Kinesthetic Teaching via Observer-based Hand-guiding with Active Support",
-      "url": "https://arxiv.org/abs/2608.10847",
-      "summary": "Kinesthetic teaching through robot hand-guiding provides a natural interface for collecting demonstrations in imitation learning and programming-by-demonstration. However, extended sessions cause operator fatigue, reducing demonstration quality and limiting scalability. Current industrial hand-guiding approaches typically provide no active assistance, and alternatives require costly wrist-mounted force-torque sensors or rely on learned motion priors unavailable for new tasks. We propose RHOAS, a hand-guiding scheme that actively supports operator-intended motions using model-based force estimation without additional hardware. Our approach considers robot hand-guiding as an actively controlled interaction by the human operator, rather than an interaction with a passive environment. Standard methods used for hand-guiding typically rely on general passivity-based compliant control architectures that unnecessarily increase operator effort and limit the range of demonstrable motions without providing the intended stability guarantees in active interaction. Instead, our design utilizes model-based external torque estimation, internal joint torque sensing, and redundant robot kinematics to actively support human physical input within the human interaction frequency bandwidth. We address practical challenges of relying on observer-based force estimation, including suppression of unmodeled joint elastic dynamic effects and measurement noise in the feedback path, reduced estimate accuracy close to kinematic singularities, and static gravity compensation errors. In a user study with 16 participants on a KUKA LWR iiwa we demonstrate statistically significant reductions in physical effort, improved maneuverability for both precise and agile tasks, and clear user preference.",
-      "authors": "Anna Tuma, Giuseppe Monetti, Jochen J. Steil et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-11T12:19:17+00:00",
-      "updated_at": "2026-08-11T12:19:17Z",
-      "title_zh": "通过基于观察者的手动引导和主动支持实现可扩展的动觉教学"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.10824v1",
-      "title": "Neural Introspection Gating for Adaptive KV-Cache Reuse in Vision-Language-Action Models",
-      "url": "https://arxiv.org/abs/2608.10824",
-      "summary": "Vision-Language-Action(VLA) models map camera images and language instructions directly to motor commands through a single autoregressive transformer. In real-time control, they still spend substantial compute recomputing key-value(KV) representations for visual tokens that barely change across neighboring frames. Recent work such as VLA-Cache reduces that cost by reusing KV states for visually static patches, but its policy relies only on observation-space heuristics and does not account for the model's own uncertainty. We propose Gated VLA-Cache, a lightweight, training-free extension that augments visual-similarity caching with neural introspection. The method monitors the logit margin between the top two predicted action tokens, a zero-cost confidence signal available during decoding. When the margin drops below a threshold, the cache is invalidated and a full recompute is triggered. Evaluated on four LIBERO benchmark suites with both OpenVLA and OpenVLA-OFT, Gated VLA-Cache improves reliability when blind caching hurts. On LIBERO-Goal and LIBERO-Long, it recovers over 100% of the lost accuracy while retaining 80% of the compute savings.",
-      "authors": "Zhijie Wu, Kento Kawaharazuka, Kei Okada",
-      "category": "cs.RO",
-      "published_at": "2026-08-11T11:53:10+00:00",
-      "updated_at": "2026-08-11T11:53:10Z",
-      "title_zh": "用于视觉-语言-动作模型中自适应 KV 缓存重用的神经内省门控"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.10817v1",
-      "title": "AECNav: Active Evidence Consolidation for Efficient Zero-Shot Open-Vocabulary Object Navigation",
-      "url": "https://arxiv.org/abs/2608.10817",
-      "summary": "Zero-shot object-goal navigation (ZSON) in open-vocabulary scenarios is challenging, as it requires a robot to locate an arbitrarily specified object in an unseen environment without task-specific training. Currently, the task still suffers from high latency and limited accuracy due to redundant perception pipelines and insufficient evidence for reliable target confirmation. In this letter, we reframe ZSON as an evidence-driven perception-to-decision problem and present AECNav, a training-free pipeline built on three components: i) Evidence-gated perception, which utilizes a shared encoding across all reasoning stages to establish a unified semantic basis and eliminate redundant computations; ii) Evidence consolidation, which aggregates detections into cluster-level log-odds beliefs. This explicitly separates genuine target support from the false confidence of visually similar distractors, while treating the absence of expected detections as negative evidence; and iii) Active evidence acquisition, which sustains productive exploration under weak semantic cues by selecting frontiers that maximize information gain at minimal traversal cost. As a result, AECNav significantly outperforms previous methods and achieves state-of-the-art success rates of 84.7%, 57.3%, and 51.3% on HM3D-v2, HM3D-OVON, and MP3D, respectively, with substantially lower inference overhead, and attains 95% success across 40 trials on a physical quadruped robot at roughly 5Hz. Code will be made publicly available upon acceptance.",
-      "authors": "Guanlin Liu, Shaobin Ling, Renyuan Liu et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-11T11:40:05+00:00",
-      "updated_at": "2026-08-11T11:40:05Z",
-      "title_zh": "AECNav：有效的零样本开放词汇对象导航的主动证据整合"
     }
   ]
 }
