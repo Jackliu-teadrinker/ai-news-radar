@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-13T18:16:12.121671+00:00",
-  "total_items": 10,
+  "generated_at": "2026-08-13T19:33:10.545610+00:00",
+  "total_items": 8,
   "items": [
     {
       "id": "http://arxiv.org/abs/2608.12198v1",
@@ -89,28 +89,6 @@
       "published_at": "2026-08-12T08:13:44+00:00",
       "updated_at": "2026-08-12T08:13:44Z",
       "title_zh": "人形双臂操作中策略诱导的手部先验：诊断和减轻初始姿势依赖性"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.11739v1",
-      "title": "G0.5: One Autoregressive Stream for Robot Reasoning and Action",
-      "url": "https://arxiv.org/abs/2608.11739",
-      "summary": "The prevailing recipe for Vision-Language-Action (VLA) models couples a pretrained VLM with a separately trained flow-matching action expert. This makes the VLM a context encoder rather than a decision-maker. We introduce G0.5, a pretrained autoregressive VLA in which a single transformer decoder emits reasoning and action tokens under a single objective. Three components make this tractable at foundation-model scale: a learnable cross-embodiment action tokenizer that maps heterogeneous robot actions into a shared vocabulary; a native chain-of-thought stream interleaving task decomposition, object grounding, and action hints with action tokens; and a visual memory module that injects multi-second history through the vision encoder. Because reasoning and action share a single set of weights, the pretrained VLM's capabilities carry over to physical behavior: the model follows instructions closely, and prompts directly steer action granularity, task horizon, and out-of-distribution scene handling without further training. Pretrained on a large collection of robot datasets together with VQA samples, G0.5 surpasses state-of-the-art models across 7 independent regimes: real-world fine-tuning on R1lite and R1pro robots (76.7\\% vs.\\ 53.3\\% for $π_{0.5}$ and 24.4\\% for GR00T-N1.7), the 2025 BEHAVIOR Challenge on 50 long-horizon household mobile manipulation tasks using a generalist policy (31.4\\% vs.\\ 26.3\\% for $π_{0.5}$ and 26.1\\% for the challenge winner), DROID post-training followed by zero-shot transfer to an unseen environment and objects (82.5\\%), a language-following Pick-and-Place benchmark, LIBERO (98.9\\%), RoboTwin 2.0 (93.3\\%), and SimplerEnv-Bridge (87.3\\%).",
-      "authors": "Yicheng Liu, Zibin Dong, Baijun Ye et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-12T07:26:47+00:00",
-      "updated_at": "2026-08-12T07:26:47Z",
-      "title_zh": "G0.5：用于机器人推理和行动的一个自回归流"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.11731v1",
-      "title": "ContactIPM: A Structure-Exploiting Interior-Point Solver for Contact-Implicit Trajectory Optimization",
-      "url": "https://arxiv.org/abs/2608.11731",
-      "summary": "Contact-implicit trajectory optimization avoids prescribing contact sequences, but yields mathematical programs with complementarity constraints (MPCCs) whose degeneracy challenges conventional primal--dual solvers. Existing contact-specific methods improve robustness to this degeneracy but do not leverage a stagewise optimal-control factorization and primal--dual consistency, while structure-exploiting optimal-control solvers are not designed for complementarity constraints. We show that these capabilities can be combined in a single primal--dual method. ContactIPM identifies complementary inequality pairs, embeds them through a barrier-coupled elastic interior relaxation, eliminates slack and dual variables stagewise, and solves the reduced Newton system using a Riccati recursion. A fixed multi-phase MPCC recovery schedule provides four continuation and restart attempts from naive initializations, while termination is gated by the unrelaxed physical complementarity residual. We compare ContactIPM with two contact-specific MPCC solvers, CRISP and IMPACT, using matched benchmark conditions and common post-solve acceptance criteria. On four fixed CRISP benchmark cases, ContactIPM is $2.17$--$8.87\\times$ faster over 20 paired timing repetitions per case and achieves higher success on the Push Box and Push-T robustness suites. Against IMPACT, ContactIPM is \\(2.96\\times\\) faster on Push T and \\(4.91\\times\\) faster on Cart Transport, but \\(4.46\\times\\) slower on Push Box. In 50 closed-loop Push Box rollouts spanning model mismatch, measurement noise, initial-pose errors, and state resets,",
-      "authors": "Yucheng Chen",
-      "category": "cs.RO",
-      "published_at": "2026-08-12T07:11:58+00:00",
-      "updated_at": "2026-08-12T07:11:58Z",
-      "title_zh": "ContactIPM：用于接触隐式轨迹优化的结构利用内点求解器"
     }
   ]
 }
