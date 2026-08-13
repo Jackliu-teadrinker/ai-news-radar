@@ -1,9 +1,9 @@
 {
   "date": "2026-08-13",
-  "generated_at": "2026-08-13T05:17:40.168845+00:00",
+  "generated_at": "2026-08-13T05:28:20.841684+00:00",
   "score_threshold": 80,
   "total_items": 50,
-  "new_added": 14,
+  "new_added": 1,
   "items": [
     {
       "id": "fbb12790599e68ae",
@@ -109,6 +109,27 @@
       "timeliness": 27.79,
       "writing_value": 5,
       "total_score": 127.79
+    },
+    {
+      "id": "295bec57bceea150",
+      "title": "浙江：强化脑机接口企业全生命周期金融支持，推动脑机接口企业选择合适上市方式 - 新浪财经",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9NUGdSQkdnUGhFUlNuclRwMzhNNGtWcEx4QUQyb0tHMHRDUldsanQ0M2JWS01JUUVZU0VzSTdybkJzLXBsa2xXUmlrWGZ0VWtPVGR1ek1Galp2d2t0WWxqYXhkQzNvVm9zMW5OMEdmeVpNSTBfWTZJag?oc=5",
+      "published_at": "2026-08-13T05:23:29+00:00",
+      "category": "国内脑机接口资讯",
+      "gn_label": "brain_computer",
+      "site_name": "国内脑机接口资讯",
+      "source": "国内脑机接口资讯",
+      "site_id": "国内脑机接口资讯",
+      "description": "浙江：强化脑机接口企业全生命周期金融支持，推动脑机接口企业选择合适上市方式  新浪财经",
+      "ai_score": 80.0,
+      "ai_label": "brain_computer",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.94,
+      "writing_value": 0,
+      "total_score": 119.94
     },
     {
       "id": "35d7aec6b74eefd5",
@@ -1033,27 +1054,6 @@
       "timeliness": 28.63,
       "writing_value": 0,
       "total_score": 118.63
-    },
-    {
-      "id": "35746d970b400a22",
-      "title": "China leads humanoid robot market with 97% of global shipments - TV BRICS",
-      "title_zh": "中国引领仿人机器人市场，占全球出货量的97% - TV BRICS",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOUkJ3MVY0NE1qckhKYkZFNFZPUUdBSUJEMG5YY2YxZnpCMlhHU05XQXREVG5WdWNMLV9QNGdHbVZqZG93OTd4MVVkTHBzdTNhbG93SF9weUlFTnZjZFdTcExDWnJMb1A1b0hyWWktaFBaSzZDYUk2WjhxMHgyZHlVVVRNNmxNc2hHbEtaNkRBSnI0WjIz?oc=5",
-      "published_at": "2026-08-12T15:01:55+00:00",
-      "category": "国外人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国外人形机器人资讯",
-      "source": "国外人形机器人资讯",
-      "site_id": "国外人形机器人资讯",
-      "description": "China leads humanoid robot market with 97% of global shipments  TV BRICS",
-      "ai_score": 80.0,
-      "ai_label": "humanoid",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 28.62,
-      "writing_value": 0,
-      "total_score": 118.62
     }
   ]
 }
