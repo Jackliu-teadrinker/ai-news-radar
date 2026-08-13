@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-13T17:26:59.583521+00:00",
-  "total_items": 11,
+  "generated_at": "2026-08-13T18:16:12.121671+00:00",
+  "total_items": 10,
   "items": [
     {
       "id": "http://arxiv.org/abs/2608.12198v1",
@@ -111,17 +111,6 @@
       "published_at": "2026-08-12T07:11:58+00:00",
       "updated_at": "2026-08-12T07:11:58Z",
       "title_zh": "ContactIPM：用于接触隐式轨迹优化的结构利用内点求解器"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.11671v1",
-      "title": "StellaVLA: In-Context Structured Demonstration for Generalizable Vision-Language-Action Models",
-      "url": "https://arxiv.org/abs/2608.11671",
-      "summary": "Vision-Language-Action (VLA) models can follow instructions and manipulate objects, but their performance often collapses out of distribution (OOD), when the scene, viewpoint, or object differs from training. Adapting to each new situation typically requires collecting more data and fine-tuning. We present StellaVLA, a framework that instead adapts at test time by conditioning on a single retrieved demonstration. The key idea is to move beyond imitating what an expert did and instead convey why: an automated offline pipeline converts each raw trajectory into a structured demonstration, e.g., a task plan, sub-goal descriptions, and verbalized 3D motion, at zero human-annotation cost. Provided as in-context guidance, this structured demonstration lets the policy reason about the task rather than mimic a pixel trajectory, which also makes it transferable across embodiments (real-robot, human-hand, or XR demonstrations). A parallel dual-training design internalizes this reasoning during training through a joint action-and-language objective, while inference uses the action expert alone, preserving real-time, high-frequency control with no added latency. On the VLA-Arena leaderboard(Aug 1, 2026), StellaVLA ranks first with an overall score of 0.63, versus 0.44 and 0.22 for the strong prior models ($π_{0.5}$ and LingBot-VLA), and it further leads on LIBERO with 98.8% average success rate and LIBERO-Plus with 85.1% success rate. Our real-robot benchmark demonstrates that StellaVLA can use both human/robot demos and human-to-robot (XR) demos as in-context structured demonstration to help VLA model adapt to OOD tasks.",
-      "authors": "Siyu Xu, Yunke Wang, Zijian Wang et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-12T05:30:53+00:00",
-      "updated_at": "2026-08-12T05:30:53Z",
-      "title_zh": "StellaVLA：可泛化视觉-语言-动作模型的上下文结构化演示"
     }
   ]
 }
