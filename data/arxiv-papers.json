@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-13T11:40:24.538617+00:00",
-  "total_items": 17,
+  "generated_at": "2026-08-13T12:47:50.299514+00:00",
+  "total_items": 16,
   "items": [
     {
       "id": "http://arxiv.org/abs/2608.12198v1",
@@ -177,17 +177,6 @@
       "published_at": "2026-08-12T02:10:58+00:00",
       "updated_at": "2026-08-12T02:10:58Z",
       "title_zh": "使用分层监督重新利用基于 RGB 的基础模型进行热图像深度估计"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.11521v1",
-      "title": "Keep the Future, Drop the Rollout: RIFT for World Action Models",
-      "url": "https://arxiv.org/abs/2608.11521",
-      "summary": "World action models (WAMs) condition robot actions on predicted futures, but iterative video rollout increases deployment latency. We ask whether action generation requires the evolving rollout trajectory or only its future representation. Across four WAMs on all 40 LIBERO tasks, paired closed-loop interventions show that masking or reassigning future-cache values changes execution and reduces success, indicating sensitivity to future values and their assigned positions. For Joint and Cosmos-2, however, replaying one fixed final-clean key/value (K/V) cache nearly preserves unmodified execution, with $1.7$ to $1.9$~cm end-effector average displacement error and $97.9\\%$ to $98.2\\%$ success. This separates cache consumption from production: these models can reuse a fixed cache but still require iterative rollout to construct it. We therefore propose RIFT (\\emph{Rollout-free Imagination via Future Tokens}), which uses learned anticipation tokens to construct a complete future K/V cache in one backbone pass while retaining the original future-read interface. On LIBERO, RIFT achieves $98.8\\%$ success, close to rollout-based Joint, IDM, and LingBot-VA at $98.4\\%$ to $98.6\\%$, while reducing action-chunk latency by $68.2\\%$ to $89.1\\%$. On RoboTwin~2.0, RIFT reaches $92.9/92.6\\%$ on clean/randomized scenes, the highest observed among the evaluated methods. These results support rollout-free future conditioning without iterative video generation at deployment.",
-      "authors": "Chushan Zhang, Jinguang Tong, Xuesong Li et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-12T00:17:30+00:00",
-      "updated_at": "2026-08-12T00:17:30Z",
-      "title_zh": "保留未来，放弃推出：世界行动模型的 RIFT"
     }
   ]
 }
