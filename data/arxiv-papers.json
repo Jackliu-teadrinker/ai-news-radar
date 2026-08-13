@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-13T02:47:31.084746+00:00",
-  "total_items": 29,
+  "generated_at": "2026-08-13T03:38:08.853649+00:00",
+  "total_items": 27,
   "items": [
     {
       "id": "http://arxiv.org/abs/2608.12198v1",
@@ -298,28 +298,6 @@
       "published_at": "2026-08-11T17:34:10+00:00",
       "updated_at": "2026-08-12T16:51:58Z",
       "title_zh": "VIScore：诊断潜在世界模型中与规划相关的质量"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.11063v1",
-      "title": "Deployment Is Not Destiny: Robot Recomposition in the Field with Unseen Software, Hardware, and Compute Payloads",
-      "url": "https://arxiv.org/abs/2608.11063",
-      "summary": "The tight coupling of subsystems in most robots, though a natural consequence of their complexity, leads to monolithic designs that are time-consuming and difficult to adapt after initial deployment. To address this challenge, we present a framework and supporting abstractions for recomposition during runtime that enable robots to quickly integrate previously unseen modular software, hardware, and compute payloads. Our approach allows non-expert users to quickly add new capabilities in the field through a true plug-and-play process. Crucially, new resources are not only immediately available to a host robot but are also shared with distributed peers, enabling compute-constrained systems to access powerful new remote capabilities. Our framework reduces reconfiguration time to a matter of minutes with no developer intervention, in stark contrast to the hours of expert effort often required for traditional manual integration. We demonstrate our method in two disaster response scenarios, including radioactive source localization at an operational nuclear reactor facility and a thermal-guided search for people in dark, difficult-to-reach spaces. These demonstrations show how in-field recomposition provides timely, flexible, and accessible adaptation to dynamic requirements, representing a critical step toward creating robots that can quickly evolve alongside the tasks, technologies, and environments they support.",
-      "authors": "Steven Swanbeck, Jonathan Salfity, Jeffery Gunawan et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-11T15:29:54+00:00",
-      "updated_at": "2026-08-11T15:29:54Z",
-      "title_zh": "部署不是命运：机器人在现场重组，具有看不见的软件、硬件和计算有效负载"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.10997v1",
-      "title": "Seeing above the waves: A modular sensing framework for data acquisition at sea",
-      "url": "https://arxiv.org/abs/2608.10997",
-      "summary": "Advancing autonomy for surface vessels requires systematic evaluation of their sensing and perception subsystems. Yet, maritime environments impose unique challenges: sensor installation is constrained by vessel layout, environmental conditions such as fog or sea clutter are difficult to reproduce, and long-duration missions complicate data collection. This work addresses the question: How can we design a modular and reproducible sensor platform for maritime autonomy? We present a comprehensive design blueprint that incorporates diverse modalities - RADAR, LiDAR, IMU, GNSS, AIS, RGB and LWIR cameras, and weather sensors - to enhance environmental awareness and vessel proprioception. Supported by a dedicated ROS2-based software framework for data management, our modular platform enables long-term data collection, hardware-in-the-loop testing, and integration with existing sensors and algorithms. By unifying hardware design and data capture methodology, the platform enhances reproducibility and comparability across vessels and research projects. The proposed framework bridges engineering implementation and research methodology, providing the foundation for standardized, verifiable datasets essential to advancing situational awareness and autonomous maritime navigation.",
-      "authors": "Jonathan E. Schmidt, Julius Wirbel, P. Nicholas Hansen et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-11T14:48:34+00:00",
-      "updated_at": "2026-08-11T14:48:34Z",
-      "title_zh": "看到海浪之上：用于海上数据采集的模块化传感框架"
     }
   ]
 }
