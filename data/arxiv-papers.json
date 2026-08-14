@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-14T21:47:39.340475+00:00",
-  "total_items": 19,
+  "generated_at": "2026-08-14T22:13:31.165372+00:00",
+  "total_items": 17,
   "items": [
     {
       "id": "http://arxiv.org/abs/2608.13555v1",
@@ -188,28 +188,6 @@
       "published_at": "2026-08-13T10:14:33+00:00",
       "updated_at": "2026-08-13T10:14:33Z",
       "title_zh": "H2R-Bench：世界模型中人机操作视频生成的基准测试"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.13028v1",
-      "title": "RGB-D Video Generation for Improving Human-to-Robot Object Handover Prediction",
-      "url": "https://arxiv.org/abs/2608.13028",
-      "summary": "Human-to-robot (H2R) object handover is a fundamental capability for human-robot collaboration, yet progress is hindered by the scarcity of large-scale, human-centric datasets and the significant sim-to-real gap. To address these challenges, we introduce Hand2Bot, an RGB-D video dataset that provides rich contextual information such as body posture and facial expressions, specifically collected for handover scenarios with real-world noise patterns. We further propose PassGen, a generative pipeline that leverages stable video diffusion and an Intention-Aware Temporal Face Encoder to synthesize realistic handover sequences while ensuring hand-object consistency. To bridge the sim-to-real gap, we implement a morphology-based depth editing strategy that replicates realistic sensor noise found in physical depth maps. Experimental evaluations demonstrate that our framework achieves high intention identification accuracy and low false trigger rates in both ablation studies and real-world deployment on a physical robot platform. Our results confirm that training on PassGen allows for robust zero-shot transfer and earlier intention anticipation compared to traditional hand-centric baselines, effectively enabling socially aware robotic behavior in shared workspaces.",
-      "authors": "Tianyu Sun, Zhoujie Fu, Zihui Gao et al.",
-      "category": "cs.CV",
-      "published_at": "2026-08-13T09:55:59+00:00",
-      "updated_at": "2026-08-13T09:55:59Z",
-      "title_zh": "用于改进人机对象交接预测的 RGB-D 视频生成"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.13026v1",
-      "title": "Temporal GRPO: Beyond Trajectory-Level Credit in Vision-Language-Action Reinforcement Learning",
-      "url": "https://arxiv.org/abs/2608.13026",
-      "summary": "Outcome-driven reinforcement learning offers a scalable way to post-train vision-language-action (VLA) policies from sparse task-success feedback. In common GRPO-based VLA post-training, one rollout-level advantage is applied to every action in the trajectory. A rollout that completes several valid stages but fails later can therefore penalize the actions that produced its earlier progress. We call this trajectory-level credit aliasing. Temporal GRPO addresses this problem by constructing detectable task stages, aligning each rollout with stage-specific action intervals, and comparing only rollouts that have entered the same stage. The resulting stage advantages are applied to their corresponding intervals in a single policy update. On RoboTwin 2.0, Temporal GRPO improves task success and sample efficiency, with consistent gains across task horizons. Controlled updates on LIBERO-Long preserve shared prerequisite stages and concentrate improvement at the first stage where rollout outcomes diverge.",
-      "authors": "Yao Zhou, Hang Gao, Fengge Wu et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-13T09:54:14+00:00",
-      "updated_at": "2026-08-13T09:54:14Z",
-      "title_zh": "时间 GRPO：视觉-语言-动作强化学习中超越轨迹级信用"
     }
   ]
 }
