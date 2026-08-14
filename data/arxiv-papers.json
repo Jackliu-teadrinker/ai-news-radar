@@ -1,39 +1,5 @@
 {
-  "generated_at": "2026-08-13T23:32:15.811052+00:00",
-  "total_items": 3,
-  "items": [
-    {
-      "id": "http://arxiv.org/abs/2608.12198v1",
-      "title": "Learning-Based Behavior Planning for Automated Driving: Real-World Integration and Deployment",
-      "url": "https://arxiv.org/abs/2608.12198",
-      "summary": "Recent research in machine and deep learning has shown the potential of learningbased motion planning approaches to improve the driving behavior of automated vehicles, especially in complex environments. However, their complex nature and lack of transparency can hinder explainability and trustworthiness and complicate safety assurance. Motivated by these challenges, we propose a hybrid planning architecture that combines the advantages of machine learning with the verifiability and the determinism of classical approaches. Specifically, we developed a deep neural network to interpret complex traffic scenes and propose driving behavior, while an optimization-based supervision layer validates this proposal and enforces explicit drivability and safety constraints. We evaluate the learned planner's driving behavior in open-loop studies on real-world urban data, discuss system integration aspects for stable closed-loop operation, and report results from real-world deployment on our research vehicle karl..",
-      "authors": "Jean-Pierre Busch, Guido Linden, Jan Bergmann et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-12T15:52:18+00:00",
-      "updated_at": "2026-08-12T15:52:18Z",
-      "title_zh": "基于学习的自动驾驶行为规划：现实世界的集成和部署"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.12122v1",
-      "title": "HandEdit: A Unified Benchmark for Egocentric Human-to-Robot Dexterous Hand Image Editing",
-      "url": "https://arxiv.org/abs/2608.12122",
-      "summary": "Robotic manipulation with dexterous hands is a cornerstone of Embodied AI, yet its progress is stifled by the high cost of collecting embodiment-aware teleoperation data. While abundant egocentric videos of human hands offer a scalable alternative, the profound discrepancies in appearance, articulation, and camera viewpoints between human and robotic data raise significant challenges for co-training. Though existing general image-editing models demonstrate strong capabilities, they lack necessary embodiment-specific priors to fully bridge this gap. In this work, we present HandEdit, a unified large-scale embodiment-aware image-editing dataset and benchmark specifically designed to transform human hands and arms into various dexterous robotic embodiments within egocentric frames. HandEdit comprises over 200M editing instances derived from five diverse source datasets, covering 26 distinct URDFs, including 13 hand-only and 13 hand-arm configurations. Alongside the dataset, we establish a unified benchmark protocol with two tracks: Hand-only and Hand-Arm, supporting URDF-conditioned evaluation. We conduct extensive evaluations of 11 representative image-editing baselines using a multi-dimensional metric suite, including generic similarity metrics, VLM-based judgment, and embodiment-aware metrics. HandEdit serves as a critical resource at the intersection of image editing and robotics: it advances embodiment-aware editing models while enabling scalable dexterous robotic learning from abundant human video data, paving the way for more generalizable Embodied AI.",
-      "authors": "Zhenjie Yang, Xingyu Jiao, Guopeng Zhong et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-12T14:41:53+00:00",
-      "updated_at": "2026-08-12T14:41:53Z",
-      "title_zh": "HandEdit：以自我为中心的人机灵巧手图像编辑的统一基准"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.12063v1",
-      "title": "Learning Loco-Manipulation From SMPC Demonstrations With Sparse Offline-to-Online RL",
-      "url": "https://arxiv.org/abs/2608.12063",
-      "summary": "Integrating locomotion and manipulation is essential for robot autonomy, but scaling standard Reinforcement Learning (RL) to complex tasks is severely bottlenecked by the slow, manual process of dense reward shaping. To bypass this limitation, we leverage Sample-based Model Predictive Control (SMPC) entirely in simulation as an automated, rapidly tunable expert to generate massive offline datasets. Because this data solves the fundamental exploration problem, we can train an off-policy RL agent using purely sparse task rewards, drastically reducing the time required to learn new skills and eliminating the need for manual tuning. Integrating this high-level agent with a low-level dynamic stability controller yields more optimal behaviors that strictly align with true task objectives, ultimately allowing the learned policies to surpass the original optimal control teacher. We validate the robustness of this sim-to-real framework by successfully deploying complex loco-manipulation skills across different morphologies, including an arm-equipped Spot quadruped and a G1 humanoid.",
-      "authors": "Martin Schuck, Maks Sorokin, Simone Manni et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-12T13:48:56+00:00",
-      "updated_at": "2026-08-12T13:48:56Z",
-      "title_zh": "使用稀疏离线到在线 RL 从 SMPC 演示中学习局部操作"
-    }
-  ]
+  "generated_at": "2026-08-14T01:06:08.153099+00:00",
+  "total_items": 0,
+  "items": []
 }
