@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-14T23:13:47.567236+00:00",
-  "total_items": 15,
+  "generated_at": "2026-08-14T23:45:30.884063+00:00",
+  "total_items": 14,
   "items": [
     {
       "id": "http://arxiv.org/abs/2608.13555v1",
@@ -155,17 +155,6 @@
       "published_at": "2026-08-13T13:23:58+00:00",
       "updated_at": "2026-08-13T13:23:58Z",
       "title_zh": "FAM-DQ：基于双四旋翼的全驱动空中机械臂，用于高扭矩交互"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.13103v1",
-      "title": "S2-HWM: Sparse Event-Structured Hierarchical World Model for Long-Horizon Surgical Robot Manipulation",
-      "url": "https://arxiv.org/abs/2608.13103",
-      "summary": "Long-horizon surgical robot manipulation is challenging because task rewards are sparse, while meaningful interaction changes occur at irregular intervals. Existing world-model agents typically imagine at primitive-step resolution, leaving variable-duration task progress implicit. Manually specified stages can provide intermediate structure, but their task specific boundaries are difficult to align with state-dependent interaction transitions. We propose S2-HWM, a Sparse Event-Structured Hierarchical World Model that learns sparse event evidence from primitive latent trajectories to coordinate an event-level manager and a primitive-step worker. The event evidence schedules manager goal updates, and each selected latent goal conditions the worker's primitive actions until the next update. The learned event evidence also forms variable-duration segments for an Event Transition Model (ETM), which predicts the next?boundary stochastic state, segment duration, and accumulated segment reward. Chaining these event-level predictions provides a variable-duration continuation beyond the primitive imagination horizon for manager learning, while the worker retains primitive-step actor-critic learning. On a SurRoL-based PegTransfer task, S2-HWM achieves a success rate of 98.7%, outperforming the flat GAS DreamerV3 baseline by 22.7 percentage points.",
-      "authors": "Shuzhe Zhang, Xin Zhu, Yinling Qian et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-13T11:29:20+00:00",
-      "updated_at": "2026-08-13T11:29:20Z",
-      "title_zh": "S2-HWM：用于长视野手术机器人操作的稀疏事件结构分层世界模型"
     }
   ]
 }
