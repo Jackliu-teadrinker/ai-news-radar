@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-14T21:17:27.085375+00:00",
-  "total_items": 20,
+  "generated_at": "2026-08-14T21:47:39.340475+00:00",
+  "total_items": 19,
   "items": [
     {
       "id": "http://arxiv.org/abs/2608.13555v1",
@@ -210,17 +210,6 @@
       "published_at": "2026-08-13T09:54:14+00:00",
       "updated_at": "2026-08-13T09:54:14Z",
       "title_zh": "时间 GRPO：视觉-语言-动作强化学习中超越轨迹级信用"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.13014v1",
-      "title": "EgoPHI: Estimating Contact and Force from Egocentric Vision",
-      "url": "https://arxiv.org/abs/2608.13014",
-      "summary": "Understanding hand-object interaction from egocentric vision is essential for modeling how people physically engage with the surrounding world. Yet reasoning about physically grounded interaction requires estimating the forces acting on hands and objects, beyond localizing contact. We present EgoPHI, the first method that jointly estimates dense contact maps and 3D force distributions on hand and object meshes from a single monocular RGB image and object geometry. To address the lack of scalable ground-truth force annotations, we introduce a physics-based simulation pipeline that augments existing hand-object datasets with dense per-vertex force supervision. EgoPHI then learns dense 3D contact and force on interacting hand and articulated object meshes, extending vision-based force estimation beyond image-space or planar settings. Our evaluation on in-distribution and out-of-distribution benchmarks shows that EgoPHI improves force estimation over existing approaches while generalizing to unseen datasets. To evaluate sim-to-real transfer, we constructed two physical objects that capture dense object contact and force magnitude and used them to record a dataset of interactions from eight participants across diverse touch and grasp types. Our results demonstrate that EgoPHI recovers meaningful 3D contact and force distributions in simulated, out-of-distribution, and real-world settings, advancing egocentric hand-object understanding from contact localization toward physically grounded interaction reasoning.",
-      "authors": "Andela Ilic, Rachel Schuchert, Yijing Jiang et al.",
-      "category": "cs.CV",
-      "published_at": "2026-08-13T09:34:08+00:00",
-      "updated_at": "2026-08-13T09:34:08Z",
-      "title_zh": "EgoPHI：从自我中心视觉估计接触和力"
     }
   ]
 }
