@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-14T16:13:04.687985+00:00",
-  "total_items": 26,
+  "generated_at": "2026-08-14T17:24:49.983874+00:00",
+  "total_items": 24,
   "items": [
     {
       "id": "http://arxiv.org/abs/2608.13555v1",
@@ -265,28 +265,6 @@
       "published_at": "2026-08-13T05:56:17+00:00",
       "updated_at": "2026-08-13T05:56:17Z",
       "title_zh": "BrainWAM：自动驾驶的语义先验和预测动力学的动作空间协调"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.12840v1",
-      "title": "ASPIRE-VINS: Adaptive Spline-based Visual-inertial Navigation System With Robust 3D Measurement Residuals",
-      "url": "https://arxiv.org/abs/2608.12840",
-      "summary": "Visual-inertial navigation systems estimate six-degree-of-freedom motion by fusing visual and inertial data. Modern discrete-time methods with IMU preintegration provide strong accuracy and efficiency, but keyframe-based representations can be less flexible when residuals must be evaluated at arbitrary timestamps or when motion-dependent temporal resolution is needed. Continuous-time splines address this issue by representing the trajectory as a smooth temporal function, but uniformly spaced knots can under-represent rapid dynamics or over-parameterize static intervals. This letter proposes ASPIRE-VINS, a continuous-time VINS framework that combines adaptive knot placement (AKP), multi-resolution splines (MRS), and 3D measurement-space residuals (3D-MSR). AKP allocates knots according to local motion variation, MRS adds bounded local refinement in tangent space, and 3D-MSR provides bearing consistency by aligning transformed features with calibrated observation rays in 3D measurement space. Experiments show that ASPIRE-VINS achieves competitive or lower trajectory errors than the compared baselines, demonstrating the effectiveness of motion-adaptive continuous-time trajectory modeling under diverse motion and sensing conditions.",
-      "authors": "Kwangyik Jung, Eungchang Mason Lee, Taekjun Oh et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-13T05:24:17+00:00",
-      "updated_at": "2026-08-13T05:24:17Z",
-      "title_zh": "ASPIRE-VINS：具有鲁棒 3D 测量残差的自适应样条视觉惯性导航系统"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.12835v1",
-      "title": "AirForesight: Current-to-Future Spatial Map Imagination with Cross-Space Planning Consistency for UAV-VLN",
-      "url": "https://arxiv.org/abs/2608.12835",
-      "summary": "Unmanned Aerial Vehicle Vision-Language Navigation (UAV-VLN) requires agents to follow language instructions, infer spatial structure from sparse multi-view observations, and execute feasible 3D motion in complex outdoor environments. Despite recent progress with large language models, most existing methods still map vision-language inputs directly to actions, providing limited explicit scene grounding and future-aware spatial reasoning. We propose AirForesight, a current-to-future spatial map imagination framework for UAV-VLN. AirForesight first learns a structured current-map representation from multi-view observations. This representation is jointly supervised by current-map reconstruction and future-trajectory prediction, encouraging it to encode both present scene structure and future motion intent. Under structured causal attention, the current spatial knowledge is propagated to future-map reasoning, and the resulting current and future representations are aggregated to predict the next 3D waypoint. To make spatial imagination more relevant to navigation, we introduce a cross-space planning consistency loss that encourages directional agreement between the predicted map-space trajectory and the expert action direction derived from the ground-truth waypoint displacement. Experiments on OpenUAV and AerialVLN-S, together with extensive ablations, demonstrate strong performance and support the effectiveness and stability of the proposed framework.",
-      "authors": "Yutong Liu, Xiaojie Li, Mingzhu Xu et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-13T05:18:23+00:00",
-      "updated_at": "2026-08-13T05:18:23Z",
-      "title_zh": "AirForesight：UAV-VLN 的当前到未来空间地图想象与跨空间规划一致性"
     }
   ]
 }
