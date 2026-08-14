@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-14T22:13:31.165372+00:00",
-  "total_items": 17,
+  "generated_at": "2026-08-14T22:47:36.933968+00:00",
+  "total_items": 16,
   "items": [
     {
       "id": "http://arxiv.org/abs/2608.13555v1",
@@ -177,17 +177,6 @@
       "published_at": "2026-08-13T11:01:09+00:00",
       "updated_at": "2026-08-13T11:01:09Z",
       "title_zh": "语义辐射场作为现实场景中空间推理的模拟器"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.13049v1",
-      "title": "H2R-Bench: Benchmarking Human-to-Robot Manipulation Video Generation in World Models",
-      "url": "https://arxiv.org/abs/2608.13049",
-      "summary": "Large-scale manipulation data is essential for robot learning, yet collecting robot demonstrations remains expensive and difficult to scale. Meanwhile, abundant egocentric human manipulation videos provide rich behavioral experiences, but transferring them across embodiments remains challenging due to differences between human hands and robotic end-effectors. Recent advances in video world models offer a promising pathway to synthesize robot-centric manipulation videos from human observations, while their cross-embodiment transfer capability remains largely unexplored. Therefore, we introduce H2R-Bench, a benchmark for evaluating cross-embodiment human-to-robot manipulation video generation, where models transform egocentric human demonstrations into robot manipulation videos under specified embodiments. Each benchmark instance contains a human demonstration video, target embodiment constraints, and source-grounded annotations covering task goals, action events, functional contacts, and object responses. H2R-Bench evaluates generated videos through five dimensions, including goal-state completion, action-event completion, functional contact transfer, embodiment correctness, and general video quality. We benchmark eleven state-of-the-art video generation models across six manipulation families and two robot embodiments. Our evaluation reveals that current video world models remain limited in human-to-robot manipulation transfer: even leading models often fail in embodiment consistency, functional interaction, and task execution. H2R-Bench provides a systematic diagnostic framework for evaluating whether video world models can bridge the human-to-robot embodiment gap and convert human manipulation observations into robot-centric training resources.",
-      "authors": "Dingyi Rong, Yue Shi, Chaofan Ma et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-13T10:14:33+00:00",
-      "updated_at": "2026-08-13T10:14:33Z",
-      "title_zh": "H2R-Bench：世界模型中人机操作视频生成的基准测试"
     }
   ]
 }

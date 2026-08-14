@@ -1,9 +1,9 @@
 {
   "date": "2026-08-15",
-  "generated_at": "2026-08-14T22:13:34.069545+00:00",
+  "generated_at": "2026-08-14T22:47:39.544769+00:00",
   "score_threshold": 80,
   "total_items": 50,
-  "new_added": 2,
+  "new_added": 1,
   "items": [
     {
       "id": "a434028ed44832f3",
@@ -214,6 +214,27 @@
       "timeliness": 29.78,
       "writing_value": 0,
       "total_score": 119.78
+    },
+    {
+      "id": "741ceb6aa3f22c22",
+      "title": "独家|智元机器人内部管理曝光：20余个天才被神秘隔离|具身智能|姚卯青|大苗|谷歌|人才_手机新浪网 - 新浪财经",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPSU9NN2UtN0ZZS2ctZEZMNkV3VW9RQXN4ZTh5NUlXVHZqSFAyZTFrWHYxMC11X2lCNmFyQmxlMGl3Q0hTamFEYTUzWk5PSnE5TksxRF84akRzaWJ0dENQam9jcExVbW43UjZKeWJnUDlBZkk3NzQtM2VMbV9xSHpnTnlyLWVlSTRYai1ZWG1QU1FsNV8xczdua05OdEpZVV9jcTlnVVA3Z09QeC1HSndOVHRvMEVUT0pOQnJMeA?oc=5",
+      "published_at": "2026-08-14T22:29:45+00:00",
+      "category": "国内具身智能资讯",
+      "gn_label": "embodied_ai",
+      "site_name": "国内具身智能资讯",
+      "source": "国内具身智能资讯",
+      "site_id": "国内具身智能资讯",
+      "description": "独家|智元机器人内部管理曝光：20余个天才被神秘隔离|具身智能|姚卯青|大苗|谷歌|人才_手机新浪网  新浪财经",
+      "ai_score": 80.0,
+      "ai_label": "embodied_ai",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.72,
+      "writing_value": 0,
+      "total_score": 119.72
     },
     {
       "id": "d7e174bf79aea1c4",
@@ -1033,27 +1054,6 @@
       "timeliness": 23.06,
       "writing_value": 0,
       "total_score": 113.06
-    },
-    {
-      "id": "c011df719a1b0bee",
-      "title": "Cloud-assisted IoRT framework for latency-aware analytical kinematic control of a six-DOF robotic manipulator - Nature",
-      "title_zh": "用于六自由度机器人操纵器的延迟感知分析运动学控制的云辅助 IoRT 框架 - Nature",
-      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1RWW5WRlRyV2htQ3cyZDJJV3haQXhMZnBMSlVLSklPamhkQnQxblctQnJvTzRQTWM0aWo5NHBKRkYxZEhqakZhSmtLbUk5SUFUUFdjb3RQNkh3OXlweTB3?oc=5",
-      "published_at": "2026-08-14T14:04:27+00:00",
-      "category": "国外机器人资讯",
-      "gn_label": "robotics",
-      "site_name": "国外机器人资讯",
-      "source": "国外机器人资讯",
-      "site_id": "国外机器人资讯",
-      "description": "Cloud-assisted IoRT framework for latency-aware analytical kinematic control of a six-DOF robotic manipulator  Nature",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 5,
-      "timeliness": 27.87,
-      "writing_value": 5,
-      "total_score": 112.87
     }
   ]
 }

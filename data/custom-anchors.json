@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-14T22:12:27.733803+00:00",
+  "generated_at": "2026-08-14T22:46:42.530948+00:00",
   "window_start": "2026-08-14T19:00:00+08:00",
-  "window_end": "2026-08-15T06:12:24.555602+08:00",
+  "window_end": "2026-08-15T06:46:41.140558+08:00",
   "total_items": 21,
   "items": [
     {
@@ -21,9 +21,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 28.78,
+      "timeliness": 28.21,
       "writing_value": 5,
-      "total_score": 113.78
+      "total_score": 113.21
     },
     {
       "id": "2af8c7c59ca7acf460fdadecbdf446e0f3c659b0",
@@ -42,9 +42,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 24.79,
+      "timeliness": 24.22,
       "writing_value": 5,
-      "total_score": 109.79
+      "total_score": 109.22
+    },
+    {
+      "id": "40eee82254d5283ca33ee10abd5de09b5f448ee5",
+      "title": "Path Robotics CEO: Physical AI can help U.S. manufacturing produce more - CNBC",
+      "title_zh": "Path Robotics CEO：物理人工智能可以帮助美国制造业生产更多 - CNBC",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQOTF3NW9Za1hPRUZfSFNvY0hPS3pRMkkzcG1uQlE5WjFKZG8way1tSWk1UG4yYnlKN0JhV2VxcGlZTDYtZXFyNFY0U2hPbGQzTlR4VEJ0SXk2TTFSWlIzM3FpWFo2VWRQcGtSUTl3S0NzTnBSaUZfdzBJbkYwYU1UTDBCZDhKNlozQjhzR1Yta3lSUjY5dEVqOHYtWkI2aXdHRkF2U3lheC04RmFpdk82Zg?oc=5",
+      "published_at": "2026-08-14T11:00:45+00:00",
+      "category": "GN: Physical AI",
+      "gn_label": "physical_ai",
+      "site_name": "GN: Physical AI",
+      "source": "GN: Physical AI",
+      "site_id": "GN: Physical AI",
+      "description": "Path Robotics CEO: Physical AI can help U.S. manufacturing produce more  CNBC",
+      "ai_score": 65.0,
+      "ai_label": "physical_ai",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 18.24,
+      "writing_value": 0,
+      "total_score": 93.24
     },
     {
       "id": "c1883b80629e1014a7c430105f86b551923ad551",
@@ -63,14 +84,35 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 22.51,
+      "timeliness": 21.94,
       "writing_value": 0,
-      "total_score": 97.51
+      "total_score": 96.94
     },
     {
-      "id": "48cc17e10eda8a0faaf966f300283a4ad0cec3c7",
-      "title": "Autonomous Camera Robots - trendhunter.com",
-      "title_zh": "自主摄像机器人 - trendhunter.com",
+      "id": "7011982e14a760d518a014c71f88ef09fb46c7c9",
+      "title": "Hyundai Motor Group to Test Physical AI and Robots With South Korean Army - thelec.net",
+      "title_zh": "现代汽车集团将与韩国军队测试物理人工智能和机器人 - thelec.net",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFA2X09pMmtETTZmVTZLeGdvZUhrcEk0c3ZuWlFEREFxcGxFN1E1T2NqQkN5ZTNJU21ULS1hZ2JJb1VZZjdaOVhPbS1uSjlTSlRWZzVBZ2VUdDR2Vk5ON2llb1g3ZDhSd2M?oc=5",
+      "published_at": "2026-08-14T13:00:36+00:00",
+      "category": "GN: Physical AI",
+      "gn_label": "physical_ai",
+      "site_name": "GN: Physical AI",
+      "source": "GN: Physical AI",
+      "site_id": "GN: Physical AI",
+      "description": "Hyundai Motor Group to Test Physical AI and Robots With South Korean Army  thelec.net",
+      "ai_score": 65.0,
+      "ai_label": "physical_ai",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 20.23,
+      "writing_value": 0,
+      "total_score": 95.23
+    },
+    {
+      "id": "06fb29c6e91a213d598b49e6eef2190d17a23b1a",
+      "title": "Autonomous Camera Robots - Trend Hunter",
+      "title_zh": "自主摄像机器人 - Trend Hunter",
       "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5FWUhKbHJtcXdvVFk0VlpkeEpUSUtxcDhfTVdhVmt4dnNMVF9VUGNHUzZrV1pfeUtsWEhZRUJXOF95bmxuTzhwbE4yZ2pvdk43RlE4bXozV0o0RHZHcnpsYVhncVUyZw?oc=5",
       "published_at": "2026-08-14T15:40:59+00:00",
       "category": "GN: autonomous robot",
@@ -78,15 +120,15 @@
       "site_name": "GN: autonomous robot",
       "source": "GN: autonomous robot",
       "site_id": "GN: autonomous robot",
-      "description": "Autonomous Camera Robots  trendhunter.com",
+      "description": "Autonomous Camera Robots  Trend Hunter",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.48,
+      "timeliness": 22.91,
       "writing_value": 0,
-      "total_score": 98.48
+      "total_score": 97.91
     },
     {
       "id": "cacdc989c27c8d9eab4698313a53ba599dc4cdf4",
@@ -105,9 +147,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 21.13,
+      "timeliness": 20.56,
       "writing_value": 0,
-      "total_score": 96.13
+      "total_score": 95.56
     },
     {
       "id": "c1dadf0103d072ade6fb6c1db5965ae4a3619d5b",
@@ -126,14 +168,14 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 22.91,
+      "timeliness": 22.34,
       "writing_value": 5,
-      "total_score": 107.91
+      "total_score": 107.34
     },
     {
-      "id": "d68a07bf8855d71898cb2cbb0a5b97b945600a01",
-      "title": "Best robot vacuum deal: Omni C20 self-emptying combo is $170 off - mashable.com",
-      "title_zh": "最佳扫地机器人优惠：Omni C20 自清空组合立减 170 美元 - mashable.com",
+      "id": "a7b632fda7d7952212ccb5f54ee51e52f2d7d2c3",
+      "title": "Best robot vacuum deal: Omni C20 self-emptying combo is $170 off - Mashable",
+      "title_zh": "最佳扫地机器人优惠：Omni C20 自清空组合立减 170 美元 - Mashable",
       "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBCUFVfTHJpNGxfVW53cEFYYmNxQ3dfSjBFMG1BU1BlMXBpd0tLWmd6czRqYXdybElxUzR4S2dGemp5RkdnMXFmUnRtcGpoZ2RlZjZObFhacEdGeUxmanZ2S3ZrTUx3T2tWTEI0RzR1Q3lfLUdpNEpxbQ?oc=5",
       "published_at": "2026-08-14T20:39:29+00:00",
       "category": "GN: robot vacuum",
@@ -141,15 +183,15 @@
       "site_name": "GN: robot vacuum",
       "source": "GN: robot vacuum",
       "site_id": "GN: robot vacuum",
-      "description": "Best robot vacuum deal: Omni C20 self-emptying combo is $170 off  mashable.com",
+      "description": "Best robot vacuum deal: Omni C20 self-emptying combo is $170 off  Mashable",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.45,
+      "timeliness": 27.88,
       "writing_value": 0,
-      "total_score": 103.45
+      "total_score": 102.88
     },
     {
       "id": "435d8787aaf0d01e87c08519ac98c641e371e738",
@@ -168,14 +210,14 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 20.54,
+      "timeliness": 19.96,
       "writing_value": 0,
-      "total_score": 95.54
+      "total_score": 94.96
     },
     {
-      "id": "7f70a8160bb635b066caeaabdfbbe12b1aa3a235",
-      "title": "Distalmotion’s Dexter Robot Wins FDA Nod for Ventral Hernia Repair - Medical Product Outsourcing",
-      "title_zh": "Distalmotion 的 Dexter 机器人获得 FDA 腹疝修复批准 - 医疗产品外包",
+      "id": "8b43586017f7a04151112cefd792ec0382033a96",
+      "title": "Distalmotion’s Dexter Robot Wins FDA Nod for Ventral Hernia Repair - mpo-mag.com",
+      "title_zh": "Distalmotion 的 Dexter 机器人获得 FDA 腹疝修复批准 - mpo-mag.com",
       "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQaHVkTDdYSnpaLXJjOGc4eDU4VEpGa29TRWdtdEZoVDdCUEc1R2lkZTBiaTVTb0tfejl6QW84RndoT3hnSnhZdXJaRmZXTUlhYXRxXzFWVDlrUWZUbV8wOWpHb3hGVXktMDZNY0R0Zy1RTHRJMkZVQUt5bmNPSnVBOGMzbVY1Z3E5THlFLW4yNFhsLWxLa1RpSlMzTGVOQVM4UXJVTXNUMA?oc=5",
       "published_at": "2026-08-14T14:36:32+00:00",
       "category": "GN: surgical robot",
@@ -183,15 +225,15 @@
       "site_name": "GN: surgical robot",
       "source": "GN: surgical robot",
       "site_id": "GN: surgical robot",
-      "description": "Distalmotion’s Dexter Robot Wins FDA Nod for Ventral Hernia Repair  Medical Product Outsourcing",
+      "description": "Distalmotion’s Dexter Robot Wins FDA Nod for Ventral Hernia Repair  mpo-mag.com",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 22.4,
+      "timeliness": 21.83,
       "writing_value": 0,
-      "total_score": 97.4
+      "total_score": 96.83
     },
     {
       "id": "c9100c84e3b5a38828f1f2fa106ac487eeebe20c",
@@ -210,9 +252,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 21.71,
+      "timeliness": 21.14,
       "writing_value": 0,
-      "total_score": 96.71
+      "total_score": 96.14
     },
     {
       "id": "53e32c61de3917e3d16253475bc5346bd6dcdacf",
@@ -231,9 +273,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 20.4,
+      "timeliness": 19.83,
       "writing_value": 5,
-      "total_score": 105.4
+      "total_score": 104.83
     },
     {
       "id": "e2968d2055ca28652d9ead5b7620ba35577aa750",
@@ -252,9 +294,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 19.13,
+      "timeliness": 18.55,
       "writing_value": 0,
-      "total_score": 94.13
+      "total_score": 93.55
     },
     {
       "id": "b597d167e782980003116a79e995c765db30a4f7",
@@ -273,30 +315,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 22.58,
+      "timeliness": 22.01,
       "writing_value": 0,
-      "total_score": 97.58
-    },
-    {
-      "id": "0b6f9bad15327a4b960f0fdd298f4523399bf62d",
-      "title": "12家券商押注宇树科技 - 新浪网",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNSXdrRG9TcW9vUVgwbmh1TTkxU0ZPYjVHcnZZZW5qV3FrMkphSUNPd0hRMmlFcnhlc19aeHhYcnFpY3QtV2FoTTg1eFJvUmJ5eThma0FOV2V0TXRzM2FNX1ZCM2pBUkhJQUQyaHEydlNfRk55aVFMRElDbGFmT0IydGp3VQ?oc=5",
-      "published_at": "2026-08-14T21:53:23+00:00",
-      "category": "GN: 宇树科技",
-      "gn_label": "robotics",
-      "site_name": "GN: 宇树科技",
-      "source": "GN: 宇树科技",
-      "site_id": "GN: 宇树科技",
-      "description": "12家券商押注宇树科技  新浪网",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 29.68,
-      "writing_value": 0,
-      "total_score": 104.68
+      "total_score": 97.01
     },
     {
       "id": "86d387232675092b6b7ce783683856efe67845f7",
@@ -315,9 +336,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 19.54,
+      "timeliness": 18.97,
       "writing_value": 0,
-      "total_score": 94.54
+      "total_score": 93.97
+    },
+    {
+      "id": "0b6f9bad15327a4b960f0fdd298f4523399bf62d",
+      "title": "12家券商押注宇树科技 - 新浪网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNSXdrRG9TcW9vUVgwbmh1TTkxU0ZPYjVHcnZZZW5qV3FrMkphSUNPd0hRMmlFcnhlc19aeHhYcnFpY3QtV2FoTTg1eFJvUmJ5eThma0FOV2V0TXRzM2FNX1ZCM2pBUkhJQUQyaHEydlNfRk55aVFMRElDbGFmT0IydGp3VQ?oc=5",
+      "published_at": "2026-08-14T21:53:23+00:00",
+      "category": "GN: 宇树科技",
+      "gn_label": "robotics",
+      "site_name": "GN: 宇树科技",
+      "source": "GN: 宇树科技",
+      "site_id": "GN: 宇树科技",
+      "description": "12家券商押注宇树科技  新浪网",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.11,
+      "writing_value": 0,
+      "total_score": 104.11
     },
     {
       "id": "c43e5e61d6ff24018b08d3b045b299002f38b64f",
@@ -336,51 +378,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 21.72,
+      "timeliness": 21.15,
       "writing_value": 0,
-      "total_score": 96.72
+      "total_score": 96.15
     },
     {
-      "id": "7f9a85d58fc1721d895f944c91fe3b6910306362",
-      "title": "宇树科技上市首日股价走势会如何？ - 新浪网",
+      "id": "89ae354d4bfb55f4f95d5611ae72cc832443cfc0",
+      "title": "梁文锋1.8亿战配宇树科技，机器人赛道引爆AI资本局 - 新浪网",
       "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBoT3Rtc1ZmNEpodUZ1clRWNWJMT0FfLWpHLWZmMlN1UUtRdXQwZ0huNDNVMFdrY1FiMFg5dmNxNktyRDF3aHMxbkh3YmRwaFJYa2pJeFpOUzRfU2FlVm5XZFpTNDdqYXlWeEJZbGl4cGZ5QQ?oc=5",
-      "published_at": "2026-08-14T13:44:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPeTdPRkRUbkdPS2FjWEJMUGZmU0NuV2p3alluQnJISDEwcWdkamFJMV8teWpRSVJoYWg3TkowS1pvcFRlWE5SQ1JJWFQtVnJZQWZPSkwzVk9QNFBoclhvVmtXTmJHdTNVMlZIX0Z5R3A0VDJjaDlyalNnNGJNcHZPR1NoWQ?oc=5",
+      "published_at": "2026-08-14T19:13:30+00:00",
       "category": "GN: 宇树科技",
       "gn_label": "robotics",
       "site_name": "GN: 宇树科技",
       "source": "GN: 宇树科技",
       "site_id": "GN: 宇树科技",
-      "description": "宇树科技上市首日股价走势会如何？  新浪网",
+      "description": "梁文锋1.8亿战配宇树科技，机器人赛道引爆AI资本局  新浪网",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 21.53,
+      "timeliness": 26.45,
       "writing_value": 0,
-      "total_score": 96.53
-    },
-    {
-      "id": "b63d4dca6c4b7ddb82357558f51fca9d09a0ad32",
-      "title": "智元机器人内部管理曝光：20余个天才被神秘隔离 - 凤凰网科技",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5SYVJJQ3hLOVFDQlZwZXgya1lEblRZMXB0OTB2VE1tYnhSNlJjZ3hFc3BQcGVZdEdiZmxUX01jU3RSUmNtVWpWOUFUWjY?oc=5",
-      "published_at": "2026-08-14T11:49:29+00:00",
-      "category": "GN: 智元机器人",
-      "gn_label": "robotics",
-      "site_name": "GN: 智元机器人",
-      "source": "GN: 智元机器人",
-      "site_id": "GN: 智元机器人",
-      "description": "智元机器人内部管理曝光：20余个天才被神秘隔离  凤凰网科技",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 19.62,
-      "writing_value": 0,
-      "total_score": 94.62
+      "total_score": 101.45
     },
     {
       "id": "6a8c8b51e6d7acbcbcc656eecc05944a62b5bce7",
@@ -399,30 +420,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 20.84,
+      "timeliness": 20.27,
       "writing_value": 0,
-      "total_score": 95.84
-    },
-    {
-      "id": "ceb9fb3035854fd11d6c758f839aac91aaf6b71e",
-      "title": "独家 | 智元机器人内部管理曝光：20余个天才被神秘隔离 - t.cj.sina.cn",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5fd1BkZ1g1STM1d29aWTVFNWpKQUhqbnd6T0JibVJOcWRSQkYtd3lwTktfZlB4Q2tSNmItR1ltMHpyd2NPSVFQRWRVY09hRzFHRDlDeTYwUnJ2YXVXUEtBdm5EamtUZHpVN08teWtUMmI?oc=5",
-      "published_at": "2026-08-14T12:00:00+00:00",
-      "category": "GN: 智元机器人",
-      "gn_label": "robotics",
-      "site_name": "GN: 智元机器人",
-      "source": "GN: 智元机器人",
-      "site_id": "GN: 智元机器人",
-      "description": "独家 | 智元机器人内部管理曝光：20余个天才被神秘隔离  t.cj.sina.cn",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 19.79,
-      "writing_value": 0,
-      "total_score": 94.79
+      "total_score": 95.27
     },
     {
       "id": "f6298074a4512742da2d407ec69bd3f3b94fc74d",
@@ -441,9 +441,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 5,
-      "timeliness": 19.12,
+      "timeliness": 18.54,
       "writing_value": 5,
-      "total_score": 119.12
+      "total_score": 118.54
     }
   ],
   "fallback_used": false
