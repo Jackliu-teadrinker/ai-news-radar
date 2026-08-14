@@ -1,9 +1,30 @@
 {
-  "generated_at": "2026-08-14T20:52:47.344150+00:00",
+  "generated_at": "2026-08-14T21:16:22.821547+00:00",
   "window_start": "2026-08-14T19:00:00+08:00",
-  "window_end": "2026-08-15T04:52:46.096411+08:00",
-  "total_items": 18,
+  "window_end": "2026-08-15T05:16:21.004848+08:00",
+  "total_items": 19,
   "items": [
+    {
+      "id": "299904f7bd3fabebe2f854b724371253976271ff",
+      "title": "The Next Big Influencer Is This 4-Foot-Tall Robot From China",
+      "title_zh": "下一个大影响者是这个来自中国的 4 英尺高机器人",
+      "url": "https://www.wired.com/story/unitree-influencer-4-foot-robot-from-china/",
+      "published_at": "2026-08-14T20:59:03+00:00",
+      "category": "Wired",
+      "gn_label": "robotics",
+      "site_name": "Wired",
+      "source": "Wired",
+      "site_id": "Wired",
+      "description": "The Unitree G1 has found online fame as a relatively affordable robot that can charm a crowd. But can it ever hold down a real job?",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 29.71,
+      "writing_value": 5,
+      "total_score": 114.71
+    },
     {
       "id": "2af8c7c59ca7acf460fdadecbdf446e0f3c659b0",
       "title": "Video Friday: Lift Happens",
@@ -21,14 +42,14 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 26.12,
+      "timeliness": 25.73,
       "writing_value": 5,
-      "total_score": 111.12
+      "total_score": 110.73
     },
     {
-      "id": "06fb29c6e91a213d598b49e6eef2190d17a23b1a",
-      "title": "Autonomous Camera Robots - Trend Hunter",
-      "title_zh": "自主摄像机器人 - Trend Hunter",
+      "id": "48cc17e10eda8a0faaf966f300283a4ad0cec3c7",
+      "title": "Autonomous Camera Robots - trendhunter.com",
+      "title_zh": "自主摄像机器人 - trendhunter.com",
       "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5FWUhKbHJtcXdvVFk0VlpkeEpUSUtxcDhfTVdhVmt4dnNMVF9VUGNHUzZrV1pfeUtsWEhZRUJXOF95bmxuTzhwbE4yZ2pvdk43RlE4bXozV0o0RHZHcnpsYVhncVUyZw?oc=5",
       "published_at": "2026-08-14T15:40:59+00:00",
       "category": "GN: autonomous robot",
@@ -36,15 +57,15 @@
       "site_name": "GN: autonomous robot",
       "source": "GN: autonomous robot",
       "site_id": "GN: autonomous robot",
-      "description": "Autonomous Camera Robots  Trend Hunter",
+      "description": "Autonomous Camera Robots  trendhunter.com",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.8,
+      "timeliness": 24.41,
       "writing_value": 0,
-      "total_score": 99.8
+      "total_score": 99.41
     },
     {
       "id": "cacdc989c27c8d9eab4698313a53ba599dc4cdf4",
@@ -63,9 +84,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 22.45,
+      "timeliness": 22.06,
       "writing_value": 0,
-      "total_score": 97.45
+      "total_score": 97.06
     },
     {
       "id": "c1dadf0103d072ade6fb6c1db5965ae4a3619d5b",
@@ -84,9 +105,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 24.24,
+      "timeliness": 23.85,
       "writing_value": 5,
-      "total_score": 109.24
+      "total_score": 108.85
     },
     {
       "id": "a7b632fda7d7952212ccb5f54ee51e52f2d7d2c3",
@@ -105,9 +126,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.78,
+      "timeliness": 29.39,
       "writing_value": 0,
-      "total_score": 104.78
+      "total_score": 104.39
     },
     {
       "id": "435d8787aaf0d01e87c08519ac98c641e371e738",
@@ -126,9 +147,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 21.86,
+      "timeliness": 21.47,
       "writing_value": 0,
-      "total_score": 96.86
+      "total_score": 96.47
     },
     {
       "id": "7f70a8160bb635b066caeaabdfbbe12b1aa3a235",
@@ -147,9 +168,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.73,
+      "timeliness": 23.34,
       "writing_value": 0,
-      "total_score": 98.73
+      "total_score": 98.34
     },
     {
       "id": "c9100c84e3b5a38828f1f2fa106ac487eeebe20c",
@@ -168,9 +189,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.03,
+      "timeliness": 22.64,
       "writing_value": 0,
-      "total_score": 98.03
+      "total_score": 97.64
     },
     {
       "id": "53e32c61de3917e3d16253475bc5346bd6dcdacf",
@@ -189,30 +210,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 21.73,
+      "timeliness": 21.33,
       "writing_value": 5,
-      "total_score": 106.73
-    },
-    {
-      "id": "9aa2e3b9917d8da5c2b04577d838b83c30b04c87",
-      "title": "低至万九！宇树科技弃购率刷新纪录 - 东方财富",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9ESDVQUUJOd3J4NjBhWEctamxDS1FzTWhKM29xam5EMnF4WmROdzRJb1M0NXROMVZwRlJRTW5ZLWdUalBGRG5fUkVuVUg0b2xXSXZRTi00R0JfdmltZ0gzeA?oc=5",
-      "published_at": "2026-08-14T12:11:42+00:00",
-      "category": "GN: 宇树科技",
-      "gn_label": "robotics",
-      "site_name": "GN: 宇树科技",
-      "source": "GN: 宇树科技",
-      "site_id": "GN: 宇树科技",
-      "description": "低至万九！宇树科技弃购率刷新纪录  东方财富",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 21.32,
-      "writing_value": 0,
-      "total_score": 96.32
+      "total_score": 106.33
     },
     {
       "id": "e2968d2055ca28652d9ead5b7620ba35577aa750",
@@ -231,9 +231,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 20.45,
+      "timeliness": 20.06,
       "writing_value": 0,
-      "total_score": 95.45
+      "total_score": 95.06
     },
     {
       "id": "b597d167e782980003116a79e995c765db30a4f7",
@@ -252,9 +252,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.9,
+      "timeliness": 23.51,
       "writing_value": 0,
-      "total_score": 98.9
+      "total_score": 98.51
     },
     {
       "id": "86d387232675092b6b7ce783683856efe67845f7",
@@ -273,9 +273,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 20.87,
+      "timeliness": 20.48,
       "writing_value": 0,
-      "total_score": 95.87
+      "total_score": 95.48
     },
     {
       "id": "c43e5e61d6ff24018b08d3b045b299002f38b64f",
@@ -294,9 +294,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.05,
+      "timeliness": 22.65,
       "writing_value": 0,
-      "total_score": 98.05
+      "total_score": 97.65
     },
     {
       "id": "7f9a85d58fc1721d895f944c91fe3b6910306362",
@@ -315,9 +315,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 22.85,
+      "timeliness": 22.46,
       "writing_value": 0,
-      "total_score": 97.85
+      "total_score": 97.46
+    },
+    {
+      "id": "b63d4dca6c4b7ddb82357558f51fca9d09a0ad32",
+      "title": "智元机器人内部管理曝光：20余个天才被神秘隔离 - 凤凰网科技",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5SYVJJQ3hLOVFDQlZwZXgya1lEblRZMXB0OTB2VE1tYnhSNlJjZ3hFc3BQcGVZdEdiZmxUX01jU3RSUmNtVWpWOUFUWjY?oc=5",
+      "published_at": "2026-08-14T11:49:29+00:00",
+      "category": "GN: 智元机器人",
+      "gn_label": "robotics",
+      "site_name": "GN: 智元机器人",
+      "source": "GN: 智元机器人",
+      "site_id": "GN: 智元机器人",
+      "description": "智元机器人内部管理曝光：20余个天才被神秘隔离  凤凰网科技",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 20.55,
+      "writing_value": 0,
+      "total_score": 95.55
     },
     {
       "id": "6a8c8b51e6d7acbcbcc656eecc05944a62b5bce7",
@@ -336,9 +357,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 22.17,
+      "timeliness": 21.78,
       "writing_value": 0,
-      "total_score": 97.17
+      "total_score": 96.78
     },
     {
       "id": "ceb9fb3035854fd11d6c758f839aac91aaf6b71e",
@@ -357,9 +378,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 21.12,
+      "timeliness": 20.73,
       "writing_value": 0,
-      "total_score": 96.12
+      "total_score": 95.73
     },
     {
       "id": "f6298074a4512742da2d407ec69bd3f3b94fc74d",
@@ -378,9 +399,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 5,
-      "timeliness": 20.44,
+      "timeliness": 20.05,
       "writing_value": 5,
-      "total_score": 120.44
+      "total_score": 120.05
     }
   ],
   "fallback_used": false
