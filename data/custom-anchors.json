@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-14T22:46:42.530948+00:00",
+  "generated_at": "2026-08-14T23:12:32.275357+00:00",
   "window_start": "2026-08-14T19:00:00+08:00",
-  "window_end": "2026-08-15T06:46:41.140558+08:00",
-  "total_items": 21,
+  "window_end": "2026-08-15T07:12:31.586604+08:00",
+  "total_items": 19,
   "items": [
     {
       "id": "299904f7bd3fabebe2f854b724371253976271ff",
@@ -21,93 +21,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 28.21,
+      "timeliness": 27.78,
       "writing_value": 5,
-      "total_score": 113.21
-    },
-    {
-      "id": "2af8c7c59ca7acf460fdadecbdf446e0f3c659b0",
-      "title": "Video Friday: Lift Happens",
-      "title_zh": "周五视频：电梯发生",
-      "url": "https://spectrum.ieee.org/video-friday-darpa-heavy-lift-challenge",
-      "published_at": "2026-08-14T17:00:01+00:00",
-      "category": "IEEE Spectrum",
-      "gn_label": "robotics",
-      "site_name": "IEEE Spectrum",
-      "source": "IEEE Spectrum",
-      "site_id": "IEEE Spectrum",
-      "description": "Video Friday is your weekly selection of awesome robotics videos, collected by your friends at IEEE Spectrum robotics. We also post a weekly calendar of upcoming robotics events for the next few months. Please send us your events for inclusion.Actuate 2026: 18–19 August 2026, SAN FRANCISCOIROS 2026:",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 5,
-      "timeliness": 24.22,
-      "writing_value": 5,
-      "total_score": 109.22
-    },
-    {
-      "id": "40eee82254d5283ca33ee10abd5de09b5f448ee5",
-      "title": "Path Robotics CEO: Physical AI can help U.S. manufacturing produce more - CNBC",
-      "title_zh": "Path Robotics CEO：物理人工智能可以帮助美国制造业生产更多 - CNBC",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQOTF3NW9Za1hPRUZfSFNvY0hPS3pRMkkzcG1uQlE5WjFKZG8way1tSWk1UG4yYnlKN0JhV2VxcGlZTDYtZXFyNFY0U2hPbGQzTlR4VEJ0SXk2TTFSWlIzM3FpWFo2VWRQcGtSUTl3S0NzTnBSaUZfdzBJbkYwYU1UTDBCZDhKNlozQjhzR1Yta3lSUjY5dEVqOHYtWkI2aXdHRkF2U3lheC04RmFpdk82Zg?oc=5",
-      "published_at": "2026-08-14T11:00:45+00:00",
-      "category": "GN: Physical AI",
-      "gn_label": "physical_ai",
-      "site_name": "GN: Physical AI",
-      "source": "GN: Physical AI",
-      "site_id": "GN: Physical AI",
-      "description": "Path Robotics CEO: Physical AI can help U.S. manufacturing produce more  CNBC",
-      "ai_score": 65.0,
-      "ai_label": "physical_ai",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 18.24,
-      "writing_value": 0,
-      "total_score": 93.24
-    },
-    {
-      "id": "c1883b80629e1014a7c430105f86b551923ad551",
-      "title": "Can Serve Robotics Scale Physical AI Beyond Food Delivery in 2026? - TradingView",
-      "title_zh": "2026 年，服务机器人能否将物理人工智能扩展到食品配送之外？ - 交易视图",
-      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQQ0ZVWDFhV09OU1FyX2g4WF94YXYzbTV3c3RIN01RemVRUk1IU2JxdXpkOUIzZXU4UWQ3YzNTbHBFbUZ6Vk9nRWhpWkhXMk8zMjRVcVdqYXRmTUlTdnZhVnZucnJQeFdWX2NHQUdISXB2UmtKN3RheE5HQzVnRmk2NGFOSzlLTndZNEd0b0kxdTdyZk1MOXZUVERMY1Bxb2V2U2xZSVRVN0NETUlGaHNJdUlUUzBkcVhURU5DekpR?oc=5",
-      "published_at": "2026-08-14T14:43:00+00:00",
-      "category": "GN: Physical AI",
-      "gn_label": "physical_ai",
-      "site_name": "GN: Physical AI",
-      "source": "GN: Physical AI",
-      "site_id": "GN: Physical AI",
-      "description": "Can Serve Robotics Scale Physical AI Beyond Food Delivery in 2026?  TradingView",
-      "ai_score": 65.0,
-      "ai_label": "physical_ai",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 21.94,
-      "writing_value": 0,
-      "total_score": 96.94
-    },
-    {
-      "id": "7011982e14a760d518a014c71f88ef09fb46c7c9",
-      "title": "Hyundai Motor Group to Test Physical AI and Robots With South Korean Army - thelec.net",
-      "title_zh": "现代汽车集团将与韩国军队测试物理人工智能和机器人 - thelec.net",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFA2X09pMmtETTZmVTZLeGdvZUhrcEk0c3ZuWlFEREFxcGxFN1E1T2NqQkN5ZTNJU21ULS1hZ2JJb1VZZjdaOVhPbS1uSjlTSlRWZzVBZ2VUdDR2Vk5ON2llb1g3ZDhSd2M?oc=5",
-      "published_at": "2026-08-14T13:00:36+00:00",
-      "category": "GN: Physical AI",
-      "gn_label": "physical_ai",
-      "site_name": "GN: Physical AI",
-      "source": "GN: Physical AI",
-      "site_id": "GN: Physical AI",
-      "description": "Hyundai Motor Group to Test Physical AI and Robots With South Korean Army  thelec.net",
-      "ai_score": 65.0,
-      "ai_label": "physical_ai",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 20.23,
-      "writing_value": 0,
-      "total_score": 95.23
+      "total_score": 112.78
     },
     {
       "id": "06fb29c6e91a213d598b49e6eef2190d17a23b1a",
@@ -126,9 +42,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 22.91,
+      "timeliness": 22.48,
       "writing_value": 0,
-      "total_score": 97.91
+      "total_score": 97.48
     },
     {
       "id": "cacdc989c27c8d9eab4698313a53ba599dc4cdf4",
@@ -147,9 +63,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 20.56,
+      "timeliness": 20.13,
       "writing_value": 0,
-      "total_score": 95.56
+      "total_score": 95.13
     },
     {
       "id": "c1dadf0103d072ade6fb6c1db5965ae4a3619d5b",
@@ -168,9 +84,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 22.34,
+      "timeliness": 21.91,
       "writing_value": 5,
-      "total_score": 107.34
+      "total_score": 106.91
     },
     {
       "id": "a7b632fda7d7952212ccb5f54ee51e52f2d7d2c3",
@@ -189,9 +105,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.88,
+      "timeliness": 27.45,
       "writing_value": 0,
-      "total_score": 102.88
+      "total_score": 102.45
     },
     {
       "id": "435d8787aaf0d01e87c08519ac98c641e371e738",
@@ -210,14 +126,14 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 19.96,
+      "timeliness": 19.53,
       "writing_value": 0,
-      "total_score": 94.96
+      "total_score": 94.53
     },
     {
-      "id": "8b43586017f7a04151112cefd792ec0382033a96",
-      "title": "Distalmotion’s Dexter Robot Wins FDA Nod for Ventral Hernia Repair - mpo-mag.com",
-      "title_zh": "Distalmotion 的 Dexter 机器人获得 FDA 腹疝修复批准 - mpo-mag.com",
+      "id": "7f70a8160bb635b066caeaabdfbbe12b1aa3a235",
+      "title": "Distalmotion’s Dexter Robot Wins FDA Nod for Ventral Hernia Repair - Medical Product Outsourcing",
+      "title_zh": "Distalmotion 的 Dexter 机器人获得 FDA 腹疝修复批准 - 医疗产品外包",
       "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQaHVkTDdYSnpaLXJjOGc4eDU4VEpGa29TRWdtdEZoVDdCUEc1R2lkZTBiaTVTb0tfejl6QW84RndoT3hnSnhZdXJaRmZXTUlhYXRxXzFWVDlrUWZUbV8wOWpHb3hGVXktMDZNY0R0Zy1RTHRJMkZVQUt5bmNPSnVBOGMzbVY1Z3E5THlFLW4yNFhsLWxLa1RpSlMzTGVOQVM4UXJVTXNUMA?oc=5",
       "published_at": "2026-08-14T14:36:32+00:00",
       "category": "GN: surgical robot",
@@ -225,15 +141,15 @@
       "site_name": "GN: surgical robot",
       "source": "GN: surgical robot",
       "site_id": "GN: surgical robot",
-      "description": "Distalmotion’s Dexter Robot Wins FDA Nod for Ventral Hernia Repair  mpo-mag.com",
+      "description": "Distalmotion’s Dexter Robot Wins FDA Nod for Ventral Hernia Repair  Medical Product Outsourcing",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 21.83,
+      "timeliness": 21.4,
       "writing_value": 0,
-      "total_score": 96.83
+      "total_score": 96.4
     },
     {
       "id": "c9100c84e3b5a38828f1f2fa106ac487eeebe20c",
@@ -252,9 +168,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 21.14,
+      "timeliness": 20.71,
       "writing_value": 0,
-      "total_score": 96.14
+      "total_score": 95.71
     },
     {
       "id": "53e32c61de3917e3d16253475bc5346bd6dcdacf",
@@ -273,9 +189,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 19.83,
+      "timeliness": 19.4,
       "writing_value": 5,
-      "total_score": 104.83
+      "total_score": 104.4
+    },
+    {
+      "id": "9aa2e3b9917d8da5c2b04577d838b83c30b04c87",
+      "title": "低至万九！宇树科技弃购率刷新纪录 - 东方财富",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9ESDVQUUJOd3J4NjBhWEctamxDS1FzTWhKM29xam5EMnF4WmROdzRJb1M0NXROMVZwRlJRTW5ZLWdUalBGRG5fUkVuVUg0b2xXSXZRTi00R0JfdmltZ0gzeA?oc=5",
+      "published_at": "2026-08-14T12:11:42+00:00",
+      "category": "GN: 宇树科技",
+      "gn_label": "robotics",
+      "site_name": "GN: 宇树科技",
+      "source": "GN: 宇树科技",
+      "site_id": "GN: 宇树科技",
+      "description": "低至万九！宇树科技弃购率刷新纪录  东方财富",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 18.99,
+      "writing_value": 0,
+      "total_score": 93.99
     },
     {
       "id": "e2968d2055ca28652d9ead5b7620ba35577aa750",
@@ -294,9 +231,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 18.55,
+      "timeliness": 18.12,
       "writing_value": 0,
-      "total_score": 93.55
+      "total_score": 93.12
     },
     {
       "id": "b597d167e782980003116a79e995c765db30a4f7",
@@ -315,9 +252,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 22.01,
+      "timeliness": 21.57,
       "writing_value": 0,
-      "total_score": 97.01
+      "total_score": 96.57
     },
     {
       "id": "86d387232675092b6b7ce783683856efe67845f7",
@@ -336,9 +273,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 18.97,
+      "timeliness": 18.54,
       "writing_value": 0,
-      "total_score": 93.97
+      "total_score": 93.54
     },
     {
       "id": "0b6f9bad15327a4b960f0fdd298f4523399bf62d",
@@ -357,9 +294,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.11,
+      "timeliness": 28.68,
       "writing_value": 0,
-      "total_score": 104.11
+      "total_score": 103.68
     },
     {
       "id": "c43e5e61d6ff24018b08d3b045b299002f38b64f",
@@ -378,9 +315,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 21.15,
+      "timeliness": 20.72,
       "writing_value": 0,
-      "total_score": 96.15
+      "total_score": 95.72
     },
     {
       "id": "89ae354d4bfb55f4f95d5611ae72cc832443cfc0",
@@ -399,9 +336,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.45,
+      "timeliness": 26.02,
       "writing_value": 0,
-      "total_score": 101.45
+      "total_score": 101.02
     },
     {
       "id": "6a8c8b51e6d7acbcbcc656eecc05944a62b5bce7",
@@ -420,9 +357,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 20.27,
+      "timeliness": 19.84,
       "writing_value": 0,
-      "total_score": 95.27
+      "total_score": 94.84
     },
     {
       "id": "f6298074a4512742da2d407ec69bd3f3b94fc74d",
@@ -441,9 +378,30 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 5,
-      "timeliness": 18.54,
+      "timeliness": 18.11,
       "writing_value": 5,
-      "total_score": 118.54
+      "total_score": 118.11
+    },
+    {
+      "id": "2af8c7c59ca7acf460fdadecbdf446e0f3c659b0",
+      "title": "Video Friday: Lift Happens",
+      "title_zh": "周五视频：电梯发生",
+      "url": "https://spectrum.ieee.org/video-friday-darpa-heavy-lift-challenge",
+      "published_at": "2026-08-14T17:00:01+00:00",
+      "category": "IEEE Spectrum",
+      "gn_label": "robotics",
+      "site_name": "IEEE Spectrum",
+      "source": "IEEE Spectrum",
+      "site_id": "IEEE Spectrum",
+      "description": "Video Friday is your weekly selection of awesome robotics videos, collected by your friends at IEEE Spectrum robotics. We also post a weekly calendar of upcoming robotics events for the next few months. Please send us your events for inclusion.Actuate 2026: 18–19 August 2026, SAN FRANCISCOIROS 2026:",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 23.79,
+      "writing_value": 5,
+      "total_score": 108.79
     }
   ],
   "fallback_used": false
