@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-15T23:11:15.837923+00:00",
+  "generated_at": "2026-08-15T23:41:03.994112+00:00",
   "window_start": "2026-08-15T19:00:00+08:00",
-  "window_end": "2026-08-16T07:11:15.834774+08:00",
-  "total_items": 1,
+  "window_end": "2026-08-16T07:41:03.991006+08:00",
+  "total_items": 2,
   "items": [
     {
       "id": "dfe8b9718251aef90a70e4cc45b470cef840e101",
@@ -21,9 +21,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 19.57,
+      "timeliness": 19.07,
       "writing_value": 0,
-      "total_score": 94.57
+      "total_score": 94.07
+    },
+    {
+      "id": "e81ef47696c7600d214919b8434ac64a7c65e7e2",
+      "title": "宇树科技8734股遭弃购：610亿市值，千万打新者怎么看 - 凤凰网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5rUGx6U0lZRnR0cnUwN3R6QWtWRW5VVFFjVFhRTjRkWUdxd2x1TDdQYk9qLXlnWHdWQV9tYjdMb296QWFGX3NHZk1qeTNpNElu?oc=5",
+      "published_at": "2026-08-15T13:19:50+00:00",
+      "category": "GN: 宇树科技",
+      "gn_label": "robotics",
+      "site_name": "GN: 宇树科技",
+      "source": "GN: 宇树科技",
+      "site_id": "GN: 宇树科技",
+      "description": "宇树科技8734股遭弃购：610亿市值，千万打新者怎么看  凤凰网",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 19.65,
+      "writing_value": 0,
+      "total_score": 94.65
     }
   ],
   "fallback_used": false
