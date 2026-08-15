@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-15T05:47:59.065751+00:00",
+  "generated_at": "2026-08-15T06:20:55.014657+00:00",
   "window_start": "2026-08-14T19:00:00+08:00",
-  "window_end": "2026-08-15T13:47:56.811047+08:00",
-  "total_items": 20,
+  "window_end": "2026-08-15T14:20:54.081616+08:00",
+  "total_items": 24,
   "items": [
     {
       "id": "299904f7bd3fabebe2f854b724371253976271ff",
@@ -21,9 +21,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 21.19,
+      "timeliness": 20.64,
       "writing_value": 5,
-      "total_score": 106.19
+      "total_score": 105.64
     },
     {
       "id": "2af8c7c59ca7acf460fdadecbdf446e0f3c659b0",
@@ -42,30 +42,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 17.2,
+      "timeliness": 16.66,
       "writing_value": 5,
-      "total_score": 102.2
-    },
-    {
-      "id": "07eba200cdb7d1898ffdf69dc935c15551850639",
-      "title": "ARPA-H Backs Magnendo's Robotic Stroke Research - i-programmer.info",
-      "title_zh": "ARPA-H 支持 Magnendo 的机器人中风研究 - i-programmer.info",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPeGk3QzJvQVptWkZQRkMwYmI4V0ROQ1NHZjM1MUVoSlpmT1ZvNWRXZ1NMZTBwT29wcWZMOUhXVXpmYTJodnN1Smptb3I0NkNWSjdjZnViMDltVlgzOThJQzl0azF2STVHU0ZWRTN5cUhtUGstSnNXQzlQVXlEWEk3cVlvaXFNVjI3QlBveU5kQ2ZnSExiRDRrWG9ndmwwV05yRkZEeUxPVU8?oc=5",
-      "published_at": "2026-08-14T16:57:35+00:00",
-      "category": "GN: autonomous robot",
-      "gn_label": "robotics",
-      "site_name": "GN: autonomous robot",
-      "source": "GN: autonomous robot",
-      "site_id": "GN: autonomous robot",
-      "description": "ARPA-H Backs Magnendo's Robotic Stroke Research  i-programmer.info",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 17.16,
-      "writing_value": 0,
-      "total_score": 92.16
+      "total_score": 101.66
     },
     {
       "id": "06fb29c6e91a213d598b49e6eef2190d17a23b1a",
@@ -84,51 +63,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 15.89,
+      "timeliness": 15.34,
       "writing_value": 0,
-      "total_score": 90.89
-    },
-    {
-      "id": "a3b5dd3a970d432e1db3697dd86805f07a401065",
-      "title": "Cloud-assisted IoRT framework for latency-aware analytical kinematic control of a six-DOF robotic manipulator - Nature",
-      "title_zh": "用于六自由度机器人操纵器的延迟感知分析运动学控制的云辅助 IoRT 框架 - Nature",
-      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1RWW5WRlRyV2htQ3cyZDJJV3haQXhMZnBMSlVLSklPamhkQnQxblctQnJvTzRQTWM0aWo5NHBKRkYxZEhqakZhSmtLbUk5SUFUUFdjb3RQNkh3OXlweTB3?oc=5",
-      "published_at": "2026-08-14T14:04:27+00:00",
-      "category": "GN: industrial robot",
-      "gn_label": "robotics",
-      "site_name": "GN: industrial robot",
-      "source": "GN: industrial robot",
-      "site_id": "GN: industrial robot",
-      "description": "Cloud-assisted IoRT framework for latency-aware analytical kinematic control of a six-DOF robotic manipulator  Nature",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 5,
-      "timeliness": 14.28,
-      "writing_value": 5,
-      "total_score": 99.28
-    },
-    {
-      "id": "7f70a8160bb635b066caeaabdfbbe12b1aa3a235",
-      "title": "Distalmotion’s Dexter Robot Wins FDA Nod for Ventral Hernia Repair - Medical Product Outsourcing",
-      "title_zh": "Distalmotion 的 Dexter 机器人获得 FDA 腹疝修复批准 - 医疗产品外包",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQaHVkTDdYSnpaLXJjOGc4eDU4VEpGa29TRWdtdEZoVDdCUEc1R2lkZTBiaTVTb0tfejl6QW84RndoT3hnSnhZdXJaRmZXTUlhYXRxXzFWVDlrUWZUbV8wOWpHb3hGVXktMDZNY0R0Zy1RTHRJMkZVQUt5bmNPSnVBOGMzbVY1Z3E5THlFLW4yNFhsLWxLa1RpSlMzTGVOQVM4UXJVTXNUMA?oc=5",
-      "published_at": "2026-08-14T14:36:32+00:00",
-      "category": "GN: surgical robot",
-      "gn_label": "robotics",
-      "site_name": "GN: surgical robot",
-      "source": "GN: surgical robot",
-      "site_id": "GN: surgical robot",
-      "description": "Distalmotion’s Dexter Robot Wins FDA Nod for Ventral Hernia Repair  Medical Product Outsourcing",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 14.81,
-      "writing_value": 0,
-      "total_score": 89.81
+      "total_score": 90.34
     },
     {
       "id": "cacdc989c27c8d9eab4698313a53ba599dc4cdf4",
@@ -147,14 +84,14 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 13.54,
+      "timeliness": 12.99,
       "writing_value": 0,
-      "total_score": 88.54
+      "total_score": 87.99
     },
     {
-      "id": "d32b5d380968fef768af19ab12d4eef9bc3f37ed",
-      "title": "‘Where other robot vacuums feel like a useful addition to the home, this one feels like a necessity’ — this review is a love letter to the Dreame X60 Max Ultra Complete - tomsguide.com",
-      "title_zh": "“其他机器人吸尘器感觉像是家庭的有用补充，而这款机器人感觉像是必需品”——这篇评论是一封写给 Dreame X60 Max Ultra Complete 的情书 - tomsguide.com",
+      "id": "c1dadf0103d072ade6fb6c1db5965ae4a3619d5b",
+      "title": "‘Where other robot vacuums feel like a useful addition to the home, this one feels like a necessity’ — this review is a love letter to the Dreame X60 Max Ultra Complete - Tom's Guide",
+      "title_zh": "“其他机器人吸尘器感觉像是家庭的有用补充，而这款机器人感觉像是必需品”——这篇评论是一封写给 Dreame X60 Max Ultra Complete 的情书 - 汤姆指南",
       "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5TYXRDQzBVaEE3WnA3TExmb1g0QnBEbW1HeU10aWJiQy1FQmU4ZGtiUXh6eWt0WHI0QzNld2FqODJhWVNOMTdZbVFlazFTTmFOei1TekRkYVpyTGkwS0xTWEt0ejE1aU9YTU5OcVlBVThNWDhvbUE?oc=5",
       "published_at": "2026-08-14T15:07:01+00:00",
       "category": "GN: robot vacuum",
@@ -162,15 +99,15 @@
       "site_name": "GN: robot vacuum",
       "source": "GN: robot vacuum",
       "site_id": "GN: robot vacuum",
-      "description": "‘Where other robot vacuums feel like a useful addition to the home, this one feels like a necessity’ — this review is a love letter to the Dreame X60 Max Ultra Complete  tomsguide.com",
+      "description": "‘Where other robot vacuums feel like a useful addition to the home, this one feels like a necessity’ — this review is a love letter to the Dreame X60 Max Ultra Complete  Tom's Guide",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 15.32,
+      "timeliness": 14.78,
       "writing_value": 5,
-      "total_score": 100.32
+      "total_score": 99.78
     },
     {
       "id": "a7b632fda7d7952212ccb5f54ee51e52f2d7d2c3",
@@ -189,9 +126,72 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 20.86,
+      "timeliness": 20.32,
       "writing_value": 0,
-      "total_score": 95.86
+      "total_score": 95.32
+    },
+    {
+      "id": "a2c35b245bdd3345e2c53fe3d5c59e080dcab597",
+      "title": "5 Hurdles in Deploying Fleet Robots for Utilities - Robotics Tomorrow",
+      "title_zh": "为公用事业部署舰队机器人的 5 个障碍 - Robotics Tomorrow",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOb1hTd21rak9wa2hLejR0WE1uSm5IdmU2azJFZzZ2VG9BQTZGTFdPQzhQa1NpcTlibTlTQjFYRzhwWjUzdE5uaGE3TjF2c1ZkMTFqSGk2UHpIX2VUYkMzOEFiRXNNWDZGUnRMcWxuTXprdTRIODA2UHdiWjFuaXVfZnhPa1JoQUdLMUR6SUFCTGlVMGlTQ0lkY3JPMDJpZzgyeHZ0M1Rn?oc=5",
+      "published_at": "2026-08-14T12:48:33+00:00",
+      "category": "GN: industrial robot",
+      "gn_label": "robotics",
+      "site_name": "GN: industrial robot",
+      "source": "GN: industrial robot",
+      "site_id": "GN: industrial robot",
+      "description": "5 Hurdles in Deploying Fleet Robots for Utilities  Robotics Tomorrow",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 12.47,
+      "writing_value": 0,
+      "total_score": 87.47
+    },
+    {
+      "id": "7f70a8160bb635b066caeaabdfbbe12b1aa3a235",
+      "title": "Distalmotion’s Dexter Robot Wins FDA Nod for Ventral Hernia Repair - Medical Product Outsourcing",
+      "title_zh": "Distalmotion 的 Dexter 机器人获得 FDA 腹疝修复批准 - 医疗产品外包",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQaHVkTDdYSnpaLXJjOGc4eDU4VEpGa29TRWdtdEZoVDdCUEc1R2lkZTBiaTVTb0tfejl6QW84RndoT3hnSnhZdXJaRmZXTUlhYXRxXzFWVDlrUWZUbV8wOWpHb3hGVXktMDZNY0R0Zy1RTHRJMkZVQUt5bmNPSnVBOGMzbVY1Z3E5THlFLW4yNFhsLWxLa1RpSlMzTGVOQVM4UXJVTXNUMA?oc=5",
+      "published_at": "2026-08-14T14:36:32+00:00",
+      "category": "GN: surgical robot",
+      "gn_label": "robotics",
+      "site_name": "GN: surgical robot",
+      "source": "GN: surgical robot",
+      "site_id": "GN: surgical robot",
+      "description": "Distalmotion’s Dexter Robot Wins FDA Nod for Ventral Hernia Repair  Medical Product Outsourcing",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 14.27,
+      "writing_value": 0,
+      "total_score": 89.27
+    },
+    {
+      "id": "c9100c84e3b5a38828f1f2fa106ac487eeebe20c",
+      "title": "A robot learns a new skill from a 29-second video — no retraining required - Gagadget.com",
+      "title_zh": "机器人从 29 秒的视频中学习新技能 - 无需重新训练 - Gagadget.com",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPRGZOUktaWkFLUG5lY1dfR0w3WEhzakFualZLSEdRbkdrNVdMSXZ4UXE2eUZLZ1hUTUlMaGY3UVppOGtRcnl1RU1wX2ltZ0NBNU5EQ0dnamN3eWtidHdlNVl5alU1VWpXb3ptb1FGU1JXMkJ2dUFYUXpPRmctTGFWWE9rMEpFd1h4R2ZBTlREeU1JOTRTaUdlVUtmb3pTdnA2RjJubnJGUdIBrAFBVV95cUxNbFVWR045a1R5aEI0Smx3Z2UyRFhLLTNKbGR5S2x1S2dJektOQTdoVnZQQlVPcG9QWTNfRjlBX0hUOGRiS1ctNmxWOWdpRWNRc2lUcXRzVmdOZ3Z6VjRBaW5tQWxkZzdSQXFrZTFXaDVrc0llNkVDYTVDMEpWa1BPQ292NldicmlhX3U4M2ZDS3hHNUtqWjFkRWZSa2E2c3IzeGlWRlhfNDliRHdO?oc=5",
+      "published_at": "2026-08-14T13:54:47+00:00",
+      "category": "GN: robot learning",
+      "gn_label": "robotics",
+      "site_name": "GN: robot learning",
+      "source": "GN: robot learning",
+      "site_id": "GN: robot learning",
+      "description": "A robot learns a new skill from a 29-second video — no retraining required  Gagadget.com",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 13.57,
+      "writing_value": 0,
+      "total_score": 88.57
     },
     {
       "id": "53e32c61de3917e3d16253475bc5346bd6dcdacf",
@@ -210,9 +210,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 12.81,
+      "timeliness": 12.27,
       "writing_value": 5,
-      "total_score": 97.81
+      "total_score": 97.27
     },
     {
       "id": "4c4abc9128451536eab9f6756e26d02f24a5e3d0",
@@ -231,9 +231,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.24,
+      "timeliness": 24.69,
       "writing_value": 0,
-      "total_score": 100.24
+      "total_score": 99.69
     },
     {
       "id": "e2968d2055ca28652d9ead5b7620ba35577aa750",
@@ -252,9 +252,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 11.53,
+      "timeliness": 10.99,
       "writing_value": 0,
-      "total_score": 86.53
+      "total_score": 85.99
     },
     {
       "id": "def13bce1fb634c3dfdf7ca99d10d4bc1f85c48c",
@@ -273,9 +273,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.64,
+      "timeliness": 24.09,
       "writing_value": 0,
-      "total_score": 99.64
+      "total_score": 99.09
     },
     {
       "id": "b597d167e782980003116a79e995c765db30a4f7",
@@ -294,9 +294,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 14.98,
+      "timeliness": 14.44,
       "writing_value": 0,
-      "total_score": 89.98
+      "total_score": 89.44
     },
     {
       "id": "6bfe21994033207cc52ade89c0fad5e5edb64218",
@@ -315,9 +315,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 20.19,
+      "timeliness": 19.64,
       "writing_value": 0,
-      "total_score": 95.19
+      "total_score": 94.64
     },
     {
       "id": "86d387232675092b6b7ce783683856efe67845f7",
@@ -336,9 +336,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 11.95,
+      "timeliness": 11.41,
       "writing_value": 0,
-      "total_score": 86.95
+      "total_score": 86.41
     },
     {
       "id": "89ae354d4bfb55f4f95d5611ae72cc832443cfc0",
@@ -357,9 +357,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 19.43,
+      "timeliness": 18.89,
       "writing_value": 0,
-      "total_score": 94.43
+      "total_score": 93.89
+    },
+    {
+      "id": "ceb9fb3035854fd11d6c758f839aac91aaf6b71e",
+      "title": "独家 | 智元机器人内部管理曝光：20余个天才被神秘隔离 - t.cj.sina.cn",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5fd1BkZ1g1STM1d29aWTVFNWpKQUhqbnd6T0JibVJOcWRSQkYtd3lwTktfZlB4Q2tSNmItR1ltMHpyd2NPSVFQRWRVY09hRzFHRDlDeTYwUnJ2YXVXUEtBdm5EamtUZHpVN08teWtUMmI?oc=5",
+      "published_at": "2026-08-14T12:00:00+00:00",
+      "category": "GN: 智元机器人",
+      "gn_label": "robotics",
+      "site_name": "GN: 智元机器人",
+      "source": "GN: 智元机器人",
+      "site_id": "GN: 智元机器人",
+      "description": "独家 | 智元机器人内部管理曝光：20余个天才被神秘隔离  t.cj.sina.cn",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 11.66,
+      "writing_value": 0,
+      "total_score": 86.66
     },
     {
       "id": "6a8c8b51e6d7acbcbcc656eecc05944a62b5bce7",
@@ -378,9 +399,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 13.25,
+      "timeliness": 12.71,
       "writing_value": 0,
-      "total_score": 88.25
+      "total_score": 87.71
+    },
+    {
+      "id": "09c330f37025d122727c8439e15c8e9173d5a6b3",
+      "title": "独家|智元机器人内部管理曝光：20余个天才被神秘隔离|具身智能|姚卯青|大苗|谷歌|人才_手机新浪网 - 新浪财经",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPeTB6S2JKdHpCa2o0T0pDWXVrSE81cmEwR1VRU3pHelVSUVR4X1hDRkkxNmVNc0dHUlgxSHE2cDFQSmJ0a2JhWUR2Z2NXZnFNdGtCYnVHX3RRa1N6YTRKQmpMalhaQzNGVFVRSDFseUx3V0Fid3Q3WThrc2IzLXppNVA5S2I3Nzc1bExfYnhRS1FVNEt3LUdlS24tYXBZNWR2TS1mYlVpYw?oc=5",
+      "published_at": "2026-08-15T03:22:30+00:00",
+      "category": "GN: 智元机器人",
+      "gn_label": "robotics",
+      "site_name": "GN: 智元机器人",
+      "source": "GN: 智元机器人",
+      "site_id": "GN: 智元机器人",
+      "description": "独家|智元机器人内部管理曝光：20余个天才被神秘隔离|具身智能|姚卯青|大苗|谷歌|人才_手机新浪网  新浪财经",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 27.04,
+      "writing_value": 0,
+      "total_score": 117.04
     },
     {
       "id": "f6298074a4512742da2d407ec69bd3f3b94fc74d",
@@ -399,9 +441,51 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 5,
-      "timeliness": 11.52,
+      "timeliness": 10.98,
       "writing_value": 5,
-      "total_score": 111.52
+      "total_score": 110.98
+    },
+    {
+      "id": "72ab01c206423952f6755d33db2a2b5d506db551",
+      "title": "索塔无界：全球首家原生物理世界模型落地商超，具身智能迎来“索塔时刻”",
+      "title_zh": "",
+      "url": "https://www.leiphone.com/category/industrynews/aEyXlap53PQXDDYJ.html",
+      "published_at": "2026-08-15T04:07:00+00:00",
+      "category": "雷锋网",
+      "gn_label": "robotics",
+      "site_name": "雷锋网",
+      "source": "雷锋网",
+      "site_id": "雷锋网",
+      "description": "在具身智能仍陷于“资本热、落地冷”之际，成立仅4个月的索塔无界，率先以欧洲最大商超集团的战略合作，打破商业落地僵局。根据规划，双方未来3年将在真实商超场景中部署超过千台具身智能机器人。索塔无界不造硬件，而是为机器人打造“原生物理大脑”——首次将4D世界动作模型部署于真实商超货架之间，开启物理智能的“场景收敛+通用泛化”新路径。破局：不追“虚拟温床”，直击“物理考场”2026年的具身智能，融资额屡创新高，但机器人进工厂仍困于专机专用、进家庭做家务仍在可望难及的远期蓝图。多数玩家沉迷视频生成或仿真训练，这些“虚拟温床”对具身操作并不实质。索塔无界创始人胡德波给出截然不同的判断：“跨本体、跨场景的通",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 27.78,
+      "writing_value": 5,
+      "total_score": 127.78
+    },
+    {
+      "id": "2ea6b1ade75ff6603e99b947802d9c10be9f998b",
+      "title": "鹿明发布MOS2：全球首个双臂负载50kg轮臂式机器人，加速AI Worker进入产业现场",
+      "title_zh": "",
+      "url": "https://www.leiphone.com/category/industrynews/24fbshcNUNahZuQz.html",
+      "published_at": "2026-08-15T04:01:00+00:00",
+      "category": "雷锋网",
+      "gn_label": "robotics",
+      "site_name": "雷锋网",
+      "source": "雷锋网",
+      "site_id": "雷锋网",
+      "description": "8月14日，鹿明机器人发布全新重载轮臂式具身智能机器人Lumos MOS2。面向真实工业场景，Lumos MOS2具备50kg双臂负载能力，同时在硬件性能、全向移动能力、多模态感知系统和整机控制架构等方面实现全面升级，胜任真实工业场景高强度、持续性作业任务。鹿明机器人创始人兼CEO喻超表示，具身智能正在加速进入产业落地阶段，如何让机器人更高效地完成更多真实任务，取决于数据获取效率、硬件成本及产业交付效率。在这一判断下，MOS2被定位为面向工业场景的重载AI Worker：既拥有7×24小时不间断工作的强健躯体，也具备环境感知、任务理解与自主操作等能力，是鹿明产业具身理念的产品化实践。 当前工业",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 27.68,
+      "writing_value": 5,
+      "total_score": 127.68
     },
     {
       "id": "d6bd270c735b724ce345ac6f60acb70e5b43990b",
@@ -420,9 +504,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 5,
-      "timeliness": 25.4,
+      "timeliness": 24.86,
       "writing_value": 5,
-      "total_score": 125.4
+      "total_score": 124.86
     }
   ],
   "fallback_used": false
