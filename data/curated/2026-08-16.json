@@ -1,9 +1,9 @@
 {
   "date": "2026-08-16",
-  "generated_at": "2026-08-15T19:15:40.003404+00:00",
+  "generated_at": "2026-08-15T19:43:21.766489+00:00",
   "score_threshold": 80,
-  "total_items": 26,
-  "new_added": 1,
+  "total_items": 28,
+  "new_added": 2,
   "items": [
     {
       "id": "44b524ef6218c160",
@@ -151,6 +151,27 @@
       "timeliness": 27.6,
       "writing_value": 0,
       "total_score": 117.6
+    },
+    {
+      "id": "ba594ab016cfcc34",
+      "title": "海外研选 | 巴克莱：自动化3.0时代开启 人形机器人市场10年后或达2000亿美元 - 财联社",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE12ZjBIMXNiQVEtUTZXbHRaMTFFNGtGVjdUM1hLY3RwSm9lcS15Z1k4WkgzdW9LT3Y4ZUJyN3hjUjhDTHNaOWhzcg?oc=5",
+      "published_at": "2026-08-15T16:58:01+00:00",
+      "category": "国内人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国内人形机器人资讯",
+      "source": "国内人形机器人资讯",
+      "site_id": "国内人形机器人资讯",
+      "description": "海外研选 | 巴克莱：自动化3.0时代开启 人形机器人市场10年后或达2000亿美元  财联社",
+      "ai_score": 80.0,
+      "ai_label": "humanoid",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 27.26,
+      "writing_value": 0,
+      "total_score": 117.26
     },
     {
       "id": "6c8a6e9a9b3fe502",
@@ -550,6 +571,27 @@
       "timeliness": 24.79,
       "writing_value": 0,
       "total_score": 99.79
+    },
+    {
+      "id": "ae6a20a815aef51e",
+      "title": "“空气里都是资本的味道”，宇树上市引爆，机器人企业抢滩IPO - 新浪财经",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOSXlzTE0wUnE2YVktanFpM2lKSmtWLXM0S1lhY2N0RVJrUHBWNGZIVXBTekFaTk95VFRYcWQ0RmxPUTNXQmxSTkwzXzVVZVZrdFZaS3FUcUx5cmpQZVNqZGZqM2oya1J5MU8xaU44dGpvQ1BpMjd2UmJkeWs0Zll2R0hlTWtoRFU?oc=5",
+      "published_at": "2026-08-15T11:34:00+00:00",
+      "category": "国内机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国内机器人资讯",
+      "source": "国内机器人资讯",
+      "site_id": "国内机器人资讯",
+      "description": "“空气里都是资本的味道”，宇树上市引爆，机器人企业抢滩IPO  新浪财经",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 21.86,
+      "writing_value": 0,
+      "total_score": 96.86
     }
   ]
 }

@@ -1,30 +1,9 @@
 {
-  "generated_at": "2026-08-15T19:14:33.749933+00:00",
+  "generated_at": "2026-08-15T19:42:11.372470+00:00",
   "window_start": "2026-08-15T19:00:00+08:00",
-  "window_end": "2026-08-16T03:14:32.972474+08:00",
+  "window_end": "2026-08-16T03:42:11.192874+08:00",
   "total_items": 5,
   "items": [
-    {
-      "id": "4df57add28fdee92ed5b446a0cd4d2ba008c0182",
-      "title": "Is Your Robot Vacuum Safe From the FCC Ban? Here's Everything You Need to Know - PCMag",
-      "title_zh": "您的扫地机器人是否符合 FCC 禁令？这是您需要了解的一切 - PCMag",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNWWtHcGE1SXJxWmVvUm01c3Z3cGRvQjg2OTZYWkMzYVFXLWR6UGwyQUJCbnh4TlNuc0Uwd2c3UDB3NVM3TXI4cHozc0tqRm5XTHRseGFEd3pHUDk4dXplTVluUEhCTHFuZFVRcWhGLTBqeEdYVjZIcWh0aGpYODZKc0lqTmloZUIxdU4zQ2IyaDZpd2pYS2dQUGRnNEp4cndSamJLaHV4cw?oc=5",
-      "published_at": "2026-08-15T16:00:16+00:00",
-      "category": "GN: robot vacuum",
-      "gn_label": "robotics",
-      "site_name": "GN: robot vacuum",
-      "source": "GN: robot vacuum",
-      "site_id": "GN: robot vacuum",
-      "description": "Is Your Robot Vacuum Safe From the FCC Ban? Here's Everything You Need to Know  PCMag",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 26.76,
-      "writing_value": 0,
-      "total_score": 101.76
-    },
     {
       "id": "8e484f99231e783d6f95672c61b4a01854c1ad92",
       "title": "Robots need to stay in their lane - Universal Hub",
@@ -42,9 +21,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.05,
+      "timeliness": 27.59,
       "writing_value": 0,
-      "total_score": 103.05
+      "total_score": 102.59
+    },
+    {
+      "id": "4df57add28fdee92ed5b446a0cd4d2ba008c0182",
+      "title": "Is Your Robot Vacuum Safe From the FCC Ban? Here's Everything You Need to Know - PCMag",
+      "title_zh": "您的扫地机器人是否符合 FCC 禁令？这是您需要了解的一切 - PCMag",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNWWtHcGE1SXJxWmVvUm01c3Z3cGRvQjg2OTZYWkMzYVFXLWR6UGwyQUJCbnh4TlNuc0Uwd2c3UDB3NVM3TXI4cHozc0tqRm5XTHRseGFEd3pHUDk4dXplTVluUEhCTHFuZFVRcWhGLTBqeEdYVjZIcWh0aGpYODZKc0lqTmloZUIxdU4zQ2IyaDZpd2pYS2dQUGRnNEp4cndSamJLaHV4cw?oc=5",
+      "published_at": "2026-08-15T16:00:16+00:00",
+      "category": "GN: robot vacuum",
+      "gn_label": "robotics",
+      "site_name": "GN: robot vacuum",
+      "source": "GN: robot vacuum",
+      "site_id": "GN: robot vacuum",
+      "description": "Is Your Robot Vacuum Safe From the FCC Ban? Here's Everything You Need to Know  PCMag",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 26.3,
+      "writing_value": 0,
+      "total_score": 101.3
     },
     {
       "id": "dfe8b9718251aef90a70e4cc45b470cef840e101",
@@ -63,9 +63,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.51,
+      "timeliness": 23.05,
       "writing_value": 0,
-      "total_score": 98.51
+      "total_score": 98.05
     },
     {
       "id": "3558c0d803a5cacc9b15f120acf1675aeb0b63b5",
@@ -84,9 +84,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.28,
+      "timeliness": 23.82,
       "writing_value": 0,
-      "total_score": 99.28
+      "total_score": 98.82
     },
     {
       "id": "2099abfd142c9c69f0422160e149dca65024f802",
@@ -105,9 +105,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.68,
+      "timeliness": 23.22,
       "writing_value": 0,
-      "total_score": 98.68
+      "total_score": 98.22
     }
   ],
   "fallback_used": false
