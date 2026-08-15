@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-15T05:17:24.501254+00:00",
-  "total_items": 3,
+  "generated_at": "2026-08-15T05:49:03.920101+00:00",
+  "total_items": 1,
   "items": [
     {
       "id": "http://arxiv.org/abs/2608.13555v1",
@@ -12,28 +12,6 @@
       "published_at": "2026-08-13T17:59:40+00:00",
       "updated_at": "2026-08-13T17:59:40Z",
       "title_zh": "HumanTracker：迈向全面且符合人体的运动跟踪基准"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.13511v1",
-      "title": "A Browser-Native Digital Test Range for Benchmarking 4D Ocean-Glider Planning Algorithms",
-      "url": "https://arxiv.org/abs/2608.13511",
-      "summary": "Repeated in-situ evaluation of ocean-glider planners requires scarce vehicles, operators, deployment and recovery resources, and ocean conditions that cannot be reset for competing algorithms. We present a guided, installation-free browser-native digital test range that transforms a selected region into a reproducible four-dimensional experiment. The system leads users from regional domain selection through mission-scoped bathymetry, time/depth forcing, science objectives, optional task decomposition, route specification, current-advected execution, observation generation, and scoring. Its primary contribution is a common plan-to-observation contract unifying vehicle, sensing, and evaluator assumptions across manual routes, transparent built-in algorithms, and imported classical or learned-planner outputs, while exported artifacts form dataset-ready records. A controlled Observing System Simulation Experiment (OSSE) evaluates five classical planners in two episodes, three deterministic seeds, and a calibrated 60-hour horizon. All 54 missions completed and recovered without hard violations, while planner rankings and dive-policy effects revealed operational-scientific tradeoffs. An authentic public deployment supplied a field-referenced audit to scope current kinematic boundaries. Separately, source-locked GliderFlight 1.2.0 achieved native-to-browser parity through Pyodide/WebAssembly, establishing a pathway for high-fidelity multi-tier simulation. The resulting operational space is scientifically traceable and component-qualified for mission-scale pre-deployment experimentation.",
-      "authors": "Edward Holmberg, Elias Ioup, Mahdi Abdelguerfi",
-      "category": "cs.RO",
-      "published_at": "2026-08-13T17:34:50+00:00",
-      "updated_at": "2026-08-13T17:34:50Z",
-      "title_zh": "用于 4D 海洋滑翔机规划算法基准测试的浏览器原生数字测试范围"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.13489v1",
-      "title": "DreamX-Phi 1.0: Action-Conditioned Video World Model for Robotic Manipulation",
-      "url": "https://arxiv.org/abs/2608.13489",
-      "summary": "We present \\textbf{DreamX-Phi 1.0}, an action-conditioned video world model for robotic manipulation that, given an observed frame, a language instruction, and a prescribed action sequence comprising end-effector poses and gripper states, predicts the resulting future observations. Yet realism alone does not guarantee faithfulness: a convincing rollout can still move the wrong arm or lose the manipulated object. To ensure the prediction respects each arm's commanded path, we inject per-arm $\\mathrm{SE}(3)$ transformations into attention via \\textbf{PRoPE-style geometric encoding}, preserving arm identity and rigid-motion structure. Action control alone does not fully constrain scene geometry or the evolution of small manipulated objects. We therefore add a lightweight \\textbf{depth branch} for scene-level geometry and use \\textbf{SAM3 masks} with a frozen \\textbf{V-JEPA teacher} to maintain object consistency throughout grasping. We further distill the multi-step generator into a few-step student via distribution-matching distillation for efficient deployment. At the time of writing, \\model{} achieves first place on Track~1 and second place on Track~2 of the WorldArena~2.0 Challenge. Our model and code will be publicly available.",
-      "authors": " DreamX Team, Rui Chen, Xiangxiang Chu et al.",
-      "category": "cs.CV",
-      "published_at": "2026-08-13T17:18:09+00:00",
-      "updated_at": "2026-08-13T17:18:09Z",
-      "title_zh": "DreamX-Phi 1.0：用于机器人操作的动作条件视频世界模型"
     }
   ]
 }
