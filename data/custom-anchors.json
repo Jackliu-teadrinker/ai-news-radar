@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-15T18:14:24.851636+00:00",
+  "generated_at": "2026-08-15T18:53:53.889645+00:00",
   "window_start": "2026-08-15T19:00:00+08:00",
-  "window_end": "2026-08-16T02:14:24.655922+08:00",
-  "total_items": 5,
+  "window_end": "2026-08-16T02:53:53.192336+08:00",
+  "total_items": 6,
   "items": [
     {
       "id": "8e484f99231e783d6f95672c61b4a01854c1ad92",
@@ -21,9 +21,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.05,
+      "timeliness": 28.39,
       "writing_value": 0,
-      "total_score": 104.05
+      "total_score": 103.39
     },
     {
       "id": "4df57add28fdee92ed5b446a0cd4d2ba008c0182",
@@ -42,9 +42,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.77,
+      "timeliness": 27.11,
       "writing_value": 0,
-      "total_score": 102.77
+      "total_score": 102.11
+    },
+    {
+      "id": "87b235aca7eae615e7c895ac70aff881c82a68bd",
+      "title": "What the FCC’s New Robot Vacuum Rules Could Mean for Future Manufacturing - Vacuum Wars",
+      "title_zh": "FCC 的新机器人真空规则对未来制造业意味着什么 - 真空战争",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE04N0MxQUVHX0M2SFBIU2QzdGVvOGtpVi0wYzJ5QjJIX2xmaEZTSzJRajEzc0ZDeUY5azE0MHRPVE5Vb2VCZVdvSUgyMTdjcXN2WjJzZEpsNU9xSjN1VUsxSQ?oc=5",
+      "published_at": "2026-08-15T15:02:40+00:00",
+      "category": "GN: robot vacuum",
+      "gn_label": "robotics",
+      "site_name": "GN: robot vacuum",
+      "source": "GN: robot vacuum",
+      "site_id": "GN: robot vacuum",
+      "description": "What the FCC’s New Robot Vacuum Rules Could Mean for Future Manufacturing  Vacuum Wars",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 26.15,
+      "writing_value": 0,
+      "total_score": 101.15
     },
     {
       "id": "dfe8b9718251aef90a70e4cc45b470cef840e101",
@@ -63,9 +84,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.51,
+      "timeliness": 23.86,
       "writing_value": 0,
-      "total_score": 99.51
+      "total_score": 98.86
     },
     {
       "id": "3558c0d803a5cacc9b15f120acf1675aeb0b63b5",
@@ -84,9 +105,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.28,
+      "timeliness": 24.62,
       "writing_value": 0,
-      "total_score": 100.28
+      "total_score": 99.62
     },
     {
       "id": "2099abfd142c9c69f0422160e149dca65024f802",
@@ -105,9 +126,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.63,
+      "timeliness": 23.97,
       "writing_value": 0,
-      "total_score": 99.63
+      "total_score": 98.97
     }
   ],
   "fallback_used": false
