@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-15T00:39:18.891431+00:00",
+  "generated_at": "2026-08-15T02:08:06.589208+00:00",
   "window_start": "2026-08-14T19:00:00+08:00",
-  "window_end": "2026-08-15T08:39:18.145157+08:00",
-  "total_items": 17,
+  "window_end": "2026-08-15T10:08:03.424427+08:00",
+  "total_items": 21,
   "items": [
     {
       "id": "299904f7bd3fabebe2f854b724371253976271ff",
@@ -21,9 +21,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 26.33,
+      "timeliness": 24.85,
       "writing_value": 5,
-      "total_score": 111.33
+      "total_score": 109.85
     },
     {
       "id": "2af8c7c59ca7acf460fdadecbdf446e0f3c659b0",
@@ -42,9 +42,51 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 22.35,
+      "timeliness": 20.87,
       "writing_value": 5,
-      "total_score": 107.35
+      "total_score": 105.87
+    },
+    {
+      "id": "a41b29eaf5142b0f7d8a54323049584475559fd9",
+      "title": "Unitree emerges as symbol of Beijing's embodied AI ambitions - idnfinancials.com",
+      "title_zh": "Unitree 成为北京人工智能雄心的象征 - idnfinancials.com",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPT2VqMU1BYUxxMTNiMkRfN0N4WUhPZUVMS0lsRUZFZTBwTUVhNWFnTkcxVGlsUDM0VkRXTUI5WGg1UjN2RFZUZmlxeFhFMWtYOFZ3MWF1V1VNX0JlQUFhSFdnaEdBMmFWaG5RTl9MZ0ZyNldjSHMyRXNnaWpIemg5TkpxNkQ4NEtsTG8wTE9iYks2dVc5M3NiN0VIVXRfYXJpbUE?oc=5",
+      "published_at": "2026-08-15T01:00:00+00:00",
+      "category": "GN: embodied AI",
+      "gn_label": "robotics",
+      "site_name": "GN: embodied AI",
+      "source": "GN: embodied AI",
+      "site_id": "GN: embodied AI",
+      "description": "Unitree emerges as symbol of Beijing's embodied AI ambitions  idnfinancials.com",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 28.87,
+      "writing_value": 0,
+      "total_score": 118.87
+    },
+    {
+      "id": "769193b75b76a9e2e5e3147177851cb1e9e5d2d6",
+      "title": "Can Serve Robotics Scale Physical AI Beyond Food Delivery in 2026? - Yahoo Finance",
+      "title_zh": "2026 年，服务机器人能否将物理人工智能扩展到食品配送之外？ - 雅虎财经",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNcWwtMlVzeEdYaDZ4bXB3WXJMdHZHS1NGNmF5TFBRblVOeXJFTVVXYlFfV1FnUnhRdVdaMWpMSTBEN29qX0V6MzlRUVFLM1FWVExsSWY1S2U5NWppT0tPUDU2cjJOdXVvdnp3WnhCcVpMd0NFZEptNTNIVnAxS3Y5QU5oWTJoWFZUREpNUmtjSFlYME9WUmIyeHB1TkE?oc=5",
+      "published_at": "2026-08-14T14:43:00+00:00",
+      "category": "GN: Physical AI",
+      "gn_label": "physical_ai",
+      "site_name": "GN: Physical AI",
+      "source": "GN: Physical AI",
+      "site_id": "GN: Physical AI",
+      "description": "Can Serve Robotics Scale Physical AI Beyond Food Delivery in 2026?  Yahoo Finance",
+      "ai_score": 65.0,
+      "ai_label": "physical_ai",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 18.58,
+      "writing_value": 0,
+      "total_score": 93.58
     },
     {
       "id": "06fb29c6e91a213d598b49e6eef2190d17a23b1a",
@@ -63,30 +105,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 21.03,
+      "timeliness": 19.55,
       "writing_value": 0,
-      "total_score": 96.03
+      "total_score": 94.55
     },
     {
-      "id": "7f70a8160bb635b066caeaabdfbbe12b1aa3a235",
-      "title": "Distalmotion’s Dexter Robot Wins FDA Nod for Ventral Hernia Repair - Medical Product Outsourcing",
-      "title_zh": "Distalmotion 的 Dexter 机器人获得 FDA 腹疝修复批准 - 医疗产品外包",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQaHVkTDdYSnpaLXJjOGc4eDU4VEpGa29TRWdtdEZoVDdCUEc1R2lkZTBiaTVTb0tfejl6QW84RndoT3hnSnhZdXJaRmZXTUlhYXRxXzFWVDlrUWZUbV8wOWpHb3hGVXktMDZNY0R0Zy1RTHRJMkZVQUt5bmNPSnVBOGMzbVY1Z3E5THlFLW4yNFhsLWxLa1RpSlMzTGVOQVM4UXJVTXNUMA?oc=5",
-      "published_at": "2026-08-14T14:36:32+00:00",
-      "category": "GN: surgical robot",
+      "id": "950710e1703cfbaea0da888cb21090d47cce4328",
+      "title": "16 Nations, 2,056 Robots: Inside the Massive Expansion of the World Humanoid Robot Games - Gadget Review",
+      "title_zh": "16 个国家，2,056 个机器人：世界人形机器人运动会大规模扩张的内部 - 小工具评论",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQUzAyNTVpcUxMQ2tiTm80NlhiRjNDb0Y1R2htbzhDcjRPeFdCQndfbG5YNmRJclJlZUVuQnYyV1Nzel9EcXAtMjFkUzduYXk3R2JZNjdvekp0LXEyZEtNYlZteElrdWR6dGM0YlVUbjJ3QlhTSTR5TmxrRWNpQ1RENWNGMnJ2X1l4Q0ZVVWQ2MDlYN0h2eThnUnR6ZzZlYjNmMElwa0lpb1Y1Rlc3cEpaX1l4b0w?oc=5",
+      "published_at": "2026-08-14T17:27:18+00:00",
+      "category": "GN: autonomous robot",
       "gn_label": "robotics",
-      "site_name": "GN: surgical robot",
-      "source": "GN: surgical robot",
-      "site_id": "GN: surgical robot",
-      "description": "Distalmotion’s Dexter Robot Wins FDA Nod for Ventral Hernia Repair  Medical Product Outsourcing",
-      "ai_score": 65.0,
+      "site_name": "GN: autonomous robot",
+      "source": "GN: autonomous robot",
+      "site_id": "GN: autonomous robot",
+      "description": "16 Nations, 2,056 Robots: Inside the Massive Expansion of the World Humanoid Robot Games  Gadget Review",
+      "ai_score": 80.0,
       "ai_label": "robotics",
-      "relevance": 0.65,
+      "relevance": 0.8,
       "authority": 10,
-      "depth": 0,
-      "timeliness": 19.96,
-      "writing_value": 0,
-      "total_score": 94.96
+      "depth": 5,
+      "timeliness": 21.32,
+      "writing_value": 5,
+      "total_score": 121.32
     },
     {
       "id": "cacdc989c27c8d9eab4698313a53ba599dc4cdf4",
@@ -105,14 +147,14 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 18.68,
+      "timeliness": 17.2,
       "writing_value": 0,
-      "total_score": 93.68
+      "total_score": 92.2
     },
     {
-      "id": "d32b5d380968fef768af19ab12d4eef9bc3f37ed",
-      "title": "‘Where other robot vacuums feel like a useful addition to the home, this one feels like a necessity’ — this review is a love letter to the Dreame X60 Max Ultra Complete - tomsguide.com",
-      "title_zh": "“其他机器人吸尘器感觉像是家庭的有用补充，而这款机器人感觉像是必需品”——这篇评论是一封写给 Dreame X60 Max Ultra Complete 的情书 - tomsguide.com",
+      "id": "c1dadf0103d072ade6fb6c1db5965ae4a3619d5b",
+      "title": "‘Where other robot vacuums feel like a useful addition to the home, this one feels like a necessity’ — this review is a love letter to the Dreame X60 Max Ultra Complete - Tom's Guide",
+      "title_zh": "“其他机器人吸尘器感觉像是家庭的有用补充，而这款机器人感觉像是必需品”——这篇评论是一封写给 Dreame X60 Max Ultra Complete 的情书 - 汤姆指南",
       "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5TYXRDQzBVaEE3WnA3TExmb1g0QnBEbW1HeU10aWJiQy1FQmU4ZGtiUXh6eWt0WHI0QzNld2FqODJhWVNOMTdZbVFlazFTTmFOei1TekRkYVpyTGkwS0xTWEt0ejE1aU9YTU5OcVlBVThNWDhvbUE?oc=5",
       "published_at": "2026-08-14T15:07:01+00:00",
       "category": "GN: robot vacuum",
@@ -120,15 +162,15 @@
       "site_name": "GN: robot vacuum",
       "source": "GN: robot vacuum",
       "site_id": "GN: robot vacuum",
-      "description": "‘Where other robot vacuums feel like a useful addition to the home, this one feels like a necessity’ — this review is a love letter to the Dreame X60 Max Ultra Complete  tomsguide.com",
+      "description": "‘Where other robot vacuums feel like a useful addition to the home, this one feels like a necessity’ — this review is a love letter to the Dreame X60 Max Ultra Complete  Tom's Guide",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 20.46,
+      "timeliness": 18.98,
       "writing_value": 5,
-      "total_score": 105.46
+      "total_score": 103.98
     },
     {
       "id": "a7b632fda7d7952212ccb5f54ee51e52f2d7d2c3",
@@ -147,9 +189,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.0,
+      "timeliness": 24.52,
       "writing_value": 0,
-      "total_score": 101.0
+      "total_score": 99.52
     },
     {
       "id": "435d8787aaf0d01e87c08519ac98c641e371e738",
@@ -168,9 +210,51 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 18.09,
+      "timeliness": 16.61,
       "writing_value": 0,
-      "total_score": 93.09
+      "total_score": 91.61
+    },
+    {
+      "id": "c9100c84e3b5a38828f1f2fa106ac487eeebe20c",
+      "title": "A robot learns a new skill from a 29-second video — no retraining required - Gagadget.com",
+      "title_zh": "机器人从 29 秒的视频中学习新技能 - 无需重新训练 - Gagadget.com",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPRGZOUktaWkFLUG5lY1dfR0w3WEhzakFualZLSEdRbkdrNVdMSXZ4UXE2eUZLZ1hUTUlMaGY3UVppOGtRcnl1RU1wX2ltZ0NBNU5EQ0dnamN3eWtidHdlNVl5alU1VWpXb3ptb1FGU1JXMkJ2dUFYUXpPRmctTGFWWE9rMEpFd1h4R2ZBTlREeU1JOTRTaUdlVUtmb3pTdnA2RjJubnJGUdIBrAFBVV95cUxNbFVWR045a1R5aEI0Smx3Z2UyRFhLLTNKbGR5S2x1S2dJektOQTdoVnZQQlVPcG9QWTNfRjlBX0hUOGRiS1ctNmxWOWdpRWNRc2lUcXRzVmdOZ3Z6VjRBaW5tQWxkZzdSQXFrZTFXaDVrc0llNkVDYTVDMEpWa1BPQ292NldicmlhX3U4M2ZDS3hHNUtqWjFkRWZSa2E2c3IzeGlWRlhfNDliRHdO?oc=5",
+      "published_at": "2026-08-14T13:54:47+00:00",
+      "category": "GN: robot learning",
+      "gn_label": "robotics",
+      "site_name": "GN: robot learning",
+      "source": "GN: robot learning",
+      "site_id": "GN: robot learning",
+      "description": "A robot learns a new skill from a 29-second video — no retraining required  Gagadget.com",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 17.78,
+      "writing_value": 0,
+      "total_score": 92.78
+    },
+    {
+      "id": "7f70a8160bb635b066caeaabdfbbe12b1aa3a235",
+      "title": "Distalmotion’s Dexter Robot Wins FDA Nod for Ventral Hernia Repair - Medical Product Outsourcing",
+      "title_zh": "Distalmotion 的 Dexter 机器人获得 FDA 腹疝修复批准 - 医疗产品外包",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQaHVkTDdYSnpaLXJjOGc4eDU4VEpGa29TRWdtdEZoVDdCUEc1R2lkZTBiaTVTb0tfejl6QW84RndoT3hnSnhZdXJaRmZXTUlhYXRxXzFWVDlrUWZUbV8wOWpHb3hGVXktMDZNY0R0Zy1RTHRJMkZVQUt5bmNPSnVBOGMzbVY1Z3E5THlFLW4yNFhsLWxLa1RpSlMzTGVOQVM4UXJVTXNUMA?oc=5",
+      "published_at": "2026-08-14T14:36:32+00:00",
+      "category": "GN: surgical robot",
+      "gn_label": "robotics",
+      "site_name": "GN: surgical robot",
+      "source": "GN: surgical robot",
+      "site_id": "GN: surgical robot",
+      "description": "Distalmotion’s Dexter Robot Wins FDA Nod for Ventral Hernia Repair  Medical Product Outsourcing",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 18.48,
+      "writing_value": 0,
+      "total_score": 93.48
     },
     {
       "id": "53e32c61de3917e3d16253475bc5346bd6dcdacf",
@@ -189,30 +273,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 17.95,
+      "timeliness": 16.47,
       "writing_value": 5,
-      "total_score": 102.95
+      "total_score": 101.47
     },
     {
-      "id": "9aa2e3b9917d8da5c2b04577d838b83c30b04c87",
-      "title": "低至万九！宇树科技弃购率刷新纪录 - 东方财富",
+      "id": "4c4abc9128451536eab9f6756e26d02f24a5e3d0",
+      "title": "宇树科技上市成为“估值锚”，机器人企业集体抢滩IPO - chnfund.com",
       "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9ESDVQUUJOd3J4NjBhWEctamxDS1FzTWhKM29xam5EMnF4WmROdzRJb1M0NXROMVZwRlJRTW5ZLWdUalBGRG5fUkVuVUg0b2xXSXZRTi00R0JfdmltZ0gzeA?oc=5",
-      "published_at": "2026-08-14T12:11:42+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFAzTmxSUEU3TXkwU2RhaW1iSFVBNWlPTEt1dmpQbEJrTGZmQ0lQS1R6ZktTazUwcWdwQlFxVDNCNWlOdGxMUGZrNVU2Ym9UMGh6b1JaTE5aYVF5cXFiMUVFTzdUVDVnNFhSajhPU2g0SjUtT0ZHUlRYaVZR?oc=5",
+      "published_at": "2026-08-15T01:02:00+00:00",
       "category": "GN: 宇树科技",
       "gn_label": "robotics",
       "site_name": "GN: 宇树科技",
       "source": "GN: 宇树科技",
       "site_id": "GN: 宇树科技",
-      "description": "低至万九！宇树科技弃购率刷新纪录  东方财富",
+      "description": "宇树科技上市成为“估值锚”，机器人企业集体抢滩IPO  chnfund.com",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 17.54,
+      "timeliness": 28.9,
       "writing_value": 0,
-      "total_score": 92.54
+      "total_score": 103.9
     },
     {
       "id": "e2968d2055ca28652d9ead5b7620ba35577aa750",
@@ -231,9 +315,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 16.68,
+      "timeliness": 15.2,
       "writing_value": 0,
-      "total_score": 91.68
+      "total_score": 90.2
     },
     {
       "id": "b597d167e782980003116a79e995c765db30a4f7",
@@ -252,9 +336,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 20.13,
+      "timeliness": 18.65,
       "writing_value": 0,
-      "total_score": 95.13
+      "total_score": 93.65
     },
     {
       "id": "86d387232675092b6b7ce783683856efe67845f7",
@@ -273,9 +357,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 17.1,
+      "timeliness": 15.62,
       "writing_value": 0,
-      "total_score": 92.1
+      "total_score": 90.62
     },
     {
       "id": "0b6f9bad15327a4b960f0fdd298f4523399bf62d",
@@ -294,9 +378,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.24,
+      "timeliness": 25.76,
       "writing_value": 0,
-      "total_score": 102.24
+      "total_score": 100.76
     },
     {
       "id": "c43e5e61d6ff24018b08d3b045b299002f38b64f",
@@ -315,30 +399,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 19.27,
+      "timeliness": 17.79,
       "writing_value": 0,
-      "total_score": 94.27
-    },
-    {
-      "id": "f6298074a4512742da2d407ec69bd3f3b94fc74d",
-      "title": "【北建大机器人苦练指尖功夫 灵巧手挑战毫米级操作】用镊子牢牢夹起小圆豆，移动过程中不滑落；在电子秤上倒20克盐，误差控制在1克以内；限时搭积木，保持稳定不倒……在#2026世界人形机器人运动会 上，各赛队的灵巧手机器人将完成各类指尖上的硬功夫。8月14 - Sohu",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPcmRjZU1PZEtPSTZwazRGRXZtcmVIbGtzUUk2dXh1eTE0aGNTZFZrZTRwLU1mNXV4dG14aXJUTmNzYjBzWmdOR1BPSXNYWHZFdmtpcGxTYjFiaWxCVVI5akV6YUk3YXBTaU4xZTJGSktucWFZZTQwbWxUdVRuRWoyTUhrMVFvNEZf?oc=5",
-      "published_at": "2026-08-14T11:19:18+00:00",
-      "category": "GN: 灵巧手",
-      "gn_label": "robotics",
-      "site_name": "GN: 灵巧手",
-      "source": "GN: 灵巧手",
-      "site_id": "GN: 灵巧手",
-      "description": "【北建大机器人苦练指尖功夫 灵巧手挑战毫米级操作】用镊子牢牢夹起小圆豆，移动过程中不滑落；在电子秤上倒20克盐，误差控制在1克以内；限时搭积木，保持稳定不倒……在#2026世界人形机器人运动会 上，各赛队的灵巧手机器人将完成各类指尖上的硬功夫。8月14  Sohu",
-      "ai_score": 80.0,
-      "ai_label": "robotics",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 5,
-      "timeliness": 16.67,
-      "writing_value": 5,
-      "total_score": 116.67
+      "total_score": 92.79
     },
     {
       "id": "6a8c8b51e6d7acbcbcc656eecc05944a62b5bce7",
@@ -357,9 +420,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 18.4,
+      "timeliness": 16.92,
       "writing_value": 0,
-      "total_score": 93.4
+      "total_score": 91.92
+    },
+    {
+      "id": "f6298074a4512742da2d407ec69bd3f3b94fc74d",
+      "title": "【北建大机器人苦练指尖功夫 灵巧手挑战毫米级操作】用镊子牢牢夹起小圆豆，移动过程中不滑落；在电子秤上倒20克盐，误差控制在1克以内；限时搭积木，保持稳定不倒……在#2026世界人形机器人运动会 上，各赛队的灵巧手机器人将完成各类指尖上的硬功夫。8月14 - Sohu",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPcmRjZU1PZEtPSTZwazRGRXZtcmVIbGtzUUk2dXh1eTE0aGNTZFZrZTRwLU1mNXV4dG14aXJUTmNzYjBzWmdOR1BPSXNYWHZFdmtpcGxTYjFiaWxCVVI5akV6YUk3YXBTaU4xZTJGSktucWFZZTQwbWxUdVRuRWoyTUhrMVFvNEZf?oc=5",
+      "published_at": "2026-08-14T11:19:18+00:00",
+      "category": "GN: 灵巧手",
+      "gn_label": "robotics",
+      "site_name": "GN: 灵巧手",
+      "source": "GN: 灵巧手",
+      "site_id": "GN: 灵巧手",
+      "description": "【北建大机器人苦练指尖功夫 灵巧手挑战毫米级操作】用镊子牢牢夹起小圆豆，移动过程中不滑落；在电子秤上倒20克盐，误差控制在1克以内；限时搭积木，保持稳定不倒……在#2026世界人形机器人运动会 上，各赛队的灵巧手机器人将完成各类指尖上的硬功夫。8月14  Sohu",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 15.19,
+      "writing_value": 5,
+      "total_score": 115.19
     }
   ],
   "fallback_used": false
