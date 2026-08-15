@@ -1,9 +1,30 @@
 {
-  "generated_at": "2026-08-15T16:12:52.979534+00:00",
+  "generated_at": "2026-08-15T16:47:00.492497+00:00",
   "window_start": "2026-08-15T19:00:00+08:00",
-  "window_end": "2026-08-16T00:12:52.976830+08:00",
-  "total_items": 2,
+  "window_end": "2026-08-16T00:46:59.828128+08:00",
+  "total_items": 4,
   "items": [
+    {
+      "id": "4df57add28fdee92ed5b446a0cd4d2ba008c0182",
+      "title": "Is Your Robot Vacuum Safe From the FCC Ban? Here's Everything You Need to Know - PCMag",
+      "title_zh": "您的扫地机器人是否符合 FCC 禁令？这是您需要了解的一切 - PCMag",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNWWtHcGE1SXJxWmVvUm01c3Z3cGRvQjg2OTZYWkMzYVFXLWR6UGwyQUJCbnh4TlNuc0Uwd2c3UDB3NVM3TXI4cHozc0tqRm5XTHRseGFEd3pHUDk4dXplTVluUEhCTHFuZFVRcWhGLTBqeEdYVjZIcWh0aGpYODZKc0lqTmloZUIxdU4zQ2IyaDZpd2pYS2dQUGRnNEp4cndSamJLaHV4cw?oc=5",
+      "published_at": "2026-08-15T16:00:16+00:00",
+      "category": "GN: robot vacuum",
+      "gn_label": "robotics",
+      "site_name": "GN: robot vacuum",
+      "source": "GN: robot vacuum",
+      "site_id": "GN: robot vacuum",
+      "description": "Is Your Robot Vacuum Safe From the FCC Ban? Here's Everything You Need to Know  PCMag",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.22,
+      "writing_value": 0,
+      "total_score": 104.22
+    },
     {
       "id": "dfe8b9718251aef90a70e4cc45b470cef840e101",
       "title": "宇树科技IPO：暗盘交易系捕风捉影，背后风险不容小觑 - 新浪财经",
@@ -21,9 +42,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.54,
+      "timeliness": 25.97,
       "writing_value": 0,
-      "total_score": 101.54
+      "total_score": 100.97
+    },
+    {
+      "id": "3558c0d803a5cacc9b15f120acf1675aeb0b63b5",
+      "title": "华天科技：公司与智元进行业务项目合作 - 金融界",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE4wRGkxYlhpLUgwb2k2VVlxZXBEbkpkODQ3di1uM2VPYjczdFl2YS1kSjJnbEV4WDNQaU9KTTIzU2hmZEhuWTBldzg5Mm94bXVEQW9Ub2N1QmZlME1kZUpsRWlMc2hOWmprT0tsWUhIUQ?oc=5",
+      "published_at": "2026-08-15T13:31:02+00:00",
+      "category": "GN: 智元机器人",
+      "gn_label": "robotics",
+      "site_name": "GN: 智元机器人",
+      "source": "GN: 智元机器人",
+      "site_id": "GN: 智元机器人",
+      "description": "华天科技：公司与智元进行业务项目合作  金融界",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 26.73,
+      "writing_value": 0,
+      "total_score": 101.73
     },
     {
       "id": "2099abfd142c9c69f0422160e149dca65024f802",
@@ -42,9 +84,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.65,
+      "timeliness": 26.08,
       "writing_value": 0,
-      "total_score": 101.65
+      "total_score": 101.08
     }
   ],
   "fallback_used": false
