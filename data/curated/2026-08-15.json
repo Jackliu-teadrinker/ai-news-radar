@@ -1,6 +1,6 @@
 {
   "date": "2026-08-15",
-  "generated_at": "2026-08-15T09:18:28.829448+00:00",
+  "generated_at": "2026-08-15T09:48:42.895054+00:00",
   "score_threshold": 80,
   "total_items": 50,
   "new_added": 1,
@@ -353,6 +353,27 @@
       "source": "国内人形机器人资讯",
       "site_id": "国内人形机器人资讯",
       "description": "人形机器人行业的发展前景如何？  新浪网",
+      "ai_score": 80.0,
+      "ai_label": "humanoid",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.76,
+      "writing_value": 0,
+      "total_score": 119.76
+    },
+    {
+      "id": "ce5c0992ab606e99",
+      "title": "Nvidia’s (NASDAQ:NVDA) Next Big AI Bet Is Humanoid Robots: NVDA Teams Up With LG - Stocks Down Under",
+      "title_zh": "Nvidia（纳斯达克股票代码：NVDA）的下一个人工智能大赌注是人形机器人：NVDA 与 LG 合作 - 澳大利亚股票",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9mVjFlV0FNSkpnSGNsdjhjenBERlFvMWFfRWhJa2JBd2hsX3RFRDFMa3FnOHpUN004elh4dGJvOWlqZUplVFFybTRwVnRCeTZJNXJ3bTVBWDNnSjVTaFpsOHJpU2UwdkFWS2Q0REIwWTd2U3hTTEE4?oc=5",
+      "published_at": "2026-08-15T09:32:53+00:00",
+      "category": "国外人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国外人形机器人资讯",
+      "source": "国外人形机器人资讯",
+      "site_id": "国外人形机器人资讯",
+      "description": "Nvidia’s (NASDAQ:NVDA) Next Big AI Bet Is Humanoid Robots: NVDA Teams Up With LG  Stocks Down Under",
       "ai_score": 80.0,
       "ai_label": "humanoid",
       "relevance": 0.8,
@@ -1033,27 +1054,6 @@
       "timeliness": 28.65,
       "writing_value": 0,
       "total_score": 118.65
-    },
-    {
-      "id": "857074bfbcf7b1ea",
-      "title": "聚焦未来产业赛道！广州人大代表脑机接口产业联系点成立 - huacheng.gz-cmc.com",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPeGtIc1VHLU9VejB1RGwtYVduSnlTZU85bjZDd1J6Y0M0Tm9uWUtBQXc2Y1JQNXB5MnBYSGZqMFlIVjhyb0F6aU9vYzI2aldHelQxMGJGSWFMZG5nQ1NBZTZ6UmRXSzRLNEhDRHpQVWhQVVVNNkNJck9HaFVBd2FmcTdtZ29xcUw0UFE?oc=5",
-      "published_at": "2026-08-15T04:56:56+00:00",
-      "category": "国内脑机接口资讯",
-      "gn_label": "brain_computer",
-      "site_name": "国内脑机接口资讯",
-      "source": "国内脑机接口资讯",
-      "site_id": "国内脑机接口资讯",
-      "description": "聚焦未来产业赛道！广州人大代表脑机接口产业联系点成立  huacheng.gz-cmc.com",
-      "ai_score": 80.0,
-      "ai_label": "brain_computer",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 28.61,
-      "writing_value": 0,
-      "total_score": 118.61
     }
   ]
 }
