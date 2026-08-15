@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-15T03:11:08.886594+00:00",
-  "total_items": 11,
+  "generated_at": "2026-08-15T04:01:48.187602+00:00",
+  "total_items": 8,
   "items": [
     {
       "id": "http://arxiv.org/abs/2608.13555v1",
@@ -89,39 +89,6 @@
       "published_at": "2026-08-13T16:09:25+00:00",
       "updated_at": "2026-08-13T16:09:25Z",
       "title_zh": "刻意练习：在预算范围内学习机器人技能"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.13396v1",
-      "title": "Capstan-driven Continuum Surgical Robot: Design, Modeling, and Perception",
-      "url": "https://arxiv.org/abs/2608.13396",
-      "summary": "Shape and force sensing have long been critical bottlenecks in the development of compact capstan-driven continuum surgical robots, primarily due to the difficulty of obtaining cable tension information within the confined capstan assembly. To overcome these challenges, this paper presents an integrated design-modeling-sensing approach based on the concept of actuation-perception co-design. A compliant element is introduced into the motor mounting bracket of the drive system, enabling micro-deformation under the cable reaction force and thereby allowing real-time cable tension measurement without occupying the compact capstan space. To address the modeling complexity arising from unconventional joint configurations introduced by the spatial cable routing strategy, a parallel computation framework based on a multibody short-thick-beam model is proposed, which captures shear effects in short beam segments and synergistic multi-cable interactions while achieving real-time performance. Building on this framework, stable shape and force sensing is achieved by incorporating a proximal multi-axis force/torque sensor as an additional measurement anchor. Following this design-modeling-sensing framework, capstan-driven continuum surgical robots with single- and dual-segment configurations are developed. Experimental results validate the proposed framework in both single- and dual-segment continuum robots, demonstrating real-time tip pose estimation together with contact force and location perception. By enabling cable tension feedback without compromising the compact capstan architecture, the proposed framework makes integrated perception feasible for capstan-driven continuum surgical robots.",
-      "authors": "Gang Zhang, Yufu Qiu, Junyan Yan et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-13T15:55:18+00:00",
-      "updated_at": "2026-08-13T15:55:18Z",
-      "title_zh": "绞盘驱动的连续手术机器人：设计、建模和感知"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.13395v1",
-      "title": "FIRE-VLA: Failure-Informed Self-Evolution for Vision-Language-Action Models in Autonomous Driving",
-      "url": "https://arxiv.org/abs/2608.13395",
-      "summary": "Reinforcement learning improves autonomous-driving vision-language-action (VLA) models by evaluating trajectories sampled from the current policy. Group relative policy optimization (GRPO) learns from reward differences within each rollout group. When all sampled trajectories are poor, this relative signal can rank failures without identifying behavior outside the failed region. We introduce FIRE-VLA, a failure-informed self-evolution framework that converts such unresolved failures into privileged supervision for the next policy. Low-reward, low-diversity groups trigger self-distillation from a frozen round-start copy of the same model. Teacher and student have the same parameter scale, but only the teacher observes the hidden future trajectory. Supervision follows the student's generated prefix and is restricted to answer tokens, while GRPO remains active for every group. The updated policy supplies the teacher for the next round, allowing the routed failure distribution to change with the policy without requiring a larger external teacher. Starting from the same Qwen2.5-VL-3B SFT checkpoint, the comparison matches student rollout and policy-update counts. On 6,019 examples from 150 held-out nuScenes scenes, FIRE-VLA retains comparable single-sample planning, reduces G=4 mean L2 from 1.848 to 1.500 m, and lowers evaluation-persistent failure prevalence from 13.03% to 11.20%. The reduction in mean error arises mainly from rare severe rollouts rather than uniform improvement across ordinary trajectories.",
-      "authors": "Hao Dou",
-      "category": "cs.RO",
-      "published_at": "2026-08-13T15:53:24+00:00",
-      "updated_at": "2026-08-13T15:53:24Z",
-      "title_zh": "FIRE-VLA：自动驾驶中视觉-语言-动作模型的故障通知自我进化"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.13362v1",
-      "title": "NestDex: Nested Policy Learning with Copilot Assisted Teleoperation for Dexterous Manipulation",
-      "url": "https://arxiv.org/abs/2608.13362",
-      "summary": "Dexterous manipulation promises substantially richer robot interaction with the physical world, but learning these behaviours remains constrained by the difficulty of collecting consistent, complete-task demonstrations. Unlike parallel-jaw manipulation, dexterous tasks require the operator to coordinate arm motion with precise, contact-rich finger behaviour throughout the task. We introduce NestDex, a nested policy-learning framework that reduces this burden by using learned hand skills to assist demonstration collection. The operator controls the arm and regulates the active hand skill through a single-DoF clutch, rather than directly specifying the full finger trajectory. The inner hand policy adapts its motion from the latest proprioceptive history, while a vision-language selector activates the appropriate skill for each task stage. The resulting demonstrations train a separate outer visuomotor policy that controls both the arm and hand without the inner policies at deployment. A hand-action variational autoencoder provides compact hand-action targets while retaining arm commands in joint space. Across real-world dexterous manipulation experiments, NestDex improves demonstration reliability and efficiency, and the resulting empirical evaluations support effective autonomous policy learning. Video Demo are available at project website https://aus.bot/research/nestdex.",
-      "authors": "James Zhao, Jinhe Tang, Mingyuan Ba et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-13T15:25:39+00:00",
-      "updated_at": "2026-08-13T15:25:39Z",
-      "title_zh": "NestDex：通过副驾驶辅助远程操作进行嵌套策略学习，实现灵巧操作"
     }
   ]
 }
