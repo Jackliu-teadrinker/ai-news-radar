@@ -1,9 +1,9 @@
 {
   "date": "2026-08-16",
-  "generated_at": "2026-08-15T19:43:21.766489+00:00",
+  "generated_at": "2026-08-15T20:12:51.484910+00:00",
   "score_threshold": 80,
-  "total_items": 28,
-  "new_added": 2,
+  "total_items": 31,
+  "new_added": 3,
   "items": [
     {
       "id": "44b524ef6218c160",
@@ -25,6 +25,27 @@
       "timeliness": 29.55,
       "writing_value": 0,
       "total_score": 119.55
+    },
+    {
+      "id": "8467ad23516cabc1",
+      "title": "脑机接口实验教学平台初见成果 - 搜狐网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOV1lyRXNod0xJSmRsbGY4eUhSNHV6VFBQZ2hnM3U1a21vUzlid05JaEpwbG5YNjUydDdtcHUyOVJlOE5pRkdTZTBDaG8wRF9RVzhSUjd0UDFXV2o4QmlrdlZYYjJuTExSRkkzLWotY0ZjeU1yMkIyMjAwMGQzcHJadS1UNElpZVJnLVhlUg?oc=5",
+      "published_at": "2026-08-15T19:43:24+00:00",
+      "category": "国内脑机接口资讯",
+      "gn_label": "brain_computer",
+      "site_name": "国内脑机接口资讯",
+      "source": "国内脑机接口资讯",
+      "site_id": "国内脑机接口资讯",
+      "description": "脑机接口实验教学平台初见成果  搜狐网",
+      "ai_score": 80.0,
+      "ai_label": "brain_computer",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.53,
+      "writing_value": 0,
+      "total_score": 119.53
     },
     {
       "id": "7d253924835ffc47",
@@ -447,6 +468,27 @@
       "total_score": 112.76
     },
     {
+      "id": "b365db2b429b06ef",
+      "title": "昆仑之数亮相2026具身智能大会：用“数据石油”炼就人形机器人“进化燃料” - 搜狐网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPTkp3UXdDSUtIVjR0bGdfbVowdC1JWm1rQTlDQnZKbktNRUxjVzMyYmt3YmNwWDRuZ0F1cV9YV1p3Z0xWNkM2NjBTMWJEY2Y0WUZzb2ladGotbEViNGgzOUlvU3h6TVg5SndjSC1odFJvZVkwRVBucGl4dG45LXN6ZjFVZGdaNjlS?oc=5",
+      "published_at": "2026-08-15T12:03:16+00:00",
+      "category": "国内具身智能资讯",
+      "gn_label": "embodied_ai",
+      "site_name": "国内具身智能资讯",
+      "source": "国内具身智能资讯",
+      "site_id": "国内具身智能资讯",
+      "description": "昆仑之数亮相2026具身智能大会：用“数据石油”炼就人形机器人“进化燃料”  搜狐网",
+      "ai_score": 80.0,
+      "ai_label": "embodied_ai",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 21.86,
+      "writing_value": 0,
+      "total_score": 111.86
+    },
+    {
       "id": "b2d82ac8130d3d88",
       "title": "Robots construct 65 distinctive homes in planned US 3D-printed metro district - Interesting Engineering",
       "title_zh": "机器人在规划中的美国 3D 打印都会区建造 65 栋特色住宅 - Interesting Engineering",
@@ -466,6 +508,27 @@
       "timeliness": 25.72,
       "writing_value": 5,
       "total_score": 110.72
+    },
+    {
+      "id": "76a38bcb5467496f",
+      "title": "Olaf Robot Greets Fans as Disney Expands AI Characters in Parks - Seoul Economic Daily",
+      "title_zh": "迪士尼在公园里拓展人工智能角色，机器人奥拉夫迎接粉丝 - 首尔经济日报",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxObmZHVUZjbDZJbUVTRzVnUFNQUk9odk1xaWVzTXNFU05EYklTNHRYdmRlRURzbFNpZDNLUGVQdVpldjdWY2MtQmZrbFFDLTdaQ3A1RTdXeE1YYmdkeUtGa2xLTDNVR3NiWDJMSWpoOTJJSmstdlNTYzJyWjZ6MWV5ekcyOV80WFR3VUI2NDRhejFKdHdRX3VhUEVJY3lmV2c4Q0EtZGZhM3I?oc=5",
+      "published_at": "2026-08-15T19:34:50+00:00",
+      "category": "国外机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国外机器人资讯",
+      "source": "国外机器人资讯",
+      "site_id": "国外机器人资讯",
+      "description": "Olaf Robot Greets Fans as Disney Expands AI Characters in Parks  Seoul Economic Daily",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.39,
+      "writing_value": 0,
+      "total_score": 104.39
     },
     {
       "id": "67d4cac8c1eda433",
