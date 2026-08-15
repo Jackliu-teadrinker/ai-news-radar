@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-15T06:20:55.014657+00:00",
+  "generated_at": "2026-08-15T07:05:04.138905+00:00",
   "window_start": "2026-08-14T19:00:00+08:00",
-  "window_end": "2026-08-15T14:20:54.081616+08:00",
-  "total_items": 24,
+  "window_end": "2026-08-15T15:05:03.254564+08:00",
+  "total_items": 27,
   "items": [
     {
       "id": "299904f7bd3fabebe2f854b724371253976271ff",
@@ -21,9 +21,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 20.64,
+      "timeliness": 19.9,
       "writing_value": 5,
-      "total_score": 105.64
+      "total_score": 104.9
     },
     {
       "id": "2af8c7c59ca7acf460fdadecbdf446e0f3c659b0",
@@ -42,9 +42,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 16.66,
+      "timeliness": 15.92,
       "writing_value": 5,
-      "total_score": 101.66
+      "total_score": 100.92
+    },
+    {
+      "id": "07eba200cdb7d1898ffdf69dc935c15551850639",
+      "title": "ARPA-H Backs Magnendo's Robotic Stroke Research - i-programmer.info",
+      "title_zh": "ARPA-H 支持 Magnendo 的机器人中风研究 - i-programmer.info",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPeGk3QzJvQVptWkZQRkMwYmI4V0ROQ1NHZjM1MUVoSlpmT1ZvNWRXZ1NMZTBwT29wcWZMOUhXVXpmYTJodnN1Smptb3I0NkNWSjdjZnViMDltVlgzOThJQzl0azF2STVHU0ZWRTN5cUhtUGstSnNXQzlQVXlEWEk3cVlvaXFNVjI3QlBveU5kQ2ZnSExiRDRrWG9ndmwwV05yRkZEeUxPVU8?oc=5",
+      "published_at": "2026-08-14T16:57:35+00:00",
+      "category": "GN: autonomous robot",
+      "gn_label": "robotics",
+      "site_name": "GN: autonomous robot",
+      "source": "GN: autonomous robot",
+      "site_id": "GN: autonomous robot",
+      "description": "ARPA-H Backs Magnendo's Robotic Stroke Research  i-programmer.info",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 15.88,
+      "writing_value": 0,
+      "total_score": 90.88
     },
     {
       "id": "06fb29c6e91a213d598b49e6eef2190d17a23b1a",
@@ -63,9 +84,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 15.34,
+      "timeliness": 14.6,
       "writing_value": 0,
-      "total_score": 90.34
+      "total_score": 89.6
     },
     {
       "id": "cacdc989c27c8d9eab4698313a53ba599dc4cdf4",
@@ -84,9 +105,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 12.99,
+      "timeliness": 12.25,
       "writing_value": 0,
-      "total_score": 87.99
+      "total_score": 87.25
     },
     {
       "id": "c1dadf0103d072ade6fb6c1db5965ae4a3619d5b",
@@ -105,9 +126,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 14.78,
+      "timeliness": 14.03,
       "writing_value": 5,
-      "total_score": 99.78
+      "total_score": 99.03
     },
     {
       "id": "a7b632fda7d7952212ccb5f54ee51e52f2d7d2c3",
@@ -126,9 +147,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 20.32,
+      "timeliness": 19.57,
       "writing_value": 0,
-      "total_score": 95.32
+      "total_score": 94.57
+    },
+    {
+      "id": "5b8b75c38c86933300245dece76e537498e92d1e",
+      "title": "Cloud-assisted IoRT framework for latency-aware analytical kinematic control of a six-DOF robotic manipulator - nature.com",
+      "title_zh": "用于六自由度机器人操纵器的延迟感知分析运动学控制的云辅助 IoRT 框架 - nature.com",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1RWW5WRlRyV2htQ3cyZDJJV3haQXhMZnBMSlVLSklPamhkQnQxblctQnJvTzRQTWM0aWo5NHBKRkYxZEhqakZhSmtLbUk5SUFUUFdjb3RQNkh3OXlweTB3?oc=5",
+      "published_at": "2026-08-14T14:04:27+00:00",
+      "category": "GN: industrial robot",
+      "gn_label": "robotics",
+      "site_name": "GN: industrial robot",
+      "source": "GN: industrial robot",
+      "site_id": "GN: industrial robot",
+      "description": "Cloud-assisted IoRT framework for latency-aware analytical kinematic control of a six-DOF robotic manipulator  nature.com",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 12.99,
+      "writing_value": 5,
+      "total_score": 97.99
     },
     {
       "id": "a2c35b245bdd3345e2c53fe3d5c59e080dcab597",
@@ -147,9 +189,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 12.47,
+      "timeliness": 11.73,
       "writing_value": 0,
-      "total_score": 87.47
+      "total_score": 86.73
     },
     {
       "id": "7f70a8160bb635b066caeaabdfbbe12b1aa3a235",
@@ -168,9 +210,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 14.27,
+      "timeliness": 13.53,
       "writing_value": 0,
-      "total_score": 89.27
+      "total_score": 88.53
     },
     {
       "id": "c9100c84e3b5a38828f1f2fa106ac487eeebe20c",
@@ -189,9 +231,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 13.57,
+      "timeliness": 12.83,
       "writing_value": 0,
-      "total_score": 88.57
+      "total_score": 87.83
     },
     {
       "id": "53e32c61de3917e3d16253475bc5346bd6dcdacf",
@@ -210,9 +252,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 12.27,
+      "timeliness": 11.52,
       "writing_value": 5,
-      "total_score": 97.27
+      "total_score": 96.52
     },
     {
       "id": "4c4abc9128451536eab9f6756e26d02f24a5e3d0",
@@ -231,9 +273,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.69,
+      "timeliness": 23.95,
       "writing_value": 0,
-      "total_score": 99.69
+      "total_score": 98.95
     },
     {
       "id": "e2968d2055ca28652d9ead5b7620ba35577aa750",
@@ -252,9 +294,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 10.99,
+      "timeliness": 10.25,
       "writing_value": 0,
-      "total_score": 85.99
+      "total_score": 85.25
     },
     {
       "id": "def13bce1fb634c3dfdf7ca99d10d4bc1f85c48c",
@@ -273,9 +315,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.09,
+      "timeliness": 23.35,
       "writing_value": 0,
-      "total_score": 99.09
+      "total_score": 98.35
     },
     {
       "id": "b597d167e782980003116a79e995c765db30a4f7",
@@ -294,30 +336,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 14.44,
+      "timeliness": 13.7,
       "writing_value": 0,
-      "total_score": 89.44
-    },
-    {
-      "id": "6bfe21994033207cc52ade89c0fad5e5edb64218",
-      "title": "梁文锋为何重金押注宇树科技？ - 新浪网",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPbFB4X3UwNmJYSG9JcHBJV0dBeUlNb1RWVWhHV0pOZDBoTnNxamZEZVdaZnFHaDFZYi1NMml6MnR2TWtQN0RfSnNIRV9jUzIwQWhROFYyN3JSeU1rNlc4YzloSnJYWmZLQ001cUZ6azNHRGR6ekpZZThJWmpUa3FMdWFZaw?oc=5",
-      "published_at": "2026-08-14T19:59:00+00:00",
-      "category": "GN: 宇树科技",
-      "gn_label": "robotics",
-      "site_name": "GN: 宇树科技",
-      "source": "GN: 宇树科技",
-      "site_id": "GN: 宇树科技",
-      "description": "梁文锋为何重金押注宇树科技？  新浪网",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 19.64,
-      "writing_value": 0,
-      "total_score": 94.64
+      "total_score": 88.7
     },
     {
       "id": "86d387232675092b6b7ce783683856efe67845f7",
@@ -336,9 +357,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 11.41,
+      "timeliness": 10.67,
       "writing_value": 0,
-      "total_score": 86.41
+      "total_score": 85.67
+    },
+    {
+      "id": "6bfe21994033207cc52ade89c0fad5e5edb64218",
+      "title": "梁文锋为何重金押注宇树科技？ - 新浪网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPbFB4X3UwNmJYSG9JcHBJV0dBeUlNb1RWVWhHV0pOZDBoTnNxamZEZVdaZnFHaDFZYi1NMml6MnR2TWtQN0RfSnNIRV9jUzIwQWhROFYyN3JSeU1rNlc4YzloSnJYWmZLQ001cUZ6azNHRGR6ekpZZThJWmpUa3FMdWFZaw?oc=5",
+      "published_at": "2026-08-14T19:59:00+00:00",
+      "category": "GN: 宇树科技",
+      "gn_label": "robotics",
+      "site_name": "GN: 宇树科技",
+      "source": "GN: 宇树科技",
+      "site_id": "GN: 宇树科技",
+      "description": "梁文锋为何重金押注宇树科技？  新浪网",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 18.9,
+      "writing_value": 0,
+      "total_score": 93.9
     },
     {
       "id": "89ae354d4bfb55f4f95d5611ae72cc832443cfc0",
@@ -357,9 +399,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 18.89,
+      "timeliness": 18.14,
       "writing_value": 0,
-      "total_score": 93.89
+      "total_score": 93.14
     },
     {
       "id": "ceb9fb3035854fd11d6c758f839aac91aaf6b71e",
@@ -378,9 +420,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 11.66,
+      "timeliness": 10.92,
       "writing_value": 0,
-      "total_score": 86.66
+      "total_score": 85.92
     },
     {
       "id": "6a8c8b51e6d7acbcbcc656eecc05944a62b5bce7",
@@ -399,9 +441,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 12.71,
+      "timeliness": 11.97,
       "writing_value": 0,
-      "total_score": 87.71
+      "total_score": 86.97
     },
     {
       "id": "09c330f37025d122727c8439e15c8e9173d5a6b3",
@@ -420,9 +462,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.04,
+      "timeliness": 26.29,
       "writing_value": 0,
-      "total_score": 117.04
+      "total_score": 116.29
     },
     {
       "id": "f6298074a4512742da2d407ec69bd3f3b94fc74d",
@@ -441,9 +483,30 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 5,
-      "timeliness": 10.98,
+      "timeliness": 10.24,
       "writing_value": 5,
-      "total_score": 110.98
+      "total_score": 110.24
+    },
+    {
+      "id": "febe93780e9cb9bfc672a90d663fd1dd22f230c6",
+      "title": "中国X Square Robot包裹分拣达1816件/小时 - 维度网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1TTDZQMzJ3aGhTdHhiY29KX080Y2Q4WFBBVW95S21RWVp5ZkwySUNsU2s4YzZIMlc4STdMaUVjemxGZ2hiYWFaV0tLRTJpTHB3dzFoMFVMenk?oc=5",
+      "published_at": "2026-08-15T06:20:00+00:00",
+      "category": "GN: 机械臂",
+      "gn_label": "robotics",
+      "site_name": "GN: 机械臂",
+      "source": "GN: 机械臂",
+      "site_id": "GN: 机械臂",
+      "description": "中国X Square Robot包裹分拣达1816件/小时  维度网",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.25,
+      "writing_value": 0,
+      "total_score": 104.25
     },
     {
       "id": "72ab01c206423952f6755d33db2a2b5d506db551",
@@ -462,9 +525,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 5,
-      "timeliness": 27.78,
+      "timeliness": 27.03,
       "writing_value": 5,
-      "total_score": 127.78
+      "total_score": 127.03
     },
     {
       "id": "2ea6b1ade75ff6603e99b947802d9c10be9f998b",
@@ -483,9 +546,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 5,
-      "timeliness": 27.68,
+      "timeliness": 26.93,
       "writing_value": 5,
-      "total_score": 127.68
+      "total_score": 126.93
     },
     {
       "id": "d6bd270c735b724ce345ac6f60acb70e5b43990b",
@@ -504,9 +567,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 5,
-      "timeliness": 24.86,
+      "timeliness": 24.12,
       "writing_value": 5,
-      "total_score": 124.86
+      "total_score": 124.12
     }
   ],
   "fallback_used": false
