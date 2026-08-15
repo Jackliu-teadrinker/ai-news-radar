@@ -1,6 +1,6 @@
 {
   "date": "2026-08-15",
-  "generated_at": "2026-08-15T14:14:27.851642+00:00",
+  "generated_at": "2026-08-15T14:46:04.957725+00:00",
   "score_threshold": 80,
   "total_items": 50,
   "new_added": 1,
@@ -313,6 +313,27 @@
       "description": "清华联合伯克利提出连续世界模型，机器人不用再逐帧猜环境|具身智能|数据|物体|表征|受访者_手机新浪网  新浪财经",
       "ai_score": 80.0,
       "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.82,
+      "writing_value": 0,
+      "total_score": 119.82
+    },
+    {
+      "id": "1338e0db08306bc6",
+      "title": "聚焦实战，第二届世界人形机器人运动会场景赛即将开赛 - 京报网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE8yS3NERFM2R0h2bW9oTEZucmxvdXJMTlp6RXlyeFlFek1iajhkTGVTR3JsTGtTUE82aFJmV0F3ay1vUVNhMEU5N1l2U1JnTzZDRGpNOG95REIzbk9jVGc?oc=5",
+      "published_at": "2026-08-15T14:34:24+00:00",
+      "category": "国内人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国内人形机器人资讯",
+      "source": "国内人形机器人资讯",
+      "site_id": "国内人形机器人资讯",
+      "description": "聚焦实战，第二届世界人形机器人运动会场景赛即将开赛  京报网",
+      "ai_score": 80.0,
+      "ai_label": "humanoid",
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
@@ -1033,27 +1054,6 @@
       "timeliness": 29.27,
       "writing_value": 0,
       "total_score": 119.27
-    },
-    {
-      "id": "c74fe814af9d03c6",
-      "title": "前OpenAI算法专家创业，具身智能公司亮源新创拿下数亿元融资 - 新浪财经",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPbDRJQTRyenRMeF9ucHg3Ymotd0lNcHlfTlFnTUw1TGJlcEM5SlphSnFOMlNCWXNoU0UtdS1hRTQtU2hvdHFZb093eElDR3ZDWDloT2lMMDFzSXMxYVlEdHZCb0o1NWp4aGEzUVJqcjB0S1B4OGRLUXhGQnppa2xIWUNTRVl0UFNmbk0zejM4T2hNeG5sT29oU2pMeFhISDQwNlNEWC0tUmxkVW9CcWQ4dmRB?oc=5",
-      "published_at": "2026-08-15T02:18:52+00:00",
-      "category": "国内具身智能资讯",
-      "gn_label": "embodied_ai",
-      "site_name": "国内具身智能资讯",
-      "source": "国内具身智能资讯",
-      "site_id": "国内具身智能资讯",
-      "description": "前OpenAI算法专家创业，具身智能公司亮源新创拿下数亿元融资  新浪财经",
-      "ai_score": 80.0,
-      "ai_label": "embodied_ai",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 29.15,
-      "writing_value": 0,
-      "total_score": 119.15
     }
   ]
 }
