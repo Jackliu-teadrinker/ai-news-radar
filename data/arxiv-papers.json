@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-15T04:01:48.187602+00:00",
-  "total_items": 8,
+  "generated_at": "2026-08-15T04:55:31.131129+00:00",
+  "total_items": 4,
   "items": [
     {
       "id": "http://arxiv.org/abs/2608.13555v1",
@@ -45,50 +45,6 @@
       "published_at": "2026-08-13T16:58:29+00:00",
       "updated_at": "2026-08-13T16:58:29Z",
       "title_zh": "从 VLA 表示中解码任务进度"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.13448v1",
-      "title": "Mind the Context: Continual Learning of Socially Appropriate Robot Actions via Environmental-Social Disentanglement",
-      "url": "https://arxiv.org/abs/2608.13448",
-      "summary": "Social robots are expected to operate across diverse environments, where similar arrangements can imply different socially appropriate actions, e.g., starting a conversation may be acceptable in a crowded home but disruptive in an office meeting. Because such norms and environments cannot all be anticipated in advance, robots require continual learning (CL) to adapt from sequential experience while retaining previously acquired knowledge. Prior work has studied CL for generating socially appropriate robot actions, but it has not addressed domain-incremental settings in which the robot incrementally encounters diverse contexts (e.g., living room, meeting room, office, hallway), where both environmental (e.g., whether the space is open or cluttered with furniture) and social cues (e.g., how people or other agents are positioned around the robot) jointly shape the appropriateness of robot actions. We address this gap with the Explicit Disentanglement Dual-Branch (EDD) framework. EDD explicitly separates environmental and social-agent related knowledge and uses replay-based rehearsal to mitigate forgetting while learning the appropriateness of robot actions (e.g., cleaning, serving, starting a conversation) across several indoor domains. Experiments show that EDD outperforms several state-of-the-art baselines, and ablation studies further evaluate different disentanglement strategies and the sensitivity to domain ordering. Our code is publicly available at https://github.com/Cambridge-AFAR/Mind-the-Context.git.",
-      "authors": "Rafal Robert Karpinski, Fethiye Irmak Dogan, Nikhil Churamani et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-13T16:33:10+00:00",
-      "updated_at": "2026-08-13T16:33:10Z",
-      "title_zh": "注意环境：通过环境与社会的解离不断学习适合社会的机器人行为"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.13438v1",
-      "title": "ContactGuard: Pre-Contact Execution Monitoring with Action-Conditioned Latent World Models",
-      "url": "https://arxiv.org/abs/2608.13438",
-      "summary": "Contact-rich manipulation failures are often detected only after the robot has committed to contact. This is especially limiting in wrist-camera setups: close gripper--object views help observe contact, but a poor approach may already push, miss, slip, or disturb the object before conventional detectors react. We introduce \\emph{ContactGuard}, a pre-contact execution monitor for chunked visuomotor policies. Given the policy's planned action chunk, ContactGuard predicts its short-horizon consequence in latent visual space and aborts if the predicted future latent indicates likely failure. Its latent world model is trained from unlabelled robot trajectories to predict compact multi-view visual embeddings under planned actions, avoiding pixel-level video prediction. A lightweight failure probe is then trained from a small labelled set of pre-contact clips. At deployment, ContactGuard anchors prediction before an imminent contact event, rolls the model forward under the policy's own actions, and verifies the predicted post-contact latent. Across real-world contact-rich manipulation tasks, ContactGuard predicts failure more accurately than direct and corrupted-action ablations, and transfers to live robot as a pre-contact abort signal without modifying the underlying policy.",
-      "authors": "Gehan Zheng, Matthew Johnson-Roberson, Weiming Zhi",
-      "category": "cs.RO",
-      "published_at": "2026-08-13T16:25:54+00:00",
-      "updated_at": "2026-08-13T16:25:54Z",
-      "title_zh": "ContactGuard：使用动作条件潜在世界模型进行接触前执行监控"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.13422v1",
-      "title": "Attention from Action, for Action: Emergent Visual Bottlenecks for Policy Learning",
-      "url": "https://arxiv.org/abs/2608.13422",
-      "summary": "Visual bottlenecks that focus policy inputs on regions of interest (ROIs) can improve data-efficient visuomotor learning by separating where to look from how to act. Many ROI interfaces rely on external spatial labels, such as gaze, object classes, or affordance annotations. Label-free alternatives often derive crops from trajectories by detecting gripper or motion events and centering a fixed crop at the projected end-effector. Such action-derived crops are useful spatial priors that require no additional labels, but they encode fixed choices about event timing, proxy points, and crop scale. When the visual evidence needed for control lies away from the end-effector or changes continuously with task progress, these crops can become misaligned. We propose Seeker, a task- and state-conditioned readout that learns attention from action. Starting from frozen DINOv3 features, Seeker iteratively updates a query with gathered visual evidence, producing progression-aware ROIs solely from action supervision. The learned ROI serves as a spatial interface for RGB cropping, mask-guided background augmentation, and point-cloud filtering. In simulation and the real world, Seeker improves data efficiency and robustness over no-crop, augmentation, and action-derived crop baselines. On real robots, Seeker raises average in-domain success from the best baseline's 48.3% to 76.7% and success under lighting/background shifts from 20.0% to 60.0%.",
-      "authors": "Zheyu Zhuang, Ruiyu Wang, Nick Heppert et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-13T16:14:07+00:00",
-      "updated_at": "2026-08-13T16:14:07Z",
-      "title_zh": "关注行动，为了行动：政策学习中出现的视觉瓶颈"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.13415v1",
-      "title": "Deliberate Practice: Learning Robot Skills under a Budget",
-      "url": "https://arxiv.org/abs/2608.13415",
-      "summary": "We consider the problem of autonomously learning robot skills under a limited practice budget for sequential tasks. We propose an active skill learning algorithm, \\emph{Deliberate Practice (DP)}, that computes a provably \\emph{budget-optimal} allocation---practicing skills that maximize expected cumulative reward while being learnable within the budget. DP estimates both the time needed to master skills and the cumulative reward of the task plans that the skills unlock. Computing a budget-optimal allocation is challenging as it requires reasoning about combinatorially many skill plans over a large practice budget. Our key contribution is a bilinear program that can compute this exactly using off-the-shelf solvers. Through simulated and real-world experiments on long-horizon manipulation tasks, we show that our approach allows robots to optimally use limited practice time to acquire useful policies and improve long-horizon planning.",
-      "authors": "Shivam Vats, Sudarshan Harithas, Mete Tuluhan Akbulut et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-13T16:09:25+00:00",
-      "updated_at": "2026-08-13T16:09:25Z",
-      "title_zh": "刻意练习：在预算范围内学习机器人技能"
     }
   ]
 }
