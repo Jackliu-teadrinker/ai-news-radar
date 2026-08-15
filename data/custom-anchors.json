@@ -1,9 +1,30 @@
 {
-  "generated_at": "2026-08-15T17:12:08.434680+00:00",
+  "generated_at": "2026-08-15T17:43:00.917236+00:00",
   "window_start": "2026-08-15T19:00:00+08:00",
-  "window_end": "2026-08-16T01:12:08.201133+08:00",
-  "total_items": 4,
+  "window_end": "2026-08-16T01:43:00.264926+08:00",
+  "total_items": 5,
   "items": [
+    {
+      "id": "8e484f99231e783d6f95672c61b4a01854c1ad92",
+      "title": "Robots need to stay in their lane - Universal Hub",
+      "title_zh": "机器人需要留在自己的车道上 - Universal Hub",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5KSU9qcTlLX1lVRTgtTGxnbHFKMGdPVjVWUmsxMVJ1MDFDYm5qRldTQ1c4U09RMUpwbHVRWWVKdXVkbDN5NzVTUEUtYlBYT3dNSDAtcktkejhJUUl4NDZLWGp3RzMyRzRzWGdLS1BB?oc=5",
+      "published_at": "2026-08-15T17:17:31+00:00",
+      "category": "GN: autonomous robot",
+      "gn_label": "robotics",
+      "site_name": "GN: autonomous robot",
+      "source": "GN: autonomous robot",
+      "site_id": "GN: autonomous robot",
+      "description": "Robots need to stay in their lane  Universal Hub",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.58,
+      "writing_value": 0,
+      "total_score": 104.58
+    },
     {
       "id": "4df57add28fdee92ed5b446a0cd4d2ba008c0182",
       "title": "Is Your Robot Vacuum Safe From the FCC Ban? Here's Everything You Need to Know - PCMag",
@@ -21,9 +42,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.8,
+      "timeliness": 28.29,
       "writing_value": 0,
-      "total_score": 103.8
+      "total_score": 103.29
     },
     {
       "id": "dfe8b9718251aef90a70e4cc45b470cef840e101",
@@ -42,9 +63,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.55,
+      "timeliness": 25.04,
       "writing_value": 0,
-      "total_score": 100.55
+      "total_score": 100.04
     },
     {
       "id": "3558c0d803a5cacc9b15f120acf1675aeb0b63b5",
@@ -63,9 +84,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.32,
+      "timeliness": 25.8,
       "writing_value": 0,
-      "total_score": 101.32
+      "total_score": 100.8
     },
     {
       "id": "2099abfd142c9c69f0422160e149dca65024f802",
@@ -84,9 +105,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.67,
+      "timeliness": 25.15,
       "writing_value": 0,
-      "total_score": 100.67
+      "total_score": 100.15
     }
   ],
   "fallback_used": false
