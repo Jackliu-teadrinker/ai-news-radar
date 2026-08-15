@@ -1,9 +1,9 @@
 {
   "date": "2026-08-15",
-  "generated_at": "2026-08-15T10:13:52.160023+00:00",
+  "generated_at": "2026-08-15T10:46:35.444822+00:00",
   "score_threshold": 80,
   "total_items": 50,
-  "new_added": 0,
+  "new_added": 1,
   "items": [
     {
       "id": "a434028ed44832f3",
@@ -416,6 +416,27 @@
       "source": "国内人形机器人资讯",
       "site_id": "国内人形机器人资讯",
       "description": "新华读报｜美媒：美脱离中国制造人形机器人不现实  Sohu",
+      "ai_score": 80.0,
+      "ai_label": "humanoid",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.72,
+      "writing_value": 0,
+      "total_score": 119.72
+    },
+    {
+      "id": "5bf543483ec477dd",
+      "title": "人形机器人运动会开幕式多票型售罄666支机器人队伍华山论剑 - 新浪网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9VbzJXMzEwcDR4b2dUd0tiNU5fOU5SSHZxNlNRbFZaN2RLRklFcDhKRV9YTHZ5cXpFaEFNOWZ2YmlJblJ3STdVSVhXNmZSTGFBTFRhNF80bFhUUmNEV2JxVFAwaVd1ak4yT1YtZm0yd3d5MGFySklERE5kX2hvYnc?oc=5",
+      "published_at": "2026-08-15T10:28:20+00:00",
+      "category": "国内人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国内人形机器人资讯",
+      "source": "国内人形机器人资讯",
+      "site_id": "国内人形机器人资讯",
+      "description": "人形机器人运动会开幕式多票型售罄666支机器人队伍华山论剑  新浪网",
       "ai_score": 80.0,
       "ai_label": "humanoid",
       "relevance": 0.8,
@@ -1033,27 +1054,6 @@
       "timeliness": 28.66,
       "writing_value": 0,
       "total_score": 118.66
-    },
-    {
-      "id": "029c751c30e2ee58",
-      "title": "海量财经 | 对话宇树中签人：万里挑一的幸运儿，看中“人形机器人第一股”什么？ - 大众网",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5RUHh2QXZfaTVKTmFaZlhQdHdjV01UeU5tWGM3Q2dXMFJoT2lnU2k5c21XNHlDMGpwSkx3VUpHa0d6RXFkajhqd1lVNUxsTlNJbENUUnhJZ1duNFA4c1BXNHBpaTNVYnJfcGJncmdGQ1p3ZFE?oc=5",
-      "published_at": "2026-08-15T03:33:00+00:00",
-      "category": "国内人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国内人形机器人资讯",
-      "source": "国内人形机器人资讯",
-      "site_id": "国内人形机器人资讯",
-      "description": "海量财经 | 对话宇树中签人：万里挑一的幸运儿，看中“人形机器人第一股”什么？  大众网",
-      "ai_score": 80.0,
-      "ai_label": "humanoid",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 28.65,
-      "writing_value": 0,
-      "total_score": 118.65
     }
   ]
 }
