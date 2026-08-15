@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-15T04:55:31.131129+00:00",
-  "total_items": 4,
+  "generated_at": "2026-08-15T05:17:24.501254+00:00",
+  "total_items": 3,
   "items": [
     {
       "id": "http://arxiv.org/abs/2608.13555v1",
@@ -34,17 +34,6 @@
       "published_at": "2026-08-13T17:18:09+00:00",
       "updated_at": "2026-08-13T17:18:09Z",
       "title_zh": "DreamX-Phi 1.0：用于机器人操作的动作条件视频世界模型"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.13474v1",
-      "title": "Decoding Task Progress from VLA Representations",
-      "url": "https://arxiv.org/abs/2608.13474",
-      "summary": "Vision-language-action models (VLAs) are moving rapidly towards deployment as general-purpose manipulation policies, but we currently lack basic tools for understanding what these models represent internally or for monitoring them at runtime. Leveraging ideas from mechanistic interpretability, we probe the residual stream of $π_{0.5}$ and find that task progress, the normalized time remaining in a trajectory, is linearly readable from the activations. We find that this signal is present in the pretrained PaliGemma backbone prior to training on any robot-specific data. A single linear probe generalizes to unseen tasks and varies under language counterfactuals when trained on multi-prompt data, but does not enable meaningful steering of the policy. These properties make the signal directly useful for instrumenting deployed VLAs. We use the probe as a simple label-free OOD detector, which detects stalled task progress, and find it competitive with state-of-the-art methods. Our results suggest that VLAs have rich, linearly readable internal representations of semantic quantities like task progress, and that learning to read these signals offers a lightweight, interpretable path toward monitoring deployed visuomotor policies.",
-      "authors": "Atiksh Bhardwaj, Edward Weiyi Duan, Prithwish Dan et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-13T16:58:29+00:00",
-      "updated_at": "2026-08-13T16:58:29Z",
-      "title_zh": "从 VLA 表示中解码任务进度"
     }
   ]
 }
