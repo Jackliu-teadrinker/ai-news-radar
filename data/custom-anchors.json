@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-15T15:42:27.958979+00:00",
+  "generated_at": "2026-08-15T16:12:52.979534+00:00",
   "window_start": "2026-08-15T19:00:00+08:00",
-  "window_end": "2026-08-15T23:42:27.956157+08:00",
-  "total_items": 1,
+  "window_end": "2026-08-16T00:12:52.976830+08:00",
+  "total_items": 2,
   "items": [
     {
       "id": "dfe8b9718251aef90a70e4cc45b470cef840e101",
@@ -21,9 +21,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.05,
+      "timeliness": 26.54,
       "writing_value": 0,
-      "total_score": 102.05
+      "total_score": 101.54
+    },
+    {
+      "id": "2099abfd142c9c69f0422160e149dca65024f802",
+      "title": "华天科技：公司与智元进行业务项目合作 - 新浪财经",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5EUjlRRklBeEJRNXFrN3NJNWptRHczUEt2dXVTTGNpbUNDdld3dGJSZ0p1VnNqMUpnbFlSZFp3WFVTZXJYT1MwWFM2RQ?oc=5",
+      "published_at": "2026-08-15T12:52:00+00:00",
+      "category": "GN: 智元机器人",
+      "gn_label": "robotics",
+      "site_name": "GN: 智元机器人",
+      "source": "GN: 智元机器人",
+      "site_id": "GN: 智元机器人",
+      "description": "华天科技：公司与智元进行业务项目合作  新浪财经",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 26.65,
+      "writing_value": 0,
+      "total_score": 101.65
     }
   ],
   "fallback_used": false
