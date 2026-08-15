@@ -1,9 +1,9 @@
 {
   "date": "2026-08-16",
-  "generated_at": "2026-08-15T17:43:55.391497+00:00",
+  "generated_at": "2026-08-15T18:15:23.950375+00:00",
   "score_threshold": 80,
-  "total_items": 22,
-  "new_added": 0,
+  "total_items": 24,
+  "new_added": 2,
   "items": [
     {
       "id": "44b524ef6218c160",
@@ -46,6 +46,27 @@
       "timeliness": 29.48,
       "writing_value": 0,
       "total_score": 119.48
+    },
+    {
+      "id": "74e991d9e954d974",
+      "title": "第二届世界人形机器人运动会下周开幕：2056台机器人竞技，规模翻两番 - sohu.com",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNdy1KaHctMFRGSDJiaUJhcThpRGZVVlh3emM5QjZua3dvNFdaSk90MDJzbG56YWhwdHhFSG44M2R0SlhCQnZHMjMxNGZLdUQwaXNzczJTU2pMT0tBSzlzVnlFUjZZTEJBWVBKeWNfTjRoaFdiclZDNVZDcjF1aUZIVzVDeGdzdjVz?oc=5",
+      "published_at": "2026-08-15T17:35:00+00:00",
+      "category": "国内人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国内人形机器人资讯",
+      "source": "国内人形机器人资讯",
+      "site_id": "国内人形机器人资讯",
+      "description": "第二届世界人形机器人运动会下周开幕：2056台机器人竞技，规模翻两番  sohu.com",
+      "ai_score": 80.0,
+      "ai_label": "humanoid",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.34,
+      "writing_value": 0,
+      "total_score": 119.34
     },
     {
       "id": "bc8fd36578f4a74c",
@@ -298,6 +319,27 @@
       "timeliness": 24.77,
       "writing_value": 0,
       "total_score": 114.77
+    },
+    {
+      "id": "8e73419ae649ed28",
+      "title": "The Airseekers Tron is an impressive mulching robot mower with a couple of frustrating flaws - Android Authority",
+      "title_zh": "Airseeker Tron 是一款令人印象深刻的覆盖机器人割草机，但也有一些令人沮丧的缺陷 - Android Authority",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9lNDZ4N3JyS2FsQTRUT2VacXM4U1czTnFTVFhBWWlJZmNPWm5lU2FBV0RMSk55LWVUbTJWdTNOQUhDT0RZQ29oSGlEYTYxYkY5Z1h5SkRzeEVFdUtia1NucUdQYzVFbm1wZGUxSWp5VXFEZw?oc=5",
+      "published_at": "2026-08-15T18:00:00+00:00",
+      "category": "国外机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国外机器人资讯",
+      "source": "国外机器人资讯",
+      "site_id": "国外机器人资讯",
+      "description": "The Airseekers Tron is an impressive mulching robot mower with a couple of frustrating flaws  Android Authority",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 29.76,
+      "writing_value": 5,
+      "total_score": 114.76
     },
     {
       "id": "1a586d5ddd87552c",
