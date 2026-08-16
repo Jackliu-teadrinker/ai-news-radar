@@ -1,9 +1,9 @@
 {
   "date": "2026-08-17",
-  "generated_at": "2026-08-16T17:43:05.484080+00:00",
+  "generated_at": "2026-08-16T18:15:15.119303+00:00",
   "score_threshold": 80,
   "total_items": 50,
-  "new_added": 1,
+  "new_added": 2,
   "items": [
     {
       "id": "97987f0e290e3fb3",
@@ -319,6 +319,27 @@
       "timeliness": 27.09,
       "writing_value": 0,
       "total_score": 117.09
+    },
+    {
+      "id": "ba594ab016cfcc34",
+      "title": "海外研选 | 巴克莱：自动化3.0时代开启 人形机器人市场10年后或达2000亿美元 - 财联社",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE12ZjBIMXNiQVEtUTZXbHRaMTFFNGtGVjdUM1hLY3RwSm9lcS15Z1k4WkgzdW9LT3Y4ZUJyN3hjUjhDTHNaOWhzcg?oc=5",
+      "published_at": "2026-08-16T14:55:40+00:00",
+      "category": "国内人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国内人形机器人资讯",
+      "source": "国内人形机器人资讯",
+      "site_id": "国内人形机器人资讯",
+      "description": "海外研选 | 巴克莱：自动化3.0时代开启 人形机器人市场10年后或达2000亿美元  财联社",
+      "ai_score": 80.0,
+      "ai_label": "humanoid",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 26.69,
+      "writing_value": 0,
+      "total_score": 116.69
     },
     {
       "id": "fd51b4fe6a118a93",
@@ -720,6 +741,27 @@
       "total_score": 104.61
     },
     {
+      "id": "39154e8ac452531c",
+      "title": "FCC robot ban: Can you still purchase new products? - Mashable",
+      "title_zh": "FCC机器人禁令：还能购买新产品吗？ - 可混搭",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1keEtraE5qVi1TanpzZ2ZIbFRxM0gwTmRoNV9XV1lVWkV6NjRTRzdvaVAxUjdaTzM3V09rbTlQX3hoRmZzZmNvanpTYWhEUm9aZnFJUk1ZWVE2MXczS2NpbU1GbVR5TGJwY2xMOWxVVQ?oc=5",
+      "published_at": "2026-08-16T17:46:26+00:00",
+      "category": "国外人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国外人形机器人资讯",
+      "source": "国外人形机器人资讯",
+      "site_id": "国外人形机器人资讯",
+      "description": "FCC robot ban: Can you still purchase new products?  Mashable",
+      "ai_score": 65.0,
+      "ai_label": "humanoid",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.54,
+      "writing_value": 0,
+      "total_score": 104.54
+    },
+    {
       "id": "0dc1fde62d6ab399",
       "title": "Disney's AI robot Olaf replaces costumed characters - 조선일보",
       "title_zh": "迪士尼人工智能机器人奥拉夫取代了服装角色 - 朝鲜日报",
@@ -1012,48 +1054,6 @@
       "timeliness": 26.47,
       "writing_value": 0,
       "total_score": 101.47
-    },
-    {
-      "id": "d5b609beba5ccc23",
-      "title": "Why Home Robots Are Taking So Long - CNET",
-      "title_zh": "为什么家用机器人需要这么长时间 - CNET",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFAyMnpFTFA4OHJDbDlwNWFTYm5aUFN1OExKaWdKWHdhRHNIdldtcHNJWV9IeFVfSV9tSThFX2RXeUpjc2lQS0JUTzFCcTdhVTZUXzFCTHBwZXBTXzJCb2JRdXhZWjRDOFVtdUtXQUxQVUE?oc=5",
-      "published_at": "2026-08-16T12:00:00+00:00",
-      "category": "国外机器人资讯",
-      "gn_label": "robotics",
-      "site_name": "国外机器人资讯",
-      "source": "国外机器人资讯",
-      "site_id": "国外机器人资讯",
-      "description": "Why Home Robots Are Taking So Long  CNET",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 25.79,
-      "writing_value": 0,
-      "total_score": 100.79
-    },
-    {
-      "id": "4820f85a7a405a17",
-      "title": "AI in Dentistry: Will Robots Replace Your Dentist? - thestreet.com",
-      "title_zh": "牙科中的人工智能：机器人会取代你的牙医吗？ - thestreet.com",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNVmFtR050aGNJRHZDcV9PT3lDV2VDYWNSQkRmNlc2ZTlpNHBYTlZZRkpsSXR1SGVQcnNXbEVES0w0bHdpcXpKbkl2UWVOVlRNQnZDdXNEbURNaENNemdZZ2pwX0tONXBVYk1TV2hzUWN3TzQwWVFGVTVuX0FXWEVjcDQ5S3RNTTN3TnF5M25n?oc=5",
-      "published_at": "2026-08-16T11:30:00+00:00",
-      "category": "国外机器人资讯",
-      "gn_label": "robotics",
-      "site_name": "国外机器人资讯",
-      "source": "国外机器人资讯",
-      "site_id": "国外机器人资讯",
-      "description": "AI in Dentistry: Will Robots Replace Your Dentist?  thestreet.com",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 25.29,
-      "writing_value": 0,
-      "total_score": 100.29
     }
   ]
 }
