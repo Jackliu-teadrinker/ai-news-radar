@@ -1,9 +1,9 @@
 {
   "date": "2026-08-17",
-  "generated_at": "2026-08-16T20:45:34.275600+00:00",
+  "generated_at": "2026-08-16T21:12:00.213138+00:00",
   "score_threshold": 80,
   "total_items": 50,
-  "new_added": 1,
+  "new_added": 2,
   "items": [
     {
       "id": "97987f0e290e3fb3",
@@ -594,6 +594,27 @@
       "total_score": 114.98
     },
     {
+      "id": "4a262a06f019d161",
+      "title": "Se proponen robots humanoides a « DHS » para la vigilancia de la frontera sur - Fox News",
+      "title_zh": "人形机器人向“国土安全部”提议用于南部边境监视 - 福克斯新闻",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOR0g4azhRWl90TUhpbW0wSDZEWU00SndiMlZNZlNGM0pGOVVtWWxYRW5uQUREWU5XLUppSmpXdmlIMGREWGxXbGwwNXZZSFprYzB1VmZ3RTJQU090X05PeEpYc3Ntc19ubGhfU2hSY2RqVVE4d2xfbHZzMHBzT1JkYU43R1cybDVKYlo3a1cwd21SNExzcXdtdkg0SUVNLUh2QVZtcVY0WUFWV0stXzZkY1JORzJBNU5tTjk4MGtTcEhISlVBdVh2UW55RQ?oc=5",
+      "published_at": "2026-08-16T16:06:54+00:00",
+      "category": "国外机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国外机器人资讯",
+      "source": "国外机器人资讯",
+      "site_id": "国外机器人资讯",
+      "description": "Se proponen robots humanoides a « DHS » para la vigilancia de la frontera sur  Fox News",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 24.93,
+      "writing_value": 0,
+      "total_score": 114.93
+    },
+    {
       "id": "5167d85b5ebb1e7f",
       "title": "Pratt Miller Arms Its EAMV MCA Ground Robot With Same 50mm Gun as Future Bradley Replacement, But Enormous Turret Profile Raises Survivability Questions - Defense Express",
       "title_zh": "普拉特米勒为其 EAMV MCA 地面机器人配备了与未来布拉德利替代品相同的 50 毫米火炮，但巨大的炮塔轮廓引发了生存能力问题",
@@ -697,6 +718,27 @@
       "timeliness": 29.47,
       "writing_value": 5,
       "total_score": 114.47
+    },
+    {
+      "id": "d47a72a49ab9d1a9",
+      "title": "毛利率近65%，海外收入占比过半，这家公司将成为港股具身智能眼脑手第一股 - 搜狐网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPblJkNzl3VUNsZkF5RnpCdmRiYnVwQWtUSDF5S0RGdUJSeUF5S3RVU0Z0M1FpYTVHeDZ4SDNNNl9QT3hmUklIam1mWmJxbFp4LVdxRVpBTFlzNG9YYTNoT2ZpUkRpZDFqUnZKd1FTZHlLMGFRbWhzYmtBUzYzS1Jsa2pIWXJIWW9T?oc=5",
+      "published_at": "2026-08-16T14:48:22+00:00",
+      "category": "国内具身智能资讯",
+      "gn_label": "embodied_ai",
+      "site_name": "国内具身智能资讯",
+      "source": "国内具身智能资讯",
+      "site_id": "国内具身智能资讯",
+      "description": "毛利率近65%，海外收入占比过半，这家公司将成为港股具身智能眼脑手第一股  搜狐网",
+      "ai_score": 80.0,
+      "ai_label": "embodied_ai",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 23.62,
+      "writing_value": 0,
+      "total_score": 113.62
     },
     {
       "id": "32a620d38349638d",
@@ -1012,48 +1054,6 @@
       "timeliness": 28.21,
       "writing_value": 0,
       "total_score": 103.21
-    },
-    {
-      "id": "c550c324b23e15ee",
-      "title": "Building An Actuator For A Walking Robot - Hackaday",
-      "title_zh": "为行走机器人构建执行器 - Hackaday",
-      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE4zYW1YbU5LZnFZVk1hWVh6VUtVc3Y0eGVkb1E0OGFOU0t3NnNSamZQN3h6QUJMa1RCNVhWRmR0X3Qxb25UM3NHeUVSdGl2Uk5Nd3c3dVJrZFd6bVQ4N0RpcFQ5d01UdDVLVnJWX0Y3VllaOUI4eDljMGtSbXZpUQ?oc=5",
-      "published_at": "2026-08-16T14:00:00+00:00",
-      "category": "国外机器人资讯",
-      "gn_label": "robotics",
-      "site_name": "国外机器人资讯",
-      "source": "国外机器人资讯",
-      "site_id": "国外机器人资讯",
-      "description": "Building An Actuator For A Walking Robot  Hackaday",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 27.79,
-      "writing_value": 0,
-      "total_score": 102.79
-    },
-    {
-      "id": "1866948e3da35151",
-      "title": "Delivery Robot Rules Approved in Hoboken Amid Dispute Over Emergency Declaration - TAPinto",
-      "title_zh": "霍博肯批准送货机器人规则，因紧急声明存在争议 - TAPinto",
-      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNTXFwaW5hSmkxU3VOOXZka1FiR0Y0a1lVb2JobnhsNUxCMlVHWkZXLU9rSFhxUDhrd0ZMam5lMERDbXNKZXZGUDhseW5fRVdnZkxXZEhZY01PTUFsd0pVN2lTeUZwcmpEM3o3MGZHUTk5V0h0bllPbzZmMlp4eWtJODJkVG52cVZPa2ZmV2lrOXVhbDFQQVJDVUQ4NFRlWHQ4QzNJTWJSRW93QlpnbG5KbmtBVVZKRnNhSHRIZ1NwTEhMRnRqRzFnaFVSeDlrMmFVa3NhaGROUV8zcFpJeU1KcA?oc=5",
-      "published_at": "2026-08-16T13:58:00+00:00",
-      "category": "国外机器人资讯",
-      "gn_label": "robotics",
-      "site_name": "国外机器人资讯",
-      "source": "国外机器人资讯",
-      "site_id": "国外机器人资讯",
-      "description": "Delivery Robot Rules Approved in Hoboken Amid Dispute Over Emergency Declaration  TAPinto",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 27.75,
-      "writing_value": 0,
-      "total_score": 102.75
     }
   ]
 }
