@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-16T19:41:06.178861+00:00",
+  "generated_at": "2026-08-16T20:10:35.672248+00:00",
   "window_start": "2026-08-16T19:00:00+08:00",
-  "window_end": "2026-08-17T03:41:06.005601+08:00",
-  "total_items": 6,
+  "window_end": "2026-08-17T04:10:35.534787+08:00",
+  "total_items": 7,
   "items": [
     {
       "id": "2f2accde5129c5390b4a9ac06889e2672a8f6722",
@@ -21,9 +21,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.31,
+      "timeliness": 22.82,
       "writing_value": 0,
-      "total_score": 98.31
+      "total_score": 97.82
     },
     {
       "id": "aeb94977b24283f1eaed1f116825f95687d3bbfa",
@@ -42,9 +42,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.5,
+      "timeliness": 27.01,
       "writing_value": 0,
-      "total_score": 102.5
+      "total_score": 102.01
     },
     {
       "id": "2c2918c1ec27342aeb3c11541f782c17b0407a64",
@@ -63,9 +63,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.8,
+      "timeliness": 24.3,
       "writing_value": 0,
-      "total_score": 99.8
+      "total_score": 99.3
     },
     {
       "id": "9169a75d38593466691ed2f28b30d323fb6c08bc",
@@ -84,9 +84,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 22.37,
+      "timeliness": 21.88,
       "writing_value": 0,
-      "total_score": 97.37
+      "total_score": 96.88
     },
     {
       "id": "b43544195c70ca94a1c3c6be6d441f0fe8f5f4c1",
@@ -105,9 +105,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.77,
+      "timeliness": 25.27,
       "writing_value": 0,
-      "total_score": 100.77
+      "total_score": 100.27
     },
     {
       "id": "6c1c0ffee661513b2c5b30153fb52b17fee1a247",
@@ -126,9 +126,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.97,
+      "timeliness": 23.48,
       "writing_value": 0,
-      "total_score": 98.97
+      "total_score": 98.48
+    },
+    {
+      "id": "e3d81e5b0b471cb024364e47275b1538f3597aa6",
+      "title": "机械臂30秒出杯、最低5.9元！京东七鲜咖啡无人店落地，是破局咖啡红海还是补全本地生活拼图？ - 新浪财经",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQMGtheDMxUlNUZW5Sb0w3OUl3b0VBQkRpaGJBalowdld3YzVua0FyeE5yQUt2OFRMNnN4WWxtbzVESU1YY3kxeGVxbzRja19iZ1hSN290c29ISVFNeEFldXhGZzZKMURxV01yQ2dTZ0d3OHlxSWc3S3RncWh3QzVKcm5JZ1JOVlA5NjhjMjNELUhMb0FtX0cza25LMkprLWFyX2hlMlV0TU9idmhQTGx3WG9KZk5WTXJYSTlkTA?oc=5",
+      "published_at": "2026-08-16T16:37:22+00:00",
+      "category": "GN: 机械臂",
+      "gn_label": "robotics",
+      "site_name": "GN: 机械臂",
+      "source": "GN: 机械臂",
+      "site_id": "GN: 机械臂",
+      "description": "机械臂30秒出杯、最低5.9元！京东七鲜咖啡无人店落地，是破局咖啡红海还是补全本地生活拼图？  新浪财经",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 26.45,
+      "writing_value": 0,
+      "total_score": 101.45
     }
   ],
   "fallback_used": false
