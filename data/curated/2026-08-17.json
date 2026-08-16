@@ -1,9 +1,9 @@
 {
   "date": "2026-08-17",
-  "generated_at": "2026-08-16T19:14:38.530948+00:00",
+  "generated_at": "2026-08-16T19:42:16.783370+00:00",
   "score_threshold": 80,
   "total_items": 50,
-  "new_added": 0,
+  "new_added": 2,
   "items": [
     {
       "id": "97987f0e290e3fb3",
@@ -573,6 +573,27 @@
       "total_score": 115.01
     },
     {
+      "id": "144bdaf2dba9652e",
+      "title": "A comparative study of HSO-optimized PID and TID controllers with fuzzy adaptation for delta robot control - Nature",
+      "title_zh": "用于 Delta 机器人控制的具有模糊自适应的 HSO 优化 PID 和 TID 控制器的比较研究 - Nature",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1nSXlrZG9lamx6RG1Pb2QzdzBvLXJTSXlDX1pTVmhnSEs5bTY0Z3RjRHdqM0dBSmtwT0JLNkZoZjBidGY1ZzdCdThDZ2xPOHJ3OGU4cEt1X1hNb3pJaHBv?oc=5",
+      "published_at": "2026-08-16T19:39:35+00:00",
+      "category": "国外机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国外机器人资讯",
+      "source": "国外机器人资讯",
+      "site_id": "国外机器人资讯",
+      "description": "A comparative study of HSO-optimized PID and TID controllers with fuzzy adaptation for delta robot control  Nature",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 29.98,
+      "writing_value": 5,
+      "total_score": 114.98
+    },
+    {
       "id": "5167d85b5ebb1e7f",
       "title": "Pratt Miller Arms Its EAMV MCA Ground Robot With Same 50mm Gun as Future Bradley Replacement, But Enormous Turret Profile Raises Survivability Questions - Defense Express",
       "title_zh": "普拉特米勒为其 EAMV MCA 地面机器人配备了与未来布拉德利替代品相同的 50 毫米火炮，但巨大的炮塔轮廓引发了生存能力问题",
@@ -676,6 +697,27 @@
       "timeliness": 29.47,
       "writing_value": 5,
       "total_score": 114.47
+    },
+    {
+      "id": "32a620d38349638d",
+      "title": "央视《对话》×它石智航陈亦伦：中国原创全球应用，具身智能交出「中国答案」 - 凤凰网科技",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1vNW40blV3NWt5TDlDejNxTldsSU1veTlxXzBJcjhnekhoandubFRnQ2MyXy1rSUVxX2JjYzJORGtDcFJWcHg5S0hwb0c?oc=5",
+      "published_at": "2026-08-16T11:40:59+00:00",
+      "category": "国内具身智能资讯",
+      "gn_label": "embodied_ai",
+      "site_name": "国内具身智能资讯",
+      "source": "国内具身智能资讯",
+      "site_id": "国内具身智能资讯",
+      "description": "央视《对话》×它石智航陈亦伦：中国原创全球应用，具身智能交出「中国答案」  凤凰网科技",
+      "ai_score": 80.0,
+      "ai_label": "embodied_ai",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 22.0,
+      "writing_value": 0,
+      "total_score": 112.0
     },
     {
       "id": "6247b52405fb0252",
@@ -1012,48 +1054,6 @@
       "timeliness": 27.75,
       "writing_value": 0,
       "total_score": 102.75
-    },
-    {
-      "id": "3489ccf0703cfce5",
-      "title": "Robotics on the fire ground won’t take the jobs of firefighters - Fire & Safety Journal Americas",
-      "title_zh": "火场上的机器人不会取代消防员的工作 - 美洲消防与安全杂志",
-      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5pTEJHTGNJcl96c2hDOXd4c2JBNVJqNGp4V3VVa3FPSjRFMklCUk1zRTE2TFpCaDlDR2hIai1kN1VHV1BZdWstTWZvdGhiejBxV2FFdHJ0STBDVVpBSGRHQUozN0x4Z0VqNEVyU1I0cUhZZFYzZ19hRA?oc=5",
-      "published_at": "2026-08-16T13:30:00+00:00",
-      "category": "国外机器人资讯",
-      "gn_label": "robotics",
-      "site_name": "国外机器人资讯",
-      "source": "国外机器人资讯",
-      "site_id": "国外机器人资讯",
-      "description": "Robotics on the fire ground won’t take the jobs of firefighters  Fire & Safety Journal Americas",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 27.29,
-      "writing_value": 0,
-      "total_score": 102.29
-    },
-    {
-      "id": "190f7e0bdbe63a7c",
-      "title": "The Final DLC For ‘Super Robot Wars Y’ Was A Lot Of Fun - Forbes",
-      "title_zh": "《超级机器人大战 Y》的最终 DLC 非常有趣 - 福布斯",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPUDdmckVIZTd1dnQ2SGdTSVdBOHZMV3dFRUtpYWhVdDI4WWlfT3ByVV9ON2ViVUlZeHdLbUZOb0VjeTdheHdoVFlLMlFZa3FYNE5ZR1ZocnZFeFF2RjgwR2t3MU1SbnpENHB5dkR1QlFvQnpCWjBLek5KdnI1YTZRSzE0czh3dmV1aXBIWGZDMmlzM0I5M1lhYWd4bWIxU2ZRTFdRNnpuLTJEQQ?oc=5",
-      "published_at": "2026-08-16T13:16:20+00:00",
-      "category": "国外机器人资讯",
-      "gn_label": "robotics",
-      "site_name": "国外机器人资讯",
-      "source": "国外机器人资讯",
-      "site_id": "国外机器人资讯",
-      "description": "The Final DLC For ‘Super Robot Wars Y’ Was A Lot Of Fun  Forbes",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 27.06,
-      "writing_value": 0,
-      "total_score": 102.06
     }
   ]
 }
