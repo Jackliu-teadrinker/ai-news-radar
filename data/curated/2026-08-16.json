@@ -1,9 +1,9 @@
 {
   "date": "2026-08-16",
-  "generated_at": "2026-08-16T14:46:45.672443+00:00",
+  "generated_at": "2026-08-16T15:13:25.977105+00:00",
   "score_threshold": 80,
   "total_items": 50,
-  "new_added": 1,
+  "new_added": 2,
   "items": [
     {
       "id": "8e450899d358e008",
@@ -67,6 +67,27 @@
       "timeliness": 28.14,
       "writing_value": 5,
       "total_score": 128.14
+    },
+    {
+      "id": "502dfbfe82d925c8",
+      "title": "American Airlines Bans Humanoid Robots Starting Monday — But The Robot Army Is Coming Anyway - View from the Wing",
+      "title_zh": "美国航空从周一开始禁止人形机器人——但机器人大军无论如何都会来——机翼视角",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPSmphMmpHcFBQV2t2ZEFZY1R5Y0dST0FJckZsUUdxblp1U2Q5ZkNnOE53VTVFNldpNThKMHdPVExESlJ4cmp1S0xPSm9iYjhoQ1podWswNnUtYkdLSjVRb2lZWG1aYkRDYlVYSnI2eC1yR2RlaXBpVXJwcUdwWXpfcWhvcDRZRGtXN2RKWUZ4cERtX1ZKMW5UcXJMMUhLeDhaMkF0dUxLMVEyOWdsay15RE1IcVVkNWZnWDVn?oc=5",
+      "published_at": "2026-08-16T12:04:20+00:00",
+      "category": "国外人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国外人形机器人资讯",
+      "source": "国外人形机器人资讯",
+      "site_id": "国外人形机器人资讯",
+      "description": "American Airlines Bans Humanoid Robots Starting Monday — But The Robot Army Is Coming Anyway  View from the Wing",
+      "ai_score": 80.0,
+      "ai_label": "humanoid",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 26.88,
+      "writing_value": 5,
+      "total_score": 126.88
     },
     {
       "id": "9d1e419d21e8981f",
@@ -594,6 +615,27 @@
       "total_score": 119.59
     },
     {
+      "id": "84bd0652bb5b7d39",
+      "title": "Humanoid robots test hospitality skills at 2nd World Humanoid Robot Games in Beijing - 巴士的報",
+      "title_zh": "Humanoid robots test hospitality skills at 2nd World Humanoid Robot Games in Beijing - 巴士的报",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQZllBTGtxd3RrMGQ0d0hvSVJGWldhX2xWOWZuZVRtZUJneURfVGRpTmFHd2NlZzM1bUxSX3hDLTF3SS1CWHVmTzFManZJZVhwdU5tbkdYdTAzQWZ5ZjBsWEdlZGZTU2N2MVB6UUtDZzJNSzJZYjFTTnpuSWdsdnlRN1FGMjBoM3pLSk9BelRBZVVySlZTX2pwMGhyajVIb3k4VWhvNEgwZmdVcW5KNURmeWJxby1pb0dXM28tNkMtSGt4UU9iLUQ0VXZzWG1GZFRCV3c?oc=5",
+      "published_at": "2026-08-16T14:47:07+00:00",
+      "category": "国外机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国外机器人资讯",
+      "source": "国外机器人资讯",
+      "site_id": "国外机器人资讯",
+      "description": "Humanoid robots test hospitality skills at 2nd World Humanoid Robot Games in Beijing  巴士的報",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.59,
+      "writing_value": 0,
+      "total_score": 119.59
+    },
+    {
       "id": "5fb10b65fa1b97df",
       "title": "第二届世界人形机器人运动会期待拉满，赛队从280支增至666支 - 京报网",
       "title_zh": "",
@@ -1012,48 +1054,6 @@
       "timeliness": 29.26,
       "writing_value": 0,
       "total_score": 119.26
-    },
-    {
-      "id": "2668da64d629e8ea",
-      "title": "海尔周云杰：预计2035年我国脑机接口市场规模将突破千亿 - t.cj.sina.cn",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE40QkVCcVVIQ1VVc25JWUYwbVQ1WGdMNDJNM2RTNFdCR0xTaXFNb1psSWJBcW9WUVMtRW9mUVE1STFLSHVZN0YySVhXazkyZkNGdU9tMlpNU0JhX2FxdFQ0LUJsYUlmV210VUJ1bDFYUkw?oc=5",
-      "published_at": "2026-08-16T09:25:01+00:00",
-      "category": "国内脑机接口资讯",
-      "gn_label": "brain_computer",
-      "site_name": "国内脑机接口资讯",
-      "source": "国内脑机接口资讯",
-      "site_id": "国内脑机接口资讯",
-      "description": "海尔周云杰：预计2035年我国脑机接口市场规模将突破千亿  t.cj.sina.cn",
-      "ai_score": 80.0,
-      "ai_label": "brain_computer",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 29.2,
-      "writing_value": 0,
-      "total_score": 119.2
-    },
-    {
-      "id": "82c742ce5f65ec19",
-      "title": "【金融头条】宇树科技叩响科创板 具身智能机器人赛道迎来二级市场定价时刻 - k.sina.com.cn",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPcnJKaE5WUHpsSDk0NWp4MlVjWndpUUV1S190SUhqMHlnSlJFVTJsX2lvbWQxaC1ERGxfWEc4UTB1UW90TzZrOGgwbEFPQXl0Mnpsa2lQRldyM01mQTNyTS1yLU1KNkxEcDhqdkVpZy1oTWo0RVBXVm9yQl9sXzduYWtn?oc=5",
-      "published_at": "2026-08-16T04:08:44+00:00",
-      "category": "国内具身智能资讯",
-      "gn_label": "embodied_ai",
-      "site_name": "国内具身智能资讯",
-      "source": "国内具身智能资讯",
-      "site_id": "国内具身智能资讯",
-      "description": "【金融头条】宇树科技叩响科创板 具身智能机器人赛道迎来二级市场定价时刻  k.sina.com.cn",
-      "ai_score": 80.0,
-      "ai_label": "embodied_ai",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 29.18,
-      "writing_value": 0,
-      "total_score": 119.18
     }
   ]
 }

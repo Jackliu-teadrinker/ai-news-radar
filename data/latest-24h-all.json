@@ -1,48 +1,90 @@
 {
-  "generated_at": "2026-08-16T14:46:42.831283+00:00",
-  "total_items": 43,
+  "generated_at": "2026-08-16T15:13:22.593169+00:00",
+  "total_items": 47,
   "items_ai": [
+    {
+      "id": "db07b467041cc501f24b7625cc449b1281454e1f",
+      "title": "American Airlines Bans Humanoid Robots Starting Monday — But The Robot Army Is Coming Anyway - View from the Wing",
+      "title_zh": "美国航空从周一开始禁止人形机器人——但机器人大军无论如何都会来——机翼视角",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPSmphMmpHcFBQV2t2ZEFZY1R5Y0dST0FJckZsUUdxblp1U2Q5ZkNnOE53VTVFNldpNThKMHdPVExESlJ4cmp1S0xPSm9iYjhoQ1podWswNnUtYkdLSjVRb2lZWG1aYkRDYlVYSnI2eC1yR2RlaXBpVXJwcUdwWXpfcWhvcDRZRGtXN2RKWUZ4cERtX1ZKMW5UcXJMMUhLeDhaMkF0dUxLMVEyOWdsay15RE1IcVVkNWZnWDVn?oc=5",
+      "published_at": "2026-08-16T12:04:20+00:00",
+      "category": "国外人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国外人形机器人资讯",
+      "source": "国外人形机器人资讯",
+      "site_id": "国外人形机器人资讯",
+      "description": "American Airlines Bans Humanoid Robots Starting Monday — But The Robot Army Is Coming Anyway  View from the Wing",
+      "ai_score": 80.0,
+      "ai_label": "humanoid",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 26.88,
+      "writing_value": 5,
+      "total_score": 126.88
+    },
     {
       "id": "603ead20fa1b5d95f2af41c3404289ecb1b980ee",
       "title": "23 humanoid robot teams compete in rescue missions at 2nd WHRG, facing real-world complexity beyond dancing in coordination - Global Times",
       "title_zh": "23支人形机器人团队在第二届世界救援大会上展开救援任务，面对现实世界的复杂性，超越协调舞蹈 - 环球时报",
       "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE91MUFhTDVnRWRYb1NCOVpXUXZjZ0drbnVuNUFUWnloSXZmaF9ralJfZUlVUU9fOTZlZ2IzdWZENll6OGhYRzZVWlpVaEt0dVdXRHI0WFVTUXR5LWdaanNwQ1dR?oc=5",
       "published_at": "2026-08-16T11:46:00+00:00",
-      "category": "国外人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国外人形机器人资讯",
-      "source": "国外人形机器人资讯",
-      "site_id": "国外人形机器人资讯",
+      "category": "国外机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国外机器人资讯",
+      "source": "国外机器人资讯",
+      "site_id": "国外机器人资讯",
       "description": "23 humanoid robot teams compete in rescue missions at 2nd WHRG, facing real-world complexity beyond dancing in coordination  Global Times",
       "ai_score": 80.0,
-      "ai_label": "humanoid",
+      "ai_label": "robotics",
       "relevance": 0.8,
       "authority": 10,
       "depth": 5,
-      "timeliness": 27.01,
+      "timeliness": 26.57,
       "writing_value": 5,
-      "total_score": 127.01
+      "total_score": 126.57
     },
     {
-      "id": "bbc34865c29ceee323f1e8afced94e8128925653",
-      "title": "人形机器人运动会赛前冲刺备战“家政赛”：30分钟内完成收纳叠衣 - 新浪财经",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQMzRXVEYtTE5GVy04ODYzcUl3M2FYZjdPYkxVVDJIei1HVVZCV3ZESnVLbEdicUUzZXZ2ZTY0UExQN3ZWNTZKWnRWanBEYW83c0t0aDRUQjFHeVR2QjZyNC1PRjFKbWF5ZHFzUWRCNGdSYjZVX3NNSXpnMmpRM2dPdkRnckhZX25XR0JVY3Y4U2s5Z1Rfck8wQnRkTEZ3R3FMT2w3RGU0am1tQjF0dkluc0FB?oc=5",
-      "published_at": "2026-08-16T14:28:33+00:00",
-      "category": "国内机器人资讯",
+      "id": "b63ed9101163d052b3ae5729eb36623f703f7ff8",
+      "title": "Humanoid robots test hospitality skills at 2nd World Humanoid Robot Games in Beijing - 巴士的報",
+      "title_zh": "Humanoid robots test hospitality skills at 2nd World Humanoid Robot Games in Beijing - 巴士的报",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQZllBTGtxd3RrMGQ0d0hvSVJGWldhX2xWOWZuZVRtZUJneURfVGRpTmFHd2NlZzM1bUxSX3hDLTF3SS1CWHVmTzFManZJZVhwdU5tbkdYdTAzQWZ5ZjBsWEdlZGZTU2N2MVB6UUtDZzJNSzJZYjFTTnpuSWdsdnlRN1FGMjBoM3pLSk9BelRBZVVySlZTX2pwMGhyajVIb3k4VWhvNEgwZmdVcW5KNURmeWJxby1pb0dXM28tNkMtSGt4UU9iLUQ0VXZzWG1GZFRCV3c?oc=5",
+      "published_at": "2026-08-16T14:47:07+00:00",
+      "category": "国外机器人资讯",
       "gn_label": "robotics",
-      "site_name": "国内机器人资讯",
-      "source": "国内机器人资讯",
-      "site_id": "国内机器人资讯",
-      "description": "人形机器人运动会赛前冲刺备战“家政赛”：30分钟内完成收纳叠衣  新浪财经",
+      "site_name": "国外机器人资讯",
+      "source": "国外机器人资讯",
+      "site_id": "国外机器人资讯",
+      "description": "Humanoid robots test hospitality skills at 2nd World Humanoid Robot Games in Beijing  巴士的報",
       "ai_score": 80.0,
       "ai_label": "robotics",
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.72,
+      "timeliness": 29.59,
       "writing_value": 0,
-      "total_score": 119.72
+      "total_score": 119.59
+    },
+    {
+      "id": "f339a703334e93f2af27e6f3702c81632f1f2de1",
+      "title": "人形机器人运动会赛前冲刺备战“家政赛”：30分钟内完成收纳叠衣 - 搜狐网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNTnNUQVlUNzB2VlY3MDFqbDM2amRGR2g4eVJTUXNFcFFtaFFwaVpZVHZIZ3pwYXVfbzc3ZFhWaW5Ed3Rmc2lVRUtjRjhnTi15MHdhQmhUalI3UndUcEo0blJVd3NtdmFtbmxVa3FxNnBRb0JoSzJycWxpbHR5N0x4cjJYbjkxRnhGb3BFWA?oc=5",
+      "published_at": "2026-08-16T14:06:25+00:00",
+      "category": "国内机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国内机器人资讯",
+      "source": "国内机器人资讯",
+      "site_id": "国内机器人资讯",
+      "description": "人形机器人运动会赛前冲刺备战“家政赛”：30分钟内完成收纳叠衣  搜狐网",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 28.91,
+      "writing_value": 0,
+      "total_score": 118.91
     },
     {
       "id": "ae769f5131e9f2f56734b75b0b6f95f182af2881",
@@ -50,20 +92,20 @@
       "title_zh": "第二届世界仿人机器人运动会火灾场景挑战赛_环球时报",
       "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBPUndBemZTV1R3XzZ6UGYwMHlaclQ5eEpmM3hhMHVqdEo3Q19HSDhqcjV6U2JYdUo5d2d2Qk5sMFVDX0UyMU5pZkUzUzlOcFZqajNZbDZsOGtISTRITGNHajdR?oc=5",
       "published_at": "2026-08-16T13:44:00+00:00",
-      "category": "国外人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国外人形机器人资讯",
-      "source": "国外人形机器人资讯",
-      "site_id": "国外人形机器人资讯",
+      "category": "国外机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国外机器人资讯",
+      "source": "国外机器人资讯",
+      "site_id": "国外机器人资讯",
       "description": "The Fire‑Scenario Challenge at the 2nd World Humanoid Robot Games  Global Times",
       "ai_score": 80.0,
-      "ai_label": "humanoid",
+      "ai_label": "robotics",
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.97,
+      "timeliness": 28.54,
       "writing_value": 0,
-      "total_score": 118.97
+      "total_score": 118.54
     },
     {
       "id": "2e4f318fccbbbc91a9c2d93741106fdc52c77f00",
@@ -82,9 +124,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.95,
+      "timeliness": 28.51,
       "writing_value": 0,
-      "total_score": 118.95
+      "total_score": 118.51
     },
     {
       "id": "aac2b7e2feaa57fa8be02404b337e0c4094f0103",
@@ -92,20 +134,20 @@
       "title_zh": "美国航空从周一开始禁止人形机器人 - insideflyer.com",
       "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOdkR1N0c3a2F5QWxqWjBRS0lpa09vTnF5OEE3ZllIUVZXOU9ET0lZMWhNTjU5eG9EdGVnb21tMjdnck4tUGVxUHZLNndtdWpldzB3U3ZkVVRFdnVhMEw1WklFS0tBVFBSMi1vUFU3Si1RSGhhamM4MWtxa0FIcDBwUEJYM3U3OFhlOXNxTUNxRXVqSVk?oc=5",
       "published_at": "2026-08-16T13:17:56+00:00",
-      "category": "国外人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国外人形机器人资讯",
-      "source": "国外人形机器人资讯",
-      "site_id": "国外人形机器人资讯",
+      "category": "国外机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国外机器人资讯",
+      "source": "国外机器人资讯",
+      "site_id": "国外机器人资讯",
       "description": "American Airlines bans humanoid robots starting Monday  insideflyer.com",
       "ai_score": 80.0,
-      "ai_label": "humanoid",
+      "ai_label": "robotics",
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.54,
+      "timeliness": 28.1,
       "writing_value": 0,
-      "total_score": 118.54
+      "total_score": 118.1
     },
     {
       "id": "70c4ef7b2fe378a41b0d1eed3de6b841b1ba2976",
@@ -124,9 +166,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.01,
+      "timeliness": 27.57,
       "writing_value": 0,
-      "total_score": 118.01
+      "total_score": 117.57
     },
     {
       "id": "d39b08b589aa4c81c4902f8a3085ae1f2c6e256b",
@@ -145,9 +187,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.63,
+      "timeliness": 27.19,
       "writing_value": 0,
-      "total_score": 117.63
+      "total_score": 117.19
     },
     {
       "id": "00267c04ebc9d45dd56e1bb4d889e6dd1dd69d84",
@@ -166,9 +208,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.26,
+      "timeliness": 26.82,
       "writing_value": 0,
-      "total_score": 117.26
+      "total_score": 116.82
     },
     {
       "id": "fbd0d1c82cce1e47c522dcb8e1b115ee90b7f233",
@@ -187,9 +229,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.0,
+      "timeliness": 26.57,
       "writing_value": 0,
-      "total_score": 117.0
+      "total_score": 116.57
     },
     {
       "id": "6d7855f22c3a2ad3a28afefd2bbdd753aae3fce3",
@@ -208,9 +250,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.0,
+      "timeliness": 26.57,
       "writing_value": 0,
-      "total_score": 117.0
+      "total_score": 116.57
     },
     {
       "id": "9cc99b49e957743cade6a7b74e3ffa3237965a68",
@@ -229,9 +271,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.9,
+      "timeliness": 26.46,
       "writing_value": 0,
-      "total_score": 116.9
+      "total_score": 116.46
     },
     {
       "id": "cfe8a88f18391af03c0ef18bcf3dd77b3982d8f8",
@@ -250,9 +292,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.88,
+      "timeliness": 26.44,
       "writing_value": 0,
-      "total_score": 116.88
+      "total_score": 116.44
     },
     {
       "id": "7697d5c9da8a5a6fb227454380512fc7fc159e7c",
@@ -260,20 +302,20 @@
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1tLWp4dEJOR2xMWTZuOGpTdTlOMVFuSGE5bHZDUlZ2NDk4aEw3ZTFjOENqSEhSUlp0dE04SHF2TVUwamJCLXU0bGw1ODJ2OVdLbUJnNzRfS2NTRk8zWnFXYXRNV2Z0Zm5IZVhJ?oc=5",
       "published_at": "2026-08-16T11:33:00+00:00",
-      "category": "国内人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国内人形机器人资讯",
-      "source": "国内人形机器人资讯",
-      "site_id": "国内人形机器人资讯",
+      "category": "国内具身智能资讯",
+      "gn_label": "embodied_ai",
+      "site_name": "国内具身智能资讯",
+      "source": "国内具身智能资讯",
+      "site_id": "国内具身智能资讯",
       "description": "2026下半年，人形机器人3大重点宇树即将IPO  财富号",
       "ai_score": 80.0,
-      "ai_label": "humanoid",
+      "ai_label": "embodied_ai",
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.79,
+      "timeliness": 26.35,
       "writing_value": 0,
-      "total_score": 116.79
+      "total_score": 116.35
     },
     {
       "id": "58bd0ad456e4d950bcb0bf81b33af048f8d33a74",
@@ -292,9 +334,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.49,
+      "timeliness": 26.06,
       "writing_value": 0,
-      "total_score": 116.49
+      "total_score": 116.06
     },
     {
       "id": "1f651123912147bac958a403f2da6b3f4cbb8069",
@@ -313,9 +355,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.46,
+      "timeliness": 26.02,
       "writing_value": 0,
-      "total_score": 116.46
+      "total_score": 116.02
     },
     {
       "id": "4097e26601f5d09e5b855f38f7e86d1b30f07006",
@@ -334,9 +376,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 28.44,
+      "timeliness": 28.0,
       "writing_value": 5,
-      "total_score": 113.44
+      "total_score": 113.0
     },
     {
       "id": "070dd64e7e3a637fac6d7835b89ccca2016c180b",
@@ -355,9 +397,51 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 27.35,
+      "timeliness": 26.91,
       "writing_value": 5,
-      "total_score": 112.35
+      "total_score": 111.91
+    },
+    {
+      "id": "9879f0b2a449d9072ecdc2279770915cf0740475",
+      "title": "蓝思入局！「中科慧思」押注灵巧手赛道！ - 搜狐网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOM2kzMDhCR09DX25TU19hVThQNUFVemd5Z2h1ZnNmOEdzZTZnY2M3SWwxX2pJLVlFMlR3STJheWR6MGxfNjV4THRIZkRmTHpfSlAyc0VEV0gzOTh3Unpic3FZVlRSMnlXZlBNNzdMMUF1UWFlUEIzU19veTE1VTJDbWV6VUJ2TTcy?oc=5",
+      "published_at": "2026-08-16T14:48:22+00:00",
+      "category": "国内人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国内人形机器人资讯",
+      "source": "国内人形机器人资讯",
+      "site_id": "国内人形机器人资讯",
+      "description": "蓝思入局！「中科慧思」押注灵巧手赛道！  搜狐网",
+      "ai_score": 65.0,
+      "ai_label": "humanoid",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.61,
+      "writing_value": 0,
+      "total_score": 104.61
+    },
+    {
+      "id": "a99d4b072a842509f4abb38b87d79c6f7249fce1",
+      "title": "章鱼动力将在WRC发布仿生灵巧手OctoH-Hand：以极致仿生打造通用物理API - 中华网科技频道",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE05R2d1R1Nad0traUNZYzEyV2NacG4xNUxObHlwUEVPUXlXSm1nOERuN0dvZ1JueVgzRWVJTmJyM294R2lPbFQ2OUpJV2xVOTZhY0UtWl9Kcy1ISzc4eEpJbTNwZmlFWUYxWVNUaXp3?oc=5",
+      "published_at": "2026-08-16T14:43:48+00:00",
+      "category": "国内具身智能资讯",
+      "gn_label": "embodied_ai",
+      "site_name": "国内具身智能资讯",
+      "source": "国内具身智能资讯",
+      "site_id": "国内具身智能资讯",
+      "description": "章鱼动力将在WRC发布仿生灵巧手OctoH-Hand：以极致仿生打造通用物理API  中华网科技频道",
+      "ai_score": 65.0,
+      "ai_label": "embodied_ai",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.53,
+      "writing_value": 0,
+      "total_score": 104.53
     },
     {
       "id": "3295cc0d63a4216856cdb91daa99af369071ed9b",
@@ -376,16 +460,16 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.74,
+      "timeliness": 29.3,
       "writing_value": 0,
-      "total_score": 104.74
+      "total_score": 104.3
     },
     {
       "id": "8a5d06974eea498fb535a52c270f155f18179ea4",
       "title": "Robots Are Here. The Real Challenge Is Getting Workers to Trust Them - inc.com",
       "title_zh": "机器人来了。真正的挑战是让员工信任他们 - inc.com",
       "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxORE40ZERDcWRxRzBUM2dRN0JEWXl5dXpIb2xObVYyRElzRlhISjd0MXJHZDdCeEdCQU1xV0QyV1FkUElCLXFqaHYwSGtuTnAwbDd2RDJwUTJwVXUzVHg2NHhDSjV4bDJqQnFtUVdIbHN2LTBuZFBub1RaMFhpNC1qRlE0emJTVE94Y0ZaYjZINDA3cHlzeExPdnR1UnpfSkdBdUxLQXd0U2RkOHhfRHFnY1FFQQ?oc=5",
-      "published_at": "2026-08-16T14:15:00+00:00",
+      "published_at": "2026-08-16T14:25:15+00:00",
       "category": "国外机器人资讯",
       "gn_label": "robotics",
       "site_name": "国外机器人资讯",
@@ -397,9 +481,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.49,
+      "timeliness": 29.22,
       "writing_value": 0,
-      "total_score": 104.49
+      "total_score": 104.22
     },
     {
       "id": "77db66e9ddaf14f9a745ce7ce4fce584e47fe2b9",
@@ -418,9 +502,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.24,
+      "timeliness": 28.8,
       "writing_value": 0,
-      "total_score": 104.24
+      "total_score": 103.8
     },
     {
       "id": "886d3a270c6ddc603c2e069504f57841049ae95d",
@@ -439,9 +523,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.21,
+      "timeliness": 28.77,
       "writing_value": 0,
-      "total_score": 104.21
+      "total_score": 103.77
     },
     {
       "id": "235606fa52c56064827b6dadfcb1c5401e1eedb4",
@@ -460,9 +544,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.74,
+      "timeliness": 28.3,
       "writing_value": 0,
-      "total_score": 103.74
+      "total_score": 103.3
     },
     {
       "id": "c7a256e858bfaddba3b6768df2f5a91401a489b9",
@@ -481,14 +565,14 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.51,
+      "timeliness": 28.08,
       "writing_value": 0,
-      "total_score": 103.51
+      "total_score": 103.08
     },
     {
       "id": "7839513d035b77be012916221f9296635594698e",
       "title": "New York teachers build a snail-inspired robot that traps microplastics in water - Yahoo",
-      "title_zh": "纽约教师建造了一种受蜗牛启发的机器人，可以捕获水中的微塑料 - 雅虎",
+      "title_zh": "纽约教师建造了一个受蜗牛启发的机器人，可以捕获水中的微塑料 - 雅虎",
       "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQbGhNUEdxeVJWc1dJOVF5YmFfODFVTWdYZWx0WVRodVM5cFFKSTBsTVRwSTlSNW9BWEJoM2pOWmZDNjlMVWt0anRaSU92c3UwYWE1REdYMVBhSFdoNVhFS25JaVZyNmlVUmwwSjF5RVVqbzJHZ0pEcU10TjNaMGloM1otNDdESEhFbFNfRnk5WmFyYkxGZDZNMQ?oc=5",
       "published_at": "2026-08-16T13:09:00+00:00",
       "category": "国外机器人资讯",
@@ -502,9 +586,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.39,
+      "timeliness": 27.95,
       "writing_value": 0,
-      "total_score": 103.39
+      "total_score": 102.95
     },
     {
       "id": "9f82a1bdb13eff1dbb9349488f357bf723206e6e",
@@ -523,14 +607,14 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.92,
+      "timeliness": 27.48,
       "writing_value": 0,
-      "total_score": 102.92
+      "total_score": 102.48
     },
     {
-      "id": "a6ec5acd81a8b9afa85768806520462d915b5f06",
-      "title": "Why Home Robots Are Taking So Long - cnet.com",
-      "title_zh": "为什么家用机器人需要这么长时间 - cnet.com",
+      "id": "662b967c9a0e2c9943bba23a465c40353a21afcb",
+      "title": "Why Home Robots Are Taking So Long - CNET",
+      "title_zh": "为什么家用机器人需要这么长时间 - CNET",
       "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFAyMnpFTFA4OHJDbDlwNWFTYm5aUFN1OExKaWdKWHdhRHNIdldtcHNJWV9IeFVfSV9tSThFX2RXeUpjc2lQS0JUTzFCcTdhVTZUXzFCTHBwZXBTXzJCb2JRdXhZWjRDOFVtdUtXQUxQVUE?oc=5",
       "published_at": "2026-08-16T12:00:00+00:00",
       "category": "国外机器人资讯",
@@ -538,15 +622,15 @@
       "site_name": "国外机器人资讯",
       "source": "国外机器人资讯",
       "site_id": "国外机器人资讯",
-      "description": "Why Home Robots Are Taking So Long  cnet.com",
+      "description": "Why Home Robots Are Taking So Long  CNET",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.24,
+      "timeliness": 26.8,
       "writing_value": 0,
-      "total_score": 102.24
+      "total_score": 101.8
     },
     {
       "id": "197687ec1916c5fa9fc6ec63c3fcb4c2d4cff8a3",
@@ -565,9 +649,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.74,
+      "timeliness": 26.3,
       "writing_value": 0,
-      "total_score": 101.74
+      "total_score": 101.3
     },
     {
       "id": "4f459d2ff5a966141c5c1c61f72a6640022e5d52",
@@ -586,9 +670,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.39,
+      "timeliness": 25.95,
       "writing_value": 0,
-      "total_score": 101.39
+      "total_score": 100.95
+    },
+    {
+      "id": "4cf4ab2a897781ed495d908297f8a9f4390f1f10",
+      "title": "一块玻璃的进阶之路 蓝思科技向AI全域智能终端延伸｜活力中国调研行 - 新浪财经",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPNWhwMzBFd1lKYy1WNDFBRWNtdkdSLW9obkc2cEFXUy1ncXozR0xvUGNGN0s3bThBZzBWMG1jWUhXUnRsa0M1MXh6OEZNZlV1bVJuRk5ZdnFvWWE5STNMX3V0OHI1YlNMYjJkYzE5Szl1SjN1NWF0cUJDeGtLWlFGLVZaczBmWmtBQTJJdTM0ZExtc1Bmc09uZHg1bGRVTV8zZlROVk5JZlBTbzQzOGQzYTNn?oc=5",
+      "published_at": "2026-08-16T14:40:38+00:00",
+      "category": "国内具身智能资讯",
+      "gn_label": "embodied_ai",
+      "site_name": "国内具身智能资讯",
+      "source": "国内具身智能资讯",
+      "site_id": "国内具身智能资讯",
+      "description": "一块玻璃的进阶之路 蓝思科技向AI全域智能终端延伸｜活力中国调研行  新浪财经",
+      "ai_score": 35.0,
+      "ai_label": "embodied_ai",
+      "relevance": 0.35,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.48,
+      "writing_value": 0,
+      "total_score": 74.48
     },
     {
       "id": "e5c5e24d10f80c9db495abb34e3e31da7afe721a",
@@ -607,9 +712,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.53,
+      "timeliness": 29.1,
       "writing_value": 0,
-      "total_score": 74.53
+      "total_score": 74.1
     },
     {
       "id": "d3e945a7bb4f184739afac024ff2715ba93f671d",
@@ -628,9 +733,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.38,
+      "timeliness": 28.94,
       "writing_value": 0,
-      "total_score": 74.38
+      "total_score": 73.94
     },
     {
       "id": "a747589e6cc190dc12ff5521b7f39d477d3a5225",
@@ -649,9 +754,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.27,
+      "timeliness": 28.83,
       "writing_value": 0,
-      "total_score": 74.27
+      "total_score": 73.83
     },
     {
       "id": "85982d5bcddee46674c2d54637a467f8f58f237e",
@@ -670,9 +775,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.07,
+      "timeliness": 28.63,
       "writing_value": 0,
-      "total_score": 74.07
+      "total_score": 73.63
     },
     {
       "id": "63c01a29238940c601bdaa1daa6bc594356cf491",
@@ -691,30 +796,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.05,
+      "timeliness": 28.61,
       "writing_value": 0,
-      "total_score": 74.05
-    },
-    {
-      "id": "78698d63d205f667171cac630c3fbcc52558e4a7",
-      "title": "颈无痕，心无忧：甲状腺乳腺外科机器人甲状腺手术，守护甲状腺疾病患者的美丽与自信 - 搜狐网",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQVlhKbmxxdHhhczdyNFFCQXlZb2h1aEQ4Q0thT09BYlNOUjRnV1B5ZkpGajNzZUg5WjY1M2lTYnZIMTlTTHNQOU8wUTdnaUVJWE11dC02c0xfajJmWjBFZm9vSWpTSWJZQWNhVllneFpDQW1qRVpqY2Q3S3lEM01hUVFkTGpYdVdXWXBTMg?oc=5",
-      "published_at": "2026-08-16T13:42:21+00:00",
-      "category": "国内机器人资讯",
-      "gn_label": "robotics",
-      "site_name": "国内机器人资讯",
-      "source": "国内机器人资讯",
-      "site_id": "国内机器人资讯",
-      "description": "颈无痕，心无忧：甲状腺乳腺外科机器人甲状腺手术，守护甲状腺疾病患者的美丽与自信  搜狐网",
-      "ai_score": 35.0,
-      "ai_label": "robotics",
-      "relevance": 0.35,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 28.95,
-      "writing_value": 0,
-      "total_score": 73.95
+      "total_score": 73.61
     },
     {
       "id": "1aa099691b0ee48034bf7e5e42127dea0db928b3",
@@ -733,9 +817,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.89,
+      "timeliness": 28.45,
       "writing_value": 0,
-      "total_score": 73.89
+      "total_score": 73.45
     },
     {
       "id": "b4595ab92d3233247db1c3a0fd1de4018df75bac",
@@ -754,9 +838,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.74,
+      "timeliness": 28.31,
       "writing_value": 0,
-      "total_score": 73.74
+      "total_score": 73.31
     },
     {
       "id": "2c28887d827dff069d2d927290caa43774cf7ae8",
@@ -775,9 +859,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.74,
+      "timeliness": 28.3,
       "writing_value": 0,
-      "total_score": 73.74
+      "total_score": 73.3
     },
     {
       "id": "493443e1e6f5a6334b8ebdbfe81d7b4433301b4f",
@@ -796,9 +880,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.34,
+      "timeliness": 27.9,
       "writing_value": 0,
-      "total_score": 73.34
+      "total_score": 72.9
     },
     {
       "id": "922e871062febd3ec7f9efe34c5f9418edc40f9f",
@@ -817,9 +901,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.99,
+      "timeliness": 27.55,
       "writing_value": 0,
-      "total_score": 72.99
+      "total_score": 72.55
     },
     {
       "id": "28abc2404db978a28acfade1886f95c66449a9b5",
@@ -838,9 +922,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.93,
+      "timeliness": 27.5,
       "writing_value": 0,
-      "total_score": 72.93
+      "total_score": 72.5
     },
     {
       "id": "d0a70cde0ad708ac0b65faf480f20d1db6d5596e",
@@ -859,9 +943,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.49,
+      "timeliness": 27.05,
       "writing_value": 0,
-      "total_score": 72.49
+      "total_score": 72.05
     },
     {
       "id": "d96b5a8da527e84aa42bd982c8b0e09a0490c009",
@@ -880,9 +964,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.39,
+      "timeliness": 26.95,
       "writing_value": 0,
-      "total_score": 72.39
+      "total_score": 71.95
     },
     {
       "id": "1699fc546012a73901527292146fcd3f07e3fc4c",
@@ -901,53 +985,95 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.82,
+      "timeliness": 26.39,
       "writing_value": 0,
-      "total_score": 71.82
+      "total_score": 71.39
     }
   ],
   "items_all": [
     {
-      "id": "603ead20fa1b5d95f2af41c3404289ecb1b980ee",
-      "title": "23 humanoid robot teams compete in rescue missions at 2nd WHRG, facing real-world complexity beyond dancing in coordination - Global Times",
-      "title_zh": "23支人形机器人团队在第二届世界救援大会上展开救援任务，面对现实世界的复杂性，超越协调舞蹈 - 环球时报",
-      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE91MUFhTDVnRWRYb1NCOVpXUXZjZ0drbnVuNUFUWnloSXZmaF9ralJfZUlVUU9fOTZlZ2IzdWZENll6OGhYRzZVWlpVaEt0dVdXRHI0WFVTUXR5LWdaanNwQ1dR?oc=5",
-      "published_at": "2026-08-16T11:46:00+00:00",
+      "id": "db07b467041cc501f24b7625cc449b1281454e1f",
+      "title": "American Airlines Bans Humanoid Robots Starting Monday — But The Robot Army Is Coming Anyway - View from the Wing",
+      "title_zh": "美国航空从周一开始禁止人形机器人——但机器人大军无论如何都会来——机翼视角",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPSmphMmpHcFBQV2t2ZEFZY1R5Y0dST0FJckZsUUdxblp1U2Q5ZkNnOE53VTVFNldpNThKMHdPVExESlJ4cmp1S0xPSm9iYjhoQ1podWswNnUtYkdLSjVRb2lZWG1aYkRDYlVYSnI2eC1yR2RlaXBpVXJwcUdwWXpfcWhvcDRZRGtXN2RKWUZ4cERtX1ZKMW5UcXJMMUhLeDhaMkF0dUxLMVEyOWdsay15RE1IcVVkNWZnWDVn?oc=5",
+      "published_at": "2026-08-16T12:04:20+00:00",
       "category": "国外人形机器人资讯",
       "gn_label": "humanoid",
       "site_name": "国外人形机器人资讯",
       "source": "国外人形机器人资讯",
       "site_id": "国外人形机器人资讯",
-      "description": "23 humanoid robot teams compete in rescue missions at 2nd WHRG, facing real-world complexity beyond dancing in coordination  Global Times",
+      "description": "American Airlines Bans Humanoid Robots Starting Monday — But The Robot Army Is Coming Anyway  View from the Wing",
       "ai_score": 80.0,
       "ai_label": "humanoid",
       "relevance": 0.8,
       "authority": 10,
       "depth": 5,
-      "timeliness": 27.01,
+      "timeliness": 26.88,
       "writing_value": 5,
-      "total_score": 127.01
+      "total_score": 126.88
     },
     {
-      "id": "bbc34865c29ceee323f1e8afced94e8128925653",
-      "title": "人形机器人运动会赛前冲刺备战“家政赛”：30分钟内完成收纳叠衣 - 新浪财经",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQMzRXVEYtTE5GVy04ODYzcUl3M2FYZjdPYkxVVDJIei1HVVZCV3ZESnVLbEdicUUzZXZ2ZTY0UExQN3ZWNTZKWnRWanBEYW83c0t0aDRUQjFHeVR2QjZyNC1PRjFKbWF5ZHFzUWRCNGdSYjZVX3NNSXpnMmpRM2dPdkRnckhZX25XR0JVY3Y4U2s5Z1Rfck8wQnRkTEZ3R3FMT2w3RGU0am1tQjF0dkluc0FB?oc=5",
-      "published_at": "2026-08-16T14:28:33+00:00",
-      "category": "国内机器人资讯",
+      "id": "603ead20fa1b5d95f2af41c3404289ecb1b980ee",
+      "title": "23 humanoid robot teams compete in rescue missions at 2nd WHRG, facing real-world complexity beyond dancing in coordination - Global Times",
+      "title_zh": "23支人形机器人团队在第二届世界救援大会上展开救援任务，面对现实世界的复杂性，超越协调舞蹈 - 环球时报",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE91MUFhTDVnRWRYb1NCOVpXUXZjZ0drbnVuNUFUWnloSXZmaF9ralJfZUlVUU9fOTZlZ2IzdWZENll6OGhYRzZVWlpVaEt0dVdXRHI0WFVTUXR5LWdaanNwQ1dR?oc=5",
+      "published_at": "2026-08-16T11:46:00+00:00",
+      "category": "国外机器人资讯",
       "gn_label": "robotics",
-      "site_name": "国内机器人资讯",
-      "source": "国内机器人资讯",
-      "site_id": "国内机器人资讯",
-      "description": "人形机器人运动会赛前冲刺备战“家政赛”：30分钟内完成收纳叠衣  新浪财经",
+      "site_name": "国外机器人资讯",
+      "source": "国外机器人资讯",
+      "site_id": "国外机器人资讯",
+      "description": "23 humanoid robot teams compete in rescue missions at 2nd WHRG, facing real-world complexity beyond dancing in coordination  Global Times",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 26.57,
+      "writing_value": 5,
+      "total_score": 126.57
+    },
+    {
+      "id": "b63ed9101163d052b3ae5729eb36623f703f7ff8",
+      "title": "Humanoid robots test hospitality skills at 2nd World Humanoid Robot Games in Beijing - 巴士的報",
+      "title_zh": "Humanoid robots test hospitality skills at 2nd World Humanoid Robot Games in Beijing - 巴士的报",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQZllBTGtxd3RrMGQ0d0hvSVJGWldhX2xWOWZuZVRtZUJneURfVGRpTmFHd2NlZzM1bUxSX3hDLTF3SS1CWHVmTzFManZJZVhwdU5tbkdYdTAzQWZ5ZjBsWEdlZGZTU2N2MVB6UUtDZzJNSzJZYjFTTnpuSWdsdnlRN1FGMjBoM3pLSk9BelRBZVVySlZTX2pwMGhyajVIb3k4VWhvNEgwZmdVcW5KNURmeWJxby1pb0dXM28tNkMtSGt4UU9iLUQ0VXZzWG1GZFRCV3c?oc=5",
+      "published_at": "2026-08-16T14:47:07+00:00",
+      "category": "国外机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国外机器人资讯",
+      "source": "国外机器人资讯",
+      "site_id": "国外机器人资讯",
+      "description": "Humanoid robots test hospitality skills at 2nd World Humanoid Robot Games in Beijing  巴士的報",
       "ai_score": 80.0,
       "ai_label": "robotics",
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.72,
+      "timeliness": 29.59,
       "writing_value": 0,
-      "total_score": 119.72
+      "total_score": 119.59
+    },
+    {
+      "id": "f339a703334e93f2af27e6f3702c81632f1f2de1",
+      "title": "人形机器人运动会赛前冲刺备战“家政赛”：30分钟内完成收纳叠衣 - 搜狐网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNTnNUQVlUNzB2VlY3MDFqbDM2amRGR2g4eVJTUXNFcFFtaFFwaVpZVHZIZ3pwYXVfbzc3ZFhWaW5Ed3Rmc2lVRUtjRjhnTi15MHdhQmhUalI3UndUcEo0blJVd3NtdmFtbmxVa3FxNnBRb0JoSzJycWxpbHR5N0x4cjJYbjkxRnhGb3BFWA?oc=5",
+      "published_at": "2026-08-16T14:06:25+00:00",
+      "category": "国内机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国内机器人资讯",
+      "source": "国内机器人资讯",
+      "site_id": "国内机器人资讯",
+      "description": "人形机器人运动会赛前冲刺备战“家政赛”：30分钟内完成收纳叠衣  搜狐网",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 28.91,
+      "writing_value": 0,
+      "total_score": 118.91
     },
     {
       "id": "ae769f5131e9f2f56734b75b0b6f95f182af2881",
@@ -955,20 +1081,20 @@
       "title_zh": "第二届世界仿人机器人运动会火灾场景挑战赛_环球时报",
       "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBPUndBemZTV1R3XzZ6UGYwMHlaclQ5eEpmM3hhMHVqdEo3Q19HSDhqcjV6U2JYdUo5d2d2Qk5sMFVDX0UyMU5pZkUzUzlOcFZqajNZbDZsOGtISTRITGNHajdR?oc=5",
       "published_at": "2026-08-16T13:44:00+00:00",
-      "category": "国外人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国外人形机器人资讯",
-      "source": "国外人形机器人资讯",
-      "site_id": "国外人形机器人资讯",
+      "category": "国外机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国外机器人资讯",
+      "source": "国外机器人资讯",
+      "site_id": "国外机器人资讯",
       "description": "The Fire‑Scenario Challenge at the 2nd World Humanoid Robot Games  Global Times",
       "ai_score": 80.0,
-      "ai_label": "humanoid",
+      "ai_label": "robotics",
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.97,
+      "timeliness": 28.54,
       "writing_value": 0,
-      "total_score": 118.97
+      "total_score": 118.54
     },
     {
       "id": "2e4f318fccbbbc91a9c2d93741106fdc52c77f00",
@@ -987,9 +1113,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.95,
+      "timeliness": 28.51,
       "writing_value": 0,
-      "total_score": 118.95
+      "total_score": 118.51
     },
     {
       "id": "aac2b7e2feaa57fa8be02404b337e0c4094f0103",
@@ -997,20 +1123,20 @@
       "title_zh": "美国航空从周一开始禁止人形机器人 - insideflyer.com",
       "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOdkR1N0c3a2F5QWxqWjBRS0lpa09vTnF5OEE3ZllIUVZXOU9ET0lZMWhNTjU5eG9EdGVnb21tMjdnck4tUGVxUHZLNndtdWpldzB3U3ZkVVRFdnVhMEw1WklFS0tBVFBSMi1vUFU3Si1RSGhhamM4MWtxa0FIcDBwUEJYM3U3OFhlOXNxTUNxRXVqSVk?oc=5",
       "published_at": "2026-08-16T13:17:56+00:00",
-      "category": "国外人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国外人形机器人资讯",
-      "source": "国外人形机器人资讯",
-      "site_id": "国外人形机器人资讯",
+      "category": "国外机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国外机器人资讯",
+      "source": "国外机器人资讯",
+      "site_id": "国外机器人资讯",
       "description": "American Airlines bans humanoid robots starting Monday  insideflyer.com",
       "ai_score": 80.0,
-      "ai_label": "humanoid",
+      "ai_label": "robotics",
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.54,
+      "timeliness": 28.1,
       "writing_value": 0,
-      "total_score": 118.54
+      "total_score": 118.1
     },
     {
       "id": "70c4ef7b2fe378a41b0d1eed3de6b841b1ba2976",
@@ -1029,9 +1155,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.01,
+      "timeliness": 27.57,
       "writing_value": 0,
-      "total_score": 118.01
+      "total_score": 117.57
     },
     {
       "id": "d39b08b589aa4c81c4902f8a3085ae1f2c6e256b",
@@ -1050,9 +1176,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.63,
+      "timeliness": 27.19,
       "writing_value": 0,
-      "total_score": 117.63
+      "total_score": 117.19
     },
     {
       "id": "00267c04ebc9d45dd56e1bb4d889e6dd1dd69d84",
@@ -1071,9 +1197,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.26,
+      "timeliness": 26.82,
       "writing_value": 0,
-      "total_score": 117.26
+      "total_score": 116.82
     },
     {
       "id": "fbd0d1c82cce1e47c522dcb8e1b115ee90b7f233",
@@ -1092,9 +1218,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.0,
+      "timeliness": 26.57,
       "writing_value": 0,
-      "total_score": 117.0
+      "total_score": 116.57
     },
     {
       "id": "6d7855f22c3a2ad3a28afefd2bbdd753aae3fce3",
@@ -1113,9 +1239,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.0,
+      "timeliness": 26.57,
       "writing_value": 0,
-      "total_score": 117.0
+      "total_score": 116.57
     },
     {
       "id": "9cc99b49e957743cade6a7b74e3ffa3237965a68",
@@ -1134,9 +1260,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.9,
+      "timeliness": 26.46,
       "writing_value": 0,
-      "total_score": 116.9
+      "total_score": 116.46
     },
     {
       "id": "cfe8a88f18391af03c0ef18bcf3dd77b3982d8f8",
@@ -1155,9 +1281,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.88,
+      "timeliness": 26.44,
       "writing_value": 0,
-      "total_score": 116.88
+      "total_score": 116.44
     },
     {
       "id": "7697d5c9da8a5a6fb227454380512fc7fc159e7c",
@@ -1165,20 +1291,20 @@
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1tLWp4dEJOR2xMWTZuOGpTdTlOMVFuSGE5bHZDUlZ2NDk4aEw3ZTFjOENqSEhSUlp0dE04SHF2TVUwamJCLXU0bGw1ODJ2OVdLbUJnNzRfS2NTRk8zWnFXYXRNV2Z0Zm5IZVhJ?oc=5",
       "published_at": "2026-08-16T11:33:00+00:00",
-      "category": "国内人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国内人形机器人资讯",
-      "source": "国内人形机器人资讯",
-      "site_id": "国内人形机器人资讯",
+      "category": "国内具身智能资讯",
+      "gn_label": "embodied_ai",
+      "site_name": "国内具身智能资讯",
+      "source": "国内具身智能资讯",
+      "site_id": "国内具身智能资讯",
       "description": "2026下半年，人形机器人3大重点宇树即将IPO  财富号",
       "ai_score": 80.0,
-      "ai_label": "humanoid",
+      "ai_label": "embodied_ai",
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.79,
+      "timeliness": 26.35,
       "writing_value": 0,
-      "total_score": 116.79
+      "total_score": 116.35
     },
     {
       "id": "58bd0ad456e4d950bcb0bf81b33af048f8d33a74",
@@ -1197,9 +1323,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.49,
+      "timeliness": 26.06,
       "writing_value": 0,
-      "total_score": 116.49
+      "total_score": 116.06
     },
     {
       "id": "1f651123912147bac958a403f2da6b3f4cbb8069",
@@ -1218,9 +1344,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.46,
+      "timeliness": 26.02,
       "writing_value": 0,
-      "total_score": 116.46
+      "total_score": 116.02
     },
     {
       "id": "4097e26601f5d09e5b855f38f7e86d1b30f07006",
@@ -1239,9 +1365,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 28.44,
+      "timeliness": 28.0,
       "writing_value": 5,
-      "total_score": 113.44
+      "total_score": 113.0
     },
     {
       "id": "070dd64e7e3a637fac6d7835b89ccca2016c180b",
@@ -1260,9 +1386,51 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 27.35,
+      "timeliness": 26.91,
       "writing_value": 5,
-      "total_score": 112.35
+      "total_score": 111.91
+    },
+    {
+      "id": "9879f0b2a449d9072ecdc2279770915cf0740475",
+      "title": "蓝思入局！「中科慧思」押注灵巧手赛道！ - 搜狐网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOM2kzMDhCR09DX25TU19hVThQNUFVemd5Z2h1ZnNmOEdzZTZnY2M3SWwxX2pJLVlFMlR3STJheWR6MGxfNjV4THRIZkRmTHpfSlAyc0VEV0gzOTh3Unpic3FZVlRSMnlXZlBNNzdMMUF1UWFlUEIzU19veTE1VTJDbWV6VUJ2TTcy?oc=5",
+      "published_at": "2026-08-16T14:48:22+00:00",
+      "category": "国内人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国内人形机器人资讯",
+      "source": "国内人形机器人资讯",
+      "site_id": "国内人形机器人资讯",
+      "description": "蓝思入局！「中科慧思」押注灵巧手赛道！  搜狐网",
+      "ai_score": 65.0,
+      "ai_label": "humanoid",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.61,
+      "writing_value": 0,
+      "total_score": 104.61
+    },
+    {
+      "id": "a99d4b072a842509f4abb38b87d79c6f7249fce1",
+      "title": "章鱼动力将在WRC发布仿生灵巧手OctoH-Hand：以极致仿生打造通用物理API - 中华网科技频道",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE05R2d1R1Nad0traUNZYzEyV2NacG4xNUxObHlwUEVPUXlXSm1nOERuN0dvZ1JueVgzRWVJTmJyM294R2lPbFQ2OUpJV2xVOTZhY0UtWl9Kcy1ISzc4eEpJbTNwZmlFWUYxWVNUaXp3?oc=5",
+      "published_at": "2026-08-16T14:43:48+00:00",
+      "category": "国内具身智能资讯",
+      "gn_label": "embodied_ai",
+      "site_name": "国内具身智能资讯",
+      "source": "国内具身智能资讯",
+      "site_id": "国内具身智能资讯",
+      "description": "章鱼动力将在WRC发布仿生灵巧手OctoH-Hand：以极致仿生打造通用物理API  中华网科技频道",
+      "ai_score": 65.0,
+      "ai_label": "embodied_ai",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.53,
+      "writing_value": 0,
+      "total_score": 104.53
     },
     {
       "id": "3295cc0d63a4216856cdb91daa99af369071ed9b",
@@ -1281,16 +1449,16 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.74,
+      "timeliness": 29.3,
       "writing_value": 0,
-      "total_score": 104.74
+      "total_score": 104.3
     },
     {
       "id": "8a5d06974eea498fb535a52c270f155f18179ea4",
       "title": "Robots Are Here. The Real Challenge Is Getting Workers to Trust Them - inc.com",
       "title_zh": "机器人来了。真正的挑战是让员工信任他们 - inc.com",
       "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxORE40ZERDcWRxRzBUM2dRN0JEWXl5dXpIb2xObVYyRElzRlhISjd0MXJHZDdCeEdCQU1xV0QyV1FkUElCLXFqaHYwSGtuTnAwbDd2RDJwUTJwVXUzVHg2NHhDSjV4bDJqQnFtUVdIbHN2LTBuZFBub1RaMFhpNC1qRlE0emJTVE94Y0ZaYjZINDA3cHlzeExPdnR1UnpfSkdBdUxLQXd0U2RkOHhfRHFnY1FFQQ?oc=5",
-      "published_at": "2026-08-16T14:15:00+00:00",
+      "published_at": "2026-08-16T14:25:15+00:00",
       "category": "国外机器人资讯",
       "gn_label": "robotics",
       "site_name": "国外机器人资讯",
@@ -1302,9 +1470,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.49,
+      "timeliness": 29.22,
       "writing_value": 0,
-      "total_score": 104.49
+      "total_score": 104.22
     },
     {
       "id": "77db66e9ddaf14f9a745ce7ce4fce584e47fe2b9",
@@ -1323,9 +1491,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.24,
+      "timeliness": 28.8,
       "writing_value": 0,
-      "total_score": 104.24
+      "total_score": 103.8
     },
     {
       "id": "886d3a270c6ddc603c2e069504f57841049ae95d",
@@ -1344,9 +1512,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.21,
+      "timeliness": 28.77,
       "writing_value": 0,
-      "total_score": 104.21
+      "total_score": 103.77
     },
     {
       "id": "235606fa52c56064827b6dadfcb1c5401e1eedb4",
@@ -1365,9 +1533,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.74,
+      "timeliness": 28.3,
       "writing_value": 0,
-      "total_score": 103.74
+      "total_score": 103.3
     },
     {
       "id": "c7a256e858bfaddba3b6768df2f5a91401a489b9",
@@ -1386,14 +1554,14 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.51,
+      "timeliness": 28.08,
       "writing_value": 0,
-      "total_score": 103.51
+      "total_score": 103.08
     },
     {
       "id": "7839513d035b77be012916221f9296635594698e",
       "title": "New York teachers build a snail-inspired robot that traps microplastics in water - Yahoo",
-      "title_zh": "纽约教师建造了一种受蜗牛启发的机器人，可以捕获水中的微塑料 - 雅虎",
+      "title_zh": "纽约教师建造了一个受蜗牛启发的机器人，可以捕获水中的微塑料 - 雅虎",
       "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQbGhNUEdxeVJWc1dJOVF5YmFfODFVTWdYZWx0WVRodVM5cFFKSTBsTVRwSTlSNW9BWEJoM2pOWmZDNjlMVWt0anRaSU92c3UwYWE1REdYMVBhSFdoNVhFS25JaVZyNmlVUmwwSjF5RVVqbzJHZ0pEcU10TjNaMGloM1otNDdESEhFbFNfRnk5WmFyYkxGZDZNMQ?oc=5",
       "published_at": "2026-08-16T13:09:00+00:00",
       "category": "国外机器人资讯",
@@ -1407,9 +1575,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.39,
+      "timeliness": 27.95,
       "writing_value": 0,
-      "total_score": 103.39
+      "total_score": 102.95
     },
     {
       "id": "9f82a1bdb13eff1dbb9349488f357bf723206e6e",
@@ -1428,14 +1596,14 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.92,
+      "timeliness": 27.48,
       "writing_value": 0,
-      "total_score": 102.92
+      "total_score": 102.48
     },
     {
-      "id": "a6ec5acd81a8b9afa85768806520462d915b5f06",
-      "title": "Why Home Robots Are Taking So Long - cnet.com",
-      "title_zh": "为什么家用机器人需要这么长时间 - cnet.com",
+      "id": "662b967c9a0e2c9943bba23a465c40353a21afcb",
+      "title": "Why Home Robots Are Taking So Long - CNET",
+      "title_zh": "为什么家用机器人需要这么长时间 - CNET",
       "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFAyMnpFTFA4OHJDbDlwNWFTYm5aUFN1OExKaWdKWHdhRHNIdldtcHNJWV9IeFVfSV9tSThFX2RXeUpjc2lQS0JUTzFCcTdhVTZUXzFCTHBwZXBTXzJCb2JRdXhZWjRDOFVtdUtXQUxQVUE?oc=5",
       "published_at": "2026-08-16T12:00:00+00:00",
       "category": "国外机器人资讯",
@@ -1443,15 +1611,15 @@
       "site_name": "国外机器人资讯",
       "source": "国外机器人资讯",
       "site_id": "国外机器人资讯",
-      "description": "Why Home Robots Are Taking So Long  cnet.com",
+      "description": "Why Home Robots Are Taking So Long  CNET",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.24,
+      "timeliness": 26.8,
       "writing_value": 0,
-      "total_score": 102.24
+      "total_score": 101.8
     },
     {
       "id": "197687ec1916c5fa9fc6ec63c3fcb4c2d4cff8a3",
@@ -1470,9 +1638,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.74,
+      "timeliness": 26.3,
       "writing_value": 0,
-      "total_score": 101.74
+      "total_score": 101.3
     },
     {
       "id": "4f459d2ff5a966141c5c1c61f72a6640022e5d52",
@@ -1491,9 +1659,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.39,
+      "timeliness": 25.95,
       "writing_value": 0,
-      "total_score": 101.39
+      "total_score": 100.95
+    },
+    {
+      "id": "4cf4ab2a897781ed495d908297f8a9f4390f1f10",
+      "title": "一块玻璃的进阶之路 蓝思科技向AI全域智能终端延伸｜活力中国调研行 - 新浪财经",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPNWhwMzBFd1lKYy1WNDFBRWNtdkdSLW9obkc2cEFXUy1ncXozR0xvUGNGN0s3bThBZzBWMG1jWUhXUnRsa0M1MXh6OEZNZlV1bVJuRk5ZdnFvWWE5STNMX3V0OHI1YlNMYjJkYzE5Szl1SjN1NWF0cUJDeGtLWlFGLVZaczBmWmtBQTJJdTM0ZExtc1Bmc09uZHg1bGRVTV8zZlROVk5JZlBTbzQzOGQzYTNn?oc=5",
+      "published_at": "2026-08-16T14:40:38+00:00",
+      "category": "国内具身智能资讯",
+      "gn_label": "embodied_ai",
+      "site_name": "国内具身智能资讯",
+      "source": "国内具身智能资讯",
+      "site_id": "国内具身智能资讯",
+      "description": "一块玻璃的进阶之路 蓝思科技向AI全域智能终端延伸｜活力中国调研行  新浪财经",
+      "ai_score": 35.0,
+      "ai_label": "embodied_ai",
+      "relevance": 0.35,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.48,
+      "writing_value": 0,
+      "total_score": 74.48
     },
     {
       "id": "e5c5e24d10f80c9db495abb34e3e31da7afe721a",
@@ -1512,9 +1701,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.53,
+      "timeliness": 29.1,
       "writing_value": 0,
-      "total_score": 74.53
+      "total_score": 74.1
     },
     {
       "id": "d3e945a7bb4f184739afac024ff2715ba93f671d",
@@ -1533,9 +1722,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.38,
+      "timeliness": 28.94,
       "writing_value": 0,
-      "total_score": 74.38
+      "total_score": 73.94
     },
     {
       "id": "a747589e6cc190dc12ff5521b7f39d477d3a5225",
@@ -1554,9 +1743,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.27,
+      "timeliness": 28.83,
       "writing_value": 0,
-      "total_score": 74.27
+      "total_score": 73.83
     },
     {
       "id": "85982d5bcddee46674c2d54637a467f8f58f237e",
@@ -1575,9 +1764,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.07,
+      "timeliness": 28.63,
       "writing_value": 0,
-      "total_score": 74.07
+      "total_score": 73.63
     },
     {
       "id": "63c01a29238940c601bdaa1daa6bc594356cf491",
@@ -1596,30 +1785,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.05,
+      "timeliness": 28.61,
       "writing_value": 0,
-      "total_score": 74.05
-    },
-    {
-      "id": "78698d63d205f667171cac630c3fbcc52558e4a7",
-      "title": "颈无痕，心无忧：甲状腺乳腺外科机器人甲状腺手术，守护甲状腺疾病患者的美丽与自信 - 搜狐网",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQVlhKbmxxdHhhczdyNFFCQXlZb2h1aEQ4Q0thT09BYlNOUjRnV1B5ZkpGajNzZUg5WjY1M2lTYnZIMTlTTHNQOU8wUTdnaUVJWE11dC02c0xfajJmWjBFZm9vSWpTSWJZQWNhVllneFpDQW1qRVpqY2Q3S3lEM01hUVFkTGpYdVdXWXBTMg?oc=5",
-      "published_at": "2026-08-16T13:42:21+00:00",
-      "category": "国内机器人资讯",
-      "gn_label": "robotics",
-      "site_name": "国内机器人资讯",
-      "source": "国内机器人资讯",
-      "site_id": "国内机器人资讯",
-      "description": "颈无痕，心无忧：甲状腺乳腺外科机器人甲状腺手术，守护甲状腺疾病患者的美丽与自信  搜狐网",
-      "ai_score": 35.0,
-      "ai_label": "robotics",
-      "relevance": 0.35,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 28.95,
-      "writing_value": 0,
-      "total_score": 73.95
+      "total_score": 73.61
     },
     {
       "id": "1aa099691b0ee48034bf7e5e42127dea0db928b3",
@@ -1638,9 +1806,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.89,
+      "timeliness": 28.45,
       "writing_value": 0,
-      "total_score": 73.89
+      "total_score": 73.45
     },
     {
       "id": "b4595ab92d3233247db1c3a0fd1de4018df75bac",
@@ -1659,9 +1827,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.74,
+      "timeliness": 28.31,
       "writing_value": 0,
-      "total_score": 73.74
+      "total_score": 73.31
     },
     {
       "id": "2c28887d827dff069d2d927290caa43774cf7ae8",
@@ -1680,9 +1848,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.74,
+      "timeliness": 28.3,
       "writing_value": 0,
-      "total_score": 73.74
+      "total_score": 73.3
     },
     {
       "id": "493443e1e6f5a6334b8ebdbfe81d7b4433301b4f",
@@ -1701,9 +1869,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.34,
+      "timeliness": 27.9,
       "writing_value": 0,
-      "total_score": 73.34
+      "total_score": 72.9
     },
     {
       "id": "922e871062febd3ec7f9efe34c5f9418edc40f9f",
@@ -1722,9 +1890,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.99,
+      "timeliness": 27.55,
       "writing_value": 0,
-      "total_score": 72.99
+      "total_score": 72.55
     },
     {
       "id": "28abc2404db978a28acfade1886f95c66449a9b5",
@@ -1743,9 +1911,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.93,
+      "timeliness": 27.5,
       "writing_value": 0,
-      "total_score": 72.93
+      "total_score": 72.5
     },
     {
       "id": "d0a70cde0ad708ac0b65faf480f20d1db6d5596e",
@@ -1764,9 +1932,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.49,
+      "timeliness": 27.05,
       "writing_value": 0,
-      "total_score": 72.49
+      "total_score": 72.05
     },
     {
       "id": "d96b5a8da527e84aa42bd982c8b0e09a0490c009",
@@ -1785,9 +1953,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.39,
+      "timeliness": 26.95,
       "writing_value": 0,
-      "total_score": 72.39
+      "total_score": 71.95
     },
     {
       "id": "1699fc546012a73901527292146fcd3f07e3fc4c",
@@ -1806,53 +1974,95 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.82,
+      "timeliness": 26.39,
       "writing_value": 0,
-      "total_score": 71.82
+      "total_score": 71.39
     }
   ],
   "items_all_raw": [
     {
-      "id": "603ead20fa1b5d95f2af41c3404289ecb1b980ee",
-      "title": "23 humanoid robot teams compete in rescue missions at 2nd WHRG, facing real-world complexity beyond dancing in coordination - Global Times",
-      "title_zh": "23支人形机器人团队在第二届世界救援大会上展开救援任务，面对现实世界的复杂性，超越协调舞蹈 - 环球时报",
-      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE91MUFhTDVnRWRYb1NCOVpXUXZjZ0drbnVuNUFUWnloSXZmaF9ralJfZUlVUU9fOTZlZ2IzdWZENll6OGhYRzZVWlpVaEt0dVdXRHI0WFVTUXR5LWdaanNwQ1dR?oc=5",
-      "published_at": "2026-08-16T11:46:00+00:00",
+      "id": "db07b467041cc501f24b7625cc449b1281454e1f",
+      "title": "American Airlines Bans Humanoid Robots Starting Monday — But The Robot Army Is Coming Anyway - View from the Wing",
+      "title_zh": "美国航空从周一开始禁止人形机器人——但机器人大军无论如何都会来——机翼视角",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPSmphMmpHcFBQV2t2ZEFZY1R5Y0dST0FJckZsUUdxblp1U2Q5ZkNnOE53VTVFNldpNThKMHdPVExESlJ4cmp1S0xPSm9iYjhoQ1podWswNnUtYkdLSjVRb2lZWG1aYkRDYlVYSnI2eC1yR2RlaXBpVXJwcUdwWXpfcWhvcDRZRGtXN2RKWUZ4cERtX1ZKMW5UcXJMMUhLeDhaMkF0dUxLMVEyOWdsay15RE1IcVVkNWZnWDVn?oc=5",
+      "published_at": "2026-08-16T12:04:20+00:00",
       "category": "国外人形机器人资讯",
       "gn_label": "humanoid",
       "site_name": "国外人形机器人资讯",
       "source": "国外人形机器人资讯",
       "site_id": "国外人形机器人资讯",
-      "description": "23 humanoid robot teams compete in rescue missions at 2nd WHRG, facing real-world complexity beyond dancing in coordination  Global Times",
+      "description": "American Airlines Bans Humanoid Robots Starting Monday — But The Robot Army Is Coming Anyway  View from the Wing",
       "ai_score": 80.0,
       "ai_label": "humanoid",
       "relevance": 0.8,
       "authority": 10,
       "depth": 5,
-      "timeliness": 27.01,
+      "timeliness": 26.88,
       "writing_value": 5,
-      "total_score": 127.01
+      "total_score": 126.88
     },
     {
-      "id": "bbc34865c29ceee323f1e8afced94e8128925653",
-      "title": "人形机器人运动会赛前冲刺备战“家政赛”：30分钟内完成收纳叠衣 - 新浪财经",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQMzRXVEYtTE5GVy04ODYzcUl3M2FYZjdPYkxVVDJIei1HVVZCV3ZESnVLbEdicUUzZXZ2ZTY0UExQN3ZWNTZKWnRWanBEYW83c0t0aDRUQjFHeVR2QjZyNC1PRjFKbWF5ZHFzUWRCNGdSYjZVX3NNSXpnMmpRM2dPdkRnckhZX25XR0JVY3Y4U2s5Z1Rfck8wQnRkTEZ3R3FMT2w3RGU0am1tQjF0dkluc0FB?oc=5",
-      "published_at": "2026-08-16T14:28:33+00:00",
-      "category": "国内机器人资讯",
+      "id": "603ead20fa1b5d95f2af41c3404289ecb1b980ee",
+      "title": "23 humanoid robot teams compete in rescue missions at 2nd WHRG, facing real-world complexity beyond dancing in coordination - Global Times",
+      "title_zh": "23支人形机器人团队在第二届世界救援大会上展开救援任务，面对现实世界的复杂性，超越协调舞蹈 - 环球时报",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE91MUFhTDVnRWRYb1NCOVpXUXZjZ0drbnVuNUFUWnloSXZmaF9ralJfZUlVUU9fOTZlZ2IzdWZENll6OGhYRzZVWlpVaEt0dVdXRHI0WFVTUXR5LWdaanNwQ1dR?oc=5",
+      "published_at": "2026-08-16T11:46:00+00:00",
+      "category": "国外机器人资讯",
       "gn_label": "robotics",
-      "site_name": "国内机器人资讯",
-      "source": "国内机器人资讯",
-      "site_id": "国内机器人资讯",
-      "description": "人形机器人运动会赛前冲刺备战“家政赛”：30分钟内完成收纳叠衣  新浪财经",
+      "site_name": "国外机器人资讯",
+      "source": "国外机器人资讯",
+      "site_id": "国外机器人资讯",
+      "description": "23 humanoid robot teams compete in rescue missions at 2nd WHRG, facing real-world complexity beyond dancing in coordination  Global Times",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 26.57,
+      "writing_value": 5,
+      "total_score": 126.57
+    },
+    {
+      "id": "b63ed9101163d052b3ae5729eb36623f703f7ff8",
+      "title": "Humanoid robots test hospitality skills at 2nd World Humanoid Robot Games in Beijing - 巴士的報",
+      "title_zh": "Humanoid robots test hospitality skills at 2nd World Humanoid Robot Games in Beijing - 巴士的报",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQZllBTGtxd3RrMGQ0d0hvSVJGWldhX2xWOWZuZVRtZUJneURfVGRpTmFHd2NlZzM1bUxSX3hDLTF3SS1CWHVmTzFManZJZVhwdU5tbkdYdTAzQWZ5ZjBsWEdlZGZTU2N2MVB6UUtDZzJNSzJZYjFTTnpuSWdsdnlRN1FGMjBoM3pLSk9BelRBZVVySlZTX2pwMGhyajVIb3k4VWhvNEgwZmdVcW5KNURmeWJxby1pb0dXM28tNkMtSGt4UU9iLUQ0VXZzWG1GZFRCV3c?oc=5",
+      "published_at": "2026-08-16T14:47:07+00:00",
+      "category": "国外机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国外机器人资讯",
+      "source": "国外机器人资讯",
+      "site_id": "国外机器人资讯",
+      "description": "Humanoid robots test hospitality skills at 2nd World Humanoid Robot Games in Beijing  巴士的報",
       "ai_score": 80.0,
       "ai_label": "robotics",
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.72,
+      "timeliness": 29.59,
       "writing_value": 0,
-      "total_score": 119.72
+      "total_score": 119.59
+    },
+    {
+      "id": "f339a703334e93f2af27e6f3702c81632f1f2de1",
+      "title": "人形机器人运动会赛前冲刺备战“家政赛”：30分钟内完成收纳叠衣 - 搜狐网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNTnNUQVlUNzB2VlY3MDFqbDM2amRGR2g4eVJTUXNFcFFtaFFwaVpZVHZIZ3pwYXVfbzc3ZFhWaW5Ed3Rmc2lVRUtjRjhnTi15MHdhQmhUalI3UndUcEo0blJVd3NtdmFtbmxVa3FxNnBRb0JoSzJycWxpbHR5N0x4cjJYbjkxRnhGb3BFWA?oc=5",
+      "published_at": "2026-08-16T14:06:25+00:00",
+      "category": "国内机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国内机器人资讯",
+      "source": "国内机器人资讯",
+      "site_id": "国内机器人资讯",
+      "description": "人形机器人运动会赛前冲刺备战“家政赛”：30分钟内完成收纳叠衣  搜狐网",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 28.91,
+      "writing_value": 0,
+      "total_score": 118.91
     },
     {
       "id": "ae769f5131e9f2f56734b75b0b6f95f182af2881",
@@ -1860,20 +2070,20 @@
       "title_zh": "第二届世界仿人机器人运动会火灾场景挑战赛_环球时报",
       "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBPUndBemZTV1R3XzZ6UGYwMHlaclQ5eEpmM3hhMHVqdEo3Q19HSDhqcjV6U2JYdUo5d2d2Qk5sMFVDX0UyMU5pZkUzUzlOcFZqajNZbDZsOGtISTRITGNHajdR?oc=5",
       "published_at": "2026-08-16T13:44:00+00:00",
-      "category": "国外人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国外人形机器人资讯",
-      "source": "国外人形机器人资讯",
-      "site_id": "国外人形机器人资讯",
+      "category": "国外机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国外机器人资讯",
+      "source": "国外机器人资讯",
+      "site_id": "国外机器人资讯",
       "description": "The Fire‑Scenario Challenge at the 2nd World Humanoid Robot Games  Global Times",
       "ai_score": 80.0,
-      "ai_label": "humanoid",
+      "ai_label": "robotics",
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.97,
+      "timeliness": 28.54,
       "writing_value": 0,
-      "total_score": 118.97
+      "total_score": 118.54
     },
     {
       "id": "2e4f318fccbbbc91a9c2d93741106fdc52c77f00",
@@ -1892,9 +2102,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.95,
+      "timeliness": 28.51,
       "writing_value": 0,
-      "total_score": 118.95
+      "total_score": 118.51
     },
     {
       "id": "aac2b7e2feaa57fa8be02404b337e0c4094f0103",
@@ -1902,20 +2112,20 @@
       "title_zh": "美国航空从周一开始禁止人形机器人 - insideflyer.com",
       "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOdkR1N0c3a2F5QWxqWjBRS0lpa09vTnF5OEE3ZllIUVZXOU9ET0lZMWhNTjU5eG9EdGVnb21tMjdnck4tUGVxUHZLNndtdWpldzB3U3ZkVVRFdnVhMEw1WklFS0tBVFBSMi1vUFU3Si1RSGhhamM4MWtxa0FIcDBwUEJYM3U3OFhlOXNxTUNxRXVqSVk?oc=5",
       "published_at": "2026-08-16T13:17:56+00:00",
-      "category": "国外人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国外人形机器人资讯",
-      "source": "国外人形机器人资讯",
-      "site_id": "国外人形机器人资讯",
+      "category": "国外机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国外机器人资讯",
+      "source": "国外机器人资讯",
+      "site_id": "国外机器人资讯",
       "description": "American Airlines bans humanoid robots starting Monday  insideflyer.com",
       "ai_score": 80.0,
-      "ai_label": "humanoid",
+      "ai_label": "robotics",
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.54,
+      "timeliness": 28.1,
       "writing_value": 0,
-      "total_score": 118.54
+      "total_score": 118.1
     },
     {
       "id": "70c4ef7b2fe378a41b0d1eed3de6b841b1ba2976",
@@ -1934,9 +2144,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.01,
+      "timeliness": 27.57,
       "writing_value": 0,
-      "total_score": 118.01
+      "total_score": 117.57
     },
     {
       "id": "d39b08b589aa4c81c4902f8a3085ae1f2c6e256b",
@@ -1955,9 +2165,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.63,
+      "timeliness": 27.19,
       "writing_value": 0,
-      "total_score": 117.63
+      "total_score": 117.19
     },
     {
       "id": "00267c04ebc9d45dd56e1bb4d889e6dd1dd69d84",
@@ -1976,9 +2186,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.26,
+      "timeliness": 26.82,
       "writing_value": 0,
-      "total_score": 117.26
+      "total_score": 116.82
     },
     {
       "id": "fbd0d1c82cce1e47c522dcb8e1b115ee90b7f233",
@@ -1997,9 +2207,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.0,
+      "timeliness": 26.57,
       "writing_value": 0,
-      "total_score": 117.0
+      "total_score": 116.57
     },
     {
       "id": "6d7855f22c3a2ad3a28afefd2bbdd753aae3fce3",
@@ -2018,9 +2228,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.0,
+      "timeliness": 26.57,
       "writing_value": 0,
-      "total_score": 117.0
+      "total_score": 116.57
     },
     {
       "id": "9cc99b49e957743cade6a7b74e3ffa3237965a68",
@@ -2039,9 +2249,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.9,
+      "timeliness": 26.46,
       "writing_value": 0,
-      "total_score": 116.9
+      "total_score": 116.46
     },
     {
       "id": "cfe8a88f18391af03c0ef18bcf3dd77b3982d8f8",
@@ -2060,9 +2270,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.88,
+      "timeliness": 26.44,
       "writing_value": 0,
-      "total_score": 116.88
+      "total_score": 116.44
     },
     {
       "id": "7697d5c9da8a5a6fb227454380512fc7fc159e7c",
@@ -2070,20 +2280,20 @@
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1tLWp4dEJOR2xMWTZuOGpTdTlOMVFuSGE5bHZDUlZ2NDk4aEw3ZTFjOENqSEhSUlp0dE04SHF2TVUwamJCLXU0bGw1ODJ2OVdLbUJnNzRfS2NTRk8zWnFXYXRNV2Z0Zm5IZVhJ?oc=5",
       "published_at": "2026-08-16T11:33:00+00:00",
-      "category": "国内人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国内人形机器人资讯",
-      "source": "国内人形机器人资讯",
-      "site_id": "国内人形机器人资讯",
+      "category": "国内具身智能资讯",
+      "gn_label": "embodied_ai",
+      "site_name": "国内具身智能资讯",
+      "source": "国内具身智能资讯",
+      "site_id": "国内具身智能资讯",
       "description": "2026下半年，人形机器人3大重点宇树即将IPO  财富号",
       "ai_score": 80.0,
-      "ai_label": "humanoid",
+      "ai_label": "embodied_ai",
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.79,
+      "timeliness": 26.35,
       "writing_value": 0,
-      "total_score": 116.79
+      "total_score": 116.35
     },
     {
       "id": "58bd0ad456e4d950bcb0bf81b33af048f8d33a74",
@@ -2102,9 +2312,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.49,
+      "timeliness": 26.06,
       "writing_value": 0,
-      "total_score": 116.49
+      "total_score": 116.06
     },
     {
       "id": "1f651123912147bac958a403f2da6b3f4cbb8069",
@@ -2123,9 +2333,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.46,
+      "timeliness": 26.02,
       "writing_value": 0,
-      "total_score": 116.46
+      "total_score": 116.02
     },
     {
       "id": "4097e26601f5d09e5b855f38f7e86d1b30f07006",
@@ -2144,9 +2354,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 28.44,
+      "timeliness": 28.0,
       "writing_value": 5,
-      "total_score": 113.44
+      "total_score": 113.0
     },
     {
       "id": "070dd64e7e3a637fac6d7835b89ccca2016c180b",
@@ -2165,9 +2375,51 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 27.35,
+      "timeliness": 26.91,
       "writing_value": 5,
-      "total_score": 112.35
+      "total_score": 111.91
+    },
+    {
+      "id": "9879f0b2a449d9072ecdc2279770915cf0740475",
+      "title": "蓝思入局！「中科慧思」押注灵巧手赛道！ - 搜狐网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOM2kzMDhCR09DX25TU19hVThQNUFVemd5Z2h1ZnNmOEdzZTZnY2M3SWwxX2pJLVlFMlR3STJheWR6MGxfNjV4THRIZkRmTHpfSlAyc0VEV0gzOTh3Unpic3FZVlRSMnlXZlBNNzdMMUF1UWFlUEIzU19veTE1VTJDbWV6VUJ2TTcy?oc=5",
+      "published_at": "2026-08-16T14:48:22+00:00",
+      "category": "国内人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国内人形机器人资讯",
+      "source": "国内人形机器人资讯",
+      "site_id": "国内人形机器人资讯",
+      "description": "蓝思入局！「中科慧思」押注灵巧手赛道！  搜狐网",
+      "ai_score": 65.0,
+      "ai_label": "humanoid",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.61,
+      "writing_value": 0,
+      "total_score": 104.61
+    },
+    {
+      "id": "a99d4b072a842509f4abb38b87d79c6f7249fce1",
+      "title": "章鱼动力将在WRC发布仿生灵巧手OctoH-Hand：以极致仿生打造通用物理API - 中华网科技频道",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE05R2d1R1Nad0traUNZYzEyV2NacG4xNUxObHlwUEVPUXlXSm1nOERuN0dvZ1JueVgzRWVJTmJyM294R2lPbFQ2OUpJV2xVOTZhY0UtWl9Kcy1ISzc4eEpJbTNwZmlFWUYxWVNUaXp3?oc=5",
+      "published_at": "2026-08-16T14:43:48+00:00",
+      "category": "国内具身智能资讯",
+      "gn_label": "embodied_ai",
+      "site_name": "国内具身智能资讯",
+      "source": "国内具身智能资讯",
+      "site_id": "国内具身智能资讯",
+      "description": "章鱼动力将在WRC发布仿生灵巧手OctoH-Hand：以极致仿生打造通用物理API  中华网科技频道",
+      "ai_score": 65.0,
+      "ai_label": "embodied_ai",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.53,
+      "writing_value": 0,
+      "total_score": 104.53
     },
     {
       "id": "3295cc0d63a4216856cdb91daa99af369071ed9b",
@@ -2186,16 +2438,16 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.74,
+      "timeliness": 29.3,
       "writing_value": 0,
-      "total_score": 104.74
+      "total_score": 104.3
     },
     {
       "id": "8a5d06974eea498fb535a52c270f155f18179ea4",
       "title": "Robots Are Here. The Real Challenge Is Getting Workers to Trust Them - inc.com",
       "title_zh": "机器人来了。真正的挑战是让员工信任他们 - inc.com",
       "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxORE40ZERDcWRxRzBUM2dRN0JEWXl5dXpIb2xObVYyRElzRlhISjd0MXJHZDdCeEdCQU1xV0QyV1FkUElCLXFqaHYwSGtuTnAwbDd2RDJwUTJwVXUzVHg2NHhDSjV4bDJqQnFtUVdIbHN2LTBuZFBub1RaMFhpNC1qRlE0emJTVE94Y0ZaYjZINDA3cHlzeExPdnR1UnpfSkdBdUxLQXd0U2RkOHhfRHFnY1FFQQ?oc=5",
-      "published_at": "2026-08-16T14:15:00+00:00",
+      "published_at": "2026-08-16T14:25:15+00:00",
       "category": "国外机器人资讯",
       "gn_label": "robotics",
       "site_name": "国外机器人资讯",
@@ -2207,9 +2459,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.49,
+      "timeliness": 29.22,
       "writing_value": 0,
-      "total_score": 104.49
+      "total_score": 104.22
     },
     {
       "id": "77db66e9ddaf14f9a745ce7ce4fce584e47fe2b9",
@@ -2228,9 +2480,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.24,
+      "timeliness": 28.8,
       "writing_value": 0,
-      "total_score": 104.24
+      "total_score": 103.8
     },
     {
       "id": "886d3a270c6ddc603c2e069504f57841049ae95d",
@@ -2249,9 +2501,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.21,
+      "timeliness": 28.77,
       "writing_value": 0,
-      "total_score": 104.21
+      "total_score": 103.77
     },
     {
       "id": "235606fa52c56064827b6dadfcb1c5401e1eedb4",
@@ -2270,9 +2522,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.74,
+      "timeliness": 28.3,
       "writing_value": 0,
-      "total_score": 103.74
+      "total_score": 103.3
     },
     {
       "id": "c7a256e858bfaddba3b6768df2f5a91401a489b9",
@@ -2291,14 +2543,14 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.51,
+      "timeliness": 28.08,
       "writing_value": 0,
-      "total_score": 103.51
+      "total_score": 103.08
     },
     {
       "id": "7839513d035b77be012916221f9296635594698e",
       "title": "New York teachers build a snail-inspired robot that traps microplastics in water - Yahoo",
-      "title_zh": "纽约教师建造了一种受蜗牛启发的机器人，可以捕获水中的微塑料 - 雅虎",
+      "title_zh": "纽约教师建造了一个受蜗牛启发的机器人，可以捕获水中的微塑料 - 雅虎",
       "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQbGhNUEdxeVJWc1dJOVF5YmFfODFVTWdYZWx0WVRodVM5cFFKSTBsTVRwSTlSNW9BWEJoM2pOWmZDNjlMVWt0anRaSU92c3UwYWE1REdYMVBhSFdoNVhFS25JaVZyNmlVUmwwSjF5RVVqbzJHZ0pEcU10TjNaMGloM1otNDdESEhFbFNfRnk5WmFyYkxGZDZNMQ?oc=5",
       "published_at": "2026-08-16T13:09:00+00:00",
       "category": "国外机器人资讯",
@@ -2312,9 +2564,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.39,
+      "timeliness": 27.95,
       "writing_value": 0,
-      "total_score": 103.39
+      "total_score": 102.95
     },
     {
       "id": "9f82a1bdb13eff1dbb9349488f357bf723206e6e",
@@ -2333,14 +2585,14 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.92,
+      "timeliness": 27.48,
       "writing_value": 0,
-      "total_score": 102.92
+      "total_score": 102.48
     },
     {
-      "id": "a6ec5acd81a8b9afa85768806520462d915b5f06",
-      "title": "Why Home Robots Are Taking So Long - cnet.com",
-      "title_zh": "为什么家用机器人需要这么长时间 - cnet.com",
+      "id": "662b967c9a0e2c9943bba23a465c40353a21afcb",
+      "title": "Why Home Robots Are Taking So Long - CNET",
+      "title_zh": "为什么家用机器人需要这么长时间 - CNET",
       "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFAyMnpFTFA4OHJDbDlwNWFTYm5aUFN1OExKaWdKWHdhRHNIdldtcHNJWV9IeFVfSV9tSThFX2RXeUpjc2lQS0JUTzFCcTdhVTZUXzFCTHBwZXBTXzJCb2JRdXhZWjRDOFVtdUtXQUxQVUE?oc=5",
       "published_at": "2026-08-16T12:00:00+00:00",
       "category": "国外机器人资讯",
@@ -2348,15 +2600,15 @@
       "site_name": "国外机器人资讯",
       "source": "国外机器人资讯",
       "site_id": "国外机器人资讯",
-      "description": "Why Home Robots Are Taking So Long  cnet.com",
+      "description": "Why Home Robots Are Taking So Long  CNET",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.24,
+      "timeliness": 26.8,
       "writing_value": 0,
-      "total_score": 102.24
+      "total_score": 101.8
     },
     {
       "id": "197687ec1916c5fa9fc6ec63c3fcb4c2d4cff8a3",
@@ -2375,9 +2627,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.74,
+      "timeliness": 26.3,
       "writing_value": 0,
-      "total_score": 101.74
+      "total_score": 101.3
     },
     {
       "id": "4f459d2ff5a966141c5c1c61f72a6640022e5d52",
@@ -2396,9 +2648,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.39,
+      "timeliness": 25.95,
       "writing_value": 0,
-      "total_score": 101.39
+      "total_score": 100.95
+    },
+    {
+      "id": "4cf4ab2a897781ed495d908297f8a9f4390f1f10",
+      "title": "一块玻璃的进阶之路 蓝思科技向AI全域智能终端延伸｜活力中国调研行 - 新浪财经",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPNWhwMzBFd1lKYy1WNDFBRWNtdkdSLW9obkc2cEFXUy1ncXozR0xvUGNGN0s3bThBZzBWMG1jWUhXUnRsa0M1MXh6OEZNZlV1bVJuRk5ZdnFvWWE5STNMX3V0OHI1YlNMYjJkYzE5Szl1SjN1NWF0cUJDeGtLWlFGLVZaczBmWmtBQTJJdTM0ZExtc1Bmc09uZHg1bGRVTV8zZlROVk5JZlBTbzQzOGQzYTNn?oc=5",
+      "published_at": "2026-08-16T14:40:38+00:00",
+      "category": "国内具身智能资讯",
+      "gn_label": "embodied_ai",
+      "site_name": "国内具身智能资讯",
+      "source": "国内具身智能资讯",
+      "site_id": "国内具身智能资讯",
+      "description": "一块玻璃的进阶之路 蓝思科技向AI全域智能终端延伸｜活力中国调研行  新浪财经",
+      "ai_score": 35.0,
+      "ai_label": "embodied_ai",
+      "relevance": 0.35,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.48,
+      "writing_value": 0,
+      "total_score": 74.48
     },
     {
       "id": "e5c5e24d10f80c9db495abb34e3e31da7afe721a",
@@ -2417,9 +2690,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.53,
+      "timeliness": 29.1,
       "writing_value": 0,
-      "total_score": 74.53
+      "total_score": 74.1
     },
     {
       "id": "d3e945a7bb4f184739afac024ff2715ba93f671d",
@@ -2438,9 +2711,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.38,
+      "timeliness": 28.94,
       "writing_value": 0,
-      "total_score": 74.38
+      "total_score": 73.94
     },
     {
       "id": "a747589e6cc190dc12ff5521b7f39d477d3a5225",
@@ -2459,9 +2732,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.27,
+      "timeliness": 28.83,
       "writing_value": 0,
-      "total_score": 74.27
+      "total_score": 73.83
     },
     {
       "id": "85982d5bcddee46674c2d54637a467f8f58f237e",
@@ -2480,9 +2753,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.07,
+      "timeliness": 28.63,
       "writing_value": 0,
-      "total_score": 74.07
+      "total_score": 73.63
     },
     {
       "id": "63c01a29238940c601bdaa1daa6bc594356cf491",
@@ -2501,30 +2774,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.05,
+      "timeliness": 28.61,
       "writing_value": 0,
-      "total_score": 74.05
-    },
-    {
-      "id": "78698d63d205f667171cac630c3fbcc52558e4a7",
-      "title": "颈无痕，心无忧：甲状腺乳腺外科机器人甲状腺手术，守护甲状腺疾病患者的美丽与自信 - 搜狐网",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQVlhKbmxxdHhhczdyNFFCQXlZb2h1aEQ4Q0thT09BYlNOUjRnV1B5ZkpGajNzZUg5WjY1M2lTYnZIMTlTTHNQOU8wUTdnaUVJWE11dC02c0xfajJmWjBFZm9vSWpTSWJZQWNhVllneFpDQW1qRVpqY2Q3S3lEM01hUVFkTGpYdVdXWXBTMg?oc=5",
-      "published_at": "2026-08-16T13:42:21+00:00",
-      "category": "国内机器人资讯",
-      "gn_label": "robotics",
-      "site_name": "国内机器人资讯",
-      "source": "国内机器人资讯",
-      "site_id": "国内机器人资讯",
-      "description": "颈无痕，心无忧：甲状腺乳腺外科机器人甲状腺手术，守护甲状腺疾病患者的美丽与自信  搜狐网",
-      "ai_score": 35.0,
-      "ai_label": "robotics",
-      "relevance": 0.35,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 28.95,
-      "writing_value": 0,
-      "total_score": 73.95
+      "total_score": 73.61
     },
     {
       "id": "1aa099691b0ee48034bf7e5e42127dea0db928b3",
@@ -2543,9 +2795,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.89,
+      "timeliness": 28.45,
       "writing_value": 0,
-      "total_score": 73.89
+      "total_score": 73.45
     },
     {
       "id": "b4595ab92d3233247db1c3a0fd1de4018df75bac",
@@ -2564,9 +2816,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.74,
+      "timeliness": 28.31,
       "writing_value": 0,
-      "total_score": 73.74
+      "total_score": 73.31
     },
     {
       "id": "2c28887d827dff069d2d927290caa43774cf7ae8",
@@ -2585,9 +2837,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.74,
+      "timeliness": 28.3,
       "writing_value": 0,
-      "total_score": 73.74
+      "total_score": 73.3
     },
     {
       "id": "493443e1e6f5a6334b8ebdbfe81d7b4433301b4f",
@@ -2606,9 +2858,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.34,
+      "timeliness": 27.9,
       "writing_value": 0,
-      "total_score": 73.34
+      "total_score": 72.9
     },
     {
       "id": "922e871062febd3ec7f9efe34c5f9418edc40f9f",
@@ -2627,9 +2879,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.99,
+      "timeliness": 27.55,
       "writing_value": 0,
-      "total_score": 72.99
+      "total_score": 72.55
     },
     {
       "id": "28abc2404db978a28acfade1886f95c66449a9b5",
@@ -2648,9 +2900,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.93,
+      "timeliness": 27.5,
       "writing_value": 0,
-      "total_score": 72.93
+      "total_score": 72.5
     },
     {
       "id": "d0a70cde0ad708ac0b65faf480f20d1db6d5596e",
@@ -2669,9 +2921,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.49,
+      "timeliness": 27.05,
       "writing_value": 0,
-      "total_score": 72.49
+      "total_score": 72.05
     },
     {
       "id": "d96b5a8da527e84aa42bd982c8b0e09a0490c009",
@@ -2690,9 +2942,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.39,
+      "timeliness": 26.95,
       "writing_value": 0,
-      "total_score": 72.39
+      "total_score": 71.95
     },
     {
       "id": "1699fc546012a73901527292146fcd3f07e3fc4c",
@@ -2711,21 +2963,21 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.82,
+      "timeliness": 26.39,
       "writing_value": 0,
-      "total_score": 71.82
+      "total_score": 71.39
     }
   ],
   "site_stats": [
     {
       "site_id": "国外机器人资讯",
       "site_name": "国外机器人资讯",
-      "count": 13
+      "count": 17
     },
     {
       "site_id": "国内机器人资讯",
       "site_name": "国内机器人资讯",
-      "count": 12
+      "count": 11
     },
     {
       "site_id": "国内人形机器人资讯",
@@ -2733,21 +2985,21 @@
       "count": 11
     },
     {
-      "site_id": "国外人形机器人资讯",
-      "site_name": "国外人形机器人资讯",
-      "count": 3
-    },
-    {
       "site_id": "国内具身智能资讯",
       "site_name": "国内具身智能资讯",
-      "count": 2
+      "count": 5
     },
     {
       "site_id": "国内物理AI资讯",
       "site_name": "国内物理AI资讯",
       "count": 2
+    },
+    {
+      "site_id": "国外人形机器人资讯",
+      "site_name": "国外人形机器人资讯",
+      "count": 1
     }
   ],
-  "total_items_raw": 43,
-  "total_items_all_mode": 43
+  "total_items_raw": 47,
+  "total_items_all_mode": 47
 }
