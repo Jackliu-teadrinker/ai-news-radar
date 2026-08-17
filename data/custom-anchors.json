@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-17T03:25:28.453970+00:00",
+  "generated_at": "2026-08-17T04:09:40.194281+00:00",
   "window_start": "2026-08-16T19:00:00+08:00",
-  "window_end": "2026-08-17T11:25:28.102949+08:00",
-  "total_items": 10,
+  "window_end": "2026-08-17T12:09:39.861973+08:00",
+  "total_items": 12,
   "items": [
     {
       "id": "2f2accde5129c5390b4a9ac06889e2672a8f6722",
@@ -21,9 +21,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.48,
+      "timeliness": 23.74,
       "writing_value": 0,
-      "total_score": 99.48
+      "total_score": 98.74
     },
     {
       "id": "070dd64e7e3a637fac6d7835b89ccca2016c180b",
@@ -42,9 +42,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 14.68,
+      "timeliness": 13.94,
       "writing_value": 5,
-      "total_score": 99.68
+      "total_score": 98.94
     },
     {
       "id": "aeb94977b24283f1eaed1f116825f95687d3bbfa",
@@ -63,30 +63,51 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 19.76,
+      "timeliness": 19.03,
       "writing_value": 0,
-      "total_score": 94.76
+      "total_score": 94.03
     },
     {
-      "id": "639a4e6045d36d87cda51eb204ab7a9fed789b75",
-      "title": "从长鑫科技、宇树科技上市，看A股“科技叙事”具象化 - 人民网健康",
+      "id": "4fe732c8d0fb1fda080f7565cc0265b4183d1944",
+      "title": "从长鑫科技、宇树科技上市，看A股“科技叙事”具象化--经济·科技 - 人民网",
       "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5BYV9EZDBFUmo2b3FWVFFtWmtMbHBrUjhGWkozQWJ4UVM0SnNQYk1sNDFPQWVVc1lWcnBCQWIwRzNCMDBKemFDcWJWVkpPTm5pb005UE5iTnpyTTNTY1FGVkFZOHhMSllTb0Y0NFpn?oc=5",
-      "published_at": "2026-08-17T01:35:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE41X2kwbk01Q1FuMm5oMlZwU1BGcE8wQzlTZEhfVW9rcXc1T3dSd2ZLSV94MFhDOGhOTWNNQmdwTE9sblE1TkhrOVZzRUFnZ1ZDM2tSZmZXS3FFRllndnJ2Qy1PU29tUjRTOHRVNmd3?oc=5",
+      "published_at": "2026-08-17T02:02:00+00:00",
       "category": "GN: 宇树科技",
       "gn_label": "robotics",
       "site_name": "GN: 宇树科技",
       "source": "GN: 宇树科技",
       "site_id": "GN: 宇树科技",
-      "description": "从长鑫科技、宇树科技上市，看A股“科技叙事”具象化  人民网健康",
+      "description": "从长鑫科技、宇树科技上市，看A股“科技叙事”具象化--经济·科技  人民网",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.16,
+      "timeliness": 27.87,
       "writing_value": 0,
-      "total_score": 103.16
+      "total_score": 102.87
+    },
+    {
+      "id": "384fa3173a6745b790adbe6f20c224274cf0b758",
+      "title": "中签率0.0181%！宇树科技今天打新，机器人产业链迎来估值锚点 - cls.cn",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE96ZThrT0VpQWN4MnpHMUlGaENJQTBTd3lpYjhLVTZ3a2RKVC1zcmw3Um1SLWtFVVVCa0tLZWhhSU83eWRZVGZtbw?oc=5",
+      "published_at": "2026-08-16T14:09:11+00:00",
+      "category": "GN: 宇树科技",
+      "gn_label": "robotics",
+      "site_name": "GN: 宇树科技",
+      "source": "GN: 宇树科技",
+      "site_id": "GN: 宇树科技",
+      "description": "中签率0.0181%！宇树科技今天打新，机器人产业链迎来估值锚点  cls.cn",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 15.99,
+      "writing_value": 0,
+      "total_score": 90.99
     },
     {
       "id": "2c2918c1ec27342aeb3c11541f782c17b0407a64",
@@ -105,9 +126,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 17.06,
+      "timeliness": 16.32,
       "writing_value": 0,
-      "total_score": 92.06
+      "total_score": 91.32
     },
     {
       "id": "9169a75d38593466691ed2f28b30d323fb6c08bc",
@@ -126,9 +147,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 14.64,
+      "timeliness": 13.9,
       "writing_value": 0,
-      "total_score": 89.64
+      "total_score": 88.9
     },
     {
       "id": "b43544195c70ca94a1c3c6be6d441f0fe8f5f4c1",
@@ -147,9 +168,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 18.03,
+      "timeliness": 17.29,
       "writing_value": 0,
-      "total_score": 93.03
+      "total_score": 92.29
     },
     {
       "id": "6c1c0ffee661513b2c5b30153fb52b17fee1a247",
@@ -168,30 +189,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 16.23,
+      "timeliness": 15.5,
       "writing_value": 0,
-      "total_score": 91.23
+      "total_score": 90.5
     },
     {
-      "id": "959cc05a72ae70a22eccddf9d1ad07084f517b70",
-      "title": "机械臂30秒出杯、最低5.9元！京东七鲜咖啡无人店落地，是破局咖啡红海还是补全本地生活拼图？ - 每日经济新闻",
+      "id": "6d0a314ed1a649593c27ecafd4e3898317cd9f68",
+      "title": "2026 世界机器人大会展位图揭晓：宇树优必选等参展 - 搜狐网",
       "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE12Wm5adnpYREl5M0hGTVRwOUc0RnBjTkJ4RWp5R2FfUGdFWkNyZTBUYVJEMUJ3TzFrLWJmZjZYM0NqTlVZRUswanBxUTlnSHBYWDZxOHdqdU9yelBpeHM2ekQ4LXJodw?oc=5",
-      "published_at": "2026-08-16T16:07:00+00:00",
-      "category": "GN: 机械臂",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPZjVxekpLU1hFRWxUaDNOejF6ZER0Y2ktSXlZWUZybGN1NFR6bDl3c3JkYXFCbjRIZVB4OUxMS29KeFlkSm5pOVlWRW81Wm8yeWhqQVFETEpKRFNsTWZpMHotbC1JRkg4SUh5U0w0MEE2QVpwWVJIY1JVbGp6NU1rWXhNRWhRU1IwR0FVeA?oc=5",
+      "published_at": "2026-08-17T02:42:01+00:00",
+      "category": "GN: 优必选",
       "gn_label": "robotics",
-      "site_name": "GN: 机械臂",
-      "source": "GN: 机械臂",
-      "site_id": "GN: 机械臂",
-      "description": "机械臂30秒出杯、最低5.9元！京东七鲜咖啡无人店落地，是破局咖啡红海还是补全本地生活拼图？  每日经济新闻",
+      "site_name": "GN: 优必选",
+      "source": "GN: 优必选",
+      "site_id": "GN: 优必选",
+      "description": "2026 世界机器人大会展位图揭晓：宇树优必选等参展  搜狐网",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 18.69,
+      "timeliness": 28.54,
       "writing_value": 0,
-      "total_score": 93.69
+      "total_score": 103.54
     },
     {
       "id": "9879f0b2a449d9072ecdc2279770915cf0740475",
@@ -210,9 +231,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 17.38,
+      "timeliness": 16.65,
       "writing_value": 0,
-      "total_score": 92.38
+      "total_score": 91.65
+    },
+    {
+      "id": "959cc05a72ae70a22eccddf9d1ad07084f517b70",
+      "title": "机械臂30秒出杯、最低5.9元！京东七鲜咖啡无人店落地，是破局咖啡红海还是补全本地生活拼图？ - 每日经济新闻",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE12Wm5adnpYREl5M0hGTVRwOUc0RnBjTkJ4RWp5R2FfUGdFWkNyZTBUYVJEMUJ3TzFrLWJmZjZYM0NqTlVZRUswanBxUTlnSHBYWDZxOHdqdU9yelBpeHM2ekQ4LXJodw?oc=5",
+      "published_at": "2026-08-16T16:07:00+00:00",
+      "category": "GN: 机械臂",
+      "gn_label": "robotics",
+      "site_name": "GN: 机械臂",
+      "source": "GN: 机械臂",
+      "site_id": "GN: 机械臂",
+      "description": "机械臂30秒出杯、最低5.9元！京东七鲜咖啡无人店落地，是破局咖啡红海还是补全本地生活拼图？  每日经济新闻",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 17.96,
+      "writing_value": 0,
+      "total_score": 92.96
     }
   ],
   "fallback_used": false
