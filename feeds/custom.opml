@@ -16,6 +16,17 @@
     <outline text="雷锋网"               type="rss" xmlUrl="https://www.leiphone.com/feed" />
     <outline text="TechXplore Robotics"  type="page" xmlUrl="https://techxplore.com/robotics-news/" />
 
+    <!-- ══════════ 新增核心信源 (2026-08-12) ══════════ -->
+    <outline text="CNBC AI Age"          type="rss" xmlUrl="https://www.cnbc.com/id/19854910/device/rss/rss.html" />
+    <outline text="MIT Tech Review"      type="rss" xmlUrl="https://www.technologyreview.com/feed/" />
+    <outline text="Nature Neuroscience"  type="rss" xmlUrl="https://www.nature.com/neuro.rss" />
+    <outline text="Nature"               type="rss" xmlUrl="https://www.nature.com/nature.rss" />
+
+    <!-- ══════════ Google News 代理（直连被 Cloudflare/无 RSS 防护的站点） ══════════ -->
+    <outline text="GN: Robot Report"     type="rss" xmlUrl="https://news.google.com/rss/search?q=site%3Atherobotreport.com+robot&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" />
+    <outline text="GN: BCI Intel"        type="rss" xmlUrl="https://news.google.com/rss/search?q=site%3Abciintel.com+BCI&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" />
+    <outline text="GN: MIT Tech Review"  type="rss" xmlUrl="https://news.google.com/rss/search?q=site%3Atechnologyreview.com+AI+robot&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" />
+
     <!-- ══════════ Google News RSS — 英文关键词 ══════════ -->
     <outline text="GN: humanoid robot"           type="rss" xmlUrl="https://news.google.com/rss/search?q=humanoid+robot&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" />
     <outline text="GN: embodied AI"              type="rss" xmlUrl="https://news.google.com/rss/search?q=embodied+intelligence+OR+embodied+AI&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" />
