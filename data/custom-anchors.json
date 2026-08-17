@@ -1,30 +1,9 @@
 {
-  "generated_at": "2026-08-17T22:14:27.771434+00:00",
+  "generated_at": "2026-08-17T22:47:30.656923+00:00",
   "window_start": "2026-08-17T19:00:00+08:00",
-  "window_end": "2026-08-18T06:14:24.418780+08:00",
-  "total_items": 33,
+  "window_end": "2026-08-18T06:47:28.896186+08:00",
+  "total_items": 34,
   "items": [
-    {
-      "id": "1846eb528de56c466e5e19c14eea3a8c863766da",
-      "title": "Is Shipyard Welding the Right First Job for Humanoid Robots?",
-      "title_zh": "造船厂焊接是人形机器人的第一份工作吗？",
-      "url": "https://spectrum.ieee.org/persona-ai-humanoid-robot-welding",
-      "published_at": "2026-08-17T15:33:42+00:00",
-      "category": "IEEE Spectrum",
-      "gn_label": "robotics",
-      "site_name": "IEEE Spectrum",
-      "source": "IEEE Spectrum",
-      "site_id": "IEEE Spectrum",
-      "description": "Humanoids desperately need to stop making YouTube videos and get a job already, and Persona AI is one of the few humanoid companies which seems to be entirely focused on making that happen. Persona’s approach has been to carefully select a job that is economically viable for robots right now, and th",
-      "ai_score": 80.0,
-      "ai_label": "robotics",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 5,
-      "timeliness": 23.32,
-      "writing_value": 5,
-      "total_score": 123.32
-    },
     {
       "id": "bbe8419e4868602d938c7a4560615f23d3cb2146",
       "title": "The Download: dead robot friends and the “censorship-industrial complex”",
@@ -42,9 +21,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 19.93,
+      "timeliness": 19.38,
       "writing_value": 5,
-      "total_score": 104.93
+      "total_score": 104.38
+    },
+    {
+      "id": "1846eb528de56c466e5e19c14eea3a8c863766da",
+      "title": "Is Shipyard Welding the Right First Job for Humanoid Robots?",
+      "title_zh": "造船厂焊接是人形机器人的第一份工作吗？",
+      "url": "https://spectrum.ieee.org/persona-ai-humanoid-robot-welding",
+      "published_at": "2026-08-17T15:33:42+00:00",
+      "category": "IEEE Spectrum",
+      "gn_label": "robotics",
+      "site_name": "IEEE Spectrum",
+      "source": "IEEE Spectrum",
+      "site_id": "IEEE Spectrum",
+      "description": "Humanoids desperately need to stop making YouTube videos and get a job already, and Persona AI is one of the few humanoid companies which seems to be entirely focused on making that happen. Persona’s approach has been to carefully select a job that is economically viable for robots right now, and th",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 22.77,
+      "writing_value": 5,
+      "total_score": 122.77
     },
     {
       "id": "9ea57a392c5145d3927d6060f87d937eb681af5e",
@@ -63,9 +63,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 23.42,
+      "timeliness": 22.87,
       "writing_value": 5,
-      "total_score": 108.42
+      "total_score": 107.87
     },
     {
       "id": "884e82de1d3160dea69cb03c0317ca11ea111277",
@@ -84,9 +84,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.1,
+      "timeliness": 23.55,
       "writing_value": 0,
-      "total_score": 99.1
+      "total_score": 98.55
     },
     {
       "id": "60ac0bd9d8c404ec9047c21c5ff94b3d46e56c89",
@@ -105,9 +105,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 20.13,
+      "timeliness": 19.58,
       "writing_value": 0,
-      "total_score": 95.13
+      "total_score": 94.58
     },
     {
       "id": "5b49756848f8a8374ee15cc9b0fcbe12d922affa",
@@ -126,9 +126,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 21.05,
+      "timeliness": 20.5,
       "writing_value": 0,
-      "total_score": 96.05
+      "total_score": 95.5
     },
     {
       "id": "fac859ef4689b80f8737b138137327fc29f1015e",
@@ -147,9 +147,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 5,
-      "timeliness": 18.94,
+      "timeliness": 18.39,
       "writing_value": 5,
-      "total_score": 118.94
+      "total_score": 118.39
     },
     {
       "id": "e0f585786815c55aa4c301eeba15a8fdbd73c904",
@@ -168,9 +168,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.1,
+      "timeliness": 25.55,
       "writing_value": 0,
-      "total_score": 101.1
+      "total_score": 100.55
     },
     {
       "id": "0ec1b68a68fbaa48201899c0d65874fcc63c644e",
@@ -189,9 +189,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.26,
+      "timeliness": 26.71,
       "writing_value": 0,
-      "total_score": 102.26
+      "total_score": 101.71
     },
     {
       "id": "defbc9104c8b0d5c6c26b149b1e2bc38e655fe23",
@@ -210,9 +210,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 18.98,
+      "timeliness": 18.43,
       "writing_value": 0,
-      "total_score": 93.98
+      "total_score": 93.43
     },
     {
       "id": "d2ec7dec44368319b977961e0a7bf85b0836c8c7",
@@ -231,9 +231,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 18.88,
+      "timeliness": 18.33,
       "writing_value": 0,
-      "total_score": 93.88
+      "total_score": 93.33
     },
     {
       "id": "63c7e345587c37f89ecfd9e3e5210be0c5bfe244",
@@ -252,9 +252,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 27.79,
+      "timeliness": 27.24,
       "writing_value": 5,
-      "total_score": 112.79
+      "total_score": 112.24
     },
     {
       "id": "8ab06342818e69ed147345074c5b49eea1bdc2f4",
@@ -273,9 +273,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.06,
+      "timeliness": 22.51,
       "writing_value": 0,
-      "total_score": 98.06
+      "total_score": 97.51
     },
     {
       "id": "d182eeb003d39dca3d225f932ea3c3505f446c99",
@@ -294,9 +294,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 27.49,
+      "timeliness": 26.94,
       "writing_value": 5,
-      "total_score": 112.49
+      "total_score": 111.94
+    },
+    {
+      "id": "f12462442a72da522d1bd88aadea42e3cb2628b6",
+      "title": "Autonomous robotic system improves precision in tooth autotransplantation surgery - News-Medical",
+      "title_zh": "自主机器人系统提高了自体牙齿移植手术的精度 - 新闻-医疗",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNZ1NwWkV3NmlTaWlrMVJxYlZwSzVsVDMtUVpuUEZEeXFIRjUzMk9rYTJCYW1MNzdaS0xvOURzOUdYS1NxYlptd1dkMzFuU3pPZUxocEdrRlNUR3lkcHJvcm9TX3hHRDRjUzNvTjE5TUpGUGMwWkE3YnRhRWtHVFI4cmFhNExacE04VUZqYjBZeGVaODZzVE9rcnlMbWtsSVVBRXJrRGR6cXkzaTJ3dXlzQjVqbmR6UVYzRVlmT0owaEdka1p6b3Z0Qw?oc=5",
+      "published_at": "2026-08-17T15:53:00+00:00",
+      "category": "GN: surgical robot",
+      "gn_label": "robotics",
+      "site_name": "GN: surgical robot",
+      "source": "GN: surgical robot",
+      "site_id": "GN: surgical robot",
+      "description": "Autonomous robotic system improves precision in tooth autotransplantation surgery  News-Medical",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 23.09,
+      "writing_value": 0,
+      "total_score": 98.09
     },
     {
       "id": "c6e7684774f9caedce97f9ea37548c8055f9eb5e",
@@ -315,9 +336,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 19.34,
+      "timeliness": 18.79,
       "writing_value": 5,
-      "total_score": 104.34
+      "total_score": 103.79
     },
     {
       "id": "74dddb8848fda92b271c1d03f6a41145cb3f2193",
@@ -336,34 +357,13 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.78,
+      "timeliness": 28.23,
       "writing_value": 0,
-      "total_score": 103.78
+      "total_score": 103.23
     },
     {
-      "id": "7d86d716b377d949dc315f3fd1bb4319e2d38ad0",
-      "title": "宇树科技后天上市！ - 华尔街见闻",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9fLU1wVktSNzlXMDZjcTlxOFZ6blFFZl9wdUNTZlhOYjJUTGF6OUJ1Y0p6VWJMNk51dEFYSTRucnI3MlRlQ1ZUWkZEaURLNEpoTjY4?oc=5",
-      "published_at": "2026-08-17T12:16:55+00:00",
-      "category": "GN: 优必选",
-      "gn_label": "robotics",
-      "site_name": "GN: 优必选",
-      "source": "GN: 优必选",
-      "site_id": "GN: 优必选",
-      "description": "宇树科技后天上市！  华尔街见闻",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 20.04,
-      "writing_value": 0,
-      "total_score": 95.04
-    },
-    {
-      "id": "dfa2ac14fabaf6924e9069b410e7aa2fc9ff39ab",
-      "title": "宇树科技：将于8月19日科创板上市 - 同花顺财经",
+      "id": "300ea5b43f67ba5fd0081a64edc3153cf736b573",
+      "title": "宇树科技：将于8月19日科创板上市 - 同花顺",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE14MUdfaG5BVmttSGt2ekdlY1p5TnFYWUJWN2FqbHFjQU1SVG91dmxNS1VYNkFsLXo0R0FLYVU1UDhqOFVMQjNSNU9lNENpYjdyS2pOeU5QeWNqZmtjRFE?oc=5",
       "published_at": "2026-08-17T12:20:32+00:00",
@@ -372,15 +372,15 @@
       "site_name": "GN: 宇树科技",
       "source": "GN: 宇树科技",
       "site_id": "GN: 宇树科技",
-      "description": "宇树科技：将于8月19日科创板上市  同花顺财经",
+      "description": "宇树科技：将于8月19日科创板上市  同花顺",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 20.1,
+      "timeliness": 19.55,
       "writing_value": 0,
-      "total_score": 95.1
+      "total_score": 94.55
     },
     {
       "id": "9217bf9ea74135a500b02bdaa5179f790156a623",
@@ -399,9 +399,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 21.08,
+      "timeliness": 20.53,
       "writing_value": 0,
-      "total_score": 96.08
+      "total_score": 95.53
+    },
+    {
+      "id": "7d86d716b377d949dc315f3fd1bb4319e2d38ad0",
+      "title": "宇树科技后天上市！ - 华尔街见闻",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9fLU1wVktSNzlXMDZjcTlxOFZ6blFFZl9wdUNTZlhOYjJUTGF6OUJ1Y0p6VWJMNk51dEFYSTRucnI3MlRlQ1ZUWkZEaURLNEpoTjY4?oc=5",
+      "published_at": "2026-08-17T12:16:55+00:00",
+      "category": "GN: 宇树科技",
+      "gn_label": "robotics",
+      "site_name": "GN: 宇树科技",
+      "source": "GN: 宇树科技",
+      "site_id": "GN: 宇树科技",
+      "description": "宇树科技后天上市！  华尔街见闻",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 19.49,
+      "writing_value": 0,
+      "total_score": 94.49
     },
     {
       "id": "5b962d3f650c175710d5e4cca7f21a7779aa02d1",
@@ -420,9 +441,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 20.64,
+      "timeliness": 20.09,
       "writing_value": 0,
-      "total_score": 95.64
+      "total_score": 95.09
     },
     {
       "id": "b70fa08f0583dd7c696dc09f4da5644395697b91",
@@ -441,9 +462,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 20.24,
+      "timeliness": 19.69,
       "writing_value": 0,
-      "total_score": 95.24
+      "total_score": 94.69
     },
     {
       "id": "76838331827896ad992a05644c2eeb34508b2c5e",
@@ -462,9 +483,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 20.5,
+      "timeliness": 19.95,
       "writing_value": 0,
-      "total_score": 95.5
+      "total_score": 94.95
     },
     {
       "id": "9987ee90e19aef8375c33724cc3a33e5a80c6025",
@@ -483,9 +504,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 20.88,
+      "timeliness": 20.33,
       "writing_value": 0,
-      "total_score": 95.88
+      "total_score": 95.33
     },
     {
       "id": "2db83683d3b9ebc6309929839a6a714b1dd72d5c",
@@ -504,9 +525,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 21.1,
+      "timeliness": 20.55,
       "writing_value": 0,
-      "total_score": 96.1
+      "total_score": 95.55
     },
     {
       "id": "a890b8bd4e232a8cfcbed7b9b1eb6874366c95d4",
@@ -525,9 +546,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.63,
+      "timeliness": 26.08,
       "writing_value": 0,
-      "total_score": 101.63
+      "total_score": 101.08
     },
     {
       "id": "126795e1cfb7126c51315a531d0463906dcbd5ff",
@@ -546,9 +567,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 22.13,
+      "timeliness": 21.58,
       "writing_value": 0,
-      "total_score": 97.13
+      "total_score": 96.58
     },
     {
       "id": "5841a9afba6249b47e659f36372cd647355e2d7e",
@@ -567,9 +588,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 20.04,
+      "timeliness": 19.49,
       "writing_value": 0,
-      "total_score": 95.04
+      "total_score": 94.49
     },
     {
       "id": "a60a7b24ebfb0dd487139fddebbbe1f5db9ed431",
@@ -588,9 +609,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 21.98,
+      "timeliness": 21.43,
       "writing_value": 0,
-      "total_score": 96.98
+      "total_score": 96.43
     },
     {
       "id": "0ba9aad11e93456b5ec7c1b6397a9dee08ccf76c",
@@ -609,9 +630,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 20.19,
+      "timeliness": 19.64,
       "writing_value": 0,
-      "total_score": 95.19
+      "total_score": 94.64
     },
     {
       "id": "6aa808fb518c61be41daf23a685648d0a8e5d9d5",
@@ -630,9 +651,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 20.26,
+      "timeliness": 19.71,
       "writing_value": 0,
-      "total_score": 95.26
+      "total_score": 94.71
     },
     {
       "id": "a48f27c98763e899c5fb8936c35d0df9c7732f10",
@@ -651,9 +672,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 22.55,
+      "timeliness": 22.0,
       "writing_value": 0,
-      "total_score": 97.55
+      "total_score": 97.0
     },
     {
       "id": "cf0ef5678f165081a6e0c4e037eb94a1114ee0f3",
@@ -672,9 +693,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 20.74,
+      "timeliness": 20.19,
       "writing_value": 0,
-      "total_score": 95.74
+      "total_score": 95.19
     },
     {
       "id": "6f7e6d464c3c6818ded1fa99fec65d41612271ec",
@@ -693,9 +714,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 20.24,
+      "timeliness": 19.69,
       "writing_value": 0,
-      "total_score": 95.24
+      "total_score": 94.69
     }
   ],
   "fallback_used": false

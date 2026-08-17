@@ -1,9 +1,9 @@
 {
   "date": "2026-08-18",
-  "generated_at": "2026-08-17T22:15:33.018997+00:00",
+  "generated_at": "2026-08-17T22:48:30.966814+00:00",
   "score_threshold": 80,
   "total_items": 50,
-  "new_added": 0,
+  "new_added": 2,
   "items": [
     {
       "id": "97c0b87dfe142142",
@@ -277,6 +277,27 @@
       "timeliness": 29.25,
       "writing_value": 0,
       "total_score": 119.25
+    },
+    {
+      "id": "e71cdaeac536344b",
+      "title": "The Humanoid Robot Revolution Is Missing Some Parts - cnet.com",
+      "title_zh": "人形机器人革命缺少一些部分 - cnet.com",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQR3AxcUFGNUF4TlpKUTd3eFA1VVlseUhKQXAyRGVseDJJUzQyY090MlJVelN3d1BlQnBXT0pjdW9zckNnY2VXaG9jbWk3Ykx3alNJaWV5TWtaYjFFRnFjaG9ZYms0Qjd4ajdITTl0TnZCekNZUW15d0EwWnR1blpUTGk0QkFTakZSdTNGdDB3?oc=5",
+      "published_at": "2026-08-17T21:59:47+00:00",
+      "category": "国外机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国外机器人资讯",
+      "source": "国外机器人资讯",
+      "site_id": "国外机器人资讯",
+      "description": "The Humanoid Robot Revolution Is Missing Some Parts  cnet.com",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.21,
+      "writing_value": 0,
+      "total_score": 119.21
     },
     {
       "id": "cf50f3d3845603a8",
@@ -846,6 +867,27 @@
       "total_score": 116.72
     },
     {
+      "id": "bcb09db6a99a3883",
+      "title": "LG and Nvidia Are Building a Humanoid Robot for 2027 - eWeek",
+      "title_zh": "LG 和 Nvidia 正在为 2027 年打造一款人形机器人 - eWeek",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE52WEE4M3ZEVnh2TTRlM1dhRUY0X3NlVHdINXBkNHBMVFcyamNDUUZfeXlNNWJYLXZJNVExdnhwWFlDOXlEQzBYWEQ3SDh0WUtISUF1dVptb1NTRlVXak9jYnA4WVJ3QktpejcycmpraEZBcG9Bb2t1TA?oc=5",
+      "published_at": "2026-08-17T19:29:25+00:00",
+      "category": "国外人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国外人形机器人资讯",
+      "source": "国外人形机器人资讯",
+      "site_id": "国外人形机器人资讯",
+      "description": "LG and Nvidia Are Building a Humanoid Robot for 2027  eWeek",
+      "ai_score": 80.0,
+      "ai_label": "humanoid",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 26.7,
+      "writing_value": 0,
+      "total_score": 116.7
+    },
+    {
       "id": "11bd2e723af243bb",
       "title": "Humanoids flop in first real firefighting drill at World Robot Games - Notebookcheck",
       "title_zh": "人形机器人在世界机器人运动会首次真正的消防演习中失败 - Notebookcheck",
@@ -1012,48 +1054,6 @@
       "timeliness": 26.28,
       "writing_value": 0,
       "total_score": 116.28
-    },
-    {
-      "id": "aa2abeec8e9fc869",
-      "title": "Tech firm releases new humanoid robot, eyeing HK’s promotion role - chinadailyasia.com",
-      "title_zh": "科技公司发布新型人形机器人，瞄准香港推广角色 - chinadailyasia.com",
-      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1UN0p3MVF6RzMweWNsRUFkMWJEaXRpWFM3QWZpWmlYd3RSek9WMnNUWU9oYzRmX1RpZVJPUnBldVZTTlRoZzdVelotQ2RZY05RalhpOGY2cjc?oc=5",
-      "published_at": "2026-08-17T12:32:48+00:00",
-      "category": "国外机器人资讯",
-      "gn_label": "robotics",
-      "site_name": "国外机器人资讯",
-      "source": "国外机器人资讯",
-      "site_id": "国外机器人资讯",
-      "description": "Tech firm releases new humanoid robot, eyeing HK’s promotion role  chinadailyasia.com",
-      "ai_score": 80.0,
-      "ai_label": "robotics",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 26.24,
-      "writing_value": 0,
-      "total_score": 116.24
-    },
-    {
-      "id": "f6973b797dd5a381",
-      "title": "从叠衣收纳到超市理货：南京玄武这座5000㎡的“实景训练场”，正在教人形机器人适应真实世界 - 中国江苏网",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNTjRNeEpCZzhOVWFxOXI4TW14QWNkbk1TMGY2TDJpZGlGeEd0RjRXNjNpWEl2VXZwZGdIQnVwVU5lQklwcDVSNEw2NTc4SGlnc0U2VG9MRTFCcGh4T2xCYzBTQVlIOWVOOXhRcm0yQ1FxX0dSSjFsOVpDQVZoRklOX3Y0VlpVc01M?oc=5",
-      "published_at": "2026-08-17T12:31:00+00:00",
-      "category": "国内具身智能资讯",
-      "gn_label": "embodied_ai",
-      "site_name": "国内具身智能资讯",
-      "source": "国内具身智能资讯",
-      "site_id": "国内具身智能资讯",
-      "description": "从叠衣收纳到超市理货：南京玄武这座5000㎡的“实景训练场”，正在教人形机器人适应真实世界  中国江苏网",
-      "ai_score": 80.0,
-      "ai_label": "embodied_ai",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 26.21,
-      "writing_value": 0,
-      "total_score": 116.21
     }
   ]
 }
