@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-17T17:51:53.579301+00:00",
+  "generated_at": "2026-08-17T18:23:12.635555+00:00",
   "window_start": "2026-08-17T19:00:00+08:00",
-  "window_end": "2026-08-18T01:51:50.851190+08:00",
-  "total_items": 26,
+  "window_end": "2026-08-18T02:23:11.455420+08:00",
+  "total_items": 28,
   "items": [
     {
       "id": "bbe8419e4868602d938c7a4560615f23d3cb2146",
@@ -21,30 +21,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 24.3,
+      "timeliness": 23.78,
       "writing_value": 5,
-      "total_score": 109.3
+      "total_score": 108.78
     },
     {
-      "id": "fac859ef4689b80f8737b138137327fc29f1015e",
-      "title": "撕开清洁机器人新蓝海！38厘米机身普渡ET1 交出具身智能商用新答卷",
-      "title_zh": "",
-      "url": "https://zhidx.com/p/585603.html",
-      "published_at": "2026-08-17T11:10:41+00:00",
-      "category": "极链AI",
+      "id": "1846eb528de56c466e5e19c14eea3a8c863766da",
+      "title": "Is Shipyard Welding the Right First Job for Humanoid Robots?",
+      "title_zh": "造船厂焊接是人形机器人的第一份工作吗？",
+      "url": "https://spectrum.ieee.org/persona-ai-humanoid-robot-welding",
+      "published_at": "2026-08-17T15:33:42+00:00",
+      "category": "IEEE Spectrum",
       "gn_label": "robotics",
-      "site_name": "极链AI",
-      "source": "极链AI",
-      "site_id": "极链AI",
-      "description": "智东西\n作者 | 王涵\n编辑 | 漠影\n还有两天，8月19日，2026世界机器人大会将在北京亦庄正式开幕。\n本届大会的主题定为“产需共融”，背后传递出一个十分现实的行业信号：机器人行业的比拼，已经不再单纯看纸面技术参数有多亮眼，而是要看产品能不能真正拿到市场订单。\n所谓“产需共融”，其实就是供给端造得出，需求端愿意买。顺着这个思路看，小型商用清洁机器人，大概率会成为今年机器人行业被高频探讨的典型案例。\n为什么这么说？因为这类场景的清洁需求一直客观存在，但始终没有得到很好的解决。\n随便走进一家便利店或者社区超市，地面清洁大多是店员顺带完成的兼职工作。拿拖把蘸水拖地，地上容易留下大片水渍；刚拖完，",
+      "site_name": "IEEE Spectrum",
+      "source": "IEEE Spectrum",
+      "site_id": "IEEE Spectrum",
+      "description": "Humanoids desperately need to stop making YouTube videos and get a job already, and Persona AI is one of the few humanoid companies which seems to be entirely focused on making that happen. Persona’s approach has been to carefully select a job that is economically viable for robots right now, and th",
       "ai_score": 80.0,
       "ai_label": "robotics",
       "relevance": 0.8,
       "authority": 10,
       "depth": 5,
-      "timeliness": 23.32,
+      "timeliness": 27.18,
       "writing_value": 5,
-      "total_score": 123.32
+      "total_score": 127.18
     },
     {
       "id": "9ea57a392c5145d3927d6060f87d937eb681af5e",
@@ -63,9 +63,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 24.85,
+      "timeliness": 24.33,
       "writing_value": 5,
-      "total_score": 109.85
+      "total_score": 109.33
+    },
+    {
+      "id": "8ace13ff50267dea37c44b24fa54feaa8e4f2eb2",
+      "title": "What's Going On With Serve Robotics Stock Monday? - TradingView",
+      "title_zh": "周一服务机器人股票发生了什么？ - 交易视图",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOOHNEb3QyMUJPVFV4Q1NfLXlEQkNtSVB6dVpSc2hrX0xFenI1UUEyaGdVenVfWVRFMTYyQjRNQXZmS1JWbldwVW43SFpGazFfaUJZSHFJMk1NbWVNeUVkaFBoZjRRbHhOVFJKcmFXWFZ6WEs0aGQwWm8zTGwyMnIyeEJPbWVXYmtKTjllRi1KS0dUdE5iSHN5OFVtek96VnNIYV9hMVgxRUZMaVE?oc=5",
+      "published_at": "2026-08-17T16:20:33+00:00",
+      "category": "GN: autonomous robot",
+      "gn_label": "robotics",
+      "site_name": "GN: autonomous robot",
+      "source": "GN: autonomous robot",
+      "site_id": "GN: autonomous robot",
+      "description": "What's Going On With Serve Robotics Stock Monday?  TradingView",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 27.96,
+      "writing_value": 0,
+      "total_score": 102.96
     },
     {
       "id": "60ac0bd9d8c404ec9047c21c5ff94b3d46e56c89",
@@ -84,9 +105,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.5,
+      "timeliness": 23.98,
       "writing_value": 0,
-      "total_score": 99.5
+      "total_score": 98.98
     },
     {
       "id": "5b49756848f8a8374ee15cc9b0fcbe12d922affa",
@@ -105,9 +126,72 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.43,
+      "timeliness": 24.91,
       "writing_value": 0,
-      "total_score": 100.43
+      "total_score": 99.91
+    },
+    {
+      "id": "fac859ef4689b80f8737b138137327fc29f1015e",
+      "title": "撕开清洁机器人新蓝海！38厘米机身普渡ET1 交出具身智能商用新答卷",
+      "title_zh": "",
+      "url": "https://zhidx.com/p/585603.html",
+      "published_at": "2026-08-17T11:10:41+00:00",
+      "category": "极链AI",
+      "gn_label": "robotics",
+      "site_name": "极链AI",
+      "source": "极链AI",
+      "site_id": "极链AI",
+      "description": "智东西\n作者 | 王涵\n编辑 | 漠影\n还有两天，8月19日，2026世界机器人大会将在北京亦庄正式开幕。\n本届大会的主题定为“产需共融”，背后传递出一个十分现实的行业信号：机器人行业的比拼，已经不再单纯看纸面技术参数有多亮眼，而是要看产品能不能真正拿到市场订单。\n所谓“产需共融”，其实就是供给端造得出，需求端愿意买。顺着这个思路看，小型商用清洁机器人，大概率会成为今年机器人行业被高频探讨的典型案例。\n为什么这么说？因为这类场景的清洁需求一直客观存在，但始终没有得到很好的解决。\n随便走进一家便利店或者社区超市，地面清洁大多是店员顺带完成的兼职工作。拿拖把蘸水拖地，地上容易留下大片水渍；刚拖完，",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 22.79,
+      "writing_value": 5,
+      "total_score": 122.79
+    },
+    {
+      "id": "db2f947ae78149e6b3402c32de0415a037c77aac",
+      "title": "Industrial Robot Installations Hit Record Highs Amid Labor Shortage Crisis - Investing News Network",
+      "title_zh": "劳动力短缺危机中工业机器人安装量创历史新高 - 投资新闻网",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOaENjTVVlSjdvcWVPZEY4dmlDQnhHbmxvVzBnVXRBN2ttNERSbTBodzJWUzg3WXlrMGdzU1lIV3Bnc3pFd1BzM21lUW8zMjRoN250WkFXb3Z1SHd5SGFtUk52bXBSaWVfcUpHY2daODUxOXVmdkk0ZHM4M1lVb0Qzb0l0NHVROEszcUZyaEF4WElrMWNZWE5IcmREZFc5VTJpMGlR?oc=5",
+      "published_at": "2026-08-17T18:20:24+00:00",
+      "category": "GN: industrial robot",
+      "gn_label": "robotics",
+      "site_name": "GN: industrial robot",
+      "source": "GN: industrial robot",
+      "site_id": "GN: industrial robot",
+      "description": "Industrial Robot Installations Hit Record Highs Amid Labor Shortage Crisis  Investing News Network",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.95,
+      "writing_value": 0,
+      "total_score": 104.95
+    },
+    {
+      "id": "d2ec7dec44368319b977961e0a7bf85b0836c8c7",
+      "title": "China's industrial robot output up 28.5% in first seven months - CGTN Radio",
+      "title_zh": "前7个月中国工业机器人产量增长28.5% - 中国国际广播电台",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxON3g4cElsY3M5VmlSOXEwY3d2UnUtaDd4WUwyRWt1TnVFNmRhQXVxenlaR2J5LWg3WFJvM3M4akMtTVdCdEZEZkdnNC1LNWJwX0IyVTRHb2x5Rm85YUNQNTlaeVlJb0o1Tm5tQ0hMNUIyOTRmcEhmSGloYXVqTHNFczdEWFpvenV4TnBJZUNGaDdOQ080SG1FS3FySTZLeDlKRzNqYWhtZjQ?oc=5",
+      "published_at": "2026-08-17T11:07:02+00:00",
+      "category": "GN: industrial robot",
+      "gn_label": "robotics",
+      "site_name": "GN: industrial robot",
+      "source": "GN: industrial robot",
+      "site_id": "GN: industrial robot",
+      "description": "China's industrial robot output up 28.5% in first seven months  CGTN Radio",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 22.73,
+      "writing_value": 0,
+      "total_score": 97.73
     },
     {
       "id": "c607b389619e68039ad817105ddbd87d5dc0d622",
@@ -126,51 +210,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.1,
+      "timeliness": 28.57,
       "writing_value": 0,
-      "total_score": 104.1
+      "total_score": 103.57
     },
     {
-      "id": "af7f34fccc55c68f00635dcd33dca099edf7f88b",
-      "title": "Industrial Robot Installations Hit Record Highs Amid Labor Shortage Crisis - The Globe and Mail",
-      "title_zh": "劳动力短缺危机中工业机器人安装量创历史新高 - 环球邮报",
-      "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPVlI2azluc09sUmlnc1VNc05Lc0FMTE9aUklCNzJfXzdzeFZRdm9qeTV3aktISXVQMzRsd2NlMU5KN3FvSGN0WVJoUW1VVWozS3FRYTJKWVBWVHMtX0o5Z2lFdHFwMGF2cnhweTBSeUNkR216eWZxbWtTSVd4OVI4Q0tVbWc4cHJDN2E0UFhBRFI3UURkc1dwcGRHUmF4c29Xc010dUs3UVhBTldsR0ZYNmE2QUJyaER2OHVMbzV1MWVmaWpreUtyeThDZTZJckVNaUhuTnpqMW9pZkl2Tl9TMHIwdS1qSEltNmtzM3Y4WUVpeW8?oc=5",
-      "published_at": "2026-08-17T13:59:47+00:00",
-      "category": "GN: industrial robot",
+      "id": "878018c79dc0c06b969f1ca6f7ccdd2a08e36d91",
+      "title": "宇树科技：8月19日上市 - thepaper.cn",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBQc3VkN1U5Z0xXSmpRbjQ0TGppQklBeUpNNFhMQnVqMDJfV05iekNtQXpkNFhQekxVVFNrNFhJdXdFcnRTRGlXWXQ1OU9zOVhGdXpwald6c01qZnZES0w3Rw?oc=5",
+      "published_at": "2026-08-17T12:18:00+00:00",
+      "category": "GN: 宇树科技",
       "gn_label": "robotics",
-      "site_name": "GN: industrial robot",
-      "source": "GN: industrial robot",
-      "site_id": "GN: industrial robot",
-      "description": "Industrial Robot Installations Hit Record Highs Amid Labor Shortage Crisis  The Globe and Mail",
+      "site_name": "GN: 宇树科技",
+      "source": "GN: 宇树科技",
+      "site_id": "GN: 宇树科技",
+      "description": "宇树科技：8月19日上市  thepaper.cn",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.13,
+      "timeliness": 23.91,
       "writing_value": 0,
-      "total_score": 101.13
-    },
-    {
-      "id": "7800e6aa6eea62717994d4dd57062f59f17d9638",
-      "title": "China's industrial robot output up 28.5% in first seven months - radio.cgtn.com",
-      "title_zh": "前7个月中国工业机器人产量增长28.5%",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxON3g4cElsY3M5VmlSOXEwY3d2UnUtaDd4WUwyRWt1TnVFNmRhQXVxenlaR2J5LWg3WFJvM3M4akMtTVdCdEZEZkdnNC1LNWJwX0IyVTRHb2x5Rm85YUNQNTlaeVlJb0o1Tm5tQ0hMNUIyOTRmcEhmSGloYXVqTHNFczdEWFpvenV4TnBJZUNGaDdOQ080SG1FS3FySTZLeDlKRzNqYWhtZjQ?oc=5",
-      "published_at": "2026-08-17T11:07:02+00:00",
-      "category": "GN: industrial robot",
-      "gn_label": "robotics",
-      "site_name": "GN: industrial robot",
-      "source": "GN: industrial robot",
-      "site_id": "GN: industrial robot",
-      "description": "China's industrial robot output up 28.5% in first seven months  radio.cgtn.com",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 23.25,
-      "writing_value": 0,
-      "total_score": 98.25
+      "total_score": 98.91
     },
     {
       "id": "9987ee90e19aef8375c33724cc3a33e5a80c6025",
@@ -189,9 +252,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.25,
+      "timeliness": 24.73,
       "writing_value": 0,
-      "total_score": 100.25
+      "total_score": 99.73
     },
     {
       "id": "7d86d716b377d949dc315f3fd1bb4319e2d38ad0",
@@ -210,9 +273,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.42,
+      "timeliness": 23.9,
       "writing_value": 0,
-      "total_score": 99.42
+      "total_score": 98.9
     },
     {
       "id": "b70fa08f0583dd7c696dc09f4da5644395697b91",
@@ -231,30 +294,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.61,
+      "timeliness": 24.09,
       "writing_value": 0,
-      "total_score": 99.61
-    },
-    {
-      "id": "9217bf9ea74135a500b02bdaa5179f790156a623",
-      "title": "宇树科技：8月19日上市 - chinanews.com.cn",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5CU0NIalNJbDBEakVIMTNhclRXSmpTZ3J1c1ZrMDliRlpoUlZFT3VJQ0d1Ry12SkhDblp3dEJFcy1hQmhGdEYxck80ZkU5Wkx4M3lvZkx0NHpjRlh4dVZvQWRCQzhvbTFs?oc=5",
-      "published_at": "2026-08-17T13:19:24+00:00",
-      "category": "GN: 宇树科技",
-      "gn_label": "robotics",
-      "site_name": "GN: 宇树科技",
-      "source": "GN: 宇树科技",
-      "site_id": "GN: 宇树科技",
-      "description": "宇树科技：8月19日上市  chinanews.com.cn",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 25.46,
-      "writing_value": 0,
-      "total_score": 100.46
+      "total_score": 99.09
     },
     {
       "id": "e8b242e6ea7d4f222269a8ae4db0b8aa154acc5e",
@@ -273,9 +315,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.49,
+      "timeliness": 23.97,
       "writing_value": 0,
-      "total_score": 99.49
+      "total_score": 98.97
     },
     {
       "id": "76838331827896ad992a05644c2eeb34508b2c5e",
@@ -294,9 +336,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.88,
+      "timeliness": 24.36,
       "writing_value": 0,
-      "total_score": 99.88
+      "total_score": 99.36
     },
     {
       "id": "12bf5295d5f057de4762d638f1d7085cd24001eb",
@@ -315,13 +357,13 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.41,
+      "timeliness": 23.89,
       "writing_value": 0,
-      "total_score": 99.41
+      "total_score": 98.89
     },
     {
-      "id": "126795e1cfb7126c51315a531d0463906dcbd5ff",
-      "title": "宇树科技8月19日科创板上市 发行价150.80元/股 总股本4.04亿股 - 观点网",
+      "id": "b25e4dee72de1793e845293b3e29740f19b5e96c",
+      "title": "宇树科技8月19日科创板上市 发行价150.80元/股 总股本4.04亿股 - guandian.cn",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9QNEZ1d1Nua2U1ZGJrZVhTMmF4bVFtR213ejVGdWtBT2xtQTNMNzB6XzVUTFdVU2JtOHVMbll5dDU0OC1NR1NhSU9Od3NCTWl4WVRaWkZBZU9NVm54VkpCc2JR?oc=5",
       "published_at": "2026-08-17T14:22:08+00:00",
@@ -330,15 +372,15 @@
       "site_name": "GN: 宇树科技",
       "source": "GN: 宇树科技",
       "site_id": "GN: 宇树科技",
-      "description": "宇树科技8月19日科创板上市 发行价150.80元/股 总股本4.04亿股  观点网",
+      "description": "宇树科技8月19日科创板上市 发行价150.80元/股 总股本4.04亿股  guandian.cn",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.51,
+      "timeliness": 25.98,
       "writing_value": 0,
-      "total_score": 101.51
+      "total_score": 100.98
     },
     {
       "id": "0689c2b99d9cca2bca2778fedd0b09520469753d",
@@ -357,9 +399,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.87,
+      "timeliness": 24.35,
       "writing_value": 0,
-      "total_score": 99.87
+      "total_score": 99.35
     },
     {
       "id": "6aa808fb518c61be41daf23a685648d0a8e5d9d5",
@@ -378,9 +420,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.64,
+      "timeliness": 24.11,
       "writing_value": 0,
-      "total_score": 99.64
+      "total_score": 99.11
     },
     {
       "id": "a48f27c98763e899c5fb8936c35d0df9c7732f10",
@@ -399,9 +441,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.93,
+      "timeliness": 26.41,
       "writing_value": 0,
-      "total_score": 101.93
+      "total_score": 101.41
     },
     {
       "id": "cf0ef5678f165081a6e0c4e037eb94a1114ee0f3",
@@ -420,9 +462,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.11,
+      "timeliness": 24.59,
       "writing_value": 0,
-      "total_score": 100.11
+      "total_score": 99.59
     },
     {
       "id": "a60a7b24ebfb0dd487139fddebbbe1f5db9ed431",
@@ -441,9 +483,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.36,
+      "timeliness": 25.83,
       "writing_value": 0,
-      "total_score": 101.36
+      "total_score": 100.83
     },
     {
       "id": "6f7e6d464c3c6818ded1fa99fec65d41612271ec",
@@ -462,9 +504,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.62,
+      "timeliness": 24.1,
       "writing_value": 0,
-      "total_score": 99.62
+      "total_score": 99.1
     },
     {
       "id": "047a8ecde7c6cb4bdeb504aa6ebc47b883fab898",
@@ -483,9 +525,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.16,
+      "timeliness": 24.64,
       "writing_value": 0,
-      "total_score": 100.16
+      "total_score": 99.64
     },
     {
       "id": "1c329022dcaab7eeeb2bbe33d0dd7d0ac1a147dc",
@@ -504,9 +546,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.6,
+      "timeliness": 26.08,
       "writing_value": 0,
-      "total_score": 101.6
+      "total_score": 101.08
     },
     {
       "id": "4432e6204a5d0c287931f15f09e468ec436483f9",
@@ -525,9 +567,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.4,
+      "timeliness": 26.88,
       "writing_value": 0,
-      "total_score": 102.4
+      "total_score": 101.88
     },
     {
       "id": "c602f23afd6765c24a25ace7599f9d450520c1ae",
@@ -546,9 +588,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 5,
-      "timeliness": 27.2,
+      "timeliness": 26.68,
       "writing_value": 5,
-      "total_score": 127.2
+      "total_score": 126.68
     }
   ],
   "fallback_used": false

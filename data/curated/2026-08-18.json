@@ -1,6 +1,6 @@
 {
   "date": "2026-08-18",
-  "generated_at": "2026-08-17T17:53:28.721334+00:00",
+  "generated_at": "2026-08-17T18:24:28.304027+00:00",
   "score_threshold": 80,
   "total_items": 50,
   "new_added": 1,
@@ -235,6 +235,27 @@
       "timeliness": 28.99,
       "writing_value": 0,
       "total_score": 118.99
+    },
+    {
+      "id": "5ed705ac90c72f14",
+      "title": "DARPA 'Firefox' To Advance Brain-Computer Interface Speed, Scale & Performance - sociable.co",
+      "title_zh": "DARPA“Firefox”将提升脑机接口速度、规模和性能 - sociable.co",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPSjA4RzNWQ3l1MHlHaTlEWWhrMHV5Y0MwV3pvYnVKRE5xUTdXTldCb09XeE8zRDc4QnAwbDI4RUtTT245TGNwR2hMYlIyUmVLbnZFODFlLXllTzlrenZkNkRrX0Itb19IWl9xZjBFSDRuLXhWLUFFcy05M18wTGlmRE1USm5YRFRnYUlMcF9SRm1LWVhobU11cjdNekhMNUZuTTA4dWt4QTRDSEF4a2dUaw?oc=5",
+      "published_at": "2026-08-17T17:11:05+00:00",
+      "category": "国外脑机接口资讯",
+      "gn_label": "brain_computer",
+      "site_name": "国外脑机接口资讯",
+      "source": "国外脑机接口资讯",
+      "site_id": "国外脑机接口资讯",
+      "description": "DARPA 'Firefox' To Advance Brain-Computer Interface Speed, Scale & Performance  sociable.co",
+      "ai_score": 80.0,
+      "ai_label": "brain_computer",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 28.8,
+      "writing_value": 0,
+      "total_score": 118.8
     },
     {
       "id": "c73efd354b056268",
@@ -1033,27 +1054,6 @@
       "timeliness": 25.24,
       "writing_value": 0,
       "total_score": 115.24
-    },
-    {
-      "id": "877bb4a6becc5cf9",
-      "title": "第二届世界人形机器人运动会线缆连接预赛完赛 14支队伍进入决赛 - 川观新闻",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE44cWliVFJrdV9IdXo5eUFvWlZnNURlVENncjFmYzVVUEI4dEoxblRFWmZXSWFqaFlFS2dmNTlUdk03OGpDXzJYcmNIa0Ezdw?oc=5",
-      "published_at": "2026-08-17T11:31:00+00:00",
-      "category": "国内人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国内人形机器人资讯",
-      "source": "国内人形机器人资讯",
-      "site_id": "国内人形机器人资讯",
-      "description": "第二届世界人形机器人运动会线缆连接预赛完赛 14支队伍进入决赛  川观新闻",
-      "ai_score": 80.0,
-      "ai_label": "humanoid",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 25.21,
-      "writing_value": 0,
-      "total_score": 115.21
     }
   ]
 }
