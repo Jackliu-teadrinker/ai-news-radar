@@ -1355,6 +1355,8 @@ initGovSection();
 const ANCHOR_SOURCES = [
   'TechCrunch Robotics', 'VentureBeat AI', 'IEEE Spectrum', 'IEEE Brain',
   'HuggingFace Blog', '量子位', '极链AI', 'Wired', '雷锋网', 'TechXplore Robotics',
+  'CNBC AI Age', 'MIT Tech Review', 'Nature Neuroscience', 'Nature',
+  'GN: Robot Report', 'GN: BCI Intel', 'GN: MIT Tech Review',
   'GN: 人形机器人', 'GN: 具身智能', 'GN: 机器人',
   'GN: Physical AI', 'GN: 人形机器人 (中文)', 'GN: 具身智能 (中文)',
   'GN: 机器人 (中文)', 'GN: 物理AI (中文)',
