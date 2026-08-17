@@ -1,30 +1,9 @@
 {
-  "generated_at": "2026-08-17T19:48:23.774111+00:00",
+  "generated_at": "2026-08-17T20:15:24.599124+00:00",
   "window_start": "2026-08-17T19:00:00+08:00",
-  "window_end": "2026-08-18T03:48:22.623341+08:00",
-  "total_items": 30,
+  "window_end": "2026-08-18T04:15:22.659516+08:00",
+  "total_items": 31,
   "items": [
-    {
-      "id": "bbe8419e4868602d938c7a4560615f23d3cb2146",
-      "title": "The Download: dead robot friends and the “censorship-industrial complex”",
-      "title_zh": "下载：死去的机器人朋友和“审查工业联合体”",
-      "url": "https://www.technologyreview.com/2026/08/17/1142175/the-download-dead-robot-friends-censorship-industrial-complex/",
-      "published_at": "2026-08-17T12:10:00+00:00",
-      "category": "MIT Tech Review",
-      "gn_label": "robotics",
-      "site_name": "MIT Tech Review",
-      "source": "MIT Tech Review",
-      "site_id": "MIT Tech Review",
-      "description": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. What happens when a kid’s robot best friend dies? When Xander first met Moxie, she taught him how to calm down when he was anxious or mad. Six years later, she…",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 5,
-      "timeliness": 22.36,
-      "writing_value": 5,
-      "total_score": 107.36
-    },
     {
       "id": "1846eb528de56c466e5e19c14eea3a8c863766da",
       "title": "Is Shipyard Welding the Right First Job for Humanoid Robots?",
@@ -42,9 +21,30 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 5,
-      "timeliness": 25.76,
+      "timeliness": 25.31,
       "writing_value": 5,
-      "total_score": 125.76
+      "total_score": 125.31
+    },
+    {
+      "id": "bbe8419e4868602d938c7a4560615f23d3cb2146",
+      "title": "The Download: dead robot friends and the “censorship-industrial complex”",
+      "title_zh": "下载：死去的机器人朋友和“审查工业联合体”",
+      "url": "https://www.technologyreview.com/2026/08/17/1142175/the-download-dead-robot-friends-censorship-industrial-complex/",
+      "published_at": "2026-08-17T12:10:00+00:00",
+      "category": "MIT Tech Review",
+      "gn_label": "robotics",
+      "site_name": "MIT Tech Review",
+      "source": "MIT Tech Review",
+      "site_id": "MIT Tech Review",
+      "description": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. What happens when a kid’s robot best friend dies? When Xander first met Moxie, she taught him how to calm down when he was anxious or mad. Six years later, she…",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 21.91,
+      "writing_value": 5,
+      "total_score": 106.91
     },
     {
       "id": "9ea57a392c5145d3927d6060f87d937eb681af5e",
@@ -63,9 +63,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 25.85,
+      "timeliness": 25.4,
       "writing_value": 5,
-      "total_score": 110.85
+      "total_score": 110.4
     },
     {
       "id": "884e82de1d3160dea69cb03c0317ca11ea111277",
@@ -84,9 +84,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.54,
+      "timeliness": 26.09,
       "writing_value": 0,
-      "total_score": 101.54
+      "total_score": 101.09
     },
     {
       "id": "60ac0bd9d8c404ec9047c21c5ff94b3d46e56c89",
@@ -105,9 +105,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 22.56,
+      "timeliness": 22.11,
       "writing_value": 0,
-      "total_score": 97.56
+      "total_score": 97.11
     },
     {
       "id": "5b49756848f8a8374ee15cc9b0fcbe12d922affa",
@@ -126,51 +126,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.49,
+      "timeliness": 23.04,
       "writing_value": 0,
-      "total_score": 98.49
-    },
-    {
-      "id": "d182eeb003d39dca3d225f932ea3c3505f446c99",
-      "title": "J&J’s robotics and digital R&D head offers advice for device developers - Medical Design & Outsourcing",
-      "title_zh": "强生的机器人和数字研发主管为设备开发商提供建议 - 医疗设计和外包",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPcFQ5OUV0YmpSSXRsX2dSbTJkNWV1WEFLallHZXBSQVRMeFNvcGhZemxOOWhwamU1eUpZYjdQQXd2c295ZnZ6YW5qekVtTS00STVzTmlfRUJuRlRhWlZiN3pfYVEzVndrTzU0aUR6SHlSb2RFUGFBYl9Pam9VcG1ubFlMcHNhaUtORWtVblRhTWQzejhRWEE5REZB?oc=5",
-      "published_at": "2026-08-17T19:43:39+00:00",
-      "category": "GN: surgical robot",
-      "gn_label": "robotics",
-      "site_name": "GN: surgical robot",
-      "source": "GN: surgical robot",
-      "site_id": "GN: surgical robot",
-      "description": "J&J’s robotics and digital R&D head offers advice for device developers  Medical Design & Outsourcing",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 5,
-      "timeliness": 29.92,
-      "writing_value": 5,
-      "total_score": 114.92
-    },
-    {
-      "id": "c6e7684774f9caedce97f9ea37548c8055f9eb5e",
-      "title": "Surgical Robot Financing Plummets 70%: After the Capital Retreat, Who Survives on Surgical Volume? - finance.biggo.com",
-      "title_zh": "手术机器人融资暴跌70%：资本撤退后，谁靠手术量生存？ - 金融.biggo.com",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE01VW9EaEdtNUNtdl9zbW5uSV9mNzRqZ1R4V3NEcThsTlZqT2E3blBrV3ZYdGRVRjhOY3FvUjRZcW40Mmw3aU9sXzNOUU5jQjRnVHdtUUllZUtkbUVtTGJsVFBtVF9PNzZaaVlZUHpWT0k1djk5S1E?oc=5",
-      "published_at": "2026-08-17T11:35:00+00:00",
-      "category": "GN: surgical robot",
-      "gn_label": "robotics",
-      "site_name": "GN: surgical robot",
-      "source": "GN: surgical robot",
-      "site_id": "GN: surgical robot",
-      "description": "Surgical Robot Financing Plummets 70%: After the Capital Retreat, Who Survives on Surgical Volume?  finance.biggo.com",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 5,
-      "timeliness": 21.78,
-      "writing_value": 5,
-      "total_score": 106.78
+      "total_score": 98.04
     },
     {
       "id": "fac859ef4689b80f8737b138137327fc29f1015e",
@@ -189,9 +147,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 5,
-      "timeliness": 21.37,
+      "timeliness": 20.92,
       "writing_value": 5,
-      "total_score": 121.37
+      "total_score": 120.92
     },
     {
       "id": "db2f947ae78149e6b3402c32de0415a037c77aac",
@@ -210,9 +168,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.53,
+      "timeliness": 28.08,
       "writing_value": 0,
-      "total_score": 103.53
+      "total_score": 103.08
     },
     {
       "id": "0ec1b68a68fbaa48201899c0d65874fcc63c644e",
@@ -231,9 +189,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.69,
+      "timeliness": 29.24,
       "writing_value": 0,
-      "total_score": 104.69
+      "total_score": 104.24
+    },
+    {
+      "id": "defbc9104c8b0d5c6c26b149b1e2bc38e655fe23",
+      "title": "Robotic Bin-Picking Systems Market Size & Forecast 2036 - Fact.MR",
+      "title_zh": "机器人垃圾箱拣选系统市场规模及 2036 年预测 - Fact.MR",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE85bHk4MHBCSEFxSjBVWW5mRUktTDFiTjRSbC1DMFZreE5GUXhKSUlFUWNmZS1SeE1OWjRJclJMeVdTdExCaWIwd1BRMkUxaE1BM2R4TEk1M0VOdUQyREU3ZU4tckZrNVpaRm5FUG5RWFZXZw?oc=5",
+      "published_at": "2026-08-17T11:13:10+00:00",
+      "category": "GN: industrial robot",
+      "gn_label": "robotics",
+      "site_name": "GN: industrial robot",
+      "source": "GN: industrial robot",
+      "site_id": "GN: industrial robot",
+      "description": "Robotic Bin-Picking Systems Market Size & Forecast 2036  Fact.MR",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 20.96,
+      "writing_value": 0,
+      "total_score": 95.96
     },
     {
       "id": "d2ec7dec44368319b977961e0a7bf85b0836c8c7",
@@ -252,9 +231,72 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 21.31,
+      "timeliness": 20.86,
       "writing_value": 0,
-      "total_score": 96.31
+      "total_score": 95.86
+    },
+    {
+      "id": "63c7e345587c37f89ecfd9e3e5210be0c5bfe244",
+      "title": "First robotic-assisted surgery performed at Lake Region Healthcare in Fergus Falls - Fergus Falls Daily Journal",
+      "title_zh": "弗格斯福尔斯 Lake Region Healthcare 进行了首例机器人辅助手术 - Fergus Falls Daily Journal",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNNUY3R2Q0M29EaWtleE1WTGw5UHNjdDloSW0xaTJSRkxGSmxGYmhkXzBEQlhWbGRZdmxSeDlFMEs5TXNvVnk2M2Z5NHp3ZjE3eU5tUHNfblJUZ1Rwb2w4V0Y4ZGlCOHFtVFlhME1WeklxZlhOQnRXTUM1VUZPN2FBbXFOVkMxa3M3U2NCTzFRYzl2QTdDRUtuOGRpOC1uZTdQeGNoZWVPbnU5TFEzb281a0NHUnNIcExUVzhhRV9EemFmLUFoRGpJ?oc=5",
+      "published_at": "2026-08-17T20:01:37+00:00",
+      "category": "GN: surgical robot",
+      "gn_label": "robotics",
+      "site_name": "GN: surgical robot",
+      "source": "GN: surgical robot",
+      "site_id": "GN: surgical robot",
+      "description": "First robotic-assisted surgery performed at Lake Region Healthcare in Fergus Falls  Fergus Falls Daily Journal",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 29.77,
+      "writing_value": 5,
+      "total_score": 114.77
+    },
+    {
+      "id": "d182eeb003d39dca3d225f932ea3c3505f446c99",
+      "title": "J&J’s robotics and digital R&D head offers advice for device developers - Medical Design & Outsourcing",
+      "title_zh": "强生的机器人和数字研发主管为设备开发商提供建议 - 医疗设计和外包",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPcFQ5OUV0YmpSSXRsX2dSbTJkNWV1WEFLallHZXBSQVRMeFNvcGhZemxOOWhwamU1eUpZYjdQQXd2c295ZnZ6YW5qekVtTS00STVzTmlfRUJuRlRhWlZiN3pfYVEzVndrTzU0aUR6SHlSb2RFUGFBYl9Pam9VcG1ubFlMcHNhaUtORWtVblRhTWQzejhRWEE5REZB?oc=5",
+      "published_at": "2026-08-17T19:43:39+00:00",
+      "category": "GN: surgical robot",
+      "gn_label": "robotics",
+      "site_name": "GN: surgical robot",
+      "source": "GN: surgical robot",
+      "site_id": "GN: surgical robot",
+      "description": "J&J’s robotics and digital R&D head offers advice for device developers  Medical Design & Outsourcing",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 29.47,
+      "writing_value": 5,
+      "total_score": 114.47
+    },
+    {
+      "id": "c6e7684774f9caedce97f9ea37548c8055f9eb5e",
+      "title": "Surgical Robot Financing Plummets 70%: After the Capital Retreat, Who Survives on Surgical Volume? - finance.biggo.com",
+      "title_zh": "手术机器人融资暴跌70%：资本撤退后，谁靠手术量生存？ - 金融.biggo.com",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE01VW9EaEdtNUNtdl9zbW5uSV9mNzRqZ1R4V3NEcThsTlZqT2E3blBrV3ZYdGRVRjhOY3FvUjRZcW40Mmw3aU9sXzNOUU5jQjRnVHdtUUllZUtkbUVtTGJsVFBtVF9PNzZaaVlZUHpWT0k1djk5S1E?oc=5",
+      "published_at": "2026-08-17T11:35:00+00:00",
+      "category": "GN: surgical robot",
+      "gn_label": "robotics",
+      "site_name": "GN: surgical robot",
+      "source": "GN: surgical robot",
+      "site_id": "GN: surgical robot",
+      "description": "Surgical Robot Financing Plummets 70%: After the Capital Retreat, Who Survives on Surgical Volume?  finance.biggo.com",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 21.33,
+      "writing_value": 5,
+      "total_score": 106.33
     },
     {
       "id": "dfa2ac14fabaf6924e9069b410e7aa2fc9ff39ab",
@@ -273,9 +315,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 22.54,
+      "timeliness": 22.09,
       "writing_value": 0,
-      "total_score": 97.54
+      "total_score": 97.09
     },
     {
       "id": "9217bf9ea74135a500b02bdaa5179f790156a623",
@@ -294,9 +336,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.52,
+      "timeliness": 23.07,
       "writing_value": 0,
-      "total_score": 98.52
+      "total_score": 98.07
     },
     {
       "id": "5b962d3f650c175710d5e4cca7f21a7779aa02d1",
@@ -315,9 +357,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.08,
+      "timeliness": 22.63,
       "writing_value": 0,
-      "total_score": 98.08
+      "total_score": 97.63
     },
     {
       "id": "7d86d716b377d949dc315f3fd1bb4319e2d38ad0",
@@ -336,9 +378,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 22.48,
+      "timeliness": 22.03,
       "writing_value": 0,
-      "total_score": 97.48
+      "total_score": 97.03
     },
     {
       "id": "b70fa08f0583dd7c696dc09f4da5644395697b91",
@@ -357,9 +399,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 22.64,
+      "timeliness": 22.19,
       "writing_value": 0,
-      "total_score": 97.64
+      "total_score": 97.19
     },
     {
       "id": "76838331827896ad992a05644c2eeb34508b2c5e",
@@ -378,9 +420,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 22.94,
+      "timeliness": 22.49,
       "writing_value": 0,
-      "total_score": 97.94
+      "total_score": 97.49
     },
     {
       "id": "9987ee90e19aef8375c33724cc3a33e5a80c6025",
@@ -399,9 +441,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.31,
+      "timeliness": 22.86,
       "writing_value": 0,
-      "total_score": 98.31
+      "total_score": 97.86
     },
     {
       "id": "f5a710f0f4a13dd2e335dd1b1bb9de1ddc379daf",
@@ -420,9 +462,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.54,
+      "timeliness": 23.09,
       "writing_value": 0,
-      "total_score": 98.54
+      "total_score": 98.09
     },
     {
       "id": "a890b8bd4e232a8cfcbed7b9b1eb6874366c95d4",
@@ -441,9 +483,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.06,
+      "timeliness": 28.61,
       "writing_value": 0,
-      "total_score": 104.06
+      "total_score": 103.61
     },
     {
       "id": "126795e1cfb7126c51315a531d0463906dcbd5ff",
@@ -462,30 +504,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.56,
+      "timeliness": 24.11,
       "writing_value": 0,
-      "total_score": 99.56
-    },
-    {
-      "id": "12bf5295d5f057de4762d638f1d7085cd24001eb",
-      "title": "宇树科技，8月19日上市 - 凤凰网",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE82dVNoX1oxS1ZrSE9BSWl6WEVIUU0yQU1sbDdncHd2dms2dW1nUFY0N2U2LXZ2eEZnVW1XTngzYUx4QVY4R2lhTFl4eEVUa1RZ?oc=5",
-      "published_at": "2026-08-17T12:16:38+00:00",
-      "category": "GN: 宇树科技",
-      "gn_label": "robotics",
-      "site_name": "GN: 宇树科技",
-      "source": "GN: 宇树科技",
-      "site_id": "GN: 宇树科技",
-      "description": "宇树科技，8月19日上市  凤凰网",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 22.47,
-      "writing_value": 0,
-      "total_score": 97.47
+      "total_score": 99.11
     },
     {
       "id": "a60a7b24ebfb0dd487139fddebbbe1f5db9ed431",
@@ -504,9 +525,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.41,
+      "timeliness": 23.96,
       "writing_value": 0,
-      "total_score": 99.41
+      "total_score": 98.96
+    },
+    {
+      "id": "12bf5295d5f057de4762d638f1d7085cd24001eb",
+      "title": "宇树科技，8月19日上市 - 凤凰网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE82dVNoX1oxS1ZrSE9BSWl6WEVIUU0yQU1sbDdncHd2dms2dW1nUFY0N2U2LXZ2eEZnVW1XTngzYUx4QVY4R2lhTFl4eEVUa1RZ?oc=5",
+      "published_at": "2026-08-17T12:16:38+00:00",
+      "category": "GN: 宇树科技",
+      "gn_label": "robotics",
+      "site_name": "GN: 宇树科技",
+      "source": "GN: 宇树科技",
+      "site_id": "GN: 宇树科技",
+      "description": "宇树科技，8月19日上市  凤凰网",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 22.02,
+      "writing_value": 0,
+      "total_score": 97.02
     },
     {
       "id": "0ba9aad11e93456b5ec7c1b6397a9dee08ccf76c",
@@ -525,13 +567,13 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 22.63,
+      "timeliness": 22.18,
       "writing_value": 0,
-      "total_score": 97.63
+      "total_score": 97.18
     },
     {
-      "id": "6aa808fb518c61be41daf23a685648d0a8e5d9d5",
-      "title": "热点丨宇树科技600亿估值落地，高自研率下国产供应链受益分羹 - 电子工程专辑",
+      "id": "0a229e319479a7e1a9448a160a4226fff895739e",
+      "title": "热点丨宇树科技600亿估值落地，高自研率下国产供应链受益分羹 - eet-china.com",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1sZWhMb0dBMFVuZFIxbzBtbElidl96MDk1cUMwWlFBVXhLTHp5ZGpVSlhSWmhkTTR3RnNrWlJuZjlnOHh6WFVBOS1IdlpjRnd0WGs4?oc=5",
       "published_at": "2026-08-17T12:30:00+00:00",
@@ -540,15 +582,15 @@
       "site_name": "GN: 宇树科技",
       "source": "GN: 宇树科技",
       "site_id": "GN: 宇树科技",
-      "description": "热点丨宇树科技600亿估值落地，高自研率下国产供应链受益分羹  电子工程专辑",
+      "description": "热点丨宇树科技600亿估值落地，高自研率下国产供应链受益分羹  eet-china.com",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 22.69,
+      "timeliness": 22.24,
       "writing_value": 0,
-      "total_score": 97.69
+      "total_score": 97.24
     },
     {
       "id": "a48f27c98763e899c5fb8936c35d0df9c7732f10",
@@ -567,9 +609,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.99,
+      "timeliness": 24.54,
       "writing_value": 0,
-      "total_score": 99.99
+      "total_score": 99.54
     },
     {
       "id": "cf0ef5678f165081a6e0c4e037eb94a1114ee0f3",
@@ -588,9 +630,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.17,
+      "timeliness": 22.72,
       "writing_value": 0,
-      "total_score": 98.17
+      "total_score": 97.72
     },
     {
       "id": "537653dee2188a3c1369c3158f7796584f95adf5",
@@ -609,30 +651,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.22,
+      "timeliness": 22.77,
       "writing_value": 0,
-      "total_score": 98.22
-    },
-    {
-      "id": "c602f23afd6765c24a25ace7599f9d450520c1ae",
-      "title": "【银河通用IPO前夜高层突发大换血！宇树“伯乐”尹方鸣上位】2026年8月，宇树科技完成科创板申购，发行后总市值锁定609.9亿元，“人形机器人第一股”呼之欲出。聚光灯之外，市场的目光已投向下一张入场券的归属。智元机器人、云深处、乐聚智能、智平方、自变量等头 - 新浪网",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE0xM1pwWUgtUWhuS1lEZHl0VGJyamJhaWQwRndIVlpFUi15b1J4My05ZnNfT2hIYUI5Tm9LZmhhRkJTcmZ0ZkNNQ04xdUFxOFR4eEJEdTA3bGdQYXFWbG9sMlZMQQ?oc=5",
-      "published_at": "2026-08-17T15:04:00+00:00",
-      "category": "GN: 智元机器人",
-      "gn_label": "robotics",
-      "site_name": "GN: 智元机器人",
-      "source": "GN: 智元机器人",
-      "site_id": "GN: 智元机器人",
-      "description": "【银河通用IPO前夜高层突发大换血！宇树“伯乐”尹方鸣上位】2026年8月，宇树科技完成科创板申购，发行后总市值锁定609.9亿元，“人形机器人第一股”呼之欲出。聚光灯之外，市场的目光已投向下一张入场券的归属。智元机器人、云深处、乐聚智能、智平方、自变量等头  新浪网",
-      "ai_score": 80.0,
-      "ai_label": "robotics",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 5,
-      "timeliness": 25.26,
-      "writing_value": 5,
-      "total_score": 125.26
+      "total_score": 97.77
     }
   ],
   "fallback_used": false
