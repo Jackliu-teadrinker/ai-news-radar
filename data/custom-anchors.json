@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-17T14:27:36.799785+00:00",
+  "generated_at": "2026-08-17T14:54:12.332207+00:00",
   "window_start": "2026-08-17T19:00:00+08:00",
-  "window_end": "2026-08-17T22:27:35.857479+08:00",
-  "total_items": 18,
+  "window_end": "2026-08-17T22:54:11.210630+08:00",
+  "total_items": 24,
   "items": [
     {
       "id": "bbe8419e4868602d938c7a4560615f23d3cb2146",
@@ -21,30 +21,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 27.72,
+      "timeliness": 27.27,
       "writing_value": 5,
-      "total_score": 112.72
-    },
-    {
-      "id": "fac859ef4689b80f8737b138137327fc29f1015e",
-      "title": "撕开清洁机器人新蓝海！38厘米机身普渡ET1 交出具身智能商用新答卷",
-      "title_zh": "",
-      "url": "https://zhidx.com/p/585603.html",
-      "published_at": "2026-08-17T11:10:41+00:00",
-      "category": "极链AI",
-      "gn_label": "robotics",
-      "site_name": "极链AI",
-      "source": "极链AI",
-      "site_id": "极链AI",
-      "description": "智东西\n作者 | 王涵\n编辑 | 漠影\n还有两天，8月19日，2026世界机器人大会将在北京亦庄正式开幕。\n本届大会的主题定为“产需共融”，背后传递出一个十分现实的行业信号：机器人行业的比拼，已经不再单纯看纸面技术参数有多亮眼，而是要看产品能不能真正拿到市场订单。\n所谓“产需共融”，其实就是供给端造得出，需求端愿意买。顺着这个思路看，小型商用清洁机器人，大概率会成为今年机器人行业被高频探讨的典型案例。\n为什么这么说？因为这类场景的清洁需求一直客观存在，但始终没有得到很好的解决。\n随便走进一家便利店或者社区超市，地面清洁大多是店员顺带完成的兼职工作。拿拖把蘸水拖地，地上容易留下大片水渍；刚拖完，",
-      "ai_score": 80.0,
-      "ai_label": "robotics",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 5,
-      "timeliness": 26.73,
-      "writing_value": 5,
-      "total_score": 126.73
+      "total_score": 112.27
     },
     {
       "id": "9ea57a392c5145d3927d6060f87d937eb681af5e",
@@ -63,9 +42,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 28.26,
+      "timeliness": 27.82,
       "writing_value": 5,
-      "total_score": 113.26
+      "total_score": 112.82
     },
     {
       "id": "60ac0bd9d8c404ec9047c21c5ff94b3d46e56c89",
@@ -84,9 +63,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.92,
+      "timeliness": 27.47,
       "writing_value": 0,
-      "total_score": 102.92
+      "total_score": 102.47
     },
     {
       "id": "5b49756848f8a8374ee15cc9b0fcbe12d922affa",
@@ -105,9 +84,93 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.84,
+      "timeliness": 28.4,
       "writing_value": 0,
-      "total_score": 103.84
+      "total_score": 103.4
+    },
+    {
+      "id": "fac859ef4689b80f8737b138137327fc29f1015e",
+      "title": "撕开清洁机器人新蓝海！38厘米机身普渡ET1 交出具身智能商用新答卷",
+      "title_zh": "",
+      "url": "https://zhidx.com/p/585603.html",
+      "published_at": "2026-08-17T11:10:41+00:00",
+      "category": "极链AI",
+      "gn_label": "robotics",
+      "site_name": "极链AI",
+      "source": "极链AI",
+      "site_id": "极链AI",
+      "description": "智东西\n作者 | 王涵\n编辑 | 漠影\n还有两天，8月19日，2026世界机器人大会将在北京亦庄正式开幕。\n本届大会的主题定为“产需共融”，背后传递出一个十分现实的行业信号：机器人行业的比拼，已经不再单纯看纸面技术参数有多亮眼，而是要看产品能不能真正拿到市场订单。\n所谓“产需共融”，其实就是供给端造得出，需求端愿意买。顺着这个思路看，小型商用清洁机器人，大概率会成为今年机器人行业被高频探讨的典型案例。\n为什么这么说？因为这类场景的清洁需求一直客观存在，但始终没有得到很好的解决。\n随便走进一家便利店或者社区超市，地面清洁大多是店员顺带完成的兼职工作。拿拖把蘸水拖地，地上容易留下大片水渍；刚拖完，",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 26.28,
+      "writing_value": 5,
+      "total_score": 126.28
+    },
+    {
+      "id": "587fd1ec46fbf33eb2ab2b61360d408e03de307b",
+      "title": "宇树造出“超人”:原地起跳达2米，超人类世界纪录 - 新浪网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBFQjR6Z0ctd0hJcmFlQldGYl9hamhITzBOYjBnWk5lOVJ4RV9DTEZQWWNfOTY2bDFJM0lwajJwTFNULU5MY1N3RTI2emdEaGtWU2RUa3U5U2tvaGZ5Rkx6OGNwaWk5ZlhYSEh4bzdKT1EzWF9qWmJKeQ?oc=5",
+      "published_at": "2026-08-17T11:38:00+00:00",
+      "category": "GN: 人形机器人",
+      "gn_label": "humanoid",
+      "site_name": "GN: 人形机器人",
+      "source": "GN: 人形机器人",
+      "site_id": "GN: 人形机器人",
+      "description": "宇树造出“超人”:原地起跳达2米，超人类世界纪录  新浪网",
+      "ai_score": 65.0,
+      "ai_label": "humanoid",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 26.74,
+      "writing_value": 0,
+      "total_score": 101.74
+    },
+    {
+      "id": "d2ec7dec44368319b977961e0a7bf85b0836c8c7",
+      "title": "China's industrial robot output up 28.5% in first seven months - CGTN Radio",
+      "title_zh": "前7个月中国工业机器人产量增长28.5% - 中国国际广播电台",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxON3g4cElsY3M5VmlSOXEwY3d2UnUtaDd4WUwyRWt1TnVFNmRhQXVxenlaR2J5LWg3WFJvM3M4akMtTVdCdEZEZkdnNC1LNWJwX0IyVTRHb2x5Rm85YUNQNTlaeVlJb0o1Tm5tQ0hMNUIyOTRmcEhmSGloYXVqTHNFczdEWFpvenV4TnBJZUNGaDdOQ080SG1FS3FySTZLeDlKRzNqYWhtZjQ?oc=5",
+      "published_at": "2026-08-17T11:07:02+00:00",
+      "category": "GN: industrial robot",
+      "gn_label": "robotics",
+      "site_name": "GN: industrial robot",
+      "source": "GN: industrial robot",
+      "site_id": "GN: industrial robot",
+      "description": "China's industrial robot output up 28.5% in first seven months  CGTN Radio",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 26.22,
+      "writing_value": 0,
+      "total_score": 101.22
+    },
+    {
+      "id": "d05e6d3659a88b7689dadf7429ccfa5aa22f0509",
+      "title": "第二届世界人形机器人运动会线缆连接预赛完赛，14支队伍进入决赛 - 凤凰网科技",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFAxMElEOWNSSVNtcklqLS1RZUtQalpmaF9NclhIcXI5UDlYX1FreEo4MUowSTdja3ZRZE9iUGt1ZGZ4STlTTHlCQ3pZUU8?oc=5",
+      "published_at": "2026-08-17T13:43:27+00:00",
+      "category": "GN: 机器人",
+      "gn_label": "robotics",
+      "site_name": "GN: 机器人",
+      "source": "GN: 机器人",
+      "site_id": "GN: 机器人",
+      "description": "第二届世界人形机器人运动会线缆连接预赛完赛，14支队伍进入决赛  凤凰网科技",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 28.83,
+      "writing_value": 0,
+      "total_score": 118.83
     },
     {
       "id": "7d86d716b377d949dc315f3fd1bb4319e2d38ad0",
@@ -126,9 +189,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.83,
+      "timeliness": 27.39,
       "writing_value": 0,
-      "total_score": 102.83
+      "total_score": 102.39
     },
     {
       "id": "b70fa08f0583dd7c696dc09f4da5644395697b91",
@@ -147,9 +210,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.03,
+      "timeliness": 27.58,
       "writing_value": 0,
-      "total_score": 103.03
+      "total_score": 102.58
     },
     {
       "id": "9217bf9ea74135a500b02bdaa5179f790156a623",
@@ -168,9 +231,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.87,
+      "timeliness": 28.43,
       "writing_value": 0,
-      "total_score": 103.87
+      "total_score": 103.43
     },
     {
       "id": "76838331827896ad992a05644c2eeb34508b2c5e",
@@ -189,9 +252,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.29,
+      "timeliness": 27.85,
       "writing_value": 0,
-      "total_score": 103.29
+      "total_score": 102.85
     },
     {
       "id": "e8b242e6ea7d4f222269a8ae4db0b8aa154acc5e",
@@ -210,9 +273,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.88,
+      "timeliness": 27.44,
       "writing_value": 0,
-      "total_score": 102.88
+      "total_score": 102.44
+    },
+    {
+      "id": "126795e1cfb7126c51315a531d0463906dcbd5ff",
+      "title": "宇树科技8月19日科创板上市 发行价150.80元/股 总股本4.04亿股 - 观点网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9QNEZ1d1Nua2U1ZGJrZVhTMmF4bVFtR213ejVGdWtBT2xtQTNMNzB6XzVUTFdVU2JtOHVMbll5dDU0OC1NR1NhSU9Od3NCTWl4WVRaWkZBZU9NVm54VkpCc2JR?oc=5",
+      "published_at": "2026-08-17T14:22:08+00:00",
+      "category": "GN: 宇树科技",
+      "gn_label": "robotics",
+      "site_name": "GN: 宇树科技",
+      "source": "GN: 宇树科技",
+      "site_id": "GN: 宇树科技",
+      "description": "宇树科技8月19日科创板上市 发行价150.80元/股 总股本4.04亿股  观点网",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.47,
+      "writing_value": 0,
+      "total_score": 104.47
     },
     {
       "id": "0689c2b99d9cca2bca2778fedd0b09520469753d",
@@ -231,9 +315,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.28,
+      "timeliness": 27.84,
       "writing_value": 0,
-      "total_score": 103.28
+      "total_score": 102.84
     },
     {
       "id": "6aa808fb518c61be41daf23a685648d0a8e5d9d5",
@@ -252,9 +336,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.05,
+      "timeliness": 27.61,
       "writing_value": 0,
-      "total_score": 103.05
+      "total_score": 102.61
+    },
+    {
+      "id": "a48f27c98763e899c5fb8936c35d0df9c7732f10",
+      "title": "宇树科技本周三于上海科创板上市 - gbcode.rthk.hk",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQRmtVd292V1hvNVVOR0lOSGVSbk85RWIyZmZ0TDV0eV9wTGxpSmd2czRmOGRseEpPSU1lblBXaGZnQnc4ZHp3OFF0dE5WQmJiRE03dTc3bEMyNmZzUWRyUDBwZ0hGamZrR25BWkNvc2FJNWF1dkMya3NXLVlLeDBMQ0dPdEtsbUJBZUVMQjQwUHNCZXhIeDBLUGNicjNkWTFaODhz?oc=5",
+      "published_at": "2026-08-17T14:47:34+00:00",
+      "category": "GN: 宇树科技",
+      "gn_label": "robotics",
+      "site_name": "GN: 宇树科技",
+      "source": "GN: 宇树科技",
+      "site_id": "GN: 宇树科技",
+      "description": "宇树科技本周三于上海科创板上市  gbcode.rthk.hk",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.9,
+      "writing_value": 0,
+      "total_score": 104.9
     },
     {
       "id": "047a8ecde7c6cb4bdeb504aa6ebc47b883fab898",
@@ -273,30 +378,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.57,
+      "timeliness": 28.13,
       "writing_value": 0,
-      "total_score": 103.57
-    },
-    {
-      "id": "a60a7b24ebfb0dd487139fddebbbe1f5db9ed431",
-      "title": "宇树科技：8月19日上市 - Jiemian.com",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE12UFhPSEU5V1dsYTdTNUFySWVmVWNncTlGOWxoS283ME5jcEtuTDNfSTB6aHMyZ0JXZWVpUFJscnRvY0hjLWVJTlJ5Zm5rMEk3RUdwNmVERFBvaDNlem9XUA?oc=5",
-      "published_at": "2026-08-17T14:13:12+00:00",
-      "category": "GN: 宇树科技",
-      "gn_label": "robotics",
-      "site_name": "GN: 宇树科技",
-      "source": "GN: 宇树科技",
-      "site_id": "GN: 宇树科技",
-      "description": "宇树科技：8月19日上市  Jiemian.com",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 29.77,
-      "writing_value": 0,
-      "total_score": 104.77
+      "total_score": 103.13
     },
     {
       "id": "6f7e6d464c3c6818ded1fa99fec65d41612271ec",
@@ -315,9 +399,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.03,
+      "timeliness": 27.59,
       "writing_value": 0,
-      "total_score": 103.03
+      "total_score": 102.59
+    },
+    {
+      "id": "a60a7b24ebfb0dd487139fddebbbe1f5db9ed431",
+      "title": "宇树科技：8月19日上市 - Jiemian.com",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE12UFhPSEU5V1dsYTdTNUFySWVmVWNncTlGOWxoS283ME5jcEtuTDNfSTB6aHMyZ0JXZWVpUFJscnRvY0hjLWVJTlJ5Zm5rMEk3RUdwNmVERFBvaDNlem9XUA?oc=5",
+      "published_at": "2026-08-17T14:13:12+00:00",
+      "category": "GN: 宇树科技",
+      "gn_label": "robotics",
+      "site_name": "GN: 宇树科技",
+      "source": "GN: 宇树科技",
+      "site_id": "GN: 宇树科技",
+      "description": "宇树科技：8月19日上市  Jiemian.com",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.33,
+      "writing_value": 0,
+      "total_score": 104.33
     },
     {
       "id": "5d1ec54757fad2b6e8541aadb36eee9442c480cd",
@@ -336,9 +441,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.06,
+      "timeliness": 27.62,
       "writing_value": 0,
-      "total_score": 103.06
+      "total_score": 102.62
+    },
+    {
+      "id": "7a603ef5c2a84228de07badfd56d38228da63c7b",
+      "title": "宇树科技上市前夕发布\"超人\"：原地跳高2米、速度12.66m/s，3个月研发刷新人类纪录 - 华尔街见闻",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE8yYmhXSVJsY1pmZnNrUFlhRFNBUldUVjJVaTMyZkVCZjRrX1NUdmlmWDQtTTR5bFZ2a3RFV3Y5R0tNWVJ5MDVvQURwczNMa3dmZzdz?oc=5",
+      "published_at": "2026-08-17T11:56:28+00:00",
+      "category": "GN: 宇树科技",
+      "gn_label": "robotics",
+      "site_name": "GN: 宇树科技",
+      "source": "GN: 宇树科技",
+      "site_id": "GN: 宇树科技",
+      "description": "宇树科技上市前夕发布\"超人\"：原地跳高2米、速度12.66m/s，3个月研发刷新人类纪录  华尔街见闻",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 27.05,
+      "writing_value": 0,
+      "total_score": 102.05
     },
     {
       "id": "7df64bcd1e52c6329ead92a29f5420a68e185484",
@@ -357,9 +483,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.99,
+      "timeliness": 29.55,
       "writing_value": 0,
-      "total_score": 104.99
+      "total_score": 104.55
     },
     {
       "id": "72ee5fc806e4acd9f1cb6c7d02b7058c9d1047a7",
@@ -378,9 +504,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.27,
+      "timeliness": 27.82,
       "writing_value": 0,
-      "total_score": 103.27
+      "total_score": 102.82
     }
   ],
   "fallback_used": false
