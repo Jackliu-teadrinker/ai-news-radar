@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-18T20:47:35.327565+00:00",
-  "total_items": 29,
+  "generated_at": "2026-08-18T21:15:31.706341+00:00",
+  "total_items": 28,
   "items": [
     {
       "id": "http://arxiv.org/abs/2608.16889v1",
@@ -309,17 +309,6 @@
       "published_at": "2026-08-17T09:43:42+00:00",
       "updated_at": "2026-08-17T09:43:42Z",
       "title_zh": "准备障碍函数：过驱动多旋翼分配的前向不变控制权"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.16281v1",
-      "title": "Marker-Constrained Pose-Graph Correction for Cross-Platform Georeferencing in GNSS-Denied Environments",
-      "url": "https://arxiv.org/abs/2608.16281",
-      "summary": "Autonomous operation in GNSS-denied environments requires heterogeneous mapping pipelines to maintain a consistent spatial reference. This paper presents a framework using camouflage-matched fiducial markers fabricated from Cholesteric Spherical Reflectors (CSRs) as pre-surveyed visual anchors. The anchors georeference both a lightweight LiDAR-odometry trajectory and a dense RTAB-Map reconstruction, allowing their outputs to be expressed in a common LUREF frame (geodetic coordinate reference system used in Luxembourg) without requiring GNSS measurements during operation. The method combines coarse similarity alignment with marker-constrained pose-graph optimization. We evaluate it using two handheld acquisition sessions with ground-level and elevated motion profiles emulating UGV and UAV operation. A single iMarker was relocated among six surveyed positions, with the first position revisited to quantify drift correction. Marker-anchor correction reduced revisit inconsistency by 97.9% and 99.1% for the UAV- and UGV-emulating sessions, respectively, and improved held-out anchor prediction compared with one-time alignment. Separately georeferenced dense reconstructions achieved a median cross-session nearest-neighbour distance of 58 cm without explicit cross-session registration. Marker processing operated in real time, while trajectory correction required less than 0.25 s per session. These results demonstrate a proof of concept for georeferencing lightweight odometry and dense reconstructions using visually unobtrusive, pre-surveyed anchors during GNSS-denied operation.",
-      "authors": "Marco Giberna, Jose Luis Sanchez Lopez, Holger Voos",
-      "category": "cs.RO",
-      "published_at": "2026-08-17T08:52:54+00:00",
-      "updated_at": "2026-08-17T08:52:54Z",
-      "title_zh": "GNSS 拒绝环境中跨平台地理配准的标记约束姿态图校正"
     }
   ]
 }
