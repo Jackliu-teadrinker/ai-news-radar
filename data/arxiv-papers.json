@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-18T23:14:29.456914+00:00",
-  "total_items": 26,
+  "generated_at": "2026-08-18T23:44:35.279491+00:00",
+  "total_items": 24,
   "items": [
     {
       "id": "http://arxiv.org/abs/2608.16889v1",
@@ -265,28 +265,6 @@
       "published_at": "2026-08-17T11:47:03+00:00",
       "updated_at": "2026-08-17T11:47:03Z",
       "title_zh": "HaReCAP：递归大语言模型代理的习惯动作基础"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.16442v1",
-      "title": "Observation-Constrained Joint-Space Viewpoint Optimization for Robotic Inspection of Cylindrical Cavities",
-      "url": "https://arxiv.org/abs/2608.16442",
-      "summary": "Inspection is a core capability in many mobile robotics applications, including industrial facility monitoring, infrastructure maintenance, agriculture, and search and rescue. Observing the bottom of a cylindrical cavity, as required by ASTM search-task benchmarks for response robots, presents a representative challenge: the robot must position its camera precisely while satisfying visibility, kinematic, and collision constraints. This paper presents a fully autonomous method for observation-constrained inspection of cylindrical cavities in robot joint space. Rather than prescribing a single Cartesian camera pose, the method represents the inspection objective as a set of valid viewing geometries, thereby avoiding the rejection of reachable viewpoints and configurations with poor joint-limit margins. An RGB perception front end estimates the opening center and directed cavity axis from semantic masks using arc-supported ellipse fitting together with body and side-generator cues. These estimates parameterize constraints on camera-axis alignment, lateral offset, and axial standoff. A multistart derivative-free search then optimizes robot joint configurations with lexicographic priority given to constraint satisfaction; feasible configurations are ranked according to motion economy, joint-limit margin, and view quality. The resulting candidates are evaluated by a collision-aware motion planner, and the executed camera pose is verified geometrically and using a ray-based estimate of bottom visibility. In Isaac Sim, the proposed method successfully completes 92 of 100 target configurations and attains 91.65% mean bottom visibility among executed trials, compared with 76 of 100 and 84.3% for a multistart coordinate-search baseline. Tabletop and Unitree A2-mounted experiments demonstrate the complete perception-planning-execution pipeline.",
-      "authors": "Yuezhong Wang, Rongshen Yin, Bichi Zhang et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-17T11:40:13+00:00",
-      "updated_at": "2026-08-17T11:40:13Z",
-      "title_zh": "圆柱腔体机器人检测的观察约束关节空间视点优化"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.16433v1",
-      "title": "Robot-Body-Aware Traversal Risk Graph Planning for Wheeled-Legged Robots in Complex Terrain",
-      "url": "https://arxiv.org/abs/2608.16433",
-      "summary": "Traversal Risk Graphs (TRGs) provide a compact, terrain-aware representation for global navigation, but native TRG costs are computed over circular node neighborhoods and edge-aligned terrain regions rather than the robot's oriented body footprint. For wheeled-legged robots, this abstraction can miss partial support loss and body-terrain interference, especially during turns. We present Robot-Body-Aware TRG planning (RB-TRG), which builds on the sparse TRG representation and lifts edge-wise terrain-risk search to heading- and turn-aware body-risk transitions. An oriented rectangular footprint is sampled along graph edges and yaw sweeps to measure longitudinal support variation, lateral inclination, terrain interference, and exposure to untrusted map regions. Mean-and-upper-tail features are incorporated into transition costs, whose accumulated value is minimized by A* over ordered node-pair states, preserving TRG construction and its planning interface. We evaluate RB-TRG in a same-graph study on four scanned terrain environments and in paired closed-loop MuJoCo trials. RB-TRG reduces the three core geometric body-placement metrics and increases end-to-end success from 51.5% to 68.5%, while increasing mean path length by 2.3%. A Go2-W deployment further demonstrates RB-TRG with a full LiDAR navigation stack, which received the Best Autonomy and Best Mobility awards at the IEEE ICRA 2026 Legged Robot Challenges. The code for RB-TRG is released at https://github.com/ZhiqiaoGuo/RB-TRG.",
-      "authors": "Zhiqiao Guo, Bichi Zhang, Sören Schwertfeger",
-      "category": "cs.RO",
-      "published_at": "2026-08-17T11:33:06+00:00",
-      "updated_at": "2026-08-17T11:33:06Z",
-      "title_zh": "复杂地形下轮腿机器人的机器人身体感知遍历风险图规划"
     }
   ]
 }

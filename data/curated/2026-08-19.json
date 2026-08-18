@@ -1,9 +1,9 @@
 {
   "date": "2026-08-19",
-  "generated_at": "2026-08-18T23:14:32.088411+00:00",
+  "generated_at": "2026-08-18T23:44:37.577147+00:00",
   "score_threshold": 80,
   "total_items": 50,
-  "new_added": 3,
+  "new_added": 2,
   "items": [
     {
       "id": "bab333667cc41994",
@@ -363,6 +363,27 @@
       "total_score": 119.66
     },
     {
+      "id": "8312833f94f96298",
+      "title": "奋达科技与银河通用量产交付S1重载具身智能机器人 - 网通社",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9MUk5zaEE1YnFyODJ4cHFoRkdDT3pHNjB1aFRkNEpIYjRMRzJ5NEZYc2JaYTBNYndJZUJmbkpUZ092WkVabldVbXdLeXNqTVJSSmtpeWNFSm5kWWM?oc=5",
+      "published_at": "2026-08-18T23:20:03+00:00",
+      "category": "国内具身智能资讯",
+      "gn_label": "embodied_ai",
+      "site_name": "国内具身智能资讯",
+      "source": "国内具身智能资讯",
+      "site_id": "国内具身智能资讯",
+      "description": "奋达科技与银河通用量产交付S1重载具身智能机器人  网通社",
+      "ai_score": 80.0,
+      "ai_label": "embodied_ai",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.61,
+      "writing_value": 0,
+      "total_score": 119.61
+    },
+    {
       "id": "815e2064aff2d093",
       "title": "Chinese firm Unitree unveils ‘Superman’ humanoid robot with record running speed - Anadolu Ajansı",
       "title_zh": "中国公司Unitree推出跑步速度创纪录的“超人”人形机器人 - Anadolu Ajansı",
@@ -424,6 +445,27 @@
       "timeliness": 29.5,
       "writing_value": 0,
       "total_score": 119.5
+    },
+    {
+      "id": "d449d74a8f83b91e",
+      "title": "《人形机器人传感器技术及市场-2026版》 - 电子工程专辑",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE16SUVrT0VGXzAzNXdhZGtoTGNDMmZPRFhoZ0NEd0lUMHpHZTlXQjdhS3ZTRzRfSGhDV053T2hRSTBJeS1WVVRiRDRRNF9zOHA4QXpv?oc=5",
+      "published_at": "2026-08-18T23:11:00+00:00",
+      "category": "国内人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国内人形机器人资讯",
+      "source": "国内人形机器人资讯",
+      "site_id": "国内人形机器人资讯",
+      "description": "《人形机器人传感器技术及市场-2026版》  电子工程专辑",
+      "ai_score": 80.0,
+      "ai_label": "humanoid",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.46,
+      "writing_value": 0,
+      "total_score": 119.46
     },
     {
       "id": "ccf8a63a4915d521",
@@ -1012,48 +1054,6 @@
       "timeliness": 26.84,
       "writing_value": 0,
       "total_score": 116.84
-    },
-    {
-      "id": "3dc9cc8546057b2d",
-      "title": "Unichem acquires Loomia to accelerate entry into the humanoid ‘skin’ market - The Robot Report",
-      "title_zh": "Unichem 收购 Loomia 以加速进入人形“皮肤”市场 - 机器人报告",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPbzNjOUJyekhIcXNFcHY5NVhWYW1vLTVxTGpEaFRpYS1NNGNNZU9Fb1RKZjZ1bXB1eDVhanEyVlRydy1iUFprVVdOVlJCOWk2OV9JNGJSa21XR1JMWDNGdVBGdWdiNXcyV19lTjZ6Tnc5SkdhcFQxdUZQVVpfQmFXam1zUm5RemxFSjJyS0dMTkFhSDhzaVlpYQ?oc=5",
-      "published_at": "2026-08-18T13:00:33+00:00",
-      "category": "国外人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国外人形机器人资讯",
-      "source": "国外人形机器人资讯",
-      "site_id": "国外人形机器人资讯",
-      "description": "Unichem acquires Loomia to accelerate entry into the humanoid ‘skin’ market  The Robot Report",
-      "ai_score": 80.0,
-      "ai_label": "humanoid",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 26.68,
-      "writing_value": 0,
-      "total_score": 116.68
-    },
-    {
-      "id": "e32c53ea99a9db73",
-      "title": "深圳具身智能开源项目“出海”，三步迈向机器人群体协同 - 搜狐网",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNR0F0LXhwT1Z6UmwtVjFJQ21Yam5tckRFbUw2a1BvRnJGZEZDbi02T05WbGlVM2R6dTlaRzc2NThNZEdIUkg3V2FJeGFwOEd4MkNtOHdCMEVQb3ZkNWVySS1CRU5uUlAycGdxTktKMGo1Zm9NMDY2endtMWhweE1RWVYzc29FdmdjTTNHdw?oc=5",
-      "published_at": "2026-08-18T12:58:43+00:00",
-      "category": "国内具身智能资讯",
-      "gn_label": "embodied_ai",
-      "site_name": "国内具身智能资讯",
-      "source": "国内具身智能资讯",
-      "site_id": "国内具身智能资讯",
-      "description": "深圳具身智能开源项目“出海”，三步迈向机器人群体协同  搜狐网",
-      "ai_score": 80.0,
-      "ai_label": "embodied_ai",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 26.65,
-      "writing_value": 0,
-      "total_score": 116.65
     }
   ]
 }
