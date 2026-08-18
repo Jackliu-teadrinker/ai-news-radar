@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-18T21:46:11.037132+00:00",
-  "total_items": 27,
+  "generated_at": "2026-08-18T22:13:48.616178+00:00",
+  "total_items": 26,
   "items": [
     {
       "id": "http://arxiv.org/abs/2608.16889v1",
@@ -287,17 +287,6 @@
       "published_at": "2026-08-17T11:33:06+00:00",
       "updated_at": "2026-08-17T11:33:06Z",
       "title_zh": "复杂地形下轮腿机器人的机器人身体感知遍历风险图规划"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.16351v1",
-      "title": "Arm-Aware Guided Dexterous Grasp Generation with Arm-Agnostic Grasp Models",
-      "url": "https://arxiv.org/abs/2608.16351",
-      "summary": "Dexterous grasp generation that considers arm-related constraints is crucial in real-world scenarios involving arm environment collision avoidance, workspace boundary grasps, and consecutive grasping. Existing hand-centric grasp models, which primarily focus on the floating hand's pose, are insufficient for such cases. Conventional arm-aware methods either rely on rejection sampling to discard infeasible samples or require retraining on arm-specific data, leading to low sample efficiency under adverse conditions or limited generalization across different robots and environments. To overcome these limitations, this letter presents an arm-aware dexterous grasp generation framework that leverages pretrained arm-agnostic grasp models while integrating arm and environmental information only at inference time. Specifically, we formulate arm-aware constrained grasp generation as a joint optimization of hand pose and arm configuration, and derive closed-form gradients for arm-related constraints. Assuming the hand pose distribution is represented by a diffusion model, we prove that gradient-based optimization is equivalent to guided diffusion sampling, steering near-feasible samples toward the feasible region. Through comprehensive evaluation involving 10k objects across 6 scenarios, we demonstrate that the proposed framework generates feasible grasps in highly constrained settings with significantly higher probability, highlighting its advantages in real-world applications. Supplementary materials and appendix are available at https://arm-aware-dexgrasp.github.io/.",
-      "authors": "Yongyi Jia, Yongpeng Jiang, Kangchen Lv et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-17T10:01:56+00:00",
-      "updated_at": "2026-08-17T10:01:56Z",
-      "title_zh": "使用与手臂无关的抓取模型生成手臂感知引导的灵巧抓取"
     }
   ]
 }

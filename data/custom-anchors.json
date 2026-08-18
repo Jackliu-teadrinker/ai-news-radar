@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-18T21:44:41.601854+00:00",
+  "generated_at": "2026-08-18T22:12:43.206413+00:00",
   "window_start": "2026-08-18T19:00:00+08:00",
-  "window_end": "2026-08-19T05:44:37.895599+08:00",
-  "total_items": 23,
+  "window_end": "2026-08-19T06:12:41.164679+08:00",
+  "total_items": 24,
   "items": [
     {
       "id": "0813f1af1a2beddd818e036f8acb80ec2da976f7",
@@ -21,9 +21,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 21.26,
+      "timeliness": 20.79,
       "writing_value": 5,
-      "total_score": 106.26
+      "total_score": 105.79
     },
     {
       "id": "4e75fdddabb9ae47ceb48d3dd90ba69efce9be7b",
@@ -63,9 +63,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.39,
+      "timeliness": 24.93,
       "writing_value": 0,
-      "total_score": 100.39
+      "total_score": 99.93
     },
     {
       "id": "90e94cb4b394a23fc2f00d824c3843074cb00948",
@@ -84,14 +84,14 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 20.92,
+      "timeliness": 20.45,
       "writing_value": 0,
-      "total_score": 95.92
+      "total_score": 95.45
     },
     {
-      "id": "76089f6104da1f222204ae1313a32004e1dd584d",
-      "title": "Meet the 420-pound robots patrolling America - Interesting Engineering",
-      "title_zh": "认识在美国巡逻的 420 磅机器人 - 有趣的工程",
+      "id": "8c581b3863bb18055d8e72f8cb720faef570984a",
+      "title": "Meet the 420-pound robots patrolling America - interestingengineering.com",
+      "title_zh": "来认识一下在美国巡逻的 420 磅重的机器人 -interestingengineering.com",
       "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPeG1nMHIxVVNZZmk3bEZnVU5kT3E3RHJFOU0wNWpDdkFHWG5LRjNFX21LZS1WWnA4OVZ1TGhWQS02c3RvcHZzTUY0S3hYNFZxaVByV1FtSC1QN0UydUx3R0ZoRC10MEFnQVVCSUFUaWplLWx3blh6RVRpTUYwRkFjZzBFMkpEM1UwbFJHMXpLOA?oc=5",
       "published_at": "2026-08-18T14:28:15+00:00",
       "category": "GN: autonomous robot",
@@ -99,15 +99,15 @@
       "site_name": "GN: autonomous robot",
       "source": "GN: autonomous robot",
       "site_id": "GN: autonomous robot",
-      "description": "Meet the 420-pound robots patrolling America  Interesting Engineering",
+      "description": "Meet the 420-pound robots patrolling America  interestingengineering.com",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 22.73,
+      "timeliness": 22.26,
       "writing_value": 0,
-      "total_score": 97.73
+      "total_score": 97.26
     },
     {
       "id": "1d3131bf2019963852a45425858862a8b98eeb93",
@@ -126,9 +126,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.75,
+      "timeliness": 29.28,
       "writing_value": 0,
-      "total_score": 104.75
+      "total_score": 104.28
     },
     {
       "id": "4007a0e509f43c28f162a162bd7dd24c83518abd",
@@ -147,9 +147,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.24,
+      "timeliness": 27.77,
       "writing_value": 0,
-      "total_score": 103.24
+      "total_score": 102.77
     },
     {
       "id": "0db5c18e0c9853a687d41b341e81529515a714ce",
@@ -168,9 +168,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.71,
+      "timeliness": 27.24,
       "writing_value": 0,
-      "total_score": 102.71
+      "total_score": 102.24
+    },
+    {
+      "id": "c1c823d53fc8ceda830d520eaa1f0a1c42b46780",
+      "title": "Best robot vacuum deal: Save $110 on Eufy 11S Max - Mashable",
+      "title_zh": "最佳扫地机器人优惠：购买 Eufy 11S Max 节省 110 美元 - Mashable",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFAwVG1iR1NsYWJFQXJfM2FaMGc5X19kSHBvVXlManFXS3dyYm8tWi02eFNaU21naW9CWUNPOVJsX2x4YlpzcC1Od3hGRUs3c2VibUJlTDNBZ2dSR21SMUdJ?oc=5",
+      "published_at": "2026-08-18T17:51:31+00:00",
+      "category": "GN: robot vacuum",
+      "gn_label": "robotics",
+      "site_name": "GN: robot vacuum",
+      "source": "GN: robot vacuum",
+      "site_id": "GN: robot vacuum",
+      "description": "Best robot vacuum deal: Save $110 on Eufy 11S Max  Mashable",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 25.65,
+      "writing_value": 0,
+      "total_score": 100.65
     },
     {
       "id": "012c6849b4624056ff8b78cbabb284da472d8bc8",
@@ -189,30 +210,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.39,
+      "timeliness": 23.92,
       "writing_value": 0,
-      "total_score": 99.39
-    },
-    {
-      "id": "b02ab60d056ebb19aa9b500f143d796a54402270",
-      "title": "Expansion of pioneering robotic surgery training programme announced - Med-Tech Insights",
-      "title_zh": "宣布扩展开创性的机器人手术培训计划 - Med-Tech Insights",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNcUxFR01nU3F0RUtVdWUwRUhwcGRLZGRjN254ejFVQ25wa0loMGlaYzFuVVJfQlZNRDdIWWR6SWMwYWtkZHNNamNDTUx5N2FTRlJRUjlKSnh1LXdwUnJwSlQ4ckRJTDY2OWF3VXE2TVVidVZkTld3MHcxWVFWVVdtOXhDMDN2eUl3ejJQdURScEZ5d2l2Ykd5NDJFVUVWVDdKOTB2cTh2WFVrMVMyZ1E?oc=5",
-      "published_at": "2026-08-18T14:02:30+00:00",
-      "category": "GN: surgical robot",
-      "gn_label": "robotics",
-      "site_name": "GN: surgical robot",
-      "source": "GN: surgical robot",
-      "site_id": "GN: surgical robot",
-      "description": "Expansion of pioneering robotic surgery training programme announced  Med-Tech Insights",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 22.3,
-      "writing_value": 0,
-      "total_score": 97.3
+      "total_score": 98.92
     },
     {
       "id": "620a281a9b4facd6e19b95a8bd748c0ab9564f6f",
@@ -231,9 +231,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 21.72,
+      "timeliness": 21.26,
       "writing_value": 5,
-      "total_score": 106.72
+      "total_score": 106.26
     },
     {
       "id": "477a173a67bb16ef5dd9ea6b4e0880a7973b6ecf",
@@ -252,9 +252,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.14,
+      "timeliness": 22.67,
       "writing_value": 0,
-      "total_score": 98.14
+      "total_score": 97.67
     },
     {
       "id": "dc48097a64c74d603362f0bc1544a33473225ed9",
@@ -273,9 +273,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 20.38,
+      "timeliness": 19.91,
       "writing_value": 0,
-      "total_score": 95.38
+      "total_score": 94.91
+    },
+    {
+      "id": "b02ab60d056ebb19aa9b500f143d796a54402270",
+      "title": "Expansion of pioneering robotic surgery training programme announced - Med-Tech Insights",
+      "title_zh": "宣布扩展开创性的机器人手术培训计划 - Med-Tech Insights",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNcUxFR01nU3F0RUtVdWUwRUhwcGRLZGRjN254ejFVQ25wa0loMGlaYzFuVVJfQlZNRDdIWWR6SWMwYWtkZHNNamNDTUx5N2FTRlJRUjlKSnh1LXdwUnJwSlQ4ckRJTDY2OWF3VXE2TVVidVZkTld3MHcxWVFWVVdtOXhDMDN2eUl3ejJQdURScEZ5d2l2Ykd5NDJFVUVWVDdKOTB2cTh2WFVrMVMyZ1E?oc=5",
+      "published_at": "2026-08-18T14:02:30+00:00",
+      "category": "GN: surgical robot",
+      "gn_label": "robotics",
+      "site_name": "GN: surgical robot",
+      "source": "GN: surgical robot",
+      "site_id": "GN: surgical robot",
+      "description": "Expansion of pioneering robotic surgery training programme announced  Med-Tech Insights",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 21.83,
+      "writing_value": 0,
+      "total_score": 96.83
     },
     {
       "id": "a764f504f27154f9ef984e5d18a180d92bae48e8",
@@ -294,9 +315,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 20.43,
+      "timeliness": 19.96,
       "writing_value": 0,
-      "total_score": 95.43
+      "total_score": 94.96
     },
     {
       "id": "84f1b3ff2aea7dc153b5f3dd9761c673e9d32b27",
@@ -315,9 +336,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 21.76,
+      "timeliness": 21.29,
       "writing_value": 0,
-      "total_score": 96.76
+      "total_score": 96.29
     },
     {
       "id": "91b98c7fe368d20586691fa5047613f49d467a48",
@@ -336,9 +357,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.27,
+      "timeliness": 23.81,
       "writing_value": 0,
-      "total_score": 99.27
+      "total_score": 98.81
     },
     {
       "id": "cd66a8d56167598ed45f1e8bd83f03f91eb0cd81",
@@ -357,9 +378,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 20.84,
+      "timeliness": 20.37,
       "writing_value": 0,
-      "total_score": 95.84
+      "total_score": 95.37
     },
     {
       "id": "1070a36ac43e9fc01c7e70e6ab2867a6a14a7e36",
@@ -378,9 +399,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 21.67,
+      "timeliness": 21.21,
       "writing_value": 0,
-      "total_score": 96.67
+      "total_score": 96.21
     },
     {
       "id": "d927638149fa757b33add37570023940b261bef1",
@@ -399,9 +420,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 21.63,
+      "timeliness": 21.17,
       "writing_value": 0,
-      "total_score": 96.63
+      "total_score": 96.17
     },
     {
       "id": "b5920b89d34815af9a076145756f1fd55c0e88c3",
@@ -420,51 +441,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 20.76,
+      "timeliness": 20.29,
       "writing_value": 0,
-      "total_score": 95.76
-    },
-    {
-      "id": "046679282e4e9fe8c73be13d1af70e53cfed253d",
-      "title": "宇树科技上市在即 千亿估值引争议：人形机器人业务能否撑起高预期？ - 虎嗅",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5kUllmeTVJMTVSZ3FON0g5LUJBRmRnQl9jenFma3BlZEZmZ3ZqWkwtQzg4UkdUVWlWZTVzVE54ajN1QUE1YjQ4NlVTMFFWR3BldEE3VQ?oc=5",
-      "published_at": "2026-08-18T12:46:23+00:00",
-      "category": "GN: 优必选",
-      "gn_label": "robotics",
-      "site_name": "GN: 优必选",
-      "source": "GN: 优必选",
-      "site_id": "GN: 优必选",
-      "description": "宇树科技上市在即 千亿估值引争议：人形机器人业务能否撑起高预期？  虎嗅",
-      "ai_score": 80.0,
-      "ai_label": "robotics",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 21.03,
-      "writing_value": 0,
-      "total_score": 111.03
-    },
-    {
-      "id": "73f1c4f63e72e4588b20effb5eb4965688881d2e",
-      "title": "WRC看触觉：南科大教授十年离电触觉，拿下批量灵巧手订单 - 搜狐网",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQQ0hoU042b1V0cFExYkNjMVRTTVZzWnFRZUo1T0Z0UEJQMlRUaTVvdi1qUC1jbnJrYjNUaUFMcnN1QmRYcE54UU1zZTlOVGtYdkJqTkQ5V1RJMkc2aHJ4UnU4dmc5cEZoZ3JTNGJBYUJDV2NMMFVEcVk0R0NXa0Nlb18wVXNnazFq?oc=5",
-      "published_at": "2026-08-18T12:38:25+00:00",
-      "category": "GN: 灵巧手",
-      "gn_label": "robotics",
-      "site_name": "GN: 灵巧手",
-      "source": "GN: 灵巧手",
-      "site_id": "GN: 灵巧手",
-      "description": "WRC看触觉：南科大教授十年离电触觉，拿下批量灵巧手订单  搜狐网",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 20.9,
-      "writing_value": 0,
-      "total_score": 95.9
+      "total_score": 95.29
     },
     {
       "id": "4245ff6a2f2f7c366f70d86fa32e7231fe50fd42",
@@ -483,9 +462,51 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 21.38,
+      "timeliness": 20.91,
       "writing_value": 0,
-      "total_score": 96.38
+      "total_score": 95.91
+    },
+    {
+      "id": "046679282e4e9fe8c73be13d1af70e53cfed253d",
+      "title": "宇树科技上市在即 千亿估值引争议：人形机器人业务能否撑起高预期？ - 虎嗅",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5kUllmeTVJMTVSZ3FON0g5LUJBRmRnQl9jenFma3BlZEZmZ3ZqWkwtQzg4UkdUVWlWZTVzVE54ajN1QUE1YjQ4NlVTMFFWR3BldEE3VQ?oc=5",
+      "published_at": "2026-08-18T12:46:23+00:00",
+      "category": "GN: 优必选",
+      "gn_label": "robotics",
+      "site_name": "GN: 优必选",
+      "source": "GN: 优必选",
+      "site_id": "GN: 优必选",
+      "description": "宇树科技上市在即 千亿估值引争议：人形机器人业务能否撑起高预期？  虎嗅",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 20.56,
+      "writing_value": 0,
+      "total_score": 110.56
+    },
+    {
+      "id": "5023d87383a2557f3627257bb1322a4321b996f1",
+      "title": "WRC看触觉：南科大教授十年离电触觉，拿下批量灵巧手订单 - sohu.com",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQQ0hoU042b1V0cFExYkNjMVRTTVZzWnFRZUo1T0Z0UEJQMlRUaTVvdi1qUC1jbnJrYjNUaUFMcnN1QmRYcE54UU1zZTlOVGtYdkJqTkQ5V1RJMkc2aHJ4UnU4dmc5cEZoZ3JTNGJBYUJDV2NMMFVEcVk0R0NXa0Nlb18wVXNnazFq?oc=5",
+      "published_at": "2026-08-18T12:38:25+00:00",
+      "category": "GN: 灵巧手",
+      "gn_label": "robotics",
+      "site_name": "GN: 灵巧手",
+      "source": "GN: 灵巧手",
+      "site_id": "GN: 灵巧手",
+      "description": "WRC看触觉：南科大教授十年离电触觉，拿下批量灵巧手订单  sohu.com",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 20.43,
+      "writing_value": 0,
+      "total_score": 95.43
     }
   ],
   "fallback_used": false
