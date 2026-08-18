@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-18T11:03:28.267983+00:00",
+  "generated_at": "2026-08-18T11:16:08.525209+00:00",
   "window_start": "2026-08-18T19:00:00+08:00",
-  "window_end": "2026-08-18T19:03:27.607888+08:00",
-  "total_items": 1,
+  "window_end": "2026-08-18T19:16:08.219175+08:00",
+  "total_items": 2,
   "items": [
     {
       "id": "4e75fdddabb9ae47ceb48d3dd90ba69efce9be7b",
@@ -24,6 +24,27 @@
       "timeliness": 0.0,
       "writing_value": 5,
       "total_score": 85.0
+    },
+    {
+      "id": "cc0b89983661f92581fc544d90b40ffc76f70e84",
+      "title": "Trossen Robotics and Stereolabs, an Ouster Subsidiary, Partner to Put High-Fidelity Stereo Vision at the Heart of Physical AI Data Collection – Company Announcement - FT.com - Financial Times",
+      "title_zh": "Trossen Robotics 与 Ouster 子公司 Stereolabs 合作，将高保真立体视觉置于物理人工智能数据收集的核心 – 公司公告 - FT.com - 英国《金融时报》",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQRktseVU3ZzdveVlVZmxBODRmd1JUeFRCWnBYNzVLT01ZbnpBZzV2eUxrMHEzQU04NUJvV0syWk5fZDRCYnZDcEtCVGZBQ2tCMGJ0Rll3THpkMjJGR2RBc2Q3Vk1FVnNyRzQ2UWUydHJPTmYwY3psN21GelczV0xEV1lsdlZQaFRWaHJ2SGJWZzN4OERkb19GYmNTSUtVeHo2RG5MS2xB?oc=5",
+      "published_at": "2026-08-18T11:00:00+00:00",
+      "category": "GN: robot learning",
+      "gn_label": "robotics",
+      "site_name": "GN: robot learning",
+      "source": "GN: robot learning",
+      "site_id": "GN: robot learning",
+      "description": "Trossen Robotics and Stereolabs, an Ouster Subsidiary, Partner to Put High-Fidelity Stereo Vision at the Heart of Physical AI Data Collection – Company Announcement - FT.com  Financial Times",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 29.73,
+      "writing_value": 5,
+      "total_score": 114.73
     }
   ],
   "fallback_used": false
