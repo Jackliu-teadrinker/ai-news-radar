@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-18T21:15:31.706341+00:00",
-  "total_items": 28,
+  "generated_at": "2026-08-18T21:46:11.037132+00:00",
+  "total_items": 27,
   "items": [
     {
       "id": "http://arxiv.org/abs/2608.16889v1",
@@ -298,17 +298,6 @@
       "published_at": "2026-08-17T10:01:56+00:00",
       "updated_at": "2026-08-17T10:01:56Z",
       "title_zh": "使用与手臂无关的抓取模型生成手臂感知引导的灵巧抓取"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.16335v1",
-      "title": "Readiness Barrier Functions: Forward-Invariant Control Authority for Overactuated Multirotor Allocation",
-      "url": "https://arxiv.org/abs/2608.16335",
-      "summary": "Allocation schemes that greedily maximize a readiness metric over the actuator fiber bundle of an overactuated multirotor produce commands that jump between disconnected optimal strata, demanding actuator rates no motor can deliver; effort-minimizing schemes are continuous but cannot guarantee that wrench-rate authority stays above any certified level. We reconcile the two by treating authority as a forward-invariant quantity: a control barrier function on the log-determinant of the drag-aware actuator-authority co-metric, enforced at torque level by a quadratic program in the allocation null space. A single design inequality renders the certified set compact and strictly interior to the actuator box, with the readiness cost of any rotor deactivation given in closed form as $\\ln(n/(n{-}m))$ for symmetric designs. Tracking is sacrificed only through an explicit alignment ratio, with wrench error bounded by $\\mathcal{O}(ρ^{-1/2})$ and a robust variant handles motor-parameter uncertainty with a closed-form floor shift independent of the airframe matrix. On a hexarotor and a fully-actuated octorotor the closed-form gap matches simulation to machine precision; in the authority-scarce regime greedy maximization violates the certified floor and commits wrench errors up to eighty times larger than the proposed filter, which holds invariance of the certified set at negligible tracking cost.",
-      "authors": "Giuseppe Silano",
-      "category": "cs.RO",
-      "published_at": "2026-08-17T09:43:42+00:00",
-      "updated_at": "2026-08-17T09:43:42Z",
-      "title_zh": "准备障碍函数：过驱动多旋翼分配的前向不变控制权"
     }
   ]
 }
