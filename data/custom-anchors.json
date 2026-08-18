@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-18T11:47:56.316852+00:00",
+  "generated_at": "2026-08-18T12:24:40.680096+00:00",
   "window_start": "2026-08-18T19:00:00+08:00",
-  "window_end": "2026-08-18T19:47:54.984762+08:00",
-  "total_items": 2,
+  "window_end": "2026-08-18T20:24:39.454603+08:00",
+  "total_items": 4,
   "items": [
     {
       "id": "4e75fdddabb9ae47ceb48d3dd90ba69efce9be7b",
@@ -26,6 +26,48 @@
       "total_score": 85.0
     },
     {
+      "id": "ce690b4b19f277334b587f9196b0c25606ce6976",
+      "title": "Seoul National University Launches Robotics Research Institute - 조선일보",
+      "title_zh": "首尔国立大学成立机器人研究所 - 朝鲜日报",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNSzZQM0otcFJ4UFlNMU5nYXc0S1FYS012ekYxYnJQOFM5Y01iQlRvZUYtdEwtVk9zc0xqQ05ZY3dhRlprTlhQQU1aLW9sbG1ZbVFPMWgyMXJHQXhheDUzYWlRYzBlMWtZWE5HczdYMl9vVDNvNmtUdF9pbnpKVGpQVE8zWDVkQ0NL?oc=5",
+      "published_at": "2026-08-18T12:04:04+00:00",
+      "category": "GN: MIT robotics",
+      "gn_label": "robotics",
+      "site_name": "GN: MIT robotics",
+      "source": "GN: MIT robotics",
+      "site_id": "GN: MIT robotics",
+      "description": "Seoul National University Launches Robotics Research Institute  조선일보",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.66,
+      "writing_value": 0,
+      "total_score": 104.66
+    },
+    {
+      "id": "a7355f67cca61956cb273ad9e90d2a6a113c8ae6",
+      "title": "Pakistani robotics firm calls for joint labs, ventures with China - The Nation (Pakistan )",
+      "title_zh": "巴基斯坦机器人公司呼吁与中国建立联合实验室和合资企业 - 《国家报》（巴基斯坦）",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOQkhBR1FwR1VrcktLLVIyZlZRdGNiQTIzN0JDSk44N185aDV5aHVfUmJKTXZFMURKR2NNX2FBVl8xMDhobWNhUUNmTEJVb3NIajRuRzlueEFTWTVPNlVsd3lfZG10XzdYQm5Sc2M1di1Ob1JVcWJhUS1mTEhaTkc1MTJXX3dac09Ialp6MjhYb3lDaXZCaWFldw?oc=5",
+      "published_at": "2026-08-18T11:51:19+00:00",
+      "category": "GN: industrial robot",
+      "gn_label": "robotics",
+      "site_name": "GN: industrial robot",
+      "source": "GN: industrial robot",
+      "site_id": "GN: industrial robot",
+      "description": "Pakistani robotics firm calls for joint labs, ventures with China  The Nation (Pakistan )",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.45,
+      "writing_value": 0,
+      "total_score": 104.45
+    },
+    {
       "id": "cc0b89983661f92581fc544d90b40ffc76f70e84",
       "title": "Trossen Robotics and Stereolabs, an Ouster Subsidiary, Partner to Put High-Fidelity Stereo Vision at the Heart of Physical AI Data Collection – Company Announcement - FT.com - Financial Times",
       "title_zh": "Trossen Robotics 与 Ouster 子公司 Stereolabs 合作，将高保真立体视觉置于物理人工智能数据收集的核心 – 公司公告 - FT.com - 英国《金融时报》",
@@ -42,9 +84,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 29.2,
+      "timeliness": 28.59,
       "writing_value": 5,
-      "total_score": 114.2
+      "total_score": 113.59
     }
   ],
   "fallback_used": false
