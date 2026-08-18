@@ -1,30 +1,9 @@
 {
-  "generated_at": "2026-08-17T23:43:35.255394+00:00",
+  "generated_at": "2026-08-18T00:39:07.082741+00:00",
   "window_start": "2026-08-17T19:00:00+08:00",
-  "window_end": "2026-08-18T07:43:32.529334+08:00",
-  "total_items": 34,
+  "window_end": "2026-08-18T08:39:04.997677+08:00",
+  "total_items": 40,
   "items": [
-    {
-      "id": "1846eb528de56c466e5e19c14eea3a8c863766da",
-      "title": "Is Shipyard Welding the Right First Job for Humanoid Robots?",
-      "title_zh": "造船厂焊接是人形机器人的第一份工作吗？",
-      "url": "https://spectrum.ieee.org/persona-ai-humanoid-robot-welding",
-      "published_at": "2026-08-17T15:33:42+00:00",
-      "category": "IEEE Spectrum",
-      "gn_label": "robotics",
-      "site_name": "IEEE Spectrum",
-      "source": "IEEE Spectrum",
-      "site_id": "IEEE Spectrum",
-      "description": "Humanoids desperately need to stop making YouTube videos and get a job already, and Persona AI is one of the few humanoid companies which seems to be entirely focused on making that happen. Persona’s approach has been to carefully select a job that is economically viable for robots right now, and th",
-      "ai_score": 80.0,
-      "ai_label": "robotics",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 5,
-      "timeliness": 21.84,
-      "writing_value": 5,
-      "total_score": 121.84
-    },
     {
       "id": "bbe8419e4868602d938c7a4560615f23d3cb2146",
       "title": "The Download: dead robot friends and the “censorship-industrial complex”",
@@ -42,9 +21,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 18.44,
+      "timeliness": 17.52,
       "writing_value": 5,
-      "total_score": 103.44
+      "total_score": 102.52
+    },
+    {
+      "id": "1846eb528de56c466e5e19c14eea3a8c863766da",
+      "title": "Is Shipyard Welding the Right First Job for Humanoid Robots?",
+      "title_zh": "造船厂焊接是人形机器人的第一份工作吗？",
+      "url": "https://spectrum.ieee.org/persona-ai-humanoid-robot-welding",
+      "published_at": "2026-08-17T15:33:42+00:00",
+      "category": "IEEE Spectrum",
+      "gn_label": "robotics",
+      "site_name": "IEEE Spectrum",
+      "source": "IEEE Spectrum",
+      "site_id": "IEEE Spectrum",
+      "description": "Humanoids desperately need to stop making YouTube videos and get a job already, and Persona AI is one of the few humanoid companies which seems to be entirely focused on making that happen. Persona’s approach has been to carefully select a job that is economically viable for robots right now, and th",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 20.91,
+      "writing_value": 5,
+      "total_score": 120.91
     },
     {
       "id": "fac859ef4689b80f8737b138137327fc29f1015e",
@@ -63,9 +63,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 5,
-      "timeliness": 17.45,
+      "timeliness": 16.53,
       "writing_value": 5,
-      "total_score": 117.45
+      "total_score": 116.53
     },
     {
       "id": "9ea57a392c5145d3927d6060f87d937eb681af5e",
@@ -84,14 +84,14 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 21.93,
+      "timeliness": 21.01,
       "writing_value": 5,
-      "total_score": 106.93
+      "total_score": 106.01
     },
     {
-      "id": "884e82de1d3160dea69cb03c0317ca11ea111277",
-      "title": "What's Going On With Serve Robotics Stock Monday? - Benzinga",
-      "title_zh": "周一服务机器人股票发生了什么？ - 本辛加",
+      "id": "99a7ef1d45de63860cd0b733571ebce3239f0bc5",
+      "title": "What's Going On With Serve Robotics Stock Monday? - benzinga.com",
+      "title_zh": "周一服务机器人股票发生了什么？ - benzinga.com",
       "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQdmoxcmJHMjE3eElNeVNHa0l5aGNzbDQ2S0lEQk1ibHE1cm5XdnVKR1ZDdm5LWXZ0Z1RqVnVxTkk3al9iQ29PbHRRcXdIRVdrR2t4TlpHOXZqa2p1OG9Oa3I4RjF6MWx5QnBVX2tpeEdQeDBPazUwU3dEc1ktR215YThkQ0dMdUxFUEdQQlUwSzNrNzFjamNlbmJXd3dORHZRSFBCZFdsZw?oc=5",
       "published_at": "2026-08-17T16:20:33+00:00",
       "category": "GN: autonomous robot",
@@ -99,15 +99,15 @@
       "site_name": "GN: autonomous robot",
       "source": "GN: autonomous robot",
       "site_id": "GN: autonomous robot",
-      "description": "What's Going On With Serve Robotics Stock Monday?  Benzinga",
+      "description": "What's Going On With Serve Robotics Stock Monday?  benzinga.com",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 22.62,
+      "timeliness": 21.69,
       "writing_value": 0,
-      "total_score": 97.62
+      "total_score": 96.69
     },
     {
       "id": "60ac0bd9d8c404ec9047c21c5ff94b3d46e56c89",
@@ -126,9 +126,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 18.64,
+      "timeliness": 17.72,
       "writing_value": 0,
-      "total_score": 93.64
+      "total_score": 92.72
     },
     {
       "id": "5b49756848f8a8374ee15cc9b0fcbe12d922affa",
@@ -147,9 +147,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 19.57,
+      "timeliness": 18.64,
       "writing_value": 0,
-      "total_score": 94.57
+      "total_score": 93.64
     },
     {
       "id": "db2f947ae78149e6b3402c32de0415a037c77aac",
@@ -168,9 +168,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.62,
+      "timeliness": 23.69,
       "writing_value": 0,
-      "total_score": 99.62
+      "total_score": 98.69
     },
     {
       "id": "0ec1b68a68fbaa48201899c0d65874fcc63c644e",
@@ -189,9 +189,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.78,
+      "timeliness": 24.85,
       "writing_value": 0,
-      "total_score": 100.78
+      "total_score": 99.85
     },
     {
       "id": "defbc9104c8b0d5c6c26b149b1e2bc38e655fe23",
@@ -210,9 +210,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 17.5,
+      "timeliness": 16.57,
       "writing_value": 0,
-      "total_score": 92.5
+      "total_score": 91.57
     },
     {
       "id": "d2ec7dec44368319b977961e0a7bf85b0836c8c7",
@@ -231,9 +231,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 17.39,
+      "timeliness": 16.47,
       "writing_value": 0,
-      "total_score": 92.39
+      "total_score": 91.47
     },
     {
       "id": "6d559380c4368f7e068ed95e9786b71b6a82f6ab",
@@ -252,9 +252,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 5,
-      "timeliness": 29.95,
+      "timeliness": 29.02,
       "writing_value": 5,
-      "total_score": 129.95
+      "total_score": 129.02
     },
     {
       "id": "63c7e345587c37f89ecfd9e3e5210be0c5bfe244",
@@ -273,9 +273,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 26.3,
+      "timeliness": 25.38,
       "writing_value": 5,
-      "total_score": 111.3
+      "total_score": 110.38
     },
     {
       "id": "8ab06342818e69ed147345074c5b49eea1bdc2f4",
@@ -294,9 +294,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 21.58,
+      "timeliness": 20.65,
       "writing_value": 0,
-      "total_score": 96.58
+      "total_score": 95.65
     },
     {
       "id": "d182eeb003d39dca3d225f932ea3c3505f446c99",
@@ -315,9 +315,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 26.0,
+      "timeliness": 25.08,
       "writing_value": 5,
-      "total_score": 111.0
+      "total_score": 110.08
     },
     {
       "id": "f12462442a72da522d1bd88aadea42e3cb2628b6",
@@ -336,9 +336,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 22.16,
+      "timeliness": 21.23,
       "writing_value": 0,
-      "total_score": 97.16
+      "total_score": 96.23
     },
     {
       "id": "c6e7684774f9caedce97f9ea37548c8055f9eb5e",
@@ -357,9 +357,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 17.86,
+      "timeliness": 16.93,
       "writing_value": 5,
-      "total_score": 102.86
+      "total_score": 101.93
+    },
+    {
+      "id": "f428b0ce6706e9e63df99c01893993578410bb81",
+      "title": "Johnson & Johnson Wins FDA Nod for Monarch Quest 3 Bronchoscopy Robot - Medical Product Outsourcing",
+      "title_zh": "强生公司的 Monarch Quest 3 支气管镜检查机器人获得 FDA 批准 - 医疗产品外包",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPdS1jam5xWWY0V1JzVFhRa3VIUUhySzZrNl9CVDFXRWk2dVdkREI3WE9FRTlyNkhJRGtOYVU3bGtSTkgwdzBhRm9IVG9HRXdfWl83SXk3eDRzQlFPbUNnTEVNZ2Vja2pHRS1PTVVRbjJOOC01R1g1OVpraFdSdzR2UEllcXFQWm5GdGM4Rm5ETjVnb0lCZmZ6U2g4ZS1ndUNUS1V0UGVLbThNUQ?oc=5",
+      "published_at": "2026-08-17T15:10:42+00:00",
+      "category": "GN: surgical robot",
+      "gn_label": "robotics",
+      "site_name": "GN: surgical robot",
+      "source": "GN: surgical robot",
+      "site_id": "GN: surgical robot",
+      "description": "Johnson & Johnson Wins FDA Nod for Monarch Quest 3 Bronchoscopy Robot  Medical Product Outsourcing",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 20.53,
+      "writing_value": 0,
+      "total_score": 95.53
     },
     {
       "id": "74dddb8848fda92b271c1d03f6a41145cb3f2193",
@@ -378,9 +399,72 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.29,
+      "timeliness": 26.37,
       "writing_value": 0,
-      "total_score": 102.29
+      "total_score": 101.37
+    },
+    {
+      "id": "e748c0d283e326e73154e0af38d51a87da206246",
+      "title": "【视频】人形机器人能干活，靠的不是外壳好看 - 汽车之家",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE0zWU1zYnpQdFVWTnppZUl2Zjdwdlg4R2g1bGM4N3VGbEwyODZkOV9zVkEyQnliVFVXbGpmR1k1S0JwSzlMdlFWcXJ3Y21uRmRGZ1dVdS12Vkg3Tmc?oc=5",
+      "published_at": "2026-08-17T12:41:26+00:00",
+      "category": "GN: 人形机器人",
+      "gn_label": "humanoid",
+      "site_name": "GN: 人形机器人",
+      "source": "GN: 人形机器人",
+      "site_id": "GN: 人形机器人",
+      "description": "【视频】人形机器人能干活，靠的不是外壳好看  汽车之家",
+      "ai_score": 80.0,
+      "ai_label": "humanoid",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 18.04,
+      "writing_value": 0,
+      "total_score": 108.04
+    },
+    {
+      "id": "e726e47361840fd71fb34ae9038e8f395175ba02",
+      "title": "宇树科技8月19日上市！ - 华尔街见闻",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9fLU1wVktSNzlXMDZjcTlxOFZ6blFFZl9wdUNTZlhOYjJUTGF6OUJ1Y0p6VWJMNk51dEFYSTRucnI3MlRlQ1ZUWkZEaURLNEpoTjY4?oc=5",
+      "published_at": "2026-08-17T20:50:55+00:00",
+      "category": "GN: 宇树科技",
+      "gn_label": "robotics",
+      "site_name": "GN: 宇树科技",
+      "source": "GN: 宇树科技",
+      "site_id": "GN: 宇树科技",
+      "description": "宇树科技8月19日上市！  华尔街见闻",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 26.2,
+      "writing_value": 0,
+      "total_score": 101.2
+    },
+    {
+      "id": "fdc4d3d54cac0b8fc7e5cf28e5e991a2a9a19d26",
+      "title": "宇树科技，周三科创板上市！ - 东方财富",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1KTFJTX3gxRzZmVnE0TW1kRVQyRlRDNTFldE91Z29nR3k2QjZGV0R5TThQcVBnX0d4U3Uxb215NEhUMkhCRU9HZllHOE5BaXo2bnNyQXo4RGZlZXpVY0hzSg?oc=5",
+      "published_at": "2026-08-17T12:47:28+00:00",
+      "category": "GN: 宇树科技",
+      "gn_label": "robotics",
+      "site_name": "GN: 宇树科技",
+      "source": "GN: 宇树科技",
+      "site_id": "GN: 宇树科技",
+      "description": "宇树科技，周三科创板上市！  东方财富",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 18.14,
+      "writing_value": 0,
+      "total_score": 93.14
     },
     {
       "id": "300ea5b43f67ba5fd0081a64edc3153cf736b573",
@@ -399,9 +483,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 18.62,
+      "timeliness": 17.69,
       "writing_value": 0,
-      "total_score": 93.62
+      "total_score": 92.69
     },
     {
       "id": "9217bf9ea74135a500b02bdaa5179f790156a623",
@@ -420,9 +504,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 19.6,
+      "timeliness": 18.67,
       "writing_value": 0,
-      "total_score": 94.6
+      "total_score": 93.67
     },
     {
       "id": "5b962d3f650c175710d5e4cca7f21a7779aa02d1",
@@ -441,13 +525,13 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 19.16,
+      "timeliness": 18.23,
       "writing_value": 0,
-      "total_score": 94.16
+      "total_score": 93.23
     },
     {
-      "id": "6e4ae2f9ba1bc46dd2b8ccd91ff8b777b441f629",
-      "title": "​宇树科技：将于8月19日在上交所科创板上市 - bjnews.com.cn",
+      "id": "b70fa08f0583dd7c696dc09f4da5644395697b91",
+      "title": "​宇树科技：将于8月19日在上交所科创板上市 - 新京报",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE4tZUtiYklDZ0EwcTBZcE5zVS1oNUU5THh6M2RMd0VqSGNxOVY4ekhDWDA2LWpXVGkzRVgxWUo1ejZlamZIMmJ1MTQ4RjVncEF2bHhiUl9sYmctbktUaUwxLUllUDI?oc=5",
       "published_at": "2026-08-17T12:28:34+00:00",
@@ -456,15 +540,15 @@
       "site_name": "GN: 宇树科技",
       "source": "GN: 宇树科技",
       "site_id": "GN: 宇树科技",
-      "description": "​宇树科技：将于8月19日在上交所科创板上市  bjnews.com.cn",
+      "description": "​宇树科技：将于8月19日在上交所科创板上市  新京报",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 18.75,
+      "timeliness": 17.83,
       "writing_value": 0,
-      "total_score": 93.75
+      "total_score": 92.83
     },
     {
       "id": "dd751cf6772229c0c488efa424c84053d8bf5131",
@@ -483,9 +567,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 19.02,
+      "timeliness": 18.09,
       "writing_value": 0,
-      "total_score": 94.02
+      "total_score": 93.09
     },
     {
       "id": "9987ee90e19aef8375c33724cc3a33e5a80c6025",
@@ -504,9 +588,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 19.39,
+      "timeliness": 18.47,
       "writing_value": 0,
-      "total_score": 94.39
+      "total_score": 93.47
+    },
+    {
+      "id": "253b9f732fc38bfbbd59a0b8ca0989506bc4c047",
+      "title": "宇树科技8月19日上市：募资61亿 梁文锋与腾讯加持 - 凤凰网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE16N05wMDd3MmRPVXJXNk5nUkhwR2hpQ2dRUUxRZGhrZ1Q1WUxzM1JHWEVfc0Z2Ym10UFFtX0lQclNGRW80dl9qZndXcmhSeFBm?oc=5",
+      "published_at": "2026-08-17T23:59:16+00:00",
+      "category": "GN: 宇树科技",
+      "gn_label": "robotics",
+      "site_name": "GN: 宇树科技",
+      "source": "GN: 宇树科技",
+      "site_id": "GN: 宇树科技",
+      "description": "宇树科技8月19日上市：募资61亿 梁文锋与腾讯加持  凤凰网",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.34,
+      "writing_value": 0,
+      "total_score": 104.34
     },
     {
       "id": "2db83683d3b9ebc6309929839a6a714b1dd72d5c",
@@ -525,9 +630,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 19.62,
+      "timeliness": 18.69,
       "writing_value": 0,
-      "total_score": 94.62
+      "total_score": 93.69
     },
     {
       "id": "010d03e4d9ed7c7b324d4404f7a52e21b6c94ce6",
@@ -546,9 +651,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.14,
+      "timeliness": 24.22,
       "writing_value": 0,
-      "total_score": 100.14
+      "total_score": 99.22
+    },
+    {
+      "id": "a48f27c98763e899c5fb8936c35d0df9c7732f10",
+      "title": "宇树科技本周三于上海科创板上市 - gbcode.rthk.hk",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQRmtVd292V1hvNVVOR0lOSGVSbk85RWIyZmZ0TDV0eV9wTGxpSmd2czRmOGRseEpPSU1lblBXaGZnQnc4ZHp3OFF0dE5WQmJiRE03dTc3bEMyNmZzUWRyUDBwZ0hGamZrR25BWkNvc2FJNWF1dkMya3NXLVlLeDBMQ0dPdEtsbUJBZUVMQjQwUHNCZXhIeDBLUGNicjNkWTFaODhz?oc=5",
+      "published_at": "2026-08-17T14:46:00+00:00",
+      "category": "GN: 宇树科技",
+      "gn_label": "robotics",
+      "site_name": "GN: 宇树科技",
+      "source": "GN: 宇树科技",
+      "site_id": "GN: 宇树科技",
+      "description": "宇树科技本周三于上海科创板上市  gbcode.rthk.hk",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 20.12,
+      "writing_value": 0,
+      "total_score": 95.12
     },
     {
       "id": "126795e1cfb7126c51315a531d0463906dcbd5ff",
@@ -567,51 +693,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 20.64,
+      "timeliness": 19.72,
       "writing_value": 0,
-      "total_score": 95.64
-    },
-    {
-      "id": "12bf5295d5f057de4762d638f1d7085cd24001eb",
-      "title": "宇树科技，8月19日上市 - 凤凰网",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE82dVNoX1oxS1ZrSE9BSWl6WEVIUU0yQU1sbDdncHd2dms2dW1nUFY0N2U2LXZ2eEZnVW1XTngzYUx4QVY4R2lhTFl4eEVUa1RZ?oc=5",
-      "published_at": "2026-08-17T12:16:38+00:00",
-      "category": "GN: 宇树科技",
-      "gn_label": "robotics",
-      "site_name": "GN: 宇树科技",
-      "source": "GN: 宇树科技",
-      "site_id": "GN: 宇树科技",
-      "description": "宇树科技，8月19日上市  凤凰网",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 18.55,
-      "writing_value": 0,
-      "total_score": 93.55
-    },
-    {
-      "id": "a60a7b24ebfb0dd487139fddebbbe1f5db9ed431",
-      "title": "宇树科技：8月19日上市 - Jiemian.com",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE12UFhPSEU5V1dsYTdTNUFySWVmVWNncTlGOWxoS283ME5jcEtuTDNfSTB6aHMyZ0JXZWVpUFJscnRvY0hjLWVJTlJ5Zm5rMEk3RUdwNmVERFBvaDNlem9XUA?oc=5",
-      "published_at": "2026-08-17T14:13:12+00:00",
-      "category": "GN: 宇树科技",
-      "gn_label": "robotics",
-      "site_name": "GN: 宇树科技",
-      "source": "GN: 宇树科技",
-      "site_id": "GN: 宇树科技",
-      "description": "宇树科技：8月19日上市  Jiemian.com",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 20.5,
-      "writing_value": 0,
-      "total_score": 95.5
+      "total_score": 94.72
     },
     {
       "id": "0ba9aad11e93456b5ec7c1b6397a9dee08ccf76c",
@@ -630,9 +714,93 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 18.71,
+      "timeliness": 17.78,
       "writing_value": 0,
-      "total_score": 93.71
+      "total_score": 92.78
+    },
+    {
+      "id": "33bffa9a0937d292c34494d6d9d0b9f5ef241af0",
+      "title": "【早知道】宇树科技将于8月19日在科创板上市；美股三大指数集体收跌，存储、光通信等板块逆市走强 - 东方财富",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1rc012dEg3VU9RZVpMeXQ2MkQ4RWZxNERYcUw3aVFPNF9kUzg3RFVzRnRZNGI5SVlFQVItdEM5NENYY3B4OTdFWmM0UFhVek1VWDlFMkFPN2tlT1RnM05ZRThCOXhkdw?oc=5",
+      "published_at": "2026-08-17T23:48:53+00:00",
+      "category": "GN: 宇树科技",
+      "gn_label": "robotics",
+      "site_name": "GN: 宇树科技",
+      "source": "GN: 宇树科技",
+      "site_id": "GN: 宇树科技",
+      "description": "【早知道】宇树科技将于8月19日在科创板上市；美股三大指数集体收跌，存储、光通信等板块逆市走强  东方财富",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.16,
+      "writing_value": 0,
+      "total_score": 104.16
+    },
+    {
+      "id": "b5a42d76dd54dc9dac48cd6a71591fee1ee74f58",
+      "title": "宇树科技上市前夕发布“超人”机器人：可原地跳高2米 - huacheng.gz-cmc.com",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPNmM2c0NOa2x3M3FabUNITkpXQWcxSkdwT3ZPdlNlS2R4RUhjWVJjOE43MTJsM1Baek1vLVhCWnpJS1l2RkxYQktBOWFSTlBFU1RRYklPVHBmY0JFSmFNLXcwdE16UDNzTVZ1d3A1aktORkttX053aFBqR2oxSmVmTG1pMUlMSUtXc3c?oc=5",
+      "published_at": "2026-08-17T12:27:57+00:00",
+      "category": "GN: 宇树科技",
+      "gn_label": "robotics",
+      "site_name": "GN: 宇树科技",
+      "source": "GN: 宇树科技",
+      "site_id": "GN: 宇树科技",
+      "description": "宇树科技上市前夕发布“超人”机器人：可原地跳高2米  huacheng.gz-cmc.com",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 17.82,
+      "writing_value": 0,
+      "total_score": 92.82
+    },
+    {
+      "id": "1947b725820c59f26309366bcd5392e7ae4dbe6c",
+      "title": "宇树科技官宣：8月19日登陆科创板 - 京报网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBXTldqU3k4UjF6aUo1TXlIQXlURWp6N0g2RU05TW1OYktBTnBEWFpORms4eUpvRXpDRG1LOTFuRkZYUmFwMFp4QkFyczJWelQ1QzRZX2VSYm5scUZaNnc?oc=5",
+      "published_at": "2026-08-17T12:47:19+00:00",
+      "category": "GN: 宇树科技",
+      "gn_label": "robotics",
+      "site_name": "GN: 宇树科技",
+      "source": "GN: 宇树科技",
+      "site_id": "GN: 宇树科技",
+      "description": "宇树科技官宣：8月19日登陆科创板  京报网",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 18.14,
+      "writing_value": 0,
+      "total_score": 93.14
+    },
+    {
+      "id": "c7074c67853d5bdd914d5ea5fd189cc29ac3539e",
+      "title": "宇树科技确认上市时间，会成为今年A股最赚钱的新股吗？ - 新浪网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBILVFxTTFzQ3VyLVZmMndVOS1ldmhCcWhWa2pDd2VXY3VoSlNWQTRvb0lLMlJPckZNd1Z1bDhSRVJnVlV1X2U2VHVZeUh4UHVjc1V6Z0plT0pjOVdOSzR5Z1NuYkpQMklyRUZUMEtn?oc=5",
+      "published_at": "2026-08-17T23:53:53+00:00",
+      "category": "GN: 宇树科技",
+      "gn_label": "robotics",
+      "site_name": "GN: 宇树科技",
+      "source": "GN: 宇树科技",
+      "site_id": "GN: 宇树科技",
+      "description": "宇树科技确认上市时间，会成为今年A股最赚钱的新股吗？  新浪网",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.25,
+      "writing_value": 0,
+      "total_score": 104.25
     },
     {
       "id": "6aa808fb518c61be41daf23a685648d0a8e5d9d5",
@@ -651,72 +819,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 18.78,
+      "timeliness": 17.85,
       "writing_value": 0,
-      "total_score": 93.78
+      "total_score": 92.85
     },
     {
-      "id": "a48f27c98763e899c5fb8936c35d0df9c7732f10",
-      "title": "宇树科技本周三于上海科创板上市 - gbcode.rthk.hk",
+      "id": "ae0995205ee7ae197bb8192b05a0d769cd2e71c8",
+      "title": "“十三太保”即将组团出征，江苏具身智能加快走向场景落地 - 新华报业网",
       "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQRmtVd292V1hvNVVOR0lOSGVSbk85RWIyZmZ0TDV0eV9wTGxpSmd2czRmOGRseEpPSU1lblBXaGZnQnc4ZHp3OFF0dE5WQmJiRE03dTc3bEMyNmZzUWRyUDBwZ0hGamZrR25BWkNvc2FJNWF1dkMya3NXLVlLeDBMQ0dPdEtsbUJBZUVMQjQwUHNCZXhIeDBLUGNicjNkWTFaODhz?oc=5",
-      "published_at": "2026-08-17T14:47:34+00:00",
-      "category": "GN: 宇树科技",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5qMmxjWHB2dmo4ckg1Mm9OMFZyUWNvdlBmcEp1QWNLS1FXb3NORXhLMkJjNURnLU4wWV8zTlotRzM4WmdTVzFubzZvU3VEUThhRDhaSjlaejNxMUtvUHR3RDY3dHdEMW9rb0Vj?oc=5",
+      "published_at": "2026-08-17T13:13:00+00:00",
+      "category": "GN: 工业机器人与人",
       "gn_label": "robotics",
-      "site_name": "GN: 宇树科技",
-      "source": "GN: 宇树科技",
-      "site_id": "GN: 宇树科技",
-      "description": "宇树科技本周三于上海科创板上市  gbcode.rthk.hk",
-      "ai_score": 65.0,
+      "site_name": "GN: 工业机器人与人",
+      "source": "GN: 工业机器人与人",
+      "site_id": "GN: 工业机器人与人",
+      "description": "“十三太保”即将组团出征，江苏具身智能加快走向场景落地  新华报业网",
+      "ai_score": 80.0,
       "ai_label": "robotics",
-      "relevance": 0.65,
+      "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 21.07,
+      "timeliness": 18.57,
       "writing_value": 0,
-      "total_score": 96.07
-    },
-    {
-      "id": "cf0ef5678f165081a6e0c4e037eb94a1114ee0f3",
-      "title": "宇树科技上市最后悬念揭晓，上市日期定在8月19日，七夕节当天上市！中一签有望盈利超35万元，各路资金已经跃跃欲试 - 金融界",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9qbWhmQ0hyOHhqQjRvOUkzU3NEU1pYTzRLN0JBRFlMSzZjcV94MXNDclBCLTA0VV82a0V6MW1CMzcyMjFWNVpjMUphTG5CbjhGWmNKSERZdXZkd0Zqd3RhN3Zwc01RX2phdUc5bXpRMVoyUQ?oc=5",
-      "published_at": "2026-08-17T12:58:38+00:00",
-      "category": "GN: 宇树科技",
-      "gn_label": "robotics",
-      "site_name": "GN: 宇树科技",
-      "source": "GN: 宇树科技",
-      "site_id": "GN: 宇树科技",
-      "description": "宇树科技上市最后悬念揭晓，上市日期定在8月19日，七夕节当天上市！中一签有望盈利超35万元，各路资金已经跃跃欲试  金融界",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 19.25,
-      "writing_value": 0,
-      "total_score": 94.25
-    },
-    {
-      "id": "6f7e6d464c3c6818ded1fa99fec65d41612271ec",
-      "title": "8月19日，宇树科技上市定了 - 电子工程专辑",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1NOGx1SmFwWWowZUtWQ2lhcW00RHF3a25TNDkxZjJNcHVORXZISTlBLU1JZHNuYkM0ejM2SC02bFRVdWR2MUNmNi1PTnphUjZ0ZzJz?oc=5",
-      "published_at": "2026-08-17T12:29:00+00:00",
-      "category": "GN: 宇树科技",
-      "gn_label": "robotics",
-      "site_name": "GN: 宇树科技",
-      "source": "GN: 宇树科技",
-      "site_id": "GN: 宇树科技",
-      "description": "8月19日，宇树科技上市定了  电子工程专辑",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 18.76,
-      "writing_value": 0,
-      "total_score": 93.76
+      "total_score": 108.57
     }
   ],
   "fallback_used": false
