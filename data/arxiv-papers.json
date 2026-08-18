@@ -1,5 +1,39 @@
 {
-  "generated_at": "2026-08-18T00:40:13.188280+00:00",
-  "total_items": 0,
-  "items": []
+  "generated_at": "2026-08-18T02:11:38.824957+00:00",
+  "total_items": 3,
+  "items": [
+    {
+      "id": "http://arxiv.org/abs/2608.15816v1",
+      "title": "ViTaR: Visuo-Tactile Residual Adaptation for Foundation VLA Manipulation",
+      "url": "https://arxiv.org/abs/2608.15816",
+      "summary": "As Vision-Language-Action (VLA) models scale toward real-world deployment, contact-rich manipulation exposes a critical blind spot: these policies encode broad visual-semantic priors yet remain unaware of local contact events, producing identical actions whether contact is established, lost, or destabilized. Existing remedies either modify VLA internals, risking catastrophic forgetting, or demand online reinforcement under near-failure contact conditions. Both grant tactile unbounded influence over action generation, conflicting with the priors that make VLAs generalizable. We introduce ViTaR, which reframes tactile feedback from an action-generating perceptual input to an execution modulator that selects and scales bounded residual corrections atop a frozen VLA, preserving pretrained capabilities by construction. ViTaR decomposes adaptation into two stages: Effect-Guided Modeling determines whether and which correction is locally justified via outcome-grounded preference evidence, and Residual Action Modulation converts this evidence into a residual choice with continuously scaled gain from real-time visuotactile observations. On the UniVTAC benchmark spanning seven contact-rich tasks, ViTaR achieves 61.3% average success, a 30.6 percentage-point improvement over its frozen VLA base that also surpasses purpose-built tactile baselines. Physical-robot experiments confirm that bounded tactile modulation transfers to real sensor noise and dynamics.",
+      "authors": "Yi Wang, Renjun Wu, Jinyan Liu et al.",
+      "category": "cs.RO",
+      "published_at": "2026-08-16T15:46:11+00:00",
+      "updated_at": "2026-08-16T15:46:11Z",
+      "title_zh": "ViTaR：用于基础 VLA 操作的视觉触觉残差适应"
+    },
+    {
+      "id": "http://arxiv.org/abs/2608.15784v1",
+      "title": "Reliable Piezoresistive Strain Sensing Through Physical Limits and Uncertainty Monitoring",
+      "url": "https://arxiv.org/abs/2608.15784",
+      "summary": "Soft piezoresistive strain sensors are one of the most common sensing solutions for wearable and soft robotic applications due to their flexibility and compliance. However, their resistance response is nonlinear and hysteretic, and a sensor can be pushed past its calibrated workspace or misbehave inside it, carrying that error into a decision or control loop. Probabilistic regressors track confidence but ignore those limits. A predictive mean can look unremarkable even when the reading comes from a sensor outside its admissible range or already failing internally, so a confident-looking estimate is not the same as a trustworthy one. This paper proposes a reliability framework pairing a physics-informed probabilistic inverse model, built on physics-guided input features, with a risk factor fusing uncertainty with strain and strain-rate limits into a three-state monitor. Tests on a Nitinol wire and a silver-coated polyamide thread with a Gaussian Process raised fit scores to 0.90-0.95 (RMSE 0.26%-0.15%) and a 96% empirical coverage against the 95% target. The monitor caught 95% of out-of-range and 100% of abnormal conditions while staying reliable under nominal operation. A sensor that reports confidence alongside its estimate lets a system withhold action instead, since it needs no labeled failure examples, which are hard to collect for soft materials.",
+      "authors": "Carmen Ballester, Víctor Muñoz, Dorin Copaci et al.",
+      "category": "cs.RO",
+      "published_at": "2026-08-16T15:06:13+00:00",
+      "updated_at": "2026-08-16T15:06:13Z",
+      "title_zh": "通过物理极限和不确定性监控实现可靠的压阻应变传感"
+    },
+    {
+      "id": "http://arxiv.org/abs/2608.15766v1",
+      "title": "Tac4Loco: Learning Spatiotemporal Plantar Pressure Representations for Humanoid Locomotion",
+      "url": "https://arxiv.org/abs/2608.15766",
+      "summary": "Humanoid robots are expected to traverse complex terrains, where the plantar support may vary dramatically due to foot placement errors, ground properties, and transient dynamics. To achieve robust locomotion, the robots are required to adapt to uneven terrain and uncertain foot--ground interactions. Existing locomotion policies rely primarily on proprioception or exteroceptive terrain perception, where the former provides only indirect evidence of plantar support, while the latter predicts contact conditions before touchdown but cannot observe the actual support in real-time. Although some studies incorporate plantar contacts as an auxiliary perception, they rely mainly on summary statistics, overlooking the spatial topology of plantar pressure, which provides a more direct characterization of the realized contact state. To bridge this gap, we present Tac4Loco, a tactile-perceptive framework that incorporates multi-array plantar pressure as direct feedback for humanoid locomotion. We formulate a topology-preserving ordinal representation to map simulated and physical sensor signals into a shared observation space, with a dual-branch encoder for extracting their spatial and temporal representations. Subsequently, the learned spatiotemporal features are integrated with augmented proprioception including terrain estimation cues, and provided to an asymmetric actor-critic architecture for policy learning. Extensive simulation and real-world experiments demonstrate improved tracking performance and support adaptation on terrains with inclined, partial, asymmetric, and changing support. We further demonstrate its zero-shot deployment on unseen compliant and unstructured terrains, including a foam platform and a gravel road. All code and experimental configurations will be released as open-source to facilitate reproducibility.",
+      "authors": "Ziyun Liu, Sikai Guo, Zheng Li et al.",
+      "category": "cs.RO",
+      "published_at": "2026-08-16T14:37:05+00:00",
+      "updated_at": "2026-08-16T14:37:05Z",
+      "title_zh": "Tac4Loco：学习人形运动的时空足底压力表示"
+    }
+  ]
 }
