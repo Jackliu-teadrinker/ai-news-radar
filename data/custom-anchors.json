@@ -1,30 +1,9 @@
 {
-  "generated_at": "2026-08-18T14:03:25.061158+00:00",
+  "generated_at": "2026-08-18T14:59:27.357488+00:00",
   "window_start": "2026-08-18T19:00:00+08:00",
-  "window_end": "2026-08-18T22:03:23.847137+08:00",
-  "total_items": 14,
+  "window_end": "2026-08-18T22:59:25.619569+08:00",
+  "total_items": 17,
   "items": [
-    {
-      "id": "0813f1af1a2beddd818e036f8acb80ec2da976f7",
-      "title": "Drones With Claws Perch on Arctic Icebergs",
-      "title_zh": "带爪子的无人机栖息在北极冰山上",
-      "url": "https://spectrum.ieee.org/arctic-iceberg-drones",
-      "published_at": "2026-08-18T13:00:01+00:00",
-      "category": "IEEE Spectrum",
-      "gn_label": "robotics",
-      "site_name": "IEEE Spectrum",
-      "source": "IEEE Spectrum",
-      "site_id": "IEEE Spectrum",
-      "description": "This article is part of our exclusive IEEE Journal Watch series in partnership with IEEE Xplore.Microspines are one of many ways to enable robots to latch onto surfaces like walls and ceilings. Now roboticists in Canada are using the mini spikes to get drones to land on a more challenging, remote su",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 5,
-      "timeliness": 28.94,
-      "writing_value": 5,
-      "total_score": 113.94
-    },
     {
       "id": "4e75fdddabb9ae47ceb48d3dd90ba69efce9be7b",
       "title": "Will you be wearing an exoskeleton in ten years? The tech that could change how we move",
@@ -47,9 +26,30 @@
       "total_score": 85.0
     },
     {
-      "id": "2940b7e2c5b824ff1d91583cb5e478ed79521bd9",
-      "title": "SNU Opens 'Robots for Humans' Robotics Research Institute - 조선일보",
-      "title_zh": "首尔国立大学开设“人类机器人”机器人研究所 - 조선일보",
+      "id": "0813f1af1a2beddd818e036f8acb80ec2da976f7",
+      "title": "Drones With Claws Perch on Arctic Icebergs",
+      "title_zh": "带爪子的无人机栖息在北极冰山上",
+      "url": "https://spectrum.ieee.org/arctic-iceberg-drones",
+      "published_at": "2026-08-18T13:00:01+00:00",
+      "category": "IEEE Spectrum",
+      "gn_label": "robotics",
+      "site_name": "IEEE Spectrum",
+      "source": "IEEE Spectrum",
+      "site_id": "IEEE Spectrum",
+      "description": "This article is part of our exclusive IEEE Journal Watch series in partnership with IEEE Xplore.Microspines are one of many ways to enable robots to latch onto surfaces like walls and ceilings. Now roboticists in Canada are using the mini spikes to get drones to land on a more challenging, remote su",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 28.01,
+      "writing_value": 5,
+      "total_score": 113.01
+    },
+    {
+      "id": "7cd7835f8007a37df5044a536648e7af9ec239c4",
+      "title": "SNU Opens 'Robots for Humans' Robotics Research Institute - chosun.com",
+      "title_zh": "首尔国立大学开设“人类机器人”机器人研究所 - chosun.com",
       "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNSzZQM0otcFJ4UFlNMU5nYXc0S1FYS012ekYxYnJQOFM5Y01iQlRvZUYtdEwtVk9zc0xqQ05ZY3dhRlprTlhQQU1aLW9sbG1ZbVFPMWgyMXJHQXhheDUzYWlRYzBlMWtZWE5HczdYMl9vVDNvNmtUdF9pbnpKVGpQVE8zWDVkQ0NL?oc=5",
       "published_at": "2026-08-18T13:27:53+00:00",
       "category": "GN: MIT robotics",
@@ -57,15 +57,15 @@
       "site_name": "GN: MIT robotics",
       "source": "GN: MIT robotics",
       "site_id": "GN: MIT robotics",
-      "description": "SNU Opens 'Robots for Humans' Robotics Research Institute  조선일보",
+      "description": "SNU Opens 'Robots for Humans' Robotics Research Institute  chosun.com",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.41,
+      "timeliness": 28.48,
       "writing_value": 0,
-      "total_score": 104.41
+      "total_score": 103.48
     },
     {
       "id": "90e94cb4b394a23fc2f00d824c3843074cb00948",
@@ -84,9 +84,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.6,
+      "timeliness": 27.67,
       "writing_value": 0,
-      "total_score": 103.6
+      "total_score": 102.67
+    },
+    {
+      "id": "76089f6104da1f222204ae1313a32004e1dd584d",
+      "title": "Meet the 420-pound robots patrolling America - Interesting Engineering",
+      "title_zh": "认识在美国巡逻的 420 磅机器人 - 有趣的工程",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPeG1nMHIxVVNZZmk3bEZnVU5kT3E3RHJFOU0wNWpDdkFHWG5LRjNFX21LZS1WWnA4OVZ1TGhWQS02c3RvcHZzTUY0S3hYNFZxaVByV1FtSC1QN0UydUx3R0ZoRC10MEFnQVVCSUFUaWplLWx3blh6RVRpTUYwRkFjZzBFMkpEM1UwbFJHMXpLOA?oc=5",
+      "published_at": "2026-08-18T14:28:15+00:00",
+      "category": "GN: autonomous robot",
+      "gn_label": "robotics",
+      "site_name": "GN: autonomous robot",
+      "source": "GN: autonomous robot",
+      "site_id": "GN: autonomous robot",
+      "description": "Meet the 420-pound robots patrolling America  Interesting Engineering",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.48,
+      "writing_value": 0,
+      "total_score": 104.48
     },
     {
       "id": "620a281a9b4facd6e19b95a8bd748c0ab9564f6f",
@@ -105,9 +126,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 29.41,
+      "timeliness": 28.48,
       "writing_value": 5,
-      "total_score": 114.41
+      "total_score": 113.48
     },
     {
       "id": "9f615981e81ce1f3e521b24da193b85e18ede07c",
@@ -126,9 +147,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 28.53,
+      "timeliness": 27.6,
       "writing_value": 5,
-      "total_score": 113.53
+      "total_score": 112.6
+    },
+    {
+      "id": "b02ab60d056ebb19aa9b500f143d796a54402270",
+      "title": "Expansion of pioneering robotic surgery training programme announced - Med-Tech Insights",
+      "title_zh": "宣布扩展开创性的机器人手术培训计划 - Med-Tech Insights",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNcUxFR01nU3F0RUtVdWUwRUhwcGRLZGRjN254ejFVQ25wa0loMGlaYzFuVVJfQlZNRDdIWWR6SWMwYWtkZHNNamNDTUx5N2FTRlJRUjlKSnh1LXdwUnJwSlQ4ckRJTDY2OWF3VXE2TVVidVZkTld3MHcxWVFWVVdtOXhDMDN2eUl3ejJQdURScEZ5d2l2Ykd5NDJFVUVWVDdKOTB2cTh2WFVrMVMyZ1E?oc=5",
+      "published_at": "2026-08-18T14:02:30+00:00",
+      "category": "GN: surgical robot",
+      "gn_label": "robotics",
+      "site_name": "GN: surgical robot",
+      "source": "GN: surgical robot",
+      "site_id": "GN: surgical robot",
+      "description": "Expansion of pioneering robotic surgery training programme announced  Med-Tech Insights",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.05,
+      "writing_value": 0,
+      "total_score": 104.05
     },
     {
       "id": "cc0b89983661f92581fc544d90b40ffc76f70e84",
@@ -147,13 +189,13 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 26.94,
+      "timeliness": 26.01,
       "writing_value": 5,
-      "total_score": 111.94
+      "total_score": 111.01
     },
     {
-      "id": "a764f504f27154f9ef984e5d18a180d92bae48e8",
-      "title": "宇树科技明日上市！能否带动机器人板块“一飞冲天”？丨川观解盘 - sichuan.scol.com.cn",
+      "id": "a78a9269b9baa5c6c94497db0e12ef385128ea40",
+      "title": "宇树科技明日上市！能否带动机器人板块“一飞冲天”？丨川观解盘 - 四川新闻",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE85aDhNX1M4Q0FvUktobTQtNzZ1OHZJTWNRSkwtX3FVZzA5dzYwMXczdTBkZ2FBOWZ0WURTak5WZGhGYzhEa0dwMjAtY0pjRW9PWFRPSnN6azNYNXU4RGF5T3hKWQ?oc=5",
       "published_at": "2026-08-18T12:10:20+00:00",
@@ -162,15 +204,15 @@
       "site_name": "GN: 宇树科技",
       "source": "GN: 宇树科技",
       "site_id": "GN: 宇树科技",
-      "description": "宇树科技明日上市！能否带动机器人板块“一飞冲天”？丨川观解盘  sichuan.scol.com.cn",
+      "description": "宇树科技明日上市！能否带动机器人板块“一飞冲天”？丨川观解盘  四川新闻",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.12,
+      "timeliness": 27.18,
       "writing_value": 0,
-      "total_score": 103.12
+      "total_score": 102.18
     },
     {
       "id": "d927638149fa757b33add37570023940b261bef1",
@@ -189,9 +231,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.32,
+      "timeliness": 28.39,
       "writing_value": 0,
-      "total_score": 104.32
+      "total_score": 103.39
     },
     {
       "id": "b5920b89d34815af9a076145756f1fd55c0e88c3",
@@ -210,13 +252,13 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.44,
+      "timeliness": 27.51,
       "writing_value": 0,
-      "total_score": 103.44
+      "total_score": 102.51
     },
     {
-      "id": "7ba6f5baccd343507ee3e10f4dd80a9885bba692",
-      "title": "宇树科技敲钟倒计时 这些港股已抱上这条“机器人大腿” - 驱动之家",
+      "id": "d5080117664364528a7b24ffaf8702476ca9b757",
+      "title": "宇树科技敲钟倒计时 这些港股已抱上这条“机器人大腿” - news.mydrivers.com",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5oa0dYNHdWdGhQUGVxTTlHZjBHdVhXb2Z3dTA2ZlFsV0U0R3NxOUJLV2RFTWVid1Y3S3Z4eG1ST0JFZFVJd1hIbTJTYWVUbmZJcnBYck5YWkE?oc=5",
       "published_at": "2026-08-18T12:29:00+00:00",
@@ -225,15 +267,15 @@
       "site_name": "GN: 宇树科技",
       "source": "GN: 宇树科技",
       "site_id": "GN: 宇树科技",
-      "description": "宇树科技敲钟倒计时 这些港股已抱上这条“机器人大腿”  驱动之家",
+      "description": "宇树科技敲钟倒计时 这些港股已抱上这条“机器人大腿”  news.mydrivers.com",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.43,
+      "timeliness": 27.49,
       "writing_value": 0,
-      "total_score": 103.43
+      "total_score": 102.49
     },
     {
       "id": "84f1b3ff2aea7dc153b5f3dd9761c673e9d32b27",
@@ -252,9 +294,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.44,
+      "timeliness": 28.51,
       "writing_value": 0,
-      "total_score": 104.44
+      "total_score": 103.51
     },
     {
       "id": "4245ff6a2f2f7c366f70d86fa32e7231fe50fd42",
@@ -273,9 +315,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.07,
+      "timeliness": 28.13,
       "writing_value": 0,
-      "total_score": 104.07
+      "total_score": 103.13
     },
     {
       "id": "73f1c4f63e72e4588b20effb5eb4965688881d2e",
@@ -294,9 +336,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.58,
+      "timeliness": 27.65,
       "writing_value": 0,
-      "total_score": 103.58
+      "total_score": 102.65
+    },
+    {
+      "id": "f1070e50719a212dea6ba7a675c92b3f5ccc2325",
+      "title": "别高估了宇树 - 新浪财经",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1hZWZ0UUNYeDMtTGpSN3pTNFdhYy1wb2xRelBwRkk4dUxzdFhNWWpfZHFsUHRTaFFCc3hYTmFRdjNrUjNHMURCeFR5MDVPNkJ2dWZ4VXotQXlpbWhjaXhGRWZkdUh4MExMWjh0TGVxbGI5REgtd2c?oc=5",
+      "published_at": "2026-08-18T13:53:00+00:00",
+      "category": "GN: 优必选",
+      "gn_label": "robotics",
+      "site_name": "GN: 优必选",
+      "source": "GN: 优必选",
+      "site_id": "GN: 优必选",
+      "description": "别高估了宇树  新浪财经",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 28.89,
+      "writing_value": 0,
+      "total_score": 103.89
     }
   ],
   "fallback_used": false
