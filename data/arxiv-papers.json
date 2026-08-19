@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-19T20:52:12.713851+00:00",
-  "total_items": 21,
+  "generated_at": "2026-08-19T21:17:51.004111+00:00",
+  "total_items": 20,
   "items": [
     {
       "id": "http://arxiv.org/abs/2608.18077v1",
@@ -221,17 +221,6 @@
       "published_at": "2026-08-18T09:49:16+00:00",
       "updated_at": "2026-08-18T09:49:16Z",
       "title_zh": "HODAgent：面向物理世界人类交互的按需、响应式类人机器人"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.17553v1",
-      "title": "Scalix: Uncertainty-Aware Scale-Consistent Monocular SLAM",
-      "url": "https://arxiv.org/abs/2608.17553",
-      "summary": "Cameras are ubiquitous sensors in robotics due to their compact form factor and the perceptual richness captured through visual information. Monocular SLAM enables robots to understand the environment with a minimum setup, however, it inherently suffers from scale ambiguity. A common solution is to provide multi-modal sensor configurations, such as visual-inertial systems, where scale is observable unless the robot navigates under a constant-velocity motion, a common scenario in mobile robotics. With the advent of deep-learning, geometric foundation models have been used to address this problem, but the depths maps are often noisy and scale-inconsistent across frames. In this paper, we propose Scalix, a real-time monocular SLAM framework that achieves metric-scale state estimation by integrating learned depth cues into a probabilistic factor-graph formulation. By augmenting existing monocular depth models with both per-pixel depth uncertainty and per-frame scale uncertainty, Scalix treats scale predictions as independent measurements within its optimization, leading to improved scale consistency through multi-view data associations. Experiments in large-scale outdoor and indoor environments demonstrate state-of-the-art performance on both metric and up-to-scale benchmarks while maintaining real-time operation and generalization.",
-      "authors": "Sebastian Barbas Laina, Tianyi Zhang, Panagiotis Petropoulakis et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-18T09:14:37+00:00",
-      "updated_at": "2026-08-18T09:14:37Z",
-      "title_zh": "Scalix：不确定性感知尺度一致的单目 SLAM"
     }
   ]
 }
