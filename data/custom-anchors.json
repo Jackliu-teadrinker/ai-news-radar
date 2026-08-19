@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-19T16:53:56.184967+00:00",
+  "generated_at": "2026-08-19T17:18:24.620616+00:00",
   "window_start": "2026-08-19T19:00:00+08:00",
-  "window_end": "2026-08-20T00:53:54.924738+08:00",
-  "total_items": 28,
+  "window_end": "2026-08-20T01:18:22.563881+08:00",
+  "total_items": 27,
   "items": [
     {
       "id": "6135f28eec39e1c1e63b4047c5963a877baeb445",
@@ -21,30 +21,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 24.24,
+      "timeliness": 23.83,
       "writing_value": 5,
-      "total_score": 109.24
-    },
-    {
-      "id": "ebe99c695c0b6d96dd6db0c1f07f4393446eac75",
-      "title": "宇树主导的四足机器人市场，它悄悄拿到了6%",
-      "title_zh": "",
-      "url": "https://zhidx.com/p/586437.html",
-      "published_at": "2026-08-19T13:35:41+00:00",
-      "category": "极链AI",
-      "gn_label": "robotics",
-      "site_name": "极链AI",
-      "source": "极链AI",
-      "site_id": "极链AI",
-      "description": "智东西\n作者 | 江宇\n编辑 | 漠影\n今年WRC的人形机器人依然挤得满满当当。\n\n一米七、一米八的身高，裸露的金属骨架，灵巧手、跑跳、搬运、抓取……站在展馆里，很容易产生一种错觉：人形机器人似乎已经有了一套越来越标准的答案。\n维他动力却在今天带来了一台看起来有些“不合群”的机器人。\nATOM身高只有160cm，身体包上了织物，脚底专门做了静音设计，脸上是一块可以表达状态的屏幕。甚至连手臂长度、腰部自由度，都围绕柜子、桌面、门把手这些再普通不过的生活空间重新设计。\n\n与不少首先瞄准工厂、仓储等工业场景的人形机器人不同，ATOM一开始就在为人与机器人长期共处的空间做准备。它同时给出了个人版、企业",
-      "ai_score": 80.0,
-      "ai_label": "robotics",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 5,
-      "timeliness": 26.7,
-      "writing_value": 5,
-      "total_score": 126.7
+      "total_score": 108.83
     },
     {
       "id": "a027b7859f36b6c5bd01a2b5202d982832b40f0a",
@@ -63,9 +42,51 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.26,
+      "timeliness": 26.85,
       "writing_value": 0,
-      "total_score": 117.26
+      "total_score": 116.85
+    },
+    {
+      "id": "5a7c3fb2374a71c7b4b15c29c8e010deb183e7dc",
+      "title": "Robots sort packages and serve fast food at Beijing showcase - Tech Xplore",
+      "title_zh": "机器人在北京展示会上分拣包裹并提供快餐 - Tech Xplore",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFByQ1MyOW9FR2wtMGhLYzM4MzZpT0hoVW5PMm9JNkxUQTVweXFlOElqRWVYc0JfM1BXalB0VG03VTBhb2xLeV9mT2xWdnJDZmtqQ1VCR3V3LW9CWFFpNW9LTzQ5SjNDMDM5NnhRNlBjYWJ1bTFkRW5xLVZlV3h0X2c?oc=5",
+      "published_at": "2026-08-19T14:40:05+00:00",
+      "category": "GN: TechXplore robotics",
+      "gn_label": "robotics",
+      "site_name": "GN: TechXplore robotics",
+      "source": "GN: TechXplore robotics",
+      "site_id": "GN: TechXplore robotics",
+      "description": "Robots sort packages and serve fast food at Beijing showcase  Tech Xplore",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 27.36,
+      "writing_value": 0,
+      "total_score": 102.36
+    },
+    {
+      "id": "ebe99c695c0b6d96dd6db0c1f07f4393446eac75",
+      "title": "宇树主导的四足机器人市场，它悄悄拿到了6%",
+      "title_zh": "",
+      "url": "https://zhidx.com/p/586437.html",
+      "published_at": "2026-08-19T13:35:41+00:00",
+      "category": "极链AI",
+      "gn_label": "robotics",
+      "site_name": "极链AI",
+      "source": "极链AI",
+      "site_id": "极链AI",
+      "description": "智东西\n作者 | 江宇\n编辑 | 漠影\n今年WRC的人形机器人依然挤得满满当当。\n\n一米七、一米八的身高，裸露的金属骨架，灵巧手、跑跳、搬运、抓取……站在展馆里，很容易产生一种错觉：人形机器人似乎已经有了一套越来越标准的答案。\n维他动力却在今天带来了一台看起来有些“不合群”的机器人。\nATOM身高只有160cm，身体包上了织物，脚底专门做了静音设计，脸上是一块可以表达状态的屏幕。甚至连手臂长度、腰部自由度，都围绕柜子、桌面、门把手这些再普通不过的生活空间重新设计。\n\n与不少首先瞄准工厂、仓储等工业场景的人形机器人不同，ATOM一开始就在为人与机器人长期共处的空间做准备。它同时给出了个人版、企业",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 26.29,
+      "writing_value": 5,
+      "total_score": 126.29
     },
     {
       "id": "1ce823d50c1f70a32a8d01717142606943e85cc3",
@@ -84,9 +105,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 26.1,
+      "timeliness": 25.69,
       "writing_value": 5,
-      "total_score": 111.1
+      "total_score": 110.69
     },
     {
       "id": "6f98173c79083b987f4f7a415873ffb0737436af",
@@ -105,9 +126,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.09,
+      "timeliness": 27.68,
       "writing_value": 0,
-      "total_score": 103.09
+      "total_score": 102.68
     },
     {
       "id": "83302b8b4bcc6ac8d795d72fe55cb47cbaace1ac",
@@ -126,9 +147,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.99,
+      "timeliness": 25.58,
       "writing_value": 0,
-      "total_score": 100.99
+      "total_score": 100.58
     },
     {
       "id": "051e80def60fb284ce5ee468e92ca506b130cd28",
@@ -147,9 +168,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.72,
+      "timeliness": 25.31,
       "writing_value": 0,
-      "total_score": 100.72
+      "total_score": 100.31
     },
     {
       "id": "09612e1c4cf3411421df93699b13c29b74429e37",
@@ -168,9 +189,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.37,
+      "timeliness": 23.96,
       "writing_value": 0,
-      "total_score": 99.37
+      "total_score": 98.96
     },
     {
       "id": "26b1282a8df9624e41255be4ff173891a12eae1c",
@@ -189,9 +210,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 27.39,
+      "timeliness": 26.98,
       "writing_value": 5,
-      "total_score": 112.39
+      "total_score": 111.98
     },
     {
       "id": "945a8e0963d331ce807bd21c0b5f99ea60b6bfe6",
@@ -210,9 +231,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.04,
+      "timeliness": 27.64,
       "writing_value": 0,
-      "total_score": 103.04
+      "total_score": 102.64
     },
     {
       "id": "14ec274979b24b7b671be74f7ecce57976ad540b",
@@ -231,9 +252,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.37,
+      "timeliness": 23.96,
       "writing_value": 0,
-      "total_score": 99.37
+      "total_score": 98.96
     },
     {
       "id": "c39b6e0d06049ff3650d1e9f6fe12aeaa65fccbd",
@@ -252,13 +273,13 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 5,
-      "timeliness": 25.84,
+      "timeliness": 25.43,
       "writing_value": 5,
-      "total_score": 125.84
+      "total_score": 125.43
     },
     {
-      "id": "f1c7082495c6635c5a3234d968f006a8bd3996c0",
-      "title": "宇树科技：上市首天涨价近五倍的中国机械人公司甚么来头？ - bbc.com",
+      "id": "9f147eeef10f8420ae6f4c3fe346566060874205",
+      "title": "宇树科技：上市首天涨价近五倍的中国机械人公司甚么来头？ - BBC",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE8za1BoRlZwTGVORENzTjJyRUYyQV9xNFpzN3FvTjB2UkN6ajZXcDBVVE9kaExCRW92ZDRsZXBBaDBDcTEyWnZWSno3dHdOTkttZ1ZMQ05UbTF6ZGxHcWlvak9Ea09tUdIBa0FVX3lxTE9CUGFiellLM2ZoQm55VXNXTWFTUEhINnJBQ2VrQVdWQUNHTTBENFdVTHQxTS1PbHVETHRYcEtKXzVtXy1ZNWl5VXB2M1NydTBuLWNmX2JlUXplNVV3SXY5TVU2QkpEZlE4RjZz?oc=5",
       "published_at": "2026-08-19T12:55:16+00:00",
@@ -267,15 +288,15 @@
       "site_name": "GN: 宇树科技",
       "source": "GN: 宇树科技",
       "site_id": "GN: 宇树科技",
-      "description": "宇树科技：上市首天涨价近五倍的中国机械人公司甚么来头？  bbc.com",
+      "description": "宇树科技：上市首天涨价近五倍的中国机械人公司甚么来头？  BBC",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.02,
+      "timeliness": 25.62,
       "writing_value": 0,
-      "total_score": 101.02
+      "total_score": 100.62
     },
     {
       "id": "a6ed519e895af1070011cc3ad267118c6bd453e5",
@@ -294,9 +315,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.97,
+      "timeliness": 26.56,
       "writing_value": 0,
-      "total_score": 101.97
+      "total_score": 101.56
     },
     {
       "id": "14d451afd9b2d340bd383ad0c5082a4d755384ff",
@@ -315,9 +336,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.36,
+      "timeliness": 26.95,
       "writing_value": 0,
-      "total_score": 102.36
+      "total_score": 101.95
     },
     {
       "id": "15665fb482c3a28fd5d0d60539e42cb7d4eee8b3",
@@ -336,9 +357,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.34,
+      "timeliness": 23.93,
       "writing_value": 0,
-      "total_score": 99.34
+      "total_score": 98.93
     },
     {
       "id": "73b973f3bda64fb4c5eba7b4c4c6f3418a3fcb89",
@@ -357,9 +378,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.63,
+      "timeliness": 24.22,
       "writing_value": 0,
-      "total_score": 99.63
+      "total_score": 99.22
     },
     {
       "id": "426218fa2807870824346e11f115bcbd05294eb0",
@@ -378,9 +399,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.26,
+      "timeliness": 24.85,
       "writing_value": 0,
-      "total_score": 100.26
+      "total_score": 99.85
     },
     {
       "id": "b9dbddc6224fcfbda0a3c5e2c643b91da1528ed3",
@@ -399,13 +420,13 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.53,
+      "timeliness": 25.13,
       "writing_value": 0,
-      "total_score": 100.53
+      "total_score": 100.13
     },
     {
-      "id": "5d3a83d96bd71f6c6eb4a29e1db7ce54cbaf79ff",
-      "title": "宇树科技，上市首日收涨460%！ - eet-china.com",
+      "id": "dde43649a25e18a737674d0cc081ae8d5b13d69a",
+      "title": "宇树科技，上市首日收涨460%！ - 电子工程专辑",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFB6c3pXdTRRb25vOTcxZV9QOElucU5lRWN3R2xRTk1GYk05NmJMaFJZSU1BSUJoeDFSdFVRTzNPWFZrcHd2MGEyU2hoYkhJTkVXYjBj?oc=5",
       "published_at": "2026-08-19T12:30:00+00:00",
@@ -414,15 +435,15 @@
       "site_name": "GN: 宇树科技",
       "source": "GN: 宇树科技",
       "site_id": "GN: 宇树科技",
-      "description": "宇树科技，上市首日收涨460%！  eet-china.com",
+      "description": "宇树科技，上市首日收涨460%！  电子工程专辑",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.6,
+      "timeliness": 25.19,
       "writing_value": 0,
-      "total_score": 100.6
+      "total_score": 100.19
     },
     {
       "id": "6a41d3589032fb251b2dd2f2f6acde5aa48770fa",
@@ -441,9 +462,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.62,
+      "timeliness": 26.21,
       "writing_value": 0,
-      "total_score": 101.62
+      "total_score": 101.21
     },
     {
       "id": "a3952d8e91d2d9ac1be5ba778caf93e462b17853",
@@ -462,9 +483,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.06,
+      "timeliness": 25.65,
       "writing_value": 0,
-      "total_score": 101.06
+      "total_score": 100.65
     },
     {
       "id": "9a531431dae902cf1e8ea69d4f3b328483fbc2ac",
@@ -483,9 +504,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.79,
+      "timeliness": 24.39,
       "writing_value": 0,
-      "total_score": 99.79
+      "total_score": 99.39
     },
     {
       "id": "9c9d7cbf809f1f0200c4bc2f02867f54fffcc8b7",
@@ -504,34 +525,13 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.44,
+      "timeliness": 29.03,
       "writing_value": 0,
-      "total_score": 104.44
+      "total_score": 104.03
     },
     {
-      "id": "f18dc5c5ffb7d403666f0acca0300d03b87a1e1f",
-      "title": "三箭齐发!优必选WRC2026全方位展示人形机器人工业、商用、家庭消费应用成果 - 热点科技",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFAwMkpzSlR3VUJwa0VuRXY0Y3lwOUs2ckozWEp4c0xOOVRQb1lDZ2ZPakp2V3hVc0tXbnlNNXI3a1ZFOGw4aEhjRzk2eXBpR3M?oc=5",
-      "published_at": "2026-08-19T12:38:40+00:00",
-      "category": "GN: 优必选",
-      "gn_label": "robotics",
-      "site_name": "GN: 优必选",
-      "source": "GN: 优必选",
-      "site_id": "GN: 优必选",
-      "description": "三箭齐发!优必选WRC2026全方位展示人形机器人工业、商用、家庭消费应用成果  热点科技",
-      "ai_score": 80.0,
-      "ai_label": "robotics",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 25.75,
-      "writing_value": 0,
-      "total_score": 115.75
-    },
-    {
-      "id": "a9287cb94473e9e10c24e621286a13fc15205583",
-      "title": "别眨眼！这台机械臂在蛋壳上刻出了“工笔画” - news.bjd.com.cn",
+      "id": "74e060d1bbc78b5d9e065a4ed15aaa59294104b0",
+      "title": "别眨眼！这台机械臂在蛋壳上刻出了“工笔画” - 京报网",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE13S0NHR0lsdU84LUtCdU16VHBkeVRoR2cybTFTZmFJY2thLWk5aktSQUVST3NIV0RuQml1d2hxcWhyUWYzLVF3MDBMQWJ6XzYzanB0bVdiZ2FyTXZ2cmc?oc=5",
       "published_at": "2026-08-19T13:56:27+00:00",
@@ -540,36 +540,15 @@
       "site_name": "GN: 机械臂",
       "source": "GN: 机械臂",
       "site_id": "GN: 机械臂",
-      "description": "别眨眼！这台机械臂在蛋壳上刻出了“工笔画”  news.bjd.com.cn",
+      "description": "别眨眼！这台机械臂在蛋壳上刻出了“工笔画”  京报网",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.04,
+      "timeliness": 26.64,
       "writing_value": 0,
-      "total_score": 102.04
-    },
-    {
-      "id": "3f6d5a84a373f5f0638a940c982bab6aed79046a",
-      "title": "脑机接口走向机器人，人机交互还有哪些新可能？ - jingjiribao.cn",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1lMWZWSWpLbXVEaURrQlhES01HZnpkRWdtb1JoYzU1SUZjclBabGQ4dHI1QVl1YmhqVGNsM1Fmc004ajVQYk5YUnBTUVd0UnY3ajdzbUNoSFVUcUs1NWw4bFhXMA?oc=5",
-      "published_at": "2026-08-19T13:18:57+00:00",
-      "category": "GN: 灵巧手",
-      "gn_label": "robotics",
-      "site_name": "GN: 灵巧手",
-      "source": "GN: 灵巧手",
-      "site_id": "GN: 灵巧手",
-      "description": "脑机接口走向机器人，人机交互还有哪些新可能？  jingjiribao.cn",
-      "ai_score": 80.0,
-      "ai_label": "robotics",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 26.42,
-      "writing_value": 0,
-      "total_score": 116.42
+      "total_score": 101.64
     },
     {
       "id": "f6da57dffebd391f662b65c8365dfb86208b731d",
@@ -588,9 +567,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.55,
+      "timeliness": 24.14,
       "writing_value": 0,
-      "total_score": 99.55
+      "total_score": 99.14
     }
   ],
   "fallback_used": false
