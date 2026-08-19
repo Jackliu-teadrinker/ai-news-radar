@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-19T17:19:31.164378+00:00",
-  "total_items": 30,
+  "generated_at": "2026-08-19T17:48:24.377610+00:00",
+  "total_items": 29,
   "items": [
     {
       "id": "http://arxiv.org/abs/2608.18077v1",
@@ -320,17 +320,6 @@
       "published_at": "2026-08-18T06:36:20+00:00",
       "updated_at": "2026-08-18T06:36:20Z",
       "title_zh": "交付应用中多机器人任务分配和路由的双层蚁群优化"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.17386v1",
-      "title": "MANIGUARD: A Benchmark and Data Suite for Specification-Grounded Safety Evaluation and Improvement of Robotic Manipulation",
-      "url": "https://arxiv.org/abs/2608.17386",
-      "summary": "Foundation-model policies for robotic manipulation are advancing rapidly on task success, but rigorous evaluation of whether they succeed safely is still lacking. We introduce ManiGuard, a specification-grounded framework for evaluating and improving the safety of foundation-model manipulation, comprising the ManiGuard-Bench task suite and a paired safety-annotated trajectory-generation pipeline. ManiGuard-Bench organizes six contact-rich household task families into 200 locked base tasks along a skill $\\times$ constraint taxonomy, with safety specified independently of task success. Each task is evaluated under one in-distribution and four single-axis out-of-distribution perturbations that hold the safety specification fixed, giving 1,000 locked scenarios. Every rollout is runtime-checked by LTL$_f$-grounded automaton monitors over physics-grounded predicates rather than learned classifiers or LLM judges, in simulation and on a physical Franka platform. The pipeline pairs an automated motion-planning generator with human teleoperation, annotated by the same per-step monitor, and directly supports safety-aware fine-tuning; we release 8,000 safety-annotated demonstrations, 40 per base task. Benchmarking zero-shot and fine-tuned VLAs across more than 23,000 rollouts, we find: (i) safety must be evaluated independently of task success, as 6-21% of successful rollouts violate the specification; (ii) fine-tuning on our suite raises safe task completion from near zero to 7.5-29.8% and engaged-and-safe behavior from 16-40% to 51-72%; but (iii) a gap remains that scaling demonstrations does not close, with 21-42% of engaged rollouts still violating, two of six families below 2% safe success for every policy, and these failures persisting under distribution shift and on hardware.",
-      "authors": "Yiyan Peng, Philip Wang, Simon Sinong Zhan et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-18T05:27:35+00:00",
-      "updated_at": "2026-08-18T05:27:35Z",
-      "title_zh": "MANIGUARD：基于规范的安全评估和机器人操作改进的基准和数据套件"
     }
   ]
 }

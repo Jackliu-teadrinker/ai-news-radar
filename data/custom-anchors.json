@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-19T17:18:24.620616+00:00",
+  "generated_at": "2026-08-19T17:47:26.134066+00:00",
   "window_start": "2026-08-19T19:00:00+08:00",
-  "window_end": "2026-08-20T01:18:22.563881+08:00",
-  "total_items": 27,
+  "window_end": "2026-08-20T01:47:24.616553+08:00",
+  "total_items": 28,
   "items": [
     {
       "id": "6135f28eec39e1c1e63b4047c5963a877baeb445",
@@ -21,9 +21,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 23.83,
+      "timeliness": 23.34,
       "writing_value": 5,
-      "total_score": 108.83
+      "total_score": 108.34
     },
     {
       "id": "a027b7859f36b6c5bd01a2b5202d982832b40f0a",
@@ -42,9 +42,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.85,
+      "timeliness": 26.37,
       "writing_value": 0,
-      "total_score": 116.85
+      "total_score": 116.37
     },
     {
       "id": "5a7c3fb2374a71c7b4b15c29c8e010deb183e7dc",
@@ -63,9 +63,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.36,
+      "timeliness": 26.88,
       "writing_value": 0,
-      "total_score": 102.36
+      "total_score": 101.88
     },
     {
       "id": "ebe99c695c0b6d96dd6db0c1f07f4393446eac75",
@@ -84,9 +84,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 5,
-      "timeliness": 26.29,
+      "timeliness": 25.81,
       "writing_value": 5,
-      "total_score": 126.29
+      "total_score": 125.81
     },
     {
       "id": "1ce823d50c1f70a32a8d01717142606943e85cc3",
@@ -105,9 +105,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 25.69,
+      "timeliness": 25.21,
       "writing_value": 5,
-      "total_score": 110.69
+      "total_score": 110.21
     },
     {
       "id": "6f98173c79083b987f4f7a415873ffb0737436af",
@@ -126,9 +126,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.68,
+      "timeliness": 27.2,
       "writing_value": 0,
-      "total_score": 102.68
+      "total_score": 102.2
     },
     {
       "id": "83302b8b4bcc6ac8d795d72fe55cb47cbaace1ac",
@@ -147,9 +147,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.58,
+      "timeliness": 25.09,
       "writing_value": 0,
-      "total_score": 100.58
+      "total_score": 100.09
     },
     {
       "id": "051e80def60fb284ce5ee468e92ca506b130cd28",
@@ -168,9 +168,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.31,
+      "timeliness": 24.82,
       "writing_value": 0,
-      "total_score": 100.31
+      "total_score": 99.82
     },
     {
       "id": "09612e1c4cf3411421df93699b13c29b74429e37",
@@ -189,9 +189,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.96,
+      "timeliness": 23.48,
       "writing_value": 0,
-      "total_score": 98.96
+      "total_score": 98.48
     },
     {
       "id": "26b1282a8df9624e41255be4ff173891a12eae1c",
@@ -210,9 +210,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 26.98,
+      "timeliness": 26.49,
       "writing_value": 5,
-      "total_score": 111.98
+      "total_score": 111.49
+    },
+    {
+      "id": "83b399651af9b0578b612d846988a325b26aee05",
+      "title": "Why home robots are taking so long - ZDNET",
+      "title_zh": "为什么家用机器人需要这么长时间 - ZDNET",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1naDVhekZlN3V5VU5ldGNYRjFfcUlPamFtRER3MDZpRklFTHdDeVpfVm1hdXpQT011Q0hvdk9vcVAxaUc3RHItUFNBVjZNNDJQN3ZpUG9GNmZLT1pWMldjVGVB?oc=5",
+      "published_at": "2026-08-19T17:42:13+00:00",
+      "category": "GN: industrial robot",
+      "gn_label": "robotics",
+      "site_name": "GN: industrial robot",
+      "source": "GN: industrial robot",
+      "site_id": "GN: industrial robot",
+      "description": "Why home robots are taking so long  ZDNET",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.91,
+      "writing_value": 0,
+      "total_score": 104.91
     },
     {
       "id": "945a8e0963d331ce807bd21c0b5f99ea60b6bfe6",
@@ -231,30 +252,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.64,
+      "timeliness": 27.15,
       "writing_value": 0,
-      "total_score": 102.64
-    },
-    {
-      "id": "14ec274979b24b7b671be74f7ecce57976ad540b",
-      "title": "China Robot Conference - Bluefield Daily Telegraph",
-      "title_zh": "中国机器人大会 - Bluefield Daily Telegraph",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOYTZjbFptVnoxejVCMm5VTXhIdVpUeVBVUnFiYUE0S2R2c2hBX1RiTkJPOExPTlpQU00xTHVVVmI4VENJR2lKYWpxSncwLUF1dEpuSXhEbC1lVTEtc2lFQU5zRE5uZG8wQlJ0dDh6bW1HWENXNXBnczdSUUR5eTZMOVRQVEJoTFlwSXFkWTBZUmxnWUpRZlFhN1ZVNkJ0Mjl2VndYT29EUHJnUW9yQ0dNODJGdWI?oc=5",
-      "published_at": "2026-08-19T11:15:55+00:00",
-      "category": "GN: industrial robot",
-      "gn_label": "robotics",
-      "site_name": "GN: industrial robot",
-      "source": "GN: industrial robot",
-      "site_id": "GN: industrial robot",
-      "description": "China Robot Conference  Bluefield Daily Telegraph",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 23.96,
-      "writing_value": 0,
-      "total_score": 98.96
+      "total_score": 102.15
     },
     {
       "id": "c39b6e0d06049ff3650d1e9f6fe12aeaa65fccbd",
@@ -273,9 +273,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 5,
-      "timeliness": 25.43,
+      "timeliness": 24.94,
       "writing_value": 5,
-      "total_score": 125.43
+      "total_score": 124.94
     },
     {
       "id": "9f147eeef10f8420ae6f4c3fe346566060874205",
@@ -294,72 +294,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.62,
+      "timeliness": 25.13,
       "writing_value": 0,
-      "total_score": 100.62
-    },
-    {
-      "id": "a6ed519e895af1070011cc3ad267118c6bd453e5",
-      "title": "宇树科技两小时换手率64%！梁文锋打新浮盈超11亿，这些地方国资也上桌 - 东方财富",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBfR2d4Zkt4MlpLMWFLeXRnb0pTemRlRkxvRUJOR1BYeUdOVkctVUFQb3NnejhxelZ2bUpTdVJaUnhmc0Zmc3Y1eXBzdWRWeGE1TURscGZvNld5bHI0SGJLaGJybEl1UQ?oc=5",
-      "published_at": "2026-08-19T13:51:58+00:00",
-      "category": "GN: 宇树科技",
-      "gn_label": "robotics",
-      "site_name": "GN: 宇树科技",
-      "source": "GN: 宇树科技",
-      "site_id": "GN: 宇树科技",
-      "description": "宇树科技两小时换手率64%！梁文锋打新浮盈超11亿，这些地方国资也上桌  东方财富",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 26.56,
-      "writing_value": 0,
-      "total_score": 101.56
-    },
-    {
-      "id": "14d451afd9b2d340bd383ad0c5082a4d755384ff",
-      "title": "宇树科技上市首日涨超460% 公私募打新浮盈逾百亿元 - 东方财富",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE14ZnltYmpwS195MmNveHFhbHZ6SDJKQTZybkdKbGExZWp1SkU4aWNLQTI3VC1uNXlHN0pjbUx5SWxyekZtR3RielIzRTNobWhPWkZod0M2R0FGM2YtRElkZzYwSzhxQQ?oc=5",
-      "published_at": "2026-08-19T14:15:15+00:00",
-      "category": "GN: 宇树科技",
-      "gn_label": "robotics",
-      "site_name": "GN: 宇树科技",
-      "source": "GN: 宇树科技",
-      "site_id": "GN: 宇树科技",
-      "description": "宇树科技上市首日涨超460% 公私募打新浮盈逾百亿元  东方财富",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 26.95,
-      "writing_value": 0,
-      "total_score": 101.95
-    },
-    {
-      "id": "15665fb482c3a28fd5d0d60539e42cb7d4eee8b3",
-      "title": "宇树科技上市首日收涨460.34%，37家获配保险机构浮盈或超47亿 - 东方财富",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBDdTJFUjgwUDl1b3V5XzNGU0lTYVE4RTA3bHZZRWNRbmxaVWtfSlR0aEdrQTVPazgxY29aOWNHeGpidkx4bjRwS011Xzh1QTBxZXkzdXFISmpiS1owcXlhc3MwYTVWUQ?oc=5",
-      "published_at": "2026-08-19T11:14:16+00:00",
-      "category": "GN: 宇树科技",
-      "gn_label": "robotics",
-      "site_name": "GN: 宇树科技",
-      "source": "GN: 宇树科技",
-      "site_id": "GN: 宇树科技",
-      "description": "宇树科技上市首日收涨460.34%，37家获配保险机构浮盈或超47亿  东方财富",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 23.93,
-      "writing_value": 0,
-      "total_score": 98.93
+      "total_score": 100.13
     },
     {
       "id": "73b973f3bda64fb4c5eba7b4c4c6f3418a3fcb89",
@@ -378,9 +315,72 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.22,
+      "timeliness": 23.74,
       "writing_value": 0,
-      "total_score": 99.22
+      "total_score": 98.74
+    },
+    {
+      "id": "a6ed519e895af1070011cc3ad267118c6bd453e5",
+      "title": "宇树科技两小时换手率64%！梁文锋打新浮盈超11亿，这些地方国资也上桌 - 东方财富",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBfR2d4Zkt4MlpLMWFLeXRnb0pTemRlRkxvRUJOR1BYeUdOVkctVUFQb3NnejhxelZ2bUpTdVJaUnhmc0Zmc3Y1eXBzdWRWeGE1TURscGZvNld5bHI0SGJLaGJybEl1UQ?oc=5",
+      "published_at": "2026-08-19T13:51:58+00:00",
+      "category": "GN: 宇树科技",
+      "gn_label": "robotics",
+      "site_name": "GN: 宇树科技",
+      "source": "GN: 宇树科技",
+      "site_id": "GN: 宇树科技",
+      "description": "宇树科技两小时换手率64%！梁文锋打新浮盈超11亿，这些地方国资也上桌  东方财富",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 26.08,
+      "writing_value": 0,
+      "total_score": 101.08
+    },
+    {
+      "id": "14d451afd9b2d340bd383ad0c5082a4d755384ff",
+      "title": "宇树科技上市首日涨超460% 公私募打新浮盈逾百亿元 - 东方财富",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE14ZnltYmpwS195MmNveHFhbHZ6SDJKQTZybkdKbGExZWp1SkU4aWNLQTI3VC1uNXlHN0pjbUx5SWxyekZtR3RielIzRTNobWhPWkZod0M2R0FGM2YtRElkZzYwSzhxQQ?oc=5",
+      "published_at": "2026-08-19T14:15:15+00:00",
+      "category": "GN: 宇树科技",
+      "gn_label": "robotics",
+      "site_name": "GN: 宇树科技",
+      "source": "GN: 宇树科技",
+      "site_id": "GN: 宇树科技",
+      "description": "宇树科技上市首日涨超460% 公私募打新浮盈逾百亿元  东方财富",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 26.47,
+      "writing_value": 0,
+      "total_score": 101.47
+    },
+    {
+      "id": "15665fb482c3a28fd5d0d60539e42cb7d4eee8b3",
+      "title": "宇树科技上市首日收涨460.34%，37家获配保险机构浮盈或超47亿 - 东方财富",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBDdTJFUjgwUDl1b3V5XzNGU0lTYVE4RTA3bHZZRWNRbmxaVWtfSlR0aEdrQTVPazgxY29aOWNHeGpidkx4bjRwS011Xzh1QTBxZXkzdXFISmpiS1owcXlhc3MwYTVWUQ?oc=5",
+      "published_at": "2026-08-19T11:14:16+00:00",
+      "category": "GN: 宇树科技",
+      "gn_label": "robotics",
+      "site_name": "GN: 宇树科技",
+      "source": "GN: 宇树科技",
+      "site_id": "GN: 宇树科技",
+      "description": "宇树科技上市首日收涨460.34%，37家获配保险机构浮盈或超47亿  东方财富",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 23.45,
+      "writing_value": 0,
+      "total_score": 98.45
     },
     {
       "id": "426218fa2807870824346e11f115bcbd05294eb0",
@@ -399,9 +399,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.85,
+      "timeliness": 24.37,
       "writing_value": 0,
-      "total_score": 99.85
+      "total_score": 99.37
     },
     {
       "id": "b9dbddc6224fcfbda0a3c5e2c643b91da1528ed3",
@@ -420,9 +420,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.13,
+      "timeliness": 24.64,
       "writing_value": 0,
-      "total_score": 100.13
+      "total_score": 99.64
     },
     {
       "id": "dde43649a25e18a737674d0cc081ae8d5b13d69a",
@@ -441,9 +441,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.19,
+      "timeliness": 24.71,
       "writing_value": 0,
-      "total_score": 100.19
+      "total_score": 99.71
     },
     {
       "id": "6a41d3589032fb251b2dd2f2f6acde5aa48770fa",
@@ -462,30 +462,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.21,
+      "timeliness": 25.73,
       "writing_value": 0,
-      "total_score": 101.21
-    },
-    {
-      "id": "a3952d8e91d2d9ac1be5ba778caf93e462b17853",
-      "title": "千亿宇树科技上市，但商业化落地仍需加速 - 新浪财经",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPVGVKdVB6MENiMGhRREV3ZFc2bC1WVV9Nd0xXV0lVekFNc2NrYjhlSGJBaTlOTEpBMUpuMUtpaVR0TGFqTzA3S2Q4cWs3aUxJUm05cWpvUXplSGxNYzJ1aFU4MGVwMmZPT1k1WHRUU3MzTUhrSzdZVm9pVjF1YU5GZjRuRy1jRnRydmxVMkoteGZlcW9TOVZJWjRJNE1IYnlTdGRySEhtQQ?oc=5",
-      "published_at": "2026-08-19T12:57:33+00:00",
-      "category": "GN: 宇树科技",
-      "gn_label": "robotics",
-      "site_name": "GN: 宇树科技",
-      "source": "GN: 宇树科技",
-      "site_id": "GN: 宇树科技",
-      "description": "千亿宇树科技上市，但商业化落地仍需加速  新浪财经",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 25.65,
-      "writing_value": 0,
-      "total_score": 100.65
+      "total_score": 100.73
     },
     {
       "id": "9a531431dae902cf1e8ea69d4f3b328483fbc2ac",
@@ -504,13 +483,13 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.39,
+      "timeliness": 23.9,
       "writing_value": 0,
-      "total_score": 99.39
+      "total_score": 98.9
     },
     {
-      "id": "9c9d7cbf809f1f0200c4bc2f02867f54fffcc8b7",
-      "title": "宇树科技上市造富，智元系上纬新材为何股价大跌19.3%？ - emwap.eastmoney.com",
+      "id": "94818c544ee9e1025d6066f16aaf51348270892e",
+      "title": "宇树科技上市造富，智元系上纬新材为何股价大跌19.3%？ - 东方财富",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1zekpjWjg2NWQybFZnbTBCa20xbWNPeFFfZUtsdkdZdTBFUFNRckpUWEh5TGRDVGZnUm96cV82VkpjMlZZbGoyQjhrMDJfRjVzQWVsaGh5N0QyUkp3VDkxaF9sMA?oc=5",
       "published_at": "2026-08-19T16:20:04+00:00",
@@ -519,15 +498,36 @@
       "site_name": "GN: 智元机器人",
       "source": "GN: 智元机器人",
       "site_id": "GN: 智元机器人",
-      "description": "宇树科技上市造富，智元系上纬新材为何股价大跌19.3%？  emwap.eastmoney.com",
+      "description": "宇树科技上市造富，智元系上纬新材为何股价大跌19.3%？  东方财富",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.03,
+      "timeliness": 28.55,
       "writing_value": 0,
-      "total_score": 104.03
+      "total_score": 103.55
+    },
+    {
+      "id": "a3952d8e91d2d9ac1be5ba778caf93e462b17853",
+      "title": "千亿宇树科技上市，但商业化落地仍需加速 - 新浪财经",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPVGVKdVB6MENiMGhRREV3ZFc2bC1WVV9Nd0xXV0lVekFNc2NrYjhlSGJBaTlOTEpBMUpuMUtpaVR0TGFqTzA3S2Q4cWs3aUxJUm05cWpvUXplSGxNYzJ1aFU4MGVwMmZPT1k1WHRUU3MzTUhrSzdZVm9pVjF1YU5GZjRuRy1jRnRydmxVMkoteGZlcW9TOVZJWjRJNE1IYnlTdGRySEhtQQ?oc=5",
+      "published_at": "2026-08-19T12:57:33+00:00",
+      "category": "GN: 优必选",
+      "gn_label": "robotics",
+      "site_name": "GN: 优必选",
+      "source": "GN: 优必选",
+      "site_id": "GN: 优必选",
+      "description": "千亿宇树科技上市，但商业化落地仍需加速  新浪财经",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 25.17,
+      "writing_value": 0,
+      "total_score": 100.17
     },
     {
       "id": "74e060d1bbc78b5d9e065a4ed15aaa59294104b0",
@@ -546,9 +546,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.64,
+      "timeliness": 26.15,
       "writing_value": 0,
-      "total_score": 101.64
+      "total_score": 101.15
     },
     {
       "id": "f6da57dffebd391f662b65c8365dfb86208b731d",
@@ -567,9 +567,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.14,
+      "timeliness": 23.65,
       "writing_value": 0,
-      "total_score": 99.14
+      "total_score": 98.65
+    },
+    {
+      "id": "a8cd313d300c5af3bed856af55063af3bb45de75",
+      "title": "人形机器人走进工厂之后，真正难的事情才刚开始 - 搜狐网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOSEZfcnhFem40VmNaa2w1YW80d05PNG1JMmZoWFBGeGR1RmpkUUUycHhqS2FtdU5tZDE5SU5FckIxb281MjZzXzVlY2k1MlZ1MUNIbldhLTBVTVYyeDkwc205ZlY0UzZHSFVhbjNxMThaY2FwdnRBQWFfLVo0ZzRVaWFkM0xVUkhQ?oc=5",
+      "published_at": "2026-08-19T12:16:53+00:00",
+      "category": "GN: 工业机器人与人",
+      "gn_label": "robotics",
+      "site_name": "GN: 工业机器人与人",
+      "source": "GN: 工业机器人与人",
+      "site_id": "GN: 工业机器人与人",
+      "description": "人形机器人走进工厂之后，真正难的事情才刚开始  搜狐网",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 24.49,
+      "writing_value": 0,
+      "total_score": 114.49
     }
   ],
   "fallback_used": false
