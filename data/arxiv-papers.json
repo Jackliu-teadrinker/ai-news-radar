@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-19T18:20:42.615558+00:00",
-  "total_items": 29,
+  "generated_at": "2026-08-19T19:01:16.223278+00:00",
+  "total_items": 26,
   "items": [
     {
       "id": "http://arxiv.org/abs/2608.18077v1",
@@ -287,39 +287,6 @@
       "published_at": "2026-08-18T07:32:50+00:00",
       "updated_at": "2026-08-18T07:32:50Z",
       "title_zh": "EATR-Stereo：用于人形视觉-语言-动作控制的配对立体证据的实施例感知路由"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.17432v1",
-      "title": "UniReflex: Plug-and-Play Force Control for Pretrained Generative Policies via Fast-Slow Reflex",
-      "url": "https://arxiv.org/abs/2608.17432",
-      "summary": "Generative imitation learning policies excel at trajectory planning but lack closed-loop force regulation, while directly incorporating force modalities often requires redesigning or retraining the network. We present UniReflex, a universal plug-and-play framework that equips frozen generative policies with variable impedance control (VIC) for contact regulation, guided by force-direction intent collected during demonstration, without further slow-backbone fine-tuning. By non-invasively intercepting deep latent representations from the action head, UniReflex drives a fast reflex network that decouples active force exertion from external interaction response. This scheme predicts normalized anisotropic stiffness directions for directional compliance allocation. Furthermore, UniReflex integrates an adaptive gating mechanism that enables seamless transitions between position-dominant planning and force-dominant execution. Real-world bimanual experiments demonstrate that UniReflex significantly improves contact stability and success rates while preserving original position accuracy. Our approach achieves 25-66x lower per-step backward latency relative to joint training strategies on the evaluated backbones.",
-      "authors": "Yan Huang, Shoujie Li, Ziwu Song et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-18T06:54:22+00:00",
-      "updated_at": "2026-08-18T06:54:22Z",
-      "title_zh": "UniReflex：通过快慢反射进行预训练生成策略的即插即用力控制"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.17423v1",
-      "title": "Prism-GRPO: Faster VLA Policy Optimization via Splitting Same-outcome Groups",
-      "url": "https://arxiv.org/abs/2608.17423",
-      "summary": "GRPO is increasingly used for reinforcement learning of vision-language-action (VLA) policies because, unlike PPO, it does not require training a critic. This simplification comes with a sampling cost: group-relative advantages require multiple rollouts from each scene. Under binary success rewards, groups whose rollouts all succeed or all fail have zero advantage and are discarded by dynamic sampling. These groups are especially common early in training, when most rollouts fail, wasting much of the expensive robotic rollout budget. We introduce Prism-GRPO, which augments binary outcome reward with a weighted trajectory-level execution-quality score. By splitting same-outcome groups into a quality spectrum, Prism-GRPO recovers training signal while ensuring that every success still outranks every failure. Quality scores can be derived from simulator contacts, executed actions, or visual observations, avoiding task-specific progress rewards. We prove that Prism-GRPO never increases the probability that a sampled group is discarded for having zero advantages, and derive a gradient-alignment condition under which its combined update remains a local ascent direction for task success. Across four RoboTwin tasks spanning different horizons and coordination patterns, Prism-GRPO improves success and quality at matched rollout budgets and reaches target success rates with up to 56% fewer rollouts. It also suppresses a reward-hacking shortcut, with the cleaner behavior transferring under direct deployment to a real robot. Through ablations, we show consistent gains across contact-, smoothness-, and VLM-derived quality signals.",
-      "authors": "Zeyun Deng, Yuzhe Lu, Yawei Wang et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-18T06:44:16+00:00",
-      "updated_at": "2026-08-18T06:44:16Z",
-      "title_zh": "Prism-GRPO：通过拆分相同结果组加快 VLA 策略优化"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.17416v1",
-      "title": "Bi-Layer Ant Colony Optimization for Multi-Robot Task Allocation and Routing in Delivery Applications",
-      "url": "https://arxiv.org/abs/2608.17416",
-      "summary": "This paper addresses the multi-robot task allocation (MRTA) problem, which is essential for delivery and logistics applications. Our approach first defines a new cost function that transforms the MRTA into a unified optimization problem capturing both task assignment and routing. A bi-layer ant colony optimization (ACO) algorithm is then introduced, integrating two interdependent decision layers within a single colony process to solve the problem. This hierarchical framework enables simultaneous optimization of task allocation and route planning across multiple robots. Comparative experiments with mixed-integer linear programming (MILP) and particle swarm optimization (PSO) demonstrate that the proposed bi-layer ACO achieves the shortest total travel distance and fastest completion time across all task sizes. Specifically, it reduces total travel distance by up to 17.7% and completion time by nearly 20% compared with baseline methods. These results confirm the efficiency, scalability, and reliability of the proposed bi-layer ACO for multi-robot delivery tasks.",
-      "authors": "Le Na Nguyen, Thanh Long Nguyen, Thanh Thao Ton Nu et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-18T06:36:20+00:00",
-      "updated_at": "2026-08-18T06:36:20Z",
-      "title_zh": "交付应用中多机器人任务分配和路由的双层蚁群优化"
     }
   ]
 }
