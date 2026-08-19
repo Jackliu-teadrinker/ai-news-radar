@@ -1,9 +1,9 @@
 {
   "date": "2026-08-20",
-  "generated_at": "2026-08-19T20:17:01.852846+00:00",
+  "generated_at": "2026-08-19T20:52:16.311674+00:00",
   "score_threshold": 80,
   "total_items": 50,
-  "new_added": 0,
+  "new_added": 2,
   "items": [
     {
       "id": "7fad9a5eb4826919",
@@ -300,6 +300,27 @@
       "total_score": 124.93
     },
     {
+      "id": "4504e7a0ce4ad087",
+      "title": "X Square Robot Shows the Full Embodied AI Loop at WRC 2026: From Foundation Model to Real-World Deployment - Yahoo! Finance Canada",
+      "title_zh": "X Square 机器人在 WRC 2026 上展示完整的人工智能循环：从基础模型到现实世界部署 - 雅虎！加拿大金融",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9iOVpXa2NhSkgyRkxrMW5OLW5xZjM3TWNoUHFjbHdydDZJZEdHZTIwcUdvSWkxemZlQWZYMGwzYXRXVWptd1lXbE45MUlHMmR2c1ZBV2F1d1hWYldIZGN2NnNFU18yM2U4S0JlejloakEzZlQyMkh5QWJXSXBhTUk?oc=5",
+      "published_at": "2026-08-19T13:18:00+00:00",
+      "category": "国外机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国外机器人资讯",
+      "source": "国外机器人资讯",
+      "site_id": "国外机器人资讯",
+      "description": "X Square Robot Shows the Full Embodied AI Loop at WRC 2026: From Foundation Model to Real-World Deployment  Yahoo! Finance Canada",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 22.45,
+      "writing_value": 5,
+      "total_score": 122.45
+    },
+    {
       "id": "de38646f49c473fa",
       "title": "杭州诞生A股人形机器人第一股 - 手机新浪网",
       "title_zh": "",
@@ -529,6 +550,27 @@
       "timeliness": 29.59,
       "writing_value": 0,
       "total_score": 119.59
+    },
+    {
+      "id": "7f8b7b66b3efff6d",
+      "title": "Kollmorgen to give a joint-by-joint guide to humanoid motion at RoboBusiness - therobotreport.com",
+      "title_zh": "科尔摩根将在 RoboBusiness 上提供人形运动的联合指南 - therobotreport.com",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPTXFfbGFXUEF5T01fRm9mY0tMSnZxVUpCYlduNkpRZjNqLWNodW1FbUJjdndKejU2cUYtMDVndlhKT3MtTXBGa3NlaWtnTlBKeVNwcVFhd0xlR2lEY2lXYXdxSE1ybTVfU2prNXJ6aGhtU2RJclNjNlRfWEdVU1dVb3N2NUtPTEloRU53ZXdSa2NKd2xtV3JwWEdCVjY5QQ?oc=5",
+      "published_at": "2026-08-19T20:22:29+00:00",
+      "category": "国外人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国外人形机器人资讯",
+      "source": "国外人形机器人资讯",
+      "site_id": "国外人形机器人资讯",
+      "description": "Kollmorgen to give a joint-by-joint guide to humanoid motion at RoboBusiness  therobotreport.com",
+      "ai_score": 80.0,
+      "ai_label": "humanoid",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.52,
+      "writing_value": 0,
+      "total_score": 119.52
     },
     {
       "id": "a8c4012f7e316c8a",
@@ -1012,48 +1054,6 @@
       "timeliness": 28.62,
       "writing_value": 0,
       "total_score": 118.62
-    },
-    {
-      "id": "a26202df47ebeb3e",
-      "title": "工信部原副部长王江平：AI正从生成式向Agent、具身智能和物理AI演进 - 观点网",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9XdW0wUVlhQmdjMHRObzFHV3A2Xy1WOEVXd1RnLS0wYUpmajlaRUNRME9KUTFpb3JZT3I4eDdLVzFtYXNxRlpoVWlnbWp5ME82Y0l0NGE1eFNVdHJYMzFTamFB?oc=5",
-      "published_at": "2026-08-19T14:56:43+00:00",
-      "category": "国内具身智能资讯",
-      "gn_label": "embodied_ai",
-      "site_name": "国内具身智能资讯",
-      "source": "国内具身智能资讯",
-      "site_id": "国内具身智能资讯",
-      "description": "工信部原副部长王江平：AI正从生成式向Agent、具身智能和物理AI演进  观点网",
-      "ai_score": 80.0,
-      "ai_label": "embodied_ai",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 28.62,
-      "writing_value": 0,
-      "total_score": 118.62
-    },
-    {
-      "id": "ba594ab016cfcc34",
-      "title": "海外研选 | 巴克莱：自动化3.0时代开启 人形机器人市场10年后或达2000亿美元 - 财联社",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE12ZjBIMXNiQVEtUTZXbHRaMTFFNGtGVjdUM1hLY3RwSm9lcS15Z1k4WkgzdW9LT3Y4ZUJyN3hjUjhDTHNaOWhzcg?oc=5",
-      "published_at": "2026-08-19T17:56:03+00:00",
-      "category": "国内人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国内人形机器人资讯",
-      "source": "国内人形机器人资讯",
-      "site_id": "国内人形机器人资讯",
-      "description": "海外研选 | 巴克莱：自动化3.0时代开启 人形机器人市场10年后或达2000亿美元  财联社",
-      "ai_score": 80.0,
-      "ai_label": "humanoid",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 28.46,
-      "writing_value": 0,
-      "total_score": 118.46
     }
   ]
 }
