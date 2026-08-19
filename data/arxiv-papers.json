@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-19T21:48:22.523713+00:00",
-  "total_items": 20,
+  "generated_at": "2026-08-19T22:15:38.375333+00:00",
+  "total_items": 15,
   "items": [
     {
       "id": "http://arxiv.org/abs/2608.18077v1",
@@ -166,61 +166,6 @@
       "published_at": "2026-08-18T10:44:58+00:00",
       "updated_at": "2026-08-18T10:44:58Z",
       "title_zh": "迭代抓取姿势细化：2D 视觉的深度强化学习方法"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.17601v1",
-      "title": "Physics-Informed Sliding-Window Particle Filtering for Tactile-Only In-Hand 6-DoF Object Pose Refinement",
-      "url": "https://arxiv.org/abs/2608.17601",
-      "summary": "This paper studies tactile-only 6-DoF pose refinement and belief maintenance for grasped objects in static and short quasi-static in-hand configurations where vision is unavailable or heavily occluded. The key difficulty is tactile partial observability: whole-hand taxel contacts are sparse, intermittent, and ambiguous under limited excitation and object symmetries. We propose a physics-informed particle filter on $\\mathrm{SE}(3)$ that updates pose beliefs from dense whole-hand tactile measurements. The likelihood combines active-contact signed-distance consistency, force-normal alignment, friction-cone feasibility, zero-force negative evidence, and optional feasibility guards. A sliding-window log-likelihood fuses recent tactile frames to reduce single-frame ambiguity, while a potential-field-guided proposal steers particles away from hand--object penetration. Symmetry-aware resampling preserves multiple plausible modes. Experiments on an Allegro Hand V5 with five objects show lower normalized ADD-S than tactile-only geometric, particle-filter, and learning baselines, and ablations confirm the benefits of temporal fusion, potential guidance, and mode preservation.",
-      "authors": "Lingjun Shao, Ying Zhang, Xiangfei Li et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-18T10:07:40+00:00",
-      "updated_at": "2026-08-18T10:07:40Z",
-      "title_zh": "基于物理的滑动窗口粒子过滤，用于仅触觉的手持 6 自由度对象姿势细化"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.17600v1",
-      "title": "LIBERO-VIFO: Benchmarking the Capability and Safety of Visual Cue Following in Vision-Language-Action Models",
-      "url": "https://arxiv.org/abs/2608.17600",
-      "summary": "Visual cues are increasingly adopted to guide robot learning, but whether Vision-Language-Action (VLA) models can reliably follow authorized cues while disregarding unauthorized ones remains unclear. Existing work covers only a narrow range of cue forms and focuses on final task success, providing only a coarse assessment of cue-following capability. Treating all visual cues as authorized also leaves safety risks of unauthorized following unexplored. To address these gaps, we introduce LIBERO-VIFO, a benchmark to evaluate both the capability and safety of visual cue following in VLA models. LIBERO-VIFO defines eight visual cue families spanning diverse forms. A total of four protocols in two parts are defined: Part I tests cue understanding and authorized following, while Part II evaluates unauthorized visual cue following under language-cue conflict and empty language conditions. Evaluating seven VLA models reveals that although visual cue understanding does not reliably translate into execution, current VLAs are able to execute cue-indicated tasks without language instruction, exposing an emerging risk of unauthorized visual cue following. Extended experiments on scene-instantiated cues, safety-critical settings, and real-robot deployment corroborate these findings. LIBERO-VIFO brings both the capability and safety of visual cue following into systematic evaluation, establishing visual-centric safety as a new perspective for the VLA community.",
-      "authors": "Zhengyan Qian, Rui Yan, Alex Jinpeng Wang et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-18T10:07:17+00:00",
-      "updated_at": "2026-08-18T10:07:17Z",
-      "title_zh": "LIBERO-VIFO：视觉-语言-动作模型中视觉线索跟随的能力和安全性基准测试"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.17596v1",
-      "title": "tinyDSM: A Framework for Skill Modeling and Development for Resource-Constrained Millirobots",
-      "url": "https://arxiv.org/abs/2608.17596",
-      "summary": "In this study, we investigate developmental mechanisms that enable small, resource-constrained systems such as cm-sized millirobots to autonomously explore, learn, and adapt their capabilities throughout their lifespan. Reinforcement learning algorithms guide the agent's skill acquisition and adaptation through the interplay of our proposed tinyDSM, which integrates intrinsic motivation and fitness-based assessment. We strive for minimal, hard-wired skills while encouraging the open-ended development of new skills. A key emphasis in our approach is to encode minimal a-priori general knowledge, which serves as a foundational starting point for the system as it further learns system-specific dependencies from the initial knowledge provided. Thus, by design, our approach attempts to cover very generic application domains. The methodology is based on (a) developmental mechanism with intrinsic motivation, and (b) a cognitive architecture (knowledge, reasoning, learning), while (c) utilizing minimal resources. It uses a hierarchical knowledge graph and kinematic reasoners to model and evaluate simple and advanced motion related skills. In our experiments, we use a resource-constrained millirobot with a volume of 36 cm^3 with a Raspberry Pi Pico 32-bit microcontroller (RP2040) that integrates all described features and capabilities except the camera system in 9 kB. Starting with learning the most elementary motor skills the millirobot autonomously progresses from simple linear and angular movements to complex geometric patterns within 15 minutes. To complement the physical experiments, we perform a simulation-based analysis that enables systematic comparisons across learning algorithms and intrinsic motivation parameters.",
-      "authors": "Markus D. Kobelrausch, Michael Miedler, Axel Jantsch",
-      "category": "cs.RO",
-      "published_at": "2026-08-18T10:03:56+00:00",
-      "updated_at": "2026-08-18T10:03:56Z",
-      "title_zh": "tinyDSM：资源受限的 Millirobots 技能建模和开发框架"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.17592v1",
-      "title": "Communication Reduction via Semantic-Based Encoding in DMPC Using LSTMs",
-      "url": "https://arxiv.org/abs/2608.17592",
-      "summary": "The communication demands of distributed model prediction control (DMPC) can overwhelm even advanced wireless communication technologies as agents must exchange a significant amount of information at least once per time step. To semantically reduce communication demands, this work employs encoder-decoder networks built around long-short term memory (LSTM) cells in a distributed optimization algorithm. Agents publish a reduced representation of a message and receivers reconstruct the original message upon reception. In tests with reduced communication using formations of mobile robots, trained networks retain satisfactory performance and work reliably under conditions overwhelming full communication. As the results show, the usage of LSTMs either allows unprecedented reconstruction accuracy or the usage of different prediction-horizon lengths without the necessity to retrain.",
-      "authors": "Torben Schiz, Pedro H. J. Nardelli, Henrik Ebel",
-      "category": "eess.SY",
-      "published_at": "2026-08-18T09:58:03+00:00",
-      "updated_at": "2026-08-18T09:58:03Z",
-      "title_zh": "使用 LSTM 在 DMPC 中通过基于语义的编码减少通信"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.17584v1",
-      "title": "HODAgent: Towards On-Demand, Responsive Humanoids for Physical World Human Interaction",
-      "url": "https://arxiv.org/abs/2608.17584",
-      "summary": "We propose HODAgent, a System-2 embodied agent for humanoid robots in service settings, addressing situated intent, responsive execution, task revision, and outcome verification. Its semi-duplex architecture integrates an Env-Interactor, Planner, Executor, and hierarchical Memory to maintain coherent interaction, planning, and task state during service episodes. This allows handling new requests during motion, retaining progress, revising actions, and grounding closure in execution outcomes. A shared interface connects simulation and physical robots (Unitree G1), isolating platform-specific control. In an interactive simulation with 164 cases, HODAgent achieves 84.8% and 91.5% Joint Success under two VLM backbones, outperforming baselines by 9.8 and 18.9 points. On physical robots, pass rates are 92% (atomic), 72% (composite), and 63.3% (complete tasks). On multiple embodied benchmarks, it improves over baselines by 0.7-9.0 points. Results show a unified System-2 agent enables adaptive humanoid service across simulation and reality.",
-      "authors": "Wang Warren Chen, Jiahao Zhang, Zhenjiang Li et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-18T09:49:16+00:00",
-      "updated_at": "2026-08-18T09:49:16Z",
-      "title_zh": "HODAgent：面向物理世界人类交互的按需、响应式类人机器人"
     }
   ]
 }

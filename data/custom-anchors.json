@@ -1,9 +1,30 @@
 {
-  "generated_at": "2026-08-19T21:47:17.300964+00:00",
+  "generated_at": "2026-08-19T22:14:39.530049+00:00",
   "window_start": "2026-08-19T19:00:00+08:00",
-  "window_end": "2026-08-20T05:47:14.471390+08:00",
-  "total_items": 39,
+  "window_end": "2026-08-20T06:14:37.338038+08:00",
+  "total_items": 42,
   "items": [
+    {
+      "id": "4f650bde1890b0d15fe8623a3797a38cb8e8b057",
+      "title": "Travis Kalanick kicks off another round of VC bashing: ‘1% are helpful’",
+      "title_zh": "特拉维斯·卡兰尼克 (Travis Kalanick) 开启新一轮风投抨击：“1% 是有帮助的”",
+      "url": "https://techcrunch.com/2026/08/19/travis-kalanick-kicks-off-another-round-of-vc-bashing-1-are-helpful/",
+      "published_at": "2026-08-19T21:48:24+00:00",
+      "category": "TechCrunch Robotics",
+      "gn_label": "robotics",
+      "site_name": "TechCrunch Robotics",
+      "source": "TechCrunch Robotics",
+      "site_id": "TechCrunch Robotics",
+      "description": "After raising $1.7 billion for his new robotics company Atoms, Travis Kalanick is introspective about the role VCs have played in his career.",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 29.56,
+      "writing_value": 5,
+      "total_score": 114.56
+    },
     {
       "id": "2e96ac56a781f69ad7060c43672c4aa2876cc0f8",
       "title": "I Saw the Future of AI in a Robot That Can Learn on the Spot",
@@ -21,9 +42,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 27.71,
+      "timeliness": 27.26,
       "writing_value": 5,
-      "total_score": 112.71
+      "total_score": 112.26
     },
     {
       "id": "6135f28eec39e1c1e63b4047c5963a877baeb445",
@@ -42,9 +63,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 19.35,
+      "timeliness": 18.89,
       "writing_value": 5,
-      "total_score": 104.35
+      "total_score": 103.89
     },
     {
       "id": "ebe99c695c0b6d96dd6db0c1f07f4393446eac75",
@@ -63,9 +84,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 5,
-      "timeliness": 21.81,
+      "timeliness": 21.35,
       "writing_value": 5,
-      "total_score": 121.81
+      "total_score": 121.35
     },
     {
       "id": "ece3534e08a65a6b900124b6743d0ce0246bce9a",
@@ -84,9 +105,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 21.21,
+      "timeliness": 20.76,
       "writing_value": 0,
-      "total_score": 96.21
+      "total_score": 95.76
     },
     {
       "id": "6f98173c79083b987f4f7a415873ffb0737436af",
@@ -105,9 +126,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.2,
+      "timeliness": 22.74,
       "writing_value": 0,
-      "total_score": 98.2
+      "total_score": 97.74
     },
     {
       "id": "505e8b206fc971876078dbe1b7aa33b2f8ee9eae",
@@ -126,9 +147,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 23.42,
+      "timeliness": 22.96,
       "writing_value": 5,
-      "total_score": 108.42
+      "total_score": 107.96
     },
     {
       "id": "dcb2e3f7979b33faa19d9b361b299b735e2992a3",
@@ -147,9 +168,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 26.73,
+      "timeliness": 26.27,
       "writing_value": 5,
-      "total_score": 111.73
+      "total_score": 111.27
     },
     {
       "id": "82048b148b2da8466fffbb8014a5458b3ca6c75c",
@@ -168,9 +189,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 19.9,
+      "timeliness": 19.44,
       "writing_value": 0,
-      "total_score": 94.9
+      "total_score": 94.44
     },
     {
       "id": "236aeb618960922da80490427273a3890098ce58",
@@ -189,9 +210,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.93,
+      "timeliness": 23.47,
       "writing_value": 0,
-      "total_score": 98.93
+      "total_score": 98.47
     },
     {
       "id": "ae2a87217bc21de56447aaf116141b36974b5359",
@@ -210,9 +231,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 21.22,
+      "timeliness": 20.76,
       "writing_value": 5,
-      "total_score": 106.22
+      "total_score": 105.76
     },
     {
       "id": "2f2accde5129c5390b4a9ac06889e2672a8f6722",
@@ -231,9 +252,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 22.69,
+      "timeliness": 22.24,
       "writing_value": 0,
-      "total_score": 97.69
+      "total_score": 97.24
     },
     {
       "id": "051e80def60fb284ce5ee468e92ca506b130cd28",
@@ -252,30 +273,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 20.83,
+      "timeliness": 20.37,
       "writing_value": 0,
-      "total_score": 95.83
-    },
-    {
-      "id": "26b1282a8df9624e41255be4ff173891a12eae1c",
-      "title": "China leading in global robotics race, but opportunities for China-US cooperation exist: US industry rep - Global Times",
-      "title_zh": "美国机器人行业代表：中国在全球机器人竞赛中处于领先地位，但中美合作存在机遇",
-      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5aY0s3LTJTZG4tN2dCYzlDQUxtTFFtd1Jic1hPcnI4V1RGYmxkeGtSQ1V6bmN3OFNhNlExRC1uVkFIWkJOR01kZnd5OEdWYmUwUm9oTUlIYTNrRDdaclZMMHNB?oc=5",
-      "published_at": "2026-08-19T14:17:00+00:00",
-      "category": "GN: industrial robot",
-      "gn_label": "robotics",
-      "site_name": "GN: industrial robot",
-      "source": "GN: industrial robot",
-      "site_id": "GN: industrial robot",
-      "description": "China leading in global robotics race, but opportunities for China-US cooperation exist: US industry rep  Global Times",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 5,
-      "timeliness": 22.5,
-      "writing_value": 5,
-      "total_score": 107.5
+      "total_score": 95.37
     },
     {
       "id": "09612e1c4cf3411421df93699b13c29b74429e37",
@@ -294,9 +294,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 19.48,
+      "timeliness": 19.02,
       "writing_value": 0,
-      "total_score": 94.48
+      "total_score": 94.02
+    },
+    {
+      "id": "26b1282a8df9624e41255be4ff173891a12eae1c",
+      "title": "China leading in global robotics race, but opportunities for China-US cooperation exist: US industry rep - Global Times",
+      "title_zh": "美国机器人行业代表：中国在全球机器人竞赛中处于领先地位，但中美合作存在机遇",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5aY0s3LTJTZG4tN2dCYzlDQUxtTFFtd1Jic1hPcnI4V1RGYmxkeGtSQ1V6bmN3OFNhNlExRC1uVkFIWkJOR01kZnd5OEdWYmUwUm9oTUlIYTNrRDdaclZMMHNB?oc=5",
+      "published_at": "2026-08-19T14:17:00+00:00",
+      "category": "GN: industrial robot",
+      "gn_label": "robotics",
+      "site_name": "GN: industrial robot",
+      "source": "GN: industrial robot",
+      "site_id": "GN: industrial robot",
+      "description": "China leading in global robotics race, but opportunities for China-US cooperation exist: US industry rep  Global Times",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 22.04,
+      "writing_value": 5,
+      "total_score": 107.04
     },
     {
       "id": "83302b8b4bcc6ac8d795d72fe55cb47cbaace1ac",
@@ -315,14 +336,14 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 21.1,
+      "timeliness": 20.64,
       "writing_value": 0,
-      "total_score": 96.1
+      "total_score": 95.64
     },
     {
-      "id": "44c9663ebe33137ded47f7fa721537a99675feef",
-      "title": "Why home robots are taking so long - zdnet.com",
-      "title_zh": "为什么家用机器人需要这么长时间 - zdnet.com",
+      "id": "83b399651af9b0578b612d846988a325b26aee05",
+      "title": "Why home robots are taking so long - ZDNET",
+      "title_zh": "为什么家用机器人需要这么长时间 - ZDNET",
       "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1naDVhekZlN3V5VU5ldGNYRjFfcUlPamFtRER3MDZpRklFTHdDeVpfVm1hdXpQT011Q0hvdk9vcVAxaUc3RHItUFNBVjZNNDJQN3ZpUG9GNmZLT1pWMldjVGVB?oc=5",
       "published_at": "2026-08-19T17:42:13+00:00",
       "category": "GN: industrial robot",
@@ -330,15 +351,15 @@
       "site_name": "GN: industrial robot",
       "source": "GN: industrial robot",
       "site_id": "GN: industrial robot",
-      "description": "Why home robots are taking so long  zdnet.com",
+      "description": "Why home robots are taking so long  ZDNET",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.92,
+      "timeliness": 25.46,
       "writing_value": 0,
-      "total_score": 100.92
+      "total_score": 100.46
     },
     {
       "id": "945a8e0963d331ce807bd21c0b5f99ea60b6bfe6",
@@ -357,9 +378,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.16,
+      "timeliness": 22.7,
       "writing_value": 0,
-      "total_score": 98.16
+      "total_score": 97.7
+    },
+    {
+      "id": "565ec7bffec530967cd45ea464f1b12d8d185000",
+      "title": "Ministry of Economic Affairs Showcases 16 Robotics Technologies; Technology Transfer Expected to Generate NT$13.5 Billion in Output Value - finance.biggo.com",
+      "title_zh": "经济部展示16项机器人技术；技术转移预计产值新台币135亿元 - Finance.biggo.com",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBac2JyV3RtS0RYY1NTVEU4elBBdzZUdTExNmR2T0NicmdNM1Z5anRIZ2tFYWdzNWR0cFRRVjU0Y2planljR1lhVGxqdmJLVzZMaWdnZHU3anF3UmJEd0lqeDVaaVlMbVdlRnJQYm1xMHY1Z08weHc?oc=5",
+      "published_at": "2026-08-19T21:55:00+00:00",
+      "category": "GN: industrial robot",
+      "gn_label": "robotics",
+      "site_name": "GN: industrial robot",
+      "source": "GN: industrial robot",
+      "site_id": "GN: industrial robot",
+      "description": "Ministry of Economic Affairs Showcases 16 Robotics Technologies; Technology Transfer Expected to Generate NT$13.5 Billion in Output Value  finance.biggo.com",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 29.67,
+      "writing_value": 5,
+      "total_score": 114.67
     },
     {
       "id": "c39b6e0d06049ff3650d1e9f6fe12aeaa65fccbd",
@@ -378,9 +420,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 5,
-      "timeliness": 20.95,
+      "timeliness": 20.49,
       "writing_value": 5,
-      "total_score": 120.95
+      "total_score": 120.49
     },
     {
       "id": "9f147eeef10f8420ae6f4c3fe346566060874205",
@@ -399,9 +441,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 21.13,
+      "timeliness": 20.68,
       "writing_value": 0,
-      "total_score": 96.13
+      "total_score": 95.68
     },
     {
       "id": "2d60dee4db07c06ea0be939183dc1ebc34c478f3",
@@ -420,9 +462,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.41,
+      "timeliness": 28.96,
       "writing_value": 0,
-      "total_score": 104.41
+      "total_score": 103.96
     },
     {
       "id": "e0ad203ab6847244eecfcc216dc0573fa29971bf",
@@ -441,9 +483,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.28,
+      "timeliness": 24.82,
       "writing_value": 0,
-      "total_score": 100.28
+      "total_score": 99.82
     },
     {
       "id": "5cb2c2e773933d09da58dfa12f5c4cdb29300bd4",
@@ -462,9 +504,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 21.5,
+      "timeliness": 21.05,
       "writing_value": 0,
-      "total_score": 96.5
+      "total_score": 96.05
     },
     {
       "id": "a6ed519e895af1070011cc3ad267118c6bd453e5",
@@ -483,30 +525,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 22.08,
+      "timeliness": 21.62,
       "writing_value": 0,
-      "total_score": 97.08
-    },
-    {
-      "id": "d6fee2cceff7be05fbf12a79b512c2e97d334084",
-      "title": "东西问丨短评：宇树科技IPO，杭州收获“名”与“实” - chinanews.com.cn",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5pb24tNUpWR0JGbnRJTVNjQXk5eGV4S09ZYVlVT2U1R3FWT1dyYXgtQlpIZEo0N1BVRy1oTjd2VGhJQzREcGQ2MEZVNTJYR1hxSFRJQUtQYWdGT1VzV2pYSGR1VUpSaFNFUEE?oc=5",
-      "published_at": "2026-08-19T11:31:38+00:00",
-      "category": "GN: 宇树科技",
-      "gn_label": "robotics",
-      "site_name": "GN: 宇树科技",
-      "source": "GN: 宇树科技",
-      "site_id": "GN: 宇树科技",
-      "description": "东西问丨短评：宇树科技IPO，杭州收获“名”与“实”  chinanews.com.cn",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 19.74,
-      "writing_value": 0,
-      "total_score": 94.74
+      "total_score": 96.62
     },
     {
       "id": "6a41d3589032fb251b2dd2f2f6acde5aa48770fa",
@@ -525,9 +546,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.06,
+      "timeliness": 26.61,
       "writing_value": 0,
-      "total_score": 102.06
+      "total_score": 101.61
     },
     {
       "id": "cad0b52a090024f5bacad0b0c0e9198efaa9c204",
@@ -546,9 +567,30 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 20.83,
+      "timeliness": 20.37,
       "writing_value": 0,
-      "total_score": 110.83
+      "total_score": 110.37
+    },
+    {
+      "id": "d6fee2cceff7be05fbf12a79b512c2e97d334084",
+      "title": "东西问丨短评：宇树科技IPO，杭州收获“名”与“实” - chinanews.com.cn",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5pb24tNUpWR0JGbnRJTVNjQXk5eGV4S09ZYVlVT2U1R3FWT1dyYXgtQlpIZEo0N1BVRy1oTjd2VGhJQzREcGQ2MEZVNTJYR1hxSFRJQUtQYWdGT1VzV2pYSGR1VUpSaFNFUEE?oc=5",
+      "published_at": "2026-08-19T11:31:38+00:00",
+      "category": "GN: 宇树科技",
+      "gn_label": "robotics",
+      "site_name": "GN: 宇树科技",
+      "source": "GN: 宇树科技",
+      "site_id": "GN: 宇树科技",
+      "description": "东西问丨短评：宇树科技IPO，杭州收获“名”与“实”  chinanews.com.cn",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 19.28,
+      "writing_value": 0,
+      "total_score": 94.28
     },
     {
       "id": "15665fb482c3a28fd5d0d60539e42cb7d4eee8b3",
@@ -567,9 +609,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 19.45,
+      "timeliness": 19.0,
       "writing_value": 0,
-      "total_score": 94.45
+      "total_score": 94.0
     },
     {
       "id": "ed342a4d549bf8a07a6b75b75c36700b51b544a1",
@@ -588,9 +630,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.74,
+      "timeliness": 23.29,
       "writing_value": 0,
-      "total_score": 98.74
+      "total_score": 98.29
     },
     {
       "id": "7606843cfedd3e409bda8bafc2bd2a7ce779c32c",
@@ -609,9 +651,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.09,
+      "timeliness": 27.63,
       "writing_value": 0,
-      "total_score": 103.09
+      "total_score": 102.63
     },
     {
       "id": "9051dfe46b4ef45b952465da72a702df82a0b061",
@@ -630,9 +672,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.78,
+      "timeliness": 26.32,
       "writing_value": 0,
-      "total_score": 101.78
+      "total_score": 101.32
     },
     {
       "id": "9a531431dae902cf1e8ea69d4f3b328483fbc2ac",
@@ -651,9 +693,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 19.9,
+      "timeliness": 19.45,
       "writing_value": 0,
-      "total_score": 94.9
+      "total_score": 94.45
     },
     {
       "id": "c3747ade02c47eaa639ed8ceaaa1d1c6e4536ee3",
@@ -672,9 +714,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 21.11,
+      "timeliness": 20.66,
       "writing_value": 0,
-      "total_score": 111.11
+      "total_score": 110.66
     },
     {
       "id": "36dccb865075c2cffda0fa1f60aa082ed6733cff",
@@ -693,51 +735,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.21,
+      "timeliness": 26.76,
       "writing_value": 0,
-      "total_score": 102.21
+      "total_score": 101.76
     },
     {
-      "id": "74e060d1bbc78b5d9e065a4ed15aaa59294104b0",
-      "title": "别眨眼！这台机械臂在蛋壳上刻出了“工笔画” - 京报网",
+      "id": "555161eefbb54616db07facf1b541c65f56a8580",
+      "title": "北京世界机器人大会新品齐发 宇树「机甲人」、优必选「仿生人」吸睛 - DIGITIMES",
       "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE13S0NHR0lsdU84LUtCdU16VHBkeVRoR2cybTFTZmFJY2thLWk5aktSQUVST3NIV0RuQml1d2hxcWhyUWYzLVF3MDBMQWJ6XzYzanB0bVdiZ2FyTXZ2cmc?oc=5",
-      "published_at": "2026-08-19T13:56:27+00:00",
-      "category": "GN: 机械臂",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOVk8zdUhrUmZKNmV2UEQ5NnV1ZC1EY2drTkZhbVVDWkd6amJ4SzdvdjNVblRsakx2WVhkNHJQZlRONnFkX0xyazl5SjNkek93ZkxtT2ZLV3F1V2p0b0dUNnZHeGZKdU9vZ3NjdGFNQ09ROGdUaE51Nm5YRVpxOFJ6QXlaUGtFc1dWajFWTzFTWHBKcXBwMUg1amg5RUY?oc=5",
+      "published_at": "2026-08-19T19:00:00+00:00",
+      "category": "GN: 优必选",
       "gn_label": "robotics",
-      "site_name": "GN: 机械臂",
-      "source": "GN: 机械臂",
-      "site_id": "GN: 机械臂",
-      "description": "别眨眼！这台机械臂在蛋壳上刻出了“工笔画”  京报网",
+      "site_name": "GN: 优必选",
+      "source": "GN: 优必选",
+      "site_id": "GN: 优必选",
+      "description": "北京世界机器人大会新品齐发 宇树「机甲人」、优必选「仿生人」吸睛  DIGITIMES",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 22.15,
+      "timeliness": 26.76,
       "writing_value": 0,
-      "total_score": 97.15
-    },
-    {
-      "id": "2faefd1a85829901a6772ad8cdc20eaaf12a7f46",
-      "title": "机器人也会“轻拿轻放”？闵行这家企业把“分寸感”装进机械臂 - 搜狐网",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOMThKc1VIZ0poSlhEcW1EN2hvdFkzMWFmX1Z3LUxxRVJvQ0g5bGhYcjdIZDI4MUxtZXRodU9acVRZSjA3elNUZGpSdTZSeUF3QVBROW9PUEt6ZlR2V3RVRnd3bXBlanhaWkFEMkV3eHo1dnI1RGJESzJsdEY3RFdoWmx0M2VBdjV2OEhkXw?oc=5",
-      "published_at": "2026-08-19T13:49:12+00:00",
-      "category": "GN: 机械臂",
-      "gn_label": "robotics",
-      "site_name": "GN: 机械臂",
-      "source": "GN: 机械臂",
-      "site_id": "GN: 机械臂",
-      "description": "机器人也会“轻拿轻放”？闵行这家企业把“分寸感”装进机械臂  搜狐网",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 22.03,
-      "writing_value": 0,
-      "total_score": 97.03
+      "total_score": 101.76
     },
     {
       "id": "1704b8f4c4836b67aa7812dd5831f193ba6cefa5",
@@ -756,9 +777,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.38,
+      "timeliness": 23.92,
       "writing_value": 0,
-      "total_score": 99.38
+      "total_score": 98.92
     },
     {
       "id": "3f6d5a84a373f5f0638a940c982bab6aed79046a",
@@ -777,9 +798,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 21.53,
+      "timeliness": 21.07,
       "writing_value": 0,
-      "total_score": 111.53
+      "total_score": 111.07
     },
     {
       "id": "963f9d320fe8b5d8432519c2972de30288f4cc3b",
@@ -798,9 +819,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 21.79,
+      "timeliness": 21.34,
       "writing_value": 0,
-      "total_score": 111.79
+      "total_score": 111.34
     },
     {
       "id": "f6da57dffebd391f662b65c8365dfb86208b731d",
@@ -819,9 +840,51 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 19.66,
+      "timeliness": 19.2,
       "writing_value": 0,
-      "total_score": 94.66
+      "total_score": 94.2
+    },
+    {
+      "id": "74e060d1bbc78b5d9e065a4ed15aaa59294104b0",
+      "title": "别眨眼！这台机械臂在蛋壳上刻出了“工笔画” - 京报网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE13S0NHR0lsdU84LUtCdU16VHBkeVRoR2cybTFTZmFJY2thLWk5aktSQUVST3NIV0RuQml1d2hxcWhyUWYzLVF3MDBMQWJ6XzYzanB0bVdiZ2FyTXZ2cmc?oc=5",
+      "published_at": "2026-08-19T13:56:27+00:00",
+      "category": "GN: 机械臂",
+      "gn_label": "robotics",
+      "site_name": "GN: 机械臂",
+      "source": "GN: 机械臂",
+      "site_id": "GN: 机械臂",
+      "description": "别眨眼！这台机械臂在蛋壳上刻出了“工笔画”  京报网",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 21.7,
+      "writing_value": 0,
+      "total_score": 96.7
+    },
+    {
+      "id": "2faefd1a85829901a6772ad8cdc20eaaf12a7f46",
+      "title": "机器人也会“轻拿轻放”？闵行这家企业把“分寸感”装进机械臂 - 搜狐网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOMThKc1VIZ0poSlhEcW1EN2hvdFkzMWFmX1Z3LUxxRVJvQ0g5bGhYcjdIZDI4MUxtZXRodU9acVRZSjA3elNUZGpSdTZSeUF3QVBROW9PUEt6ZlR2V3RVRnd3bXBlanhaWkFEMkV3eHo1dnI1RGJESzJsdEY3RFdoWmx0M2VBdjV2OEhkXw?oc=5",
+      "published_at": "2026-08-19T13:49:12+00:00",
+      "category": "GN: 机械臂",
+      "gn_label": "robotics",
+      "site_name": "GN: 机械臂",
+      "source": "GN: 机械臂",
+      "site_id": "GN: 机械臂",
+      "description": "机器人也会“轻拿轻放”？闵行这家企业把“分寸感”装进机械臂  搜狐网",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 21.58,
+      "writing_value": 0,
+      "total_score": 96.58
     }
   ],
   "fallback_used": false
