@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-19T13:23:44.557664+00:00",
+  "generated_at": "2026-08-19T14:04:10.579534+00:00",
   "window_start": "2026-08-19T19:00:00+08:00",
-  "window_end": "2026-08-19T21:23:42.779907+08:00",
-  "total_items": 15,
+  "window_end": "2026-08-19T22:04:09.586335+08:00",
+  "total_items": 19,
   "items": [
     {
       "id": "6135f28eec39e1c1e63b4047c5963a877baeb445",
@@ -21,9 +21,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 27.75,
+      "timeliness": 27.07,
       "writing_value": 5,
-      "total_score": 112.75
+      "total_score": 112.07
     },
     {
       "id": "4e75fdddabb9ae47ceb48d3dd90ba69efce9be7b",
@@ -47,6 +47,27 @@
       "total_score": 85.0
     },
     {
+      "id": "ebe99c695c0b6d96dd6db0c1f07f4393446eac75",
+      "title": "宇树主导的四足机器人市场，它悄悄拿到了6%",
+      "title_zh": "",
+      "url": "https://zhidx.com/p/586437.html",
+      "published_at": "2026-08-19T13:35:41+00:00",
+      "category": "极链AI",
+      "gn_label": "robotics",
+      "site_name": "极链AI",
+      "source": "极链AI",
+      "site_id": "极链AI",
+      "description": "智东西\n作者 | 江宇\n编辑 | 漠影\n今年WRC的人形机器人依然挤得满满当当。\n\n一米七、一米八的身高，裸露的金属骨架，灵巧手、跑跳、搬运、抓取……站在展馆里，很容易产生一种错觉：人形机器人似乎已经有了一套越来越标准的答案。\n维他动力却在今天带来了一台看起来有些“不合群”的机器人。\nATOM身高只有160cm，身体包上了织物，脚底专门做了静音设计，脸上是一块可以表达状态的屏幕。甚至连手臂长度、腰部自由度，都围绕柜子、桌面、门把手这些再普通不过的生活空间重新设计。\n\n与不少首先瞄准工厂、仓储等工业场景的人形机器人不同，ATOM一开始就在为人与机器人长期共处的空间做准备。它同时给出了个人版、企业",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 29.53,
+      "writing_value": 5,
+      "total_score": 129.53
+    },
+    {
       "id": "1ce823d50c1f70a32a8d01717142606943e85cc3",
       "title": "Little Caesars Teams Up with Coco Robotics to Power Fast Autonomous Pizza Deliveries - Yahoo Finance Singapore",
       "title_zh": "Little Caesars 与 Coco Robotics 合作，推动快速自主披萨配送 - 雅虎财经",
@@ -63,9 +84,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 29.61,
+      "timeliness": 28.93,
       "writing_value": 5,
-      "total_score": 114.61
+      "total_score": 113.93
     },
     {
       "id": "83302b8b4bcc6ac8d795d72fe55cb47cbaace1ac",
@@ -84,9 +105,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.5,
+      "timeliness": 28.82,
       "writing_value": 0,
-      "total_score": 104.5
+      "total_score": 103.82
+    },
+    {
+      "id": "051e80def60fb284ce5ee468e92ca506b130cd28",
+      "title": "The State of Robotic Depalletizing - Robotics Tomorrow",
+      "title_zh": "机器人卸垛的现状 - 明天的机器人",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQdFRnY2xVY2dIWi1ZcmgwWTFpVGVFMHIwZGJkTThERk01RWMySE9NSjVqU2QxUmcxdVdoRE1ZYU5jUmJyVGdJNjdRRkpIVDhTdGtPM3d3Z2ZVY1Z2YVUtanRyNzhjLVkzdWV6RUpQSzlNQlBnYzhaTEhkNTVmLXJZenZydW9uMDlJaExINUVDQUVFa20t?oc=5",
+      "published_at": "2026-08-19T12:36:50+00:00",
+      "category": "GN: industrial robot",
+      "gn_label": "robotics",
+      "site_name": "GN: industrial robot",
+      "source": "GN: industrial robot",
+      "site_id": "GN: industrial robot",
+      "description": "The State of Robotic Depalletizing  Robotics Tomorrow",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 28.55,
+      "writing_value": 0,
+      "total_score": 103.55
     },
     {
       "id": "09612e1c4cf3411421df93699b13c29b74429e37",
@@ -105,30 +147,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.88,
+      "timeliness": 27.2,
       "writing_value": 0,
-      "total_score": 102.88
-    },
-    {
-      "id": "5235f30ec76a453b6e97c52d3558924b98cd3f01",
-      "title": "From robot dogs to helpers, China puts robotics ambitions on display at world conference - WKMG",
-      "title_zh": "从机器狗到助手，中国在世界会议上展示机器人雄心 - WKMG",
-      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOSkhoVXJTZEY0b2dvNHlabDdNRWE4WWZlOWVlYnZrQnBjdjdUeTZNU0p5SE5MSXhySFdERnhtTGNJb0lqeGk5VWdVbWd4bXZ2a2tOZm9WLXRIb0dpN19QZHk2WkRuZnVrZk5nVWszU0ZnT1Y5TkVzRlQ2MVp4Rm1YZjgzcFRqNkZYSGh5WGotUzRUc21HQmYzTklYaGphRDVHRThjdzR4M2VmaHVCekFIRC1YMzFtSzVSZEhudzBwbjVjTUxKbDR5OXQ0RFF6QQ?oc=5",
-      "published_at": "2026-08-19T11:59:40+00:00",
-      "category": "GN: industrial robot",
-      "gn_label": "robotics",
-      "site_name": "GN: industrial robot",
-      "source": "GN: industrial robot",
-      "site_id": "GN: industrial robot",
-      "description": "From robot dogs to helpers, China puts robotics ambitions on display at world conference  WKMG",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 28.61,
-      "writing_value": 0,
-      "total_score": 103.61
+      "total_score": 102.2
     },
     {
       "id": "14ec274979b24b7b671be74f7ecce57976ad540b",
@@ -147,9 +168,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.88,
+      "timeliness": 27.2,
       "writing_value": 0,
-      "total_score": 102.88
+      "total_score": 102.2
+    },
+    {
+      "id": "c39b6e0d06049ff3650d1e9f6fe12aeaa65fccbd",
+      "title": "Delta Showcases Embodied AI Dual-Arm Robot Platform and AI-Enhanced Production Line Digital Twin at Automation Taipei 2026 - TradingView",
+      "title_zh": "台达在 2026 年台北自动化展上展示 AI 双臂机器人平台及 AI 增强型产线数字孪生 - TradingView",
+      "url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxNRERGWF9ZTVJvNDFmandlbWhBNzJZLTFLQ00tcHZKLVVCMWNrQnotcTRwZU9vZ2dhdVBrY1RpeEZtRDBsekhZSHkwTDdFMUZoM1dZM2U3QkJ1eWF3MlFBYU9jbUlxQXE0QkIxc3k0MWg3Yll4LW5reDlJMlEtU2ZYcFMxazU4TXpiaTlRSXQtVmZaQlNDMFJzdmJnVHU0eWRvNm5TWC1kUlFHZzRTREhBRTFpMHVsZEduYWpJcUR0cWI2X3FTcWxGWF9Ua28tLV9fRm55YTYzWWRGd2tFVUo0MHhLNHU5aHZkS2ducF9LVGhEZWVvYjAxYW00ekpKa3Nva2t1bXNLbEMwY0RIRlNpXw?oc=5",
+      "published_at": "2026-08-19T12:44:00+00:00",
+      "category": "GN: collaborative robot",
+      "gn_label": "robotics",
+      "site_name": "GN: collaborative robot",
+      "source": "GN: collaborative robot",
+      "site_id": "GN: collaborative robot",
+      "description": "Delta Showcases Embodied AI Dual-Arm Robot Platform and AI-Enhanced Production Line Digital Twin at Automation Taipei 2026  TradingView",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 28.67,
+      "writing_value": 5,
+      "total_score": 128.67
     },
     {
       "id": "73b973f3bda64fb4c5eba7b4c4c6f3418a3fcb89",
@@ -168,9 +210,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.14,
+      "timeliness": 27.46,
       "writing_value": 0,
-      "total_score": 103.14
+      "total_score": 102.46
     },
     {
       "id": "15665fb482c3a28fd5d0d60539e42cb7d4eee8b3",
@@ -189,9 +231,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.85,
+      "timeliness": 27.17,
       "writing_value": 0,
-      "total_score": 102.85
+      "total_score": 102.17
     },
     {
       "id": "426218fa2807870824346e11f115bcbd05294eb0",
@@ -210,9 +252,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.77,
+      "timeliness": 28.09,
       "writing_value": 0,
-      "total_score": 103.77
+      "total_score": 103.09
     },
     {
       "id": "dde43649a25e18a737674d0cc081ae8d5b13d69a",
@@ -231,13 +273,13 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.11,
+      "timeliness": 28.43,
       "writing_value": 0,
-      "total_score": 104.11
+      "total_score": 103.43
     },
     {
-      "id": "12ac120325ddcbbd0f2850111dfb1e930ef08bbe",
-      "title": "千亿宇树科技上市，但商业化落地仍需加速 - finance.sina.com.cn",
+      "id": "a3952d8e91d2d9ac1be5ba778caf93e462b17853",
+      "title": "千亿宇树科技上市，但商业化落地仍需加速 - 新浪财经",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPVGVKdVB6MENiMGhRREV3ZFc2bC1WVV9Nd0xXV0lVekFNc2NrYjhlSGJBaTlOTEpBMUpuMUtpaVR0TGFqTzA3S2Q4cWs3aUxJUm05cWpvUXplSGxNYzJ1aFU4MGVwMmZPT1k1WHRUU3MzTUhrSzdZVm9pVjF1YU5GZjRuRy1jRnRydmxVMkoteGZlcW9TOVZJWjRJNE1IYnlTdGRySEhtQQ?oc=5",
       "published_at": "2026-08-19T12:57:33+00:00",
@@ -246,15 +288,15 @@
       "site_name": "GN: 宇树科技",
       "source": "GN: 宇树科技",
       "site_id": "GN: 宇树科技",
-      "description": "千亿宇树科技上市，但商业化落地仍需加速  finance.sina.com.cn",
+      "description": "千亿宇树科技上市，但商业化落地仍需加速  新浪财经",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.57,
+      "timeliness": 28.89,
       "writing_value": 0,
-      "total_score": 104.57
+      "total_score": 103.89
     },
     {
       "id": "9a531431dae902cf1e8ea69d4f3b328483fbc2ac",
@@ -273,30 +315,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.3,
+      "timeliness": 27.62,
       "writing_value": 0,
-      "total_score": 103.3
+      "total_score": 102.62
     },
     {
-      "id": "f18dc5c5ffb7d403666f0acca0300d03b87a1e1f",
-      "title": "三箭齐发!优必选WRC2026全方位展示人形机器人工业、商用、家庭消费应用成果 - 热点科技",
+      "id": "74e060d1bbc78b5d9e065a4ed15aaa59294104b0",
+      "title": "别眨眼！这台机械臂在蛋壳上刻出了“工笔画” - 京报网",
       "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFAwMkpzSlR3VUJwa0VuRXY0Y3lwOUs2ckozWEp4c0xOOVRQb1lDZ2ZPakp2V3hVc0tXbnlNNXI3a1ZFOGw4aEhjRzk2eXBpR3M?oc=5",
-      "published_at": "2026-08-19T12:38:40+00:00",
-      "category": "GN: 优必选",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE13S0NHR0lsdU84LUtCdU16VHBkeVRoR2cybTFTZmFJY2thLWk5aktSQUVST3NIV0RuQml1d2hxcWhyUWYzLVF3MDBMQWJ6XzYzanB0bVdiZ2FyTXZ2cmc?oc=5",
+      "published_at": "2026-08-19T13:56:27+00:00",
+      "category": "GN: 机械臂",
       "gn_label": "robotics",
-      "site_name": "GN: 优必选",
-      "source": "GN: 优必选",
-      "site_id": "GN: 优必选",
-      "description": "三箭齐发!优必选WRC2026全方位展示人形机器人工业、商用、家庭消费应用成果  热点科技",
-      "ai_score": 80.0,
+      "site_name": "GN: 机械臂",
+      "source": "GN: 机械臂",
+      "site_id": "GN: 机械臂",
+      "description": "别眨眼！这台机械臂在蛋壳上刻出了“工笔画”  京报网",
+      "ai_score": 65.0,
       "ai_label": "robotics",
-      "relevance": 0.8,
+      "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.26,
+      "timeliness": 29.87,
       "writing_value": 0,
-      "total_score": 119.26
+      "total_score": 104.87
     },
     {
       "id": "f6da57dffebd391f662b65c8365dfb86208b731d",
@@ -315,9 +357,51 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.06,
+      "timeliness": 27.38,
       "writing_value": 0,
-      "total_score": 103.06
+      "total_score": 102.38
+    },
+    {
+      "id": "f18dc5c5ffb7d403666f0acca0300d03b87a1e1f",
+      "title": "三箭齐发!优必选WRC2026全方位展示人形机器人工业、商用、家庭消费应用成果 - 热点科技",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFAwMkpzSlR3VUJwa0VuRXY0Y3lwOUs2ckozWEp4c0xOOVRQb1lDZ2ZPakp2V3hVc0tXbnlNNXI3a1ZFOGw4aEhjRzk2eXBpR3M?oc=5",
+      "published_at": "2026-08-19T12:38:40+00:00",
+      "category": "GN: 优必选",
+      "gn_label": "robotics",
+      "site_name": "GN: 优必选",
+      "source": "GN: 优必选",
+      "site_id": "GN: 优必选",
+      "description": "三箭齐发!优必选WRC2026全方位展示人形机器人工业、商用、家庭消费应用成果  热点科技",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 28.58,
+      "writing_value": 0,
+      "total_score": 118.58
+    },
+    {
+      "id": "12a537d27015071462bad6f3ffa33bb3653e55c5",
+      "title": "人形机器人迎来里程碑！宇树上市受益股全维度梳理 - 手机新浪网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQbVpGVlNOS0xUaVVxY050V1hSMUQzZmlxaWEyUEE3dnlURG81ZHBJYUFwOFFuRTRJb0ZZaGpmbWVKNzg5UV84c1ZnbEJzb2xxSHk1R0dOd0ZEWFBUY0NaNVRLQXFzSF9RVkdMdmliZ0VGQzBQTDktSXY2bl9lcFlKaTZxRQ?oc=5",
+      "published_at": "2026-08-19T13:29:00+00:00",
+      "category": "GN: 优必选",
+      "gn_label": "robotics",
+      "site_name": "GN: 优必选",
+      "source": "GN: 优必选",
+      "site_id": "GN: 优必选",
+      "description": "人形机器人迎来里程碑！宇树上市受益股全维度梳理  手机新浪网",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.42,
+      "writing_value": 0,
+      "total_score": 119.42
     }
   ],
   "fallback_used": false
