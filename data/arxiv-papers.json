@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-18T23:44:35.279491+00:00",
-  "total_items": 24,
+  "generated_at": "2026-08-19T00:42:05.359870+00:00",
+  "total_items": 20,
   "items": [
     {
       "id": "http://arxiv.org/abs/2608.16889v1",
@@ -221,50 +221,6 @@
       "published_at": "2026-08-17T13:25:09+00:00",
       "updated_at": "2026-08-17T13:25:09Z",
       "title_zh": "基于具体感知器表示的神经网络和肌肉网络协同设计"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.16503v1",
-      "title": "NebulaVLA: A Dual-Frequency Vision-Language-Action Model With Guide Action for Robotic Manipulation",
-      "url": "https://arxiv.org/abs/2608.16503",
-      "summary": "Real-world deployment of Vision-Language-Action (VLA) models is often bottlenecked by efficiency-performance trade-offs, cross-embodiment generalization, and execution smoothness. We present NebulaVLA, an asynchronous dual-frequency architecture that decouples high-level semantic reasoning from low-level action control, optimizing computational resources and modularity. To bridge semantic gaps across heterogeneous robots, we introduce GESTURE-7, a unified language-grounded action representation. Furthermore, our Guide Action algorithm enforces kinematic continuity via mask-based smoothness constraints. Comprehensive evaluations demonstrate that NebulaVLA significantly outperforms synchronous baselines, achieving an 85.5\\% average success rate on LIBERO-Plus and accelerating action generation by \\textasciitilde 2.7$\\times$. This asynchronous design enables highly efficient and responsive control for practical robotics.",
-      "authors": "Cong Zhao, Shuai Tian, Xu Zhang et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-17T12:40:23+00:00",
-      "updated_at": "2026-08-17T12:40:23Z",
-      "title_zh": "NebulaVLA：一种用于机器人操作的具有引导动作的双频视觉-语言-动作模型"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.16499v1",
-      "title": "OccamView: Object-Conditioned View Selection for Frame-Budgeted Active 3D Gaussian Reconstruction",
-      "url": "https://arxiv.org/abs/2608.16499",
-      "summary": "Active 3D Gaussian reconstruction fundamentally relies on selecting informative next-best views under limited sensing budgets. Existing active 3DGS methods primarily plan viewpoints according to geometric information gain, treating object-induced hidden regions in the same manner as general unexplored space. Under tight frame budgets, such geometry-driven strategies may prioritize global scene coverage while leaving partially observed objects incompletely reconstructed. To address this limitation, we propose OccamView, an object-conditioned view-selection framework for frame-budgeted active 3D Gaussian reconstruction. Rather than predicting unseen object geometry or performing shape completion, OccamView maintains an online object memory from open-vocabulary detections grounded in measured RGB-D observations and represents unresolved local occupancy around detected objects as conservative hidden-region proxies. Candidate viewpoints are then evaluated using an occlusion-aware proxy-coverage score. Furthermore, we introduce a Geo-Floor mechanism that restricts object-conditioned re-ranking to geometrically competitive candidates, allowing object-conditioned cues to guide complementary observations while preserving the geometry-driven exploration behavior of the underlying planner. Experiments on Replica and Matterport3D under a unified frame-budgeted protocol show that OccamView consistently reduces Completion and improves Completion Ratio across five frame budgets, with particularly pronounced gains under limited frame budgets. These results demonstrate that lightweight object-conditioned cues effectively complement geometry-driven active view planning.",
-      "authors": "Hongbo Gao, Wei Zhang, Zeyu Ni et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-17T12:38:56+00:00",
-      "updated_at": "2026-08-17T12:38:56Z",
-      "title_zh": "OccamView：用于帧预算主动 3D 高斯重建的对象条件视图选择"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.16476v1",
-      "title": "Exposing the Long-tail in Embodied Urban Navigation via Scalable Learning from In-the-Wild Videos",
-      "url": "https://arxiv.org/abs/2608.16476",
-      "summary": "Learning embodied urban navigation policies from real-world data is constrained by the cost of task-specific data collection and the limited coverage of rare yet safety-critical scenarios. To address these challenges, we present a scalable framework for learning point-goal urban navigation from web-scale in-the-wild egocentric videos while systematically exposing its long tail. The framework automatically annotates uncurated web videos with metric trajectories and structured navigation semantics, which are then used to train a vision-language-action policy for interpretable navigation planning. We characterize the long tail based on model performance and the distribution of perception-motion patterns, and employ reflection-based analysis to diagnose recurring failure modes. Experiments on web-video data and real-world urban navigation tasks demonstrate effective knowledge transfer from unconstrained videos and reveal coherent long-tail structures beyond aggregate navigation performance.",
-      "authors": "Bingyi Xia, Han Bao, Zhewei Chen et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-17T12:15:59+00:00",
-      "updated_at": "2026-08-17T12:15:59Z",
-      "title_zh": "通过野外视频的可扩展学习揭示实体城市导航中的长尾"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.16447v1",
-      "title": "HaReCAP: Habitual-action Grounding for Recursive Large Language Model Agents",
-      "url": "https://arxiv.org/abs/2608.16447",
-      "summary": "Long-horizon embodied tasks require LLM agents to iteratively decompose high-level goals, revise plans in response to environmental feedback, and ground leaf-level subgoals into valid executable actions. Recursive context-management methods such as ReCAP improve planning stability through multi-level task decomposition and parent-node refinement, but still repeatedly invoke the LLM at leaf nodes to ground atomic subtasks into exact valid actions. We refer to this final grounding step as last-mile grounding redundancy, which accumulates into substantial LLM-call and token overhead during long-horizon execution. To mitigate this issue, we propose HaReCAP (Habitual-action Grounded ReCAP), a low-intrusion leaf grounding extension for ReCAP. HaReCAP extracts frequent leaf decisions from successful trajectories and compiles them offline into auditable and abstainable one-step leaf-reflex rules. At runtime, it skips the leaf LLM call only when a rule can uniquely determine a legal action in the current valid-action set; otherwise, it falls back to the original ReCAP. This design avoids repeatedly carrying the full recursive context into the LLM for routine leaf action grounding, while preserving the original recursive control flow. We evaluate HaReCAP on Robotouille and ALFWorld with Qwen3.5-27B as the main model. On tasks solved by both ReCAP and HaReCAP, HaReCAP reduces token consumption by 14.67%, 17.93%, and 20.08% on Robotouille synchronous, Robotouille asynchronous, and ALFWorld, respectively. The results show that HaReCAP can serve as a low-intrusion extension to ReCAP-style recursive context-management frameworks, reducing last-mile grounding redundancy across environments and models on commonly successful trajectories.",
-      "authors": "Shen Liu, Zhenguo Xu, Shaopu Wang et al.",
-      "category": "cs.AI",
-      "published_at": "2026-08-17T11:47:03+00:00",
-      "updated_at": "2026-08-17T11:47:03Z",
-      "title_zh": "HaReCAP：递归大语言模型代理的习惯动作基础"
     }
   ]
 }
