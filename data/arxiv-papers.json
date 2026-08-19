@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-19T19:51:02.702898+00:00",
-  "total_items": 24,
+  "generated_at": "2026-08-19T20:16:58.844497+00:00",
+  "total_items": 23,
   "items": [
     {
       "id": "http://arxiv.org/abs/2608.18077v1",
@@ -254,17 +254,6 @@
       "published_at": "2026-08-18T08:24:08+00:00",
       "updated_at": "2026-08-18T08:24:08Z",
       "title_zh": "异构机器人的校准预测安全：具有基于模型的安全防护罩的动作条件 JEPA 框架"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.17484v1",
-      "title": "Reuse Before You Retrieve: Diagnosing Headroom and Complementarity for Test-Time Augmentation of Embodied Multimodal Policies",
-      "url": "https://arxiv.org/abs/2608.17484",
-      "summary": "Frozen vision-language-action (VLA) policies are increasingly improved at test time by sampling additional policy behaviors or introducing external demonstrations. Yet there is little guidance for deciding which intervention a deployed policy actually needs. Additional sampling is useful only when better behavior already exists within the policy's stochastic rollouts and can be identified, whereas retrieval is most useful when the relevant action prior is not reliably represented by the policy. We study this decision through two measurable factors, recoverable headroom and retrieval complementarity, which characterize how much useful behavior is already available to recover and whether an external action prior fills a measurable gap. We evaluate an episode-level retry selector under retryable or parallel execution, together with retrieval across multiple frozen VLA policies and environments. The selector consistently recovers substantial latent capability across all tested VLA backbones on LIBERO, with gains of up to 21.0 success-rate points that closely track recoverable headroom. It also transfers to a different robot and simulator and remains effective under degraded observations, while experiments with autoregressive OpenVLA illustrate the distinction between available headroom and the ability to rank candidate rollouts. Retrieval behaves differently, improving the policy with the largest measured action-prior gap and providing further gains when combined with selection. Together, these results provide an empirical basis for characterizing test-time augmentation opportunities by separating capability that can be recovered from the frozen policy from behavioral priors that may need to be introduced externally.",
-      "authors": "Yuhwan Jeong, Kuk-Jin Yoon",
-      "category": "cs.RO",
-      "published_at": "2026-08-18T08:11:31+00:00",
-      "updated_at": "2026-08-18T08:11:31Z",
-      "title_zh": "检索之前重用：诊断具体多模式策略的测试时间增强的余量和互补性"
     }
   ]
 }
