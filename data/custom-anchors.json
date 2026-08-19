@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-19T11:47:30.117340+00:00",
+  "generated_at": "2026-08-19T12:23:55.439211+00:00",
   "window_start": "2026-08-19T19:00:00+08:00",
-  "window_end": "2026-08-19T19:47:29.770942+08:00",
-  "total_items": 6,
+  "window_end": "2026-08-19T20:23:54.570225+08:00",
+  "total_items": 11,
   "items": [
     {
       "id": "6135f28eec39e1c1e63b4047c5963a877baeb445",
@@ -21,9 +21,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 29.34,
+      "timeliness": 28.74,
       "writing_value": 5,
-      "total_score": 114.34
+      "total_score": 113.74
     },
     {
       "id": "4e75fdddabb9ae47ceb48d3dd90ba69efce9be7b",
@@ -47,6 +47,27 @@
       "total_score": 85.0
     },
     {
+      "id": "09612e1c4cf3411421df93699b13c29b74429e37",
+      "title": "China Robot Conference - Dayton Daily News",
+      "title_zh": "中国机器人大会 - 代顿日报",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQMkwwdFk3eHRCT29VSXBQRV9EYkNfZEpXVnJxaWVBVDJRbDVRTGlmNThqc1E1UG8ta29EUXZSSjQyazNLQXZxbFpTU2RpY1NqVzF2MUdDR0R6V3hkWktfTzgxajQxVTk4UEhOSkdRQzlaZEh5bW14blAxUnVMUGtoM2ZJSHk3anhhdWMxbUNabi1DcFphYUtwWjUwdjlfdWIwTWREQjVfaFY4U2JKdWxzeVdwTUlfQQ?oc=5",
+      "published_at": "2026-08-19T11:15:55+00:00",
+      "category": "GN: industrial robot",
+      "gn_label": "robotics",
+      "site_name": "GN: industrial robot",
+      "source": "GN: industrial robot",
+      "site_id": "GN: industrial robot",
+      "description": "China Robot Conference  Dayton Daily News",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 28.87,
+      "writing_value": 0,
+      "total_score": 103.87
+    },
+    {
       "id": "14ec274979b24b7b671be74f7ecce57976ad540b",
       "title": "China Robot Conference - Bluefield Daily Telegraph",
       "title_zh": "中国机器人大会 - Bluefield Daily Telegraph",
@@ -63,9 +84,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.47,
+      "timeliness": 28.87,
       "writing_value": 0,
-      "total_score": 104.47
+      "total_score": 103.87
+    },
+    {
+      "id": "7c3d1a9cc1057a45c7e9404273012df4d3e1d483",
+      "title": "From robot dogs to helpers, China puts robotics ambitions on display at world conference - Dayton Daily News",
+      "title_zh": "从机器狗到助手，中国在世界会议上展示机器人雄心 - 代顿日报",
+      "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxOdl9fY1l6bXVmTGdsMjE0Vm9jazd4R2hTX21xNHJqaWtWWUVpc0k4MWpRNWhuSVhQNnZ5YzBXSFZXSFlxUWppYUc1OThMQU1XbDRIeE1XMXJGVHVCWGVvQnpwX3dIWDNVWWd6eXZxeFYzQmFHMkJFZjNXb0xkaGJYd3dRNThRelhmLVQxZnowV1dGM0V1dUtNSXJoZnpFSVpVNDMyUHd0VnQzNFFtcER5SW5hZjU1TjlQLU5sRGpMenl5Q2p0dmR4bUVpZmM5ekFFQkwyUVE2eUt6UXZLSzVsNmN3N1B4WnpHVXY2ZVJpbm14UHFoYmF6Z2twQ3o2by1OdXZXcGsxNjAybVNsUUZJ?oc=5",
+      "published_at": "2026-08-19T11:59:41+00:00",
+      "category": "GN: industrial robot",
+      "gn_label": "robotics",
+      "site_name": "GN: industrial robot",
+      "source": "GN: industrial robot",
+      "site_id": "GN: industrial robot",
+      "description": "From robot dogs to helpers, China puts robotics ambitions on display at world conference  Dayton Daily News",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 29.6,
+      "writing_value": 5,
+      "total_score": 114.6
     },
     {
       "id": "15665fb482c3a28fd5d0d60539e42cb7d4eee8b3",
@@ -84,9 +126,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.45,
+      "timeliness": 28.84,
       "writing_value": 0,
-      "total_score": 104.45
+      "total_score": 103.84
     },
     {
       "id": "73b973f3bda64fb4c5eba7b4c4c6f3418a3fcb89",
@@ -105,9 +147,72 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.74,
+      "timeliness": 29.13,
       "writing_value": 0,
-      "total_score": 104.74
+      "total_score": 104.13
+    },
+    {
+      "id": "426218fa2807870824346e11f115bcbd05294eb0",
+      "title": "宇树科技上市首日高开低走，53只理财打新浮盈一度过亿 - 东方财富",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBIZWVMM0UyUDk5V2poelVLZGo4M0FzVGhVU0xQd0wwVEpVR2F4TDJmd25Gby01R24yUGRYbVFKd1JXVmtzaExmNDJWbkE5eE1CZHhZR0t1NUVMOXZ0LXp6UzB3b3U?oc=5",
+      "published_at": "2026-08-19T12:09:15+00:00",
+      "category": "GN: 宇树科技",
+      "gn_label": "robotics",
+      "site_name": "GN: 宇树科技",
+      "source": "GN: 宇树科技",
+      "site_id": "GN: 宇树科技",
+      "description": "宇树科技上市首日高开低走，53只理财打新浮盈一度过亿  东方财富",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.76,
+      "writing_value": 0,
+      "total_score": 104.76
+    },
+    {
+      "id": "4dbf7a0a19194521b0888188d92d66283704befd",
+      "title": "千亿宇树科技上市，但商业化落地仍需加速 - 手机新浪网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNektmNkRKUVpFR3JPRHhydHZ0UldPRzhSdTFRcjU0RVZnSzhCN3d3Z3F2Q2dTM0RsUVh3U0FTZE50LWZLVHY0SWh3ZGZpcU5MTlhkUEEtVDJVSm9tbTVfeUhhUTc2ZW9KbGlSZmE1NmhXdC0tdUc4YW94U2MyM0pxUzVWZVhMdnBybVFKYjNNRGk0NHhN?oc=5",
+      "published_at": "2026-08-19T12:16:32+00:00",
+      "category": "GN: 优必选",
+      "gn_label": "robotics",
+      "site_name": "GN: 优必选",
+      "source": "GN: 优必选",
+      "site_id": "GN: 优必选",
+      "description": "千亿宇树科技上市，但商业化落地仍需加速  手机新浪网",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.88,
+      "writing_value": 0,
+      "total_score": 104.88
+    },
+    {
+      "id": "9a531431dae902cf1e8ea69d4f3b328483fbc2ac",
+      "title": "智元赴港 IPO，上纬新材“牛来”？ - 搜狐网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQYXdnUkJTSzlHbUpxSVBkc1JzZlV3OXB0bV9xTmNJdXNsS2NLNWdkbF8zTWUwQmlrRWhOT2c3MENyTjktemF2ODFBUmoyallmQjJ3bHhVcm80QkR3V1ZIUmozbE5sS2RnbWx2QnBEejRCWmJPYVBtcW5fZUNMSldHYkNOeFdBY2Z0?oc=5",
+      "published_at": "2026-08-19T11:41:26+00:00",
+      "category": "GN: 智元机器人",
+      "gn_label": "robotics",
+      "site_name": "GN: 智元机器人",
+      "source": "GN: 智元机器人",
+      "site_id": "GN: 智元机器人",
+      "description": "智元赴港 IPO，上纬新材“牛来”？  搜狐网",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.29,
+      "writing_value": 0,
+      "total_score": 104.29
     },
     {
       "id": "f6da57dffebd391f662b65c8365dfb86208b731d",
@@ -126,9 +231,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.65,
+      "timeliness": 29.05,
       "writing_value": 0,
-      "total_score": 104.65
+      "total_score": 104.05
     }
   ],
   "fallback_used": false
