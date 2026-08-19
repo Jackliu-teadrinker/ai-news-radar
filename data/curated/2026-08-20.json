@@ -1,9 +1,9 @@
 {
   "date": "2026-08-20",
-  "generated_at": "2026-08-19T21:17:53.747123+00:00",
+  "generated_at": "2026-08-19T21:31:51.294340+00:00",
   "score_threshold": 80,
   "total_items": 50,
-  "new_added": 3,
+  "new_added": 1,
   "items": [
     {
       "id": "7fad9a5eb4826919",
@@ -699,6 +699,27 @@
       "total_score": 119.49
     },
     {
+      "id": "c9eabe5743b1fe6a",
+      "title": "Humanoid robot football teams gear up for 2nd World Humanoid Robot Games - Yahoo News UK",
+      "title_zh": "人形机器人足球队为第二届世界人形机器人运动会做准备 - 雅虎新闻",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOSVBkLU10VE8tc28zWUMtakl1cmw0Ym55Wnk0NkZBeHpmVVJZcUtrdTFoV3lUa2dXVWJ0ZGd2WERyMFRUMTdjWmhPM3dNWEwyM3d1MTV3VV9ERVJoRFJqSFd4OFJveVRhaDRWM3Zod0hNU3hiUUNRbmV1Ul9UZVZ1VQ?oc=5",
+      "published_at": "2026-08-19T21:00:04+00:00",
+      "category": "国外人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国外人形机器人资讯",
+      "source": "国外人形机器人资讯",
+      "site_id": "国外人形机器人资讯",
+      "description": "Humanoid robot football teams gear up for 2nd World Humanoid Robot Games  Yahoo News UK",
+      "ai_score": 80.0,
+      "ai_label": "humanoid",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.49,
+      "writing_value": 0,
+      "total_score": 119.49
+    },
+    {
       "id": "f06006933332ed89",
       "title": "China robot makers seek to turn humanoid hype into useful work By Reuters - Investing.com Canada",
       "title_zh": "中国机器人制造商寻求将人形机器人炒作转化为有用的工作 路透社 - Investing.com",
@@ -1033,27 +1054,6 @@
       "timeliness": 28.76,
       "writing_value": 0,
       "total_score": 118.76
-    },
-    {
-      "id": "c641d84bc924b928",
-      "title": "China robot makers seek to turn humanoid hype into useful work - Reuters",
-      "title_zh": "中国机器人制造商寻求将人形机器人炒作转化为有用的工作 - 路透中文网",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQSmdkcXpfS1k2UmVHdmxLOFQ2UWF1LXROM2d3Zk0wbVUtSC1YbkxaNEZHNl9adVEwakVNN1Z1dVotcVc2YjZhOHh3cDBJZllMX1FPTTd4d1FLbTRSQjNOdzViZHNaQ200Tmt1UUo4bjZYYWVaTFlxaTZTcHRjNzRQX1JnMVBiVmQ3YUQyQzJaZk82aGFMUzczNDdYQTg0OGdxcFNMSnd4SnB6MVlfWXZYQkJnN0tBZlU?oc=5",
-      "published_at": "2026-08-19T16:02:53+00:00",
-      "category": "国外机器人资讯",
-      "gn_label": "robotics",
-      "site_name": "国外机器人资讯",
-      "source": "国外机器人资讯",
-      "site_id": "国外机器人资讯",
-      "description": "China robot makers seek to turn humanoid hype into useful work  Reuters",
-      "ai_score": 80.0,
-      "ai_label": "robotics",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 28.74,
-      "writing_value": 0,
-      "total_score": 118.74
     }
   ]
 }
