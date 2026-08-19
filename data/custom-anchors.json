@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-19T14:04:10.579534+00:00",
+  "generated_at": "2026-08-19T14:59:44.130081+00:00",
   "window_start": "2026-08-19T19:00:00+08:00",
-  "window_end": "2026-08-19T22:04:09.586335+08:00",
-  "total_items": 19,
+  "window_end": "2026-08-19T22:59:42.450428+08:00",
+  "total_items": 22,
   "items": [
     {
       "id": "6135f28eec39e1c1e63b4047c5963a877baeb445",
@@ -21,9 +21,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 27.07,
+      "timeliness": 26.14,
       "writing_value": 5,
-      "total_score": 112.07
+      "total_score": 111.14
     },
     {
       "id": "4e75fdddabb9ae47ceb48d3dd90ba69efce9be7b",
@@ -47,6 +47,27 @@
       "total_score": 85.0
     },
     {
+      "id": "a027b7859f36b6c5bd01a2b5202d982832b40f0a",
+      "title": "Shares in Chinese humanoid robot maker Unitree soar in its Shanghai trading debut - Tech Xplore",
+      "title_zh": "中国人形机器人制造商Unitree股价在上海上市首日飙升 - Tech Xplore",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPNHpJMjktR2w3SEhNTDdhVlRqcHptY08xTEpPN0xFRjV5dHdLWWtEMllOQjgwT3BzMGctcDhFa21yanZ1ZkQzR2loaG15UFRBRE9aQjJ3VUtiZS1CdG5BMzktalZIR3Z2NlROMFpJTFFTazFaN2FVYUJFZVZmZVVWS2dtZw?oc=5",
+      "published_at": "2026-08-19T14:09:34+00:00",
+      "category": "GN: TechXplore AI",
+      "gn_label": "robotics",
+      "site_name": "GN: TechXplore AI",
+      "source": "GN: TechXplore AI",
+      "site_id": "GN: TechXplore AI",
+      "description": "Shares in Chinese humanoid robot maker Unitree soar in its Shanghai trading debut  Tech Xplore",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.17,
+      "writing_value": 0,
+      "total_score": 119.17
+    },
+    {
       "id": "ebe99c695c0b6d96dd6db0c1f07f4393446eac75",
       "title": "宇树主导的四足机器人市场，它悄悄拿到了6%",
       "title_zh": "",
@@ -63,9 +84,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 5,
-      "timeliness": 29.53,
+      "timeliness": 28.6,
       "writing_value": 5,
-      "total_score": 129.53
+      "total_score": 128.6
     },
     {
       "id": "1ce823d50c1f70a32a8d01717142606943e85cc3",
@@ -84,9 +105,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 28.93,
+      "timeliness": 28.01,
       "writing_value": 5,
-      "total_score": 113.93
+      "total_score": 113.01
     },
     {
       "id": "83302b8b4bcc6ac8d795d72fe55cb47cbaace1ac",
@@ -105,9 +126,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.82,
+      "timeliness": 27.89,
       "writing_value": 0,
-      "total_score": 103.82
+      "total_score": 102.89
     },
     {
       "id": "051e80def60fb284ce5ee468e92ca506b130cd28",
@@ -126,9 +147,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.55,
+      "timeliness": 27.62,
       "writing_value": 0,
-      "total_score": 103.55
+      "total_score": 102.62
     },
     {
       "id": "09612e1c4cf3411421df93699b13c29b74429e37",
@@ -147,9 +168,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.2,
+      "timeliness": 26.27,
       "writing_value": 0,
-      "total_score": 102.2
+      "total_score": 101.27
+    },
+    {
+      "id": "26b1282a8df9624e41255be4ff173891a12eae1c",
+      "title": "China leading in global robotics race, but opportunities for China-US cooperation exist: US industry rep - Global Times",
+      "title_zh": "美国机器人行业代表：中国在全球机器人竞赛中处于领先地位，但中美合作存在机遇",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5aY0s3LTJTZG4tN2dCYzlDQUxtTFFtd1Jic1hPcnI4V1RGYmxkeGtSQ1V6bmN3OFNhNlExRC1uVkFIWkJOR01kZnd5OEdWYmUwUm9oTUlIYTNrRDdaclZMMHNB?oc=5",
+      "published_at": "2026-08-19T14:17:00+00:00",
+      "category": "GN: industrial robot",
+      "gn_label": "robotics",
+      "site_name": "GN: industrial robot",
+      "source": "GN: industrial robot",
+      "site_id": "GN: industrial robot",
+      "description": "China leading in global robotics race, but opportunities for China-US cooperation exist: US industry rep  Global Times",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 29.29,
+      "writing_value": 5,
+      "total_score": 114.29
     },
     {
       "id": "14ec274979b24b7b671be74f7ecce57976ad540b",
@@ -168,14 +210,14 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.2,
+      "timeliness": 26.27,
       "writing_value": 0,
-      "total_score": 102.2
+      "total_score": 101.27
     },
     {
       "id": "c39b6e0d06049ff3650d1e9f6fe12aeaa65fccbd",
       "title": "Delta Showcases Embodied AI Dual-Arm Robot Platform and AI-Enhanced Production Line Digital Twin at Automation Taipei 2026 - TradingView",
-      "title_zh": "台达在 2026 年台北自动化展上展示 AI 双臂机器人平台及 AI 增强型产线数字孪生 - TradingView",
+      "title_zh": "台达在 2026 台北自动化展上展示 AI 双臂机器人平台及 AI 增强型产线数字孪生 - TradingView",
       "url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxNRERGWF9ZTVJvNDFmandlbWhBNzJZLTFLQ00tcHZKLVVCMWNrQnotcTRwZU9vZ2dhdVBrY1RpeEZtRDBsekhZSHkwTDdFMUZoM1dZM2U3QkJ1eWF3MlFBYU9jbUlxQXE0QkIxc3k0MWg3Yll4LW5reDlJMlEtU2ZYcFMxazU4TXpiaTlRSXQtVmZaQlNDMFJzdmJnVHU0eWRvNm5TWC1kUlFHZzRTREhBRTFpMHVsZEduYWpJcUR0cWI2X3FTcWxGWF9Ua28tLV9fRm55YTYzWWRGd2tFVUo0MHhLNHU5aHZkS2ducF9LVGhEZWVvYjAxYW00ekpKa3Nva2t1bXNLbEMwY0RIRlNpXw?oc=5",
       "published_at": "2026-08-19T12:44:00+00:00",
       "category": "GN: collaborative robot",
@@ -189,9 +231,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 5,
-      "timeliness": 28.67,
+      "timeliness": 27.74,
       "writing_value": 5,
-      "total_score": 128.67
+      "total_score": 127.74
     },
     {
       "id": "73b973f3bda64fb4c5eba7b4c4c6f3418a3fcb89",
@@ -210,9 +252,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.46,
+      "timeliness": 26.53,
       "writing_value": 0,
-      "total_score": 102.46
+      "total_score": 101.53
+    },
+    {
+      "id": "14d451afd9b2d340bd383ad0c5082a4d755384ff",
+      "title": "宇树科技上市首日涨超460% 公私募打新浮盈逾百亿元 - 东方财富",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE14ZnltYmpwS195MmNveHFhbHZ6SDJKQTZybkdKbGExZWp1SkU4aWNLQTI3VC1uNXlHN0pjbUx5SWxyekZtR3RielIzRTNobWhPWkZod0M2R0FGM2YtRElkZzYwSzhxQQ?oc=5",
+      "published_at": "2026-08-19T14:15:15+00:00",
+      "category": "GN: 宇树科技",
+      "gn_label": "robotics",
+      "site_name": "GN: 宇树科技",
+      "source": "GN: 宇树科技",
+      "site_id": "GN: 宇树科技",
+      "description": "宇树科技上市首日涨超460% 公私募打新浮盈逾百亿元  东方财富",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.26,
+      "writing_value": 0,
+      "total_score": 104.26
     },
     {
       "id": "15665fb482c3a28fd5d0d60539e42cb7d4eee8b3",
@@ -231,9 +294,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.17,
+      "timeliness": 26.24,
       "writing_value": 0,
-      "total_score": 102.17
+      "total_score": 101.24
     },
     {
       "id": "426218fa2807870824346e11f115bcbd05294eb0",
@@ -252,9 +315,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.09,
+      "timeliness": 27.16,
       "writing_value": 0,
-      "total_score": 103.09
+      "total_score": 102.16
     },
     {
       "id": "dde43649a25e18a737674d0cc081ae8d5b13d69a",
@@ -273,9 +336,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.43,
+      "timeliness": 27.51,
       "writing_value": 0,
-      "total_score": 103.43
+      "total_score": 102.51
     },
     {
       "id": "a3952d8e91d2d9ac1be5ba778caf93e462b17853",
@@ -294,9 +357,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.89,
+      "timeliness": 27.97,
       "writing_value": 0,
-      "total_score": 103.89
+      "total_score": 102.97
     },
     {
       "id": "9a531431dae902cf1e8ea69d4f3b328483fbc2ac",
@@ -315,9 +378,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.62,
+      "timeliness": 26.7,
       "writing_value": 0,
-      "total_score": 102.62
+      "total_score": 101.7
     },
     {
       "id": "74e060d1bbc78b5d9e065a4ed15aaa59294104b0",
@@ -336,30 +399,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.87,
+      "timeliness": 28.95,
       "writing_value": 0,
-      "total_score": 104.87
+      "total_score": 103.95
     },
     {
-      "id": "f6da57dffebd391f662b65c8365dfb86208b731d",
-      "title": "小孩哥5岁就用AI编程了13岁小孩哥搓出机器人灵巧手 - t.cj.sina.cn",
+      "id": "52d04d292ae1e5911412ae0098b678680bb4b37b",
+      "title": "【别眨眼！这台机械臂在蛋壳上刻出了“工笔画”】8月19日，2026世界机器人大会现场，一只机械臂正在鸡蛋壳上沉稳雕花。钻头高速旋转，看得观众屏息凝神。据悉，机器人是通过实时力反馈来动态调节末端接触状态的，雕刻工具能够稳定贴合物体表面，过程稳定、图案 - 搜狐网",
       "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQTkxUZEhJeE9TYXVKRUpUeWNGVU9FYU9sdTRCenF2c05JY3E3S1A0M3k5cFVvUVhoQUp6QXYyRi13V19qenFpVVd2T2xVcy1ZTXk4TE11d3kxWWI3bDFINlRSZGtua08wdi1EMHJZRzVORVV3b3ZLcFFPNFlrTUE3TWR0Zi1lUQ?oc=5",
-      "published_at": "2026-08-19T11:26:33+00:00",
-      "category": "GN: 灵巧手",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPTW5YMGhoQ19wSWZpVjQtMDlaOHhTWGFRa1FxLWhIcURBOXV6dGE4TUpiYzRtOXd0cy1WWjIyRVNlVFpHbHpReWZteGgtX20yQTNhWmsyRmNlZnhJTGQtR2Zud3RoMnNoanhoRDdwRHhtVkJxdnBTVUU0R3YtQ2JRd0NTSUxLN2lp?oc=5",
+      "published_at": "2026-08-19T14:07:24+00:00",
+      "category": "GN: 机械臂",
       "gn_label": "robotics",
-      "site_name": "GN: 灵巧手",
-      "source": "GN: 灵巧手",
-      "site_id": "GN: 灵巧手",
-      "description": "小孩哥5岁就用AI编程了13岁小孩哥搓出机器人灵巧手  t.cj.sina.cn",
+      "site_name": "GN: 机械臂",
+      "source": "GN: 机械臂",
+      "site_id": "GN: 机械臂",
+      "description": "【别眨眼！这台机械臂在蛋壳上刻出了“工笔画”】8月19日，2026世界机器人大会现场，一只机械臂正在鸡蛋壳上沉稳雕花。钻头高速旋转，看得观众屏息凝神。据悉，机器人是通过实时力反馈来动态调节末端接触状态的，雕刻工具能够稳定贴合物体表面，过程稳定、图案  搜狐网",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
-      "depth": 0,
-      "timeliness": 27.38,
-      "writing_value": 0,
-      "total_score": 102.38
+      "depth": 5,
+      "timeliness": 29.13,
+      "writing_value": 5,
+      "total_score": 114.13
     },
     {
       "id": "f18dc5c5ffb7d403666f0acca0300d03b87a1e1f",
@@ -378,30 +441,30 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.58,
+      "timeliness": 27.65,
       "writing_value": 0,
-      "total_score": 118.58
+      "total_score": 117.65
     },
     {
-      "id": "12a537d27015071462bad6f3ffa33bb3653e55c5",
-      "title": "人形机器人迎来里程碑！宇树上市受益股全维度梳理 - 手机新浪网",
+      "id": "f6da57dffebd391f662b65c8365dfb86208b731d",
+      "title": "小孩哥5岁就用AI编程了13岁小孩哥搓出机器人灵巧手 - t.cj.sina.cn",
       "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQbVpGVlNOS0xUaVVxY050V1hSMUQzZmlxaWEyUEE3dnlURG81ZHBJYUFwOFFuRTRJb0ZZaGpmbWVKNzg5UV84c1ZnbEJzb2xxSHk1R0dOd0ZEWFBUY0NaNVRLQXFzSF9RVkdMdmliZ0VGQzBQTDktSXY2bl9lcFlKaTZxRQ?oc=5",
-      "published_at": "2026-08-19T13:29:00+00:00",
-      "category": "GN: 优必选",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQTkxUZEhJeE9TYXVKRUpUeWNGVU9FYU9sdTRCenF2c05JY3E3S1A0M3k5cFVvUVhoQUp6QXYyRi13V19qenFpVVd2T2xVcy1ZTXk4TE11d3kxWWI3bDFINlRSZGtua08wdi1EMHJZRzVORVV3b3ZLcFFPNFlrTUE3TWR0Zi1lUQ?oc=5",
+      "published_at": "2026-08-19T11:26:33+00:00",
+      "category": "GN: 灵巧手",
       "gn_label": "robotics",
-      "site_name": "GN: 优必选",
-      "source": "GN: 优必选",
-      "site_id": "GN: 优必选",
-      "description": "人形机器人迎来里程碑！宇树上市受益股全维度梳理  手机新浪网",
-      "ai_score": 80.0,
+      "site_name": "GN: 灵巧手",
+      "source": "GN: 灵巧手",
+      "site_id": "GN: 灵巧手",
+      "description": "小孩哥5岁就用AI编程了13岁小孩哥搓出机器人灵巧手  t.cj.sina.cn",
+      "ai_score": 65.0,
       "ai_label": "robotics",
-      "relevance": 0.8,
+      "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.42,
+      "timeliness": 26.45,
       "writing_value": 0,
-      "total_score": 119.42
+      "total_score": 101.45
     }
   ],
   "fallback_used": false
