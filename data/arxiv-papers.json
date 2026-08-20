@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-20T13:27:07.319242+00:00",
-  "total_items": 25,
+  "generated_at": "2026-08-20T14:07:41.822820+00:00",
+  "total_items": 24,
   "items": [
     {
       "id": "http://arxiv.org/abs/2608.19188v1",
@@ -265,17 +265,6 @@
       "published_at": "2026-08-19T02:21:27+00:00",
       "updated_at": "2026-08-19T02:21:27Z",
       "title_zh": "HarvestPoint-ACT：遮挡下机器人水果采收的显式目标选择和采收点调节"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.18433v1",
-      "title": "The Embodiment Gap in Robot Foundation Models",
-      "url": "https://arxiv.org/abs/2608.18433",
-      "summary": "Robot foundation models (RFMs), including vision-language-action (VLA) policies, are often discussed through a scaling view: more data, larger models, and broader benchmarks should improve generalization. In robotics, however, a model can generalize while work still remains before it can run on a robot with a particular body. The work required differs across methods and target robots, and those differences affect practical deployment. We call the gap between reusable models, representations, or data and their use in execution on the target robot the embodiment gap. This survey examines what can be reused across robot embodiments and what must still be implemented on a new robot. We place existing methods on a two-axis map that shows the type of shared structure and the stage at which adaptation is needed for execution on the target robot. We then examine recent work through three overlapping research directions: sharing semantics and perception, sharing robot data and interfaces, and learning correspondence across embodiments. We also propose a reporting framework for adaptation work that success rate alone does not reveal. The framework identifies the work that should be checked when comparing cross-embodiment learning and highlights work that remains on a new robot and questions for future study.",
-      "authors": "Yukiyasu Domae, Keisuke Shirai, Hanbit Oh et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-19T01:55:04+00:00",
-      "updated_at": "2026-08-19T01:55:04Z",
-      "title_zh": "机器人基础模型中的体现差距"
     }
   ]
 }
