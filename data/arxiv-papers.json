@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-20T08:04:16.254720+00:00",
-  "total_items": 29,
+  "generated_at": "2026-08-20T09:04:25.517783+00:00",
+  "total_items": 27,
   "items": [
     {
       "id": "http://arxiv.org/abs/2608.19188v1",
@@ -298,28 +298,6 @@
       "published_at": "2026-08-18T22:30:55+00:00",
       "updated_at": "2026-08-18T22:30:55Z",
       "title_zh": "气动软外装动态辅助的任务无关控制策略"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.18317v1",
-      "title": "Reproducible Multimodal Affordance Prediction",
-      "url": "https://arxiv.org/abs/2608.18317",
-      "summary": "Affordance prediction is the identification of potential actions an agent can perform on a target object from multimodal inputs. Affordance prediction methods are difficult to evaluate and compare due to heterogeneous problem formulations, inconsistent dataset annotations, incomplete reporting of experimental protocols, and limited information about deployment conditions. These limitations challenge fair benchmarking and performance comparison. To promote transparency, we propose the Affordance Sheet, a documentation detailing task formulation with its input modalities, model architectures and training information, datasets, and experimental protocols. Affordance Sheets enable reproducible benchmarking and reliable evaluation of affordance models for real-world scenarios, including generalisation to novel conditions and human safety.",
-      "authors": "Tommaso Apicella, Alessio Xompero, Andrea Cavallaro",
-      "category": "cs.CV",
-      "published_at": "2026-08-18T21:04:10+00:00",
-      "updated_at": "2026-08-18T21:04:10Z",
-      "title_zh": "可重复的多模式可供性预测"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.18292v1",
-      "title": "GuideFetch: A Task Coordination Framework for Concurrent Navigation and Object Retrieval in Assistive Robot Dogs",
-      "url": "https://arxiv.org/abs/2608.18292",
-      "summary": "Consider a robot guide dog escorting a blind user to an available seat while a second assistive robot dog concurrently retrieves a cup of coffee and delivers it to the same seat. This setting motivates concurrent execution because navigation and object retrieval can overlap. A syntactically valid Large Language Model (LLM) plan may still violate embodiment constraints, and successful-looking controller motion does not by itself establish task completion. We introduce \\textsc{GuideFetch}, a coordination framework for concurrent navigation and object retrieval by a heterogeneous guider and fetcher team. An LLM instantiates a schedule-conditioned four-action schema from a natural-language instruction. Before execution, robot, skill, and target aliases are normalized, and proposed actions are validated against registered targets, robot capabilities, and the selected schedule. Robot and object states then govern sequential and parallel execution. In a matched $2\\times2$ study across 90 combinations of scene and seed (360 executions), all 180 online LLM responses validate without fallback or replay and match the corresponding scripted plans. For each planner source, sequential and parallel execution achieve $72/90$ and $71/90$ operational successes, respectively. Among the 56 cases completed by both schedules, parallel execution reduces mean makespan by 41.3\\%. Within this controlled setting, role specialization and action overlap shorten completed missions, while state checks distinguish plan validity from verified mission completion. Source code will be available.",
-      "authors": "Qian Yin, Ruiping Liu, Kunyu Peng et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-18T20:16:57+00:00",
-      "updated_at": "2026-08-18T20:16:57Z",
-      "title_zh": "GuideFetch：辅助机器狗并发导航和对象检索的任务协调框架"
     }
   ]
 }
