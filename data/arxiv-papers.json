@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-20T17:00:43.825483+00:00",
-  "total_items": 19,
+  "generated_at": "2026-08-20T17:31:12.921624+00:00",
+  "total_items": 18,
   "items": [
     {
       "id": "http://arxiv.org/abs/2608.19188v1",
@@ -199,17 +199,6 @@
       "published_at": "2026-08-19T06:01:14+00:00",
       "updated_at": "2026-08-19T06:01:14Z",
       "title_zh": "网格单元在减少海马位置表示中的空间混叠中的作用"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.18552v1",
-      "title": "Real-Time Control-Constrained DDP for Underactuated Balancing of Legged Robots",
-      "url": "https://arxiv.org/abs/2608.18552",
-      "summary": "This paper presents a real-time control-constrained Differential Dynamic Programming (DDP) framework for underactuated legged robots. To address the limitation of classical DDP in handling control constraints, we propose an Accelerated Projected Gradient (APG)-based control-constrained DDP (ABC-DDP), which efficiently computes constrained solutions and identifies active sets without repeated Karush-Kuhn-Tucker (KKT) inversions. A virtual constraint is introduced to integrate control constraints within a feasibility-driven multiple-shooting framework, enabling stable optimization even from dynamically infeasible initializations. The proposed method supports real-time model predictive control (MPC) with short horizons under strong underactuation. Simulation results demonstrate static two-leg standing under external disturbances, along with diverse dynamic motions including slow catwalk, upright walking, and high-speed running within a unified MPC framework. To the best of our knowledge, this is the first demonstration of static two-leg standing of a quadruped robot achieved using real-time finite-horizon MPC.",
-      "authors": "SeongWon Nam, Hyunyong Lee, Hansol Kang et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-19T05:21:27+00:00",
-      "updated_at": "2026-08-19T05:21:27Z",
-      "title_zh": "用于腿式机器人欠驱动平衡的实时控制约束 DDP"
     }
   ]
 }
