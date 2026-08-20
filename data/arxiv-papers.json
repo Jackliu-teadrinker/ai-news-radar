@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-20T10:26:18.035109+00:00",
-  "total_items": 27,
+  "generated_at": "2026-08-20T10:56:20.794156+00:00",
+  "total_items": 26,
   "items": [
     {
       "id": "http://arxiv.org/abs/2608.19188v1",
@@ -287,17 +287,6 @@
       "published_at": "2026-08-19T00:15:22+00:00",
       "updated_at": "2026-08-19T00:15:22Z",
       "title_zh": "现实世界 HRI 中的多模式融洽估计"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.18364v1",
-      "title": "A Task-Agnostic Control Strategy for Dynamic Assistance with Pneumatically Actuated Soft Exosuits",
-      "url": "https://arxiv.org/abs/2608.18364",
-      "summary": "Pneumatic artificial muscles have provided new opportunities to develop upper-extremity soft exosuits for reha- bilitation, augmentation, and assisted daily living. However, the complex dynamics and limited bandwidth of these actuators has made providing responsive assistance based on user intention a longstanding challenge. In this work, we present an inverse-plant control strategy for pneumatically actuated soft exosuits that only relies on kinematic sensing for task-agnostic and dynamic assistance during daily living. We model the human-robot system using a Hammerstein dynamic model, consisting of a Preisach hysteresis model and a linear time-invariant filter, to capture the static and dynamic behavior of the system. We personalize our model to each user using 140 s of data and approximate an inverse to integrate into our control loop. When evaluated on a test rig that emulated a soft assistive exosuit for the wrist, our controller reduced the interaction torque by up to 73% and the activation of key flexor and extensor muscles by up to 47% relative to the condition with no assistance for speeds ranging from 8°/s to 120°/s. Overall, this work presents a control strategy that can provide task-agnostic, dynamic assistance with pneumatically actuated soft exosuits without the need for physiological or force sensors to interpret user intention.",
-      "authors": "Anoush Sepehri, Zachary Huang, Raymond de Callafon et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-18T22:30:55+00:00",
-      "updated_at": "2026-08-18T22:30:55Z",
-      "title_zh": "气动软外装动态辅助的任务无关控制策略"
     }
   ]
 }
