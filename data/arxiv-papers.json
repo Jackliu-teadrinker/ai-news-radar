@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-20T18:34:13.538309+00:00",
-  "total_items": 17,
+  "generated_at": "2026-08-20T19:24:45.287910+00:00",
+  "total_items": 15,
   "items": [
     {
       "id": "http://arxiv.org/abs/2608.19188v1",
@@ -166,28 +166,6 @@
       "published_at": "2026-08-19T07:27:51+00:00",
       "updated_at": "2026-08-19T07:27:51Z",
       "title_zh": "单目 SLAM 系统对高空最低点无人机镜头的评估"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.18625v1",
-      "title": "Payload Swing Estimation and Damping Without Payload Parameters for Multirotor UAVs",
-      "url": "https://arxiv.org/abs/2608.18625",
-      "summary": "Cable-suspended payload transport by multirotor UAVs is flexible but generates periodic swing disturbance that degrades tracking and risks instability. Existing anti-swing methods require additional sensors or precise identification of cable length and payload mass, limiting field deployment. We propose a swing-estimation and damping method using only the onboard IMU and throttle command, requiring no payload parameters. An extended Kalman filter extracts the periodic disturbance with the unknown pendulum frequency as an estimated state, and an active damping controller adds a correction angle to the attitude loop to dissipate pendulum energy. Flight experiments confirm robust damping across a tested range of cable-length and mass variations.",
-      "authors": "K. Taki, K. Umemoto",
-      "category": "eess.SY",
-      "published_at": "2026-08-19T07:19:26+00:00",
-      "updated_at": "2026-08-19T07:19:26Z",
-      "title_zh": "多旋翼无人机的有效载荷摆动估计和无有效载荷参数的阻尼"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.18618v1",
-      "title": "LabDex: A Hierarchical Benchmark for Dexterous Manipulation in Laboratories",
-      "url": "https://arxiv.org/abs/2608.18618",
-      "summary": "Autonomous laboratories hold great promise for accelerating scientific discovery. To achieve this vision, robots are supposed to dexterously manipulate diverse labware and instruments and execute long-horizon, state-dependent experimental procedures. Yet existing benchmarks do not jointly capture dexterous hand use, real-world laboratory interactions, and multi-stage experimental procedures, limiting systematic training and evaluation. To bridge this gap, we introduce LabDex, a large-scale real-world dataset and benchmark for dexterous manipulation in chemistry laboratories, organized around a hierarchical task taxonomy spanning atomic skills, compositional tasks, and long-horizon experiments. First, LabDex is cross-platform and, for the first time, unifies real-world and simulation platforms under a common framework, providing standardized task definitions, demonstrations, and evaluation protocols. Second, LabDex is large-scale and systematically organizes chemistry laboratory operations into three interconnected levels: Atomic Skills, which characterize fundamental dexterous manipulation capabilities; Compositional Skills; and Long-Horizon Laboratory Workflows. This hierarchical design not only supports the evaluation of end-task performance, but also enables the analysis of how fundamental dexterous skills compose and influence more complex laboratory operations. We conduct cross-level evaluations of representative robot learning methods in both real-world and simulation environments. The experimental results validate the effectiveness of the LabDex task design and demonstration data, and show that the benchmark supports the training and systematic evaluation of existing robotic policies across laboratory dexterous manipulation tasks at different levels, providing a foundation for further research and development of autonomous laboratory robots.",
-      "authors": "Zhipeng Tang, Sihang Chen, Sha Zhang et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-19T07:11:06+00:00",
-      "updated_at": "2026-08-19T07:11:06Z",
-      "title_zh": "LabDex：实验室灵巧操作的分层基准"
     }
   ]
 }
