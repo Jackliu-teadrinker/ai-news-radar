@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-20T19:53:53.397561+00:00",
-  "total_items": 13,
+  "generated_at": "2026-08-20T20:18:33.963261+00:00",
+  "total_items": 12,
   "items": [
     {
       "id": "http://arxiv.org/abs/2608.19188v1",
@@ -133,17 +133,6 @@
       "published_at": "2026-08-19T08:24:40+00:00",
       "updated_at": "2026-08-19T08:24:40Z",
       "title_zh": "具有不确定时变奖励的定向问题：日常服务机器人的框架和基准"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.18662v1",
-      "title": "Dynamic SpectraFormer for Ultra-High-Definition Underwater Image Enhancement",
-      "url": "https://arxiv.org/abs/2608.18662",
-      "summary": "Underwater images suffer from color distortion, haze, and poor visibility due to light refraction and absorption in water. These challenges significantly impact the utilization of Autonomous Underwater Vehicles (AUVs) or marine robots. Typically, color and brightness distortions manifest at lower frequencies, while edge and texture distortions are prevalent at higher frequencies. Traditional methods struggle to concurrently rectify these mixed distortions as they primarily concentrate on the spatial domain. To address these issues, we introduce the Dynamic SpectraFormer, which enhances underwater images through a frequency domain transformer. The Dynamic SpectraFormer introduces an ultra-high-resolution sparse spectrum attention module, which could capture the long-term dependency without losing the universal approximating power. Additionally, we have developed a dynamic spectrum weight generation layer that serves as an adaptive spectrum band selector, accentuating critical frequency bands and suppressing less relevant ones. Consequently, this method significantly improves underwater image quality by addressing both high- and low-frequency distortions. Our extensive ablation studies and comparative evaluations consolidate the Dynamic SpectraFormer's efficacy across multiple underwater image enhancement benchmarks. The source code is available at https://github.com/arifence2024/DynamicSpectraFormer.git.",
-      "authors": "Zhiqiang Hu, Tao Yu, Shouren Huang et al.",
-      "category": "cs.CV",
-      "published_at": "2026-08-19T08:07:59+00:00",
-      "updated_at": "2026-08-19T08:07:59Z",
-      "title_zh": "用于超高清水下图像增强的动态 SpectraFormer"
     }
   ]
 }
