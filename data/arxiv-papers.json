@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-20T17:58:45.877057+00:00",
-  "total_items": 18,
+  "generated_at": "2026-08-20T18:34:13.538309+00:00",
+  "total_items": 17,
   "items": [
     {
       "id": "http://arxiv.org/abs/2608.19188v1",
@@ -188,17 +188,6 @@
       "published_at": "2026-08-19T07:11:06+00:00",
       "updated_at": "2026-08-19T07:11:06Z",
       "title_zh": "LabDex：实验室灵巧操作的分层基准"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.18569v1",
-      "title": "The Role of Grid Cells in Reducing Spatial Aliasing in Hippocampal Place Representations",
-      "url": "https://arxiv.org/abs/2608.18569",
-      "summary": "Spatial aliasing occurs when two or more distinct locations produce highly similar place-cell representations, primarily due to environmental symmetry or repetitive structures. This issue is most pronounced when place representations are constructed solely from boundary vector cell (BVC) inputs, because symmetric or repetitive structures can yield indistinguishable sensory patterns across multiple locations in an environment. This work introduces grid cell signals to mitigate spatial aliasing in such settings. Because grid cells contribute periodic, internally generated spatial signals that vary independently of environmental geometry, they play a key role in disambiguating perceptually identical locations. We integrate multiple modules of analytically constructed grid cells with BVC-driven place cells and show that this leads to a 94--99% reduction in spatial aliasing relative to a BVC-only baseline across three environments: an open environment without obstacles; an environment with a cross-shaped central obstacle creating high visual symmetry; and a maze environment. The greatest improvement occurs in the environment with the highest visual symmetry. These results indicate that grid cells provide information complementary to boundary-based inputs, yielding more reliable place representations in geometrically ambiguous environments.",
-      "authors": "Alexander Johnson, Obadah Ghizawi, Ali A. Minai",
-      "category": "cs.NE",
-      "published_at": "2026-08-19T06:01:14+00:00",
-      "updated_at": "2026-08-19T06:01:14Z",
-      "title_zh": "网格单元在减少海马位置表示中的空间混叠中的作用"
     }
   ]
 }
