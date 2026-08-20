@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-20T14:07:41.822820+00:00",
-  "total_items": 24,
+  "generated_at": "2026-08-20T15:03:02.006122+00:00",
+  "total_items": 21,
   "items": [
     {
       "id": "http://arxiv.org/abs/2608.19188v1",
@@ -232,39 +232,6 @@
       "published_at": "2026-08-19T03:25:17+00:00",
       "updated_at": "2026-08-19T03:25:17Z",
       "title_zh": "设计用于自闭症成人社交认知训练的社交机器人"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.18470v1",
-      "title": "DevGRU: Depth-guided Visual Navigation using a Collision-aware Recurrent Model",
-      "url": "https://arxiv.org/abs/2608.18470",
-      "summary": "Existing visual navigation models often aim to develop foundation models that can generalize robot navigation across diverse platforms. However, many of these models are prone to collisions when deployed in complex indoor environments, particularly in structured layouts and narrow passages. To address this problem, we propose a depth image- and point-goal-conditioned navigation system, DevGRU. The proposed system employs an action predictor (AP) that generates collision-aware future trajectories, enabling effective avoidance of immediate obstacles. In conjunction with a collision predictor, the AP further compensates for errors accumulated in the goal pose estimation and proactively mitigates future deviations. To evaluate our method, we conducted experiments across nine different scenes and three state-of-the-art approaches - ViNT, NoMaD, and NavDP - as well as four additional variants of ViNT and NoMaD. In terms of navigation performance, DevGRU significantly outperforms ViNT and NoMaD by a large margin. In addition, the proposed model has a relatively small number of trainable parameters, resulting in the fastest inference time among the baselines, particularly outperforming NavDP by 7x in model size and 17x in inference time.",
-      "authors": "Kyung Min Han, Eunsom Kim, Young J. Kim",
-      "category": "cs.RO",
-      "published_at": "2026-08-19T02:55:49+00:00",
-      "updated_at": "2026-08-19T02:55:49Z",
-      "title_zh": "DevGRU：使用碰撞感知循环模型的深度引导视觉导航"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.18454v1",
-      "title": "Backward Layout Search for Sequence-Constrained Robotic Assembly",
-      "url": "https://arxiv.org/abs/2608.18454",
-      "summary": "Robotic assembly layout planning must determine the assembly site and the initial pose of each part while ensuring collision-free execution of a prescribed assembly sequence. This problem is challenging because the obstacle environment changes after each assembly step, and unassembled parts re maining in the workspace may block robot motions. We observe that the feasibility of each assembly step depends only on the initial poses of the current and later-assembled parts. Based on this dependency, we propose Backward Layout Search (BLS), which assigns initial part poses in reverse assembly order. Each expansion performs geometric, kinematic, grasp, and prescribed-motion checks, while collision masks and candidate set filtering remove infeasible initial part pose candidates. Promising partial layouts are retained through beam selection, and complete layouts are validated by full motion planning in forward assembly order. Experiments on five assembly models show that BLS produces collision-free executable layouts and reduces step evaluations and search time compared with a matched forward search.",
-      "authors": "Xi Zhang, Jiancong Dai, Hao Chen et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-19T02:29:06+00:00",
-      "updated_at": "2026-08-19T02:29:06Z",
-      "title_zh": "序列约束机器人装配的向后布局搜索"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.18446v1",
-      "title": "HarvestPoint-ACT: Explicit Target Selection and Harvest-Point Conditioning for Robotic Fruit Harvesting under Occlusion",
-      "url": "https://arxiv.org/abs/2608.18446",
-      "summary": "End-to-end imitation learning avoids hand-made robot motion for approaching and grasping, but the policy must still decide which fruit to pick and where to close the gripper. Occlusion can make the policy lose the selected fruit during harvesting, and the correct closing point is difficult to infer from pixels alone. This paper presents HarvestPoint-ACT, which makes both decisions explicit in perception and provides them to the policy. An instance segmentation front end with a keypoint branch predicts a mask and a harvest point for each visible fruit, where the harvest point specifies the location to close the gripper. A scheduler ranks detected candidates by occlusion and travel distance and selects one target. After each attempt, it redetects and reranks the candidates because the canopy may have changed. The selected fruit is encoded for an action chunking transformer as an eight-dimensional state, containing the absolute harvest point, the vector from the gripper to that point, a validity flag, and a confidence score. When the selected fruit is temporarily undetected, the system retains the last harvest point estimate in the robot base frame and marks it as stale, and aborts the attempt if the loss persists. On a canopy mock-up, HarvestPoint-ACT achieves a success rate of 88%, and of 75% under heavy occlusion.",
-      "authors": "Hanying Hu, Weipeng Li, Yikun Huang et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-19T02:21:27+00:00",
-      "updated_at": "2026-08-19T02:21:27Z",
-      "title_zh": "HarvestPoint-ACT：遮挡下机器人水果采收的显式目标选择和采收点调节"
     }
   ]
 }
