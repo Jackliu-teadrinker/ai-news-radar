@@ -1,9 +1,9 @@
 {
   "date": "2026-08-20",
-  "generated_at": "2026-08-20T09:59:06.666070+00:00",
+  "generated_at": "2026-08-20T10:26:21.134313+00:00",
   "score_threshold": 80,
   "total_items": 50,
-  "new_added": 3,
+  "new_added": 1,
   "items": [
     {
       "id": "7fad9a5eb4826919",
@@ -109,6 +109,27 @@
       "timeliness": 29.69,
       "writing_value": 5,
       "total_score": 129.69
+    },
+    {
+      "id": "02ffea681f266dea",
+      "title": "ITRI Releases Legged Robot Testing Standards, Covering Humanoid Robots to Accelerate Commercialization - finance.biggo.com",
+      "title_zh": "工研院发布腿式机器人测试标准，涵盖人形机器人，加速商业化 - 财经资讯",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBVamlIaGFFSWE4YTBOMzZVeHNDOEl6Q0N4Q3VSZ3ZBdUpXYk85UEYzY2dLUDg1WVEzanVJYzBWUWhoLXh4RjBrd0J2dzhMSzU3Y01NZ1R0c2VJZFRZeFpNRnRXZlpablFtZnNUa2VvMTBnT09fVlE?oc=5",
+      "published_at": "2026-08-20T10:06:00+00:00",
+      "category": "国外人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国外人形机器人资讯",
+      "source": "国外人形机器人资讯",
+      "site_id": "国外人形机器人资讯",
+      "description": "ITRI Releases Legged Robot Testing Standards, Covering Humanoid Robots to Accelerate Commercialization  finance.biggo.com",
+      "ai_score": 80.0,
+      "ai_label": "humanoid",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 29.68,
+      "writing_value": 5,
+      "total_score": 129.68
     },
     {
       "id": "80f3c147387b4e22",
@@ -1033,27 +1054,6 @@
       "timeliness": 29.95,
       "writing_value": 0,
       "total_score": 119.95
-    },
-    {
-      "id": "e265f1a323ebf3e8",
-      "title": "2,056 Humanoid Robots From 16 Countries Head to Beijing for World Robot Games - TechRepublic",
-      "title_zh": "16个国家2056台人形机器人齐聚北京参加世界机器人运动会",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPWUN5NmRqek5LYXFMaXBmb29mRVRQUk5LRUZJZXBsdlJOUmVpZXdiQzBPdlBUeHVsaURhQmN1SHFTWkZRMWtTNDh5ZERwNDhodENhUlg4Rk1YQld5c19ZTUlRU1VmRXJLNDZDRUNuMkd4SjI5ckl2Z3RWLXhERlNKOUtpbGV4Vzc2Y1ViVTlJZVVSUU5Bb1VvQWpn?oc=5",
-      "published_at": "2026-08-19T19:45:46+00:00",
-      "category": "国外机器人资讯",
-      "gn_label": "robotics",
-      "site_name": "国外机器人资讯",
-      "source": "国外机器人资讯",
-      "site_id": "国外机器人资讯",
-      "description": "2,056 Humanoid Robots From 16 Countries Head to Beijing for World Robot Games  TechRepublic",
-      "ai_score": 80.0,
-      "ai_label": "robotics",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 29.94,
-      "writing_value": 0,
-      "total_score": 119.94
     }
   ]
 }

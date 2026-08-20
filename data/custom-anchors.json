@@ -1,51 +1,9 @@
 {
-  "generated_at": "2026-08-20T09:57:37.988347+00:00",
+  "generated_at": "2026-08-20T10:25:09.083876+00:00",
   "window_start": "2026-08-19T19:00:00+08:00",
-  "window_end": "2026-08-20T17:57:29.174320+08:00",
-  "total_items": 120,
+  "window_end": "2026-08-20T18:25:04.485764+08:00",
+  "total_items": 124,
   "items": [
-    {
-      "id": "67272a5e2f5369213f1e745c4c91ea5e310770d2",
-      "title": "Waymo’s cheaper, next-gen robotaxi is now open to all riders in these three cities",
-      "title_zh": "Waymo 更便宜的下一代机器人出租车现已向这三个城市的所有乘客开放",
-      "url": "https://techcrunch.com/2026/08/19/waymos-cheaper-next-gen-robotaxi-is-now-open-to-all-riders-in-these-three-cities/",
-      "published_at": "2026-08-19T22:25:01+00:00",
-      "category": "TechCrunch Robotics",
-      "gn_label": "robotics",
-      "site_name": "TechCrunch Robotics",
-      "source": "TechCrunch Robotics",
-      "site_id": "TechCrunch Robotics",
-      "description": "The next-generation robotaxi, called the Waymo Ojai, is central to the company's push towards mass scale, and eventually, profitability.",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 5,
-      "timeliness": 18.46,
-      "writing_value": 5,
-      "total_score": 103.46
-    },
-    {
-      "id": "4f650bde1890b0d15fe8623a3797a38cb8e8b057",
-      "title": "Travis Kalanick kicks off another round of VC bashing: ‘1% are helpful’",
-      "title_zh": "特拉维斯·卡兰尼克 (Travis Kalanick) 开始了新一轮的风投抨击：“1% 是有帮助的”",
-      "url": "https://techcrunch.com/2026/08/19/travis-kalanick-kicks-off-another-round-of-vc-bashing-1-are-helpful/",
-      "published_at": "2026-08-19T21:48:24+00:00",
-      "category": "TechCrunch Robotics",
-      "gn_label": "robotics",
-      "site_name": "TechCrunch Robotics",
-      "source": "TechCrunch Robotics",
-      "site_id": "TechCrunch Robotics",
-      "description": "After raising $1.7 billion for his new robotics company Atoms, Travis Kalanick is introspective about the role VCs have played in his career.",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 5,
-      "timeliness": 17.85,
-      "writing_value": 5,
-      "total_score": 102.85
-    },
     {
       "id": "b50750c2e498b89e67ece87e60187c6064b9f2fc",
       "title": "iRobot Promo Code: 15% Off",
@@ -63,9 +21,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 25.04,
+      "timeliness": 24.58,
       "writing_value": 5,
-      "total_score": 110.04
+      "total_score": 109.58
     },
     {
       "id": "2e96ac56a781f69ad7060c43672c4aa2876cc0f8",
@@ -84,9 +42,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 15.54,
+      "timeliness": 15.08,
       "writing_value": 5,
-      "total_score": 100.54
+      "total_score": 100.08
     },
     {
       "id": "6135f28eec39e1c1e63b4047c5963a877baeb445",
@@ -105,9 +63,51 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 7.18,
+      "timeliness": 6.72,
       "writing_value": 5,
-      "total_score": 92.18
+      "total_score": 91.72
+    },
+    {
+      "id": "67272a5e2f5369213f1e745c4c91ea5e310770d2",
+      "title": "Waymo’s cheaper, next-gen robotaxi is now open to all riders in these three cities",
+      "title_zh": "Waymo 更便宜的下一代机器人出租车现已向这三个城市的所有乘客开放",
+      "url": "https://techcrunch.com/2026/08/19/waymos-cheaper-next-gen-robotaxi-is-now-open-to-all-riders-in-these-three-cities/",
+      "published_at": "2026-08-19T22:25:01+00:00",
+      "category": "TechCrunch Robotics",
+      "gn_label": "robotics",
+      "site_name": "TechCrunch Robotics",
+      "source": "TechCrunch Robotics",
+      "site_id": "TechCrunch Robotics",
+      "description": "The next-generation robotaxi, called the Waymo Ojai, is central to the company's push towards mass scale, and eventually, profitability.",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 18.0,
+      "writing_value": 5,
+      "total_score": 103.0
+    },
+    {
+      "id": "4f650bde1890b0d15fe8623a3797a38cb8e8b057",
+      "title": "Travis Kalanick kicks off another round of VC bashing: ‘1% are helpful’",
+      "title_zh": "特拉维斯·卡兰尼克 (Travis Kalanick) 开启新一轮风投抨击：“1% 是有帮助的”",
+      "url": "https://techcrunch.com/2026/08/19/travis-kalanick-kicks-off-another-round-of-vc-bashing-1-are-helpful/",
+      "published_at": "2026-08-19T21:48:24+00:00",
+      "category": "TechCrunch Robotics",
+      "gn_label": "robotics",
+      "site_name": "TechCrunch Robotics",
+      "source": "TechCrunch Robotics",
+      "site_id": "TechCrunch Robotics",
+      "description": "After raising $1.7 billion for his new robotics company Atoms, Travis Kalanick is introspective about the role VCs have played in his career.",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 17.39,
+      "writing_value": 5,
+      "total_score": 102.39
     },
     {
       "id": "4fd5b38109b4148a6fa74d164e352c63401d4309",
@@ -126,9 +126,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 9.4,
+      "timeliness": 8.94,
       "writing_value": 0,
-      "total_score": 84.4
+      "total_score": 83.94
     },
     {
       "id": "5a7c3fb2374a71c7b4b15c29c8e010deb183e7dc",
@@ -147,9 +147,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 10.71,
+      "timeliness": 10.25,
       "writing_value": 0,
-      "total_score": 85.71
+      "total_score": 85.25
     },
     {
       "id": "b07d1b4dca2913108a5b7e4792ec64ddb33b8ae7",
@@ -168,9 +168,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.33,
+      "timeliness": 25.87,
       "writing_value": 0,
-      "total_score": 101.33
+      "total_score": 100.87
     },
     {
       "id": "84e49b30de92498dfbc1448807c1c7354ff333ec",
@@ -189,30 +189,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 21.67,
+      "timeliness": 21.21,
       "writing_value": 0,
-      "total_score": 111.67
-    },
-    {
-      "id": "ebe99c695c0b6d96dd6db0c1f07f4393446eac75",
-      "title": "宇树主导的四足机器人市场，它悄悄拿到了6%",
-      "title_zh": "",
-      "url": "https://zhidx.com/p/586437.html",
-      "published_at": "2026-08-19T13:35:41+00:00",
-      "category": "极链AI",
-      "gn_label": "robotics",
-      "site_name": "极链AI",
-      "source": "极链AI",
-      "site_id": "极链AI",
-      "description": "智东西\n作者 | 江宇\n编辑 | 漠影\n今年WRC的人形机器人依然挤得满满当当。\n\n一米七、一米八的身高，裸露的金属骨架，灵巧手、跑跳、搬运、抓取……站在展馆里，很容易产生一种错觉：人形机器人似乎已经有了一套越来越标准的答案。\n维他动力却在今天带来了一台看起来有些“不合群”的机器人。\nATOM身高只有160cm，身体包上了织物，脚底专门做了静音设计，脸上是一块可以表达状态的屏幕。甚至连手臂长度、腰部自由度，都围绕柜子、桌面、门把手这些再普通不过的生活空间重新设计。\n\n与不少首先瞄准工厂、仓储等工业场景的人形机器人不同，ATOM一开始就在为人与机器人长期共处的空间做准备。它同时给出了个人版、企业",
-      "ai_score": 80.0,
-      "ai_label": "robotics",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 5,
-      "timeliness": 9.64,
-      "writing_value": 5,
-      "total_score": 109.64
+      "total_score": 111.21
     },
     {
       "id": "85778cc6e91b19e9485bbe4090dc2cae4b0093bb",
@@ -231,9 +210,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 17.43,
+      "timeliness": 16.97,
       "writing_value": 0,
-      "total_score": 92.43
+      "total_score": 91.97
     },
     {
       "id": "a216a954510f81c7a2635152769e1bef5c9eea0d",
@@ -252,9 +231,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 13.08,
+      "timeliness": 12.62,
       "writing_value": 0,
-      "total_score": 88.08
+      "total_score": 87.62
     },
     {
       "id": "96b2dc2c588a7cb4618bc951460adb0d4880e840",
@@ -273,9 +252,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 10.08,
+      "timeliness": 9.62,
       "writing_value": 0,
-      "total_score": 85.08
+      "total_score": 84.62
     },
     {
       "id": "ce406314d09621236335d547034826c0d9ffca5a",
@@ -294,9 +273,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 22.56,
+      "timeliness": 22.1,
       "writing_value": 0,
-      "total_score": 97.56
+      "total_score": 97.1
     },
     {
       "id": "ece3534e08a65a6b900124b6743d0ce0246bce9a",
@@ -315,9 +294,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 9.04,
+      "timeliness": 8.58,
       "writing_value": 0,
-      "total_score": 84.04
+      "total_score": 83.58
     },
     {
       "id": "6f98173c79083b987f4f7a415873ffb0737436af",
@@ -336,9 +315,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 11.03,
+      "timeliness": 10.57,
       "writing_value": 0,
-      "total_score": 86.03
+      "total_score": 85.57
     },
     {
       "id": "505e8b206fc971876078dbe1b7aa33b2f8ee9eae",
@@ -357,9 +336,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 11.25,
+      "timeliness": 10.79,
       "writing_value": 5,
-      "total_score": 96.25
+      "total_score": 95.79
     },
     {
       "id": "dcb2e3f7979b33faa19d9b361b299b735e2992a3",
@@ -378,30 +357,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 14.55,
+      "timeliness": 14.09,
       "writing_value": 5,
-      "total_score": 99.55
-    },
-    {
-      "id": "35928d1899f31df0dbf93f1a6e9f2b5b20e2ddb8",
-      "title": "HL Robotics targets autonomous parking, logistics markets - The Korea News Plus",
-      "title_zh": "HL Robotics瞄准自动停车、物流市场 - 韩国新闻+",
-      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5aY3BIU0hPbUlEa0hRQmdFVTRld2tSdmY5VUU2ZmROX2hDc25wSTBfSEpJWDNFU2ltQ3RrV0xxNWZGWXlWd0RFSkZhYTN5MzBqakhkdlBVaXVOUmRhZVp6S2FsdF82VmUwNzI5dC1PaGE4dmJaVENN?oc=5",
-      "published_at": "2026-08-20T01:57:08+00:00",
-      "category": "GN: autonomous robot",
-      "gn_label": "robotics",
-      "site_name": "GN: autonomous robot",
-      "source": "GN: autonomous robot",
-      "site_id": "GN: autonomous robot",
-      "description": "HL Robotics targets autonomous parking, logistics markets  The Korea News Plus",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 22.0,
-      "writing_value": 0,
-      "total_score": 97.0
+      "total_score": 99.09
     },
     {
       "id": "9e94ffd3611c91649fc5f7c628cacb75489846de",
@@ -420,9 +378,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 24.16,
+      "timeliness": 23.7,
       "writing_value": 5,
-      "total_score": 109.16
+      "total_score": 108.7
+    },
+    {
+      "id": "35928d1899f31df0dbf93f1a6e9f2b5b20e2ddb8",
+      "title": "HL Robotics targets autonomous parking, logistics markets - The Korea News Plus",
+      "title_zh": "HL Robotics瞄准自动停车、物流市场 - 韩国新闻+",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5aY3BIU0hPbUlEa0hRQmdFVTRld2tSdmY5VUU2ZmROX2hDc25wSTBfSEpJWDNFU2ltQ3RrV0xxNWZGWXlWd0RFSkZhYTN5MzBqakhkdlBVaXVOUmRhZVp6S2FsdF82VmUwNzI5dC1PaGE4dmJaVENN?oc=5",
+      "published_at": "2026-08-20T01:57:08+00:00",
+      "category": "GN: autonomous robot",
+      "gn_label": "robotics",
+      "site_name": "GN: autonomous robot",
+      "source": "GN: autonomous robot",
+      "site_id": "GN: autonomous robot",
+      "description": "HL Robotics targets autonomous parking, logistics markets  The Korea News Plus",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 21.54,
+      "writing_value": 0,
+      "total_score": 96.54
     },
     {
       "id": "ddc09514b8a0bc6c853828ef49f7912987d930dd",
@@ -441,9 +420,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 10.04,
+      "timeliness": 9.58,
       "writing_value": 0,
-      "total_score": 85.04
+      "total_score": 84.58
     },
     {
       "id": "82048b148b2da8466fffbb8014a5458b3ca6c75c",
@@ -462,9 +441,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 7.71,
+      "timeliness": 7.25,
       "writing_value": 0,
-      "total_score": 82.71
+      "total_score": 82.25
     },
     {
       "id": "2f2accde5129c5390b4a9ac06889e2672a8f6722",
@@ -483,9 +462,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 20.45,
+      "timeliness": 19.99,
       "writing_value": 0,
-      "total_score": 95.45
+      "total_score": 94.99
     },
     {
       "id": "e8eaa53b895d7ce8b962b03ec39b4a2f7f878339",
@@ -504,9 +483,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 19.05,
+      "timeliness": 18.59,
       "writing_value": 0,
-      "total_score": 94.05
+      "total_score": 93.59
     },
     {
       "id": "61803a9c71212715df7b423f4250551112c4ee25",
@@ -525,9 +504,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 13.06,
+      "timeliness": 12.6,
       "writing_value": 0,
-      "total_score": 88.06
+      "total_score": 87.6
     },
     {
       "id": "e354c6fdb41dadeac0f832838d3d14145fd40cd8",
@@ -546,9 +525,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 13.36,
+      "timeliness": 12.9,
       "writing_value": 0,
-      "total_score": 88.36
+      "total_score": 87.9
     },
     {
       "id": "ae2a87217bc21de56447aaf116141b36974b5359",
@@ -567,9 +546,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 9.05,
+      "timeliness": 8.59,
       "writing_value": 5,
-      "total_score": 94.05
+      "total_score": 93.59
     },
     {
       "id": "862ca0169e89652a8ee04066baeb8600717f1fa6",
@@ -588,9 +567,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 5,
-      "timeliness": 27.46,
+      "timeliness": 27.0,
       "writing_value": 5,
-      "total_score": 127.46
+      "total_score": 127.0
     },
     {
       "id": "42aa7cf6aa09b59da9e2fb31384d1d3352d3765e",
@@ -609,9 +588,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 16.44,
+      "timeliness": 15.98,
       "writing_value": 0,
-      "total_score": 91.44
+      "total_score": 90.98
     },
     {
       "id": "051e80def60fb284ce5ee468e92ca506b130cd28",
@@ -630,9 +609,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 8.66,
+      "timeliness": 8.2,
       "writing_value": 0,
-      "total_score": 83.66
+      "total_score": 83.2
     },
     {
       "id": "83302b8b4bcc6ac8d795d72fe55cb47cbaace1ac",
@@ -651,30 +630,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 8.93,
+      "timeliness": 8.47,
       "writing_value": 0,
-      "total_score": 83.93
-    },
-    {
-      "id": "26b1282a8df9624e41255be4ff173891a12eae1c",
-      "title": "China leading in global robotics race, but opportunities for China-US cooperation exist: US industry rep - Global Times",
-      "title_zh": "美国机器人行业代表：中国在全球机器人竞赛中处于领先地位，但中美合作存在机遇",
-      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5aY0s3LTJTZG4tN2dCYzlDQUxtTFFtd1Jic1hPcnI4V1RGYmxkeGtSQ1V6bmN3OFNhNlExRC1uVkFIWkJOR01kZnd5OEdWYmUwUm9oTUlIYTNrRDdaclZMMHNB?oc=5",
-      "published_at": "2026-08-19T14:17:00+00:00",
-      "category": "GN: industrial robot",
-      "gn_label": "robotics",
-      "site_name": "GN: industrial robot",
-      "source": "GN: industrial robot",
-      "site_id": "GN: industrial robot",
-      "description": "China leading in global robotics race, but opportunities for China-US cooperation exist: US industry rep  Global Times",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 5,
-      "timeliness": 10.33,
-      "writing_value": 5,
-      "total_score": 95.33
+      "total_score": 83.47
     },
     {
       "id": "4ae31c4ff220e9858c2fa40c74f40e76638ec0c8",
@@ -693,9 +651,51 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 22.95,
+      "timeliness": 22.49,
       "writing_value": 5,
-      "total_score": 107.95
+      "total_score": 107.49
+    },
+    {
+      "id": "26b1282a8df9624e41255be4ff173891a12eae1c",
+      "title": "China leading in global robotics race, but opportunities for China-US cooperation exist: US industry rep - Global Times",
+      "title_zh": "美国机器人行业代表：中国在全球机器人竞赛中处于领先地位，但中美合作存在机遇",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5aY0s3LTJTZG4tN2dCYzlDQUxtTFFtd1Jic1hPcnI4V1RGYmxkeGtSQ1V6bmN3OFNhNlExRC1uVkFIWkJOR01kZnd5OEdWYmUwUm9oTUlIYTNrRDdaclZMMHNB?oc=5",
+      "published_at": "2026-08-19T14:17:00+00:00",
+      "category": "GN: industrial robot",
+      "gn_label": "robotics",
+      "site_name": "GN: industrial robot",
+      "source": "GN: industrial robot",
+      "site_id": "GN: industrial robot",
+      "description": "China leading in global robotics race, but opportunities for China-US cooperation exist: US industry rep  Global Times",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 9.87,
+      "writing_value": 5,
+      "total_score": 94.87
+    },
+    {
+      "id": "ebe99c695c0b6d96dd6db0c1f07f4393446eac75",
+      "title": "宇树主导的四足机器人市场，它悄悄拿到了6%",
+      "title_zh": "",
+      "url": "https://zhidx.com/p/586437.html",
+      "published_at": "2026-08-19T13:35:41+00:00",
+      "category": "极链AI",
+      "gn_label": "robotics",
+      "site_name": "极链AI",
+      "source": "极链AI",
+      "site_id": "极链AI",
+      "description": "智东西\n作者 | 江宇\n编辑 | 漠影\n今年WRC的人形机器人依然挤得满满当当。\n\n一米七、一米八的身高，裸露的金属骨架，灵巧手、跑跳、搬运、抓取……站在展馆里，很容易产生一种错觉：人形机器人似乎已经有了一套越来越标准的答案。\n维他动力却在今天带来了一台看起来有些“不合群”的机器人。\nATOM身高只有160cm，身体包上了织物，脚底专门做了静音设计，脸上是一块可以表达状态的屏幕。甚至连手臂长度、腰部自由度，都围绕柜子、桌面、门把手这些再普通不过的生活空间重新设计。\n\n与不少首先瞄准工厂、仓储等工业场景的人形机器人不同，ATOM一开始就在为人与机器人长期共处的空间做准备。它同时给出了个人版、企业",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 9.18,
+      "writing_value": 5,
+      "total_score": 109.18
     },
     {
       "id": "bf18372302a640849dab135bae95bd99b2e939ac",
@@ -714,9 +714,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 12.15,
+      "timeliness": 11.69,
       "writing_value": 5,
-      "total_score": 97.15
+      "total_score": 96.69
     },
     {
       "id": "cc2253fdad4ca7ab2a8d857506fc17b3dc68d8fa",
@@ -735,9 +735,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.83,
+      "timeliness": 26.37,
       "writing_value": 0,
-      "total_score": 101.83
+      "total_score": 101.37
     },
     {
       "id": "94c02362a081345483b62d28d1c011d19ef4ffb9",
@@ -756,9 +756,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.27,
+      "timeliness": 27.81,
       "writing_value": 0,
-      "total_score": 103.27
+      "total_score": 102.81
     },
     {
       "id": "b53d4d81773debad958ab191787aaa66c6ef17c3",
@@ -777,9 +777,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 21.25,
+      "timeliness": 20.79,
       "writing_value": 0,
-      "total_score": 111.25
+      "total_score": 110.79
     },
     {
       "id": "f02922c1e783abe7c412d3b0e9898de1adf9597e",
@@ -798,9 +798,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 22.1,
+      "timeliness": 21.64,
       "writing_value": 0,
-      "total_score": 97.1
+      "total_score": 96.64
     },
     {
       "id": "c996ffc532cf503f5bcaab3d14d1f5c888e213a5",
@@ -819,72 +819,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 8.54,
+      "timeliness": 8.08,
       "writing_value": 0,
-      "total_score": 83.54
-    },
-    {
-      "id": "f34a2785ddede4a0074bcb0f60ab37f1f1b59948",
-      "title": "Techman showcases robot arms - Taipei Times",
-      "title_zh": "达明展示机械臂 - 台北时报",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1WaTdQZUh6RXVHaGhkaWYwcktENjZiVkVkVGlJSHVVTm9FcXhhUHVTUHgyTVZnZ0JKdTVZM3VFRDFLVzlzN1ZPUG5sc3Vqb1k4TVVzZHVBZ3VnUU9peWk2OTcwSjNBWUxhWW94ekdlNl8xSDVhenc?oc=5",
-      "published_at": "2026-08-19T16:00:00+00:00",
-      "category": "GN: collaborative robot",
-      "gn_label": "robotics",
-      "site_name": "GN: collaborative robot",
-      "source": "GN: collaborative robot",
-      "site_id": "GN: collaborative robot",
-      "description": "Techman showcases robot arms  Taipei Times",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 12.04,
-      "writing_value": 0,
-      "total_score": 87.04
-    },
-    {
-      "id": "c39b6e0d06049ff3650d1e9f6fe12aeaa65fccbd",
-      "title": "Delta Showcases Embodied AI Dual-Arm Robot Platform and AI-Enhanced Production Line Digital Twin at Automation Taipei 2026 - TradingView",
-      "title_zh": "台达在 2026 台北自动化展上展示 AI 双臂机器人平台及 AI 增强型产线数字孪生 - TradingView",
-      "url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxNRERGWF9ZTVJvNDFmandlbWhBNzJZLTFLQ00tcHZKLVVCMWNrQnotcTRwZU9vZ2dhdVBrY1RpeEZtRDBsekhZSHkwTDdFMUZoM1dZM2U3QkJ1eWF3MlFBYU9jbUlxQXE0QkIxc3k0MWg3Yll4LW5reDlJMlEtU2ZYcFMxazU4TXpiaTlRSXQtVmZaQlNDMFJzdmJnVHU0eWRvNm5TWC1kUlFHZzRTREhBRTFpMHVsZEduYWpJcUR0cWI2X3FTcWxGWF9Ua28tLV9fRm55YTYzWWRGd2tFVUo0MHhLNHU5aHZkS2ducF9LVGhEZWVvYjAxYW00ekpKa3Nva2t1bXNLbEMwY0RIRlNpXw?oc=5",
-      "published_at": "2026-08-19T12:44:00+00:00",
-      "category": "GN: collaborative robot",
-      "gn_label": "robotics",
-      "site_name": "GN: collaborative robot",
-      "source": "GN: collaborative robot",
-      "site_id": "GN: collaborative robot",
-      "description": "Delta Showcases Embodied AI Dual-Arm Robot Platform and AI-Enhanced Production Line Digital Twin at Automation Taipei 2026  TradingView",
-      "ai_score": 80.0,
-      "ai_label": "robotics",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 5,
-      "timeliness": 8.78,
-      "writing_value": 5,
-      "total_score": 108.78
-    },
-    {
-      "id": "565ec7bffec530967cd45ea464f1b12d8d185000",
-      "title": "Ministry of Economic Affairs Showcases 16 Robotics Technologies; Technology Transfer Expected to Generate NT$13.5 Billion in Output Value - finance.biggo.com",
-      "title_zh": "经济部展示16项机器人技术；技术转移预计产值新台币135亿元 - Finance.biggo.com",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBac2JyV3RtS0RYY1NTVEU4elBBdzZUdTExNmR2T0NicmdNM1Z5anRIZ2tFYWdzNWR0cFRRVjU0Y2planljR1lhVGxqdmJLVzZMaWdnZHU3anF3UmJEd0lqeDVaaVlMbVdlRnJQYm1xMHY1Z08weHc?oc=5",
-      "published_at": "2026-08-19T21:55:00+00:00",
-      "category": "GN: collaborative robot",
-      "gn_label": "robotics",
-      "site_name": "GN: collaborative robot",
-      "source": "GN: collaborative robot",
-      "site_id": "GN: collaborative robot",
-      "description": "Ministry of Economic Affairs Showcases 16 Robotics Technologies; Technology Transfer Expected to Generate NT$13.5 Billion in Output Value  finance.biggo.com",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 5,
-      "timeliness": 17.96,
-      "writing_value": 5,
-      "total_score": 102.96
+      "total_score": 83.08
     },
     {
       "id": "862c3aa5089a988594245f2f97fd480c9bb1207d",
@@ -903,9 +840,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 28.58,
+      "timeliness": 28.12,
       "writing_value": 5,
-      "total_score": 113.58
+      "total_score": 113.12
     },
     {
       "id": "da93d24b3e1c45a608d874777a1cc65d061236fa",
@@ -924,9 +861,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 29.32,
+      "timeliness": 28.86,
       "writing_value": 5,
-      "total_score": 114.32
+      "total_score": 113.86
     },
     {
       "id": "163dfe9b2ec1dcbad923e9d02d67993827c8b61e",
@@ -945,9 +882,93 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 7.27,
+      "timeliness": 6.81,
       "writing_value": 0,
-      "total_score": 82.27
+      "total_score": 81.81
+    },
+    {
+      "id": "f34a2785ddede4a0074bcb0f60ab37f1f1b59948",
+      "title": "Techman showcases robot arms - Taipei Times",
+      "title_zh": "达明展示机械臂 - 台北时报",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1WaTdQZUh6RXVHaGhkaWYwcktENjZiVkVkVGlJSHVVTm9FcXhhUHVTUHgyTVZnZ0JKdTVZM3VFRDFLVzlzN1ZPUG5sc3Vqb1k4TVVzZHVBZ3VnUU9peWk2OTcwSjNBWUxhWW94ekdlNl8xSDVhenc?oc=5",
+      "published_at": "2026-08-19T16:00:00+00:00",
+      "category": "GN: collaborative robot",
+      "gn_label": "robotics",
+      "site_name": "GN: collaborative robot",
+      "source": "GN: collaborative robot",
+      "site_id": "GN: collaborative robot",
+      "description": "Techman showcases robot arms  Taipei Times",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 11.58,
+      "writing_value": 0,
+      "total_score": 86.58
+    },
+    {
+      "id": "c39b6e0d06049ff3650d1e9f6fe12aeaa65fccbd",
+      "title": "Delta Showcases Embodied AI Dual-Arm Robot Platform and AI-Enhanced Production Line Digital Twin at Automation Taipei 2026 - TradingView",
+      "title_zh": "台达在 2026 台北自动化展上展示 AI 双臂机器人平台及 AI 增强型产线数字孪生 - TradingView",
+      "url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxNRERGWF9ZTVJvNDFmandlbWhBNzJZLTFLQ00tcHZKLVVCMWNrQnotcTRwZU9vZ2dhdVBrY1RpeEZtRDBsekhZSHkwTDdFMUZoM1dZM2U3QkJ1eWF3MlFBYU9jbUlxQXE0QkIxc3k0MWg3Yll4LW5reDlJMlEtU2ZYcFMxazU4TXpiaTlRSXQtVmZaQlNDMFJzdmJnVHU0eWRvNm5TWC1kUlFHZzRTREhBRTFpMHVsZEduYWpJcUR0cWI2X3FTcWxGWF9Ua28tLV9fRm55YTYzWWRGd2tFVUo0MHhLNHU5aHZkS2ducF9LVGhEZWVvYjAxYW00ekpKa3Nva2t1bXNLbEMwY0RIRlNpXw?oc=5",
+      "published_at": "2026-08-19T12:44:00+00:00",
+      "category": "GN: collaborative robot",
+      "gn_label": "robotics",
+      "site_name": "GN: collaborative robot",
+      "source": "GN: collaborative robot",
+      "site_id": "GN: collaborative robot",
+      "description": "Delta Showcases Embodied AI Dual-Arm Robot Platform and AI-Enhanced Production Line Digital Twin at Automation Taipei 2026  TradingView",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 8.32,
+      "writing_value": 5,
+      "total_score": 108.32
+    },
+    {
+      "id": "565ec7bffec530967cd45ea464f1b12d8d185000",
+      "title": "Ministry of Economic Affairs Showcases 16 Robotics Technologies; Technology Transfer Expected to Generate NT$13.5 Billion in Output Value - finance.biggo.com",
+      "title_zh": "经济部展示16项机器人技术；技术转移预计产值新台币135亿元 - Finance.biggo.com",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBac2JyV3RtS0RYY1NTVEU4elBBdzZUdTExNmR2T0NicmdNM1Z5anRIZ2tFYWdzNWR0cFRRVjU0Y2planljR1lhVGxqdmJLVzZMaWdnZHU3anF3UmJEd0lqeDVaaVlMbVdlRnJQYm1xMHY1Z08weHc?oc=5",
+      "published_at": "2026-08-19T21:55:00+00:00",
+      "category": "GN: collaborative robot",
+      "gn_label": "robotics",
+      "site_name": "GN: collaborative robot",
+      "source": "GN: collaborative robot",
+      "site_id": "GN: collaborative robot",
+      "description": "Ministry of Economic Affairs Showcases 16 Robotics Technologies; Technology Transfer Expected to Generate NT$13.5 Billion in Output Value  finance.biggo.com",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 17.5,
+      "writing_value": 5,
+      "total_score": 102.5
+    },
+    {
+      "id": "b8527bfd6ca9c8e368413a15c77a1a1eba149616",
+      "title": "直击WRC丨宇树科技王兴兴：目前人形机器人的效能相对较低，技术精进后会大规模推广 - 新浪财经",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNWHNQTXp4aTU4d1dkaVBNTGJkZ3BvdE12Z1A2eG1HRnQ5QjdaTXpEbUpvS3ZmWXk3bFZkalZFV3drT2MtT2RocUhfS0d6b0FjOVJJYmIwaDRqOHBYVURHYXlXV0RNWElXUzJrajA1UHJaYmZlWkdWTUd5dHhyaGd1VEpsSEFnT2wzRnF6SExlVUd1aVU4Z2dkTHV0Z3VocGU3T3pLT0hDWV9XWE1fckhFQ3poOExLbzlTYVc5RTBncDluX1lMRUxxVGZxYTJvTHNh?oc=5",
+      "published_at": "2026-08-20T01:38:00+00:00",
+      "category": "GN: 人形机器人",
+      "gn_label": "humanoid",
+      "site_name": "GN: 人形机器人",
+      "source": "GN: 人形机器人",
+      "site_id": "GN: 人形机器人",
+      "description": "直击WRC丨宇树科技王兴兴：目前人形机器人的效能相对较低，技术精进后会大规模推广  新浪财经美团、雷军成为宇树科技上市大赢家，人形机器人市场从蓝海走向红海 | 全球深一度  新浪网宇树科技高开629%，人形机器人到底行不行？北京两场大会见真章  t.cj.sina.cn",
+      "ai_score": 80.0,
+      "ai_label": "humanoid",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 21.22,
+      "writing_value": 5,
+      "total_score": 121.22
     },
     {
       "id": "c977882ddcc72f750b38ab7664dcc19d7b84355e",
@@ -966,9 +987,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 5,
-      "timeliness": 26.58,
+      "timeliness": 26.12,
       "writing_value": 5,
-      "total_score": 126.58
+      "total_score": 126.12
     },
     {
       "id": "1aeadb1214a00a39fdca98e9b1edde0b26091d94",
@@ -987,9 +1008,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 22.81,
+      "timeliness": 22.35,
       "writing_value": 5,
-      "total_score": 107.81
+      "total_score": 107.35
     },
     {
       "id": "b30b7b9bed3a17838705e27cae8e28dcdd81d9ee",
@@ -1008,9 +1029,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 20.73,
+      "timeliness": 20.27,
       "writing_value": 5,
-      "total_score": 105.73
+      "total_score": 105.27
     },
     {
       "id": "9f147eeef10f8420ae6f4c3fe346566060874205",
@@ -1029,9 +1050,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 8.96,
+      "timeliness": 8.5,
       "writing_value": 0,
-      "total_score": 83.96
+      "total_score": 83.5
     },
     {
       "id": "0a44891c48f9aead616d224f9b5f5e2ce5aa753f",
@@ -1050,9 +1071,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.81,
+      "timeliness": 29.35,
       "writing_value": 0,
-      "total_score": 104.81
+      "total_score": 104.35
     },
     {
       "id": "2d60dee4db07c06ea0be939183dc1ebc34c478f3",
@@ -1071,34 +1092,34 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 17.59,
+      "timeliness": 17.13,
       "writing_value": 0,
-      "total_score": 92.59
+      "total_score": 92.13
     },
     {
-      "id": "cae37a56723613906bf1679bf3d73a6c4716954b",
-      "title": "宇树科技核心技术人员身家过亿元 - 东方财富",
+      "id": "79578f31017c638c7ab160bb5926d3e307fc51e1",
+      "title": "宇树科技上市 公私募浮盈超百亿 上市即流通 而非“纸面富贵” - 东方财富",
       "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5SWkNpbHR4R1dsWlJzN1lVbU5UU0pkZnEyUHNESTFLOGZEYzIxTkNpZGQzcTg5NE5vSTJtOEdHN281aWg1cnVlRDc3NEw4bzBaV3ZGM2NVT2tOSGNXaW9Dcw?oc=5",
-      "published_at": "2026-08-19T20:43:09+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1YZzZiU2hzU0prcHlMSTV0bGlmc2V1N3NlTWdjMzU0WDNXcmRQR2N3Ymx5WHlwdHNkT1pucDA4UnBsUy0zVHRBeC10RFNBSzJJMjlCZ2hGdjBLM3paYllRVQ?oc=5",
+      "published_at": "2026-08-19T23:40:57+00:00",
       "category": "GN: 宇树科技",
       "gn_label": "robotics",
       "site_name": "GN: 宇树科技",
       "source": "GN: 宇树科技",
       "site_id": "GN: 宇树科技",
-      "description": "宇树科技核心技术人员身家过亿元  东方财富",
+      "description": "宇树科技上市 公私募浮盈超百亿 上市即流通 而非“纸面富贵”  东方财富",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 16.76,
+      "timeliness": 19.27,
       "writing_value": 0,
-      "total_score": 91.76
+      "total_score": 94.27
     },
     {
-      "id": "7799ddd377d98512bf6f2da43ab3f90eeaf7e2ea",
-      "title": "宇树科技上市次日，王兴兴发表重磅演讲 - 观察者",
+      "id": "44e8c59d41f14169639b9679eb8a2eb00282a22d",
+      "title": "宇树科技上市次日，王兴兴发表重磅演讲 - guancha.cn",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE45VHh6WDZjN1pJc3hwNTV6RTNVVXA1THB1ajdqWW5JSVZVNGpGMHM2SzlsRGRIY1BrNVc3ZThObm5tLXV1bEQwSHMzRndjUzJ3ZjNuUW5pNHdjWm83RHE4NXowdkpyRGNfazBjTjU3dTk?oc=5",
       "published_at": "2026-08-20T04:35:00+00:00",
@@ -1107,15 +1128,15 @@
       "site_name": "GN: 宇树科技",
       "source": "GN: 宇树科技",
       "site_id": "GN: 宇树科技",
-      "description": "宇树科技上市次日，王兴兴发表重磅演讲  观察者",
+      "description": "宇树科技上市次日，王兴兴发表重磅演讲  guancha.cn",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.63,
+      "timeliness": 24.17,
       "writing_value": 0,
-      "total_score": 99.63
+      "total_score": 99.17
     },
     {
       "id": "42713908a7147c698b07b82686527176c3ed43d2",
@@ -1134,9 +1155,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.73,
+      "timeliness": 25.27,
       "writing_value": 0,
-      "total_score": 100.73
+      "total_score": 100.27
     },
     {
       "id": "faa02865439e97dd2a2dc8cf987a4b2384c2890d",
@@ -1155,9 +1176,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 8.12,
+      "timeliness": 7.66,
       "writing_value": 0,
-      "total_score": 98.12
+      "total_score": 97.66
     },
     {
       "id": "d06ba7ec5f7b6c16bc5a80ecf43d7d9b21caf81d",
@@ -1176,9 +1197,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 19.69,
+      "timeliness": 19.23,
       "writing_value": 0,
-      "total_score": 94.69
+      "total_score": 94.23
     },
     {
       "id": "300f097513fc3e221bf1425e85b941ba9599bceb",
@@ -1197,9 +1218,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 22.35,
+      "timeliness": 21.89,
       "writing_value": 0,
-      "total_score": 112.35
+      "total_score": 111.89
     },
     {
       "id": "27fd1750400195cc421e1e8e02a515665342775c",
@@ -1218,9 +1239,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.54,
+      "timeliness": 26.08,
       "writing_value": 0,
-      "total_score": 101.54
+      "total_score": 101.08
     },
     {
       "id": "9f49ac43c5a973a16d69efa36b62ef21c58d67fa",
@@ -1239,9 +1260,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.92,
+      "timeliness": 27.46,
       "writing_value": 0,
-      "total_score": 102.92
+      "total_score": 102.46
     },
     {
       "id": "4708921048f1b37d28c71b1ef6cd1d2c74abb9bc",
@@ -1260,30 +1281,51 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.19,
+      "timeliness": 24.73,
       "writing_value": 0,
-      "total_score": 100.19
+      "total_score": 99.73
     },
     {
-      "id": "3beea2c2664788f30f78c388b89d3351cd83957b",
-      "title": "宇树科技上市第二天，王兴兴亮相，给出机器人产业一个重要节点 - 凤凰网",
+      "id": "cae37a56723613906bf1679bf3d73a6c4716954b",
+      "title": "宇树科技核心技术人员身家过亿元 - 东方财富",
       "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1PQmxzai10YW5fMTh3S2JjYlhyNFFyOWNvTllFSUhwVnV0YnRzMDJYTmliNS1fYmdIczVOWmlnTnNxUER3R1FkdjM2ZGc?oc=5",
-      "published_at": "2026-08-20T04:09:54+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5SWkNpbHR4R1dsWlJzN1lVbU5UU0pkZnEyUHNESTFLOGZEYzIxTkNpZGQzcTg5NE5vSTJtOEdHN281aWg1cnVlRDc3NEw4bzBaV3ZGM2NVT2tOSGNXaW9Dcw?oc=5",
+      "published_at": "2026-08-19T20:43:09+00:00",
       "category": "GN: 宇树科技",
       "gn_label": "robotics",
       "site_name": "GN: 宇树科技",
       "source": "GN: 宇树科技",
       "site_id": "GN: 宇树科技",
-      "description": "宇树科技上市第二天，王兴兴亮相，给出机器人产业一个重要节点  凤凰网",
+      "description": "宇树科技核心技术人员身家过亿元  东方财富",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.21,
+      "timeliness": 16.3,
       "writing_value": 0,
-      "total_score": 99.21
+      "total_score": 91.3
+    },
+    {
+      "id": "5cb2c2e773933d09da58dfa12f5c4cdb29300bd4",
+      "title": "2026世界机器人大会｜宇树科技机器人有了仿生脸！G1新形态“机械歌姬”亮相 - 中国科技网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFB1eF90Qk1lLXlzRF9nMktoVXdzd1dVT2F5OHVNLVJPeHlrdFZkZUh1bGNrMkJPTW9CQmQtZXRHQ25TbndYTFJrRktEemZpQmdoRzhjU3g2NDdPVHFLR0d2aEZMbTV6M25LT2gzNDhJdk4?oc=5",
+      "published_at": "2026-08-19T13:17:22+00:00",
+      "category": "GN: 宇树科技",
+      "gn_label": "robotics",
+      "site_name": "GN: 宇树科技",
+      "source": "GN: 宇树科技",
+      "site_id": "GN: 宇树科技",
+      "description": "2026世界机器人大会｜宇树科技机器人有了仿生脸！G1新形态“机械歌姬”亮相  中国科技网",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 8.87,
+      "writing_value": 0,
+      "total_score": 83.87
     },
     {
       "id": "fec0621aa92f58fce0b5fd68294d4319fb573f50",
@@ -1302,30 +1344,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.63,
+      "timeliness": 26.17,
       "writing_value": 0,
-      "total_score": 101.63
-    },
-    {
-      "id": "0c1648d79d9019ebd6961cf3daaf81aeeb3c2c46",
-      "title": "宇树暴跌超15%-观察者网 - 观察者",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5Mb3JFZW5jdlFabTBVUDRHSTYzdi0wbDdHT042NS00aVlOdEYyREg0V3Jna0g3MWg0Y0s1V25GNmZsRV9QWG5jRk5UeV9vcVBUbzFpbkNNQXBNclNIV0J4RzhPQWw?oc=5",
-      "published_at": "2026-08-20T02:08:00+00:00",
-      "category": "GN: 宇树科技",
-      "gn_label": "robotics",
-      "site_name": "GN: 宇树科技",
-      "source": "GN: 宇树科技",
-      "site_id": "GN: 宇树科技",
-      "description": "宇树暴跌超15%-观察者网  观察者",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 22.18,
-      "writing_value": 0,
-      "total_score": 97.18
+      "total_score": 101.17
     },
     {
       "id": "57c9dcc61177699706b268a1942163f5d0bd81c2",
@@ -1344,9 +1365,51 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 15.52,
+      "timeliness": 15.06,
       "writing_value": 0,
-      "total_score": 90.52
+      "total_score": 90.06
+    },
+    {
+      "id": "3beea2c2664788f30f78c388b89d3351cd83957b",
+      "title": "宇树科技上市第二天，王兴兴亮相，给出机器人产业一个重要节点 - 凤凰网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1PQmxzai10YW5fMTh3S2JjYlhyNFFyOWNvTllFSUhwVnV0YnRzMDJYTmliNS1fYmdIczVOWmlnTnNxUER3R1FkdjM2ZGc?oc=5",
+      "published_at": "2026-08-20T04:09:54+00:00",
+      "category": "GN: 宇树科技",
+      "gn_label": "robotics",
+      "site_name": "GN: 宇树科技",
+      "source": "GN: 宇树科技",
+      "site_id": "GN: 宇树科技",
+      "description": "宇树科技上市第二天，王兴兴亮相，给出机器人产业一个重要节点  凤凰网",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 23.75,
+      "writing_value": 0,
+      "total_score": 98.75
+    },
+    {
+      "id": "3cdb8afd13b50815625f76ef8f12d7864cdfcc28",
+      "title": "宇树暴跌超15%-观察者网 - guancha.cn",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5Mb3JFZW5jdlFabTBVUDRHSTYzdi0wbDdHT042NS00aVlOdEYyREg0V3Jna0g3MWg0Y0s1V25GNmZsRV9QWG5jRk5UeV9vcVBUbzFpbkNNQXBNclNIV0J4RzhPQWw?oc=5",
+      "published_at": "2026-08-20T02:08:00+00:00",
+      "category": "GN: 宇树科技",
+      "gn_label": "robotics",
+      "site_name": "GN: 宇树科技",
+      "source": "GN: 宇树科技",
+      "site_id": "GN: 宇树科技",
+      "description": "宇树暴跌超15%-观察者网  guancha.cn",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 21.72,
+      "writing_value": 0,
+      "total_score": 96.72
     },
     {
       "id": "d6c1556c66756d83346523bef65ad533ea55e2b6",
@@ -1365,30 +1428,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.34,
+      "timeliness": 27.88,
       "writing_value": 0,
-      "total_score": 103.34
-    },
-    {
-      "id": "ae8748d45b32edc628ba4cf9b50118888f8f14e3",
-      "title": "宇树科技上市第二天，王兴兴马不停蹄赶到这里，最新发声 - chinanews.com.cn",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9OemhheDFra2FSMW9vT0R4ZjRLWkczY204aXoxWjlSWGQ2eGQyWlRlVFJIU3A2NjgwaFY3ZEdTa25TU3lEazhUSGhmZGhSQTRsWlRmZFRxX25vb0F6UHJGd2djUU8tZHRj?oc=5",
-      "published_at": "2026-08-20T02:40:33+00:00",
-      "category": "GN: 宇树科技",
-      "gn_label": "robotics",
-      "site_name": "GN: 宇树科技",
-      "source": "GN: 宇树科技",
-      "site_id": "GN: 宇树科技",
-      "description": "宇树科技上市第二天，王兴兴马不停蹄赶到这里，最新发声  chinanews.com.cn",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 22.72,
-      "writing_value": 0,
-      "total_score": 97.72
+      "total_score": 102.88
     },
     {
       "id": "7b2c4a8cdf0e30f62b5334ec70aa4400cdae5d4b",
@@ -1407,9 +1449,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.89,
+      "timeliness": 23.43,
       "writing_value": 0,
-      "total_score": 98.89
+      "total_score": 98.43
+    },
+    {
+      "id": "ae8748d45b32edc628ba4cf9b50118888f8f14e3",
+      "title": "宇树科技上市第二天，王兴兴马不停蹄赶到这里，最新发声 - chinanews.com.cn",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9OemhheDFra2FSMW9vT0R4ZjRLWkczY204aXoxWjlSWGQ2eGQyWlRlVFJIU3A2NjgwaFY3ZEdTa25TU3lEazhUSGhmZGhSQTRsWlRmZFRxX25vb0F6UHJGd2djUU8tZHRj?oc=5",
+      "published_at": "2026-08-20T02:40:33+00:00",
+      "category": "GN: 宇树科技",
+      "gn_label": "robotics",
+      "site_name": "GN: 宇树科技",
+      "source": "GN: 宇树科技",
+      "site_id": "GN: 宇树科技",
+      "description": "宇树科技上市第二天，王兴兴马不停蹄赶到这里，最新发声  chinanews.com.cn",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 22.26,
+      "writing_value": 0,
+      "total_score": 97.26
     },
     {
       "id": "304f089e8328797d6cad9736bb41f1ba5f903209",
@@ -1428,9 +1491,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 22.46,
+      "timeliness": 22.0,
       "writing_value": 0,
-      "total_score": 97.46
+      "total_score": 97.0
     },
     {
       "id": "a73b758ececf133256546ac58794b7c0bb709316",
@@ -1449,9 +1512,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.61,
+      "timeliness": 23.15,
       "writing_value": 0,
-      "total_score": 98.61
+      "total_score": 98.15
     },
     {
       "id": "29c28c88d77cea79e2ccf81da56096ed827c3a36",
@@ -1470,30 +1533,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 18.98,
+      "timeliness": 18.52,
       "writing_value": 0,
-      "total_score": 93.98
-    },
-    {
-      "id": "0b64fe81cd0c6251d99dc11f28da88d06ce06639",
-      "title": "宇树科技大跌17%，市值跌破3000亿。王兴兴：机器人效率跟人比起来还是低一些 - 风闻",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1fal8wbzZtS2RCd0NsSTR6UUV2WHNfcHpxMkVIYmdfOTY1QWlHTEwzQk82UW84VG5sR2liYTZKejFTNWxFbFhxcE5xSXVxNE1JRG5lMXRjQUJkeWc?oc=5",
-      "published_at": "2026-08-20T05:39:05+00:00",
-      "category": "GN: 宇树科技",
-      "gn_label": "robotics",
-      "site_name": "GN: 宇树科技",
-      "source": "GN: 宇树科技",
-      "site_id": "GN: 宇树科技",
-      "description": "宇树科技大跌17%，市值跌破3000亿。王兴兴：机器人效率跟人比起来还是低一些  风闻",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 25.69,
-      "writing_value": 0,
-      "total_score": 100.69
+      "total_score": 93.52
     },
     {
       "id": "d53555f679fc89274f8ef04daa125e4fb3eba2df",
@@ -1512,177 +1554,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 8.94,
+      "timeliness": 8.48,
       "writing_value": 0,
-      "total_score": 98.94
-    },
-    {
-      "id": "18366f18a774b89aab49d5ee77570d253513928b",
-      "title": "智元反超宇树之后，真正值得看的不是排名 - 电子工程专辑",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1OT1dVUUpmWndaZmVaYWNUU05BNWZQaTFneE5Na2pmbUhDMXVncWZoWFMzTy1sOERtZC1kWVpNa2xfQm1IV2s2WWY1a09mYkJjNmFj?oc=5",
-      "published_at": "2026-08-20T05:55:00+00:00",
-      "category": "GN: 智元机器人",
-      "gn_label": "robotics",
-      "site_name": "GN: 智元机器人",
-      "source": "GN: 智元机器人",
-      "site_id": "GN: 智元机器人",
-      "description": "智元反超宇树之后，真正值得看的不是排名  电子工程专辑",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 25.96,
-      "writing_value": 0,
-      "total_score": 100.96
-    },
-    {
-      "id": "20d26609eef1032bcfd659369ed05e3dffd31e51",
-      "title": "曹曦联手智元投资95后创业者 新锐力量获资本青睐 - 36 Kr",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBzbmM0MjVCRGNFVFMxMk1BS0JXLTgzSXhSc1lzUTYxcldzeHBndjA4ZkxYeUo0TXBfQjlVcW9NVVRPc0QwRUxPRnRNOFJIdm9OT01n?oc=5",
-      "published_at": "2026-08-19T11:42:00+00:00",
-      "category": "GN: 智元机器人",
-      "gn_label": "robotics",
-      "site_name": "GN: 智元机器人",
-      "source": "GN: 智元机器人",
-      "site_id": "GN: 智元机器人",
-      "description": "曹曦联手智元投资95后创业者 新锐力量获资本青睐  36 Kr",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 7.74,
-      "writing_value": 0,
-      "total_score": 82.74
-    },
-    {
-      "id": "9a531431dae902cf1e8ea69d4f3b328483fbc2ac",
-      "title": "智元赴港 IPO，上纬新材“牛来”？ - 搜狐网",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQYXdnUkJTSzlHbUpxSVBkc1JzZlV3OXB0bV9xTmNJdXNsS2NLNWdkbF8zTWUwQmlrRWhOT2c3MENyTjktemF2ODFBUmoyallmQjJ3bHhVcm80QkR3V1ZIUmozbE5sS2RnbWx2QnBEejRCWmJPYVBtcW5fZUNMSldHYkNOeFdBY2Z0?oc=5",
-      "published_at": "2026-08-19T11:41:26+00:00",
-      "category": "GN: 智元机器人",
-      "gn_label": "robotics",
-      "site_name": "GN: 智元机器人",
-      "source": "GN: 智元机器人",
-      "site_id": "GN: 智元机器人",
-      "description": "智元赴港 IPO，上纬新材“牛来”？  搜狐网",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 7.73,
-      "writing_value": 0,
-      "total_score": 82.73
-    },
-    {
-      "id": "bcf148a208e79a693144ebedca92fdb5699eb0b1",
-      "title": "中国人形机器人整机安全再上新台阶，智元远征A3斩获全球权威认证 - 广州日报新花城",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOOWlCYmFxRlEwV2lpTjU3WlQwU29SNTIwRzRDaFFJenZRV05idWN3UWxUZ3NCZ0dEb1k5UlM4TEROcXlSTDkteWx5dTN5SDY1OTgyMEQ2OVRHb2JGem1QT0FUbFBoOHl6WVM5dWdhTkFIOThyX1RXb3JjdF9Vc1I5Q1pfUUFSTUJndXc?oc=5",
-      "published_at": "2026-08-19T15:33:44+00:00",
-      "category": "GN: 智元机器人",
-      "gn_label": "robotics",
-      "site_name": "GN: 智元机器人",
-      "source": "GN: 智元机器人",
-      "site_id": "GN: 智元机器人",
-      "description": "中国人形机器人整机安全再上新台阶，智元远征A3斩获全球权威认证  广州日报新花城",
-      "ai_score": 80.0,
-      "ai_label": "robotics",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 11.61,
-      "writing_value": 0,
-      "total_score": 101.61
-    },
-    {
-      "id": "2bd56c74afe01ddb830592aa7ec38c23e33b458c",
-      "title": "上半年全球人形机器人出货量猛增300%！智元第一 - 搜狐网",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNTDZUQzdSMk9EaXVLWU44anR6eWJPQzZSR21BS1BVYkZMeE1Vd2hkTmJfZHo2M21Ed3UycHNJXzZTUnJJN0JHTWd2NDV6ZzA3NlVXM29NLUE0Z0Q1NnlKUTYzWGRndnBSZXdCSTI4UGppQWNfNDdzX1F0UWlsMTlVSXN0aTJSckhL?oc=5",
-      "published_at": "2026-08-20T03:04:00+00:00",
-      "category": "GN: 智元机器人",
-      "gn_label": "robotics",
-      "site_name": "GN: 智元机器人",
-      "source": "GN: 智元机器人",
-      "site_id": "GN: 智元机器人",
-      "description": "上半年全球人形机器人出货量猛增300%！智元第一  搜狐网",
-      "ai_score": 80.0,
-      "ai_label": "robotics",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 23.11,
-      "writing_value": 0,
-      "total_score": 113.11
-    },
-    {
-      "id": "ef98b61c69ffe0ec44989ad9eaaf42aba7a712c8",
-      "title": "Current Robotics首次披露融资进展 累计融资数亿元 - 观点网",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9kOUR0N0oyQklEQm9ybG9sUEdFVnlCRzEtaktaT1AtTVVkNVE0aGZGcXVxbXIwdGtpZ3hvUVNLMzk5LU9wWVVNTnFHVDBrZEtoSFZXYmdaQ1VnenM1XzQ4U2F3?oc=5",
-      "published_at": "2026-08-20T08:08:45+00:00",
-      "category": "GN: 智元机器人",
-      "gn_label": "robotics",
-      "site_name": "GN: 智元机器人",
-      "source": "GN: 智元机器人",
-      "site_id": "GN: 智元机器人",
-      "description": "Current Robotics首次披露融资进展 累计融资数亿元  观点网",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 28.19,
-      "writing_value": 0,
-      "total_score": 103.19
-    },
-    {
-      "id": "f86fd86a70bff9fad58e46d1e9aa3b08974cbaf6",
-      "title": "曹曦和智元投了一位95后 - 新浪网",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPNXpDLUlRSG1yd2JlSGZVR2tmLThRQ1A4UDhQeFAwZWN4MXVjOTVZZm5EVS1SX1kwSmpzOURDZmtIblMxUjVDSWVWaDVDNVZHM2JVbVhIbWFYa2JzRk1rUFZHQWZjS05lOHQ0UHFvRzM3SlNsWjNhbWVILVB1R2tDZmhQRXhRdnNiVWV5TmZ5bEROUjR5ZkxmdDVnTGE0Y0JmZ09LT3FPcw?oc=5",
-      "published_at": "2026-08-20T02:56:04+00:00",
-      "category": "GN: 智元机器人",
-      "gn_label": "robotics",
-      "site_name": "GN: 智元机器人",
-      "source": "GN: 智元机器人",
-      "site_id": "GN: 智元机器人",
-      "description": "曹曦和智元投了一位95后  新浪网",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 22.98,
-      "writing_value": 0,
-      "total_score": 97.98
-    },
-    {
-      "id": "1f006ae323d544a3b0a26a3e41370db7e8cfc915",
-      "title": "中国兵器杭州智元研究院亮相世界机器人大会 - t.cj.sina.cn",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE82VFlrXzJXZlEydHMzR0o5dFMwX0l6VEVmcjVPemdJd2VrTHpnVjJVMEVXaE01QmMzcEVzcW9uZGJ3SU9ESGRDSjc1R1pIWUtFQzZSdlVlRC1xQzhTMzB4bkJ5Y0ZSV09TQ3Y2MUNUVmE?oc=5",
-      "published_at": "2026-08-20T04:56:59+00:00",
-      "category": "GN: 智元机器人",
-      "gn_label": "robotics",
-      "site_name": "GN: 智元机器人",
-      "source": "GN: 智元机器人",
-      "site_id": "GN: 智元机器人",
-      "description": "中国兵器杭州智元研究院亮相世界机器人大会  t.cj.sina.cn",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 24.99,
-      "writing_value": 0,
-      "total_score": 99.99
+      "total_score": 98.48
     },
     {
       "id": "8c117c22f825a8696ca9d36d124de3a02520107b",
@@ -1701,9 +1575,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.62,
+      "timeliness": 24.16,
       "writing_value": 0,
-      "total_score": 99.62
+      "total_score": 99.16
     },
     {
       "id": "b918c25fb094df7c71babaf5749c0f2a3211aad5",
@@ -1722,9 +1596,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 11.44,
+      "timeliness": 10.98,
       "writing_value": 0,
-      "total_score": 101.44
+      "total_score": 100.98
     },
     {
       "id": "61053c4ef584f7cc95d840da51125feefe38384d",
@@ -1743,9 +1617,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.01,
+      "timeliness": 23.55,
       "writing_value": 0,
-      "total_score": 99.01
+      "total_score": 98.55
     },
     {
       "id": "e991559261147c3a005f1ed1dd6284e10826487b",
@@ -1764,30 +1638,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 11.19,
+      "timeliness": 10.73,
       "writing_value": 0,
-      "total_score": 101.19
-    },
-    {
-      "id": "f06e230c43c4aa41aacfc87a34e0e5b861349349",
-      "title": "优必选WRC2026展示工业、商用、家庭消费三大场景人形机器人应用成果 - 搜狐网",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNZjE4dk9JR2lPWEc2VHF6WHZtMWxFYTBCbGczNklCM3hNTWMzaVkwOVQwSXM1TFlWYlZzc0IzM3QyNWR0T3BQWmVrLWpFcEQ4NExFM1piSjNsZ3NDTGx1b2d0OF9fUS1ZMURhRGYzTjJRZk5VNkpoVWItRWotMjloU0s0c3BvYWQ5?oc=5",
-      "published_at": "2026-08-20T03:20:00+00:00",
-      "category": "GN: 优必选",
-      "gn_label": "robotics",
-      "site_name": "GN: 优必选",
-      "source": "GN: 优必选",
-      "site_id": "GN: 优必选",
-      "description": "优必选WRC2026展示工业、商用、家庭消费三大场景人形机器人应用成果  搜狐网",
-      "ai_score": 80.0,
-      "ai_label": "robotics",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 23.38,
-      "writing_value": 0,
-      "total_score": 113.38
+      "total_score": 100.73
     },
     {
       "id": "3b91a0cd59bc999c44d3e84b75a4cbcc47028d1d",
@@ -1806,9 +1659,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 21.34,
+      "timeliness": 20.88,
       "writing_value": 0,
-      "total_score": 111.34
+      "total_score": 110.88
     },
     {
       "id": "7d7a166325be67861eddd0942c4db35201005d42",
@@ -1827,9 +1680,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 7.64,
+      "timeliness": 7.18,
       "writing_value": 0,
-      "total_score": 97.64
+      "total_score": 97.18
     },
     {
       "id": "3446d38d130f7083202cf6f23658a9c7b8314e9d",
@@ -1848,9 +1701,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.89,
+      "timeliness": 25.43,
       "writing_value": 0,
-      "total_score": 100.89
+      "total_score": 100.43
+    },
+    {
+      "id": "3d21b73cdb2bef60304033cbcf4b0dacf94cd3a5",
+      "title": "优必选携人形机器人成果亮相2026世界机器人大会 - 东方财富",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1qcTExVDdYeXA4bGhvRWlHemNrbzJWbTFTQmtBc0U4WlVGc01pYnRqS1YwY255bEluY1JQMGZ1dERCMmlVdEFmMXJLcEJxVVg4MHNPLU9pOU5HSzZGaHEybQ?oc=5",
+      "published_at": "2026-08-20T02:51:39+00:00",
+      "category": "GN: 优必选",
+      "gn_label": "robotics",
+      "site_name": "GN: 优必选",
+      "source": "GN: 优必选",
+      "site_id": "GN: 优必选",
+      "description": "优必选携人形机器人成果亮相2026世界机器人大会  东方财富",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 22.44,
+      "writing_value": 0,
+      "total_score": 112.44
     },
     {
       "id": "59f19e1d8aca55a6773ee8a8644fb282e25b4c49",
@@ -1869,30 +1743,51 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 22.48,
+      "timeliness": 22.02,
       "writing_value": 0,
-      "total_score": 112.48
+      "total_score": 112.02
     },
     {
-      "id": "429bc4bd155cf62bba14f4c259aee6f673efe688",
-      "title": "人形机器人不“卷”走秀了，粤企优必选机器人开始“卷”上班 - 东方财富",
+      "id": "7953dbad5cbd2fb04141feac3d4867f1579c0e83",
+      "title": "到场WRC2026|工业练硬功、商用重服务、家庭消费塑情感，优必选人形机器人三大场景协同赋能落地 - 金融界",
       "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBic0huSGh6QlpWbVA0RlRBdmxTWVpUOXdoaG43dE1lU0xPY0ZuUjVlWFczZENURC11R1FOdHY0MGdTdjEwQUF3NklCUE50Um5COXNDcDhhaHo1eENvNlZz?oc=5",
-      "published_at": "2026-08-19T15:19:31+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFA1Y1B4dUdBMk80NHp2Q1FVOWFpdkNVRl9rVmNMSHItX2M4VGE4a3dEdDdiYWVWRWNITVl0c3gzSzVoOHlibXloS1hNVDc0cnB4b2RYSlNDOUlRT3REVlRpdkNZMURxZw?oc=5",
+      "published_at": "2026-08-20T09:59:39+00:00",
       "category": "GN: 优必选",
       "gn_label": "robotics",
       "site_name": "GN: 优必选",
       "source": "GN: 优必选",
       "site_id": "GN: 优必选",
-      "description": "人形机器人不“卷”走秀了，粤企优必选机器人开始“卷”上班  东方财富",
+      "description": "到场WRC2026|工业练硬功、商用重服务、家庭消费塑情感，优必选人形机器人三大场景协同赋能落地  金融界",
       "ai_score": 80.0,
       "ai_label": "robotics",
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 11.37,
+      "timeliness": 29.58,
       "writing_value": 0,
-      "total_score": 101.37
+      "total_score": 119.58
+    },
+    {
+      "id": "f06e230c43c4aa41aacfc87a34e0e5b861349349",
+      "title": "优必选WRC2026展示工业、商用、家庭消费三大场景人形机器人应用成果 - 搜狐网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNZjE4dk9JR2lPWEc2VHF6WHZtMWxFYTBCbGczNklCM3hNTWMzaVkwOVQwSXM1TFlWYlZzc0IzM3QyNWR0T3BQWmVrLWpFcEQ4NExFM1piSjNsZ3NDTGx1b2d0OF9fUS1ZMURhRGYzTjJRZk5VNkpoVWItRWotMjloU0s0c3BvYWQ5?oc=5",
+      "published_at": "2026-08-20T03:20:00+00:00",
+      "category": "GN: 优必选",
+      "gn_label": "robotics",
+      "site_name": "GN: 优必选",
+      "source": "GN: 优必选",
+      "site_id": "GN: 优必选",
+      "description": "优必选WRC2026展示工业、商用、家庭消费三大场景人形机器人应用成果  搜狐网",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 22.92,
+      "writing_value": 0,
+      "total_score": 112.92
     },
     {
       "id": "ce26b206a4842fdbd1c75db1fe29a14783c8bd87",
@@ -1911,9 +1806,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.41,
+      "timeliness": 24.95,
       "writing_value": 0,
-      "total_score": 115.41
+      "total_score": 114.95
     },
     {
       "id": "003a3740852c379437c9a0af19fa7cfe5c883713",
@@ -1926,15 +1821,15 @@
       "site_name": "GN: 机械臂",
       "source": "GN: 机械臂",
       "site_id": "GN: 机械臂",
-      "description": "宇树科技推出仿生7轴灵巧机械臂，售价9900元起|灵巧手|仿生机器人|运动速度|执行器|桌面级_手机新浪网  新浪网9900元起！宇树科技发布R1仿生7轴灵巧机械臂  驱动之家宇树发布仿生7轴灵巧机械臂 售价9900元起  凤凰网科技",
+      "description": "宇树科技推出仿生7轴灵巧机械臂，售价9900元起|灵巧手|仿生机器人|运动速度|执行器|桌面级_手机新浪网  新浪网宇树发布仿生7轴灵巧机械臂 售价9900元起  凤凰网宇树发布新产品 售价9900元起 仿生7轴机械臂亮相  中华网",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 25.25,
+      "timeliness": 24.79,
       "writing_value": 5,
-      "total_score": 110.25
+      "total_score": 109.79
     },
     {
       "id": "33e940767a4e67f053a46cda87ca1f1268aa8050",
@@ -1953,30 +1848,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.32,
+      "timeliness": 26.86,
       "writing_value": 0,
-      "total_score": 102.32
-    },
-    {
-      "id": "ce4981df1fff3984d9daafdb0b02d97f86a6dd8f",
-      "title": "宇树科技推出仿生7轴灵巧机械臂，售价9900元起 - 凤凰网",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFA3OXJ2blpKX1RzXy1VR2EwbkZST1hBT21hMFhTWG1ObnczejkwZF9FT3ZyaGpBNk91NlJZenRoYlY1SHdWUnhpXw?oc=5",
-      "published_at": "2026-08-20T03:56:46+00:00",
-      "category": "GN: 机械臂",
-      "gn_label": "robotics",
-      "site_name": "GN: 机械臂",
-      "source": "GN: 机械臂",
-      "site_id": "GN: 机械臂",
-      "description": "宇树科技推出仿生7轴灵巧机械臂，售价9900元起  凤凰网",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 23.99,
-      "writing_value": 0,
-      "total_score": 98.99
+      "total_score": 101.86
     },
     {
       "id": "52d04d292ae1e5911412ae0098b678680bb4b37b",
@@ -1995,9 +1869,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 10.17,
+      "timeliness": 9.71,
       "writing_value": 5,
-      "total_score": 95.17
+      "total_score": 94.71
     },
     {
       "id": "04d2dea363217efdc251c89d145f624965482360",
@@ -2016,9 +1890,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 14.1,
+      "timeliness": 13.64,
       "writing_value": 0,
-      "total_score": 89.1
+      "total_score": 88.64
+    },
+    {
+      "id": "ce4981df1fff3984d9daafdb0b02d97f86a6dd8f",
+      "title": "宇树科技推出仿生7轴灵巧机械臂，售价9900元起 - 凤凰网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFA3OXJ2blpKX1RzXy1VR2EwbkZST1hBT21hMFhTWG1ObnczejkwZF9FT3ZyaGpBNk91NlJZenRoYlY1SHdWUnhpXw?oc=5",
+      "published_at": "2026-08-20T03:56:46+00:00",
+      "category": "GN: 机械臂",
+      "gn_label": "robotics",
+      "site_name": "GN: 机械臂",
+      "source": "GN: 机械臂",
+      "site_id": "GN: 机械臂",
+      "description": "宇树科技推出仿生7轴灵巧机械臂，售价9900元起  凤凰网",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 23.53,
+      "writing_value": 0,
+      "total_score": 98.53
     },
     {
       "id": "49740b39d6ca90c7109518aafea887b169d5dba0",
@@ -2037,9 +1932,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.54,
+      "timeliness": 24.08,
       "writing_value": 0,
-      "total_score": 99.54
+      "total_score": 99.08
     },
     {
       "id": "36657cfcb7732795223e88f3e287fe875e156c84",
@@ -2058,9 +1953,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.01,
+      "timeliness": 25.55,
       "writing_value": 0,
-      "total_score": 101.01
+      "total_score": 100.55
+    },
+    {
+      "id": "fe89a8c964b91a4dde20cdd1247cd9d6a0ec6ce3",
+      "title": "9900元起！宇树科技发布R1仿生7轴灵巧机械臂 - 驱动之家",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1mQzJiMkZOQmUzbTFVd3B6YmlyRm00bXF6Q1J6Q2gzVUZrclZ5WHdvckVzb29idHhRX25mejMxRXA1Y3B0NHU4TWl3bjB6Z0d5dkdhUl9vNnQ?oc=5",
+      "published_at": "2026-08-20T07:16:00+00:00",
+      "category": "GN: 机械臂",
+      "gn_label": "robotics",
+      "site_name": "GN: 机械臂",
+      "source": "GN: 机械臂",
+      "site_id": "GN: 机械臂",
+      "description": "9900元起！宇树科技发布R1仿生7轴灵巧机械臂  驱动之家",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 26.85,
+      "writing_value": 0,
+      "total_score": 101.85
     },
     {
       "id": "74e060d1bbc78b5d9e065a4ed15aaa59294104b0",
@@ -2079,9 +1995,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 9.98,
+      "timeliness": 9.52,
       "writing_value": 0,
-      "total_score": 84.98
+      "total_score": 84.52
     },
     {
       "id": "c342606565c71c91bbb2d09323a9a0a5ec38c2d7",
@@ -2100,9 +2016,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 22.13,
+      "timeliness": 21.67,
       "writing_value": 0,
-      "total_score": 97.13
+      "total_score": 96.67
     },
     {
       "id": "ab425e62924094871d89148d157ba96e83ce0440",
@@ -2121,9 +2037,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.75,
+      "timeliness": 23.29,
       "writing_value": 0,
-      "total_score": 98.75
+      "total_score": 98.29
     },
     {
       "id": "066ad63cf0f8fba1d376500679bd6a4aee408049",
@@ -2142,9 +2058,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.56,
+      "timeliness": 24.1,
       "writing_value": 0,
-      "total_score": 99.56
+      "total_score": 99.1
     },
     {
       "id": "39cb866ca34fbbb4c73c5774479338f046b99bd2",
@@ -2163,9 +2079,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 9.98,
+      "timeliness": 9.52,
       "writing_value": 0,
-      "total_score": 84.98
+      "total_score": 84.52
     },
     {
       "id": "e93aeb3ea55edf0d083935f73ca27493f6a0eaf7",
@@ -2184,30 +2100,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.01,
+      "timeliness": 23.55,
       "writing_value": 0,
-      "total_score": 99.01
-    },
-    {
-      "id": "7abdb32005b5a5981f293e225358cb5e902f08d0",
-      "title": "宇树发布新产品 售价9900元起 仿生7轴机械臂亮相 - 中华网",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1uWFVRR3Y2WEFlRFFtZnpfUmI3eEJvQzFUaHJrTnhHenJiQ2tnWnkxeWxNckNmR1FuS05vVUdib210WDdmSUZwZ3Jkazc5MUVheGthVVJqVTdNUFM3LW1sNnYwZlhFZngxUnZjdUFLX2w?oc=5",
-      "published_at": "2026-08-20T05:52:11+00:00",
-      "category": "GN: 机械臂",
-      "gn_label": "robotics",
-      "site_name": "GN: 机械臂",
-      "source": "GN: 机械臂",
-      "site_id": "GN: 机械臂",
-      "description": "宇树发布新产品 售价9900元起 仿生7轴机械臂亮相  中华网",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 25.91,
-      "writing_value": 0,
-      "total_score": 100.91
+      "total_score": 98.55
     },
     {
       "id": "4687d842f2a213e11a53fee377c506beefbf6fc3",
@@ -2226,9 +2121,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.32,
+      "timeliness": 26.86,
       "writing_value": 0,
-      "total_score": 102.32
+      "total_score": 101.86
     },
     {
       "id": "dbe0ffc96534a144ca0cd7f0199c701aab1a9787",
@@ -2247,9 +2142,198 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.94,
+      "timeliness": 27.48,
       "writing_value": 0,
-      "total_score": 102.94
+      "total_score": 102.48
+    },
+    {
+      "id": "bb9fd8a53677189223620b8f206ef35941ac5ba7",
+      "title": "从“智元资本壳”到启元机器人，上纬新材惊险一跃 - 新浪网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5nVEZlYWxWaUl6QXBNbjJ2UGpDVUFCMVdNOWRuNmlRemc5MWthOHFrVzh3U2VhbkQ2Y0FGU0ZUWjVqaF91bHBvLTYwM3VsX1VVbC1uY1JFaXNlRzNmdmE0OHhTYmZBUnVOS3ozQ3F0Yw?oc=5",
+      "published_at": "2026-08-20T08:51:00+00:00",
+      "category": "GN: 智元机器人",
+      "gn_label": "robotics",
+      "site_name": "GN: 智元机器人",
+      "source": "GN: 智元机器人",
+      "site_id": "GN: 智元机器人",
+      "description": "从“智元资本壳”到启元机器人，上纬新材惊险一跃  新浪网",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 28.43,
+      "writing_value": 0,
+      "total_score": 103.43
+    },
+    {
+      "id": "18366f18a774b89aab49d5ee77570d253513928b",
+      "title": "智元反超宇树之后，真正值得看的不是排名 - 电子工程专辑",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1OT1dVUUpmWndaZmVaYWNUU05BNWZQaTFneE5Na2pmbUhDMXVncWZoWFMzTy1sOERtZC1kWVpNa2xfQm1IV2s2WWY1a09mYkJjNmFj?oc=5",
+      "published_at": "2026-08-20T05:55:00+00:00",
+      "category": "GN: 智元机器人",
+      "gn_label": "robotics",
+      "site_name": "GN: 智元机器人",
+      "source": "GN: 智元机器人",
+      "site_id": "GN: 智元机器人",
+      "description": "智元反超宇树之后，真正值得看的不是排名  电子工程专辑",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 25.5,
+      "writing_value": 0,
+      "total_score": 100.5
+    },
+    {
+      "id": "9a531431dae902cf1e8ea69d4f3b328483fbc2ac",
+      "title": "智元赴港 IPO，上纬新材“牛来”？ - 搜狐网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQYXdnUkJTSzlHbUpxSVBkc1JzZlV3OXB0bV9xTmNJdXNsS2NLNWdkbF8zTWUwQmlrRWhOT2c3MENyTjktemF2ODFBUmoyallmQjJ3bHhVcm80QkR3V1ZIUmozbE5sS2RnbWx2QnBEejRCWmJPYVBtcW5fZUNMSldHYkNOeFdBY2Z0?oc=5",
+      "published_at": "2026-08-19T11:41:26+00:00",
+      "category": "GN: 智元机器人",
+      "gn_label": "robotics",
+      "site_name": "GN: 智元机器人",
+      "source": "GN: 智元机器人",
+      "site_id": "GN: 智元机器人",
+      "description": "智元赴港 IPO，上纬新材“牛来”？  搜狐网",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 7.27,
+      "writing_value": 0,
+      "total_score": 82.27
+    },
+    {
+      "id": "20d26609eef1032bcfd659369ed05e3dffd31e51",
+      "title": "曹曦联手智元投资95后创业者 新锐力量获资本青睐 - 36 Kr",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBzbmM0MjVCRGNFVFMxMk1BS0JXLTgzSXhSc1lzUTYxcldzeHBndjA4ZkxYeUo0TXBfQjlVcW9NVVRPc0QwRUxPRnRNOFJIdm9OT01n?oc=5",
+      "published_at": "2026-08-19T11:42:00+00:00",
+      "category": "GN: 智元机器人",
+      "gn_label": "robotics",
+      "site_name": "GN: 智元机器人",
+      "source": "GN: 智元机器人",
+      "site_id": "GN: 智元机器人",
+      "description": "曹曦联手智元投资95后创业者 新锐力量获资本青睐  36 Kr",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 7.28,
+      "writing_value": 0,
+      "total_score": 82.28
+    },
+    {
+      "id": "bcf148a208e79a693144ebedca92fdb5699eb0b1",
+      "title": "中国人形机器人整机安全再上新台阶，智元远征A3斩获全球权威认证 - 广州日报新花城",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOOWlCYmFxRlEwV2lpTjU3WlQwU29SNTIwRzRDaFFJenZRV05idWN3UWxUZ3NCZ0dEb1k5UlM4TEROcXlSTDkteWx5dTN5SDY1OTgyMEQ2OVRHb2JGem1QT0FUbFBoOHl6WVM5dWdhTkFIOThyX1RXb3JjdF9Vc1I5Q1pfUUFSTUJndXc?oc=5",
+      "published_at": "2026-08-19T15:33:44+00:00",
+      "category": "GN: 智元机器人",
+      "gn_label": "robotics",
+      "site_name": "GN: 智元机器人",
+      "source": "GN: 智元机器人",
+      "site_id": "GN: 智元机器人",
+      "description": "中国人形机器人整机安全再上新台阶，智元远征A3斩获全球权威认证  广州日报新花城",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 11.15,
+      "writing_value": 0,
+      "total_score": 101.15
+    },
+    {
+      "id": "2bd56c74afe01ddb830592aa7ec38c23e33b458c",
+      "title": "上半年全球人形机器人出货量猛增300%！智元第一 - 搜狐网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNTDZUQzdSMk9EaXVLWU44anR6eWJPQzZSR21BS1BVYkZMeE1Vd2hkTmJfZHo2M21Ed3UycHNJXzZTUnJJN0JHTWd2NDV6ZzA3NlVXM29NLUE0Z0Q1NnlKUTYzWGRndnBSZXdCSTI4UGppQWNfNDdzX1F0UWlsMTlVSXN0aTJSckhL?oc=5",
+      "published_at": "2026-08-20T03:04:00+00:00",
+      "category": "GN: 智元机器人",
+      "gn_label": "robotics",
+      "site_name": "GN: 智元机器人",
+      "source": "GN: 智元机器人",
+      "site_id": "GN: 智元机器人",
+      "description": "上半年全球人形机器人出货量猛增300%！智元第一  搜狐网",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 22.65,
+      "writing_value": 0,
+      "total_score": 112.65
+    },
+    {
+      "id": "ef98b61c69ffe0ec44989ad9eaaf42aba7a712c8",
+      "title": "Current Robotics首次披露融资进展 累计融资数亿元 - 观点网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9kOUR0N0oyQklEQm9ybG9sUEdFVnlCRzEtaktaT1AtTVVkNVE0aGZGcXVxbXIwdGtpZ3hvUVNLMzk5LU9wWVVNTnFHVDBrZEtoSFZXYmdaQ1VnenM1XzQ4U2F3?oc=5",
+      "published_at": "2026-08-20T08:08:45+00:00",
+      "category": "GN: 智元机器人",
+      "gn_label": "robotics",
+      "site_name": "GN: 智元机器人",
+      "source": "GN: 智元机器人",
+      "site_id": "GN: 智元机器人",
+      "description": "Current Robotics首次披露融资进展 累计融资数亿元  观点网",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 27.73,
+      "writing_value": 0,
+      "total_score": 102.73
+    },
+    {
+      "id": "f86fd86a70bff9fad58e46d1e9aa3b08974cbaf6",
+      "title": "曹曦和智元投了一位95后 - 新浪网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPNXpDLUlRSG1yd2JlSGZVR2tmLThRQ1A4UDhQeFAwZWN4MXVjOTVZZm5EVS1SX1kwSmpzOURDZmtIblMxUjVDSWVWaDVDNVZHM2JVbVhIbWFYa2JzRk1rUFZHQWZjS05lOHQ0UHFvRzM3SlNsWjNhbWVILVB1R2tDZmhQRXhRdnNiVWV5TmZ5bEROUjR5ZkxmdDVnTGE0Y0JmZ09LT3FPcw?oc=5",
+      "published_at": "2026-08-20T02:56:04+00:00",
+      "category": "GN: 智元机器人",
+      "gn_label": "robotics",
+      "site_name": "GN: 智元机器人",
+      "source": "GN: 智元机器人",
+      "site_id": "GN: 智元机器人",
+      "description": "曹曦和智元投了一位95后  新浪网",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 22.52,
+      "writing_value": 0,
+      "total_score": 97.52
+    },
+    {
+      "id": "1f006ae323d544a3b0a26a3e41370db7e8cfc915",
+      "title": "中国兵器杭州智元研究院亮相世界机器人大会 - t.cj.sina.cn",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE82VFlrXzJXZlEydHMzR0o5dFMwX0l6VEVmcjVPemdJd2VrTHpnVjJVMEVXaE01QmMzcEVzcW9uZGJ3SU9ESGRDSjc1R1pIWUtFQzZSdlVlRC1xQzhTMzB4bkJ5Y0ZSV09TQ3Y2MUNUVmE?oc=5",
+      "published_at": "2026-08-20T04:56:59+00:00",
+      "category": "GN: 智元机器人",
+      "gn_label": "robotics",
+      "site_name": "GN: 智元机器人",
+      "source": "GN: 智元机器人",
+      "site_id": "GN: 智元机器人",
+      "description": "中国兵器杭州智元研究院亮相世界机器人大会  t.cj.sina.cn",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 24.53,
+      "writing_value": 0,
+      "total_score": 99.53
     },
     {
       "id": "23fc8d7a652ad55555d7672cfa2f0afd49c9e083",
@@ -2268,9 +2352,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.84,
+      "timeliness": 23.38,
       "writing_value": 0,
-      "total_score": 98.84
+      "total_score": 98.38
     },
     {
       "id": "8536043826af380d346f794322658901650af6ae",
@@ -2289,9 +2373,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.98,
+      "timeliness": 26.52,
       "writing_value": 0,
-      "total_score": 101.98
+      "total_score": 101.52
     },
     {
       "id": "77c253b59270898142d848436815947c6757aebc",
@@ -2310,9 +2394,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.09,
+      "timeliness": 22.63,
       "writing_value": 0,
-      "total_score": 98.09
+      "total_score": 97.63
     },
     {
       "id": "47b3b9009e7ec0d26775c58c2cbe98613228ab47",
@@ -2331,9 +2415,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.0,
+      "timeliness": 28.54,
       "writing_value": 0,
-      "total_score": 104.0
+      "total_score": 103.54
     },
     {
       "id": "0b5f21633ac9dcccccacc1be622720eaec3f979e",
@@ -2352,9 +2436,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.01,
+      "timeliness": 26.55,
       "writing_value": 0,
-      "total_score": 102.01
+      "total_score": 101.55
     },
     {
       "id": "164561efb79fdb950536e374ab75a31f0fe54fa3",
@@ -2373,9 +2457,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.48,
+      "timeliness": 23.02,
       "writing_value": 0,
-      "total_score": 98.48
+      "total_score": 98.02
     },
     {
       "id": "18e0f165542da7b0d65f2b5b6be6909f9816c5ec",
@@ -2394,30 +2478,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 21.43,
+      "timeliness": 20.97,
       "writing_value": 0,
-      "total_score": 96.43
-    },
-    {
-      "id": "da457c0a8d20ea8f1c2993d9c09b5d7789beb711",
-      "title": "WRC 2026｜灵巧手开始“组装灵巧手” - 搜狐网",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPQlpIZmJrTmZJNHNyazdrbmlnY0JKV2h6bFcyWWhCTmpzeHo0ekEybkxWQVNlUkZ1VzhHWDB1dVFWcmFCUktwUl9Hd3hVU2ZOeVBSa2xIQm1Ha2xRUm9iQVlOWllLU3Zod2l1NGZRLW45dVJpakJ6aVBIWjJkc0J2VlNBS2UzNktM?oc=5",
-      "published_at": "2026-08-20T01:27:26+00:00",
-      "category": "GN: 灵巧手",
-      "gn_label": "robotics",
-      "site_name": "GN: 灵巧手",
-      "source": "GN: 灵巧手",
-      "site_id": "GN: 灵巧手",
-      "description": "WRC 2026｜灵巧手开始“组装灵巧手”  搜狐网",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 21.5,
-      "writing_value": 0,
-      "total_score": 96.5
+      "total_score": 95.97
     },
     {
       "id": "ef88ff896f51723ae6723b4e5322b214011fe5fd",
@@ -2436,9 +2499,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 13.97,
+      "timeliness": 13.51,
       "writing_value": 0,
-      "total_score": 88.97
+      "total_score": 88.51
+    },
+    {
+      "id": "da457c0a8d20ea8f1c2993d9c09b5d7789beb711",
+      "title": "WRC 2026｜灵巧手开始“组装灵巧手” - 搜狐网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPQlpIZmJrTmZJNHNyazdrbmlnY0JKV2h6bFcyWWhCTmpzeHo0ekEybkxWQVNlUkZ1VzhHWDB1dVFWcmFCUktwUl9Hd3hVU2ZOeVBSa2xIQm1Ha2xRUm9iQVlOWllLU3Zod2l1NGZRLW45dVJpakJ6aVBIWjJkc0J2VlNBS2UzNktM?oc=5",
+      "published_at": "2026-08-20T01:27:26+00:00",
+      "category": "GN: 灵巧手",
+      "gn_label": "robotics",
+      "site_name": "GN: 灵巧手",
+      "source": "GN: 灵巧手",
+      "site_id": "GN: 灵巧手",
+      "description": "WRC 2026｜灵巧手开始“组装灵巧手”  搜狐网",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 21.04,
+      "writing_value": 0,
+      "total_score": 96.04
     },
     {
       "id": "d84569971f3b93bca1bd5a36d0cdfef437b06a82",
@@ -2457,51 +2541,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.4,
+      "timeliness": 28.94,
       "writing_value": 0,
-      "total_score": 119.4
-    },
-    {
-      "id": "b2e4b576a1f6d4cbf37a3a3d6ddc01627ad93d50",
-      "title": "上海人工智能研究院孵化企业亮相WRC2026，具身智能“脑”“手”双突破 - 新浪网",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQbV9aRFJPMGNZR1FrLVJpdWxMY0txZkF4cjZpcUtFcTFtR1djQ0NBQVVyWlpSaEE5MDgzQjFrUkw2U3ltYlBQanNZSU95NnFxMGI1VllpdzRBak1uN3hfaWxXUFdlZE03bXI4QmtiQUU1bUl0UF9tNk1mZlJBWktkQ2VFREhnV2ZjYzZ5NGFRRWxzWGR3SVJJZEVLdUhmY2psdWYyczZKSQ?oc=5",
-      "published_at": "2026-08-20T02:02:48+00:00",
-      "category": "GN: 灵巧手",
-      "gn_label": "robotics",
-      "site_name": "GN: 灵巧手",
-      "source": "GN: 灵巧手",
-      "site_id": "GN: 灵巧手",
-      "description": "上海人工智能研究院孵化企业亮相WRC2026，具身智能“脑”“手”双突破  新浪网",
-      "ai_score": 80.0,
-      "ai_label": "robotics",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 22.09,
-      "writing_value": 0,
-      "total_score": 112.09
-    },
-    {
-      "id": "c5a831cb67f702e282abadc75f61084f01c578a9",
-      "title": "2026世界机器人大会：北美机器人产业非汽车订单占比超54%，协作机器人、AI成新驱动力 - 虎嗅",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1KY2RKRmd1WW9weTNPQmxTRHpkUXpXRjlXdGxpa0pSbjk4MjdWTzg2enhsMk1ZdW5RRy10NFNBQmYxZk9jOVBmdXQ2SWJwVU0wZW81SA?oc=5",
-      "published_at": "2026-08-20T03:39:09+00:00",
-      "category": "GN: 工业机器人与人",
-      "gn_label": "robotics",
-      "site_name": "GN: 工业机器人与人",
-      "source": "GN: 工业机器人与人",
-      "site_id": "GN: 工业机器人与人",
-      "description": "2026世界机器人大会：北美机器人产业非汽车订单占比超54%，协作机器人、AI成新驱动力  虎嗅",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 23.7,
-      "writing_value": 0,
-      "total_score": 98.7
+      "total_score": 118.94
     },
     {
       "id": "0f9513b0e3f7a75c5229f8758f131abbd0f76d12",
@@ -2520,9 +2562,51 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 22.98,
+      "timeliness": 22.52,
       "writing_value": 0,
-      "total_score": 97.98
+      "total_score": 97.52
+    },
+    {
+      "id": "c5a831cb67f702e282abadc75f61084f01c578a9",
+      "title": "2026世界机器人大会：北美机器人产业非汽车订单占比超54%，协作机器人、AI成新驱动力 - 虎嗅",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1KY2RKRmd1WW9weTNPQmxTRHpkUXpXRjlXdGxpa0pSbjk4MjdWTzg2enhsMk1ZdW5RRy10NFNBQmYxZk9jOVBmdXQ2SWJwVU0wZW81SA?oc=5",
+      "published_at": "2026-08-20T03:39:09+00:00",
+      "category": "GN: 工业机器人与人",
+      "gn_label": "robotics",
+      "site_name": "GN: 工业机器人与人",
+      "source": "GN: 工业机器人与人",
+      "site_id": "GN: 工业机器人与人",
+      "description": "2026世界机器人大会：北美机器人产业非汽车订单占比超54%，协作机器人、AI成新驱动力  虎嗅",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 23.24,
+      "writing_value": 0,
+      "total_score": 98.24
+    },
+    {
+      "id": "90d5772c2e80e97ac4be88dbca05c89044155551",
+      "title": "苏度科技韩铮：具身智能模型框架做不到99.9%以上可靠性，就很难商用 - 新浪网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBRaGp6ckZYMTE2MVEzaEZKTnNXeVZJaGRVT2dnZUtJMldXZE9lZTNsUjk3OWJqT3JSY2lFSUJlNnNFaEFJaThfODE2UUNnT0VXZ0tycEVGcmFGaEx2MTNzUHZYOVRKRUZFMVhzTG40VW5rSWRkd2N4em5wcFo?oc=5",
+      "published_at": "2026-08-20T08:43:41+00:00",
+      "category": "GN: 工业机器人与人",
+      "gn_label": "robotics",
+      "site_name": "GN: 工业机器人与人",
+      "source": "GN: 工业机器人与人",
+      "site_id": "GN: 工业机器人与人",
+      "description": "苏度科技韩铮：具身智能模型框架做不到99.9%以上可靠性，就很难商用  新浪网",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 28.31,
+      "writing_value": 0,
+      "total_score": 118.31
     }
   ],
   "fallback_used": false
