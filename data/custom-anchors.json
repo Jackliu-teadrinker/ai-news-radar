@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-20T11:49:56.363104+00:00",
+  "generated_at": "2026-08-20T12:26:41.862462+00:00",
   "window_start": "2026-08-20T19:00:00+08:00",
-  "window_end": "2026-08-20T19:49:55.479914+08:00",
-  "total_items": 4,
+  "window_end": "2026-08-20T20:26:41.653284+08:00",
+  "total_items": 7,
   "items": [
     {
       "id": "c922d0513a9252e5acb745458cc1a7699dee1a13",
@@ -21,9 +21,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 29.2,
+      "timeliness": 28.59,
       "writing_value": 5,
-      "total_score": 114.2
+      "total_score": 113.59
     },
     {
       "id": "0e3bf402a49b7185a3bbb431ea2fa0c55a935744",
@@ -42,9 +42,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.27,
+      "timeliness": 28.66,
       "writing_value": 0,
-      "total_score": 104.27
+      "total_score": 103.66
     },
     {
       "id": "a6feae5b1cddb620bf806dc21deffa160ff648b6",
@@ -63,9 +63,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.43,
+      "timeliness": 28.81,
       "writing_value": 0,
-      "total_score": 104.43
+      "total_score": 103.81
+    },
+    {
+      "id": "c2bf9aae36fb561776907d3c6ed946168590fdc8",
+      "title": "宇树科技上市后发布9900元级仿生灵巧臂，把高端执行器打向平价区间，人形机器人零部件开启降价周期 - 搜狐网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNbVVqNzNMYjZmNUdhVFRtS1k2TFJBYnVRcVl5eHhHUVZrQkdpNlk4QlVySlBBRzM4OFoxTWtOd0dzdkxPS24yNFNWMEp4Yy0waHNCQ1lwNjRjOWVKNWFESkFkX2pyanNEdkdaRTdIUm9uT1Z4Y3JRUGNhTXVMZTJsQUhIX09mWlZr?oc=5",
+      "published_at": "2026-08-20T12:03:14+00:00",
+      "category": "GN: 灵巧手",
+      "gn_label": "robotics",
+      "site_name": "GN: 灵巧手",
+      "source": "GN: 灵巧手",
+      "site_id": "GN: 灵巧手",
+      "description": "宇树科技上市后发布9900元级仿生灵巧臂，把高端执行器打向平价区间，人形机器人零部件开启降价周期  搜狐网",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.61,
+      "writing_value": 0,
+      "total_score": 119.61
     },
     {
       "id": "325fd21a7c103a3183d8049ada54856ef97c6a8c",
@@ -84,9 +105,51 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.79,
+      "timeliness": 29.18,
       "writing_value": 0,
-      "total_score": 104.79
+      "total_score": 104.18
+    },
+    {
+      "id": "4be860383acf0e5552fc2e5961c64bd703b7da9d",
+      "title": "自变量机器人双场景亮相WRC 解锁具身智能规模化落地新路径 - 搜狐网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNSE1INHpDWjF5NC1qZUxWOTN6cXo0QXhZVDFONm9mdjZmZHJNX3dsbDhxMFE0X0h1SDk0Xzgzc0VNRjNXakZNVmltenlNdE1YcFdhVFgwcU43VEowbmxPbXBKcDRoN2FNVE1kXzlEWko3MUgzREpQa0RSZDZBQ3B0SVdqRTRvb0xQ?oc=5",
+      "published_at": "2026-08-20T11:34:55+00:00",
+      "category": "GN: 服务机器人",
+      "gn_label": "robotics",
+      "site_name": "GN: 服务机器人",
+      "source": "GN: 服务机器人",
+      "site_id": "GN: 服务机器人",
+      "description": "自变量机器人双场景亮相WRC 解锁具身智能规模化落地新路径  搜狐网",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.14,
+      "writing_value": 0,
+      "total_score": 119.14
+    },
+    {
+      "id": "764ae69ea784380b5e098be5e2a7c569ebe5f819",
+      "title": "18个月内7轮融资，无锡泉智博重塑人形机器人动力核心 - 搜狐网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPQUQ4Y0tuVjlESFBxSEpaV2lQYk1YTUd2Z3JoWTNQME9kc053em9sSnlzQW85MzZwZm1sdkp4MV9VZUFHaWx0ak9samlZb2doN0lnSnJXS09pbEpSTTdyLWdCd0hiNWF3ZFRpSjJFdHVjbzlVX0hKZzVtYzlrR2dkOHRrVGFyLTkzdGhIUQ?oc=5",
+      "published_at": "2026-08-20T12:00:00+00:00",
+      "category": "GN: 人形机器人融资",
+      "gn_label": "robotics",
+      "site_name": "GN: 人形机器人融资",
+      "source": "GN: 人形机器人融资",
+      "site_id": "GN: 人形机器人融资",
+      "description": "18个月内7轮融资，无锡泉智博重塑人形机器人动力核心  搜狐网",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.56,
+      "writing_value": 0,
+      "total_score": 119.56
     }
   ],
   "fallback_used": false
