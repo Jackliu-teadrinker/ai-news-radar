@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-19T23:44:58.060898+00:00",
-  "total_items": 13,
+  "generated_at": "2026-08-20T00:40:44.562804+00:00",
+  "total_items": 10,
   "items": [
     {
       "id": "http://arxiv.org/abs/2608.18077v1",
@@ -111,39 +111,6 @@
       "published_at": "2026-08-18T12:42:26+00:00",
       "updated_at": "2026-08-18T12:42:26Z",
       "title_zh": "CompCPZ：在语言引导的机器人操作中保留多模态意图"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.17703v1",
-      "title": "Dijkstra as an Oracle for Online Stochastic Shortest Path Navigation with Provable Guarantees",
-      "url": "https://arxiv.org/abs/2608.17703",
-      "summary": "Mobile robots that operate in side by side with humans and critical facilities must reach their goals at low cost, despite often unknown true traversal costs of the map apriori and imperfect actuation. Planners that solve the underlying stochastic shortest path problem exactly, such as value iteration, require computation that grows with the diameter of the map, whereas Dijkstra's algorithm is fast but is usually considered inexact once transitions are stochastic. This study shows that Dijkstra's algorithm can remain an exact planning engine under a condition that is much weaker than the causality condition often invoked in the literature, namely nonnegativity of a reduced cost defined on the determinized map. Building on this characterization, an online learner DORA (Dijkstra Oracle Reduced-cost Algorithm) is proposed for robot navigation that calls a shortest path oracle a fixed number of times per episode, never estimates a transition kernel, and adds a logarithmic survival weight when the probability of contact with a dynamic obstacle must stay within a budget. In the numerical experiments involving three other benchmarks that cover grid world navigation, directional drilling, and drone surveillance, the learner matches optimistic value iteration that is given the true transition kernel while performing 4.5 to 19.3 times less planner work, reduces contacts during learning by a factor of seventeen relative to determinize and replan, and keeps the contact rate within budgets that span two orders of magnitude. These results indicate that shortest path search supports safe and efficient online navigation and path planning tasks.",
-      "authors": "Mansur M. Arief, Ali Akarma, Ahmad Alfan Alfian Irfan",
-      "category": "cs.RO",
-      "published_at": "2026-08-18T12:26:17+00:00",
-      "updated_at": "2026-08-18T12:26:17Z",
-      "title_zh": "Dijkstra 作为具有可证明保证的在线随机最短路径导航的预言机"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.17691v1",
-      "title": "Force-Based Offset Estimation for Keyed Peg-in-Hole Assembly Using Local Gaussian Process Regression",
-      "url": "https://arxiv.org/abs/2608.17691",
-      "summary": "Key-keyway assembly tasks impose strict geometric constraints and are highly sensitive to grasp pose deviations in uncertain environments. This work presents a force-based offset estimation method for keyed peg-in-hole assembly, embedded within a perception-validation-insertion pipeline. Residual misalignment is estimated directly from wrist force/torque measurements using a local KNN-Gaussian Process hybrid regressor. The framework distinguishes between two contact regimes, hard collision and guided chamfer insertion, and routes inference to a dedicated model for each. Regime classification is achieved via a contact-window duration threshold. KNN combined with a deterministic search using the results of a post-grasp monocular visual validation contributes to an increased accuracy of the regressor model. This approach achieves accurate radial offset estimation in chamfered peg insertion, during a keypoint detection-based pick and place application. Experiments using the integrated force/torque sensor of a collaborative robot arm showed an increase in insertion success rate from 67% to 87% after the pipeline was applied.",
-      "authors": "Chandra Yuvesh Aubeeluck, Abilash Philip Madavath, Augustin Raju et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-18T12:06:35+00:00",
-      "updated_at": "2026-08-18T12:06:35Z",
-      "title_zh": "使用局部高斯过程回归对键控孔销组件进行基于力的偏移估计"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.17690v1",
-      "title": "Collective Ranking of Environmental Signals through Gaussian Belief Propagation in a Patrolling Robot Swarm",
-      "url": "https://arxiv.org/abs/2608.17690",
-      "summary": "Multi-robot patrolling requires a team to visit all areas of an environment at regular intervals, typically minimising idleness. A practical extension, motivated by security and environmental monitoring, is to additionally form a collective ranking of all patrol locations by some measured signal, a generalisation of the best-of-n problem to the many-option, continuous-valued regime. We observe that the patrol graph admits a natural dual interpretation: it is simultaneously the topology that dictates agent movement and a factor graph over which spatial beliefs can be propagated. Exploiting this equivalence, we apply Gaussian Belief Propagation (GBP), a graph-based algorithm, to collective ranking using unary measurement factors at visited nodes and pairwise smoothness factors along patrol edges. We compare GBP against simple and visit-count-weighted averaging across a range of sensor-noise conditions in simulation, and validate the approach on four Leo Rovers tracking a propagating radio signal in an office lobby. GBP outperforms both baselines on ranking accuracy, mean squared error, and time to consensus. We find that as noise increases and the task becomes harder, GBP degrades gracefully in simulation while both averaging methods degrade substantially. Hardware trials reproduce the same performance ordering on a real propagating radio signal, supporting the practical relevance of the simulated results.",
-      "authors": "Zachary R. Madin, Connor York, Jonathan Lawry et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-18T12:06:31+00:00",
-      "updated_at": "2026-08-18T12:06:31Z",
-      "title_zh": "巡逻机器人群中通过高斯置信传播对环境信号进行集体排序"
     }
   ]
 }
