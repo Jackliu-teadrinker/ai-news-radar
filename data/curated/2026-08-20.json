@@ -1,9 +1,9 @@
 {
   "date": "2026-08-20",
-  "generated_at": "2026-08-20T05:02:28.791746+00:00",
+  "generated_at": "2026-08-20T05:54:29.777040+00:00",
   "score_threshold": 80,
   "total_items": 50,
-  "new_added": 2,
+  "new_added": 1,
   "items": [
     {
       "id": "7fad9a5eb4826919",
@@ -508,6 +508,27 @@
       "timeliness": 25.89,
       "writing_value": 5,
       "total_score": 125.89
+    },
+    {
+      "id": "2c836c096041dbac",
+      "title": "直击WRC丨宇树科技王兴兴：目前人形机器人的效能相对较低，技术精进后会大规模推广 - 新浪财经",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxONVRUZ3FTVngtRGRfWm5DRnhmcEVqclk5VVNwclU5c1pxWHd1NWpxdkhQbUdHTTBfQ29NT3Y2MkU3YUpwNlZOQnRYdFVveU9jQ1RTTzkwaTF0T0lIOFozaW9VTUVuNmZwWXpLNS1BLTE1RnVjbEhmR0lYNFpCQjZyTjhfSXhjVGxzX2JWVG1UQ2JvNUo2RTR3OGpfcHM2Z2FjZ3VhYXFQVEpyTGZjY0pOSG9Zam9KRVBKRG5wYllJYkNPLVRrZ0xNUVFiZV9oX01q?oc=5",
+      "published_at": "2026-08-20T01:38:00+00:00",
+      "category": "国内人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国内人形机器人资讯",
+      "source": "国内人形机器人资讯",
+      "site_id": "国内人形机器人资讯",
+      "description": "直击WRC丨宇树科技王兴兴：目前人形机器人的效能相对较低，技术精进后会大规模推广  新浪财经浙江日报：宇树成为A股“人形机器人第一股”，如何乘“市”而上  thepaper.cn宇树上市第2天 王兴兴最新发声 谈人形机器人产业瓶颈  中华网",
+      "ai_score": 80.0,
+      "ai_label": "humanoid",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 25.75,
+      "writing_value": 5,
+      "total_score": 125.75
     },
     {
       "id": "910232aad1166148",
@@ -1033,27 +1054,6 @@
       "timeliness": 29.83,
       "writing_value": 0,
       "total_score": 119.83
-    },
-    {
-      "id": "aa03aa4889174ef6",
-      "title": "第二届世界人形机器人运动会期间，部分道路采取临时交通管制 - 京报网",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9QV2JOVFd4VnpWck1kTUlwZTc0ZU5XRzI1NmQxYmd0bGJ4WC1XZ0UzSmg0TzB4N2I0NDlHSzI2eld5NktLN2Fsa05tUGVfU1ViWDkwb01SdkwwWDlnSWc?oc=5",
-      "published_at": "2026-08-19T16:08:55+00:00",
-      "category": "国内人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国内人形机器人资讯",
-      "source": "国内人形机器人资讯",
-      "site_id": "国内人形机器人资讯",
-      "description": "第二届世界人形机器人运动会期间，部分道路采取临时交通管制  京报网",
-      "ai_score": 80.0,
-      "ai_label": "humanoid",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 29.82,
-      "writing_value": 0,
-      "total_score": 119.82
     }
   ]
 }
