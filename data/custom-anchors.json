@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-08-20T15:02:06.086630+00:00",
+  "generated_at": "2026-08-20T15:56:14.100087+00:00",
   "window_start": "2026-08-20T19:00:00+08:00",
-  "window_end": "2026-08-20T23:02:04.533141+08:00",
-  "total_items": 21,
+  "window_end": "2026-08-20T23:56:12.566483+08:00",
+  "total_items": 25,
   "items": [
     {
       "id": "c922d0513a9252e5acb745458cc1a7699dee1a13",
       "title": "Poolease X1 Pool Robot Review: How Bad Can It Be?",
-      "title_zh": "Poolease X1 泳池机器人评测：能有多糟糕？",
+      "title_zh": "Poolease X1 泳池机器人评测：它能有多糟糕？",
       "url": "https://www.wired.com/review/poolease-x1-pool-robot/",
       "published_at": "2026-08-20T11:02:00+00:00",
       "category": "Wired",
@@ -21,9 +21,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 26.0,
+      "timeliness": 25.1,
       "writing_value": 5,
-      "total_score": 111.0
+      "total_score": 110.1
     },
     {
       "id": "ced404fda0299f0684c8cee28ffecca56ae1d734",
@@ -42,9 +42,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.51,
+      "timeliness": 26.61,
       "writing_value": 0,
-      "total_score": 102.51
+      "total_score": 101.61
     },
     {
       "id": "74e6576e88819508eedd872bcc2297b21d3c114e",
@@ -63,9 +63,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.25,
+      "timeliness": 28.34,
       "writing_value": 0,
-      "total_score": 104.25
+      "total_score": 103.34
     },
     {
       "id": "bf093e3cd64b366b5b06e8a6c7ce103bed0c39a6",
@@ -84,9 +84,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.03,
+      "timeliness": 27.13,
       "writing_value": 0,
-      "total_score": 103.03
+      "total_score": 102.13
     },
     {
       "id": "8c9f5c3c9252c0988c95f06cb0ab7daa7a02ab3d",
@@ -105,9 +105,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.95,
+      "timeliness": 29.05,
       "writing_value": 0,
-      "total_score": 104.95
+      "total_score": 104.05
     },
     {
       "id": "2d2e2d9b9431eab45eb0ffb9151e039a7eca69ec",
@@ -126,30 +126,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.34,
+      "timeliness": 27.43,
       "writing_value": 0,
-      "total_score": 118.34
-    },
-    {
-      "id": "28ff546e89beabbc27abcc27186bcf79417d6455",
-      "title": "What will it take to bring humanoid robots into the real world? - Robotics Tomorrow",
-      "title_zh": "将人形机器人带入现实世界需要什么？ - 明天的机器人",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOcXp0d19WRll2Q21kbkFCVEV1SXp6TG9qMXZiTzk2aGtXQ0VfSjFfTDRwUVoxVXNGaDhhYkRmOHJ6NnljMlh2TjNSSWtka2p6dERFSHRsUXdoSDllS1l1ZHhrbzdjOFpJMmZPMGxSWHVLRF9VWDBSWTN4b1R3c2ZwNWx2TU5INzFVSGlVLUhoSVBZOUZyOU5pSmViNnRRVDM5Q0NrNmIxNFNhdGJoc2dESG5WMXZJUVhMZUdj?oc=5",
-      "published_at": "2026-08-20T12:33:15+00:00",
-      "category": "GN: industrial robot",
-      "gn_label": "robotics",
-      "site_name": "GN: industrial robot",
-      "source": "GN: industrial robot",
-      "site_id": "GN: industrial robot",
-      "description": "What will it take to bring humanoid robots into the real world?  Robotics Tomorrow",
-      "ai_score": 80.0,
-      "ai_label": "robotics",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 27.52,
-      "writing_value": 0,
-      "total_score": 117.52
+      "total_score": 117.43
     },
     {
       "id": "0e3bf402a49b7185a3bbb431ea2fa0c55a935744",
@@ -168,9 +147,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.07,
+      "timeliness": 25.16,
       "writing_value": 0,
-      "total_score": 101.07
+      "total_score": 100.16
     },
     {
       "id": "f540778ed750ed0c05134d695b2e03efd99e2864",
@@ -189,9 +168,72 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.65,
+      "timeliness": 28.75,
       "writing_value": 0,
-      "total_score": 104.65
+      "total_score": 103.75
+    },
+    {
+      "id": "39ced920b315edd167456a320597d28a8ccd9acd",
+      "title": "2026 WRC甩出工业商用家庭消费实景应用答卷，优必选的底牌是“具身智能”",
+      "title_zh": "",
+      "url": "https://zhidx.com/p/586667.html",
+      "published_at": "2026-08-20T15:05:09+00:00",
+      "category": "极链AI",
+      "gn_label": "robotics",
+      "site_name": "极链AI",
+      "source": "极链AI",
+      "site_id": "极链AI",
+      "description": "智东西\n作者 |  程茜\n编辑 |  漠影\n智东西8月20日报道，世界机器人大会（WRC 2026）开幕，上下游产业链的机器人企业纷纷拿出看家本领，对比往届，大批真机实干的实景演示轮番登场，成为本次大会的重头戏。跳舞打拳或许仍然有流量，但行业已经不再为此买单，人形机器人的竞争，已经悄悄转移了赛道。\n优必选的机器人“打工天团”直接在展台上组团开工！Walker C1摇身一变展台主持人，智能讲解、导览接待一手包办；另一边，超十台Cruzr Y1、Cruzr S2火力全开，在复刻的工厂产线里实景上演汽车钣金上下料、机加件上下料、纸箱和料箱拆码垛、电商小件分拣四大任务，完整展示出一条从工业生产直通仓储",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 29.15,
+      "writing_value": 5,
+      "total_score": 129.15
+    },
+    {
+      "id": "28ff546e89beabbc27abcc27186bcf79417d6455",
+      "title": "What will it take to bring humanoid robots into the real world? - Robotics Tomorrow",
+      "title_zh": "将人形机器人带入现实世界需要什么？ - 明天的机器人",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOcXp0d19WRll2Q21kbkFCVEV1SXp6TG9qMXZiTzk2aGtXQ0VfSjFfTDRwUVoxVXNGaDhhYkRmOHJ6NnljMlh2TjNSSWtka2p6dERFSHRsUXdoSDllS1l1ZHhrbzdjOFpJMmZPMGxSWHVLRF9VWDBSWTN4b1R3c2ZwNWx2TU5INzFVSGlVLUhoSVBZOUZyOU5pSmViNnRRVDM5Q0NrNmIxNFNhdGJoc2dESG5WMXZJUVhMZUdj?oc=5",
+      "published_at": "2026-08-20T12:33:15+00:00",
+      "category": "GN: industrial robot",
+      "gn_label": "robotics",
+      "site_name": "GN: industrial robot",
+      "source": "GN: industrial robot",
+      "site_id": "GN: industrial robot",
+      "description": "What will it take to bring humanoid robots into the real world?  Robotics Tomorrow",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 26.62,
+      "writing_value": 0,
+      "total_score": 116.62
+    },
+    {
+      "id": "d6053b77b2e8bdfad39a36fd11a3701fc939bba1",
+      "title": "Artificial Intelligence (AI) Robots Market to Reach USD 33.39 Billion by 2030, Growing at 40.4% CAGR, Says MarketsandMarkets™ - Yahoo Finance Singapore",
+      "title_zh": "MarketsandMarkets™ 表示，人工智能 (AI) 机器人市场到 2030 年将达到 333.9 亿美元，复合年增长率为 40.4% - 雅虎财经",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQTVVzSGUwTTRUVmV0NUNOMk80N0pHNzNWVGNid3JaNVp4d1NqMjc3YURGTHdpNk9FQ3paOWI2WDRIY1FHMHNxMmg2RWlFTlRtTEp3VWZYb05kVzFwSGN4Vks5OThUMjJqYmRveUN6SUVHOTk2ZFd2OF9Fa2x0NEh5blFxcnh6bm5KOWxsSDNyRnBYTWM?oc=5",
+      "published_at": "2026-08-20T15:15:00+00:00",
+      "category": "GN: industrial robot",
+      "gn_label": "robotics",
+      "site_name": "GN: industrial robot",
+      "source": "GN: industrial robot",
+      "site_id": "GN: industrial robot",
+      "description": "Artificial Intelligence (AI) Robots Market to Reach USD 33.39 Billion by 2030, Growing at 40.4% CAGR, Says MarketsandMarkets™  Yahoo Finance Singapore",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 29.31,
+      "writing_value": 5,
+      "total_score": 114.31
     },
     {
       "id": "05f21351a0f075b3fcc686b530433fb20ea8f594",
@@ -210,30 +252,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.89,
+      "timeliness": 26.99,
       "writing_value": 0,
-      "total_score": 102.89
-    },
-    {
-      "id": "46c7a5c652ec902cdc83eb9dc63900cd975885e7",
-      "title": "章鱼动力亮相WRC 2026，  携“脑-手-数据”技术体系探索具身智能未来范式",
-      "title_zh": "",
-      "url": "https://www.leiphone.com/category/industrynews/L6IQmDmj1sCKOrJO.html",
-      "published_at": "2026-08-20T12:48:00+00:00",
-      "category": "雷锋网",
-      "gn_label": "robotics",
-      "site_name": "雷锋网",
-      "source": "雷锋网",
-      "site_id": "雷锋网",
-      "description": "8月19日，2026世界机器人大会（WRC）于北京正式开幕。作为全球机器人领域极具影响力的产研盛会，大会以“人机共生，产需共融”为主题，集中展示机器人与AI行业技术创新、应用落地的最新突破性成果。章鱼动力（SynapX）作为物理AI赛道备受瞩目的新锐势力，受邀亮相本次大会，正式发布并展出由SYNWorld具身原生世界基础模型、OctoH-Hand高自由度仿生灵巧手、OctoSense下一代具身数采方案共同构成的“脑-手-数据”技术体系，完整呈现对下一代物理AI技术路线的深度创新探索。三大产品技术矩阵重磅发布伴随着“AI进入物理世界”成为行业共识，具身智能已跻身全行业聚焦关注、紧迫投入的核心方向",
-      "ai_score": 80.0,
-      "ai_label": "robotics",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 5,
-      "timeliness": 27.77,
-      "writing_value": 5,
-      "total_score": 127.77
+      "total_score": 101.99
     },
     {
       "id": "142daf8a164eccd55a19d8d557b69d20e7aab6e7",
@@ -252,9 +273,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 29.47,
+      "timeliness": 28.56,
       "writing_value": 5,
-      "total_score": 114.47
+      "total_score": 113.56
     },
     {
       "id": "679208f81b898dda3c1a6e3f822656952c675c57",
@@ -273,9 +294,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.21,
+      "timeliness": 26.31,
       "writing_value": 0,
-      "total_score": 102.21
+      "total_score": 101.31
     },
     {
       "id": "c478f9e2727ab2453f6b6a5bb796f8cab8e39854",
@@ -294,9 +315,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.83,
+      "timeliness": 27.93,
       "writing_value": 0,
-      "total_score": 103.83
+      "total_score": 102.93
     },
     {
       "id": "68f2d6738ddf8688f4958f644216c63f000eabed",
@@ -315,9 +336,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.57,
+      "timeliness": 26.66,
       "writing_value": 0,
-      "total_score": 102.57
+      "total_score": 101.66
     },
     {
       "id": "17b167ee41db03143d04eb705c3472fc1c95522e",
@@ -336,9 +357,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.53,
+      "timeliness": 26.63,
       "writing_value": 0,
-      "total_score": 102.53
+      "total_score": 101.63
+    },
+    {
+      "id": "cb68b9953a2ba16a25a4df8704ce23546a60974d",
+      "title": "外媒密集报道宇树科技上市，“美国已失去机器人领域领先地位” - 新浪网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1LbHVrcV9Fc19uUF9kek0zbmwyVnd3OXhOdEVKQU1qZVllV3R3ZHRXeUFzUVozZFpEOFh4Wnd0S0Q0SFFMWlRjM2tfYmZYZG9QTXpDYU1pTVRkV1FCc19TeWFNNXQxeFhWdmUtOHZOOVV1dw?oc=5",
+      "published_at": "2026-08-20T13:21:22+00:00",
+      "category": "GN: 宇树科技",
+      "gn_label": "robotics",
+      "site_name": "GN: 宇树科技",
+      "source": "GN: 宇树科技",
+      "site_id": "GN: 宇树科技",
+      "description": "外媒密集报道宇树科技上市，“美国已失去机器人领域领先地位”  新浪网",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 27.42,
+      "writing_value": 0,
+      "total_score": 102.42
     },
     {
       "id": "42997cb5eaf0e8669355c6f67b54dd36eef45dfa",
@@ -357,30 +399,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.97,
+      "timeliness": 28.07,
       "writing_value": 0,
-      "total_score": 103.97
-    },
-    {
-      "id": "5d1a4a0710a30628a49d61e8ed9b9a8313adcca1",
-      "title": "优必选WRC2026全方位展示人形机器人工业、商用、家庭消费应用成果 - 搜狐网",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQeFdRMi1IZU9tTERMaV9vekVnT282V3dud0RvdkxZM05zRjlCWEh5S0ZhMUdGWFVNYzZ1b1I1OFVLdGI2S0Q1anJFdG4tdC1sUVNhUFFxZjZ5UExjcXNCMTdOR3VWRHdabzhPTDdVVHlDT1VGOXdrejRRdF9aYV9QOTduOGpvbGx4NXNweQ?oc=5",
-      "published_at": "2026-08-20T13:42:39+00:00",
-      "category": "GN: 优必选",
-      "gn_label": "robotics",
-      "site_name": "GN: 优必选",
-      "source": "GN: 优必选",
-      "site_id": "GN: 优必选",
-      "description": "优必选WRC2026全方位展示人形机器人工业、商用、家庭消费应用成果  搜狐网",
-      "ai_score": 80.0,
-      "ai_label": "robotics",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 28.68,
-      "writing_value": 0,
-      "total_score": 118.68
+      "total_score": 103.07
     },
     {
       "id": "325fd21a7c103a3183d8049ada54856ef97c6a8c",
@@ -399,9 +420,51 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.59,
+      "timeliness": 25.69,
       "writing_value": 0,
-      "total_score": 101.59
+      "total_score": 100.69
+    },
+    {
+      "id": "8b8e2bded73a5f69313e062024c3cf0a9f3e543b",
+      "title": "2026 WRC甩出工业商用家庭消费实景应用答卷，优必选的底牌是“具身智能” - 凤凰网科技",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE50X1RFcmEtT09idk4wS2ZOTjUtOWtuM0N1YXhLTnJiYVNtQnRMcXloVnRoaXRyVmJMVUlkaGVhVmNYX2dqaW9INW5KR2U?oc=5",
+      "published_at": "2026-08-20T15:05:09+00:00",
+      "category": "GN: 优必选",
+      "gn_label": "robotics",
+      "site_name": "GN: 优必选",
+      "source": "GN: 优必选",
+      "site_id": "GN: 优必选",
+      "description": "2026 WRC甩出工业商用家庭消费实景应用答卷，优必选的底牌是“具身智能”  凤凰网科技",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.15,
+      "writing_value": 0,
+      "total_score": 119.15
+    },
+    {
+      "id": "5d1a4a0710a30628a49d61e8ed9b9a8313adcca1",
+      "title": "优必选WRC2026全方位展示人形机器人工业、商用、家庭消费应用成果 - 搜狐网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQeFdRMi1IZU9tTERMaV9vekVnT282V3dud0RvdkxZM05zRjlCWEh5S0ZhMUdGWFVNYzZ1b1I1OFVLdGI2S0Q1anJFdG4tdC1sUVNhUFFxZjZ5UExjcXNCMTdOR3VWRHdabzhPTDdVVHlDT1VGOXdrejRRdF9aYV9QOTduOGpvbGx4NXNweQ?oc=5",
+      "published_at": "2026-08-20T13:42:39+00:00",
+      "category": "GN: 优必选",
+      "gn_label": "robotics",
+      "site_name": "GN: 优必选",
+      "source": "GN: 优必选",
+      "site_id": "GN: 优必选",
+      "description": "优必选WRC2026全方位展示人形机器人工业、商用、家庭消费应用成果  搜狐网",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 27.78,
+      "writing_value": 0,
+      "total_score": 117.78
     },
     {
       "id": "c2bf9aae36fb561776907d3c6ed946168590fdc8",
@@ -409,20 +472,20 @@
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNbVVqNzNMYjZmNUdhVFRtS1k2TFJBYnVRcVl5eHhHUVZrQkdpNlk4QlVySlBBRzM4OFoxTWtOd0dzdkxPS24yNFNWMEp4Yy0waHNCQ1lwNjRjOWVKNWFESkFkX2pyanNEdkdaRTdIUm9uT1Z4Y3JRUGNhTXVMZTJsQUhIX09mWlZr?oc=5",
       "published_at": "2026-08-20T12:03:14+00:00",
-      "category": "GN: 机械臂",
+      "category": "GN: 灵巧手",
       "gn_label": "robotics",
-      "site_name": "GN: 机械臂",
-      "source": "GN: 机械臂",
-      "site_id": "GN: 机械臂",
+      "site_name": "GN: 灵巧手",
+      "source": "GN: 灵巧手",
+      "site_id": "GN: 灵巧手",
       "description": "宇树科技上市后发布9900元级仿生灵巧臂，把高端执行器打向平价区间，人形机器人零部件开启降价周期  搜狐网",
       "ai_score": 80.0,
       "ai_label": "robotics",
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.02,
+      "timeliness": 26.12,
       "writing_value": 0,
-      "total_score": 117.02
+      "total_score": 116.12
     },
     {
       "id": "764ae69ea784380b5e098be5e2a7c569ebe5f819",
@@ -441,9 +504,30 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.97,
+      "timeliness": 26.06,
       "writing_value": 0,
-      "total_score": 116.97
+      "total_score": 116.06
+    },
+    {
+      "id": "46c7a5c652ec902cdc83eb9dc63900cd975885e7",
+      "title": "章鱼动力亮相WRC 2026，  携“脑-手-数据”技术体系探索具身智能未来范式",
+      "title_zh": "",
+      "url": "https://www.leiphone.com/category/industrynews/L6IQmDmj1sCKOrJO.html",
+      "published_at": "2026-08-20T12:48:00+00:00",
+      "category": "雷锋网",
+      "gn_label": "robotics",
+      "site_name": "雷锋网",
+      "source": "雷锋网",
+      "site_id": "雷锋网",
+      "description": "8月19日，2026世界机器人大会（WRC）于北京正式开幕。作为全球机器人领域极具影响力的产研盛会，大会以“人机共生，产需共融”为主题，集中展示机器人与AI行业技术创新、应用落地的最新突破性成果。章鱼动力（SynapX）作为物理AI赛道备受瞩目的新锐势力，受邀亮相本次大会，正式发布并展出由SYNWorld具身原生世界基础模型、OctoH-Hand高自由度仿生灵巧手、OctoSense下一代具身数采方案共同构成的“脑-手-数据”技术体系，完整呈现对下一代物理AI技术路线的深度创新探索。三大产品技术矩阵重磅发布伴随着“AI进入物理世界”成为行业共识，具身智能已跻身全行业聚焦关注、紧迫投入的核心方向",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 26.86,
+      "writing_value": 5,
+      "total_score": 126.86
     }
   ],
   "fallback_used": false
