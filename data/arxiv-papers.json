@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-20T07:24:04.737303+00:00",
-  "total_items": 30,
+  "generated_at": "2026-08-20T08:04:16.254720+00:00",
+  "total_items": 29,
   "items": [
     {
       "id": "http://arxiv.org/abs/2608.19188v1",
@@ -320,17 +320,6 @@
       "published_at": "2026-08-18T20:16:57+00:00",
       "updated_at": "2026-08-18T20:16:57Z",
       "title_zh": "GuideFetch：辅助机器狗并发导航和对象检索的任务协调框架"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.18270v1",
-      "title": "Transferable Tool-Tissue Contact Detection from Stereo Depth in Robot-Assisted Surgery",
-      "url": "https://arxiv.org/abs/2608.18270",
-      "summary": "Reliable tool--tissue contact detection can support interaction-aware control and downstream force estimation in robot-assisted surgery. Most existing methods learn a contact classifier from RGB appearance, which is hard to generalize. In this work, we use the depth image generated from a stereo pair to give more information about tool--tissue contact. For each depth frame, we localize a spatially supported minimum-distance patch around the tool boundary and reduce it to a single scalar, $-\\log_{10}|d|$; this signal rises and falls in step with ground-truth contact. We formalize this observation with a fully supervised two-state hidden Markov model. We fit this model as a six-fold leave-one-session-out (LOSO) ensemble on six palpation sessions against a single silicone cup-like phantom, with the decision threshold selected from the pooled out-of-fold predictions. It is evaluated on four held-out sessions of three categories: 1. same task on same phantom; 2. same task on different phantom; 3. different task on different phantom. This model reaches held-out macro F1 $0.927$ and AUPRC $0.980$. We further compare against a reproduction of an RGB-based contact classifier from prior work. This RGB-based model achieves high performance on the first category (F1 $0.965$), but substantially lower performance on the other two, resulting in macro F1 $0.320$ across all four sessions. These results indicate that the tool--tissue distance is a strong, transferable cue for contact detection in robot-assisted surgery.",
-      "authors": "Mingyeung Wu, Zhonghao Zhang, Hao Yang et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-18T19:41:16+00:00",
-      "updated_at": "2026-08-18T19:41:16Z",
-      "title_zh": "机器人辅助手术中立体深度的可转移工具组织接触检测"
     }
   ]
 }
