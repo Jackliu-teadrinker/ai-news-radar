@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-20T20:18:33.963261+00:00",
-  "total_items": 12,
+  "generated_at": "2026-08-20T20:54:29.476219+00:00",
+  "total_items": 11,
   "items": [
     {
       "id": "http://arxiv.org/abs/2608.19188v1",
@@ -122,17 +122,6 @@
       "published_at": "2026-08-19T08:58:47+00:00",
       "updated_at": "2026-08-19T08:58:47Z",
       "title_zh": "SoftVTBench：变形感知视觉触觉数据集和可变形对象操作的基准"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.18672v1",
-      "title": "Orienteering Problem with Uncertain Time-Varying Rewards: Framework and Benchmark for Everyday Service Robotics",
-      "url": "https://arxiv.org/abs/2608.18672",
-      "summary": "We present the orienteering problem with uncertain time-varying rewards (OP-UTVR), a novel variant of the orienteering problem (OP). While most existing OP formulations assume rewards to be known in advance, practical applications involve uncertain and time-varying rewards, as with shifting customer demand for delivery agents. OP-UTVR relaxes this assumption by allowing agents to estimate reward dynamics from observations and forecast future rewards. This enables informed routing decisions despite stochastic reward changes and inevitable prediction errors. We address this problem using three planners that differ in planning horizon and online adaptivity, and derive theoretical bounds on their performance under reward stochasticity. We further introduce a mobile service robot benchmark for OP-UTVR, where a robot navigates among pedestrians in indoor environments. Experiments reveal trade-offs between planning horizon and adaptivity, and demonstrate the effectiveness of long-horizon planning with online adaptation.",
-      "authors": "Masafumi Endo, Kohei Honda, Yuu Jinnai et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-19T08:24:40+00:00",
-      "updated_at": "2026-08-19T08:24:40Z",
-      "title_zh": "具有不确定时变奖励的定向问题：日常服务机器人的框架和基准"
     }
   ]
 }
