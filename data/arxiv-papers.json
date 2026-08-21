@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-21T13:16:44.549881+00:00",
-  "total_items": 27,
+  "generated_at": "2026-08-21T13:25:57.637167+00:00",
+  "total_items": 25,
   "items": [
     {
       "id": "http://arxiv.org/abs/2608.20284v1",
@@ -276,28 +276,6 @@
       "published_at": "2026-08-20T02:28:25+00:00",
       "updated_at": "2026-08-20T02:28:25Z",
       "title_zh": "HiTac-WAM：用于富接触机器人操作的分层触觉世界动作模型"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.19537v1",
-      "title": "Multimodal Trajectory Planning for Surface Vehicles using Turning Circle-based Control Barrier Functions",
-      "url": "https://arxiv.org/abs/2608.19537",
-      "summary": "This paper presents a guide path-free multimodal trajectory planning framework for autonomous surface vehicles operating in dynamic environments. The proposed method integrates model predictive control (MPC) with a turning circle-based control barrier function (TC-CBF). Unlike conventional Euclidean distance-based CBFs (ED-CBFs), which evaluate safety solely based on proximity, the TC-CBF accounts for the nonholonomic motion and finite turning capability of a surface vehicle. Its geometric formulation identifies feasible avoidance regions according to the vehicle's turning circles and generates distinct left- and right-turning avoidance modes. These modes allow the optimization solver to explore and select topologically different trajectories without relying on globally planned guide paths, as required by many conventional multimodal planning approaches. By embedding the avoidance direction directly into the safety constraint, the proposed framework alleviates the local-minimum and deadlock problems of single-mode MPC while maintaining computational efficiency. Extensive simulations involving multiple moving vessels demonstrate that the proposed method achieves higher success rates, fewer safety violations, and smaller residual violations than single-mode baselines across all tested traffic densities.",
-      "authors": "Changyu Lee",
-      "category": "cs.RO",
-      "published_at": "2026-08-20T01:18:07+00:00",
-      "updated_at": "2026-08-20T01:18:07Z",
-      "title_zh": "使用基于转弯圆的控制障碍函数进行地面车辆的多模态轨迹规划"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.19536v1",
-      "title": "CVSD-Reg: Cross-Modal Visual Semantic Prior Distillation for Robust LiDAR Registration",
-      "url": "https://arxiv.org/abs/2608.19536",
-      "summary": "Learning-based global point cloud registration has achieved remarkable progress, yet its reliance on geometric representations makes existing methods sensitive to variations in point density, scan pattern, viewpoint, and sensor characteristics. We propose CVSD-Reg, a robust global LiDAR registration framework that distills visual semantic priors from a vision foundation model into LiDAR representations. In Stage 1, a Point Transformer V3 student learns from a frozen DINOv2 teacher through contrastive distillation and spherical-manifold alignment, which preserves the hyperspherical geometry of the teacher embedding space. Self-supervised InfoNCE consistency and soft $\\mathrm{SE}(3)$ invariance further encourage viewpoint-robust descriptors. In Stage 2, the distilled representation is adapted to registration through correspondence learning, density-aware point-dropout augmentation, and end-to-end pose optimization. With a single checkpoint, CVSD-Reg generalizes to both single-sensor and zero-shot cross-sensor scenarios without sensor-specific adaptation and remains entirely camera-free at inference. On KITTI, nuScenes, and HeLiPR, CVSD-Reg achieves strict success rate (SR@0.5\\,m/$1^\\circ$) of 97.7$\\%$, 99.0$\\%$, and 99.3$\\%$, respectively, including 97.3$\\%$ on sparse 16-beam Velodyne scans. It outperforms state-of-the-art geometric registration methods by up to 44.0 percentage points without requiring camera inputs or post-hoc ICP refinement.",
-      "authors": "Eunsoo Im, Junghun Suh, Gyeonggwan Lee et al.",
-      "category": "cs.CV",
-      "published_at": "2026-08-20T01:17:12+00:00",
-      "updated_at": "2026-08-20T01:17:12Z",
-      "title_zh": "CVSD-Reg：用于稳健 LiDAR 配准的跨模态视觉语义预先蒸馏"
     }
   ]
 }

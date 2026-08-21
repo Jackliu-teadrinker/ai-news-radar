@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-21T13:16:43.995712+00:00",
-  "total_items": 76,
+  "generated_at": "2026-08-21T13:25:57.322717+00:00",
+  "total_items": 84,
   "items_ai": [
     {
       "id": "4b9d26d2acd8d1b52938e5835e03ee200b36bc7b",
@@ -19,14 +19,14 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 5,
-      "timeliness": 29.52,
+      "timeliness": 29.37,
       "writing_value": 5,
-      "total_score": 129.52
+      "total_score": 129.37
     },
     {
       "id": "eb479ed0fdb47c037d42388517be48aea5150064",
       "title": "Robot guide dog hits the street, bringing embodied intelligence benefits to daily life - news.cgtn.com",
-      "title_zh": "机器人导盲犬亮相街头，为日常生活带来具身智能福利_新闻中心",
+      "title_zh": "机器人导盲犬亮相街头，为日常生活带来具身智能福利",
       "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxONWxrWE0xdEExMm9aTWdtMHNFRU5YbVZuMGNGbVktM2RkeVNMenBGZDlaeTU3Z2NTczR4SGh1MHBDSlAxa1ZKVzJ6QVhMcW5nMWxOaEVjZ28wOGJiSUNRVk9NOVQ2WmpueGdhNk9WM0N6LXE1SlV3MUlTOERIMmVIb01MNW9tckhMcHJUS1BaMDVETFRVQmZMcHJjWHRJVXd5eUlfSmJmMkxkUQ?oc=5",
       "published_at": "2026-08-21T11:33:22+00:00",
       "category": "国外机器人资讯",
@@ -40,9 +40,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 5,
-      "timeliness": 28.29,
+      "timeliness": 28.14,
       "writing_value": 5,
-      "total_score": 128.29
+      "total_score": 128.14
     },
     {
       "id": "b54006555b9f395393e03eae5596e6b21e388d99",
@@ -61,9 +61,30 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 5,
-      "timeliness": 28.07,
+      "timeliness": 27.92,
       "writing_value": 5,
-      "total_score": 128.07
+      "total_score": 127.92
+    },
+    {
+      "id": "bc66a5baa1c739bab053813fbaa13f828db5a4a2",
+      "title": "The State of Humanoid Robotics in 2026: Trends, Challenges and Opportunities - AI Insider",
+      "title_zh": "2026 年人形机器人的现状：趋势、挑战和机遇 - AI Insider",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQSEdoTUhXVXo1ejJhdnRmNkJqNVkwVTlQdUZPSjI0SjhKMm01bDN5bHRPNjcxSkVRdjRTcEVQMWtJU2psdE92QjhHZXZ0MDRGdmZQWEI0YUFWemhuU1AxeWhfWS1XMDF1ZVRtQzBudXU2Q1lyUjRUN1pYNGx4SnRSVHhVYm05anhyb2hNYmF2aElGVFRXbnVUcm9Ub2NkU1NlczNZVmpjR0JsNWk4Z2dKbmtB?oc=5",
+      "published_at": "2026-08-21T13:18:45+00:00",
+      "category": "国外人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国外人形机器人资讯",
+      "source": "国外人形机器人资讯",
+      "site_id": "国外人形机器人资讯",
+      "description": "The State of Humanoid Robotics in 2026: Trends, Challenges and Opportunities  AI Insider",
+      "ai_score": 80.0,
+      "ai_label": "humanoid",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.9,
+      "writing_value": 0,
+      "total_score": 119.9
     },
     {
       "id": "76df22dc4a979670342c779a923ac69fe6fbc3ed",
@@ -82,9 +103,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.89,
+      "timeliness": 29.74,
       "writing_value": 0,
-      "total_score": 119.89
+      "total_score": 119.74
     },
     {
       "id": "7ad948b1fc47460b2b30df8e715b219d5d926533",
@@ -103,9 +124,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.74,
+      "timeliness": 29.59,
       "writing_value": 0,
-      "total_score": 119.74
+      "total_score": 119.59
     },
     {
       "id": "b0e90565db40fb0bf5dd247a940ca00ba357183e",
@@ -113,20 +134,20 @@
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9wN2poT2trcldLYkJsWXMwYVdDUDVlRzd5ZWkxNEwweEdXSU41V0x2Yk9xdTI5ZEEybV9STmpnb1MyS1hybTNfV0hGMGhDd2gyMF9YS2RRdjF0aTJvTGRKNGp0c243dw?oc=5",
       "published_at": "2026-08-21T12:51:00+00:00",
-      "category": "国内具身智能资讯",
-      "gn_label": "embodied_ai",
-      "site_name": "国内具身智能资讯",
-      "source": "国内具身智能资讯",
-      "site_id": "国内具身智能资讯",
+      "category": "国内人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国内人形机器人资讯",
+      "source": "国内人形机器人资讯",
+      "site_id": "国内人形机器人资讯",
       "description": "逐际动力全矩阵产品亮相世界机器人大会 完成多轮融资加速具身智能落地  每日经济新闻",
       "ai_score": 80.0,
-      "ai_label": "embodied_ai",
+      "ai_label": "humanoid",
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.59,
+      "timeliness": 29.44,
       "writing_value": 0,
-      "total_score": 119.59
+      "total_score": 119.44
     },
     {
       "id": "5c8081b44aee0d13ebff5f74e92948956740aa3a",
@@ -145,9 +166,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.49,
+      "timeliness": 29.34,
       "writing_value": 0,
-      "total_score": 119.49
+      "total_score": 119.34
     },
     {
       "id": "0d456b35bff38377ef4f0e3056f2112e9096169b",
@@ -166,9 +187,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.31,
+      "timeliness": 29.15,
       "writing_value": 0,
-      "total_score": 119.31
+      "total_score": 119.15
     },
     {
       "id": "68de996c1ad30a96896984d4395a6bc228eeb9dd",
@@ -176,20 +197,20 @@
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE91YVdRYXVnUU44UTZGTFM4WkE0OEtUSlBfajYwTVRnSHZKa0xicW80SnlIalJNOGtnREpIeF9uRWZ1U2xLSkxWR2t1TGhOSXZZV3pIak9hUGJSR0xXTGYxNXdhNWxQY2VMMms2UGxzaEtFaE51Nnh4eDFTdUY4QQ?oc=5",
       "published_at": "2026-08-21T12:26:38+00:00",
-      "category": "国内具身智能资讯",
-      "gn_label": "embodied_ai",
-      "site_name": "国内具身智能资讯",
-      "source": "国内具身智能资讯",
-      "site_id": "国内具身智能资讯",
+      "category": "国内人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国内人形机器人资讯",
+      "source": "国内人形机器人资讯",
+      "site_id": "国内人形机器人资讯",
       "description": "中国具身智能迎来规模化应用关键窗口期  新华网",
       "ai_score": 80.0,
-      "ai_label": "embodied_ai",
+      "ai_label": "humanoid",
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.18,
+      "timeliness": 29.03,
       "writing_value": 0,
-      "total_score": 119.18
+      "total_score": 119.03
     },
     {
       "id": "76434e2460c1ef130be800fe319cc00c54b73555",
@@ -208,9 +229,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.17,
+      "timeliness": 29.02,
       "writing_value": 0,
-      "total_score": 119.17
+      "total_score": 119.02
     },
     {
       "id": "a5b343c37d25feab01d216997462b9c80e75645e",
@@ -229,9 +250,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.02,
+      "timeliness": 28.87,
       "writing_value": 0,
-      "total_score": 119.02
+      "total_score": 118.87
     },
     {
       "id": "e72741b0aa4b4c1dd414f0b0961f5819a8c953cd",
@@ -250,9 +271,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.94,
+      "timeliness": 28.79,
       "writing_value": 0,
-      "total_score": 118.94
+      "total_score": 118.79
     },
     {
       "id": "0c8c022b94227a4ddb60cb983d37002755c7f116",
@@ -271,9 +292,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.92,
+      "timeliness": 28.77,
       "writing_value": 0,
-      "total_score": 118.92
+      "total_score": 118.77
     },
     {
       "id": "fa46b7ef09d6a9dec44508d69e60c752b679bcc1",
@@ -292,9 +313,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.9,
+      "timeliness": 28.75,
       "writing_value": 0,
-      "total_score": 118.9
+      "total_score": 118.75
     },
     {
       "id": "27a413c13dc38505c983acd11e90cbdb2d6800e5",
@@ -313,9 +334,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.89,
+      "timeliness": 28.74,
       "writing_value": 0,
-      "total_score": 118.89
+      "total_score": 118.74
     },
     {
       "id": "f4275ad6eb89ca15fe22c1258424bc7881317a76",
@@ -334,9 +355,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.87,
+      "timeliness": 28.72,
       "writing_value": 0,
-      "total_score": 118.87
+      "total_score": 118.72
     },
     {
       "id": "b30425402211eebda81f78937bef44ef366b24ef",
@@ -355,9 +376,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.85,
+      "timeliness": 28.7,
       "writing_value": 0,
-      "total_score": 118.85
+      "total_score": 118.7
     },
     {
       "id": "44c48fae53fece474f9a7b2a5f32a67febdbd0a3",
@@ -376,30 +397,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.8,
+      "timeliness": 28.65,
       "writing_value": 0,
-      "total_score": 118.8
-    },
-    {
-      "id": "d46815f21d1edc0161495226adaea46752ad7b26",
-      "title": "WRC2026现场直击｜法奥携多场景应用探索具身智能落地新路径 - 搜狐网",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNZ1o5OEtUak1RYXNWbEpxMFYycUFMZGtnX09oS0tSNXBJaUFhX1R0N2hsakdHN3phUkJRZmxSS3VPMm9aT3M3NkpHeXpQeHJRTUFBR21EcWpQdTJpT3dlamRLZzBaNlFnbFR5OVd0Q1pOakR1eWVRcVhRSERXVWxOLVdodllSWnpk?oc=5",
-      "published_at": "2026-08-21T12:00:00+00:00",
-      "category": "国内具身智能资讯",
-      "gn_label": "embodied_ai",
-      "site_name": "国内具身智能资讯",
-      "source": "国内具身智能资讯",
-      "site_id": "国内具身智能资讯",
-      "description": "WRC2026现场直击｜法奥携多场景应用探索具身智能落地新路径  搜狐网",
-      "ai_score": 80.0,
-      "ai_label": "embodied_ai",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 28.74,
-      "writing_value": 0,
-      "total_score": 118.74
+      "total_score": 118.65
     },
     {
       "id": "4930596fbed8565491ad6e24d74e47595b9c2202",
@@ -418,9 +418,30 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.74,
+      "timeliness": 28.59,
       "writing_value": 0,
-      "total_score": 118.74
+      "total_score": 118.59
+    },
+    {
+      "id": "d46815f21d1edc0161495226adaea46752ad7b26",
+      "title": "WRC2026现场直击｜法奥携多场景应用探索具身智能落地新路径 - 搜狐网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNZ1o5OEtUak1RYXNWbEpxMFYycUFMZGtnX09oS0tSNXBJaUFhX1R0N2hsakdHN3phUkJRZmxSS3VPMm9aT3M3NkpHeXpQeHJRTUFBR21EcWpQdTJpT3dlamRLZzBaNlFnbFR5OVd0Q1pOakR1eWVRcVhRSERXVWxOLVdodllSWnpk?oc=5",
+      "published_at": "2026-08-21T12:00:00+00:00",
+      "category": "国内具身智能资讯",
+      "gn_label": "embodied_ai",
+      "site_name": "国内具身智能资讯",
+      "source": "国内具身智能资讯",
+      "site_id": "国内具身智能资讯",
+      "description": "WRC2026现场直击｜法奥携多场景应用探索具身智能落地新路径  搜狐网",
+      "ai_score": 80.0,
+      "ai_label": "embodied_ai",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 28.59,
+      "writing_value": 0,
+      "total_score": 118.59
     },
     {
       "id": "cb0d182e8076af73a3ba81fcc94301167c6e6fb6",
@@ -439,9 +460,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.7,
+      "timeliness": 28.55,
       "writing_value": 0,
-      "total_score": 118.7
+      "total_score": 118.55
     },
     {
       "id": "70e1798569f3e10ec7d524b9e5796f915936f111",
@@ -460,9 +481,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.66,
+      "timeliness": 28.51,
       "writing_value": 0,
-      "total_score": 118.66
+      "total_score": 118.51
     },
     {
       "id": "5b8c9e6c36a38cf2120a7aae8c1cf4987576f9f8",
@@ -481,9 +502,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.62,
+      "timeliness": 28.47,
       "writing_value": 0,
-      "total_score": 118.62
+      "total_score": 118.47
     },
     {
       "id": "2f88479131b06c008e12005acc163c384464eb1c",
@@ -502,9 +523,30 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.49,
+      "timeliness": 28.34,
       "writing_value": 0,
-      "total_score": 118.49
+      "total_score": 118.34
+    },
+    {
+      "id": "9f4d98df7371ad0d2b011b224c02f21c28b0a75a",
+      "title": "长虹控股集团董事长柳江：具身智能大规模进入家庭面临四重挑战 - 搜狐网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOQkR4am1HbHdpYVNoR3lHUVBEX0Z0a2lpZDAtdW1xbGhWYjNoT2o5OWJxeW95d2JKSzF5TklSZjZ0dUZXeFk3V2F0bkVJMkMzNkhqNGVhYWhQeXdxellxQ01VRXJpSm1zV21wOUhLR3Bia1lfT1VTUnVWV2JsUWJMM2xTak1HZzNBZnFmNQ?oc=5",
+      "published_at": "2026-08-21T11:42:40+00:00",
+      "category": "国内具身智能资讯",
+      "gn_label": "embodied_ai",
+      "site_name": "国内具身智能资讯",
+      "source": "国内具身智能资讯",
+      "site_id": "国内具身智能资讯",
+      "description": "长虹控股集团董事长柳江：具身智能大规模进入家庭面临四重挑战  搜狐网",
+      "ai_score": 80.0,
+      "ai_label": "embodied_ai",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 28.3,
+      "writing_value": 0,
+      "total_score": 118.3
     },
     {
       "id": "48c09aa66b9de291f9491ddb1a5e380e0570c8dd",
@@ -523,9 +565,30 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.34,
+      "timeliness": 28.19,
       "writing_value": 0,
-      "total_score": 118.34
+      "total_score": 118.19
+    },
+    {
+      "id": "d77e1ca07225a88b22f349330200c79740cdc4fd",
+      "title": "人机对打 你能打赢机器人吗？ #人形机器人 #2026世界机器人大会 #宇树科技 （记者 缪领） - 搜狐网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQMUNJTTBqbllKaDZIQWp5cHB3ckNuU3hYMG9qSjhsR2EtLWJubWhBWHU2YzdoanRIRElMbHU3UmhZWThLNjMtZ2JtNWtzUWgtS0hkUE52VGlQeTVzdkxjbnJDUjN2eDhfRUo3NXJuTmFid3lmRDFON1ZKN3NXbnpwdTJwME9JZDFrbGo3Yw?oc=5",
+      "published_at": "2026-08-21T11:25:08+00:00",
+      "category": "国内人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国内人形机器人资讯",
+      "source": "国内人形机器人资讯",
+      "site_id": "国内人形机器人资讯",
+      "description": "人机对打 你能打赢机器人吗？ #人形机器人 #2026世界机器人大会 #宇树科技 （记者 缪领）  搜狐网",
+      "ai_score": 80.0,
+      "ai_label": "humanoid",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 28.01,
+      "writing_value": 0,
+      "total_score": 118.01
     },
     {
       "id": "bc86e9d977ce508d17428f346653c17be69fde14",
@@ -544,9 +607,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.86,
+      "timeliness": 27.71,
       "writing_value": 0,
-      "total_score": 117.86
+      "total_score": 117.71
     },
     {
       "id": "39cdf92bf51d739498067f65d31ffac414105d32",
@@ -554,20 +617,41 @@
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE13X05nd2xRaU0ya0xLeklxeUVFbzh2MDRVZGVOamFJYUpmN0RUb3pONnZMWTBPR3ZYZW9qWjdjdnhFOVE5bHQ4SGY5QmhieGdfeE9IOU1GLUVKYzN5a3QzaWNMSUN3dTZHU0xTYg?oc=5",
       "published_at": "2026-08-21T11:03:00+00:00",
-      "category": "国内具身智能资讯",
-      "gn_label": "embodied_ai",
-      "site_name": "国内具身智能资讯",
-      "source": "国内具身智能资讯",
-      "site_id": "国内具身智能资讯",
+      "category": "国内人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国内人形机器人资讯",
+      "source": "国内人形机器人资讯",
+      "site_id": "国内人形机器人资讯",
       "description": "超智能新品天工Omni上市 北京人形WRC论坛加速推动具身智能产业发展  zqrb.cn",
       "ai_score": 80.0,
-      "ai_label": "embodied_ai",
+      "ai_label": "humanoid",
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.79,
+      "timeliness": 27.64,
       "writing_value": 0,
-      "total_score": 117.79
+      "total_score": 117.64
+    },
+    {
+      "id": "d2067b83b835f2955c735437bb92ad3520477682",
+      "title": "XRPPower: Artificial Intelligence Robots Are Changing the Future of Digital Finance - markets.businessinsider.com",
+      "title_zh": "XRPPower：人工智能机器人正在改变数字金融的未来 - markets.businessinsider.com",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQR3BXWVVXSE9PQVlDbHhSYW12b3V4WFoyVm5acmZYOWh5ZGNnWDRoV2hnV2ptT28tSGI4VXRsT0lsb09KaVNNWXZGeHIxRklxbjNwOTVFVFRuVEdRVUZLaHN3V3p1WUtVcS0wT3hzXzhkaC02UlotQnB6cHcxX2FOVDZrTDN3LUdYV3ZzYWxXZG1md3EyUmpSbVFMTHFPb2JINkdzNjV0alVnc3puWFM2cHM3YXN4X1FZeEVkM0xob0F3am05NTVPc0EyeXZXZExjRXZaZkVhc18?oc=5",
+      "published_at": "2026-08-21T13:21:56+00:00",
+      "category": "国外机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国外机器人资讯",
+      "source": "国外机器人资讯",
+      "site_id": "国外机器人资讯",
+      "description": "XRPPower: Artificial Intelligence Robots Are Changing the Future of Digital Finance  markets.businessinsider.com",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 29.95,
+      "writing_value": 5,
+      "total_score": 114.95
     },
     {
       "id": "6063c34caf1341aeb625d70f85b713251359a9db",
@@ -586,14 +670,14 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 29.16,
+      "timeliness": 29.01,
       "writing_value": 5,
-      "total_score": 114.16
+      "total_score": 114.01
     },
     {
       "id": "775be1e197e7cf73c96702a52c80cc01ed7ab5b3",
       "title": "CUHK researchers perform city’s first robot-assisted pelvic fracture surgery - South China Morning Post",
-      "title_zh": "中大研究人员进行全港首例机械人辅助骨盆骨折手术 - 南华早报",
+      "title_zh": "中大研究人员施行全港首例机械人辅助骨盆骨折手术 - 南华早报",
       "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNTF9IdU1EUmJaN0Y5d19mV3g3QldubHQ1aWtBRThKbXZCNU5hYW5IVXpyOS16UXBiQXNFLUx0NUhFWGJocFI5S3VlOXNSUURlODJseUlLc2VyRGkyWGZlaURyQnpXcXJ1SnZhUHF6Q2lJVkFHbHl5S3FKcWl5TGk5MDVwMFFGUDFyVHVTQWZSME1oUXl5X0Noblo1aFlna29xcEFTVkZtVm5FTVpaOU1OT1loWmlkU0cxMGNMWlh5c0dIc05HRWtTMUVQR0hkNlg4Vk5wVjJVSDd0NDU0UmZ3dzB5d3piZw?oc=5",
       "published_at": "2026-08-21T11:00:07+00:00",
       "category": "国外机器人资讯",
@@ -607,9 +691,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 27.74,
+      "timeliness": 27.59,
       "writing_value": 5,
-      "total_score": 112.74
+      "total_score": 112.59
     },
     {
       "id": "1cd5b02e0b56d665ef45370a98a07f6e0978a164",
@@ -628,9 +712,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.74,
+      "timeliness": 29.59,
       "writing_value": 0,
-      "total_score": 104.74
+      "total_score": 104.59
     },
     {
       "id": "c20ee3162196ff1815e162152ea678e832e9a07a",
@@ -649,14 +733,14 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.61,
+      "timeliness": 29.46,
       "writing_value": 0,
-      "total_score": 104.61
+      "total_score": 104.46
     },
     {
-      "id": "3e2e77258eeb28076eac5dec7a23f9a76477cd33",
-      "title": "FDA authorizes Vitestro's Aletta robotic blood draw device - qz.com",
-      "title_zh": "FDA授权Vitestro公司Aletta机器人抽血设备 - 知乎",
+      "id": "59629edf52e95ec4662ef4563aedf843d74abc51",
+      "title": "The FDA just authorized the first robot that can draw blood on its own - qz.com",
+      "title_zh": "FDA刚刚授权首台可自行抽血的机器人_手机网易网",
       "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9hSnFhdXlGUEp5WWYtVFhaVGNuSGRTZGxKOHBwQnRnZnJuSHAxVDZTUTB6eEZRMGZFYnVhdm1BdmlGZVl2T3hMbzF1LWZVR3Z5Tk9aMnR5eFpjWFZtSktYYzR4aGtrcVppNWNjUDNGNmtCUExJeHc?oc=5",
       "published_at": "2026-08-21T12:48:41+00:00",
       "category": "国外机器人资讯",
@@ -664,15 +748,15 @@
       "site_name": "国外机器人资讯",
       "source": "国外机器人资讯",
       "site_id": "国外机器人资讯",
-      "description": "FDA authorizes Vitestro's Aletta robotic blood draw device  qz.com",
+      "description": "The FDA just authorized the first robot that can draw blood on its own  qz.com",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.55,
+      "timeliness": 29.4,
       "writing_value": 0,
-      "total_score": 104.55
+      "total_score": 104.4
     },
     {
       "id": "d977d2173cc95cef9d27cef0ea56e1b0d9fec68b",
@@ -691,9 +775,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.31,
+      "timeliness": 29.16,
       "writing_value": 0,
-      "total_score": 104.31
+      "total_score": 104.16
     },
     {
       "id": "0e8d7ee92ecafed3a0c9e9e6778519480d98af53",
@@ -712,9 +796,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.03,
+      "timeliness": 28.88,
       "writing_value": 0,
-      "total_score": 104.03
+      "total_score": 103.88
     },
     {
       "id": "3b85fd7b843f2ca9206ffbd85961fcf5a9fd1150",
@@ -733,9 +817,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.78,
+      "timeliness": 28.62,
       "writing_value": 0,
-      "total_score": 103.78
+      "total_score": 103.62
     },
     {
       "id": "cd6b57a8eb8a49f19dfd316494120168d12ecdcc",
@@ -754,9 +838,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.73,
+      "timeliness": 28.58,
       "writing_value": 0,
-      "total_score": 103.73
+      "total_score": 103.58
     },
     {
       "id": "8eaaed1c12e284b0496c1c8accc92edd83f2a311",
@@ -775,9 +859,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.59,
+      "timeliness": 28.43,
       "writing_value": 0,
-      "total_score": 103.59
+      "total_score": 103.43
     },
     {
       "id": "7a6c5cc26c7f2ff0832d3fc4ceab22d13e28e01b",
@@ -796,9 +880,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.55,
+      "timeliness": 28.4,
       "writing_value": 0,
-      "total_score": 103.55
+      "total_score": 103.4
     },
     {
       "id": "c9b3e6338354a4d578618826012bb16a85f498b5",
@@ -817,9 +901,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.05,
+      "timeliness": 27.9,
       "writing_value": 0,
-      "total_score": 103.05
+      "total_score": 102.9
     },
     {
       "id": "a9b594704bdae5efc1b7bca2c3d1bde0e0c29757",
@@ -838,9 +922,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.05,
+      "timeliness": 27.9,
       "writing_value": 0,
-      "total_score": 103.05
+      "total_score": 102.9
     },
     {
       "id": "49045d22abe61eeebb245d501719faf771be17fa",
@@ -859,9 +943,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.02,
+      "timeliness": 27.87,
       "writing_value": 0,
-      "total_score": 103.02
+      "total_score": 102.87
     },
     {
       "id": "c70955ca8bdb506ed664631e68110b660e8d97be",
@@ -880,9 +964,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.74,
+      "timeliness": 27.59,
       "writing_value": 0,
-      "total_score": 102.74
+      "total_score": 102.59
     },
     {
       "id": "ea7c3fbe2c3f8ff54b48fe41cf026526516e82cb",
@@ -901,9 +985,9 @@
       "relevance": 0.5,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.91,
+      "timeliness": 27.76,
       "writing_value": 0,
-      "total_score": 87.91
+      "total_score": 87.76
     },
     {
       "id": "9a2054b953a3afff5ad0c0108475b36954120a54",
@@ -922,9 +1006,30 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 5,
-      "timeliness": 29.96,
+      "timeliness": 29.81,
       "writing_value": 5,
-      "total_score": 84.96
+      "total_score": 84.81
+    },
+    {
+      "id": "87f97a4bc5b1afa4b34d8576a0c33b5b65d25952",
+      "title": "当仿生机器人走进现实，商业与伦理双道考题待解｜聚焦2026WRC - 新浪财经",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5CN3MwNmNZMmZ3Q3dmYlg0c2RMNVdFdWtwSC0yblZScEtYZ3NTVWJkNjdJMVZjNnptV0EyQ1NGZ3d6ZVZPcklKUFB2ZnhMSGw0QVhkWHJIQkRSbkxiNXNiUTFHOXoyNTduM2dmMDRB?oc=5",
+      "published_at": "2026-08-21T13:07:57+00:00",
+      "category": "国内机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国内机器人资讯",
+      "source": "国内机器人资讯",
+      "site_id": "国内机器人资讯",
+      "description": "当仿生机器人走进现实，商业与伦理双道考题待解｜聚焦2026WRC  新浪财经",
+      "ai_score": 35.0,
+      "ai_label": "robotics",
+      "relevance": 0.35,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.72,
+      "writing_value": 0,
+      "total_score": 74.72
     },
     {
       "id": "c6871965f00a6883e069ea6bdb4ad1b1e0ba3532",
@@ -943,9 +1048,30 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.81,
+      "timeliness": 29.66,
       "writing_value": 0,
-      "total_score": 74.81
+      "total_score": 74.66
+    },
+    {
+      "id": "6af79b0a734a8eb3655eae5b1a351a73c346cff9",
+      "title": "直击2026世界机器人大会：云深处人猫狗多形态机器人集中亮相 - 证券市场周刊",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE0tSENNc0hoOEJSVmYwUjZXdnhQam5vNm1laEYzS25SbkZmTzZqaHh4TzdRaHBMVlpiUkRzVUozMFhJckc2aks1emhMcXQ2LUlGdk9GVVRDc0hwbWxXaGtUdWhEaks?oc=5",
+      "published_at": "2026-08-21T12:59:00+00:00",
+      "category": "国内人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国内人形机器人资讯",
+      "source": "国内人形机器人资讯",
+      "site_id": "国内人形机器人资讯",
+      "description": "直击2026世界机器人大会：云深处人猫狗多形态机器人集中亮相  证券市场周刊",
+      "ai_score": 35.0,
+      "ai_label": "humanoid",
+      "relevance": 0.35,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.57,
+      "writing_value": 0,
+      "total_score": 74.57
     },
     {
       "id": "aa66bfb1a234b9190684d5e7ce8620bfbd6f2c74",
@@ -964,9 +1090,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.66,
+      "timeliness": 29.5,
       "writing_value": 0,
-      "total_score": 74.66
+      "total_score": 74.5
     },
     {
       "id": "c35caf15a3c204485236e9aa4ee4deb0bca45723",
@@ -985,9 +1111,30 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.6,
+      "timeliness": 29.45,
       "writing_value": 0,
-      "total_score": 74.6
+      "total_score": 74.45
+    },
+    {
+      "id": "711920138a79cb87bd98435a71c5d8f62852be98",
+      "title": "直击WRC丨海尔发布全自主家用AI烹饪机器人，可完全接管做饭、做菜 - finance.sina.com.cn",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOZDdIeS1tam5fN29IR2oxVFl2X0xUY3hMT0hRU3MxLVF4bFZUaHc4TEYyeEpKV3BoN05PRG9WN1hpRWVDNm5SZnZ2MF9pRFI5UFo3ZWFZYXR3SDFPcUJUNi0wVm9rZVF4QzBXdWlFcTNhTXNGbW5oNFNacFlRNzNrS2czMDFROXRzNlBLaFZVSHdMVEZXOW5xNG1BR3hqS3pDQ200SVNfV1dVRVVzRmZ2Q3d6ejB4M1NSdkZFZzEwdldYRFhTaGQ2R3FKYjRUYi1Y?oc=5",
+      "published_at": "2026-08-21T12:45:00+00:00",
+      "category": "国内机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国内机器人资讯",
+      "source": "国内机器人资讯",
+      "site_id": "国内机器人资讯",
+      "description": "直击WRC丨海尔发布全自主家用AI烹饪机器人，可完全接管做饭、做菜  finance.sina.com.cn",
+      "ai_score": 35.0,
+      "ai_label": "robotics",
+      "relevance": 0.35,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.34,
+      "writing_value": 0,
+      "total_score": 74.34
     },
     {
       "id": "e3871c99a519792a06f19f4a4dfafcd92df57c5d",
@@ -1006,9 +1153,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.47,
+      "timeliness": 29.32,
       "writing_value": 0,
-      "total_score": 74.47
+      "total_score": 74.32
     },
     {
       "id": "ddc6eba64b0e3324e14d5373e8fad8aa7c1af0e5",
@@ -1027,9 +1174,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.47,
+      "timeliness": 29.32,
       "writing_value": 0,
-      "total_score": 74.47
+      "total_score": 74.32
     },
     {
       "id": "3c2ed1ec8ca644e0978f715e3de2bee2860a0e20",
@@ -1048,9 +1195,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.33,
+      "timeliness": 29.17,
       "writing_value": 0,
-      "total_score": 74.33
+      "total_score": 74.17
     },
     {
       "id": "dbdac59c2ef0e48e447c4727ef7a310db8147663",
@@ -1069,9 +1216,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.25,
+      "timeliness": 29.1,
       "writing_value": 0,
-      "total_score": 74.25
+      "total_score": 74.1
     },
     {
       "id": "f7b71e1365b0b64100a09c47dac099cb577cd58e",
@@ -1090,9 +1237,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.24,
+      "timeliness": 29.09,
       "writing_value": 0,
-      "total_score": 74.24
+      "total_score": 74.09
     },
     {
       "id": "c798d2d28e86ea899ca30a742b3bdf0802149173",
@@ -1111,9 +1258,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.17,
+      "timeliness": 29.02,
       "writing_value": 0,
-      "total_score": 74.17
+      "total_score": 74.02
     },
     {
       "id": "41fc5ce93d9c09c690ae62126023704bf1303740",
@@ -1132,9 +1279,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.99,
+      "timeliness": 28.84,
       "writing_value": 0,
-      "total_score": 73.99
+      "total_score": 73.84
     },
     {
       "id": "991153788babbfa3c55648c68778115c91105de8",
@@ -1153,9 +1300,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.95,
+      "timeliness": 28.8,
       "writing_value": 0,
-      "total_score": 73.95
+      "total_score": 73.8
     },
     {
       "id": "a4ccc88bc9ff02d6c59170f8853d4f407610273a",
@@ -1174,9 +1321,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.83,
+      "timeliness": 28.68,
       "writing_value": 0,
-      "total_score": 73.83
+      "total_score": 73.68
     },
     {
       "id": "f2fce388026aba0216fb9bc8908d4c9d8e855eb0",
@@ -1195,9 +1342,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.76,
+      "timeliness": 28.61,
       "writing_value": 0,
-      "total_score": 73.76
+      "total_score": 73.61
     },
     {
       "id": "83ce8eb4f5955a233a2ebd49e5edac09774ec1c4",
@@ -1216,9 +1363,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.55,
+      "timeliness": 28.4,
       "writing_value": 0,
-      "total_score": 73.55
+      "total_score": 73.4
     },
     {
       "id": "428dfc326d5716540b1ac622a8e8c0e0b56c37fc",
@@ -1237,9 +1384,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.51,
+      "timeliness": 28.36,
       "writing_value": 0,
-      "total_score": 73.51
+      "total_score": 73.36
     },
     {
       "id": "f47606b2339af413e17061d86d8203362f8cc9d6",
@@ -1247,20 +1394,20 @@
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQWmFfQUdSZVhjRWowR3c0NFE2UU0xRWdVVEdkMWNwTW1XUk5waHhkVkNibEZTR3dFUkMyWFpHNHQwRGxyQy1LZC1BMG1kZ1hRZXZzM1BYaUgzYmE1V1M0QTJhU3RBejd4SmduSUV1Z2ZKVWx5QTZmUGVJdHVJc3Nrcm5UdjAwaUVNNHhfV2ljTHhta2FaWERZUDFTUmpVYjNldWlUZ3R2ZDN1Uk1MZnRJOXJn?oc=5",
       "published_at": "2026-08-21T11:45:29+00:00",
-      "category": "国内具身智能资讯",
-      "gn_label": "embodied_ai",
-      "site_name": "国内具身智能资讯",
-      "source": "国内具身智能资讯",
-      "site_id": "国内具身智能资讯",
+      "category": "国内人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国内人形机器人资讯",
+      "source": "国内人形机器人资讯",
+      "site_id": "国内人形机器人资讯",
       "description": "WRC2026观点 | 中科云谷CEO曾光：从“单机智能”到“群体智能”，工业机器人落地需跨越“语言”鸿沟  finance.sina.com.cn",
       "ai_score": 35.0,
-      "ai_label": "embodied_ai",
+      "ai_label": "humanoid",
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.5,
+      "timeliness": 28.34,
       "writing_value": 0,
-      "total_score": 73.5
+      "total_score": 73.34
     },
     {
       "id": "6b27415a9c9e5ffce6827ad5e347b6bf4e1231b9",
@@ -1279,9 +1426,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.49,
+      "timeliness": 28.34,
       "writing_value": 0,
-      "total_score": 73.49
+      "total_score": 73.34
     },
     {
       "id": "4e007c34ad19cd76607f157717804749208089a9",
@@ -1300,9 +1447,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.45,
+      "timeliness": 28.3,
       "writing_value": 0,
-      "total_score": 73.45
+      "total_score": 73.3
     },
     {
       "id": "b0348c741e26620c799de55d3c32c2647a502e8c",
@@ -1321,9 +1468,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.42,
+      "timeliness": 28.27,
       "writing_value": 0,
-      "total_score": 73.42
+      "total_score": 73.27
     },
     {
       "id": "02c9048e3eb1d726b05504221be2121af39c9cd1",
@@ -1342,9 +1489,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.4,
+      "timeliness": 28.25,
       "writing_value": 0,
-      "total_score": 73.4
+      "total_score": 73.25
     },
     {
       "id": "f357307c5684e9bd700ee65f9e266a292126d455",
@@ -1363,9 +1510,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.27,
+      "timeliness": 28.12,
       "writing_value": 0,
-      "total_score": 73.27
+      "total_score": 73.12
     },
     {
       "id": "2fb2798446829f2e1372f32a564d0fdda089ae07",
@@ -1384,9 +1531,30 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.25,
+      "timeliness": 28.1,
       "writing_value": 0,
-      "total_score": 73.25
+      "total_score": 73.1
+    },
+    {
+      "id": "5f23fba3aa80456e1c6486ea65484ccff5a5234b",
+      "title": "从3C到机器人：爱租机被全资收购背后的租赁变局 - t.cj.sina.cn",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5PZ3hVTmxYTnkwOURlRjBOTEdodWkyMUltcWZLUGdReW5icVZ3WlVKNzExYUU0a3dTX3Q3Skt2REg3LWZqREdtYzFfZ0l2U0J1TXlfTjUyOXE0M0RTcHd6azBPa1dWazRaakctWnkzTTNQZw?oc=5",
+      "published_at": "2026-08-21T11:29:42+00:00",
+      "category": "国内机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国内机器人资讯",
+      "source": "国内机器人资讯",
+      "site_id": "国内机器人资讯",
+      "description": "从3C到机器人：爱租机被全资收购背后的租赁变局  t.cj.sina.cn",
+      "ai_score": 35.0,
+      "ai_label": "robotics",
+      "relevance": 0.35,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 28.08,
+      "writing_value": 0,
+      "total_score": 73.08
     },
     {
       "id": "f5b7c478dcb429622d5bfd4e204c6ee1338b0aaa",
@@ -1405,9 +1573,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.23,
+      "timeliness": 28.08,
       "writing_value": 0,
-      "total_score": 73.23
+      "total_score": 73.08
     },
     {
       "id": "c0e28224e2a8fa426636df2ecbfeb39f98b03ad0",
@@ -1426,9 +1594,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.22,
+      "timeliness": 28.07,
       "writing_value": 0,
-      "total_score": 73.22
+      "total_score": 73.07
     },
     {
       "id": "1e02fba5c8e951b6439f3c02ecda72d2ff1a4148",
@@ -1447,9 +1615,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.19,
+      "timeliness": 28.04,
       "writing_value": 0,
-      "total_score": 73.19
+      "total_score": 73.04
     },
     {
       "id": "07aeef693574950a458a169930871e31e5816917",
@@ -1468,30 +1636,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.18,
+      "timeliness": 28.03,
       "writing_value": 0,
-      "total_score": 73.18
-    },
-    {
-      "id": "cb0fc5cccebb1ce675438c737c8c48493460f042",
-      "title": "【投融资动态】艾莫机器人天使轮融资，投资方为轩元资本、初心资本等 - finance.sina.com.cn",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1YMlZZa01BYkMzUl95c3FSdW5nUXVyWEFQSzVVYUhPcFpVU2VVWWRPUXozMk9zci1sYkJZeW14QklMME1HZXA3dVIyeVF4UWxwOVMwMGJKSlR4Xzc0dV9NMnBkWW5ZenVxSmE0OXpB?oc=5",
-      "published_at": "2026-08-21T11:25:01+00:00",
-      "category": "国内机器人资讯",
-      "gn_label": "robotics",
-      "site_name": "国内机器人资讯",
-      "source": "国内机器人资讯",
-      "site_id": "国内机器人资讯",
-      "description": "【投融资动态】艾莫机器人天使轮融资，投资方为轩元资本、初心资本等  finance.sina.com.cn",
-      "ai_score": 35.0,
-      "ai_label": "robotics",
-      "relevance": 0.35,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 28.15,
-      "writing_value": 0,
-      "total_score": 73.15
+      "total_score": 73.03
     },
     {
       "id": "54779d972d69b43a33d173b7f0685b0cdd283026",
@@ -1510,30 +1657,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.07,
+      "timeliness": 27.92,
       "writing_value": 0,
-      "total_score": 73.07
-    },
-    {
-      "id": "df7f9b0a71fb1bfbbabec86ffd3bc7a642c4c226",
-      "title": "从多机协同到真实任务，中科慧灵以“协同”打开机器人融入世界的现实路径 - 新华网客户端",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNOWtkcEVKeUFTSUw0dmtXb3dVei0tU0tjSXZWM2NMcElwVE1mTnBkVzYtdVdsSkxOa0VQUTBzTExPTXRwME1MR2J1QUgwaFpGSHRvelowTUdjM1pKakRBcmE2amFJeWJBNE84TDAyWlo3VmZmUmhhWTBlQ2NiVzlMZk1hRWJzYnNWTTN2cHN1ZFhKZC1pUGV2UlJR?oc=5",
-      "published_at": "2026-08-21T11:15:00+00:00",
-      "category": "国内具身智能资讯",
-      "gn_label": "embodied_ai",
-      "site_name": "国内具身智能资讯",
-      "source": "国内具身智能资讯",
-      "site_id": "国内具身智能资讯",
-      "description": "从多机协同到真实任务，中科慧灵以“协同”打开机器人融入世界的现实路径  新华网客户端",
-      "ai_score": 35.0,
-      "ai_label": "embodied_ai",
-      "relevance": 0.35,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 27.99,
-      "writing_value": 0,
-      "total_score": 72.99
+      "total_score": 72.92
     },
     {
       "id": "1c71d292c9150bf4f9e25d1a6af64537603b6959",
@@ -1552,9 +1678,30 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.99,
+      "timeliness": 27.84,
       "writing_value": 0,
-      "total_score": 72.99
+      "total_score": 72.84
+    },
+    {
+      "id": "df7f9b0a71fb1bfbbabec86ffd3bc7a642c4c226",
+      "title": "从多机协同到真实任务，中科慧灵以“协同”打开机器人融入世界的现实路径 - 新华网客户端",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNOWtkcEVKeUFTSUw0dmtXb3dVei0tU0tjSXZWM2NMcElwVE1mTnBkVzYtdVdsSkxOa0VQUTBzTExPTXRwME1MR2J1QUgwaFpGSHRvelowTUdjM1pKakRBcmE2amFJeWJBNE84TDAyWlo3VmZmUmhhWTBlQ2NiVzlMZk1hRWJzYnNWTTN2cHN1ZFhKZC1pUGV2UlJR?oc=5",
+      "published_at": "2026-08-21T11:15:00+00:00",
+      "category": "国内具身智能资讯",
+      "gn_label": "embodied_ai",
+      "site_name": "国内具身智能资讯",
+      "source": "国内具身智能资讯",
+      "site_id": "国内具身智能资讯",
+      "description": "从多机协同到真实任务，中科慧灵以“协同”打开机器人融入世界的现实路径  新华网客户端",
+      "ai_score": 35.0,
+      "ai_label": "embodied_ai",
+      "relevance": 0.35,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 27.84,
+      "writing_value": 0,
+      "total_score": 72.84
     },
     {
       "id": "2dce0bc194816cba3b348c0ff071db4d0502327b",
@@ -1573,9 +1720,30 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.99,
+      "timeliness": 27.84,
       "writing_value": 0,
-      "total_score": 72.99
+      "total_score": 72.84
+    },
+    {
+      "id": "88027b4932fcb64018bec79d0ba6eb524cc13944",
+      "title": "一起看名场面！2026年世界机器人大会近日在北京开幕 - 京报网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5wVThqb2FsTWZvTmU0bW1wcE9qREhmcFZGb3NlMHQ0LTJLZHJmU29EWnhuQndSdVRPSlBMMy1IQnRhNEc5TGJwVXpZZjVaYzFzcTRjS3VVUFdnbkFGalE?oc=5",
+      "published_at": "2026-08-21T11:14:50+00:00",
+      "category": "国内机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国内机器人资讯",
+      "source": "国内机器人资讯",
+      "site_id": "国内机器人资讯",
+      "description": "一起看名场面！2026年世界机器人大会近日在北京开幕  京报网",
+      "ai_score": 35.0,
+      "ai_label": "robotics",
+      "relevance": 0.35,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 27.83,
+      "writing_value": 0,
+      "total_score": 72.83
     },
     {
       "id": "e9a90327aaf0fbf54cb7ac3225046e0c1891cd2f",
@@ -1594,9 +1762,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.97,
+      "timeliness": 27.82,
       "writing_value": 0,
-      "total_score": 72.97
+      "total_score": 72.82
     }
   ],
   "items_all": [
@@ -1617,14 +1785,14 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 5,
-      "timeliness": 29.52,
+      "timeliness": 29.37,
       "writing_value": 5,
-      "total_score": 129.52
+      "total_score": 129.37
     },
     {
       "id": "eb479ed0fdb47c037d42388517be48aea5150064",
       "title": "Robot guide dog hits the street, bringing embodied intelligence benefits to daily life - news.cgtn.com",
-      "title_zh": "机器人导盲犬亮相街头，为日常生活带来具身智能福利_新闻中心",
+      "title_zh": "机器人导盲犬亮相街头，为日常生活带来具身智能福利",
       "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxONWxrWE0xdEExMm9aTWdtMHNFRU5YbVZuMGNGbVktM2RkeVNMenBGZDlaeTU3Z2NTczR4SGh1MHBDSlAxa1ZKVzJ6QVhMcW5nMWxOaEVjZ28wOGJiSUNRVk9NOVQ2WmpueGdhNk9WM0N6LXE1SlV3MUlTOERIMmVIb01MNW9tckhMcHJUS1BaMDVETFRVQmZMcHJjWHRJVXd5eUlfSmJmMkxkUQ?oc=5",
       "published_at": "2026-08-21T11:33:22+00:00",
       "category": "国外机器人资讯",
@@ -1638,9 +1806,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 5,
-      "timeliness": 28.29,
+      "timeliness": 28.14,
       "writing_value": 5,
-      "total_score": 128.29
+      "total_score": 128.14
     },
     {
       "id": "b54006555b9f395393e03eae5596e6b21e388d99",
@@ -1659,9 +1827,30 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 5,
-      "timeliness": 28.07,
+      "timeliness": 27.92,
       "writing_value": 5,
-      "total_score": 128.07
+      "total_score": 127.92
+    },
+    {
+      "id": "bc66a5baa1c739bab053813fbaa13f828db5a4a2",
+      "title": "The State of Humanoid Robotics in 2026: Trends, Challenges and Opportunities - AI Insider",
+      "title_zh": "2026 年人形机器人的现状：趋势、挑战和机遇 - AI Insider",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQSEdoTUhXVXo1ejJhdnRmNkJqNVkwVTlQdUZPSjI0SjhKMm01bDN5bHRPNjcxSkVRdjRTcEVQMWtJU2psdE92QjhHZXZ0MDRGdmZQWEI0YUFWemhuU1AxeWhfWS1XMDF1ZVRtQzBudXU2Q1lyUjRUN1pYNGx4SnRSVHhVYm05anhyb2hNYmF2aElGVFRXbnVUcm9Ub2NkU1NlczNZVmpjR0JsNWk4Z2dKbmtB?oc=5",
+      "published_at": "2026-08-21T13:18:45+00:00",
+      "category": "国外人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国外人形机器人资讯",
+      "source": "国外人形机器人资讯",
+      "site_id": "国外人形机器人资讯",
+      "description": "The State of Humanoid Robotics in 2026: Trends, Challenges and Opportunities  AI Insider",
+      "ai_score": 80.0,
+      "ai_label": "humanoid",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.9,
+      "writing_value": 0,
+      "total_score": 119.9
     },
     {
       "id": "76df22dc4a979670342c779a923ac69fe6fbc3ed",
@@ -1680,9 +1869,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.89,
+      "timeliness": 29.74,
       "writing_value": 0,
-      "total_score": 119.89
+      "total_score": 119.74
     },
     {
       "id": "7ad948b1fc47460b2b30df8e715b219d5d926533",
@@ -1701,9 +1890,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.74,
+      "timeliness": 29.59,
       "writing_value": 0,
-      "total_score": 119.74
+      "total_score": 119.59
     },
     {
       "id": "b0e90565db40fb0bf5dd247a940ca00ba357183e",
@@ -1711,20 +1900,20 @@
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9wN2poT2trcldLYkJsWXMwYVdDUDVlRzd5ZWkxNEwweEdXSU41V0x2Yk9xdTI5ZEEybV9STmpnb1MyS1hybTNfV0hGMGhDd2gyMF9YS2RRdjF0aTJvTGRKNGp0c243dw?oc=5",
       "published_at": "2026-08-21T12:51:00+00:00",
-      "category": "国内具身智能资讯",
-      "gn_label": "embodied_ai",
-      "site_name": "国内具身智能资讯",
-      "source": "国内具身智能资讯",
-      "site_id": "国内具身智能资讯",
+      "category": "国内人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国内人形机器人资讯",
+      "source": "国内人形机器人资讯",
+      "site_id": "国内人形机器人资讯",
       "description": "逐际动力全矩阵产品亮相世界机器人大会 完成多轮融资加速具身智能落地  每日经济新闻",
       "ai_score": 80.0,
-      "ai_label": "embodied_ai",
+      "ai_label": "humanoid",
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.59,
+      "timeliness": 29.44,
       "writing_value": 0,
-      "total_score": 119.59
+      "total_score": 119.44
     },
     {
       "id": "5c8081b44aee0d13ebff5f74e92948956740aa3a",
@@ -1743,9 +1932,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.49,
+      "timeliness": 29.34,
       "writing_value": 0,
-      "total_score": 119.49
+      "total_score": 119.34
     },
     {
       "id": "0d456b35bff38377ef4f0e3056f2112e9096169b",
@@ -1764,9 +1953,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.31,
+      "timeliness": 29.15,
       "writing_value": 0,
-      "total_score": 119.31
+      "total_score": 119.15
     },
     {
       "id": "68de996c1ad30a96896984d4395a6bc228eeb9dd",
@@ -1774,20 +1963,20 @@
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE91YVdRYXVnUU44UTZGTFM4WkE0OEtUSlBfajYwTVRnSHZKa0xicW80SnlIalJNOGtnREpIeF9uRWZ1U2xLSkxWR2t1TGhOSXZZV3pIak9hUGJSR0xXTGYxNXdhNWxQY2VMMms2UGxzaEtFaE51Nnh4eDFTdUY4QQ?oc=5",
       "published_at": "2026-08-21T12:26:38+00:00",
-      "category": "国内具身智能资讯",
-      "gn_label": "embodied_ai",
-      "site_name": "国内具身智能资讯",
-      "source": "国内具身智能资讯",
-      "site_id": "国内具身智能资讯",
+      "category": "国内人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国内人形机器人资讯",
+      "source": "国内人形机器人资讯",
+      "site_id": "国内人形机器人资讯",
       "description": "中国具身智能迎来规模化应用关键窗口期  新华网",
       "ai_score": 80.0,
-      "ai_label": "embodied_ai",
+      "ai_label": "humanoid",
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.18,
+      "timeliness": 29.03,
       "writing_value": 0,
-      "total_score": 119.18
+      "total_score": 119.03
     },
     {
       "id": "76434e2460c1ef130be800fe319cc00c54b73555",
@@ -1806,9 +1995,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.17,
+      "timeliness": 29.02,
       "writing_value": 0,
-      "total_score": 119.17
+      "total_score": 119.02
     },
     {
       "id": "a5b343c37d25feab01d216997462b9c80e75645e",
@@ -1827,9 +2016,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.02,
+      "timeliness": 28.87,
       "writing_value": 0,
-      "total_score": 119.02
+      "total_score": 118.87
     },
     {
       "id": "e72741b0aa4b4c1dd414f0b0961f5819a8c953cd",
@@ -1848,9 +2037,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.94,
+      "timeliness": 28.79,
       "writing_value": 0,
-      "total_score": 118.94
+      "total_score": 118.79
     },
     {
       "id": "0c8c022b94227a4ddb60cb983d37002755c7f116",
@@ -1869,9 +2058,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.92,
+      "timeliness": 28.77,
       "writing_value": 0,
-      "total_score": 118.92
+      "total_score": 118.77
     },
     {
       "id": "fa46b7ef09d6a9dec44508d69e60c752b679bcc1",
@@ -1890,9 +2079,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.9,
+      "timeliness": 28.75,
       "writing_value": 0,
-      "total_score": 118.9
+      "total_score": 118.75
     },
     {
       "id": "27a413c13dc38505c983acd11e90cbdb2d6800e5",
@@ -1911,9 +2100,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.89,
+      "timeliness": 28.74,
       "writing_value": 0,
-      "total_score": 118.89
+      "total_score": 118.74
     },
     {
       "id": "f4275ad6eb89ca15fe22c1258424bc7881317a76",
@@ -1932,9 +2121,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.87,
+      "timeliness": 28.72,
       "writing_value": 0,
-      "total_score": 118.87
+      "total_score": 118.72
     },
     {
       "id": "b30425402211eebda81f78937bef44ef366b24ef",
@@ -1953,9 +2142,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.85,
+      "timeliness": 28.7,
       "writing_value": 0,
-      "total_score": 118.85
+      "total_score": 118.7
     },
     {
       "id": "44c48fae53fece474f9a7b2a5f32a67febdbd0a3",
@@ -1974,30 +2163,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.8,
+      "timeliness": 28.65,
       "writing_value": 0,
-      "total_score": 118.8
-    },
-    {
-      "id": "d46815f21d1edc0161495226adaea46752ad7b26",
-      "title": "WRC2026现场直击｜法奥携多场景应用探索具身智能落地新路径 - 搜狐网",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNZ1o5OEtUak1RYXNWbEpxMFYycUFMZGtnX09oS0tSNXBJaUFhX1R0N2hsakdHN3phUkJRZmxSS3VPMm9aT3M3NkpHeXpQeHJRTUFBR21EcWpQdTJpT3dlamRLZzBaNlFnbFR5OVd0Q1pOakR1eWVRcVhRSERXVWxOLVdodllSWnpk?oc=5",
-      "published_at": "2026-08-21T12:00:00+00:00",
-      "category": "国内具身智能资讯",
-      "gn_label": "embodied_ai",
-      "site_name": "国内具身智能资讯",
-      "source": "国内具身智能资讯",
-      "site_id": "国内具身智能资讯",
-      "description": "WRC2026现场直击｜法奥携多场景应用探索具身智能落地新路径  搜狐网",
-      "ai_score": 80.0,
-      "ai_label": "embodied_ai",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 28.74,
-      "writing_value": 0,
-      "total_score": 118.74
+      "total_score": 118.65
     },
     {
       "id": "4930596fbed8565491ad6e24d74e47595b9c2202",
@@ -2016,9 +2184,30 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.74,
+      "timeliness": 28.59,
       "writing_value": 0,
-      "total_score": 118.74
+      "total_score": 118.59
+    },
+    {
+      "id": "d46815f21d1edc0161495226adaea46752ad7b26",
+      "title": "WRC2026现场直击｜法奥携多场景应用探索具身智能落地新路径 - 搜狐网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNZ1o5OEtUak1RYXNWbEpxMFYycUFMZGtnX09oS0tSNXBJaUFhX1R0N2hsakdHN3phUkJRZmxSS3VPMm9aT3M3NkpHeXpQeHJRTUFBR21EcWpQdTJpT3dlamRLZzBaNlFnbFR5OVd0Q1pOakR1eWVRcVhRSERXVWxOLVdodllSWnpk?oc=5",
+      "published_at": "2026-08-21T12:00:00+00:00",
+      "category": "国内具身智能资讯",
+      "gn_label": "embodied_ai",
+      "site_name": "国内具身智能资讯",
+      "source": "国内具身智能资讯",
+      "site_id": "国内具身智能资讯",
+      "description": "WRC2026现场直击｜法奥携多场景应用探索具身智能落地新路径  搜狐网",
+      "ai_score": 80.0,
+      "ai_label": "embodied_ai",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 28.59,
+      "writing_value": 0,
+      "total_score": 118.59
     },
     {
       "id": "cb0d182e8076af73a3ba81fcc94301167c6e6fb6",
@@ -2037,9 +2226,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.7,
+      "timeliness": 28.55,
       "writing_value": 0,
-      "total_score": 118.7
+      "total_score": 118.55
     },
     {
       "id": "70e1798569f3e10ec7d524b9e5796f915936f111",
@@ -2058,9 +2247,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.66,
+      "timeliness": 28.51,
       "writing_value": 0,
-      "total_score": 118.66
+      "total_score": 118.51
     },
     {
       "id": "5b8c9e6c36a38cf2120a7aae8c1cf4987576f9f8",
@@ -2079,9 +2268,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.62,
+      "timeliness": 28.47,
       "writing_value": 0,
-      "total_score": 118.62
+      "total_score": 118.47
     },
     {
       "id": "2f88479131b06c008e12005acc163c384464eb1c",
@@ -2100,9 +2289,30 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.49,
+      "timeliness": 28.34,
       "writing_value": 0,
-      "total_score": 118.49
+      "total_score": 118.34
+    },
+    {
+      "id": "9f4d98df7371ad0d2b011b224c02f21c28b0a75a",
+      "title": "长虹控股集团董事长柳江：具身智能大规模进入家庭面临四重挑战 - 搜狐网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOQkR4am1HbHdpYVNoR3lHUVBEX0Z0a2lpZDAtdW1xbGhWYjNoT2o5OWJxeW95d2JKSzF5TklSZjZ0dUZXeFk3V2F0bkVJMkMzNkhqNGVhYWhQeXdxellxQ01VRXJpSm1zV21wOUhLR3Bia1lfT1VTUnVWV2JsUWJMM2xTak1HZzNBZnFmNQ?oc=5",
+      "published_at": "2026-08-21T11:42:40+00:00",
+      "category": "国内具身智能资讯",
+      "gn_label": "embodied_ai",
+      "site_name": "国内具身智能资讯",
+      "source": "国内具身智能资讯",
+      "site_id": "国内具身智能资讯",
+      "description": "长虹控股集团董事长柳江：具身智能大规模进入家庭面临四重挑战  搜狐网",
+      "ai_score": 80.0,
+      "ai_label": "embodied_ai",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 28.3,
+      "writing_value": 0,
+      "total_score": 118.3
     },
     {
       "id": "48c09aa66b9de291f9491ddb1a5e380e0570c8dd",
@@ -2121,9 +2331,30 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.34,
+      "timeliness": 28.19,
       "writing_value": 0,
-      "total_score": 118.34
+      "total_score": 118.19
+    },
+    {
+      "id": "d77e1ca07225a88b22f349330200c79740cdc4fd",
+      "title": "人机对打 你能打赢机器人吗？ #人形机器人 #2026世界机器人大会 #宇树科技 （记者 缪领） - 搜狐网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQMUNJTTBqbllKaDZIQWp5cHB3ckNuU3hYMG9qSjhsR2EtLWJubWhBWHU2YzdoanRIRElMbHU3UmhZWThLNjMtZ2JtNWtzUWgtS0hkUE52VGlQeTVzdkxjbnJDUjN2eDhfRUo3NXJuTmFid3lmRDFON1ZKN3NXbnpwdTJwME9JZDFrbGo3Yw?oc=5",
+      "published_at": "2026-08-21T11:25:08+00:00",
+      "category": "国内人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国内人形机器人资讯",
+      "source": "国内人形机器人资讯",
+      "site_id": "国内人形机器人资讯",
+      "description": "人机对打 你能打赢机器人吗？ #人形机器人 #2026世界机器人大会 #宇树科技 （记者 缪领）  搜狐网",
+      "ai_score": 80.0,
+      "ai_label": "humanoid",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 28.01,
+      "writing_value": 0,
+      "total_score": 118.01
     },
     {
       "id": "bc86e9d977ce508d17428f346653c17be69fde14",
@@ -2142,9 +2373,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.86,
+      "timeliness": 27.71,
       "writing_value": 0,
-      "total_score": 117.86
+      "total_score": 117.71
     },
     {
       "id": "39cdf92bf51d739498067f65d31ffac414105d32",
@@ -2152,20 +2383,41 @@
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE13X05nd2xRaU0ya0xLeklxeUVFbzh2MDRVZGVOamFJYUpmN0RUb3pONnZMWTBPR3ZYZW9qWjdjdnhFOVE5bHQ4SGY5QmhieGdfeE9IOU1GLUVKYzN5a3QzaWNMSUN3dTZHU0xTYg?oc=5",
       "published_at": "2026-08-21T11:03:00+00:00",
-      "category": "国内具身智能资讯",
-      "gn_label": "embodied_ai",
-      "site_name": "国内具身智能资讯",
-      "source": "国内具身智能资讯",
-      "site_id": "国内具身智能资讯",
+      "category": "国内人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国内人形机器人资讯",
+      "source": "国内人形机器人资讯",
+      "site_id": "国内人形机器人资讯",
       "description": "超智能新品天工Omni上市 北京人形WRC论坛加速推动具身智能产业发展  zqrb.cn",
       "ai_score": 80.0,
-      "ai_label": "embodied_ai",
+      "ai_label": "humanoid",
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.79,
+      "timeliness": 27.64,
       "writing_value": 0,
-      "total_score": 117.79
+      "total_score": 117.64
+    },
+    {
+      "id": "d2067b83b835f2955c735437bb92ad3520477682",
+      "title": "XRPPower: Artificial Intelligence Robots Are Changing the Future of Digital Finance - markets.businessinsider.com",
+      "title_zh": "XRPPower：人工智能机器人正在改变数字金融的未来 - markets.businessinsider.com",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQR3BXWVVXSE9PQVlDbHhSYW12b3V4WFoyVm5acmZYOWh5ZGNnWDRoV2hnV2ptT28tSGI4VXRsT0lsb09KaVNNWXZGeHIxRklxbjNwOTVFVFRuVEdRVUZLaHN3V3p1WUtVcS0wT3hzXzhkaC02UlotQnB6cHcxX2FOVDZrTDN3LUdYV3ZzYWxXZG1md3EyUmpSbVFMTHFPb2JINkdzNjV0alVnc3puWFM2cHM3YXN4X1FZeEVkM0xob0F3am05NTVPc0EyeXZXZExjRXZaZkVhc18?oc=5",
+      "published_at": "2026-08-21T13:21:56+00:00",
+      "category": "国外机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国外机器人资讯",
+      "source": "国外机器人资讯",
+      "site_id": "国外机器人资讯",
+      "description": "XRPPower: Artificial Intelligence Robots Are Changing the Future of Digital Finance  markets.businessinsider.com",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 29.95,
+      "writing_value": 5,
+      "total_score": 114.95
     },
     {
       "id": "6063c34caf1341aeb625d70f85b713251359a9db",
@@ -2184,14 +2436,14 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 29.16,
+      "timeliness": 29.01,
       "writing_value": 5,
-      "total_score": 114.16
+      "total_score": 114.01
     },
     {
       "id": "775be1e197e7cf73c96702a52c80cc01ed7ab5b3",
       "title": "CUHK researchers perform city’s first robot-assisted pelvic fracture surgery - South China Morning Post",
-      "title_zh": "中大研究人员进行全港首例机械人辅助骨盆骨折手术 - 南华早报",
+      "title_zh": "中大研究人员施行全港首例机械人辅助骨盆骨折手术 - 南华早报",
       "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNTF9IdU1EUmJaN0Y5d19mV3g3QldubHQ1aWtBRThKbXZCNU5hYW5IVXpyOS16UXBiQXNFLUx0NUhFWGJocFI5S3VlOXNSUURlODJseUlLc2VyRGkyWGZlaURyQnpXcXJ1SnZhUHF6Q2lJVkFHbHl5S3FKcWl5TGk5MDVwMFFGUDFyVHVTQWZSME1oUXl5X0Noblo1aFlna29xcEFTVkZtVm5FTVpaOU1OT1loWmlkU0cxMGNMWlh5c0dIc05HRWtTMUVQR0hkNlg4Vk5wVjJVSDd0NDU0UmZ3dzB5d3piZw?oc=5",
       "published_at": "2026-08-21T11:00:07+00:00",
       "category": "国外机器人资讯",
@@ -2205,9 +2457,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 27.74,
+      "timeliness": 27.59,
       "writing_value": 5,
-      "total_score": 112.74
+      "total_score": 112.59
     },
     {
       "id": "1cd5b02e0b56d665ef45370a98a07f6e0978a164",
@@ -2226,9 +2478,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.74,
+      "timeliness": 29.59,
       "writing_value": 0,
-      "total_score": 104.74
+      "total_score": 104.59
     },
     {
       "id": "c20ee3162196ff1815e162152ea678e832e9a07a",
@@ -2247,14 +2499,14 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.61,
+      "timeliness": 29.46,
       "writing_value": 0,
-      "total_score": 104.61
+      "total_score": 104.46
     },
     {
-      "id": "3e2e77258eeb28076eac5dec7a23f9a76477cd33",
-      "title": "FDA authorizes Vitestro's Aletta robotic blood draw device - qz.com",
-      "title_zh": "FDA授权Vitestro公司Aletta机器人抽血设备 - 知乎",
+      "id": "59629edf52e95ec4662ef4563aedf843d74abc51",
+      "title": "The FDA just authorized the first robot that can draw blood on its own - qz.com",
+      "title_zh": "FDA刚刚授权首台可自行抽血的机器人_手机网易网",
       "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9hSnFhdXlGUEp5WWYtVFhaVGNuSGRTZGxKOHBwQnRnZnJuSHAxVDZTUTB6eEZRMGZFYnVhdm1BdmlGZVl2T3hMbzF1LWZVR3Z5Tk9aMnR5eFpjWFZtSktYYzR4aGtrcVppNWNjUDNGNmtCUExJeHc?oc=5",
       "published_at": "2026-08-21T12:48:41+00:00",
       "category": "国外机器人资讯",
@@ -2262,15 +2514,15 @@
       "site_name": "国外机器人资讯",
       "source": "国外机器人资讯",
       "site_id": "国外机器人资讯",
-      "description": "FDA authorizes Vitestro's Aletta robotic blood draw device  qz.com",
+      "description": "The FDA just authorized the first robot that can draw blood on its own  qz.com",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.55,
+      "timeliness": 29.4,
       "writing_value": 0,
-      "total_score": 104.55
+      "total_score": 104.4
     },
     {
       "id": "d977d2173cc95cef9d27cef0ea56e1b0d9fec68b",
@@ -2289,9 +2541,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.31,
+      "timeliness": 29.16,
       "writing_value": 0,
-      "total_score": 104.31
+      "total_score": 104.16
     },
     {
       "id": "0e8d7ee92ecafed3a0c9e9e6778519480d98af53",
@@ -2310,9 +2562,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.03,
+      "timeliness": 28.88,
       "writing_value": 0,
-      "total_score": 104.03
+      "total_score": 103.88
     },
     {
       "id": "3b85fd7b843f2ca9206ffbd85961fcf5a9fd1150",
@@ -2331,9 +2583,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.78,
+      "timeliness": 28.62,
       "writing_value": 0,
-      "total_score": 103.78
+      "total_score": 103.62
     },
     {
       "id": "cd6b57a8eb8a49f19dfd316494120168d12ecdcc",
@@ -2352,9 +2604,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.73,
+      "timeliness": 28.58,
       "writing_value": 0,
-      "total_score": 103.73
+      "total_score": 103.58
     },
     {
       "id": "8eaaed1c12e284b0496c1c8accc92edd83f2a311",
@@ -2373,9 +2625,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.59,
+      "timeliness": 28.43,
       "writing_value": 0,
-      "total_score": 103.59
+      "total_score": 103.43
     },
     {
       "id": "7a6c5cc26c7f2ff0832d3fc4ceab22d13e28e01b",
@@ -2394,9 +2646,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.55,
+      "timeliness": 28.4,
       "writing_value": 0,
-      "total_score": 103.55
+      "total_score": 103.4
     },
     {
       "id": "c9b3e6338354a4d578618826012bb16a85f498b5",
@@ -2415,9 +2667,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.05,
+      "timeliness": 27.9,
       "writing_value": 0,
-      "total_score": 103.05
+      "total_score": 102.9
     },
     {
       "id": "a9b594704bdae5efc1b7bca2c3d1bde0e0c29757",
@@ -2436,9 +2688,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.05,
+      "timeliness": 27.9,
       "writing_value": 0,
-      "total_score": 103.05
+      "total_score": 102.9
     },
     {
       "id": "49045d22abe61eeebb245d501719faf771be17fa",
@@ -2457,9 +2709,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.02,
+      "timeliness": 27.87,
       "writing_value": 0,
-      "total_score": 103.02
+      "total_score": 102.87
     },
     {
       "id": "c70955ca8bdb506ed664631e68110b660e8d97be",
@@ -2478,9 +2730,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.74,
+      "timeliness": 27.59,
       "writing_value": 0,
-      "total_score": 102.74
+      "total_score": 102.59
     },
     {
       "id": "ea7c3fbe2c3f8ff54b48fe41cf026526516e82cb",
@@ -2499,9 +2751,9 @@
       "relevance": 0.5,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.91,
+      "timeliness": 27.76,
       "writing_value": 0,
-      "total_score": 87.91
+      "total_score": 87.76
     },
     {
       "id": "9a2054b953a3afff5ad0c0108475b36954120a54",
@@ -2520,9 +2772,30 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 5,
-      "timeliness": 29.96,
+      "timeliness": 29.81,
       "writing_value": 5,
-      "total_score": 84.96
+      "total_score": 84.81
+    },
+    {
+      "id": "87f97a4bc5b1afa4b34d8576a0c33b5b65d25952",
+      "title": "当仿生机器人走进现实，商业与伦理双道考题待解｜聚焦2026WRC - 新浪财经",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5CN3MwNmNZMmZ3Q3dmYlg0c2RMNVdFdWtwSC0yblZScEtYZ3NTVWJkNjdJMVZjNnptV0EyQ1NGZ3d6ZVZPcklKUFB2ZnhMSGw0QVhkWHJIQkRSbkxiNXNiUTFHOXoyNTduM2dmMDRB?oc=5",
+      "published_at": "2026-08-21T13:07:57+00:00",
+      "category": "国内机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国内机器人资讯",
+      "source": "国内机器人资讯",
+      "site_id": "国内机器人资讯",
+      "description": "当仿生机器人走进现实，商业与伦理双道考题待解｜聚焦2026WRC  新浪财经",
+      "ai_score": 35.0,
+      "ai_label": "robotics",
+      "relevance": 0.35,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.72,
+      "writing_value": 0,
+      "total_score": 74.72
     },
     {
       "id": "c6871965f00a6883e069ea6bdb4ad1b1e0ba3532",
@@ -2541,9 +2814,30 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.81,
+      "timeliness": 29.66,
       "writing_value": 0,
-      "total_score": 74.81
+      "total_score": 74.66
+    },
+    {
+      "id": "6af79b0a734a8eb3655eae5b1a351a73c346cff9",
+      "title": "直击2026世界机器人大会：云深处人猫狗多形态机器人集中亮相 - 证券市场周刊",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE0tSENNc0hoOEJSVmYwUjZXdnhQam5vNm1laEYzS25SbkZmTzZqaHh4TzdRaHBMVlpiUkRzVUozMFhJckc2aks1emhMcXQ2LUlGdk9GVVRDc0hwbWxXaGtUdWhEaks?oc=5",
+      "published_at": "2026-08-21T12:59:00+00:00",
+      "category": "国内人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国内人形机器人资讯",
+      "source": "国内人形机器人资讯",
+      "site_id": "国内人形机器人资讯",
+      "description": "直击2026世界机器人大会：云深处人猫狗多形态机器人集中亮相  证券市场周刊",
+      "ai_score": 35.0,
+      "ai_label": "humanoid",
+      "relevance": 0.35,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.57,
+      "writing_value": 0,
+      "total_score": 74.57
     },
     {
       "id": "aa66bfb1a234b9190684d5e7ce8620bfbd6f2c74",
@@ -2562,9 +2856,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.66,
+      "timeliness": 29.5,
       "writing_value": 0,
-      "total_score": 74.66
+      "total_score": 74.5
     },
     {
       "id": "c35caf15a3c204485236e9aa4ee4deb0bca45723",
@@ -2583,9 +2877,30 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.6,
+      "timeliness": 29.45,
       "writing_value": 0,
-      "total_score": 74.6
+      "total_score": 74.45
+    },
+    {
+      "id": "711920138a79cb87bd98435a71c5d8f62852be98",
+      "title": "直击WRC丨海尔发布全自主家用AI烹饪机器人，可完全接管做饭、做菜 - finance.sina.com.cn",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOZDdIeS1tam5fN29IR2oxVFl2X0xUY3hMT0hRU3MxLVF4bFZUaHc4TEYyeEpKV3BoN05PRG9WN1hpRWVDNm5SZnZ2MF9pRFI5UFo3ZWFZYXR3SDFPcUJUNi0wVm9rZVF4QzBXdWlFcTNhTXNGbW5oNFNacFlRNzNrS2czMDFROXRzNlBLaFZVSHdMVEZXOW5xNG1BR3hqS3pDQ200SVNfV1dVRVVzRmZ2Q3d6ejB4M1NSdkZFZzEwdldYRFhTaGQ2R3FKYjRUYi1Y?oc=5",
+      "published_at": "2026-08-21T12:45:00+00:00",
+      "category": "国内机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国内机器人资讯",
+      "source": "国内机器人资讯",
+      "site_id": "国内机器人资讯",
+      "description": "直击WRC丨海尔发布全自主家用AI烹饪机器人，可完全接管做饭、做菜  finance.sina.com.cn",
+      "ai_score": 35.0,
+      "ai_label": "robotics",
+      "relevance": 0.35,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.34,
+      "writing_value": 0,
+      "total_score": 74.34
     },
     {
       "id": "e3871c99a519792a06f19f4a4dfafcd92df57c5d",
@@ -2604,9 +2919,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.47,
+      "timeliness": 29.32,
       "writing_value": 0,
-      "total_score": 74.47
+      "total_score": 74.32
     },
     {
       "id": "ddc6eba64b0e3324e14d5373e8fad8aa7c1af0e5",
@@ -2625,9 +2940,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.47,
+      "timeliness": 29.32,
       "writing_value": 0,
-      "total_score": 74.47
+      "total_score": 74.32
     },
     {
       "id": "3c2ed1ec8ca644e0978f715e3de2bee2860a0e20",
@@ -2646,9 +2961,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.33,
+      "timeliness": 29.17,
       "writing_value": 0,
-      "total_score": 74.33
+      "total_score": 74.17
     },
     {
       "id": "dbdac59c2ef0e48e447c4727ef7a310db8147663",
@@ -2667,9 +2982,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.25,
+      "timeliness": 29.1,
       "writing_value": 0,
-      "total_score": 74.25
+      "total_score": 74.1
     },
     {
       "id": "f7b71e1365b0b64100a09c47dac099cb577cd58e",
@@ -2688,9 +3003,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.24,
+      "timeliness": 29.09,
       "writing_value": 0,
-      "total_score": 74.24
+      "total_score": 74.09
     },
     {
       "id": "c798d2d28e86ea899ca30a742b3bdf0802149173",
@@ -2709,9 +3024,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.17,
+      "timeliness": 29.02,
       "writing_value": 0,
-      "total_score": 74.17
+      "total_score": 74.02
     },
     {
       "id": "41fc5ce93d9c09c690ae62126023704bf1303740",
@@ -2730,9 +3045,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.99,
+      "timeliness": 28.84,
       "writing_value": 0,
-      "total_score": 73.99
+      "total_score": 73.84
     },
     {
       "id": "991153788babbfa3c55648c68778115c91105de8",
@@ -2751,9 +3066,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.95,
+      "timeliness": 28.8,
       "writing_value": 0,
-      "total_score": 73.95
+      "total_score": 73.8
     },
     {
       "id": "a4ccc88bc9ff02d6c59170f8853d4f407610273a",
@@ -2772,9 +3087,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.83,
+      "timeliness": 28.68,
       "writing_value": 0,
-      "total_score": 73.83
+      "total_score": 73.68
     },
     {
       "id": "f2fce388026aba0216fb9bc8908d4c9d8e855eb0",
@@ -2793,9 +3108,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.76,
+      "timeliness": 28.61,
       "writing_value": 0,
-      "total_score": 73.76
+      "total_score": 73.61
     },
     {
       "id": "83ce8eb4f5955a233a2ebd49e5edac09774ec1c4",
@@ -2814,9 +3129,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.55,
+      "timeliness": 28.4,
       "writing_value": 0,
-      "total_score": 73.55
+      "total_score": 73.4
     },
     {
       "id": "428dfc326d5716540b1ac622a8e8c0e0b56c37fc",
@@ -2835,9 +3150,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.51,
+      "timeliness": 28.36,
       "writing_value": 0,
-      "total_score": 73.51
+      "total_score": 73.36
     },
     {
       "id": "f47606b2339af413e17061d86d8203362f8cc9d6",
@@ -2845,20 +3160,20 @@
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQWmFfQUdSZVhjRWowR3c0NFE2UU0xRWdVVEdkMWNwTW1XUk5waHhkVkNibEZTR3dFUkMyWFpHNHQwRGxyQy1LZC1BMG1kZ1hRZXZzM1BYaUgzYmE1V1M0QTJhU3RBejd4SmduSUV1Z2ZKVWx5QTZmUGVJdHVJc3Nrcm5UdjAwaUVNNHhfV2ljTHhta2FaWERZUDFTUmpVYjNldWlUZ3R2ZDN1Uk1MZnRJOXJn?oc=5",
       "published_at": "2026-08-21T11:45:29+00:00",
-      "category": "国内具身智能资讯",
-      "gn_label": "embodied_ai",
-      "site_name": "国内具身智能资讯",
-      "source": "国内具身智能资讯",
-      "site_id": "国内具身智能资讯",
+      "category": "国内人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国内人形机器人资讯",
+      "source": "国内人形机器人资讯",
+      "site_id": "国内人形机器人资讯",
       "description": "WRC2026观点 | 中科云谷CEO曾光：从“单机智能”到“群体智能”，工业机器人落地需跨越“语言”鸿沟  finance.sina.com.cn",
       "ai_score": 35.0,
-      "ai_label": "embodied_ai",
+      "ai_label": "humanoid",
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.5,
+      "timeliness": 28.34,
       "writing_value": 0,
-      "total_score": 73.5
+      "total_score": 73.34
     },
     {
       "id": "6b27415a9c9e5ffce6827ad5e347b6bf4e1231b9",
@@ -2877,9 +3192,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.49,
+      "timeliness": 28.34,
       "writing_value": 0,
-      "total_score": 73.49
+      "total_score": 73.34
     },
     {
       "id": "4e007c34ad19cd76607f157717804749208089a9",
@@ -2898,9 +3213,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.45,
+      "timeliness": 28.3,
       "writing_value": 0,
-      "total_score": 73.45
+      "total_score": 73.3
     },
     {
       "id": "b0348c741e26620c799de55d3c32c2647a502e8c",
@@ -2919,9 +3234,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.42,
+      "timeliness": 28.27,
       "writing_value": 0,
-      "total_score": 73.42
+      "total_score": 73.27
     },
     {
       "id": "02c9048e3eb1d726b05504221be2121af39c9cd1",
@@ -2940,9 +3255,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.4,
+      "timeliness": 28.25,
       "writing_value": 0,
-      "total_score": 73.4
+      "total_score": 73.25
     },
     {
       "id": "f357307c5684e9bd700ee65f9e266a292126d455",
@@ -2961,9 +3276,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.27,
+      "timeliness": 28.12,
       "writing_value": 0,
-      "total_score": 73.27
+      "total_score": 73.12
     },
     {
       "id": "2fb2798446829f2e1372f32a564d0fdda089ae07",
@@ -2982,9 +3297,30 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.25,
+      "timeliness": 28.1,
       "writing_value": 0,
-      "total_score": 73.25
+      "total_score": 73.1
+    },
+    {
+      "id": "5f23fba3aa80456e1c6486ea65484ccff5a5234b",
+      "title": "从3C到机器人：爱租机被全资收购背后的租赁变局 - t.cj.sina.cn",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5PZ3hVTmxYTnkwOURlRjBOTEdodWkyMUltcWZLUGdReW5icVZ3WlVKNzExYUU0a3dTX3Q3Skt2REg3LWZqREdtYzFfZ0l2U0J1TXlfTjUyOXE0M0RTcHd6azBPa1dWazRaakctWnkzTTNQZw?oc=5",
+      "published_at": "2026-08-21T11:29:42+00:00",
+      "category": "国内机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国内机器人资讯",
+      "source": "国内机器人资讯",
+      "site_id": "国内机器人资讯",
+      "description": "从3C到机器人：爱租机被全资收购背后的租赁变局  t.cj.sina.cn",
+      "ai_score": 35.0,
+      "ai_label": "robotics",
+      "relevance": 0.35,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 28.08,
+      "writing_value": 0,
+      "total_score": 73.08
     },
     {
       "id": "f5b7c478dcb429622d5bfd4e204c6ee1338b0aaa",
@@ -3003,9 +3339,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.23,
+      "timeliness": 28.08,
       "writing_value": 0,
-      "total_score": 73.23
+      "total_score": 73.08
     },
     {
       "id": "c0e28224e2a8fa426636df2ecbfeb39f98b03ad0",
@@ -3024,9 +3360,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.22,
+      "timeliness": 28.07,
       "writing_value": 0,
-      "total_score": 73.22
+      "total_score": 73.07
     },
     {
       "id": "1e02fba5c8e951b6439f3c02ecda72d2ff1a4148",
@@ -3045,9 +3381,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.19,
+      "timeliness": 28.04,
       "writing_value": 0,
-      "total_score": 73.19
+      "total_score": 73.04
     },
     {
       "id": "07aeef693574950a458a169930871e31e5816917",
@@ -3066,30 +3402,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.18,
+      "timeliness": 28.03,
       "writing_value": 0,
-      "total_score": 73.18
-    },
-    {
-      "id": "cb0fc5cccebb1ce675438c737c8c48493460f042",
-      "title": "【投融资动态】艾莫机器人天使轮融资，投资方为轩元资本、初心资本等 - finance.sina.com.cn",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1YMlZZa01BYkMzUl95c3FSdW5nUXVyWEFQSzVVYUhPcFpVU2VVWWRPUXozMk9zci1sYkJZeW14QklMME1HZXA3dVIyeVF4UWxwOVMwMGJKSlR4Xzc0dV9NMnBkWW5ZenVxSmE0OXpB?oc=5",
-      "published_at": "2026-08-21T11:25:01+00:00",
-      "category": "国内机器人资讯",
-      "gn_label": "robotics",
-      "site_name": "国内机器人资讯",
-      "source": "国内机器人资讯",
-      "site_id": "国内机器人资讯",
-      "description": "【投融资动态】艾莫机器人天使轮融资，投资方为轩元资本、初心资本等  finance.sina.com.cn",
-      "ai_score": 35.0,
-      "ai_label": "robotics",
-      "relevance": 0.35,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 28.15,
-      "writing_value": 0,
-      "total_score": 73.15
+      "total_score": 73.03
     },
     {
       "id": "54779d972d69b43a33d173b7f0685b0cdd283026",
@@ -3108,30 +3423,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.07,
+      "timeliness": 27.92,
       "writing_value": 0,
-      "total_score": 73.07
-    },
-    {
-      "id": "df7f9b0a71fb1bfbbabec86ffd3bc7a642c4c226",
-      "title": "从多机协同到真实任务，中科慧灵以“协同”打开机器人融入世界的现实路径 - 新华网客户端",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNOWtkcEVKeUFTSUw0dmtXb3dVei0tU0tjSXZWM2NMcElwVE1mTnBkVzYtdVdsSkxOa0VQUTBzTExPTXRwME1MR2J1QUgwaFpGSHRvelowTUdjM1pKakRBcmE2amFJeWJBNE84TDAyWlo3VmZmUmhhWTBlQ2NiVzlMZk1hRWJzYnNWTTN2cHN1ZFhKZC1pUGV2UlJR?oc=5",
-      "published_at": "2026-08-21T11:15:00+00:00",
-      "category": "国内具身智能资讯",
-      "gn_label": "embodied_ai",
-      "site_name": "国内具身智能资讯",
-      "source": "国内具身智能资讯",
-      "site_id": "国内具身智能资讯",
-      "description": "从多机协同到真实任务，中科慧灵以“协同”打开机器人融入世界的现实路径  新华网客户端",
-      "ai_score": 35.0,
-      "ai_label": "embodied_ai",
-      "relevance": 0.35,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 27.99,
-      "writing_value": 0,
-      "total_score": 72.99
+      "total_score": 72.92
     },
     {
       "id": "1c71d292c9150bf4f9e25d1a6af64537603b6959",
@@ -3150,9 +3444,30 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.99,
+      "timeliness": 27.84,
       "writing_value": 0,
-      "total_score": 72.99
+      "total_score": 72.84
+    },
+    {
+      "id": "df7f9b0a71fb1bfbbabec86ffd3bc7a642c4c226",
+      "title": "从多机协同到真实任务，中科慧灵以“协同”打开机器人融入世界的现实路径 - 新华网客户端",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNOWtkcEVKeUFTSUw0dmtXb3dVei0tU0tjSXZWM2NMcElwVE1mTnBkVzYtdVdsSkxOa0VQUTBzTExPTXRwME1MR2J1QUgwaFpGSHRvelowTUdjM1pKakRBcmE2amFJeWJBNE84TDAyWlo3VmZmUmhhWTBlQ2NiVzlMZk1hRWJzYnNWTTN2cHN1ZFhKZC1pUGV2UlJR?oc=5",
+      "published_at": "2026-08-21T11:15:00+00:00",
+      "category": "国内具身智能资讯",
+      "gn_label": "embodied_ai",
+      "site_name": "国内具身智能资讯",
+      "source": "国内具身智能资讯",
+      "site_id": "国内具身智能资讯",
+      "description": "从多机协同到真实任务，中科慧灵以“协同”打开机器人融入世界的现实路径  新华网客户端",
+      "ai_score": 35.0,
+      "ai_label": "embodied_ai",
+      "relevance": 0.35,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 27.84,
+      "writing_value": 0,
+      "total_score": 72.84
     },
     {
       "id": "2dce0bc194816cba3b348c0ff071db4d0502327b",
@@ -3171,9 +3486,30 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.99,
+      "timeliness": 27.84,
       "writing_value": 0,
-      "total_score": 72.99
+      "total_score": 72.84
+    },
+    {
+      "id": "88027b4932fcb64018bec79d0ba6eb524cc13944",
+      "title": "一起看名场面！2026年世界机器人大会近日在北京开幕 - 京报网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5wVThqb2FsTWZvTmU0bW1wcE9qREhmcFZGb3NlMHQ0LTJLZHJmU29EWnhuQndSdVRPSlBMMy1IQnRhNEc5TGJwVXpZZjVaYzFzcTRjS3VVUFdnbkFGalE?oc=5",
+      "published_at": "2026-08-21T11:14:50+00:00",
+      "category": "国内机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国内机器人资讯",
+      "source": "国内机器人资讯",
+      "site_id": "国内机器人资讯",
+      "description": "一起看名场面！2026年世界机器人大会近日在北京开幕  京报网",
+      "ai_score": 35.0,
+      "ai_label": "robotics",
+      "relevance": 0.35,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 27.83,
+      "writing_value": 0,
+      "total_score": 72.83
     },
     {
       "id": "e9a90327aaf0fbf54cb7ac3225046e0c1891cd2f",
@@ -3192,9 +3528,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.97,
+      "timeliness": 27.82,
       "writing_value": 0,
-      "total_score": 72.97
+      "total_score": 72.82
     }
   ],
   "items_all_raw": [
@@ -3215,14 +3551,14 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 5,
-      "timeliness": 29.52,
+      "timeliness": 29.37,
       "writing_value": 5,
-      "total_score": 129.52
+      "total_score": 129.37
     },
     {
       "id": "eb479ed0fdb47c037d42388517be48aea5150064",
       "title": "Robot guide dog hits the street, bringing embodied intelligence benefits to daily life - news.cgtn.com",
-      "title_zh": "机器人导盲犬亮相街头，为日常生活带来具身智能福利_新闻中心",
+      "title_zh": "机器人导盲犬亮相街头，为日常生活带来具身智能福利",
       "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxONWxrWE0xdEExMm9aTWdtMHNFRU5YbVZuMGNGbVktM2RkeVNMenBGZDlaeTU3Z2NTczR4SGh1MHBDSlAxa1ZKVzJ6QVhMcW5nMWxOaEVjZ28wOGJiSUNRVk9NOVQ2WmpueGdhNk9WM0N6LXE1SlV3MUlTOERIMmVIb01MNW9tckhMcHJUS1BaMDVETFRVQmZMcHJjWHRJVXd5eUlfSmJmMkxkUQ?oc=5",
       "published_at": "2026-08-21T11:33:22+00:00",
       "category": "国外机器人资讯",
@@ -3236,9 +3572,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 5,
-      "timeliness": 28.29,
+      "timeliness": 28.14,
       "writing_value": 5,
-      "total_score": 128.29
+      "total_score": 128.14
     },
     {
       "id": "b54006555b9f395393e03eae5596e6b21e388d99",
@@ -3257,9 +3593,30 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 5,
-      "timeliness": 28.07,
+      "timeliness": 27.92,
       "writing_value": 5,
-      "total_score": 128.07
+      "total_score": 127.92
+    },
+    {
+      "id": "bc66a5baa1c739bab053813fbaa13f828db5a4a2",
+      "title": "The State of Humanoid Robotics in 2026: Trends, Challenges and Opportunities - AI Insider",
+      "title_zh": "2026 年人形机器人的现状：趋势、挑战和机遇 - AI Insider",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQSEdoTUhXVXo1ejJhdnRmNkJqNVkwVTlQdUZPSjI0SjhKMm01bDN5bHRPNjcxSkVRdjRTcEVQMWtJU2psdE92QjhHZXZ0MDRGdmZQWEI0YUFWemhuU1AxeWhfWS1XMDF1ZVRtQzBudXU2Q1lyUjRUN1pYNGx4SnRSVHhVYm05anhyb2hNYmF2aElGVFRXbnVUcm9Ub2NkU1NlczNZVmpjR0JsNWk4Z2dKbmtB?oc=5",
+      "published_at": "2026-08-21T13:18:45+00:00",
+      "category": "国外人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国外人形机器人资讯",
+      "source": "国外人形机器人资讯",
+      "site_id": "国外人形机器人资讯",
+      "description": "The State of Humanoid Robotics in 2026: Trends, Challenges and Opportunities  AI Insider",
+      "ai_score": 80.0,
+      "ai_label": "humanoid",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.9,
+      "writing_value": 0,
+      "total_score": 119.9
     },
     {
       "id": "76df22dc4a979670342c779a923ac69fe6fbc3ed",
@@ -3278,9 +3635,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.89,
+      "timeliness": 29.74,
       "writing_value": 0,
-      "total_score": 119.89
+      "total_score": 119.74
     },
     {
       "id": "7ad948b1fc47460b2b30df8e715b219d5d926533",
@@ -3299,9 +3656,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.74,
+      "timeliness": 29.59,
       "writing_value": 0,
-      "total_score": 119.74
+      "total_score": 119.59
     },
     {
       "id": "b0e90565db40fb0bf5dd247a940ca00ba357183e",
@@ -3309,20 +3666,20 @@
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9wN2poT2trcldLYkJsWXMwYVdDUDVlRzd5ZWkxNEwweEdXSU41V0x2Yk9xdTI5ZEEybV9STmpnb1MyS1hybTNfV0hGMGhDd2gyMF9YS2RRdjF0aTJvTGRKNGp0c243dw?oc=5",
       "published_at": "2026-08-21T12:51:00+00:00",
-      "category": "国内具身智能资讯",
-      "gn_label": "embodied_ai",
-      "site_name": "国内具身智能资讯",
-      "source": "国内具身智能资讯",
-      "site_id": "国内具身智能资讯",
+      "category": "国内人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国内人形机器人资讯",
+      "source": "国内人形机器人资讯",
+      "site_id": "国内人形机器人资讯",
       "description": "逐际动力全矩阵产品亮相世界机器人大会 完成多轮融资加速具身智能落地  每日经济新闻",
       "ai_score": 80.0,
-      "ai_label": "embodied_ai",
+      "ai_label": "humanoid",
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.59,
+      "timeliness": 29.44,
       "writing_value": 0,
-      "total_score": 119.59
+      "total_score": 119.44
     },
     {
       "id": "5c8081b44aee0d13ebff5f74e92948956740aa3a",
@@ -3341,9 +3698,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.49,
+      "timeliness": 29.34,
       "writing_value": 0,
-      "total_score": 119.49
+      "total_score": 119.34
     },
     {
       "id": "0d456b35bff38377ef4f0e3056f2112e9096169b",
@@ -3362,9 +3719,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.31,
+      "timeliness": 29.15,
       "writing_value": 0,
-      "total_score": 119.31
+      "total_score": 119.15
     },
     {
       "id": "68de996c1ad30a96896984d4395a6bc228eeb9dd",
@@ -3372,20 +3729,20 @@
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE91YVdRYXVnUU44UTZGTFM4WkE0OEtUSlBfajYwTVRnSHZKa0xicW80SnlIalJNOGtnREpIeF9uRWZ1U2xLSkxWR2t1TGhOSXZZV3pIak9hUGJSR0xXTGYxNXdhNWxQY2VMMms2UGxzaEtFaE51Nnh4eDFTdUY4QQ?oc=5",
       "published_at": "2026-08-21T12:26:38+00:00",
-      "category": "国内具身智能资讯",
-      "gn_label": "embodied_ai",
-      "site_name": "国内具身智能资讯",
-      "source": "国内具身智能资讯",
-      "site_id": "国内具身智能资讯",
+      "category": "国内人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国内人形机器人资讯",
+      "source": "国内人形机器人资讯",
+      "site_id": "国内人形机器人资讯",
       "description": "中国具身智能迎来规模化应用关键窗口期  新华网",
       "ai_score": 80.0,
-      "ai_label": "embodied_ai",
+      "ai_label": "humanoid",
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.18,
+      "timeliness": 29.03,
       "writing_value": 0,
-      "total_score": 119.18
+      "total_score": 119.03
     },
     {
       "id": "76434e2460c1ef130be800fe319cc00c54b73555",
@@ -3404,9 +3761,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.17,
+      "timeliness": 29.02,
       "writing_value": 0,
-      "total_score": 119.17
+      "total_score": 119.02
     },
     {
       "id": "a5b343c37d25feab01d216997462b9c80e75645e",
@@ -3425,9 +3782,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.02,
+      "timeliness": 28.87,
       "writing_value": 0,
-      "total_score": 119.02
+      "total_score": 118.87
     },
     {
       "id": "e72741b0aa4b4c1dd414f0b0961f5819a8c953cd",
@@ -3446,9 +3803,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.94,
+      "timeliness": 28.79,
       "writing_value": 0,
-      "total_score": 118.94
+      "total_score": 118.79
     },
     {
       "id": "0c8c022b94227a4ddb60cb983d37002755c7f116",
@@ -3467,9 +3824,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.92,
+      "timeliness": 28.77,
       "writing_value": 0,
-      "total_score": 118.92
+      "total_score": 118.77
     },
     {
       "id": "fa46b7ef09d6a9dec44508d69e60c752b679bcc1",
@@ -3488,9 +3845,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.9,
+      "timeliness": 28.75,
       "writing_value": 0,
-      "total_score": 118.9
+      "total_score": 118.75
     },
     {
       "id": "27a413c13dc38505c983acd11e90cbdb2d6800e5",
@@ -3509,9 +3866,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.89,
+      "timeliness": 28.74,
       "writing_value": 0,
-      "total_score": 118.89
+      "total_score": 118.74
     },
     {
       "id": "f4275ad6eb89ca15fe22c1258424bc7881317a76",
@@ -3530,9 +3887,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.87,
+      "timeliness": 28.72,
       "writing_value": 0,
-      "total_score": 118.87
+      "total_score": 118.72
     },
     {
       "id": "b30425402211eebda81f78937bef44ef366b24ef",
@@ -3551,9 +3908,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.85,
+      "timeliness": 28.7,
       "writing_value": 0,
-      "total_score": 118.85
+      "total_score": 118.7
     },
     {
       "id": "44c48fae53fece474f9a7b2a5f32a67febdbd0a3",
@@ -3572,30 +3929,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.8,
+      "timeliness": 28.65,
       "writing_value": 0,
-      "total_score": 118.8
-    },
-    {
-      "id": "d46815f21d1edc0161495226adaea46752ad7b26",
-      "title": "WRC2026现场直击｜法奥携多场景应用探索具身智能落地新路径 - 搜狐网",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNZ1o5OEtUak1RYXNWbEpxMFYycUFMZGtnX09oS0tSNXBJaUFhX1R0N2hsakdHN3phUkJRZmxSS3VPMm9aT3M3NkpHeXpQeHJRTUFBR21EcWpQdTJpT3dlamRLZzBaNlFnbFR5OVd0Q1pOakR1eWVRcVhRSERXVWxOLVdodllSWnpk?oc=5",
-      "published_at": "2026-08-21T12:00:00+00:00",
-      "category": "国内具身智能资讯",
-      "gn_label": "embodied_ai",
-      "site_name": "国内具身智能资讯",
-      "source": "国内具身智能资讯",
-      "site_id": "国内具身智能资讯",
-      "description": "WRC2026现场直击｜法奥携多场景应用探索具身智能落地新路径  搜狐网",
-      "ai_score": 80.0,
-      "ai_label": "embodied_ai",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 28.74,
-      "writing_value": 0,
-      "total_score": 118.74
+      "total_score": 118.65
     },
     {
       "id": "4930596fbed8565491ad6e24d74e47595b9c2202",
@@ -3614,9 +3950,30 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.74,
+      "timeliness": 28.59,
       "writing_value": 0,
-      "total_score": 118.74
+      "total_score": 118.59
+    },
+    {
+      "id": "d46815f21d1edc0161495226adaea46752ad7b26",
+      "title": "WRC2026现场直击｜法奥携多场景应用探索具身智能落地新路径 - 搜狐网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNZ1o5OEtUak1RYXNWbEpxMFYycUFMZGtnX09oS0tSNXBJaUFhX1R0N2hsakdHN3phUkJRZmxSS3VPMm9aT3M3NkpHeXpQeHJRTUFBR21EcWpQdTJpT3dlamRLZzBaNlFnbFR5OVd0Q1pOakR1eWVRcVhRSERXVWxOLVdodllSWnpk?oc=5",
+      "published_at": "2026-08-21T12:00:00+00:00",
+      "category": "国内具身智能资讯",
+      "gn_label": "embodied_ai",
+      "site_name": "国内具身智能资讯",
+      "source": "国内具身智能资讯",
+      "site_id": "国内具身智能资讯",
+      "description": "WRC2026现场直击｜法奥携多场景应用探索具身智能落地新路径  搜狐网",
+      "ai_score": 80.0,
+      "ai_label": "embodied_ai",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 28.59,
+      "writing_value": 0,
+      "total_score": 118.59
     },
     {
       "id": "cb0d182e8076af73a3ba81fcc94301167c6e6fb6",
@@ -3635,9 +3992,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.7,
+      "timeliness": 28.55,
       "writing_value": 0,
-      "total_score": 118.7
+      "total_score": 118.55
     },
     {
       "id": "70e1798569f3e10ec7d524b9e5796f915936f111",
@@ -3656,9 +4013,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.66,
+      "timeliness": 28.51,
       "writing_value": 0,
-      "total_score": 118.66
+      "total_score": 118.51
     },
     {
       "id": "5b8c9e6c36a38cf2120a7aae8c1cf4987576f9f8",
@@ -3677,9 +4034,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.62,
+      "timeliness": 28.47,
       "writing_value": 0,
-      "total_score": 118.62
+      "total_score": 118.47
     },
     {
       "id": "2f88479131b06c008e12005acc163c384464eb1c",
@@ -3698,9 +4055,30 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.49,
+      "timeliness": 28.34,
       "writing_value": 0,
-      "total_score": 118.49
+      "total_score": 118.34
+    },
+    {
+      "id": "9f4d98df7371ad0d2b011b224c02f21c28b0a75a",
+      "title": "长虹控股集团董事长柳江：具身智能大规模进入家庭面临四重挑战 - 搜狐网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOQkR4am1HbHdpYVNoR3lHUVBEX0Z0a2lpZDAtdW1xbGhWYjNoT2o5OWJxeW95d2JKSzF5TklSZjZ0dUZXeFk3V2F0bkVJMkMzNkhqNGVhYWhQeXdxellxQ01VRXJpSm1zV21wOUhLR3Bia1lfT1VTUnVWV2JsUWJMM2xTak1HZzNBZnFmNQ?oc=5",
+      "published_at": "2026-08-21T11:42:40+00:00",
+      "category": "国内具身智能资讯",
+      "gn_label": "embodied_ai",
+      "site_name": "国内具身智能资讯",
+      "source": "国内具身智能资讯",
+      "site_id": "国内具身智能资讯",
+      "description": "长虹控股集团董事长柳江：具身智能大规模进入家庭面临四重挑战  搜狐网",
+      "ai_score": 80.0,
+      "ai_label": "embodied_ai",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 28.3,
+      "writing_value": 0,
+      "total_score": 118.3
     },
     {
       "id": "48c09aa66b9de291f9491ddb1a5e380e0570c8dd",
@@ -3719,9 +4097,30 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.34,
+      "timeliness": 28.19,
       "writing_value": 0,
-      "total_score": 118.34
+      "total_score": 118.19
+    },
+    {
+      "id": "d77e1ca07225a88b22f349330200c79740cdc4fd",
+      "title": "人机对打 你能打赢机器人吗？ #人形机器人 #2026世界机器人大会 #宇树科技 （记者 缪领） - 搜狐网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQMUNJTTBqbllKaDZIQWp5cHB3ckNuU3hYMG9qSjhsR2EtLWJubWhBWHU2YzdoanRIRElMbHU3UmhZWThLNjMtZ2JtNWtzUWgtS0hkUE52VGlQeTVzdkxjbnJDUjN2eDhfRUo3NXJuTmFid3lmRDFON1ZKN3NXbnpwdTJwME9JZDFrbGo3Yw?oc=5",
+      "published_at": "2026-08-21T11:25:08+00:00",
+      "category": "国内人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国内人形机器人资讯",
+      "source": "国内人形机器人资讯",
+      "site_id": "国内人形机器人资讯",
+      "description": "人机对打 你能打赢机器人吗？ #人形机器人 #2026世界机器人大会 #宇树科技 （记者 缪领）  搜狐网",
+      "ai_score": 80.0,
+      "ai_label": "humanoid",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 28.01,
+      "writing_value": 0,
+      "total_score": 118.01
     },
     {
       "id": "bc86e9d977ce508d17428f346653c17be69fde14",
@@ -3740,9 +4139,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.86,
+      "timeliness": 27.71,
       "writing_value": 0,
-      "total_score": 117.86
+      "total_score": 117.71
     },
     {
       "id": "39cdf92bf51d739498067f65d31ffac414105d32",
@@ -3750,20 +4149,41 @@
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE13X05nd2xRaU0ya0xLeklxeUVFbzh2MDRVZGVOamFJYUpmN0RUb3pONnZMWTBPR3ZYZW9qWjdjdnhFOVE5bHQ4SGY5QmhieGdfeE9IOU1GLUVKYzN5a3QzaWNMSUN3dTZHU0xTYg?oc=5",
       "published_at": "2026-08-21T11:03:00+00:00",
-      "category": "国内具身智能资讯",
-      "gn_label": "embodied_ai",
-      "site_name": "国内具身智能资讯",
-      "source": "国内具身智能资讯",
-      "site_id": "国内具身智能资讯",
+      "category": "国内人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国内人形机器人资讯",
+      "source": "国内人形机器人资讯",
+      "site_id": "国内人形机器人资讯",
       "description": "超智能新品天工Omni上市 北京人形WRC论坛加速推动具身智能产业发展  zqrb.cn",
       "ai_score": 80.0,
-      "ai_label": "embodied_ai",
+      "ai_label": "humanoid",
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.79,
+      "timeliness": 27.64,
       "writing_value": 0,
-      "total_score": 117.79
+      "total_score": 117.64
+    },
+    {
+      "id": "d2067b83b835f2955c735437bb92ad3520477682",
+      "title": "XRPPower: Artificial Intelligence Robots Are Changing the Future of Digital Finance - markets.businessinsider.com",
+      "title_zh": "XRPPower：人工智能机器人正在改变数字金融的未来 - markets.businessinsider.com",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQR3BXWVVXSE9PQVlDbHhSYW12b3V4WFoyVm5acmZYOWh5ZGNnWDRoV2hnV2ptT28tSGI4VXRsT0lsb09KaVNNWXZGeHIxRklxbjNwOTVFVFRuVEdRVUZLaHN3V3p1WUtVcS0wT3hzXzhkaC02UlotQnB6cHcxX2FOVDZrTDN3LUdYV3ZzYWxXZG1md3EyUmpSbVFMTHFPb2JINkdzNjV0alVnc3puWFM2cHM3YXN4X1FZeEVkM0xob0F3am05NTVPc0EyeXZXZExjRXZaZkVhc18?oc=5",
+      "published_at": "2026-08-21T13:21:56+00:00",
+      "category": "国外机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国外机器人资讯",
+      "source": "国外机器人资讯",
+      "site_id": "国外机器人资讯",
+      "description": "XRPPower: Artificial Intelligence Robots Are Changing the Future of Digital Finance  markets.businessinsider.com",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 29.95,
+      "writing_value": 5,
+      "total_score": 114.95
     },
     {
       "id": "6063c34caf1341aeb625d70f85b713251359a9db",
@@ -3782,14 +4202,14 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 29.16,
+      "timeliness": 29.01,
       "writing_value": 5,
-      "total_score": 114.16
+      "total_score": 114.01
     },
     {
       "id": "775be1e197e7cf73c96702a52c80cc01ed7ab5b3",
       "title": "CUHK researchers perform city’s first robot-assisted pelvic fracture surgery - South China Morning Post",
-      "title_zh": "中大研究人员进行全港首例机械人辅助骨盆骨折手术 - 南华早报",
+      "title_zh": "中大研究人员施行全港首例机械人辅助骨盆骨折手术 - 南华早报",
       "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNTF9IdU1EUmJaN0Y5d19mV3g3QldubHQ1aWtBRThKbXZCNU5hYW5IVXpyOS16UXBiQXNFLUx0NUhFWGJocFI5S3VlOXNSUURlODJseUlLc2VyRGkyWGZlaURyQnpXcXJ1SnZhUHF6Q2lJVkFHbHl5S3FKcWl5TGk5MDVwMFFGUDFyVHVTQWZSME1oUXl5X0Noblo1aFlna29xcEFTVkZtVm5FTVpaOU1OT1loWmlkU0cxMGNMWlh5c0dIc05HRWtTMUVQR0hkNlg4Vk5wVjJVSDd0NDU0UmZ3dzB5d3piZw?oc=5",
       "published_at": "2026-08-21T11:00:07+00:00",
       "category": "国外机器人资讯",
@@ -3803,9 +4223,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 27.74,
+      "timeliness": 27.59,
       "writing_value": 5,
-      "total_score": 112.74
+      "total_score": 112.59
     },
     {
       "id": "1cd5b02e0b56d665ef45370a98a07f6e0978a164",
@@ -3824,9 +4244,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.74,
+      "timeliness": 29.59,
       "writing_value": 0,
-      "total_score": 104.74
+      "total_score": 104.59
     },
     {
       "id": "c20ee3162196ff1815e162152ea678e832e9a07a",
@@ -3845,14 +4265,14 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.61,
+      "timeliness": 29.46,
       "writing_value": 0,
-      "total_score": 104.61
+      "total_score": 104.46
     },
     {
-      "id": "3e2e77258eeb28076eac5dec7a23f9a76477cd33",
-      "title": "FDA authorizes Vitestro's Aletta robotic blood draw device - qz.com",
-      "title_zh": "FDA授权Vitestro公司Aletta机器人抽血设备 - 知乎",
+      "id": "59629edf52e95ec4662ef4563aedf843d74abc51",
+      "title": "The FDA just authorized the first robot that can draw blood on its own - qz.com",
+      "title_zh": "FDA刚刚授权首台可自行抽血的机器人_手机网易网",
       "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9hSnFhdXlGUEp5WWYtVFhaVGNuSGRTZGxKOHBwQnRnZnJuSHAxVDZTUTB6eEZRMGZFYnVhdm1BdmlGZVl2T3hMbzF1LWZVR3Z5Tk9aMnR5eFpjWFZtSktYYzR4aGtrcVppNWNjUDNGNmtCUExJeHc?oc=5",
       "published_at": "2026-08-21T12:48:41+00:00",
       "category": "国外机器人资讯",
@@ -3860,15 +4280,15 @@
       "site_name": "国外机器人资讯",
       "source": "国外机器人资讯",
       "site_id": "国外机器人资讯",
-      "description": "FDA authorizes Vitestro's Aletta robotic blood draw device  qz.com",
+      "description": "The FDA just authorized the first robot that can draw blood on its own  qz.com",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.55,
+      "timeliness": 29.4,
       "writing_value": 0,
-      "total_score": 104.55
+      "total_score": 104.4
     },
     {
       "id": "d977d2173cc95cef9d27cef0ea56e1b0d9fec68b",
@@ -3887,9 +4307,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.31,
+      "timeliness": 29.16,
       "writing_value": 0,
-      "total_score": 104.31
+      "total_score": 104.16
     },
     {
       "id": "0e8d7ee92ecafed3a0c9e9e6778519480d98af53",
@@ -3908,9 +4328,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.03,
+      "timeliness": 28.88,
       "writing_value": 0,
-      "total_score": 104.03
+      "total_score": 103.88
     },
     {
       "id": "3b85fd7b843f2ca9206ffbd85961fcf5a9fd1150",
@@ -3929,9 +4349,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.78,
+      "timeliness": 28.62,
       "writing_value": 0,
-      "total_score": 103.78
+      "total_score": 103.62
     },
     {
       "id": "cd6b57a8eb8a49f19dfd316494120168d12ecdcc",
@@ -3950,9 +4370,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.73,
+      "timeliness": 28.58,
       "writing_value": 0,
-      "total_score": 103.73
+      "total_score": 103.58
     },
     {
       "id": "8eaaed1c12e284b0496c1c8accc92edd83f2a311",
@@ -3971,9 +4391,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.59,
+      "timeliness": 28.43,
       "writing_value": 0,
-      "total_score": 103.59
+      "total_score": 103.43
     },
     {
       "id": "7a6c5cc26c7f2ff0832d3fc4ceab22d13e28e01b",
@@ -3992,9 +4412,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.55,
+      "timeliness": 28.4,
       "writing_value": 0,
-      "total_score": 103.55
+      "total_score": 103.4
     },
     {
       "id": "c9b3e6338354a4d578618826012bb16a85f498b5",
@@ -4013,9 +4433,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.05,
+      "timeliness": 27.9,
       "writing_value": 0,
-      "total_score": 103.05
+      "total_score": 102.9
     },
     {
       "id": "a9b594704bdae5efc1b7bca2c3d1bde0e0c29757",
@@ -4034,9 +4454,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.05,
+      "timeliness": 27.9,
       "writing_value": 0,
-      "total_score": 103.05
+      "total_score": 102.9
     },
     {
       "id": "49045d22abe61eeebb245d501719faf771be17fa",
@@ -4055,9 +4475,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.02,
+      "timeliness": 27.87,
       "writing_value": 0,
-      "total_score": 103.02
+      "total_score": 102.87
     },
     {
       "id": "c70955ca8bdb506ed664631e68110b660e8d97be",
@@ -4076,9 +4496,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.74,
+      "timeliness": 27.59,
       "writing_value": 0,
-      "total_score": 102.74
+      "total_score": 102.59
     },
     {
       "id": "ea7c3fbe2c3f8ff54b48fe41cf026526516e82cb",
@@ -4097,9 +4517,9 @@
       "relevance": 0.5,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.91,
+      "timeliness": 27.76,
       "writing_value": 0,
-      "total_score": 87.91
+      "total_score": 87.76
     },
     {
       "id": "9a2054b953a3afff5ad0c0108475b36954120a54",
@@ -4118,9 +4538,30 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 5,
-      "timeliness": 29.96,
+      "timeliness": 29.81,
       "writing_value": 5,
-      "total_score": 84.96
+      "total_score": 84.81
+    },
+    {
+      "id": "87f97a4bc5b1afa4b34d8576a0c33b5b65d25952",
+      "title": "当仿生机器人走进现实，商业与伦理双道考题待解｜聚焦2026WRC - 新浪财经",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5CN3MwNmNZMmZ3Q3dmYlg0c2RMNVdFdWtwSC0yblZScEtYZ3NTVWJkNjdJMVZjNnptV0EyQ1NGZ3d6ZVZPcklKUFB2ZnhMSGw0QVhkWHJIQkRSbkxiNXNiUTFHOXoyNTduM2dmMDRB?oc=5",
+      "published_at": "2026-08-21T13:07:57+00:00",
+      "category": "国内机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国内机器人资讯",
+      "source": "国内机器人资讯",
+      "site_id": "国内机器人资讯",
+      "description": "当仿生机器人走进现实，商业与伦理双道考题待解｜聚焦2026WRC  新浪财经",
+      "ai_score": 35.0,
+      "ai_label": "robotics",
+      "relevance": 0.35,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.72,
+      "writing_value": 0,
+      "total_score": 74.72
     },
     {
       "id": "c6871965f00a6883e069ea6bdb4ad1b1e0ba3532",
@@ -4139,9 +4580,30 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.81,
+      "timeliness": 29.66,
       "writing_value": 0,
-      "total_score": 74.81
+      "total_score": 74.66
+    },
+    {
+      "id": "6af79b0a734a8eb3655eae5b1a351a73c346cff9",
+      "title": "直击2026世界机器人大会：云深处人猫狗多形态机器人集中亮相 - 证券市场周刊",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE0tSENNc0hoOEJSVmYwUjZXdnhQam5vNm1laEYzS25SbkZmTzZqaHh4TzdRaHBMVlpiUkRzVUozMFhJckc2aks1emhMcXQ2LUlGdk9GVVRDc0hwbWxXaGtUdWhEaks?oc=5",
+      "published_at": "2026-08-21T12:59:00+00:00",
+      "category": "国内人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国内人形机器人资讯",
+      "source": "国内人形机器人资讯",
+      "site_id": "国内人形机器人资讯",
+      "description": "直击2026世界机器人大会：云深处人猫狗多形态机器人集中亮相  证券市场周刊",
+      "ai_score": 35.0,
+      "ai_label": "humanoid",
+      "relevance": 0.35,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.57,
+      "writing_value": 0,
+      "total_score": 74.57
     },
     {
       "id": "aa66bfb1a234b9190684d5e7ce8620bfbd6f2c74",
@@ -4160,9 +4622,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.66,
+      "timeliness": 29.5,
       "writing_value": 0,
-      "total_score": 74.66
+      "total_score": 74.5
     },
     {
       "id": "c35caf15a3c204485236e9aa4ee4deb0bca45723",
@@ -4181,9 +4643,30 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.6,
+      "timeliness": 29.45,
       "writing_value": 0,
-      "total_score": 74.6
+      "total_score": 74.45
+    },
+    {
+      "id": "711920138a79cb87bd98435a71c5d8f62852be98",
+      "title": "直击WRC丨海尔发布全自主家用AI烹饪机器人，可完全接管做饭、做菜 - finance.sina.com.cn",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOZDdIeS1tam5fN29IR2oxVFl2X0xUY3hMT0hRU3MxLVF4bFZUaHc4TEYyeEpKV3BoN05PRG9WN1hpRWVDNm5SZnZ2MF9pRFI5UFo3ZWFZYXR3SDFPcUJUNi0wVm9rZVF4QzBXdWlFcTNhTXNGbW5oNFNacFlRNzNrS2czMDFROXRzNlBLaFZVSHdMVEZXOW5xNG1BR3hqS3pDQ200SVNfV1dVRVVzRmZ2Q3d6ejB4M1NSdkZFZzEwdldYRFhTaGQ2R3FKYjRUYi1Y?oc=5",
+      "published_at": "2026-08-21T12:45:00+00:00",
+      "category": "国内机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国内机器人资讯",
+      "source": "国内机器人资讯",
+      "site_id": "国内机器人资讯",
+      "description": "直击WRC丨海尔发布全自主家用AI烹饪机器人，可完全接管做饭、做菜  finance.sina.com.cn",
+      "ai_score": 35.0,
+      "ai_label": "robotics",
+      "relevance": 0.35,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.34,
+      "writing_value": 0,
+      "total_score": 74.34
     },
     {
       "id": "e3871c99a519792a06f19f4a4dfafcd92df57c5d",
@@ -4202,9 +4685,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.47,
+      "timeliness": 29.32,
       "writing_value": 0,
-      "total_score": 74.47
+      "total_score": 74.32
     },
     {
       "id": "ddc6eba64b0e3324e14d5373e8fad8aa7c1af0e5",
@@ -4223,9 +4706,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.47,
+      "timeliness": 29.32,
       "writing_value": 0,
-      "total_score": 74.47
+      "total_score": 74.32
     },
     {
       "id": "3c2ed1ec8ca644e0978f715e3de2bee2860a0e20",
@@ -4244,9 +4727,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.33,
+      "timeliness": 29.17,
       "writing_value": 0,
-      "total_score": 74.33
+      "total_score": 74.17
     },
     {
       "id": "dbdac59c2ef0e48e447c4727ef7a310db8147663",
@@ -4265,9 +4748,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.25,
+      "timeliness": 29.1,
       "writing_value": 0,
-      "total_score": 74.25
+      "total_score": 74.1
     },
     {
       "id": "f7b71e1365b0b64100a09c47dac099cb577cd58e",
@@ -4286,9 +4769,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.24,
+      "timeliness": 29.09,
       "writing_value": 0,
-      "total_score": 74.24
+      "total_score": 74.09
     },
     {
       "id": "c798d2d28e86ea899ca30a742b3bdf0802149173",
@@ -4307,9 +4790,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.17,
+      "timeliness": 29.02,
       "writing_value": 0,
-      "total_score": 74.17
+      "total_score": 74.02
     },
     {
       "id": "41fc5ce93d9c09c690ae62126023704bf1303740",
@@ -4328,9 +4811,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.99,
+      "timeliness": 28.84,
       "writing_value": 0,
-      "total_score": 73.99
+      "total_score": 73.84
     },
     {
       "id": "991153788babbfa3c55648c68778115c91105de8",
@@ -4349,9 +4832,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.95,
+      "timeliness": 28.8,
       "writing_value": 0,
-      "total_score": 73.95
+      "total_score": 73.8
     },
     {
       "id": "a4ccc88bc9ff02d6c59170f8853d4f407610273a",
@@ -4370,9 +4853,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.83,
+      "timeliness": 28.68,
       "writing_value": 0,
-      "total_score": 73.83
+      "total_score": 73.68
     },
     {
       "id": "f2fce388026aba0216fb9bc8908d4c9d8e855eb0",
@@ -4391,9 +4874,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.76,
+      "timeliness": 28.61,
       "writing_value": 0,
-      "total_score": 73.76
+      "total_score": 73.61
     },
     {
       "id": "83ce8eb4f5955a233a2ebd49e5edac09774ec1c4",
@@ -4412,9 +4895,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.55,
+      "timeliness": 28.4,
       "writing_value": 0,
-      "total_score": 73.55
+      "total_score": 73.4
     },
     {
       "id": "428dfc326d5716540b1ac622a8e8c0e0b56c37fc",
@@ -4433,9 +4916,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.51,
+      "timeliness": 28.36,
       "writing_value": 0,
-      "total_score": 73.51
+      "total_score": 73.36
     },
     {
       "id": "f47606b2339af413e17061d86d8203362f8cc9d6",
@@ -4443,20 +4926,20 @@
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQWmFfQUdSZVhjRWowR3c0NFE2UU0xRWdVVEdkMWNwTW1XUk5waHhkVkNibEZTR3dFUkMyWFpHNHQwRGxyQy1LZC1BMG1kZ1hRZXZzM1BYaUgzYmE1V1M0QTJhU3RBejd4SmduSUV1Z2ZKVWx5QTZmUGVJdHVJc3Nrcm5UdjAwaUVNNHhfV2ljTHhta2FaWERZUDFTUmpVYjNldWlUZ3R2ZDN1Uk1MZnRJOXJn?oc=5",
       "published_at": "2026-08-21T11:45:29+00:00",
-      "category": "国内具身智能资讯",
-      "gn_label": "embodied_ai",
-      "site_name": "国内具身智能资讯",
-      "source": "国内具身智能资讯",
-      "site_id": "国内具身智能资讯",
+      "category": "国内人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国内人形机器人资讯",
+      "source": "国内人形机器人资讯",
+      "site_id": "国内人形机器人资讯",
       "description": "WRC2026观点 | 中科云谷CEO曾光：从“单机智能”到“群体智能”，工业机器人落地需跨越“语言”鸿沟  finance.sina.com.cn",
       "ai_score": 35.0,
-      "ai_label": "embodied_ai",
+      "ai_label": "humanoid",
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.5,
+      "timeliness": 28.34,
       "writing_value": 0,
-      "total_score": 73.5
+      "total_score": 73.34
     },
     {
       "id": "6b27415a9c9e5ffce6827ad5e347b6bf4e1231b9",
@@ -4475,9 +4958,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.49,
+      "timeliness": 28.34,
       "writing_value": 0,
-      "total_score": 73.49
+      "total_score": 73.34
     },
     {
       "id": "4e007c34ad19cd76607f157717804749208089a9",
@@ -4496,9 +4979,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.45,
+      "timeliness": 28.3,
       "writing_value": 0,
-      "total_score": 73.45
+      "total_score": 73.3
     },
     {
       "id": "b0348c741e26620c799de55d3c32c2647a502e8c",
@@ -4517,9 +5000,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.42,
+      "timeliness": 28.27,
       "writing_value": 0,
-      "total_score": 73.42
+      "total_score": 73.27
     },
     {
       "id": "02c9048e3eb1d726b05504221be2121af39c9cd1",
@@ -4538,9 +5021,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.4,
+      "timeliness": 28.25,
       "writing_value": 0,
-      "total_score": 73.4
+      "total_score": 73.25
     },
     {
       "id": "f357307c5684e9bd700ee65f9e266a292126d455",
@@ -4559,9 +5042,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.27,
+      "timeliness": 28.12,
       "writing_value": 0,
-      "total_score": 73.27
+      "total_score": 73.12
     },
     {
       "id": "2fb2798446829f2e1372f32a564d0fdda089ae07",
@@ -4580,9 +5063,30 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.25,
+      "timeliness": 28.1,
       "writing_value": 0,
-      "total_score": 73.25
+      "total_score": 73.1
+    },
+    {
+      "id": "5f23fba3aa80456e1c6486ea65484ccff5a5234b",
+      "title": "从3C到机器人：爱租机被全资收购背后的租赁变局 - t.cj.sina.cn",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5PZ3hVTmxYTnkwOURlRjBOTEdodWkyMUltcWZLUGdReW5icVZ3WlVKNzExYUU0a3dTX3Q3Skt2REg3LWZqREdtYzFfZ0l2U0J1TXlfTjUyOXE0M0RTcHd6azBPa1dWazRaakctWnkzTTNQZw?oc=5",
+      "published_at": "2026-08-21T11:29:42+00:00",
+      "category": "国内机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国内机器人资讯",
+      "source": "国内机器人资讯",
+      "site_id": "国内机器人资讯",
+      "description": "从3C到机器人：爱租机被全资收购背后的租赁变局  t.cj.sina.cn",
+      "ai_score": 35.0,
+      "ai_label": "robotics",
+      "relevance": 0.35,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 28.08,
+      "writing_value": 0,
+      "total_score": 73.08
     },
     {
       "id": "f5b7c478dcb429622d5bfd4e204c6ee1338b0aaa",
@@ -4601,9 +5105,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.23,
+      "timeliness": 28.08,
       "writing_value": 0,
-      "total_score": 73.23
+      "total_score": 73.08
     },
     {
       "id": "c0e28224e2a8fa426636df2ecbfeb39f98b03ad0",
@@ -4622,9 +5126,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.22,
+      "timeliness": 28.07,
       "writing_value": 0,
-      "total_score": 73.22
+      "total_score": 73.07
     },
     {
       "id": "1e02fba5c8e951b6439f3c02ecda72d2ff1a4148",
@@ -4643,9 +5147,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.19,
+      "timeliness": 28.04,
       "writing_value": 0,
-      "total_score": 73.19
+      "total_score": 73.04
     },
     {
       "id": "07aeef693574950a458a169930871e31e5816917",
@@ -4664,30 +5168,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.18,
+      "timeliness": 28.03,
       "writing_value": 0,
-      "total_score": 73.18
-    },
-    {
-      "id": "cb0fc5cccebb1ce675438c737c8c48493460f042",
-      "title": "【投融资动态】艾莫机器人天使轮融资，投资方为轩元资本、初心资本等 - finance.sina.com.cn",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1YMlZZa01BYkMzUl95c3FSdW5nUXVyWEFQSzVVYUhPcFpVU2VVWWRPUXozMk9zci1sYkJZeW14QklMME1HZXA3dVIyeVF4UWxwOVMwMGJKSlR4Xzc0dV9NMnBkWW5ZenVxSmE0OXpB?oc=5",
-      "published_at": "2026-08-21T11:25:01+00:00",
-      "category": "国内机器人资讯",
-      "gn_label": "robotics",
-      "site_name": "国内机器人资讯",
-      "source": "国内机器人资讯",
-      "site_id": "国内机器人资讯",
-      "description": "【投融资动态】艾莫机器人天使轮融资，投资方为轩元资本、初心资本等  finance.sina.com.cn",
-      "ai_score": 35.0,
-      "ai_label": "robotics",
-      "relevance": 0.35,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 28.15,
-      "writing_value": 0,
-      "total_score": 73.15
+      "total_score": 73.03
     },
     {
       "id": "54779d972d69b43a33d173b7f0685b0cdd283026",
@@ -4706,30 +5189,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.07,
+      "timeliness": 27.92,
       "writing_value": 0,
-      "total_score": 73.07
-    },
-    {
-      "id": "df7f9b0a71fb1bfbbabec86ffd3bc7a642c4c226",
-      "title": "从多机协同到真实任务，中科慧灵以“协同”打开机器人融入世界的现实路径 - 新华网客户端",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNOWtkcEVKeUFTSUw0dmtXb3dVei0tU0tjSXZWM2NMcElwVE1mTnBkVzYtdVdsSkxOa0VQUTBzTExPTXRwME1MR2J1QUgwaFpGSHRvelowTUdjM1pKakRBcmE2amFJeWJBNE84TDAyWlo3VmZmUmhhWTBlQ2NiVzlMZk1hRWJzYnNWTTN2cHN1ZFhKZC1pUGV2UlJR?oc=5",
-      "published_at": "2026-08-21T11:15:00+00:00",
-      "category": "国内具身智能资讯",
-      "gn_label": "embodied_ai",
-      "site_name": "国内具身智能资讯",
-      "source": "国内具身智能资讯",
-      "site_id": "国内具身智能资讯",
-      "description": "从多机协同到真实任务，中科慧灵以“协同”打开机器人融入世界的现实路径  新华网客户端",
-      "ai_score": 35.0,
-      "ai_label": "embodied_ai",
-      "relevance": 0.35,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 27.99,
-      "writing_value": 0,
-      "total_score": 72.99
+      "total_score": 72.92
     },
     {
       "id": "1c71d292c9150bf4f9e25d1a6af64537603b6959",
@@ -4748,9 +5210,30 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.99,
+      "timeliness": 27.84,
       "writing_value": 0,
-      "total_score": 72.99
+      "total_score": 72.84
+    },
+    {
+      "id": "df7f9b0a71fb1bfbbabec86ffd3bc7a642c4c226",
+      "title": "从多机协同到真实任务，中科慧灵以“协同”打开机器人融入世界的现实路径 - 新华网客户端",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNOWtkcEVKeUFTSUw0dmtXb3dVei0tU0tjSXZWM2NMcElwVE1mTnBkVzYtdVdsSkxOa0VQUTBzTExPTXRwME1MR2J1QUgwaFpGSHRvelowTUdjM1pKakRBcmE2amFJeWJBNE84TDAyWlo3VmZmUmhhWTBlQ2NiVzlMZk1hRWJzYnNWTTN2cHN1ZFhKZC1pUGV2UlJR?oc=5",
+      "published_at": "2026-08-21T11:15:00+00:00",
+      "category": "国内具身智能资讯",
+      "gn_label": "embodied_ai",
+      "site_name": "国内具身智能资讯",
+      "source": "国内具身智能资讯",
+      "site_id": "国内具身智能资讯",
+      "description": "从多机协同到真实任务，中科慧灵以“协同”打开机器人融入世界的现实路径  新华网客户端",
+      "ai_score": 35.0,
+      "ai_label": "embodied_ai",
+      "relevance": 0.35,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 27.84,
+      "writing_value": 0,
+      "total_score": 72.84
     },
     {
       "id": "2dce0bc194816cba3b348c0ff071db4d0502327b",
@@ -4769,9 +5252,30 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.99,
+      "timeliness": 27.84,
       "writing_value": 0,
-      "total_score": 72.99
+      "total_score": 72.84
+    },
+    {
+      "id": "88027b4932fcb64018bec79d0ba6eb524cc13944",
+      "title": "一起看名场面！2026年世界机器人大会近日在北京开幕 - 京报网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5wVThqb2FsTWZvTmU0bW1wcE9qREhmcFZGb3NlMHQ0LTJLZHJmU29EWnhuQndSdVRPSlBMMy1IQnRhNEc5TGJwVXpZZjVaYzFzcTRjS3VVUFdnbkFGalE?oc=5",
+      "published_at": "2026-08-21T11:14:50+00:00",
+      "category": "国内机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国内机器人资讯",
+      "source": "国内机器人资讯",
+      "site_id": "国内机器人资讯",
+      "description": "一起看名场面！2026年世界机器人大会近日在北京开幕  京报网",
+      "ai_score": 35.0,
+      "ai_label": "robotics",
+      "relevance": 0.35,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 27.83,
+      "writing_value": 0,
+      "total_score": 72.83
     },
     {
       "id": "e9a90327aaf0fbf54cb7ac3225046e0c1891cd2f",
@@ -4790,31 +5294,31 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.97,
+      "timeliness": 27.82,
       "writing_value": 0,
-      "total_score": 72.97
+      "total_score": 72.82
     }
   ],
   "site_stats": [
     {
-      "site_id": "国内具身智能资讯",
-      "site_name": "国内具身智能资讯",
-      "count": 19
+      "site_id": "国内人形机器人资讯",
+      "site_name": "国内人形机器人资讯",
+      "count": 22
     },
     {
       "site_id": "国内机器人资讯",
       "site_name": "国内机器人资讯",
-      "count": 17
-    },
-    {
-      "site_id": "国内人形机器人资讯",
-      "site_name": "国内人形机器人资讯",
-      "count": 16
+      "count": 20
     },
     {
       "site_id": "国外机器人资讯",
       "site_name": "国外机器人资讯",
-      "count": 15
+      "count": 16
+    },
+    {
+      "site_id": "国内具身智能资讯",
+      "site_name": "国内具身智能资讯",
+      "count": 16
     },
     {
       "site_id": "国外物理AI资讯",
@@ -4824,7 +5328,7 @@
     {
       "site_id": "国外人形机器人资讯",
       "site_name": "国外人形机器人资讯",
-      "count": 2
+      "count": 3
     },
     {
       "site_id": "国内脑机接口资讯",
@@ -4837,6 +5341,6 @@
       "count": 1
     }
   ],
-  "total_items_raw": 76,
-  "total_items_all_mode": 76
+  "total_items_raw": 84,
+  "total_items_all_mode": 84
 }
