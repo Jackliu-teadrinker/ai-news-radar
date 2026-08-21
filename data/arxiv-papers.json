@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-21T12:26:52.944819+00:00",
-  "total_items": 28,
+  "generated_at": "2026-08-21T13:16:44.549881+00:00",
+  "total_items": 27,
   "items": [
     {
       "id": "http://arxiv.org/abs/2608.20284v1",
@@ -298,17 +298,6 @@
       "published_at": "2026-08-20T01:17:12+00:00",
       "updated_at": "2026-08-20T01:17:12Z",
       "title_zh": "CVSD-Reg：用于稳健 LiDAR 配准的跨模态视觉语义预先蒸馏"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.19522v1",
-      "title": "LF-GICP: Parameter-Free Degeneracy-Aware LiDAR Odometry via a Voxel-Normal Localizability Field",
-      "url": "https://arxiv.org/abs/2608.19522",
-      "summary": "Scan-to-map LiDAR odometry drifts unboundedly along the unobservable axes of geometrically degenerate environments like tunnels and corridors, and existing degeneracy handling requires environment-specific parameter tuning. This paper presents a parameter-free approach. We show that in voxelized GICP the Gauss--Newton (GN) Hessian masks translational degeneracy, because covariance regularization keeps the translation block artificially well-conditioned. We bypass this with a regularization-free voxel-normal localizability field and two of its statistics: a normalized fraction $f_0$ detecting directional anisotropy, and an absolute per-voxel mass $λ_0$ distinguishing information absence (tunnels) from dilution (dense open scenes). A temporal-median gate combines both to trigger Fisher-information correspondence weighting. Calibrated once by fixed rules on two short sequences and then frozen, LF-GICP achieves the lowest KITTI relative translation error ($0.865\\%$) under an identical evaluation protocol against re-run baselines, outperforms them on GEODE tunnels and MulRan, leads the HeLiPR mean, and generalizes across four sensor types without re-tuning. We further demonstrate empirically that straight, uniform tunnels remain unobservable along their axis for LiDAR-only registration.",
-      "authors": "Eunsoo Im",
-      "category": "cs.RO",
-      "published_at": "2026-08-20T00:36:24+00:00",
-      "updated_at": "2026-08-20T00:36:24Z",
-      "title_zh": "LF-GICP：通过体素正态定位场进行无参数简并感知 LiDAR 里程计"
     }
   ]
 }
