@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-21T21:15:29.620818+00:00",
-  "total_items": 12,
+  "generated_at": "2026-08-21T21:47:19.739402+00:00",
+  "total_items": 11,
   "items": [
     {
       "id": "http://arxiv.org/abs/2608.20284v1",
@@ -122,17 +122,6 @@
       "published_at": "2026-08-20T12:24:34+00:00",
       "updated_at": "2026-08-20T12:24:34Z",
       "title_zh": "MILD：可处理地形建模，用于学习可变形表面上改进的双足运动"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.19826v1",
-      "title": "Calming Robot Pitches? Exploring the Influence of Robot Voice Pitch on Children's Stress Levels",
-      "url": "https://arxiv.org/abs/2608.19826",
-      "summary": "This study examined whether variations in robot speech pitch influence children's stress levels during a robot-guided game. Although lower-pitched voices have been shown to facilitate stress regulation in human communication, it remains unclear whether this effect generalizes to synthetic voices in child-robot interactions. Twenty-seven Dutch children aged 8-12 years were randomly assigned to interact with a Zenbo Junior II robot using either a lower-pitched or a higher-pitched voice. The interaction consisted of an introduction followed by a timed LEGO-building game. Stress levels, measured with an adapted version of CAM-S, increased during the game, confirming the stress-inducing nature of the task. No differences emerged between pitch conditions. These findings suggest that the benefits of lower pitch in reducing stress may not directly translate to child-robot interactions. Possible explanations include children's developing sensitivity to emotional tone, mismatches between the robot's voice and appearance, or the use of fixed pitch changes that sound unnatural, since real speech varies dynamically across multiple dimensions. Future research examining combinations of prosodic cues (beyond pitch alone) could provide further insights and help inform robot voice design for effective stress regulation support for children.",
-      "authors": "Nina G. M. van Roij, Emilia I. Barakova, Briana Isaila et al.",
-      "category": "cs.HC",
-      "published_at": "2026-08-20T09:27:56+00:00",
-      "updated_at": "2026-08-20T09:27:56Z",
-      "title_zh": "安抚机器人的演讲？探索机器人音调对儿童压力水平的影响"
     }
   ]
 }
