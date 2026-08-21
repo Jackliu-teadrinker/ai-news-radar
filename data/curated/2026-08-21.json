@@ -1,9 +1,9 @@
 {
   "date": "2026-08-21",
-  "generated_at": "2026-08-21T14:05:52.732315+00:00",
+  "generated_at": "2026-08-21T15:01:49.590638+00:00",
   "score_threshold": 80,
   "total_items": 50,
-  "new_added": 0,
+  "new_added": 1,
   "items": [
     {
       "id": "0ce78525c47b2419",
@@ -678,6 +678,27 @@
       "total_score": 127.46
     },
     {
+      "id": "f472b3c32907f99e",
+      "title": "中国具身智能迎来规模化应用关键窗口期 - 新华网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE91YVdRYXVnUU44UTZGTFM4WkE0OEtUSlBfajYwTVRnSHZKa0xicW80SnlIalJNOGtnREpIeF9uRWZ1U2xLSkxWR2t1TGhOSXZZV3pIak9hUGJSR0xXTGYxNXdhNWxQY2VMMms2UGxzaEtFaE51Nnh4eDFTdUY4QQ?oc=5",
+      "published_at": "2026-08-21T12:26:38+00:00",
+      "category": "国内具身智能资讯",
+      "gn_label": "embodied_ai",
+      "site_name": "国内具身智能资讯",
+      "source": "国内具身智能资讯",
+      "site_id": "国内具身智能资讯",
+      "description": "中国具身智能迎来规模化应用关键窗口期  新华网星海图高继扬：具身智能的终极商业模式，是售卖「物理世界 Token」 | WRC 2026  finance.sina.com.cnWRC2026｜具身智能产融实践暨“投创之星”路演在京举办  光明网",
+      "ai_score": 80.0,
+      "ai_label": "embodied_ai",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 27.43,
+      "writing_value": 5,
+      "total_score": 127.43
+    },
+    {
       "id": "de489bb24c2ff629",
       "title": "机器人距大规模普及还缺临门一脚，京东要砸百亿打造产业基础设施 - t.cj.sina.cn",
       "title_zh": "",
@@ -1033,27 +1054,6 @@
       "timeliness": 29.93,
       "writing_value": 0,
       "total_score": 119.93
-    },
-    {
-      "id": "4b3cea583d8273c3",
-      "title": "觅蜂科技携最新无本体数采产品亮相世界机器人大会|物理AI|数据治理|语言模型|Token|具身智能_手机新浪网 - 新浪财经",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNcnc0X1lHMWJ0UVFPTzhNdUQ1WV9nVnBiQUJUUVhlV1ZFREN1elBqdm8xRDdjWTRlRE5saVhFRWg4RFIwaExwX1VQczh2VzhJREpzNHZDYWNIQVRYcXhsWmhMREs4YUJhcW9zN0xPY0MyanNQcm1CVWtCLWVzWksyYVlMLWNDQ0ZNRlhKMVlCVXh2ZndiZjdFaWR6RHFSVWk0OTBsYkpQMA?oc=5",
-      "published_at": "2026-08-20T19:47:29+00:00",
-      "category": "国内具身智能资讯",
-      "gn_label": "embodied_ai",
-      "site_name": "国内具身智能资讯",
-      "source": "国内具身智能资讯",
-      "site_id": "国内具身智能资讯",
-      "description": "觅蜂科技携最新无本体数采产品亮相世界机器人大会|物理AI|数据治理|语言模型|Token|具身智能_手机新浪网  新浪财经",
-      "ai_score": 80.0,
-      "ai_label": "embodied_ai",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 29.92,
-      "writing_value": 0,
-      "total_score": 119.92
     }
   ]
 }
