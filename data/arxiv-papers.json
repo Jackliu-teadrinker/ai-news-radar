@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-21T16:59:48.840390+00:00",
-  "total_items": 21,
+  "generated_at": "2026-08-21T17:28:35.211444+00:00",
+  "total_items": 20,
   "items": [
     {
       "id": "http://arxiv.org/abs/2608.20284v1",
@@ -221,17 +221,6 @@
       "published_at": "2026-08-20T05:56:25+00:00",
       "updated_at": "2026-08-20T05:56:25Z",
       "title_zh": "基于世界模型的法学硕士规划近海风电场 AUV 和 ASV 导航"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.19635v1",
-      "title": "Magnetically Self-Sealed MR Haptic Actuator With PWM-Based Excitation and High-Fidelity Torque Control",
-      "url": "https://arxiv.org/abs/2608.19635",
-      "summary": "Accurate and stable torque rendering is essential for safe and perceptive human--machine interaction. Magnetorheological fluid (MRF)-based actuators offer a compact and rapidly controllable solution for haptic feedback, but their practical implementation requires reliable fluid sealing, low-hysteresis excitation, accurate torque control, and stable long-duration operation. This article presents an integrated MRF haptic system featuring a compact magnetically self-sealed rotary actuator, low-hysteresis PWM operation, high-fidelity model-based torque rendering, and stable performance during long-time operation. Magnetostatic simulation guides the arrangement of magnetic and nonmagnetic materials to focus flux in the multidisk torque and permanent-magnet sealing regions, enabling a maximum 600 N$\\cdot$mm/A output. Experiments show that higher PWM frequencies reduce hysteresis and improve repeatability. At 10 kHz, the response is represented by a nonlinear model that varies with the direction and speed of torque change. The real-time controller combines feedforward, hysteresis compensation, PI feedback, and sliding-mode correction. Compared with PID, it reduces square-wave overshoot, undershoot, and steady-state RMSE by 77.4\\%, 61.9\\%, and 68.3\\%, respectively. It tracks sinusoidal and biomechanics-model-based references, and a 1.5-h test shows only a 2.5 $^\\circ$C rise near the coil with no clear tracking loss. This high-fidelity torque rendering will fundamentally transform human--robot collaboration by making interactions safer, more efficient, and more intuitive.",
-      "authors": "Dong Qiang, Tian Yuan, Song Yang et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-20T05:04:25+00:00",
-      "updated_at": "2026-08-20T05:04:25Z",
-      "title_zh": "具有基于 PWM 激励和高保真扭矩控制的磁性自密封 MR 触觉执行器"
     }
   ]
 }
