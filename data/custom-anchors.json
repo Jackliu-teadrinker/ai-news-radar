@@ -1,9 +1,30 @@
 {
-  "generated_at": "2026-08-21T11:21:10.902517+00:00",
+  "generated_at": "2026-08-21T11:49:38.728236+00:00",
   "window_start": "2026-08-21T19:00:00+08:00",
-  "window_end": "2026-08-21T19:21:10.898346+08:00",
-  "total_items": 1,
+  "window_end": "2026-08-21T19:49:38.246460+08:00",
+  "total_items": 3,
   "items": [
+    {
+      "id": "21d578e9687f7064466e7c055d8b0d4225a50862",
+      "title": "I Tried the Best Robotic Pool Cleaners of 2026: Beatbot, iGarden, Dreame",
+      "title_zh": "我尝试过 2026 年最好的泳池清洁机器人：Beatbot、iGarden、Dreame",
+      "url": "https://www.wired.com/story/best-pool-cleaning-robots/",
+      "published_at": "2026-08-21T11:33:00+00:00",
+      "category": "Wired",
+      "gn_label": "robotics",
+      "site_name": "Wired",
+      "source": "Wired",
+      "site_id": "Wired",
+      "description": "Pack up your pool cleaning supplies. Let one of these robot buddies maintain your water quality instead",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 29.72,
+      "writing_value": 5,
+      "total_score": 114.72
+    },
     {
       "id": "2cf37bb655688d11c908303f8485fada393bf6ab",
       "title": "宇树科技上市次日大跌缩水近500亿元，投资者：以为是稳赚的 - 手机新浪网",
@@ -21,9 +42,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.68,
+      "timeliness": 29.21,
       "writing_value": 0,
-      "total_score": 104.68
+      "total_score": 104.21
+    },
+    {
+      "id": "f8474d5082b2ae0c0a1dc9543a3854d85a224cb5",
+      "title": "傅利叶GR-3C搭载速腾聚创数字激光雷达亮相WRC 2026，“具身之家”开启机器人管家时代 - 搜狐网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPRmhZRUFhR0tfa0oyUmFPWVdXczlxdzZ2d0dnUl91NFRXYktINm8zOHQxMlhTbkN5UnBGdTB1TmhjRWlzUThUOEhvSmhNMmd1WUZjTTIxOTdteUVYNWVYaFlxRy1fbVVQNmdCalBiUU1ja1JZeFJVVXVyMnF3bDU2WVQxT0ltdGw5?oc=5",
+      "published_at": "2026-08-21T11:37:42+00:00",
+      "category": "GN: 傅利叶智能",
+      "gn_label": "robotics",
+      "site_name": "GN: 傅利叶智能",
+      "source": "GN: 傅利叶智能",
+      "site_id": "GN: 傅利叶智能",
+      "description": "傅利叶GR-3C搭载速腾聚创数字激光雷达亮相WRC 2026，“具身之家”开启机器人管家时代  搜狐网",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.8,
+      "writing_value": 0,
+      "total_score": 104.8
     }
   ],
   "fallback_used": false
