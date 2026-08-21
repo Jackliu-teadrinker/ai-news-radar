@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-21T19:46:11.363804+00:00",
-  "total_items": 15,
+  "generated_at": "2026-08-21T20:16:26.564907+00:00",
+  "total_items": 14,
   "items": [
     {
       "id": "http://arxiv.org/abs/2608.20284v1",
@@ -155,17 +155,6 @@
       "published_at": "2026-08-20T08:19:44+00:00",
       "updated_at": "2026-08-20T08:19:44Z",
       "title_zh": "CoToGrasp：通过规范工作空间学习进行接触拓扑条件的灵巧抓取合成"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.19759v1",
-      "title": "GOAG: Generative and Object-Agnostic Grasp Planner for Dexterous Robotic Manipulation",
-      "url": "https://arxiv.org/abs/2608.19759",
-      "summary": "Multifingered grasping is a crucial robotic skill, but current deep-learning grasp planners often struggle to generalize to new objects because they are trained on limited, object-specific datasets. We introduce a fundamentally different approach, grounded in the observation that the gripper and the object share identical surface geometry at their mutual contact points. We propose GOAG: Generative and Object-Agnostic Grasp Planner for Dexterous Robotic Manipulation, a novel deep generative model that learns a compact latent representation of a specific gripper's contact surface distribution, enabling the efficient sampling of valid grasp configurations without relying on object-specific training data. We show that by introducing object features only at inference time, our model can effectively retrieve admissible contact areas that are compatible with the gripper's capabilities. We validate our approach through extensive experiments on established grasp protocols in both simulated and real-world scenarios, demonstrating its effectiveness with different grippers from the literature. Our method delivers state-of-the-art results on the objects from the MultiDex dataset, achieving an average success rate of 86.93%. It offers significantly faster processing when generating numerous grasps, while matching the performance of leading approaches specifically trained on this dataset. Unlike these methods, our approach does not rely on object-specific training data, highlighting the advantages of object-agnostic learning. It effectively addresses the generalization challenges faced by traditional data-driven grasp planners. Code and videos are available on our project website https://cea-list.github.io/goagweb/ .",
-      "authors": "Julien Merand, Boris Meden, Mathieu Grossard et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-20T08:03:39+00:00",
-      "updated_at": "2026-08-20T08:03:39Z",
-      "title_zh": "GOAG：用于灵巧机器人操作的生成式和与对象无关的抓取规划器"
     }
   ]
 }
