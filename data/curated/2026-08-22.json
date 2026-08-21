@@ -1,9 +1,9 @@
 {
   "date": "2026-08-22",
-  "generated_at": "2026-08-21T17:28:37.627135+00:00",
+  "generated_at": "2026-08-21T17:56:29.721351+00:00",
   "score_threshold": 80,
   "total_items": 50,
-  "new_added": 3,
+  "new_added": 2,
   "items": [
     {
       "id": "be8e4bf74de14cfc",
@@ -151,6 +151,27 @@
       "timeliness": 29.94,
       "writing_value": 0,
       "total_score": 119.94
+    },
+    {
+      "id": "9c3f99be754cde25",
+      "title": "Schaeffler Trains Hexagon Humanoid Robots for Factory Deployment - Assembly Magazine",
+      "title_zh": "舍弗勒训练六角形人形机器人用于工厂部署 - 《装配杂志》",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPaFlIV3VpVkF1eFNvRXJqd2pHOGhldE5UYzdTaDAyYmxyR0lZeGU4REFROXQ5NXBnc2FjT2xOMGpnUWE3U05uR0NYdmdsbmU1Wk5TdU4waGJUdFhmakxLS0wtLUV4cmRxdXRHS0drSzhyUjFtMENKenY2dlN1SFhyWkkwTW9qNTZNREtTcXlBdGt6b1NxckhQQm45dklwbWIwbThfRDQxQUN3SFVi?oc=5",
+      "published_at": "2026-08-21T17:49:54+00:00",
+      "category": "国外人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国外人形机器人资讯",
+      "source": "国外人形机器人资讯",
+      "site_id": "国外人形机器人资讯",
+      "description": "Schaeffler Trains Hexagon Humanoid Robots for Factory Deployment  Assembly Magazine",
+      "ai_score": 80.0,
+      "ai_label": "humanoid",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.91,
+      "writing_value": 0,
+      "total_score": 119.91
     },
     {
       "id": "cd9f88948836d42d",
@@ -340,6 +361,27 @@
       "timeliness": 28.97,
       "writing_value": 0,
       "total_score": 118.97
+    },
+    {
+      "id": "c18d4be83f1ecb38",
+      "title": "Massive Robot March! 2nd World Humanoid Robot Games Rehearsals In Beijing - Global Times",
+      "title_zh": "机器人大游行！第二届世界仿人机器人运动会在北京彩排_环球时报",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE43VzIxWGNKTjVnanRoVkVhQUNxZ2JPUWtxTVlzNVRkcGcydEYwMGVwbzJPdU9SY1VPakQ0LUhTbDQ3QUs5QldHTHBhN2JmeGhHZHEzdmNVcHBFeWdkMVp3VGFB?oc=5",
+      "published_at": "2026-08-21T16:49:00+00:00",
+      "category": "国外机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国外机器人资讯",
+      "source": "国外机器人资讯",
+      "site_id": "国外机器人资讯",
+      "description": "Massive Robot March! 2nd World Humanoid Robot Games Rehearsals In Beijing  Global Times",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 28.9,
+      "writing_value": 0,
+      "total_score": 118.9
     },
     {
       "id": "c4f2a5c9327964a6",
@@ -1012,48 +1054,6 @@
       "timeliness": 26.51,
       "writing_value": 0,
       "total_score": 116.51
-    },
-    {
-      "id": "13ca855698c3171a",
-      "title": "2026世界机器人大会具身智能产融实践暨“投创之星”路演举办 - chinanews.com.cn",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFAyRWhiT0Q0ZlZLSDM0MHBMZGhWSkRBa0RIM3pOTmlpNHFSZjdvbHN0TEYtN2piU1VlalU3b2kxYTB3aVJxMDdtUU9ZeVNWVWdhTkF6MHFHMklqTmFMSFZ0Qi1aa0JKaVlh?oc=5",
-      "published_at": "2026-08-21T12:50:54+00:00",
-      "category": "国内具身智能资讯",
-      "gn_label": "embodied_ai",
-      "site_name": "国内具身智能资讯",
-      "source": "国内具身智能资讯",
-      "site_id": "国内具身智能资讯",
-      "description": "2026世界机器人大会具身智能产融实践暨“投创之星”路演举办  chinanews.com.cn",
-      "ai_score": 80.0,
-      "ai_label": "embodied_ai",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 26.47,
-      "writing_value": 0,
-      "total_score": 116.47
-    },
-    {
-      "id": "dea59bd452c1eb54",
-      "title": "直击2026世界机器人大会：多家消费电子企业跨界具身智能 - 证券市场周刊",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBUcFktcUQ0WlJlZ1JIcEdOQkUteGRuQlFfZmJzeHB5NGNxZ2p5OFNUMW03VHNudDdLYm51aThSa0l1S0ptQnJ6dmRCQ3g0d2NPYzJQQmFORUk3WllZcjVyWEhSWEw?oc=5",
-      "published_at": "2026-08-21T12:45:00+00:00",
-      "category": "国内具身智能资讯",
-      "gn_label": "embodied_ai",
-      "site_name": "国内具身智能资讯",
-      "source": "国内具身智能资讯",
-      "site_id": "国内具身智能资讯",
-      "description": "直击2026世界机器人大会：多家消费电子企业跨界具身智能  证券市场周刊",
-      "ai_score": 80.0,
-      "ai_label": "embodied_ai",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 26.37,
-      "writing_value": 0,
-      "total_score": 116.37
     }
   ]
 }
