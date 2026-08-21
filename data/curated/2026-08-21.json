@@ -1,9 +1,9 @@
 {
   "date": "2026-08-21",
-  "generated_at": "2026-08-21T07:24:52.641605+00:00",
+  "generated_at": "2026-08-21T08:05:14.353951+00:00",
   "score_threshold": 80,
   "total_items": 50,
-  "new_added": 3,
+  "new_added": 1,
   "items": [
     {
       "id": "0ce78525c47b2419",
@@ -187,6 +187,27 @@
       "description": "Robot Crashes Into Electrical Box in Viral Video Ahead of World Humanoid Robot Games  Bleacher Report",
       "ai_score": 80.0,
       "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 29.7,
+      "writing_value": 5,
+      "total_score": 129.7
+    },
+    {
+      "id": "a4ba7df942fc8cb6",
+      "title": "The surge in humanoid robots is underway; are high-barrier components the preferred strategic focus? - Moomoo",
+      "title_zh": "人形机器人正在兴起；高壁垒零部件是首选战略重点吗？ - 莫莫",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNOElHaGR2dlhBUDhvZ0NOTWxUb2piMXcxa0JVM0Zta2hfb2JhVDBOUmptamhhelZkWG1PT2o4N0RnTnpjN0EtelIxTncxekxkM2RFRUVPVzFhenNsTHdMRG1ZZkFNbm1hQjJqNlpPY21aMHlhWVdYd3EzUnVBYWh0Rm9TQ0c1clpHbmd0cjVxT3ZZeUNKLWJYYkYzZXdRMXNR?oc=5",
+      "published_at": "2026-08-21T07:45:13+00:00",
+      "category": "国外人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国外人形机器人资讯",
+      "source": "国外人形机器人资讯",
+      "site_id": "国外人形机器人资讯",
+      "description": "The surge in humanoid robots is underway; are high-barrier components the preferred strategic focus?  Moomoo",
+      "ai_score": 80.0,
+      "ai_label": "humanoid",
       "relevance": 0.8,
       "authority": 10,
       "depth": 5,
@@ -1033,27 +1054,6 @@
       "timeliness": 29.84,
       "writing_value": 0,
       "total_score": 119.84
-    },
-    {
-      "id": "4aa3de1bb1b55704",
-      "title": "面向具身智能打造全栈算力平台，辉羲智能发布最新系列芯片产品 - 京报网",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBVdmk5aXEtQnB3QllFcm5RaFhxRURVT0p3YjRlZ0FEeU9xV2ZFX2R5ZEVOUWlISFVnTS1XbTF6b2k1Z0swMGZGcWJ4WldPS1lzUGdxWDM5X0Mzb0lMVmc?oc=5",
-      "published_at": "2026-08-21T04:51:35+00:00",
-      "category": "国内具身智能资讯",
-      "gn_label": "embodied_ai",
-      "site_name": "国内具身智能资讯",
-      "source": "国内具身智能资讯",
-      "site_id": "国内具身智能资讯",
-      "description": "面向具身智能打造全栈算力平台，辉羲智能发布最新系列芯片产品  京报网",
-      "ai_score": 80.0,
-      "ai_label": "embodied_ai",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 29.83,
-      "writing_value": 0,
-      "total_score": 119.83
     }
   ]
 }
