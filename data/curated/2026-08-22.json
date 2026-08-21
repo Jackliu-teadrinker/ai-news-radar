@@ -1,9 +1,9 @@
 {
   "date": "2026-08-22",
-  "generated_at": "2026-08-21T21:47:22.393286+00:00",
+  "generated_at": "2026-08-21T22:14:56.126009+00:00",
   "score_threshold": 80,
   "total_items": 50,
-  "new_added": 0,
+  "new_added": 1,
   "items": [
     {
       "id": "d40ff6493b666486",
@@ -214,6 +214,27 @@
       "timeliness": 24.07,
       "writing_value": 5,
       "total_score": 124.07
+    },
+    {
+      "id": "c3d02e74a2144cb3",
+      "title": "机器人“上班族”都能做哪些工作？ - 新华网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9UdFFhamRxdkNOdmtIcHQwSzVybVdUWWV2MmFlYUVqeDZzb2RBMmlxNmh3b0hYVGJTdUYwVWNVRjJaLVhxRnE3RmJlZ3pHdkRCaE9scEFzSy15WUxnYnJIYWpVQnNXSEZKTVZEVGhGdkJpODV6YmxnS1lycUpQUQ?oc=5",
+      "published_at": "2026-08-21T13:22:02+00:00",
+      "category": "国内机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国内机器人资讯",
+      "source": "国内机器人资讯",
+      "site_id": "国内机器人资讯",
+      "description": "机器人“上班族”都能做哪些工作？  新华网一批创新成果首发首秀 北京机器人组团亮“功夫”  北京市人民政府门户网站人机共生看机器人点亮未来生活|世界机器人大会|黑龙江省|具身智能|调酒|民生_手机新浪网  新浪财经",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 21.14,
+      "writing_value": 5,
+      "total_score": 121.14
     },
     {
       "id": "8d25291a229c6c8e",
@@ -1033,27 +1054,6 @@
       "timeliness": 27.46,
       "writing_value": 0,
       "total_score": 117.46
-    },
-    {
-      "id": "e85c8289b30c3ee9",
-      "title": "门头沟多维发力构筑人工智能与具身智能创新生态 - 京报网",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9JRVVjUmVmckpHeWF1b0V1Q0FxTHZ3N09wcWpjV3NaX056UGlxdXZjRHk3OV9DMXMtNDJ5a0pGTHZZeVg4X2FLNmdHZFNHeWRXZWxhcFNQcDBtYkljTGc?oc=5",
-      "published_at": "2026-08-21T13:48:23+00:00",
-      "category": "国内具身智能资讯",
-      "gn_label": "embodied_ai",
-      "site_name": "国内具身智能资讯",
-      "source": "国内具身智能资讯",
-      "site_id": "国内具身智能资讯",
-      "description": "门头沟多维发力构筑人工智能与具身智能创新生态  京报网",
-      "ai_score": 80.0,
-      "ai_label": "embodied_ai",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 27.43,
-      "writing_value": 0,
-      "total_score": 117.43
     }
   ]
 }
