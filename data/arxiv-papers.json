@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-21T17:56:27.227844+00:00",
-  "total_items": 19,
+  "generated_at": "2026-08-21T18:23:59.716666+00:00",
+  "total_items": 17,
   "items": [
     {
       "id": "http://arxiv.org/abs/2608.20284v1",
@@ -188,28 +188,6 @@
       "published_at": "2026-08-20T07:29:07+00:00",
       "updated_at": "2026-08-20T07:29:07Z",
       "title_zh": "SafeBranch：实体代理的分支对安全对齐"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.19684v1",
-      "title": "Learning Hierarchical Skill Policies with Offline Quality-Diversity Reinforcement Learning",
-      "url": "https://arxiv.org/abs/2608.19684",
-      "summary": "Recent studies investigate how to leverage pre-collected datasets to improve the policy performance and sample efficiency of RL. One promising approach to achieve this goal is to employ a two-stage strategy: In the first stage, diverse skills are extracted as a low-level policy from a given dataset, and a high-level policy is trained to solve a specific task in the second stage. Typically, extraction of the low-level policy is performed based on unsupervised learning such as trajectory VAE. However, a limitation of this approach is that the quality of the low-level policy highly depends on the quality of the dataset. To address this issue, we introduce QDOS (Quality-Diversity Offline Skill learning), a unified pipeline for robust offline-to-online learning. Our approach incorporates an Advantage-Weighted Quality-Diversity pretraining objective, which weights the skill extraction and diversity objectives by the estimated advantage of each trajectory segment. This approach allows the model to extract diverse and high-value skills. By providing robust and task-relevant skill representations, QDOS significantly improves the quality of the embedded skill space used by the low-level policy. We further integrate this with a dual dataset reuse strategy, where offline data is used both for skill pretraining and for populating the online replay buffer via pseudo-labeling. Experiments demonstrate that QDOS significantly outperforms strong baselines in structured manipulation tasks and unstructured locomotion tasks, confirming its ability to accelerate exploration and improve final returns in challenging sparse-reward domains.",
-      "authors": "Tanachai Anakewat, Takayuki Osa, Tatsuya Harada",
-      "category": "cs.AI",
-      "published_at": "2026-08-20T06:20:03+00:00",
-      "updated_at": "2026-08-20T06:20:03Z",
-      "title_zh": "通过离线质量多样性强化学习学习分层技能策略"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.19671v1",
-      "title": "SAGE: Ergodic Control for Autonomous and Adaptive Inspection of Subsea Infrastructure",
-      "url": "https://arxiv.org/abs/2608.19671",
-      "summary": "Subsea Christmas Trees (XTs) are underwater structures that use valves for directing oil flow, needing constant inspection. But not every valve carries the same risk at the same time: a valve with a suspected leak needs to be revisited far more often than one with a clean history, and that risk picture changes during the mission as new leaks are found. To handle this, we present SAGE (Semantic and Adaptive Generative Ergodicity), an ergodic-control architecture that allocates vehicle time in proportion to a live, sensor-derived risk distribution rather than a scripted route. We study a two-XT scenario, with five valves in total, and compare a fixed-loop A* tour against SAGE. Both methods can be tuned to spend similar total time near a high-risk valve, but only ergodic control also checks it more often: in simulation, a dominant-risk valve was revisited every 5.8 s under ergodic control against a fixed 8.1 s for every valve under A*, regardless of risk, so a leak can go unnoticed for barely two-thirds as long. Because the tracked distribution is recomputed rather than planned once, a newly detected leak shifts vehicle behavior on the next control cycle with no explicit re-planning step and no operator in the loop, which a fixed tour cannot do without a discrete re-route. We derive the ergodic control law behind this behavior and report simulation results on the five-valve scenario.",
-      "authors": "Markus Buchholz, Ignacio Carlucho, Yvan R. Petillot",
-      "category": "cs.RO",
-      "published_at": "2026-08-20T06:06:40+00:00",
-      "updated_at": "2026-08-20T06:06:40Z",
-      "title_zh": "SAGE：海底基础设施自主和自适应检查的遍历控制"
     }
   ]
 }
