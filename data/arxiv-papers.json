@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-20T23:48:14.697130+00:00",
-  "total_items": 7,
+  "generated_at": "2026-08-21T00:43:55.051848+00:00",
+  "total_items": 6,
   "items": [
     {
       "id": "http://arxiv.org/abs/2608.19188v1",
@@ -67,17 +67,6 @@
       "published_at": "2026-08-19T14:15:36+00:00",
       "updated_at": "2026-08-19T14:15:36Z",
       "title_zh": "RoboEdit：将人类操作视频转变为可扩展的机器人体验"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.18840v1",
-      "title": "Beyond Placement and Articulation: Usage-Driven Code Scenes for Embodied Interaction",
-      "url": "https://arxiv.org/abs/2608.18840",
-      "summary": "Indoor scene synthesis provides essential environments for embodied AI, robotic manipulation, and simulation-based policy learning. Recent code-based scene generation methods produce editable and extensible environments, yet they remain focused on visual construction and object-level articulation, leaving the functional usage of scenes largely unmodeled. To address this problem, we present RoomWright, an agentic usage-driven framework for generating 3D scenes represented entirely as code for embodied interaction. RoomWright performs usage-driven object reasoning, which treats each anchor as a task centre and admits task-required objects and their affordances. A code agent further enables multi-part interaction by compiling each interaction into a trigger, condition, effect rule that updates structured object states, capturing causal dependencies across objects. Moreover, since manipuland orientation is ambiguous and hard to recover from pixels, RoomWright alleviates this via annotation-informed usage-guided orientation. Extensive experiments demonstrate the effectiveness of our method. The resulting scenes are executable, editable, and simulation-ready, providing interactive environments for embodied AI and policy learning.",
-      "authors": "Zijian Xiao, Zipeng Ye, Jinkun Hao et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-19T12:00:35+00:00",
-      "updated_at": "2026-08-19T12:00:35Z",
-      "title_zh": "超越放置和衔接：用于具体交互的使用驱动的代码场景"
     }
   ]
 }
