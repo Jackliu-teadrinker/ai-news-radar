@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-21T13:24:55.069907+00:00",
+  "generated_at": "2026-08-21T14:04:46.854877+00:00",
   "window_start": "2026-08-21T19:00:00+08:00",
-  "window_end": "2026-08-21T21:24:52.689946+08:00",
-  "total_items": 10,
+  "window_end": "2026-08-21T22:04:45.858566+08:00",
+  "total_items": 12,
   "items": [
     {
       "id": "21d578e9687f7064466e7c055d8b0d4225a50862",
@@ -21,9 +21,51 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 28.14,
+      "timeliness": 27.47,
       "writing_value": 5,
-      "total_score": 113.14
+      "total_score": 112.47
+    },
+    {
+      "id": "c70955ca8bdb506ed664631e68110b660e8d97be",
+      "title": "ACE Robotics chairman says robot brains will have 'ChatGPT moment' by end of 2027 - Reuters",
+      "title_zh": "ACE Robotics 董事长表示，到 2027 年底，机器人大脑将拥有“ChatGPT 时刻” - 路透中文网",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQWDBxcmZmdGdPSTkzWHdLVTN5d3VIbU9mbDdrMDE5enl4MlNGa3RuTnFJQjJZWFpMX3k0Q3g0MWVlcTdTbGZwSFJNY2ZZN3VLRzBpWEdiYXRGZmgxRmlJZVVuRG45bUNHdlg4UnA5WWhFbzJPc29hT1hLcHM4d09fUjE4TS1rUVFlTkhsVlN1Mk9xY0pRakZUTlJ6enpZT0VlSlN5djk1cTNySVhodFM1a1NLa2Z2bUZhYWc?oc=5",
+      "published_at": "2026-08-21T11:00:10+00:00",
+      "category": "GN: robot",
+      "gn_label": "robotics",
+      "site_name": "GN: robot",
+      "source": "GN: robot",
+      "site_id": "GN: robot",
+      "description": "ACE Robotics chairman says robot brains will have 'ChatGPT moment' by end of 2027  Reuters",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 26.93,
+      "writing_value": 0,
+      "total_score": 101.93
+    },
+    {
+      "id": "4221fe8e460595bd5697d707a4832ee37cfe792f",
+      "title": "Raise Robotics unveils plans for shipyard coating robots - Robotics & Automation News",
+      "title_zh": "Raise Robotics 公布造船厂涂装机器人计划 - 机器人与自动化新闻",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQOFEyMWlEcUp1Z2xxclExamo3R2twbDQ2d0hkNUkzbkpCUWVvSXBrdGo3LTdXdkhkTUZ2aHBxejZzT01SZVJ1TWU2SnNlWEtvYmlpOWxEM0poendGOHVxQ1g0ekdmbWp6V1VrWDJwNVJPb3RGM2YtNUwyVHRaNTllTFc0cTNZZmR3V3d1TzFTa0JUc3FqZkNCaXlpNWlIclQyb0d5UHhGM0laYmx1SV94SnQxVQ?oc=5",
+      "published_at": "2026-08-21T13:34:59+00:00",
+      "category": "GN: autonomous robot",
+      "gn_label": "robotics",
+      "site_name": "GN: autonomous robot",
+      "source": "GN: autonomous robot",
+      "site_id": "GN: autonomous robot",
+      "description": "Raise Robotics unveils plans for shipyard coating robots  Robotics & Automation News",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.51,
+      "writing_value": 0,
+      "total_score": 104.51
     },
     {
       "id": "4f69701e995c3b7bad3c2b831d7166bccf3bb11c",
@@ -42,30 +84,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.44,
+      "timeliness": 27.78,
       "writing_value": 0,
-      "total_score": 118.44
-    },
-    {
-      "id": "9ce6dc3b92ed97aaf2f6f14dfb777d1520954ca1",
-      "title": "Narwal Freo 20 robot vacuum has a flagship-tier mop for hundreds of dollars less - 9to5Google",
-      "title_zh": "Narwal Freo 20 扫地机器人拥有旗舰级拖把，价格便宜数百美元 - 9to5Google",
-      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE41MkptQkdEOTVIbFpoOWoteXpUdEptTFVBVnotdEE3LWRJaFRySHI2OUxRT0xFSnNaRVJVTFZWcmhnZUZQU1J4RG10Rno0XzlEeDdnN1c2UExBSC0wOFJuRnpEaVA4RWh0QlhqaDdSZ2RPU2xQUzN6Y01rTlNFZw?oc=5",
-      "published_at": "2026-08-21T12:30:00+00:00",
-      "category": "GN: robot vacuum",
-      "gn_label": "robotics",
-      "site_name": "GN: robot vacuum",
-      "source": "GN: robot vacuum",
-      "site_id": "GN: robot vacuum",
-      "description": "Narwal Freo 20 robot vacuum has a flagship-tier mop for hundreds of dollars less  9to5Google",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 29.09,
-      "writing_value": 0,
-      "total_score": 104.09
+      "total_score": 117.78
     },
     {
       "id": "c295217ebe3d4a79e124e18c0f7024222777cf78",
@@ -84,9 +105,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 29.42,
+      "timeliness": 28.76,
       "writing_value": 5,
-      "total_score": 114.42
+      "total_score": 113.76
     },
     {
       "id": "ebf570b2c10fa86524c1a356475146cf1989ba42",
@@ -105,9 +126,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.54,
+      "timeliness": 28.87,
       "writing_value": 0,
-      "total_score": 104.54
+      "total_score": 103.87
     },
     {
       "id": "2cf37bb655688d11c908303f8485fada393bf6ab",
@@ -126,13 +147,13 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.62,
+      "timeliness": 26.96,
       "writing_value": 0,
-      "total_score": 102.62
+      "total_score": 101.96
     },
     {
-      "id": "936474a420497e42583ca88d2314a01f9c5e0b2b",
-      "title": "傅利叶GR-3C搭载速腾聚创数字激光雷达亮相WRC 2026，“具身之家”开启机器人管家时代 - 新浪财经",
+      "id": "17a3a2f95d1f84337fae68ef7555f6adab78e3c8",
+      "title": "傅利叶GR-3C搭载速腾聚创数字激光雷达亮相WRC 2026，“具身之家”开启机器人管家时代 - finance.sina.com.cn",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBoR1I4RDZRQm5RZUJrajFWUGNGNUVKd29Rc196N3hoQ1BPNno3dTRCWnVtUG5YQjc2WkN0V3dlb2VnQnR1QUVpcHJxVnJldG9RQ1JwNEhoTGJKcEIyNmRuLU5CWTd2V3hZb1NwaS04Zw?oc=5",
       "published_at": "2026-08-21T11:51:12+00:00",
@@ -141,15 +162,15 @@
       "site_name": "GN: 傅利叶智能",
       "source": "GN: 傅利叶智能",
       "site_id": "GN: 傅利叶智能",
-      "description": "傅利叶GR-3C搭载速腾聚创数字激光雷达亮相WRC 2026，“具身之家”开启机器人管家时代  新浪财经",
+      "description": "傅利叶GR-3C搭载速腾聚创数字激光雷达亮相WRC 2026，“具身之家”开启机器人管家时代  finance.sina.com.cn",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.44,
+      "timeliness": 27.78,
       "writing_value": 0,
-      "total_score": 103.44
+      "total_score": 102.78
     },
     {
       "id": "f22b5c127c2595345d0a81f0f4bf214609508578",
@@ -168,9 +189,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.5,
+      "timeliness": 27.84,
       "writing_value": 0,
-      "total_score": 103.5
+      "total_score": 102.84
     },
     {
       "id": "6ed46bdd02f5c7139812726835fdc73530bcb42e",
@@ -189,9 +210,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.62,
+      "timeliness": 27.95,
       "writing_value": 0,
-      "total_score": 103.62
+      "total_score": 102.95
     },
     {
       "id": "1ebc1db7aaed9115e30cdac0dc3ee4f90dc01248",
@@ -210,9 +231,30 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.1,
+      "timeliness": 28.44,
       "writing_value": 0,
-      "total_score": 119.1
+      "total_score": 118.44
+    },
+    {
+      "id": "b0e90565db40fb0bf5dd247a940ca00ba357183e",
+      "title": "逐际动力全矩阵产品亮相世界机器人大会 完成多轮融资加速具身智能落地 - 每日经济新闻",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9wN2poT2trcldLYkJsWXMwYVdDUDVlRzd5ZWkxNEwweEdXSU41V0x2Yk9xdTI5ZEEybV9STmpnb1MyS1hybTNfV0hGMGhDd2gyMF9YS2RRdjF0aTJvTGRKNGp0c243dw?oc=5",
+      "published_at": "2026-08-21T12:51:00+00:00",
+      "category": "GN: 人形机器人融资",
+      "gn_label": "robotics",
+      "site_name": "GN: 人形机器人融资",
+      "source": "GN: 人形机器人融资",
+      "site_id": "GN: 人形机器人融资",
+      "description": "逐际动力全矩阵产品亮相世界机器人大会 完成多轮融资加速具身智能落地  每日经济新闻",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 28.77,
+      "writing_value": 0,
+      "total_score": 118.77
     }
   ],
   "fallback_used": false
