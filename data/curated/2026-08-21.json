@@ -1,9 +1,9 @@
 {
   "date": "2026-08-21",
-  "generated_at": "2026-08-21T05:56:04.527867+00:00",
+  "generated_at": "2026-08-21T06:30:01.905166+00:00",
   "score_threshold": 80,
   "total_items": 50,
-  "new_added": 7,
+  "new_added": 1,
   "items": [
     {
       "id": "0ce78525c47b2419",
@@ -235,6 +235,27 @@
       "timeliness": 29.64,
       "writing_value": 5,
       "total_score": 129.64
+    },
+    {
+      "id": "3df0095665a88d48",
+      "title": "A Chinese robot ‘dies’ after hitting safety wall during World Humanoid Robot Games running test - The Times of India",
+      "title_zh": "世界人形机器人运动会跑步测试中，中国机器人撞上安全墙“身亡” - 印度时报",
+      "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxQVm8xUlphaFFXS0ZsYU5uWXZMVmtCVlN3N3BzTGstekpxSkRXak5ndkMzc2oydlZoNDlINEhxUmhYeXFkdlVfSUtKSmo0RWF3RTJwU1RQdEhRVG5TSWVyczg4TS1wd3JtWThLVzljbDVNMkZZOTluQVRyLUlOaEYwTzFBMmJkek10VVNUZVRXd2plcHFnaHQxRXZsOWZoYUw1MFBzX19pMGwxTC05cWpMZUt0LXdZZG1hemo5QUJpOHNnWUhMbGVQWXpmQW1HT2pEejYweHo3S0xOaUxCVmc0cTRTbFg5ZjlCeFd6MXFlVFREb0pZWnh3ZVdZOC1zWUQ2UTFpRVI0ONIBjAJBVV95cUxPM3EwRjU1enhTVW1jZUxTVVBKTDFURnBLQ0JEWkZYTnp2bmx2WEhjSWFUcHBBQUI0aEczcExiWUZBMk1tMnBzTXhUVWctUG1KMUJlWFlNNjZWMHQ4VlpLRUJqZkpZczhfODctVGc0WlF6VGVGbkZQZDM3RlE3b1pybHVnbGhMb1pkcFhPMWlpeDY4OWZ4dmc4ZEdDUmx3VW9lSHhENF9TYUl6LWlJQ0hCV3ZadFdjYVpMZXpIV3JuZ3dxX3FGaGNIcExTYWlhMW5WZmw1NkFkdWtlY1pVTFNIbHUzZl9SclBNYlRzaGgya1VEY2JPb092WHlxSW5ITEVYRjVGdjczMm9kdGdn?oc=5",
+      "published_at": "2026-08-21T06:05:00+00:00",
+      "category": "国外人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国外人形机器人资讯",
+      "source": "国外人形机器人资讯",
+      "site_id": "国外人形机器人资讯",
+      "description": "A Chinese robot ‘dies’ after hitting safety wall during World Humanoid Robot Games running test  The Times of India",
+      "ai_score": 80.0,
+      "ai_label": "humanoid",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 29.61,
+      "writing_value": 5,
+      "total_score": 129.61
     },
     {
       "id": "db49b004c2cc7030",
@@ -1033,27 +1054,6 @@
       "timeliness": 29.81,
       "writing_value": 0,
       "total_score": 119.81
-    },
-    {
-      "id": "c4839bb15d4a94e8",
-      "title": "Humanoid robots take centre stage in China-US tech race - Al Jazeera",
-      "title_zh": "人形机器人成为中美科技竞赛的焦点 - 半岛电视台",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPSC1vQ2g4SFNhVXZtcU1QUmdxempCZzFySklvTTBSRHd3bmVNZ2UwRTJGXzk1bzBjRFNwNEROOXo5STYwdm9Zc2hubkhXQ1BPSlZfOGI4ZFl1LVFma2k5Q3J4MnByc0xORnR1cWxNY2RLcWYyRk9iY2thYlFWRFVqSUE2MlczaXZIbHc2b0hSaFB2ZnBFbURyanY3V0RDNHVMNlhtbm9PdGJjZ9IBrwFBVV95cUxOUnJadWlEOS1wQWNuQmNYNm5DYVRlOFVScG1TYWYzanpHcGFDVkhaTm40NXB6SXlBUVQ1OUdORURvMXV6QkxoWnAtM3ZWaVVXdENYMzFzWGRTWnplYVpGTVNkVC0tVXBlNElIZGdyZXdZbld5TEY3Y3o4eXNIemI1QTZUQnVTRGt3SXlyd1FnS2hHQ1hmcHJpTDZzelZwZERyMjJrWXlsdkFpbVVnQmxF?oc=5",
-      "published_at": "2026-08-20T17:18:07+00:00",
-      "category": "国外机器人资讯",
-      "gn_label": "robotics",
-      "site_name": "国外机器人资讯",
-      "source": "国外机器人资讯",
-      "site_id": "国外机器人资讯",
-      "description": "Humanoid robots take centre stage in China-US tech race  Al Jazeera",
-      "ai_score": 80.0,
-      "ai_label": "robotics",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 29.8,
-      "writing_value": 0,
-      "total_score": 119.8
     }
   ]
 }
