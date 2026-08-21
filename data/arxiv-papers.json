@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-21T20:16:26.564907+00:00",
-  "total_items": 14,
+  "generated_at": "2026-08-21T20:47:08.211364+00:00",
+  "total_items": 12,
   "items": [
     {
       "id": "http://arxiv.org/abs/2608.20284v1",
@@ -133,28 +133,6 @@
       "published_at": "2026-08-20T09:27:56+00:00",
       "updated_at": "2026-08-20T09:27:56Z",
       "title_zh": "安抚机器人的演讲？探索机器人音调对儿童压力水平的影响"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.19794v1",
-      "title": "Towards general embodied intelligence: integrating large language models, knowledge bases, and reasoning capabilities to build the next generation of AI agents",
-      "url": "https://arxiv.org/abs/2608.19794",
-      "summary": "The convergence of large language models (LLMs), structured knowledge bases (KBs), and reasoning ability (RA) presents a promising trajectory toward general embodied intelligence (GEI). This paper reviews the evolution of LLM-centered intelligent systems, emphasising their integration with knowledge representation, logical reasoning, and physical embodiment. We analyse LLM architectures, pre-training methods, and inference mechanisms, along with their interaction with external knowledge sources and structured reasoning frameworks. Furthermore, we examine embodied intelligence (EI) paradigms wherein agents learn and act in physical environments. To synthesise these dimensions, we present a conceptual framework that illustrates the synergy among LLMs, KBs, RA, and embodiment, serving as a guiding model for perception, reasoning, and action rather than an implemented engineering architecture. To advance toward GEI, we identify five key challenges: efficient LLM deployment, closed-loop knowledge integration, hybrid symbolic-neural reasoning, perception-action grounding, and continual learning. This survey provides a comprehensive roadmap for developing adaptive, multimodal agents capable of operating in complex, dynamic settings.",
-      "authors": "Fujiang Yuan, Xia Huang, Lusheng Wang et al.",
-      "category": "cs.AI",
-      "published_at": "2026-08-20T08:45:51+00:00",
-      "updated_at": "2026-08-20T08:45:51Z",
-      "title_zh": "迈向通用体现智能：集成大型语言模型、知识库和推理能力，构建下一代人工智能代理"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.19776v1",
-      "title": "CoToGrasp: Contact-Topology-Conditioned Dexterous Grasp Synthesis via Canonical Workspace Learning",
-      "url": "https://arxiv.org/abs/2608.19776",
-      "summary": "Current dexterous grasp planners primarily optimize for physical stability, focusing on whether an object can be grasped rather than how it should be grasped to support downstream functional tasks. However, conditioning grasp synthesis on specific human grasp taxonomies typically requires prohibitively expensive, object-annotated datasets. To address these limitations, we propose CoToGrasp, a novel generative framework that synthesizes diverse, stable grasps strictly conditioned on specific contact topologies. To bypass the data collection bottleneck, CoToGrasp is trained entirely in an object-agnostic manner. We introduce a feature-based canonical workspace that projects local object features into a unified gripper-centric domain, effectively decoupling the semantic functional intent from the arbitrary object geometry. By learning the intrinsic contact manifold of the gripper within this workspace, our model achieves zero-shot generalization to unseen objects at inference. Extensive evaluations on the large-scale DexGraspNet dataset demonstrate that CoToGrasp achieves state-of-the-art performance, outperforming existing taxonomy-guided planners. Finally, we demonstrate the physical viability and kinematic feasibility of our synthesized contact topologies on a physical robot platform. Code is available on our project website https://cea-list.github.io/cotograspweb/ .",
-      "authors": "Julien Merand, Boris Meden, Liming Chen et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-20T08:19:44+00:00",
-      "updated_at": "2026-08-20T08:19:44Z",
-      "title_zh": "CoToGrasp：通过规范工作空间学习进行接触拓扑条件的灵巧抓取合成"
     }
   ]
 }
