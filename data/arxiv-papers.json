@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-21T15:01:46.940574+00:00",
-  "total_items": 24,
+  "generated_at": "2026-08-21T15:57:40.726766+00:00",
+  "total_items": 21,
   "items": [
     {
       "id": "http://arxiv.org/abs/2608.20284v1",
@@ -232,39 +232,6 @@
       "published_at": "2026-08-20T05:04:25+00:00",
       "updated_at": "2026-08-20T05:04:25Z",
       "title_zh": "具有基于 PWM 激励和高保真扭矩控制的磁性自密封 MR 触觉执行器"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.19613v1",
-      "title": "What Matters for Latent Actions in Robot Learning",
-      "url": "https://arxiv.org/abs/2608.19613",
-      "summary": "Latent Action Models (LAMs) have emerged as a promising paradigm for enabling robot learning to leverage large-scale unlabeled videos through latent actions that serve as compact surrogates for physical actions. Despite rapid progress, research on LAM remains highly fragmented, with existing methods evaluating different design choices in isolation under inconsistent experimental settings, making it difficult to identify the factors that truly determine downstream robotic manipulation performance. In this work, we present the first comprehensive empirical study of latent action learning for robotic manipulation. We unify representative LAM methods within a common autoencoding framework and systematically investigate 41 LAM design choices across three dimensions, including latent action modeling paradigms, learning objectives and regularization methods, and latent action integration strategies. We further examine four proxy metrics for evaluating latent action quality and assess their ability to reliably predict downstream robotic manipulation performance. Extensive experiments on three widely used benchmarks provide strong empirical evidence that fine-tuning vision-language model (VLM) backbones with latent actions provides a stronger initialization for downstream policy learning, with further validation on real-world robot manipulation tasks.",
-      "authors": "Xizhou Bu, Qingda Hu, Lei Zhou et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-20T03:54:51+00:00",
-      "updated_at": "2026-08-20T03:54:51Z",
-      "title_zh": "机器人学习中的潜在动作最重要的是什么"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.19593v1",
-      "title": "The Verification Gap in Networked Physical AI: A Post-Semantic Communication Framework",
-      "url": "https://arxiv.org/abs/2608.19593",
-      "summary": "A task-effective proposal is not yet a justified physical action. In networked Physical AI, a proposal may be understood while valid, timely, proposal-bound evidence or the authority required to finalize an action remains unavailable. We call this mismatch the verification gap and introduce a Post-Semantic Communication Framework for the systems interface between proposal formation and physical execution. The framework begins with application-declared evidence requirements, represents qualifying observations as evidence records, validates supporting and conflicting records through one path, and separates evidence sufficiency from authorized finalization and a downstream runtime gate. It further distinguishes evidence transfer, which can enlarge the record set reachable by a finalizer, from evidence coordination, which can suppress transmission around records already held at the finalization endpoint. Finite-state framework checks verify that the evaluator implements the declared distinctions consistently. Under the declared model, the controlled communication study exposes a finalizer-dependent asymmetry: sender-finalized Feedback uses evidence transfer to expand evidence reachability throughout the feasible plotted region, whereas receiver-finalized Feedback uses coordination to suppress redundant payload until loss, latency, freshness, and deadline costs shift selection to One-way. Finally, an episode-level reporting schema defines common denominators for future measured Physical-AI studies.",
-      "authors": "Shunsuke Saruwatari",
-      "category": "cs.RO",
-      "published_at": "2026-08-20T03:17:20+00:00",
-      "updated_at": "2026-08-20T03:17:20Z",
-      "title_zh": "网络物理人工智能的验证差距：后语义通信框架"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.19589v1",
-      "title": "OrthoSkillVLA: Continual Skill Learning via Gradient-Informed Skill Subspace Adaptation",
-      "url": "https://arxiv.org/abs/2608.19589",
-      "summary": "Pretrained Vision-Language-Action models provide a strong foundation for robot learning, but sequentially adapting them to diverse skills can perturb the representations and velocity mappings used by previous skills, leading to catastrophic forgetting. Architecture-based approaches improve retention by isolating skills but lead to increased inference footprint. Recent subspace-constrained methods restrict parameter updates in an orthogonal subspace to minimize interference but impose a unified constraint on the entire model. We analyze the distinct roles of internal VLA components and identify two VLA-specific challenges. First, the VLM maintains broad semantic representations, making it vulnerable to capacity exhaustion, whereas the ActionHead refines semantics into localized velocity patterns that are highly sensitive to perturbations. Second, the final velocity decoder serves as a readout layer. Freezing it forms an output-stage expressivity bottleneck, while updating it risks overwriting previous velocity mappings. To this end, we propose OrthoSkillVLA, a parameter-efficient framework for continual skill learning in pretrained VLA models without demonstration replay. Given the representation heterogeneity, we impose separate subspace constraints on the VLM and ActionHead, preserving reusable semantic capacity while protecting localized velocity patterns. For the output layer, we introduce a lightweight feature-aware MoE decoder, where each skill is allocated a compact expert and a training-free router selects the expert according to feature-space affinity. Extensive simulated and real-world evaluations, together with ablations, demonstrate that OrthoSkillVLA better preserves prior skills while acquiring new ones.",
-      "authors": "Jiaqi Wang, Zhou Fang, Qiongfeng Shi et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-20T03:10:31+00:00",
-      "updated_at": "2026-08-20T03:10:31Z",
-      "title_zh": "OrthoSkillVLA：通过梯度通知技能子空间适应进行持续技能学习"
     }
   ]
 }
