@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-21T10:58:24.921364+00:00",
-  "total_items": 30,
+  "generated_at": "2026-08-21T11:22:05.708088+00:00",
+  "total_items": 28,
   "items": [
     {
       "id": "http://arxiv.org/abs/2608.20284v1",
@@ -309,28 +309,6 @@
       "published_at": "2026-08-20T00:36:24+00:00",
       "updated_at": "2026-08-20T00:36:24Z",
       "title_zh": "LF-GICP：通过体素正态定位场进行无参数简并感知 LiDAR 里程计"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.19492v1",
-      "title": "Beyond Multimodal Alignment: Certifying Physical Language through Response Substitution and Ordered Execution",
-      "url": "https://arxiv.org/abs/2608.19492",
-      "summary": "World models increasingly treat compact multimodal representations as interfaces between perception and physical interaction, yet existing probes do not establish whether different sensors carry the same executable meaning or whether that meaning survives a new action composition. We introduce an operational capability hierarchy and the Disjoint-Bridge Operator-Substitution Certificate (DBOSC), which asks whether independently trained modality compilers enter a frozen response chart interchangeably on evidence outside their training panels. On Cluster Haptic, audio and acceleration representations of the same unseen surface are 4.5x closer in response space than wrong-surface pairings, with the gap holding for all 19 held-out surfaces; unsealing withheld responses confirms that every branch predicts the physics better than the population chart. We then test ordered execution in a controlled elastoplastic system with complementary modality blind spots. At the pre-registered budget, the prerequisite refuses the stack because the frozen executor cannot advance even an exact chart coordinate through a held-out program. At a converged budget, the same rank-three chart executes those programs (oracle NMSE 0.18), fusion improves on both modalities, and 14 of 16 registered checks pass; the two failures arise because a diagonal restriction of the fused information matrix performs as well as the full one. Clearing the gate is a property of the executor, not the chart: an executor emitting whole programs instead of shared per-step dynamics is 38x worse than an entity-blind predictor on the same chart. A matching non-identifiability result explains why compression and fusion alone cannot determine an unseen composition law. These results separate attribute access, response substitution, fusion closure, and ordered execution into distinct, separately testable achievements.",
-      "authors": "Kaizhen Tan, Xin Xu, Siru Tao et al.",
-      "category": "cs.LG",
-      "published_at": "2026-08-19T23:04:53+00:00",
-      "updated_at": "2026-08-19T23:04:53Z",
-      "title_zh": "超越多模态对齐：通过响应替换和有序执行来验证物理语言"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.19490v1",
-      "title": "Fine-Tuning VLAs with Self-Demonstrated Generative Control for Multi-Task Manipulation",
-      "url": "https://arxiv.org/abs/2608.19490",
-      "summary": "State-of-the-art vision-language-action (VLA) models such as $π_{0.5}$ exhibit strong semantic understanding, instruction following and task behavior. However, when deployed on new robots, even minor mismatches in hardware configuration relative to pretraining can cause severe performance drops. Finetuning the VLA on in-domain expert data from the new embodiment improves performance on the expert task but leads to a loss in its original instruction following and behavioral priors. In this paper, we propose a self-supervised method that generates online interaction rollouts from the zero-shot VLA as additional training data for finetuning. Our experiments show this finetuning scheme yields strong multi-task policies that, on the target robot, (1) inherit prior tasks distilled from the zero-shot model, (2) enable generalist instruction following, while (3) learning new skills from expert data with improved sample efficiency. We demonstrate the success of our approach across test sets probing generalization on a real ALOHA robot and a new simulation benchmark in RoboTwin. Video results are available at https://self-supervised-control.pages.dev/",
-      "authors": "Prachi Garg, Steve Xing, Prahit Yaugand et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-19T23:02:07+00:00",
-      "updated_at": "2026-08-19T23:02:07Z",
-      "title_zh": "通过自我演示的多任务操作生成控制微调 VLA"
     }
   ]
 }
