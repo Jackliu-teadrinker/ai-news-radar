@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-21T19:06:11.235656+00:00",
-  "total_items": 17,
+  "generated_at": "2026-08-21T19:46:11.363804+00:00",
+  "total_items": 15,
   "items": [
     {
       "id": "http://arxiv.org/abs/2608.20284v1",
@@ -166,28 +166,6 @@
       "published_at": "2026-08-20T08:03:39+00:00",
       "updated_at": "2026-08-20T08:03:39Z",
       "title_zh": "GOAG：用于灵巧机器人操作的生成式和与对象无关的抓取规划器"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.19740v1",
-      "title": "Keeping the Franka Emika Panda alive: a ROS 2 stack with a reliable position interface",
-      "url": "https://arxiv.org/abs/2608.19740",
-      "summary": "This paper presents an open-source software stack that restores ROS 2 support for the Franka Emika Panda robot while resolving the long-standing unreliability of its external position control interface. We first analyze the root causes of unstable position control and show that the observed vibrations and protective stops arise from the timing of the external control loop and sampling jitter, rather than from limitations of the robot itself. Building on this analysis, we introduce an asynchronous hardware interface that decouples real-time communication from the ROS 2 control loop, a rate-matching mechanism for slower command sources, and a position-domain reference generation strategy that produces reliable, smooth position commands. Experimental validation shows that the proposed architecture reliably tracks velocity references by reducing motion artifacts introduced by the official implementation, and the stack is validated across motion planning, compliance control, position-controlled manipulation, and haptic teleoperation on two independent Panda platforms. By restoring a modern, reliable, and open ROS 2 ecosystem for the Panda, this work lowers the barrier to developing safe, responsive, and reproducible human-robot collaboration applications that integrate planning, perception, interaction, and shared autonomy. Code and videos are available on our website at https://sites.google.com/view/fer-ros2/.",
-      "authors": "Antonio Langella, Davide Risi, Vincenzo Petrone et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-20T07:37:48+00:00",
-      "updated_at": "2026-08-20T07:37:48Z",
-      "title_zh": "让 Franka Emika Panda 保持活力：具有可靠位置接口的 ROS 2 堆栈"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.19729v1",
-      "title": "SafeBranch: Branch-Pair Safety Alignment for Embodied Agents",
-      "url": "https://arxiv.org/abs/2608.19729",
-      "summary": "Vision-language-model-based embodied agents can complete instructed tasks but often violate safety constraints in the process, a problem recently framed as interactive safety. Training such agents to act safely is difficult, since safety and task success are distinct objectives, and safety arises only at a small number of safety-critical steps within a trajectory. Standard supervision is insufficient: imitating safe trajectories teaches behavior without explaining why it is safe, and contrasting arbitrary safe and unsafe trajectories mixes the safety signal with unrelated differences. We propose SafeBranch, a framework that aligns an embodied actor on safety through branch pairs constructed from the actor's own unsafe rollouts via environment rollback. SafeBranch rolls each unsafe rollout back to the safety-critical step that caused the violation, queries the actor for a safe alternative, and pairs the original action with the alternative so that the two branches differ only at that step. The trained actor acts safely at deployment with no critic in the loop. On IS-Bench, SafetyALFRED, and out-of-distribution variants with unseen tasks and objects, it handles safety reliably without sacrificing task success, achieving roughly ten times more safe successes than the untrained baseline on the unseen-object variant.",
-      "authors": "Hyunse Lee, Jiwoo Jeong, Haneul Lee et al.",
-      "category": "cs.AI",
-      "published_at": "2026-08-20T07:29:07+00:00",
-      "updated_at": "2026-08-20T07:29:07Z",
-      "title_zh": "SafeBranch：实体代理的分支对安全对齐"
     }
   ]
 }
