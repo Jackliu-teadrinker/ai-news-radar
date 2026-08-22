@@ -1,30 +1,9 @@
 {
-  "generated_at": "2026-08-22T22:12:07.763842+00:00",
+  "generated_at": "2026-08-22T22:45:00.804873+00:00",
   "window_start": "2026-08-22T19:00:00+08:00",
-  "window_end": "2026-08-23T06:11:47.232601+08:00",
-  "total_items": 14,
+  "window_end": "2026-08-23T06:44:40.324013+08:00",
+  "total_items": 12,
   "items": [
-    {
-      "id": "35d04a36b384d4b8fd47743f697fdf6bea3070d8",
-      "title": "Autonomous robots now live on desert solar rows, wake up after dark, brush the glass dry with no water and park to recharge off their own panel — dirty glass costs 7 to 50 percent of a farm's output, and after a dust storm it can hit 80 percent - Autonocion.com",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5pRTBGUnpyT1JVQkRWSE1FdnpEdGhnRHZtdERKb3hSMGdUVTlGVGpwTEowODZKOC1va3pUYUtCcEhHYnJVMkZmWHFKLW11UGNBZzcta0hBbk1LbUF0elNoQlVkRE1FUDRzZkpORFBqTQ?oc=5",
-      "published_at": "2026-08-22T12:03:27+00:00",
-      "category": "GN: autonomous robot",
-      "gn_label": "robotics",
-      "site_name": "GN: autonomous robot",
-      "source": "GN: autonomous robot",
-      "site_id": "GN: autonomous robot",
-      "description": "Autonomous robots now live on desert solar rows, wake up after dark, brush the glass dry with no water and park to recharge off their own panel — dirty glass costs 7 to 50 percent of a farm's output, and after a dust storm it can hit 80 percent  Autonocion.com",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 5,
-      "timeliness": 19.86,
-      "writing_value": 5,
-      "total_score": 104.86
-    },
     {
       "id": "308730d47d05582af87bf4658416a6f199f75a2f",
       "title": "不是Demo！优必选把客户产线1:1搬进WRC，解锁具身智能真落地路径",
@@ -42,9 +21,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 22.58,
+      "timeliness": 22.04,
       "writing_value": 0,
-      "total_score": 112.58
+      "total_score": 112.04
     },
     {
       "id": "945dfcbc8ac678c881788474e9d0222a13cca91e",
@@ -63,9 +42,30 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 19.99,
+      "timeliness": 19.45,
       "writing_value": 0,
-      "total_score": 109.99
+      "total_score": 109.45
+    },
+    {
+      "id": "35d04a36b384d4b8fd47743f697fdf6bea3070d8",
+      "title": "Autonomous robots now live on desert solar rows, wake up after dark, brush the glass dry with no water and park to recharge off their own panel — dirty glass costs 7 to 50 percent of a farm's output, and after a dust storm it can hit 80 percent - Autonocion.com",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5pRTBGUnpyT1JVQkRWSE1FdnpEdGhnRHZtdERKb3hSMGdUVTlGVGpwTEowODZKOC1va3pUYUtCcEhHYnJVMkZmWHFKLW11UGNBZzcta0hBbk1LbUF0elNoQlVkRE1FUDRzZkpORFBqTQ?oc=5",
+      "published_at": "2026-08-22T12:03:27+00:00",
+      "category": "GN: autonomous robot",
+      "gn_label": "robotics",
+      "site_name": "GN: autonomous robot",
+      "source": "GN: autonomous robot",
+      "site_id": "GN: autonomous robot",
+      "description": "Autonomous robots now live on desert solar rows, wake up after dark, brush the glass dry with no water and park to recharge off their own panel — dirty glass costs 7 to 50 percent of a farm's output, and after a dust storm it can hit 80 percent  Autonocion.com",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 19.31,
+      "writing_value": 5,
+      "total_score": 104.31
     },
     {
       "id": "0f58ae5f9da9e0a96f9040adefd761db56bc987f",
@@ -84,51 +84,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 18.81,
+      "timeliness": 18.27,
       "writing_value": 0,
-      "total_score": 93.81
-    },
-    {
-      "id": "e2bb68518cfc43290832b45c06abee34ee94d9e2",
-      "title": "人形机器人AstraTennis 时刻：银河通用的263秒全自主决策 - 新浪财经",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQRFEtdlVVNHY4NVFMSFpfQlNZb1RzbW1YM0FFSWUtVFdvSkdIUkJURXlJcUxnZ2dEbFR6aEJzQXRKbEdaZHlRYkRxMHZNSUZFZi0xRFdmOFloN0gwYThjMkVhSERYQ1htZFo1a1hxenZhTGVOTEo4MUpabDN4SFFMbHpOOW1RdndtQTRvN2gzTUhnZ0xaSWV6QWZLSWhhZGw2ZXIzMHJuQUc4WVgwR2xnM1dVbmJVa1ZsNVdTYWhvbndpSTEzSi1uUGJtVjdLdmhOYkxMRXpWWGVwR1pFdEIw?oc=5",
-      "published_at": "2026-08-22T15:35:00+00:00",
-      "category": "GN: 人形机器人",
-      "gn_label": "humanoid",
-      "site_name": "GN: 人形机器人",
-      "source": "GN: 人形机器人",
-      "site_id": "GN: 人形机器人",
-      "description": "人形机器人AstraTennis 时刻：银河通用的263秒全自主决策  新浪财经",
-      "ai_score": 80.0,
-      "ai_label": "humanoid",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 23.39,
-      "writing_value": 0,
-      "total_score": 113.39
-    },
-    {
-      "id": "47ecaf957cdfd9be67afcaa29e6d0f8fa61a3a6c",
-      "title": "人形机器人热潮已然掀起 高壁垒零部件或为布局首选？ - 东方财富",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9RazVVcjROcjhPRmFNOWxwX0F4RmVRalFZa0RtZXRvLWZnVTBmdlFPQjFLcjI0bEJqY3pTYkRZeXVlUi1sMHM1b3hCY0hGTnFydkFLb1FJa1lkSTFwdzVxeQ?oc=5",
-      "published_at": "2026-08-22T12:50:08+00:00",
-      "category": "GN: 人形机器人",
-      "gn_label": "humanoid",
-      "site_name": "GN: 人形机器人",
-      "source": "GN: 人形机器人",
-      "site_id": "GN: 人形机器人",
-      "description": "人形机器人热潮已然掀起 高壁垒零部件或为布局首选？  东方财富",
-      "ai_score": 80.0,
-      "ai_label": "humanoid",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 20.64,
-      "writing_value": 0,
-      "total_score": 110.64
+      "total_score": 93.27
     },
     {
       "id": "7a2c8144e7c0d0193bb9b668eafc44fab7b37d01",
@@ -147,9 +105,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 5,
-      "timeliness": 19.92,
+      "timeliness": 19.37,
       "writing_value": 5,
-      "total_score": 119.92
+      "total_score": 119.37
     },
     {
       "id": "c8b9b6fcc965e23923c58c354697129fc95d2e72",
@@ -168,9 +126,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 5,
-      "timeliness": 19.47,
+      "timeliness": 18.92,
       "writing_value": 5,
-      "total_score": 119.47
+      "total_score": 118.92
     },
     {
       "id": "da080988b67c5e5ff475f363ace911026a4a3306",
@@ -189,16 +147,16 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 19.98,
+      "timeliness": 19.43,
       "writing_value": 0,
-      "total_score": 94.98
+      "total_score": 94.43
     },
     {
       "id": "0a492fdb18c358ffe4495a332a04a35688e3d425",
       "title": "带着机械臂能在轨自拍 - 天津日报",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxObHhLNWI5d2lnR3lPUWwtRGxrUFdlZVZLUThQTElSTldua09lNUM0Z2ZlZ05MbXNDZEJnYWpEa256TDhxREhuTkVzcnpDc0JWX3BiMmdhZFVBcUVMSDlySk9DaWdUYmJsV2VyX2FmZGJsQU15VWJvMVVaWElpZWtaN3BR?oc=5",
-      "published_at": "2026-08-22T20:48:51+00:00",
+      "published_at": "2026-08-22T20:56:24+00:00",
       "category": "GN: 机械臂",
       "gn_label": "robotics",
       "site_name": "GN: 机械臂",
@@ -210,9 +168,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.62,
+      "timeliness": 28.2,
       "writing_value": 0,
-      "total_score": 103.62
+      "total_score": 103.2
     },
     {
       "id": "26b78b12e1b54054f7917eca2fcb6bc35692278d",
@@ -231,9 +189,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 19.42,
+      "timeliness": 18.87,
       "writing_value": 0,
-      "total_score": 94.42
+      "total_score": 93.87
     },
     {
       "id": "7ac848f392cc94aa85626aa02a4849674bef4dd5",
@@ -252,9 +210,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 19.05,
+      "timeliness": 18.5,
       "writing_value": 0,
-      "total_score": 94.05
+      "total_score": 93.5
     },
     {
       "id": "03d8fd25730f60af7226677f8fda850d6a0efc1f",
@@ -273,9 +231,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 20.32,
+      "timeliness": 19.77,
       "writing_value": 0,
-      "total_score": 110.32
+      "total_score": 109.77
     },
     {
       "id": "667b7bfb44516c561496327160bcdabf1e666a62",
@@ -294,9 +252,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.14,
+      "timeliness": 23.59,
       "writing_value": 0,
-      "total_score": 114.14
+      "total_score": 113.59
     }
   ],
   "fallback_used": false
