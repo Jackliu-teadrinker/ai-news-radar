@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-22T11:42:19.457308+00:00",
+  "generated_at": "2026-08-22T12:19:32.124770+00:00",
   "window_start": "2026-08-22T19:00:00+08:00",
-  "window_end": "2026-08-22T19:42:18.926404+08:00",
-  "total_items": 2,
+  "window_end": "2026-08-22T20:19:31.976520+08:00",
+  "total_items": 4,
   "items": [
     {
       "id": "0f58ae5f9da9e0a96f9040adefd761db56bc987f",
@@ -21,9 +21,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.3,
+      "timeliness": 28.69,
       "writing_value": 0,
-      "total_score": 104.3
+      "total_score": 103.69
     },
     {
       "id": "26b78b12e1b54054f7917eca2fcb6bc35692278d",
@@ -42,9 +42,51 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.91,
+      "timeliness": 29.3,
       "writing_value": 0,
-      "total_score": 104.91
+      "total_score": 104.3
+    },
+    {
+      "id": "e3976c12f487081353895d2b78b64c38f6fbb4f9",
+      "title": "亮相2026世界机器人大会，千觉机器人让整只灵巧手拥有“高质量触觉” - 新浪网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5ubUNLT3hTQjNqMWxCRXhVYTc0MXJjckZOTVc2V3dQZWhqaGttbEY4SWRVd1VCbnI4U3pVUnlfWEdhc19Sa1poWU9uOHNvT0pHc3owR2lmZzF5c3BTUGJ1RFI0UDFHR3J2ekZuVVc3RWI2YkUwSnZFWEV3bUUtS1k?oc=5",
+      "published_at": "2026-08-22T11:14:43+00:00",
+      "category": "GN: 灵巧手",
+      "gn_label": "robotics",
+      "site_name": "GN: 灵巧手",
+      "source": "GN: 灵巧手",
+      "site_id": "GN: 灵巧手",
+      "description": "亮相2026世界机器人大会，千觉机器人让整只灵巧手拥有“高质量触觉”  新浪网",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 28.93,
+      "writing_value": 0,
+      "total_score": 103.93
+    },
+    {
+      "id": "407271e86380a0ed25a1a6c7767929be28376653",
+      "title": "不是Demo！优必选把客户产线1:1搬进WRC，解锁具身智能真落地路径 - 搜狐网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNZHQ0d2V5bXJHV1E4VTFzMjdCOVYwY1JEaFpNNm5tdE41S2FRZkFMMlJDcURHaFJrU1A4d0tiUFItNjk1QWFlQVlCUE9fWjhyN1Q1R0Z3R0hWOGJHOGd4MTFRTmQ4V1dZMmxjTURONHppUU5VU2RhbVZGbUMwLWpERkk1T3NlMGJW?oc=5",
+      "published_at": "2026-08-22T11:31:09+00:00",
+      "category": "GN: 优必选",
+      "gn_label": "robotics",
+      "site_name": "GN: 优必选",
+      "source": "GN: 优必选",
+      "site_id": "GN: 优必选",
+      "description": "不是Demo！优必选把客户产线1:1搬进WRC，解锁具身智能真落地路径  搜狐网",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.2,
+      "writing_value": 0,
+      "total_score": 119.2
     }
   ],
   "fallback_used": false
