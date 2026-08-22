@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-22T11:13:11.282236+00:00",
+  "generated_at": "2026-08-22T11:42:19.457308+00:00",
   "window_start": "2026-08-22T19:00:00+08:00",
-  "window_end": "2026-08-22T19:13:10.649361+08:00",
-  "total_items": 1,
+  "window_end": "2026-08-22T19:42:18.926404+08:00",
+  "total_items": 2,
   "items": [
     {
       "id": "0f58ae5f9da9e0a96f9040adefd761db56bc987f",
@@ -21,9 +21,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.81,
+      "timeliness": 29.3,
       "writing_value": 0,
-      "total_score": 104.81
+      "total_score": 104.3
+    },
+    {
+      "id": "26b78b12e1b54054f7917eca2fcb6bc35692278d",
+      "title": "从几十万到几万块，灵巧手太卷了 - 搜狐网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPd0FjOFZMWThaRWNLY05MV0FWUTUwTFAwOG1ROFZ6RUpDTHRQV3FaMXNkTF9sdjR4MjczNnI0Wk5OaGFIZ3lOQlZCQnAxejhBakt3Vjg2S1B4YV9YZ1NhS2l1ckJhLUhXVVZFSF9IcDM5VjNhR1BnTFYwZTB1MnhfMWJUYVpoYzJoT19nLQ?oc=5",
+      "published_at": "2026-08-22T11:36:41+00:00",
+      "category": "GN: 灵巧手",
+      "gn_label": "robotics",
+      "site_name": "GN: 灵巧手",
+      "source": "GN: 灵巧手",
+      "site_id": "GN: 灵巧手",
+      "description": "从几十万到几万块，灵巧手太卷了  搜狐网",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.91,
+      "writing_value": 0,
+      "total_score": 104.91
     }
   ],
   "fallback_used": false
