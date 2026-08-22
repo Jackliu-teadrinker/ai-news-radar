@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-22T21:12:48.892540+00:00",
+  "generated_at": "2026-08-22T21:43:53.650586+00:00",
   "window_start": "2026-08-22T19:00:00+08:00",
-  "window_end": "2026-08-23T05:12:28.574033+08:00",
-  "total_items": 12,
+  "window_end": "2026-08-23T05:43:33.297346+08:00",
+  "total_items": 14,
   "items": [
     {
       "id": "35d04a36b384d4b8fd47743f697fdf6bea3070d8",
@@ -21,9 +21,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 20.85,
+      "timeliness": 20.34,
       "writing_value": 5,
-      "total_score": 105.85
+      "total_score": 105.34
     },
     {
       "id": "0f58ae5f9da9e0a96f9040adefd761db56bc987f",
@@ -42,51 +42,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 19.8,
+      "timeliness": 19.29,
       "writing_value": 0,
-      "total_score": 94.8
-    },
-    {
-      "id": "308730d47d05582af87bf4658416a6f199f75a2f",
-      "title": "不是Demo！优必选把客户产线1:1搬进WRC，解锁具身智能真落地路径",
-      "title_zh": "",
-      "url": "https://www.qbitai.com/2026/08/477253.html",
-      "published_at": "2026-08-22T14:46:43+00:00",
-      "category": "量子位",
-      "gn_label": "robotics",
-      "site_name": "量子位",
-      "source": "量子位",
-      "site_id": "量子位",
-      "description": "端侧部署解决了具身大脑能否装进身体的问题。那么，同一个「大脑」，如何快速适配工业、商用和家庭三类机器人呢？",
-      "ai_score": 80.0,
-      "ai_label": "robotics",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 23.57,
-      "writing_value": 0,
-      "total_score": 113.57
-    },
-    {
-      "id": "945dfcbc8ac678c881788474e9d0222a13cca91e",
-      "title": "不是Demo！优必选把客户产线1:1搬进WRC，解锁具身智能真落地路径",
-      "title_zh": "",
-      "url": "https://www.qbitai.com/2026/08/477016.html",
-      "published_at": "2026-08-22T12:11:23+00:00",
-      "category": "量子位",
-      "gn_label": "robotics",
-      "site_name": "量子位",
-      "source": "量子位",
-      "site_id": "量子位",
-      "description": "具身智能赛道壁垒不在出货量",
-      "ai_score": 80.0,
-      "ai_label": "robotics",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 20.98,
-      "writing_value": 0,
-      "total_score": 110.98
+      "total_score": 94.29
     },
     {
       "id": "7a2c8144e7c0d0193bb9b668eafc44fab7b37d01",
@@ -105,9 +63,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 5,
-      "timeliness": 20.91,
+      "timeliness": 20.4,
       "writing_value": 5,
-      "total_score": 120.91
+      "total_score": 120.4
     },
     {
       "id": "c8b9b6fcc965e23923c58c354697129fc95d2e72",
@@ -126,9 +84,30 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 5,
-      "timeliness": 20.46,
+      "timeliness": 19.95,
       "writing_value": 5,
-      "total_score": 120.46
+      "total_score": 119.95
+    },
+    {
+      "id": "6a2301e00a69b66f676764fc9bfb3214ebd4e7f9",
+      "title": "第二届世界人形机器人运动会开幕：2056台机器人齐聚“冰丝带” - 新浪财经",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOSy1pNnFFa1dhencxaUwtSjhabzdYRHJHUG5jRzFZdldwRDRXaTJpYUJfdzF5bVQ2dnNXeHhHM3ZxWDE3SUMzWnlvMWJ1U1ItbEVGY2tMdVg4ajhmUk80bUJuWnV2eWVtbFdDUHBhaGQ4bGxiQ25NY0dOQ1dDdi1MTmV4TDgtVy10eTZfc2JyNkxxU21oWURfREVtNlV4Vkl3OEg5dEhRNA?oc=5",
+      "published_at": "2026-08-22T15:05:12+00:00",
+      "category": "GN: 机器人",
+      "gn_label": "robotics",
+      "site_name": "GN: 机器人",
+      "source": "GN: 机器人",
+      "site_id": "GN: 机器人",
+      "description": "第二届世界人形机器人运动会开幕：2056台机器人齐聚“冰丝带”  新浪财经",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 23.37,
+      "writing_value": 0,
+      "total_score": 113.37
     },
     {
       "id": "da080988b67c5e5ff475f363ace911026a4a3306",
@@ -147,9 +126,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 20.97,
+      "timeliness": 20.46,
       "writing_value": 0,
-      "total_score": 95.97
+      "total_score": 95.46
     },
     {
       "id": "0a492fdb18c358ffe4495a332a04a35688e3d425",
@@ -168,9 +147,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.61,
+      "timeliness": 29.1,
       "writing_value": 0,
-      "total_score": 104.61
+      "total_score": 104.1
+    },
+    {
+      "id": "8ca140123bf318d7ab3842e09ae5641e4cb04e03",
+      "title": "新石器余恩源：无人物流车是具身智能首个大规模商业化落地应用 - 手机新浪网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE90SmdMM2VET3pTNzZOeGRuXzMzZWtyRkc5bUo3YzZWcFVmUi1SeS1HdTEtYk56Q0hLWVRDRW5IeGZTRnc1UUh4SzZKRVRYeWhKNEpJMmVlSjhieVVGUEtLZEJvd3pMbUxQeFNpSVlHSQ?oc=5",
+      "published_at": "2026-08-22T21:25:00+00:00",
+      "category": "GN: 自动驾驶机器人",
+      "gn_label": "robotics",
+      "site_name": "GN: 自动驾驶机器人",
+      "source": "GN: 自动驾驶机器人",
+      "site_id": "GN: 自动驾驶机器人",
+      "description": "新石器余恩源：无人物流车是具身智能首个大规模商业化落地应用  手机新浪网",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.7,
+      "writing_value": 0,
+      "total_score": 119.7
     },
     {
       "id": "26b78b12e1b54054f7917eca2fcb6bc35692278d",
@@ -189,9 +189,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 20.4,
+      "timeliness": 19.89,
       "writing_value": 0,
-      "total_score": 95.4
+      "total_score": 94.89
     },
     {
       "id": "7ac848f392cc94aa85626aa02a4849674bef4dd5",
@@ -210,9 +210,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 20.04,
+      "timeliness": 19.53,
       "writing_value": 0,
-      "total_score": 95.04
+      "total_score": 94.53
     },
     {
       "id": "03d8fd25730f60af7226677f8fda850d6a0efc1f",
@@ -231,9 +231,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 21.31,
+      "timeliness": 20.8,
       "writing_value": 0,
-      "total_score": 111.31
+      "total_score": 110.8
     },
     {
       "id": "667b7bfb44516c561496327160bcdabf1e666a62",
@@ -252,9 +252,51 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.13,
+      "timeliness": 24.61,
       "writing_value": 0,
-      "total_score": 115.13
+      "total_score": 114.61
+    },
+    {
+      "id": "308730d47d05582af87bf4658416a6f199f75a2f",
+      "title": "不是Demo！优必选把客户产线1:1搬进WRC，解锁具身智能真落地路径",
+      "title_zh": "",
+      "url": "https://www.qbitai.com/2026/08/477253.html",
+      "published_at": "2026-08-22T14:46:43+00:00",
+      "category": "量子位",
+      "gn_label": "robotics",
+      "site_name": "量子位",
+      "source": "量子位",
+      "site_id": "量子位",
+      "description": "端侧部署解决了具身大脑能否装进身体的问题。那么，同一个「大脑」，如何快速适配工业、商用和家庭三类机器人呢？",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 23.06,
+      "writing_value": 0,
+      "total_score": 113.06
+    },
+    {
+      "id": "945dfcbc8ac678c881788474e9d0222a13cca91e",
+      "title": "不是Demo！优必选把客户产线1:1搬进WRC，解锁具身智能真落地路径",
+      "title_zh": "",
+      "url": "https://www.qbitai.com/2026/08/477016.html",
+      "published_at": "2026-08-22T12:11:23+00:00",
+      "category": "量子位",
+      "gn_label": "robotics",
+      "site_name": "量子位",
+      "source": "量子位",
+      "site_id": "量子位",
+      "description": "具身智能赛道壁垒不在出货量",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 20.47,
+      "writing_value": 0,
+      "total_score": 110.47
     }
   ],
   "fallback_used": false

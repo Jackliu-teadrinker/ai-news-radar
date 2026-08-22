@@ -1,9 +1,9 @@
 {
   "date": "2026-08-23",
-  "generated_at": "2026-08-22T21:18:21.483519+00:00",
+  "generated_at": "2026-08-22T21:49:40.497121+00:00",
   "score_threshold": 80,
   "total_items": 50,
-  "new_added": 6,
+  "new_added": 2,
   "items": [
     {
       "id": "ad921016fb1eee3f",
@@ -67,6 +67,27 @@
       "timeliness": 29.66,
       "writing_value": 5,
       "total_score": 129.66
+    },
+    {
+      "id": "b8f813c4ec1939b9",
+      "title": "Chinese robot beats Usain Bolt's 100m world record in World Humanoid Robot Games - USA Today",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPQ3ZZRDVCSVprY1NMWnVWWklSeGh5Mlo2M1ZJVkxySjItZElia3hldWlLNllTS3A0U0twOTQ3MVkzSnkya2hUMVI2QUtCNjEwMzc5MzVWczFYQi1vQkRXazBSdERYTERTVkh5MHJPaVg4Z240U2lQYUlBdnJCMldLRERueE9nOW4wUjRBSzNaU1dkd0ZvWGtLb0U0Vzd2MTR2eWpRWFo1SnlOZ1k0ODNXXzMtSFRyNEN1bS04UlpBRHh4QQ?oc=5",
+      "published_at": "2026-08-22T21:20:46+00:00",
+      "category": "国外人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国外人形机器人资讯",
+      "source": "国外人形机器人资讯",
+      "site_id": "国外人形机器人资讯",
+      "description": "Chinese robot beats Usain Bolt's 100m world record in World Humanoid Robot Games  USA TodayWatch: Moment humanoid robot beats Usain Bolt's 100m record  BBCChinese robot beats Usain Bolt's 100m world record  dw.comUsain Bolt’s 100m record broken at World Humanoid Robot Games  Al JazeeraHumanoid robot beats Usain Bolt’s 100m world record  The TelegraphLightning strikes: Chinese humanoid robot runs 100m in 9.32 seconds  news.cgtn.comChinese humanoid robot beats Usain Bolt’s 100-meter world record time  YnetnewsChinese Robot Lightning Beats Usain Bolt's 100m World Record  RediffChina's New 'Superman' Robot Is A Back-Flipping, Record-Breaking Powerhouse  bgr.com",
+      "ai_score": 80.0,
+      "ai_label": "humanoid",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 29.63,
+      "writing_value": 5,
+      "total_score": 129.63
     },
     {
       "id": "656c5b2a1c835365",
@@ -972,6 +993,27 @@
       "total_score": 119.55
     },
     {
+      "id": "21d9dde0fb431371",
+      "title": "Humanoid robots smash human records at Beijing games - Michael West Media",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNNzNHVEVwMlJvNk94MTVMNnRnWkgtN1o2ZnZfSlM2eVl0TjhwOE01aXNvejVtSmRmX1k2TUs0dmFVNkxsclNxOE5lWERiN04xY21mSWUxV3pxTDlvWDFGaGdBcjBlSWsyQUFCbi1waG05MEZJRXQtaElubFNTNWREckN0ejV2QmM?oc=5",
+      "published_at": "2026-08-22T21:16:14+00:00",
+      "category": "国外人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国外人形机器人资讯",
+      "source": "国外人形机器人资讯",
+      "site_id": "国外人形机器人资讯",
+      "description": "Humanoid robots smash human records at Beijing games  Michael West Media",
+      "ai_score": 80.0,
+      "ai_label": "humanoid",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.55,
+      "writing_value": 0,
+      "total_score": 119.55
+    },
+    {
       "id": "11b6ddcc719489bd",
       "title": "缺乏统一标尺？具身智能迎来仿真评测“竞技场” - 搜狐网",
       "title_zh": "",
@@ -1012,48 +1054,6 @@
       "timeliness": 29.49,
       "writing_value": 0,
       "total_score": 119.49
-    },
-    {
-      "id": "a6b03c17c4b5ea83",
-      "title": "清研精准陈超：中试驱动，具身智能的商业化破壁 - 搜狐网",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPSVMyT21ROWtGV1hlampGNXE1THVib3VlTFR2SHFFMndGWW95ZmRIUDlOY1pzQ3B0N01MNGRJMFozaVJ2OTNvcUs0ZnN4VlNHSzlIVmRycXZRS2c3dEg1dXlhUU1zQlhRUjhneFEyZ2UyZEppTldkZXpzbFpRRWxOeVp6U25hejZY?oc=5",
-      "published_at": "2026-08-22T17:09:00+00:00",
-      "category": "国内具身智能资讯",
-      "gn_label": "embodied_ai",
-      "site_name": "国内具身智能资讯",
-      "source": "国内具身智能资讯",
-      "site_id": "国内具身智能资讯",
-      "description": "清研精准陈超：中试驱动，具身智能的商业化破壁  搜狐网",
-      "ai_score": 80.0,
-      "ai_label": "embodied_ai",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 29.44,
-      "writing_value": 0,
-      "total_score": 119.44
-    },
-    {
-      "id": "32ba1f7be8191aef",
-      "title": "China Humanoid Robot Games - The Herald Journal",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQX3BqNlJhMlFCNGdZZlBiSGIxTjRNS0Nsd2VZbVdRc1ZlaUZHWllYOUZrcFdkNzdac2VfZ29OcWVMc2c3RWNTUVJJS3JYTG5BUzZoNmVFQm1EbXQzVnZZb3BwTkh2LTRyR1d2YlE4aXJscTVLQ0hOMV9TbFp3M2pJbjZ3MjJSNjdCVmVIMjhfU1cwc1BBSnhXa1lQcTJQdnExeUE2anRn?oc=5",
-      "published_at": "2026-08-22T16:10:00+00:00",
-      "category": "国外人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国外人形机器人资讯",
-      "source": "国外人形机器人资讯",
-      "site_id": "国外人形机器人资讯",
-      "description": "China Humanoid Robot Games  The Herald Journal",
-      "ai_score": 80.0,
-      "ai_label": "humanoid",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 29.39,
-      "writing_value": 0,
-      "total_score": 119.39
     }
   ]
 }
