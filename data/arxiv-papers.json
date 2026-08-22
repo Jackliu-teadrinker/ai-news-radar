@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-21T23:46:10.959165+00:00",
-  "total_items": 11,
+  "generated_at": "2026-08-22T00:40:55.277560+00:00",
+  "total_items": 10,
   "items": [
     {
       "id": "http://arxiv.org/abs/2608.20284v1",
@@ -111,17 +111,6 @@
       "published_at": "2026-08-20T12:43:07+00:00",
       "updated_at": "2026-08-20T12:43:07Z",
       "title_zh": "PVRA：机器人装配的逐点关键点投票框架"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.19955v1",
-      "title": "MILD: Tractable Terrain Modeling for Learning Improved Bipedal Locomotion on Deformable Surfaces",
-      "url": "https://arxiv.org/abs/2608.19955",
-      "summary": "Enabling robots to walk on yielding terrain is vital for applications ranging from disaster response to planetary exploration. While bipedal robots hold immense potential, their locomotion on deformable surfaces remains limited as current simulators fail to capture the spatiotemporal heterogeneity of such yielding substrates. We present MILD, featuring a physics-grounded discrete-element contact solver that accurately simulates spatially varying foot-terrain interactions. Complementing this model, we train a terrain-aware locomotion controller via deep reinforcement learning with latent modulation and proprioceptive estimation. Quantitative comparisons against state-of-the-art methods show our approach generates more diverse and realistic contact scenarios during training, resulting in controllers that exhibit natural adaptation on real deformable surfaces. Through hardware experiments, we demonstrate the system's capability for online terrain identification and adaptation across a wide range of surface stiffness.",
-      "authors": "Zeren Luo, Jiahui Zhang, Zhe Xu et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-20T12:24:34+00:00",
-      "updated_at": "2026-08-20T12:24:34Z",
-      "title_zh": "MILD：可处理地形建模，用于学习可变形表面上改进的双足运动"
     }
   ]
 }
