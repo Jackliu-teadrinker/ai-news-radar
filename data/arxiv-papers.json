@@ -1,28 +1,5 @@
 {
-  "generated_at": "2026-08-22T04:58:44.301679+00:00",
-  "total_items": 2,
-  "items": [
-    {
-      "id": "http://arxiv.org/abs/2608.20284v1",
-      "title": "Towards Surgical World-Action Modeling: A Preliminary Joint Visual-Trajectory Forecasting for Surgical Motion Planning",
-      "url": "https://arxiv.org/abs/2608.20284",
-      "summary": "Reliable surgical planning requires models to anticipate not only how instruments will move, but also how the operative visual state will evolve together with such motion. Existing approaches typically treat future scene generation and instrument trajectory prediction as two separate tasks. Scene-only models cannot directly evaluate the accuracy of future instrument motion at the trajectory level, while trajectory-only models fail to capture the visual consequences of instrument movement, leaving the consistency between predicted trajectories and future scene evolution unaddressed. Jointly forecasting both provides a more complete account of surgical action-scene dynamics by enabling explicit trajectory-level evaluation while simultaneously modeling the corresponding visual evolution. To bridge this gap, we present a preliminary joint visual-trajectory world-action model that simultaneously forecasts future visual states and instrument trajectories from historical surgical observations. Specifically, we encode historical video frames and tool trajectories into latent representations, which are processed by a temporal-spatial encoder and subsequently decoded through separate visual-state and trajectory prediction heads. Based on this preliminary architecture, a chunked autoregressive rollout is repeatedly applied to predict fifteen future steps. The chunked strategy consistently outperforms direct one-shot prediction across all evaluated horizons, improving first-segment PSNR from 18.86 to 23.11 dB and reducing ADE from 45.77 to 22.22 pixels. These results demonstrate the initial feasibility of joint visual-motion forecasting. However, we observe progressive visual degradation and accumulated trajectory errors over longer prediction horizons, which remain important challenges for future surgical world-action modeling.",
-      "authors": "Weiliang Huang, Huanrong Liu, Bob Zhang et al.",
-      "category": "cs.CV",
-      "published_at": "2026-08-20T17:18:02+00:00",
-      "updated_at": "2026-08-20T17:18:02Z",
-      "title_zh": "走向手术世界动作建模：手术运动规划的初步联合视觉轨迹预测"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.20275v1",
-      "title": "DART-S: Reachability-Audited Active-Suspension Preconditioning for Off-Road Vehicle Jumps",
-      "url": "https://arxiv.org/abs/2608.20275",
-      "summary": "Airborne torque reaction cannot recover takeoff errors beyond the wheel angular-momentum budget. DART-S applies ramp-face suspension preconditioning to change pitch, pitch rate, and wheel spin before liftoff, thereby shifting the queried state and altering the remaining authority budget. To predict how each suspension action reshapes this state-budget pair, DART-S employs a local calibration map. A support-aware selector combines the predicted shift with local outcome evidence and an interval-reachability screen; an exact-pair audit reports residual authority. Across 600 new runs in 72 independent BeamNG sessions, every positive, negative, and boundary query follows its prespecified branch. At the confirmed 40°/13 m/s boundary, DART-S attains 24/24 post-touchdown attitude-criterion successes versus 0/24 for DART (session-level Holm-adjusted p=0.0234). At 11.5 m/s, a 0.35 s timing action attains 23/24 versus 0/24 for the static preset (p=0.0156). The 200 rad/s command guard keeps drivetrain hard-limit exceedance at zero across all 600 runs. The source code will be available at https://github.com/MeridianCAS/DART-S",
-      "authors": "Yu Hu, Fangzhou Zhao, Liang Chen et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-20T17:12:27+00:00",
-      "updated_at": "2026-08-20T17:12:27Z",
-      "title_zh": "DART-S：越野车辆跳跃的可达性审核主动悬架预处理"
-    }
-  ]
+  "generated_at": "2026-08-22T05:23:21.607434+00:00",
+  "total_items": 0,
+  "items": []
 }
