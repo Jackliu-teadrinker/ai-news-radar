@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-22T04:03:46.771025+00:00",
-  "total_items": 3,
+  "generated_at": "2026-08-22T04:58:44.301679+00:00",
+  "total_items": 2,
   "items": [
     {
       "id": "http://arxiv.org/abs/2608.20284v1",
@@ -23,17 +23,6 @@
       "published_at": "2026-08-20T17:12:27+00:00",
       "updated_at": "2026-08-20T17:12:27Z",
       "title_zh": "DART-S：越野车辆跳跃的可达性审核主动悬架预处理"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.20251v1",
-      "title": "Video2DoorTraversal: Push Door Traversal via Simulated Door Twins",
-      "url": "https://arxiv.org/abs/2608.20251",
-      "summary": "Door opening and traversal is a long-horizon loco-manipulation task that requires precise handle interaction and coordinated base-arm control. We present Video2DoorTraversal, a single-video real-to-sim-to-real framework for wheel-legged mobile manipulators. Given one RGB video of a real door, DoorTwin reconstructs an instance-aligned, articulated, and simulation-ready door twin with realistic geometry and appearance. A simulation-in-the-loop agent converts the recovered articulation into a parameterized skill program and iteratively refines failed rollouts to generate physically executable demonstrations. These demonstrations are used to train ArticuACT, a dual-depth policy that predicts coordinated base, arm, and gripper commands using robot-centric camera conditioning and interaction-aware supervision. With all perception and policy inference running onboard, the system achieves a 96.57% average success rate across five real doors and an 80.95% zero-shot success rate on structurally similar unseen doors, while completing the full approach, opening, and traversal sequence in approximately 13s on average. Project Page: https://video2doortraversal.github.io/.",
-      "authors": "Xincheng Tang, Yiji Chen, Youhan Xie et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-20T16:46:57+00:00",
-      "updated_at": "2026-08-20T16:46:57Z",
-      "title_zh": "Video2DoorTraversal：通过模拟门双胞胎推门遍历"
     }
   ]
 }
