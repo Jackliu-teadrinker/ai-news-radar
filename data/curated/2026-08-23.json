@@ -1,6 +1,6 @@
 {
   "date": "2026-08-23",
-  "generated_at": "2026-08-23T11:45:05.859396+00:00",
+  "generated_at": "2026-08-23T12:21:40.792263+00:00",
   "score_threshold": 80,
   "total_items": 50,
   "new_added": 1,
@@ -311,6 +311,27 @@
       "source": "国外人形机器人资讯",
       "site_id": "国外人形机器人资讯",
       "description": "Humanoid robot clocks 9.39 seconds in 100m, surpassing fastest human time at World Games in Beijing  finance.biggo.com",
+      "ai_score": 80.0,
+      "ai_label": "humanoid",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 29.43,
+      "writing_value": 5,
+      "total_score": 129.43
+    },
+    {
+      "id": "dac592b2721a5427",
+      "title": "Humanoid robots shatter Usain Bolt's 100m record, hits 23.8 mph before crashing into foam pads — video shows Tiangong Ultra logging 9.39-second sprint before colliding with padded wall - Tom's Hardware",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMi0gJBVV95cUxQQU84RWVlam1HYk9CZjJpdVlHLW56SjRPeHZiVTJPVl9YRmFPR0QwcERLQmxVQlllU1RZcnlmeUV0YmE3Um5IaDBabmdMdUk1a2dveXVhWlpMaHNMOTV1c3M4WjF2WDc4MWtTbmt5RURGVlJNdW9qU0RxTFd0OUgweWh0NU5rb3IzbVNmcFhwaW9HT0xTVU9fa3VSbEhxSEVzMFZUX3JzUXMtSWJHaDRIc3NmU2NLcHJxc0VhSzB0QlQ1RVZQYWR1MmRvUUZORklxekhDYkswN3V6WUZJMUx1OFg5TzNIZ1BocXhWZVVQTkNZS3V0SWhJcVN3emEzZDlUY2dGZTFCUGJMRS1UaHFoZzgySmJjMnNXUGdEQV9hcWdLTm1yaXBBcjkwM2Z5RzVLTG93N3ZkSGhQN3Y3bFhNQm9COUZ4MDZ5YmllNFU2Vnlzdw?oc=5",
+      "published_at": "2026-08-23T11:45:00+00:00",
+      "category": "国外人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国外人形机器人资讯",
+      "source": "国外人形机器人资讯",
+      "site_id": "国外人形机器人资讯",
+      "description": "Humanoid robots shatter Usain Bolt's 100m record, hits 23.8 mph before crashing into foam pads — video shows Tiangong Ultra logging 9.39-second sprint before colliding with padded wall  Tom's Hardware",
       "ai_score": 80.0,
       "ai_label": "humanoid",
       "relevance": 0.8,
@@ -1033,27 +1054,6 @@
       "timeliness": 27.36,
       "writing_value": 5,
       "total_score": 127.36
-    },
-    {
-      "id": "bfa30367b4f44782",
-      "title": "Chinese humanoid robots smash human records in 100m sprint and high jump at Beijing robot games - AP News",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNMUkxanIwSTVhd2xuNTUteVpWQWJlQXF1M2c4R2RSM25vTTlENHZMSkRaNGJXR0Fsd1QwUmhyX3NtU3dNalg1dlBKWHJMRnJXOTNZZkJ4cDNxbmJDdEQ4YXdpZkdJZGxTT2gwR21NUzRnZnpfY1dibWF2cVVFRllELWJ1eDVzalBLLWh0M3lKNlVUR1k?oc=5",
-      "published_at": "2026-08-22T16:16:00+00:00",
-      "category": "国外人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国外人形机器人资讯",
-      "source": "国外人形机器人资讯",
-      "site_id": "国外人形机器人资讯",
-      "description": "Chinese humanoid robots smash human records in 100m sprint and high jump at Beijing robot games  AP News",
-      "ai_score": 80.0,
-      "ai_label": "humanoid",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 5,
-      "timeliness": 27.35,
-      "writing_value": 5,
-      "total_score": 127.35
     }
   ]
 }
