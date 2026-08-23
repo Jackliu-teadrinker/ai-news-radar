@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-23T21:13:52.463048+00:00",
+  "generated_at": "2026-08-23T21:44:02.646577+00:00",
   "window_start": "2026-08-23T19:00:00+08:00",
-  "window_end": "2026-08-24T05:12:30.328837+08:00",
-  "total_items": 19,
+  "window_end": "2026-08-24T05:42:40.963217+08:00",
+  "total_items": 21,
   "items": [
     {
       "id": "8bfacad02b85a404eef6259cc2d238134c8abcdd",
@@ -21,9 +21,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 24.84,
+      "timeliness": 24.34,
       "writing_value": 5,
-      "total_score": 109.84
+      "total_score": 109.34
     },
     {
       "id": "822e76842b210fac40c8c5342e4b2b36b1cc1659",
@@ -42,9 +42,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 20.08,
+      "timeliness": 19.58,
       "writing_value": 0,
-      "total_score": 95.08
+      "total_score": 94.58
     },
     {
       "id": "cbf77edcba905c0f99d69fa53886fdba1883220a",
@@ -63,9 +63,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 5,
-      "timeliness": 28.09,
+      "timeliness": 27.59,
       "writing_value": 5,
-      "total_score": 128.09
+      "total_score": 127.59
     },
     {
       "id": "6ef98f10dc15d24647f35e30598c3353607e4bcb",
@@ -84,9 +84,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 28.06,
+      "timeliness": 27.56,
       "writing_value": 5,
-      "total_score": 113.06
+      "total_score": 112.56
     },
     {
       "id": "dd66109a70c03d1da9b8369067ee3687e80bd013",
@@ -105,72 +105,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.16,
+      "timeliness": 23.66,
       "writing_value": 0,
-      "total_score": 99.16
-    },
-    {
-      "id": "44ef83171c447528c68eb55ea66251bae5046da3",
-      "title": "China’s robots: Don’t just watch, understand the industrial system - Global Times",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1QdFRkTFFYelhON2hDVUdVMVQ2ekdaTmJHa1NHT01hX3N0Tm9rNEUxUHAxVFhaREZVREVZYlVOd0xzdlR0bGtNbFpIS3h0Vjl6RW5JSVZDRElhSDZfWDNRUkN3?oc=5",
-      "published_at": "2026-08-23T12:48:00+00:00",
-      "category": "GN: industrial robot",
-      "gn_label": "robotics",
-      "site_name": "GN: industrial robot",
-      "source": "GN: industrial robot",
-      "site_id": "GN: industrial robot",
-      "description": "China’s robots: Don’t just watch, understand the industrial system  Global Times",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 21.59,
-      "writing_value": 0,
-      "total_score": 96.59
-    },
-    {
-      "id": "dd1f445b5d3c611e6ed47f8097fae5f7800bbaea",
-      "title": "Crossed Wires: The unbearable weirdness of humanoid robots - Daily Maverick",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMilwJBVV95cUxOWlR6WHkxUTB1Zk1PX0VLcXNveVQwRmdFZEtrcXYwODhDOEFoTXdDSFFDZzJKVDNzY3VENWtWQ3RPT2o1SDlzdlpYTy1MNWVfMllxaXFlcUZZRnlIVlVoTl9nd1k2VUlSTTI2MjdvTGdsRkdCWTBaNmduaC1fOEkteUh2ZHZvWWVsOTJodHdfcUhYcjVoby16VnFXVUZ3N2wyY3RyaVNGc0RXZ2FSMENMNlloZmw5Z2FuWmFxRDBoekZHVFRRaG1sTU5BNWRpT0Jvc0JVbUJ1Ml9yelB1MHo1Y1AxVWlnZFFScWx4WVVUeGlFNlRBcEplcTQ0bXVYZHQzN2hMV0dMaFd5YUwtRk1LT3Z2UXdrY00?oc=5",
-      "published_at": "2026-08-23T19:02:07+00:00",
-      "category": "GN: industrial robot",
-      "gn_label": "robotics",
-      "site_name": "GN: industrial robot",
-      "source": "GN: industrial robot",
-      "site_id": "GN: industrial robot",
-      "description": "Crossed Wires: The unbearable weirdness of humanoid robots  Daily Maverick",
-      "ai_score": 80.0,
-      "ai_label": "robotics",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 27.83,
-      "writing_value": 0,
-      "total_score": 117.83
-    },
-    {
-      "id": "e8a68e25a44d6ccd2ef3d4a992d892ddc90cfb58",
-      "title": "机器人首秀网球场，银河通用突破具身智能「AstraTennis时刻」",
-      "title_zh": "",
-      "url": "https://www.leiphone.com/category/ai/DtuJryomWlykalLZ.html",
-      "published_at": "2026-08-23T11:19:00+00:00",
-      "category": "雷锋网",
-      "gn_label": "robotics",
-      "site_name": "雷锋网",
-      "source": "雷锋网",
-      "site_id": "雷锋网",
-      "description": "银河通用用一场真实对抗证明：大脑、小脑与数据闭环正在融合。    作者丨邓哲敏    编辑丨董子博                                                                                                       8 月 22 日，北京国家速滑馆“冰丝带”，第二届世界人形机器人运动会开幕，中央广播电视总台把镜头切向一片真实的网球场。一台人形机器人站在场内，对面来球时速超过 50 公里，它几毫秒内判断落点、移动脚步、扭转身体、挥拍——球擦着网带划过去，落在界内。发球、正手、反手、底线调动、网前截击，一路打下",
-      "ai_score": 80.0,
-      "ai_label": "robotics",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 5,
-      "timeliness": 20.11,
-      "writing_value": 5,
-      "total_score": 120.11
+      "total_score": 98.66
     },
     {
       "id": "3b3cfb6d7f0f677e7117bd6a442b6fba306edc74",
@@ -189,9 +126,51 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 20.83,
+      "timeliness": 20.32,
       "writing_value": 0,
-      "total_score": 95.83
+      "total_score": 95.32
+    },
+    {
+      "id": "44ef83171c447528c68eb55ea66251bae5046da3",
+      "title": "China’s robots: Don’t just watch, understand the industrial system - Global Times",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1QdFRkTFFYelhON2hDVUdVMVQ2ekdaTmJHa1NHT01hX3N0Tm9rNEUxUHAxVFhaREZVREVZYlVOd0xzdlR0bGtNbFpIS3h0Vjl6RW5JSVZDRElhSDZfWDNRUkN3?oc=5",
+      "published_at": "2026-08-23T12:48:00+00:00",
+      "category": "GN: industrial robot",
+      "gn_label": "robotics",
+      "site_name": "GN: industrial robot",
+      "source": "GN: industrial robot",
+      "site_id": "GN: industrial robot",
+      "description": "China’s robots: Don’t just watch, understand the industrial system  Global Times",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 21.09,
+      "writing_value": 0,
+      "total_score": 96.09
+    },
+    {
+      "id": "dd1f445b5d3c611e6ed47f8097fae5f7800bbaea",
+      "title": "Crossed Wires: The unbearable weirdness of humanoid robots - Daily Maverick",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMilwJBVV95cUxOWlR6WHkxUTB1Zk1PX0VLcXNveVQwRmdFZEtrcXYwODhDOEFoTXdDSFFDZzJKVDNzY3VENWtWQ3RPT2o1SDlzdlpYTy1MNWVfMllxaXFlcUZZRnlIVlVoTl9nd1k2VUlSTTI2MjdvTGdsRkdCWTBaNmduaC1fOEkteUh2ZHZvWWVsOTJodHdfcUhYcjVoby16VnFXVUZ3N2wyY3RyaVNGc0RXZ2FSMENMNlloZmw5Z2FuWmFxRDBoekZHVFRRaG1sTU5BNWRpT0Jvc0JVbUJ1Ml9yelB1MHo1Y1AxVWlnZFFScWx4WVVUeGlFNlRBcEplcTQ0bXVYZHQzN2hMV0dMaFd5YUwtRk1LT3Z2UXdrY00?oc=5",
+      "published_at": "2026-08-23T19:02:07+00:00",
+      "category": "GN: industrial robot",
+      "gn_label": "robotics",
+      "site_name": "GN: industrial robot",
+      "source": "GN: industrial robot",
+      "site_id": "GN: industrial robot",
+      "description": "Crossed Wires: The unbearable weirdness of humanoid robots  Daily Maverick",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 27.32,
+      "writing_value": 0,
+      "total_score": 117.32
     },
     {
       "id": "7f9228a7bfcf6ae56bb343948dcaef744ec31f75",
@@ -210,9 +189,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 28.7,
+      "timeliness": 28.2,
       "writing_value": 5,
-      "total_score": 113.7
+      "total_score": 113.2
+    },
+    {
+      "id": "e8a68e25a44d6ccd2ef3d4a992d892ddc90cfb58",
+      "title": "机器人首秀网球场，银河通用突破具身智能「AstraTennis时刻」",
+      "title_zh": "",
+      "url": "https://www.leiphone.com/category/ai/DtuJryomWlykalLZ.html",
+      "published_at": "2026-08-23T11:19:00+00:00",
+      "category": "雷锋网",
+      "gn_label": "robotics",
+      "site_name": "雷锋网",
+      "source": "雷锋网",
+      "site_id": "雷锋网",
+      "description": "银河通用用一场真实对抗证明：大脑、小脑与数据闭环正在融合。    作者丨邓哲敏    编辑丨董子博                                                                                                       8 月 22 日，北京国家速滑馆“冰丝带”，第二届世界人形机器人运动会开幕，中央广播电视总台把镜头切向一片真实的网球场。一台人形机器人站在场内，对面来球时速超过 50 公里，它几毫秒内判断落点、移动脚步、扭转身体、挥拍——球擦着网带划过去，落在界内。发球、正手、反手、底线调动、网前截击，一路打下",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 19.61,
+      "writing_value": 5,
+      "total_score": 119.61
     },
     {
       "id": "1080c48215d1ecc1fc067b032f9c068f16b85fe2",
@@ -231,9 +231,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.35,
+      "timeliness": 22.85,
       "writing_value": 0,
-      "total_score": 98.35
+      "total_score": 97.85
+    },
+    {
+      "id": "ad0ffeb561d094fd546b0466b7e662cebe432e09",
+      "title": "宇树科技被指借鉴美军资助的学术研究 靠“开源”打造机器狗帝国 - 手机新浪网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE8yRXBDekhJcjdPSlRzRVNWM3lzNm14TDN5V1BCeGF4MXo4U3hpX0NmWjlyLWQ5YUF3X1B1SnM4MWxZOTlwYXpIZXYxdERGdWpmc19KWF9SRmtKMUtXYTdEeDg2OHU4N2tFY1dzTUtFRFA?oc=5",
+      "published_at": "2026-08-23T15:17:38+00:00",
+      "category": "GN: 宇树科技",
+      "gn_label": "robotics",
+      "site_name": "GN: 宇树科技",
+      "source": "GN: 宇树科技",
+      "site_id": "GN: 宇树科技",
+      "description": "宇树科技被指借鉴美军资助的学术研究 靠“开源”打造机器狗帝国  手机新浪网",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 23.58,
+      "writing_value": 0,
+      "total_score": 98.58
     },
     {
       "id": "0203cc0fc916bf30dedeef92ab710d6fe3fc06a0",
@@ -252,9 +273,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 21.52,
+      "timeliness": 21.02,
       "writing_value": 0,
-      "total_score": 96.52
+      "total_score": 96.02
     },
     {
       "id": "4e9a5db006ed64c87063801118d55481767c3dfd",
@@ -273,9 +294,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 21.81,
+      "timeliness": 21.31,
       "writing_value": 0,
-      "total_score": 111.81
+      "total_score": 111.31
     },
     {
       "id": "7c398fb55eb04ac85a103dd0125b6158e253be47",
@@ -294,9 +315,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.68,
+      "timeliness": 27.17,
       "writing_value": 0,
-      "total_score": 117.68
+      "total_score": 117.17
     },
     {
       "id": "c287035c25ae35af2bf6c078b9c38c4c5b2c440d",
@@ -315,9 +336,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 21.77,
+      "timeliness": 21.26,
       "writing_value": 0,
-      "total_score": 111.77
+      "total_score": 111.26
     },
     {
       "id": "5c8cb76b574e39559273e7e09f205693be1e36b2",
@@ -336,9 +357,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 20.21,
+      "timeliness": 19.71,
       "writing_value": 0,
-      "total_score": 95.21
+      "total_score": 94.71
     },
     {
       "id": "4f562cc48a65c206c314a67509011a8da8199da5",
@@ -357,9 +378,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.44,
+      "timeliness": 22.94,
       "writing_value": 0,
-      "total_score": 98.44
+      "total_score": 97.94
     },
     {
       "id": "0bb83e191e87b2a620e8715ad8abc923f258812a",
@@ -378,9 +399,30 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 21.31,
+      "timeliness": 20.81,
       "writing_value": 0,
-      "total_score": 111.31
+      "total_score": 110.81
+    },
+    {
+      "id": "7617330e082a217974435bc2cdab41a1ff0b6f5c",
+      "title": "WRC观察｜扎根汽车制造：国产工业机器人瞄准产线真实工位|世界机器人大会|具身智能|吉利汽车|新松|焊装_手机新浪网 - 新浪财经",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOVjh4RjlZUFlPUnp6SHBja0hLaFdBTF9QT0VaNHVRdi1hdHQ4aFdOZXFtRF9XaDdObThjVWxrM2VILXc1TEd1czZCM0ktVVlTMXVHN0ZJZmZwbUN3bTVkTzBiSGwxejJySjZXdURra2prSktMR1BuaFU1OXpqNDc2eHR5SlRfNzUtWVFkb05KejRoMmpmNUVVSUo1NzV1dExNZ05GdmNRaw?oc=5",
+      "published_at": "2026-08-23T14:03:30+00:00",
+      "category": "GN: 工业机器人与人",
+      "gn_label": "robotics",
+      "site_name": "GN: 工业机器人与人",
+      "source": "GN: 工业机器人与人",
+      "site_id": "GN: 工业机器人与人",
+      "description": "WRC观察｜扎根汽车制造：国产工业机器人瞄准产线真实工位|世界机器人大会|具身智能|吉利汽车|新松|焊装_手机新浪网  新浪财经中国机器人，县城制造  风闻世界机器人大会：上游产业链亟待协同 构建全产业链创新生态  中华网抓鸡蛋、救火、2秒分拣！机器人来“抢活”了，但一个3100万新岗位缺口正在打开  新浪财经亮相世界机器人大会｜质德密封件，以精工配件赋能智能未来  中华网科技频道",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 22.35,
+      "writing_value": 5,
+      "total_score": 122.35
     },
     {
       "id": "95b1fe086dd709f3fccab112d070f6f598aa6103",
@@ -399,9 +441,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 21.53,
+      "timeliness": 21.02,
       "writing_value": 0,
-      "total_score": 111.53
+      "total_score": 111.02
     }
   ],
   "fallback_used": false
