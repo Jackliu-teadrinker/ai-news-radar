@@ -1,9 +1,9 @@
 {
   "date": "2026-08-23",
-  "generated_at": "2026-08-23T05:06:52.888006+00:00",
+  "generated_at": "2026-08-23T05:38:32.459009+00:00",
   "score_threshold": 80,
   "total_items": 50,
-  "new_added": 3,
+  "new_added": 1,
   "items": [
     {
       "id": "ad921016fb1eee3f",
@@ -214,6 +214,27 @@
       "timeliness": 29.49,
       "writing_value": 5,
       "total_score": 129.49
+    },
+    {
+      "id": "71c0d8e3515dd615",
+      "title": "Humanoid robot clocks 9.39 seconds in 100m, surpassing fastest human time at World Games in Beijing - finance.biggo.com",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBidWZ6Y2JOM2d2TzJ2VlJkNXRRcWRSZ2NwbjhrdDBtaWZzQUtDY3RpcTVwX0YycFhMWlNZV3VFT1VSVTZvMno3a0xpcUlDakJ5Sjhka3VPT2tXU2t0X1pWVUlNLWRENFpjNFFhZXFaLTJBWXc5bVE?oc=5",
+      "published_at": "2026-08-23T04:55:00+00:00",
+      "category": "国外人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国外人形机器人资讯",
+      "source": "国外人形机器人资讯",
+      "site_id": "国外人形机器人资讯",
+      "description": "Humanoid robot clocks 9.39 seconds in 100m, surpassing fastest human time at World Games in Beijing  finance.biggo.com",
+      "ai_score": 80.0,
+      "ai_label": "humanoid",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 29.43,
+      "writing_value": 5,
+      "total_score": 129.43
     },
     {
       "id": "d6931aac9d8d50f5",
@@ -1033,27 +1054,6 @@
       "timeliness": 29.9,
       "writing_value": 0,
       "total_score": 119.9
-    },
-    {
-      "id": "e05c0142e5692ae9",
-      "title": "多图 | 第二届世界人形机器人运动会开幕式举行 - 紫荆网",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOdUhDWU5TZ3NrV0dORTdkLXVJNzBMWFc2YmhROVZ2eS1QM29PT0J1SllZd0RmRXY4WXlabzhscERTb3FyQ0pxb0dFeWE0RFlMRHVxU2lPZDRWWnNmZUc2RE43Mm1tNzY0TUM0RlkxYUJPU09BLWNZeFdiSElRUmp5UDQ1Y05PV0FtT3ZYaXpldjF6U0ZG?oc=5",
-      "published_at": "2026-08-23T02:12:03+00:00",
-      "category": "国内人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国内人形机器人资讯",
-      "source": "国内人形机器人资讯",
-      "site_id": "国内人形机器人资讯",
-      "description": "多图 | 第二届世界人形机器人运动会开幕式举行  紫荆网",
-      "ai_score": 80.0,
-      "ai_label": "humanoid",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 29.89,
-      "writing_value": 0,
-      "total_score": 119.89
     }
   ]
 }
