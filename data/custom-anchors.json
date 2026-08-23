@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-23T13:09:18.661769+00:00",
+  "generated_at": "2026-08-23T13:51:43.723882+00:00",
   "window_start": "2026-08-23T19:00:00+08:00",
-  "window_end": "2026-08-23T21:08:38.115383+08:00",
-  "total_items": 7,
+  "window_end": "2026-08-23T21:51:03.082240+08:00",
+  "total_items": 8,
   "items": [
     {
       "id": "822e76842b210fac40c8c5342e4b2b36b1cc1659",
@@ -21,30 +21,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.15,
+      "timeliness": 27.44,
       "writing_value": 0,
-      "total_score": 103.15
+      "total_score": 102.44
     },
     {
-      "id": "3b3cfb6d7f0f677e7117bd6a442b6fba306edc74",
-      "title": "Xiaomi unveils Mijia Robot Vacuum 7C featuring continuous-wipe roller mop - Notebookcheck",
+      "id": "e8a68e25a44d6ccd2ef3d4a992d892ddc90cfb58",
+      "title": "机器人首秀网球场，银河通用突破具身智能「AstraTennis时刻」",
       "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOOThXbER4ZXNNd0VTMjgwNjU4dmRIendCVUZJdVNsTS1WMkVDdzlmR0ZUdC00QjlhcER1TzQyS3lheW0wTVNvaG96VEhjNEplTGI5cWJvdWlLbm13eHFmdDF3Rl8yNjNoU0NIQUhULUE2aGwtcHpmOXFFRkpqMEl0aklJWjk4MmRKaWJrRUVyUjZ1ZGRJZGNEWmRESHhfdWRiNUIzdEw0U0RMUVU2Vnl1Tkh0NEp0Sm15bnc?oc=5",
-      "published_at": "2026-08-23T12:02:00+00:00",
-      "category": "GN: robot vacuum",
+      "url": "https://www.leiphone.com/category/ai/DtuJryomWlykalLZ.html",
+      "published_at": "2026-08-23T11:19:00+00:00",
+      "category": "雷锋网",
       "gn_label": "robotics",
-      "site_name": "GN: robot vacuum",
-      "source": "GN: robot vacuum",
-      "site_id": "GN: robot vacuum",
-      "description": "Xiaomi unveils Mijia Robot Vacuum 7C featuring continuous-wipe roller mop  Notebookcheck",
-      "ai_score": 65.0,
+      "site_name": "雷锋网",
+      "source": "雷锋网",
+      "site_id": "雷锋网",
+      "description": "银河通用用一场真实对抗证明：大脑、小脑与数据闭环正在融合。    作者丨邓哲敏    编辑丨董子博                                                                                                       8 月 22 日，北京国家速滑馆“冰丝带”，第二届世界人形机器人运动会开幕，中央广播电视总台把镜头切向一片真实的网球场。一台人形机器人站在场内，对面来球时速超过 50 公里，它几毫秒内判断落点、移动脚步、扭转身体、挥拍——球擦着网带划过去，落在界内。发球、正手、反手、底线调动、网前截击，一路打下",
+      "ai_score": 80.0,
       "ai_label": "robotics",
-      "relevance": 0.65,
+      "relevance": 0.8,
       "authority": 10,
-      "depth": 0,
-      "timeliness": 28.89,
-      "writing_value": 0,
-      "total_score": 103.89
+      "depth": 5,
+      "timeliness": 27.47,
+      "writing_value": 5,
+      "total_score": 127.47
     },
     {
       "id": "573fa24510f80f20f1a26999ae2820613d94cf6a",
@@ -63,9 +63,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.91,
+      "timeliness": 28.2,
       "writing_value": 0,
-      "total_score": 103.91
+      "total_score": 103.2
+    },
+    {
+      "id": "3b3cfb6d7f0f677e7117bd6a442b6fba306edc74",
+      "title": "Xiaomi unveils Mijia Robot Vacuum 7C featuring continuous-wipe roller mop - Notebookcheck",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOOThXbER4ZXNNd0VTMjgwNjU4dmRIendCVUZJdVNsTS1WMkVDdzlmR0ZUdC00QjlhcER1TzQyS3lheW0wTVNvaG96VEhjNEplTGI5cWJvdWlLbm13eHFmdDF3Rl8yNjNoU0NIQUhULUE2aGwtcHpmOXFFRkpqMEl0aklJWjk4MmRKaWJrRUVyUjZ1ZGRJZGNEWmRESHhfdWRiNUIzdEw0U0RMUVU2Vnl1Tkh0NEp0Sm15bnc?oc=5",
+      "published_at": "2026-08-23T12:02:00+00:00",
+      "category": "GN: robot vacuum",
+      "gn_label": "robotics",
+      "site_name": "GN: robot vacuum",
+      "source": "GN: robot vacuum",
+      "site_id": "GN: robot vacuum",
+      "description": "Xiaomi unveils Mijia Robot Vacuum 7C featuring continuous-wipe roller mop  Notebookcheck",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 28.18,
+      "writing_value": 0,
+      "total_score": 103.18
     },
     {
       "id": "f56134a850316abacc3963781420cc1fa9456512",
@@ -84,30 +105,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 28.4,
+      "timeliness": 27.69,
       "writing_value": 5,
-      "total_score": 113.4
+      "total_score": 112.69
     },
     {
-      "id": "082d3c48219dae484d2b14bf9dd1081c887dbae4",
-      "title": "第二届世界人形机器人运动会开赛，智元精灵G2摘得两金 - 搜狐网",
+      "id": "4e9a5db006ed64c87063801118d55481767c3dfd",
+      "title": "第二届世界人形机器人运动会开赛，智元精灵G2摘得两金 - 凤凰网科技",
       "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOYWlNNGFpZVNpOHVrcDJhazgtRXQtcFZoZnRnRzJjZUdselBYbHVOVjY5aXd3eG9rT19GR2xJak5qSzFPN3U5OTk4UXd4dDlycXRHaGNYVjB5UHNsSFVOUmRlbmVPRFVIeXhfdlpmYk9jdUt5UElKOXpMRkNpOEgyUk45SXMwY1ZL?oc=5",
-      "published_at": "2026-08-23T12:59:19+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9PVUw0Rk5JdHk0c2tJbFRQOWxDVFRWSFcwQzAtX1RxR2lYXzJEUjdFTzdUYkpNTUtwWXZITnNZV1F4cTBYa0RhbmJITkw?oc=5",
+      "published_at": "2026-08-23T13:01:10+00:00",
       "category": "GN: 智元机器人",
       "gn_label": "robotics",
       "site_name": "GN: 智元机器人",
       "source": "GN: 智元机器人",
       "site_id": "GN: 智元机器人",
-      "description": "第二届世界人形机器人运动会开赛，智元精灵G2摘得两金  搜狐网",
+      "description": "第二届世界人形机器人运动会开赛，智元精灵G2摘得两金  凤凰网科技",
       "ai_score": 80.0,
       "ai_label": "robotics",
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.85,
+      "timeliness": 29.17,
       "writing_value": 0,
-      "total_score": 119.85
+      "total_score": 119.17
     },
     {
       "id": "0203cc0fc916bf30dedeef92ab710d6fe3fc06a0",
@@ -126,9 +147,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.59,
+      "timeliness": 28.88,
       "writing_value": 0,
-      "total_score": 104.59
+      "total_score": 103.88
     },
     {
       "id": "91a04611f1ce39f8e664d264e1f847ac29ba027b",
@@ -147,9 +168,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.17,
+      "timeliness": 28.47,
       "writing_value": 0,
-      "total_score": 119.17
+      "total_score": 118.47
     }
   ],
   "fallback_used": false
