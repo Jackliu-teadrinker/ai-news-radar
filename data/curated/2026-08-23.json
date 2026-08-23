@@ -1,9 +1,9 @@
 {
   "date": "2026-08-23",
-  "generated_at": "2026-08-23T12:21:40.792263+00:00",
+  "generated_at": "2026-08-23T13:11:44.926684+00:00",
   "score_threshold": 80,
   "total_items": 50,
-  "new_added": 1,
+  "new_added": 2,
   "items": [
     {
       "id": "9885009e541efd36",
@@ -426,6 +426,27 @@
       "total_score": 129.34
     },
     {
+      "id": "33e463824ee5bd97",
+      "title": "A humanoid robot just beat Usain Bolt's 100m record, and roboticists are unimpressed for good reason - The Next Web",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQd2pPbldLNHd0WmkwdHpMY1NPTE1xV3lWWko0bHVqZGNJZVRWc25ZUVVhNFEzbld6VWpuWndjR21PNU5JYTMzNDFhbHg3dW90ZVp0NkRBWXhERDBsMWtfUEI2Ym5mbHcwOEF0VjdfR3Fvb0xTTFVJd0E0ZjhxZXpTcnpVcHNiaE0?oc=5",
+      "published_at": "2026-08-23T12:28:16+00:00",
+      "category": "国外人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国外人形机器人资讯",
+      "source": "国外人形机器人资讯",
+      "site_id": "国外人形机器人资讯",
+      "description": "A humanoid robot just beat Usain Bolt's 100m record, and roboticists are unimpressed for good reason  The Next Web",
+      "ai_score": 80.0,
+      "ai_label": "humanoid",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 29.33,
+      "writing_value": 5,
+      "total_score": 129.33
+    },
+    {
       "id": "45c54a75573cf4bb",
       "title": "Tiangong Ultra, the Chinese humanoid robot that beat Usain Bolt’s 100m record, barely made the human cut in a Half-Marathon last year - The Economic Times",
       "title_zh": "",
@@ -445,6 +466,27 @@
       "timeliness": 29.31,
       "writing_value": 5,
       "total_score": 129.31
+    },
+    {
+      "id": "f17aff993d5c40e1",
+      "title": "Video: Humanoid robot rides 660-pound capacity robot horse in Beijing demonstration - Interesting Engineering",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPTDBBWVZxUkN2YVM5Zk02UVRRcjhvTTVCRFZQWUtVZ2U1Mi1ia2ZHYnp0Uk1FVmkybk01SnFFM2hjQVFNaFllMFEzSHpmSWI5STJPdEtzMTIwd1VqYkRQbV81TkZTYl93cnN2dTJLTkc4eTdyb2RiOHVKUXhScG94bURJbGc1VWdSOVhoZE94Mi1SVEU1?oc=5",
+      "published_at": "2026-08-23T12:23:00+00:00",
+      "category": "国外人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国外人形机器人资讯",
+      "source": "国外人形机器人资讯",
+      "site_id": "国外人形机器人资讯",
+      "description": "Video: Humanoid robot rides 660-pound capacity robot horse in Beijing demonstration  Interesting Engineering",
+      "ai_score": 80.0,
+      "ai_label": "humanoid",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 29.24,
+      "writing_value": 5,
+      "total_score": 129.24
     },
     {
       "id": "edb5d7bb472d9ba7",
@@ -1012,48 +1054,6 @@
       "timeliness": 27.52,
       "writing_value": 5,
       "total_score": 127.52
-    },
-    {
-      "id": "1f453a42d2c211fb",
-      "title": "A giant leap from 2008 Beijing Olympics to 2026 World Humanoid Robot Games: “flying man” to flying robot - Global Times",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE90dHRfOWY2RmJQUFctaFluOVhCZXBDekp5ODRGMFQ2LWJhQjJwVFhMNWxRZlRqQUl5UEUzaWxVR251NzVWX3BWWkJCeXpMUlFxNVUtX1VzSzVwSF9oMmVQcnRR?oc=5",
-      "published_at": "2026-08-22T14:08:00+00:00",
-      "category": "国外人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国外人形机器人资讯",
-      "source": "国外人形机器人资讯",
-      "site_id": "国外人形机器人资讯",
-      "description": "A giant leap from 2008 Beijing Olympics to 2026 World Humanoid Robot Games: “flying man” to flying robot  Global Times",
-      "ai_score": 80.0,
-      "ai_label": "humanoid",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 5,
-      "timeliness": 27.36,
-      "writing_value": 5,
-      "total_score": 127.36
-    },
-    {
-      "id": "48695354ed88ae83",
-      "title": "9.39 seconds! Chinese humanoid robot betters Usain Bolt's 100m world record #coolchina - Modern Ghana",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5vV0ZNNGJmZkxqQ0drSHlZekw3TGlpSkZpSVBjbFJfYTlFeW9zT3pwWUpRbGJNOVV5eDhibkZ0ajU3TlExaVc0Q1d2RHBXYUFLSUhYMmhwUXNsTXNDUndUddIBXEFVX3lxTFB2T2tXdkFZNzB1X2lDQUNqVEUtVDFIY3Y2WFR1S09waHZwRXVDeGx0SmkzaUkwdnVrUzh2MUc3bmI2OEUwUE0yUWl0MGhoV2xNdjh0Mks1STI3eUpV?oc=5",
-      "published_at": "2026-08-22T17:04:43+00:00",
-      "category": "国外人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国外人形机器人资讯",
-      "source": "国外人形机器人资讯",
-      "site_id": "国外人形机器人资讯",
-      "description": "9.39 seconds! Chinese humanoid robot betters Usain Bolt's 100m world record #coolchina  Modern Ghana",
-      "ai_score": 80.0,
-      "ai_label": "humanoid",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 5,
-      "timeliness": 27.36,
-      "writing_value": 5,
-      "total_score": 127.36
     }
   ]
 }
