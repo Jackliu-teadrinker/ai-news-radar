@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-23T00:43:00.985248+00:00",
+  "generated_at": "2026-08-23T02:19:40.703862+00:00",
   "window_start": "2026-08-22T19:00:00+08:00",
-  "window_end": "2026-08-23T08:42:20.092259+08:00",
-  "total_items": 19,
+  "window_end": "2026-08-23T10:19:00.636467+08:00",
+  "total_items": 23,
   "items": [
     {
       "id": "35d04a36b384d4b8fd47743f697fdf6bea3070d8",
@@ -21,9 +21,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 17.35,
+      "timeliness": 15.74,
       "writing_value": 5,
-      "total_score": 102.35
+      "total_score": 100.74
     },
     {
       "id": "bf9959f1be20382405634932598242fe68c10d48",
@@ -42,9 +42,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.2,
+      "timeliness": 27.58,
       "writing_value": 0,
-      "total_score": 104.2
+      "total_score": 102.58
     },
     {
       "id": "0f58ae5f9da9e0a96f9040adefd761db56bc987f",
@@ -63,9 +63,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 16.3,
+      "timeliness": 14.69,
       "writing_value": 0,
-      "total_score": 91.3
+      "total_score": 89.69
     },
     {
       "id": "308730d47d05582af87bf4658416a6f199f75a2f",
@@ -84,9 +84,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 20.07,
+      "timeliness": 18.46,
       "writing_value": 0,
-      "total_score": 110.07
+      "total_score": 108.46
     },
     {
       "id": "945dfcbc8ac678c881788474e9d0222a13cca91e",
@@ -105,76 +105,34 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 17.49,
+      "timeliness": 15.87,
       "writing_value": 0,
-      "total_score": 107.49
+      "total_score": 105.87
     },
     {
-      "id": "7a2c8144e7c0d0193bb9b668eafc44fab7b37d01",
-      "title": "工业具身智能的 \"最后一公里\"，为什么是埃夫特&启智在走？",
+      "id": "ae8789be7b694dee5a0dad2bff01799e9b193f46",
+      "title": "宇树科技机器人有了仿生脸 G1新形态机械歌姬亮相WRC2026 - 央广财经",
       "title_zh": "",
-      "url": "https://www.leiphone.com/category/robot/UL2Q8ihgr90Dy85f.html",
-      "published_at": "2026-08-22T12:07:00+00:00",
-      "category": "雷锋网",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE91RjZNWG1HU0F6c09vN1p6Q2txT3RMc3JNMm1INUJCNkhJcm83TDJHS0w0cC02eTh1azQzcWxVa3RSSHZBVU1FUjVaT19HT0IxTnNNaWpDNVNwNEViVll6TVNQMzRIUUlVY0FGeTVvUQ?oc=5",
+      "published_at": "2026-08-22T12:04:24+00:00",
+      "category": "GN: 宇树科技",
       "gn_label": "robotics",
-      "site_name": "雷锋网",
-      "source": "雷锋网",
-      "site_id": "雷锋网",
-      "description": "一、90% 的工厂，机器人还进不去具身智能这两年很热，但热的地方大多不在工厂。人形机器人在展会上跳舞、倒酒、叠衣服，视频传播量惊人；可一旦走进真实的工业车间，话题就迅速冷下来。原因很简单，工业现场不是实验室，它要求机器人在油污、粉尘、温差和来料不一致的环境里，连续、稳定、可核算地干活。而这恰恰是当前具身智能最薄弱的环节。传统工业机器人其实已经很强了。高速、高精、大负载，在汽车焊装线、3C 装配线上可以做到毫秒级节拍；在防爆、喷涂等特种场景也有成熟方案。但它的强，是 \"确定性\" 的强 —— 程序写死、轨迹固定、来料一致，一旦条件发生变化，它就无所适从。这正是问题所在。全球工业机械臂年增量大约五十",
-      "ai_score": 80.0,
-      "ai_label": "robotics",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 5,
-      "timeliness": 17.41,
-      "writing_value": 5,
-      "total_score": 117.41
-    },
-    {
-      "id": "c8b9b6fcc965e23923c58c354697129fc95d2e72",
-      "title": "WRC 2026 风向标：具身智能下半场，比「大脑」更比「账本」",
-      "title_zh": "",
-      "url": "https://www.leiphone.com/category/ai/rUNBvF7Iq6C3UtyR.html",
-      "published_at": "2026-08-22T11:40:00+00:00",
-      "category": "雷锋网",
-      "gn_label": "robotics",
-      "site_name": "雷锋网",
-      "source": "雷锋网",
-      "site_id": "雷锋网",
-      "description": "展台不再比谁花活多，开始比谁能稳定干满8小时。    作者丨邓哲敏 齐铖湧    编辑丨齐铖湧                                                                                                       上海 WAIC 结束不到一个月，北京 WRC 2026 接棒开启。短短几十天，谁也不可能把模型推倒重来。想看到什么颠覆性突破，是不现实的。所以这篇现场观察不单看 WRC 上的展台花活，AI科技评论（雷峰网公众号）会结合几个月来各家综合表现，看“具身大脑”究竟走到哪一步。先说首日逛展的最大感受：和 W",
-      "ai_score": 80.0,
-      "ai_label": "robotics",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 5,
-      "timeliness": 16.96,
-      "writing_value": 5,
-      "total_score": 116.96
-    },
-    {
-      "id": "6a6309415fe1bcd1f21d859944b956adf813a303",
-      "title": "智元机器人干翻宇树科技，拿下全球第一|Unitree R1|工厂|工业|商业|场景_手机新浪网 - 新浪财经",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiwwJBVV95cUxPV0tKUzU0ZVRjTlk5ZE1NZHg1aEo2NkVEN1ZDUk9HOGMwZjFoZTMzeHRUbzhpOGpHUGktQ0dpcjgyYVoxaGlmZWlEYmZuTGk5akl3enRPUkptUC00S3pMMS15NklfZDdMYkhMZVg4ZDZkaWFFREJKem5EN1NNZExiOVNvd01Fa1paQ2plVjUyaWVwUjd4TXZnMU12SFRDM1IxemdTOUxsSVZaYnZMZUNBRG5vbkNmUVFZQ2loOTZEQlZmemhTa3ozazZuV3JoTXhIcWFjRVJMdENoV3lPaWNnNjNiWnY3OVBPREZkeVNlZ0JZUHVuazhrbHU2RGRtdWktSTlXQmFEdFQyM0pZbWNhNkg3QWF1U3RuSnUxTTh2Zy1wU1RteFZjel9XdmZ2ZnYyQjBkRWR4VUNBQVozNkNLVGl6RQ?oc=5",
-      "published_at": "2026-08-22T15:00:42+00:00",
-      "category": "GN: 智元机器人",
-      "gn_label": "robotics",
-      "site_name": "GN: 智元机器人",
-      "source": "GN: 智元机器人",
-      "site_id": "GN: 智元机器人",
-      "description": "智元机器人干翻宇树科技，拿下全球第一|Unitree R1|工厂|工业|商业|场景_手机新浪网  新浪财经",
+      "site_name": "GN: 宇树科技",
+      "source": "GN: 宇树科技",
+      "site_id": "GN: 宇树科技",
+      "description": "宇树科技机器人有了仿生脸 G1新形态机械歌姬亮相WRC2026  央广财经",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 20.31,
+      "timeliness": 15.76,
       "writing_value": 0,
-      "total_score": 95.31
+      "total_score": 90.76
     },
     {
-      "id": "351ce46f96eafdbf26ea80ed6227da44366a9bc9",
-      "title": "宇树科技：从车库到610亿，一家“偏科生”公司的十年 - 凤凰网财经",
+      "id": "ef8a24fc023cf873bc0419a06c394cb896688de4",
+      "title": "宇树科技：从车库到610亿，一家“偏科生”公司的十年 - 凤凰网",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9jSXZaZWx0VENWZC15dVFGZU1ESS1xS2dHN3RYb3NVLTFOZVhZQnYtdWR2VUgtWUQxVmN5bm5SWGdGVDlyVUR4RGR3WW1xZEVH?oc=5",
       "published_at": "2026-08-22T14:27:27+00:00",
@@ -183,19 +141,19 @@
       "site_name": "GN: 宇树科技",
       "source": "GN: 宇树科技",
       "site_id": "GN: 宇树科技",
-      "description": "宇树科技：从车库到610亿，一家“偏科生”公司的十年  凤凰网财经",
+      "description": "宇树科技：从车库到610亿，一家“偏科生”公司的十年  凤凰网",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 19.75,
+      "timeliness": 18.14,
       "writing_value": 0,
-      "total_score": 94.75
+      "total_score": 93.14
     },
     {
-      "id": "9f6271e0f17b16221ce63e83449b0981b8a3e075",
-      "title": "宇树科技工业场景收入不足3%，却撑起3400亿市值，高估值能持续吗 - 凤凰网财经",
+      "id": "f6612201907b64c93751d64339f984b5966fe100",
+      "title": "宇树科技工业场景收入不足3%，却撑起3400亿市值，高估值能持续吗 - 凤凰网",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBnSWZUUmRyMnM0ZnRfQkhZMHVLdXN0d2ZqUFo0UFB4ZEltWHI5blpoem5FYnNQdWRmb3pHMG9ZUWxnc3JxX0o1aHZsTEN6Smoy?oc=5",
       "published_at": "2026-08-22T11:29:59+00:00",
@@ -204,19 +162,40 @@
       "site_name": "GN: 宇树科技",
       "source": "GN: 宇树科技",
       "site_id": "GN: 宇树科技",
-      "description": "宇树科技工业场景收入不足3%，却撑起3400亿市值，高估值能持续吗  凤凰网财经",
+      "description": "宇树科技工业场景收入不足3%，却撑起3400亿市值，高估值能持续吗  凤凰网",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 16.8,
+      "timeliness": 15.18,
       "writing_value": 0,
-      "total_score": 91.8
+      "total_score": 90.18
     },
     {
-      "id": "55748e1f4182bd9155eb9963da14bce48aae91e1",
-      "title": "宇树科技上市，王力宏为什么坐1号桌？王兴兴为什么表情平静？ - 凤凰网财经",
+      "id": "23d03882165707af1803f75a7e2cba0981ff017b",
+      "title": "机器人100米预赛小组垫底，宇树科技回应 - 凤凰网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE45d2dtdTFHV2NGQjc2T2JJekVQR2hZUVpULW1oZ0dkZmtHbWlxeDJkc1E4dzV1aTFxRkpobGZvejkwZHFzd1lybg?oc=5",
+      "published_at": "2026-08-23T00:47:22+00:00",
+      "category": "GN: 宇树科技",
+      "gn_label": "robotics",
+      "site_name": "GN: 宇树科技",
+      "source": "GN: 宇树科技",
+      "site_id": "GN: 宇树科技",
+      "description": "机器人100米预赛小组垫底，宇树科技回应  凤凰网",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 28.47,
+      "writing_value": 0,
+      "total_score": 103.47
+    },
+    {
+      "id": "987232fd09f684afa1a797de384cc561f61421c3",
+      "title": "宇树科技上市，王力宏为什么坐1号桌？王兴兴为什么表情平静？ - 凤凰网",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1EZE14aVRzbl9oLU1SZHhFSG5mMXZXNWZiLVluT2kzaTFabjczODBSUWliSzhiUHJTcW1wWFB6Zm53LTVfWlNtbUJaWm5GYjhi?oc=5",
       "published_at": "2026-08-22T13:27:34+00:00",
@@ -225,15 +204,15 @@
       "site_name": "GN: 宇树科技",
       "source": "GN: 宇树科技",
       "site_id": "GN: 宇树科技",
-      "description": "宇树科技上市，王力宏为什么坐1号桌？王兴兴为什么表情平静？  凤凰网财经",
+      "description": "宇树科技上市，王力宏为什么坐1号桌？王兴兴为什么表情平静？  凤凰网",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 18.75,
+      "timeliness": 17.14,
       "writing_value": 0,
-      "total_score": 93.75
+      "total_score": 92.14
     },
     {
       "id": "da080988b67c5e5ff475f363ace911026a4a3306",
@@ -252,9 +231,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 17.47,
+      "timeliness": 15.86,
       "writing_value": 0,
-      "total_score": 92.47
+      "total_score": 90.86
+    },
+    {
+      "id": "fab504a35da25fe06597ca6a6456e4eba6733f7b",
+      "title": "机器人在自贡“出生”了，优必选西南首条人形机器人组装线投产 - 四川在线",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBWWm5ZT0o2Q281bjBmazA4SHJMVzlJaHl3R1djSHdxOWR1a0diMVdrOTVUdU5URENtLUh3NXJrYl9UalItMC1ScWlfUGM2QXo1Wkt5cFVhWXZFMXVHTjZfQkN3?oc=5",
+      "published_at": "2026-08-22T14:35:41+00:00",
+      "category": "GN: 优必选",
+      "gn_label": "robotics",
+      "site_name": "GN: 优必选",
+      "source": "GN: 优必选",
+      "site_id": "GN: 优必选",
+      "description": "机器人在自贡“出生”了，优必选西南首条人形机器人组装线投产  四川在线",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 18.28,
+      "writing_value": 0,
+      "total_score": 108.28
     },
     {
       "id": "0a492fdb18c358ffe4495a332a04a35688e3d425",
@@ -273,9 +273,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.24,
+      "timeliness": 24.62,
       "writing_value": 0,
-      "total_score": 101.24
+      "total_score": 99.62
+    },
+    {
+      "id": "ffeec80486cb8d5b1a44ea28c6c318e0b1b95606",
+      "title": "2026世界机器人大会迎来大量观众|仿生机器人|机械臂|新华社|北京市|行李箱_手机新浪网 - 新浪财经",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNenM2M2hwXzAzVzl5eV9IYXVTcGpiVjZvMWRlQnBBTDEtX0tfMDQtVGJqUW41X2Zmazh3TFpKemNfWXIwaWUzLXRWMHRBcTBpWlFLd3NhVHV6X1dQV0huLVZqWVl5RUJFbGQ0aUxDa1VlVUdXOXV0eXd5bkFQRnFxTXc0Q1hDMm1TYXlUV0Y3cTRWaDQ5ZFRfT1RzSnR5dVBxak12dFA3TQ?oc=5",
+      "published_at": "2026-08-22T15:05:11+00:00",
+      "category": "GN: 机械臂",
+      "gn_label": "robotics",
+      "site_name": "GN: 机械臂",
+      "source": "GN: 机械臂",
+      "site_id": "GN: 机械臂",
+      "description": "2026世界机器人大会迎来大量观众|仿生机器人|机械臂|新华社|北京市|行李箱_手机新浪网  新浪财经",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 18.77,
+      "writing_value": 0,
+      "total_score": 93.77
     },
     {
       "id": "971dd2918f75c0393aecc80b41bf949f9408a222",
@@ -294,9 +315,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 20.58,
+      "timeliness": 18.97,
       "writing_value": 0,
-      "total_score": 95.58
+      "total_score": 93.97
     },
     {
       "id": "7ac848f392cc94aa85626aa02a4849674bef4dd5",
@@ -315,9 +336,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 16.54,
+      "timeliness": 14.93,
       "writing_value": 0,
-      "total_score": 91.54
+      "total_score": 89.93
     },
     {
       "id": "3510138fa012fe6ba479915e56ce9682c2ae6312",
@@ -336,9 +357,30 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 5,
-      "timeliness": 20.11,
+      "timeliness": 18.5,
       "writing_value": 5,
-      "total_score": 120.11
+      "total_score": 118.5
+    },
+    {
+      "id": "0b3512481497b7db16d36ee4a84c263a5b1bc6b6",
+      "title": "别再看人形机器人表演了！这届WRC上工业机器人彻底爆发了 - 新浪财经",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9GMVJzOVFzTDVoTi1zX01mUXFNbC1wcGU1RGVXRTdSVHB2dzE5aTN3MUl3VWNuSUtZdUF5QjZGZVFPd3NFX1EzdVpEdjQwbE15ZnRidWVRdzdiQzBqc2tsWHpvcVlhMVY0Sm9QZkwyTHRiU19qbnhnd0lOdjE?oc=5",
+      "published_at": "2026-08-22T16:05:00+00:00",
+      "category": "GN: 工业机器人与人",
+      "gn_label": "robotics",
+      "site_name": "GN: 工业机器人与人",
+      "source": "GN: 工业机器人与人",
+      "site_id": "GN: 工业机器人与人",
+      "description": "别再看人形机器人表演了！这届WRC上工业机器人彻底爆发了  新浪财经",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 19.77,
+      "writing_value": 0,
+      "total_score": 109.77
     },
     {
       "id": "03d8fd25730f60af7226677f8fda850d6a0efc1f",
@@ -357,9 +399,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 17.81,
+      "timeliness": 16.2,
       "writing_value": 0,
-      "total_score": 107.81
+      "total_score": 106.2
     },
     {
       "id": "8fe68a120fbfad70240410d62d23cc2af5c166b6",
@@ -378,9 +420,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 16.35,
+      "timeliness": 14.73,
       "writing_value": 0,
-      "total_score": 106.35
+      "total_score": 104.73
     },
     {
       "id": "667b7bfb44516c561496327160bcdabf1e666a62",
@@ -399,9 +441,51 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 21.63,
+      "timeliness": 20.02,
       "writing_value": 0,
-      "total_score": 111.63
+      "total_score": 110.02
+    },
+    {
+      "id": "7a2c8144e7c0d0193bb9b668eafc44fab7b37d01",
+      "title": "工业具身智能的 \"最后一公里\"，为什么是埃夫特&启智在走？",
+      "title_zh": "",
+      "url": "https://www.leiphone.com/category/robot/UL2Q8ihgr90Dy85f.html",
+      "published_at": "2026-08-22T12:07:00+00:00",
+      "category": "雷锋网",
+      "gn_label": "robotics",
+      "site_name": "雷锋网",
+      "source": "雷锋网",
+      "site_id": "雷锋网",
+      "description": "一、90% 的工厂，机器人还进不去具身智能这两年很热，但热的地方大多不在工厂。人形机器人在展会上跳舞、倒酒、叠衣服，视频传播量惊人；可一旦走进真实的工业车间，话题就迅速冷下来。原因很简单，工业现场不是实验室，它要求机器人在油污、粉尘、温差和来料不一致的环境里，连续、稳定、可核算地干活。而这恰恰是当前具身智能最薄弱的环节。传统工业机器人其实已经很强了。高速、高精、大负载，在汽车焊装线、3C 装配线上可以做到毫秒级节拍；在防爆、喷涂等特种场景也有成熟方案。但它的强，是 \"确定性\" 的强 —— 程序写死、轨迹固定、来料一致，一旦条件发生变化，它就无所适从。这正是问题所在。全球工业机械臂年增量大约五十",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 15.8,
+      "writing_value": 5,
+      "total_score": 115.8
+    },
+    {
+      "id": "c8b9b6fcc965e23923c58c354697129fc95d2e72",
+      "title": "WRC 2026 风向标：具身智能下半场，比「大脑」更比「账本」",
+      "title_zh": "",
+      "url": "https://www.leiphone.com/category/ai/rUNBvF7Iq6C3UtyR.html",
+      "published_at": "2026-08-22T11:40:00+00:00",
+      "category": "雷锋网",
+      "gn_label": "robotics",
+      "site_name": "雷锋网",
+      "source": "雷锋网",
+      "site_id": "雷锋网",
+      "description": "展台不再比谁花活多，开始比谁能稳定干满8小时。    作者丨邓哲敏 齐铖湧    编辑丨齐铖湧                                                                                                       上海 WAIC 结束不到一个月，北京 WRC 2026 接棒开启。短短几十天，谁也不可能把模型推倒重来。想看到什么颠覆性突破，是不现实的。所以这篇现场观察不单看 WRC 上的展台花活，AI科技评论（雷峰网公众号）会结合几个月来各家综合表现，看“具身大脑”究竟走到哪一步。先说首日逛展的最大感受：和 W",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 15.35,
+      "writing_value": 5,
+      "total_score": 115.35
     }
   ],
   "fallback_used": false
