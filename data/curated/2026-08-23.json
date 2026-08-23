@@ -1,9 +1,9 @@
 {
   "date": "2026-08-23",
-  "generated_at": "2026-08-23T06:03:30.778872+00:00",
+  "generated_at": "2026-08-23T06:32:51.839349+00:00",
   "score_threshold": 80,
   "total_items": 50,
-  "new_added": 3,
+  "new_added": 2,
   "items": [
     {
       "id": "9885009e541efd36",
@@ -615,6 +615,27 @@
       "total_score": 128.51
     },
     {
+      "id": "3c320bf31baa7132",
+      "title": "大晓机器人董事长王晓刚：具身智能“ChatGPT时刻”的前提是数据和模型 - t.cj.sina.cn",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5lMGRJbnhxUGNwOGxETm1EcHc5VkQ1UlRSWDhwZ1pmWkJMXzEyMjlvVmpQWThBS3Y3SUlGUTFJa0lzY2t2NjZOVW8wQlZCZEt1T2FDa2dORTZGR3FYVXZ6ZWtfc3pVZ3dTeDJ6X0F2ZGhQZw?oc=5",
+      "published_at": "2026-08-23T04:54:26+00:00",
+      "category": "国内具身智能资讯",
+      "gn_label": "embodied_ai",
+      "site_name": "国内具身智能资讯",
+      "source": "国内具身智能资讯",
+      "site_id": "国内具身智能资讯",
+      "description": "大晓机器人董事长王晓刚：具身智能“ChatGPT时刻”的前提是数据和模型  t.cj.sina.cn探展WRC：具身智能正开启PMF长跑 从表演到实干的转变  中华网WRC 2026 风向标：具身智能下半场，比「大脑」更比「账本」  雷峰网",
+      "ai_score": 80.0,
+      "ai_label": "embodied_ai",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 28.51,
+      "writing_value": 5,
+      "total_score": 128.51
+    },
+    {
       "id": "40371374d26017df",
       "title": "A giant leap from 2008 Beijing Olympics to 2026 World Humanoid Robot Games: “flying man” to flying robot - Global Times",
       "title_zh": "",
@@ -802,6 +823,27 @@
       "timeliness": 27.35,
       "writing_value": 5,
       "total_score": 127.35
+    },
+    {
+      "id": "47b45aa35563dc84",
+      "title": "Tiangong Ultra, the Chinese humanoid robot that beat Usain Bolt’s 100m record, barely made the human cut i - The Economic Times",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMirwJBVV95cUxOWWhES2E0emtCUnNscEg0ZUxfMUhDclJiWU5lMHFyWEROX2hwWjdzWTM4dVVUbE5vMWR1YU1yR1lwZzY0UW92Rk5seHQxZHhmSWVaZ0pBejlwMDZScC1iZGxTZHJnWFhpeTU4aVBJbzRLNDI5c3hkVW4zeWdpdnk4bHBGb2dTandRcDRodGJuX2c2c0o4cXF1U3VYSDU5cm1BMlRHclN5MEFCeGhnM1NnRU0wc2JHVGZfcFcwc0ZjeUpmeXkweTlqZVppcWM3cHRYckRCQW1HODB2d2VFQk1fZFVYWkxRX2I0T3hnajRNZWpxMTFOU0RvNzlad1VDTEk4RURxVHItTW96a3B2dm1seWF0bTQ5T29MSGNsV3NzNHdfaEpFMjFwMk1WMGRKcTjSAbQCQVVfeXFMUDdzNTNlSktqOWN1bmJqWkRmWXVpUDBqRmZSaEV4b25ZLWJlQjJWMGhlLVlQdWNnQkIzblp4OENTdFAyUjdIaTNuMHgtcXZIUTN6RTNGb2dHYTRIMWFkbXZuNUViVlY4SVdOVlREa3NXSmQ0bWxobGpjaWRab1A5ajRoaG00djRUYTRkbFIxUURiS2NzU0VvRHBjcFFncGpONkdDdy1CUWRzX3RiTlM2bXJVY29GYUJkenhwN09YMUp0R1lPWnlYVzlYY0tpd2lfRHlOSFJoLWRLdUVuaFlIYkRKR3h5eDFRVGFzM3Qwa29keHlNT3llZGhOdTI4dlZBRHdya3k3cU5hSk5yUW95R2xWRFhNR0x6Rm5fbHJaUXRiT2lmNWtBbjdvZEFCR3Uxc2gxMlg?oc=5",
+      "published_at": "2026-08-23T03:27:15+00:00",
+      "category": "国外人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国外人形机器人资讯",
+      "source": "国外人形机器人资讯",
+      "site_id": "国外人形机器人资讯",
+      "description": "Tiangong Ultra, the Chinese humanoid robot that beat Usain Bolt’s 100m record, barely made the human cut i  The Economic Times",
+      "ai_score": 80.0,
+      "ai_label": "humanoid",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 27.06,
+      "writing_value": 5,
+      "total_score": 127.06
     },
     {
       "id": "39840a1b18576338",
@@ -1012,48 +1054,6 @@
       "timeliness": 22.43,
       "writing_value": 5,
       "total_score": 122.43
-    },
-    {
-      "id": "de426a0dc3c400e8",
-      "title": "Humanoid Robots Surpass Usain Bolt’s Sprint Mark at Beijing’s World Humanoid Robot Games - Yahoo Tech",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQekxEMklkczk3QndQUERCVUk2Q3RzV1VzSnMwR2ZHLV8xeXM2bTZZMXl0dlBUY2lwaDF0bkhlN2RxZldUaWFTck1VTjVfbUxPMkF4NUoxek1nSGlCcGlWLUhWblpzdjl1THk2Mk5XVG16Qk80dWFkN1NVSURpNDVOd282c2k3WFJaaXBGMGpMTWpmS28?oc=5",
-      "published_at": "2026-08-22T19:02:55+00:00",
-      "category": "国外人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国外人形机器人资讯",
-      "source": "国外人形机器人资讯",
-      "site_id": "国外人形机器人资讯",
-      "description": "Humanoid Robots Surpass Usain Bolt’s Sprint Mark at Beijing’s World Humanoid Robot Games  Yahoo Tech",
-      "ai_score": 80.0,
-      "ai_label": "humanoid",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 5,
-      "timeliness": 20.07,
-      "writing_value": 5,
-      "total_score": 120.07
-    },
-    {
-      "id": "9f1e1b348d18142c",
-      "title": "别眨眼！李昀锐携机器人上场，人形机器人射门一脚“爆射”80km/h - 手机新浪网",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxORHBLaHhnOUdvUlN3aXFIMTJPcS1uZ2ZyVWowQ2JGVE9FdDVieWRnR05maUZZQUNrTTlaXzJZM1ZUT3Z6d2ZMRkxRVUYtZDdNVHJ1bzhIeDBRclo2dGU2TWFHWGg3TlFWWVBLMV8zWmJ4SDYwNFFpWHJENkxkN3JmVjJzQ2pILVo2OUF5S1ZBc0tGc1JEc1E4MEJRNTJwUTdiRDdQNGpaREY4ckNsa3FRRFUzZVlMZndfOU4tdXVfVGdyTUVrS05VYkF6ZWp5MktV?oc=5",
-      "published_at": "2026-08-23T02:16:56+00:00",
-      "category": "国内人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国内人形机器人资讯",
-      "source": "国内人形机器人资讯",
-      "site_id": "国内人形机器人资讯",
-      "description": "别眨眼！李昀锐携机器人上场，人形机器人射门一脚“爆射”80km/h  手机新浪网",
-      "ai_score": 80.0,
-      "ai_label": "humanoid",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 29.97,
-      "writing_value": 0,
-      "total_score": 119.97
     }
   ]
 }
