@@ -1,9 +1,9 @@
 {
   "date": "2026-08-23",
-  "generated_at": "2026-08-23T10:23:19.373298+00:00",
+  "generated_at": "2026-08-23T11:45:05.859396+00:00",
   "score_threshold": 80,
   "total_items": 50,
-  "new_added": 2,
+  "new_added": 1,
   "items": [
     {
       "id": "9885009e541efd36",
@@ -355,6 +355,27 @@
       "description": "World Humanoid Robot Games Open in Beijing, 2,056 Robots from 16 Countries Compete  finance.biggo.com",
       "ai_score": 80.0,
       "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 29.38,
+      "writing_value": 5,
+      "total_score": 129.38
+    },
+    {
+      "id": "1769203f482d171e",
+      "title": "Humanoid robot Lightning beats Usain Bolt's 100m world record with a 9.32-second run - The Business Standard",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPRTB6NGtzRUY5RDlnbFNCVWp6RXN6TmJ2c2t5eTFFXzE3VzBEaGhLbTREYXAzWHNGOVc5VTMxODZSdG45TGU5QXM5MWFoVHVNVzRTMFl2Z0U4X2ltTGdQdjFyaU5BWWVNRzQ0T3FMNUJTUUpvVmFkWEZqNF9ielk0OUZfVDNtVEh1amNrdXp0SW1qWnEzeVN4Mm5lajFhX216ei1iOUtqbzNFTHZ6aEVWNGwzcDFLVndlS3fSAb8BQVVfeXFMTV8xNWdfdXg4OXJ4aHpTLXhOZXh1Vk56YmIyV1hDLXd4LXJvOUlfSlNNNjlKekRtQzNJeDdXVy14LXQ2X0p6NkpqaHM2SlhJdjI0amVCWFgwZ3d0OFNzM2stRWx6MzljSE1nT01QSFIzckd4S3cxRlJkNUJZeVNRbFA3UHU3ckxlVUdRR1htcGlycU1iS25HSDc1YWNKXzYtWWtONXkwb2Zsd2pKMEZFYlNkZG1LT2t6S01VSXVuejA?oc=5",
+      "published_at": "2026-08-23T11:05:00+00:00",
+      "category": "国外人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国外人形机器人资讯",
+      "source": "国外人形机器人资讯",
+      "site_id": "国外人形机器人资讯",
+      "description": "Humanoid robot Lightning beats Usain Bolt's 100m world record with a 9.32-second run  The Business Standard",
+      "ai_score": 80.0,
+      "ai_label": "humanoid",
       "relevance": 0.8,
       "authority": 10,
       "depth": 5,
@@ -1033,27 +1054,6 @@
       "timeliness": 27.35,
       "writing_value": 5,
       "total_score": 127.35
-    },
-    {
-      "id": "47b45aa35563dc84",
-      "title": "Tiangong Ultra, the Chinese humanoid robot that beat Usain Bolt’s 100m record, barely made the human cut i - The Economic Times",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMirwJBVV95cUxOWWhES2E0emtCUnNscEg0ZUxfMUhDclJiWU5lMHFyWEROX2hwWjdzWTM4dVVUbE5vMWR1YU1yR1lwZzY0UW92Rk5seHQxZHhmSWVaZ0pBejlwMDZScC1iZGxTZHJnWFhpeTU4aVBJbzRLNDI5c3hkVW4zeWdpdnk4bHBGb2dTandRcDRodGJuX2c2c0o4cXF1U3VYSDU5cm1BMlRHclN5MEFCeGhnM1NnRU0wc2JHVGZfcFcwc0ZjeUpmeXkweTlqZVppcWM3cHRYckRCQW1HODB2d2VFQk1fZFVYWkxRX2I0T3hnajRNZWpxMTFOU0RvNzlad1VDTEk4RURxVHItTW96a3B2dm1seWF0bTQ5T29MSGNsV3NzNHdfaEpFMjFwMk1WMGRKcTjSAbQCQVVfeXFMUDdzNTNlSktqOWN1bmJqWkRmWXVpUDBqRmZSaEV4b25ZLWJlQjJWMGhlLVlQdWNnQkIzblp4OENTdFAyUjdIaTNuMHgtcXZIUTN6RTNGb2dHYTRIMWFkbXZuNUViVlY4SVdOVlREa3NXSmQ0bWxobGpjaWRab1A5ajRoaG00djRUYTRkbFIxUURiS2NzU0VvRHBjcFFncGpONkdDdy1CUWRzX3RiTlM2bXJVY29GYUJkenhwN09YMUp0R1lPWnlYVzlYY0tpd2lfRHlOSFJoLWRLdUVuaFlIYkRKR3h5eDFRVGFzM3Qwa29keHlNT3llZGhOdTI4dlZBRHdya3k3cU5hSk5yUW95R2xWRFhNR0x6Rm5fbHJaUXRiT2lmNWtBbjdvZEFCR3Uxc2gxMlg?oc=5",
-      "published_at": "2026-08-23T03:27:15+00:00",
-      "category": "国外人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国外人形机器人资讯",
-      "source": "国外人形机器人资讯",
-      "site_id": "国外人形机器人资讯",
-      "description": "Tiangong Ultra, the Chinese humanoid robot that beat Usain Bolt’s 100m record, barely made the human cut i  The Economic Times",
-      "ai_score": 80.0,
-      "ai_label": "humanoid",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 5,
-      "timeliness": 27.06,
-      "writing_value": 5,
-      "total_score": 127.06
     }
   ]
 }
