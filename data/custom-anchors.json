@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-24T21:53:59.682578+00:00",
+  "generated_at": "2026-08-24T22:19:02.642781+00:00",
   "window_start": "2026-08-24T19:00:00+08:00",
-  "window_end": "2026-08-25T05:51:16.363206+08:00",
-  "total_items": 36,
+  "window_end": "2026-08-25T06:15:58.249393+08:00",
+  "total_items": 37,
   "items": [
     {
       "id": "ece530d3f63846fc163034f6a355371bf74c817c",
@@ -21,9 +21,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 23.55,
+      "timeliness": 23.14,
       "writing_value": 5,
-      "total_score": 108.55
+      "total_score": 108.14
     },
     {
       "id": "d5d9b5465f46fbfdb739808501d4ba0cf2559013",
@@ -42,9 +42,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.66,
+      "timeliness": 27.25,
       "writing_value": 0,
-      "total_score": 102.66
+      "total_score": 102.25
     },
     {
       "id": "b65d572420f3e6cf6f27593efa50d4c617c58b45",
@@ -63,9 +63,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 21.94,
+      "timeliness": 21.53,
       "writing_value": 5,
-      "total_score": 106.94
+      "total_score": 106.53
     },
     {
       "id": "942039a7320fc9e0f08e64b047d50ce72b3a8242",
@@ -84,93 +84,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 19.84,
+      "timeliness": 19.43,
       "writing_value": 5,
-      "total_score": 104.84
+      "total_score": 104.43
     },
     {
-      "id": "bca7befeac89dc869f6cf3ea7f80a6aae07604b1",
-      "title": "Texas ranks seventh in $207.6M robotics investment - CW33.com",
+      "id": "57df19bae74b09ff83ba99f504fd078b8808b71a",
+      "title": "Security Emerges as New Battleground in Robotic Vacuum Industry - 조선일보",
       "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNTmFQclFkQkhHcjZWT0ZtZFVoRFRTWUx6UlFUVmUzdXFxSnpUT3c5c09tamlKOTEyN01XaG04SFBRUHozX25fMXJqMlJzOWdxVm5LNVo4UUdpWFpZTUJtOU53YXVCTlhyVFMtclFXZGdUNGV1b1RqLVF5N2ZFb0ZCSzBMUW3SAYoBQVVfeXFMT0hGdlNXaWRLX2I0TXE2cW54MGozM1Z0MWkzOUtfRDJWQkFxcG93UW9mQXFYb2pzUnRLNWY3VXlfOXA4RXRDZVVOZ1dfMGhfTEktWm9XWVA2RTBSNHdBR3FCc0ZnVzFLRUVlX0F1MkYtOVpidHZqeHByeWMxa1JxTEU5SVBDb3ZZLTJn?oc=5",
-      "published_at": "2026-08-24T17:10:00+00:00",
-      "category": "GN: industrial robot",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNdzhtbW9TMnMwRXdmcTRIMVpwLUgwU0tCcGgxUXNzeHFQc2xrQkc4OE1hOGtQZWxfMXFBcXR2MjV0bGpPcHpxWGJvb1l4NDZXOGlTMVR3YVdZNmRSWENFLU1sUFFoRy1kb3ZUaE8xcGxkcEw0ZFlmb1lMdkJsbWV6SkVoRzRjMkN1?oc=5",
+      "published_at": "2026-08-24T22:04:40+00:00",
+      "category": "GN: robot vacuum",
       "gn_label": "robotics",
-      "site_name": "GN: industrial robot",
-      "source": "GN: industrial robot",
-      "site_id": "GN: industrial robot",
-      "description": "Texas ranks seventh in $207.6M robotics investment  CW33.com",
+      "site_name": "GN: robot vacuum",
+      "source": "GN: robot vacuum",
+      "site_id": "GN: robot vacuum",
+      "description": "Security Emerges as New Battleground in Robotic Vacuum Industry  조선일보",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.31,
+      "timeliness": 29.81,
       "writing_value": 0,
-      "total_score": 100.31
-    },
-    {
-      "id": "6713eecb6c89a74caf40bbd752d8950cc3d65951",
-      "title": "How close are robots to replacing human workers? - hcamag.com",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOcW9JRmZKOEpWd3dkSEp0ZHNYQzNmR3BXMjdTaDBWZkpaN3NKM1hGX0dIQ2ppWnlocHdES1p5V0RZQzB2TE9JSWdIZ3hwTjdNOUo5M1hPZVVzUlk1eEo3VkpPbUpNQWd6V0ZCNVdxNzhSQmVKSTI5MTJYZUdWY0N0VEY5NmZob2lYWjVwUExRdGRPYW9JSzM1MA?oc=5",
-      "published_at": "2026-08-24T13:25:32+00:00",
-      "category": "GN: industrial robot",
-      "gn_label": "robotics",
-      "site_name": "GN: industrial robot",
-      "source": "GN: industrial robot",
-      "site_id": "GN: industrial robot",
-      "description": "How close are robots to replacing human workers?  hcamag.com",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 21.57,
-      "writing_value": 0,
-      "total_score": 96.57
-    },
-    {
-      "id": "86770a536811d44de9ecf2a3375d6ef7ec4c1402",
-      "title": "Over 93.5 Billion Yuan Financing Secured in Half a Year: China's Robotics Industry Ushered in \"8-Hour Working System\" - 36 Kr",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBwWkItSDdsMDJPSG10eDVpa1JoMUZCVkpTa2E2dktiM1RUbEZ6S1l2aExxaE94WkU0OXhUR3p1MEtCSkhxbENpVW4zVGVvMUtNYXBr?oc=5",
-      "published_at": "2026-08-24T11:54:24+00:00",
-      "category": "GN: industrial robot",
-      "gn_label": "robotics",
-      "site_name": "GN: industrial robot",
-      "source": "GN: industrial robot",
-      "site_id": "GN: industrial robot",
-      "description": "Over 93.5 Billion Yuan Financing Secured in Half a Year: China's Robotics Industry Ushered in \"8-Hour Working System\"  36 Kr",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 5,
-      "timeliness": 20.05,
-      "writing_value": 5,
-      "total_score": 105.05
-    },
-    {
-      "id": "883593cac9e7c89dc8c9a666de05211ec000f6eb",
-      "title": "Rostelecom joins industry group for robotics - Telecompaper",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPR0VUS2NRbVhQUDZ3QnZwa1hOMHdudmtHdGd1YTU2RDBGUjBfZXVzRGl6QmJERWlZcTRxbTN0OEZRZXVOYlUzLVZUNENqWmZKNXRoaWFZbWJ1ZkdYTGdITzFwUVpmQmNiODRaWHB1RG5kaVlya09ndEZxZ2Rybm5mcXdXOFJPcmtIZm9vWUFOWXY?oc=5",
-      "published_at": "2026-08-24T14:17:52+00:00",
-      "category": "GN: industrial robot",
-      "gn_label": "robotics",
-      "site_name": "GN: industrial robot",
-      "source": "GN: industrial robot",
-      "site_id": "GN: industrial robot",
-      "description": "Rostelecom joins industry group for robotics  Telecompaper",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 22.44,
-      "writing_value": 0,
-      "total_score": 97.44
+      "total_score": 104.81
     },
     {
       "id": "a5af449d278cabaa8170dc938ed5ff1626efc8d7",
@@ -189,9 +126,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 27.46,
+      "timeliness": 27.05,
       "writing_value": 5,
-      "total_score": 112.46
+      "total_score": 112.05
     },
     {
       "id": "bd8ca07b22bd0855ec287a70448fc53a911b5b1b",
@@ -210,9 +147,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 25.58,
+      "timeliness": 25.17,
       "writing_value": 5,
-      "total_score": 110.58
+      "total_score": 110.17
     },
     {
       "id": "09be9b8e7c8b57a8579a9177385d34757d39c1a1",
@@ -231,9 +168,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 23.41,
+      "timeliness": 23.0,
       "writing_value": 5,
-      "total_score": 108.41
+      "total_score": 108.0
     },
     {
       "id": "070c547e63456c2815ef43fa845c59cb2172316b",
@@ -252,9 +189,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 20.68,
+      "timeliness": 20.27,
       "writing_value": 0,
-      "total_score": 95.68
+      "total_score": 95.27
     },
     {
       "id": "885885b97aff186bfddf30b82921cf2097a83106",
@@ -273,9 +210,114 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 22.82,
+      "timeliness": 22.41,
       "writing_value": 0,
-      "total_score": 97.82
+      "total_score": 97.41
+    },
+    {
+      "id": "3fed931b047055890d47f83f2cb7861419a945ec",
+      "title": "Mobile Robots Set to Dominate Packaging Industry by 2031 - Packaging World",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNUDdFM2dUMmFURmlqSzR4WTJaOU83eFFfRmV4Z2k0SnZsOG5OSk9VSXFiVjA3Q3hxbUdLc0dQZk40OWc2R2NfODRKWGxWZ2hVTXFmMTU2WUdab0hKdDdNQ2hIanJyVFBiaW84cWlweDA5V2RZSU9pcktpd2FmT2hWUUhmWDgwWHZrejJ5OXhnazZlYzdCUC1xMU94Wm43cmJONURkdFNfUjB4QlMwYXhENmZ4a0IxVk54WFo5ckUza3ZCXzR3cUQzY3RR?oc=5",
+      "published_at": "2026-08-24T15:56:15+00:00",
+      "category": "GN: industrial robot",
+      "gn_label": "robotics",
+      "site_name": "GN: industrial robot",
+      "source": "GN: industrial robot",
+      "site_id": "GN: industrial robot",
+      "description": "Mobile Robots Set to Dominate Packaging Industry by 2031  Packaging World",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 23.67,
+      "writing_value": 0,
+      "total_score": 98.67
+    },
+    {
+      "id": "bca7befeac89dc869f6cf3ea7f80a6aae07604b1",
+      "title": "Texas ranks seventh in $207.6M robotics investment - CW33.com",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNTmFQclFkQkhHcjZWT0ZtZFVoRFRTWUx6UlFUVmUzdXFxSnpUT3c5c09tamlKOTEyN01XaG04SFBRUHozX25fMXJqMlJzOWdxVm5LNVo4UUdpWFpZTUJtOU53YXVCTlhyVFMtclFXZGdUNGV1b1RqLVF5N2ZFb0ZCSzBMUW3SAYoBQVVfeXFMT0hGdlNXaWRLX2I0TXE2cW54MGozM1Z0MWkzOUtfRDJWQkFxcG93UW9mQXFYb2pzUnRLNWY3VXlfOXA4RXRDZVVOZ1dfMGhfTEktWm9XWVA2RTBSNHdBR3FCc0ZnVzFLRUVlX0F1MkYtOVpidHZqeHByeWMxa1JxTEU5SVBDb3ZZLTJn?oc=5",
+      "published_at": "2026-08-24T17:10:00+00:00",
+      "category": "GN: industrial robot",
+      "gn_label": "robotics",
+      "site_name": "GN: industrial robot",
+      "source": "GN: industrial robot",
+      "site_id": "GN: industrial robot",
+      "description": "Texas ranks seventh in $207.6M robotics investment  CW33.com",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 24.9,
+      "writing_value": 0,
+      "total_score": 99.9
+    },
+    {
+      "id": "6713eecb6c89a74caf40bbd752d8950cc3d65951",
+      "title": "How close are robots to replacing human workers? - hcamag.com",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOcW9JRmZKOEpWd3dkSEp0ZHNYQzNmR3BXMjdTaDBWZkpaN3NKM1hGX0dIQ2ppWnlocHdES1p5V0RZQzB2TE9JSWdIZ3hwTjdNOUo5M1hPZVVzUlk1eEo3VkpPbUpNQWd6V0ZCNVdxNzhSQmVKSTI5MTJYZUdWY0N0VEY5NmZob2lYWjVwUExRdGRPYW9JSzM1MA?oc=5",
+      "published_at": "2026-08-24T13:25:32+00:00",
+      "category": "GN: industrial robot",
+      "gn_label": "robotics",
+      "site_name": "GN: industrial robot",
+      "source": "GN: industrial robot",
+      "site_id": "GN: industrial robot",
+      "description": "How close are robots to replacing human workers?  hcamag.com",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 21.16,
+      "writing_value": 0,
+      "total_score": 96.16
+    },
+    {
+      "id": "86770a536811d44de9ecf2a3375d6ef7ec4c1402",
+      "title": "Over 93.5 Billion Yuan Financing Secured in Half a Year: China's Robotics Industry Ushered in \"8-Hour Working System\" - 36 Kr",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBwWkItSDdsMDJPSG10eDVpa1JoMUZCVkpTa2E2dktiM1RUbEZ6S1l2aExxaE94WkU0OXhUR3p1MEtCSkhxbENpVW4zVGVvMUtNYXBr?oc=5",
+      "published_at": "2026-08-24T11:54:24+00:00",
+      "category": "GN: industrial robot",
+      "gn_label": "robotics",
+      "site_name": "GN: industrial robot",
+      "source": "GN: industrial robot",
+      "site_id": "GN: industrial robot",
+      "description": "Over 93.5 Billion Yuan Financing Secured in Half a Year: China's Robotics Industry Ushered in \"8-Hour Working System\"  36 Kr",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 19.64,
+      "writing_value": 5,
+      "total_score": 104.64
+    },
+    {
+      "id": "883593cac9e7c89dc8c9a666de05211ec000f6eb",
+      "title": "Rostelecom joins industry group for robotics - Telecompaper",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPR0VUS2NRbVhQUDZ3QnZwa1hOMHdudmtHdGd1YTU2RDBGUjBfZXVzRGl6QmJERWlZcTRxbTN0OEZRZXVOYlUzLVZUNENqWmZKNXRoaWFZbWJ1ZkdYTGdITzFwUVpmQmNiODRaWHB1RG5kaVlya09ndEZxZ2Rybm5mcXdXOFJPcmtIZm9vWUFOWXY?oc=5",
+      "published_at": "2026-08-24T14:17:52+00:00",
+      "category": "GN: industrial robot",
+      "gn_label": "robotics",
+      "site_name": "GN: industrial robot",
+      "source": "GN: industrial robot",
+      "site_id": "GN: industrial robot",
+      "description": "Rostelecom joins industry group for robotics  Telecompaper",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 22.03,
+      "writing_value": 0,
+      "total_score": 97.03
     },
     {
       "id": "1a8894b19a0461b6089c837b197d077493e9840d",
@@ -294,9 +336,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 19.16,
+      "timeliness": 18.75,
       "writing_value": 5,
-      "total_score": 104.16
+      "total_score": 103.75
     },
     {
       "id": "1964fc0e2a5555d6d7f7d7060fb3d82e29c95420",
@@ -315,9 +357,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.67,
+      "timeliness": 24.26,
       "writing_value": 0,
-      "total_score": 99.67
+      "total_score": 99.26
+    },
+    {
+      "id": "ae948869e9d38ecab8d9643e840c06cbb0fbc3b2",
+      "title": "小鹏人形机器人首轮融资敲定！腾讯、阿里同时参投 - 新浪财经",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1Ebm9XcHFPMlMtMWlWSjZnc2VDOEVFeGktSDdBWG1CMnpiblhKWHVaa19BQS1QdGR2WnY2QkVaNlNhMTJmWHB2ekpETjU0UU1Td1o5WGxveFp3RDBSRHpDenFmTjYtbVc0MTJ6dTZ3?oc=5",
+      "published_at": "2026-08-24T11:11:45+00:00",
+      "category": "GN: 人形机器人",
+      "gn_label": "humanoid",
+      "site_name": "GN: 人形机器人",
+      "source": "GN: 人形机器人",
+      "site_id": "GN: 人形机器人",
+      "description": "小鹏人形机器人首轮融资敲定！腾讯、阿里同时参投  新浪财经",
+      "ai_score": 80.0,
+      "ai_label": "humanoid",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 18.93,
+      "writing_value": 0,
+      "total_score": 108.93
     },
     {
       "id": "19d1449f29b8568d10c019b022df89c69ebf28b8",
@@ -336,9 +399,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.42,
+      "timeliness": 24.01,
       "writing_value": 0,
-      "total_score": 99.42
+      "total_score": 99.01
     },
     {
       "id": "e57c4975f922c495e418ac17ce0730a3b31ee45b",
@@ -357,9 +420,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.29,
+      "timeliness": 22.88,
       "writing_value": 0,
-      "total_score": 98.29
+      "total_score": 97.88
     },
     {
       "id": "ce233bb5b124a9919c784d80db3d345e59534bff",
@@ -378,9 +441,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.82,
+      "timeliness": 25.41,
       "writing_value": 0,
-      "total_score": 100.82
+      "total_score": 100.41
     },
     {
       "id": "985e9d53ade9fd01b513019e1101fb16530d6e14",
@@ -399,9 +462,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 21.05,
+      "timeliness": 20.64,
       "writing_value": 0,
-      "total_score": 96.05
+      "total_score": 95.64
     },
     {
       "id": "5f4dddac94520bb6a5594cd95d1bbe513323164a",
@@ -420,30 +483,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 19.36,
+      "timeliness": 18.95,
       "writing_value": 0,
-      "total_score": 94.36
-    },
-    {
-      "id": "857ae37e6098a4b5e65624778e96425b241752e8",
-      "title": "一财主播说 | 跑赢博尔特！宇树科技发布“超人” 跳高和跑步均超人类 - 第一财经",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1IZ2plb1JOZ3BOQi1pV1VWdHF3eld5QzVRQ1M1MW1RRE9hQWlEM0VkVUFFclBHeW5xSHhCaWdXYVphQkhPLU1rUGpDQ1NQX21kNWhVbQ?oc=5",
-      "published_at": "2026-08-24T17:59:41+00:00",
-      "category": "GN: 宇树科技",
-      "gn_label": "robotics",
-      "site_name": "GN: 宇树科技",
-      "source": "GN: 宇树科技",
-      "site_id": "GN: 宇树科技",
-      "description": "一财主播说 | 跑赢博尔特！宇树科技发布“超人” 跳高和跑步均超人类  第一财经",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 26.14,
-      "writing_value": 0,
-      "total_score": 101.14
+      "total_score": 93.95
     },
     {
       "id": "19352e6db421f9d592c05beb8da2e6d5b219c549",
@@ -462,9 +504,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 22.25,
+      "timeliness": 21.84,
       "writing_value": 0,
-      "total_score": 97.25
+      "total_score": 96.84
     },
     {
       "id": "7c036bed4c5a0f5be3c45db20f21b8cde7304d91",
@@ -483,9 +525,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 21.91,
+      "timeliness": 21.5,
       "writing_value": 0,
-      "total_score": 96.91
+      "total_score": 96.5
     },
     {
       "id": "9e9cb6880b91f87d57c6d626615b388d16423f16",
@@ -504,9 +546,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.24,
+      "timeliness": 28.83,
       "writing_value": 0,
-      "total_score": 104.24
+      "total_score": 103.83
     },
     {
       "id": "d702c221975d6c53a9f99649b43c603753875af3",
@@ -525,30 +567,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.04,
+      "timeliness": 22.63,
       "writing_value": 0,
-      "total_score": 98.04
-    },
-    {
-      "id": "3e426a5f27f316719cb89d3f6b6886764daa8a27",
-      "title": "智元亮相世界人形机器人运动会，多机型参赛完成大规模人机共舞与人机乒乓对抗_手机新浪网 - 新浪财经",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNOUgtYkxyVmJ2ay04OUZfQmpySi1lY0dwYzlQb2d3NnpsNTdjZFZ1TzdNZERpOW5hdmNoNmNORGVkN2NFSUs5MXItWXQ1YjRULS0zdFVaLV9MQnJScVpCZTVRRHJSN0ZjX0syd1ZhVUdYWjhPODM1ZlBiUzVleThtRHBxcTFWdU13Y0dVUHE2NUItOWVrQkRLS0RSRll0aS1FWVJ3dXdkWnBwSUZWR1NTb1FB?oc=5",
-      "published_at": "2026-08-24T15:15:04+00:00",
-      "category": "GN: 智元机器人",
-      "gn_label": "robotics",
-      "site_name": "GN: 智元机器人",
-      "source": "GN: 智元机器人",
-      "site_id": "GN: 智元机器人",
-      "description": "智元亮相世界人形机器人运动会，多机型参赛完成大规模人机共舞与人机乒乓对抗_手机新浪网  新浪财经",
-      "ai_score": 80.0,
-      "ai_label": "robotics",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 23.4,
-      "writing_value": 0,
-      "total_score": 113.4
+      "total_score": 97.63
     },
     {
       "id": "e278bc3e9ffaa8b1721acf1cebfd58c2772cab60",
@@ -567,9 +588,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 22.87,
+      "timeliness": 22.46,
       "writing_value": 0,
-      "total_score": 97.87
+      "total_score": 97.46
     },
     {
       "id": "830260bf8b2a56a646fca7677addbed16974e291",
@@ -577,20 +598,20 @@
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNQk1JdFpQelp1UnRNRnpHVG1CRGpOU01YelgzYk9iSHM4cTVyV3ZBdGxRVTc0MTBDdEFrZXZYcUoweTRBV0VydGwwc3lpUjk0YTRNcFpDWXBfcDlLaldWekI3UW9uNDgxTF8yQ0RRN0UzcHNsWUlTd25HTmJ3VlkyUWxNUlFNZGhmODhNeUgtMzc?oc=5",
       "published_at": "2026-08-24T14:52:00+00:00",
-      "category": "GN: 优必选",
+      "category": "GN: 机械臂",
       "gn_label": "robotics",
-      "site_name": "GN: 优必选",
-      "source": "GN: 优必选",
-      "site_id": "GN: 优必选",
+      "site_name": "GN: 机械臂",
+      "source": "GN: 机械臂",
+      "site_id": "GN: 机械臂",
       "description": "与“机械臂”争夺剩下20%的工业场景？对话优必选：人形机器人已过概念验证，规模化仍面临量产、复购关  时代财经",
       "ai_score": 80.0,
       "ai_label": "robotics",
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.01,
+      "timeliness": 22.6,
       "writing_value": 0,
-      "total_score": 113.01
+      "total_score": 112.6
     },
     {
       "id": "7b16b0745ad161f6ef45bfbb88e9a01a272448d5",
@@ -609,9 +630,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.35,
+      "timeliness": 22.94,
       "writing_value": 0,
-      "total_score": 98.35
+      "total_score": 97.94
     },
     {
       "id": "3b29100445d22a5dd6ca7348326a3e9fdcae0423",
@@ -630,9 +651,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 19.77,
+      "timeliness": 19.36,
       "writing_value": 0,
-      "total_score": 94.77
+      "total_score": 94.36
     },
     {
       "id": "34bd95ac968d8cbfac267dedf67e299c8e34ae71",
@@ -651,9 +672,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 19.23,
+      "timeliness": 18.82,
       "writing_value": 0,
-      "total_score": 94.23
+      "total_score": 93.82
     },
     {
       "id": "2045febf10a9fe356f8d21229e093d57bccd91d6",
@@ -672,30 +693,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 19.15,
+      "timeliness": 18.74,
       "writing_value": 0,
-      "total_score": 94.15
-    },
-    {
-      "id": "ae948869e9d38ecab8d9643e840c06cbb0fbc3b2",
-      "title": "小鹏人形机器人首轮融资敲定！腾讯、阿里同时参投 - 新浪财经",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1Ebm9XcHFPMlMtMWlWSjZnc2VDOEVFeGktSDdBWG1CMnpiblhKWHVaa19BQS1QdGR2WnY2QkVaNlNhMTJmWHB2ekpETjU0UU1Td1o5WGxveFp3RDBSRHpDenFmTjYtbVc0MTJ6dTZ3?oc=5",
-      "published_at": "2026-08-24T11:11:45+00:00",
-      "category": "GN: 人形机器人融资",
-      "gn_label": "robotics",
-      "site_name": "GN: 人形机器人融资",
-      "source": "GN: 人形机器人融资",
-      "site_id": "GN: 人形机器人融资",
-      "description": "小鹏人形机器人首轮融资敲定！腾讯、阿里同时参投  新浪财经",
-      "ai_score": 80.0,
-      "ai_label": "robotics",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 19.34,
-      "writing_value": 0,
-      "total_score": 109.34
+      "total_score": 93.74
     },
     {
       "id": "65852ec6d336d16989993781dd1d454d630a7200",
@@ -714,9 +714,30 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 20.36,
+      "timeliness": 19.95,
       "writing_value": 0,
-      "total_score": 110.36
+      "total_score": 109.95
+    },
+    {
+      "id": "53ee2602aaab7f003792eee923518f1b899b2893",
+      "title": "63亿美元估值背后：小鹏IRON人形机器人的量产与商业化大考 - 搜狐网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNaGl3cXFrR1RHbGVuMVJIWHBXZUctMmpxZzlhc3M4alc4NUxOUmVBSlItcjFiTXg2QlN6LUExTm9BTFBGd3dEYXBIczl0Q1pHQkV5ZFEyMTBta3oyV0oyeDlfOUotMkh2ZEJsVEtTejhRLUlJVXFnSUFqS3pQOFhkQ2kwOUY5UmsyREhmcg?oc=5",
+      "published_at": "2026-08-24T14:34:40+00:00",
+      "category": "GN: 人形机器人融资",
+      "gn_label": "robotics",
+      "site_name": "GN: 人形机器人融资",
+      "source": "GN: 人形机器人融资",
+      "site_id": "GN: 人形机器人融资",
+      "description": "63亿美元估值背后：小鹏IRON人形机器人的量产与商业化大考  搜狐网",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 22.31,
+      "writing_value": 0,
+      "total_score": 112.31
     },
     {
       "id": "8f83b1469b748cda4147cec834e2a407f2efa0b0",
@@ -735,9 +756,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 19.35,
+      "timeliness": 18.94,
       "writing_value": 0,
-      "total_score": 109.35
+      "total_score": 108.94
     },
     {
       "id": "ad18643f010c6d9aba0e79680b279e6d38ff2fbf",
@@ -756,9 +777,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 19.5,
+      "timeliness": 19.09,
       "writing_value": 0,
-      "total_score": 109.5
+      "total_score": 109.09
     }
   ],
   "fallback_used": false
