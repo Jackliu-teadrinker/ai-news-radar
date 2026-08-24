@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-24T13:30:40.116447+00:00",
+  "generated_at": "2026-08-24T14:12:38.806929+00:00",
   "window_start": "2026-08-24T19:00:00+08:00",
-  "window_end": "2026-08-24T21:29:39.268332+08:00",
+  "window_end": "2026-08-24T22:11:36.943944+08:00",
   "total_items": 12,
   "items": [
     {
@@ -21,9 +21,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 28.2,
+      "timeliness": 27.5,
       "writing_value": 5,
-      "total_score": 113.2
+      "total_score": 112.5
     },
     {
       "id": "6713eecb6c89a74caf40bbd752d8950cc3d65951",
@@ -42,9 +42,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.93,
+      "timeliness": 29.23,
       "writing_value": 0,
-      "total_score": 104.93
+      "total_score": 104.23
     },
     {
       "id": "86770a536811d44de9ecf2a3375d6ef7ec4c1402",
@@ -63,9 +63,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 28.42,
+      "timeliness": 27.72,
       "writing_value": 5,
-      "total_score": 113.42
+      "total_score": 112.72
     },
     {
       "id": "bd8ca07b22bd0855ec287a70448fc53a911b5b1b",
@@ -84,9 +84,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 28.53,
+      "timeliness": 27.83,
       "writing_value": 5,
-      "total_score": 113.53
+      "total_score": 112.83
     },
     {
       "id": "070c547e63456c2815ef43fa845c59cb2172316b",
@@ -105,9 +105,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.8,
+      "timeliness": 28.1,
       "writing_value": 0,
-      "total_score": 103.8
+      "total_score": 103.1
+    },
+    {
+      "id": "d0aeaa04eefbb95ac1b8b1f315f3e4b82e134279",
+      "title": "KBC Rijeka performs first robotic gynaecological operations - Croatia Week",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1mXzNyaDVDMkp3WVYyZWN0aGlVZEZYUUlMVlZvT0RkNnJVNnJPSlprSk8xb2NOWFhsTDJFOGJ0d1pUVnA1RzhTS1FNZHdvc1ZQcmQxRFlYQXdacXF5ZEtXYmh5Nkh0MDA0VVhPSnkxMnBhVXNBRXk5RVFuX1dQUQ?oc=5",
+      "published_at": "2026-08-24T13:38:28+00:00",
+      "category": "GN: surgical robot",
+      "gn_label": "robotics",
+      "site_name": "GN: surgical robot",
+      "source": "GN: surgical robot",
+      "site_id": "GN: surgical robot",
+      "description": "KBC Rijeka performs first robotic gynaecological operations  Croatia Week",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.45,
+      "writing_value": 0,
+      "total_score": 104.45
     },
     {
       "id": "43491568d629bac0dc882cd2770a6fb4edbb35e0",
@@ -126,72 +147,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.66,
+      "timeliness": 26.96,
       "writing_value": 0,
-      "total_score": 102.66
-    },
-    {
-      "id": "013138ea1b020972cd84dad3d69b8f21bc911390",
-      "title": "宇树科技，3天跌了1000亿 - 搜狐网",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPUnZSU3ZadUVfLVZXeFR1R0dNc3FBaHpNUVRBNU1SZXVaN1hHdlkycUpjWkVJc28yU1RUUTh0dFQ1cXJTMEtpZmhMTjBhdlBxVE81RjE3dkNoVU40WjQzZXlFRW1UUW5DTDhtcUNGeDNRTF9VU2lFSjBFalBNTVd1WEtEUkRTNmJO?oc=5",
-      "published_at": "2026-08-24T11:44:32+00:00",
-      "category": "GN: 宇树科技",
-      "gn_label": "robotics",
-      "site_name": "GN: 宇树科技",
-      "source": "GN: 宇树科技",
-      "site_id": "GN: 宇树科技",
-      "description": "宇树科技，3天跌了1000亿  搜狐网",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 28.25,
-      "writing_value": 0,
-      "total_score": 103.25
-    },
-    {
-      "id": "417dfad365a43ed42a3c78fe6c30d042fe1357be",
-      "title": "机器人服务酒店、机器人导游？智元联合长隆打造全球首个具身智能乐园 - 搜狐网",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNTUZuRXZ5eldHTmVTQ0YyM3FKcnpwTHQ4X1l4amJ1Q0hTX0lsVVh1QUZ6STZGVWFwbVV0N2c2WjcwTkF5WGxnbDJ0cXpZTThOOVFzUWtGRWNwZ1FTWm9Nd3BzN20xUTgzNXhUTXB3bjRPOHR3YWxuYVpqZHhfNnpRWERjN3J2VEJIMG1CSw?oc=5",
-      "published_at": "2026-08-24T12:42:29+00:00",
-      "category": "GN: 智元机器人",
-      "gn_label": "robotics",
-      "site_name": "GN: 智元机器人",
-      "source": "GN: 智元机器人",
-      "site_id": "GN: 智元机器人",
-      "description": "机器人服务酒店、机器人导游？智元联合长隆打造全球首个具身智能乐园  搜狐网",
-      "ai_score": 80.0,
-      "ai_label": "robotics",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 29.22,
-      "writing_value": 0,
-      "total_score": 119.22
-    },
-    {
-      "id": "1a32f37f556e274163d046a88d2e22d3178798fa",
-      "title": "人形机器人“打工”大考开幕，通用底座成破局关键 - 搜狐网",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOYjJZVWNHaGtvRC03M3FRaFZEa1laUWhpTUlFcVZDaVUwNWQ1a1dpc3hUWXRPWWFOZUpVQUQxdzlmWUl4ZWY5LWp1dnZOeTdLb1ZDTGNsaE9IS2pxWTY1eGFoQV9WZTNickxKT0xqcjI1dWNuR3E1R2NNdHRVYXdpU3p1Mkl4Z21Y?oc=5",
-      "published_at": "2026-08-24T11:38:36+00:00",
-      "category": "GN: 智元机器人",
-      "gn_label": "robotics",
-      "site_name": "GN: 智元机器人",
-      "source": "GN: 智元机器人",
-      "site_id": "GN: 智元机器人",
-      "description": "人形机器人“打工”大考开幕，通用底座成破局关键  搜狐网",
-      "ai_score": 80.0,
-      "ai_label": "robotics",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 28.15,
-      "writing_value": 0,
-      "total_score": 118.15
+      "total_score": 101.96
     },
     {
       "id": "34bd95ac968d8cbfac267dedf67e299c8e34ae71",
@@ -210,9 +168,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.59,
+      "timeliness": 26.89,
       "writing_value": 0,
-      "total_score": 102.59
+      "total_score": 101.89
     },
     {
       "id": "2045febf10a9fe356f8d21229e093d57bccd91d6",
@@ -231,9 +189,51 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.51,
+      "timeliness": 26.81,
       "writing_value": 0,
-      "total_score": 102.51
+      "total_score": 101.81
+    },
+    {
+      "id": "417dfad365a43ed42a3c78fe6c30d042fe1357be",
+      "title": "机器人服务酒店、机器人导游？智元联合长隆打造全球首个具身智能乐园 - 搜狐网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNTUZuRXZ5eldHTmVTQ0YyM3FKcnpwTHQ4X1l4amJ1Q0hTX0lsVVh1QUZ6STZGVWFwbVV0N2c2WjcwTkF5WGxnbDJ0cXpZTThOOVFzUWtGRWNwZ1FTWm9Nd3BzN20xUTgzNXhUTXB3bjRPOHR3YWxuYVpqZHhfNnpRWERjN3J2VEJIMG1CSw?oc=5",
+      "published_at": "2026-08-24T12:42:29+00:00",
+      "category": "GN: 智元机器人",
+      "gn_label": "robotics",
+      "site_name": "GN: 智元机器人",
+      "source": "GN: 智元机器人",
+      "site_id": "GN: 智元机器人",
+      "description": "机器人服务酒店、机器人导游？智元联合长隆打造全球首个具身智能乐园  搜狐网",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 28.52,
+      "writing_value": 0,
+      "total_score": 118.52
+    },
+    {
+      "id": "7c036bed4c5a0f5be3c45db20f21b8cde7304d91",
+      "title": "从“打工人”到“运动员” 智元远征A3上演世界首个数量最多人机共舞 - cb.com.cn",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9fR3g3NDNjNFNjT3BuTWRqMmdXcXIzbTEyaWlqbzBMNG03aEt3T2tkNWd3cmpWSkFydjVKbUoxUmZlN2R4M1lLU0VMZ0UxVFBYbjkwM2t5aTlHU2VTT2w0MXln?oc=5",
+      "published_at": "2026-08-24T13:46:00+00:00",
+      "category": "GN: 智元机器人",
+      "gn_label": "robotics",
+      "site_name": "GN: 智元机器人",
+      "source": "GN: 智元机器人",
+      "site_id": "GN: 智元机器人",
+      "description": "从“打工人”到“运动员” 智元远征A3上演世界首个数量最多人机共舞  cb.com.cn",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.57,
+      "writing_value": 0,
+      "total_score": 104.57
     },
     {
       "id": "65852ec6d336d16989993781dd1d454d630a7200",
@@ -252,9 +252,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.72,
+      "timeliness": 28.02,
       "writing_value": 0,
-      "total_score": 118.72
+      "total_score": 118.02
     }
   ],
   "fallback_used": false
