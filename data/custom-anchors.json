@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-24T21:23:19.110053+00:00",
+  "generated_at": "2026-08-24T21:53:59.682578+00:00",
   "window_start": "2026-08-24T19:00:00+08:00",
-  "window_end": "2026-08-25T05:20:35.218445+08:00",
-  "total_items": 34,
+  "window_end": "2026-08-25T05:51:16.363206+08:00",
+  "total_items": 36,
   "items": [
     {
       "id": "ece530d3f63846fc163034f6a355371bf74c817c",
@@ -21,9 +21,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 24.06,
+      "timeliness": 23.55,
       "writing_value": 5,
-      "total_score": 109.06
+      "total_score": 108.55
     },
     {
       "id": "d5d9b5465f46fbfdb739808501d4ba0cf2559013",
@@ -42,9 +42,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.17,
+      "timeliness": 27.66,
       "writing_value": 0,
-      "total_score": 103.17
+      "total_score": 102.66
     },
     {
       "id": "b65d572420f3e6cf6f27593efa50d4c617c58b45",
@@ -63,9 +63,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 22.46,
+      "timeliness": 21.94,
       "writing_value": 5,
-      "total_score": 107.46
+      "total_score": 106.94
     },
     {
       "id": "942039a7320fc9e0f08e64b047d50ce72b3a8242",
@@ -84,156 +84,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 20.35,
+      "timeliness": 19.84,
       "writing_value": 5,
-      "total_score": 105.35
-    },
-    {
-      "id": "a5af449d278cabaa8170dc938ed5ff1626efc8d7",
-      "title": "Patients could see smaller incisions, shorter recoveries thanks to U.Va. Health robotic heart surgery program - WTOP",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQLWd5d2FqY251RG9ZVVA4bWJjbXFfMjc4WkZtcEpWelI5T1ZlN0Jqb0xoSmlkY1ZEa1ZJQlNOTnVLNWpaZmhmbXFTaUFLQnp1Zm9DQ0pkTHg0cnNxSTU3cS1OemV0SmU4WTB3OTdDd0tqeVlWWXFuX3J2X1dYa1ZQWkw1S19TNk9NOG5IVlpRdEd3dTF4cjczUXVuVW1DVjJxNTFWTHk0dnlHeFQtSlp2YWtOdkNvRWpWTGNJSmctbWNlVU9ZcjhobE5KUnpfQ3BKRDE4UXdxZ3NPUQ?oc=5",
-      "published_at": "2026-08-24T19:19:06+00:00",
-      "category": "GN: surgical robot",
-      "gn_label": "robotics",
-      "site_name": "GN: surgical robot",
-      "source": "GN: surgical robot",
-      "site_id": "GN: surgical robot",
-      "description": "Patients could see smaller incisions, shorter recoveries thanks to U.Va. Health robotic heart surgery program  WTOP",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 5,
-      "timeliness": 27.98,
-      "writing_value": 5,
-      "total_score": 112.98
-    },
-    {
-      "id": "bd8ca07b22bd0855ec287a70448fc53a911b5b1b",
-      "title": "Robot-assisted surgery shows clinical advantages over laparoscopic surgery for gastric cancer - EurekAlert!",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1ZYmNxVjdEcVFrVmkzRDNUNk5wMjB3Wk5QYVllWDdsclktY3BqNm02QkF3bmlUZEkxUVB1MWxtdUxTcFdxdW52QzRWLUtTam9Sb2lITXV3VWN0Ti0t?oc=5",
-      "published_at": "2026-08-24T17:26:15+00:00",
-      "category": "GN: surgical robot",
-      "gn_label": "robotics",
-      "site_name": "GN: surgical robot",
-      "source": "GN: surgical robot",
-      "site_id": "GN: surgical robot",
-      "description": "Robot-assisted surgery shows clinical advantages over laparoscopic surgery for gastric cancer  EurekAlert!",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 5,
-      "timeliness": 26.1,
-      "writing_value": 5,
-      "total_score": 111.1
-    },
-    {
-      "id": "09be9b8e7c8b57a8579a9177385d34757d39c1a1",
-      "title": "Percutaneous Puncture Surgery Robot Market Report Examines Industry Trends, Growth Drivers And Future Outlook - EIN News",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPUVcwZEVxOUV6d2pxVk1kejlZZ2JENkdET0FNdkZQeDZoS1RoNkwxSTdrTklpQ1l4UHpSTFhzSGRYT0IwNkM4bXNmeDRKemZsaWp4S0tRR3NqbjI2MVVtdk5OdVU5YkJqMVVkUHpuaGVibUJpWWVxdk5pVVRYRTdLcFFIclI0ZlFYOUN5b2V0WXphaWl5bUNreTBfbjhRUVBlamZMaWZ0aXpRdlpoM0kyLWxIRkZ4Y1RScU4xbU9EeUR5VG1oWHJTcTFjRXp6WlQ5S2NDYmllYWctV2UzbjEzQ1UyVDU?oc=5",
-      "published_at": "2026-08-24T15:16:00+00:00",
-      "category": "GN: surgical robot",
-      "gn_label": "robotics",
-      "site_name": "GN: surgical robot",
-      "source": "GN: surgical robot",
-      "site_id": "GN: surgical robot",
-      "description": "Percutaneous Puncture Surgery Robot Market Report Examines Industry Trends, Growth Drivers And Future Outlook  EIN News",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 5,
-      "timeliness": 23.92,
-      "writing_value": 5,
-      "total_score": 108.92
-    },
-    {
-      "id": "070c547e63456c2815ef43fa845c59cb2172316b",
-      "title": "Robot-Assisted Surgery Offers Clinical Benefits Over Laparoscopy in Gastric Cancer - Bioengineer.org",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNYkMxQmNLZGZ0NTJuQVVTbzBPUUUxTjc5cklXU01tUFhOQUJPME1KS0xmMTNIYkxocjVUVUxTaTl6RlVFME1QOHZMX2FZaFhsd0RYX2x1YU82UFg0ZU9WNzJCRlp3Y1BRZzY0OG4tS3JjNnUtcTBwZnNZR1lKT3EyaTB5ZVJoOV8tSTFjMlRLWGtFRHk4VjNya1ZvNEQySVlPeWs0d3ptX3cxVEE?oc=5",
-      "published_at": "2026-08-24T12:32:06+00:00",
-      "category": "GN: surgical robot",
-      "gn_label": "robotics",
-      "site_name": "GN: surgical robot",
-      "source": "GN: surgical robot",
-      "site_id": "GN: surgical robot",
-      "description": "Robot-Assisted Surgery Offers Clinical Benefits Over Laparoscopy in Gastric Cancer  Bioengineer.org",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 21.19,
-      "writing_value": 0,
-      "total_score": 96.19
-    },
-    {
-      "id": "885885b97aff186bfddf30b82921cf2097a83106",
-      "title": "Two-month-old undergoes robotic surgery at Hyderabad hospital - The Hindu",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPYVFvczBlWWNrVHV1cWhsZ2hNdHFCLXZLWkU5bm1UR2lubE81OHZIMUFtMVZyR2F6S2plX1NRUDFjZGd4NlJncFZ1V2FGSXBhMThXRXZCQVd0QUhtN3pfaHRWSXlvVWxDcWlteHU3a2ZwQWR2N2dHTXdOc20xOEVZandCSnh6eURCQ0dxM0FrcF9UY2drQWN2QzJINk1JVm0xWDZiV1c1cEY3cmNUN0N2THVmM2gtdmJwc3RkVktobHdUUWg4dGhJ0gHOAUFVX3lxTE03Yko0emF0bi0tRWtXdFk4V0p1RnVIRmxlNTdTaVBtVlZBQjZ3S2Z3LXo4X3gzWGNCYnlaUEFBTG1zSjRTWE1ISGFoOEJ2UU1RTkVSdlBpWlFydFpfWFNaSmhuSEtJSlFTc2kyZlpBU1dvTElkR243eFR3eFgtMkpJekpIMWxnR05keUNYNkt3ME5sbUFCWGhOOVBlQ1BoSi12Zjk5ZG9pc1NxVXIzVTZ5cXpVU3RtVTRJZmNYckpzdF9HM2huZ19ESTFXTWVR?oc=5",
-      "published_at": "2026-08-24T14:40:07+00:00",
-      "category": "GN: surgical robot",
-      "gn_label": "robotics",
-      "site_name": "GN: surgical robot",
-      "source": "GN: surgical robot",
-      "site_id": "GN: surgical robot",
-      "description": "Two-month-old undergoes robotic surgery at Hyderabad hospital  The Hindu",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 23.33,
-      "writing_value": 0,
-      "total_score": 98.33
-    },
-    {
-      "id": "1a8894b19a0461b6089c837b197d077493e9840d",
-      "title": "LG-NVIDIA Robotics Partnership: Data Flywheel for Robot Learning | 2026 - News and Statistics - IndexBox",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQeTFDMkVxTFpNUVNMNnUwUndOWTAzMFBnSkZfV1I0ZDVDWXB3T09sbUpic1Zvd2Vob29oa1pMaEJEY0tGU1FGX1N5bDJ1cVRqU1pweS1Rd3YyenlPX0JHajhVZHJKMFhUWURZVzQtOHktcVFaMGpkVExkUElqWUFmRUIyRDZPeG9Zem90Qk95MkUtdTBPYzdzVy0ySQ?oc=5",
-      "published_at": "2026-08-24T11:01:00+00:00",
-      "category": "GN: robot learning",
-      "gn_label": "robotics",
-      "site_name": "GN: robot learning",
-      "source": "GN: robot learning",
-      "site_id": "GN: robot learning",
-      "description": "LG-NVIDIA Robotics Partnership: Data Flywheel for Robot Learning | 2026 - News and Statistics  IndexBox",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 5,
-      "timeliness": 19.67,
-      "writing_value": 5,
-      "total_score": 104.67
-    },
-    {
-      "id": "1964fc0e2a5555d6d7f7d7060fb3d82e29c95420",
-      "title": "GEN-1.5 Brings One-Shot Learning to Robotics - Explainx Substack",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5GQzRtX25lc2ZLbG1sMDRwSGd0Zzl2NVAxWm95bEN5ZFlJY2hsd0UybkJlRjAwTFphdHNOUkdVNUhoYV84V0JpYXJhbXBUUFE3X3RCMXRuVjA5dEE2Z3E0ZWFraXpORmxQZnF5SmJYNkZldmlW?oc=5",
-      "published_at": "2026-08-24T16:31:14+00:00",
-      "category": "GN: robot learning",
-      "gn_label": "robotics",
-      "site_name": "GN: robot learning",
-      "source": "GN: robot learning",
-      "site_id": "GN: robot learning",
-      "description": "GEN-1.5 Brings One-Shot Learning to Robotics  Explainx Substack",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 25.18,
-      "writing_value": 0,
-      "total_score": 100.18
+      "total_score": 104.84
     },
     {
       "id": "bca7befeac89dc869f6cf3ea7f80a6aae07604b1",
@@ -252,9 +105,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.82,
+      "timeliness": 25.31,
       "writing_value": 0,
-      "total_score": 100.82
+      "total_score": 100.31
     },
     {
       "id": "6713eecb6c89a74caf40bbd752d8950cc3d65951",
@@ -273,9 +126,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 22.08,
+      "timeliness": 21.57,
       "writing_value": 0,
-      "total_score": 97.08
+      "total_score": 96.57
     },
     {
       "id": "86770a536811d44de9ecf2a3375d6ef7ec4c1402",
@@ -294,9 +147,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 20.56,
+      "timeliness": 20.05,
       "writing_value": 5,
-      "total_score": 105.56
+      "total_score": 105.05
     },
     {
       "id": "883593cac9e7c89dc8c9a666de05211ec000f6eb",
@@ -315,9 +168,156 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 22.96,
+      "timeliness": 22.44,
       "writing_value": 0,
-      "total_score": 97.96
+      "total_score": 97.44
+    },
+    {
+      "id": "a5af449d278cabaa8170dc938ed5ff1626efc8d7",
+      "title": "Patients could see smaller incisions, shorter recoveries thanks to U.Va. Health robotic heart surgery program - WTOP",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQLWd5d2FqY251RG9ZVVA4bWJjbXFfMjc4WkZtcEpWelI5T1ZlN0Jqb0xoSmlkY1ZEa1ZJQlNOTnVLNWpaZmhmbXFTaUFLQnp1Zm9DQ0pkTHg0cnNxSTU3cS1OemV0SmU4WTB3OTdDd0tqeVlWWXFuX3J2X1dYa1ZQWkw1S19TNk9NOG5IVlpRdEd3dTF4cjczUXVuVW1DVjJxNTFWTHk0dnlHeFQtSlp2YWtOdkNvRWpWTGNJSmctbWNlVU9ZcjhobE5KUnpfQ3BKRDE4UXdxZ3NPUQ?oc=5",
+      "published_at": "2026-08-24T19:19:06+00:00",
+      "category": "GN: surgical robot",
+      "gn_label": "robotics",
+      "site_name": "GN: surgical robot",
+      "source": "GN: surgical robot",
+      "site_id": "GN: surgical robot",
+      "description": "Patients could see smaller incisions, shorter recoveries thanks to U.Va. Health robotic heart surgery program  WTOP",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 27.46,
+      "writing_value": 5,
+      "total_score": 112.46
+    },
+    {
+      "id": "bd8ca07b22bd0855ec287a70448fc53a911b5b1b",
+      "title": "Robot-assisted surgery shows clinical advantages over laparoscopic surgery for gastric cancer - EurekAlert!",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1ZYmNxVjdEcVFrVmkzRDNUNk5wMjB3Wk5QYVllWDdsclktY3BqNm02QkF3bmlUZEkxUVB1MWxtdUxTcFdxdW52QzRWLUtTam9Sb2lITXV3VWN0Ti0t?oc=5",
+      "published_at": "2026-08-24T17:26:15+00:00",
+      "category": "GN: surgical robot",
+      "gn_label": "robotics",
+      "site_name": "GN: surgical robot",
+      "source": "GN: surgical robot",
+      "site_id": "GN: surgical robot",
+      "description": "Robot-assisted surgery shows clinical advantages over laparoscopic surgery for gastric cancer  EurekAlert!",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 25.58,
+      "writing_value": 5,
+      "total_score": 110.58
+    },
+    {
+      "id": "09be9b8e7c8b57a8579a9177385d34757d39c1a1",
+      "title": "Percutaneous Puncture Surgery Robot Market Report Examines Industry Trends, Growth Drivers And Future Outlook - EIN News",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPUVcwZEVxOUV6d2pxVk1kejlZZ2JENkdET0FNdkZQeDZoS1RoNkwxSTdrTklpQ1l4UHpSTFhzSGRYT0IwNkM4bXNmeDRKemZsaWp4S0tRR3NqbjI2MVVtdk5OdVU5YkJqMVVkUHpuaGVibUJpWWVxdk5pVVRYRTdLcFFIclI0ZlFYOUN5b2V0WXphaWl5bUNreTBfbjhRUVBlamZMaWZ0aXpRdlpoM0kyLWxIRkZ4Y1RScU4xbU9EeUR5VG1oWHJTcTFjRXp6WlQ5S2NDYmllYWctV2UzbjEzQ1UyVDU?oc=5",
+      "published_at": "2026-08-24T15:16:00+00:00",
+      "category": "GN: surgical robot",
+      "gn_label": "robotics",
+      "site_name": "GN: surgical robot",
+      "source": "GN: surgical robot",
+      "site_id": "GN: surgical robot",
+      "description": "Percutaneous Puncture Surgery Robot Market Report Examines Industry Trends, Growth Drivers And Future Outlook  EIN News",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 23.41,
+      "writing_value": 5,
+      "total_score": 108.41
+    },
+    {
+      "id": "070c547e63456c2815ef43fa845c59cb2172316b",
+      "title": "Robot-Assisted Surgery Offers Clinical Benefits Over Laparoscopy in Gastric Cancer - Bioengineer.org",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNYkMxQmNLZGZ0NTJuQVVTbzBPUUUxTjc5cklXU01tUFhOQUJPME1KS0xmMTNIYkxocjVUVUxTaTl6RlVFME1QOHZMX2FZaFhsd0RYX2x1YU82UFg0ZU9WNzJCRlp3Y1BRZzY0OG4tS3JjNnUtcTBwZnNZR1lKT3EyaTB5ZVJoOV8tSTFjMlRLWGtFRHk4VjNya1ZvNEQySVlPeWs0d3ptX3cxVEE?oc=5",
+      "published_at": "2026-08-24T12:32:06+00:00",
+      "category": "GN: surgical robot",
+      "gn_label": "robotics",
+      "site_name": "GN: surgical robot",
+      "source": "GN: surgical robot",
+      "site_id": "GN: surgical robot",
+      "description": "Robot-Assisted Surgery Offers Clinical Benefits Over Laparoscopy in Gastric Cancer  Bioengineer.org",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 20.68,
+      "writing_value": 0,
+      "total_score": 95.68
+    },
+    {
+      "id": "885885b97aff186bfddf30b82921cf2097a83106",
+      "title": "Two-month-old undergoes robotic surgery at Hyderabad hospital - The Hindu",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPYVFvczBlWWNrVHV1cWhsZ2hNdHFCLXZLWkU5bm1UR2lubE81OHZIMUFtMVZyR2F6S2plX1NRUDFjZGd4NlJncFZ1V2FGSXBhMThXRXZCQVd0QUhtN3pfaHRWSXlvVWxDcWlteHU3a2ZwQWR2N2dHTXdOc20xOEVZandCSnh6eURCQ0dxM0FrcF9UY2drQWN2QzJINk1JVm0xWDZiV1c1cEY3cmNUN0N2THVmM2gtdmJwc3RkVktobHdUUWg4dGhJ0gHOAUFVX3lxTE03Yko0emF0bi0tRWtXdFk4V0p1RnVIRmxlNTdTaVBtVlZBQjZ3S2Z3LXo4X3gzWGNCYnlaUEFBTG1zSjRTWE1ISGFoOEJ2UU1RTkVSdlBpWlFydFpfWFNaSmhuSEtJSlFTc2kyZlpBU1dvTElkR243eFR3eFgtMkpJekpIMWxnR05keUNYNkt3ME5sbUFCWGhOOVBlQ1BoSi12Zjk5ZG9pc1NxVXIzVTZ5cXpVU3RtVTRJZmNYckpzdF9HM2huZ19ESTFXTWVR?oc=5",
+      "published_at": "2026-08-24T14:40:07+00:00",
+      "category": "GN: surgical robot",
+      "gn_label": "robotics",
+      "site_name": "GN: surgical robot",
+      "source": "GN: surgical robot",
+      "site_id": "GN: surgical robot",
+      "description": "Two-month-old undergoes robotic surgery at Hyderabad hospital  The Hindu",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 22.82,
+      "writing_value": 0,
+      "total_score": 97.82
+    },
+    {
+      "id": "1a8894b19a0461b6089c837b197d077493e9840d",
+      "title": "LG-NVIDIA Robotics Partnership: Data Flywheel for Robot Learning | 2026 - News and Statistics - IndexBox",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQeTFDMkVxTFpNUVNMNnUwUndOWTAzMFBnSkZfV1I0ZDVDWXB3T09sbUpic1Zvd2Vob29oa1pMaEJEY0tGU1FGX1N5bDJ1cVRqU1pweS1Rd3YyenlPX0JHajhVZHJKMFhUWURZVzQtOHktcVFaMGpkVExkUElqWUFmRUIyRDZPeG9Zem90Qk95MkUtdTBPYzdzVy0ySQ?oc=5",
+      "published_at": "2026-08-24T11:01:00+00:00",
+      "category": "GN: robot learning",
+      "gn_label": "robotics",
+      "site_name": "GN: robot learning",
+      "source": "GN: robot learning",
+      "site_id": "GN: robot learning",
+      "description": "LG-NVIDIA Robotics Partnership: Data Flywheel for Robot Learning | 2026 - News and Statistics  IndexBox",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 19.16,
+      "writing_value": 5,
+      "total_score": 104.16
+    },
+    {
+      "id": "1964fc0e2a5555d6d7f7d7060fb3d82e29c95420",
+      "title": "GEN-1.5 Brings One-Shot Learning to Robotics - Explainx Substack",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5GQzRtX25lc2ZLbG1sMDRwSGd0Zzl2NVAxWm95bEN5ZFlJY2hsd0UybkJlRjAwTFphdHNOUkdVNUhoYV84V0JpYXJhbXBUUFE3X3RCMXRuVjA5dEE2Z3E0ZWFraXpORmxQZnF5SmJYNkZldmlW?oc=5",
+      "published_at": "2026-08-24T16:31:14+00:00",
+      "category": "GN: robot learning",
+      "gn_label": "robotics",
+      "site_name": "GN: robot learning",
+      "source": "GN: robot learning",
+      "site_id": "GN: robot learning",
+      "description": "GEN-1.5 Brings One-Shot Learning to Robotics  Explainx Substack",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 24.67,
+      "writing_value": 0,
+      "total_score": 99.67
     },
     {
       "id": "19d1449f29b8568d10c019b022df89c69ebf28b8",
@@ -336,9 +336,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.93,
+      "timeliness": 24.42,
       "writing_value": 0,
-      "total_score": 99.93
+      "total_score": 99.42
     },
     {
       "id": "e57c4975f922c495e418ac17ce0730a3b31ee45b",
@@ -357,9 +357,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.8,
+      "timeliness": 23.29,
       "writing_value": 0,
-      "total_score": 98.8
+      "total_score": 98.29
     },
     {
       "id": "ce233bb5b124a9919c784d80db3d345e59534bff",
@@ -378,9 +378,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.33,
+      "timeliness": 25.82,
       "writing_value": 0,
-      "total_score": 101.33
+      "total_score": 100.82
     },
     {
       "id": "985e9d53ade9fd01b513019e1101fb16530d6e14",
@@ -399,9 +399,51 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 21.56,
+      "timeliness": 21.05,
       "writing_value": 0,
-      "total_score": 96.56
+      "total_score": 96.05
+    },
+    {
+      "id": "5f4dddac94520bb6a5594cd95d1bbe513323164a",
+      "title": "宇树科技连跌4天，机器人运动会又受挫，资方回应：现在下结论为时过早 - 新浪财经",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5NalRMZzZHalc1VzFpQ0dXeEp4and3bVRXa1hLanZqWldYdFFWc0phUWZ3dDFIcGJoZ2xsVTJYbGFGNjlvNEJPZXQ1ajZrc3FlVjNqcmN5dHU1MVlCWk1TZ1Y4Njk0MU9iVUlkRWszWUFDeURTUEhpdA?oc=5",
+      "published_at": "2026-08-24T11:13:00+00:00",
+      "category": "GN: 宇树科技",
+      "gn_label": "robotics",
+      "site_name": "GN: 宇树科技",
+      "source": "GN: 宇树科技",
+      "site_id": "GN: 宇树科技",
+      "description": "宇树科技连跌4天，机器人运动会又受挫，资方回应：现在下结论为时过早  新浪财经",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 19.36,
+      "writing_value": 0,
+      "total_score": 94.36
+    },
+    {
+      "id": "857ae37e6098a4b5e65624778e96425b241752e8",
+      "title": "一财主播说 | 跑赢博尔特！宇树科技发布“超人” 跳高和跑步均超人类 - 第一财经",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1IZ2plb1JOZ3BOQi1pV1VWdHF3eld5QzVRQ1M1MW1RRE9hQWlEM0VkVUFFclBHeW5xSHhCaWdXYVphQkhPLU1rUGpDQ1NQX21kNWhVbQ?oc=5",
+      "published_at": "2026-08-24T17:59:41+00:00",
+      "category": "GN: 宇树科技",
+      "gn_label": "robotics",
+      "site_name": "GN: 宇树科技",
+      "source": "GN: 宇树科技",
+      "site_id": "GN: 宇树科技",
+      "description": "一财主播说 | 跑赢博尔特！宇树科技发布“超人” 跳高和跑步均超人类  第一财经",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 26.14,
+      "writing_value": 0,
+      "total_score": 101.14
     },
     {
       "id": "19352e6db421f9d592c05beb8da2e6d5b219c549",
@@ -420,9 +462,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 22.76,
+      "timeliness": 22.25,
       "writing_value": 0,
-      "total_score": 97.76
+      "total_score": 97.25
     },
     {
       "id": "7c036bed4c5a0f5be3c45db20f21b8cde7304d91",
@@ -441,9 +483,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 22.42,
+      "timeliness": 21.91,
       "writing_value": 0,
-      "total_score": 97.42
+      "total_score": 96.91
     },
     {
       "id": "9e9cb6880b91f87d57c6d626615b388d16423f16",
@@ -462,9 +504,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.75,
+      "timeliness": 29.24,
       "writing_value": 0,
-      "total_score": 104.75
+      "total_score": 104.24
     },
     {
       "id": "d702c221975d6c53a9f99649b43c603753875af3",
@@ -483,9 +525,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.55,
+      "timeliness": 23.04,
       "writing_value": 0,
-      "total_score": 98.55
+      "total_score": 98.04
     },
     {
       "id": "3e426a5f27f316719cb89d3f6b6886764daa8a27",
@@ -504,9 +546,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.91,
+      "timeliness": 23.4,
       "writing_value": 0,
-      "total_score": 113.91
+      "total_score": 113.4
     },
     {
       "id": "e278bc3e9ffaa8b1721acf1cebfd58c2772cab60",
@@ -525,9 +567,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.38,
+      "timeliness": 22.87,
       "writing_value": 0,
-      "total_score": 98.38
+      "total_score": 97.87
     },
     {
       "id": "830260bf8b2a56a646fca7677addbed16974e291",
@@ -546,9 +588,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.52,
+      "timeliness": 23.01,
       "writing_value": 0,
-      "total_score": 113.52
+      "total_score": 113.01
     },
     {
       "id": "7b16b0745ad161f6ef45bfbb88e9a01a272448d5",
@@ -567,9 +609,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.86,
+      "timeliness": 23.35,
       "writing_value": 0,
-      "total_score": 98.86
+      "total_score": 98.35
     },
     {
       "id": "3b29100445d22a5dd6ca7348326a3e9fdcae0423",
@@ -588,9 +630,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 20.28,
+      "timeliness": 19.77,
       "writing_value": 0,
-      "total_score": 95.28
+      "total_score": 94.77
     },
     {
       "id": "34bd95ac968d8cbfac267dedf67e299c8e34ae71",
@@ -609,9 +651,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 19.74,
+      "timeliness": 19.23,
       "writing_value": 0,
-      "total_score": 94.74
+      "total_score": 94.23
     },
     {
       "id": "2045febf10a9fe356f8d21229e093d57bccd91d6",
@@ -630,9 +672,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 19.66,
+      "timeliness": 19.15,
       "writing_value": 0,
-      "total_score": 94.66
+      "total_score": 94.15
     },
     {
       "id": "ae948869e9d38ecab8d9643e840c06cbb0fbc3b2",
@@ -651,9 +693,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 19.85,
+      "timeliness": 19.34,
       "writing_value": 0,
-      "total_score": 109.85
+      "total_score": 109.34
     },
     {
       "id": "65852ec6d336d16989993781dd1d454d630a7200",
@@ -672,9 +714,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 20.87,
+      "timeliness": 20.36,
       "writing_value": 0,
-      "total_score": 110.87
+      "total_score": 110.36
     },
     {
       "id": "8f83b1469b748cda4147cec834e2a407f2efa0b0",
@@ -693,9 +735,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 19.86,
+      "timeliness": 19.35,
       "writing_value": 0,
-      "total_score": 109.86
+      "total_score": 109.35
     },
     {
       "id": "ad18643f010c6d9aba0e79680b279e6d38ff2fbf",
@@ -714,9 +756,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 20.01,
+      "timeliness": 19.5,
       "writing_value": 0,
-      "total_score": 110.01
+      "total_score": 109.5
     }
   ],
   "fallback_used": false
