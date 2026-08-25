@@ -1,9 +1,9 @@
 {
   "date": "2026-08-25",
-  "generated_at": "2026-08-25T11:22:33.460374+00:00",
+  "generated_at": "2026-08-25T11:57:21.002351+00:00",
   "score_threshold": 80,
   "total_items": 50,
-  "new_added": 4,
+  "new_added": 1,
   "items": [
     {
       "id": "39fde7a1ff5de742",
@@ -930,6 +930,27 @@
       "total_score": 119.86
     },
     {
+      "id": "6fe6305402860381",
+      "title": "China advances embodied intelligence with self-reliant AI infrastructure - China Daily",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9aYV9ua0NhUGdlSU1MNmNrWDBFMnU4WDFuSGpjbkNVeERPandNOTJjNkhRUWNqQUIwRDl5WTdUNHJOTDV2Tk42dFlneFV5NGE5VjRGS3BEZkhDTm95U1dRbnplQmlCWWlkb2dQSGFkQU9qV0xORWVYNDRsaE5NZw?oc=5",
+      "published_at": "2026-08-25T11:42:47+00:00",
+      "category": "国外具身智能资讯",
+      "gn_label": "embodied_ai",
+      "site_name": "国外具身智能资讯",
+      "source": "国外具身智能资讯",
+      "site_id": "国外具身智能资讯",
+      "description": "China advances embodied intelligence with self-reliant AI infrastructure  China Daily",
+      "ai_score": 80.0,
+      "ai_label": "embodied_ai",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.86,
+      "writing_value": 0,
+      "total_score": 119.86
+    },
+    {
       "id": "4125b84ce3528e5e",
       "title": "何小鹏：不远的将来，会努力将首个高阶人形机器人带入真正的现实 - 新浪财经",
       "title_zh": "",
@@ -1033,27 +1054,6 @@
       "timeliness": 29.83,
       "writing_value": 0,
       "total_score": 119.83
-    },
-    {
-      "id": "cfea28f0d0826b99",
-      "title": "Robots top human records at China’s humanoid games - The Week",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBhT05Ia0ZiT1hVMVlMci04UFhkWEVoQlE4UmZJcU50NG55Uk1Sa0ZOQVVjR1U2Z3Rjc3ZSV2Z5WFhpeGFTY29la1YyZHRNUW1UaTFpd0JZZ21GRndyeXJ0bg?oc=5",
-      "published_at": "2026-08-24T17:43:26+00:00",
-      "category": "国外人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国外人形机器人资讯",
-      "source": "国外人形机器人资讯",
-      "site_id": "国外人形机器人资讯",
-      "description": "Robots top human records at China’s humanoid games  The Week",
-      "ai_score": 80.0,
-      "ai_label": "humanoid",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 29.81,
-      "writing_value": 0,
-      "total_score": 119.81
     }
   ]
 }
