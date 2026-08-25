@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-25T23:30:54.025743+00:00",
-  "total_items": 12,
+  "generated_at": "2026-08-25T23:59:15.621290+00:00",
+  "total_items": 10,
   "items": [
     {
       "id": "http://arxiv.org/abs/2608.23486v1",
@@ -101,26 +101,6 @@
       "category": "cs.RO",
       "published_at": "2026-08-24T12:11:01+00:00",
       "updated_at": "2026-08-24T12:11:01Z"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.23140v1",
-      "title": "MIVIFI: Bridging Perspective and Fisheye Domains for Training Multi-View Fisheye Image Generation Models",
-      "url": "https://arxiv.org/abs/2608.23140",
-      "summary": "Achieving 360° coverage is critical for the visual perception systems of autonomous vehicles. Fisheye cameras offer a cost-effective solution by enabling full surround coverage with as few as two sensors. However, existing multi-view fisheye datasets are limited, and synthesizing rare corner cases typically requires computationally expensive 3D simulations, hindering the training. While generative models have achieved significant success in standard perspective imagery, their application to wide-angle distortion remains unexplored. In this work, we formally introduce the novel problem of multi-view fisheye image generation conditioned on volumetric semantic representations and present two distinct methods. We first propose SyntheOcc-FE, which adapts the SyntheOcc architecture to fisheye data. While effective, this method is constrained by the scarcity of fisheye datasets, which limits its generalization. To overcome these limitations, we propose our second method, MIVIFI (multi-view fisheye), which leverages cross-domain learning with Equirectangular Projections. By bridging the gap between dataset domains using KITTI-360 fisheye images alongside nuScenes multi-view standard images, our approach enables high-fidelity manipulation of scene content. This framework enables the structural modification of semantic occupancy inputs to introduce or eliminate specific actors and facilitates the rendering of diverse meteorological conditions and illumination scenarios absent in the limited fisheye datasets. Quantitative and qualitative experiments demonstrate that our methods achieve robust photorealistic multi-view fisheye image generation and highlight the specific advantages of our cross-domain strategy for handling data scarcity.",
-      "authors": "Matthias Neuwirth-Trapp, Begüm Altunbas, Jiayi Wang et al.",
-      "category": "cs.CV",
-      "published_at": "2026-08-24T11:46:28+00:00",
-      "updated_at": "2026-08-24T11:46:28Z"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.23138v1",
-      "title": "Pointing-VLA: Typed Spatial Grounding Interfaces for Vision-Language-Action Manipulation",
-      "url": "https://arxiv.org/abs/2608.23138",
-      "summary": "Vision-language-action (VLA) models often expose spatial grounding through autoregressive text coordinates or opaque action tokens, creating brittle interfaces between multimodal reasoning and robot execution. We present Pointing-VLA, a typed hidden-state spatial readout built on Embodied-R1. Geometry-specific heads predict normalized points, object-functional grounding (OFG) heatmaps, and visual trajectories without serializing geometry as text. For the evaluated Bridge/WidowX and physical pick-place deployments, an explicit execution contract assigns PICK to source-conditioned OFG and PLACE to Pointing, providing direct stage-aligned spatial targets. Pointing-VLA achieves SOTA performance on Bridge/WidowX, averaging 72.9\\% across the evaluated four-task set without Bridge-specific finetuning under collision-enabled CuRobo execution. Pointing and OFG show complementary strengths across native and cross-dataset evaluations. The OFG/contact readout transfers to NORA-1.5, preserving or improving success while reducing recorded controller time by more than 20$\\times$; typed heads are also 6.68--6.90$\\times$ faster than Embodied-R1 text decoding on a shared external suite. When integrated as spatial guidance for a $π_{0.5}$ action policy, Pointing-VLA raises autonomous real-robot success from 52.7\\% to 80.7\\% across three visual contexts. These results establish typed spatial readouts as an efficient, inspectable interface between embodied reasoning and robot execution.",
-      "authors": "Xiwen Chen, Zelin Li, Zhiruo Zhou et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-24T11:43:49+00:00",
-      "updated_at": "2026-08-24T11:43:49Z"
     }
   ]
 }
