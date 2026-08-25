@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-25T23:05:59.766014+00:00",
-  "total_items": 13,
+  "generated_at": "2026-08-25T23:30:54.025743+00:00",
+  "total_items": 12,
   "items": [
     {
       "id": "http://arxiv.org/abs/2608.23486v1",
@@ -121,16 +121,6 @@
       "category": "cs.RO",
       "published_at": "2026-08-24T11:43:49+00:00",
       "updated_at": "2026-08-24T11:43:49Z"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.23100v1",
-      "title": "Shaping the Evolutionary Dynamics of Robot Morphology via Adaptive Control Learning",
-      "url": "https://arxiv.org/abs/2608.23100",
-      "summary": "Robot co-design via bi-level optimization couples within-lifetime controller learning for fitness evaluation with cross-generational morphological evolution. Prior work has established that well-adapted morphology facilitates faster control learning, a property termed morphological intelligence. Yet how control learning reciprocally shapes morphological evolution remains unexplored. This paper examines both directions for a holistic account of brain-body interplay. We first show that morphological contributions to control learning decouple into two orthogonal dimensions. We formalize the convergence speed as morphological intelligence and identify the performance ceiling as a complementary quantity termed true potential. A concise functional relation is then established to jointly characterize both quantities from individual learning curves, which, when aggregated at the population level, capture evolutionary profiles. Through extensive experiments on simulated voxel-based soft robots, we reveal that premature fitness evaluation systematically underestimates true potential and biases selection towards fast learners. This restricts design space exploration, compromising both optimization efficiency and morphological diversity. Notably, the widely recognized morphological Baldwin effect emerges as an artifact of this bias rather than a general evolutionary tendency. We therefore propose AdaControl, which monitors disproportionate selection for morphological intelligence during evolution and allocates minimally sufficient control learning for unbiased fitness evaluation. With AdaControl, a simple genetic algorithm rivals state-of-the-art generative-model-based co-design methods in discovering diverse high-performing designs while cutting computation by up to 80% versus exhaustive control.",
-      "authors": "Junru Song, Yang Yang, Yaqing Xu et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-24T11:06:24+00:00",
-      "updated_at": "2026-08-24T11:06:24Z"
     }
   ]
 }
