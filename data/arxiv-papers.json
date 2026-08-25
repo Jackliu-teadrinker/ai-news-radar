@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-25T22:04:00.579656+00:00",
-  "total_items": 14,
+  "generated_at": "2026-08-25T22:30:23.247400+00:00",
+  "total_items": 13,
   "items": [
     {
       "id": "http://arxiv.org/abs/2608.23486v1",
@@ -131,16 +131,6 @@
       "category": "cs.RO",
       "published_at": "2026-08-24T11:06:24+00:00",
       "updated_at": "2026-08-24T11:06:24Z"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.23068v1",
-      "title": "Switched Turn-based Adaptive Source Seeking Strategy using Estimation and Information-driven Direction of Improvement",
-      "url": "https://arxiv.org/abs/2608.23068",
-      "summary": "Source seeking arises in applications such as gas leak localization, radiation monitoring, and environmental surveillance, where the origin of an unknown signal field must be estimated from spatial measurements. In practice, the source location is not directly observable and must be inferred from noisy scalar measurements collected during motion.In robotic source seeking, estimation and motion are closely linked: measurements improve the source estimate, while the chosen trajectory affects the quality of future measurements.Existing loop-based geometric strategies generate feasible motion but do not explicitly use estimation uncertainty to regulate direction updates.This paper presents a loop-based source-seeking framework that combines Extended Kalman Filter (EKF) estimation with Fisher Information Matrix (FIM)-based direction selection. The source estimate is updated during motion, and the heading is changed at loop boundaries using both estimation uncertainty and predicted information gain. A measurement-based stopping condition is used to detect convergence without requiring prior knowledge of the source location.Simulation results under stationary and moving source scenarios demonstrate improved tracking performance and reduced estimation error compared to purely information-driven or estimate-driven strategies.",
-      "authors": "Shubhra Banerjee, Satadal Ghosh",
-      "category": "cs.RO",
-      "published_at": "2026-08-24T10:13:13+00:00",
-      "updated_at": "2026-08-24T10:13:13Z"
     }
   ]
 }
