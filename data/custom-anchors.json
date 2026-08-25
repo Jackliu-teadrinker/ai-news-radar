@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-25T13:28:38.531928+00:00",
+  "generated_at": "2026-08-25T14:14:08.150212+00:00",
   "window_start": "2026-08-25T19:00:00+08:00",
-  "window_end": "2026-08-25T21:27:17.321547+08:00",
-  "total_items": 11,
+  "window_end": "2026-08-25T22:12:25.432387+08:00",
+  "total_items": 13,
   "items": [
     {
       "id": "77e278f59477fbbe04dbefba3e15b675089cb9c9",
@@ -21,15 +21,15 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 28.71,
+      "timeliness": 27.96,
       "writing_value": 5,
-      "total_score": 113.71
+      "total_score": 112.96
     },
     {
-      "id": "0773df65624621e5272b3d9b63179460ba6272c1",
+      "id": "90f5f8c109e80fe3bbf8cb683e85037f2c174c10",
       "title": "The Download: smarter AI in schools, and a robot \"carnival\" in Shanghai - MIT Technology Review",
       "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOVWplU0psUnAyX2FnWFpPRExWTkJQcWJiN2ZsLUxFQzFGLVp6SWREQ08tV0xwS2hLSkYwWTY0OUJmMUF1V1NTRVBOZEdQSTdrRVdBSnNldENqLTJ4STByRVRYRkdMdEFURWd2aEt2YlhsQm95dFhUd2x3Nmo4UTU5dV91OXE0SGFBbUE3V1dKNXRpS010WDBiVTRCYUQzSm91Q2ExbXdHeC1JUUUzbTZXeg?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPSjRxZUo5U2NYZmNTeFFVUEZXWUN0WS0tTEIzczVwQnZHLVJhUnpkTFpXaDFoMklWbXJWMHo5TEFRV2pNV29Cb0Z3dnAwa05sQnB4OHZXeC04bEhWODhtQUVIR3NMeUFmVzlldm4yMDhaWmZsdjF6LXZiYXllTGxIV0J4S0hHYWZWZXZ5ODhqTE83QkxOaE02bmlMNjZDVkFNSGhGbU51ei12dElFeFcwdFgwVFljdw?oc=5",
       "published_at": "2026-08-25T12:10:00+00:00",
       "category": "GN: MIT Tech Review",
       "gn_label": "robotics",
@@ -42,9 +42,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.71,
+      "timeliness": 27.96,
       "writing_value": 0,
-      "total_score": 103.71
+      "total_score": 102.96
     },
     {
       "id": "53e980dab8502e39a12ea73b3c65788d333f603f",
@@ -63,9 +63,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.71,
+      "timeliness": 28.96,
       "writing_value": 0,
-      "total_score": 104.71
+      "total_score": 103.96
     },
     {
       "id": "8d44c04d45a79275e653c765a558e99d7aa39d9c",
@@ -84,9 +84,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.96,
+      "timeliness": 28.21,
       "writing_value": 0,
-      "total_score": 103.96
+      "total_score": 103.21
     },
     {
       "id": "ba8b1036472d407d5350bf4a2315cde54469933b",
@@ -105,9 +105,51 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.16,
+      "timeliness": 28.41,
       "writing_value": 0,
-      "total_score": 104.16
+      "total_score": 103.41
+    },
+    {
+      "id": "802037ba7b9060c1b8dcb07f5e5ef69113432869",
+      "title": "Exclusive – A robot builds a robot… Who has the stop button? - صوت الإمارات",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNU1lQeVhEYnR6ZnRSS3lFZU9xTEZueGpTUlQxMm5pMWViMU53MkVLNG4xbklkTFZ5OUhWY1ZMSFN1NzZQcVdjUnVZb1RXZnN4TFM0Q21NZm1xb2xRZHhEYndGQVA4TUgyM1pPNTdKV3F0akxCLWpmb1lqWkltblFjZ1FrYldhMl9uaGh3TXBWcHEyMDNtNE9CQjMtbTBJWUFtMXdhS0g0NmUzS1JfQUJBMkRmXzg4bFFDeEt6Ng?oc=5",
+      "published_at": "2026-08-25T12:30:50+00:00",
+      "category": "GN: industrial robot",
+      "gn_label": "robotics",
+      "site_name": "GN: industrial robot",
+      "source": "GN: industrial robot",
+      "site_id": "GN: industrial robot",
+      "description": "Exclusive – A robot builds a robot… Who has the stop button?  صوت الإمارات",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 28.31,
+      "writing_value": 0,
+      "total_score": 103.31
+    },
+    {
+      "id": "95d242f618072337339f13238686ce55faa61376",
+      "title": "Humanoid Robot Games in Beijing test machines' real-world industrial skills - 巴士的報",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOdGxKZ1pmWnFNellRQXRjUXhIZmpQN3FpOXB3MVE4YzdkcV9VeFFiUHJ0cTRJejNpM1gxdEdKajROa1B3Q3hmcGRRRnJMS21aMTEzUjFnbjB1a2drVTdqOWpucktDakQ4SGRWU0hwN18yZlRoUXU1N1dpdkJOYXF4M0d4bHBzVURlQ3RZcmR4WEtFS2hpWk1vQ2NyWURjY3pDUnhNX2hIS0xCRXVHS0V1WUtXbFpWTDNfZHhaaDl3MFMtbVlj?oc=5",
+      "published_at": "2026-08-25T12:53:00+00:00",
+      "category": "GN: industrial robot",
+      "gn_label": "robotics",
+      "site_name": "GN: industrial robot",
+      "source": "GN: industrial robot",
+      "site_id": "GN: industrial robot",
+      "description": "Humanoid Robot Games in Beijing test machines' real-world industrial skills  巴士的報",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 28.68,
+      "writing_value": 0,
+      "total_score": 118.68
     },
     {
       "id": "e354c6fdb41dadeac0f832838d3d14145fd40cd8",
@@ -126,9 +168,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.68,
+      "timeliness": 28.92,
       "writing_value": 0,
-      "total_score": 104.68
+      "total_score": 103.92
     },
     {
       "id": "194e3d796b6433d631a7ee863b2020d969d1ef1d",
@@ -147,9 +189,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.3,
+      "timeliness": 27.55,
       "writing_value": 0,
-      "total_score": 103.3
+      "total_score": 102.55
     },
     {
       "id": "fe95026ab623c5cf979c480379dece22c9593270",
@@ -168,9 +210,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.78,
+      "timeliness": 27.02,
       "writing_value": 0,
-      "total_score": 102.78
+      "total_score": 102.02
     },
     {
       "id": "464b4aa41f150d3f82634ff2f9c7d4384ea6cb07",
@@ -189,9 +231,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.82,
+      "timeliness": 29.06,
       "writing_value": 0,
-      "total_score": 104.82
+      "total_score": 104.06
     },
     {
       "id": "863b7092044995684ea9d66d149451c81932cca8",
@@ -210,9 +252,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.89,
+      "timeliness": 28.13,
       "writing_value": 0,
-      "total_score": 118.89
+      "total_score": 118.13
     },
     {
       "id": "29e7f0ecf4bdc942c285e7ec03865af960546e82",
@@ -231,9 +273,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.78,
+      "timeliness": 27.03,
       "writing_value": 0,
-      "total_score": 117.78
+      "total_score": 117.03
     }
   ],
   "fallback_used": false
