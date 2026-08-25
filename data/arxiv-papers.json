@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-25T16:18:25.772534+00:00",
-  "total_items": 24,
+  "generated_at": "2026-08-25T17:16:17.912787+00:00",
+  "total_items": 22,
   "items": [
     {
       "id": "http://arxiv.org/abs/2608.23486v1",
@@ -221,26 +221,6 @@
       "category": "cs.RO",
       "published_at": "2026-08-24T06:56:02+00:00",
       "updated_at": "2026-08-24T06:56:02Z"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.22800v1",
-      "title": "Triplet2Track: A Hierarchical System with Object-Centric Representations for Reliable Long-Horizon Manipulation",
-      "url": "https://arxiv.org/abs/2608.22800",
-      "summary": "Ensuring reliability in uncertain environments remains difficult for long-horizon robotic manipulation. End-to-end VLA models are data-heavy and opaque, making diagnosis and verification difficult. Hierarchical pipelines are more interpretable, but their plans are often weakly grounded in observations, weakly aligned with low-level actions, and computed without online feedback, leading to open-loop behavior and hallucinations. To address these issues, we introduce the Triplet-to-Track System (TTS), a closed-loop long-horizon imitation learning system that uses human videos to reduce reliance on robot-collected data. TTS represents high-level subgoals as instance-grounded triplets, translates them into continuous track priors for execution, and monitors task progress from observations for online replanning. Across diverse real-world long-horizon tasks, TTS achieves a 74.8\\% average success rate and supports object-level and compositional generalization.",
-      "authors": "Jianxiang Liu, Gaojing Zhang, Chuan Wen et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-24T04:46:25+00:00",
-      "updated_at": "2026-08-24T04:46:25Z"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.22799v1",
-      "title": "Reproducible Vision-Guided 6-DoF Robotic Manipulator with a Mixed Stepper-Driver Architecture and Browser-Native Control",
-      "url": "https://arxiv.org/abs/2608.22799",
-      "summary": "We present the NeuralNexus Arm, an open, low-cost 6-DOF robotic manipulator built by an undergraduate engineering team, together with the design decisions and debugging experience needed to reproduce it. The arm is driven by a single STM32H743 microcontroller on a custom printed circuit board (PCB) and combines two stepper-driver strategies on one controller: push-pull 3.3 V step/direction outputs for onboard TMC2209 drivers on the three wrist joints, and open-drain outputs for external CL57T and DM542 drivers on the three high-torque proximal joints. We describe the mechanical design, mixed-driver electronics, interrupt-driven firmware, a MATLAB/Simscape-based inverse-kinematics pipeline, a browser-native control interface using the Web Serial API, and a lightweight vision pipeline for object localisation and autonomous pick-and-place tasks. We also document non-obvious hardware and firmware failure modes encountered during the transition from a development board to the custom PCB as reproducibility guidance. All design files and firmware are released openly. The platform actuates all six axes under coordinated control at a 2 kHz update rate and executes both manual and pre-recorded motions from the browser interface.",
-      "authors": "Lasan Perera, Deneth Priyadarshana, Dulana Pitiwaduge et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-24T04:45:56+00:00",
-      "updated_at": "2026-08-24T04:45:56Z"
     }
   ]
 }
