@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-25T18:37:05.804630+00:00",
-  "total_items": 22,
+  "generated_at": "2026-08-25T19:20:47.365768+00:00",
+  "total_items": 21,
   "items": [
     {
       "id": "http://arxiv.org/abs/2608.23486v1",
@@ -211,16 +211,6 @@
       "category": "cs.RO",
       "published_at": "2026-08-24T07:25:14+00:00",
       "updated_at": "2026-08-24T07:25:14Z"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.22869v1",
-      "title": "UniMem: Unifying Multimodal Memory and Control for Vision-Language-Action Models",
-      "url": "https://arxiv.org/abs/2608.22869",
-      "summary": "While Vision-Language-Action (VLA) models have leveraged internet-scale pretraining and task-focused finetuning to achieve strong performance on long-horizon tasks, they often struggle with non-Markovian tasks that require memory. Existing approaches to memory typically involve additional Vision-Language-Models (VLMs) for long-term memory management, introducing a memory bottleneck and a fractured training pipeline. Conditioning on multiple historical frames can provide the VLA with access to more descriptive features of past scenes, but can degrade performance if frames are chosen at arbitrary, fixed intervals. To address these limitations, we present UniMem, a framework that unifies high-level, multimodal memory and low-level control under one backbone. UniMem employs an event classifier for memory updates, a keyframe encoder for dense spatial memory, and a keyframe caching technique to minimize overhead during policy rollouts. We evaluate UniMem across five simulation and four hardware tasks targeting sequential and spatial memory, demonstrating that our unified, single-model system outperforms fixed-interval image sampling baselines (93.4% vs. 68.2%) in simulation and hierarchical baselines (80.0% vs. 43.5%) in hardware, while offering faster inference and a simple training pipeline for easy adoption. Project website: https://losterberg3.github.io/unimem-vla/",
-      "authors": "Lars Osterberg, Maggie Wang, Mac Schwager",
-      "category": "cs.RO",
-      "published_at": "2026-08-24T06:56:02+00:00",
-      "updated_at": "2026-08-24T06:56:02Z"
     }
   ]
 }
