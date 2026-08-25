@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-25T20:31:58.481834+00:00",
-  "total_items": 20,
+  "generated_at": "2026-08-25T21:06:36.647349+00:00",
+  "total_items": 16,
   "items": [
     {
       "id": "http://arxiv.org/abs/2608.23486v1",
@@ -161,46 +161,6 @@
       "category": "cs.RO",
       "published_at": "2026-08-24T09:44:17+00:00",
       "updated_at": "2026-08-24T09:44:17Z"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.23000v1",
-      "title": "Free-Energy-Gated Plasticity for Real-Time Online Motor Learning in Physical Human--Robot Interaction",
-      "url": "https://arxiv.org/abs/2608.23000",
-      "summary": "Fully online embodied learning requires synaptic adaptation to acquire new behaviors while preserving previously learned dynamics during ongoing interaction. We extend the Predictive-Coding-inspired Variational Recurrent Neural Network (PV-RNN) to continuously adapt its synaptic weights and propose Free-Energy-Gated Plasticity (FEGP), which regulates the effective learning rate according to variational free energy. In real-time physical human--robot interaction, a randomly initialized network acquired three cyclic motor patterns without offline pretraining, replay, or task-boundary signals, with all three patterns emerging in autonomous rollouts. Controlled experiments over ten randomized teaching streams and five network initializations per stream showed that FEGP substantially improved repertoire coverage and retention of previously acquired patterns after they left the recent observation window. Neither a constant learning rate matched to the gate's time-averaged effective rate nor replay of the same gain values with disrupted temporal organization reproduced these improvements. These results indicate that the temporal allocation of plasticity relative to model--environment mismatch, rather than simply its average magnitude or distribution, is critical for maintaining previously acquired behaviors during continued online learning.",
-      "authors": "Hiroki Sawada, Jun Tani",
-      "category": "cs.RO",
-      "published_at": "2026-08-24T09:02:39+00:00",
-      "updated_at": "2026-08-24T09:02:39Z"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.22990v1",
-      "title": "InstructMove: A Text-Indispensable Benchmark for Instruction-Following Manipulation",
-      "url": "https://arxiv.org/abs/2608.22990",
-      "summary": "Vision-language-action (VLA) models have made general-purpose robot manipulation increasingly plausible by conditioning robot actions on natural-language instructions. A key test of such generality is whether policies actually follow language instructions. Yet many manipulation benchmarks leave this ability underdetermined: the intended object or destination is often visually salient or uniquely feasible, allowing policies to succeed without grounding the instruction. We argue that instruction-following evaluation should be text-indispensable: multiple actions should be visually and physically plausible, while only one should be consistent with the language instruction. We introduce InstructMove, a text-indispensable benchmark for instruction-following manipulation. InstructMove instantiates this principle in pick-and-place scenes with semantic distractors, decomposing instruction following into category identification, attribute discrimination, spatial reasoning, and compositional pick-and-place. InstructMove supports a train-eval protocol with InstructMove training data and held-out evaluation tasks, with additional diagnostics for language dependence. Experiments with representative VLA policies show that InstructMove provides a controlled testbed for diagnosing visual shortcuts and that InstructMove simulation data can improve real-world instruction-following manipulation performance. Code: https://github.com/HorizonRobotics/RoboOrchardSim",
-      "authors": "Mengao Zhao, Ziang Li, Chaodong Huang et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-24T08:53:41+00:00",
-      "updated_at": "2026-08-24T08:53:41Z"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.22983v1",
-      "title": "CSymPlan: Certified Symbolic Planning and Control for High-DOF Manipulators",
-      "url": "https://arxiv.org/abs/2608.22983",
-      "summary": "Robot manipulators are commonly engineered around a decoupled motion-generation stack: a planner computes a collision-free path and a lower-level controller tracks the resulting reference. This separation is computationally convenient, but it can produce references that are difficult to execute under actuator limits, tracking error, model mismatch, and small obstacle clearances. We present CSymPlan, a certified symbolic planning and control framework for high-DOF manipulators with two complementary implementations: an offline implementation that precomputes certified reach-avoid feedback policies for known workspaces; and an online implementation that synthesizes or updates symbolic policies at runtime from changing task and perception information using parallelization. The offline implementation reduces the manipulator dynamics to a sampled perturbed double-integrator model in operational space through feedback linearization, treats torque-realization errors, modeling inaccuracies, and measurement uncertainty as bounded disturbances, and refines the synthesized symbolic policy to the Franka FR3 through a quantization--lookup--torque realization pipeline. The online implementation uses the same abstraction and refinement interface, but replaces the precomputed policy table with a runtime pFaces request--synthesis--execution loop. In randomized simulated benchmarks and perception-driven Franka FR3 experiments, both implementations complete reach-avoid tasks with zero safety violations; whenever no certified action exists, the robot holds, replans, or stops safely instead of executing an uncertified command.",
-      "authors": "Aditya Narendra, Ashok Kumar Saini, Mahathi Anand et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-24T08:45:37+00:00",
-      "updated_at": "2026-08-24T08:45:37Z"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.22976v1",
-      "title": "Privileged Critic Training Enables Sensor-Free Thruster Fault Adaptation in End-to-End RL",
-      "url": "https://arxiv.org/abs/2608.22976",
-      "summary": "Fault-tolerant navigation for thruster-actuated robots requires online adaptation to failures that are neither binary nor fully observable: thrusters may degrade continuously, fail dead, or jam stuck-open. Classical fault detection pipelines require dedicated sensors unavailable at deployment; oracle controllers that observe the true failure state are equally impractical. We show that privileged critic training is sufficient for sensor-free fault adaptation: giving the PPO value function access to the true degradation state dgt during training, while the actor receives only standard task observations, shapes a policy that compensates for failures at deployment without any dedicated fault sensing. We propose RAFT (Recurrent Asymmetric Fault Tolerant), a policy with recurrent memory trained with a privileged asymmetric critic. Evaluated on a floating-platform robot (8 thrusters, 1 reaction wheel) under up to four simultaneous thruster failures, RAFT achieves 70.2% success at four concurrent failures, closing 84% of the gap from a failure-naive baseline (4.8%) to an oracle policy that sees the full degradation state at deployment (82.4%). All code, checkpoints, and data are open-source.",
-      "authors": "Ricard Marsal I Castan, Miguel A. Olivares-Méndez",
-      "category": "cs.RO",
-      "published_at": "2026-08-24T08:36:34+00:00",
-      "updated_at": "2026-08-24T08:36:34Z"
     }
   ]
 }

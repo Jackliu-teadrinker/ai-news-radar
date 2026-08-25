@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-25T20:21:46.390776+00:00",
+  "generated_at": "2026-08-25T20:56:55.818653+00:00",
   "window_start": "2026-08-25T19:00:00+08:00",
-  "window_end": "2026-08-26T04:17:41.146101+08:00",
+  "window_end": "2026-08-26T04:52:53.234078+08:00",
   "total_items": 36,
   "items": [
     {
@@ -21,9 +21,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 27.24,
+      "timeliness": 26.65,
       "writing_value": 5,
-      "total_score": 112.24
+      "total_score": 111.65
     },
     {
       "id": "cf48229753b51725c5d820c717989c7d887c1e04",
@@ -42,9 +42,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 28.59,
+      "timeliness": 28.01,
       "writing_value": 5,
-      "total_score": 113.59
+      "total_score": 113.01
     },
     {
       "id": "77e278f59477fbbe04dbefba3e15b675089cb9c9",
@@ -63,51 +63,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 21.87,
+      "timeliness": 21.29,
       "writing_value": 5,
-      "total_score": 106.87
-    },
-    {
-      "id": "90f5f8c109e80fe3bbf8cb683e85037f2c174c10",
-      "title": "The Download: smarter AI in schools, and a robot \"carnival\" in Shanghai - MIT Technology Review",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPSjRxZUo5U2NYZmNTeFFVUEZXWUN0WS0tTEIzczVwQnZHLVJhUnpkTFpXaDFoMklWbXJWMHo5TEFRV2pNV29Cb0Z3dnAwa05sQnB4OHZXeC04bEhWODhtQUVIR3NMeUFmVzlldm4yMDhaWmZsdjF6LXZiYXllTGxIV0J4S0hHYWZWZXZ5ODhqTE83QkxOaE02bmlMNjZDVkFNSGhGbU51ei12dElFeFcwdFgwVFljdw?oc=5",
-      "published_at": "2026-08-25T12:10:00+00:00",
-      "category": "GN: MIT Tech Review",
-      "gn_label": "robotics",
-      "site_name": "GN: MIT Tech Review",
-      "source": "GN: MIT Tech Review",
-      "site_id": "GN: MIT Tech Review",
-      "description": "The Download: smarter AI in schools, and a robot \"carnival\" in Shanghai  MIT Technology Review",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 21.87,
-      "writing_value": 0,
-      "total_score": 96.87
-    },
-    {
-      "id": "b0070f945f57260dded1cba9afd1baae0bedebc9",
-      "title": "Early bird pricing for RoboBusiness 2026 ends August 31 - The Robot Report",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQeUpCMk5EUHIyWm56S04xRW1zWnFKNEtiUG5zWlpuQlZWb2FVUmlXanhuYTZRcnZIRHJhZTNpYl93U2MyMmYyRG9fT2RxY0tWWjAwN09ab3Z1ZS1Pekk3eUloMnJNS0l6MXNNR2RWWHZud05HUHMzLUlOaTdoSVBZMnlzU0w3WWlGT1ZfUlRGbEw?oc=5",
-      "published_at": "2026-08-25T17:45:13+00:00",
-      "category": "GN: Robot Report",
-      "gn_label": "robotics",
-      "site_name": "GN: Robot Report",
-      "source": "GN: Robot Report",
-      "site_id": "GN: Robot Report",
-      "description": "Early bird pricing for RoboBusiness 2026 ends August 31  The Robot Report",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 27.46,
-      "writing_value": 0,
-      "total_score": 102.46
+      "total_score": 106.29
     },
     {
       "id": "8054d59be5ca000126dd938b6b3ceeba5245b12d",
@@ -126,9 +84,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.98,
+      "timeliness": 24.39,
       "writing_value": 0,
-      "total_score": 99.98
+      "total_score": 99.39
+    },
+    {
+      "id": "90f5f8c109e80fe3bbf8cb683e85037f2c174c10",
+      "title": "The Download: smarter AI in schools, and a robot \"carnival\" in Shanghai - MIT Technology Review",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPSjRxZUo5U2NYZmNTeFFVUEZXWUN0WS0tTEIzczVwQnZHLVJhUnpkTFpXaDFoMklWbXJWMHo5TEFRV2pNV29Cb0Z3dnAwa05sQnB4OHZXeC04bEhWODhtQUVIR3NMeUFmVzlldm4yMDhaWmZsdjF6LXZiYXllTGxIV0J4S0hHYWZWZXZ5ODhqTE83QkxOaE02bmlMNjZDVkFNSGhGbU51ei12dElFeFcwdFgwVFljdw?oc=5",
+      "published_at": "2026-08-25T12:10:00+00:00",
+      "category": "GN: MIT Tech Review",
+      "gn_label": "robotics",
+      "site_name": "GN: MIT Tech Review",
+      "source": "GN: MIT Tech Review",
+      "site_id": "GN: MIT Tech Review",
+      "description": "The Download: smarter AI in schools, and a robot \"carnival\" in Shanghai  MIT Technology Review",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 21.29,
+      "writing_value": 0,
+      "total_score": 96.29
     },
     {
       "id": "2717a0b1c7c78408d111068da5b8c04f625c8d9e",
@@ -147,9 +126,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.42,
+      "timeliness": 25.83,
       "writing_value": 0,
-      "total_score": 116.42
+      "total_score": 115.83
     },
     {
       "id": "1814a126e7a7540971bb62a119cf928c2d606bce",
@@ -168,9 +147,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 22.71,
+      "timeliness": 22.12,
       "writing_value": 0,
-      "total_score": 97.71
+      "total_score": 97.12
     },
     {
       "id": "53e980dab8502e39a12ea73b3c65788d333f603f",
@@ -189,9 +168,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 22.87,
+      "timeliness": 22.28,
       "writing_value": 0,
-      "total_score": 97.87
+      "total_score": 97.28
+    },
+    {
+      "id": "e354c6fdb41dadeac0f832838d3d14145fd40cd8",
+      "title": "Get the Narwal Flow 2 robot vacuum for $200 less at Amazon - Mashable",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE55ek1YeVdpS0dRelFiMU9YMDJvOFF1N0xJeFdUb1E1eHZBUG1QaG83N1kzejQ3UFdPR2xlbGFrVGg1aEhNWDZyTm5DVDRyclB3TU50c2VOR3V5MXcxRUZCWg?oc=5",
+      "published_at": "2026-08-25T14:06:06+00:00",
+      "category": "GN: robot vacuum",
+      "gn_label": "robotics",
+      "site_name": "GN: robot vacuum",
+      "source": "GN: robot vacuum",
+      "site_id": "GN: robot vacuum",
+      "description": "Get the Narwal Flow 2 robot vacuum for $200 less at Amazon  Mashable",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 23.22,
+      "writing_value": 0,
+      "total_score": 98.22
     },
     {
       "id": "54a577308f043726addd73c4b6f0b5709c8baaa5",
@@ -210,9 +210,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.06,
+      "timeliness": 28.47,
       "writing_value": 0,
-      "total_score": 104.06
+      "total_score": 103.47
     },
     {
       "id": "a7ad62589c9d0bf0f0001b1e68eccc0c61558d32",
@@ -231,30 +231,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 5,
-      "timeliness": 22.31,
+      "timeliness": 21.72,
       "writing_value": 5,
-      "total_score": 122.31
-    },
-    {
-      "id": "e354c6fdb41dadeac0f832838d3d14145fd40cd8",
-      "title": "Get the Narwal Flow 2 robot vacuum for $200 less at Amazon - Mashable",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE55ek1YeVdpS0dRelFiMU9YMDJvOFF1N0xJeFdUb1E1eHZBUG1QaG83N1kzejQ3UFdPR2xlbGFrVGg1aEhNWDZyTm5DVDRyclB3TU50c2VOR3V5MXcxRUZCWg?oc=5",
-      "published_at": "2026-08-25T17:00:55+00:00",
-      "category": "GN: robot vacuum",
-      "gn_label": "robotics",
-      "site_name": "GN: robot vacuum",
-      "source": "GN: robot vacuum",
-      "site_id": "GN: robot vacuum",
-      "description": "Get the Narwal Flow 2 robot vacuum for $200 less at Amazon  Mashable",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 26.72,
-      "writing_value": 0,
-      "total_score": 101.72
+      "total_score": 121.72
     },
     {
       "id": "2d30e2436cb1e9faf674df414ee4aa18e7173a5e",
@@ -273,9 +252,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 22.71,
+      "timeliness": 22.12,
       "writing_value": 0,
-      "total_score": 97.71
+      "total_score": 97.12
     },
     {
       "id": "c44453f2c7bfd85e81c80d2cda7582f151147375",
@@ -294,9 +273,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 28.37,
+      "timeliness": 27.78,
       "writing_value": 5,
-      "total_score": 113.37
+      "total_score": 112.78
     },
     {
       "id": "8d44c04d45a79275e653c765a558e99d7aa39d9c",
@@ -315,9 +294,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 22.12,
+      "timeliness": 21.54,
       "writing_value": 0,
-      "total_score": 97.12
+      "total_score": 96.54
     },
     {
       "id": "88af08b2a2d5200f92aad37310544139a4db4f00",
@@ -336,9 +315,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 22.8,
+      "timeliness": 22.21,
       "writing_value": 0,
-      "total_score": 97.8
+      "total_score": 97.21
     },
     {
       "id": "ba8b1036472d407d5350bf4a2315cde54469933b",
@@ -357,9 +336,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.73,
+      "timeliness": 25.14,
       "writing_value": 0,
-      "total_score": 100.73
+      "total_score": 100.14
     },
     {
       "id": "faa9c9a93ab3d3f9a9cc0b3c2eae8fcca5509718",
@@ -378,9 +357,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 27.21,
+      "timeliness": 26.62,
       "writing_value": 5,
-      "total_score": 112.21
+      "total_score": 111.62
     },
     {
       "id": "802037ba7b9060c1b8dcb07f5e5ef69113432869",
@@ -399,9 +378,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 22.22,
+      "timeliness": 21.63,
       "writing_value": 0,
-      "total_score": 97.22
+      "total_score": 96.63
     },
     {
       "id": "642d7dac54b4049dd8260fe85a5a318b8e35a855",
@@ -420,13 +399,13 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 22.87,
+      "timeliness": 22.28,
       "writing_value": 5,
-      "total_score": 107.87
+      "total_score": 107.28
     },
     {
-      "id": "95d242f618072337339f13238686ce55faa61376",
-      "title": "Humanoid Robot Games in Beijing test machines' real-world industrial skills - 巴士的報",
+      "id": "9a264c287861430e5789460d9c9d6483bf5047fd",
+      "title": "Humanoid Robot Games in Beijing test machines' real-world industrial skills - bastillepost.com",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOdGxKZ1pmWnFNellRQXRjUXhIZmpQN3FpOXB3MVE4YzdkcV9VeFFiUHJ0cTRJejNpM1gxdEdKajROa1B3Q3hmcGRRRnJMS21aMTEzUjFnbjB1a2drVTdqOWpucktDakQ4SGRWU0hwN18yZlRoUXU1N1dpdkJOYXF4M0d4bHBzVURlQ3RZcmR4WEtFS2hpWk1vQ2NyWURjY3pDUnhNX2hIS0xCRXVHS0V1WUtXbFpWTDNfZHhaaDl3MFMtbVlj?oc=5",
       "published_at": "2026-08-25T12:53:00+00:00",
@@ -435,15 +414,15 @@
       "site_name": "GN: industrial robot",
       "source": "GN: industrial robot",
       "site_id": "GN: industrial robot",
-      "description": "Humanoid Robot Games in Beijing test machines' real-world industrial skills  巴士的報",
+      "description": "Humanoid Robot Games in Beijing test machines' real-world industrial skills  bastillepost.com",
       "ai_score": 80.0,
       "ai_label": "robotics",
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 22.59,
+      "timeliness": 22.0,
       "writing_value": 0,
-      "total_score": 112.59
+      "total_score": 112.0
     },
     {
       "id": "67ac63120963ee533b0a8be1ba257c7292e9580e",
@@ -462,9 +441,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.72,
+      "timeliness": 25.14,
       "writing_value": 0,
-      "total_score": 100.72
+      "total_score": 100.14
     },
     {
       "id": "194e3d796b6433d631a7ee863b2020d969d1ef1d",
@@ -483,9 +462,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 21.47,
+      "timeliness": 20.88,
       "writing_value": 0,
-      "total_score": 96.47
+      "total_score": 95.88
     },
     {
       "id": "e88791a63f96e221d748b3e9b0838f7945c3453a",
@@ -504,30 +483,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 22.9,
+      "timeliness": 22.31,
       "writing_value": 0,
-      "total_score": 97.9
-    },
-    {
-      "id": "1d0d74213be24eab583d648a54631ebef97f7111",
-      "title": "优必选携三大场景的多款人形机器人新品及解决方案亮相WRC 2026 - 汽车之家",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9nRlZYS1RKbmdyNXhfWkdod0NKSmxsS0ViVldFdG45WnMwelotaVZudnBFX1FqaTZKQWhzYUVfQmt3QWZHLVJPX3RzcDhZMDI5am5NaGNONWZJdEU?oc=5",
-      "published_at": "2026-08-25T17:00:25+00:00",
-      "category": "GN: 人形机器人",
-      "gn_label": "humanoid",
-      "site_name": "GN: 人形机器人",
-      "source": "GN: 人形机器人",
-      "site_id": "GN: 人形机器人",
-      "description": "优必选携三大场景的多款人形机器人新品及解决方案亮相WRC 2026  汽车之家",
-      "ai_score": 80.0,
-      "ai_label": "humanoid",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 26.71,
-      "writing_value": 0,
-      "total_score": 116.71
+      "total_score": 97.31
     },
     {
       "id": "53b09a49c63a9b3a1e3a080c60c238e562570d51",
@@ -546,9 +504,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.76,
+      "timeliness": 25.17,
       "writing_value": 0,
-      "total_score": 100.76
+      "total_score": 100.17
     },
     {
       "id": "cb5cce4793f546adf9d188e9e290689a4f0541c9",
@@ -567,30 +525,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.67,
+      "timeliness": 24.08,
       "writing_value": 0,
-      "total_score": 99.67
+      "total_score": 99.08
     },
     {
-      "id": "4d72c6ff6d6a0f5ec1041d86db7b1e4d3613dd26",
-      "title": "优必选携三大场景的多款人形机器人新品及解决方案亮相WRC 2026 - 汽车之家",
+      "id": "016e9f86c673e1af6f65f7ece1fbaeb2c1a7b59d",
+      "title": "宇树科技有多被高估，零跑就有多被低估 - 搜狐网",
       "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFAweTZrd3UyUDdaWUtqQUc3QnVCakNuMHpBSHhEZENpcDZOOGFVbXRDTllScXB0RGVWQmdvUzIxSFhWRkNnUHRiamFtTDFjYXhJR1BHUFRoeVVBMUE5c0VDeVdYWXlVZndmYmdj?oc=5",
-      "published_at": "2026-08-25T17:00:25+00:00",
-      "category": "GN: 优必选",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPSHdrVjBIZXNLUUhXMHlzVnRYMVNHUjA5RVotMmVXYjFLbGRaMjdZZGJyWjF2dTRYSk9YcjJ2NDlRczJfanVSeVoxNERrMmU4bUwwTGZzR1l3SFh0U0k1ZDlweHZiVnk4eWhOU2FoU3Z3QjlkU29FY0RSZmc1V3E1dHNmRmtSb1pITWlnZA?oc=5",
+      "published_at": "2026-08-25T14:21:13+00:00",
+      "category": "GN: 宇树科技",
       "gn_label": "robotics",
-      "site_name": "GN: 优必选",
-      "source": "GN: 优必选",
-      "site_id": "GN: 优必选",
-      "description": "优必选携三大场景的多款人形机器人新品及解决方案亮相WRC 2026  汽车之家",
-      "ai_score": 80.0,
+      "site_name": "GN: 宇树科技",
+      "source": "GN: 宇树科技",
+      "site_id": "GN: 宇树科技",
+      "description": "宇树科技有多被高估，零跑就有多被低估  搜狐网",
+      "ai_score": 65.0,
       "ai_label": "robotics",
-      "relevance": 0.8,
+      "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.71,
+      "timeliness": 23.47,
       "writing_value": 0,
-      "total_score": 116.71
+      "total_score": 98.47
     },
     {
       "id": "863b7092044995684ea9d66d149451c81932cca8",
@@ -609,9 +567,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 22.05,
+      "timeliness": 21.46,
       "writing_value": 0,
-      "total_score": 112.05
+      "total_score": 111.46
     },
     {
       "id": "9b03bef7dcd713e0b72db576b9e12af8dc11d59a",
@@ -630,9 +588,72 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 22.01,
+      "timeliness": 21.42,
       "writing_value": 0,
-      "total_score": 112.01
+      "total_score": 111.42
+    },
+    {
+      "id": "1d0d74213be24eab583d648a54631ebef97f7111",
+      "title": "优必选携三大场景的多款人形机器人新品及解决方案亮相WRC 2026 - 汽车之家",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9nRlZYS1RKbmdyNXhfWkdod0NKSmxsS0ViVldFdG45WnMwelotaVZudnBFX1FqaTZKQWhzYUVfQmt3QWZHLVJPX3RzcDhZMDI5am5NaGNONWZJdEU?oc=5",
+      "published_at": "2026-08-25T17:00:25+00:00",
+      "category": "GN: 优必选",
+      "gn_label": "robotics",
+      "site_name": "GN: 优必选",
+      "source": "GN: 优必选",
+      "site_id": "GN: 优必选",
+      "description": "优必选携三大场景的多款人形机器人新品及解决方案亮相WRC 2026  汽车之家",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 26.13,
+      "writing_value": 0,
+      "total_score": 116.13
+    },
+    {
+      "id": "13926477879bffd8b9f233b9a3f1207301ca4f83",
+      "title": "优必选携三大场景的多款人形机器人新品及解决方案亮相WRC 2026 - 搜狐网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNcmVraV9weXYzcEJoZHl6TGVtem44TDVfQUNhTHozMzlKTDlRTmRCdEU0MTBZZldUNHZyYWt0T0VDdHNRM2I0SVBmSmJTRFM3Q3JIbHpMc3ZkeHMwanVadGltTnMxRW1RX3VuZ0lHR29TTm1aVHZxMkE2cWJsWFl3LXRFeF80aXc5?oc=5",
+      "published_at": "2026-08-25T16:13:10+00:00",
+      "category": "GN: 优必选",
+      "gn_label": "robotics",
+      "site_name": "GN: 优必选",
+      "source": "GN: 优必选",
+      "site_id": "GN: 优必选",
+      "description": "优必选携三大场景的多款人形机器人新品及解决方案亮相WRC 2026  搜狐网",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 25.34,
+      "writing_value": 0,
+      "total_score": 115.34
+    },
+    {
+      "id": "ce1d769813fe55e50bb463ff72aa27fa16cee648",
+      "title": "放弃人形、不走五指路，自变量凭什么赢Figure AI？ - finance.sina.com.cn",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQdjUxMGprdVVaUjJrT19CY0hPY0UwWS1vbW1raTZBSmtpbVF5VkJKemFCeVo4WXZna2FrZWN4VkV0WU5NOU9yVlFNbVh0cVJGVV9fNHZoZ1B6d1pHX2xvano4VF9pbkFoQUYxY2FsREw0Zm9OcDhKbWpwSU1Iakc5UWpidWhWbEthcjhQd0ppc0RBVU5ZdEFhNlNQX0k2ZjZjaTFPQklsdTlGbmhsV1JqTHB3?oc=5",
+      "published_at": "2026-08-25T18:41:07+00:00",
+      "category": "GN: 机械臂",
+      "gn_label": "robotics",
+      "site_name": "GN: 机械臂",
+      "source": "GN: 机械臂",
+      "site_id": "GN: 机械臂",
+      "description": "放弃人形、不走五指路，自变量凭什么赢Figure AI？  finance.sina.com.cn",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 27.81,
+      "writing_value": 0,
+      "total_score": 102.81
     },
     {
       "id": "497da09d83b6648325a32ff990fdd9ffbe10be82",
@@ -651,30 +672,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.36,
+      "timeliness": 28.77,
       "writing_value": 0,
-      "total_score": 104.36
-    },
-    {
-      "id": "ce1d769813fe55e50bb463ff72aa27fa16cee648",
-      "title": "放弃人形、不走五指路，自变量凭什么赢Figure AI？ - finance.sina.com.cn",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQdjUxMGprdVVaUjJrT19CY0hPY0UwWS1vbW1raTZBSmtpbVF5VkJKemFCeVo4WXZna2FrZWN4VkV0WU5NOU9yVlFNbVh0cVJGVV9fNHZoZ1B6d1pHX2xvano4VF9pbkFoQUYxY2FsREw0Zm9OcDhKbWpwSU1Iakc5UWpidWhWbEthcjhQd0ppc0RBVU5ZdEFhNlNQX0k2ZjZjaTFPQklsdTlGbmhsV1JqTHB3?oc=5",
-      "published_at": "2026-08-25T18:41:07+00:00",
-      "category": "GN: 灵巧手",
-      "gn_label": "robotics",
-      "site_name": "GN: 灵巧手",
-      "source": "GN: 灵巧手",
-      "site_id": "GN: 灵巧手",
-      "description": "放弃人形、不走五指路，自变量凭什么赢Figure AI？  finance.sina.com.cn",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 28.39,
-      "writing_value": 0,
-      "total_score": 103.39
+      "total_score": 103.77
     },
     {
       "id": "29e7f0ecf4bdc942c285e7ec03865af960546e82",
@@ -693,9 +693,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 20.94,
+      "timeliness": 20.35,
       "writing_value": 0,
-      "total_score": 110.94
+      "total_score": 110.35
     },
     {
       "id": "6985477fd9ded3abda8a910de1e427ea03cee3f9",
@@ -714,30 +714,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.34,
+      "timeliness": 23.75,
       "writing_value": 0,
-      "total_score": 114.34
-    },
-    {
-      "id": "b3db0e4c4e0acd78edcf5a160ff168ee7257051f",
-      "title": "吨级重载四足机器狗能载人，这不是玩具！人形机器人、工业机器人齐亮相，机器人运动会展现大咖实力 - 手机网易网",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE83dTlCTV9hMzlQUDR6YnB1bGxxTlRhRGVzanFyaTZacFNxcXhpOWZiVWxoVWctZ2swb2s1elZ1UkEtMlVleVhCR0dtZEFCZ2FQY3BwbA?oc=5",
-      "published_at": "2026-08-25T12:02:37+00:00",
-      "category": "GN: 工业机器人与人",
-      "gn_label": "robotics",
-      "site_name": "GN: 工业机器人与人",
-      "source": "GN: 工业机器人与人",
-      "site_id": "GN: 工业机器人与人",
-      "description": "吨级重载四足机器狗能载人，这不是玩具！人形机器人、工业机器人齐亮相，机器人运动会展现大咖实力  手机网易网",
-      "ai_score": 80.0,
-      "ai_label": "robotics",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 21.75,
-      "writing_value": 0,
-      "total_score": 111.75
+      "total_score": 113.75
     },
     {
       "id": "ed48d5cc87b09c2415f475c36072db1c84021517",
@@ -756,9 +735,30 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 21.72,
+      "timeliness": 21.14,
       "writing_value": 0,
-      "total_score": 111.72
+      "total_score": 111.14
+    },
+    {
+      "id": "b3db0e4c4e0acd78edcf5a160ff168ee7257051f",
+      "title": "吨级重载四足机器狗能载人，这不是玩具！人形机器人、工业机器人齐亮相，机器人运动会展现大咖实力 - 手机网易网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE83dTlCTV9hMzlQUDR6YnB1bGxxTlRhRGVzanFyaTZacFNxcXhpOWZiVWxoVWctZ2swb2s1elZ1UkEtMlVleVhCR0dtZEFCZ2FQY3BwbA?oc=5",
+      "published_at": "2026-08-25T12:02:37+00:00",
+      "category": "GN: 工业机器人与人",
+      "gn_label": "robotics",
+      "site_name": "GN: 工业机器人与人",
+      "source": "GN: 工业机器人与人",
+      "site_id": "GN: 工业机器人与人",
+      "description": "吨级重载四足机器狗能载人，这不是玩具！人形机器人、工业机器人齐亮相，机器人运动会展现大咖实力  手机网易网",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 21.16,
+      "writing_value": 0,
+      "total_score": 111.16
     }
   ],
   "fallback_used": false
