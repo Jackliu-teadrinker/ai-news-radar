@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-25T12:34:11.936453+00:00",
-  "total_items": 28,
+  "generated_at": "2026-08-25T13:35:39.831376+00:00",
+  "total_items": 26,
   "items": [
     {
       "id": "http://arxiv.org/abs/2608.23486v1",
@@ -261,26 +261,6 @@
       "category": "cs.RO",
       "published_at": "2026-08-24T01:44:22+00:00",
       "updated_at": "2026-08-24T01:44:22Z"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.22679v1",
-      "title": "Contextrast++: Robust Multi-Scale Contextual Contrastive Learning for Semantic Segmentation",
-      "url": "https://arxiv.org/abs/2608.22679",
-      "summary": "Semantic segmentation has rapidly advanced with deep learning; however, challenges remain in effectively capturing local and global contexts as well as addressing the long-tailed distribution problem. To tackle these issues, we present Contextrast++, a robust contrastive learning method for semantic segmentation that improves multi-scale feature integration and mitigates class imbalance issues. Our method consists of two key components: 1) contextual contrastive learning (CCL) and 2) boundary-aware negative (BANE) sampling. CCL includes three subcomponents: adaptive fusion module, pixel-to-anchor (PA) loss, and anchor-to-anchor (AA) loss. The adaptive fusion module dynamically balances local and global feature integration, resulting in a more context-aware representation. While the PA loss leverages the fused multi-scale features to improve feature representation learning, the AA loss focuses on addressing the long-tailed distribution problem by utilizing a memory bank that stores a fixed number of class-balanced representative anchors. Meanwhile, BANE sampling enhances segmentation precision by selecting hard negatives from misclassified boundary regions, which refines fine-grained details during contrastive learning. As verified in extensive experiments using public datasets, we demonstrate that Contextrast++ substantially improves semantic segmentation performance over existing contrastive learning-based state-of-the-art approaches, while introducing no additional computational overhead during inference.",
-      "authors": "Changki Sung, Hyungtae Lim, Wanhee Kim et al.",
-      "category": "cs.CV",
-      "published_at": "2026-08-24T00:34:16+00:00",
-      "updated_at": "2026-08-24T00:34:16Z"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.22678v1",
-      "title": "RACO: Reliability-Aware Coarse-Goal Optimization for Inspection-Oriented UAV Vision-Language Navigation",
-      "url": "https://arxiv.org/abs/2608.22678",
-      "summary": "UAV vision-language navigation (UAV-VLN) is commonly evaluated as goal reaching, but inspection-oriented deployment requires the agent to stop within a valid inspection region and avoid falsely confirming visually or semantically similar distractors. This requirement exposes a key weakness in existing coarse-to-fine UAV-VLN policies: the coarse goal predicted before local refinement is often treated as reliable, although it may drift toward plausible but incorrect object regions and limit the ability of the local stage to recover. To systematically evaluate this problem, we introduce LG-UVI, an object-centric inspection evaluation setting derived from CityNav/CityRefer. LG-UVI extends standard UAV-VLN episodes with target objects, hard distractors, type-aware inspection regions, and diagnostics for inspection-region arrival and object-level confirmation. To address this inspection-oriented setting, we further propose RACO, a reliability-aware adaptive coarse-to-fine navigation framework. Instead of treating the predicted coarse goal as a fixed waypoint, RACO views it as a runtime hypothesis and uses object-level candidate anchors to check and correct coarse localization before Stage 1 and at the Stage 1-to-Stage 2 boundary. RACO also applies scale-adaptive terminal refinement to handle terminal near-miss cases using runtime-observable geometric and anchor-based evidence. Under a unified online evaluation protocol, RACO improves SR over the reproduced HETT baseline by 9.53 and 7.98 percentage points on validation-unseen and test-unseen, respectively. It also improves inspection-region arrival and reduces false verification risk, showing that coarse-goal reliability optimization is an effective complement to existing coarse-to-fine UAV-VLN policies.",
-      "authors": "Sen Wang, Yiming Sun, Jiaxuan He et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-24T00:32:51+00:00",
-      "updated_at": "2026-08-24T00:32:51Z"
     }
   ]
 }
