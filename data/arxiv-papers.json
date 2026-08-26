@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-26T13:53:55.195681+00:00",
-  "total_items": 30,
+  "generated_at": "2026-08-26T14:44:32.835319+00:00",
+  "total_items": 28,
   "items": [
     {
       "id": "http://arxiv.org/abs/2608.24885v1",
@@ -281,26 +281,6 @@
       "category": "eess.SY",
       "published_at": "2026-08-25T03:18:32+00:00",
       "updated_at": "2026-08-25T03:18:32Z"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.23994v1",
-      "title": "Bridging Teacher Expectations and Robot Learning via Coupling Dynamics",
-      "url": "https://arxiv.org/abs/2608.23994",
-      "summary": "Human-robot teaching focuses on enabling nontechnical experts to customize robots according to their needs after deployment. With recent advances in machine learning, human-robot teaching is no longer confined to offline learning where the data gathering step from a human teacher is separated from when the robot learns. Instead, more recent approaches for human-robot teaching focus on coupling human teaching with robot learning. This coupling impacts the structure, timing, and content of the teaching and learning interaction. However, it is currently unclear how such coupling dynamics affect humanrobot teaching effectiveness and human perceptions towards the teaching process. Informed by human learning theories, in this paper we propose a new scale for classifying human-robot teaching interactions according to coupling dynamics present between the human teacher and robot learner. We apply this scale to a subset of the human-robot teaching literature to identify how coupling dynamics and human teacher mental model mismatches with the ground truth robot learning system affect teaching effectiveness and human perceptions towards the teaching process",
-      "authors": "Evan Dallas, Sean Dallas, Wing-Yue Geoffrey Louie",
-      "category": "cs.RO",
-      "published_at": "2026-08-25T02:34:26+00:00",
-      "updated_at": "2026-08-25T02:34:26Z"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.23983v1",
-      "title": "Sensorless damage-safe grasping",
-      "url": "https://arxiv.org/abs/2608.23983",
-      "summary": "Robotic fruit harvesting must hold produce securely without bruising it, yet compression stiffness varies several-fold with ripeness within a single species, so no fixed grip force spans the range. Rather than tune force, we bound deformation: a controller closes the gripper until the object's estimated compression strain reaches a user-specified limit $\\varepsilon$, using only the encoder position and motor-effort signal on every servo gripper---no tactile or force-torque sensor. Dividing an effort-based contact force by a lower bound on object stiffness makes the stop provably conservative---true compression stays at or below $\\varepsilon$---for any $\\varepsilon$ above a contact-detection strain floor we identify and quantify: robust detection itself spends compression, linearly in closing speed, making speed an explicit throughput--gentleness knob. Unlike a hand-tuned force threshold, $\\varepsilon$ is a certified, size-scaling, operator-interpretable damage limit, and a ready safe-action parameter for learned grasping policies. In MuJoCo simulation over a realistic fruit-stiffness range, under a sensor-noise model calibrated to the real servo, the controller holds $\\ge 98\\,\\%$ grasp at $0\\,\\%$ damage across all medium-to-firm stiffnesses for the entire certified $\\varepsilon$ range, which neither fixed-force baseline attains; on stiffness-graded 3D-printed TPU cubes it matches baseline grasp success at roughly half the grip force and cuts soft-object damage from $100\\,\\%$ to $40\\,\\%$.",
-      "authors": "Yusei Shuto, Danilo Vasconcellos Vargas",
-      "category": "cs.RO",
-      "published_at": "2026-08-25T02:24:08+00:00",
-      "updated_at": "2026-08-25T02:24:08Z"
     }
   ]
 }
