@@ -1,75 +1,75 @@
 {
-  "generated_at": "2026-08-25T23:58:09.242614+00:00",
+  "generated_at": "2026-08-26T00:44:17.627138+00:00",
   "feeds": [
     {
-      "feed": "国外脑机接口资讯",
-      "success": true,
-      "items_total": 100,
-      "items_unique": 100,
-      "error": null
-    },
-    {
-      "feed": "国外具身智能资讯",
-      "success": true,
-      "items_total": 100,
-      "items_unique": 100,
-      "error": null
-    },
-    {
-      "feed": "国外物理AI资讯",
-      "success": true,
-      "items_total": 100,
-      "items_unique": 100,
-      "error": null
-    },
-    {
-      "feed": "国内脑机接口资讯",
-      "success": true,
-      "items_total": 100,
-      "items_unique": 100,
-      "error": null
-    },
-    {
-      "feed": "国内具身智能资讯",
-      "success": true,
-      "items_total": 100,
-      "items_unique": 100,
-      "error": null
-    },
-    {
-      "feed": "国外人形机器人资讯",
-      "success": true,
-      "items_total": 100,
-      "items_unique": 98,
-      "error": null
-    },
-    {
       "feed": "国外机器人资讯",
-      "success": true,
-      "items_total": 99,
-      "items_unique": 56,
-      "error": null
+      "success": false,
+      "items_total": 0,
+      "items_unique": 0,
+      "error": "503 Server Error: Service Unavailable for url: https://news.google.com/rss/search?q=robot&hl=en-US&gl=US&ceid=US:en&when=1d"
     },
     {
       "feed": "国内人形机器人资讯",
-      "success": true,
-      "items_total": 104,
-      "items_unique": 99,
-      "error": null
+      "success": false,
+      "items_total": 0,
+      "items_unique": 0,
+      "error": "503 Server Error: Service Unavailable for url: https://news.google.com/rss/search?q=%E4%BA%BA%E5%BD%A2%E6%9C%BA%E5%99%A8%E4%BA%BA&hl=zh-CN&gl=CN&ceid=CN:zh-Hans&when=1d"
+    },
+    {
+      "feed": "国外物理AI资讯",
+      "success": false,
+      "items_total": 0,
+      "items_unique": 0,
+      "error": "503 Server Error: Service Unavailable for url: https://news.google.com/rss/search?q=physical+AI&hl=en-US&gl=US&ceid=US:en&when=1d"
+    },
+    {
+      "feed": "国外具身智能资讯",
+      "success": false,
+      "items_total": 0,
+      "items_unique": 0,
+      "error": "503 Server Error: Service Unavailable for url: https://news.google.com/rss/search?q=embodied+intelligence+OR+embodied+AI&hl=en-US&gl=US&ceid=US:en&when=1d"
+    },
+    {
+      "feed": "国外人形机器人资讯",
+      "success": false,
+      "items_total": 0,
+      "items_unique": 0,
+      "error": "503 Server Error: Service Unavailable for url: https://news.google.com/rss/search?q=humanoid+robot&hl=en-US&gl=US&ceid=US:en&when=1d"
+    },
+    {
+      "feed": "国内具身智能资讯",
+      "success": false,
+      "items_total": 0,
+      "items_unique": 0,
+      "error": "503 Server Error: Service Unavailable for url: https://news.google.com/rss/search?q=%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD&hl=zh-CN&gl=CN&ceid=CN:zh-Hans&when=1d"
+    },
+    {
+      "feed": "国外脑机接口资讯",
+      "success": false,
+      "items_total": 0,
+      "items_unique": 0,
+      "error": "503 Server Error: Service Unavailable for url: https://news.google.com/rss/search?q=BCI+OR+brain+computer+interface+OR+neural+interface&hl=en-US&gl=US&ceid=US:en&when=1d"
+    },
+    {
+      "feed": "国内脑机接口资讯",
+      "success": false,
+      "items_total": 0,
+      "items_unique": 0,
+      "error": "503 Server Error: Service Unavailable for url: https://news.google.com/rss/search?q=%E8%84%91%E6%9C%BA%E6%8E%A5%E5%8F%A3+OR+%E7%A5%9E%E7%BB%8F%E6%8E%A5%E5%8F%A3+OR+%E8%84%91%E7%94%B5%E6%8E%A5%E5%8F%A3+OR+BCI&hl=zh-CN&gl=CN&ceid=CN:zh-Hans&when=1d"
     },
     {
       "feed": "国内机器人资讯",
-      "success": true,
-      "items_total": 104,
-      "items_unique": 67,
-      "error": null
+      "success": false,
+      "items_total": 0,
+      "items_unique": 0,
+      "error": "503 Server Error: Service Unavailable for url: https://news.google.com/rss/search?q=%E6%9C%BA%E5%99%A8%E4%BA%BA&hl=zh-CN&gl=CN&ceid=CN:zh-Hans&when=1d"
     },
     {
       "feed": "国内物理AI资讯",
-      "success": true,
-      "items_total": 100,
-      "items_unique": 95,
-      "error": null
+      "success": false,
+      "items_total": 0,
+      "items_unique": 0,
+      "error": "503 Server Error: Service Unavailable for url: https://news.google.com/rss/search?q=%E7%89%A9%E7%90%86AI&hl=zh-CN&gl=CN&ceid=CN:zh-Hans&when=1d"
     },
     {
       "feed": "TechCrunch Robotics",
@@ -114,6 +114,13 @@
       "error": null
     },
     {
+      "feed": "MIT Tech Review",
+      "success": true,
+      "items_total": 10,
+      "items_unique": 10,
+      "error": null
+    },
+    {
       "feed": "CNBC AI Age",
       "success": true,
       "items_total": 30,
@@ -125,13 +132,6 @@
       "success": true,
       "items_total": 30,
       "items_unique": 30,
-      "error": null
-    },
-    {
-      "feed": "MIT Tech Review",
-      "success": true,
-      "items_total": 10,
-      "items_unique": 10,
       "error": null
     },
     {
@@ -149,87 +149,10 @@
       "error": null
     },
     {
-      "feed": "GN: BCI Intel",
-      "success": true,
-      "items_total": 24,
-      "items_unique": 24,
-      "error": null
-    },
-    {
-      "feed": "GN: Robot Report",
-      "success": true,
-      "items_total": 30,
-      "items_unique": 30,
-      "error": null
-    },
-    {
-      "feed": "GN: humanoid robot",
-      "success": true,
-      "items_total": 30,
-      "items_unique": 30,
-      "error": null
-    },
-    {
-      "feed": "GN: embodied AI",
-      "success": true,
-      "items_total": 30,
-      "items_unique": 30,
-      "error": null
-    },
-    {
-      "feed": "GN: MIT Tech Review",
-      "success": true,
-      "items_total": 30,
-      "items_unique": 29,
-      "error": null
-    },
-    {
-      "feed": "GN: brain-computer interface",
-      "success": true,
-      "items_total": 30,
-      "items_unique": 30,
-      "error": null
-    },
-    {
-      "feed": "GN: robot",
-      "success": true,
-      "items_total": 30,
-      "items_unique": 12,
-      "error": null
-    },
-    {
-      "feed": "GN: Physical AI",
-      "success": true,
-      "items_total": 30,
-      "items_unique": 29,
-      "error": null
-    },
-    {
       "feed": "量子位",
       "success": true,
       "items_total": 10,
       "items_unique": 10,
-      "error": null
-    },
-    {
-      "feed": "GN: TechXplore robotics",
-      "success": true,
-      "items_total": 30,
-      "items_unique": 30,
-      "error": null
-    },
-    {
-      "feed": "GN: MIT robotics",
-      "success": true,
-      "items_total": 30,
-      "items_unique": 27,
-      "error": null
-    },
-    {
-      "feed": "GN: TechXplore AI",
-      "success": true,
-      "items_total": 30,
-      "items_unique": 4,
       "error": null
     },
     {
@@ -240,76 +163,6 @@
       "error": null
     },
     {
-      "feed": "GN: Stanford robotics",
-      "success": true,
-      "items_total": 30,
-      "items_unique": 30,
-      "error": null
-    },
-    {
-      "feed": "GN: deep learning robot",
-      "success": true,
-      "items_total": 30,
-      "items_unique": 27,
-      "error": null
-    },
-    {
-      "feed": "GN: robot vacuum",
-      "success": true,
-      "items_total": 30,
-      "items_unique": 29,
-      "error": null
-    },
-    {
-      "feed": "GN: autonomous robot",
-      "success": true,
-      "items_total": 30,
-      "items_unique": 29,
-      "error": null
-    },
-    {
-      "feed": "GN: industrial robot",
-      "success": true,
-      "items_total": 30,
-      "items_unique": 24,
-      "error": null
-    },
-    {
-      "feed": "GN: surgical robot",
-      "success": true,
-      "items_total": 30,
-      "items_unique": 29,
-      "error": null
-    },
-    {
-      "feed": "GN: collaborative robot",
-      "success": true,
-      "items_total": 30,
-      "items_unique": 29,
-      "error": null
-    },
-    {
-      "feed": "GN: robot learning",
-      "success": true,
-      "items_total": 30,
-      "items_unique": 26,
-      "error": null
-    },
-    {
-      "feed": "GN: robot manipulation",
-      "success": true,
-      "items_total": 30,
-      "items_unique": 28,
-      "error": null
-    },
-    {
-      "feed": "GN: 人形机器人",
-      "success": true,
-      "items_total": 30,
-      "items_unique": 30,
-      "error": null
-    },
-    {
       "feed": "雷锋网",
       "success": true,
       "items_total": 20,
@@ -317,104 +170,251 @@
       "error": null
     },
     {
-      "feed": "GN: 机器人",
-      "success": true,
-      "items_total": 30,
-      "items_unique": 20,
-      "error": null
+      "feed": "GN: Robot Report",
+      "success": false,
+      "items_total": 0,
+      "items_unique": 0,
+      "error": "No articles found in HTML"
     },
     {
-      "feed": "GN: 物理AI",
-      "success": true,
-      "items_total": 30,
-      "items_unique": 30,
-      "error": null
+      "feed": "GN: humanoid robot",
+      "success": false,
+      "items_total": 0,
+      "items_unique": 0,
+      "error": "No articles found in HTML"
+    },
+    {
+      "feed": "GN: MIT Tech Review",
+      "success": false,
+      "items_total": 0,
+      "items_unique": 0,
+      "error": "No articles found in HTML"
+    },
+    {
+      "feed": "GN: BCI Intel",
+      "success": false,
+      "items_total": 0,
+      "items_unique": 0,
+      "error": "No articles found in HTML"
+    },
+    {
+      "feed": "GN: robot",
+      "success": false,
+      "items_total": 0,
+      "items_unique": 0,
+      "error": "No articles found in HTML"
+    },
+    {
+      "feed": "GN: embodied AI",
+      "success": false,
+      "items_total": 0,
+      "items_unique": 0,
+      "error": "No articles found in HTML"
+    },
+    {
+      "feed": "GN: brain-computer interface",
+      "success": false,
+      "items_total": 0,
+      "items_unique": 0,
+      "error": "No articles found in HTML"
+    },
+    {
+      "feed": "GN: Physical AI",
+      "success": false,
+      "items_total": 0,
+      "items_unique": 0,
+      "error": "No articles found in HTML"
+    },
+    {
+      "feed": "GN: TechXplore AI",
+      "success": false,
+      "items_total": 0,
+      "items_unique": 0,
+      "error": "No articles found in HTML"
+    },
+    {
+      "feed": "GN: Stanford robotics",
+      "success": false,
+      "items_total": 0,
+      "items_unique": 0,
+      "error": "No articles found in HTML"
+    },
+    {
+      "feed": "GN: MIT robotics",
+      "success": false,
+      "items_total": 0,
+      "items_unique": 0,
+      "error": "No articles found in HTML"
+    },
+    {
+      "feed": "GN: TechXplore robotics",
+      "success": false,
+      "items_total": 0,
+      "items_unique": 0,
+      "error": "No articles found in HTML"
+    },
+    {
+      "feed": "GN: autonomous robot",
+      "success": false,
+      "items_total": 0,
+      "items_unique": 0,
+      "error": "No articles found in HTML"
+    },
+    {
+      "feed": "GN: industrial robot",
+      "success": false,
+      "items_total": 0,
+      "items_unique": 0,
+      "error": "No articles found in HTML"
+    },
+    {
+      "feed": "GN: deep learning robot",
+      "success": false,
+      "items_total": 0,
+      "items_unique": 0,
+      "error": "No articles found in HTML"
+    },
+    {
+      "feed": "GN: robot vacuum",
+      "success": false,
+      "items_total": 0,
+      "items_unique": 0,
+      "error": "No articles found in HTML"
+    },
+    {
+      "feed": "GN: surgical robot",
+      "success": false,
+      "items_total": 0,
+      "items_unique": 0,
+      "error": "No articles found in HTML"
+    },
+    {
+      "feed": "GN: robot learning",
+      "success": false,
+      "items_total": 0,
+      "items_unique": 0,
+      "error": "No articles found in HTML"
     },
     {
       "feed": "GN: 具身智能",
-      "success": true,
-      "items_total": 30,
-      "items_unique": 29,
-      "error": null
+      "success": false,
+      "items_total": 0,
+      "items_unique": 0,
+      "error": "No articles found in HTML"
     },
     {
-      "feed": "GN: 智元机器人",
-      "success": true,
-      "items_total": 30,
-      "items_unique": 29,
-      "error": null
+      "feed": "GN: 机器人",
+      "success": false,
+      "items_total": 0,
+      "items_unique": 0,
+      "error": "No articles found in HTML"
     },
     {
-      "feed": "GN: 傅利叶智能",
-      "success": true,
-      "items_total": 30,
-      "items_unique": 30,
-      "error": null
+      "feed": "GN: 人形机器人",
+      "success": false,
+      "items_total": 0,
+      "items_unique": 0,
+      "error": "No articles found in HTML"
+    },
+    {
+      "feed": "GN: robot manipulation",
+      "success": false,
+      "items_total": 0,
+      "items_unique": 0,
+      "error": "No articles found in HTML"
+    },
+    {
+      "feed": "GN: collaborative robot",
+      "success": false,
+      "items_total": 0,
+      "items_unique": 0,
+      "error": "No articles found in HTML"
     },
     {
       "feed": "GN: 宇树科技",
-      "success": true,
-      "items_total": 30,
-      "items_unique": 29,
-      "error": null
+      "success": false,
+      "items_total": 0,
+      "items_unique": 0,
+      "error": "No articles found in HTML"
     },
     {
       "feed": "GN: 优必选",
-      "success": true,
-      "items_total": 30,
-      "items_unique": 27,
-      "error": null
+      "success": false,
+      "items_total": 0,
+      "items_unique": 0,
+      "error": "No articles found in HTML"
+    },
+    {
+      "feed": "GN: 智元机器人",
+      "success": false,
+      "items_total": 0,
+      "items_unique": 0,
+      "error": "No articles found in HTML"
+    },
+    {
+      "feed": "GN: 物理AI",
+      "success": false,
+      "items_total": 0,
+      "items_unique": 0,
+      "error": "No articles found in HTML"
+    },
+    {
+      "feed": "GN: 傅利叶智能",
+      "success": false,
+      "items_total": 0,
+      "items_unique": 0,
+      "error": "No articles found in HTML"
     },
     {
       "feed": "GN: 灵巧手",
-      "success": true,
-      "items_total": 30,
-      "items_unique": 28,
-      "error": null
-    },
-    {
-      "feed": "GN: 机械臂",
-      "success": true,
-      "items_total": 30,
-      "items_unique": 26,
-      "error": null
-    },
-    {
-      "feed": "GN: 人形机器人融资",
-      "success": true,
-      "items_total": 30,
-      "items_unique": 29,
-      "error": null
-    },
-    {
-      "feed": "GN: 工业机器人与人",
-      "success": true,
-      "items_total": 30,
-      "items_unique": 28,
-      "error": null
+      "success": false,
+      "items_total": 0,
+      "items_unique": 0,
+      "error": "No articles found in HTML"
     },
     {
       "feed": "GN: 自动驾驶机器人",
-      "success": true,
-      "items_total": 30,
-      "items_unique": 29,
-      "error": null
+      "success": false,
+      "items_total": 0,
+      "items_unique": 0,
+      "error": "No articles found in HTML"
+    },
+    {
+      "feed": "GN: 机械臂",
+      "success": false,
+      "items_total": 0,
+      "items_unique": 0,
+      "error": "No articles found in HTML"
+    },
+    {
+      "feed": "GN: 工业机器人与人",
+      "success": false,
+      "items_total": 0,
+      "items_unique": 0,
+      "error": "No articles found in HTML"
     },
     {
       "feed": "GN: 服务机器人",
-      "success": true,
-      "items_total": 30,
-      "items_unique": 29,
-      "error": null
+      "success": false,
+      "items_total": 0,
+      "items_unique": 0,
+      "error": "No articles found in HTML"
+    },
+    {
+      "feed": "GN: 人形机器人融资",
+      "success": false,
+      "items_total": 0,
+      "items_unique": 0,
+      "error": "No articles found in HTML"
     }
   ],
   "summary": {
     "total_feeds": 10,
-    "successful_feeds": 57,
-    "failed_feeds": 1,
-    "total_items": 854,
-    "deduplicated": 92,
-    "noise_filtered": 21,
+    "successful_feeds": 13,
+    "failed_feeds": 45,
+    "total_items": 0,
+    "deduplicated": 0,
+    "noise_filtered": 0,
     "short_filtered": 0
   }
 }

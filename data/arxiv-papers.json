@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-25T23:59:15.621290+00:00",
-  "total_items": 10,
+  "generated_at": "2026-08-26T00:45:24.345724+00:00",
+  "total_items": 9,
   "items": [
     {
       "id": "http://arxiv.org/abs/2608.23486v1",
@@ -91,16 +91,6 @@
       "category": "cs.RO",
       "published_at": "2026-08-24T12:55:30+00:00",
       "updated_at": "2026-08-24T12:55:30Z"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.23163v1",
-      "title": "Spinning Quadrotor: Hover Thrust Augmentation with Passive Lifting Surfaces",
-      "url": "https://arxiv.org/abs/2608.23163",
-      "summary": "Conventional multirotor aerial vehicles actively suppress yaw rotation during hover, expending power to maintain a fixed heading despite the fact that yaw regulation is not required for force balance or altitude control. This paper challenges that paradigm by proposing a spinning quadrotor architecture that intentionally operates at a sustained yaw rate, converting power traditionally spent on yaw regulation into useful aerodynamic effects. A dynamic model of the spinning quadrotor is developed, analysis for low Re range is conducted to choose an airfoil for lifting surfaces. Preliminary hardware tests show a 22% reduction in thrust required. These findings suggest that intentional yaw rotation, rather than being suppressed, can be exploited as a design mechanism for efficient and robust multirotor flight.",
-      "authors": "Aniketh Parkala, Harikumar Kandath",
-      "category": "cs.RO",
-      "published_at": "2026-08-24T12:11:01+00:00",
-      "updated_at": "2026-08-24T12:11:01Z"
     }
   ]
 }
