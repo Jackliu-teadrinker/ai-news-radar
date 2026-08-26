@@ -1,9 +1,30 @@
 {
-  "generated_at": "2026-08-26T11:56:23.799002+00:00",
+  "generated_at": "2026-08-26T12:37:27.948044+00:00",
   "window_start": "2026-08-26T19:00:00+08:00",
-  "window_end": "2026-08-26T19:56:23.795036+08:00",
-  "total_items": 2,
+  "window_end": "2026-08-26T20:37:07.920552+08:00",
+  "total_items": 3,
   "items": [
+    {
+      "id": "e3eb950cbed7e34ca25e4a50337296f5134479ff",
+      "title": "Hand in hand - Robotics Tomorrow",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE14SWs2Y1lESDExYVlyYTByVHozUEFWb2pqQ3JPNk1SWUJ1VTNjbXpURXQ3aHk2MXJ3RTlJTFRHWlgxbmNWeXl1c1BLRWFxOEh4QWJVWS03Y2YzSzJnY3FTVUdGaU5mWEdCWnZUQkxEZ0dnbGJvNnc?oc=5",
+      "published_at": "2026-08-26T12:30:50+00:00",
+      "category": "GN: industrial robot",
+      "gn_label": "robotics",
+      "site_name": "GN: industrial robot",
+      "source": "GN: industrial robot",
+      "site_id": "GN: industrial robot",
+      "description": "Hand in hand  Robotics Tomorrow",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.9,
+      "writing_value": 0,
+      "total_score": 104.9
+    },
     {
       "id": "923c4baa27d53c527aac359081de9bbf015903af",
       "title": "资本竞逐、技术博弈 灵巧手赛道风起云涌 - 搜狐网",
@@ -21,9 +42,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.56,
+      "timeliness": 28.88,
       "writing_value": 0,
-      "total_score": 104.56
+      "total_score": 103.88
     },
     {
       "id": "6bbef5eaf3b8621b3153db18c548e19a7b382737",
@@ -42,9 +63,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.21,
+      "timeliness": 28.53,
       "writing_value": 0,
-      "total_score": 104.21
+      "total_score": 103.53
     }
   ],
   "fallback_used": false
