@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-26T18:23:08.789938+00:00",
-  "total_items": 21,
+  "generated_at": "2026-08-26T20:35:45.987006+00:00",
+  "total_items": 15,
   "items": [
     {
       "id": "http://arxiv.org/abs/2608.24885v1",
@@ -151,66 +151,6 @@
       "category": "cs.RO",
       "published_at": "2026-08-25T08:45:32+00:00",
       "updated_at": "2026-08-25T08:45:32Z"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.24223v1",
-      "title": "Event-Based Motion Estimation via Oriented Distance Fields",
-      "url": "https://arxiv.org/abs/2608.24223",
-      "summary": "Event-based motion estimation is central to tasks that demand high temporal resolution and robustness to fast motion. Existing methods typically rely on iterative optimization or repeated hypothesis comparison, offsetting the sensor's low-latency advantage. We propose Oriented Distance Field Motion Estimation (ODF Motion Estimation), which replaces this optimization with a single averaging step over a precomputed field of event distance vectors, combined with an adaptive event-count selection strategy and a parameter-free trail filter. On public and self-collected datasets, ODF motion estimation reaches sub-pixel accuracy at the lowest latency among compared methods. We validate its generality on two downstream applications rather than treating them as separate contributions. First, the estimated trajectory is converted into a blur kernel and paired with a compact iterative-unfolding network, trained on simulated motion-estimation noise, for real-time non-blind image deblurring, attaining competitive or superior PSNR/SSIM with under 1M parameters. Second, the same precomputed field is repurposed for directional event filtering in a low-power asynchronous pupil and glint tracker, sustaining stable tracking for tens of seconds while lowering a near-eye module's power draw.",
-      "authors": "Lei Sun, Yuqin Ma, Weilun Li et al.",
-      "category": "cs.CV",
-      "published_at": "2026-08-25T08:27:42+00:00",
-      "updated_at": "2026-08-25T08:27:42Z"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.24217v1",
-      "title": "CARO: Contact-Agnostic Residual Observation for Zero-Shot Robust Quadruped Locomotion",
-      "url": "https://arxiv.org/abs/2608.24217",
-      "summary": "We propose CARO, a contact-agnostic residual observation framework for policy adaptation. CARO embeds a fixed-base Euler--Lagrange model into the reinforcement learning control loop and constructs a torque-level residual observation without requiring torque sensors, explicit contact estimation, or vision-based measurements of the floating-base position and linear velocity. A disturbance observer extracts a structured signal representing dynamics mismatch, while the policy learns to exploit this feedback for online adaptation. CARO is trained under the same terrain, command, and domain-randomization conditions as the nominal policy, without specialized disturbance curricula or additional adaptation supervision. Nevertheless, it achieves substantially improved zero-shot robustness in simulation and sim-to-real transfer tasks involving out-of-distribution payloads, center-of-mass shifts, terrain geometries, abrupt dynamics changes, and elevated-platform landings.",
-      "authors": "Zihan Yang, Shixuan Han, Kexin Guo et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-25T08:23:24+00:00",
-      "updated_at": "2026-08-25T08:23:24Z"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.24199v1",
-      "title": "NVIDIA Cosmos-H-Dreams: Real-Time Generative Physics Simulation for Surgical Robotics",
-      "url": "https://arxiv.org/abs/2608.24199",
-      "summary": "Generative simulation for surgical robotics still lacks real-time interaction. Physical-robot experiments, often involving animal or cadaver labs, are time-consuming, costly, and difficult to reproduce, while classical simulators struggle to capture photorealistic appearance and deformable-tissue dynamics. We address this gap with Cosmos-H-Dreams, an integrated real-time surgical world-model system combining an action-conditioned generative model, a teacher-to-student distillation recipe, and a deployment stack built on the NVIDIA FlashDreams streaming-inference library. Starting from Cosmos-H-Surgical-Simulator, a multi-embodiment action-conditioned surgical video world model fine-tuned on the large-scale Open-H-Embodiment corpus, we post-train this checkpoint on embodiment- and procedure-specific data. By distilling the resulting bidirectional teacher into a causal, few-step student with Self Forcing, we turn a passive video generator into a controllable surgical simulator that streams at $\\sim$160 inference FPS on a single NVIDIA RTX PRO 6000 Blackwell workstation GPU. Crucially, Cosmos-H-Dreams is controller-agnostic: any interface that emits a stream of robot kinematics can drive it. We demonstrate live control through a browser keyboard over WebRTC, a Meta Quest headset over WebXR, a commercial surgical robot console such as CMR Surgical's Versius, and learned policies operating in closed loop. To our knowledge, this is the first interactive surgical world model supporting live human and policy control. Human operators and policies alike can act inside the synthesized world and observe the consequences in real time. We release Cosmos-H-Dreams as an open surgical simulation system, providing a common foundation for surgical education, scalable synthetic data generation, and future intraoperative decision support.",
-      "authors": "Javier Gamazo Tejero, Lukas Zbinden, Keyur Sheth et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-25T08:09:40+00:00",
-      "updated_at": "2026-08-25T08:09:40Z"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.24162v1",
-      "title": "Robust Slip Detection and Material Classification via Spatiotemporal Transformers on a Uniformly-Illuminated Visuo-Tactile Sensor",
-      "url": "https://arxiv.org/abs/2608.24162",
-      "summary": "Tactile sensing is central to robotic manipulation, among which slip detection stands out as a quintessential and critical task. However, existing slip datasets are predominantly limited to binary classification, lacking fine-grained directional perception. To address this limitation, we propose a visuo-tactile sensor featuring customized uniform RGB illumination, alongside a unified perception framework. At the hardware level, the sensor achieves high-precision, sub-millimeter depth reconstruction. Based on this capability, we collect a multi-task visuo-tactile dataset encompassing 15 objects, synchronously generating depth information for each data sample. Algorithmically, we design a dual-head TimeSformer network to process dynamic spatiotemporal slip. On unseen objects, this network achieves robust accuracies of 95.5% and 91.5% for 3-class contact state prediction and fine-grained 8-class slip direction classification, respectively. Furthermore, static tactile-based object class recognition utilizing a ResNet-50 backbone yields an outstanding accuracy of 98.8% across 15 categories. The proposed hardware-software framework provides high-fidelity feedback and a powerful multi-modal perception baseline for complex robotic manipulation.",
-      "authors": "Ziyang Ma, Yuhao Sun, Zichen Ai et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-25T07:25:27+00:00",
-      "updated_at": "2026-08-25T07:25:27Z"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.24155v1",
-      "title": "Coverage Planning for Robotic Tooth Preparation in Densely Constrained Environments",
-      "url": "https://arxiv.org/abs/2608.24155",
-      "summary": "Tooth preparation refers to the controlled removal of tooth structure to create an optimal substrate for fixed restorations and is a core procedure in restorative dentistry. Automating this task is particularly challenging for robots because the dental bur must operate within a densely constrained intraoral workspace, where even sub-millimeter deviations can compromise outcomes or damage adjacent structures. This paper presents a novel robotic system for autonomous full-crown tooth preparation. The proposed framework includes: 1) an anatomy-aware toolpath planning algorithm that conforms precisely to a technician-designed preparation model while protecting adjacent teeth, and 2) a clearance-oriented end-effector yaw assignment strategy that allows intraoral access while reducing the risk of soft-tissue interference. Together, these features enable the robot to accurately mill the irregular tooth surface with an average geometric deviation of 0.117 mm (RMSE), achieving both restoration quality and clinical safety. A series of simulations and phantom-head experiments validate the system's feasibility and effectiveness.",
-      "authors": "Yunwen Li, Chen Chen, Xiangjie Yan et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-25T07:16:53+00:00",
-      "updated_at": "2026-08-25T07:16:53Z"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.24115v1",
-      "title": "PonderPounce: A Pretrained MLLM as an Episode Context Engine for Robot Control",
-      "url": "https://arxiv.org/abs/2608.24115",
-      "summary": "Multimodal large language models (MLLMs) can integrate long visual histories, reason under partial observability, and infer behavior from a few examples. Yet vision-language-action (VLA) models generally inherit pretrained representations without using this contextual capacity as episode memory. Memory-dependent policies address this gap through purpose-built history mechanisms. PonderPounce instead reuses an MLLM's native causal context as robot memory. Ponder, a System2 MLLM, accumulates episode observations, demonstrations, and prior cognition in its native causal context and can generate subgoal text and demonstration reasoning for internal use. Pounce, a System1 VLA, receives the current observation, instruction, and proprioception directly; through the Ponder--Pounce interface, it asynchronously receives only the newest continuous cognition token and its age. Both are jointly trained end to end without a purpose-built memory module or separate bridge pretraining. Optimized serving achieves p50 latencies of 78ms for cognition refresh and 25ms for action-model invocation, supporting 20Hz action playback. On RoboMME with base-scale training data, PonderPounce reaches 60.83% with 9B and 50.04% with 0.8B under the same Pounce architecture and interface, versus 44.51% for FrameSamp+Modul and 17.93% for the current-observation π_{0.5}. With 9x data, it reaches 75.54% versus 57.88% for FrameSamp+Modul. On RoboCasa-DC, the same interface learns from action supervision alone and reaches 12.5% versus 11.6% for the strongest published demonstration-conditioned baseline, falling to 8.6% when cognition is replaced by a learned null state.",
-      "authors": "Suhwan Choi, Jaeyoon Jung, Sungkyung Kim et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-25T06:24:36+00:00",
-      "updated_at": "2026-08-25T06:24:36Z"
     }
   ]
 }
