@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-26T16:20:35.745586+00:00",
-  "total_items": 24,
+  "generated_at": "2026-08-26T18:23:08.789938+00:00",
+  "total_items": 21,
   "items": [
     {
       "id": "http://arxiv.org/abs/2608.24885v1",
@@ -211,36 +211,6 @@
       "category": "cs.RO",
       "published_at": "2026-08-25T06:24:36+00:00",
       "updated_at": "2026-08-25T06:24:36Z"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.24111v1",
-      "title": "Trajectory-Level Continuous Action Representation for Robotic Manipulation",
-      "url": "https://arxiv.org/abs/2608.24111",
-      "summary": "We propose CAT, a trajectory-level continuous action representation framework for robotic manipulation. Existing visuomotor systems often entangle action representation with control frequency or rely on fixed temporal parameterizations. This leads to representational redundancy at high sampling rates and limits the modeling of critical motion. CAT instead encodes action trajectories within a fixed real-time interval into a set of continuous latent tokens. To ensure temporal consistency across varying control frequencies, we further incorporate a frequency-aware positional encoding that establishs a shared temporal coordinate system. Trajectory-level regularization further stabilizes the latent representation. This approach prevents representation growth with timestep density and avoids reliance on predefined temporal parameterizations. Extensive system-level evaluations on LIBERO, MimicGen, and real-world long-horizon manipulation tasks demonstrate that CAT-based policies consistently outperform both competitive VQ-based and continuous visuomotor baselines under matched training settings. Across various model backbones and control frequencies, CAT consistently improves success rates. These results highlight the advantages of trajectory-level continuous action modeling for scalable robotic manipulation across varying control rates.",
-      "authors": "Tong Yang, Jingkai Jia, Yuecheng Xu et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-25T06:19:00+00:00",
-      "updated_at": "2026-08-25T06:19:00Z"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.24101v1",
-      "title": "TrAct: Bridging Robot Control and Visual Prediction with Visual Tracks",
-      "url": "https://arxiv.org/abs/2608.24101",
-      "summary": "Robot actions are inherently embodiment-specific and only weakly aligned with image-space visual changes, limiting their effectiveness as conditioning signals for robot world models. In contrast, visual tracks provide an embodiment-agnostic representation of how task-relevant points move through a scene, offering dense image-space guidance for accurate and spatially precise future video prediction. Building on this observation, we propose TrAct, a world-model-based robot decision-making framework that uses visual tracks as an intermediate interface between control and prediction. TrAct consists of three components: a Vision-Language-Action-and-Track model (VLAT) that jointly predicts candidate actions and corresponding visual tracks from the current observation and language instruction; a track-conditioned world model (TWM) that predicts future visual outcomes conditioned on the proposed tracks; and a vision-language reward model (VLAC) that scores the predicted outcomes. At inference time, VLAT generates candidate action-track pairs, TWM rolls out their visual consequences, and VLAC selects the track whose predicted outcome best satisfies the instruction; the action paired with the selected track is then executed by the robot. Experiments on the proposed LIBERO-INTEGRAL benchmark and real-world Franka manipulation show that TrAct improves success rates from 27% to 55% in simulation and from 49% to 76% on real-world tasks compared with the strong VLA baseline $π_{0.5}$. Furthermore, TWM consistently improves video prediction quality over the action-conditioned world model (AWM). These results demonstrate that visual tracks provide an effective shared interface between robot control and visual prediction, enabling more accurate world modeling and stronger robot generalization.",
-      "authors": "Zhi Cao, Howard Ji, Kevin Zhang et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-25T06:00:01+00:00",
-      "updated_at": "2026-08-25T06:00:01Z"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.24094v1",
-      "title": "SIREN-Bench: Behavior-Driven Generation and Evaluation of Emergency-Vehicle Interactions",
-      "url": "https://arxiv.org/abs/2608.24094",
-      "summary": "Emergency vehicles (EMVs) can reorganize surrounding traffic as civilian vehicles brake, change lanes, or form rescue corridors in response to their passage. Evaluating these safety-critical interactions requires behavior-level control over both EMV privileges and civilian responses, together with consistent sensing and ground truth. Existing datasets and simulation benchmarks do not directly provide this combination. We present \\textbf{SIREN}, a behavior-driven SUMO--CARLA co-simulation platform for generating EMV--civilian interactions. SIREN couples SUMO's network-level traffic evolution and behavior logic with CARLA's continuous vehicle control and synchronized onboard sensing; depending on the active behavior, the interaction is controlled by SUMO, CARLA, or jointly. We instantiate the platform as \\textbf{SIREN-Bench-v1}, comprising seven parameterized interaction templates across emergency levels L1--L3 and three behavior families, with synchronized sensor observations and simulator-native annotations. We demonstrate the benchmark through three representative tasks: 3D object detection, trajectory prediction, and vision-language risk understanding. Evaluations of nine trajectory predictors, four LiDAR-based detectors, and five vision-language models reveal behavior-dependent failure modes. Traffic-clearance interactions are hardest for detection, privileged intersection traversal is hardest for prediction, and no learned predictor outperforms the constant-velocity reference on average. Vision-language models perform substantially better on normal traffic than on near-miss and collision events. These results demonstrate the value of behavior-centered benchmarking and establish SIREN as an extensible data-generation and evaluation platform for autonomous-driving and transportation safety research.",
-      "authors": "Yicheng Zhu, Tianmu Zhao, Haoxin Leng et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-25T05:41:34+00:00",
-      "updated_at": "2026-08-25T05:41:34Z"
     }
   ]
 }
