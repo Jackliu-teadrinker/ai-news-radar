@@ -1,9 +1,30 @@
 {
-  "generated_at": "2026-08-26T11:29:20.811538+00:00",
+  "generated_at": "2026-08-26T11:56:23.799002+00:00",
   "window_start": "2026-08-26T19:00:00+08:00",
-  "window_end": "2026-08-26T19:29:20.808968+08:00",
-  "total_items": 1,
+  "window_end": "2026-08-26T19:56:23.795036+08:00",
+  "total_items": 2,
   "items": [
+    {
+      "id": "923c4baa27d53c527aac359081de9bbf015903af",
+      "title": "资本竞逐、技术博弈 灵巧手赛道风起云涌 - 搜狐网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNbmxKb21JcHNLMGlkQllSY0sxcFY5ZmVTZTl1SmxLanVsbkotelI5TjZ5MUpPUXh1RkNaVXVNRDlNLTUwTVZmU2kwaEU3YVJPYXhXdDkxWHg3aHBYRDhFMGRKR3U0MUhzeTM1OFdYd1k2Und3Vi0zQTZrb1YzUWxBNm5IRDR4TXN5?oc=5",
+      "published_at": "2026-08-26T11:29:55+00:00",
+      "category": "GN: 灵巧手",
+      "gn_label": "robotics",
+      "site_name": "GN: 灵巧手",
+      "source": "GN: 灵巧手",
+      "site_id": "GN: 灵巧手",
+      "description": "资本竞逐、技术博弈 灵巧手赛道风起云涌  搜狐网",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.56,
+      "writing_value": 0,
+      "total_score": 104.56
+    },
     {
       "id": "6bbef5eaf3b8621b3153db18c548e19a7b382737",
       "title": "灵巧手比拼0.1毫米的精细 - 凤凰网科技",
@@ -21,9 +42,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.66,
+      "timeliness": 29.21,
       "writing_value": 0,
-      "total_score": 104.66
+      "total_score": 104.21
     }
   ],
   "fallback_used": false
