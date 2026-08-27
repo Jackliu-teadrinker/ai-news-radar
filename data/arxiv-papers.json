@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-26T20:35:45.987006+00:00",
-  "total_items": 15,
+  "generated_at": "2026-08-27T00:06:09.041982+00:00",
+  "total_items": 12,
   "items": [
     {
       "id": "http://arxiv.org/abs/2608.24885v1",
@@ -121,36 +121,6 @@
       "category": "cs.RO",
       "published_at": "2026-08-25T12:33:14+00:00",
       "updated_at": "2026-08-25T12:33:14Z"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.24366v1",
-      "title": "Variance-Guided Spatial Attention Fusion for Robust End-to-End Driving under Asymmetric Sensor Degradation",
-      "url": "https://arxiv.org/abs/2608.24366",
-      "summary": "End-to-end multimodal driving has progressed rapidly by fusing camera and LiDAR streams. Existing pipelines remain fragile under asymmetric sensor degradation, where either an entire modality or only a localized region is corrupted while other regions remain useful. The key difficulty is not simply to add an uncertainty head, but to obtain dense reliability supervision, calibrate this reliability against physical fault severity, and use it before unreliable features bias the planner. We propose Variance-Guided Spatial Attention Fusion (VG-SAF), in which dense heteroscedastic reliability estimates act as interpretable spatial gates. The framework couples three components. First, a physically grounded augmentor simulates representative camera and LiDAR failures and emits a continuous spatial mask, providing dense supervision without additional annotation. Second, modality-specific experts predict per-pixel reliability scales through cross-branch dense distillation in log space, enforcing a monotone severity-to-scale response. Third, calibrated reliability maps drive a hybrid attention mechanism that suppresses unreliable cells with a local spatial gate and arbitrates between modalities through a cross-modal trust softmax. A Laplace uncertainty head emits a systemic waypoint uncertainty scale that signals severe or combined sensor degradation, including severities outside the training ranges. On the CARLA Longest6 benchmark, VG-SAF consistently improves closed-loop robustness over the baselines across camera-only, LiDAR-only, and joint degradation regimes, as measured by driving score, route completion, and infraction score.",
-      "authors": "Weizhi Tao, Zengwang Jin, Xiao Wang et al.",
-      "category": "cs.CV",
-      "published_at": "2026-08-25T10:27:02+00:00",
-      "updated_at": "2026-08-25T10:27:02Z"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.24282v1",
-      "title": "CARE: Camera-Residual Reserves for First Sightings in Adaptive LiDAR Sensing",
-      "url": "https://arxiv.org/abs/2608.24282",
-      "summary": "Adaptive LiDAR scanning concentrates a limited sensing budget on regions of interest predicted from past object tracks, lowering data volume in autonomous driving while maintaining detection accuracy. However, existing scanning policies face three challenges. First, history-driven approaches depend on past tracks, so unseen objects are detected late or missed. Second, random or uniform sampling outside the predicted regions has no awareness of where new objects appear. Third, camera-guided alternatives spend budget on all camera detections, resampling objects already covered, costing recall in crowded scenes and range when budgets are scarce. This paper introduces the CAmera-REsidual reserve (CARE), a training-free allocation rule that reserves part of a fixed ray budget for the directions of current camera detections that the track forecasts cannot explain; the rest follows the base history policy, and unused reserve returns to a random floor. The paper makes three contributions. First, a leakage-free ray-budget evaluation on nuScenes (150 scenes, 4,148 events) measuring the first-sighting loss of history-driven scanning, with a strict-causal variant using the preceding keyframe. Second, CARE raises first-sighting recall by 5.2, 5.2, and 4.3 points at 10%, 20%, and 35% budgets over the history policy, with paired intervals excluding zero; the camera cue drives this gain, and the first-sighting versus overall trade-off is a budget-dependent Pareto choice. Third, a safety-bounded forgetting module that releases budget from receding or static tracks beyond a speed-dependent guard distance; at tight budgets, forgetting without the guard significantly harms near-field recall, so the guard is what keeps it safe. The pipeline runs end to end on a real vehicle and, in closed-loop simulation, detects an occluded pedestrian earlier and brakes more reliably than history-driven scanning.",
-      "authors": "Jiachen Gong, Yun Li, Ehsan Javanmardi et al.",
-      "category": "cs.CV",
-      "published_at": "2026-08-25T09:06:23+00:00",
-      "updated_at": "2026-08-25T09:06:23Z"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.24242v1",
-      "title": "A Durable Vision-Based Tactile Fingertip for Robotic Manipulation",
-      "url": "https://arxiv.org/abs/2608.24242",
-      "summary": "Currently available commercial vision-based tactile sensors provide rich contact information but remain vulnerable to abrasion and repeated concentrated loading, limiting their use in demanding robotic applications. This work presents a durable tactile fingertip comprising a soft silicone gel with a nonpigmented, textured, thin thermoplastic-polyurethane protective film and a replaceable sensing cartridge. Durability was evaluated using two accelerated laboratory procedures: a rotating-drum sanding test and a repetitive probe test applying 39.2 N (4.0 kgf) at 45 cycles per minute. Under the defined sanding conditions, the developed sensor reached the protective-film rupture endpoint after approximately 2-3 hours. During repetitive probe testing, all nine developed sensors remained functionally usable when testing was discontinued: seven after 5 days, one after 6 days, and one after 8 days. Commercial GelSight Mini and DIGIT specimens exhibited initial surface-film rupture after approximately 24-30 seconds of sanding and 25-35 minutes of repetitive loading. Damage to the developed sensor progressed gradually and produced little interference with tactile imaging at the test endpoints. These observations establish durability improvements of more than two orders of magnitude under the defined accelerated conditions. Combining increased durability, gradual degradation, and rapid cartridge replacement offers a practical approach to maintainable vision-based tactile sensing for demanding robotic applications.",
-      "authors": "F. Richard Cottrell, Megha H. Tippur, Edward H. Adelson",
-      "category": "cs.RO",
-      "published_at": "2026-08-25T08:45:32+00:00",
-      "updated_at": "2026-08-25T08:45:32Z"
     }
   ]
 }
