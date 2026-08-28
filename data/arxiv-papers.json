@@ -1,7 +1,84 @@
 {
-  "generated_at": "2026-08-28T01:35:32.575324+00:00",
+  "generated_at": "2026-08-28T05:00:35.267939+00:00",
   "total_items": 30,
   "items": [
+    {
+      "id": "http://arxiv.org/abs/2608.27406v1",
+      "title": "CLAP: Cross-Embodiment Video World Models are Zero-Shot Physical Simulators",
+      "url": "https://arxiv.org/abs/2608.27406",
+      "summary": "State-of-the-art action-conditioned video models are typically restricted to a single robot embodiment, preventing them from leveraging the vast corpus of heterogeneous video data that contains rich signals for learning generalizable physics. To bridge this gap, we introduce CLAP, a framework for cross-embodiment action-conditioned video generation capable of being trained on diverse, internet-scale videos across human and robotic agents. CLAP is grounded in the insight that universal physical laws govern spatiotemporal dynamics regardless of the actor. However, cross-embodiment learning is non-trivial because action representations vary sharply across robot platforms and are typically absent in human videos. CLAP addresses this fundamental challenge through the following core contributions. First, CLAP reconciles disparate action spaces using end-effector poses, language instructions, and latent actions. Second, to resolve their individual limitations, CLAP introduces a curriculum-based cross-embodiment learning recipe that first learns foundational physical priors across unlabeled video data using latent actions and subsequently grounds them in end-effector action spaces for zero-shot deployment to real-world tasks. Crucially, CLAP approaches or surpasses state-of-the-art single-embodiment video models in challenging environments like DROID. These performance advantages compound via few-shot adaptation to establish a novel paradigm for training single-embodiment video world models. Ultimately, CLAP delivers the most comprehensive suite of action-conditioned video world models to date - spanning diverse action-conditioning spaces (end-effector, language, and latent) and robot morphologies (including cross-embodiment, DROID, Bridge, bimanual YAM robots, and G1 humanoids). We open-source all code and models. Project Website at https://omni-clap.github.io .",
+      "authors": "Kechen Liu, Ola Shorinwa",
+      "category": "cs.RO",
+      "published_at": "2026-08-27T17:35:10+00:00",
+      "updated_at": "2026-08-27T17:35:10Z",
+      "title_zh": "CLAP：跨实施例视频世界模型是零镜头物理模拟器"
+    },
+    {
+      "id": "http://arxiv.org/abs/2608.27384v1",
+      "title": "FlashVLA: Streaming Action Decoding for Fast and Asynchronous VLA Inference",
+      "url": "https://arxiv.org/abs/2608.27384",
+      "summary": "Vision-Language-Action (VLA) models are increasingly promising for robotic manipulation, yet their real-world deployment remains bottlenecked by high inference latency and unstable asynchronous execution. This challenge is particularly pronounced in flow-matching-based VLA models, where action decoding requires multiple iterative steps conditioned on the VLM context. While efficient inference methods improve control frequency and asynchronous methods reduce execution idle time, existing approaches often fail to jointly achieve low-latency inference and accurate, temporally consistent asynchronous execution. We introduce \\textbf{FlashVLA}, a streaming action decoding framework that addresses both challenges in a unified formulation. FlashVLA maintains a streaming action buffer with multiple chunks at different noise levels and decodes them using chunk-wise causal attention. This design allows FlashVLA to produce one executable action chunk per inference step. Moreover, its chunk-wise autoregressive formulation implicitly preserves action continuity, enabling smooth asynchronous execution without extra future-state conditioning. Across extensive simulated and real-world experiments, FlashVLA substantially improves inference speed while maintaining strong task performance. It can achieve $\\geq$30\\,Hz control frequency on a single GPU with smooth asynchronous inference in real-world deployment.",
+      "authors": "Zekai Li, Jiaming Tang, Zhijian Liu",
+      "category": "cs.RO",
+      "published_at": "2026-08-27T17:19:29+00:00",
+      "updated_at": "2026-08-27T17:19:29Z",
+      "title_zh": "FlashVLA：用于快速异步 VLA 推理的流式操作解码"
+    },
+    {
+      "id": "http://arxiv.org/abs/2608.27371v1",
+      "title": "Embodied Scene Rearrangement Planning",
+      "url": "https://arxiv.org/abs/2608.27371",
+      "summary": "This paper introduces Embodied Scene Rearrangement Planning (ESRP), a novel task requiring embodied agents to rearrange furniture in 3D scenes to match a target configuration using only egocentric observations and a top-down target layout. Unlike prior rearrangement tasks, ESRP precludes global state access and introduces mutual object occlusions, reflecting the practical constraints of real-world robotic deployment. These factors make aligning partial egocentric observations with the global target layout particularly challenging for long-horizon planning. To facilitate research, we present ESRP-Bench, a comprehensive benchmark built on OmniGibson featuring over 5,400 scene pairs and 8,200 objects. We define three multi-level metrics to evaluate rearrangement quality and provide four baselines: a hierarchical task-and-motion planning method, a vision-language-model-based method, and two learning-based approaches (IL and RL). Experimental results demonstrate that current methods struggle to complete the task efficiently, highlighting ESRP as a challenging frontier for embodied agents in scene understanding and long-horizon task planning. This work serves as a stepping stone toward deploying intelligent agents in real-world scenarios. Project page: https://pie-lab.cn/ESRP/.",
+      "authors": "Canzhi Chen, Zan Wang, Siqi Zhu et al.",
+      "category": "cs.RO",
+      "published_at": "2026-08-27T17:08:40+00:00",
+      "updated_at": "2026-08-27T17:08:40Z",
+      "title_zh": "具身场景重排策划"
+    },
+    {
+      "id": "http://arxiv.org/abs/2608.27282v1",
+      "title": "TADP: Task-Aware Deformable Prediction for Single-Stage 3D Object Detection",
+      "url": "https://arxiv.org/abs/2608.27282",
+      "summary": "Most single-stage 3D object detectors complete different tasks with the same extracted features. Nevertheless, it is impossible to project features into a common space that is adaptive for all the tasks. We present a novel task-aware deformable prediction (TADP) method for single-stage 3D object detection to solve this problem. Firstly, a triple feature refinement aggregation module is designed to extract three-level features adaptively. Additionally, we design the multi-scale feature aggregation block to fuse multi-scale features in a scale-aware manner. Finally, the prediction of each task is deformed with the designed plug-and-play task-aware deformation head. It can percept the emphasis and interaction of each task. We also designed three different deformation modules. The experimental results demonstrate that the proposed deformation head shows good results on other detection methods. The experimental results on the KITTI dataset demonstrate that the car mAP is 80.91%, surpassing many state-of-the-art methods on the KITTI benchmark.",
+      "authors": "Su Wang, Yaochen Li, Min Yang et al.",
+      "category": "cs.CV",
+      "published_at": "2026-08-27T15:54:32+00:00",
+      "updated_at": "2026-08-27T15:54:32Z",
+      "title_zh": "TADP：用于单阶段 3D 物体检测的任务感知变形预测"
+    },
+    {
+      "id": "http://arxiv.org/abs/2608.27271v1",
+      "title": "Marine Autonomous Vehicle Fleet Scheduling to Maximise Scientific Impact",
+      "url": "https://arxiv.org/abs/2608.27271",
+      "summary": "The marine science community increasingly relies on Marine Autonomous Vehicles (MAVs) to collect the critical environmental data required to understand global ocean systems. However, as these operations scale, manually routing and planning large autonomous fleets becomes exponentially complex and time-consuming. To address this, we propose a mixed-integer linear programming (MILP) model designed to automate and optimise MAV deployment schedules. The model accounts for strict operational constraints, including battery capacities and time windows for data collection, while aiming to maximise total data collection and minimise both the number of deployed vehicles and their energy consumption. A key novelty of this framework is integrating conventional ship itineraries, allowing MAVs to support vessels with mid-mission battery swapping or accelerated transit between waypoints. Computational experiments demonstrate that the model is highly scalable, solving routing problems for fleets of dozens of MAVs in seconds, and scaling to hundreds of vehicles in only a few minutes. Beyond operational scheduling, the framework serves as a robust simulation tool for evaluating 'what-if' scenarios and analysing the impact of varying parameters on deployment strategies. Finally, the solution generates a suite of visualisations designed to enhance explainability and support strategic decision-making for stakeholders.",
+      "authors": "Mehdi El Krari, Jonathan Smith, Maria Fox",
+      "category": "math.OC",
+      "published_at": "2026-08-27T15:49:49+00:00",
+      "updated_at": "2026-08-27T15:49:49Z",
+      "title_zh": "海洋自主车辆船队调度以最大限度地提高科学影响"
+    },
+    {
+      "id": "http://arxiv.org/abs/2608.27225v1",
+      "title": "STEP: State-Aware Task Estimation and Planning with Multi-Modal LLMs for Human-Robot Collaboration",
+      "url": "https://arxiv.org/abs/2608.27225",
+      "summary": "Effective human-robot collaboration in industrial settings requires robots to understand human intentions and assist with task planning, reducing workload. Recent works have explored the use of Multi-modal Large Language Models (MM-LLMs) for task planning in such data-scarce scenarios, leveraging in-context learning to interpret user actions and generate long-horizon action plans in natural language. However, MM-LLMs inherently lack an understanding of system states and do not track state transitions, often leading to hallucinated actions that deviate from the intended goal. Additionally, generating action plans in natural language tends to limit the generated plans to a high level, introducing ambiguity in action execution. To address these limitations, we propose the State-aware Task Estimator and Planner (STEP), which prompts a MM-LLM to explicitly estimate the state of the system and predict the state transitions resulting from executed actions. By forecasting future states alongside actions, STEP ensures task-convergent planning while also providing additional assistance parameters necessary for executing the predicted actions. We evaluate STEP in a simulated environment using a robot assembly task. Our approach outperforms the state-of-the-art by 32.8% in action executability and 14.8% in final-state error.",
+      "authors": "Maitrey Gramopadhye, Prakash Baskaran, Xiao Liu et al.",
+      "category": "cs.RO",
+      "published_at": "2026-08-27T15:08:36+00:00",
+      "updated_at": "2026-08-27T15:08:36Z",
+      "title_zh": "STEP：利用多模式法学硕士进行人机协作的状态感知任务估计和规划"
+    },
+    {
+      "id": "http://arxiv.org/abs/2608.27221v1",
+      "title": "Tensegrity Continuum Robots Enable Task-Adaptive Morphologies for Cooperative Behaviors",
+      "url": "https://arxiv.org/abs/2608.27221",
+      "summary": "Robots that can change their morphologies and behaviors for different tasks and environments hold great promise for adaptable, multifunctional systems. Modular reconfigurable robots (MRRs) can achieve such functionalities by docking and rearranging individual units, but most rely on rigid modules that lack structural compliance, resulting in limited capabilities. Continuum robots offer compliance through flexible backbones, yet they cannot self-reconfigure into task-adaptive multi-robot configurations. Here, we introduce an MRR that unifies the advantages of both architectures by combining a tensegrity-based compliant body with claw-based connection mechanisms. Each robot can manipulate and locomote independently, and multiple robots can self-reconfigure into different morphologies (e.g., chains, loops, branches) for cooperative manipulation and locomotion. We demonstrate the robots' capability across diverse tasks and environments, including coordinated object manipulation and transport, multimodal locomotion, and loco-manipulation in real-world scenarios. These results lay a foundation for adaptable and multifunctional robotic collectives, with broad potential applications in manufacturing, space exploration, and search-and-rescue operations.",
+      "authors": "Mahmud Hasan Saikot, Sydney Spiegel, Sudheera Akalanka Kariyawasam et al.",
+      "category": "cs.RO",
+      "published_at": "2026-08-27T15:05:30+00:00",
+      "updated_at": "2026-08-27T15:05:30Z",
+      "title_zh": "张拉整体连续体机器人实现任务自适应形态以实现合作行为"
+    },
     {
       "id": "http://arxiv.org/abs/2608.27186v1",
       "title": "Task-space model-based control of pneumatic soft actuators",
@@ -254,83 +331,6 @@
       "published_at": "2026-08-27T07:29:15+00:00",
       "updated_at": "2026-08-27T07:29:15Z",
       "title_zh": "生成语义场景完成"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.26673v1",
-      "title": "PredVLA: A Sub-Million-Parameter Predictive-Coding Policy for Robot Manipulation",
-      "url": "https://arxiv.org/abs/2608.26673",
-      "summary": "Large pretrained vision-language-action models dominate modern robot-manipulation benchmarks, but it remains unclear how much model scale is necessary for strong language-conditioned control, or whether fundamentally different control architectures can remain competitive at much smaller parameter budgets. We present PredVLA, a language-conditioned predictive-coding policy with only 0.68 million trainable network parameters and no robot-data pretraining, whose hierarchical generative recurrent dynamics predict visual features and proprioception while observations influence latent state only through online inference from the resulting sensory prediction errors. On LIBERO, PredVLA achieves an 86.9% mean success rate across the three short-horizon suites and 75.4% when the long-horizon suite is included. Under a controlled comparison using the same frozen front end, demonstrations, action decoder, and evaluation protocol, PredVLA achieves 3.7x and 7.4x mean success rates of parameter-matched Transformer and LSTM policies, respectively. The predictive-coding formulation also makes the contribution of observation-driven correction directly measurable: because observations influence the recurrent state only through prediction-error-based latent inference, disabling this inference yields an exact open-loop control condition. Together, these results show that a sub-million-parameter recurrent generative policy can achieve strong performance on modern language-conditioned manipulation benchmarks while providing an explicit mechanism for prediction-error-driven online state correction.",
-      "authors": "Hiroki Sawada, Shunichi Kasahara",
-      "category": "cs.RO",
-      "published_at": "2026-08-27T06:27:11+00:00",
-      "updated_at": "2026-08-27T06:27:11Z",
-      "title_zh": "PredVLA：用于机器人操作的百万参数预测编码策略"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.26669v1",
-      "title": "Beyond the Proving Ground: Independent Public-Road Testing of Assisted Lane Change Systems using LiDAR",
-      "url": "https://arxiv.org/abs/2608.26669",
-      "summary": "Testing of commercial Advanced Driver Assistance Systems is essential to ensure safety and compliance during type approval and in service operation. However, proving ground scenarios may not reflect real world driving complexity, while geo fencing can require manufacturer collaboration and limit assessment independence. This work presents a methodology for independently testing Assisted Lane Change systems on public roads. A campaign on the A31 French motorway used a test vehicle equipped with a LiDAR based vehicle detection and tracking system. Tests covered combinations of inter vehicle distance and speed between the test vehicle and the take over vehicle. Real time kinematic global navigation satellite system receivers assessed detection and tracking performance. Recorded lane change trajectories were compared with the lane change suppression requirements of UNECE Regulation Number 79. Of 27 predefined lane change manoeuvres, 18 were completed and 9 suppressed. In 6 cases, the system allowed manoeuvres that did not meet regulatory minimum distance requirements. In 3 cases, the deviation remained statistically significant after accounting for measurement uncertainty. To the authors knowledge, this is the first public road campaign designed to assess Assisted Lane Change compliance with Regulation Number 79 safety distance requirements. The results demonstrate the suitability of LiDAR based sensing for this purpose. The methodology can support market surveillance and future regulatory revisions by revealing real world behaviours not covered by approval procedures.",
-      "authors": "Marcello Cellina, Akos Kriston, Antonio Migneco et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-27T06:24:14+00:00",
-      "updated_at": "2026-08-27T06:24:14Z",
-      "title_zh": "超越试验场：使用激光雷达对辅助变道系统进行独立公共道路测试"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.26645v1",
-      "title": "FLARE: A Failure-Aware Framework for Autonomous Correction and Recovery in Visual-Language Robotic Manipulation",
-      "url": "https://arxiv.org/abs/2608.26645",
-      "summary": "Vision-Language-Action Models~(VLAs) have demonstrated significant promise in generalizing to complex, long-horizon robotic manipulation tasks. However, their performance remains brittle, as they are typically trained on trajectory-monotonic, failure-free demonstrations. This reliance on ``perfect\" data leaves them unable to recover from common execution errors, such as a missed grasp, a dropped object, or an unexpected collision. In this paper, we propose FLARE, a novel framework that endows VLAs with robust error recovery capabilities through a ``Retry\" and ``Reset\" paradigm. First, we introduce a ``Retry\" mechanism by injecting perturbation and bridging segments that decouple robot pose from environment state into demonstrations, enabling the policy to autonomously handle execution deviations. Second, to address critical, state-breaking (OOD) failures, we introduce a ``Reset\" pipeline. We leverage an MLLM for offline failure analysis to automatically identify OOD states from execution videos. This analysis enables the efficient, targeted collection of a small library of object-centric ``Reset\" skills, which are trained to restore the environment to a task-valid state. Our full framework integrates these learned policies. At inference, an online MLLM monitor arbitrates between task execution and ``Reset\" skills. Experiments on challenging, contact-rich manipulation tasks show our approach significantly improves task success and robustness.",
-      "authors": "Ganlong Zhao, Zijia Tang, Xingping Chen et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-27T05:58:06+00:00",
-      "updated_at": "2026-08-27T05:58:06Z",
-      "title_zh": "FLARE：视觉语言机器人操作中自主纠正和恢复的故障感知框架"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.26622v1",
-      "title": "Relaxation-Aware Multimodal Sensing of Soft Gripper Driven by Structure-Perception-Learning",
-      "url": "https://arxiv.org/abs/2608.26622",
-      "summary": "Achieving stable, sustained grasping with soft robotic hands remains a fundamental challenge. Compliance enables safe and adaptive contact, yet the intrinsic viscoelasticity of soft polymers leads to stress relaxation and a continuous decay of grasping force during holding. Inspired by human grasping, which combines phase-dependent stiffness regulation with continuous sensing and feedback, this paper presents an integrated structure--perception--learning framework. We develop a variable-stiffness soft gripper that uses onboard vision and infrared thermography to track deformation and the temperature field in real time, preserving continuous tracking of the interaction state. To mitigate relaxation-induced force decay, we propose a temperature-coupled viscoelastic force representation, together with a physics-informed learning model, to reconstruct the force trend and provide explicit compensation during holding. Experiments show that, in a 280s force-controlled grasp-and-hold task, the proposed method maintains the desired force with a mean absolute error of 0.066N, outperforming fixed-aperture and instantaneous-only baselines by 80% and 95%, respectively. Overall, the results support a mechanism--AI co-design view: mechanisms shape feasible interactions, while learning compensates remaining uncertainty in viscoelastic dynamics, together enabling stable, sustained grasping.",
-      "authors": "Yanzhe Wang, Hao Wu, Ziyi Zheng et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-27T05:19:02+00:00",
-      "updated_at": "2026-08-27T05:19:02Z",
-      "title_zh": "由结构-感知-学习驱动的软抓手的放松感知多模态传感"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.26583v1",
-      "title": "SOLO: Stable Omni-terrain Long-Horizon Perceptive Humanoid Locomotion",
-      "url": "https://arxiv.org/abs/2608.26583",
-      "summary": "Humans traverse complex terrain over long distances without losing balance, whereas perceptive humanoid policies become fragile as perception and control errors accumulate. We present SOLO, a unified framework addressing two compounding causes of this long-horizon fragility: dense terrain reconstruction smooths action-critical details, and pointwise imitation lacks temporal credit assignment. Its Query Reconstructor (QR) uses Fourier-encoded cell queries to retrieve spatially specific evidence from depth-proprioception tokens, preserving sharp terrain boundaries. Trajectory-Aware MSE (TA-MSE) Distillation adds next-state teacher-student disagreement to the PPO reward, enabling Generalized Advantage Estimation to propagate future disagreement penalties to preceding actions. In simulation, QR reduces height-map L1 error by factors of 3.3-4.0, while TA-MSE surpasses PPO and MSE+PPO in curriculum progression. On stress-test terrains, SOLO achieves 97.5% mean traversal success and 96% stepping-stone success, versus 75.0-75.6% and 0-3% for dense-reconstructor variants. Deployed zero-shot with only a chest-mounted depth camera and proprioception, SOLO completes a continuous 1.5-km outdoor route and an indoor mixed-terrain course. Project page: https://sunpihai-up.github.io/solo/",
-      "authors": "Pihai Sun, Gang Han, Jingkai Sun et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-27T03:49:55+00:00",
-      "updated_at": "2026-08-27T03:49:55Z",
-      "title_zh": "SOLO：稳定的全地形长视野感知人形运动"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.26578v1",
-      "title": "TrapVLA: Trapping Vision-Language-Action Models in Configured Failure Modes",
-      "url": "https://arxiv.org/abs/2608.26578",
-      "summary": "This work introduces Configured Failure Trapping, a novel backdoor attack task against Vision-Language-Action (VLA) models, which aims to activate attacks through stealthy textual triggers and induce configured failure modes. Unlike prior backdoor attacks that treat any task failure as a successful attack, Configured Failure Trapping requires the attacker to control how the robot fails (e.g., causing the robot to grasp with a specified positional offset), making it substantially more challenging and hard to detect. To support the new task, we propose an effective data engine for synthesizing high-quality target trajectories and an automated suite for measuring configured-failure fidelity. Then, based on this foundation, we construct two new benchmarks, namely Trap-LIBERO and Trap-RoboTwin, that instantiate Configured Failure Trapping across four representative failure modes. To address this task, we identify sparse action deviation as a critical challenge and accordingly propose a novel method named TrapVLA, which explicitly learns trigger-induced action residuals to steer the policy toward the configured failure behavior. Extensive experiments across simulation benchmarks and real-world robotic settings show that TrapVLA effectively injects configured failure modes into VLA models while largely preserving performance on clean data. Project page: https://john-liua.github.io/TrapVLA/",
-      "authors": "Jun-Hui Liu, Kun-Yu Lin, Yi-Lin Wei et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-27T03:44:49+00:00",
-      "updated_at": "2026-08-27T03:44:49Z",
-      "title_zh": "TrapVLA：在配置的故障模式中捕获视觉-语言-动作模型"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.26571v1",
-      "title": "Arrive and Survive: Scaling Safe Goal-Conditioned Policy Learning from One-Bit Failure Signals",
-      "url": "https://arxiv.org/abs/2608.26571",
-      "summary": "Contrastive reinforcement learning (CRL) scales effectively in goal-conditioned tasks by casting policy learning into a self-supervised contrastive objective. However, in a failure-terminated Markov decision process, established CRL considers pre-failure future goals only when constructing positive samples, without accounting for the probability mass removed by failure termination. Our theoretical analysis shows that this omission induces a systematic overestimation bias in goal-reaching values. Consequently, near-failure trajectories provide disproportionately strong supervision of success despite retaining little future occupancy. Unsafe actions can thereby be reinforced through catastrophic failure bootstrapping, leading to failed policy learning and unsustainable goal-reaching behaviours. To address this problem, we introduce two minimal yet strong corrections: mass-weighted InfoNCE corrects the overweighting of short surviving futures in critic learning, and a log-survival-mass score restores the missing survival mass in policy optimization. The resulting method, Safe Contrastive Reinforcement Learning (Safe-CRL), requires only the one-bit signal provided by failure termination to scale safe goal-conditioned policy learning. Across twelve failure-prone robot navigation and locomotion tasks, Safe-CRL consistently improves survival and substantially outperforms the Scaling-CRL baseline in goal-reaching performance. Additionally, deep Safe-CRL policies exhibit complex failure-avoidance behaviours. This study completes the CRL theory under failure termination and provides a scalable safe RL framework. The code is available via https://github.com/RomainLITUD/safe-crl.",
-      "authors": "Guopeng Li, Yiyang Duan, Yiru Jiao et al.",
-      "category": "cs.LG",
-      "published_at": "2026-08-27T03:24:56+00:00",
-      "updated_at": "2026-08-27T03:24:56Z",
-      "title_zh": "到达并生存：从一位故障信号中扩展安全目标条件策略学习"
     }
   ]
 }
