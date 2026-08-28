@@ -1,9 +1,30 @@
 {
-  "generated_at": "2026-08-28T11:07:01.541560+00:00",
+  "generated_at": "2026-08-28T11:17:36.306213+00:00",
   "window_start": "2026-08-28T19:00:00+08:00",
-  "window_end": "2026-08-28T19:07:01.313980+08:00",
-  "total_items": 2,
+  "window_end": "2026-08-28T19:17:35.793540+08:00",
+  "total_items": 3,
   "items": [
+    {
+      "id": "1ee1e774f088ba4d72ae9cc4422eca1140125df6",
+      "title": "The Tech Download: BlackBerry lost the phone war. Now it's betting on cars and robots",
+      "title_zh": "技术下载：黑莓输掉了手机大战。现在它把赌注押在汽车和机器人上",
+      "url": "https://www.cnbc.com/2026/08/28/blackberry-cars-robots-tech-download.html",
+      "published_at": "2026-08-28T11:00:01+00:00",
+      "category": "CNBC AI Age",
+      "gn_label": "robotics",
+      "site_name": "CNBC AI Age",
+      "source": "CNBC AI Age",
+      "site_id": "CNBC AI Age",
+      "description": "BlackBerry CEO John Giamatteo joins CNBC's Arjun Kharpal on The Tech Download podcast.",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.71,
+      "writing_value": 0,
+      "total_score": 104.71
+    },
     {
       "id": "f29a73b77aabfdec9b14c1f0897bc8d879a0f533",
       "title": "‘Robot Olympics’ reveal humanoids' rapid progress — but hurdles remain",
