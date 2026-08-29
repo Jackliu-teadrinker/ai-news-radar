@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-29T15:42:04.609651+00:00",
+  "generated_at": "2026-08-29T19:01:14.077289+00:00",
   "window_start": "2026-08-29T19:00:00+08:00",
-  "window_end": "2026-08-29T23:41:44.211693+08:00",
-  "total_items": 3,
+  "window_end": "2026-08-30T03:00:33.163623+08:00",
+  "total_items": 4,
   "items": [
     {
       "id": "d38b951a59834d395d65dddda0d7f672380baede",
@@ -47,6 +47,27 @@
       "total_score": 85.0
     },
     {
+      "id": "376543584ba4b1bccaa09f42c2320e2a30b80c39",
+      "title": "Best robot vacuum deal: Save $700 on Roborock Saros 10R - Mashable",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5iQ2lxN2p3QV9LRV8tS3BsQXJXYXpQaHlvZm9uWjZhSE9WTFVoX3VpMzN4bTNfWVFQa1lzejB2eTBXWVJ3c3lNZGw4dU43bDJXeVp0YUxXWDNaUXFMd1BqRDlITEdjWmc?oc=5",
+      "published_at": "2026-08-29T17:32:18+00:00",
+      "category": "GN: robot vacuum",
+      "gn_label": "robotics",
+      "site_name": "GN: robot vacuum",
+      "source": "GN: robot vacuum",
+      "site_id": "GN: robot vacuum",
+      "description": "Best robot vacuum deal: Save $700 on Roborock Saros 10R  Mashable",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 28.53,
+      "writing_value": 0,
+      "total_score": 103.53
+    },
+    {
       "id": "fe3fd9a032977a45e4ff6fb412ed821a28f95e0c",
       "title": "宇树科技登陆科创板：从“AI概念”到“规模量产”，人形机器人进入价值验证时代 - 搜狐网",
       "title_zh": "",
@@ -63,9 +84,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.07,
+      "timeliness": 23.76,
       "writing_value": 0,
-      "total_score": 117.07
+      "total_score": 113.76
     }
   ],
   "fallback_used": false
