@@ -1,39 +1,5 @@
 {
-  "generated_at": "2026-08-29T04:19:52.320833+00:00",
-  "total_items": 3,
-  "items": [
-    {
-      "id": "http://arxiv.org/abs/2608.27406v1",
-      "title": "CLAP: Cross-Embodiment Video World Models are Zero-Shot Physical Simulators",
-      "url": "https://arxiv.org/abs/2608.27406",
-      "summary": "State-of-the-art action-conditioned video models are typically restricted to a single robot embodiment, preventing them from leveraging the vast corpus of heterogeneous video data that contains rich signals for learning generalizable physics. To bridge this gap, we introduce CLAP, a framework for cross-embodiment action-conditioned video generation capable of being trained on diverse, internet-scale videos across human and robotic agents. CLAP is grounded in the insight that universal physical laws govern spatiotemporal dynamics regardless of the actor. However, cross-embodiment learning is non-trivial because action representations vary sharply across robot platforms and are typically absent in human videos. CLAP addresses this fundamental challenge through the following core contributions. First, CLAP reconciles disparate action spaces using end-effector poses, language instructions, and latent actions. Second, to resolve their individual limitations, CLAP introduces a curriculum-based cross-embodiment learning recipe that first learns foundational physical priors across unlabeled video data using latent actions and subsequently grounds them in end-effector action spaces for zero-shot deployment to real-world tasks. Crucially, CLAP approaches or surpasses state-of-the-art single-embodiment video models in challenging environments like DROID. These performance advantages compound via few-shot adaptation to establish a novel paradigm for training single-embodiment video world models. Ultimately, CLAP delivers the most comprehensive suite of action-conditioned video world models to date - spanning diverse action-conditioning spaces (end-effector, language, and latent) and robot morphologies (including cross-embodiment, DROID, Bridge, bimanual YAM robots, and G1 humanoids). We open-source all code and models. Project Website at https://omni-clap.github.io .",
-      "authors": "Kechen Liu, Ola Shorinwa",
-      "category": "cs.RO",
-      "published_at": "2026-08-27T17:35:10+00:00",
-      "updated_at": "2026-08-27T17:35:10Z",
-      "title_zh": "CLAP：跨实施例视频世界模型是零镜头物理模拟器"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.27384v1",
-      "title": "FlashVLA: Streaming Action Decoding for Fast and Asynchronous VLA Inference",
-      "url": "https://arxiv.org/abs/2608.27384",
-      "summary": "Vision-Language-Action (VLA) models are increasingly promising for robotic manipulation, yet their real-world deployment remains bottlenecked by high inference latency and unstable asynchronous execution. This challenge is particularly pronounced in flow-matching-based VLA models, where action decoding requires multiple iterative steps conditioned on the VLM context. While efficient inference methods improve control frequency and asynchronous methods reduce execution idle time, existing approaches often fail to jointly achieve low-latency inference and accurate, temporally consistent asynchronous execution. We introduce \\textbf{FlashVLA}, a streaming action decoding framework that addresses both challenges in a unified formulation. FlashVLA maintains a streaming action buffer with multiple chunks at different noise levels and decodes them using chunk-wise causal attention. This design allows FlashVLA to produce one executable action chunk per inference step. Moreover, its chunk-wise autoregressive formulation implicitly preserves action continuity, enabling smooth asynchronous execution without extra future-state conditioning. Across extensive simulated and real-world experiments, FlashVLA substantially improves inference speed while maintaining strong task performance. It can achieve $\\geq$30\\,Hz control frequency on a single GPU with smooth asynchronous inference in real-world deployment.",
-      "authors": "Zekai Li, Jiaming Tang, Zhijian Liu",
-      "category": "cs.RO",
-      "published_at": "2026-08-27T17:19:29+00:00",
-      "updated_at": "2026-08-27T17:19:29Z",
-      "title_zh": "FlashVLA：用于快速异步 VLA 推理的流式操作解码"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.27371v1",
-      "title": "Embodied Scene Rearrangement Planning",
-      "url": "https://arxiv.org/abs/2608.27371",
-      "summary": "This paper introduces Embodied Scene Rearrangement Planning (ESRP), a novel task requiring embodied agents to rearrange furniture in 3D scenes to match a target configuration using only egocentric observations and a top-down target layout. Unlike prior rearrangement tasks, ESRP precludes global state access and introduces mutual object occlusions, reflecting the practical constraints of real-world robotic deployment. These factors make aligning partial egocentric observations with the global target layout particularly challenging for long-horizon planning. To facilitate research, we present ESRP-Bench, a comprehensive benchmark built on OmniGibson featuring over 5,400 scene pairs and 8,200 objects. We define three multi-level metrics to evaluate rearrangement quality and provide four baselines: a hierarchical task-and-motion planning method, a vision-language-model-based method, and two learning-based approaches (IL and RL). Experimental results demonstrate that current methods struggle to complete the task efficiently, highlighting ESRP as a challenging frontier for embodied agents in scene understanding and long-horizon task planning. This work serves as a stepping stone toward deploying intelligent agents in real-world scenarios. Project page: https://pie-lab.cn/ESRP/.",
-      "authors": "Canzhi Chen, Zan Wang, Siqi Zhu et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-27T17:08:40+00:00",
-      "updated_at": "2026-08-27T17:08:40Z",
-      "title_zh": "具身场景重排策划"
-    }
-  ]
+  "generated_at": "2026-08-29T11:21:58.892485+00:00",
+  "total_items": 0,
+  "items": []
 }
