@@ -11,8 +11,6 @@ on:
 concurrency:
   # FIX(2026-08-27): schedule 走独立 group，永不被 dispatch/push cancel;
   #                  只 dispatch 之间互抢（保证手动只跑最新一次）。
-  cancel-in-progress: false
-  #                  Jack 反复手动 dispatch → schedule 永远抢不到 slot → 数据卡 N 小时。
   group: >-
     update-news-${{ github.event_name == 'schedule' && 'schedule' || github.event_name }}${{ github.event_name == 'workflow_dispatch' && format('-{0}', github.run_id) || '' }}
   cancel-in-progress: false
