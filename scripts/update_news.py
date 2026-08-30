@@ -1164,7 +1164,7 @@ def run(output_dir: str, window_hours: int, opml_path: str, archive_days: int, w
     with open(os.path.join(output_dir, 'source-status.json'), 'w', encoding='utf-8') as f:
         json.dump(status_out, f, ensure_ascii=False, indent=2)
     ok_feeds = status_out['summary']['successful_feeds']
-    print(f"[INFO] source-status.json: {ok_feeds}/{len(feeds)} feeds OK")
+    print(f"[INFO] source-status.json: {ok_feeds}/{len(feeds)} feeds OK")`n    sys.exit(0)
 
 if __name__ == '__main__':
     p = argparse.ArgumentParser()
@@ -1178,4 +1178,4 @@ if __name__ == '__main__':
     p.add_argument('--archive-days', type=int, default=21)
     args = p.parse_args()
     custom_opml = args.custom_opml if os.path.exists(args.custom_opml) else None
-    run(args.output_dir, args.window_hours, args.rss_opml, args.archive_days, args.window_from, custom_opml)
+        run(args.output_dir, args.window_hours, args.rss_opml, args.archive_days, args.window_from, custom_opml)
