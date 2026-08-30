@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-29T23:43:03.057112+00:00",
+  "generated_at": "2026-08-30T02:27:06.363464+00:00",
   "window_start": "2026-08-29T19:00:00+08:00",
-  "window_end": "2026-08-30T07:42:22.602214+08:00",
-  "total_items": 5,
+  "window_end": "2026-08-30T10:26:25.634347+08:00",
+  "total_items": 7,
   "items": [
     {
       "id": "d38b951a59834d395d65dddda0d7f672380baede",
@@ -63,9 +63,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.83,
+      "timeliness": 21.1,
       "writing_value": 0,
-      "total_score": 98.83
+      "total_score": 96.1
     },
     {
       "id": "fe3fd9a032977a45e4ff6fb412ed821a28f95e0c",
@@ -84,9 +84,51 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 19.06,
+      "timeliness": 16.33,
       "writing_value": 0,
-      "total_score": 109.06
+      "total_score": 106.33
+    },
+    {
+      "id": "f522f92ea7c8c9711f6fe56890273e7a8246d52d",
+      "title": "智元出货8400台，宇树5900台，云深处两年仅卖4台，为何分化？ - 凤凰网财经",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5GOUhZbUJVWl9GVWwwaU1vTGVOeHotam9uOTdYTGF2RWJjWjNZWVY2X2xMNlNCX0I5bGhhVl90dWRtWnQxQ3JJS1VVNFFyY3h5?oc=5",
+      "published_at": "2026-08-29T14:24:58+00:00",
+      "category": "GN: 智元机器人",
+      "gn_label": "robotics",
+      "site_name": "GN: 智元机器人",
+      "source": "GN: 智元机器人",
+      "site_id": "GN: 智元机器人",
+      "description": "智元出货8400台，宇树5900台，云深处两年仅卖4台，为何分化？  凤凰网财经",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 17.98,
+      "writing_value": 0,
+      "total_score": 92.98
+    },
+    {
+      "id": "8d9993ef7a67017990e0033287ed55964a010f9a",
+      "title": "优必选，追上了宇树？ - 搜狐网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNQkZzS3pWNVh4YjI1TXAxcUFiQVFBMlZRNnhIM2NHdl9sazR1S1o2U1F1cjg5Tnotci01R1pCbUkyY1dhdk4zLU0tbml6UVdpWEpXX2toeUZ5TUx3M3ZPTGQxcTZjQ0Y1eWZJT0xnam9vLWtMVzlGVjhnbW9oMTZPNkhxaWtyTnJ5?oc=5",
+      "published_at": "2026-08-30T01:41:26+00:00",
+      "category": "GN: 优必选",
+      "gn_label": "robotics",
+      "site_name": "GN: 优必选",
+      "source": "GN: 优必选",
+      "site_id": "GN: 优必选",
+      "description": "优必选，追上了宇树？  搜狐网",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.25,
+      "writing_value": 0,
+      "total_score": 104.25
     },
     {
       "id": "2103718d7598234b53a10b3d15e6212e5408336f",
@@ -105,9 +147,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 22.73,
+      "timeliness": 19.99,
       "writing_value": 0,
-      "total_score": 112.73
+      "total_score": 109.99
     }
   ],
   "fallback_used": false
