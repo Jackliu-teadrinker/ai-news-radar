@@ -990,13 +990,13 @@ def run(output_dir: str, window_hours: int, opml_path: str, archive_days: int, w
     # ensuring a full 24h coverage when run daily around 19:00 CST.
     shanghai = ZoneInfo('Asia/Shanghai')
     now_sh = datetime.now(shanghai)
-    today_anchor = now_sh.replace(hour=ANCHOR_HOUR, minute=0, second=0, microsecond=0)
-    # FIX (2026-08-28): When cron runs after ANCHOR_HOUR, window would be too short.
-    # Use yesterday's anchor to ensure full 24h coverage.
+    # FIX (2026-08-30): Correct time window logic.
+    # - Before 19:00 CST: use yesterday anchor → ~22h window
+    # - After 19:00 CST: use today anchor → <24h window
     if now_sh >= today_anchor:
-        start_dt = today_anchor - timedelta(days=1)
-    else:
         start_dt = today_anchor
+    else:
+        start_dt = today_anchor - timedelta(days=1)
     start_ts = start_dt.timestamp()
 
     start_utc = datetime.fromtimestamp(start_ts, timezone.utc)
