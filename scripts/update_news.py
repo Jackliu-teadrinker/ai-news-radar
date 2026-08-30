@@ -991,12 +991,12 @@ def run(output_dir: str, window_hours: int, opml_path: str, archive_days: int, w
     shanghai = ZoneInfo('Asia/Shanghai')
     now_sh = datetime.now(shanghai)
     # FIX (2026-08-30): Correct time window logic.
+    # - After 19:00 CST: use today anchor (short window intentional)
     # - Before 19:00 CST: use yesterday anchor → ~22h window
-    # - After 19:00 CST: use today anchor → <24h window
-    if now_sh >= today_anchor:
-        start_dt = today_anchor
-    else:
+    if now_sh < today_anchor:  # BEFORE 19:00 CST
         start_dt = today_anchor - timedelta(days=1)
+    else:  # AFTER 19:00 CST
+        start_dt = today_anchor
     start_ts = start_dt.timestamp()
 
     start_utc = datetime.fromtimestamp(start_ts, timezone.utc)
