@@ -1,30 +1,9 @@
 {
-  "generated_at": "2026-08-31T02:31:24.246987+00:00",
+  "generated_at": "2026-08-31T03:02:16.667635+00:00",
   "window_start": "2026-08-30T19:00:00+08:00",
-  "window_end": "2026-08-31T10:29:22.109752+08:00",
-  "total_items": 17,
+  "window_end": "2026-08-31T11:00:14.577349+08:00",
+  "total_items": 18,
   "items": [
-    {
-      "id": "20344cdaeea571845ec48263fe9ef44918cfe2d7",
-      "title": "TechCrunch Mobility: The hidden human cost of robotaxis",
-      "title_zh": "",
-      "url": "https://techcrunch.com/2026/08/30/techcrunch-mobility-the-hidden-human-cost-of-robotaxis/",
-      "published_at": "2026-08-30T16:03:00+00:00",
-      "category": "TechCrunch Robotics",
-      "gn_label": "robotics",
-      "site_name": "TechCrunch Robotics",
-      "source": "TechCrunch Robotics",
-      "site_id": "TechCrunch Robotics",
-      "description": "Welcome back to TechCrunch Mobility, your hub for the future of transportation and now, more than ever, the role AI is playing in it.",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 5,
-      "timeliness": 19.56,
-      "writing_value": 5,
-      "total_score": 104.56
-    },
     {
       "id": "d38b951a59834d395d65dddda0d7f672380baede",
       "title": "‘Robot Olympics’ reveal humanoids’ rapid progress — and flaws",
@@ -68,6 +47,48 @@
       "total_score": 85.0
     },
     {
+      "id": "8ad9fe78ab255d657cf54c6bfedb5492ddd5335b",
+      "title": "The U.S. is building barriers around drones and robots, but China has scale to get around them",
+      "title_zh": "",
+      "url": "https://techcrunch.com/2026/08/30/the-u-s-is-building-barriers-around-drones-and-robots-china-still-has-scale/",
+      "published_at": "2026-08-31T02:34:00+00:00",
+      "category": "TechCrunch Robotics",
+      "gn_label": "robotics",
+      "site_name": "TechCrunch Robotics",
+      "source": "TechCrunch Robotics",
+      "site_id": "TechCrunch Robotics",
+      "description": "The U.S. is shutting out more foreign-made drones and robots. China’s scale means the global competition may simply move elsewhere.",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 29.56,
+      "writing_value": 5,
+      "total_score": 114.56
+    },
+    {
+      "id": "20344cdaeea571845ec48263fe9ef44918cfe2d7",
+      "title": "TechCrunch Mobility: The hidden human cost of robotaxis",
+      "title_zh": "",
+      "url": "https://techcrunch.com/2026/08/30/techcrunch-mobility-the-hidden-human-cost-of-robotaxis/",
+      "published_at": "2026-08-30T16:03:00+00:00",
+      "category": "TechCrunch Robotics",
+      "gn_label": "robotics",
+      "site_name": "TechCrunch Robotics",
+      "source": "TechCrunch Robotics",
+      "site_id": "TechCrunch Robotics",
+      "description": "Welcome back to TechCrunch Mobility, your hub for the future of transportation and now, more than ever, the role AI is playing in it.",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 19.05,
+      "writing_value": 5,
+      "total_score": 104.05
+    },
+    {
       "id": "4bc910bb72065e35e6161124ad7bb1192ae412cd",
       "title": "Amazon is selling a $320 iRobot vacuum/mop for just $170 (plus 10 more fab deals) - Yahoo",
       "title_zh": "",
@@ -84,9 +105,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.51,
+      "timeliness": 24.0,
       "writing_value": 0,
-      "total_score": 99.51
+      "total_score": 99.0
     },
     {
       "id": "4c6abc39bb1bf6d1bfbeafe01fb61e000616fa29",
@@ -105,9 +126,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.99,
+      "timeliness": 24.48,
       "writing_value": 0,
-      "total_score": 99.99
+      "total_score": 99.48
     },
     {
       "id": "61ee70e87b16aa7ffd12c96da06fca526e6ec1f3",
@@ -126,9 +147,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 21.91,
+      "timeliness": 21.39,
       "writing_value": 0,
-      "total_score": 96.91
+      "total_score": 96.39
     },
     {
       "id": "ed15f71900a42a6a12d4c585811acc98c0b831f2",
@@ -147,9 +168,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.15,
+      "timeliness": 27.63,
       "writing_value": 0,
-      "total_score": 103.15
+      "total_score": 102.63
     },
     {
       "id": "b19a38194845aa621e4b8a86173ecca2eeae6868",
@@ -168,9 +189,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.04,
+      "timeliness": 22.53,
       "writing_value": 0,
-      "total_score": 98.04
+      "total_score": 97.53
     },
     {
       "id": "8a48717c4a6e48a1a0479150122d53d73d0dcbc8",
@@ -189,9 +210,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 16.98,
+      "timeliness": 16.46,
       "writing_value": 0,
-      "total_score": 106.98
+      "total_score": 106.46
     },
     {
       "id": "29695f5488d6ad23ac7ebd9b10de7fc42fad293d",
@@ -210,9 +231,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 24.53,
+      "timeliness": 24.01,
       "writing_value": 5,
-      "total_score": 109.53
+      "total_score": 109.01
     },
     {
       "id": "8bd6e4ece43b63b0c9dc94e5770ab71de31e6278",
@@ -231,9 +252,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.44,
+      "timeliness": 25.93,
       "writing_value": 0,
-      "total_score": 101.44
+      "total_score": 100.93
     },
     {
       "id": "483e5fa6cea05779add91509fb17cfbffe55f60f",
@@ -252,72 +273,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 15.51,
+      "timeliness": 15.0,
       "writing_value": 0,
-      "total_score": 105.51
-    },
-    {
-      "id": "791497448e193dcf0d0d56efebe131cf2de9a480",
-      "title": "曦诺未来发布Prima 1直驱灵巧手，形成直驱与混驱双产品线布局 - 盖世汽车社区",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFAyVHE0SDd5ZGVZRV9pNkdIY05idnBKUURhcW80R0Z2UExXQzdQejJtRXR6RGJYTXpmUVBuQ25tMDRVVTdGeWR5cFhEQlJTNUpx?oc=5",
-      "published_at": "2026-08-30T23:41:51+00:00",
-      "category": "GN: 灵巧手",
-      "gn_label": "robotics",
-      "site_name": "GN: 灵巧手",
-      "source": "GN: 灵巧手",
-      "site_id": "GN: 灵巧手",
-      "description": "曦诺未来发布Prima 1直驱灵巧手，形成直驱与混驱双产品线布局  盖世汽车社区",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 27.21,
-      "writing_value": 0,
-      "total_score": 102.21
-    },
-    {
-      "id": "ed33f6bc26eb80680a1d42705827444398f698b4",
-      "title": "智元首次出征机器人运动会，金牌榜与奖牌榜实现双第一 - chnfund.com",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9TUzVtSXkyY2Z0T0xoREc0S3QybEF0NmszTTRLN3AtMmxUdk9BV3dPYmpxODVZSDJwUUpvaGVsUDZwYXRrQ1F2MUxsZmNJZFVfWk5sb1pDQXhYYkNVU1ViYzIyVDlQSU1BVHNlQXFqUlZkVTBOM1JNZ0hR?oc=5",
-      "published_at": "2026-08-30T14:13:00+00:00",
-      "category": "GN: 灵巧手",
-      "gn_label": "robotics",
-      "site_name": "GN: 灵巧手",
-      "source": "GN: 灵巧手",
-      "site_id": "GN: 灵巧手",
-      "description": "智元首次出征机器人运动会，金牌榜与奖牌榜实现双第一  chnfund.com",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 17.73,
-      "writing_value": 0,
-      "total_score": 92.73
-    },
-    {
-      "id": "375e836f210e7cc6e664b9f040b9c07740b5c301",
-      "title": "“力小了会脱手，力大了会捏碎”|世界机器人大会|中国新闻周刊|灵巧手|机器人|触觉_手机新浪网 - finance.sina.com.cn",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPZGZ1YnA2ZzJfRjdJTWxyWHA3V1dSaWMySDlTQWZiRmc0Y0tjTktyMHJvckM5NTRDYlJnNkU3cHJXVWxfcDE4Wno5ZVRQVl9DQTdjN1JDdVhraVZ2R0ZWa0tfSVZ6MmFNZDVHb3p1bVBxeUE3ZVNjc1pWUXBxRXh3TlNjTVc2NnlIYWMxRnA1dVVuVEt2UC1EaDluNkNKdExnaU9lNWpqTHhMN2ZDZGc4Yk5B?oc=5",
-      "published_at": "2026-08-30T12:40:38+00:00",
-      "category": "GN: 灵巧手",
-      "gn_label": "robotics",
-      "site_name": "GN: 灵巧手",
-      "source": "GN: 灵巧手",
-      "site_id": "GN: 灵巧手",
-      "description": "“力小了会脱手，力大了会捏碎”|世界机器人大会|中国新闻周刊|灵巧手|机器人|触觉_手机新浪网  finance.sina.com.cn",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 16.19,
-      "writing_value": 0,
-      "total_score": 91.19
+      "total_score": 105.0
     },
     {
       "id": "ca902943cdadb258b696872a243420f759488d36",
@@ -336,9 +294,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 15.04,
+      "timeliness": 14.53,
       "writing_value": 0,
-      "total_score": 105.04
+      "total_score": 104.53
     },
     {
       "id": "767989840c71c24e421492ffe0a541a12ac33cd0",
@@ -357,9 +315,72 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 17.98,
+      "timeliness": 17.46,
       "writing_value": 0,
-      "total_score": 92.98
+      "total_score": 92.46
+    },
+    {
+      "id": "791497448e193dcf0d0d56efebe131cf2de9a480",
+      "title": "曦诺未来发布Prima 1直驱灵巧手，形成直驱与混驱双产品线布局 - 盖世汽车社区",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFAyVHE0SDd5ZGVZRV9pNkdIY05idnBKUURhcW80R0Z2UExXQzdQejJtRXR6RGJYTXpmUVBuQ25tMDRVVTdGeWR5cFhEQlJTNUpx?oc=5",
+      "published_at": "2026-08-30T23:41:51+00:00",
+      "category": "GN: 灵巧手",
+      "gn_label": "robotics",
+      "site_name": "GN: 灵巧手",
+      "source": "GN: 灵巧手",
+      "site_id": "GN: 灵巧手",
+      "description": "曦诺未来发布Prima 1直驱灵巧手，形成直驱与混驱双产品线布局  盖世汽车社区",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 26.69,
+      "writing_value": 0,
+      "total_score": 101.69
+    },
+    {
+      "id": "ed33f6bc26eb80680a1d42705827444398f698b4",
+      "title": "智元首次出征机器人运动会，金牌榜与奖牌榜实现双第一 - chnfund.com",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9TUzVtSXkyY2Z0T0xoREc0S3QybEF0NmszTTRLN3AtMmxUdk9BV3dPYmpxODVZSDJwUUpvaGVsUDZwYXRrQ1F2MUxsZmNJZFVfWk5sb1pDQXhYYkNVU1ViYzIyVDlQSU1BVHNlQXFqUlZkVTBOM1JNZ0hR?oc=5",
+      "published_at": "2026-08-30T14:13:00+00:00",
+      "category": "GN: 灵巧手",
+      "gn_label": "robotics",
+      "site_name": "GN: 灵巧手",
+      "source": "GN: 灵巧手",
+      "site_id": "GN: 灵巧手",
+      "description": "智元首次出征机器人运动会，金牌榜与奖牌榜实现双第一  chnfund.com",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 17.21,
+      "writing_value": 0,
+      "total_score": 92.21
+    },
+    {
+      "id": "375e836f210e7cc6e664b9f040b9c07740b5c301",
+      "title": "“力小了会脱手，力大了会捏碎”|世界机器人大会|中国新闻周刊|灵巧手|机器人|触觉_手机新浪网 - finance.sina.com.cn",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPZGZ1YnA2ZzJfRjdJTWxyWHA3V1dSaWMySDlTQWZiRmc0Y0tjTktyMHJvckM5NTRDYlJnNkU3cHJXVWxfcDE4Wno5ZVRQVl9DQTdjN1JDdVhraVZ2R0ZWa0tfSVZ6MmFNZDVHb3p1bVBxeUE3ZVNjc1pWUXBxRXh3TlNjTVc2NnlIYWMxRnA1dVVuVEt2UC1EaDluNkNKdExnaU9lNWpqTHhMN2ZDZGc4Yk5B?oc=5",
+      "published_at": "2026-08-30T12:40:38+00:00",
+      "category": "GN: 灵巧手",
+      "gn_label": "robotics",
+      "site_name": "GN: 灵巧手",
+      "source": "GN: 灵巧手",
+      "site_id": "GN: 灵巧手",
+      "description": "“力小了会脱手，力大了会捏碎”|世界机器人大会|中国新闻周刊|灵巧手|机器人|触觉_手机新浪网  finance.sina.com.cn",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 15.67,
+      "writing_value": 0,
+      "total_score": 90.67
     }
   ],
   "fallback_used": false
