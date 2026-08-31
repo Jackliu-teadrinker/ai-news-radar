@@ -1179,4 +1179,4 @@ if __name__ == '__main__':
     p.add_argument('--archive-days', type=int, default=21)
     args = p.parse_args()
     custom_opml = args.custom_opml if os.path.exists(args.custom_opml) else None
-    run(args.output_dirtput_dir, args.window_hours, args.rss_opml, args.archive_days, args.window_from, custom_opml)
+    run(args.output_dir, args.window_hours, args.rss_opml, args.archive_days, args.window_from, custom_opml)
