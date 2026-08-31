@@ -1,9 +1,9 @@
 {
   "date": "2026-08-31",
-  "generated_at": "2026-08-31T05:39:47.835524+00:00",
+  "generated_at": "2026-08-31T05:56:51.525317+00:00",
   "score_threshold": 80,
   "total_items": 50,
-  "new_added": 0,
+  "new_added": 1,
   "items": [
     {
       "id": "904539f9e8ab291b",
@@ -298,6 +298,27 @@
       "timeliness": 29.7,
       "writing_value": 0,
       "total_score": 119.7
+    },
+    {
+      "id": "c3fbde79888015dc",
+      "title": "“爱湫”亮相世界人形机器人运动会；欧足坛大乱季来袭；成都人的运动局，精神状态相当领先丨视觉月报 - 搜狐网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQV19yVEhyY0JvSXphMUJKMFVwM28tTkxVUUllckNvMWhNcjVwRFFsTGJaZkpIR0RYXzQtRU9wZUR3d3l3VlNsa09ZVzRyT3dKMVJLam91T3RSNzhtV2RfQWgtOVVGUjVwU3EtOWdaRG5pSzQtbHpGYVpKSUZZQ1FEamNfbG9WNk1v?oc=5",
+      "published_at": "2026-08-31T05:27:00+00:00",
+      "category": "国内人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国内人形机器人资讯",
+      "source": "国内人形机器人资讯",
+      "site_id": "国内人形机器人资讯",
+      "description": "“爱湫”亮相世界人形机器人运动会；欧足坛大乱季来袭；成都人的运动局，精神状态相当领先丨视觉月报  搜狐网",
+      "ai_score": 80.0,
+      "ai_label": "humanoid",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.63,
+      "writing_value": 0,
+      "total_score": 119.63
     },
     {
       "id": "a984b3010ff8eb91",
@@ -1033,27 +1054,6 @@
       "timeliness": 29.66,
       "writing_value": 5,
       "total_score": 114.66
-    },
-    {
-      "id": "9d97b35512b79bc9",
-      "title": "The U.S. is building barriers around drones and robots, but China has scale to get around them - TechCrunch",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPUE1SWUItWFpiUEo5RWo0cWVOSmRoYlV5SENiOWdmclVfTUFDdW54aER6OGFTWHltNl9NLVA2UExqQ1NmMzZhaGtnX3AyZ29wSk83SmgxSEtuR3hyUGRjcUtjZWE2VmZsajJCNFhXZEx2YzI2V3NpZmRjdnlSNlF4dkVRek80TUplckhMSnBfbkZXcGJjczZ3ZXR5LTFxMGxVMTdhdm45RFlTdkQxUmNR?oc=5",
-      "published_at": "2026-08-31T02:34:00+00:00",
-      "category": "国外人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国外人形机器人资讯",
-      "source": "国外人形机器人资讯",
-      "site_id": "国外人形机器人资讯",
-      "description": "The U.S. is building barriers around drones and robots, but China has scale to get around them  TechCrunch",
-      "ai_score": 65.0,
-      "ai_label": "humanoid",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 5,
-      "timeliness": 29.56,
-      "writing_value": 5,
-      "total_score": 114.56
     }
   ]
 }

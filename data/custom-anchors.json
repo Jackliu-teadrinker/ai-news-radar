@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-31T05:34:39.474451+00:00",
+  "generated_at": "2026-08-31T05:51:47.241821+00:00",
   "window_start": "2026-08-30T19:00:00+08:00",
-  "window_end": "2026-08-31T13:32:16.898099+08:00",
-  "total_items": 26,
+  "window_end": "2026-08-31T13:49:21.302199+08:00",
+  "total_items": 28,
   "items": [
     {
       "id": "8ad9fe78ab255d657cf54c6bfedb5492ddd5335b",
@@ -21,9 +21,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 27.03,
+      "timeliness": 26.75,
       "writing_value": 5,
-      "total_score": 112.03
+      "total_score": 111.75
     },
     {
       "id": "20344cdaeea571845ec48263fe9ef44918cfe2d7",
@@ -42,9 +42,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 16.51,
+      "timeliness": 16.23,
       "writing_value": 5,
-      "total_score": 101.51
+      "total_score": 101.23
     },
     {
       "id": "d38b951a59834d395d65dddda0d7f672380baede",
@@ -89,111 +89,6 @@
       "total_score": 85.0
     },
     {
-      "id": "4bc910bb72065e35e6161124ad7bb1192ae412cd",
-      "title": "Amazon is selling a $320 iRobot vacuum/mop for just $170 (plus 10 more fab deals) - Yahoo",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNeC1nei1CZ0tLbDd6VXVFRnFtUjV4Rk1PVU9Db2NVU1FJZ0pROU5tbWhYUUhDMnh5Mkh5MXUtTUJGZkJSeF9mUEpXUW5DY2ZfdG5vOWpjYWFrV1paMHRhM0d6OEJ3Rkx0OGNlcEE2Q291dUlKMTA5Y1hjcHJ1Y2FPVk9vWGszNlNXSGRIQVYxb0lGTVhnVU41RkpPQk1oSV9RRHJIaUNuVnBVLWQ1aVNuV0VEYVV3LTNscC1sV0hhdmNaTWNsN2oyZVNwVGxEZEFqc2swaHg4b2d0Nlp0V2duRW9pc194TlRydXZqMXZndw?oc=5",
-      "published_at": "2026-08-30T21:00:00+00:00",
-      "category": "GN: robot vacuum",
-      "gn_label": "robotics",
-      "site_name": "GN: robot vacuum",
-      "source": "GN: robot vacuum",
-      "site_id": "GN: robot vacuum",
-      "description": "Amazon is selling a $320 iRobot vacuum/mop for just $170 (plus 10 more fab deals)  Yahoo",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 21.46,
-      "writing_value": 0,
-      "total_score": 96.46
-    },
-    {
-      "id": "4c6abc39bb1bf6d1bfbeafe01fb61e000616fa29",
-      "title": "Best robot vacuum deal: Save $100 on Tapo RV50 Pro Omni - Mashable",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1ZZ2pBZVZWb1BncHd1ak0tMFBmSm43d2JTN040RkVPZjRlRkFPMVpOWE5QLXd1OUVkSlVmQl9DTkI0WXVibU8zcVpaMmRNMEZ4NUNTM2pOLW1ISkJVS2pjbjlpTFREX0NFLWFlNQ?oc=5",
-      "published_at": "2026-08-30T21:28:58+00:00",
-      "category": "GN: robot vacuum",
-      "gn_label": "robotics",
-      "site_name": "GN: robot vacuum",
-      "source": "GN: robot vacuum",
-      "site_id": "GN: robot vacuum",
-      "description": "Best robot vacuum deal: Save $100 on Tapo RV50 Pro Omni  Mashable",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 21.95,
-      "writing_value": 0,
-      "total_score": 96.95
-    },
-    {
-      "id": "61ee70e87b16aa7ffd12c96da06fca526e6ec1f3",
-      "title": "Best robot vacuum deal: Save $400 on eufy E25 - Mashable",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5hY2dCMDFvRi1EdjJlTm5EVFVhV19pRTJtNjJ6MzZYVE9JNGZ3QUZEcExaaHF3REhzaHBoTDVkZmFtSGU1Z1RJZUd5cWctbjgtd3VUQWVYdWU4VGxHWHhWbVl5Z3FodFkycmNN?oc=5",
-      "published_at": "2026-08-30T18:23:38+00:00",
-      "category": "GN: robot vacuum",
-      "gn_label": "robotics",
-      "site_name": "GN: robot vacuum",
-      "source": "GN: robot vacuum",
-      "site_id": "GN: robot vacuum",
-      "description": "Best robot vacuum deal: Save $400 on eufy E25  Mashable",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 18.86,
-      "writing_value": 0,
-      "total_score": 93.86
-    },
-    {
-      "id": "b19a38194845aa621e4b8a86173ecca2eeae6868",
-      "title": "Best robot vacuum deal: Save $100 on the iRobot Roomba Plus 575 Robot Vacuum & Mop Combo - Mashable",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBWME5RQkFBbk10b0tiNWRpRkFZdjJSbDZBWHZ5SDlWZHdFZkpXaW44WFA4T1p5YjZOVEhKd2Y5eTExZFJGLXBFZnpVa0hGNDJDYzliQXpycmZYaWdHdHFXVVRYSlN2dEU?oc=5",
-      "published_at": "2026-08-30T19:31:53+00:00",
-      "category": "GN: robot vacuum",
-      "gn_label": "robotics",
-      "site_name": "GN: robot vacuum",
-      "source": "GN: robot vacuum",
-      "site_id": "GN: robot vacuum",
-      "description": "Best robot vacuum deal: Save $100 on the iRobot Roomba Plus 575 Robot Vacuum & Mop Combo  Mashable",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 19.99,
-      "writing_value": 0,
-      "total_score": 94.99
-    },
-    {
-      "id": "ed15f71900a42a6a12d4c585811acc98c0b831f2",
-      "title": "Taiwan man jailed for using robot vacuum to secretly film wife's affair - VnExpress International",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQdy1mZW1tN2lURWNiU0lzcEZQOFNoSmRFZ0R4VVRTeGVrczYwVW1DdzV2aDdIdW9hVXBWQ3U0S0dkQUFVRi13SHQ1dkMybGxUYS04MkhQbUM1ZlFwT3VIM1o3aTdHRVc0aHVHNmMxemlWY3FQR2ZYbU1rNmlJTkNTUzYtT3N4TGpGVWtvQTFzckcyZTJWbldoN2xRVE5ubmh5SGN6eERxLXF3WjZlY2l1V3RQUjJqTk9UN1E?oc=5",
-      "published_at": "2026-08-31T00:38:11+00:00",
-      "category": "GN: robot vacuum",
-      "gn_label": "robotics",
-      "site_name": "GN: robot vacuum",
-      "source": "GN: robot vacuum",
-      "site_id": "GN: robot vacuum",
-      "description": "Taiwan man jailed for using robot vacuum to secretly film wife's affair  VnExpress International",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 25.1,
-      "writing_value": 0,
-      "total_score": 100.1
-    },
-    {
       "id": "8a48717c4a6e48a1a0479150122d53d73d0dcbc8",
       "title": "In China, flashy humanoids are a sideshow to the real factory automation boom - The Cool Down",
       "title_zh": "",
@@ -210,9 +105,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 13.93,
+      "timeliness": 13.65,
       "writing_value": 0,
-      "total_score": 103.93
+      "total_score": 103.65
     },
     {
       "id": "14ef10ed017136b0df1682ac5cc6c0dbdd82690a",
@@ -231,9 +126,114 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 27.13,
+      "timeliness": 26.85,
       "writing_value": 5,
-      "total_score": 112.13
+      "total_score": 111.85
+    },
+    {
+      "id": "4bc910bb72065e35e6161124ad7bb1192ae412cd",
+      "title": "Amazon is selling a $320 iRobot vacuum/mop for just $170 (plus 10 more fab deals) - Yahoo",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNeC1nei1CZ0tLbDd6VXVFRnFtUjV4Rk1PVU9Db2NVU1FJZ0pROU5tbWhYUUhDMnh5Mkh5MXUtTUJGZkJSeF9mUEpXUW5DY2ZfdG5vOWpjYWFrV1paMHRhM0d6OEJ3Rkx0OGNlcEE2Q291dUlKMTA5Y1hjcHJ1Y2FPVk9vWGszNlNXSGRIQVYxb0lGTVhnVU41RkpPQk1oSV9RRHJIaUNuVnBVLWQ1aVNuV0VEYVV3LTNscC1sV0hhdmNaTWNsN2oyZVNwVGxEZEFqc2swaHg4b2d0Nlp0V2duRW9pc194TlRydXZqMXZndw?oc=5",
+      "published_at": "2026-08-30T21:00:00+00:00",
+      "category": "GN: robot vacuum",
+      "gn_label": "robotics",
+      "site_name": "GN: robot vacuum",
+      "source": "GN: robot vacuum",
+      "site_id": "GN: robot vacuum",
+      "description": "Amazon is selling a $320 iRobot vacuum/mop for just $170 (plus 10 more fab deals)  Yahoo",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 21.18,
+      "writing_value": 0,
+      "total_score": 96.18
+    },
+    {
+      "id": "61ee70e87b16aa7ffd12c96da06fca526e6ec1f3",
+      "title": "Best robot vacuum deal: Save $400 on eufy E25 - Mashable",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5hY2dCMDFvRi1EdjJlTm5EVFVhV19pRTJtNjJ6MzZYVE9JNGZ3QUZEcExaaHF3REhzaHBoTDVkZmFtSGU1Z1RJZUd5cWctbjgtd3VUQWVYdWU4VGxHWHhWbVl5Z3FodFkycmNN?oc=5",
+      "published_at": "2026-08-30T18:23:38+00:00",
+      "category": "GN: robot vacuum",
+      "gn_label": "robotics",
+      "site_name": "GN: robot vacuum",
+      "source": "GN: robot vacuum",
+      "site_id": "GN: robot vacuum",
+      "description": "Best robot vacuum deal: Save $400 on eufy E25  Mashable",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 18.57,
+      "writing_value": 0,
+      "total_score": 93.57
+    },
+    {
+      "id": "4c6abc39bb1bf6d1bfbeafe01fb61e000616fa29",
+      "title": "Best robot vacuum deal: Save $100 on Tapo RV50 Pro Omni - Mashable",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1ZZ2pBZVZWb1BncHd1ak0tMFBmSm43d2JTN040RkVPZjRlRkFPMVpOWE5QLXd1OUVkSlVmQl9DTkI0WXVibU8zcVpaMmRNMEZ4NUNTM2pOLW1ISkJVS2pjbjlpTFREX0NFLWFlNQ?oc=5",
+      "published_at": "2026-08-30T21:28:58+00:00",
+      "category": "GN: robot vacuum",
+      "gn_label": "robotics",
+      "site_name": "GN: robot vacuum",
+      "source": "GN: robot vacuum",
+      "site_id": "GN: robot vacuum",
+      "description": "Best robot vacuum deal: Save $100 on Tapo RV50 Pro Omni  Mashable",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 21.66,
+      "writing_value": 0,
+      "total_score": 96.66
+    },
+    {
+      "id": "b19a38194845aa621e4b8a86173ecca2eeae6868",
+      "title": "Best robot vacuum deal: Save $100 on the iRobot Roomba Plus 575 Robot Vacuum & Mop Combo - Mashable",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBWME5RQkFBbk10b0tiNWRpRkFZdjJSbDZBWHZ5SDlWZHdFZkpXaW44WFA4T1p5YjZOVEhKd2Y5eTExZFJGLXBFZnpVa0hGNDJDYzliQXpycmZYaWdHdHFXVVRYSlN2dEU?oc=5",
+      "published_at": "2026-08-30T19:31:53+00:00",
+      "category": "GN: robot vacuum",
+      "gn_label": "robotics",
+      "site_name": "GN: robot vacuum",
+      "source": "GN: robot vacuum",
+      "site_id": "GN: robot vacuum",
+      "description": "Best robot vacuum deal: Save $100 on the iRobot Roomba Plus 575 Robot Vacuum & Mop Combo  Mashable",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 19.71,
+      "writing_value": 0,
+      "total_score": 94.71
+    },
+    {
+      "id": "ed15f71900a42a6a12d4c585811acc98c0b831f2",
+      "title": "Taiwan man jailed for using robot vacuum to secretly film wife's affair - VnExpress International",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQdy1mZW1tN2lURWNiU0lzcEZQOFNoSmRFZ0R4VVRTeGVrczYwVW1DdzV2aDdIdW9hVXBWQ3U0S0dkQUFVRi13SHQ1dkMybGxUYS04MkhQbUM1ZlFwT3VIM1o3aTdHRVc0aHVHNmMxemlWY3FQR2ZYbU1rNmlJTkNTUzYtT3N4TGpGVWtvQTFzckcyZTJWbldoN2xRVE5ubmh5SGN6eERxLXF3WjZlY2l1V3RQUjJqTk9UN1E?oc=5",
+      "published_at": "2026-08-31T00:38:11+00:00",
+      "category": "GN: robot vacuum",
+      "gn_label": "robotics",
+      "site_name": "GN: robot vacuum",
+      "source": "GN: robot vacuum",
+      "site_id": "GN: robot vacuum",
+      "description": "Taiwan man jailed for using robot vacuum to secretly film wife's affair  VnExpress International",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 24.81,
+      "writing_value": 0,
+      "total_score": 99.81
     },
     {
       "id": "f7b849e1d31c94e061d55d9a442642f1ad024359",
@@ -252,9 +252,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.76,
+      "timeliness": 28.47,
       "writing_value": 0,
-      "total_score": 103.76
+      "total_score": 103.47
     },
     {
       "id": "29695f5488d6ad23ac7ebd9b10de7fc42fad293d",
@@ -273,9 +273,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 21.48,
+      "timeliness": 21.2,
       "writing_value": 5,
-      "total_score": 106.48
+      "total_score": 106.2
     },
     {
       "id": "8bd6e4ece43b63b0c9dc94e5770ab71de31e6278",
@@ -294,9 +294,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.39,
+      "timeliness": 23.11,
       "writing_value": 0,
-      "total_score": 98.39
+      "total_score": 98.11
     },
     {
       "id": "eef0ac1eb4a8ec252cdb55063c82a2a2f515cbc1",
@@ -315,9 +315,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.66,
+      "timeliness": 27.37,
       "writing_value": 0,
-      "total_score": 117.66
+      "total_score": 117.37
     },
     {
       "id": "825f058fc8d405e25dd68a5211f18ce67e2050a5",
@@ -336,9 +336,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.69,
+      "timeliness": 27.41,
       "writing_value": 0,
-      "total_score": 117.69
+      "total_score": 117.41
     },
     {
       "id": "4fbfb7826f8c192f2b7e685ff42501e573ed9fd1",
@@ -357,13 +357,34 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 12.46,
+      "timeliness": 12.18,
       "writing_value": 0,
-      "total_score": 102.46
+      "total_score": 102.18
     },
     {
-      "id": "ed7f3d32a66726a99157ed4a241b8dcbbdfae7ed",
-      "title": "优必选走进窄门|具身智能|钛媒体|财报|机器人|工业 - 新浪财经",
+      "id": "201b656e0b2ec51ca2e298670dc90e0d1932cc25",
+      "title": "“妖股”直击：宇树科技上市9个交易日股价腰斩，从1100跌至555元，机器人第一股2200亿蒸发 - 搜狐网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOeUFibE1xUUpCZkFtYVdQVTJPNkhBSVAtVzIwdWNfbm0tbFBCMm1hZ1A0NGktSlRxbmNwc3J5SFlLbHNTcXI0bHN3M2JXaDNuazEweFNjMkZpMGxtcFZvZHF6U1o1NEVNbHFrSW5TbnBaMFd6dmwzelVHZEZiZHNRWm5xMkhuLVhq?oc=5",
+      "published_at": "2026-08-31T05:31:18+00:00",
+      "category": "GN: 宇树科技",
+      "gn_label": "robotics",
+      "site_name": "GN: 宇树科技",
+      "source": "GN: 宇树科技",
+      "site_id": "GN: 宇树科技",
+      "description": "“妖股”直击：宇树科技上市9个交易日股价腰斩，从1100跌至555元，机器人第一股2200亿蒸发  搜狐网",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.7,
+      "writing_value": 0,
+      "total_score": 104.7
+    },
+    {
+      "id": "ca902943cdadb258b696872a243420f759488d36",
+      "title": "优必选走进窄门|具身智能|钛媒体|财报|机器人|工业 - finance.sina.com.cn",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNeUlXM3lWd0pqWGdlNmVWeGI4UE1ScDc2c05raF8za3NFNHBMNERPZnVrU01LWEhmOXlFSlNDVTN1N0VHeE8wYk00SVNzcHdLOXNDYkRXSDJQaURseEZMYndMcHRSUkM2Tk1JaExkd3h0RXVQeFlpZmtPOGstZFFMZE1qMXl0bmdCZDhJaUxQMnh6al9sWmlFclJNM1lTVl9WRWRZMnBsdVA1bDN3THMzMllxaUIzUm9UQVJwdw?oc=5",
       "published_at": "2026-08-30T11:31:42+00:00",
@@ -372,15 +393,15 @@
       "site_name": "GN: 优必选",
       "source": "GN: 优必选",
       "site_id": "GN: 优必选",
-      "description": "优必选走进窄门|具身智能|钛媒体|财报|机器人|工业  新浪财经",
+      "description": "优必选走进窄门|具身智能|钛媒体|财报|机器人|工业  finance.sina.com.cn",
       "ai_score": 80.0,
       "ai_label": "robotics",
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 11.99,
+      "timeliness": 11.71,
       "writing_value": 0,
-      "total_score": 101.99
+      "total_score": 101.71
     },
     {
       "id": "649a23765c97c16492df318c826b5fe746728127",
@@ -399,9 +420,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 12.38,
+      "timeliness": 12.1,
       "writing_value": 0,
-      "total_score": 102.38
+      "total_score": 102.1
     },
     {
       "id": "767989840c71c24e421492ffe0a541a12ac33cd0",
@@ -420,9 +441,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 14.93,
+      "timeliness": 14.64,
       "writing_value": 0,
-      "total_score": 89.93
+      "total_score": 89.64
+    },
+    {
+      "id": "66c9ff1b012ec8761b835afea0a11fc5541c5469",
+      "title": "今年的研发预算将超20亿，小鹏机器人凭什么值400多亿？",
+      "title_zh": "",
+      "url": "https://www.leiphone.com/category/transportation/EJrElOTA0bHDOd60.html",
+      "published_at": "2026-08-31T03:36:00+00:00",
+      "category": "雷锋网",
+      "gn_label": "robotics",
+      "site_name": "雷锋网",
+      "source": "雷锋网",
+      "site_id": "雷锋网",
+      "description": "8月24日，小鹏公布二季度财报。财报显示，今年上半年，小鹏研发投入达到58.2亿元，同比增长39%。据了解，小鹏今年全年研发预算约为120亿元，其中约50亿元投入汽车业务，另外70亿元投向物理AI相关领域，人形机器人IRON正是其中的重要投入方向。雷峰网了解到，在机器人这一单一业务上，小鹏今年的投入预计就将超过20亿元。这笔钱主要投向机器人研发人员、高质量数据采集以及物理AI模型训练。我们还了解到，小鹏为机器人业务单独配置了万卡级算力集群，用于AI大脑训练。相比之下，目前国内多数具身智能公司的算力规模仍在数百卡至数千卡之间。小鹏正在把机器人AI训练的算力投入，推向了一个新的量级。就在同一天，小",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 27.78,
+      "writing_value": 5,
+      "total_score": 127.78
     },
     {
       "id": "3e9acf817757bb1851f4ad94141c10957d0ff94c",
@@ -441,9 +483,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.1,
+      "timeliness": 27.81,
       "writing_value": 0,
-      "total_score": 103.1
+      "total_score": 102.81
     },
     {
       "id": "791497448e193dcf0d0d56efebe131cf2de9a480",
@@ -462,9 +504,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.16,
+      "timeliness": 23.88,
       "writing_value": 0,
-      "total_score": 99.16
+      "total_score": 98.88
     },
     {
       "id": "ed33f6bc26eb80680a1d42705827444398f698b4",
@@ -483,13 +525,13 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 14.68,
+      "timeliness": 14.4,
       "writing_value": 0,
-      "total_score": 89.68
+      "total_score": 89.4
     },
     {
-      "id": "b59bc010148f4d8d69cc120a65616c298b13a55d",
-      "title": "“力小了会脱手，力大了会捏碎”|世界机器人大会|中国新闻周刊|灵巧手|机器人|触觉_手机新浪网 - 新浪财经",
+      "id": "375e836f210e7cc6e664b9f040b9c07740b5c301",
+      "title": "“力小了会脱手，力大了会捏碎”|世界机器人大会|中国新闻周刊|灵巧手|机器人|触觉_手机新浪网 - finance.sina.com.cn",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPZGZ1YnA2ZzJfRjdJTWxyWHA3V1dSaWMySDlTQWZiRmc0Y0tjTktyMHJvckM5NTRDYlJnNkU3cHJXVWxfcDE4Wno5ZVRQVl9DQTdjN1JDdVhraVZ2R0ZWa0tfSVZ6MmFNZDVHb3p1bVBxeUE3ZVNjc1pWUXBxRXh3TlNjTVc2NnlIYWMxRnA1dVVuVEt2UC1EaDluNkNKdExnaU9lNWpqTHhMN2ZDZGc4Yk5B?oc=5",
       "published_at": "2026-08-30T12:40:38+00:00",
@@ -498,15 +540,15 @@
       "site_name": "GN: 灵巧手",
       "source": "GN: 灵巧手",
       "site_id": "GN: 灵巧手",
-      "description": "“力小了会脱手，力大了会捏碎”|世界机器人大会|中国新闻周刊|灵巧手|机器人|触觉_手机新浪网  新浪财经",
+      "description": "“力小了会脱手，力大了会捏碎”|世界机器人大会|中国新闻周刊|灵巧手|机器人|触觉_手机新浪网  finance.sina.com.cn",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 13.14,
+      "timeliness": 12.86,
       "writing_value": 0,
-      "total_score": 88.14
+      "total_score": 87.86
     },
     {
       "id": "73b66d094f47298280219dc02a8e874a9a3139ab",
@@ -525,9 +567,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.13,
+      "timeliness": 27.84,
       "writing_value": 0,
-      "total_score": 118.13
+      "total_score": 117.84
     },
     {
       "id": "d0465ba7d05022938758b2253ecf48ef4bbd941e",
@@ -546,9 +588,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.8,
+      "timeliness": 25.51,
       "writing_value": 0,
-      "total_score": 100.8
+      "total_score": 100.51
     }
   ],
   "fallback_used": false
