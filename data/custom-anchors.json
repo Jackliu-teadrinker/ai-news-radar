@@ -1,9 +1,51 @@
 {
-  "generated_at": "2026-08-31T03:02:16.667635+00:00",
+  "generated_at": "2026-08-31T03:31:51.515479+00:00",
   "window_start": "2026-08-30T19:00:00+08:00",
-  "window_end": "2026-08-31T11:00:14.577349+08:00",
-  "total_items": 18,
+  "window_end": "2026-08-31T11:29:29.047246+08:00",
+  "total_items": 21,
   "items": [
+    {
+      "id": "8ad9fe78ab255d657cf54c6bfedb5492ddd5335b",
+      "title": "The U.S. is building barriers around drones and robots, but China has scale to get around them",
+      "title_zh": "",
+      "url": "https://techcrunch.com/2026/08/30/the-u-s-is-building-barriers-around-drones-and-robots-china-still-has-scale/",
+      "published_at": "2026-08-31T02:34:00+00:00",
+      "category": "TechCrunch Robotics",
+      "gn_label": "robotics",
+      "site_name": "TechCrunch Robotics",
+      "source": "TechCrunch Robotics",
+      "site_id": "TechCrunch Robotics",
+      "description": "The U.S. is shutting out more foreign-made drones and robots. China’s scale means the global competition may simply move elsewhere.",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 29.08,
+      "writing_value": 5,
+      "total_score": 114.08
+    },
+    {
+      "id": "20344cdaeea571845ec48263fe9ef44918cfe2d7",
+      "title": "TechCrunch Mobility: The hidden human cost of robotaxis",
+      "title_zh": "",
+      "url": "https://techcrunch.com/2026/08/30/techcrunch-mobility-the-hidden-human-cost-of-robotaxis/",
+      "published_at": "2026-08-30T16:03:00+00:00",
+      "category": "TechCrunch Robotics",
+      "gn_label": "robotics",
+      "site_name": "TechCrunch Robotics",
+      "source": "TechCrunch Robotics",
+      "site_id": "TechCrunch Robotics",
+      "description": "Welcome back to TechCrunch Mobility, your hub for the future of transportation and now, more than ever, the role AI is playing in it.",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 18.56,
+      "writing_value": 5,
+      "total_score": 103.56
+    },
     {
       "id": "d38b951a59834d395d65dddda0d7f672380baede",
       "title": "‘Robot Olympics’ reveal humanoids’ rapid progress — and flaws",
@@ -47,46 +89,25 @@
       "total_score": 85.0
     },
     {
-      "id": "8ad9fe78ab255d657cf54c6bfedb5492ddd5335b",
-      "title": "The U.S. is building barriers around drones and robots, but China has scale to get around them",
+      "id": "3587f4bc4e2adfff79c97520daf14e8ae3e04df0",
+      "title": "Accelerating physical AI development: How Antioch built the simulation platform for robotics - Nebius",
       "title_zh": "",
-      "url": "https://techcrunch.com/2026/08/30/the-u-s-is-building-barriers-around-drones-and-robots-china-still-has-scale/",
-      "published_at": "2026-08-31T02:34:00+00:00",
-      "category": "TechCrunch Robotics",
-      "gn_label": "robotics",
-      "site_name": "TechCrunch Robotics",
-      "source": "TechCrunch Robotics",
-      "site_id": "TechCrunch Robotics",
-      "description": "The U.S. is shutting out more foreign-made drones and robots. China’s scale means the global competition may simply move elsewhere.",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBoX0RIdFRYSmN2Z2NYR21HR3NYem9fWFM4WmVhLVNBQ3RmYzhiYUFPaEk1eEdjN2dLT3ctbEpvT25peTNtY253UTV6WWJRMGs1LVdZekhn?oc=5",
+      "published_at": "2026-08-31T02:30:48+00:00",
+      "category": "GN: Physical AI",
+      "gn_label": "physical_ai",
+      "site_name": "GN: Physical AI",
+      "source": "GN: Physical AI",
+      "site_id": "GN: Physical AI",
+      "description": "Accelerating physical AI development: How Antioch built the simulation platform for robotics  Nebius",
       "ai_score": 65.0,
-      "ai_label": "robotics",
+      "ai_label": "physical_ai",
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 29.56,
+      "timeliness": 29.02,
       "writing_value": 5,
-      "total_score": 114.56
-    },
-    {
-      "id": "20344cdaeea571845ec48263fe9ef44918cfe2d7",
-      "title": "TechCrunch Mobility: The hidden human cost of robotaxis",
-      "title_zh": "",
-      "url": "https://techcrunch.com/2026/08/30/techcrunch-mobility-the-hidden-human-cost-of-robotaxis/",
-      "published_at": "2026-08-30T16:03:00+00:00",
-      "category": "TechCrunch Robotics",
-      "gn_label": "robotics",
-      "site_name": "TechCrunch Robotics",
-      "source": "TechCrunch Robotics",
-      "site_id": "TechCrunch Robotics",
-      "description": "Welcome back to TechCrunch Mobility, your hub for the future of transportation and now, more than ever, the role AI is playing in it.",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 5,
-      "timeliness": 19.05,
-      "writing_value": 5,
-      "total_score": 104.05
+      "total_score": 114.02
     },
     {
       "id": "4bc910bb72065e35e6161124ad7bb1192ae412cd",
@@ -105,9 +126,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.0,
+      "timeliness": 23.51,
       "writing_value": 0,
-      "total_score": 99.0
+      "total_score": 98.51
     },
     {
       "id": "4c6abc39bb1bf6d1bfbeafe01fb61e000616fa29",
@@ -126,9 +147,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.48,
+      "timeliness": 23.99,
       "writing_value": 0,
-      "total_score": 99.48
+      "total_score": 98.99
     },
     {
       "id": "61ee70e87b16aa7ffd12c96da06fca526e6ec1f3",
@@ -147,9 +168,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 21.39,
+      "timeliness": 20.9,
       "writing_value": 0,
-      "total_score": 96.39
+      "total_score": 95.9
     },
     {
       "id": "ed15f71900a42a6a12d4c585811acc98c0b831f2",
@@ -168,9 +189,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.63,
+      "timeliness": 27.15,
       "writing_value": 0,
-      "total_score": 102.63
+      "total_score": 102.15
     },
     {
       "id": "b19a38194845aa621e4b8a86173ecca2eeae6868",
@@ -189,9 +210,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 22.53,
+      "timeliness": 22.04,
       "writing_value": 0,
-      "total_score": 97.53
+      "total_score": 97.04
     },
     {
       "id": "8a48717c4a6e48a1a0479150122d53d73d0dcbc8",
@@ -210,9 +231,30 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 16.46,
+      "timeliness": 15.98,
       "writing_value": 0,
-      "total_score": 106.46
+      "total_score": 105.98
+    },
+    {
+      "id": "14ef10ed017136b0df1682ac5cc6c0dbdd82690a",
+      "title": "Manho Rope & Wire inks Korea pact to boost robot refurbishing and manufacturing - CHOSUNBIZ - Chosunbiz",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPVVFoYTB5bkQyWTZHWGpISmVyaHl2ZEo4bjlhVFEzOHhOMjBnbnBxM1dfUEQ5WEdNVkEtUDBvbkNaNkE2QXJJN1NYT0RHUzE3VzREbmlsbkVfNkxVYklHWnNkWk1xbUtvSzdaSGRWZ0NZSXRHNUh6aXE5RXNDN1RmZtIBlAFBVV95cUxOaS1KU1hDU0VXQnhSdTAwWGNncXVTbXN1bVV3dktQUTFRYWdXZG1yWDZsa2pFRnZvTGhOcUhzZUdYN21BRjNlVjhnbVA5WWxVRVhYc2FvcVdFUjBiaE1sOWJJWlVXaFBXendmSDZNS25najFRYTF5VjdCQlBkSC1ZbTdrWjk1anI4NlNnanJleG03UE9L?oc=5",
+      "published_at": "2026-08-31T02:40:00+00:00",
+      "category": "GN: industrial robot",
+      "gn_label": "robotics",
+      "site_name": "GN: industrial robot",
+      "source": "GN: industrial robot",
+      "site_id": "GN: industrial robot",
+      "description": "Manho Rope & Wire inks Korea pact to boost robot refurbishing and manufacturing - CHOSUNBIZ  Chosunbiz",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 29.18,
+      "writing_value": 5,
+      "total_score": 114.18
     },
     {
       "id": "29695f5488d6ad23ac7ebd9b10de7fc42fad293d",
@@ -231,9 +273,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 24.01,
+      "timeliness": 23.53,
       "writing_value": 5,
-      "total_score": 109.01
+      "total_score": 108.53
     },
     {
       "id": "8bd6e4ece43b63b0c9dc94e5770ab71de31e6278",
@@ -252,13 +294,34 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.93,
+      "timeliness": 25.44,
       "writing_value": 0,
-      "total_score": 100.93
+      "total_score": 100.44
     },
     {
-      "id": "483e5fa6cea05779add91509fb17cfbffe55f60f",
-      "title": "经济学家付鹏谈宇树科技研发费用不及牧原股份养猪业务投入，人形机器人尚处于早期阶段，不适合求稳资金 - finance.sina.com.cn",
+      "id": "e02b1a1b4dd73e883b623f9a95683926a649c08c",
+      "title": "多只新股股价“腰斩”！宇树科技从1100跌到555元，“人形机器人第一股”泡沫加速挤出，移动、阿里、蚂蚁等火线入股机构仍浮盈20倍-手机金融界 - 金融界",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9zNUJrWFdHZ1V0cHU5N1p6c2c1bUFBRGFsdDhkRTVIQ3FUY2NuUjQyVzdFUkJFZ2cxcUJkUUl3TVdtT1pITTM2WTNSb0F2QkFZblJObmZ6LUpOcWNkMHF1NTUyQm5jQQ?oc=5",
+      "published_at": "2026-08-31T03:13:44+00:00",
+      "category": "GN: 宇树科技",
+      "gn_label": "robotics",
+      "site_name": "GN: 宇树科技",
+      "source": "GN: 宇树科技",
+      "site_id": "GN: 宇树科技",
+      "description": "多只新股股价“腰斩”！宇树科技从1100跌到555元，“人形机器人第一股”泡沫加速挤出，移动、阿里、蚂蚁等火线入股机构仍浮盈20倍-手机金融界  金融界",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.74,
+      "writing_value": 0,
+      "total_score": 119.74
+    },
+    {
+      "id": "fc8003ad407100b5cff8546260cc793b163f79cf",
+      "title": "经济学家付鹏谈宇树科技研发费用不及牧原股份养猪业务投入，人形机器人尚处于早期阶段，不适合求稳资金 - 新浪财经",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQYWVDallsUWJPT3FhdDVvM3hyWktLVEtreDRqNFNNb2M5Q01GNTF1bFl4ZDhndUMxeVdBR240RllMWTczYUM4NFFEelJMUVJEZXVtRXBVYnNGdnEwTlBoLVZtQkYzRGhKbEcxY1FZSk1WWmZieXFUNFdfRzFDUkhFOV83dHVQNUdmREluWmJROVBFQjltVEUwYlpZUlpCRFFuV2x0eFNIandzX0xQQkZNZ0V0VEpLa1V4UGF4a3J5aFdNbHZrNGxHMkV0dkFYOWNp?oc=5",
       "published_at": "2026-08-30T12:00:00+00:00",
@@ -267,19 +330,19 @@
       "site_name": "GN: 宇树科技",
       "source": "GN: 宇树科技",
       "site_id": "GN: 宇树科技",
-      "description": "经济学家付鹏谈宇树科技研发费用不及牧原股份养猪业务投入，人形机器人尚处于早期阶段，不适合求稳资金  finance.sina.com.cn",
+      "description": "经济学家付鹏谈宇树科技研发费用不及牧原股份养猪业务投入，人形机器人尚处于早期阶段，不适合求稳资金  新浪财经",
       "ai_score": 80.0,
       "ai_label": "robotics",
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 15.0,
+      "timeliness": 14.51,
       "writing_value": 0,
-      "total_score": 105.0
+      "total_score": 104.51
     },
     {
-      "id": "ca902943cdadb258b696872a243420f759488d36",
-      "title": "优必选走进窄门|具身智能|钛媒体|财报|机器人|工业 - finance.sina.com.cn",
+      "id": "ed7f3d32a66726a99157ed4a241b8dcbbdfae7ed",
+      "title": "优必选走进窄门|具身智能|钛媒体|财报|机器人|工业 - 新浪财经",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNeUlXM3lWd0pqWGdlNmVWeGI4UE1ScDc2c05raF8za3NFNHBMNERPZnVrU01LWEhmOXlFSlNDVTN1N0VHeE8wYk00SVNzcHdLOXNDYkRXSDJQaURseEZMYndMcHRSUkM2Tk1JaExkd3h0RXVQeFlpZmtPOGstZFFMZE1qMXl0bmdCZDhJaUxQMnh6al9sWmlFclJNM1lTVl9WRWRZMnBsdVA1bDN3THMzMllxaUIzUm9UQVJwdw?oc=5",
       "published_at": "2026-08-30T11:31:42+00:00",
@@ -288,15 +351,15 @@
       "site_name": "GN: 优必选",
       "source": "GN: 优必选",
       "site_id": "GN: 优必选",
-      "description": "优必选走进窄门|具身智能|钛媒体|财报|机器人|工业  finance.sina.com.cn",
+      "description": "优必选走进窄门|具身智能|钛媒体|财报|机器人|工业  新浪财经",
       "ai_score": 80.0,
       "ai_label": "robotics",
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 14.53,
+      "timeliness": 14.04,
       "writing_value": 0,
-      "total_score": 104.53
+      "total_score": 104.04
     },
     {
       "id": "767989840c71c24e421492ffe0a541a12ac33cd0",
@@ -315,9 +378,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 17.46,
+      "timeliness": 16.98,
       "writing_value": 0,
-      "total_score": 92.46
+      "total_score": 91.98
     },
     {
       "id": "791497448e193dcf0d0d56efebe131cf2de9a480",
@@ -336,9 +399,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.69,
+      "timeliness": 26.21,
       "writing_value": 0,
-      "total_score": 101.69
+      "total_score": 101.21
     },
     {
       "id": "ed33f6bc26eb80680a1d42705827444398f698b4",
@@ -357,13 +420,13 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 17.21,
+      "timeliness": 16.73,
       "writing_value": 0,
-      "total_score": 92.21
+      "total_score": 91.73
     },
     {
-      "id": "375e836f210e7cc6e664b9f040b9c07740b5c301",
-      "title": "“力小了会脱手，力大了会捏碎”|世界机器人大会|中国新闻周刊|灵巧手|机器人|触觉_手机新浪网 - finance.sina.com.cn",
+      "id": "b59bc010148f4d8d69cc120a65616c298b13a55d",
+      "title": "“力小了会脱手，力大了会捏碎”|世界机器人大会|中国新闻周刊|灵巧手|机器人|触觉_手机新浪网 - 新浪财经",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPZGZ1YnA2ZzJfRjdJTWxyWHA3V1dSaWMySDlTQWZiRmc0Y0tjTktyMHJvckM5NTRDYlJnNkU3cHJXVWxfcDE4Wno5ZVRQVl9DQTdjN1JDdVhraVZ2R0ZWa0tfSVZ6MmFNZDVHb3p1bVBxeUE3ZVNjc1pWUXBxRXh3TlNjTVc2NnlIYWMxRnA1dVVuVEt2UC1EaDluNkNKdExnaU9lNWpqTHhMN2ZDZGc4Yk5B?oc=5",
       "published_at": "2026-08-30T12:40:38+00:00",
@@ -372,15 +435,15 @@
       "site_name": "GN: 灵巧手",
       "source": "GN: 灵巧手",
       "site_id": "GN: 灵巧手",
-      "description": "“力小了会脱手，力大了会捏碎”|世界机器人大会|中国新闻周刊|灵巧手|机器人|触觉_手机新浪网  finance.sina.com.cn",
+      "description": "“力小了会脱手，力大了会捏碎”|世界机器人大会|中国新闻周刊|灵巧手|机器人|触觉_手机新浪网  新浪财经",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 15.67,
+      "timeliness": 15.19,
       "writing_value": 0,
-      "total_score": 90.67
+      "total_score": 90.19
     }
   ],
   "fallback_used": false
