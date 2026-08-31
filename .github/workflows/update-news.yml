@@ -46,10 +46,40 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Validate Python syntax
+      - name: Pre-flight checks
         run: |
+          echo "============================================================"
+          echo "  PRE-FLIGHT CHECKS (defense against 2026-08-30 incidents)"
+          echo "============================================================"
+
+          # 1. Python syntax check (catches typo, literal `n)
           python -m py_compile scripts/update_news.py
           python -m py_compile scripts/curated_collector.py
+          echo "[OK] Python syntax check passed"
+
+          # 2. Literal backtick-n check (defense against bc58c191)
+          if grep -nP "\`n" scripts/*.py 2>/dev/null; then
+            echo "ERROR: literal backtick-n found in scripts (bc58c191 regression)"
+            exit 1
+          fi
+          echo "[OK] No literal backtick-n found"
+
+          # 3. Common typo check (defense against output_dirtput_dir etc.)
+          if grep -nE "(output_dirtput|window_hourss)" scripts/*.py; then
+            echo "ERROR: known typo found in scripts"
+            exit 1
+          fi
+          echo "[OK] No known typos"
+
+          # 4. Time window regression test (defense against 2026-08-30 inversion)
+          # Run unit tests BEFORE doing the expensive RSS fetch
+          pip install pyyaml > /dev/null 2>&1 || true
+          python tests/test_time_window.py
+          echo "[OK] Time window regression test passed"
+
+          echo "============================================================"
+          echo "  ALL PRE-FLIGHT CHECKS PASSED"
+          echo "============================================================"
 
       - name: Run update
         env:
