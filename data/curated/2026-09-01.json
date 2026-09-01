@@ -1,9 +1,9 @@
 {
   "date": "2026-09-01",
-  "generated_at": "2026-09-01T12:09:07.554764+00:00",
+  "generated_at": "2026-09-01T12:23:03.809868+00:00",
   "score_threshold": 80,
   "total_items": 50,
-  "new_added": 2,
+  "new_added": 1,
   "items": [
     {
       "id": "8222f305d5961c1f",
@@ -46,6 +46,27 @@
       "timeliness": 29.86,
       "writing_value": 5,
       "total_score": 129.86
+    },
+    {
+      "id": "8dc14afeb3ce1407",
+      "title": "Merge Labs and Butterfly Network Partner to Advance Ultrasound-Based Brain-Computer Interfaces - Yahoo Finance Singapore",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNR0pITlR6c1JqVVVubWY4eFRQLVBSNUd5ZlJkV21SbVVob3ZCUTUzcWhBUl9kSGMzUjJuS1NZNFVQMm1GUzFFdDd1WFdfZkVnWEhaOXJlckJEelZPQUpJaXJyVlRmNzBrNldnaG1aeHhud1BRaFIzNjA3cVNYc3p3MnV5dEJ1akRUZWN2bTlR?oc=5",
+      "published_at": "2026-09-01T12:05:00+00:00",
+      "category": "国外脑机接口资讯",
+      "gn_label": "brain_computer",
+      "site_name": "国外脑机接口资讯",
+      "source": "国外脑机接口资讯",
+      "site_id": "国外脑机接口资讯",
+      "description": "Merge Labs and Butterfly Network Partner to Advance Ultrasound-Based Brain-Computer Interfaces  Yahoo Finance Singapore",
+      "ai_score": 80.0,
+      "ai_label": "brain_computer",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 29.78,
+      "writing_value": 5,
+      "total_score": 129.78
     },
     {
       "id": "56ad7614f0b3a93b",
@@ -1033,27 +1054,6 @@
       "timeliness": 29.52,
       "writing_value": 0,
       "total_score": 119.52
-    },
-    {
-      "id": "d52c6becc82f1d7a",
-      "title": "2026电博会具身智能亮点抢先看： 从“思考”到“行动”，机器人正在走进现实 - 中国家电网",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9yajN6OUdJQjRMZjM2TW16c0E5LVlQazVUUWZYYlNEVlhfMjZaYjBDQkVsWXBsemJWOVY0WjBHanB6Ri1zdEY4WmtfalB5Q2owb18xYmxOOUw?oc=5",
-      "published_at": "2026-09-01T00:54:38+00:00",
-      "category": "国内机器人资讯",
-      "gn_label": "robotics",
-      "site_name": "国内机器人资讯",
-      "source": "国内机器人资讯",
-      "site_id": "国内机器人资讯",
-      "description": "2026电博会具身智能亮点抢先看： 从“思考”到“行动”，机器人正在走进现实  中国家电网",
-      "ai_score": 80.0,
-      "ai_label": "robotics",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 29.51,
-      "writing_value": 0,
-      "total_score": 119.51
     }
   ]
 }
