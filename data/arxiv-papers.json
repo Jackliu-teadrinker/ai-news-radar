@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-01T20:15:46.865077+00:00",
-  "total_items": 19,
+  "generated_at": "2026-09-01T22:55:06.400348+00:00",
+  "total_items": 15,
   "items": [
     {
       "id": "http://arxiv.org/abs/2608.31167v1",
@@ -151,46 +151,6 @@
       "category": "cs.RO",
       "published_at": "2026-08-31T11:47:29+00:00",
       "updated_at": "2026-08-31T11:47:29Z"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.30536v1",
-      "title": "Behavior-Skill: A Fine-Grained Benchmark for Evaluating Vision-Language-Action Policies in Long-Horizon Tasks",
-      "url": "https://arxiv.org/abs/2608.30536",
-      "summary": "Reliable execution of long-horizon mobile manipulation tasks remains challenging because overall task success depends on the successful completion of multiple constituent skills. Existing benchmarks, however, still rely primarily on full-task rollouts and aggregate task-level metrics, making intermediate failures difficult to observe and analyze. We present Behavior-Skill, a benchmark that reformulates the learning and evaluation of long-horizon tasks around executable constituent skills. It contains 235,492 skill instances from 10,000 demonstrations across 50 household tasks and 34 semantic skill categories. Each instance pairs a skill instruction with an aligned observation-action segment, and is further associated with a restorable intermediate state and a skill success condition to enable independent evaluation under valid preconditions. We further introduce trajectory-level and skill-level metrics to characterize policy capability beyond aggregate task success. Extensive experiments across representative VLA policies including pi0.5 and GR00T on the complete 50-task benchmark show that failures are highly non-uniform across skills, with contact-rich manipulation skills forming persistent bottlenecks. These results demonstrate that Behavior-Skill complements full-task evaluation by exposing intermediate capability profiles for analyzing and improving long-horizon VLA policies. Behavior-Skill is publicly available at https://github.com/nubot-nudt/Behavior-Skill.",
-      "authors": "Chunyun Ma, Lun Luo, Xingjian Luo et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-31T10:03:48+00:00",
-      "updated_at": "2026-08-31T10:03:48Z"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.30506v1",
-      "title": "Anomaly Detection on Small Industrial Components via Vision-Based Tactile Sensing",
-      "url": "https://arxiv.org/abs/2608.30506",
-      "summary": "Automated inspection of small industrial components, including sub-centimetre-scale parts where defects are geometry-driven and poorly resolved by standard optical cameras, calls for sensing modalities that can directly capture fine surface geometry. Vision-based tactile sensors address this need by converting contact imprints into high-resolution image-like data compatible with existing deep-learning pipelines, yet their effective use for industrial anomaly detection (AD) remains largely unexplored. This work systematically evaluates unsupervised AD methods on a real tactile dataset covering five genuine industrial components acquired with a GelSight Mini sensor mounted on a collaborative robot. Four feature-embedding methods, SPADE, PaDiM, FAPM, and InReaCh, are compared under three validations explicitly motivated by the deployment constraints of contact-based sensing: a Good Fraction analysis establishing the minimum number of nominal contacts for stable performance, directly bounded by gel wear since every acquisition degrades the soft interface; a cross-position evaluation assessing generalization across different contact locations observing the same recurring surface pattern; and a low- versus high-resolution comparison evaluating the cost-benefit of higher-resolution tactile acquisition. Overall, this systematic benchmarking study provides practical guidance for researchers and practitioners adopting vision-based tactile sensing for industrial AD and shows how this modality can serve as a viable alternative for industrial quality-control tasks.",
-      "authors": "G. F. Preziosa, M. Casiglia, M. Faroni et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-31T09:40:35+00:00",
-      "updated_at": "2026-08-31T09:40:35Z"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.30471v1",
-      "title": "HorizonNet for visual terrain navigation",
-      "url": "https://arxiv.org/abs/2608.30471",
-      "summary": "This paper investigates the problem of position estimation of unmanned surface vessels (USVs) operating in coastal areas or in the archipelago. We propose a position estimation method where the horizon line is extracted in a 360 degree panoramic image around the USV. We design a CNN architecture to determine an approximate horizon line in the image and implicitly determine the camera orientation (the pitch and roll angles). The panoramic image is warped to compensate for the camera orientation and to generate an image from an approximately level camera. A second CNN architecture is designed to extract the pixelwise horizon line in the warped image. The extracted horizon line is correlated with digital elevation model (DEM) data in the Fourier domain using a MOSSE correlation filter. Finally, we determine the location of the maximum correlation score over the search area to estimate the position of the USV. Comprehensive experiments are performed in a field trial in the archipelago. Our approach provides promising results by achieving position estimates with GPS-level accuracy.",
-      "authors": "Bertil Grelsson, Andreas Robinson, Michael Felsberg et al.",
-      "category": "cs.CV",
-      "published_at": "2026-08-31T08:58:13+00:00",
-      "updated_at": "2026-08-31T08:58:13Z"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.30433v1",
-      "title": "A Hybrid PEM-GP Framework for Uncertainty-Aware System Identification of Quadcopters",
-      "url": "https://arxiv.org/abs/2608.30433",
-      "summary": "Accurate dynamic models play a central role in achieving reliable control of quadcopters. Classical system identification methods remain widely used, mainly because of their interpretability. However, they often fail to capture important nonlinear effects, especially in small-scale aerial platforms where such effects become more pronounced. Data-driven approaches offer a different perspective. They can represent complex nonlinear dynamics more effectively, but this comes at the cost of reduced interpretability and the absence of well-calibrated uncertainty estimates. In this work, we propose a framework that combines physics-based modeling with data-driven learning, while explicitly accounting for uncertainty. A physics-based model is first identified using the Prediction Error Method (PEM), which captures the main structure of the system. The remaining dynamics are then modeled using a Gaussian Process (GP), allowing the residual behavior to be learned directly from data. This separation makes it possible to distinguish between known physical effects and unmodeled dynamics. The proposed framework is validated on a Duckiedrone-like experimental setup. The results show that the PEM-GP model achieves prediction accuracy comparable to that of a Long Short-Term Memory (LSTM) network, while additionally providing calibrated uncertainty estimates. This combination improves model reliability and supports uncertainty-aware decision-making.",
-      "authors": "Abdallah Ghoul, Ismail Khalil Bousserhane, Kadri Boufeldja",
-      "category": "cs.RO",
-      "published_at": "2026-08-31T08:26:03+00:00",
-      "updated_at": "2026-08-31T08:26:03Z"
     }
   ]
 }
