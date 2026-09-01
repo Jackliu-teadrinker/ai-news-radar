@@ -1,7 +1,147 @@
 {
-  "generated_at": "2026-09-01T03:18:53.601580+00:00",
-  "total_items": 22,
+  "generated_at": "2026-09-01T03:34:51.458298+00:00",
+  "total_items": 30,
   "items": [
+    {
+      "id": "http://arxiv.org/abs/2608.31167v1",
+      "title": "SUN: Persistent Programs For Language-Grounded Control-to-Learning-to-Real Policies",
+      "url": "https://arxiv.org/abs/2608.31167",
+      "summary": "Bridging model-based control and learned policies in long-horizon manipulation has harbored a silent disagreement: control executes specified objectives, learning amortizes that behavior into a reactive policy, yet existing protocols discard task semantics, leaving rewards hand-crafted and behavior drifting from what control verified.We introduce Semantically UNified (SUN) Programs, typed executables where geometric and contact relations are defined once and compiled into aligned Model Predictive Control (MPC) costs, satisfaction predicates, RL rewards, transition guards, and diagnostics. Our system, Kuafu, driven by large vision language systems, automatically synthesizes SUN Programs from language and scene semantics, screens feasibility via MPC, and retains semantics while training stage-conditioned policies. Across nine tasks, Kuafu achieves 82.03% macro-success, outperforming sparse-reward (35.67%) and Stage-BC (24.75%) baselines. At 8192-way scale, it generates 10.57x the successful trajectory time per hour of human teleoperation. With 500 trajectories per task, Kuafu data trains DP3 policies to 46.0% simulation success (vs. 22.4% for alternatives) and 34.7% on physical Franka and Kinova robots. These results establish that simulation-screened task semantics can effectively amortize control into robust policies, without demonstrations or manual dense rewards, unifying symbolic planning and data-driven execution.",
+      "authors": "Weiqi Wang, Zhi Li, Yudong Lei et al.",
+      "category": "cs.RO",
+      "published_at": "2026-08-31T17:59:16+00:00",
+      "updated_at": "2026-08-31T17:59:16Z"
+    },
+    {
+      "id": "http://arxiv.org/abs/2608.31029v1",
+      "title": "Driving on Memory",
+      "url": "https://arxiv.org/abs/2608.31029",
+      "summary": "End-to-end autonomous driving models plan future trajectories from raw sensor input. While earlier driving benchmarks often measured deviation from the human trajectory, current benchmarks such as NAVSIM and Bench2Drive evaluate models with richer simulation-based metrics intended to capture safe and compliant driving. A high benchmark score should reflect that a model can understand the scene in front of it and act accordingly. But how much of that score specifically comes from reacting to the dynamic part of that scene? To probe this, we remove a model's camera input and replace it with memories from prior drives at the same location. The retrieved memories can provide persistent scene information, including road layout and location-conditioned regularities, but not the current traffic state. Surprisingly, memory is nearly sufficient on NAVSIM, reaching or even exceeding the performance of leading end-to-end methods without actually observing the evaluated scene. Our results suggest that a high NAVSIM score does not require a planner to react to the current traffic scene and should be treated with caution. This effect is benchmark-dependent: driving from memory causes substantially larger performance drops on Bench2Drive and RealEngine. We provide our code at https://github.com/boschresearch/MemoryDrivoR .",
+      "authors": "Christian Löwens, Thorben Funke, Alexandru Paul Condurache",
+      "category": "cs.CV",
+      "published_at": "2026-08-31T16:10:04+00:00",
+      "updated_at": "2026-08-31T16:10:04Z"
+    },
+    {
+      "id": "http://arxiv.org/abs/2608.31002v1",
+      "title": "DARP: A Calibrated Dual-Arm RGB-D-IR Dataset for Multi-View Robotic Perception",
+      "url": "https://arxiv.org/abs/2608.31002",
+      "summary": "Robotic perception from a single viewpoint is often limited by self-occlusion and incomplete surface visibility. This paper presents DARP(Dual-Arm Robotic Perception) https://doi.org/10.21227/rmv3-be47, a calibrated dual-arm RGB-D-IR dataset for object-centered robotic perception using two independently moving eye-in-hand manipulators positioned on opposite sides of a shared tabletop workspace. Each arm carries an Intel RealSense sensor that continuously records RGB, depth, and stereo infrared data while synchronized robot joint states are logged for pose recovery. Objects are placed without fixed poses or marked locations, and the acquisition procedure performs automatic localization, cross-arm confirmation, adaptive viewpoint generation, and continuous multimodal recording. DARP contains ten unique tabletop objects and preserves the original sensor recordings, robot-state logs, object-level metadata, and calibration information required to reconstruct camera trajectories in a shared metric frame. To evaluate the geometric consistency of the acquisition, we implement a deterministic multi-view fusion pipeline that converts calibrated RGB-D observations into complementary partial point clouds and measured surface meshes without using learned or generative completion methods. Evaluation on 224 held-out RGB-D keyframes comprising 1,563,466 three-dimensional query points yields a median point-to-mesh distance of 2.13~mm and an RMSE of 4.04~mm, with 96.56\\% of points within 10~mm of the measured-surface mesh. DARP is intended as a reusable resource for multi-view reconstruction, collaborative robotic perception, multimodal fusion, active perception, and future learning-based reasoning over partial object observations.",
+      "authors": "Manish Kansana, Mohammed Yusuf Mujawar, Sudip Mittal et al.",
+      "category": "cs.RO",
+      "published_at": "2026-08-31T15:53:41+00:00",
+      "updated_at": "2026-08-31T15:53:41Z"
+    },
+    {
+      "id": "http://arxiv.org/abs/2608.30983v1",
+      "title": "Autonomously Acquiring Robot Manipulation Skills with Language-Driven Quality-Diversity",
+      "url": "https://arxiv.org/abs/2608.30983",
+      "summary": "Quality-diversity (QD) algorithms have been gaining traction in robot learning, where diverse motion primitive libraries allow robots to adapt zero-shot to constraints at deployment time. However, such methods typically require expert designers to write the success condition, fitness and diversity metrics, and this strongly limits the robot's autonomy. On the other hand, existing LLM-based reward-shaping techniques allow robots to learn autonomously but only output single high-performing solutions, limiting the robot's adaptability. In this paper, we propose an approach designed to output diverse motion primitive archives by autonomously leveraging quality-diversity algorithms, only requiring a free-form description of the task in common language. To address the difficulty of designing relevant fitness and diversity metrics, we propose an autonomous exploration mechanism able to reliably output sets of functionals covering the fitness and behavior descriptor (BD) space. First, we pose policy exploration as a functional design problem, where the functional spaces are lower-dimensional than the full BD and fitness spaces, and propose an LLM-based exploration scheme to sample from these low-dimensional spaces without any task-specific prompts, fine-tuning or expert intervention. We adapt a multi-BD variant of the MAP-Elites success (MES) algorithm, designed to leverage the heterogeneous BD samples. Finally, through experiments based on the genesis simulator, we show that our method effectively generates archives of diverse motion primitives, outperforming classical QD algorithms with inferred and hand-written parametrizations on a set of $4$ robotic manipulation tasks.",
+      "authors": "Émiland Garrabé, Mahdi Khoramshahi, Stéphane Doncieux",
+      "category": "cs.RO",
+      "published_at": "2026-08-31T15:42:20+00:00",
+      "updated_at": "2026-08-31T15:42:20Z"
+    },
+    {
+      "id": "http://arxiv.org/abs/2608.30935v1",
+      "title": "LightNav-0: Eliciting VLM Spatial Intelligence for Generalist Embodied Navigation",
+      "url": "https://arxiv.org/abs/2608.30935",
+      "summary": "Embodied navigation requires agents to translate heterogeneous goals and visual observations into actions across tasks, environments, and robot embodiments. Modern vision-language models (VLMs) already encode spatial priors for visual grounding, spatial reasoning, and pointing, but these capabilities are rarely elicited directly for robot control. Existing navigation systems instead rely on task- or embodiment-specific components, fragmenting perception, reasoning, and action while offering limited generalization. Here we present LightNav-0, a compact generalist embodied navigation model that elicits the spatial intelligence of a pretrained VLM and aligns it with navigation, without task-specific prediction heads. LightNav-0 represents diverse navigation tasks through a unified token interface: dual-channel pointing expresses task-, scene-, and embodiment-agnostic spatial intent, while a residual vector-quantized action tokenizer maps this intent to precise, embodiment-specific trajectories. Together with temporally aware visual history compression, ER mid-training, supervised fine-tuning, and reinforcement learning, this formulation supports instruction following, open-vocabulary object navigation, and visual tracking within a single model. The navigation training corpus spans 2K+ scenes and 4K+ hours of embodied navigation data. LightNav-ER, the embodied-reasoning checkpoint used to initialize LightNav-0, attains the highest complete-set average across 8 embodied-reasoning benchmarks, while LightNav-0 achieves state-of-the-art monocular success rates across all 10 public navigation simulation settings. Real-world evaluations further demonstrate zero-shot generalization across robot embodiments, diverse scenes, and static and dynamic targets. These results establish compact VLMs as a unified and transferable backbone for generalist embodied navigation.",
+      "authors": "Shaoan Wang, Aocheng Luo, Fei Huang et al.",
+      "category": "cs.RO",
+      "published_at": "2026-08-31T15:08:53+00:00",
+      "updated_at": "2026-08-31T15:08:53Z"
+    },
+    {
+      "id": "http://arxiv.org/abs/2608.30900v1",
+      "title": "The Structure of Merging Turbulent Jets Beneath a Small Quadrotor",
+      "url": "https://arxiv.org/abs/2608.30900",
+      "summary": "The downwash wake of a hovering quadrotor governs both the vehicle's own performance and the safe spacing of multi-rotor formations. Prior measurements have largely characterized the mean flow, using single-point anemometry, volumetric tracking, or planar cuts through part of the rotor system. Higher-order turbulent statistics of the merged wake, and how they relate to canonical jet scaling, have remained unresolved, particularly for small quadrotors at the low-Reynolds-number end of the size range. Here, we present a detailed particle image velocimetry (PIV) study of the downwash of a hovering Crazyflie 2.1 quadrotor (arm length, $l = 46$ mm), sampled along a diagonal cut, passing through rotors along the symmetry axis of the quadrotor, and a front-rotor cut, passing through adjacent rotors. The four rotor jets merge into a single column by $z/l \\approx 5$, beyond which the mean velocity profiles progressively approach the canonical round-jet self-similar form, collapsing by $z/l \\approx 13$ when scaled by the local centerline velocity and half-width. Centerline decay and half-width growth follow canonical scaling laws with an effective source diameter $D_\\text{eff} = 2.29\\,l$, effective Reynolds number $Re_{D_\\text{eff}} = 3 \\times 10^4$, at the low end of the range over which canonical jet scaling has been established, and spreading and decay constants nonetheless within the canonical round-jet range. Resolving both cuts shows that the turbulent normal stresses retain a bimodal, cut-dependent signature of the four-rotor source throughout the measurement domain.",
+      "authors": "Anoop Kiran, Nora Ayanian, Kenneth Breuer",
+      "category": "physics.flu-dyn",
+      "published_at": "2026-08-31T14:50:54+00:00",
+      "updated_at": "2026-08-31T14:50:54Z"
+    },
+    {
+      "id": "http://arxiv.org/abs/2608.30883v1",
+      "title": "SleepWalking: Privileged Representation Shaping for End-to-End Blind Locomotion in Legged Robots",
+      "url": "https://arxiv.org/abs/2608.30883",
+      "summary": "Partially observable locomotion requires a policy to act when task-relevant properties of the robot--environment state are not fully specified by instantaneous observations. Existing approaches often address this challenge by explicitly estimating missing physical variables or processing extended observation histories through structured architectures. We take a different view: partial observability is fundamentally an information-retention problem. The decisive question is not how task-relevant information enters the network, but whether the policy's internal state retains it. Guided by this perspective, we propose SleepWalking for Robot Locomotion (SWAQ), a one-stage end-to-end framework that uses next-step privileged physical reconstruction to shape what a recurrent history representation retains during policy learning, while the deployed actor uses only a direct history-to-action pathway. Under aligned training settings, SWAQ achieves a 15.0\\% higher peak mean terrain level than DWAQ, the strongest non-exteroceptive baseline, while using 44.4\\% fewer inference MACs per control step. Layerwise probes further show that information associated with the reconstructed physical variables remains linearly decodable through the policy head up to the layer preceding the action output. Complementary theoretical analysis relates privileged-variable recoverability to the achievable-return gap between history-based and privileged-information policy classes. These results suggest that semantic objectives can structure learning without requiring a corresponding architectural decomposition of the deployed controller.",
+      "authors": "Zheng Pan, Tenghui Wang, Peilin Li et al.",
+      "category": "cs.RO",
+      "published_at": "2026-08-31T14:42:03+00:00",
+      "updated_at": "2026-08-31T14:42:03Z"
+    },
+    {
+      "id": "http://arxiv.org/abs/2608.30880v1",
+      "title": "Zeva: In-Context Causal Learning for Generalizable Embodied Manipulation",
+      "url": "https://arxiv.org/abs/2608.30880",
+      "summary": "Generalizable embodied manipulation remains difficult to achieve through pretraining alone, due to unseen physical conditions in the real world. We argue that robots need to learn from their own physical interactions on the fly during real-world deployment and use this knowledge to inform subsequent actions. We present Zeva, the first framework that enables in-context learning from a robot's own physical interaction experience while keeping the policy model frozen. Zeva employs a Causal Interaction Extractor to encode an executed action and its induced state change into a causal interaction signal, which is stored in a dual-timescale causal memory. For subsequent actions, relevant causal interaction signals are retrieved from memory and injected into the frozen policy model as context. Experiments in simulation and real-world manipulation demonstrate that Zeva achieves the best performance among the compared frontier VLAs and WAMs and, more importantly, enables self-evolution during deployment without gradient updates. Its success rate continues to improve as the robot accumulates interaction experience. Furthermore, the acquired interaction experience can generalize across tasks.",
+      "authors": "Fu Chen, Xin Ding, Bingjia Huang et al.",
+      "category": "cs.RO",
+      "published_at": "2026-08-31T14:39:00+00:00",
+      "updated_at": "2026-08-31T14:39:00Z"
+    },
+    {
+      "id": "http://arxiv.org/abs/2608.30874v1",
+      "title": "Provably Safe Decentralized Contingency MPC under State-Only Information and Limited Sensing for Nonlinear Multi-agent Systems",
+      "url": "https://arxiv.org/abs/2608.30874",
+      "summary": "This paper considers decentralized contingency MPC for multi-agent control under a state-only information pattern, with particular focus on limited sensing and plug-and-play operation. The objective is to retain recursive feasibility, safety, and Lyapunov-type convergence while reducing conservatism in local interaction handling. The framework relies on agent-wise fallback regions (safe sets) in which a feasible contingency maneuver to a safe equilibrium is always available. A novel safe-set update mechanism is introduced that supports less conservative decentralized interaction while preserving the underlying guarantees. This, in turn, enables memory-free local interaction and finite sensing ranges without requiring agents to reconstruct the exact neighbor geometry. The resulting scheme remains fully decentralized and preserves the shared-first-input contingency MPC structure. Theoretical guarantees and simulation results illustrate the effectiveness of the approach in dense multi-agent scenarios.",
+      "authors": "Max Studt, Georg Schildbach",
+      "category": "math.OC",
+      "published_at": "2026-08-31T14:33:59+00:00",
+      "updated_at": "2026-08-31T14:33:59Z"
+    },
+    {
+      "id": "http://arxiv.org/abs/2608.30858v1",
+      "title": "GAFT: Geo-Anchored Fine-Tuning for Hazard Identification from Rare Failures",
+      "url": "https://arxiv.org/abs/2608.30858",
+      "summary": "Off-road navigation can fail when physical structures induce irrecoverable states such as high-centering or entrapment, requiring human interventions. Identifying these structures is crucial, yet challenging. Such failure events are rare and costly to collect, resulting in limited training data. Moreover, the collected data associate frames with outcomes, but do not indicate the visual cues responsible for the failure. Learning directly from these data can therefore exploit scenario-specific visual cues, leading to poor generalization. We propose \\textbf{Geo-Anchored Fine-Tuning (GAFT)}, a parameter-efficient method that adapts a vision foundation model with a geometry-derived prior. It guides LoRA adaptation by aligning a spatial attention-rollout map with the geometry prior, while preserving pretrained representations. On an intervention-verified forest hazard benchmark, across ten independently trained adaptations, GAFT consistently outperforms frozen DINOv2 and supervised PEFT baselines, improving the repeated leave-one-scenario-out mean $F_2$ from 0.0607 to 0.3757 with statistical significance under paired analysis. Within these independently trained models, the best-performing GAFT model achieves a repeated-LOSO $F_2$ of 0.570. Code and benchmark: https://github.com/Xu-Yanran/geo_anchored_fine_tuning",
+      "authors": "Yanran Xu, Chuanhang Qiu, Yue Wang et al.",
+      "category": "cs.RO",
+      "published_at": "2026-08-31T14:20:59+00:00",
+      "updated_at": "2026-08-31T14:20:59Z"
+    },
+    {
+      "id": "http://arxiv.org/abs/2608.30832v1",
+      "title": "A Dual-Cam Parallel Elastic Actuator with Shared Gas-Spring Compensation for Humanoid Ankles",
+      "url": "https://arxiv.org/abs/2608.30832",
+      "summary": "To improve torque capacity and energy efficiency of humanoid ankles, this paper proposes a 2-DoF parallel elastic actuator (PEA). The main novelty of the proposed design lies in its dual-cam, single-gas-spring architecture, which enables torque compensation in both pitch and roll using a shared elastic element, thereby improving structural compactness compared with conventional multi-element compensation schemes. By leveraging parallel gas springs and customized cam modules, the proposed architecture provides dual-axis torque assistance tailored to specific task requirements. The second key contribution is the formulation of a coupled 2-DoF mathematical model that explicitly captures the interdependence between the two compensation units through the shared spring. Based on this model, an optimization-based design framework is developed to synthesize customized cam profiles from prescribed torque references, establishing a systematic link from task requirements to hardware realization. The complete lower-leg CAD integration is presented in detail. Static FEA and kinematic simulations confirm the design's feasibility and torque-relief effectiveness. The results highlight the proposed design as a compact, customizable solution for 2-DoF humanoid ankle torque compensation.",
+      "authors": "Jingcheng Jiang, Yifang Zhang, Nikos G. Tsagarakis",
+      "category": "cs.RO",
+      "published_at": "2026-08-31T14:06:21+00:00",
+      "updated_at": "2026-08-31T14:06:21Z"
+    },
+    {
+      "id": "http://arxiv.org/abs/2608.30773v1",
+      "title": "Learning to infer and manipulate through distributed whole-arm interaction in a soft robot",
+      "url": "https://arxiv.org/abs/2608.30773",
+      "summary": "In animals such as elephants and octopuses, acquiring non-visual information about an object and physically engaging with it are inseparable processes mediated by rich, large-area interactions between compliant appendages and the environment. Soft robots provide a natural platform for translating this principle into engineered systems. Yet current robotic intelligence makes limited use of physical interaction, treating it primarily as a disturbance to be rejected or, at best, as a means of compensating for object misalignment. Here, we introduce a physical intelligence framework in which distributed compliant interactions jointly reveal task-relevant information and organize manipulation behavior. This results in an intrinsically partially observable problem: key task-relevant information is never measured directly, but must instead be inferred from the history of physical interactions. We propose a reinforcement-learning architecture that addresses this challenge by learning a memory-based control policy end-to-end. The key innovations making this possible are (i) a pretrained exploration policy that provides a reference for broad workspace exploration, (ii) joint optimization that integrates exploration and grasping objectives within a single recurrent policy, and (iii) a two-stage sim-to-real adaptation including observation mapping and policy fine-tuning. We demonstrate this principle through blind whole-arm grasping with a hybrid rigid-soft robotic arm that we equip with IMUs embedded directly within its compliant structure, providing its only source of proprioceptive sensing. The learned policy successfully identifies and grasps various objects by autonomously coordinating workspace exploration, object encounter and localization, inference of grasp-relevant properties, and stable whole-arm wrapping.",
+      "authors": "Chuhan Zhang, Ebrahim Shahabi, Kseniia Khomenko et al.",
+      "category": "cs.RO",
+      "published_at": "2026-08-31T13:35:00+00:00",
+      "updated_at": "2026-08-31T13:35:00Z"
+    },
+    {
+      "id": "http://arxiv.org/abs/2608.30690v1",
+      "title": "Failure or Drift? Evaluating Monocular SLAM under Synthetic and Real-World Corruptions",
+      "url": "https://arxiv.org/abs/2608.30690",
+      "summary": "Visual SLAM is commonly evaluated on clean trajectories, although deployment failures are often caused by adverse weather, illumination, blur, and sensor artifacts. Controlled corruptions are attractive because they isolate such factors, but a synthetic stress test is useful only when it leads to the same engineering conclusion as the condition it is intended to approximate. This work examines that question for monocular SLAM. We evaluate a classical feature-based system and two learned trackers under image-space, geometry-aware, and compound corruptions, and compare their behavior with adverse conditions from 4Seasons. Rather than reducing robustness to a single trajectory error, the evaluation separates explicit tracking failure from drift accumulated by methods that remain active. The results show that learned trackers largely replace catastrophic loss with sustained, and sometimes severe, drift. More importantly, the apparent ordering of the learned systems changes with the physical fidelity of the corruption: structured rain and fog proxies preserve the real-world ordering, whereas a simple illumination proxy does not. Code is available at: https://github.com/abhaythomas/master_thesis_vslamlab_robustness.",
+      "authors": "Abhay Skaria Thomas, Shashank Agnihotri, Margret Keuper",
+      "category": "cs.CV",
+      "published_at": "2026-08-31T12:28:26+00:00",
+      "updated_at": "2026-08-31T12:28:26Z"
+    },
+    {
+      "id": "http://arxiv.org/abs/2608.30673v1",
+      "title": "CIG-RL: Curiosity-Driven Information-Guided Reinforcement Learning for Source Term Estimation in Uncertain Environments",
+      "url": "https://arxiv.org/abs/2608.30673",
+      "summary": "Source term estimation (STE), which aims to estimate key properties of the gas source, is essential for identifying hazardous gas releases. Information-theoretic approaches have been adopted for autonomous STE using mobile sensors due to robustness in noisy environments, yet their online action selection incurs substantial computational cost. Deep reinforcement learning (DRL) provides a promising alternative with its fast decision-making capability. In DRL-based STE, the agent selects actions based on belief states of the source term updated from noisy measurement sequences. However, existing methods rely on random exploration or solely on belief uncertainty reduction without an effective exploration strategy in DRL, which can limit policy robustness in noisy environments. To address this, we propose a curiosity-driven information-guided reinforcement learning for robust and efficient STE. The proposed method promotes active exploration of novel belief state transitions that have not been sufficiently explored during training. We further introduce an uncertainty-adaptive active perception reward to guide efficient source search under uncertainty. Simulations under high-noise conditions and real-world experiments demonstrate the robustness and feasibility of the proposed framework, highlighting its potential for practical STE problems.",
+      "authors": "Junhee Lee, Seunghwan Kim, Hongro Jang et al.",
+      "category": "cs.RO",
+      "published_at": "2026-08-31T12:13:55+00:00",
+      "updated_at": "2026-08-31T12:13:55Z"
+    },
     {
       "id": "http://arxiv.org/abs/2608.30643v1",
       "title": "Temporal Forcing: 4D Representation Alignment for Vision-Language-Action Models",
@@ -161,66 +301,6 @@
       "category": "eess.SY",
       "published_at": "2026-08-31T03:16:14+00:00",
       "updated_at": "2026-08-31T03:16:14Z"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.30179v1",
-      "title": "Open-Source Autonomous Driving System Analysis and Multi-Disciplinary Hardware-in-the-Loop Research Paradigm with Reinforcement-Learning Testing and Large Language Models",
-      "url": "https://arxiv.org/abs/2608.30179",
-      "summary": "Open-source autonomous driving systems provide an inspectable software foundation for intelligent vehicle research. Under real-vehicle deployment conditions, the recording and review of experimental conditions are important for interpreting system behavior and reusing experimental results. However, in a shared real-vehicle environment involving multiple vehicles, task processes, code modifications, and hardware testing feedback are often distributed across different teams and experimental stages, making it challenging to maintain continuous and reviewable experimental records. To address this limitation, this paper examines an Apollo-on-Hongqi EV environment and proposes a real-vehicle experimental framework. The framework connects multi-vehicle experiments, repository-based code reuse and software-hardware testing feedback within a unified review process. Large language models and RL-based testing serve as auxiliary components for record organization, anomaly summarization, and simulation-based candidate scenario generation. Based on this setting, this paper analyzes preliminary evidence from multi-vehicle collaborative experimentation, code and experimental-skill sharing, and software-hardware collaborative testing. The analysis shows that experimental records can be examined together with their operating conditions, providing a reviewable basis for Apollo-on-Hongqi EV research.",
-      "authors": "Dianjing Cheng, Yike Li, Lan Yang et al.",
-      "category": "cs.SE",
-      "published_at": "2026-08-31T02:58:20+00:00",
-      "updated_at": "2026-08-31T02:58:20Z"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.30144v1",
-      "title": "Rethinking Language's Role in Efficient VLA for Autonomous Vehicles: Toward Smarter, Trustworthy Driving",
-      "url": "https://arxiv.org/abs/2608.30144",
-      "summary": "Vision-Language-Action (VLA) models are reshaping autonomous driving (AD) by unifying perception, reasoning, and control through language, enabling semantic grounding, interpretable decisions, and better long-tail generalization. But language is expensive onboard: latency and memory budgets are tight, and autoregressive decoding is inherently sequential. This work reframes the central question as when and where language should act at inference, since inference cost recurs at every deployed frame while training cost is paid once. We introduce the Language Residue taxonomy to organize methods by their inference-time use of language: train-time-only supervision (L1), latent non-textual reasoning (L2), conditional invocation (L3), and full per-frame generation (L4). We review representative methods and tag each across five deployment axes (latency, parameters, memory, FLOPs, tokens), analyzing them on major open- and closed-loop driving benchmarks (e.g., nuScenes, NAVSIM, Bench2Drive). We further trace how efficient methods from NLP/LLM are adapted in AD, identifying the constraints and motivations driving these adaptations. A continuously updated repository will be available at Github.",
-      "authors": "Tongfei Guo, Lili Su",
-      "category": "cs.RO",
-      "published_at": "2026-08-31T01:51:51+00:00",
-      "updated_at": "2026-08-31T01:51:51Z"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.30055v1",
-      "title": "MiBOT: A head-worn robot that modulates cardiovascular responses through human-like soft massage",
-      "url": "https://arxiv.org/abs/2608.30055",
-      "summary": "Massage therapy is helpful for the rehabilitation of various diseases, such as headaches caused by migraines and stress. Existing robotic systems have focused on massage therapy on the torso and limbs, but performing massage motions through suitable actuation on a person's head has been a challenge. In this paper, we present MiBOT, a head-worn massage robot that actuates two soft tactors to produce touch motions mimicking human massage. A key design principle behind MiBOT is its silent actuation, which we achieve through pneumatic artificial muscles in conjunction with a controller loop to respond to contact pressure. We evaluated the effectiveness of MiBOT in a controlled study and assessed subjects' blood pressure and heart rate levels while applying MiBOT. We found that our mechanical system generated positive and conclusive quantitative outcomes that are similar to the human-administered massage, decreasing participants' mean systolic and diastolic blood pressure by 2.8 mmHg and 1.7 mmHg, respectively, as well as calming their heart rate by 8-10% on average.",
-      "authors": "Alice Mylaeus, Stephanie Vogt, Berken Utku Demirel et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-30T21:38:45+00:00",
-      "updated_at": "2026-08-30T21:38:45Z"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.29967v1",
-      "title": "Training-Free Action Correction for VLA Model Failures via Language Feedback",
-      "url": "https://arxiv.org/abs/2608.29967",
-      "summary": "Vision-Language-Action (VLA) models demonstrate strong semantic understanding yet exhibit systematic failures during deployment. The conditions under which these failures occur, and whether they can be corrected without retraining, remain poorly understood. In this paper, we take steps toward addressing this gap. We present CorrectVLA, a framework that translates task-level natural language corrections into additive action magnitude adjustments without modifying policy weights. A human provides a single task-level correction, applied uniformly across all rollouts without per-episode intervention. In simulation, CorrectVLA recovers execution misalignment failures across both in-distribution and OOD tasks. In real-robot experiments on a UFactory xArm7 under environment shift, CorrectVLA restores near-perfect success where the base policy almost entirely breaks down, generalizing across object locations and identities. Through a taxonomy of failure modes on LIBERO-90, we find that execution misalignment failures, where the policy reaches the correct target but miscalibrates action magnitudes, represent the correctable subset, while other failure modes where semantic comprehension itself breaks down are not amenable to this approach. The approach succeeds when policies possess strategic correctness and fails when fundamental comprehension is absent, establishing a practical operational boundary for inference-time correction.",
-      "authors": "Owen Kwon, Pablo Ortega-Kral, Arthur Bucker et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-30T18:54:03+00:00",
-      "updated_at": "2026-08-30T18:54:03Z"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.29935v1",
-      "title": "System Identification of Admittance Models for Large Real-World Objects",
-      "url": "https://arxiv.org/abs/2608.29935",
-      "summary": "Simulation of admittance-type models requires physically consistent dynamic models that are rarely available for off-the-shelf, everyday objects, limiting the fidelity of haptic interfaces that rely on such simulations. This paper presents the first complete workflow for producing physically consistent models of large real-world objects with various constraints and mechanisms, guaranteeing physical consistency of inertia and friction parameters. The workflow separates each object and identifies the handle and body in two stages, requiring no torque sensors at hinges, axles, or other constrained joints. Models are produced for a heavy, closer-actuated door and a wheelbarrow, representing objects of differing constraint types and model complexity. The door is modeled using four-bar linkage kinematics and a fluid dynamics-based lumped parameter model including opening, backcheck, swing, and latch zones. The wheelbarrow is modeled as a rigid body with a spherical wheel and no slip during rolling. Handle estimation RMS errors were below 0.64 N and 0.042 Nm across both objects. Door body estimation had RMS error of 2.19 Nm and wheelbarrow body estimation had RMS error of 6.77 Nm.",
-      "authors": "Nathan I. Baum, Nathaniel G. Luttmer, Mark A. Minor",
-      "category": "cs.RO",
-      "published_at": "2026-08-30T18:06:58+00:00",
-      "updated_at": "2026-08-30T18:06:58Z"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.29896v1",
-      "title": "EMERGE-Policy: A Robot Mind Emerges Beyond a Single Policy",
-      "url": "https://arxiv.org/abs/2608.29896",
-      "summary": "A robot's effective ``mind'' need not reside in a single policy. It can emerge when specialized components perceive, reason, predict, act, verify, and remember within a shared orchestration process. EMERGE-Policy turns this perspective into a graph-structured agentic framework that coordinates both capability invocation and information exchange. A Main Agent retains task-level state within an active context window, while role-specific Sub Agents process perception, execution monitoring, verification, and memory consolidation in isolated contexts and return structured, task-relevant evidence. Role-specific contexts control information load by exposing only decision-relevant evidence to the Main Agent, while the functional Skill interface composes heterogeneous backends as Operational, Imagination, and Evaluation Skills. Criterion-grounded verification, textual failure diagnosis, and Branch Stack recovery provide localized correction, with token-aware external memory preserving task-relevant state. Together, their closed-loop interaction realizes the system-level policy captured by the name EMERGE-Policy. Without additional fine-tuning, we achieved outstanding performance on several public benchmark that have had a wide-reaching impact, and conducted a series of real robot experiments. These system-level results suggest that through the division of different functional sub-tasks among multiple agents and their concurrent collaboration, as well as the technical paradigm where the model is regarded as a skill and called within the framework, EMERGE-Policy can extend the robust robot policies beyond isolated runs.",
-      "authors": "Zhirui Fang, Qingchi Yu, Ziyang Chen et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-30T16:46:06+00:00",
-      "updated_at": "2026-08-30T16:46:06Z"
     }
   ]
 }
