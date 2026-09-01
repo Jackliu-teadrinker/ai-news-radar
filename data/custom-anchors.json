@@ -1,9 +1,30 @@
 {
-  "generated_at": "2026-09-01T14:06:56.128105+00:00",
+  "generated_at": "2026-09-01T14:21:07.593914+00:00",
   "window_start": "2026-09-01T19:00:00+08:00",
-  "window_end": "2026-09-01T22:04:55.053494+08:00",
-  "total_items": 15,
+  "window_end": "2026-09-01T22:19:25.845790+08:00",
+  "total_items": 14,
   "items": [
+    {
+      "id": "56fa504257d3df851c5cdbee905f716c46f68236",
+      "title": "Waymo and Zoox expand into more U.S. markets as robotaxi race heats up",
+      "title_zh": "",
+      "url": "https://www.cnbc.com/2026/09/01/waymo-and-zoox-expand-into-more-us-markets-as-robotaxi-race-heats-up.html",
+      "published_at": "2026-09-01T14:00:01+00:00",
+      "category": "CNBC AI Age",
+      "gn_label": "robotics",
+      "site_name": "CNBC AI Age",
+      "source": "CNBC AI Age",
+      "site_id": "CNBC AI Age",
+      "description": "Waymo is bringing driverless rides to three more cities, and Amazon plans to start testing in two additional U.S. markets.",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 29.68,
+      "writing_value": 5,
+      "total_score": 114.68
+    },
     {
       "id": "d38b951a59834d395d65dddda0d7f672380baede",
       "title": "‘Robot Olympics’ reveal humanoids’ rapid progress — and flaws",
@@ -42,9 +63,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 28.94,
+      "timeliness": 28.69,
       "writing_value": 5,
-      "total_score": 113.94
+      "total_score": 113.69
     },
     {
       "id": "693cefc9f7d7a33c88e8cf5792058f24337090d9",
@@ -63,9 +84,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.44,
+      "timeliness": 27.2,
       "writing_value": 0,
-      "total_score": 102.44
+      "total_score": 102.2
     },
     {
       "id": "68926689a40703871edc2684b70b53fe18f070f2",
@@ -84,9 +105,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.93,
+      "timeliness": 28.69,
       "writing_value": 0,
-      "total_score": 118.93
+      "total_score": 118.69
     },
     {
       "id": "73b83be294bf5eeacbcfacea6351cf917a84e9da",
@@ -105,51 +126,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 28.93,
+      "timeliness": 28.69,
       "writing_value": 5,
-      "total_score": 113.93
-    },
-    {
-      "id": "9fc82acce6df351670fc44fb690e1e1bddc449fe",
-      "title": "Husband JAILED for 'invasion of privacy' after catching wife cheating on robot vacuum cleaner's camera - The Sun",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPVEN3Nkx3bW0yVldqbkVpU01uQWhlbU9xa2I2U3JHUXpsNjIySVdfaUdhclF6QjRFRTVMRFM4b2Q3ZEF0dGQzaHcxdTA5YzhNMDQ1UnVVcXJ4aGJVbHJweW0zOEFGeUszOENWWnNkbDZIOHlmSTNQTUVhQTVOajFrVkhSRTMtOU5aTGpCNFQ1RkE1bTE5M0hINFl4MHcyMU9maGZOVE43Um8?oc=5",
-      "published_at": "2026-09-01T12:38:00+00:00",
-      "category": "GN: robot vacuum",
-      "gn_label": "robotics",
-      "site_name": "GN: robot vacuum",
-      "source": "GN: robot vacuum",
-      "site_id": "GN: robot vacuum",
-      "description": "Husband JAILED for 'invasion of privacy' after catching wife cheating on robot vacuum cleaner's camera  The Sun",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 5,
-      "timeliness": 28.55,
-      "writing_value": 5,
-      "total_score": 113.55
-    },
-    {
-      "id": "dd585b666275394e3fbaa2d1caa7a3ba1fc84fbf",
-      "title": "Tapo's new robot vacuum and mop promises top performance without the £300+ price tag - t3.com",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNcTJtQ0I1blp4YlRjbUJDOTNITGdKTzN4VjFGWFRZX3czdjlqZ3gzTEpKaFFSWnZsYUZlYlZ2SU5TWEU0NTRKLVVXdEZFVWpBZGRsSk5wR3BMZlRLdHdhVEs0VjNGNFNNUkZfYnpUWWh1d2tfTnBCMzhLNjVVb0JQcmxuaGZEeU05QXI5RXpRZ0NEUFJqTVgzLTFVdnVvZWVCNjJ3cjkwZXlGNzZoOEZqUGtwbDlZTnVFd1dMczRnU3U5OTJwaVJIUElMNA?oc=5",
-      "published_at": "2026-09-01T11:00:00+00:00",
-      "category": "GN: robot vacuum",
-      "gn_label": "robotics",
-      "site_name": "GN: robot vacuum",
-      "source": "GN: robot vacuum",
-      "site_id": "GN: robot vacuum",
-      "description": "Tapo's new robot vacuum and mop promises top performance without the £300+ price tag  t3.com",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 26.92,
-      "writing_value": 0,
-      "total_score": 101.92
+      "total_score": 113.69
     },
     {
       "id": "4fa91a657188e39fad75d0380dc7ecc3990bb9d7",
@@ -168,9 +147,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 28.65,
+      "timeliness": 28.41,
       "writing_value": 5,
-      "total_score": 113.65
+      "total_score": 113.41
     },
     {
       "id": "48b4539a4131baed8b21b905dab65172bc9e331b",
@@ -189,9 +168,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.4,
+      "timeliness": 28.16,
       "writing_value": 0,
-      "total_score": 103.4
+      "total_score": 103.16
     },
     {
       "id": "626182ca3aedf0f87e7c02981914358391e3e836",
@@ -210,30 +189,30 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 5,
-      "timeliness": 28.44,
+      "timeliness": 28.2,
       "writing_value": 5,
-      "total_score": 128.44
+      "total_score": 128.2
     },
     {
-      "id": "db5eb09d4fa3f7bf6d984f220773aecb4c1bac34",
-      "title": "Wetour Robotics demonstrates muscle-vision robot learning system By Investing.com - Investing.com UK",
+      "id": "fc339508e92c7a30fbd0d09beb2af7f43c746b9c",
+      "title": "Wetour Robotics demonstrates muscle-vision robot learning system - Investing.com",
       "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNZGp3eG10dGhRandXRE1DbWJwaFZUZ0Q3SGlONjFUZ0gxd2R6ZjFhS0ZZMHduem5KcTMyTHV3SGduc2hpbW54eTVsRGRaQms4ajU1c1lHS2R2Slg1dEtRcDB2TWhLNUlyN2VyVHlsRkhWMEMwY3pyRFc5aHdvMFNtS2c1dlFkMWZiVU5JY2VMSE11dVNpYlA0V0ROLTc1VDB4bGs0a3FWVVlQTG9WTllIdUpLeUlBWFh2OVhrOUxablR6Zw?oc=5",
-      "published_at": "2026-09-01T12:14:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPcWdwRUxrbEZKdy1SZG0tcmJfS3d4VDNVd1JjNi1QNE5tZmU3UXBHdFh2aHdEaDRRSVFtSWNaQ2tmNlVaekpvd3plLVVONTQ2ejl0QVRJZDVSWVcwdVU1d0lRYTVLZnlDUV9EMWZPS1dNRnprUEFjbERUbVJTYXlFRUEyMUV1bURMcDJhVnV2elp2X0FFalJpUjhGR0JBaS1vTXp6VndmbGxpckFFS2tDZm12eVNZNGpvU211Sg?oc=5",
+      "published_at": "2026-09-01T12:29:31+00:00",
       "category": "GN: robot learning",
       "gn_label": "robotics",
       "site_name": "GN: robot learning",
       "source": "GN: robot learning",
       "site_id": "GN: robot learning",
-      "description": "Wetour Robotics demonstrates muscle-vision robot learning system By Investing.com  Investing.com UK",
+      "description": "Wetour Robotics demonstrates muscle-vision robot learning system  Investing.com",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.15,
+      "timeliness": 28.17,
       "writing_value": 0,
-      "total_score": 103.15
+      "total_score": 103.17
     },
     {
       "id": "4180e38988a2472fd6783bd6dd24de68967aed91",
@@ -252,9 +231,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.07,
+      "timeliness": 27.83,
       "writing_value": 0,
-      "total_score": 103.07
+      "total_score": 102.83
     },
     {
       "id": "3bc290fb7bded6c587c5c533e149a2fe7eb7d0cc",
@@ -273,9 +252,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.92,
+      "timeliness": 27.68,
       "writing_value": 0,
-      "total_score": 102.92
+      "total_score": 102.68
     },
     {
       "id": "65ef41fdf2bc02b8e902075ecb6759b71b0013f4",
@@ -294,9 +273,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.39,
+      "timeliness": 27.14,
       "writing_value": 0,
-      "total_score": 102.39
+      "total_score": 102.14
     },
     {
       "id": "a7a1660568446ef1f269641792b8de45d821724d",
@@ -315,9 +294,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.77,
+      "timeliness": 27.53,
       "writing_value": 0,
-      "total_score": 102.77
+      "total_score": 102.53
     }
   ],
   "fallback_used": false
