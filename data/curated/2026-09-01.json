@@ -1,9 +1,9 @@
 {
   "date": "2026-09-01",
-  "generated_at": "2026-09-01T02:49:01.043307+00:00",
+  "generated_at": "2026-09-01T03:03:43.000505+00:00",
   "score_threshold": 80,
   "total_items": 50,
-  "new_added": 5,
+  "new_added": 1,
   "items": [
     {
       "id": "8222f305d5961c1f",
@@ -332,6 +332,27 @@
       "source": "国内人形机器人资讯",
       "site_id": "国内人形机器人资讯",
       "description": "人形机器人企业快死了，当下自动化设备更有希望  Sohu",
+      "ai_score": 80.0,
+      "ai_label": "humanoid",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.57,
+      "writing_value": 0,
+      "total_score": 119.57
+    },
+    {
+      "id": "4bf6802f54f1c37f",
+      "title": "高盛将人形机器人市场规模预测上调4倍 电商仓库和汽车生产线最快应用 - 新浪财经",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5ibTNaOGdqY2ZtaXM0UkstdlZKR0t4RXJ3Z0NsNnFoNlo1UFA1dmdST2ktS1FvNlAyZUg3b0dhZkJpWmdVUDlwaUNrUE5fbGZ6T3NWdnI3ZlhmSUJfd3I2aDNlYU9RQTFBVEE2di04OA?oc=5",
+      "published_at": "2026-09-01T02:24:41+00:00",
+      "category": "国内人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国内人形机器人资讯",
+      "source": "国内人形机器人资讯",
+      "site_id": "国内人形机器人资讯",
+      "description": "高盛将人形机器人市场规模预测上调4倍 电商仓库和汽车生产线最快应用  新浪财经",
       "ai_score": 80.0,
       "ai_label": "humanoid",
       "relevance": 0.8,
@@ -1033,27 +1054,6 @@
       "timeliness": 25.82,
       "writing_value": 0,
       "total_score": 115.82
-    },
-    {
-      "id": "59fb2dfc53b6835e",
-      "title": "当80岁的中村博之坐在台下，看着两台来自中国的宇树人形机器人伴着音乐跳了一分钟机械舞 - 机器人大讲堂",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE93TGdiakZwTmp1UkFOTHkyTUdQVGlRWk9qYU9QMFQxZmtUMTJoY2lUejRxVHcwZ0J0d0lzb3BZUGdPSlZyWW4xS1BhdE0yd2czWm5ONnpidw?oc=5",
-      "published_at": "2026-08-31T18:32:19+00:00",
-      "category": "国内人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国内人形机器人资讯",
-      "source": "国内人形机器人资讯",
-      "site_id": "国内人形机器人资讯",
-      "description": "当80岁的中村博之坐在台下，看着两台来自中国的宇树人形机器人伴着音乐跳了一分钟机械舞  机器人大讲堂",
-      "ai_score": 80.0,
-      "ai_label": "humanoid",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 25.55,
-      "writing_value": 0,
-      "total_score": 115.55
     }
   ]
 }
