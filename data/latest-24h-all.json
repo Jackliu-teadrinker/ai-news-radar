@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-01T12:35:24.098181+00:00",
-  "total_items": 43,
+  "generated_at": "2026-09-01T12:50:29.944004+00:00",
+  "total_items": 46,
   "items_ai": [
     {
       "id": "066bb236886afccc2a80b9e0be8cf663cd67c035",
@@ -19,9 +19,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 5,
-      "timeliness": 29.52,
+      "timeliness": 29.28,
       "writing_value": 5,
-      "total_score": 129.52
+      "total_score": 129.28
     },
     {
       "id": "105ab873baf4f4ae789b5ee15639d7cd2e332746",
@@ -40,9 +40,93 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 5,
-      "timeliness": 28.48,
+      "timeliness": 28.23,
       "writing_value": 5,
-      "total_score": 128.48
+      "total_score": 128.23
+    },
+    {
+      "id": "eed3ce5917b148e70894ad0462e037d9f712b999",
+      "title": "美珈职院迎新现场，人形机器人惊喜亮相 - Sohu",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOcXdjS1JlZmk4bi1JTHBXZmtKOUhFS0Z4SDJuR1lfX1U2SXBwbTFuN0pIWkV1Vi1ZRzJFakwwdlpSUTY0V3hiQlA5aGhvRndxd2lHeU1MOFpfVWlGMFpUNDY5U1hCQlpFbzVVcDJ5a1RZNzRkMWpIaUw4WVBzVUxlaXIybU1WZjVLZlNYbw?oc=5",
+      "published_at": "2026-09-01T12:43:32+00:00",
+      "category": "国内人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国内人形机器人资讯",
+      "source": "国内人形机器人资讯",
+      "site_id": "国内人形机器人资讯",
+      "description": "美珈职院迎新现场，人形机器人惊喜亮相  Sohu",
+      "ai_score": 80.0,
+      "ai_label": "humanoid",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.92,
+      "writing_value": 0,
+      "total_score": 119.92
+    },
+    {
+      "id": "73032d0b7180e5ec0707d3d035812879ff5ae67a",
+      "title": "三家造车新势力同日披露人形机器人业务进展 - 汽车之家",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9aM2VQSG5kdm1fUllSTGtSazNnOTByd2dkWnNsbkJKcWZocDBtaGpwd3RUTHprc1RqaVpWVUpCX2hYR00zWEpOS1Q3X3gwR2pIc2gyN0h5SXBjU1B2MUlvdlU1ODd0OGY3UDRr?oc=5",
+      "published_at": "2026-09-01T12:40:16+00:00",
+      "category": "国内人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国内人形机器人资讯",
+      "source": "国内人形机器人资讯",
+      "site_id": "国内人形机器人资讯",
+      "description": "三家造车新势力同日披露人形机器人业务进展  汽车之家",
+      "ai_score": 80.0,
+      "ai_label": "humanoid",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.87,
+      "writing_value": 0,
+      "total_score": 119.87
+    },
+    {
+      "id": "234375d42ec71cf8b8f0d7c08c79838f244d41ad",
+      "title": "当机器人一拳挥向人类，具身智能安全治理的“护栏”如何搭起？ - Sohu",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQVVFkM0RXaW42OGZtZTBNeWw2dktNXy1QLUVMa1h3VkwwNjNoN05HbFoxRmZyX3d5WXN3UTN2NkR2SXpVTHpNWnFEcHZnNXBtcHZzWlVHa3ZxQkI5aURmTU5VRWJaWE1McjRCeVYwbGo2YzhQZTk3bEJnN19XNzlqU3hNMDBKV24z?oc=5",
+      "published_at": "2026-09-01T12:29:05+00:00",
+      "category": "国内具身智能资讯",
+      "gn_label": "embodied_ai",
+      "site_name": "国内具身智能资讯",
+      "source": "国内具身智能资讯",
+      "site_id": "国内具身智能资讯",
+      "description": "当机器人一拳挥向人类，具身智能安全治理的“护栏”如何搭起？  Sohu",
+      "ai_score": 80.0,
+      "ai_label": "embodied_ai",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.68,
+      "writing_value": 0,
+      "total_score": 119.68
+    },
+    {
+      "id": "c3a711662ac8560d058544855e75481ee2da4fab",
+      "title": "上观时评 | 500家A股公司都在提具身智能，真正值得警惕的是什么？ - 上观新闻",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9VR0Q0TkFVQm9iMzNNMHFqcVpkRW1MdEs3QnppV3BuYmhGWDdxVHVzaURHRFJMcWVvckI4S3lETHlubDJOejhkQ21jM1lxOWNTeENVY1dYR1NXdw?oc=5",
+      "published_at": "2026-09-01T12:15:00+00:00",
+      "category": "国内具身智能资讯",
+      "gn_label": "embodied_ai",
+      "site_name": "国内具身智能资讯",
+      "source": "国内具身智能资讯",
+      "site_id": "国内具身智能资讯",
+      "description": "上观时评 | 500家A股公司都在提具身智能，真正值得警惕的是什么？  上观新闻",
+      "ai_score": 80.0,
+      "ai_label": "embodied_ai",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.45,
+      "writing_value": 0,
+      "total_score": 119.45
     },
     {
       "id": "5e4688717646c71e15caa42897795f0224957b65",
@@ -61,51 +145,30 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.33,
+      "timeliness": 29.09,
       "writing_value": 0,
-      "total_score": 119.33
+      "total_score": 119.09
     },
     {
-      "id": "9c0bd16dc001a887c6f1b668e867adb373ce44fb",
-      "title": "绝影X30斩获中国外观设计金奖！云深处以场景驱动设计领跑具身智能赛道 - jfdaily.com",
+      "id": "774c55b183c5cc069f428e0c1b7f5ca4c79555bc",
+      "title": "绝影X30斩获中国外观设计金奖！云深处以场景驱动设计领跑具身智能赛道 - jfdaily.com.cn",
       "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE54RXFmNXp3dmVkNjNQZkgzR05mSDZsb3lHWUlIU2poVVlnVDRYbFZVRk9pMXpZaUxteU40NnlhNnluSXplVUNncnpmdHlDaG5laXI2Y3BxcDZBdw?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5nNmZSM2xUTWszTHZsWlk1WWF6TzNMRHR3WE1lMWdjZ2o4MVBJT2FVZ3ExX3drdC1rWVFnMmViMDFZMFVNQXNEbG95T3hJd25LS1pyZXhJTEYwLXhrVXc?oc=5",
       "published_at": "2026-09-01T11:38:00+00:00",
       "category": "国内具身智能资讯",
       "gn_label": "embodied_ai",
       "site_name": "国内具身智能资讯",
       "source": "国内具身智能资讯",
       "site_id": "国内具身智能资讯",
-      "description": "绝影X30斩获中国外观设计金奖！云深处以场景驱动设计领跑具身智能赛道  jfdaily.com",
+      "description": "绝影X30斩获中国外观设计金奖！云深处以场景驱动设计领跑具身智能赛道  jfdaily.com.cn",
       "ai_score": 80.0,
       "ai_label": "embodied_ai",
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.07,
+      "timeliness": 28.83,
       "writing_value": 0,
-      "total_score": 119.07
-    },
-    {
-      "id": "9d40b8d77b42dd321bbd40fe56d7c9af755ebbe1",
-      "title": "HONOR人形机器人海外首秀选择大马 闪电机器人挑战10公里赛道 - 国内 - 全国综合 - 市场情报 - Sin Chew Daily",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMi4wJBVV95cUxObXFyRUFoRkNPQkhkVG1UOFhnNVdXQkxsMHdteXdYYTAwNzBONVMxUXBEb04xUHJINi1yOERWY1RTTFBqd284SjdVN2hPeW10N19TcTN1VmYyeWFpZ3hBenBlWXRqX0J2UHFOaWw1V0RJYnhsLXlWME1lOXB4czItSVpObnR3MXgxMjdVY0hjLUxUZDNld3Fjb05vTzVnWm10WV9lWU5rMnp3QXhUTF9VTWI1aE10ZlBsM0haSlFIZTljZ1UyVzZfTVNYWlk4cmotUExUd2IxbHVkeUNxaDRNck1yNzFiczlaLUlmTzRMQXV1TkNUTk1FZ2hNNFNELWRpcjFjQTRwODBLUE16aFgzdXhyUmQ3dFZGeVV0YkJMUFdyTXlTWFRHOW9TZlhNRVE2dkR1WE9WQmVHdnVBOTJhM1FMQzUyQ0lKQnp3VThQa3hVazd6RTd0bmxMSUJPWVZaSW1Z?oc=5",
-      "published_at": "2026-09-01T11:37:15+00:00",
-      "category": "国内人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国内人形机器人资讯",
-      "source": "国内人形机器人资讯",
-      "site_id": "国内人形机器人资讯",
-      "description": "HONOR人形机器人海外首秀选择大马 闪电机器人挑战10公里赛道 - 国内 - 全国综合 - 市场情报  Sin Chew Daily",
-      "ai_score": 80.0,
-      "ai_label": "humanoid",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 29.06,
-      "writing_value": 0,
-      "total_score": 119.06
+      "total_score": 118.83
     },
     {
       "id": "c05e8874d9a9c9e5ba7703c624bba87a817f75cc",
@@ -124,30 +187,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.79,
+      "timeliness": 28.55,
       "writing_value": 0,
-      "total_score": 118.79
-    },
-    {
-      "id": "13fb955a99fe3f0d0a5de0bc4ec4f62606cbd7e4",
-      "title": "神秘紫色新机意外曝光 HONOR人形机器人国庆游行惊喜连连 - 国内 - 全国综合 - 市场情报 - Sin Chew Daily",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMi4AJBVV95cUxOeDRBTDZmRGpRanJZUzVubi1iWVZzellWMXdJQXdmb3RYc1hJTHBUNW1BUTNkSWE5dDJldlBhMUZFRVcySk1NMC1ZRUVBWXRIQWhxZnRNQVNncGt1VU1venNqS2pycFRsTzZ0S1lRZktDLWtEYU5hYmI1WUZXZDZTeklrMjFIVDlvQnAyaVEzUnVYaGtUZGxaNjd4cTJWYTg0ZkZIaUNXNjJ1QUM4UGQtSWtMdHpXdGhaejNQV0pvSXFiSWVOWVJmT1dzN0Z2c0FvdHNRT1AxQlhZLWdzUjBsbk1KYzVfRk1GUDlQWmRIdmlYX0M0bkJUWGdMOWRWR0hVZHhnY19PcUJRWXNrRnhNdTlLbFhCMXUwN28zbHFtZlFuVlVhUlZabGl2aUMwX0t6eUd6Vzh6bTBDQ0tydnFQNGlQUWdrRndJMEpQYXU0Mk14b1JBOHZwRk1jV0g4LTdf?oc=5",
-      "published_at": "2026-09-01T11:18:12+00:00",
-      "category": "国内人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国内人形机器人资讯",
-      "source": "国内人形机器人资讯",
-      "site_id": "国内人形机器人资讯",
-      "description": "神秘紫色新机意外曝光 HONOR人形机器人国庆游行惊喜连连 - 国内 - 全国综合 - 市场情报  Sin Chew Daily",
-      "ai_score": 80.0,
-      "ai_label": "humanoid",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 28.74,
-      "writing_value": 0,
-      "total_score": 118.74
+      "total_score": 118.55
     },
     {
       "id": "f0d6b12c071db30be3f25e5a146858df01384c3b",
@@ -155,20 +197,20 @@
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQQm1qVW5tdUU4WjdkUTJqaVRZU2wwSTF1UmNxcHRjZkRzNUt4Z2FDbV93V2VDanRuTjFPamkxYmd1cUhDTVlNNXhPVldMTjRSMGpOeURBZmhhd0d1TUU0NjdGaFJjNkd6c2x3T3RYZ0VvbzZXeUNrTlBRN1hFbkJmQjZ6X1dzY3k1?oc=5",
       "published_at": "2026-09-01T11:12:37+00:00",
-      "category": "国内人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国内人形机器人资讯",
-      "source": "国内人形机器人资讯",
-      "site_id": "国内人形机器人资讯",
+      "category": "国内具身智能资讯",
+      "gn_label": "embodied_ai",
+      "site_name": "国内具身智能资讯",
+      "source": "国内具身智能资讯",
+      "site_id": "国内具身智能资讯",
       "description": "行业首个！具身智能机器人应用技术员（人形机器人）职业能力证书发布  Sohu",
       "ai_score": 80.0,
-      "ai_label": "humanoid",
+      "ai_label": "embodied_ai",
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.65,
+      "timeliness": 28.41,
       "writing_value": 0,
-      "total_score": 118.65
+      "total_score": 118.41
     },
     {
       "id": "f634203117f75d5dd204eb78014e057af28ff1cf",
@@ -187,9 +229,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.65,
+      "timeliness": 28.41,
       "writing_value": 0,
-      "total_score": 118.65
+      "total_score": 118.41
     },
     {
       "id": "a9e1f3f385407d5b98c71a8896dcc0e579252bfd",
@@ -208,79 +250,100 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.46,
+      "timeliness": 28.21,
       "writing_value": 0,
-      "total_score": 118.46
+      "total_score": 118.21
     },
     {
-      "id": "73c4db5fc16bf7cc497fc7c41198036f5e6e9455",
-      "title": "Wetour Robotics Demonstrates sEMG-Vision System Targeting Force and Occlusion Blind Spots in Physical AI Training - Yahoo Finance",
+      "id": "8be66301d773403ceafeb9d34303c8975d8dafcf",
+      "title": "A ground robot reaches an Asia-Pacific customer in XTEND's first post-acquisition deployment - Stock Titan",
       "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPd2ZBWlNTSzJjaW42MXdrcG40MTVvSW9nVzFFZnBrQ1dJVUt4aUh1WmRFSWQxTnhCVngwZnhJa0Myanh4UUkyUWhPbUxYbkU1bTNtN2FUZlNmM2Z0cExTV2lyRHp4eGg0VG9rb1M0WmRaNm82UjNZbUF2NmJSMlUtSFdqUUJ5Mko4cUNDRk5jTTY0Wlp5TTR4aUtQaXljTU1qb1pXZ0VyUQ?oc=5",
-      "published_at": "2026-09-01T12:00:00+00:00",
-      "category": "国外人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国外人形机器人资讯",
-      "source": "国外人形机器人资讯",
-      "site_id": "国外人形机器人资讯",
-      "description": "Wetour Robotics Demonstrates sEMG-Vision System Targeting Force and Occlusion Blind Spots in Physical AI Training  Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQLXk0ZzNnV3dNbGd3SUFpRVdiWF8tU3dzT1JwVHhLeTFxc3loZmFlTzlVRnpwc3E4eHpUTEU4WGF6ZElpa0R3TDV3MWdlS0xnazlaQV9GZlA5S0JkMmtjczdBQ21vdUtjTWJpeFUwRmtQSTk3Ni10R05zNTVOckZtNUpUbWZYOU1fV0FoZUx0WUQ4cEktRU11VWd3T3Y4d05jWkxSY0tnSnVJQUs1Z19xR3hJbW9RVWJQVlBpcmJsTQ?oc=5",
+      "published_at": "2026-09-01T12:30:00+00:00",
+      "category": "国外机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国外机器人资讯",
+      "source": "国外机器人资讯",
+      "site_id": "国外机器人资讯",
+      "description": "A ground robot reaches an Asia-Pacific customer in XTEND's first post-acquisition deployment  Stock Titan",
       "ai_score": 65.0,
-      "ai_label": "humanoid",
+      "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 29.44,
+      "timeliness": 29.7,
       "writing_value": 5,
-      "total_score": 114.44
+      "total_score": 114.7
     },
     {
-      "id": "4613a0c95a4ef3f70b97907baea9074ff14c091e",
-      "title": "Medtronic Stock Rises on Better-Than-Expected Earnings and $700 Million Investment in a Robot Surgeon - Barron's",
+      "id": "8fe3c859a7b57415c531456bba71c8865cf81c11",
+      "title": "Wetour Robotics Demonstrates sEMG-Vision System Targeting Force and Occlusion Blind Spots in Physical AI Training - Stock Titan",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQOUUyekxTckVBSmEzQVc1dVNKSHI3UUxVZkpaRnQ1dDRPYXZ2dHk0Ym96SUpBOFEzU0NBa29JZW03TnkwVlNSajNWRmlUcGJBcVo3Y25ObmVCMC1RUmpWX01uM2g5cWFkVVQtTjQ4N0V2bHc2NWRSQWNiMDJtM2xTTFZhQmJNUnpNcGV5NHlMSlZnZlJmSjBlT1luemZFZmVDYnYtYTc1SVpFUW5kRnFLd1Q4UVlOMUNUcEVRSTlCYXo?oc=5",
+      "published_at": "2026-09-01T12:00:00+00:00",
+      "category": "国外物理AI资讯",
+      "gn_label": "physical_ai",
+      "site_name": "国外物理AI资讯",
+      "source": "国外物理AI资讯",
+      "site_id": "国外物理AI资讯",
+      "description": "Wetour Robotics Demonstrates sEMG-Vision System Targeting Force and Occlusion Blind Spots in Physical AI Training  Stock Titan",
+      "ai_score": 65.0,
+      "ai_label": "physical_ai",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 29.2,
+      "writing_value": 5,
+      "total_score": 114.2
+    },
+    {
+      "id": "eb1d95f2c14d85f9f33e9caeed2801e99f08d341",
+      "title": "Medtronic Tops Earnings Estimates and Makes $700M Robot Surgeon Investment. Is It Gaining on Intuitive Surgical? - Barron's",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQaHlzMzV4dFo1a29EZElhOXlwNlBORTFOUmd6NHZIelNFc3RzdEloQmI3M0ZsZ0RRUFk5eGxoNC11dWxxMDlIUDd4cEZUQkRESUlYdU1tSmw2WF9PZXVqY1lnR19KNTg1UEhZMEZtaldHZkgzelVxYzA5LVhHMW83VFRTdVNIZnBKdEUwLVhTRQ?oc=5",
-      "published_at": "2026-09-01T11:08:00+00:00",
+      "published_at": "2026-09-01T11:41:00+00:00",
       "category": "国外机器人资讯",
       "gn_label": "robotics",
       "site_name": "国外机器人资讯",
       "source": "国外机器人资讯",
       "site_id": "国外机器人资讯",
-      "description": "Medtronic Stock Rises on Better-Than-Expected Earnings and $700 Million Investment in a Robot Surgeon  Barron's",
+      "description": "Medtronic Tops Earnings Estimates and Makes $700M Robot Surgeon Investment. Is It Gaining on Intuitive Surgical?  Barron's",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 28.57,
+      "timeliness": 28.88,
       "writing_value": 5,
-      "total_score": 113.57
+      "total_score": 113.88
     },
     {
-      "id": "fc339508e92c7a30fbd0d09beb2af7f43c746b9c",
-      "title": "Wetour Robotics demonstrates muscle-vision robot learning system - Investing.com",
+      "id": "3bfb85c582a43c52bfa86286be5c4231a65ddf74",
+      "title": "Medtronic Announces Strategic Partnership with Cornerstone Robotics to Further Expand Global Access to Robotic-Assisted Surgery - Medtronic",
       "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPcWdwRUxrbEZKdy1SZG0tcmJfS3d4VDNVd1JjNi1QNE5tZmU3UXBHdFh2aHdEaDRRSVFtSWNaQ2tmNlVaekpvd3plLVVONTQ2ejl0QVRJZDVSWVcwdVU1d0lRYTVLZnlDUV9EMWZPS1dNRnprUEFjbERUbVJTYXlFRUEyMUV1bURMcDJhVnV2elp2X0FFalJpUjhGR0JBaS1vTXp6VndmbGxpckFFS2tDZm12eVNZNGpvU211Sg?oc=5",
-      "published_at": "2026-09-01T12:29:31+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxOWmpGNDVxU29scmpVUFNtUVcybW0tMXNuYUhoX0hjSG1OU0RSc3IzeGhZX1cyckVIM0thcnZJSGo4UjFLMmNPSG94M3FIc2U4RmpYT1lELU90SnRNeG5yb2QtQ2Jwa2dNbzEza3Z5aXljYXhpbUxQQWVHaEo1LTQ2S3ZjenQtYmNGSkRsQ2dJN2MyU2JySEJvN2ZBWHBOWTlMcEhwSVczY2c4dHBFVjExbUhEY3JwVmZzX1pBUXNuUXZBMTVNMGhyRDl1eXVyLVdrZXBYaWM0cHItUmlQSG5NUjVWaEh6SmdoZnJEa2pZcE1vSFRVN0FsbA?oc=5",
+      "published_at": "2026-09-01T11:05:14+00:00",
       "category": "国外机器人资讯",
       "gn_label": "robotics",
       "site_name": "国外机器人资讯",
       "source": "国外机器人资讯",
       "site_id": "国外机器人资讯",
-      "description": "Wetour Robotics demonstrates muscle-vision robot learning system  Investing.com",
+      "description": "Medtronic Announces Strategic Partnership with Cornerstone Robotics to Further Expand Global Access to Robotic-Assisted Surgery  Medtronic",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
-      "depth": 0,
-      "timeliness": 29.93,
-      "writing_value": 0,
-      "total_score": 104.93
+      "depth": 5,
+      "timeliness": 28.29,
+      "writing_value": 5,
+      "total_score": 113.29
     },
     {
       "id": "653219c2e5bc0319f9e9b5cb5afcf76bcb6bac88",
       "title": "Robot dogs reduce grape harvest workload by over 70% in China - FreshPlaza",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQcDliMnYxX3BFNDVXM2pva2ZCMnJUVWN6WFRyc1o0d29uUnVRcUZzTEpNd1dJTExmN05iN0ZZaGRjYXlEVHh0ZkYwV2Rjc2NDOEJlbWxBanlvRjNqU2N3cVh2bDZNNW9QTTlaaWpYSE9hWEc2M2JVeUw2MmJEOUR2TkZpS2Y3T2dic0RpRE5UX19Kc0hQWHJtbnE5NEJuZUdncTltdW5GRG5wU1ZINE8yVFJ2OHJyV3lzT3c?oc=5",
-      "published_at": "2026-09-01T12:17:36+00:00",
+      "published_at": "2026-09-01T12:17:06+00:00",
       "category": "国外机器人资讯",
       "gn_label": "robotics",
       "site_name": "国外机器人资讯",
@@ -292,9 +355,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.73,
+      "timeliness": 29.48,
       "writing_value": 0,
-      "total_score": 104.73
+      "total_score": 104.48
     },
     {
       "id": "cb386533a0a884a7a87b97e3a3bf30da211fd9b7",
@@ -313,9 +376,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.34,
+      "timeliness": 29.09,
       "writing_value": 0,
-      "total_score": 104.34
+      "total_score": 104.09
     },
     {
       "id": "5785cc3536de14c2fef9597c85860e470be01f0b",
@@ -334,9 +397,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.29,
+      "timeliness": 29.05,
       "writing_value": 0,
-      "total_score": 104.29
+      "total_score": 104.05
     },
     {
       "id": "f9ee29abd75cb23b147aee9f72fcab22e4410987",
@@ -355,9 +418,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.96,
+      "timeliness": 28.71,
       "writing_value": 0,
-      "total_score": 103.96
+      "total_score": 103.71
     },
     {
       "id": "f7d983b789e48beae6f452c5c9ecd52c9fb962a8",
@@ -376,9 +439,9 @@
       "relevance": 0.5,
       "authority": 10,
       "depth": 5,
-      "timeliness": 29.0,
+      "timeliness": 28.75,
       "writing_value": 5,
-      "total_score": 99.0
+      "total_score": 98.75
     },
     {
       "id": "f135fb203c1b5a21d903cd140b56336d8973fa83",
@@ -397,9 +460,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 5,
-      "timeliness": 28.64,
+      "timeliness": 28.39,
       "writing_value": 5,
-      "total_score": 83.64
+      "total_score": 83.39
     },
     {
       "id": "5211afa5ea7c18e10392688a7182120459804fff",
@@ -418,9 +481,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 5,
-      "timeliness": 28.61,
+      "timeliness": 28.37,
       "writing_value": 5,
-      "total_score": 83.61
+      "total_score": 83.37
     },
     {
       "id": "f88787c53b32c4d2e772a80f54d0bd18ca157043",
@@ -439,9 +502,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.86,
+      "timeliness": 29.61,
       "writing_value": 0,
-      "total_score": 74.86
+      "total_score": 74.61
     },
     {
       "id": "07fd244613134e5bf67540f2232bad1d74d559a2",
@@ -460,9 +523,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.75,
+      "timeliness": 29.5,
       "writing_value": 0,
-      "total_score": 74.75
+      "total_score": 74.5
     },
     {
       "id": "9e741cda82fbbf9d106368c3a2ee9c1d8108b14b",
@@ -481,9 +544,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.63,
+      "timeliness": 29.39,
       "writing_value": 0,
-      "total_score": 74.63
+      "total_score": 74.39
     },
     {
       "id": "2fd33e07e37a91a00bac4500367df9ed2d33b659",
@@ -502,9 +565,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.44,
+      "timeliness": 29.2,
       "writing_value": 0,
-      "total_score": 74.44
+      "total_score": 74.2
     },
     {
       "id": "213173a4af39f90173050048d83a2cfb0e1b5374",
@@ -523,9 +586,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.43,
+      "timeliness": 29.18,
       "writing_value": 0,
-      "total_score": 74.43
+      "total_score": 74.18
     },
     {
       "id": "a35be05458f40e9d428fd3e041a58608807ff046",
@@ -544,9 +607,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.41,
+      "timeliness": 29.17,
       "writing_value": 0,
-      "total_score": 74.41
+      "total_score": 74.17
     },
     {
       "id": "bfcb4f6fb2358d061e60fbde09e2b4fad02b0f62",
@@ -565,9 +628,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.38,
+      "timeliness": 29.14,
       "writing_value": 0,
-      "total_score": 74.38
+      "total_score": 74.14
     },
     {
       "id": "68151183fca2d3e8418f8aeff824638438bc5d5e",
@@ -586,9 +649,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.33,
+      "timeliness": 29.09,
       "writing_value": 0,
-      "total_score": 74.33
+      "total_score": 74.09
     },
     {
       "id": "c3e0f64a08a95a8238612387f335c7dcbbbd6a8e",
@@ -607,9 +670,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.32,
+      "timeliness": 29.08,
       "writing_value": 0,
-      "total_score": 74.32
+      "total_score": 74.08
     },
     {
       "id": "81801c8e1fb3a4a2efe67fcd143e0afb627d85bf",
@@ -628,9 +691,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.31,
+      "timeliness": 29.07,
       "writing_value": 0,
-      "total_score": 74.31
+      "total_score": 74.07
     },
     {
       "id": "7c44a81bf4a9a0ac7d5a48974681b0eb6b274de4",
@@ -649,9 +712,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.29,
+      "timeliness": 29.05,
       "writing_value": 0,
-      "total_score": 74.29
+      "total_score": 74.05
     },
     {
       "id": "f8ad17722998bd9f88ebf5256119a8d5fa59a2c2",
@@ -670,9 +733,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.25,
+      "timeliness": 29.01,
       "writing_value": 0,
-      "total_score": 74.25
+      "total_score": 74.01
     },
     {
       "id": "e49434e78b6777f55387665c6015d51a8e2733d2",
@@ -680,20 +743,20 @@
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQUHBGaTN5ajhGbjlkcXAwRVB3ZDBPY0d2XzFiMExuYnBxaU5zRXZBU3BfbU9uczRLNi02eDRzd0dRV2pTT1cxNlFQNUU0MngxZ2piYlNxcnRobUd4V1ZYMEY1TkFYd3lIdkppQXFvXzlEXzJuZ0ptS180UlE4UDhxT25Na2ZXNVN3V1ZuWnNRVlN1U21CMWxQYm1IQXNzWmxWV0FlZTVHYzNhNHNNWl96blYzTHhYeFNjV1U0eTVRZUZqMDRqMFg4LU1tVURpMTgw?oc=5",
       "published_at": "2026-09-01T11:44:00+00:00",
-      "category": "国内人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国内人形机器人资讯",
-      "source": "国内人形机器人资讯",
-      "site_id": "国内人形机器人资讯",
+      "category": "国内机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国内机器人资讯",
+      "source": "国内机器人资讯",
+      "site_id": "国内机器人资讯",
       "description": "“98元门票根本抢不到” 机器人4S店突然走红，专家却劝“千万别押重注”  新浪财经",
       "ai_score": 35.0,
-      "ai_label": "humanoid",
+      "ai_label": "robotics",
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.17,
+      "timeliness": 28.93,
       "writing_value": 0,
-      "total_score": 74.17
+      "total_score": 73.93
     },
     {
       "id": "212b57e2744e8a0494dd8536bff53a347bb21233",
@@ -712,9 +775,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.01,
+      "timeliness": 28.76,
       "writing_value": 0,
-      "total_score": 74.01
+      "total_score": 73.76
     },
     {
       "id": "a942914a9ba0ccc7dd8b79a3b96deb298ff0b6f7",
@@ -733,9 +796,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.97,
+      "timeliness": 28.73,
       "writing_value": 0,
-      "total_score": 73.97
+      "total_score": 73.73
     },
     {
       "id": "886e7cd8d46dd7ea2e29643e80cb1bcc7eedcba0",
@@ -754,9 +817,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.86,
+      "timeliness": 28.61,
       "writing_value": 0,
-      "total_score": 73.86
+      "total_score": 73.61
     },
     {
       "id": "809fd12a6a4195a6a5853b3463070b77944fee79",
@@ -775,9 +838,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.82,
+      "timeliness": 28.58,
       "writing_value": 0,
-      "total_score": 73.82
+      "total_score": 73.58
     },
     {
       "id": "52b583c62bb283eea07370e5e62031486f9b8c13",
@@ -796,9 +859,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.8,
+      "timeliness": 28.56,
       "writing_value": 0,
-      "total_score": 73.8
+      "total_score": 73.56
     },
     {
       "id": "a9f549a58a8d3a7e3cd1c4ddeb91453ece0bf4f5",
@@ -817,9 +880,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.54,
+      "timeliness": 28.3,
       "writing_value": 0,
-      "total_score": 73.54
+      "total_score": 73.3
     },
     {
       "id": "e215de69d82a5e7a83f49c5cd5616ecb687ed6b3",
@@ -827,20 +890,20 @@
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9jNHVyR3cwVGlVS3d5cGdBV2tlc3lORmtlaWgxVDlLVGtkQ1VLbmMxSTMxWVZiV2pKMWoyMGVtMHNwdjJfVnpsM2pPMVpOempvajAyTk5pWFVZMUpicG4ySE1tRDlxaUN5amdZcVVyVU16SUFqWjBhLW82RzZqZlE?oc=5",
       "published_at": "2026-09-01T11:03:35+00:00",
-      "category": "国内人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国内人形机器人资讯",
-      "source": "国内人形机器人资讯",
-      "site_id": "国内人形机器人资讯",
+      "category": "国内具身智能资讯",
+      "gn_label": "embodied_ai",
+      "site_name": "国内具身智能资讯",
+      "source": "国内具身智能资讯",
+      "site_id": "国内具身智能资讯",
       "description": "机器人6S展厅落地惠城  新浪网",
       "ai_score": 35.0,
-      "ai_label": "humanoid",
+      "ai_label": "embodied_ai",
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.5,
+      "timeliness": 28.26,
       "writing_value": 0,
-      "total_score": 73.5
+      "total_score": 73.26
     },
     {
       "id": "6b23ba00fb5f2598e3eb7c2f3cbdff3051bc32bd",
@@ -859,9 +922,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.49,
+      "timeliness": 28.25,
       "writing_value": 0,
-      "total_score": 73.49
+      "total_score": 73.25
     },
     {
       "id": "d7eb5e401965400c2821a8f88aa5852f15e21884",
@@ -880,9 +943,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.45,
+      "timeliness": 28.21,
       "writing_value": 0,
-      "total_score": 73.45
+      "total_score": 73.21
     },
     {
       "id": "038ed1ac8b25cfeeb79d71e9a15dc1f41ed6baa4",
@@ -901,9 +964,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.44,
+      "timeliness": 28.2,
       "writing_value": 0,
-      "total_score": 73.44
+      "total_score": 73.2
     }
   ],
   "items_all": [
@@ -924,9 +987,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 5,
-      "timeliness": 29.52,
+      "timeliness": 29.28,
       "writing_value": 5,
-      "total_score": 129.52
+      "total_score": 129.28
     },
     {
       "id": "105ab873baf4f4ae789b5ee15639d7cd2e332746",
@@ -945,9 +1008,93 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 5,
-      "timeliness": 28.48,
+      "timeliness": 28.23,
       "writing_value": 5,
-      "total_score": 128.48
+      "total_score": 128.23
+    },
+    {
+      "id": "eed3ce5917b148e70894ad0462e037d9f712b999",
+      "title": "美珈职院迎新现场，人形机器人惊喜亮相 - Sohu",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOcXdjS1JlZmk4bi1JTHBXZmtKOUhFS0Z4SDJuR1lfX1U2SXBwbTFuN0pIWkV1Vi1ZRzJFakwwdlpSUTY0V3hiQlA5aGhvRndxd2lHeU1MOFpfVWlGMFpUNDY5U1hCQlpFbzVVcDJ5a1RZNzRkMWpIaUw4WVBzVUxlaXIybU1WZjVLZlNYbw?oc=5",
+      "published_at": "2026-09-01T12:43:32+00:00",
+      "category": "国内人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国内人形机器人资讯",
+      "source": "国内人形机器人资讯",
+      "site_id": "国内人形机器人资讯",
+      "description": "美珈职院迎新现场，人形机器人惊喜亮相  Sohu",
+      "ai_score": 80.0,
+      "ai_label": "humanoid",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.92,
+      "writing_value": 0,
+      "total_score": 119.92
+    },
+    {
+      "id": "73032d0b7180e5ec0707d3d035812879ff5ae67a",
+      "title": "三家造车新势力同日披露人形机器人业务进展 - 汽车之家",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9aM2VQSG5kdm1fUllSTGtSazNnOTByd2dkWnNsbkJKcWZocDBtaGpwd3RUTHprc1RqaVpWVUpCX2hYR00zWEpOS1Q3X3gwR2pIc2gyN0h5SXBjU1B2MUlvdlU1ODd0OGY3UDRr?oc=5",
+      "published_at": "2026-09-01T12:40:16+00:00",
+      "category": "国内人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国内人形机器人资讯",
+      "source": "国内人形机器人资讯",
+      "site_id": "国内人形机器人资讯",
+      "description": "三家造车新势力同日披露人形机器人业务进展  汽车之家",
+      "ai_score": 80.0,
+      "ai_label": "humanoid",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.87,
+      "writing_value": 0,
+      "total_score": 119.87
+    },
+    {
+      "id": "234375d42ec71cf8b8f0d7c08c79838f244d41ad",
+      "title": "当机器人一拳挥向人类，具身智能安全治理的“护栏”如何搭起？ - Sohu",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQVVFkM0RXaW42OGZtZTBNeWw2dktNXy1QLUVMa1h3VkwwNjNoN05HbFoxRmZyX3d5WXN3UTN2NkR2SXpVTHpNWnFEcHZnNXBtcHZzWlVHa3ZxQkI5aURmTU5VRWJaWE1McjRCeVYwbGo2YzhQZTk3bEJnN19XNzlqU3hNMDBKV24z?oc=5",
+      "published_at": "2026-09-01T12:29:05+00:00",
+      "category": "国内具身智能资讯",
+      "gn_label": "embodied_ai",
+      "site_name": "国内具身智能资讯",
+      "source": "国内具身智能资讯",
+      "site_id": "国内具身智能资讯",
+      "description": "当机器人一拳挥向人类，具身智能安全治理的“护栏”如何搭起？  Sohu",
+      "ai_score": 80.0,
+      "ai_label": "embodied_ai",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.68,
+      "writing_value": 0,
+      "total_score": 119.68
+    },
+    {
+      "id": "c3a711662ac8560d058544855e75481ee2da4fab",
+      "title": "上观时评 | 500家A股公司都在提具身智能，真正值得警惕的是什么？ - 上观新闻",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9VR0Q0TkFVQm9iMzNNMHFqcVpkRW1MdEs3QnppV3BuYmhGWDdxVHVzaURHRFJMcWVvckI4S3lETHlubDJOejhkQ21jM1lxOWNTeENVY1dYR1NXdw?oc=5",
+      "published_at": "2026-09-01T12:15:00+00:00",
+      "category": "国内具身智能资讯",
+      "gn_label": "embodied_ai",
+      "site_name": "国内具身智能资讯",
+      "source": "国内具身智能资讯",
+      "site_id": "国内具身智能资讯",
+      "description": "上观时评 | 500家A股公司都在提具身智能，真正值得警惕的是什么？  上观新闻",
+      "ai_score": 80.0,
+      "ai_label": "embodied_ai",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.45,
+      "writing_value": 0,
+      "total_score": 119.45
     },
     {
       "id": "5e4688717646c71e15caa42897795f0224957b65",
@@ -966,51 +1113,30 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.33,
+      "timeliness": 29.09,
       "writing_value": 0,
-      "total_score": 119.33
+      "total_score": 119.09
     },
     {
-      "id": "9c0bd16dc001a887c6f1b668e867adb373ce44fb",
-      "title": "绝影X30斩获中国外观设计金奖！云深处以场景驱动设计领跑具身智能赛道 - jfdaily.com",
+      "id": "774c55b183c5cc069f428e0c1b7f5ca4c79555bc",
+      "title": "绝影X30斩获中国外观设计金奖！云深处以场景驱动设计领跑具身智能赛道 - jfdaily.com.cn",
       "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE54RXFmNXp3dmVkNjNQZkgzR05mSDZsb3lHWUlIU2poVVlnVDRYbFZVRk9pMXpZaUxteU40NnlhNnluSXplVUNncnpmdHlDaG5laXI2Y3BxcDZBdw?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5nNmZSM2xUTWszTHZsWlk1WWF6TzNMRHR3WE1lMWdjZ2o4MVBJT2FVZ3ExX3drdC1rWVFnMmViMDFZMFVNQXNEbG95T3hJd25LS1pyZXhJTEYwLXhrVXc?oc=5",
       "published_at": "2026-09-01T11:38:00+00:00",
       "category": "国内具身智能资讯",
       "gn_label": "embodied_ai",
       "site_name": "国内具身智能资讯",
       "source": "国内具身智能资讯",
       "site_id": "国内具身智能资讯",
-      "description": "绝影X30斩获中国外观设计金奖！云深处以场景驱动设计领跑具身智能赛道  jfdaily.com",
+      "description": "绝影X30斩获中国外观设计金奖！云深处以场景驱动设计领跑具身智能赛道  jfdaily.com.cn",
       "ai_score": 80.0,
       "ai_label": "embodied_ai",
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.07,
+      "timeliness": 28.83,
       "writing_value": 0,
-      "total_score": 119.07
-    },
-    {
-      "id": "9d40b8d77b42dd321bbd40fe56d7c9af755ebbe1",
-      "title": "HONOR人形机器人海外首秀选择大马 闪电机器人挑战10公里赛道 - 国内 - 全国综合 - 市场情报 - Sin Chew Daily",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMi4wJBVV95cUxObXFyRUFoRkNPQkhkVG1UOFhnNVdXQkxsMHdteXdYYTAwNzBONVMxUXBEb04xUHJINi1yOERWY1RTTFBqd284SjdVN2hPeW10N19TcTN1VmYyeWFpZ3hBenBlWXRqX0J2UHFOaWw1V0RJYnhsLXlWME1lOXB4czItSVpObnR3MXgxMjdVY0hjLUxUZDNld3Fjb05vTzVnWm10WV9lWU5rMnp3QXhUTF9VTWI1aE10ZlBsM0haSlFIZTljZ1UyVzZfTVNYWlk4cmotUExUd2IxbHVkeUNxaDRNck1yNzFiczlaLUlmTzRMQXV1TkNUTk1FZ2hNNFNELWRpcjFjQTRwODBLUE16aFgzdXhyUmQ3dFZGeVV0YkJMUFdyTXlTWFRHOW9TZlhNRVE2dkR1WE9WQmVHdnVBOTJhM1FMQzUyQ0lKQnp3VThQa3hVazd6RTd0bmxMSUJPWVZaSW1Z?oc=5",
-      "published_at": "2026-09-01T11:37:15+00:00",
-      "category": "国内人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国内人形机器人资讯",
-      "source": "国内人形机器人资讯",
-      "site_id": "国内人形机器人资讯",
-      "description": "HONOR人形机器人海外首秀选择大马 闪电机器人挑战10公里赛道 - 国内 - 全国综合 - 市场情报  Sin Chew Daily",
-      "ai_score": 80.0,
-      "ai_label": "humanoid",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 29.06,
-      "writing_value": 0,
-      "total_score": 119.06
+      "total_score": 118.83
     },
     {
       "id": "c05e8874d9a9c9e5ba7703c624bba87a817f75cc",
@@ -1029,30 +1155,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.79,
+      "timeliness": 28.55,
       "writing_value": 0,
-      "total_score": 118.79
-    },
-    {
-      "id": "13fb955a99fe3f0d0a5de0bc4ec4f62606cbd7e4",
-      "title": "神秘紫色新机意外曝光 HONOR人形机器人国庆游行惊喜连连 - 国内 - 全国综合 - 市场情报 - Sin Chew Daily",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMi4AJBVV95cUxOeDRBTDZmRGpRanJZUzVubi1iWVZzellWMXdJQXdmb3RYc1hJTHBUNW1BUTNkSWE5dDJldlBhMUZFRVcySk1NMC1ZRUVBWXRIQWhxZnRNQVNncGt1VU1venNqS2pycFRsTzZ0S1lRZktDLWtEYU5hYmI1WUZXZDZTeklrMjFIVDlvQnAyaVEzUnVYaGtUZGxaNjd4cTJWYTg0ZkZIaUNXNjJ1QUM4UGQtSWtMdHpXdGhaejNQV0pvSXFiSWVOWVJmT1dzN0Z2c0FvdHNRT1AxQlhZLWdzUjBsbk1KYzVfRk1GUDlQWmRIdmlYX0M0bkJUWGdMOWRWR0hVZHhnY19PcUJRWXNrRnhNdTlLbFhCMXUwN28zbHFtZlFuVlVhUlZabGl2aUMwX0t6eUd6Vzh6bTBDQ0tydnFQNGlQUWdrRndJMEpQYXU0Mk14b1JBOHZwRk1jV0g4LTdf?oc=5",
-      "published_at": "2026-09-01T11:18:12+00:00",
-      "category": "国内人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国内人形机器人资讯",
-      "source": "国内人形机器人资讯",
-      "site_id": "国内人形机器人资讯",
-      "description": "神秘紫色新机意外曝光 HONOR人形机器人国庆游行惊喜连连 - 国内 - 全国综合 - 市场情报  Sin Chew Daily",
-      "ai_score": 80.0,
-      "ai_label": "humanoid",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 28.74,
-      "writing_value": 0,
-      "total_score": 118.74
+      "total_score": 118.55
     },
     {
       "id": "f0d6b12c071db30be3f25e5a146858df01384c3b",
@@ -1060,20 +1165,20 @@
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQQm1qVW5tdUU4WjdkUTJqaVRZU2wwSTF1UmNxcHRjZkRzNUt4Z2FDbV93V2VDanRuTjFPamkxYmd1cUhDTVlNNXhPVldMTjRSMGpOeURBZmhhd0d1TUU0NjdGaFJjNkd6c2x3T3RYZ0VvbzZXeUNrTlBRN1hFbkJmQjZ6X1dzY3k1?oc=5",
       "published_at": "2026-09-01T11:12:37+00:00",
-      "category": "国内人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国内人形机器人资讯",
-      "source": "国内人形机器人资讯",
-      "site_id": "国内人形机器人资讯",
+      "category": "国内具身智能资讯",
+      "gn_label": "embodied_ai",
+      "site_name": "国内具身智能资讯",
+      "source": "国内具身智能资讯",
+      "site_id": "国内具身智能资讯",
       "description": "行业首个！具身智能机器人应用技术员（人形机器人）职业能力证书发布  Sohu",
       "ai_score": 80.0,
-      "ai_label": "humanoid",
+      "ai_label": "embodied_ai",
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.65,
+      "timeliness": 28.41,
       "writing_value": 0,
-      "total_score": 118.65
+      "total_score": 118.41
     },
     {
       "id": "f634203117f75d5dd204eb78014e057af28ff1cf",
@@ -1092,9 +1197,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.65,
+      "timeliness": 28.41,
       "writing_value": 0,
-      "total_score": 118.65
+      "total_score": 118.41
     },
     {
       "id": "a9e1f3f385407d5b98c71a8896dcc0e579252bfd",
@@ -1113,79 +1218,100 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.46,
+      "timeliness": 28.21,
       "writing_value": 0,
-      "total_score": 118.46
+      "total_score": 118.21
     },
     {
-      "id": "73c4db5fc16bf7cc497fc7c41198036f5e6e9455",
-      "title": "Wetour Robotics Demonstrates sEMG-Vision System Targeting Force and Occlusion Blind Spots in Physical AI Training - Yahoo Finance",
+      "id": "8be66301d773403ceafeb9d34303c8975d8dafcf",
+      "title": "A ground robot reaches an Asia-Pacific customer in XTEND's first post-acquisition deployment - Stock Titan",
       "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPd2ZBWlNTSzJjaW42MXdrcG40MTVvSW9nVzFFZnBrQ1dJVUt4aUh1WmRFSWQxTnhCVngwZnhJa0Myanh4UUkyUWhPbUxYbkU1bTNtN2FUZlNmM2Z0cExTV2lyRHp4eGg0VG9rb1M0WmRaNm82UjNZbUF2NmJSMlUtSFdqUUJ5Mko4cUNDRk5jTTY0Wlp5TTR4aUtQaXljTU1qb1pXZ0VyUQ?oc=5",
-      "published_at": "2026-09-01T12:00:00+00:00",
-      "category": "国外人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国外人形机器人资讯",
-      "source": "国外人形机器人资讯",
-      "site_id": "国外人形机器人资讯",
-      "description": "Wetour Robotics Demonstrates sEMG-Vision System Targeting Force and Occlusion Blind Spots in Physical AI Training  Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQLXk0ZzNnV3dNbGd3SUFpRVdiWF8tU3dzT1JwVHhLeTFxc3loZmFlTzlVRnpwc3E4eHpUTEU4WGF6ZElpa0R3TDV3MWdlS0xnazlaQV9GZlA5S0JkMmtjczdBQ21vdUtjTWJpeFUwRmtQSTk3Ni10R05zNTVOckZtNUpUbWZYOU1fV0FoZUx0WUQ4cEktRU11VWd3T3Y4d05jWkxSY0tnSnVJQUs1Z19xR3hJbW9RVWJQVlBpcmJsTQ?oc=5",
+      "published_at": "2026-09-01T12:30:00+00:00",
+      "category": "国外机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国外机器人资讯",
+      "source": "国外机器人资讯",
+      "site_id": "国外机器人资讯",
+      "description": "A ground robot reaches an Asia-Pacific customer in XTEND's first post-acquisition deployment  Stock Titan",
       "ai_score": 65.0,
-      "ai_label": "humanoid",
+      "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 29.44,
+      "timeliness": 29.7,
       "writing_value": 5,
-      "total_score": 114.44
+      "total_score": 114.7
     },
     {
-      "id": "4613a0c95a4ef3f70b97907baea9074ff14c091e",
-      "title": "Medtronic Stock Rises on Better-Than-Expected Earnings and $700 Million Investment in a Robot Surgeon - Barron's",
+      "id": "8fe3c859a7b57415c531456bba71c8865cf81c11",
+      "title": "Wetour Robotics Demonstrates sEMG-Vision System Targeting Force and Occlusion Blind Spots in Physical AI Training - Stock Titan",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQOUUyekxTckVBSmEzQVc1dVNKSHI3UUxVZkpaRnQ1dDRPYXZ2dHk0Ym96SUpBOFEzU0NBa29JZW03TnkwVlNSajNWRmlUcGJBcVo3Y25ObmVCMC1RUmpWX01uM2g5cWFkVVQtTjQ4N0V2bHc2NWRSQWNiMDJtM2xTTFZhQmJNUnpNcGV5NHlMSlZnZlJmSjBlT1luemZFZmVDYnYtYTc1SVpFUW5kRnFLd1Q4UVlOMUNUcEVRSTlCYXo?oc=5",
+      "published_at": "2026-09-01T12:00:00+00:00",
+      "category": "国外物理AI资讯",
+      "gn_label": "physical_ai",
+      "site_name": "国外物理AI资讯",
+      "source": "国外物理AI资讯",
+      "site_id": "国外物理AI资讯",
+      "description": "Wetour Robotics Demonstrates sEMG-Vision System Targeting Force and Occlusion Blind Spots in Physical AI Training  Stock Titan",
+      "ai_score": 65.0,
+      "ai_label": "physical_ai",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 29.2,
+      "writing_value": 5,
+      "total_score": 114.2
+    },
+    {
+      "id": "eb1d95f2c14d85f9f33e9caeed2801e99f08d341",
+      "title": "Medtronic Tops Earnings Estimates and Makes $700M Robot Surgeon Investment. Is It Gaining on Intuitive Surgical? - Barron's",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQaHlzMzV4dFo1a29EZElhOXlwNlBORTFOUmd6NHZIelNFc3RzdEloQmI3M0ZsZ0RRUFk5eGxoNC11dWxxMDlIUDd4cEZUQkRESUlYdU1tSmw2WF9PZXVqY1lnR19KNTg1UEhZMEZtaldHZkgzelVxYzA5LVhHMW83VFRTdVNIZnBKdEUwLVhTRQ?oc=5",
-      "published_at": "2026-09-01T11:08:00+00:00",
+      "published_at": "2026-09-01T11:41:00+00:00",
       "category": "国外机器人资讯",
       "gn_label": "robotics",
       "site_name": "国外机器人资讯",
       "source": "国外机器人资讯",
       "site_id": "国外机器人资讯",
-      "description": "Medtronic Stock Rises on Better-Than-Expected Earnings and $700 Million Investment in a Robot Surgeon  Barron's",
+      "description": "Medtronic Tops Earnings Estimates and Makes $700M Robot Surgeon Investment. Is It Gaining on Intuitive Surgical?  Barron's",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 28.57,
+      "timeliness": 28.88,
       "writing_value": 5,
-      "total_score": 113.57
+      "total_score": 113.88
     },
     {
-      "id": "fc339508e92c7a30fbd0d09beb2af7f43c746b9c",
-      "title": "Wetour Robotics demonstrates muscle-vision robot learning system - Investing.com",
+      "id": "3bfb85c582a43c52bfa86286be5c4231a65ddf74",
+      "title": "Medtronic Announces Strategic Partnership with Cornerstone Robotics to Further Expand Global Access to Robotic-Assisted Surgery - Medtronic",
       "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPcWdwRUxrbEZKdy1SZG0tcmJfS3d4VDNVd1JjNi1QNE5tZmU3UXBHdFh2aHdEaDRRSVFtSWNaQ2tmNlVaekpvd3plLVVONTQ2ejl0QVRJZDVSWVcwdVU1d0lRYTVLZnlDUV9EMWZPS1dNRnprUEFjbERUbVJTYXlFRUEyMUV1bURMcDJhVnV2elp2X0FFalJpUjhGR0JBaS1vTXp6VndmbGxpckFFS2tDZm12eVNZNGpvU211Sg?oc=5",
-      "published_at": "2026-09-01T12:29:31+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxOWmpGNDVxU29scmpVUFNtUVcybW0tMXNuYUhoX0hjSG1OU0RSc3IzeGhZX1cyckVIM0thcnZJSGo4UjFLMmNPSG94M3FIc2U4RmpYT1lELU90SnRNeG5yb2QtQ2Jwa2dNbzEza3Z5aXljYXhpbUxQQWVHaEo1LTQ2S3ZjenQtYmNGSkRsQ2dJN2MyU2JySEJvN2ZBWHBOWTlMcEhwSVczY2c4dHBFVjExbUhEY3JwVmZzX1pBUXNuUXZBMTVNMGhyRDl1eXVyLVdrZXBYaWM0cHItUmlQSG5NUjVWaEh6SmdoZnJEa2pZcE1vSFRVN0FsbA?oc=5",
+      "published_at": "2026-09-01T11:05:14+00:00",
       "category": "国外机器人资讯",
       "gn_label": "robotics",
       "site_name": "国外机器人资讯",
       "source": "国外机器人资讯",
       "site_id": "国外机器人资讯",
-      "description": "Wetour Robotics demonstrates muscle-vision robot learning system  Investing.com",
+      "description": "Medtronic Announces Strategic Partnership with Cornerstone Robotics to Further Expand Global Access to Robotic-Assisted Surgery  Medtronic",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
-      "depth": 0,
-      "timeliness": 29.93,
-      "writing_value": 0,
-      "total_score": 104.93
+      "depth": 5,
+      "timeliness": 28.29,
+      "writing_value": 5,
+      "total_score": 113.29
     },
     {
       "id": "653219c2e5bc0319f9e9b5cb5afcf76bcb6bac88",
       "title": "Robot dogs reduce grape harvest workload by over 70% in China - FreshPlaza",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQcDliMnYxX3BFNDVXM2pva2ZCMnJUVWN6WFRyc1o0d29uUnVRcUZzTEpNd1dJTExmN05iN0ZZaGRjYXlEVHh0ZkYwV2Rjc2NDOEJlbWxBanlvRjNqU2N3cVh2bDZNNW9QTTlaaWpYSE9hWEc2M2JVeUw2MmJEOUR2TkZpS2Y3T2dic0RpRE5UX19Kc0hQWHJtbnE5NEJuZUdncTltdW5GRG5wU1ZINE8yVFJ2OHJyV3lzT3c?oc=5",
-      "published_at": "2026-09-01T12:17:36+00:00",
+      "published_at": "2026-09-01T12:17:06+00:00",
       "category": "国外机器人资讯",
       "gn_label": "robotics",
       "site_name": "国外机器人资讯",
@@ -1197,9 +1323,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.73,
+      "timeliness": 29.48,
       "writing_value": 0,
-      "total_score": 104.73
+      "total_score": 104.48
     },
     {
       "id": "cb386533a0a884a7a87b97e3a3bf30da211fd9b7",
@@ -1218,9 +1344,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.34,
+      "timeliness": 29.09,
       "writing_value": 0,
-      "total_score": 104.34
+      "total_score": 104.09
     },
     {
       "id": "5785cc3536de14c2fef9597c85860e470be01f0b",
@@ -1239,9 +1365,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.29,
+      "timeliness": 29.05,
       "writing_value": 0,
-      "total_score": 104.29
+      "total_score": 104.05
     },
     {
       "id": "f9ee29abd75cb23b147aee9f72fcab22e4410987",
@@ -1260,9 +1386,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.96,
+      "timeliness": 28.71,
       "writing_value": 0,
-      "total_score": 103.96
+      "total_score": 103.71
     },
     {
       "id": "f7d983b789e48beae6f452c5c9ecd52c9fb962a8",
@@ -1281,9 +1407,9 @@
       "relevance": 0.5,
       "authority": 10,
       "depth": 5,
-      "timeliness": 29.0,
+      "timeliness": 28.75,
       "writing_value": 5,
-      "total_score": 99.0
+      "total_score": 98.75
     },
     {
       "id": "f135fb203c1b5a21d903cd140b56336d8973fa83",
@@ -1302,9 +1428,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 5,
-      "timeliness": 28.64,
+      "timeliness": 28.39,
       "writing_value": 5,
-      "total_score": 83.64
+      "total_score": 83.39
     },
     {
       "id": "5211afa5ea7c18e10392688a7182120459804fff",
@@ -1323,9 +1449,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 5,
-      "timeliness": 28.61,
+      "timeliness": 28.37,
       "writing_value": 5,
-      "total_score": 83.61
+      "total_score": 83.37
     },
     {
       "id": "f88787c53b32c4d2e772a80f54d0bd18ca157043",
@@ -1344,9 +1470,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.86,
+      "timeliness": 29.61,
       "writing_value": 0,
-      "total_score": 74.86
+      "total_score": 74.61
     },
     {
       "id": "07fd244613134e5bf67540f2232bad1d74d559a2",
@@ -1365,9 +1491,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.75,
+      "timeliness": 29.5,
       "writing_value": 0,
-      "total_score": 74.75
+      "total_score": 74.5
     },
     {
       "id": "9e741cda82fbbf9d106368c3a2ee9c1d8108b14b",
@@ -1386,9 +1512,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.63,
+      "timeliness": 29.39,
       "writing_value": 0,
-      "total_score": 74.63
+      "total_score": 74.39
     },
     {
       "id": "2fd33e07e37a91a00bac4500367df9ed2d33b659",
@@ -1407,9 +1533,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.44,
+      "timeliness": 29.2,
       "writing_value": 0,
-      "total_score": 74.44
+      "total_score": 74.2
     },
     {
       "id": "213173a4af39f90173050048d83a2cfb0e1b5374",
@@ -1428,9 +1554,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.43,
+      "timeliness": 29.18,
       "writing_value": 0,
-      "total_score": 74.43
+      "total_score": 74.18
     },
     {
       "id": "a35be05458f40e9d428fd3e041a58608807ff046",
@@ -1449,9 +1575,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.41,
+      "timeliness": 29.17,
       "writing_value": 0,
-      "total_score": 74.41
+      "total_score": 74.17
     },
     {
       "id": "bfcb4f6fb2358d061e60fbde09e2b4fad02b0f62",
@@ -1470,9 +1596,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.38,
+      "timeliness": 29.14,
       "writing_value": 0,
-      "total_score": 74.38
+      "total_score": 74.14
     },
     {
       "id": "68151183fca2d3e8418f8aeff824638438bc5d5e",
@@ -1491,9 +1617,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.33,
+      "timeliness": 29.09,
       "writing_value": 0,
-      "total_score": 74.33
+      "total_score": 74.09
     },
     {
       "id": "c3e0f64a08a95a8238612387f335c7dcbbbd6a8e",
@@ -1512,9 +1638,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.32,
+      "timeliness": 29.08,
       "writing_value": 0,
-      "total_score": 74.32
+      "total_score": 74.08
     },
     {
       "id": "81801c8e1fb3a4a2efe67fcd143e0afb627d85bf",
@@ -1533,9 +1659,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.31,
+      "timeliness": 29.07,
       "writing_value": 0,
-      "total_score": 74.31
+      "total_score": 74.07
     },
     {
       "id": "7c44a81bf4a9a0ac7d5a48974681b0eb6b274de4",
@@ -1554,9 +1680,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.29,
+      "timeliness": 29.05,
       "writing_value": 0,
-      "total_score": 74.29
+      "total_score": 74.05
     },
     {
       "id": "f8ad17722998bd9f88ebf5256119a8d5fa59a2c2",
@@ -1575,9 +1701,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.25,
+      "timeliness": 29.01,
       "writing_value": 0,
-      "total_score": 74.25
+      "total_score": 74.01
     },
     {
       "id": "e49434e78b6777f55387665c6015d51a8e2733d2",
@@ -1585,20 +1711,20 @@
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQUHBGaTN5ajhGbjlkcXAwRVB3ZDBPY0d2XzFiMExuYnBxaU5zRXZBU3BfbU9uczRLNi02eDRzd0dRV2pTT1cxNlFQNUU0MngxZ2piYlNxcnRobUd4V1ZYMEY1TkFYd3lIdkppQXFvXzlEXzJuZ0ptS180UlE4UDhxT25Na2ZXNVN3V1ZuWnNRVlN1U21CMWxQYm1IQXNzWmxWV0FlZTVHYzNhNHNNWl96blYzTHhYeFNjV1U0eTVRZUZqMDRqMFg4LU1tVURpMTgw?oc=5",
       "published_at": "2026-09-01T11:44:00+00:00",
-      "category": "国内人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国内人形机器人资讯",
-      "source": "国内人形机器人资讯",
-      "site_id": "国内人形机器人资讯",
+      "category": "国内机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国内机器人资讯",
+      "source": "国内机器人资讯",
+      "site_id": "国内机器人资讯",
       "description": "“98元门票根本抢不到” 机器人4S店突然走红，专家却劝“千万别押重注”  新浪财经",
       "ai_score": 35.0,
-      "ai_label": "humanoid",
+      "ai_label": "robotics",
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.17,
+      "timeliness": 28.93,
       "writing_value": 0,
-      "total_score": 74.17
+      "total_score": 73.93
     },
     {
       "id": "212b57e2744e8a0494dd8536bff53a347bb21233",
@@ -1617,9 +1743,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.01,
+      "timeliness": 28.76,
       "writing_value": 0,
-      "total_score": 74.01
+      "total_score": 73.76
     },
     {
       "id": "a942914a9ba0ccc7dd8b79a3b96deb298ff0b6f7",
@@ -1638,9 +1764,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.97,
+      "timeliness": 28.73,
       "writing_value": 0,
-      "total_score": 73.97
+      "total_score": 73.73
     },
     {
       "id": "886e7cd8d46dd7ea2e29643e80cb1bcc7eedcba0",
@@ -1659,9 +1785,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.86,
+      "timeliness": 28.61,
       "writing_value": 0,
-      "total_score": 73.86
+      "total_score": 73.61
     },
     {
       "id": "809fd12a6a4195a6a5853b3463070b77944fee79",
@@ -1680,9 +1806,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.82,
+      "timeliness": 28.58,
       "writing_value": 0,
-      "total_score": 73.82
+      "total_score": 73.58
     },
     {
       "id": "52b583c62bb283eea07370e5e62031486f9b8c13",
@@ -1701,9 +1827,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.8,
+      "timeliness": 28.56,
       "writing_value": 0,
-      "total_score": 73.8
+      "total_score": 73.56
     },
     {
       "id": "a9f549a58a8d3a7e3cd1c4ddeb91453ece0bf4f5",
@@ -1722,9 +1848,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.54,
+      "timeliness": 28.3,
       "writing_value": 0,
-      "total_score": 73.54
+      "total_score": 73.3
     },
     {
       "id": "e215de69d82a5e7a83f49c5cd5616ecb687ed6b3",
@@ -1732,20 +1858,20 @@
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9jNHVyR3cwVGlVS3d5cGdBV2tlc3lORmtlaWgxVDlLVGtkQ1VLbmMxSTMxWVZiV2pKMWoyMGVtMHNwdjJfVnpsM2pPMVpOempvajAyTk5pWFVZMUpicG4ySE1tRDlxaUN5amdZcVVyVU16SUFqWjBhLW82RzZqZlE?oc=5",
       "published_at": "2026-09-01T11:03:35+00:00",
-      "category": "国内人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国内人形机器人资讯",
-      "source": "国内人形机器人资讯",
-      "site_id": "国内人形机器人资讯",
+      "category": "国内具身智能资讯",
+      "gn_label": "embodied_ai",
+      "site_name": "国内具身智能资讯",
+      "source": "国内具身智能资讯",
+      "site_id": "国内具身智能资讯",
       "description": "机器人6S展厅落地惠城  新浪网",
       "ai_score": 35.0,
-      "ai_label": "humanoid",
+      "ai_label": "embodied_ai",
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.5,
+      "timeliness": 28.26,
       "writing_value": 0,
-      "total_score": 73.5
+      "total_score": 73.26
     },
     {
       "id": "6b23ba00fb5f2598e3eb7c2f3cbdff3051bc32bd",
@@ -1764,9 +1890,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.49,
+      "timeliness": 28.25,
       "writing_value": 0,
-      "total_score": 73.49
+      "total_score": 73.25
     },
     {
       "id": "d7eb5e401965400c2821a8f88aa5852f15e21884",
@@ -1785,9 +1911,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.45,
+      "timeliness": 28.21,
       "writing_value": 0,
-      "total_score": 73.45
+      "total_score": 73.21
     },
     {
       "id": "038ed1ac8b25cfeeb79d71e9a15dc1f41ed6baa4",
@@ -1806,9 +1932,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.44,
+      "timeliness": 28.2,
       "writing_value": 0,
-      "total_score": 73.44
+      "total_score": 73.2
     }
   ],
   "items_all_raw": [
@@ -1829,9 +1955,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 5,
-      "timeliness": 29.52,
+      "timeliness": 29.28,
       "writing_value": 5,
-      "total_score": 129.52
+      "total_score": 129.28
     },
     {
       "id": "105ab873baf4f4ae789b5ee15639d7cd2e332746",
@@ -1850,9 +1976,93 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 5,
-      "timeliness": 28.48,
+      "timeliness": 28.23,
       "writing_value": 5,
-      "total_score": 128.48
+      "total_score": 128.23
+    },
+    {
+      "id": "eed3ce5917b148e70894ad0462e037d9f712b999",
+      "title": "美珈职院迎新现场，人形机器人惊喜亮相 - Sohu",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOcXdjS1JlZmk4bi1JTHBXZmtKOUhFS0Z4SDJuR1lfX1U2SXBwbTFuN0pIWkV1Vi1ZRzJFakwwdlpSUTY0V3hiQlA5aGhvRndxd2lHeU1MOFpfVWlGMFpUNDY5U1hCQlpFbzVVcDJ5a1RZNzRkMWpIaUw4WVBzVUxlaXIybU1WZjVLZlNYbw?oc=5",
+      "published_at": "2026-09-01T12:43:32+00:00",
+      "category": "国内人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国内人形机器人资讯",
+      "source": "国内人形机器人资讯",
+      "site_id": "国内人形机器人资讯",
+      "description": "美珈职院迎新现场，人形机器人惊喜亮相  Sohu",
+      "ai_score": 80.0,
+      "ai_label": "humanoid",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.92,
+      "writing_value": 0,
+      "total_score": 119.92
+    },
+    {
+      "id": "73032d0b7180e5ec0707d3d035812879ff5ae67a",
+      "title": "三家造车新势力同日披露人形机器人业务进展 - 汽车之家",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9aM2VQSG5kdm1fUllSTGtSazNnOTByd2dkWnNsbkJKcWZocDBtaGpwd3RUTHprc1RqaVpWVUpCX2hYR00zWEpOS1Q3X3gwR2pIc2gyN0h5SXBjU1B2MUlvdlU1ODd0OGY3UDRr?oc=5",
+      "published_at": "2026-09-01T12:40:16+00:00",
+      "category": "国内人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国内人形机器人资讯",
+      "source": "国内人形机器人资讯",
+      "site_id": "国内人形机器人资讯",
+      "description": "三家造车新势力同日披露人形机器人业务进展  汽车之家",
+      "ai_score": 80.0,
+      "ai_label": "humanoid",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.87,
+      "writing_value": 0,
+      "total_score": 119.87
+    },
+    {
+      "id": "234375d42ec71cf8b8f0d7c08c79838f244d41ad",
+      "title": "当机器人一拳挥向人类，具身智能安全治理的“护栏”如何搭起？ - Sohu",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQVVFkM0RXaW42OGZtZTBNeWw2dktNXy1QLUVMa1h3VkwwNjNoN05HbFoxRmZyX3d5WXN3UTN2NkR2SXpVTHpNWnFEcHZnNXBtcHZzWlVHa3ZxQkI5aURmTU5VRWJaWE1McjRCeVYwbGo2YzhQZTk3bEJnN19XNzlqU3hNMDBKV24z?oc=5",
+      "published_at": "2026-09-01T12:29:05+00:00",
+      "category": "国内具身智能资讯",
+      "gn_label": "embodied_ai",
+      "site_name": "国内具身智能资讯",
+      "source": "国内具身智能资讯",
+      "site_id": "国内具身智能资讯",
+      "description": "当机器人一拳挥向人类，具身智能安全治理的“护栏”如何搭起？  Sohu",
+      "ai_score": 80.0,
+      "ai_label": "embodied_ai",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.68,
+      "writing_value": 0,
+      "total_score": 119.68
+    },
+    {
+      "id": "c3a711662ac8560d058544855e75481ee2da4fab",
+      "title": "上观时评 | 500家A股公司都在提具身智能，真正值得警惕的是什么？ - 上观新闻",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9VR0Q0TkFVQm9iMzNNMHFqcVpkRW1MdEs3QnppV3BuYmhGWDdxVHVzaURHRFJMcWVvckI4S3lETHlubDJOejhkQ21jM1lxOWNTeENVY1dYR1NXdw?oc=5",
+      "published_at": "2026-09-01T12:15:00+00:00",
+      "category": "国内具身智能资讯",
+      "gn_label": "embodied_ai",
+      "site_name": "国内具身智能资讯",
+      "source": "国内具身智能资讯",
+      "site_id": "国内具身智能资讯",
+      "description": "上观时评 | 500家A股公司都在提具身智能，真正值得警惕的是什么？  上观新闻",
+      "ai_score": 80.0,
+      "ai_label": "embodied_ai",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.45,
+      "writing_value": 0,
+      "total_score": 119.45
     },
     {
       "id": "5e4688717646c71e15caa42897795f0224957b65",
@@ -1871,51 +2081,30 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.33,
+      "timeliness": 29.09,
       "writing_value": 0,
-      "total_score": 119.33
+      "total_score": 119.09
     },
     {
-      "id": "9c0bd16dc001a887c6f1b668e867adb373ce44fb",
-      "title": "绝影X30斩获中国外观设计金奖！云深处以场景驱动设计领跑具身智能赛道 - jfdaily.com",
+      "id": "774c55b183c5cc069f428e0c1b7f5ca4c79555bc",
+      "title": "绝影X30斩获中国外观设计金奖！云深处以场景驱动设计领跑具身智能赛道 - jfdaily.com.cn",
       "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE54RXFmNXp3dmVkNjNQZkgzR05mSDZsb3lHWUlIU2poVVlnVDRYbFZVRk9pMXpZaUxteU40NnlhNnluSXplVUNncnpmdHlDaG5laXI2Y3BxcDZBdw?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5nNmZSM2xUTWszTHZsWlk1WWF6TzNMRHR3WE1lMWdjZ2o4MVBJT2FVZ3ExX3drdC1rWVFnMmViMDFZMFVNQXNEbG95T3hJd25LS1pyZXhJTEYwLXhrVXc?oc=5",
       "published_at": "2026-09-01T11:38:00+00:00",
       "category": "国内具身智能资讯",
       "gn_label": "embodied_ai",
       "site_name": "国内具身智能资讯",
       "source": "国内具身智能资讯",
       "site_id": "国内具身智能资讯",
-      "description": "绝影X30斩获中国外观设计金奖！云深处以场景驱动设计领跑具身智能赛道  jfdaily.com",
+      "description": "绝影X30斩获中国外观设计金奖！云深处以场景驱动设计领跑具身智能赛道  jfdaily.com.cn",
       "ai_score": 80.0,
       "ai_label": "embodied_ai",
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.07,
+      "timeliness": 28.83,
       "writing_value": 0,
-      "total_score": 119.07
-    },
-    {
-      "id": "9d40b8d77b42dd321bbd40fe56d7c9af755ebbe1",
-      "title": "HONOR人形机器人海外首秀选择大马 闪电机器人挑战10公里赛道 - 国内 - 全国综合 - 市场情报 - Sin Chew Daily",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMi4wJBVV95cUxObXFyRUFoRkNPQkhkVG1UOFhnNVdXQkxsMHdteXdYYTAwNzBONVMxUXBEb04xUHJINi1yOERWY1RTTFBqd284SjdVN2hPeW10N19TcTN1VmYyeWFpZ3hBenBlWXRqX0J2UHFOaWw1V0RJYnhsLXlWME1lOXB4czItSVpObnR3MXgxMjdVY0hjLUxUZDNld3Fjb05vTzVnWm10WV9lWU5rMnp3QXhUTF9VTWI1aE10ZlBsM0haSlFIZTljZ1UyVzZfTVNYWlk4cmotUExUd2IxbHVkeUNxaDRNck1yNzFiczlaLUlmTzRMQXV1TkNUTk1FZ2hNNFNELWRpcjFjQTRwODBLUE16aFgzdXhyUmQ3dFZGeVV0YkJMUFdyTXlTWFRHOW9TZlhNRVE2dkR1WE9WQmVHdnVBOTJhM1FMQzUyQ0lKQnp3VThQa3hVazd6RTd0bmxMSUJPWVZaSW1Z?oc=5",
-      "published_at": "2026-09-01T11:37:15+00:00",
-      "category": "国内人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国内人形机器人资讯",
-      "source": "国内人形机器人资讯",
-      "site_id": "国内人形机器人资讯",
-      "description": "HONOR人形机器人海外首秀选择大马 闪电机器人挑战10公里赛道 - 国内 - 全国综合 - 市场情报  Sin Chew Daily",
-      "ai_score": 80.0,
-      "ai_label": "humanoid",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 29.06,
-      "writing_value": 0,
-      "total_score": 119.06
+      "total_score": 118.83
     },
     {
       "id": "c05e8874d9a9c9e5ba7703c624bba87a817f75cc",
@@ -1934,30 +2123,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.79,
+      "timeliness": 28.55,
       "writing_value": 0,
-      "total_score": 118.79
-    },
-    {
-      "id": "13fb955a99fe3f0d0a5de0bc4ec4f62606cbd7e4",
-      "title": "神秘紫色新机意外曝光 HONOR人形机器人国庆游行惊喜连连 - 国内 - 全国综合 - 市场情报 - Sin Chew Daily",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMi4AJBVV95cUxOeDRBTDZmRGpRanJZUzVubi1iWVZzellWMXdJQXdmb3RYc1hJTHBUNW1BUTNkSWE5dDJldlBhMUZFRVcySk1NMC1ZRUVBWXRIQWhxZnRNQVNncGt1VU1venNqS2pycFRsTzZ0S1lRZktDLWtEYU5hYmI1WUZXZDZTeklrMjFIVDlvQnAyaVEzUnVYaGtUZGxaNjd4cTJWYTg0ZkZIaUNXNjJ1QUM4UGQtSWtMdHpXdGhaejNQV0pvSXFiSWVOWVJmT1dzN0Z2c0FvdHNRT1AxQlhZLWdzUjBsbk1KYzVfRk1GUDlQWmRIdmlYX0M0bkJUWGdMOWRWR0hVZHhnY19PcUJRWXNrRnhNdTlLbFhCMXUwN28zbHFtZlFuVlVhUlZabGl2aUMwX0t6eUd6Vzh6bTBDQ0tydnFQNGlQUWdrRndJMEpQYXU0Mk14b1JBOHZwRk1jV0g4LTdf?oc=5",
-      "published_at": "2026-09-01T11:18:12+00:00",
-      "category": "国内人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国内人形机器人资讯",
-      "source": "国内人形机器人资讯",
-      "site_id": "国内人形机器人资讯",
-      "description": "神秘紫色新机意外曝光 HONOR人形机器人国庆游行惊喜连连 - 国内 - 全国综合 - 市场情报  Sin Chew Daily",
-      "ai_score": 80.0,
-      "ai_label": "humanoid",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 28.74,
-      "writing_value": 0,
-      "total_score": 118.74
+      "total_score": 118.55
     },
     {
       "id": "f0d6b12c071db30be3f25e5a146858df01384c3b",
@@ -1965,20 +2133,20 @@
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQQm1qVW5tdUU4WjdkUTJqaVRZU2wwSTF1UmNxcHRjZkRzNUt4Z2FDbV93V2VDanRuTjFPamkxYmd1cUhDTVlNNXhPVldMTjRSMGpOeURBZmhhd0d1TUU0NjdGaFJjNkd6c2x3T3RYZ0VvbzZXeUNrTlBRN1hFbkJmQjZ6X1dzY3k1?oc=5",
       "published_at": "2026-09-01T11:12:37+00:00",
-      "category": "国内人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国内人形机器人资讯",
-      "source": "国内人形机器人资讯",
-      "site_id": "国内人形机器人资讯",
+      "category": "国内具身智能资讯",
+      "gn_label": "embodied_ai",
+      "site_name": "国内具身智能资讯",
+      "source": "国内具身智能资讯",
+      "site_id": "国内具身智能资讯",
       "description": "行业首个！具身智能机器人应用技术员（人形机器人）职业能力证书发布  Sohu",
       "ai_score": 80.0,
-      "ai_label": "humanoid",
+      "ai_label": "embodied_ai",
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.65,
+      "timeliness": 28.41,
       "writing_value": 0,
-      "total_score": 118.65
+      "total_score": 118.41
     },
     {
       "id": "f634203117f75d5dd204eb78014e057af28ff1cf",
@@ -1997,9 +2165,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.65,
+      "timeliness": 28.41,
       "writing_value": 0,
-      "total_score": 118.65
+      "total_score": 118.41
     },
     {
       "id": "a9e1f3f385407d5b98c71a8896dcc0e579252bfd",
@@ -2018,79 +2186,100 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.46,
+      "timeliness": 28.21,
       "writing_value": 0,
-      "total_score": 118.46
+      "total_score": 118.21
     },
     {
-      "id": "73c4db5fc16bf7cc497fc7c41198036f5e6e9455",
-      "title": "Wetour Robotics Demonstrates sEMG-Vision System Targeting Force and Occlusion Blind Spots in Physical AI Training - Yahoo Finance",
+      "id": "8be66301d773403ceafeb9d34303c8975d8dafcf",
+      "title": "A ground robot reaches an Asia-Pacific customer in XTEND's first post-acquisition deployment - Stock Titan",
       "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPd2ZBWlNTSzJjaW42MXdrcG40MTVvSW9nVzFFZnBrQ1dJVUt4aUh1WmRFSWQxTnhCVngwZnhJa0Myanh4UUkyUWhPbUxYbkU1bTNtN2FUZlNmM2Z0cExTV2lyRHp4eGg0VG9rb1M0WmRaNm82UjNZbUF2NmJSMlUtSFdqUUJ5Mko4cUNDRk5jTTY0Wlp5TTR4aUtQaXljTU1qb1pXZ0VyUQ?oc=5",
-      "published_at": "2026-09-01T12:00:00+00:00",
-      "category": "国外人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国外人形机器人资讯",
-      "source": "国外人形机器人资讯",
-      "site_id": "国外人形机器人资讯",
-      "description": "Wetour Robotics Demonstrates sEMG-Vision System Targeting Force and Occlusion Blind Spots in Physical AI Training  Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQLXk0ZzNnV3dNbGd3SUFpRVdiWF8tU3dzT1JwVHhLeTFxc3loZmFlTzlVRnpwc3E4eHpUTEU4WGF6ZElpa0R3TDV3MWdlS0xnazlaQV9GZlA5S0JkMmtjczdBQ21vdUtjTWJpeFUwRmtQSTk3Ni10R05zNTVOckZtNUpUbWZYOU1fV0FoZUx0WUQ4cEktRU11VWd3T3Y4d05jWkxSY0tnSnVJQUs1Z19xR3hJbW9RVWJQVlBpcmJsTQ?oc=5",
+      "published_at": "2026-09-01T12:30:00+00:00",
+      "category": "国外机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国外机器人资讯",
+      "source": "国外机器人资讯",
+      "site_id": "国外机器人资讯",
+      "description": "A ground robot reaches an Asia-Pacific customer in XTEND's first post-acquisition deployment  Stock Titan",
       "ai_score": 65.0,
-      "ai_label": "humanoid",
+      "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 29.44,
+      "timeliness": 29.7,
       "writing_value": 5,
-      "total_score": 114.44
+      "total_score": 114.7
     },
     {
-      "id": "4613a0c95a4ef3f70b97907baea9074ff14c091e",
-      "title": "Medtronic Stock Rises on Better-Than-Expected Earnings and $700 Million Investment in a Robot Surgeon - Barron's",
+      "id": "8fe3c859a7b57415c531456bba71c8865cf81c11",
+      "title": "Wetour Robotics Demonstrates sEMG-Vision System Targeting Force and Occlusion Blind Spots in Physical AI Training - Stock Titan",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQOUUyekxTckVBSmEzQVc1dVNKSHI3UUxVZkpaRnQ1dDRPYXZ2dHk0Ym96SUpBOFEzU0NBa29JZW03TnkwVlNSajNWRmlUcGJBcVo3Y25ObmVCMC1RUmpWX01uM2g5cWFkVVQtTjQ4N0V2bHc2NWRSQWNiMDJtM2xTTFZhQmJNUnpNcGV5NHlMSlZnZlJmSjBlT1luemZFZmVDYnYtYTc1SVpFUW5kRnFLd1Q4UVlOMUNUcEVRSTlCYXo?oc=5",
+      "published_at": "2026-09-01T12:00:00+00:00",
+      "category": "国外物理AI资讯",
+      "gn_label": "physical_ai",
+      "site_name": "国外物理AI资讯",
+      "source": "国外物理AI资讯",
+      "site_id": "国外物理AI资讯",
+      "description": "Wetour Robotics Demonstrates sEMG-Vision System Targeting Force and Occlusion Blind Spots in Physical AI Training  Stock Titan",
+      "ai_score": 65.0,
+      "ai_label": "physical_ai",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 29.2,
+      "writing_value": 5,
+      "total_score": 114.2
+    },
+    {
+      "id": "eb1d95f2c14d85f9f33e9caeed2801e99f08d341",
+      "title": "Medtronic Tops Earnings Estimates and Makes $700M Robot Surgeon Investment. Is It Gaining on Intuitive Surgical? - Barron's",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQaHlzMzV4dFo1a29EZElhOXlwNlBORTFOUmd6NHZIelNFc3RzdEloQmI3M0ZsZ0RRUFk5eGxoNC11dWxxMDlIUDd4cEZUQkRESUlYdU1tSmw2WF9PZXVqY1lnR19KNTg1UEhZMEZtaldHZkgzelVxYzA5LVhHMW83VFRTdVNIZnBKdEUwLVhTRQ?oc=5",
-      "published_at": "2026-09-01T11:08:00+00:00",
+      "published_at": "2026-09-01T11:41:00+00:00",
       "category": "国外机器人资讯",
       "gn_label": "robotics",
       "site_name": "国外机器人资讯",
       "source": "国外机器人资讯",
       "site_id": "国外机器人资讯",
-      "description": "Medtronic Stock Rises on Better-Than-Expected Earnings and $700 Million Investment in a Robot Surgeon  Barron's",
+      "description": "Medtronic Tops Earnings Estimates and Makes $700M Robot Surgeon Investment. Is It Gaining on Intuitive Surgical?  Barron's",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 28.57,
+      "timeliness": 28.88,
       "writing_value": 5,
-      "total_score": 113.57
+      "total_score": 113.88
     },
     {
-      "id": "fc339508e92c7a30fbd0d09beb2af7f43c746b9c",
-      "title": "Wetour Robotics demonstrates muscle-vision robot learning system - Investing.com",
+      "id": "3bfb85c582a43c52bfa86286be5c4231a65ddf74",
+      "title": "Medtronic Announces Strategic Partnership with Cornerstone Robotics to Further Expand Global Access to Robotic-Assisted Surgery - Medtronic",
       "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPcWdwRUxrbEZKdy1SZG0tcmJfS3d4VDNVd1JjNi1QNE5tZmU3UXBHdFh2aHdEaDRRSVFtSWNaQ2tmNlVaekpvd3plLVVONTQ2ejl0QVRJZDVSWVcwdVU1d0lRYTVLZnlDUV9EMWZPS1dNRnprUEFjbERUbVJTYXlFRUEyMUV1bURMcDJhVnV2elp2X0FFalJpUjhGR0JBaS1vTXp6VndmbGxpckFFS2tDZm12eVNZNGpvU211Sg?oc=5",
-      "published_at": "2026-09-01T12:29:31+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxOWmpGNDVxU29scmpVUFNtUVcybW0tMXNuYUhoX0hjSG1OU0RSc3IzeGhZX1cyckVIM0thcnZJSGo4UjFLMmNPSG94M3FIc2U4RmpYT1lELU90SnRNeG5yb2QtQ2Jwa2dNbzEza3Z5aXljYXhpbUxQQWVHaEo1LTQ2S3ZjenQtYmNGSkRsQ2dJN2MyU2JySEJvN2ZBWHBOWTlMcEhwSVczY2c4dHBFVjExbUhEY3JwVmZzX1pBUXNuUXZBMTVNMGhyRDl1eXVyLVdrZXBYaWM0cHItUmlQSG5NUjVWaEh6SmdoZnJEa2pZcE1vSFRVN0FsbA?oc=5",
+      "published_at": "2026-09-01T11:05:14+00:00",
       "category": "国外机器人资讯",
       "gn_label": "robotics",
       "site_name": "国外机器人资讯",
       "source": "国外机器人资讯",
       "site_id": "国外机器人资讯",
-      "description": "Wetour Robotics demonstrates muscle-vision robot learning system  Investing.com",
+      "description": "Medtronic Announces Strategic Partnership with Cornerstone Robotics to Further Expand Global Access to Robotic-Assisted Surgery  Medtronic",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
-      "depth": 0,
-      "timeliness": 29.93,
-      "writing_value": 0,
-      "total_score": 104.93
+      "depth": 5,
+      "timeliness": 28.29,
+      "writing_value": 5,
+      "total_score": 113.29
     },
     {
       "id": "653219c2e5bc0319f9e9b5cb5afcf76bcb6bac88",
       "title": "Robot dogs reduce grape harvest workload by over 70% in China - FreshPlaza",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQcDliMnYxX3BFNDVXM2pva2ZCMnJUVWN6WFRyc1o0d29uUnVRcUZzTEpNd1dJTExmN05iN0ZZaGRjYXlEVHh0ZkYwV2Rjc2NDOEJlbWxBanlvRjNqU2N3cVh2bDZNNW9QTTlaaWpYSE9hWEc2M2JVeUw2MmJEOUR2TkZpS2Y3T2dic0RpRE5UX19Kc0hQWHJtbnE5NEJuZUdncTltdW5GRG5wU1ZINE8yVFJ2OHJyV3lzT3c?oc=5",
-      "published_at": "2026-09-01T12:17:36+00:00",
+      "published_at": "2026-09-01T12:17:06+00:00",
       "category": "国外机器人资讯",
       "gn_label": "robotics",
       "site_name": "国外机器人资讯",
@@ -2102,9 +2291,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.73,
+      "timeliness": 29.48,
       "writing_value": 0,
-      "total_score": 104.73
+      "total_score": 104.48
     },
     {
       "id": "cb386533a0a884a7a87b97e3a3bf30da211fd9b7",
@@ -2123,9 +2312,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.34,
+      "timeliness": 29.09,
       "writing_value": 0,
-      "total_score": 104.34
+      "total_score": 104.09
     },
     {
       "id": "5785cc3536de14c2fef9597c85860e470be01f0b",
@@ -2144,9 +2333,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.29,
+      "timeliness": 29.05,
       "writing_value": 0,
-      "total_score": 104.29
+      "total_score": 104.05
     },
     {
       "id": "f9ee29abd75cb23b147aee9f72fcab22e4410987",
@@ -2165,9 +2354,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.96,
+      "timeliness": 28.71,
       "writing_value": 0,
-      "total_score": 103.96
+      "total_score": 103.71
     },
     {
       "id": "f7d983b789e48beae6f452c5c9ecd52c9fb962a8",
@@ -2186,9 +2375,9 @@
       "relevance": 0.5,
       "authority": 10,
       "depth": 5,
-      "timeliness": 29.0,
+      "timeliness": 28.75,
       "writing_value": 5,
-      "total_score": 99.0
+      "total_score": 98.75
     },
     {
       "id": "f135fb203c1b5a21d903cd140b56336d8973fa83",
@@ -2207,9 +2396,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 5,
-      "timeliness": 28.64,
+      "timeliness": 28.39,
       "writing_value": 5,
-      "total_score": 83.64
+      "total_score": 83.39
     },
     {
       "id": "5211afa5ea7c18e10392688a7182120459804fff",
@@ -2228,9 +2417,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 5,
-      "timeliness": 28.61,
+      "timeliness": 28.37,
       "writing_value": 5,
-      "total_score": 83.61
+      "total_score": 83.37
     },
     {
       "id": "f88787c53b32c4d2e772a80f54d0bd18ca157043",
@@ -2249,9 +2438,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.86,
+      "timeliness": 29.61,
       "writing_value": 0,
-      "total_score": 74.86
+      "total_score": 74.61
     },
     {
       "id": "07fd244613134e5bf67540f2232bad1d74d559a2",
@@ -2270,9 +2459,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.75,
+      "timeliness": 29.5,
       "writing_value": 0,
-      "total_score": 74.75
+      "total_score": 74.5
     },
     {
       "id": "9e741cda82fbbf9d106368c3a2ee9c1d8108b14b",
@@ -2291,9 +2480,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.63,
+      "timeliness": 29.39,
       "writing_value": 0,
-      "total_score": 74.63
+      "total_score": 74.39
     },
     {
       "id": "2fd33e07e37a91a00bac4500367df9ed2d33b659",
@@ -2312,9 +2501,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.44,
+      "timeliness": 29.2,
       "writing_value": 0,
-      "total_score": 74.44
+      "total_score": 74.2
     },
     {
       "id": "213173a4af39f90173050048d83a2cfb0e1b5374",
@@ -2333,9 +2522,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.43,
+      "timeliness": 29.18,
       "writing_value": 0,
-      "total_score": 74.43
+      "total_score": 74.18
     },
     {
       "id": "a35be05458f40e9d428fd3e041a58608807ff046",
@@ -2354,9 +2543,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.41,
+      "timeliness": 29.17,
       "writing_value": 0,
-      "total_score": 74.41
+      "total_score": 74.17
     },
     {
       "id": "bfcb4f6fb2358d061e60fbde09e2b4fad02b0f62",
@@ -2375,9 +2564,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.38,
+      "timeliness": 29.14,
       "writing_value": 0,
-      "total_score": 74.38
+      "total_score": 74.14
     },
     {
       "id": "68151183fca2d3e8418f8aeff824638438bc5d5e",
@@ -2396,9 +2585,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.33,
+      "timeliness": 29.09,
       "writing_value": 0,
-      "total_score": 74.33
+      "total_score": 74.09
     },
     {
       "id": "c3e0f64a08a95a8238612387f335c7dcbbbd6a8e",
@@ -2417,9 +2606,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.32,
+      "timeliness": 29.08,
       "writing_value": 0,
-      "total_score": 74.32
+      "total_score": 74.08
     },
     {
       "id": "81801c8e1fb3a4a2efe67fcd143e0afb627d85bf",
@@ -2438,9 +2627,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.31,
+      "timeliness": 29.07,
       "writing_value": 0,
-      "total_score": 74.31
+      "total_score": 74.07
     },
     {
       "id": "7c44a81bf4a9a0ac7d5a48974681b0eb6b274de4",
@@ -2459,9 +2648,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.29,
+      "timeliness": 29.05,
       "writing_value": 0,
-      "total_score": 74.29
+      "total_score": 74.05
     },
     {
       "id": "f8ad17722998bd9f88ebf5256119a8d5fa59a2c2",
@@ -2480,9 +2669,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.25,
+      "timeliness": 29.01,
       "writing_value": 0,
-      "total_score": 74.25
+      "total_score": 74.01
     },
     {
       "id": "e49434e78b6777f55387665c6015d51a8e2733d2",
@@ -2490,20 +2679,20 @@
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQUHBGaTN5ajhGbjlkcXAwRVB3ZDBPY0d2XzFiMExuYnBxaU5zRXZBU3BfbU9uczRLNi02eDRzd0dRV2pTT1cxNlFQNUU0MngxZ2piYlNxcnRobUd4V1ZYMEY1TkFYd3lIdkppQXFvXzlEXzJuZ0ptS180UlE4UDhxT25Na2ZXNVN3V1ZuWnNRVlN1U21CMWxQYm1IQXNzWmxWV0FlZTVHYzNhNHNNWl96blYzTHhYeFNjV1U0eTVRZUZqMDRqMFg4LU1tVURpMTgw?oc=5",
       "published_at": "2026-09-01T11:44:00+00:00",
-      "category": "国内人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国内人形机器人资讯",
-      "source": "国内人形机器人资讯",
-      "site_id": "国内人形机器人资讯",
+      "category": "国内机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国内机器人资讯",
+      "source": "国内机器人资讯",
+      "site_id": "国内机器人资讯",
       "description": "“98元门票根本抢不到” 机器人4S店突然走红，专家却劝“千万别押重注”  新浪财经",
       "ai_score": 35.0,
-      "ai_label": "humanoid",
+      "ai_label": "robotics",
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.17,
+      "timeliness": 28.93,
       "writing_value": 0,
-      "total_score": 74.17
+      "total_score": 73.93
     },
     {
       "id": "212b57e2744e8a0494dd8536bff53a347bb21233",
@@ -2522,9 +2711,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.01,
+      "timeliness": 28.76,
       "writing_value": 0,
-      "total_score": 74.01
+      "total_score": 73.76
     },
     {
       "id": "a942914a9ba0ccc7dd8b79a3b96deb298ff0b6f7",
@@ -2543,9 +2732,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.97,
+      "timeliness": 28.73,
       "writing_value": 0,
-      "total_score": 73.97
+      "total_score": 73.73
     },
     {
       "id": "886e7cd8d46dd7ea2e29643e80cb1bcc7eedcba0",
@@ -2564,9 +2753,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.86,
+      "timeliness": 28.61,
       "writing_value": 0,
-      "total_score": 73.86
+      "total_score": 73.61
     },
     {
       "id": "809fd12a6a4195a6a5853b3463070b77944fee79",
@@ -2585,9 +2774,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.82,
+      "timeliness": 28.58,
       "writing_value": 0,
-      "total_score": 73.82
+      "total_score": 73.58
     },
     {
       "id": "52b583c62bb283eea07370e5e62031486f9b8c13",
@@ -2606,9 +2795,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.8,
+      "timeliness": 28.56,
       "writing_value": 0,
-      "total_score": 73.8
+      "total_score": 73.56
     },
     {
       "id": "a9f549a58a8d3a7e3cd1c4ddeb91453ece0bf4f5",
@@ -2627,9 +2816,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.54,
+      "timeliness": 28.3,
       "writing_value": 0,
-      "total_score": 73.54
+      "total_score": 73.3
     },
     {
       "id": "e215de69d82a5e7a83f49c5cd5616ecb687ed6b3",
@@ -2637,20 +2826,20 @@
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9jNHVyR3cwVGlVS3d5cGdBV2tlc3lORmtlaWgxVDlLVGtkQ1VLbmMxSTMxWVZiV2pKMWoyMGVtMHNwdjJfVnpsM2pPMVpOempvajAyTk5pWFVZMUpicG4ySE1tRDlxaUN5amdZcVVyVU16SUFqWjBhLW82RzZqZlE?oc=5",
       "published_at": "2026-09-01T11:03:35+00:00",
-      "category": "国内人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国内人形机器人资讯",
-      "source": "国内人形机器人资讯",
-      "site_id": "国内人形机器人资讯",
+      "category": "国内具身智能资讯",
+      "gn_label": "embodied_ai",
+      "site_name": "国内具身智能资讯",
+      "source": "国内具身智能资讯",
+      "site_id": "国内具身智能资讯",
       "description": "机器人6S展厅落地惠城  新浪网",
       "ai_score": 35.0,
-      "ai_label": "humanoid",
+      "ai_label": "embodied_ai",
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.5,
+      "timeliness": 28.26,
       "writing_value": 0,
-      "total_score": 73.5
+      "total_score": 73.26
     },
     {
       "id": "6b23ba00fb5f2598e3eb7c2f3cbdff3051bc32bd",
@@ -2669,9 +2858,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.49,
+      "timeliness": 28.25,
       "writing_value": 0,
-      "total_score": 73.49
+      "total_score": 73.25
     },
     {
       "id": "d7eb5e401965400c2821a8f88aa5852f15e21884",
@@ -2690,9 +2879,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.45,
+      "timeliness": 28.21,
       "writing_value": 0,
-      "total_score": 73.45
+      "total_score": 73.21
     },
     {
       "id": "038ed1ac8b25cfeeb79d71e9a15dc1f41ed6baa4",
@@ -2711,30 +2900,35 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.44,
+      "timeliness": 28.2,
       "writing_value": 0,
-      "total_score": 73.44
+      "total_score": 73.2
     }
   ],
   "site_stats": [
     {
-      "site_id": "国内人形机器人资讯",
-      "site_name": "国内人形机器人资讯",
-      "count": 11
-    },
-    {
       "site_id": "国内机器人资讯",
       "site_name": "国内机器人资讯",
-      "count": 11
+      "count": 12
     },
     {
       "site_id": "国内具身智能资讯",
       "site_name": "国内具身智能资讯",
-      "count": 7
+      "count": 11
+    },
+    {
+      "site_id": "国内人形机器人资讯",
+      "site_name": "国内人形机器人资讯",
+      "count": 8
     },
     {
       "site_id": "国外机器人资讯",
       "site_name": "国外机器人资讯",
+      "count": 5
+    },
+    {
+      "site_id": "国外物理AI资讯",
+      "site_name": "国外物理AI资讯",
       "count": 4
     },
     {
@@ -2743,21 +2937,11 @@
       "count": 4
     },
     {
-      "site_id": "国外物理AI资讯",
-      "site_name": "国外物理AI资讯",
-      "count": 3
-    },
-    {
       "site_id": "国外脑机接口资讯",
       "site_name": "国外脑机接口资讯",
       "count": 2
-    },
-    {
-      "site_id": "国外人形机器人资讯",
-      "site_name": "国外人形机器人资讯",
-      "count": 1
     }
   ],
-  "total_items_raw": 43,
-  "total_items_all_mode": 43
+  "total_items_raw": 46,
+  "total_items_all_mode": 46
 }
