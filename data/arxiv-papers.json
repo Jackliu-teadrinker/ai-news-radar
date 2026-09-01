@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-01T15:13:20.988022+00:00",
-  "total_items": 30,
+  "generated_at": "2026-09-01T15:45:40.597365+00:00",
+  "total_items": 29,
   "items": [
     {
       "id": "http://arxiv.org/abs/2608.31167v1",
@@ -291,16 +291,6 @@
       "category": "cs.RO",
       "published_at": "2026-08-31T04:08:53+00:00",
       "updated_at": "2026-08-31T04:08:53Z"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.30193v1",
-      "title": "Robust Semi-passive Velocity Field Control with Boundedness Guarantees for Safe Interaction between Mechanical Systems and Physical Environment",
-      "url": "https://arxiv.org/abs/2608.30193",
-      "summary": "Controllers that guarantee energetic passivity with respect to the pair of external force and velocity realize safe interaction between the mechanical system and its physical environment. However, solely adhering to energetic passivity constraints may impose fundamental limitations on control performance and, in some cases, prevent the successful execution of controlled tasks. In addition, external disturbances from the physical environment can drive the system energy level and states beyond operational regions, thereby undermining task performance and safety. In this paper, we study a robust time-varying semi-passive velocity field control to aim to relax the inherently conservative nature of fully passive control methods in a controlled manner. Specifically, the proposed control method guarantees passivity of the closed-loop system with respect to the force-velocity input-output pair when the energy level exceeds a predefined level, while permitting non-passive behaviors to preserve task performance otherwise. Furthermore, the energy level and the states of the closed-loop system are proved to converge to bounded domains even in the presence of unpredicted disturbances. Additionally, the proposed method also enables constraining power flow between the closed-loop system and its physical environment to enhance safety in the interaction process. Numerical simulation examples demonstrate the effectiveness of the proposed method.",
-      "authors": "Van Trong Dang, Sumitaka Honji, Takahiro Wada",
-      "category": "eess.SY",
-      "published_at": "2026-08-31T03:16:14+00:00",
-      "updated_at": "2026-08-31T03:16:14Z"
     }
   ]
 }

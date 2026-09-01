@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-01T15:07:03.714247+00:00",
+  "generated_at": "2026-09-01T15:38:48.431583+00:00",
   "window_start": "2026-09-01T19:00:00+08:00",
-  "window_end": "2026-09-01T23:04:39.760789+08:00",
-  "total_items": 18,
+  "window_end": "2026-09-01T23:36:03.185192+08:00",
+  "total_items": 20,
   "items": [
     {
       "id": "9b20569680db54b7cd4a553d4532386fce14436c",
@@ -21,9 +21,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 29.27,
+      "timeliness": 28.75,
       "writing_value": 5,
-      "total_score": 114.27
+      "total_score": 113.75
     },
     {
       "id": "56fa504257d3df851c5cdbee905f716c46f68236",
@@ -42,9 +42,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 28.92,
+      "timeliness": 28.41,
       "writing_value": 5,
-      "total_score": 113.92
+      "total_score": 113.41
     },
     {
       "id": "d38b951a59834d395d65dddda0d7f672380baede",
@@ -68,25 +68,25 @@
       "total_score": 100.0
     },
     {
-      "id": "a2b8404c8533cece9ee7c1896203403a9125bb0c",
-      "title": "Norbert Health Raises $14 Million Series A to Power Autonomous Robotic Nursing Assistants - PR Newswire",
+      "id": "bdb56825284cc7d0f08a337d9ed49e39cdf15157",
+      "title": "Norbert Health Raises $14 Million Series A to Power Autonomous Robotic Nursing Assistants - Yahoo Finance",
       "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPQzJrQUNLNHlyUmFMTkoyWm9nczNyTUlneW9PS25VeE9OeERyRzhmUWVXMEpJUk4tSExrS2JRcUpNdFRIVTBZZTVkcE55LTQtZ3BFLWdNV0h1X3o4MU9PeXJMSTFhdEhieEVSNmh4WEl5M3lFTG5nMExvRkdpbzhoWjlpMVJqX3E4QWJ2LVFyQ3hNUXBNRjA5NUllZ1BhQlB2RW1JUEZRYWVWU0dhSnF2Nl9OTlZLckpoMHQtRDNwWm9DUFdTN1FkREN1bkNvRWNSWDNpbVVYUk5xVjh4?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPaHJ0R1N4dl93bGxKRDJqSDlUN0tNckJ6amtwRnZpQjk5MTVwb094R3gyQ29hc3VyRzI3UElBdGp0MWFLV2h2VFJhanB6TUxnWHpTMkpQMHBhckw1Q0FibG1UWURZREd0X0MxZGxJc2xoTUVLcFNibzVNWFFRREdWbEtuVzNXQktkNW9TV3dBcHJrdVFrS3R1aA?oc=5",
       "published_at": "2026-09-01T13:01:00+00:00",
       "category": "GN: autonomous robot",
       "gn_label": "robotics",
       "site_name": "GN: autonomous robot",
       "source": "GN: autonomous robot",
       "site_id": "GN: autonomous robot",
-      "description": "Norbert Health Raises $14 Million Series A to Power Autonomous Robotic Nursing Assistants  PR Newswire",
+      "description": "Norbert Health Raises $14 Million Series A to Power Autonomous Robotic Nursing Assistants  Yahoo Finance",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 27.94,
+      "timeliness": 27.42,
       "writing_value": 5,
-      "total_score": 112.94
+      "total_score": 112.42
     },
     {
       "id": "693cefc9f7d7a33c88e8cf5792058f24337090d9",
@@ -105,9 +105,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.45,
+      "timeliness": 25.93,
       "writing_value": 0,
-      "total_score": 101.45
+      "total_score": 100.93
     },
     {
       "id": "68926689a40703871edc2684b70b53fe18f070f2",
@@ -126,72 +126,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.93,
+      "timeliness": 27.42,
       "writing_value": 0,
-      "total_score": 117.93
-    },
-    {
-      "id": "4fa91a657188e39fad75d0380dc7ecc3990bb9d7",
-      "title": "How Multiway Robotics Transformed a Malaysian Manufacturer's High-Bay Smart Warehouse with 5,000+ Storage Locations - Robotics Tomorrow",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxNVU11bjlaWEtLdF9oNzluQndyM0lUeENOY3l2RXJVVVB6QTl5OERpYUo3VVVsamk3ejNwYl9IUUVKWEd3bnc3NFpWUXRjbDJnWGttenAtakdxQzRsdml2QVhhYk9PX3B1d0hGdmVLbUN2NWZnTGhrdzlCLUlONE85NF83bHFqSTFrZkJ4dmJFdHpNVXJSZTNhb2dYYy10NEl4NFhodXdTU3gwZWlLUU12UDltcXNNV3pONzRCN3BkVVljMkNSbndJUUhldTAtTlVZRTdCRG5zLTg5YWhoWGwtXzRILXVyWkp4SkF6YjAyVmpGNHVjNnRkVDRPQk8?oc=5",
-      "published_at": "2026-09-01T12:43:44+00:00",
-      "category": "GN: industrial robot",
-      "gn_label": "robotics",
-      "site_name": "GN: industrial robot",
-      "source": "GN: industrial robot",
-      "site_id": "GN: industrial robot",
-      "description": "How Multiway Robotics Transformed a Malaysian Manufacturer's High-Bay Smart Warehouse with 5,000+ Storage Locations  Robotics Tomorrow",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 5,
-      "timeliness": 27.65,
-      "writing_value": 5,
-      "total_score": 112.65
-    },
-    {
-      "id": "48b4539a4131baed8b21b905dab65172bc9e331b",
-      "title": "How to Choose an Industrial Robot in 2026: 7 Factors Businesses Should Evaluate - PC Tech Magazine",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBHX05RYjlOSmRMbEdaLUdxakNwNnliYlc3dS1JcktHWW12UE1PeEtIcWRveS1qRTZyMWV1MzlDd19hZS1ESmNPUVpJcHVDYmFJMm8tcld3OGluaVNHem5kSG5LZjg5NXFYNGVzWG5Iekx2bk5Zam5odjZUS0s?oc=5",
-      "published_at": "2026-09-01T12:29:00+00:00",
-      "category": "GN: industrial robot",
-      "gn_label": "robotics",
-      "site_name": "GN: industrial robot",
-      "source": "GN: industrial robot",
-      "site_id": "GN: industrial robot",
-      "description": "How to Choose an Industrial Robot in 2026: 7 Factors Businesses Should Evaluate  PC Tech Magazine",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 27.41,
-      "writing_value": 0,
-      "total_score": 102.41
-    },
-    {
-      "id": "626182ca3aedf0f87e7c02981914358391e3e836",
-      "title": "China Is Building Humanoids, Can India Be The First Follower In Manufacturing, AI And Robots? - outlookbusiness.com",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQOVJaTThCc1ZWeDVPVV9XWldDWnZkZ2lDYkdodVIxZjhNdHdkcVBoNjBNMnFLaFFfVl8zWlU4d3lIWHkwMzNFLW9ZTFV5OFVudHFzQTVLR19ObmJ5dnZBdHQyczRwdExMUFN2MmpNSjdFVUkwdGhDcWc4SWEweVF0VzA0bEp3MnFoampmd19EZjJPWks2N3poRzI1MVFnRERTODM4ZzJBemZtN2lldkFnZFZyWjVxMTA3V1BQVGpNTHlzNEc3cmlmNWw4VWbSAdoBQVVfeXFMTl9vTzJlMTdPbVBQVEpNc0RCeTZhSFRnWmxudXNpcDd0LVZ0Qlh5UWVwbXhHNThGYVBuUFFtQzFmamJfNVR4ZmRVYk85UExVMEt0cjdrRU5EX3BYU3prNGYtbkQwVlUtN2JNMlkwemNSNG1MdG5Ydkx1cmswcXdRMjZjR3FjOGVOVXhWVm90SWNVWDZUbW1jVnVUZm1wYUZhYlJJNVo3N1JQbExjZWdoejNvOW9adjU3QnpSRGxJY2RTTmtkSDZMU3FVeHdEd29DWlV4UmcxZzNLSVE?oc=5",
-      "published_at": "2026-09-01T12:31:15+00:00",
-      "category": "GN: industrial robot",
-      "gn_label": "robotics",
-      "site_name": "GN: industrial robot",
-      "source": "GN: industrial robot",
-      "site_id": "GN: industrial robot",
-      "description": "China Is Building Humanoids, Can India Be The First Follower In Manufacturing, AI And Robots?  outlookbusiness.com",
-      "ai_score": 80.0,
-      "ai_label": "robotics",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 5,
-      "timeliness": 27.44,
-      "writing_value": 5,
-      "total_score": 127.44
+      "total_score": 117.42
     },
     {
       "id": "dd585b666275394e3fbaa2d1caa7a3ba1fc84fbf",
@@ -210,9 +147,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.92,
+      "timeliness": 25.41,
       "writing_value": 0,
-      "total_score": 100.92
+      "total_score": 100.41
     },
     {
       "id": "cf1a5c3c6f8ed7f4a33639b521604053ce76a90b",
@@ -231,9 +168,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.36,
+      "timeliness": 25.85,
       "writing_value": 0,
-      "total_score": 101.36
+      "total_score": 100.85
     },
     {
       "id": "fa2bdbe5e13644f0aee8f3c720edfec30bc42955",
@@ -252,9 +189,72 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.36,
+      "timeliness": 25.85,
       "writing_value": 0,
-      "total_score": 101.36
+      "total_score": 100.85
+    },
+    {
+      "id": "4fa91a657188e39fad75d0380dc7ecc3990bb9d7",
+      "title": "How Multiway Robotics Transformed a Malaysian Manufacturer's High-Bay Smart Warehouse with 5,000+ Storage Locations - Robotics Tomorrow",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxNVU11bjlaWEtLdF9oNzluQndyM0lUeENOY3l2RXJVVVB6QTl5OERpYUo3VVVsamk3ejNwYl9IUUVKWEd3bnc3NFpWUXRjbDJnWGttenAtakdxQzRsdml2QVhhYk9PX3B1d0hGdmVLbUN2NWZnTGhrdzlCLUlONE85NF83bHFqSTFrZkJ4dmJFdHpNVXJSZTNhb2dYYy10NEl4NFhodXdTU3gwZWlLUU12UDltcXNNV3pONzRCN3BkVVljMkNSbndJUUhldTAtTlVZRTdCRG5zLTg5YWhoWGwtXzRILXVyWkp4SkF6YjAyVmpGNHVjNnRkVDRPQk8?oc=5",
+      "published_at": "2026-09-01T12:43:44+00:00",
+      "category": "GN: industrial robot",
+      "gn_label": "robotics",
+      "site_name": "GN: industrial robot",
+      "source": "GN: industrial robot",
+      "site_id": "GN: industrial robot",
+      "description": "How Multiway Robotics Transformed a Malaysian Manufacturer's High-Bay Smart Warehouse with 5,000+ Storage Locations  Robotics Tomorrow",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 27.14,
+      "writing_value": 5,
+      "total_score": 112.14
+    },
+    {
+      "id": "48b4539a4131baed8b21b905dab65172bc9e331b",
+      "title": "How to Choose an Industrial Robot in 2026: 7 Factors Businesses Should Evaluate - PC Tech Magazine",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBHX05RYjlOSmRMbEdaLUdxakNwNnliYlc3dS1JcktHWW12UE1PeEtIcWRveS1qRTZyMWV1MzlDd19hZS1ESmNPUVpJcHVDYmFJMm8tcld3OGluaVNHem5kSG5LZjg5NXFYNGVzWG5Iekx2bk5Zam5odjZUS0s?oc=5",
+      "published_at": "2026-09-01T12:29:00+00:00",
+      "category": "GN: industrial robot",
+      "gn_label": "robotics",
+      "site_name": "GN: industrial robot",
+      "source": "GN: industrial robot",
+      "site_id": "GN: industrial robot",
+      "description": "How to Choose an Industrial Robot in 2026: 7 Factors Businesses Should Evaluate  PC Tech Magazine",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 26.89,
+      "writing_value": 0,
+      "total_score": 101.89
+    },
+    {
+      "id": "626182ca3aedf0f87e7c02981914358391e3e836",
+      "title": "China Is Building Humanoids, Can India Be The First Follower In Manufacturing, AI And Robots? - outlookbusiness.com",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQOVJaTThCc1ZWeDVPVV9XWldDWnZkZ2lDYkdodVIxZjhNdHdkcVBoNjBNMnFLaFFfVl8zWlU4d3lIWHkwMzNFLW9ZTFV5OFVudHFzQTVLR19ObmJ5dnZBdHQyczRwdExMUFN2MmpNSjdFVUkwdGhDcWc4SWEweVF0VzA0bEp3MnFoampmd19EZjJPWks2N3poRzI1MVFnRERTODM4ZzJBemZtN2lldkFnZFZyWjVxMTA3V1BQVGpNTHlzNEc3cmlmNWw4VWbSAdoBQVVfeXFMTl9vTzJlMTdPbVBQVEpNc0RCeTZhSFRnWmxudXNpcDd0LVZ0Qlh5UWVwbXhHNThGYVBuUFFtQzFmamJfNVR4ZmRVYk85UExVMEt0cjdrRU5EX3BYU3prNGYtbkQwVlUtN2JNMlkwemNSNG1MdG5Ydkx1cmswcXdRMjZjR3FjOGVOVXhWVm90SWNVWDZUbW1jVnVUZm1wYUZhYlJJNVo3N1JQbExjZWdoejNvOW9adjU3QnpSRGxJY2RTTmtkSDZMU3FVeHdEd29DWlV4UmcxZzNLSVE?oc=5",
+      "published_at": "2026-09-01T12:31:15+00:00",
+      "category": "GN: industrial robot",
+      "gn_label": "robotics",
+      "site_name": "GN: industrial robot",
+      "source": "GN: industrial robot",
+      "site_id": "GN: industrial robot",
+      "description": "China Is Building Humanoids, Can India Be The First Follower In Manufacturing, AI And Robots?  outlookbusiness.com",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 26.93,
+      "writing_value": 5,
+      "total_score": 126.93
     },
     {
       "id": "db5eb09d4fa3f7bf6d984f220773aecb4c1bac34",
@@ -273,9 +273,51 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.16,
+      "timeliness": 26.64,
       "writing_value": 0,
-      "total_score": 102.16
+      "total_score": 101.64
+    },
+    {
+      "id": "b997258d7591bfd624fc142f8b965c275d413af1",
+      "title": "Moroccan Study Puts Country at Forefront of African Robotic Surgery - The North Africa Post",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNS3N3djV2ODVtYTRGWlJZb1ZxNmJ0RmhLNXA5c2ViZnhjMVk4TVJZRlQxR0RyNkg0VE9uUF9DQWJKVEwwYWx4U1hOVlZDamF4cFZ4eWRwbmZIRkQzcmZxNVM0RmpmN0oyQ2UyX0VCclNObWdvU3BjUkpZWXNRNzlLeC1fSnI0UjJ1QzVpUVcwMXJpbFlMX09FMkk0TDRfY0JMdjV2VF9pYXZKZw?oc=5",
+      "published_at": "2026-09-01T15:05:59+00:00",
+      "category": "GN: surgical robot",
+      "gn_label": "robotics",
+      "site_name": "GN: surgical robot",
+      "source": "GN: surgical robot",
+      "site_id": "GN: surgical robot",
+      "description": "Moroccan Study Puts Country at Forefront of African Robotic Surgery  The North Africa Post",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.51,
+      "writing_value": 0,
+      "total_score": 104.51
+    },
+    {
+      "id": "01d56fbafbb343d18007ede6fa2b1b0b237c13d8",
+      "title": "Indian-Developed Robotic Surgery System Expands Access To Specialised Care - Rediff",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPNFU3eVkya2lITTdYMDhYZkFmS3pCQXVvb0FPUEJoODhlcXNYZnZKa1g2VzQyTzVCOVQ3ZVVrRkZMMW8tVUxoUEFQOVVPa0VHM3VnMm5OWmdrRmNLczloVm5NOUVaNllQajlaalUyTVFTV2ZFVjRDVE15MkQwbWY5My1wMjZTZkJRZjJHX19QSXdUZkFMeGVfb1IzTDhKWkhrYXNz0gGmAUFVX3lxTE9ENU1teVUtV1pxRTRsaWx0Z0dpVTlfVy1jWDRmQ0lGa05kWks3R2dram5meHFqOE03cW1ndUoyZVg2QVRIc1hyMmRpS29jckYwc2ZBdHpTdFRuNmdwaGhFem5BRnVpNXcwNnpreTlZSmxhQjhmUmdZRk1XcFdDbU5lTE1fLXp5LWt4RzlVdkR3RF95QnVqMkFHWGxQY29WR0hBbHRDSkE?oc=5",
+      "published_at": "2026-09-01T15:13:40+00:00",
+      "category": "GN: surgical robot",
+      "gn_label": "robotics",
+      "site_name": "GN: surgical robot",
+      "source": "GN: surgical robot",
+      "site_id": "GN: surgical robot",
+      "description": "Indian-Developed Robotic Surgery System Expands Access To Specialised Care  Rediff",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.64,
+      "writing_value": 0,
+      "total_score": 104.64
     },
     {
       "id": "f634d49a6b36da2d67991d7df389035419376bad",
@@ -294,9 +336,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.33,
+      "timeliness": 27.82,
       "writing_value": 0,
-      "total_score": 103.33
+      "total_score": 102.82
     },
     {
       "id": "cbaacad4421ab4d85c21be9f5ea961fed72fd256",
@@ -315,9 +357,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.07,
+      "timeliness": 26.56,
       "writing_value": 0,
-      "total_score": 102.07
+      "total_score": 101.56
     },
     {
       "id": "7ef46cf2f29be73a00690c3e2df99d9980d46927",
@@ -336,9 +378,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.92,
+      "timeliness": 26.41,
       "writing_value": 0,
-      "total_score": 101.92
+      "total_score": 101.41
     },
     {
       "id": "65ef41fdf2bc02b8e902075ecb6759b71b0013f4",
@@ -357,16 +399,16 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.39,
+      "timeliness": 25.87,
       "writing_value": 0,
-      "total_score": 101.39
+      "total_score": 100.87
     },
     {
-      "id": "ab2ba014480182f9df8a8c17bc8fedc7d67956b0",
+      "id": "e53b8fc11f86858e03c96821705c3417708630ff",
       "title": "千觉发布整手触觉解决方案2.0，补齐从局部感知到整手交互的关键能力|上观新闻|灵巧手|机器人|指尖|掌心_手机新浪网 - finance.sina.cn",
       "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOOTVNelBtaVNLRlR2MjlNbFZzOF80cHUzYXZJaW9XbmxDdWtFZGdvMUlhQktnVEdsdzR5RVhwb3BOaTN6NjJVaFFVZTdJVUE5N05jWjR6U0tlSUZNQk1YVE96aUdrVm04VTE0TzZJOUhQNmlUWlE2YUVkem5hQ0JJVTRBLTVvOFRJdVF3OXZ1ak12MDRlMHR2anFORmxORjZINmF6TkhNcGVJOE9mVHVNU0FR?oc=5",
-      "published_at": "2026-09-01T11:50:56+00:00",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOMWdZVzg1RGNLYVB3dGNKX1JsMXR5MUxNQ0toZkkxWkE0eWw5MlpSS2d3NEE4WVlyU0FGd3g4dlE1OXRHLVU2QTBNNEdQZy1GY25rcDMxWTNWX0M1cXVQVXFlaldteEdIYWhCU3RVYXMzTHF0bmZ3N2JhbnM3Nzd5aGp4Z1lxZnFqeUVhWmpyRnN5M2dXTHdON0QzRFdtZWluTTZtWWpvbw?oc=5",
+      "published_at": "2026-09-01T15:00:00+00:00",
       "category": "GN: 灵巧手",
       "gn_label": "robotics",
       "site_name": "GN: 灵巧手",
@@ -378,9 +420,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.77,
+      "timeliness": 29.41,
       "writing_value": 0,
-      "total_score": 101.77
+      "total_score": 104.41
     }
   ],
   "fallback_used": false
