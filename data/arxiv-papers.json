@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-01T17:33:29.856774+00:00",
-  "total_items": 25,
+  "generated_at": "2026-09-01T20:15:46.865077+00:00",
+  "total_items": 19,
   "items": [
     {
       "id": "http://arxiv.org/abs/2608.31167v1",
@@ -191,66 +191,6 @@
       "category": "cs.RO",
       "published_at": "2026-08-31T08:26:03+00:00",
       "updated_at": "2026-08-31T08:26:03Z"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.30396v1",
-      "title": "Scaffolding Foundation Models into Physical-World Agents Pushes the Frontier of Long-Horizon Navigation",
-      "url": "https://arxiv.org/abs/2608.30396",
-      "summary": "Long-horizon physical-world agents must reason over distant goals while grounding decisions in reliable closed-loop behavior. Today's foundation models split these capabilities: vision-language models (VLMs) infer missing information and adapt high-level plans but remain brittle and inefficient at repeated navigation grounding, while navigation foundation models (NFMs) robustly execute semantic goals but operate as bounded episodes without persistent task-level reasoning. We introduce NavMCP, an agentic scaffolding framework that couples a VLM reasoning agent with an NFM executor for long-horizon exploration. The VLM decides what evidence to seek, where to search, and when to stop, while the NFM grounds each semantic sub-goal into closed-loop navigation. Three channels structure their collaboration: intent translates evidence needs into navigation calls, observation converts rollouts into source-grounded trajectory evidence, and memory accumulates findings, negative evidence, and unresolved goals across calls. This design turns isolated navigation rollouts into persistent embodied interaction without retraining either model. On Embodied Question Answering, NavMCP achieves state-of-the-art results on HM-EQA, MT-HM3D, and EXPRESS-Bench. Under matched agent and executor backbones, it outperforms an episodic interface by 14.9 percentage points on HM-EQA. On a Unitree Go2, NavMCP reaches 78.3% success, with its margin over the strongest baseline growing from 10 to 45 points as the task horizon increases. These results demonstrate the potential of scaffolding complementary foundation models into long-horizon physical-world agents.",
-      "authors": "Zixing Lei, Gengze Zhou, Xiong-Hui Chen et al.",
-      "category": "cs.AI",
-      "published_at": "2026-08-31T07:50:16+00:00",
-      "updated_at": "2026-08-31T07:50:16Z"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.30378v1",
-      "title": "PAVE: Predictive Alignment and Value-Guided Evolution for World-Action Policies",
-      "url": "https://arxiv.org/abs/2608.30378",
-      "summary": "Direct vision-language-action policies generate continuous robot actions efficiently, but standard behavior cloning leaves two complementary gaps: their representations are not explicitly required to describe how the scene evolves over multiple time scales, and deployment trajectories of unequal quality are often reused without separating useful dynamics from undesirable behavior. We introduce \\method, a direct world-action policy that combines outcome-agnostic predictive learning with outcome-aware policy improvement. \\method first retains a local fixed-offset JEPA objective and adds trajectory-relative multi-horizon transition alignment at 25%, 50%, 75%, and 100% of the remaining episode. These training-only targets require the current policy representation to preserve both local physical changes and longer-range task progress, without supplying explicit future tokens to the action head. \\method then trains an independent distributional value critic on cumulative deployment trajectories, computes action-chunk-aligned $N$-step advantages, and converts them into positive, negative, or null text conditions for a flow-matching actor. Thus, every valid trajectory can teach what physically happened, while the actor is deployed only under the condition associated with relatively better actions. The multi-horizon predictor and critic are removed from online execution, preserving direct action generation from the current observation, language instruction, and proprioception. \\redclaim{Across the three simulation benchmarks, \\method achieves the strongest overall performance while preserving the direct actor's online execution path.}",
-      "authors": "Botong Zhao, Fang Yu,  Tim et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-31T07:36:11+00:00",
-      "updated_at": "2026-08-31T07:36:11Z"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.30368v1",
-      "title": "SpectraTac: A Compact Camera-Free Optical Tactile Sensor with Distributed Color Sensing",
-      "url": "https://arxiv.org/abs/2608.30368",
-      "summary": "Tactile sensing is essential for physical interaction in robotics and human--machine systems. However, combining rich tactile information with compact hardware, low cost, and low computational overhead remains challenging. This work presents SpectraTac, a compact, camera-free optical tactile sensor that combines active red--green--blue (RGB) illumination with spatially distributed color sensing. Contact deforms a compliant transparent elastomer and modulates its internal light field, producing spatially differentiated changes in color and intensity. Three distributed color sensors capture these responses as low-dimensional spatio-spectral features, avoiding cameras, imaging optics, and high-dimensional image processing. The device measures 19.2 mm in diameter and 4 mm in height, with a material cost below USD~5. A data-driven decoding framework simultaneously estimates three-dimensional (3D) force and the contact region from the optical measurements. For 3D force prediction, the sensor achieved mean absolute errors (MAEs) of 0.161, 0.164, and 0.429 N along the x-, y-, and z-axes, respectively. The nine-region contact-classification accuracy was 99.9%. We further evaluated real-time 3D force tracking and contact-region-based human--machine interaction through an interactive control task. These results indicate that distributed color-resolved optical sensing offers a compact, low-cost alternative to camera-based tactile sensing for robotics, wearable sensing, and interactive systems.",
-      "authors": "Hao Wu, Haotian Guo, Yu Feng et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-31T07:25:51+00:00",
-      "updated_at": "2026-08-31T07:25:51Z"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.30344v1",
-      "title": "Proximity3D: Shape from Capacitive Proximity on Sensing Manifold",
-      "url": "https://arxiv.org/abs/2608.30344",
-      "summary": "Most shape reconstruction methods assume measurements defined over planar sensing domains, such as RGB images or depth maps. In this paper, we use a curved capacitive textile as a shape sensor, treating its surface as a non-planar sensing manifold. Each scan is represented as a capacitive proximity field on this manifold, induced by the interaction between the curved electrode layout and nearby object geometry. We introduce a multi-view feedforward reconstruction model that aggregates these fields across known sensor views and recovers the observed object shape. Simulated and physical experiments demonstrate robust reconstruction from capacitive proximity signals acquired on curved sensing surfaces, pointing toward a new route to robotic near-field geometric awareness via embodied sensing.",
-      "authors": "Hao Chen, Chenming Wu, Chun Ping Lam et al.",
-      "category": "cs.CV",
-      "published_at": "2026-08-31T07:00:19+00:00",
-      "updated_at": "2026-08-31T07:00:19Z"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.30301v1",
-      "title": "Data-Centric Neuromotor Interfaces for Portable Human-Machine Interaction",
-      "url": "https://arxiv.org/abs/2608.30301",
-      "summary": "Dexterous human-machine interaction requires intuitive and expressive interfaces that can be efficiently deployed on constrained edge devices. Flexible material-based neuromotor interfaces hold considerable promise, as they decode human movement intention into natural control. Although emerging flexible electronic skins enable wearable high-fidelity data acquisition, practical deployment inevitably involves trade-offs between computational resources and portability. We present a data-centric paradigm where physiological features yield fundamental separability, providing sufficient discriminative cues for recognition. A wireless, high-bandwidth system developed for collecting various electrophysiological signals, when integrated with muscle-specific electrodes, forms a surface electromyography-based interface. Exploiting highly separable data, a 2,210-parameter model achieves 94.36% accuracy across 34 gestures and can be rapidly deployed on edge devices, establishing a new thousand-parameter benchmark for dexterous decoding. The underlying data-algorithm interactions in the data-centric paradigm are further clarified, demonstrating its feasibility in real-world scenarios. This study provides a principled and validated pathway for practical deployment of reliable neuromotor interfaces.",
-      "authors": "Jiaxuan Li, Di Wu, Jianhua Liu et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-31T06:17:46+00:00",
-      "updated_at": "2026-08-31T06:17:46Z"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.30289v1",
-      "title": "CometVLA: Co-Training on an Embodied Data Pyramid towards Physical Understanding",
-      "url": "https://arxiv.org/abs/2608.30289",
-      "summary": "Vision-language-action (VLA) models remain brittle in manipulation tasks that require physical commonsense. Current physical VQA data is typically disembodied and misaligned with robot action domains. Egocentric videos are used only as auxiliary pre-training. It remains unclear whether improved VLM physical understanding actually benefits downstream action generation. Therefore, we present CometVLA to close this gap. We construct CometData and CometBench, an embodied physical VQA corpus and benchmark strictly aligned with the robot's action data and embodiment. We introduce Global Action Prior (GAP) tokens, a compact learnable bottleneck that isolates task-agnostic motion regularities and lets the action head consume physical commonsense without corrupting the pre-trained VLM backbone. We co-train CometVLA across the embodied data pyramid, spanning teleoperation, simulation, egocentric trajectories, and VQA layers. On real-world manipulation tasks and RoboTwin simulation, CometVLA consistently outperforms strong VLA baselines. Correlation analysis shows that stronger VLM performance on CometBench indicates higher VLA success rates. Results demonstrate that physical understanding pre-training genuinely benefits downstream manipulation.",
-      "authors": "Hanwen Wan, Dafeng Chi, Linbo Zhai et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-31T05:55:34+00:00",
-      "updated_at": "2026-08-31T05:55:34Z"
     }
   ]
 }
