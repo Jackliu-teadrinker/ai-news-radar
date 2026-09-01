@@ -1,5 +1,226 @@
 {
-  "generated_at": "2026-09-01T01:57:27.430736+00:00",
-  "total_items": 0,
-  "items": []
+  "generated_at": "2026-09-01T02:19:52.554064+00:00",
+  "total_items": 22,
+  "items": [
+    {
+      "id": "http://arxiv.org/abs/2608.30643v1",
+      "title": "Temporal Forcing: 4D Representation Alignment for Vision-Language-Action Models",
+      "url": "https://arxiv.org/abs/2608.30643",
+      "summary": "Recent vision-language-action (VLA) methods improve manipulation performance by aligning their representations with 3D scene geometry. However, these methods often struggle with long-horizon manipulation and observation aliasing between visually similar states due to a lack of temporal information: the 3D scene geometry captures only the current state, rather than how it has evolved over time. To resolve this, we present Temporal Forcing, a 4D representation alignment method for VLA models. Specifically, we first introduce a history pathway that enables a vanilla VLA model to summarize observation history into temporally aware latent representations. Then, the latent representations are aligned with the geometric features extracted by a pretrained 4D foundation model, which captures the evolving 3D world through temporally consistent geometric representations, enabling a deeper understanding of dynamic environments. Temporal Forcing reaches 98.8% on LIBERO, outperforming its base model by 2.2 points. On a physical hidden-placement task, it raises full-task success from 20.0% to 43.3%. Code will be publicly available.",
+      "authors": "Xingyu Ding, Yuzhong Zhao, Chunhai Zhao et al.",
+      "category": "cs.RO",
+      "published_at": "2026-08-31T11:47:29+00:00",
+      "updated_at": "2026-08-31T11:47:29Z"
+    },
+    {
+      "id": "http://arxiv.org/abs/2608.30536v1",
+      "title": "Behavior-Skill: A Fine-Grained Benchmark for Evaluating Vision-Language-Action Policies in Long-Horizon Tasks",
+      "url": "https://arxiv.org/abs/2608.30536",
+      "summary": "Reliable execution of long-horizon mobile manipulation tasks remains challenging because overall task success depends on the successful completion of multiple constituent skills. Existing benchmarks, however, still rely primarily on full-task rollouts and aggregate task-level metrics, making intermediate failures difficult to observe and analyze. We present Behavior-Skill, a benchmark that reformulates the learning and evaluation of long-horizon tasks around executable constituent skills. It contains 235,492 skill instances from 10,000 demonstrations across 50 household tasks and 34 semantic skill categories. Each instance pairs a skill instruction with an aligned observation-action segment, and is further associated with a restorable intermediate state and a skill success condition to enable independent evaluation under valid preconditions. We further introduce trajectory-level and skill-level metrics to characterize policy capability beyond aggregate task success. Extensive experiments across representative VLA policies including pi0.5 and GR00T on the complete 50-task benchmark show that failures are highly non-uniform across skills, with contact-rich manipulation skills forming persistent bottlenecks. These results demonstrate that Behavior-Skill complements full-task evaluation by exposing intermediate capability profiles for analyzing and improving long-horizon VLA policies. Behavior-Skill is publicly available at https://github.com/nubot-nudt/Behavior-Skill.",
+      "authors": "Chunyun Ma, Lun Luo, Xingjian Luo et al.",
+      "category": "cs.RO",
+      "published_at": "2026-08-31T10:03:48+00:00",
+      "updated_at": "2026-08-31T10:03:48Z"
+    },
+    {
+      "id": "http://arxiv.org/abs/2608.30506v1",
+      "title": "Anomaly Detection on Small Industrial Components via Vision-Based Tactile Sensing",
+      "url": "https://arxiv.org/abs/2608.30506",
+      "summary": "Automated inspection of small industrial components, including sub-centimetre-scale parts where defects are geometry-driven and poorly resolved by standard optical cameras, calls for sensing modalities that can directly capture fine surface geometry. Vision-based tactile sensors address this need by converting contact imprints into high-resolution image-like data compatible with existing deep-learning pipelines, yet their effective use for industrial anomaly detection (AD) remains largely unexplored. This work systematically evaluates unsupervised AD methods on a real tactile dataset covering five genuine industrial components acquired with a GelSight Mini sensor mounted on a collaborative robot. Four feature-embedding methods, SPADE, PaDiM, FAPM, and InReaCh, are compared under three validations explicitly motivated by the deployment constraints of contact-based sensing: a Good Fraction analysis establishing the minimum number of nominal contacts for stable performance, directly bounded by gel wear since every acquisition degrades the soft interface; a cross-position evaluation assessing generalization across different contact locations observing the same recurring surface pattern; and a low- versus high-resolution comparison evaluating the cost-benefit of higher-resolution tactile acquisition. Overall, this systematic benchmarking study provides practical guidance for researchers and practitioners adopting vision-based tactile sensing for industrial AD and shows how this modality can serve as a viable alternative for industrial quality-control tasks.",
+      "authors": "G. F. Preziosa, M. Casiglia, M. Faroni et al.",
+      "category": "cs.RO",
+      "published_at": "2026-08-31T09:40:35+00:00",
+      "updated_at": "2026-08-31T09:40:35Z"
+    },
+    {
+      "id": "http://arxiv.org/abs/2608.30471v1",
+      "title": "HorizonNet for visual terrain navigation",
+      "url": "https://arxiv.org/abs/2608.30471",
+      "summary": "This paper investigates the problem of position estimation of unmanned surface vessels (USVs) operating in coastal areas or in the archipelago. We propose a position estimation method where the horizon line is extracted in a 360 degree panoramic image around the USV. We design a CNN architecture to determine an approximate horizon line in the image and implicitly determine the camera orientation (the pitch and roll angles). The panoramic image is warped to compensate for the camera orientation and to generate an image from an approximately level camera. A second CNN architecture is designed to extract the pixelwise horizon line in the warped image. The extracted horizon line is correlated with digital elevation model (DEM) data in the Fourier domain using a MOSSE correlation filter. Finally, we determine the location of the maximum correlation score over the search area to estimate the position of the USV. Comprehensive experiments are performed in a field trial in the archipelago. Our approach provides promising results by achieving position estimates with GPS-level accuracy.",
+      "authors": "Bertil Grelsson, Andreas Robinson, Michael Felsberg et al.",
+      "category": "cs.CV",
+      "published_at": "2026-08-31T08:58:13+00:00",
+      "updated_at": "2026-08-31T08:58:13Z"
+    },
+    {
+      "id": "http://arxiv.org/abs/2608.30433v1",
+      "title": "A Hybrid PEM-GP Framework for Uncertainty-Aware System Identification of Quadcopters",
+      "url": "https://arxiv.org/abs/2608.30433",
+      "summary": "Accurate dynamic models play a central role in achieving reliable control of quadcopters. Classical system identification methods remain widely used, mainly because of their interpretability. However, they often fail to capture important nonlinear effects, especially in small-scale aerial platforms where such effects become more pronounced. Data-driven approaches offer a different perspective. They can represent complex nonlinear dynamics more effectively, but this comes at the cost of reduced interpretability and the absence of well-calibrated uncertainty estimates. In this work, we propose a framework that combines physics-based modeling with data-driven learning, while explicitly accounting for uncertainty. A physics-based model is first identified using the Prediction Error Method (PEM), which captures the main structure of the system. The remaining dynamics are then modeled using a Gaussian Process (GP), allowing the residual behavior to be learned directly from data. This separation makes it possible to distinguish between known physical effects and unmodeled dynamics. The proposed framework is validated on a Duckiedrone-like experimental setup. The results show that the PEM-GP model achieves prediction accuracy comparable to that of a Long Short-Term Memory (LSTM) network, while additionally providing calibrated uncertainty estimates. This combination improves model reliability and supports uncertainty-aware decision-making.",
+      "authors": "Abdallah Ghoul, Ismail Khalil Bousserhane, Kadri Boufeldja",
+      "category": "cs.RO",
+      "published_at": "2026-08-31T08:26:03+00:00",
+      "updated_at": "2026-08-31T08:26:03Z"
+    },
+    {
+      "id": "http://arxiv.org/abs/2608.30396v1",
+      "title": "Scaffolding Foundation Models into Physical-World Agents Pushes the Frontier of Long-Horizon Navigation",
+      "url": "https://arxiv.org/abs/2608.30396",
+      "summary": "Long-horizon physical-world agents must reason over distant goals while grounding decisions in reliable closed-loop behavior. Today's foundation models split these capabilities: vision-language models (VLMs) infer missing information and adapt high-level plans but remain brittle and inefficient at repeated navigation grounding, while navigation foundation models (NFMs) robustly execute semantic goals but operate as bounded episodes without persistent task-level reasoning. We introduce NavMCP, an agentic scaffolding framework that couples a VLM reasoning agent with an NFM executor for long-horizon exploration. The VLM decides what evidence to seek, where to search, and when to stop, while the NFM grounds each semantic sub-goal into closed-loop navigation. Three channels structure their collaboration: intent translates evidence needs into navigation calls, observation converts rollouts into source-grounded trajectory evidence, and memory accumulates findings, negative evidence, and unresolved goals across calls. This design turns isolated navigation rollouts into persistent embodied interaction without retraining either model. On Embodied Question Answering, NavMCP achieves state-of-the-art results on HM-EQA, MT-HM3D, and EXPRESS-Bench. Under matched agent and executor backbones, it outperforms an episodic interface by 14.9 percentage points on HM-EQA. On a Unitree Go2, NavMCP reaches 78.3% success, with its margin over the strongest baseline growing from 10 to 45 points as the task horizon increases. These results demonstrate the potential of scaffolding complementary foundation models into long-horizon physical-world agents.",
+      "authors": "Zixing Lei, Gengze Zhou, Xiong-Hui Chen et al.",
+      "category": "cs.AI",
+      "published_at": "2026-08-31T07:50:16+00:00",
+      "updated_at": "2026-08-31T07:50:16Z"
+    },
+    {
+      "id": "http://arxiv.org/abs/2608.30378v1",
+      "title": "PAVE: Predictive Alignment and Value-Guided Evolution for World-Action Policies",
+      "url": "https://arxiv.org/abs/2608.30378",
+      "summary": "Direct vision-language-action policies generate continuous robot actions efficiently, but standard behavior cloning leaves two complementary gaps: their representations are not explicitly required to describe how the scene evolves over multiple time scales, and deployment trajectories of unequal quality are often reused without separating useful dynamics from undesirable behavior. We introduce \\method, a direct world-action policy that combines outcome-agnostic predictive learning with outcome-aware policy improvement. \\method first retains a local fixed-offset JEPA objective and adds trajectory-relative multi-horizon transition alignment at 25%, 50%, 75%, and 100% of the remaining episode. These training-only targets require the current policy representation to preserve both local physical changes and longer-range task progress, without supplying explicit future tokens to the action head. \\method then trains an independent distributional value critic on cumulative deployment trajectories, computes action-chunk-aligned $N$-step advantages, and converts them into positive, negative, or null text conditions for a flow-matching actor. Thus, every valid trajectory can teach what physically happened, while the actor is deployed only under the condition associated with relatively better actions. The multi-horizon predictor and critic are removed from online execution, preserving direct action generation from the current observation, language instruction, and proprioception. \\redclaim{Across the three simulation benchmarks, \\method achieves the strongest overall performance while preserving the direct actor's online execution path.}",
+      "authors": "Botong Zhao, Fang Yu,  Tim et al.",
+      "category": "cs.RO",
+      "published_at": "2026-08-31T07:36:11+00:00",
+      "updated_at": "2026-08-31T07:36:11Z"
+    },
+    {
+      "id": "http://arxiv.org/abs/2608.30368v1",
+      "title": "SpectraTac: A Compact Camera-Free Optical Tactile Sensor with Distributed Color Sensing",
+      "url": "https://arxiv.org/abs/2608.30368",
+      "summary": "Tactile sensing is essential for physical interaction in robotics and human--machine systems. However, combining rich tactile information with compact hardware, low cost, and low computational overhead remains challenging. This work presents SpectraTac, a compact, camera-free optical tactile sensor that combines active red--green--blue (RGB) illumination with spatially distributed color sensing. Contact deforms a compliant transparent elastomer and modulates its internal light field, producing spatially differentiated changes in color and intensity. Three distributed color sensors capture these responses as low-dimensional spatio-spectral features, avoiding cameras, imaging optics, and high-dimensional image processing. The device measures 19.2 mm in diameter and 4 mm in height, with a material cost below USD~5. A data-driven decoding framework simultaneously estimates three-dimensional (3D) force and the contact region from the optical measurements. For 3D force prediction, the sensor achieved mean absolute errors (MAEs) of 0.161, 0.164, and 0.429 N along the x-, y-, and z-axes, respectively. The nine-region contact-classification accuracy was 99.9%. We further evaluated real-time 3D force tracking and contact-region-based human--machine interaction through an interactive control task. These results indicate that distributed color-resolved optical sensing offers a compact, low-cost alternative to camera-based tactile sensing for robotics, wearable sensing, and interactive systems.",
+      "authors": "Hao Wu, Haotian Guo, Yu Feng et al.",
+      "category": "cs.RO",
+      "published_at": "2026-08-31T07:25:51+00:00",
+      "updated_at": "2026-08-31T07:25:51Z"
+    },
+    {
+      "id": "http://arxiv.org/abs/2608.30344v1",
+      "title": "Proximity3D: Shape from Capacitive Proximity on Sensing Manifold",
+      "url": "https://arxiv.org/abs/2608.30344",
+      "summary": "Most shape reconstruction methods assume measurements defined over planar sensing domains, such as RGB images or depth maps. In this paper, we use a curved capacitive textile as a shape sensor, treating its surface as a non-planar sensing manifold. Each scan is represented as a capacitive proximity field on this manifold, induced by the interaction between the curved electrode layout and nearby object geometry. We introduce a multi-view feedforward reconstruction model that aggregates these fields across known sensor views and recovers the observed object shape. Simulated and physical experiments demonstrate robust reconstruction from capacitive proximity signals acquired on curved sensing surfaces, pointing toward a new route to robotic near-field geometric awareness via embodied sensing.",
+      "authors": "Hao Chen, Chenming Wu, Chun Ping Lam et al.",
+      "category": "cs.CV",
+      "published_at": "2026-08-31T07:00:19+00:00",
+      "updated_at": "2026-08-31T07:00:19Z"
+    },
+    {
+      "id": "http://arxiv.org/abs/2608.30301v1",
+      "title": "Data-Centric Neuromotor Interfaces for Portable Human-Machine Interaction",
+      "url": "https://arxiv.org/abs/2608.30301",
+      "summary": "Dexterous human-machine interaction requires intuitive and expressive interfaces that can be efficiently deployed on constrained edge devices. Flexible material-based neuromotor interfaces hold considerable promise, as they decode human movement intention into natural control. Although emerging flexible electronic skins enable wearable high-fidelity data acquisition, practical deployment inevitably involves trade-offs between computational resources and portability. We present a data-centric paradigm where physiological features yield fundamental separability, providing sufficient discriminative cues for recognition. A wireless, high-bandwidth system developed for collecting various electrophysiological signals, when integrated with muscle-specific electrodes, forms a surface electromyography-based interface. Exploiting highly separable data, a 2,210-parameter model achieves 94.36% accuracy across 34 gestures and can be rapidly deployed on edge devices, establishing a new thousand-parameter benchmark for dexterous decoding. The underlying data-algorithm interactions in the data-centric paradigm are further clarified, demonstrating its feasibility in real-world scenarios. This study provides a principled and validated pathway for practical deployment of reliable neuromotor interfaces.",
+      "authors": "Jiaxuan Li, Di Wu, Jianhua Liu et al.",
+      "category": "cs.RO",
+      "published_at": "2026-08-31T06:17:46+00:00",
+      "updated_at": "2026-08-31T06:17:46Z"
+    },
+    {
+      "id": "http://arxiv.org/abs/2608.30289v1",
+      "title": "CometVLA: Co-Training on an Embodied Data Pyramid towards Physical Understanding",
+      "url": "https://arxiv.org/abs/2608.30289",
+      "summary": "Vision-language-action (VLA) models remain brittle in manipulation tasks that require physical commonsense. Current physical VQA data is typically disembodied and misaligned with robot action domains. Egocentric videos are used only as auxiliary pre-training. It remains unclear whether improved VLM physical understanding actually benefits downstream action generation. Therefore, we present CometVLA to close this gap. We construct CometData and CometBench, an embodied physical VQA corpus and benchmark strictly aligned with the robot's action data and embodiment. We introduce Global Action Prior (GAP) tokens, a compact learnable bottleneck that isolates task-agnostic motion regularities and lets the action head consume physical commonsense without corrupting the pre-trained VLM backbone. We co-train CometVLA across the embodied data pyramid, spanning teleoperation, simulation, egocentric trajectories, and VQA layers. On real-world manipulation tasks and RoboTwin simulation, CometVLA consistently outperforms strong VLA baselines. Correlation analysis shows that stronger VLM performance on CometBench indicates higher VLA success rates. Results demonstrate that physical understanding pre-training genuinely benefits downstream manipulation.",
+      "authors": "Hanwen Wan, Dafeng Chi, Linbo Zhai et al.",
+      "category": "cs.RO",
+      "published_at": "2026-08-31T05:55:34+00:00",
+      "updated_at": "2026-08-31T05:55:34Z"
+    },
+    {
+      "id": "http://arxiv.org/abs/2608.30242v1",
+      "title": "CanonNav: Disentangling Navigation Behavior from Camera Geometry in Cross-Platform Visual Navigation",
+      "url": "https://arxiv.org/abs/2608.30242",
+      "summary": "While visual navigation has advanced through imitation learning from cross-platform demonstrations, fully leveraging such data remains challenging. First, directly learning from image-trajectory pairs entangles navigation behavior with platform-dependent camera geometry. This hinders consistent learning by forcing the policy to implicitly infer camera geometry from visual observations, an inherently ill-posed problem. Second, imitation learning from demonstrated trajectories captures the expert's chosen motion but leaves the intermediate decisions underlying that motion implicit. To address these issues, we propose CanonNav, a visual navigation framework that disentangles navigation behavior from camera geometry and incorporates complementary planning supervision into learning from cross-platform demonstrations. CanonNav introduces camera geometry canonicalization, which transforms visual observations and trajectories into a camera-consistent representation space. Building on this representation, we derive safety and local-progress supervision using pseudo-labels from an offline traversability estimator. Safety supervision penalizes unsafe trajectories, while local-progress supervision guides where the robot should advance. Experiments across diverse camera configurations and environments show that, despite using only RGB at inference, CanonNav consistently outperforms RGB-based baselines and even surpasses RGB-D-based methods in challenging scenarios.",
+      "authors": "Dong-Wook Kim, Ji-Hoon Hwang, E-In Son et al.",
+      "category": "cs.RO",
+      "published_at": "2026-08-31T04:52:54+00:00",
+      "updated_at": "2026-08-31T04:52:54Z"
+    },
+    {
+      "id": "http://arxiv.org/abs/2608.30237v1",
+      "title": "Motus2: A Self-Evolving General World Model for Dexterous Manipulation",
+      "url": "https://arxiv.org/abs/2608.30237",
+      "summary": "General embodied agents should perceive, predict, act, evaluate, and improve within a unified system. World models have shown great promise in building such agents, yet existing models typically append an action output head to a world simulator, without coupling them into a closed decision-and-learning loop for policy improvement. We present Motus2, a self-evolving general world model for dexterous manipulation. Motus2 advances world modeling through model scaling and data scaling. For model scaling, a single model with shared weights exposes three control interfaces: a policy (world-action model), a simulator (action-conditioned world model), and an evaluator (value model). The policy proposes candidate action chunks, the simulator predicts their visual consequences, and the evaluator assesses the predicted outcomes. Their coupling forms a closed decision-and-learning loop for policy improvement. This formulation uses curated expert demonstrations for action learning, while failed and suboptimal interactions provide valuable evidence for dynamics modeling and value learning. For data scaling, Motus2 progresses from large-scale monocular egocentric data to synchronized stereo egocentric data, followed by robot-domain adaptation with robot trajectories and supplementary human-robot alignment data. Motus2 further studies global-autoregressive and hybrid-memory extensions of its sliding-window context, adds tactile feedback for contact-aware control, and is instantiated on a fully biomimetic platform with stereo vision, dual arms, dual dexterous hands, and tactile sensing. Together, egocentric data scaling and closed-loop general world model scaling provide a general path toward self-evolving dexterous manipulation.",
+      "authors": "Hongzhe Bi, Zihao Zhou, Yihang Tang et al.",
+      "category": "cs.RO",
+      "published_at": "2026-08-31T04:44:33+00:00",
+      "updated_at": "2026-08-31T04:44:33Z"
+    },
+    {
+      "id": "http://arxiv.org/abs/2608.30222v1",
+      "title": "Optimized Modular Design and Development of a Tilt-Rotor Bicopter Drone",
+      "url": "https://arxiv.org/abs/2608.30222",
+      "summary": "Hybrid systems like tilt-rotor bicopter drones combine the beneficial characteristics of both fixed-wing and rotary-wing technology, enabling long endurance and VTOL capability. However, such drones also require an optimum design to ensure both static and dynamic stability. The modular design of a traditional bicopter is developed in this paper based on extensive analysis and in-depth structural and aerodynamic simulations. The structural analysis has been performed to ensure that the aircraft's structure withstands the stresses encountered during different flight modes. Controlling the relative positions of the Center of Gravity (CG) and Neutral Point (NP) is an essential aspect of the design, ensuring stability during hover and positive stability during forward flight. The thrust and power analyses have been conducted to assess the flight performance and endurance. After analysis, the drone has been developed, and flight tests with a basic flight controller were conducted to validate the performance metrics obtained in the simulation.",
+      "authors": "Saideep Verma, Nimisha Tatapudi, Akshay Arjun et al.",
+      "category": "cs.RO",
+      "published_at": "2026-08-31T04:10:42+00:00",
+      "updated_at": "2026-08-31T04:10:42Z"
+    },
+    {
+      "id": "http://arxiv.org/abs/2608.30220v1",
+      "title": "Contrast-Free Autonomous Navigation of Untethered Endovascular Microrobots Using Single-Plane Fluoroscopy",
+      "url": "https://arxiv.org/abs/2608.30220",
+      "summary": "Reliable three-dimensional (3D) navigation of magnetically actuated untethered microrobots remains a major barrier to clinical translation. X-ray fluoroscopy is the standard real-time imaging modality for endovascular procedures, but single-plane fluoroscopy provides only a two-dimensional (2D) projection, eliminating depth information and complicating autonomous navigation. Recovering this information through biplane imaging or repeated contrast-enhanced angiography increases procedural complexity, radiation exposure, or contrast burden. Here, we introduce VISTA (Virtual Integration for Spatial Tracking and Autonomy), a digital twin framework enabling contrast-free autonomous navigation under single-plane fluoroscopy. VISTA reconstructs vascular anatomy as a 3D digital twin, discretizes the vessel centerline into navigation milestones, and assigns the detected 2D robot position to the nearest projected milestone. Consecutive milestones define the local vessel orientation used to generate magnetic actuation commands, converting single-plane fluoroscopic observations into topology-constrained navigation states without requiring contrast injection during navigation. VISTA is demonstrated across anatomically distinct vascular phantoms under continuous flow and within the inferior vena cava of a live rat in vivo. Compared with conventional fluoroscopic human-in-the-loop control, VISTA reduced navigation time by up to 62%, corrective actuation commands by up to 98%, and radiation exposure by up to 57%. These results establish VISTA as a digital twin-guided framework for contrast-free autonomous navigation of untethered endovascular microrobots using widely available single-plane fluoroscopy.",
+      "authors": "Husnu Halid Alabay, Tuan-Anh Le, Ping Wang et al.",
+      "category": "cs.RO",
+      "published_at": "2026-08-31T04:08:53+00:00",
+      "updated_at": "2026-08-31T04:08:53Z"
+    },
+    {
+      "id": "http://arxiv.org/abs/2608.30193v1",
+      "title": "Robust Semi-passive Velocity Field Control with Boundedness Guarantees for Safe Interaction between Mechanical Systems and Physical Environment",
+      "url": "https://arxiv.org/abs/2608.30193",
+      "summary": "Controllers that guarantee energetic passivity with respect to the pair of external force and velocity realize safe interaction between the mechanical system and its physical environment. However, solely adhering to energetic passivity constraints may impose fundamental limitations on control performance and, in some cases, prevent the successful execution of controlled tasks. In addition, external disturbances from the physical environment can drive the system energy level and states beyond operational regions, thereby undermining task performance and safety. In this paper, we study a robust time-varying semi-passive velocity field control to aim to relax the inherently conservative nature of fully passive control methods in a controlled manner. Specifically, the proposed control method guarantees passivity of the closed-loop system with respect to the force-velocity input-output pair when the energy level exceeds a predefined level, while permitting non-passive behaviors to preserve task performance otherwise. Furthermore, the energy level and the states of the closed-loop system are proved to converge to bounded domains even in the presence of unpredicted disturbances. Additionally, the proposed method also enables constraining power flow between the closed-loop system and its physical environment to enhance safety in the interaction process. Numerical simulation examples demonstrate the effectiveness of the proposed method.",
+      "authors": "Van Trong Dang, Sumitaka Honji, Takahiro Wada",
+      "category": "eess.SY",
+      "published_at": "2026-08-31T03:16:14+00:00",
+      "updated_at": "2026-08-31T03:16:14Z"
+    },
+    {
+      "id": "http://arxiv.org/abs/2608.30179v1",
+      "title": "Open-Source Autonomous Driving System Analysis and Multi-Disciplinary Hardware-in-the-Loop Research Paradigm with Reinforcement-Learning Testing and Large Language Models",
+      "url": "https://arxiv.org/abs/2608.30179",
+      "summary": "Open-source autonomous driving systems provide an inspectable software foundation for intelligent vehicle research. Under real-vehicle deployment conditions, the recording and review of experimental conditions are important for interpreting system behavior and reusing experimental results. However, in a shared real-vehicle environment involving multiple vehicles, task processes, code modifications, and hardware testing feedback are often distributed across different teams and experimental stages, making it challenging to maintain continuous and reviewable experimental records. To address this limitation, this paper examines an Apollo-on-Hongqi EV environment and proposes a real-vehicle experimental framework. The framework connects multi-vehicle experiments, repository-based code reuse and software-hardware testing feedback within a unified review process. Large language models and RL-based testing serve as auxiliary components for record organization, anomaly summarization, and simulation-based candidate scenario generation. Based on this setting, this paper analyzes preliminary evidence from multi-vehicle collaborative experimentation, code and experimental-skill sharing, and software-hardware collaborative testing. The analysis shows that experimental records can be examined together with their operating conditions, providing a reviewable basis for Apollo-on-Hongqi EV research.",
+      "authors": "Dianjing Cheng, Yike Li, Lan Yang et al.",
+      "category": "cs.SE",
+      "published_at": "2026-08-31T02:58:20+00:00",
+      "updated_at": "2026-08-31T02:58:20Z"
+    },
+    {
+      "id": "http://arxiv.org/abs/2608.30144v1",
+      "title": "Rethinking Language's Role in Efficient VLA for Autonomous Vehicles: Toward Smarter, Trustworthy Driving",
+      "url": "https://arxiv.org/abs/2608.30144",
+      "summary": "Vision-Language-Action (VLA) models are reshaping autonomous driving (AD) by unifying perception, reasoning, and control through language, enabling semantic grounding, interpretable decisions, and better long-tail generalization. But language is expensive onboard: latency and memory budgets are tight, and autoregressive decoding is inherently sequential. This work reframes the central question as when and where language should act at inference, since inference cost recurs at every deployed frame while training cost is paid once. We introduce the Language Residue taxonomy to organize methods by their inference-time use of language: train-time-only supervision (L1), latent non-textual reasoning (L2), conditional invocation (L3), and full per-frame generation (L4). We review representative methods and tag each across five deployment axes (latency, parameters, memory, FLOPs, tokens), analyzing them on major open- and closed-loop driving benchmarks (e.g., nuScenes, NAVSIM, Bench2Drive). We further trace how efficient methods from NLP/LLM are adapted in AD, identifying the constraints and motivations driving these adaptations. A continuously updated repository will be available at Github.",
+      "authors": "Tongfei Guo, Lili Su",
+      "category": "cs.RO",
+      "published_at": "2026-08-31T01:51:51+00:00",
+      "updated_at": "2026-08-31T01:51:51Z"
+    },
+    {
+      "id": "http://arxiv.org/abs/2608.30055v1",
+      "title": "MiBOT: A head-worn robot that modulates cardiovascular responses through human-like soft massage",
+      "url": "https://arxiv.org/abs/2608.30055",
+      "summary": "Massage therapy is helpful for the rehabilitation of various diseases, such as headaches caused by migraines and stress. Existing robotic systems have focused on massage therapy on the torso and limbs, but performing massage motions through suitable actuation on a person's head has been a challenge. In this paper, we present MiBOT, a head-worn massage robot that actuates two soft tactors to produce touch motions mimicking human massage. A key design principle behind MiBOT is its silent actuation, which we achieve through pneumatic artificial muscles in conjunction with a controller loop to respond to contact pressure. We evaluated the effectiveness of MiBOT in a controlled study and assessed subjects' blood pressure and heart rate levels while applying MiBOT. We found that our mechanical system generated positive and conclusive quantitative outcomes that are similar to the human-administered massage, decreasing participants' mean systolic and diastolic blood pressure by 2.8 mmHg and 1.7 mmHg, respectively, as well as calming their heart rate by 8-10% on average.",
+      "authors": "Alice Mylaeus, Stephanie Vogt, Berken Utku Demirel et al.",
+      "category": "cs.RO",
+      "published_at": "2026-08-30T21:38:45+00:00",
+      "updated_at": "2026-08-30T21:38:45Z"
+    },
+    {
+      "id": "http://arxiv.org/abs/2608.29967v1",
+      "title": "Training-Free Action Correction for VLA Model Failures via Language Feedback",
+      "url": "https://arxiv.org/abs/2608.29967",
+      "summary": "Vision-Language-Action (VLA) models demonstrate strong semantic understanding yet exhibit systematic failures during deployment. The conditions under which these failures occur, and whether they can be corrected without retraining, remain poorly understood. In this paper, we take steps toward addressing this gap. We present CorrectVLA, a framework that translates task-level natural language corrections into additive action magnitude adjustments without modifying policy weights. A human provides a single task-level correction, applied uniformly across all rollouts without per-episode intervention. In simulation, CorrectVLA recovers execution misalignment failures across both in-distribution and OOD tasks. In real-robot experiments on a UFactory xArm7 under environment shift, CorrectVLA restores near-perfect success where the base policy almost entirely breaks down, generalizing across object locations and identities. Through a taxonomy of failure modes on LIBERO-90, we find that execution misalignment failures, where the policy reaches the correct target but miscalibrates action magnitudes, represent the correctable subset, while other failure modes where semantic comprehension itself breaks down are not amenable to this approach. The approach succeeds when policies possess strategic correctness and fails when fundamental comprehension is absent, establishing a practical operational boundary for inference-time correction.",
+      "authors": "Owen Kwon, Pablo Ortega-Kral, Arthur Bucker et al.",
+      "category": "cs.RO",
+      "published_at": "2026-08-30T18:54:03+00:00",
+      "updated_at": "2026-08-30T18:54:03Z"
+    },
+    {
+      "id": "http://arxiv.org/abs/2608.29935v1",
+      "title": "System Identification of Admittance Models for Large Real-World Objects",
+      "url": "https://arxiv.org/abs/2608.29935",
+      "summary": "Simulation of admittance-type models requires physically consistent dynamic models that are rarely available for off-the-shelf, everyday objects, limiting the fidelity of haptic interfaces that rely on such simulations. This paper presents the first complete workflow for producing physically consistent models of large real-world objects with various constraints and mechanisms, guaranteeing physical consistency of inertia and friction parameters. The workflow separates each object and identifies the handle and body in two stages, requiring no torque sensors at hinges, axles, or other constrained joints. Models are produced for a heavy, closer-actuated door and a wheelbarrow, representing objects of differing constraint types and model complexity. The door is modeled using four-bar linkage kinematics and a fluid dynamics-based lumped parameter model including opening, backcheck, swing, and latch zones. The wheelbarrow is modeled as a rigid body with a spherical wheel and no slip during rolling. Handle estimation RMS errors were below 0.64 N and 0.042 Nm across both objects. Door body estimation had RMS error of 2.19 Nm and wheelbarrow body estimation had RMS error of 6.77 Nm.",
+      "authors": "Nathan I. Baum, Nathaniel G. Luttmer, Mark A. Minor",
+      "category": "cs.RO",
+      "published_at": "2026-08-30T18:06:58+00:00",
+      "updated_at": "2026-08-30T18:06:58Z"
+    },
+    {
+      "id": "http://arxiv.org/abs/2608.29896v1",
+      "title": "EMERGE-Policy: A Robot Mind Emerges Beyond a Single Policy",
+      "url": "https://arxiv.org/abs/2608.29896",
+      "summary": "A robot's effective ``mind'' need not reside in a single policy. It can emerge when specialized components perceive, reason, predict, act, verify, and remember within a shared orchestration process. EMERGE-Policy turns this perspective into a graph-structured agentic framework that coordinates both capability invocation and information exchange. A Main Agent retains task-level state within an active context window, while role-specific Sub Agents process perception, execution monitoring, verification, and memory consolidation in isolated contexts and return structured, task-relevant evidence. Role-specific contexts control information load by exposing only decision-relevant evidence to the Main Agent, while the functional Skill interface composes heterogeneous backends as Operational, Imagination, and Evaluation Skills. Criterion-grounded verification, textual failure diagnosis, and Branch Stack recovery provide localized correction, with token-aware external memory preserving task-relevant state. Together, their closed-loop interaction realizes the system-level policy captured by the name EMERGE-Policy. Without additional fine-tuning, we achieved outstanding performance on several public benchmark that have had a wide-reaching impact, and conducted a series of real robot experiments. These system-level results suggest that through the division of different functional sub-tasks among multiple agents and their concurrent collaboration, as well as the technical paradigm where the model is regarded as a skill and called within the framework, EMERGE-Policy can extend the robust robot policies beyond isolated runs.",
+      "authors": "Zhirui Fang, Qingchi Yu, Ziyang Chen et al.",
+      "category": "cs.RO",
+      "published_at": "2026-08-30T16:46:06+00:00",
+      "updated_at": "2026-08-30T16:46:06Z"
+    }
+  ]
 }
