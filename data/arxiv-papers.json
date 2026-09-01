@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-01T16:12:54.231564+00:00",
-  "total_items": 28,
+  "generated_at": "2026-09-01T17:33:29.856774+00:00",
+  "total_items": 25,
   "items": [
     {
       "id": "http://arxiv.org/abs/2608.31167v1",
@@ -251,36 +251,6 @@
       "category": "cs.RO",
       "published_at": "2026-08-31T05:55:34+00:00",
       "updated_at": "2026-08-31T05:55:34Z"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.30242v1",
-      "title": "CanonNav: Disentangling Navigation Behavior from Camera Geometry in Cross-Platform Visual Navigation",
-      "url": "https://arxiv.org/abs/2608.30242",
-      "summary": "While visual navigation has advanced through imitation learning from cross-platform demonstrations, fully leveraging such data remains challenging. First, directly learning from image-trajectory pairs entangles navigation behavior with platform-dependent camera geometry. This hinders consistent learning by forcing the policy to implicitly infer camera geometry from visual observations, an inherently ill-posed problem. Second, imitation learning from demonstrated trajectories captures the expert's chosen motion but leaves the intermediate decisions underlying that motion implicit. To address these issues, we propose CanonNav, a visual navigation framework that disentangles navigation behavior from camera geometry and incorporates complementary planning supervision into learning from cross-platform demonstrations. CanonNav introduces camera geometry canonicalization, which transforms visual observations and trajectories into a camera-consistent representation space. Building on this representation, we derive safety and local-progress supervision using pseudo-labels from an offline traversability estimator. Safety supervision penalizes unsafe trajectories, while local-progress supervision guides where the robot should advance. Experiments across diverse camera configurations and environments show that, despite using only RGB at inference, CanonNav consistently outperforms RGB-based baselines and even surpasses RGB-D-based methods in challenging scenarios.",
-      "authors": "Dong-Wook Kim, Ji-Hoon Hwang, E-In Son et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-31T04:52:54+00:00",
-      "updated_at": "2026-08-31T04:52:54Z"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.30237v1",
-      "title": "Motus2: A Self-Evolving General World Model for Dexterous Manipulation",
-      "url": "https://arxiv.org/abs/2608.30237",
-      "summary": "General embodied agents should perceive, predict, act, evaluate, and improve within a unified system. World models have shown great promise in building such agents, yet existing models typically append an action output head to a world simulator, without coupling them into a closed decision-and-learning loop for policy improvement. We present Motus2, a self-evolving general world model for dexterous manipulation. Motus2 advances world modeling through model scaling and data scaling. For model scaling, a single model with shared weights exposes three control interfaces: a policy (world-action model), a simulator (action-conditioned world model), and an evaluator (value model). The policy proposes candidate action chunks, the simulator predicts their visual consequences, and the evaluator assesses the predicted outcomes. Their coupling forms a closed decision-and-learning loop for policy improvement. This formulation uses curated expert demonstrations for action learning, while failed and suboptimal interactions provide valuable evidence for dynamics modeling and value learning. For data scaling, Motus2 progresses from large-scale monocular egocentric data to synchronized stereo egocentric data, followed by robot-domain adaptation with robot trajectories and supplementary human-robot alignment data. Motus2 further studies global-autoregressive and hybrid-memory extensions of its sliding-window context, adds tactile feedback for contact-aware control, and is instantiated on a fully biomimetic platform with stereo vision, dual arms, dual dexterous hands, and tactile sensing. Together, egocentric data scaling and closed-loop general world model scaling provide a general path toward self-evolving dexterous manipulation.",
-      "authors": "Hongzhe Bi, Zihao Zhou, Yihang Tang et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-31T04:44:33+00:00",
-      "updated_at": "2026-08-31T04:44:33Z"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.30222v1",
-      "title": "Optimized Modular Design and Development of a Tilt-Rotor Bicopter Drone",
-      "url": "https://arxiv.org/abs/2608.30222",
-      "summary": "Hybrid systems like tilt-rotor bicopter drones combine the beneficial characteristics of both fixed-wing and rotary-wing technology, enabling long endurance and VTOL capability. However, such drones also require an optimum design to ensure both static and dynamic stability. The modular design of a traditional bicopter is developed in this paper based on extensive analysis and in-depth structural and aerodynamic simulations. The structural analysis has been performed to ensure that the aircraft's structure withstands the stresses encountered during different flight modes. Controlling the relative positions of the Center of Gravity (CG) and Neutral Point (NP) is an essential aspect of the design, ensuring stability during hover and positive stability during forward flight. The thrust and power analyses have been conducted to assess the flight performance and endurance. After analysis, the drone has been developed, and flight tests with a basic flight controller were conducted to validate the performance metrics obtained in the simulation.",
-      "authors": "Saideep Verma, Nimisha Tatapudi, Akshay Arjun et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-31T04:10:42+00:00",
-      "updated_at": "2026-08-31T04:10:42Z"
     }
   ]
 }
