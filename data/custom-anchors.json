@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-02T15:03:44.788583+00:00",
+  "generated_at": "2026-09-02T15:18:48.563006+00:00",
   "window_start": "2026-09-02T19:00:00+08:00",
-  "window_end": "2026-09-02T23:03:04.068789+08:00",
-  "total_items": 8,
+  "window_end": "2026-09-02T23:17:27.407147+08:00",
+  "total_items": 11,
   "items": [
     {
       "id": "8e50bc450e5b0085f6298dc6ced9497fea1ccfdd",
@@ -21,9 +21,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 27.19,
+      "timeliness": 26.95,
       "writing_value": 5,
-      "total_score": 112.19
+      "total_score": 111.95
     },
     {
       "id": "13e59b284dca72505308790244b43c9a95392105",
@@ -42,9 +42,51 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 26.45,
+      "timeliness": 26.21,
       "writing_value": 5,
-      "total_score": 111.45
+      "total_score": 111.21
+    },
+    {
+      "id": "d83dd5691db2292c0876354f2b6d8da47265fcfe",
+      "title": "iRobot's New $1,199 Roomba Max 875 Combo Is Its Most Powerful Robot Yet - Engadget",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5JLTMyVll3dFdGdnUwMGkxakZ5Y1pvc0NaUGhoeGhXblB6bEZiUi1Ra2RZRk5CeHhmLWxsenJpVjhlV3lwQnNYQ2JUN0phbzczYUpDNEJabU9NdFhMX2twR3FFUGY1dV9SczNXUTRMVmhvREFNQzBoZXdR?oc=5",
+      "published_at": "2026-09-02T11:34:36+00:00",
+      "category": "GN: robot",
+      "gn_label": "robotics",
+      "site_name": "GN: robot",
+      "source": "GN: robot",
+      "site_id": "GN: robot",
+      "description": "iRobot's New $1,199 Roomba Max 875 Combo Is Its Most Powerful Robot Yet  Engadget",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 26.29,
+      "writing_value": 0,
+      "total_score": 101.29
+    },
+    {
+      "id": "34f3a7e552304fa47b86a2b5d853e999cb0044e6",
+      "title": "A Soft Robot Only Uses Electric Current to Move - Tech Briefs",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOWEYydC1BMTUtb1FBNzI0Nm1RRWNaM2FTeFlCQWFtcDZhbEszeUh1NzJKdlE4Y1VEV2NTSFRuaUlaWEdWRTBmbVZwdVNvSlBnWUJ4endvZTN2X0xPeG5wYThyWk1lQ0pLUFhmVS1iNEhpdzZzT3dBc2ZocHM4WjR2dm10c2tTeWh6RVVZOTluX0FVbzM2MVd5VTFDSEpnT2dWTmNzLTk1UHFydw?oc=5",
+      "published_at": "2026-09-02T14:46:37+00:00",
+      "category": "GN: robot",
+      "gn_label": "robotics",
+      "site_name": "GN: robot",
+      "source": "GN: robot",
+      "site_id": "GN: robot",
+      "description": "A Soft Robot Only Uses Electric Current to Move  Tech Briefs",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.49,
+      "writing_value": 0,
+      "total_score": 104.49
     },
     {
       "id": "31a30e196fd8cb10d64b020b158f57c5b115f090",
@@ -63,9 +105,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.2,
+      "timeliness": 27.96,
       "writing_value": 0,
-      "total_score": 103.2
+      "total_score": 102.96
+    },
+    {
+      "id": "a47caf4345d48e5e88ce5681cb33f1cf4aa02cc8",
+      "title": "iRobot Launches Roomba Max 875 and Plus 678 With SealForce Carpet Cleaning - Vacuum Wars",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1ocmxPMnN4eFpRSC1vdHUyR3ZKaHJscUktVnVjWXJDTVQ0UjlyaXJHTkswazJnb2lybkVFbUl6Qll4RHBGcXJZb0pfYmQ4VFVlNHJ1MVJwZ21PLUc3aGxXc3ZFMFhhRGtFaHB5TlRTSnpCWEJ1QVE?oc=5",
+      "published_at": "2026-09-02T15:09:09+00:00",
+      "category": "GN: robot vacuum",
+      "gn_label": "robotics",
+      "site_name": "GN: robot vacuum",
+      "source": "GN: robot vacuum",
+      "site_id": "GN: robot vacuum",
+      "description": "iRobot Launches Roomba Max 875 and Plus 678 With SealForce Carpet Cleaning  Vacuum Wars",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.86,
+      "writing_value": 0,
+      "total_score": 104.86
     },
     {
       "id": "8041e8401212f117819423a73efda3a14dd3f6a5",
@@ -84,9 +147,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 26.55,
+      "timeliness": 26.31,
       "writing_value": 5,
-      "total_score": 111.55
+      "total_score": 111.31
     },
     {
       "id": "c92e432785e86070ae6c597857d52c7e44dfb935",
@@ -105,13 +168,13 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.52,
+      "timeliness": 29.28,
       "writing_value": 0,
-      "total_score": 104.52
+      "total_score": 104.28
     },
     {
-      "id": "d99ac9cd94b76f214511fb129871335267e3ddb7",
-      "title": "宇树科技注册资本增至4.04亿元 完成科创板上市后工商变更 - guandian.cn",
+      "id": "85e42930066958ee9333bcd91ba345aaa7462203",
+      "title": "宇树科技注册资本增至4.04亿元 完成科创板上市后工商变更 - 观点网",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1uVG44eHByNVlkUWx5NnhZRWZvNjdpR29TOXNhM2ZZWWxFUnBid1FKbGlIcTRvVVUzS1g3WGszWER2cVVPWG43NGR1Nkl1QQ?oc=5",
       "published_at": "2026-09-02T12:44:21+00:00",
@@ -120,36 +183,36 @@
       "site_name": "GN: 宇树科技",
       "source": "GN: 宇树科技",
       "site_id": "GN: 宇树科技",
-      "description": "宇树科技注册资本增至4.04亿元 完成科创板上市后工商变更  guandian.cn",
+      "description": "宇树科技注册资本增至4.04亿元 完成科创板上市后工商变更  观点网",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.69,
+      "timeliness": 27.45,
       "writing_value": 0,
-      "total_score": 102.69
+      "total_score": 102.45
     },
     {
-      "id": "9c8bc6eacd8e94936d900178074bcb9dd9b7c873",
-      "title": "【西街观察】宇树科技股价启示录 - 东方财富",
+      "id": "14158373d0ac74429cf09d0ae968cefd39128857",
+      "title": "【西街观察】宇树科技股价启示录 - 新浪财经",
       "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1ZLXlmWnkzZmJNaGFGS0hINm9femFyQWtEVUJjYl8tS3lxQUNRVS1hbGNvZVpWZ21hN1NibmhkYzF6dFpjTmxBeS1HdWZqc0FaV3VLbmlDVG9Ka21wb0xRUUNqQmNWQQ?oc=5",
-      "published_at": "2026-09-02T13:01:41+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPdl9NeDNxODNJNlNyVlBtUG1qMU1WZXg4Q3VXUWhTN1FtcVVxNXlTbTR2QUk3Z091dHpiamk0ME9GQmJaS3NTSHUxYVZVMV9GdUFFTEFzaEhxbmxTQ2ZHUzZIOG9oRHRJRVpMLUZianE0dEtKZjc0OHdZdmhpVzFCX1piUmo3MGJ1?oc=5",
+      "published_at": "2026-09-02T12:55:00+00:00",
       "category": "GN: 宇树科技",
       "gn_label": "robotics",
       "site_name": "GN: 宇树科技",
       "source": "GN: 宇树科技",
       "site_id": "GN: 宇树科技",
-      "description": "【西街观察】宇树科技股价启示录  东方财富",
+      "description": "【西街观察】宇树科技股价启示录  新浪财经",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.98,
+      "timeliness": 27.63,
       "writing_value": 0,
-      "total_score": 102.98
+      "total_score": 102.63
     },
     {
       "id": "7a0ba4c0e7b0630eca0bf29a93e139eee9eae844",
@@ -168,9 +231,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.9,
+      "timeliness": 27.66,
       "writing_value": 0,
-      "total_score": 102.9
+      "total_score": 102.66
     }
   ],
   "fallback_used": false
