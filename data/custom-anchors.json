@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-02T12:03:07.457589+00:00",
+  "generated_at": "2026-09-02T12:18:27.725237+00:00",
   "window_start": "2026-09-02T19:00:00+08:00",
-  "window_end": "2026-09-02T20:02:46.943138+08:00",
-  "total_items": 2,
+  "window_end": "2026-09-02T20:17:47.170482+08:00",
+  "total_items": 3,
   "items": [
     {
       "id": "13e59b284dca72505308790244b43c9a95392105",
@@ -21,13 +21,34 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 29.45,
+      "timeliness": 29.2,
       "writing_value": 5,
-      "total_score": 114.45
+      "total_score": 114.2
     },
     {
-      "id": "8041e8401212f117819423a73efda3a14dd3f6a5",
-      "title": "Agile Robots Brings Physical AI into the Real World - From Industrial Automation to Robot Training Data - Macau Business",
+      "id": "8e50bc450e5b0085f6298dc6ced9497fea1ccfdd",
+      "title": "Uber is laying off 10% of staff, or 3,300 people",
+      "title_zh": "",
+      "url": "https://techcrunch.com/2026/09/02/uber-is-laying-off-10-of-staff-or-3300-people/",
+      "published_at": "2026-09-02T12:14:35+00:00",
+      "category": "TechCrunch Robotics",
+      "gn_label": "robotics",
+      "site_name": "TechCrunch Robotics",
+      "source": "TechCrunch Robotics",
+      "site_id": "TechCrunch Robotics",
+      "description": "Uber is laying off about 3,300 people, or about 10% of its global headcount, in a bid to reduce management layers and invest more in its ride-sharing, delivery, and robotaxi divisions.",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 29.95,
+      "writing_value": 5,
+      "total_score": 114.95
+    },
+    {
+      "id": "ad3c6b7c7ba563c384a0dfc4f6f64654870e5c5f",
+      "title": "Agile Robots Brings Physical AI into the Real World - From Industrial Automation to Robot Training Data - macaubusiness.com",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPQnVib2dNRWNoTEFWV3NBMGhvOTNmRThfbmVqOVh5QVB5S0ZsU2daLWZ6T3ZIUlVadGRUaTMtQVZGZUxHVy1LNVFxTlRfUUtwcGNOZkl3bE9YOHJzVjVrWUpWcmtwNkRGSnBUZlVSTUR4eVZLTjkwYnF1allGVWxvMllnS19UY0ZYSnpCYWdaRmtvMi03WWt6UzliQmVsbE5JaDE3SEtWZWF0UC10VWdmcnNPVWY2el9VdEl6OWJGRmt0WGhfZG9xbVBvOA?oc=5",
       "published_at": "2026-09-02T11:35:53+00:00",
@@ -36,15 +57,15 @@
       "site_name": "GN: robot learning",
       "source": "GN: robot learning",
       "site_id": "GN: robot learning",
-      "description": "Agile Robots Brings Physical AI into the Real World - From Industrial Automation to Robot Training Data  Macau Business",
+      "description": "Agile Robots Brings Physical AI into the Real World - From Industrial Automation to Robot Training Data  macaubusiness.com",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 29.55,
+      "timeliness": 29.3,
       "writing_value": 5,
-      "total_score": 114.55
+      "total_score": 114.3
     }
   ],
   "fallback_used": false
