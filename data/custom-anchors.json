@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-02T11:47:43.115003+00:00",
+  "generated_at": "2026-09-02T12:03:07.457589+00:00",
   "window_start": "2026-09-02T19:00:00+08:00",
-  "window_end": "2026-09-02T19:47:22.655804+08:00",
-  "total_items": 1,
+  "window_end": "2026-09-02T20:02:46.943138+08:00",
+  "total_items": 2,
   "items": [
     {
       "id": "13e59b284dca72505308790244b43c9a95392105",
@@ -21,9 +21,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 29.71,
+      "timeliness": 29.45,
       "writing_value": 5,
-      "total_score": 114.71
+      "total_score": 114.45
+    },
+    {
+      "id": "8041e8401212f117819423a73efda3a14dd3f6a5",
+      "title": "Agile Robots Brings Physical AI into the Real World - From Industrial Automation to Robot Training Data - Macau Business",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPQnVib2dNRWNoTEFWV3NBMGhvOTNmRThfbmVqOVh5QVB5S0ZsU2daLWZ6T3ZIUlVadGRUaTMtQVZGZUxHVy1LNVFxTlRfUUtwcGNOZkl3bE9YOHJzVjVrWUpWcmtwNkRGSnBUZlVSTUR4eVZLTjkwYnF1allGVWxvMllnS19UY0ZYSnpCYWdaRmtvMi03WWt6UzliQmVsbE5JaDE3SEtWZWF0UC10VWdmcnNPVWY2el9VdEl6OWJGRmt0WGhfZG9xbVBvOA?oc=5",
+      "published_at": "2026-09-02T11:35:53+00:00",
+      "category": "GN: robot learning",
+      "gn_label": "robotics",
+      "site_name": "GN: robot learning",
+      "source": "GN: robot learning",
+      "site_id": "GN: robot learning",
+      "description": "Agile Robots Brings Physical AI into the Real World - From Industrial Automation to Robot Training Data  Macau Business",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 29.55,
+      "writing_value": 5,
+      "total_score": 114.55
     }
   ],
   "fallback_used": false
