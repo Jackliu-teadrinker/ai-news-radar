@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-01T22:55:06.400348+00:00",
-  "total_items": 15,
+  "generated_at": "2026-09-02T01:04:48.816604+00:00",
+  "total_items": 12,
   "items": [
     {
       "id": "http://arxiv.org/abs/2608.31167v1",
@@ -121,36 +121,6 @@
       "category": "cs.RO",
       "published_at": "2026-08-31T13:35:00+00:00",
       "updated_at": "2026-08-31T13:35:00Z"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.30690v1",
-      "title": "Failure or Drift? Evaluating Monocular SLAM under Synthetic and Real-World Corruptions",
-      "url": "https://arxiv.org/abs/2608.30690",
-      "summary": "Visual SLAM is commonly evaluated on clean trajectories, although deployment failures are often caused by adverse weather, illumination, blur, and sensor artifacts. Controlled corruptions are attractive because they isolate such factors, but a synthetic stress test is useful only when it leads to the same engineering conclusion as the condition it is intended to approximate. This work examines that question for monocular SLAM. We evaluate a classical feature-based system and two learned trackers under image-space, geometry-aware, and compound corruptions, and compare their behavior with adverse conditions from 4Seasons. Rather than reducing robustness to a single trajectory error, the evaluation separates explicit tracking failure from drift accumulated by methods that remain active. The results show that learned trackers largely replace catastrophic loss with sustained, and sometimes severe, drift. More importantly, the apparent ordering of the learned systems changes with the physical fidelity of the corruption: structured rain and fog proxies preserve the real-world ordering, whereas a simple illumination proxy does not. Code is available at: https://github.com/abhaythomas/master_thesis_vslamlab_robustness.",
-      "authors": "Abhay Skaria Thomas, Shashank Agnihotri, Margret Keuper",
-      "category": "cs.CV",
-      "published_at": "2026-08-31T12:28:26+00:00",
-      "updated_at": "2026-08-31T12:28:26Z"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.30673v1",
-      "title": "CIG-RL: Curiosity-Driven Information-Guided Reinforcement Learning for Source Term Estimation in Uncertain Environments",
-      "url": "https://arxiv.org/abs/2608.30673",
-      "summary": "Source term estimation (STE), which aims to estimate key properties of the gas source, is essential for identifying hazardous gas releases. Information-theoretic approaches have been adopted for autonomous STE using mobile sensors due to robustness in noisy environments, yet their online action selection incurs substantial computational cost. Deep reinforcement learning (DRL) provides a promising alternative with its fast decision-making capability. In DRL-based STE, the agent selects actions based on belief states of the source term updated from noisy measurement sequences. However, existing methods rely on random exploration or solely on belief uncertainty reduction without an effective exploration strategy in DRL, which can limit policy robustness in noisy environments. To address this, we propose a curiosity-driven information-guided reinforcement learning for robust and efficient STE. The proposed method promotes active exploration of novel belief state transitions that have not been sufficiently explored during training. We further introduce an uncertainty-adaptive active perception reward to guide efficient source search under uncertainty. Simulations under high-noise conditions and real-world experiments demonstrate the robustness and feasibility of the proposed framework, highlighting its potential for practical STE problems.",
-      "authors": "Junhee Lee, Seunghwan Kim, Hongro Jang et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-31T12:13:55+00:00",
-      "updated_at": "2026-08-31T12:13:55Z"
-    },
-    {
-      "id": "http://arxiv.org/abs/2608.30643v1",
-      "title": "Temporal Forcing: 4D Representation Alignment for Vision-Language-Action Models",
-      "url": "https://arxiv.org/abs/2608.30643",
-      "summary": "Recent vision-language-action (VLA) methods improve manipulation performance by aligning their representations with 3D scene geometry. However, these methods often struggle with long-horizon manipulation and observation aliasing between visually similar states due to a lack of temporal information: the 3D scene geometry captures only the current state, rather than how it has evolved over time. To resolve this, we present Temporal Forcing, a 4D representation alignment method for VLA models. Specifically, we first introduce a history pathway that enables a vanilla VLA model to summarize observation history into temporally aware latent representations. Then, the latent representations are aligned with the geometric features extracted by a pretrained 4D foundation model, which captures the evolving 3D world through temporally consistent geometric representations, enabling a deeper understanding of dynamic environments. Temporal Forcing reaches 98.8% on LIBERO, outperforming its base model by 2.2 points. On a physical hidden-placement task, it raises full-task success from 20.0% to 43.3%. Code will be publicly available.",
-      "authors": "Xingyu Ding, Yuzhong Zhao, Chunhai Zhao et al.",
-      "category": "cs.RO",
-      "published_at": "2026-08-31T11:47:29+00:00",
-      "updated_at": "2026-08-31T11:47:29Z"
     }
   ]
 }
