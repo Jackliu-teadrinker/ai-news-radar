@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-02T12:49:41.553754+00:00",
-  "total_items": 23,
+  "generated_at": "2026-09-02T13:04:52.611020+00:00",
+  "total_items": 22,
   "items_ai": [
     {
       "id": "c3ee9789acf40a3796efe43d0b423be192d2c741",
@@ -8,20 +8,41 @@
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQWk9UTHl3ZkQzWGtlN0tiZ0NhNDVEYUlFREdFdXhsd3NqdDVlUk1iMUZXUnpUVzdoNG9ZZmhXSTc0LUpsalNVWUNMTVJENTRaZmFtbTdvMFJvUWo3WDlBZ1BlTnVVYkE3SUFxeGlHdDVSMHdQdzFadGdfakRfdWFwY2RaR01KQTlkcmpJbjc4bHRxT3dRVVFRMTNjWGRRd0Z2SDg5ZU1sa0JEREdLUlBzdTVObndBdGY2bDR1SmtB?oc=5",
       "published_at": "2026-09-02T12:33:45+00:00",
-      "category": "国外人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国外人形机器人资讯",
-      "source": "国外人形机器人资讯",
-      "site_id": "国外人形机器人资讯",
+      "category": "国外机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国外机器人资讯",
+      "source": "国外机器人资讯",
+      "site_id": "国外机器人资讯",
       "description": "Zeroth Launches Bridge Humanoid Robot and Open-Source OpenBridge Developer Platform  AI Insider",
       "ai_score": 80.0,
-      "ai_label": "humanoid",
+      "ai_label": "robotics",
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.76,
+      "timeliness": 29.51,
       "writing_value": 0,
-      "total_score": 119.76
+      "total_score": 119.51
+    },
+    {
+      "id": "443a364783b9a82472cfdea6e2754e325165e788",
+      "title": "“机器人+”走进现实：2026服贸会解锁具身智能“北京方案” - finance.sina.com.cn",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5DalhBQXVSNkFadFlBVHZ1LXViVnExbzBTc2JtX0phaUJWTDBXZlNvcWo0U1VOa2tMMzhwMll6UFJNdGUyTTBmRjVVMWg2TU5YWmFraVdUY3NIZ1NSZzQyVURWektNOXRWM3ltUzhScVB5eGd2VEE?oc=5",
+      "published_at": "2026-09-02T12:31:00+00:00",
+      "category": "国内具身智能资讯",
+      "gn_label": "embodied_ai",
+      "site_name": "国内具身智能资讯",
+      "source": "国内具身智能资讯",
+      "site_id": "国内具身智能资讯",
+      "description": "“机器人+”走进现实：2026服贸会解锁具身智能“北京方案”  finance.sina.com.cn",
+      "ai_score": 80.0,
+      "ai_label": "embodied_ai",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.47,
+      "writing_value": 0,
+      "total_score": 119.47
     },
     {
       "id": "408bb06fb811f7d6ff309ac6956930b899340066",
@@ -40,9 +61,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.16,
+      "timeliness": 28.91,
       "writing_value": 0,
-      "total_score": 119.16
+      "total_score": 118.91
     },
     {
       "id": "48b553965cd391844aa6b09f227e5adcdd26d14f",
@@ -61,9 +82,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.96,
+      "timeliness": 28.72,
       "writing_value": 0,
-      "total_score": 118.96
+      "total_score": 118.72
     },
     {
       "id": "66a2e0372df9ebf589dd221d89214a326a192f0e",
@@ -71,20 +92,20 @@
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1KdExFOWtmMlZSTXJYTUJDRUNlRFRWeWNfTFV0RXVXOWloZ3pGcjdyN0ZzdkFxMDJFUEZETmlLVXNRRWZFQ3Q2MERpOFlzd3F6eEtSLXpyZHd3NURjTnpoSlZYaWQ?oc=5",
       "published_at": "2026-09-02T11:43:00+00:00",
-      "category": "国内人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国内人形机器人资讯",
-      "source": "国内人形机器人资讯",
-      "site_id": "国内人形机器人资讯",
+      "category": "国内具身智能资讯",
+      "gn_label": "embodied_ai",
+      "site_name": "国内具身智能资讯",
+      "source": "国内具身智能资讯",
+      "site_id": "国内具身智能资讯",
       "description": "加速打造全球具身智能数据平台 北京人形开源数据集下载量破2000万  新京报",
       "ai_score": 80.0,
-      "ai_label": "humanoid",
+      "ai_label": "embodied_ai",
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.92,
+      "timeliness": 28.67,
       "writing_value": 0,
-      "total_score": 118.92
+      "total_score": 118.67
     },
     {
       "id": "5e4ca643108c7f851cc84c88561a0278af129376",
@@ -103,34 +124,13 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.67,
+      "timeliness": 28.42,
       "writing_value": 0,
-      "total_score": 118.67
+      "total_score": 118.42
     },
     {
-      "id": "73c54f4fbb35250ee2c07edc6b2cd0fcf27d0b99",
-      "title": "清华火神队卫冕世界人形机器人运动会足球5V5大型组冠军 - 新浪网",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9VRXA2Q3Y2azVaUkxVaDBObndwTkRiazVNNl9wTFkwdFhIZjV1UTdiampnMkxndUpuaGNWbzVWZEpzRUhWWjZTaHF0M0Nnb0x6UjRxRWlDT2hxU2lIWm80TFFLWUNGbDNkSlhzNHFobUV5Zw?oc=5",
-      "published_at": "2026-09-02T11:21:36+00:00",
-      "category": "国内人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国内人形机器人资讯",
-      "source": "国内人形机器人资讯",
-      "site_id": "国内人形机器人资讯",
-      "description": "清华火神队卫冕世界人形机器人运动会足球5V5大型组冠军  新浪网",
-      "ai_score": 80.0,
-      "ai_label": "humanoid",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 28.56,
-      "writing_value": 0,
-      "total_score": 118.56
-    },
-    {
-      "id": "471aa09379a756028c43ee3c142f59b72b26dbc4",
-      "title": "河北成功实施首例全侵入式无线脑机接口手术 - 河北广播电视台",
+      "id": "408898b107eacda877b1f63fff04827465a03ea4",
+      "title": "河北成功实施首例全侵入式无线脑机接口手术 - hebtv.com",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE50OEhJV09PV2drSVJUVk1jRTJ0NGYwQlFnRVRRanZnZnRuVzEtdWM4ei1UQk1hOEFPa0VpMUZFemQ1WjU5N09zRVdvQmxINFhLOVVtOGl0Y1BLcF9tS2hCMXNfWmZWaFcyZ3Q3TQ?oc=5",
       "published_at": "2026-09-02T11:12:42+00:00",
@@ -139,15 +139,15 @@
       "site_name": "国内脑机接口资讯",
       "source": "国内脑机接口资讯",
       "site_id": "国内脑机接口资讯",
-      "description": "河北成功实施首例全侵入式无线脑机接口手术  河北广播电视台",
+      "description": "河北成功实施首例全侵入式无线脑机接口手术  hebtv.com",
       "ai_score": 80.0,
       "ai_label": "brain_computer",
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.41,
+      "timeliness": 28.16,
       "writing_value": 0,
-      "total_score": 118.41
+      "total_score": 118.16
     },
     {
       "id": "08d05ee3c465bf4a95a300b4f6801e58ed2f71c2",
@@ -166,9 +166,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.32,
+      "timeliness": 28.07,
       "writing_value": 0,
-      "total_score": 118.32
+      "total_score": 118.07
     },
     {
       "id": "9d7cf929f71e17fc250984b17d3ff3b4d6ff8db1",
@@ -176,20 +176,20 @@
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQS1BKSWZ5OXc1NE82UVNBblZSOUx3alN3Y0JPeFZCcXd3RHI3WVNrMXJNU0hFc2NTR1dSZjlnYmxuMnpyVGhEM3M3NUkwWXpKb00wMTRfU2dEQTg2R3hEc2NHaUpBalBhYUQwQnlxeUFJYU83ckpiVTk1YUpZem1VbEI2ZjJNM0tPWG5JbExQNk04UHhQV01oLU02cmZuemRpWlNUV2pocU95cVBJb1JyNV92Z3JXOHlGdmNSWk13?oc=5",
       "published_at": "2026-09-02T12:05:54+00:00",
-      "category": "国外物理AI资讯",
-      "gn_label": "physical_ai",
-      "site_name": "国外物理AI资讯",
-      "source": "国外物理AI资讯",
-      "site_id": "国外物理AI资讯",
+      "category": "国外具身智能资讯",
+      "gn_label": "embodied_ai",
+      "site_name": "国外具身智能资讯",
+      "source": "国外具身智能资讯",
+      "site_id": "国外具身智能资讯",
       "description": "Nio CEO Says Bet on VP’s Robotics Startup Allows Tracking Physical AI Without Hitting P&L  eletric-vehicles.com",
       "ai_score": 65.0,
-      "ai_label": "physical_ai",
+      "ai_label": "embodied_ai",
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 29.3,
+      "timeliness": 29.05,
       "writing_value": 5,
-      "total_score": 114.3
+      "total_score": 114.05
     },
     {
       "id": "9fa1facbf906648db02433ebfe792624422f60fc",
@@ -208,9 +208,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.33,
+      "timeliness": 29.08,
       "writing_value": 0,
-      "total_score": 104.33
+      "total_score": 104.08
     },
     {
       "id": "7847ed696d4318d1e10fa88d61d633e60933172d",
@@ -218,20 +218,20 @@
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQdEhPZFlDT2FZeEVucjB6LWhlelB5enRnSWZ5cXpxNHRYLXVTMjdTd2p3LWdaMEZzaVVST2lkYWs1ZGdYWlBlRmIwdzd4bzlJZUxYd2xwQm1vbzJOQ2xtVU5DcFFVanJPM0RVTE5GaHh5b293U3BGWXYxSlZ3VExBWWx0bmxZZHltSDFr?oc=5",
       "published_at": "2026-09-02T11:00:00+00:00",
-      "category": "国外人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国外人形机器人资讯",
-      "source": "国外人形机器人资讯",
-      "site_id": "国外人形机器人资讯",
+      "category": "国外机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国外机器人资讯",
+      "source": "国外机器人资讯",
+      "site_id": "国外机器人资讯",
       "description": "The robot butler dream doesn’t have legs  The Verge",
       "ai_score": 65.0,
-      "ai_label": "humanoid",
+      "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.2,
+      "timeliness": 27.95,
       "writing_value": 0,
-      "total_score": 103.2
+      "total_score": 102.95
     },
     {
       "id": "8b84b030a3fb11a78cf483f0a39162a16433d65a",
@@ -250,9 +250,9 @@
       "relevance": 0.5,
       "authority": 10,
       "depth": 5,
-      "timeliness": 29.7,
+      "timeliness": 29.45,
       "writing_value": 5,
-      "total_score": 99.7
+      "total_score": 99.45
     },
     {
       "id": "2d9116e17dd61cfe41283fe057e5c609804dbba7",
@@ -271,9 +271,9 @@
       "relevance": 0.5,
       "authority": 10,
       "depth": 5,
-      "timeliness": 29.62,
+      "timeliness": 29.37,
       "writing_value": 5,
-      "total_score": 99.62
+      "total_score": 99.37
     },
     {
       "id": "b5f265a5a866083236a7b2a5bc5150a439f62ba8",
@@ -292,9 +292,30 @@
       "relevance": 0.5,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.2,
+      "timeliness": 28.95,
       "writing_value": 0,
-      "total_score": 89.2
+      "total_score": 88.95
+    },
+    {
+      "id": "f7467d6dc9eb696ca480f9895fe9296d2d603513",
+      "title": "Physical Superintelligence launches AI-native physics lab - scientific-computing.com",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQYXNVSFF5RHBLTjYyM2prVG82aWNLOGZxcG9yWUVoNm54MEM2am81RnJuNk9VSUhFNzdTaWdmNWtKRjdXaDZMRkNiQ3NWQjFnNDVFWEU0S01EZkZwRE5JZElFNDVCeFpJOUxua3ktcWo4OWxuVXZES2dDRTE0YUp6YXFsVXdmS2FTWENaZEViTmRLamFtTnN0Z0JQVHRGdmM0R21UNA?oc=5",
+      "published_at": "2026-09-02T13:01:17+00:00",
+      "category": "国外物理AI资讯",
+      "gn_label": "physical_ai",
+      "site_name": "国外物理AI资讯",
+      "source": "国外物理AI资讯",
+      "site_id": "国外物理AI资讯",
+      "description": "Physical Superintelligence launches AI-native physics lab  scientific-computing.com",
+      "ai_score": 35.0,
+      "ai_label": "physical_ai",
+      "relevance": 0.35,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.97,
+      "writing_value": 0,
+      "total_score": 74.97
     },
     {
       "id": "a26e68d0da1890f93eb7652d28f50212a17c7410",
@@ -313,9 +334,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.79,
+      "timeliness": 29.55,
       "writing_value": 0,
-      "total_score": 74.79
+      "total_score": 74.55
     },
     {
       "id": "10acdc2a834b60982bd7802cb7a83ebeef581977",
@@ -334,30 +355,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.73,
+      "timeliness": 29.48,
       "writing_value": 0,
-      "total_score": 74.73
-    },
-    {
-      "id": "593cd7e92a259044ef321c3ebdc4981b3e84cf36",
-      "title": "机器人“上岗”查特种设备，北京首例智能检验在丰台落地 - 新京报",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9tNmZpM2cwNWxXWmNldTA3eFhJd3IybGV3bFRUR3NiQUVZNXJwdEtQaHV3N3dwaVRkRlNXaTZWbU8xT0phemFiVE5vWGFyLWxydlpCY2hpUE8yMXBvUWJNUGRXRC0?oc=5",
-      "published_at": "2026-09-02T12:04:00+00:00",
-      "category": "国内机器人资讯",
-      "gn_label": "robotics",
-      "site_name": "国内机器人资讯",
-      "source": "国内机器人资讯",
-      "site_id": "国内机器人资讯",
-      "description": "机器人“上岗”查特种设备，北京首例智能检验在丰台落地  新京报",
-      "ai_score": 35.0,
-      "ai_label": "robotics",
-      "relevance": 0.35,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 29.27,
-      "writing_value": 0,
-      "total_score": 74.27
+      "total_score": 74.48
     },
     {
       "id": "1576c653ba88c8019225598593a0b4ad6ab26878",
@@ -376,9 +376,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.2,
+      "timeliness": 28.95,
       "writing_value": 0,
-      "total_score": 74.2
+      "total_score": 73.95
     },
     {
       "id": "7bed17b694428d4930425cd6faba36c2271baca0",
@@ -397,9 +397,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.9,
+      "timeliness": 28.65,
       "writing_value": 0,
-      "total_score": 73.9
+      "total_score": 73.65
     },
     {
       "id": "b9d2aae0ac8b183ed065a46f2913b101f81c3ba3",
@@ -418,9 +418,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.88,
+      "timeliness": 28.63,
       "writing_value": 0,
-      "total_score": 73.88
+      "total_score": 73.63
     },
     {
       "id": "6514848334c33408f23364cf3940f26854fa7314",
@@ -439,9 +439,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.75,
+      "timeliness": 28.51,
       "writing_value": 0,
-      "total_score": 73.75
+      "total_score": 73.51
     },
     {
       "id": "ee434fc77771bfe74adfc1a1474737641f258728",
@@ -460,30 +460,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.45,
+      "timeliness": 28.2,
       "writing_value": 0,
-      "total_score": 73.45
-    },
-    {
-      "id": "ed23161f1578f3423ec23312720951f1e3a0fcae",
-      "title": "启元机器人开启官方直播销售_7x24快讯_新浪财经 - finance.sina.com.cn",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBMWmtRNmFhNTl3blMwWHBnbjBRS003QkdlVkRvRW10dGp3ZnRJWHMzRUV4U0syWk1xN0V6REIyYV80TV9iUGtBaEhjMA?oc=5",
-      "published_at": "2026-09-02T11:02:57+00:00",
-      "category": "国内机器人资讯",
-      "gn_label": "robotics",
-      "site_name": "国内机器人资讯",
-      "source": "国内机器人资讯",
-      "site_id": "国内机器人资讯",
-      "description": "启元机器人开启官方直播销售_7x24快讯_新浪财经  finance.sina.com.cn",
-      "ai_score": 35.0,
-      "ai_label": "robotics",
-      "relevance": 0.35,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 28.25,
-      "writing_value": 0,
-      "total_score": 73.25
+      "total_score": 73.2
     }
   ],
   "items_all": [
@@ -493,20 +472,41 @@
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQWk9UTHl3ZkQzWGtlN0tiZ0NhNDVEYUlFREdFdXhsd3NqdDVlUk1iMUZXUnpUVzdoNG9ZZmhXSTc0LUpsalNVWUNMTVJENTRaZmFtbTdvMFJvUWo3WDlBZ1BlTnVVYkE3SUFxeGlHdDVSMHdQdzFadGdfakRfdWFwY2RaR01KQTlkcmpJbjc4bHRxT3dRVVFRMTNjWGRRd0Z2SDg5ZU1sa0JEREdLUlBzdTVObndBdGY2bDR1SmtB?oc=5",
       "published_at": "2026-09-02T12:33:45+00:00",
-      "category": "国外人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国外人形机器人资讯",
-      "source": "国外人形机器人资讯",
-      "site_id": "国外人形机器人资讯",
+      "category": "国外机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国外机器人资讯",
+      "source": "国外机器人资讯",
+      "site_id": "国外机器人资讯",
       "description": "Zeroth Launches Bridge Humanoid Robot and Open-Source OpenBridge Developer Platform  AI Insider",
       "ai_score": 80.0,
-      "ai_label": "humanoid",
+      "ai_label": "robotics",
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.76,
+      "timeliness": 29.51,
       "writing_value": 0,
-      "total_score": 119.76
+      "total_score": 119.51
+    },
+    {
+      "id": "443a364783b9a82472cfdea6e2754e325165e788",
+      "title": "“机器人+”走进现实：2026服贸会解锁具身智能“北京方案” - finance.sina.com.cn",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5DalhBQXVSNkFadFlBVHZ1LXViVnExbzBTc2JtX0phaUJWTDBXZlNvcWo0U1VOa2tMMzhwMll6UFJNdGUyTTBmRjVVMWg2TU5YWmFraVdUY3NIZ1NSZzQyVURWektNOXRWM3ltUzhScVB5eGd2VEE?oc=5",
+      "published_at": "2026-09-02T12:31:00+00:00",
+      "category": "国内具身智能资讯",
+      "gn_label": "embodied_ai",
+      "site_name": "国内具身智能资讯",
+      "source": "国内具身智能资讯",
+      "site_id": "国内具身智能资讯",
+      "description": "“机器人+”走进现实：2026服贸会解锁具身智能“北京方案”  finance.sina.com.cn",
+      "ai_score": 80.0,
+      "ai_label": "embodied_ai",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.47,
+      "writing_value": 0,
+      "total_score": 119.47
     },
     {
       "id": "408bb06fb811f7d6ff309ac6956930b899340066",
@@ -525,9 +525,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.16,
+      "timeliness": 28.91,
       "writing_value": 0,
-      "total_score": 119.16
+      "total_score": 118.91
     },
     {
       "id": "48b553965cd391844aa6b09f227e5adcdd26d14f",
@@ -546,9 +546,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.96,
+      "timeliness": 28.72,
       "writing_value": 0,
-      "total_score": 118.96
+      "total_score": 118.72
     },
     {
       "id": "66a2e0372df9ebf589dd221d89214a326a192f0e",
@@ -556,20 +556,20 @@
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1KdExFOWtmMlZSTXJYTUJDRUNlRFRWeWNfTFV0RXVXOWloZ3pGcjdyN0ZzdkFxMDJFUEZETmlLVXNRRWZFQ3Q2MERpOFlzd3F6eEtSLXpyZHd3NURjTnpoSlZYaWQ?oc=5",
       "published_at": "2026-09-02T11:43:00+00:00",
-      "category": "国内人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国内人形机器人资讯",
-      "source": "国内人形机器人资讯",
-      "site_id": "国内人形机器人资讯",
+      "category": "国内具身智能资讯",
+      "gn_label": "embodied_ai",
+      "site_name": "国内具身智能资讯",
+      "source": "国内具身智能资讯",
+      "site_id": "国内具身智能资讯",
       "description": "加速打造全球具身智能数据平台 北京人形开源数据集下载量破2000万  新京报",
       "ai_score": 80.0,
-      "ai_label": "humanoid",
+      "ai_label": "embodied_ai",
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.92,
+      "timeliness": 28.67,
       "writing_value": 0,
-      "total_score": 118.92
+      "total_score": 118.67
     },
     {
       "id": "5e4ca643108c7f851cc84c88561a0278af129376",
@@ -588,34 +588,13 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.67,
+      "timeliness": 28.42,
       "writing_value": 0,
-      "total_score": 118.67
+      "total_score": 118.42
     },
     {
-      "id": "73c54f4fbb35250ee2c07edc6b2cd0fcf27d0b99",
-      "title": "清华火神队卫冕世界人形机器人运动会足球5V5大型组冠军 - 新浪网",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9VRXA2Q3Y2azVaUkxVaDBObndwTkRiazVNNl9wTFkwdFhIZjV1UTdiampnMkxndUpuaGNWbzVWZEpzRUhWWjZTaHF0M0Nnb0x6UjRxRWlDT2hxU2lIWm80TFFLWUNGbDNkSlhzNHFobUV5Zw?oc=5",
-      "published_at": "2026-09-02T11:21:36+00:00",
-      "category": "国内人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国内人形机器人资讯",
-      "source": "国内人形机器人资讯",
-      "site_id": "国内人形机器人资讯",
-      "description": "清华火神队卫冕世界人形机器人运动会足球5V5大型组冠军  新浪网",
-      "ai_score": 80.0,
-      "ai_label": "humanoid",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 28.56,
-      "writing_value": 0,
-      "total_score": 118.56
-    },
-    {
-      "id": "471aa09379a756028c43ee3c142f59b72b26dbc4",
-      "title": "河北成功实施首例全侵入式无线脑机接口手术 - 河北广播电视台",
+      "id": "408898b107eacda877b1f63fff04827465a03ea4",
+      "title": "河北成功实施首例全侵入式无线脑机接口手术 - hebtv.com",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE50OEhJV09PV2drSVJUVk1jRTJ0NGYwQlFnRVRRanZnZnRuVzEtdWM4ei1UQk1hOEFPa0VpMUZFemQ1WjU5N09zRVdvQmxINFhLOVVtOGl0Y1BLcF9tS2hCMXNfWmZWaFcyZ3Q3TQ?oc=5",
       "published_at": "2026-09-02T11:12:42+00:00",
@@ -624,15 +603,15 @@
       "site_name": "国内脑机接口资讯",
       "source": "国内脑机接口资讯",
       "site_id": "国内脑机接口资讯",
-      "description": "河北成功实施首例全侵入式无线脑机接口手术  河北广播电视台",
+      "description": "河北成功实施首例全侵入式无线脑机接口手术  hebtv.com",
       "ai_score": 80.0,
       "ai_label": "brain_computer",
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.41,
+      "timeliness": 28.16,
       "writing_value": 0,
-      "total_score": 118.41
+      "total_score": 118.16
     },
     {
       "id": "08d05ee3c465bf4a95a300b4f6801e58ed2f71c2",
@@ -651,9 +630,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.32,
+      "timeliness": 28.07,
       "writing_value": 0,
-      "total_score": 118.32
+      "total_score": 118.07
     },
     {
       "id": "9d7cf929f71e17fc250984b17d3ff3b4d6ff8db1",
@@ -661,20 +640,20 @@
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQS1BKSWZ5OXc1NE82UVNBblZSOUx3alN3Y0JPeFZCcXd3RHI3WVNrMXJNU0hFc2NTR1dSZjlnYmxuMnpyVGhEM3M3NUkwWXpKb00wMTRfU2dEQTg2R3hEc2NHaUpBalBhYUQwQnlxeUFJYU83ckpiVTk1YUpZem1VbEI2ZjJNM0tPWG5JbExQNk04UHhQV01oLU02cmZuemRpWlNUV2pocU95cVBJb1JyNV92Z3JXOHlGdmNSWk13?oc=5",
       "published_at": "2026-09-02T12:05:54+00:00",
-      "category": "国外物理AI资讯",
-      "gn_label": "physical_ai",
-      "site_name": "国外物理AI资讯",
-      "source": "国外物理AI资讯",
-      "site_id": "国外物理AI资讯",
+      "category": "国外具身智能资讯",
+      "gn_label": "embodied_ai",
+      "site_name": "国外具身智能资讯",
+      "source": "国外具身智能资讯",
+      "site_id": "国外具身智能资讯",
       "description": "Nio CEO Says Bet on VP’s Robotics Startup Allows Tracking Physical AI Without Hitting P&L  eletric-vehicles.com",
       "ai_score": 65.0,
-      "ai_label": "physical_ai",
+      "ai_label": "embodied_ai",
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 29.3,
+      "timeliness": 29.05,
       "writing_value": 5,
-      "total_score": 114.3
+      "total_score": 114.05
     },
     {
       "id": "9fa1facbf906648db02433ebfe792624422f60fc",
@@ -693,9 +672,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.33,
+      "timeliness": 29.08,
       "writing_value": 0,
-      "total_score": 104.33
+      "total_score": 104.08
     },
     {
       "id": "7847ed696d4318d1e10fa88d61d633e60933172d",
@@ -703,20 +682,20 @@
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQdEhPZFlDT2FZeEVucjB6LWhlelB5enRnSWZ5cXpxNHRYLXVTMjdTd2p3LWdaMEZzaVVST2lkYWs1ZGdYWlBlRmIwdzd4bzlJZUxYd2xwQm1vbzJOQ2xtVU5DcFFVanJPM0RVTE5GaHh5b293U3BGWXYxSlZ3VExBWWx0bmxZZHltSDFr?oc=5",
       "published_at": "2026-09-02T11:00:00+00:00",
-      "category": "国外人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国外人形机器人资讯",
-      "source": "国外人形机器人资讯",
-      "site_id": "国外人形机器人资讯",
+      "category": "国外机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国外机器人资讯",
+      "source": "国外机器人资讯",
+      "site_id": "国外机器人资讯",
       "description": "The robot butler dream doesn’t have legs  The Verge",
       "ai_score": 65.0,
-      "ai_label": "humanoid",
+      "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.2,
+      "timeliness": 27.95,
       "writing_value": 0,
-      "total_score": 103.2
+      "total_score": 102.95
     },
     {
       "id": "8b84b030a3fb11a78cf483f0a39162a16433d65a",
@@ -735,9 +714,9 @@
       "relevance": 0.5,
       "authority": 10,
       "depth": 5,
-      "timeliness": 29.7,
+      "timeliness": 29.45,
       "writing_value": 5,
-      "total_score": 99.7
+      "total_score": 99.45
     },
     {
       "id": "2d9116e17dd61cfe41283fe057e5c609804dbba7",
@@ -756,9 +735,9 @@
       "relevance": 0.5,
       "authority": 10,
       "depth": 5,
-      "timeliness": 29.62,
+      "timeliness": 29.37,
       "writing_value": 5,
-      "total_score": 99.62
+      "total_score": 99.37
     },
     {
       "id": "b5f265a5a866083236a7b2a5bc5150a439f62ba8",
@@ -777,9 +756,30 @@
       "relevance": 0.5,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.2,
+      "timeliness": 28.95,
       "writing_value": 0,
-      "total_score": 89.2
+      "total_score": 88.95
+    },
+    {
+      "id": "f7467d6dc9eb696ca480f9895fe9296d2d603513",
+      "title": "Physical Superintelligence launches AI-native physics lab - scientific-computing.com",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQYXNVSFF5RHBLTjYyM2prVG82aWNLOGZxcG9yWUVoNm54MEM2am81RnJuNk9VSUhFNzdTaWdmNWtKRjdXaDZMRkNiQ3NWQjFnNDVFWEU0S01EZkZwRE5JZElFNDVCeFpJOUxua3ktcWo4OWxuVXZES2dDRTE0YUp6YXFsVXdmS2FTWENaZEViTmRLamFtTnN0Z0JQVHRGdmM0R21UNA?oc=5",
+      "published_at": "2026-09-02T13:01:17+00:00",
+      "category": "国外物理AI资讯",
+      "gn_label": "physical_ai",
+      "site_name": "国外物理AI资讯",
+      "source": "国外物理AI资讯",
+      "site_id": "国外物理AI资讯",
+      "description": "Physical Superintelligence launches AI-native physics lab  scientific-computing.com",
+      "ai_score": 35.0,
+      "ai_label": "physical_ai",
+      "relevance": 0.35,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.97,
+      "writing_value": 0,
+      "total_score": 74.97
     },
     {
       "id": "a26e68d0da1890f93eb7652d28f50212a17c7410",
@@ -798,9 +798,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.79,
+      "timeliness": 29.55,
       "writing_value": 0,
-      "total_score": 74.79
+      "total_score": 74.55
     },
     {
       "id": "10acdc2a834b60982bd7802cb7a83ebeef581977",
@@ -819,30 +819,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.73,
+      "timeliness": 29.48,
       "writing_value": 0,
-      "total_score": 74.73
-    },
-    {
-      "id": "593cd7e92a259044ef321c3ebdc4981b3e84cf36",
-      "title": "机器人“上岗”查特种设备，北京首例智能检验在丰台落地 - 新京报",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9tNmZpM2cwNWxXWmNldTA3eFhJd3IybGV3bFRUR3NiQUVZNXJwdEtQaHV3N3dwaVRkRlNXaTZWbU8xT0phemFiVE5vWGFyLWxydlpCY2hpUE8yMXBvUWJNUGRXRC0?oc=5",
-      "published_at": "2026-09-02T12:04:00+00:00",
-      "category": "国内机器人资讯",
-      "gn_label": "robotics",
-      "site_name": "国内机器人资讯",
-      "source": "国内机器人资讯",
-      "site_id": "国内机器人资讯",
-      "description": "机器人“上岗”查特种设备，北京首例智能检验在丰台落地  新京报",
-      "ai_score": 35.0,
-      "ai_label": "robotics",
-      "relevance": 0.35,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 29.27,
-      "writing_value": 0,
-      "total_score": 74.27
+      "total_score": 74.48
     },
     {
       "id": "1576c653ba88c8019225598593a0b4ad6ab26878",
@@ -861,9 +840,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.2,
+      "timeliness": 28.95,
       "writing_value": 0,
-      "total_score": 74.2
+      "total_score": 73.95
     },
     {
       "id": "7bed17b694428d4930425cd6faba36c2271baca0",
@@ -882,9 +861,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.9,
+      "timeliness": 28.65,
       "writing_value": 0,
-      "total_score": 73.9
+      "total_score": 73.65
     },
     {
       "id": "b9d2aae0ac8b183ed065a46f2913b101f81c3ba3",
@@ -903,9 +882,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.88,
+      "timeliness": 28.63,
       "writing_value": 0,
-      "total_score": 73.88
+      "total_score": 73.63
     },
     {
       "id": "6514848334c33408f23364cf3940f26854fa7314",
@@ -924,9 +903,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.75,
+      "timeliness": 28.51,
       "writing_value": 0,
-      "total_score": 73.75
+      "total_score": 73.51
     },
     {
       "id": "ee434fc77771bfe74adfc1a1474737641f258728",
@@ -945,30 +924,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.45,
+      "timeliness": 28.2,
       "writing_value": 0,
-      "total_score": 73.45
-    },
-    {
-      "id": "ed23161f1578f3423ec23312720951f1e3a0fcae",
-      "title": "启元机器人开启官方直播销售_7x24快讯_新浪财经 - finance.sina.com.cn",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBMWmtRNmFhNTl3blMwWHBnbjBRS003QkdlVkRvRW10dGp3ZnRJWHMzRUV4U0syWk1xN0V6REIyYV80TV9iUGtBaEhjMA?oc=5",
-      "published_at": "2026-09-02T11:02:57+00:00",
-      "category": "国内机器人资讯",
-      "gn_label": "robotics",
-      "site_name": "国内机器人资讯",
-      "source": "国内机器人资讯",
-      "site_id": "国内机器人资讯",
-      "description": "启元机器人开启官方直播销售_7x24快讯_新浪财经  finance.sina.com.cn",
-      "ai_score": 35.0,
-      "ai_label": "robotics",
-      "relevance": 0.35,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 28.25,
-      "writing_value": 0,
-      "total_score": 73.25
+      "total_score": 73.2
     }
   ],
   "items_all_raw": [
@@ -978,20 +936,41 @@
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQWk9UTHl3ZkQzWGtlN0tiZ0NhNDVEYUlFREdFdXhsd3NqdDVlUk1iMUZXUnpUVzdoNG9ZZmhXSTc0LUpsalNVWUNMTVJENTRaZmFtbTdvMFJvUWo3WDlBZ1BlTnVVYkE3SUFxeGlHdDVSMHdQdzFadGdfakRfdWFwY2RaR01KQTlkcmpJbjc4bHRxT3dRVVFRMTNjWGRRd0Z2SDg5ZU1sa0JEREdLUlBzdTVObndBdGY2bDR1SmtB?oc=5",
       "published_at": "2026-09-02T12:33:45+00:00",
-      "category": "国外人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国外人形机器人资讯",
-      "source": "国外人形机器人资讯",
-      "site_id": "国外人形机器人资讯",
+      "category": "国外机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国外机器人资讯",
+      "source": "国外机器人资讯",
+      "site_id": "国外机器人资讯",
       "description": "Zeroth Launches Bridge Humanoid Robot and Open-Source OpenBridge Developer Platform  AI Insider",
       "ai_score": 80.0,
-      "ai_label": "humanoid",
+      "ai_label": "robotics",
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.76,
+      "timeliness": 29.51,
       "writing_value": 0,
-      "total_score": 119.76
+      "total_score": 119.51
+    },
+    {
+      "id": "443a364783b9a82472cfdea6e2754e325165e788",
+      "title": "“机器人+”走进现实：2026服贸会解锁具身智能“北京方案” - finance.sina.com.cn",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5DalhBQXVSNkFadFlBVHZ1LXViVnExbzBTc2JtX0phaUJWTDBXZlNvcWo0U1VOa2tMMzhwMll6UFJNdGUyTTBmRjVVMWg2TU5YWmFraVdUY3NIZ1NSZzQyVURWektNOXRWM3ltUzhScVB5eGd2VEE?oc=5",
+      "published_at": "2026-09-02T12:31:00+00:00",
+      "category": "国内具身智能资讯",
+      "gn_label": "embodied_ai",
+      "site_name": "国内具身智能资讯",
+      "source": "国内具身智能资讯",
+      "site_id": "国内具身智能资讯",
+      "description": "“机器人+”走进现实：2026服贸会解锁具身智能“北京方案”  finance.sina.com.cn",
+      "ai_score": 80.0,
+      "ai_label": "embodied_ai",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.47,
+      "writing_value": 0,
+      "total_score": 119.47
     },
     {
       "id": "408bb06fb811f7d6ff309ac6956930b899340066",
@@ -1010,9 +989,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.16,
+      "timeliness": 28.91,
       "writing_value": 0,
-      "total_score": 119.16
+      "total_score": 118.91
     },
     {
       "id": "48b553965cd391844aa6b09f227e5adcdd26d14f",
@@ -1031,9 +1010,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.96,
+      "timeliness": 28.72,
       "writing_value": 0,
-      "total_score": 118.96
+      "total_score": 118.72
     },
     {
       "id": "66a2e0372df9ebf589dd221d89214a326a192f0e",
@@ -1041,20 +1020,20 @@
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1KdExFOWtmMlZSTXJYTUJDRUNlRFRWeWNfTFV0RXVXOWloZ3pGcjdyN0ZzdkFxMDJFUEZETmlLVXNRRWZFQ3Q2MERpOFlzd3F6eEtSLXpyZHd3NURjTnpoSlZYaWQ?oc=5",
       "published_at": "2026-09-02T11:43:00+00:00",
-      "category": "国内人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国内人形机器人资讯",
-      "source": "国内人形机器人资讯",
-      "site_id": "国内人形机器人资讯",
+      "category": "国内具身智能资讯",
+      "gn_label": "embodied_ai",
+      "site_name": "国内具身智能资讯",
+      "source": "国内具身智能资讯",
+      "site_id": "国内具身智能资讯",
       "description": "加速打造全球具身智能数据平台 北京人形开源数据集下载量破2000万  新京报",
       "ai_score": 80.0,
-      "ai_label": "humanoid",
+      "ai_label": "embodied_ai",
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.92,
+      "timeliness": 28.67,
       "writing_value": 0,
-      "total_score": 118.92
+      "total_score": 118.67
     },
     {
       "id": "5e4ca643108c7f851cc84c88561a0278af129376",
@@ -1073,34 +1052,13 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.67,
+      "timeliness": 28.42,
       "writing_value": 0,
-      "total_score": 118.67
+      "total_score": 118.42
     },
     {
-      "id": "73c54f4fbb35250ee2c07edc6b2cd0fcf27d0b99",
-      "title": "清华火神队卫冕世界人形机器人运动会足球5V5大型组冠军 - 新浪网",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9VRXA2Q3Y2azVaUkxVaDBObndwTkRiazVNNl9wTFkwdFhIZjV1UTdiampnMkxndUpuaGNWbzVWZEpzRUhWWjZTaHF0M0Nnb0x6UjRxRWlDT2hxU2lIWm80TFFLWUNGbDNkSlhzNHFobUV5Zw?oc=5",
-      "published_at": "2026-09-02T11:21:36+00:00",
-      "category": "国内人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国内人形机器人资讯",
-      "source": "国内人形机器人资讯",
-      "site_id": "国内人形机器人资讯",
-      "description": "清华火神队卫冕世界人形机器人运动会足球5V5大型组冠军  新浪网",
-      "ai_score": 80.0,
-      "ai_label": "humanoid",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 28.56,
-      "writing_value": 0,
-      "total_score": 118.56
-    },
-    {
-      "id": "471aa09379a756028c43ee3c142f59b72b26dbc4",
-      "title": "河北成功实施首例全侵入式无线脑机接口手术 - 河北广播电视台",
+      "id": "408898b107eacda877b1f63fff04827465a03ea4",
+      "title": "河北成功实施首例全侵入式无线脑机接口手术 - hebtv.com",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE50OEhJV09PV2drSVJUVk1jRTJ0NGYwQlFnRVRRanZnZnRuVzEtdWM4ei1UQk1hOEFPa0VpMUZFemQ1WjU5N09zRVdvQmxINFhLOVVtOGl0Y1BLcF9tS2hCMXNfWmZWaFcyZ3Q3TQ?oc=5",
       "published_at": "2026-09-02T11:12:42+00:00",
@@ -1109,15 +1067,15 @@
       "site_name": "国内脑机接口资讯",
       "source": "国内脑机接口资讯",
       "site_id": "国内脑机接口资讯",
-      "description": "河北成功实施首例全侵入式无线脑机接口手术  河北广播电视台",
+      "description": "河北成功实施首例全侵入式无线脑机接口手术  hebtv.com",
       "ai_score": 80.0,
       "ai_label": "brain_computer",
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.41,
+      "timeliness": 28.16,
       "writing_value": 0,
-      "total_score": 118.41
+      "total_score": 118.16
     },
     {
       "id": "08d05ee3c465bf4a95a300b4f6801e58ed2f71c2",
@@ -1136,9 +1094,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.32,
+      "timeliness": 28.07,
       "writing_value": 0,
-      "total_score": 118.32
+      "total_score": 118.07
     },
     {
       "id": "9d7cf929f71e17fc250984b17d3ff3b4d6ff8db1",
@@ -1146,20 +1104,20 @@
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQS1BKSWZ5OXc1NE82UVNBblZSOUx3alN3Y0JPeFZCcXd3RHI3WVNrMXJNU0hFc2NTR1dSZjlnYmxuMnpyVGhEM3M3NUkwWXpKb00wMTRfU2dEQTg2R3hEc2NHaUpBalBhYUQwQnlxeUFJYU83ckpiVTk1YUpZem1VbEI2ZjJNM0tPWG5JbExQNk04UHhQV01oLU02cmZuemRpWlNUV2pocU95cVBJb1JyNV92Z3JXOHlGdmNSWk13?oc=5",
       "published_at": "2026-09-02T12:05:54+00:00",
-      "category": "国外物理AI资讯",
-      "gn_label": "physical_ai",
-      "site_name": "国外物理AI资讯",
-      "source": "国外物理AI资讯",
-      "site_id": "国外物理AI资讯",
+      "category": "国外具身智能资讯",
+      "gn_label": "embodied_ai",
+      "site_name": "国外具身智能资讯",
+      "source": "国外具身智能资讯",
+      "site_id": "国外具身智能资讯",
       "description": "Nio CEO Says Bet on VP’s Robotics Startup Allows Tracking Physical AI Without Hitting P&L  eletric-vehicles.com",
       "ai_score": 65.0,
-      "ai_label": "physical_ai",
+      "ai_label": "embodied_ai",
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 29.3,
+      "timeliness": 29.05,
       "writing_value": 5,
-      "total_score": 114.3
+      "total_score": 114.05
     },
     {
       "id": "9fa1facbf906648db02433ebfe792624422f60fc",
@@ -1178,9 +1136,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.33,
+      "timeliness": 29.08,
       "writing_value": 0,
-      "total_score": 104.33
+      "total_score": 104.08
     },
     {
       "id": "7847ed696d4318d1e10fa88d61d633e60933172d",
@@ -1188,20 +1146,20 @@
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQdEhPZFlDT2FZeEVucjB6LWhlelB5enRnSWZ5cXpxNHRYLXVTMjdTd2p3LWdaMEZzaVVST2lkYWs1ZGdYWlBlRmIwdzd4bzlJZUxYd2xwQm1vbzJOQ2xtVU5DcFFVanJPM0RVTE5GaHh5b293U3BGWXYxSlZ3VExBWWx0bmxZZHltSDFr?oc=5",
       "published_at": "2026-09-02T11:00:00+00:00",
-      "category": "国外人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国外人形机器人资讯",
-      "source": "国外人形机器人资讯",
-      "site_id": "国外人形机器人资讯",
+      "category": "国外机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国外机器人资讯",
+      "source": "国外机器人资讯",
+      "site_id": "国外机器人资讯",
       "description": "The robot butler dream doesn’t have legs  The Verge",
       "ai_score": 65.0,
-      "ai_label": "humanoid",
+      "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.2,
+      "timeliness": 27.95,
       "writing_value": 0,
-      "total_score": 103.2
+      "total_score": 102.95
     },
     {
       "id": "8b84b030a3fb11a78cf483f0a39162a16433d65a",
@@ -1220,9 +1178,9 @@
       "relevance": 0.5,
       "authority": 10,
       "depth": 5,
-      "timeliness": 29.7,
+      "timeliness": 29.45,
       "writing_value": 5,
-      "total_score": 99.7
+      "total_score": 99.45
     },
     {
       "id": "2d9116e17dd61cfe41283fe057e5c609804dbba7",
@@ -1241,9 +1199,9 @@
       "relevance": 0.5,
       "authority": 10,
       "depth": 5,
-      "timeliness": 29.62,
+      "timeliness": 29.37,
       "writing_value": 5,
-      "total_score": 99.62
+      "total_score": 99.37
     },
     {
       "id": "b5f265a5a866083236a7b2a5bc5150a439f62ba8",
@@ -1262,9 +1220,30 @@
       "relevance": 0.5,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.2,
+      "timeliness": 28.95,
       "writing_value": 0,
-      "total_score": 89.2
+      "total_score": 88.95
+    },
+    {
+      "id": "f7467d6dc9eb696ca480f9895fe9296d2d603513",
+      "title": "Physical Superintelligence launches AI-native physics lab - scientific-computing.com",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQYXNVSFF5RHBLTjYyM2prVG82aWNLOGZxcG9yWUVoNm54MEM2am81RnJuNk9VSUhFNzdTaWdmNWtKRjdXaDZMRkNiQ3NWQjFnNDVFWEU0S01EZkZwRE5JZElFNDVCeFpJOUxua3ktcWo4OWxuVXZES2dDRTE0YUp6YXFsVXdmS2FTWENaZEViTmRLamFtTnN0Z0JQVHRGdmM0R21UNA?oc=5",
+      "published_at": "2026-09-02T13:01:17+00:00",
+      "category": "国外物理AI资讯",
+      "gn_label": "physical_ai",
+      "site_name": "国外物理AI资讯",
+      "source": "国外物理AI资讯",
+      "site_id": "国外物理AI资讯",
+      "description": "Physical Superintelligence launches AI-native physics lab  scientific-computing.com",
+      "ai_score": 35.0,
+      "ai_label": "physical_ai",
+      "relevance": 0.35,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.97,
+      "writing_value": 0,
+      "total_score": 74.97
     },
     {
       "id": "a26e68d0da1890f93eb7652d28f50212a17c7410",
@@ -1283,9 +1262,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.79,
+      "timeliness": 29.55,
       "writing_value": 0,
-      "total_score": 74.79
+      "total_score": 74.55
     },
     {
       "id": "10acdc2a834b60982bd7802cb7a83ebeef581977",
@@ -1304,30 +1283,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.73,
+      "timeliness": 29.48,
       "writing_value": 0,
-      "total_score": 74.73
-    },
-    {
-      "id": "593cd7e92a259044ef321c3ebdc4981b3e84cf36",
-      "title": "机器人“上岗”查特种设备，北京首例智能检验在丰台落地 - 新京报",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9tNmZpM2cwNWxXWmNldTA3eFhJd3IybGV3bFRUR3NiQUVZNXJwdEtQaHV3N3dwaVRkRlNXaTZWbU8xT0phemFiVE5vWGFyLWxydlpCY2hpUE8yMXBvUWJNUGRXRC0?oc=5",
-      "published_at": "2026-09-02T12:04:00+00:00",
-      "category": "国内机器人资讯",
-      "gn_label": "robotics",
-      "site_name": "国内机器人资讯",
-      "source": "国内机器人资讯",
-      "site_id": "国内机器人资讯",
-      "description": "机器人“上岗”查特种设备，北京首例智能检验在丰台落地  新京报",
-      "ai_score": 35.0,
-      "ai_label": "robotics",
-      "relevance": 0.35,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 29.27,
-      "writing_value": 0,
-      "total_score": 74.27
+      "total_score": 74.48
     },
     {
       "id": "1576c653ba88c8019225598593a0b4ad6ab26878",
@@ -1346,9 +1304,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.2,
+      "timeliness": 28.95,
       "writing_value": 0,
-      "total_score": 74.2
+      "total_score": 73.95
     },
     {
       "id": "7bed17b694428d4930425cd6faba36c2271baca0",
@@ -1367,9 +1325,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.9,
+      "timeliness": 28.65,
       "writing_value": 0,
-      "total_score": 73.9
+      "total_score": 73.65
     },
     {
       "id": "b9d2aae0ac8b183ed065a46f2913b101f81c3ba3",
@@ -1388,9 +1346,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.88,
+      "timeliness": 28.63,
       "writing_value": 0,
-      "total_score": 73.88
+      "total_score": 73.63
     },
     {
       "id": "6514848334c33408f23364cf3940f26854fa7314",
@@ -1409,9 +1367,9 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.75,
+      "timeliness": 28.51,
       "writing_value": 0,
-      "total_score": 73.75
+      "total_score": 73.51
     },
     {
       "id": "ee434fc77771bfe74adfc1a1474737641f258728",
@@ -1430,46 +1388,20 @@
       "relevance": 0.35,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.45,
+      "timeliness": 28.2,
       "writing_value": 0,
-      "total_score": 73.45
-    },
-    {
-      "id": "ed23161f1578f3423ec23312720951f1e3a0fcae",
-      "title": "启元机器人开启官方直播销售_7x24快讯_新浪财经 - finance.sina.com.cn",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBMWmtRNmFhNTl3blMwWHBnbjBRS003QkdlVkRvRW10dGp3ZnRJWHMzRUV4U0syWk1xN0V6REIyYV80TV9iUGtBaEhjMA?oc=5",
-      "published_at": "2026-09-02T11:02:57+00:00",
-      "category": "国内机器人资讯",
-      "gn_label": "robotics",
-      "site_name": "国内机器人资讯",
-      "source": "国内机器人资讯",
-      "site_id": "国内机器人资讯",
-      "description": "启元机器人开启官方直播销售_7x24快讯_新浪财经  finance.sina.com.cn",
-      "ai_score": 35.0,
-      "ai_label": "robotics",
-      "relevance": 0.35,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 28.25,
-      "writing_value": 0,
-      "total_score": 73.25
+      "total_score": 73.2
     }
   ],
   "site_stats": [
     {
-      "site_id": "国内机器人资讯",
-      "site_name": "国内机器人资讯",
+      "site_id": "国内具身智能资讯",
+      "site_name": "国内具身智能资讯",
       "count": 6
     },
     {
-      "site_id": "国内具身智能资讯",
-      "site_name": "国内具身智能资讯",
-      "count": 4
-    },
-    {
-      "site_id": "国内人形机器人资讯",
-      "site_name": "国内人形机器人资讯",
+      "site_id": "国外机器人资讯",
+      "site_name": "国外机器人资讯",
       "count": 4
     },
     {
@@ -1478,21 +1410,26 @@
       "count": 4
     },
     {
-      "site_id": "国外人形机器人资讯",
-      "site_name": "国外人形机器人资讯",
-      "count": 2
+      "site_id": "国内机器人资讯",
+      "site_name": "国内机器人资讯",
+      "count": 4
     },
     {
-      "site_id": "国外机器人资讯",
-      "site_name": "国外机器人资讯",
+      "site_id": "国内人形机器人资讯",
+      "site_name": "国内人形机器人资讯",
       "count": 2
     },
     {
       "site_id": "国内脑机接口资讯",
       "site_name": "国内脑机接口资讯",
       "count": 1
+    },
+    {
+      "site_id": "国外具身智能资讯",
+      "site_name": "国外具身智能资讯",
+      "count": 1
     }
   ],
-  "total_items_raw": 23,
-  "total_items_all_mode": 23
+  "total_items_raw": 22,
+  "total_items_all_mode": 22
 }
