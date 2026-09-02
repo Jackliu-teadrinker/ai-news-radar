@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-02T05:37:54.342133+00:00",
+  "generated_at": "2026-09-02T06:09:38.161427+00:00",
   "window_start": "2026-09-01T19:00:00+08:00",
-  "window_end": "2026-09-02T13:34:10.013576+08:00",
-  "total_items": 41,
+  "window_end": "2026-09-02T14:05:54.458380+08:00",
+  "total_items": 40,
   "items": [
     {
       "id": "56fa504257d3df851c5cdbee905f716c46f68236",
@@ -21,9 +21,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 14.43,
+      "timeliness": 13.9,
       "writing_value": 5,
-      "total_score": 99.43
+      "total_score": 98.9
     },
     {
       "id": "a83347bfc447d670093c0de12cb74f67eb401e30",
@@ -42,9 +42,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 24.62,
+      "timeliness": 24.09,
       "writing_value": 5,
-      "total_score": 109.62
+      "total_score": 109.09
     },
     {
       "id": "540dbdc826c1929d19bb068b797c307b308dc96d",
@@ -63,9 +63,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 14.4,
+      "timeliness": 13.87,
       "writing_value": 5,
-      "total_score": 99.4
+      "total_score": 98.87
     },
     {
       "id": "683f1132e67b8122206e432e93b3ce1c4e3fd5cd",
@@ -84,9 +84,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 14.56,
+      "timeliness": 14.03,
       "writing_value": 0,
-      "total_score": 89.56
+      "total_score": 89.03
     },
     {
       "id": "ac1f466d63fc2df9b69525f5b1567f62e85267e9",
@@ -105,9 +105,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 17.38,
+      "timeliness": 16.86,
       "writing_value": 0,
-      "total_score": 92.38
+      "total_score": 91.86
     },
     {
       "id": "747b1f369ac62251cddcc440050c35fd7364ef8c",
@@ -126,51 +126,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.88,
+      "timeliness": 26.35,
       "writing_value": 0,
-      "total_score": 101.88
-    },
-    {
-      "id": "6181ae47ac58f14bc2d6846375a569e82fe97d31",
-      "title": "UBS says a new 'physical AI' era favours the makers of robot parts, not the robots themselves - ca.finance.yahoo.com",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1tSldBNU1LWjliSTFEZjVQV3hpenN5TXB1RHJFcWpMYmU3TG5kN1J6aU4wT1BzaWpjNGh5LVkzMGgtRHFWeXd3N2I1T0FvMTJMa1hrMUZFc0xQV0VaSWVpZjBJdEoxMVROOFFrdDI3MXpBa3BPSkdQMGpKVGdyUQ?oc=5",
-      "published_at": "2026-09-01T15:04:00+00:00",
-      "category": "GN: robot",
-      "gn_label": "robotics",
-      "site_name": "GN: robot",
-      "source": "GN: robot",
-      "site_id": "GN: robot",
-      "description": "UBS says a new 'physical AI' era favours the makers of robot parts, not the robots themselves  ca.finance.yahoo.com",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 5,
-      "timeliness": 15.5,
-      "writing_value": 5,
-      "total_score": 100.5
-    },
-    {
-      "id": "81f7626500f66b34309dc286c377b1a29b7f7382",
-      "title": "Man Uses Robot Vacuum to Catch Wife Cheating, Then Gets Jailed for Secretly Recording Her Affair - People.com",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQRjZWM19EbUxGV3h1R0J0LXVLOUMxallVaWtGeWZ3X2E0M196eXpFaG9xZGR3M2RHMHl1SkZzU3hKZnIxeGhyN3JLYVBWSlJILWRtYkY3bDJFMlF4cWJmcXQ5TXc1QjNKRVpzb093UWJub29OWDRkOEcyQWl1enUtdGdMM2ppeE50aTBxSVV5dzlrTWM?oc=5",
-      "published_at": "2026-09-01T22:26:23+00:00",
-      "category": "GN: robot",
-      "gn_label": "robotics",
-      "site_name": "GN: robot",
-      "source": "GN: robot",
-      "site_id": "GN: robot",
-      "description": "Man Uses Robot Vacuum to Catch Wife Cheating, Then Gets Jailed for Secretly Recording Her Affair  People.com",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 5,
-      "timeliness": 22.87,
-      "writing_value": 5,
-      "total_score": 107.87
+      "total_score": 101.35
     },
     {
       "id": "a2b8404c8533cece9ee7c1896203403a9125bb0c",
@@ -189,9 +147,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 13.45,
+      "timeliness": 12.92,
       "writing_value": 5,
-      "total_score": 98.45
+      "total_score": 97.92
     },
     {
       "id": "c7f08a5f7c1dcfceccd9be9ad8325a300d15f0b9",
@@ -210,9 +168,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 21.42,
+      "timeliness": 20.89,
       "writing_value": 0,
-      "total_score": 96.42
+      "total_score": 95.89
     },
     {
       "id": "8d8780dc9177bd6608076eabf04dfe8eec7f91da",
@@ -231,9 +189,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 13.15,
+      "timeliness": 12.62,
       "writing_value": 5,
-      "total_score": 98.15
+      "total_score": 97.62
     },
     {
       "id": "4a23dec8209bfedaea5e58b29994e52ece0dc6e6",
@@ -252,9 +210,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 19.07,
+      "timeliness": 18.54,
       "writing_value": 5,
-      "total_score": 104.07
+      "total_score": 103.54
     },
     {
       "id": "c3ad17245cf01c41666d1fa2317be2df2f3d30ea",
@@ -273,114 +231,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 14.49,
+      "timeliness": 13.96,
       "writing_value": 0,
-      "total_score": 89.49
+      "total_score": 88.96
     },
     {
-      "id": "c1401c28272a7c91c9b6ecbdd9e712720a6b4213",
-      "title": "Enovis to acquire eCential Robotics for €155 million, plans to bring surgical robot to market - MassDevice",
+      "id": "67bc7533d3ded0d224b9721523287ba9504dfb70",
+      "title": "Wife caught cheating by robot vacuum - but husband jailed - PerthNow",
       "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPU1BYb1NsXzJrbzZ3VkxlX2dyS3RiSWNVcGZTa2FycFZ0LWJXU1M4UEU1U3NGYVRYRFJGLWhXbVZBMnVYQURzOG55aHB6Q1N2ODFEd2ZPV2lxUmRpZE91czNxLTUySXVjZ0N3NnRtLWZiQTd2QllUOGRnQjBHcnFiSmE5LW1FOU85azA2SWdHSExRTmNFcURHd0piU0tWMmNLenVxajU3blBJOUxfUkpnWmZnU2lTWExYTUJEbw?oc=5",
-      "published_at": "2026-09-01T16:47:47+00:00",
-      "category": "GN: surgical robot",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOc3U4TkNNLXhyLU9iV3NhN0xVUXZxRkZrb0tTWkZ3R0VYRjhVc1V3WWhpRzNOcUxaNVFDQ1FsbGE5MFJaaWF5N0pzTl84cFhFNkN3ZEJEWTBXaWZPdTJsNkVXNVRLVWxHV1ZhWUJnRDlheEpuWWhBLXIzOVRGZGRJbmtOUlpLakswYTU1RUgtZzNUNlZFZlJFUTVSc2tzUDNjU1MxYUhIS1Ixbm9XM0dySGQyMko3VnRuVXhEWnpfVWpVdnN5Zkt2ak5zZmJOSmN4TGRNMXRFb0U?oc=5",
+      "published_at": "2026-09-02T04:21:00+00:00",
+      "category": "GN: robot vacuum",
       "gn_label": "robotics",
-      "site_name": "GN: surgical robot",
-      "source": "GN: surgical robot",
-      "site_id": "GN: surgical robot",
-      "description": "Enovis to acquire eCential Robotics for €155 million, plans to bring surgical robot to market  MassDevice",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 5,
-      "timeliness": 17.23,
-      "writing_value": 5,
-      "total_score": 102.23
-    },
-    {
-      "id": "55c921b3b19dd21d7b884f6806435c531c9369c0",
-      "title": "Enovis Targets Robotic Surgery Expansion With €155M eCential Robotics Deal - Yahoo Finance",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQUWFzUWREX21jcFRmZWhNXzJtRjlZajYtcG1XMkc4Ml9Sc2pGc2hWZFpyU2cxSnlPQk9SRWJWVDVWVENrV1FoUExHZ2h6aFVzNXZhODhRV0FjdjhqdGFPd3VFQWJOaDF2elhhNkJxdkdHSm9jUGVlU0V5UjVrYmZCMXR0VnBELWZIOVVHbkJNYWdOMl9Xa2JPOEE1d1E5ZmdfZGtz?oc=5",
-      "published_at": "2026-09-01T14:03:37+00:00",
-      "category": "GN: surgical robot",
-      "gn_label": "robotics",
-      "site_name": "GN: surgical robot",
-      "source": "GN: surgical robot",
-      "site_id": "GN: surgical robot",
-      "description": "Enovis Targets Robotic Surgery Expansion With €155M eCential Robotics Deal  Yahoo Finance",
+      "site_name": "GN: robot vacuum",
+      "source": "GN: robot vacuum",
+      "site_id": "GN: robot vacuum",
+      "description": "Wife caught cheating by robot vacuum - but husband jailed  PerthNow",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 14.49,
+      "timeliness": 28.25,
       "writing_value": 0,
-      "total_score": 89.49
-    },
-    {
-      "id": "2e6610299532227632dd120da97ccfa373d9a023",
-      "title": "UMCH performs Bangladesh’s first robotic surgery - New Age BD",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQdlpiVlN5U21lcWNsQTdrd19pM0JTcFl3UWVoeW03dHZEVU5YaGpycC1wUk04d2tHaVBfdEhGR1hUZkFSM0hIWEtVTGJldkM4cXFxbmRPcjVXNm5ZR0ZRRVNGdndWQUFOS1k1UEgybUdFRmphYlE1bEhUcUdRZ1AyNjVMSUdJTVJiMjBMUEJ4UmV0TnU1NExhOXJqaDdIdw?oc=5",
-      "published_at": "2026-09-01T18:53:00+00:00",
-      "category": "GN: surgical robot",
-      "gn_label": "robotics",
-      "site_name": "GN: surgical robot",
-      "source": "GN: surgical robot",
-      "site_id": "GN: surgical robot",
-      "description": "UMCH performs Bangladesh’s first robotic surgery  New Age BD",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 19.32,
-      "writing_value": 0,
-      "total_score": 94.32
-    },
-    {
-      "id": "b997258d7591bfd624fc142f8b965c275d413af1",
-      "title": "Moroccan Study Puts Country at Forefront of African Robotic Surgery - The North Africa Post",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNS3N3djV2ODVtYTRGWlJZb1ZxNmJ0RmhLNXA5c2ViZnhjMVk4TVJZRlQxR0RyNkg0VE9uUF9DQWJKVEwwYWx4U1hOVlZDamF4cFZ4eWRwbmZIRkQzcmZxNVM0RmpmN0oyQ2UyX0VCclNObWdvU3BjUkpZWXNRNzlLeC1fSnI0UjJ1QzVpUVcwMXJpbFlMX09FMkk0TDRfY0JMdjV2VF9pYXZKZw?oc=5",
-      "published_at": "2026-09-01T15:05:59+00:00",
-      "category": "GN: surgical robot",
-      "gn_label": "robotics",
-      "site_name": "GN: surgical robot",
-      "source": "GN: surgical robot",
-      "site_id": "GN: surgical robot",
-      "description": "Moroccan Study Puts Country at Forefront of African Robotic Surgery  The North Africa Post",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 15.53,
-      "writing_value": 0,
-      "total_score": 90.53
-    },
-    {
-      "id": "da96bfa919f11f419775915b5c628d8d30f1f268",
-      "title": "United Healthcare performs Bangladesh's first robotic surgeries - The Daily Star",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOQWsyaVh6dkhLOEJRQ2lXT0hycUNwSzFrcDJDZTByRU5QV1I2cGlPUEdyTzU3UEtSNzRuelJqYVM2WVEwTzRUMXpFTkU5NE1PX1FJUmNyU3RSdUtVSmtlaVhubGF6ZkpLWXotRURUTWpWaC1ycEh1QTdWbVhuNFBiRlpaeHB3a3N3WnhRNkVwUWtRV1Y1OUc3WHNtb1M4ZzdOakl0WVlBSU9GcWhkTnNvcg?oc=5",
-      "published_at": "2026-09-01T18:36:42+00:00",
-      "category": "GN: surgical robot",
-      "gn_label": "robotics",
-      "site_name": "GN: surgical robot",
-      "source": "GN: surgical robot",
-      "site_id": "GN: surgical robot",
-      "description": "United Healthcare performs Bangladesh's first robotic surgeries  The Daily Star",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 19.04,
-      "writing_value": 0,
-      "total_score": 94.04
+      "total_score": 103.25
     },
     {
       "id": "5fc9fc926c273a9446f72897ea2d0bcc3a7f5998",
@@ -399,9 +273,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 18.51,
+      "timeliness": 17.98,
       "writing_value": 0,
-      "total_score": 93.51
+      "total_score": 92.98
     },
     {
       "id": "07ad3229a322ecd3dfe70896e411ced34af44ebe",
@@ -420,9 +294,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 13.16,
+      "timeliness": 12.63,
       "writing_value": 5,
-      "total_score": 98.16
+      "total_score": 97.63
     },
     {
       "id": "48b4539a4131baed8b21b905dab65172bc9e331b",
@@ -441,9 +315,114 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 13.11,
+      "timeliness": 12.58,
       "writing_value": 0,
-      "total_score": 88.11
+      "total_score": 87.58
+    },
+    {
+      "id": "aaaf276702c996c5a4eaa711467e92f719eb6c62",
+      "title": "Medtronic invests $700M in Cornerstone Robotics - MobiHealthNews",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOeWFZZ3k5bmJsMVhzWWJOOUN0OGJ5WEl6NDJhNnBZREhrYnVZVkR6dHg4UmtBTkk0MEIyVHVhdEJvZFk2aWIzUmFWNFpLQWMyRHVQN2pMU1R0Vk9yanRHTzkxYzh2UG5PdWk1MmpDSkJ2Yi1WTzBRQldLd2N1ODFWOHhXY2JrUQ?oc=5",
+      "published_at": "2026-09-01T17:28:13+00:00",
+      "category": "GN: surgical robot",
+      "gn_label": "robotics",
+      "site_name": "GN: surgical robot",
+      "source": "GN: surgical robot",
+      "site_id": "GN: surgical robot",
+      "description": "Medtronic invests $700M in Cornerstone Robotics  MobiHealthNews",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 17.37,
+      "writing_value": 0,
+      "total_score": 92.37
+    },
+    {
+      "id": "c1401c28272a7c91c9b6ecbdd9e712720a6b4213",
+      "title": "Enovis to acquire eCential Robotics for €155 million, plans to bring surgical robot to market - MassDevice",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPU1BYb1NsXzJrbzZ3VkxlX2dyS3RiSWNVcGZTa2FycFZ0LWJXU1M4UEU1U3NGYVRYRFJGLWhXbVZBMnVYQURzOG55aHB6Q1N2ODFEd2ZPV2lxUmRpZE91czNxLTUySXVjZ0N3NnRtLWZiQTd2QllUOGRnQjBHcnFiSmE5LW1FOU85azA2SWdHSExRTmNFcURHd0piU0tWMmNLenVxajU3blBJOUxfUkpnWmZnU2lTWExYTUJEbw?oc=5",
+      "published_at": "2026-09-01T16:47:47+00:00",
+      "category": "GN: surgical robot",
+      "gn_label": "robotics",
+      "site_name": "GN: surgical robot",
+      "source": "GN: surgical robot",
+      "site_id": "GN: surgical robot",
+      "description": "Enovis to acquire eCential Robotics for €155 million, plans to bring surgical robot to market  MassDevice",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 16.7,
+      "writing_value": 5,
+      "total_score": 101.7
+    },
+    {
+      "id": "2e6610299532227632dd120da97ccfa373d9a023",
+      "title": "UMCH performs Bangladesh’s first robotic surgery - New Age BD",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQdlpiVlN5U21lcWNsQTdrd19pM0JTcFl3UWVoeW03dHZEVU5YaGpycC1wUk04d2tHaVBfdEhGR1hUZkFSM0hIWEtVTGJldkM4cXFxbmRPcjVXNm5ZR0ZRRVNGdndWQUFOS1k1UEgybUdFRmphYlE1bEhUcUdRZ1AyNjVMSUdJTVJiMjBMUEJ4UmV0TnU1NExhOXJqaDdIdw?oc=5",
+      "published_at": "2026-09-01T18:53:00+00:00",
+      "category": "GN: surgical robot",
+      "gn_label": "robotics",
+      "site_name": "GN: surgical robot",
+      "source": "GN: surgical robot",
+      "site_id": "GN: surgical robot",
+      "description": "UMCH performs Bangladesh’s first robotic surgery  New Age BD",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 18.79,
+      "writing_value": 0,
+      "total_score": 93.79
+    },
+    {
+      "id": "b997258d7591bfd624fc142f8b965c275d413af1",
+      "title": "Moroccan Study Puts Country at Forefront of African Robotic Surgery - The North Africa Post",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNS3N3djV2ODVtYTRGWlJZb1ZxNmJ0RmhLNXA5c2ViZnhjMVk4TVJZRlQxR0RyNkg0VE9uUF9DQWJKVEwwYWx4U1hOVlZDamF4cFZ4eWRwbmZIRkQzcmZxNVM0RmpmN0oyQ2UyX0VCclNObWdvU3BjUkpZWXNRNzlLeC1fSnI0UjJ1QzVpUVcwMXJpbFlMX09FMkk0TDRfY0JMdjV2VF9pYXZKZw?oc=5",
+      "published_at": "2026-09-01T15:05:59+00:00",
+      "category": "GN: surgical robot",
+      "gn_label": "robotics",
+      "site_name": "GN: surgical robot",
+      "source": "GN: surgical robot",
+      "site_id": "GN: surgical robot",
+      "description": "Moroccan Study Puts Country at Forefront of African Robotic Surgery  The North Africa Post",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 15.0,
+      "writing_value": 0,
+      "total_score": 90.0
+    },
+    {
+      "id": "6e4b5b1fd696d26ecad641e4ee4fb65d54d879e7",
+      "title": "Enovis Targets Robotic Surgery Expansion With €155M eCential Robotics Deal - finance.yahoo.com",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQUWFzUWREX21jcFRmZWhNXzJtRjlZajYtcG1XMkc4Ml9Sc2pGc2hWZFpyU2cxSnlPQk9SRWJWVDVWVENrV1FoUExHZ2h6aFVzNXZhODhRV0FjdjhqdGFPd3VFQWJOaDF2elhhNkJxdkdHSm9jUGVlU0V5UjVrYmZCMXR0VnBELWZIOVVHbkJNYWdOMl9Xa2JPOEE1d1E5ZmdfZGtz?oc=5",
+      "published_at": "2026-09-01T14:03:37+00:00",
+      "category": "GN: surgical robot",
+      "gn_label": "robotics",
+      "site_name": "GN: surgical robot",
+      "source": "GN: surgical robot",
+      "site_id": "GN: surgical robot",
+      "description": "Enovis Targets Robotic Surgery Expansion With €155M eCential Robotics Deal  finance.yahoo.com",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 13.96,
+      "writing_value": 0,
+      "total_score": 88.96
     },
     {
       "id": "db5eb09d4fa3f7bf6d984f220773aecb4c1bac34",
@@ -462,9 +441,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 12.67,
+      "timeliness": 12.14,
       "writing_value": 0,
-      "total_score": 87.67
+      "total_score": 87.14
     },
     {
       "id": "e5b6262abe5097d13ab2948a77af02c411b73117",
@@ -483,9 +462,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.6,
+      "timeliness": 28.07,
       "writing_value": 0,
-      "total_score": 103.6
+      "total_score": 103.07
     },
     {
       "id": "a9bada49fb170bdd0af9c16cba3d4aa01aa68982",
@@ -504,9 +483,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.02,
+      "timeliness": 27.49,
       "writing_value": 0,
-      "total_score": 103.02
+      "total_score": 102.49
     },
     {
       "id": "934edce14bc0922a198afc90e8d861f9096b65df",
@@ -525,9 +504,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.66,
+      "timeliness": 27.13,
       "writing_value": 0,
-      "total_score": 102.66
+      "total_score": 102.13
     },
     {
       "id": "16ad5befac4b9831d637c8d081b9578499457bb0",
@@ -546,9 +525,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.11,
+      "timeliness": 26.58,
       "writing_value": 0,
-      "total_score": 102.11
+      "total_score": 101.58
+    },
+    {
+      "id": "b70f2560dba3f044cdc26036d4ea2a228fa3300f",
+      "title": "宇树科技上市11个交易日 股价较首日高点腰斩 - 联合早报",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1oOHl1aWdRb00xY0N3b3lwaS1qVUx0a1JySVk2MTNMX0daNmNCNVBkSmlTX0tlZkpsVU91d1Y4RzNrOU4wTFR2WmJEdWNFTEV2QjVVSnZOYkNTdS1RVm9ONzVUVU8tWElZd2c?oc=5",
+      "published_at": "2026-09-02T02:34:43+00:00",
+      "category": "GN: 宇树科技",
+      "gn_label": "robotics",
+      "site_name": "GN: 宇树科技",
+      "source": "GN: 宇树科技",
+      "site_id": "GN: 宇树科技",
+      "description": "宇树科技上市11个交易日 股价较首日高点腰斩  联合早报",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 26.48,
+      "writing_value": 0,
+      "total_score": 101.48
     },
     {
       "id": "7997a92e400a8a2eb5ef7bf4ffa6d2bdad2bcff2",
@@ -567,30 +567,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.4,
+      "timeliness": 26.87,
       "writing_value": 0,
-      "total_score": 102.4
+      "total_score": 101.87
     },
     {
-      "id": "28b7f127cdfc01da4f3fba15e88121d7a17de33d",
-      "title": "宇树科技股价腰斩，盘中首次跌破550元 - finance.sina.com.cn",
+      "id": "71b30d54c5b177b4535db38903dc1e7864b53bad",
+      "title": "科技头版｜宇树离职员工：内部只罚不奖，工资偏低 - China Digital Times",
       "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9YeVhXVzRDcUJoenU1TjVmOHhtSEhvRWRlWDNMN1h6dTNicldHNm4tbTNFMkZsaHJLNW9hS1pfTjBJdk1ReVVYRUVTYnVHRkVjV3JFX2l4dFNHY2dGMXB4eGNnOTVxcDBoUVNSajQ2RkljLU9KTFE?oc=5",
-      "published_at": "2026-09-02T01:55:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBTbHJIQ1RGYmY3eEdJQWNPTFpWeUt0M0Z1RUVTZ0dPNG9udE0tUEVpeUdTYlhoandCYXNRNTFxUFFXY2hSQVRGbHRVMVRVd003OW9WNDE5OWw4bHVoUHfSAV5BVV95cUxQU2xySENURmJmN3hHSUFjT0xaVnlLdDNGdUVFU2dHTzRvbnRNLVBFaXlHU2JYaGp3QmFzUTUxcVBRV2NoUkFURmx0VTFUVXdNNzlvVjQxOTlsOGx1aFB3?oc=5",
+      "published_at": "2026-09-01T21:27:24+00:00",
       "category": "GN: 宇树科技",
       "gn_label": "robotics",
       "site_name": "GN: 宇树科技",
       "source": "GN: 宇树科技",
       "site_id": "GN: 宇树科技",
-      "description": "宇树科技股价腰斩，盘中首次跌破550元  finance.sina.com.cn",
+      "description": "科技头版｜宇树离职员工：内部只罚不奖，工资偏低  China Digital Times",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.35,
+      "timeliness": 21.36,
       "writing_value": 0,
-      "total_score": 101.35
+      "total_score": 96.36
     },
     {
       "id": "279671f4adc3cf93a44c46b4c61c9c365acdfaf3",
@@ -609,9 +609,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.05,
+      "timeliness": 27.52,
       "writing_value": 0,
-      "total_score": 103.05
+      "total_score": 102.52
     },
     {
       "id": "7e870a109fd18144861c76973098928c0ae928a0",
@@ -630,9 +630,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.98,
+      "timeliness": 26.45,
       "writing_value": 0,
-      "total_score": 101.98
+      "total_score": 101.45
     },
     {
       "id": "3b65270217128e78b048e31eabe0eacedce1b653",
@@ -651,30 +651,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.35,
+      "timeliness": 25.82,
       "writing_value": 0,
-      "total_score": 101.35
-    },
-    {
-      "id": "ee3bf8efc470ed5444b9659edc79ccb58d3769c1",
-      "title": "一财主播说| 宇树科技股价腰斩 王兴兴：希望投资者认同公司长期价值才买 - 第一财经",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBzTWJJUFM3dEl3STI5ejFUSHpIQUMwYUpxcnBzUEFiMnRvZlhOQ1R4YWdzQmV2aTRlS2ViSGNPVnQ3WkJablNqdTNtT0FPb0F6RGc?oc=5",
-      "published_at": "2026-09-02T04:05:33+00:00",
-      "category": "GN: 宇树科技",
-      "gn_label": "robotics",
-      "site_name": "GN: 宇树科技",
-      "source": "GN: 宇树科技",
-      "site_id": "GN: 宇树科技",
-      "description": "一财主播说| 宇树科技股价腰斩 王兴兴：希望投资者认同公司长期价值才买  第一财经",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 28.52,
-      "writing_value": 0,
-      "total_score": 103.52
+      "total_score": 100.82
     },
     {
       "id": "fed7652fcfd3a9dff5b8896fb7e5b84710f169d9",
@@ -693,9 +672,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.98,
+      "timeliness": 26.45,
       "writing_value": 0,
-      "total_score": 101.98
+      "total_score": 101.45
     },
     {
       "id": "f39e86fb826ef17683f5b67144a89302e35c7831",
@@ -714,9 +693,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.13,
+      "timeliness": 25.61,
       "writing_value": 0,
-      "total_score": 101.13
+      "total_score": 100.61
     },
     {
       "id": "cbaacad4421ab4d85c21be9f5ea961fed72fd256",
@@ -735,9 +714,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 12.58,
+      "timeliness": 12.05,
       "writing_value": 0,
-      "total_score": 87.58
+      "total_score": 87.05
     },
     {
       "id": "8d66feecf4b0ed5c1702025fb1cd8adb85610f6b",
@@ -756,9 +735,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.7,
+      "timeliness": 27.17,
       "writing_value": 0,
-      "total_score": 102.7
+      "total_score": 102.17
     },
     {
       "id": "d5c3ce8f25a9c5bf88817e9f5f7c2549c1c49700",
@@ -777,9 +756,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.58,
+      "timeliness": 26.05,
       "writing_value": 0,
-      "total_score": 101.58
+      "total_score": 101.05
     },
     {
       "id": "bfbf7dd2a9aa97769ed5edf0208bae33bfdd8a2b",
@@ -798,9 +777,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.23,
+      "timeliness": 25.7,
       "writing_value": 0,
-      "total_score": 101.23
+      "total_score": 100.7
     },
     {
       "id": "7ef46cf2f29be73a00690c3e2df99d9980d46927",
@@ -819,30 +798,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 12.43,
+      "timeliness": 11.9,
       "writing_value": 0,
-      "total_score": 87.43
-    },
-    {
-      "id": "e53b8fc11f86858e03c96821705c3417708630ff",
-      "title": "千觉发布整手触觉解决方案2.0，补齐从局部感知到整手交互的关键能力|上观新闻|灵巧手|机器人|指尖|掌心_手机新浪网 - finance.sina.cn",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOMWdZVzg1RGNLYVB3dGNKX1JsMXR5MUxNQ0toZkkxWkE0eWw5MlpSS2d3NEE4WVlyU0FGd3g4dlE1OXRHLVU2QTBNNEdQZy1GY25rcDMxWTNWX0M1cXVQVXFlaldteEdIYWhCU3RVYXMzTHF0bmZ3N2JhbnM3Nzd5aGp4Z1lxZnFqeUVhWmpyRnN5M2dXTHdON0QzRFdtZWluTTZtWWpvbw?oc=5",
-      "published_at": "2026-09-01T15:00:00+00:00",
-      "category": "GN: 灵巧手",
-      "gn_label": "robotics",
-      "site_name": "GN: 灵巧手",
-      "source": "GN: 灵巧手",
-      "site_id": "GN: 灵巧手",
-      "description": "千觉发布整手触觉解决方案2.0，补齐从局部感知到整手交互的关键能力|上观新闻|灵巧手|机器人|指尖|掌心_手机新浪网  finance.sina.cn",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 15.43,
-      "writing_value": 0,
-      "total_score": 90.43
+      "total_score": 86.9
     },
     {
       "id": "e477d979495ada25317b3cdedf62ff721e222230",
@@ -861,9 +819,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.78,
+      "timeliness": 27.25,
       "writing_value": 0,
-      "total_score": 102.78
+      "total_score": 102.25
+    },
+    {
+      "id": "d2aeeb68e0ae8623bc45857b26e2e7b888353418",
+      "title": "千觉发布整手触觉解决方案2.0，补齐从局部感知到整手交互的关键能力|上观新闻|灵巧手|机器人|指尖|掌心_手机新浪网 - 新浪财经",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOMWdZVzg1RGNLYVB3dGNKX1JsMXR5MUxNQ0toZkkxWkE0eWw5MlpSS2d3NEE4WVlyU0FGd3g4dlE1OXRHLVU2QTBNNEdQZy1GY25rcDMxWTNWX0M1cXVQVXFlaldteEdIYWhCU3RVYXMzTHF0bmZ3N2JhbnM3Nzd5aGp4Z1lxZnFqeUVhWmpyRnN5M2dXTHdON0QzRFdtZWluTTZtWWpvbw?oc=5",
+      "published_at": "2026-09-01T15:00:00+00:00",
+      "category": "GN: 灵巧手",
+      "gn_label": "robotics",
+      "site_name": "GN: 灵巧手",
+      "source": "GN: 灵巧手",
+      "site_id": "GN: 灵巧手",
+      "description": "千觉发布整手触觉解决方案2.0，补齐从局部感知到整手交互的关键能力|上观新闻|灵巧手|机器人|指尖|掌心_手机新浪网  新浪财经",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 14.9,
+      "writing_value": 0,
+      "total_score": 89.9
     }
   ],
   "fallback_used": false
