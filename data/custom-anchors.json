@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-02T04:39:03.629256+00:00",
+  "generated_at": "2026-09-02T04:55:06.342119+00:00",
   "window_start": "2026-09-01T19:00:00+08:00",
-  "window_end": "2026-09-02T12:35:38.721620+08:00",
-  "total_items": 39,
+  "window_end": "2026-09-02T12:51:02.089191+08:00",
+  "total_items": 42,
   "items": [
     {
       "id": "56fa504257d3df851c5cdbee905f716c46f68236",
@@ -21,9 +21,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 15.41,
+      "timeliness": 15.15,
       "writing_value": 5,
-      "total_score": 100.41
+      "total_score": 100.15
     },
     {
       "id": "a83347bfc447d670093c0de12cb74f67eb401e30",
@@ -42,9 +42,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 25.59,
+      "timeliness": 25.34,
       "writing_value": 5,
-      "total_score": 110.59
+      "total_score": 110.34
     },
     {
       "id": "540dbdc826c1929d19bb068b797c307b308dc96d",
@@ -63,9 +63,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 15.37,
+      "timeliness": 15.12,
       "writing_value": 5,
-      "total_score": 100.37
+      "total_score": 100.12
     },
     {
       "id": "683f1132e67b8122206e432e93b3ce1c4e3fd5cd",
@@ -84,9 +84,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 15.54,
+      "timeliness": 15.28,
       "writing_value": 0,
-      "total_score": 90.54
+      "total_score": 90.28
     },
     {
       "id": "ac1f466d63fc2df9b69525f5b1567f62e85267e9",
@@ -105,9 +105,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 18.36,
+      "timeliness": 18.1,
       "writing_value": 0,
-      "total_score": 93.36
+      "total_score": 93.1
     },
     {
       "id": "747b1f369ac62251cddcc440050c35fd7364ef8c",
@@ -126,51 +126,51 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.85,
+      "timeliness": 27.6,
       "writing_value": 0,
-      "total_score": 102.85
+      "total_score": 102.6
     },
     {
-      "id": "a2b8404c8533cece9ee7c1896203403a9125bb0c",
-      "title": "Norbert Health Raises $14 Million Series A to Power Autonomous Robotic Nursing Assistants - PR Newswire",
+      "id": "b9f0ad067243b03f1de896af524f5ff68c012992",
+      "title": "China outlines embodied intelligence measures for robot deployment - Digital Watch Observatory",
       "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPQzJrQUNLNHlyUmFMTkoyWm9nczNyTUlneW9PS25VeE9OeERyRzhmUWVXMEpJUk4tSExrS2JRcUpNdFRIVTBZZTVkcE55LTQtZ3BFLWdNV0h1X3o4MU9PeXJMSTFhdEhieEVSNmh4WEl5M3lFTG5nMExvRkdpbzhoWjlpMVJqX3E4QWJ2LVFyQ3hNUXBNRjA5NUllZ1BhQlB2RW1JUEZRYWVWU0dhSnF2Nl9OTlZLckpoMHQtRDNwWm9DUFdTN1FkREN1bkNvRWNSWDNpbVVYUk5xVjh4?oc=5",
-      "published_at": "2026-09-01T13:01:00+00:00",
-      "category": "GN: autonomous robot",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE51Y2dmNlVNNEExUHVTN2dZOF8xNFhmWWVLMElDX3pwMWttUmRzTElET3hPVHkzM0Y4UVBUWnhwM3NYNl9tVnppSW9zNmZTTndJbzhoV21SOFdNREt5aVFuY2owSjQwMUxYNV92OG1RX1pkeWZwYWEzazB3?oc=5",
+      "published_at": "2026-09-01T15:21:27+00:00",
+      "category": "GN: embodied AI",
       "gn_label": "robotics",
-      "site_name": "GN: autonomous robot",
-      "source": "GN: autonomous robot",
-      "site_id": "GN: autonomous robot",
-      "description": "Norbert Health Raises $14 Million Series A to Power Autonomous Robotic Nursing Assistants  PR Newswire",
-      "ai_score": 65.0,
+      "site_name": "GN: embodied AI",
+      "source": "GN: embodied AI",
+      "site_id": "GN: embodied AI",
+      "description": "China outlines embodied intelligence measures for robot deployment  Digital Watch Observatory",
+      "ai_score": 80.0,
       "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 5,
-      "timeliness": 14.42,
-      "writing_value": 5,
-      "total_score": 99.42
-    },
-    {
-      "id": "c7f08a5f7c1dcfceccd9be9ad8325a300d15f0b9",
-      "title": "Pudu Robotics launches GT series commercial robotic mowers - Equipment Finance News",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNbVNCRDNPaFFiTDBIMVdjNEVTTEs4bVMwVFNUWVF0Z0F3YURmZGRwa2NYOHctc1NXWWlHTEVSUHJxeGFpQ3Z0NE5yQnM1cnNJRnlicE9GSVktRXdRXzluM3ktVi1JRDhxRHFpY0JaTktQQmNZODNwUW04UGkydjM2b0JwWGNtcUwzMTZaSWdHQTlPWW91SnFMci01dVZ6U0tEWFV4ejdrdGFxTVZsLVE?oc=5",
-      "published_at": "2026-09-01T20:59:05+00:00",
-      "category": "GN: autonomous robot",
-      "gn_label": "robotics",
-      "site_name": "GN: autonomous robot",
-      "source": "GN: autonomous robot",
-      "site_id": "GN: autonomous robot",
-      "description": "Pudu Robotics launches GT series commercial robotic mowers  Equipment Finance News",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
+      "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 22.39,
+      "timeliness": 16.51,
       "writing_value": 0,
-      "total_score": 97.39
+      "total_score": 106.51
+    },
+    {
+      "id": "9084fe4df156f098719d8f3dd1da656981d5cc4e",
+      "title": "Musk predicts there will be 1 billion humanoid robots in 10 years - Yahoo Finance",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQZFNlQkl3d0tqWTlacld4Sm5JVDVXRG91aXdDVkx4ZlBwenpQd01RLXhJdy1fQzJDclRWS3B4YXl2blZDTEcyRFFydmpLcjFYdUxmZUdVeFAtRFMwVGdadVNFMUtIck9LUS1tcTN6d2loR1F2eG5CMUx5TlY5V1VlZkJVSF9DUEM0NUloaE9CemphdHgyRHNzbTlIdHRlZmlDeW1LdU5uV21XaHJ1LTNTQ3ZB?oc=5",
+      "published_at": "2026-09-01T14:25:32+00:00",
+      "category": "GN: humanoid robot",
+      "gn_label": "humanoid",
+      "site_name": "GN: humanoid robot",
+      "source": "GN: humanoid robot",
+      "site_id": "GN: humanoid robot",
+      "description": "Musk predicts there will be 1 billion humanoid robots in 10 years  Yahoo Finance",
+      "ai_score": 80.0,
+      "ai_label": "humanoid",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 15.58,
+      "writing_value": 0,
+      "total_score": 105.58
     },
     {
       "id": "8d8780dc9177bd6608076eabf04dfe8eec7f91da",
@@ -189,9 +189,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 14.12,
+      "timeliness": 13.86,
       "writing_value": 5,
-      "total_score": 99.12
+      "total_score": 98.86
     },
     {
       "id": "4a23dec8209bfedaea5e58b29994e52ece0dc6e6",
@@ -210,9 +210,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 20.04,
+      "timeliness": 19.79,
       "writing_value": 5,
-      "total_score": 105.04
+      "total_score": 104.79
     },
     {
       "id": "27655ec3608b0f62bd7c727f02e2318b9d4747c0",
@@ -231,9 +231,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.9,
+      "timeliness": 24.65,
       "writing_value": 0,
-      "total_score": 99.9
+      "total_score": 99.65
     },
     {
       "id": "c3ad17245cf01c41666d1fa2317be2df2f3d30ea",
@@ -252,9 +252,51 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 15.47,
+      "timeliness": 15.21,
       "writing_value": 0,
-      "total_score": 90.47
+      "total_score": 90.21
+    },
+    {
+      "id": "a2b8404c8533cece9ee7c1896203403a9125bb0c",
+      "title": "Norbert Health Raises $14 Million Series A to Power Autonomous Robotic Nursing Assistants - PR Newswire",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPQzJrQUNLNHlyUmFMTkoyWm9nczNyTUlneW9PS25VeE9OeERyRzhmUWVXMEpJUk4tSExrS2JRcUpNdFRIVTBZZTVkcE55LTQtZ3BFLWdNV0h1X3o4MU9PeXJMSTFhdEhieEVSNmh4WEl5M3lFTG5nMExvRkdpbzhoWjlpMVJqX3E4QWJ2LVFyQ3hNUXBNRjA5NUllZ1BhQlB2RW1JUEZRYWVWU0dhSnF2Nl9OTlZLckpoMHQtRDNwWm9DUFdTN1FkREN1bkNvRWNSWDNpbVVYUk5xVjh4?oc=5",
+      "published_at": "2026-09-01T13:01:00+00:00",
+      "category": "GN: autonomous robot",
+      "gn_label": "robotics",
+      "site_name": "GN: autonomous robot",
+      "source": "GN: autonomous robot",
+      "site_id": "GN: autonomous robot",
+      "description": "Norbert Health Raises $14 Million Series A to Power Autonomous Robotic Nursing Assistants  PR Newswire",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 14.17,
+      "writing_value": 5,
+      "total_score": 99.17
+    },
+    {
+      "id": "c7f08a5f7c1dcfceccd9be9ad8325a300d15f0b9",
+      "title": "Pudu Robotics launches GT series commercial robotic mowers - Equipment Finance News",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNbVNCRDNPaFFiTDBIMVdjNEVTTEs4bVMwVFNUWVF0Z0F3YURmZGRwa2NYOHctc1NXWWlHTEVSUHJxeGFpQ3Z0NE5yQnM1cnNJRnlicE9GSVktRXdRXzluM3ktVi1JRDhxRHFpY0JaTktQQmNZODNwUW04UGkydjM2b0JwWGNtcUwzMTZaSWdHQTlPWW91SnFMci01dVZ6U0tEWFV4ejdrdGFxTVZsLVE?oc=5",
+      "published_at": "2026-09-01T20:59:05+00:00",
+      "category": "GN: autonomous robot",
+      "gn_label": "robotics",
+      "site_name": "GN: autonomous robot",
+      "source": "GN: autonomous robot",
+      "site_id": "GN: autonomous robot",
+      "description": "Pudu Robotics launches GT series commercial robotic mowers  Equipment Finance News",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 22.14,
+      "writing_value": 0,
+      "total_score": 97.14
     },
     {
       "id": "5fc9fc926c273a9446f72897ea2d0bcc3a7f5998",
@@ -273,9 +315,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 19.48,
+      "timeliness": 19.23,
       "writing_value": 0,
-      "total_score": 94.48
+      "total_score": 94.23
     },
     {
       "id": "07ad3229a322ecd3dfe70896e411ced34af44ebe",
@@ -294,9 +336,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 14.14,
+      "timeliness": 13.88,
       "writing_value": 5,
-      "total_score": 99.14
+      "total_score": 98.88
     },
     {
       "id": "94778565fa1abb72a075db309b9f02c7b3f28030",
@@ -315,9 +357,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 14.09,
+      "timeliness": 13.83,
       "writing_value": 0,
-      "total_score": 89.09
+      "total_score": 88.83
+    },
+    {
+      "id": "c1401c28272a7c91c9b6ecbdd9e712720a6b4213",
+      "title": "Enovis to acquire eCential Robotics for €155 million, plans to bring surgical robot to market - MassDevice",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPU1BYb1NsXzJrbzZ3VkxlX2dyS3RiSWNVcGZTa2FycFZ0LWJXU1M4UEU1U3NGYVRYRFJGLWhXbVZBMnVYQURzOG55aHB6Q1N2ODFEd2ZPV2lxUmRpZE91czNxLTUySXVjZ0N3NnRtLWZiQTd2QllUOGRnQjBHcnFiSmE5LW1FOU85azA2SWdHSExRTmNFcURHd0piU0tWMmNLenVxajU3blBJOUxfUkpnWmZnU2lTWExYTUJEbw?oc=5",
+      "published_at": "2026-09-01T16:47:47+00:00",
+      "category": "GN: surgical robot",
+      "gn_label": "robotics",
+      "site_name": "GN: surgical robot",
+      "source": "GN: surgical robot",
+      "site_id": "GN: surgical robot",
+      "description": "Enovis to acquire eCential Robotics for €155 million, plans to bring surgical robot to market  MassDevice",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 17.95,
+      "writing_value": 5,
+      "total_score": 102.95
     },
     {
       "id": "55c921b3b19dd21d7b884f6806435c531c9369c0",
@@ -336,9 +399,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 15.47,
+      "timeliness": 15.21,
       "writing_value": 0,
-      "total_score": 90.47
+      "total_score": 90.21
     },
     {
       "id": "2e6610299532227632dd120da97ccfa373d9a023",
@@ -357,9 +420,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 20.29,
+      "timeliness": 20.03,
       "writing_value": 0,
-      "total_score": 95.29
+      "total_score": 95.03
     },
     {
       "id": "b997258d7591bfd624fc142f8b965c275d413af1",
@@ -378,9 +441,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 16.51,
+      "timeliness": 16.25,
       "writing_value": 0,
-      "total_score": 91.51
+      "total_score": 91.25
     },
     {
       "id": "da96bfa919f11f419775915b5c628d8d30f1f268",
@@ -399,30 +462,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 20.02,
+      "timeliness": 19.76,
       "writing_value": 0,
-      "total_score": 95.02
+      "total_score": 94.76
     },
     {
-      "id": "fc339508e92c7a30fbd0d09beb2af7f43c746b9c",
-      "title": "Wetour Robotics demonstrates muscle-vision robot learning system - Investing.com",
+      "id": "db5eb09d4fa3f7bf6d984f220773aecb4c1bac34",
+      "title": "Wetour Robotics demonstrates muscle-vision robot learning system By Investing.com - Investing.com UK",
       "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPcWdwRUxrbEZKdy1SZG0tcmJfS3d4VDNVd1JjNi1QNE5tZmU3UXBHdFh2aHdEaDRRSVFtSWNaQ2tmNlVaekpvd3plLVVONTQ2ejl0QVRJZDVSWVcwdVU1d0lRYTVLZnlDUV9EMWZPS1dNRnprUEFjbERUbVJTYXlFRUEyMUV1bURMcDJhVnV2elp2X0FFalJpUjhGR0JBaS1vTXp6VndmbGxpckFFS2tDZm12eVNZNGpvU211Sg?oc=5",
-      "published_at": "2026-09-01T12:29:31+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNZGp3eG10dGhRandXRE1DbWJwaFZUZ0Q3SGlONjFUZ0gxd2R6ZjFhS0ZZMHduem5KcTMyTHV3SGduc2hpbW54eTVsRGRaQms4ajU1c1lHS2R2Slg1dEtRcDB2TWhLNUlyN2VyVHlsRkhWMEMwY3pyRFc5aHdvMFNtS2c1dlFkMWZiVU5JY2VMSE11dVNpYlA0V0ROLTc1VDB4bGs0a3FWVVlQTG9WTllIdUpLeUlBWFh2OVhrOUxablR6Zw?oc=5",
+      "published_at": "2026-09-01T12:14:00+00:00",
       "category": "GN: robot learning",
       "gn_label": "robotics",
       "site_name": "GN: robot learning",
       "source": "GN: robot learning",
       "site_id": "GN: robot learning",
-      "description": "Wetour Robotics demonstrates muscle-vision robot learning system  Investing.com",
+      "description": "Wetour Robotics demonstrates muscle-vision robot learning system By Investing.com  Investing.com UK",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 13.9,
+      "timeliness": 13.38,
       "writing_value": 0,
-      "total_score": 88.9
+      "total_score": 88.38
     },
     {
       "id": "e5b6262abe5097d13ab2948a77af02c411b73117",
@@ -441,13 +504,13 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.57,
+      "timeliness": 29.32,
       "writing_value": 0,
-      "total_score": 104.57
+      "total_score": 104.32
     },
     {
-      "id": "441098fd337cff950b61874d1919ed051c303e9a",
-      "title": "员工称“只罚不奖”，宇树科技回应争议 - 21jingji.com",
+      "id": "a9bada49fb170bdd0af9c16cba3d4aa01aa68982",
+      "title": "员工称“只罚不奖”，宇树科技回应争议 - 21财经",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOWDdTd241OHZWeEFQc0VmVDhIR2JHRmNsRVljSXQtelktenYzVk5YcElhYlY4Mmd6U1JFWmdKTGpmV2NlUU5KdDV0czFTVmdjazRDc1Y4ajF0M1hHcGF6Y1k4M2Q1U05WYW1yQWNPSDFmNjVuTkhiRURqV2hLNmZQejBXSDZhUzJ2NGZzMA?oc=5",
       "published_at": "2026-09-02T03:35:00+00:00",
@@ -456,15 +519,15 @@
       "site_name": "GN: 宇树科技",
       "source": "GN: 宇树科技",
       "site_id": "GN: 宇树科技",
-      "description": "员工称“只罚不奖”，宇树科技回应争议  21jingji.com",
+      "description": "员工称“只罚不奖”，宇树科技回应争议  21财经",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.99,
+      "timeliness": 28.73,
       "writing_value": 0,
-      "total_score": 103.99
+      "total_score": 103.73
     },
     {
       "id": "16ad5befac4b9831d637c8d081b9578499457bb0",
@@ -483,9 +546,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.09,
+      "timeliness": 27.83,
       "writing_value": 0,
-      "total_score": 103.09
+      "total_score": 102.83
     },
     {
       "id": "833cd61fbcb61b2685e70a3414869e7e4828c778",
@@ -504,9 +567,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.95,
+      "timeliness": 27.7,
       "writing_value": 0,
-      "total_score": 102.95
+      "total_score": 102.7
     },
     {
       "id": "7997a92e400a8a2eb5ef7bf4ffa6d2bdad2bcff2",
@@ -525,13 +588,13 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.37,
+      "timeliness": 28.12,
       "writing_value": 0,
-      "total_score": 103.37
+      "total_score": 103.12
     },
     {
-      "id": "caf99e0fff92ee90dc285612140267d5cfa1db92",
-      "title": "科技头版｜宇树离职员工：内部只罚不奖，工资偏低 - chinadigitaltimes.net",
+      "id": "71b30d54c5b177b4535db38903dc1e7864b53bad",
+      "title": "科技头版｜宇树离职员工：内部只罚不奖，工资偏低 - China Digital Times",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBTbHJIQ1RGYmY3eEdJQWNPTFpWeUt0M0Z1RUVTZ0dPNG9udE0tUEVpeUdTYlhoandCYXNRNTFxUFFXY2hSQVRGbHRVMVRVd003OW9WNDE5OWw4bHVoUHfSAV5BVV95cUxQU2xySENURmJmN3hHSUFjT0xaVnlLdDNGdUVFU2dHTzRvbnRNLVBFaXlHU2JYaGp3QmFzUTUxcVBRV2NoUkFURmx0VTFUVXdNNzlvVjQxOTlsOGx1aFB3?oc=5",
       "published_at": "2026-09-01T21:27:24+00:00",
@@ -540,15 +603,15 @@
       "site_name": "GN: 宇树科技",
       "source": "GN: 宇树科技",
       "site_id": "GN: 宇树科技",
-      "description": "科技头版｜宇树离职员工：内部只罚不奖，工资偏低  chinadigitaltimes.net",
+      "description": "科技头版｜宇树离职员工：内部只罚不奖，工资偏低  China Digital Times",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 22.86,
+      "timeliness": 22.61,
       "writing_value": 0,
-      "total_score": 97.86
+      "total_score": 97.61
     },
     {
       "id": "ee3bf8efc470ed5444b9659edc79ccb58d3769c1",
@@ -567,9 +630,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.5,
+      "timeliness": 29.24,
       "writing_value": 0,
-      "total_score": 104.5
+      "total_score": 104.24
     },
     {
       "id": "279671f4adc3cf93a44c46b4c61c9c365acdfaf3",
@@ -588,9 +651,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.02,
+      "timeliness": 28.77,
       "writing_value": 0,
-      "total_score": 104.02
+      "total_score": 103.77
     },
     {
       "id": "cbaacad4421ab4d85c21be9f5ea961fed72fd256",
@@ -609,9 +672,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 13.56,
+      "timeliness": 13.3,
       "writing_value": 0,
-      "total_score": 88.56
+      "total_score": 88.3
     },
     {
       "id": "6e133dace90a134ecd67e350ca5605a808e5a037",
@@ -630,9 +693,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.95,
+      "timeliness": 27.7,
       "writing_value": 0,
-      "total_score": 102.95
+      "total_score": 102.7
     },
     {
       "id": "3b65270217128e78b048e31eabe0eacedce1b653",
@@ -651,9 +714,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.33,
+      "timeliness": 27.07,
       "writing_value": 0,
-      "total_score": 102.33
+      "total_score": 102.07
     },
     {
       "id": "f39e86fb826ef17683f5b67144a89302e35c7831",
@@ -672,9 +735,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.11,
+      "timeliness": 26.85,
       "writing_value": 0,
-      "total_score": 102.11
+      "total_score": 101.85
     },
     {
       "id": "c97f17303b3521d86004974a23a628670d977568",
@@ -693,9 +756,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.78,
+      "timeliness": 27.53,
       "writing_value": 0,
-      "total_score": 102.78
+      "total_score": 102.53
     },
     {
       "id": "8d66feecf4b0ed5c1702025fb1cd8adb85610f6b",
@@ -714,9 +777,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.68,
+      "timeliness": 28.42,
       "writing_value": 0,
-      "total_score": 103.68
+      "total_score": 103.42
     },
     {
       "id": "d5c3ce8f25a9c5bf88817e9f5f7c2549c1c49700",
@@ -735,9 +798,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.55,
+      "timeliness": 27.3,
       "writing_value": 0,
-      "total_score": 102.55
+      "total_score": 102.3
     },
     {
       "id": "bfbf7dd2a9aa97769ed5edf0208bae33bfdd8a2b",
@@ -756,9 +819,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.21,
+      "timeliness": 26.95,
       "writing_value": 0,
-      "total_score": 102.21
+      "total_score": 101.95
     },
     {
       "id": "7ef46cf2f29be73a00690c3e2df99d9980d46927",
@@ -777,9 +840,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 13.41,
+      "timeliness": 13.15,
       "writing_value": 0,
-      "total_score": 88.41
+      "total_score": 88.15
     },
     {
       "id": "e477d979495ada25317b3cdedf62ff721e222230",
@@ -798,9 +861,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.76,
+      "timeliness": 28.5,
       "writing_value": 0,
-      "total_score": 103.76
+      "total_score": 103.5
     },
     {
       "id": "d2aeeb68e0ae8623bc45857b26e2e7b888353418",
@@ -819,9 +882,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 16.41,
+      "timeliness": 16.15,
       "writing_value": 0,
-      "total_score": 91.41
+      "total_score": 91.15
     }
   ],
   "fallback_used": false
