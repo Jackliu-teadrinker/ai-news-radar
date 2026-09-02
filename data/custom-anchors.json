@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-02T13:48:37.425090+00:00",
+  "generated_at": "2026-09-02T14:03:28.688761+00:00",
   "window_start": "2026-09-02T19:00:00+08:00",
-  "window_end": "2026-09-02T21:47:56.025918+08:00",
-  "total_items": 8,
+  "window_end": "2026-09-02T22:02:27.712972+08:00",
+  "total_items": 9,
   "items": [
     {
       "id": "8e50bc450e5b0085f6298dc6ced9497fea1ccfdd",
@@ -21,9 +21,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 28.45,
+      "timeliness": 28.2,
       "writing_value": 5,
-      "total_score": 113.45
+      "total_score": 113.2
     },
     {
       "id": "13e59b284dca72505308790244b43c9a95392105",
@@ -42,9 +42,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 27.7,
+      "timeliness": 27.46,
       "writing_value": 5,
-      "total_score": 112.7
+      "total_score": 112.46
     },
     {
       "id": "31a30e196fd8cb10d64b020b158f57c5b115f090",
@@ -63,13 +63,34 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.45,
+      "timeliness": 29.21,
       "writing_value": 0,
-      "total_score": 104.45
+      "total_score": 104.21
     },
     {
-      "id": "8041e8401212f117819423a73efda3a14dd3f6a5",
-      "title": "Agile Robots Brings Physical AI into the Real World - From Industrial Automation to Robot Training Data - Macau Business",
+      "id": "fb7f0368fa5f6917d4f0c1dc6a6090052592e394",
+      "title": "iRobot's new flagship Roomba creates an airtight seal with your carpet — the competition should be worried - Tom's Guide",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPblM0bjlzLXdONm43ajNZUHFvVGVPdlNDakFiNmQxelBITzhDLWotSTNCVENlMWF5Z3JmWTRSRHRfTWgyVFVCT1FXOWJwbTlVTDFjWUl0cHI5dHFkU1AtX3dJUXJUZXprNXcwdWRfWHIwN3Q5Q3poRHlUUjhzMkYtcmkxNDRMRzBkLUYyZ1BRUm44SDZXcW9XU2ZiZVkxQUp5dkRtd0FhVXBUNkVXaUJ6eWlPd3NxUHFVNXBkVUFJVVB3N2lNbHVxQU5hRjAya00?oc=5",
+      "published_at": "2026-09-02T13:12:14+00:00",
+      "category": "GN: robot vacuum",
+      "gn_label": "robotics",
+      "site_name": "GN: robot vacuum",
+      "source": "GN: robot vacuum",
+      "site_id": "GN: robot vacuum",
+      "description": "iRobot's new flagship Roomba creates an airtight seal with your carpet — the competition should be worried  Tom's Guide",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 29.16,
+      "writing_value": 5,
+      "total_score": 114.16
+    },
+    {
+      "id": "ad3c6b7c7ba563c384a0dfc4f6f64654870e5c5f",
+      "title": "Agile Robots Brings Physical AI into the Real World - From Industrial Automation to Robot Training Data - macaubusiness.com",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPQnVib2dNRWNoTEFWV3NBMGhvOTNmRThfbmVqOVh5QVB5S0ZsU2daLWZ6T3ZIUlVadGRUaTMtQVZGZUxHVy1LNVFxTlRfUUtwcGNOZkl3bE9YOHJzVjVrWUpWcmtwNkRGSnBUZlVSTUR4eVZLTjkwYnF1allGVWxvMllnS19UY0ZYSnpCYWdaRmtvMi03WWt6UzliQmVsbE5JaDE3SEtWZWF0UC10VWdmcnNPVWY2el9VdEl6OWJGRmt0WGhfZG9xbVBvOA?oc=5",
       "published_at": "2026-09-02T11:35:53+00:00",
@@ -78,36 +99,15 @@
       "site_name": "GN: robot learning",
       "source": "GN: robot learning",
       "site_id": "GN: robot learning",
-      "description": "Agile Robots Brings Physical AI into the Real World - From Industrial Automation to Robot Training Data  Macau Business",
+      "description": "Agile Robots Brings Physical AI into the Real World - From Industrial Automation to Robot Training Data  macaubusiness.com",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 27.8,
+      "timeliness": 27.56,
       "writing_value": 5,
-      "total_score": 112.8
-    },
-    {
-      "id": "f6c3936efc0212073fcc1c6a6bf90e1a947b4cf3",
-      "title": "Meta测试数据中心机械臂，或可替代八成人工工作量-AI基础设施 - 至顶网",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5NMVJ2amxqY1UzNXdINWJQOXpnc09La0loeXBhaWJFQVVUc3pCRmVaNHp2b3ZDNGFJNXc1OHJpc0JKOEt1d2pzRU44LS13OFpHMkloTjBYcy1VYUFvdERTTElrY0txRWxEUUVPREpacVdvdw?oc=5",
-      "published_at": "2026-09-02T11:03:45+00:00",
-      "category": "GN: 机械臂",
-      "gn_label": "robotics",
-      "site_name": "GN: 机械臂",
-      "source": "GN: 机械臂",
-      "site_id": "GN: 机械臂",
-      "description": "Meta测试数据中心机械臂，或可替代八成人工工作量-AI基础设施  至顶网",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 27.26,
-      "writing_value": 0,
-      "total_score": 102.26
+      "total_score": 112.56
     },
     {
       "id": "85e42930066958ee9333bcd91ba345aaa7462203",
@@ -126,9 +126,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.94,
+      "timeliness": 28.7,
       "writing_value": 0,
-      "total_score": 103.94
+      "total_score": 103.7
     },
     {
       "id": "9c8bc6eacd8e94936d900178074bcb9dd9b7c873",
@@ -147,9 +147,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.23,
+      "timeliness": 28.99,
       "writing_value": 0,
-      "total_score": 104.23
+      "total_score": 103.99
+    },
+    {
+      "id": "f6c3936efc0212073fcc1c6a6bf90e1a947b4cf3",
+      "title": "Meta测试数据中心机械臂，或可替代八成人工工作量-AI基础设施 - 至顶网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5NMVJ2amxqY1UzNXdINWJQOXpnc09La0loeXBhaWJFQVVUc3pCRmVaNHp2b3ZDNGFJNXc1OHJpc0JKOEt1d2pzRU44LS13OFpHMkloTjBYcy1VYUFvdERTTElrY0txRWxEUUVPREpacVdvdw?oc=5",
+      "published_at": "2026-09-02T11:03:45+00:00",
+      "category": "GN: 机械臂",
+      "gn_label": "robotics",
+      "site_name": "GN: 机械臂",
+      "source": "GN: 机械臂",
+      "site_id": "GN: 机械臂",
+      "description": "Meta测试数据中心机械臂，或可替代八成人工工作量-AI基础设施  至顶网",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 27.02,
+      "writing_value": 0,
+      "total_score": 102.02
     },
     {
       "id": "7a0ba4c0e7b0630eca0bf29a93e139eee9eae844",
@@ -168,9 +189,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.15,
+      "timeliness": 28.91,
       "writing_value": 0,
-      "total_score": 104.15
+      "total_score": 103.91
     }
   ],
   "fallback_used": false
