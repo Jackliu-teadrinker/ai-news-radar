@@ -1,9 +1,9 @@
 {
   "date": "2026-09-02",
-  "generated_at": "2026-09-02T15:24:25.280632+00:00",
+  "generated_at": "2026-09-02T15:40:45.024811+00:00",
   "score_threshold": 80,
   "total_items": 50,
-  "new_added": 0,
+  "new_added": 1,
   "items": [
     {
       "id": "06937b746717f554",
@@ -720,6 +720,27 @@
       "total_score": 119.69
     },
     {
+      "id": "c9375c927aef7c28",
+      "title": "人形机器人还撑不起极智嘉 - Sohu",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOWWZ3RGxGcHhNZWNOSEliUXBLdXNETUVUSFI1LU13N0F0ZGNacHY2cFkzcVRTNmg1Ykg0ZnI4cDUwWmI5V2dTXzVhQ1VCZkVEdTEtcWFTTjBzRVhoMHk5VUY5ZTBXanFPcXk2ZlhTdnNLOVlad28zZDFkTmhDeHUta1NldlAyQTN4bkhRTQ?oc=5",
+      "published_at": "2026-09-02T15:15:32+00:00",
+      "category": "国内人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国内人形机器人资讯",
+      "source": "国内人形机器人资讯",
+      "site_id": "国内人形机器人资讯",
+      "description": "人形机器人还撑不起极智嘉  Sohu",
+      "ai_score": 80.0,
+      "ai_label": "humanoid",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.69,
+      "writing_value": 0,
+      "total_score": 119.69
+    },
+    {
       "id": "0a3587ea378d28f7",
       "title": "深瞳丨闯关夺隘，脑机接口的远征刚刚开始 - 中国科技网",
       "title_zh": "",
@@ -1033,27 +1054,6 @@
       "timeliness": 29.35,
       "writing_value": 0,
       "total_score": 119.35
-    },
-    {
-      "id": "045fcc3be33fe32f",
-      "title": "奥特曼：OpenAI一定会做人形机器人，同时也会开发其他形态的机器人 - thepaper.cn",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFB3Ynk1UFN3SGtIby00RFBnV1RKTHcxVHNDTXl5ck4ydVZNUTA0cDJhNTZjV1JIOTJYeUVLWVFtMXN6Z056WGM3d1l0OXFjZGxPckJNeURmbWVtNHdhZGU0cA?oc=5",
-      "published_at": "2026-09-02T11:07:00+00:00",
-      "category": "国内人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国内人形机器人资讯",
-      "source": "国内人形机器人资讯",
-      "site_id": "国内人形机器人资讯",
-      "description": "奥特曼：OpenAI一定会做人形机器人，同时也会开发其他形态的机器人  thepaper.cn",
-      "ai_score": 80.0,
-      "ai_label": "humanoid",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 29.33,
-      "writing_value": 0,
-      "total_score": 119.33
     }
   ]
 }
