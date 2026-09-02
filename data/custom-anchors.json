@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-02T13:18:56.153814+00:00",
+  "generated_at": "2026-09-02T13:34:23.778401+00:00",
   "window_start": "2026-09-02T19:00:00+08:00",
-  "window_end": "2026-09-02T21:18:14.986009+08:00",
-  "total_items": 6,
+  "window_end": "2026-09-02T21:33:21.449641+08:00",
+  "total_items": 10,
   "items": [
     {
       "id": "8e50bc450e5b0085f6298dc6ced9497fea1ccfdd",
@@ -21,9 +21,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 28.94,
+      "timeliness": 28.69,
       "writing_value": 5,
-      "total_score": 113.94
+      "total_score": 113.69
     },
     {
       "id": "13e59b284dca72505308790244b43c9a95392105",
@@ -42,9 +42,72 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 28.2,
+      "timeliness": 27.95,
       "writing_value": 5,
-      "total_score": 113.2
+      "total_score": 112.95
+    },
+    {
+      "id": "431cb50d2c718398af024562067e271829aeea73",
+      "title": "Forget cleaners and babysitters: this humanoid robot changes everything at home for €430 a month - Futura, le média qui explore le monde",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNb3N4VzVDTU1RSVRzYzFiSW91eXVQdE84c1dwbGhCUnR5OTBfNTJ4bzFtY3VhMTNVY3FkbkFMcjJRRW1yXzdsQ1VCMG5DWlJ5Si12enJWNGE3dzB3Rnk3X1pUVm1iV2FiSldmXy1fMlJQVmtha2hMNHgwb1RLQVA5QUxBOXZqVVJyWGFkcmZxVTZXWk5lc3QzV01kODVjRHhyY1AzLU8xTG8tNkx0NFg3bXdxQ1hqay1SWHVTbGRoajdGU2ZHdVBEc0NHWUpzWUh4Q0Yw?oc=5",
+      "published_at": "2026-09-02T12:18:25+00:00",
+      "category": "GN: humanoid robot",
+      "gn_label": "humanoid",
+      "site_name": "GN: humanoid robot",
+      "source": "GN: humanoid robot",
+      "site_id": "GN: humanoid robot",
+      "description": "Forget cleaners and babysitters: this humanoid robot changes everything at home for €430 a month  Futura, le média qui explore le monde",
+      "ai_score": 80.0,
+      "ai_label": "humanoid",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 28.75,
+      "writing_value": 5,
+      "total_score": 128.75
+    },
+    {
+      "id": "24995681f01e6909e9377a22409860c9b0c3f3b3",
+      "title": "Startup renting out humanoid robots to clean your home - News Channel 5 Nashville",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNbFFteGtqX25QRkpaTG1rMUxWUG5uU0gydTJRTkQ0UDh2VDNmYmFwd1NXNHRaXzVNUENfa2gwOTJnMzFHNkdUY0F3R3o0MkR4VzlQbGk1S1kwSGZwZktMUTVxNFN4RUZBdFFtcjF0NzdvaEdXR2RuSEJBUWNTNXdWQmZYM09oZHdrYkJQQ2VjZFdyNjktU1hLeVhUYWdPQ2FiN3Y4ZDVkWVI3bUh2dWc?oc=5",
+      "published_at": "2026-09-02T11:18:43+00:00",
+      "category": "GN: humanoid robot",
+      "gn_label": "humanoid",
+      "site_name": "GN: humanoid robot",
+      "source": "GN: humanoid robot",
+      "site_id": "GN: humanoid robot",
+      "description": "Startup renting out humanoid robots to clean your home  News Channel 5 Nashville",
+      "ai_score": 80.0,
+      "ai_label": "humanoid",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 27.76,
+      "writing_value": 0,
+      "total_score": 117.76
+    },
+    {
+      "id": "31a30e196fd8cb10d64b020b158f57c5b115f090",
+      "title": "Caterpillar teams up on AI-powered robots for jobsite inspections - Stock Titan",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOcXJ2eDJLalk1aEJmb2pfSUNOcE5TQ3ctZU0xYXU1N3luWWc1QVVUaVhXZ0lKcUthbkF0bnhQdXJPbEZ1M2kwRnZYUmRzSFgyWlRXc3U3eDYwN1BVaDhMSTJZVGRxa054MjZsX2V1U1dhdkxTenRXTXV4cVNWU1ZFUmMwbDl6c2xXQ3NaZTFUZFVaR3AyZTVMQUlLdHlKOUNua1FlX2ZSNXhrQW1w?oc=5",
+      "published_at": "2026-09-02T13:15:00+00:00",
+      "category": "GN: autonomous robot",
+      "gn_label": "robotics",
+      "site_name": "GN: autonomous robot",
+      "source": "GN: autonomous robot",
+      "site_id": "GN: autonomous robot",
+      "description": "Caterpillar teams up on AI-powered robots for jobsite inspections  Stock Titan",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.7,
+      "writing_value": 0,
+      "total_score": 104.7
     },
     {
       "id": "8041e8401212f117819423a73efda3a14dd3f6a5",
@@ -63,9 +126,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 28.3,
+      "timeliness": 28.04,
       "writing_value": 5,
-      "total_score": 113.3
+      "total_score": 113.04
     },
     {
       "id": "a5fa0f2cb9439f766073ff5b67e48ce08447557e",
@@ -84,9 +147,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.44,
+      "timeliness": 29.18,
       "writing_value": 0,
-      "total_score": 104.44
+      "total_score": 104.18
     },
     {
       "id": "9c8bc6eacd8e94936d900178074bcb9dd9b7c873",
@@ -105,9 +168,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.73,
+      "timeliness": 29.47,
       "writing_value": 0,
-      "total_score": 104.73
+      "total_score": 104.47
+    },
+    {
+      "id": "f6c3936efc0212073fcc1c6a6bf90e1a947b4cf3",
+      "title": "Meta测试数据中心机械臂，或可替代八成人工工作量-AI基础设施 - 至顶网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5NMVJ2amxqY1UzNXdINWJQOXpnc09La0loeXBhaWJFQVVUc3pCRmVaNHp2b3ZDNGFJNXc1OHJpc0JKOEt1d2pzRU44LS13OFpHMkloTjBYcy1VYUFvdERTTElrY0txRWxEUUVPREpacVdvdw?oc=5",
+      "published_at": "2026-09-02T11:03:45+00:00",
+      "category": "GN: 机械臂",
+      "gn_label": "robotics",
+      "site_name": "GN: 机械臂",
+      "source": "GN: 机械臂",
+      "site_id": "GN: 机械臂",
+      "description": "Meta测试数据中心机械臂，或可替代八成人工工作量-AI基础设施  至顶网",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 27.51,
+      "writing_value": 0,
+      "total_score": 102.51
     },
     {
       "id": "7a0ba4c0e7b0630eca0bf29a93e139eee9eae844",
@@ -126,9 +210,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.65,
+      "timeliness": 29.4,
       "writing_value": 0,
-      "total_score": 104.65
+      "total_score": 104.4
     }
   ],
   "fallback_used": false
