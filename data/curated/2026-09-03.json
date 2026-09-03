@@ -1,9 +1,9 @@
 {
   "date": "2026-09-03",
-  "generated_at": "2026-09-03T04:29:27.196985+00:00",
+  "generated_at": "2026-09-03T04:44:22.355446+00:00",
   "score_threshold": 80,
   "total_items": 50,
-  "new_added": 4,
+  "new_added": 1,
   "items": [
     {
       "id": "e38a28591b8a1fc2",
@@ -699,6 +699,27 @@
       "total_score": 119.33
     },
     {
+      "id": "a025f0a6c8e28b39",
+      "title": "周老兵参观人形机器人数据训练中心 - 凤凰网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBTQnJJdURfVXZ1Q2MwVlZheVJYSlJiTTZrczJKQjhWQ1lxcEFJTUU1S3ZZRmpwcW1KUDRuN19oRVpRNjdwdTlYMGtndzRlWDQ?oc=5",
+      "published_at": "2026-09-03T03:51:15+00:00",
+      "category": "国内人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国内人形机器人资讯",
+      "source": "国内人形机器人资讯",
+      "site_id": "国内人形机器人资讯",
+      "description": "周老兵参观人形机器人数据训练中心  凤凰网",
+      "ai_score": 80.0,
+      "ai_label": "humanoid",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.29,
+      "writing_value": 0,
+      "total_score": 119.29
+    },
+    {
       "id": "ceee9872cc86655a",
       "title": "China Builds Humanoid Robots Faster Than Any Factory Can Actually Use Them - Tech Times",
       "title_zh": "",
@@ -1033,27 +1054,6 @@
       "timeliness": 25.87,
       "writing_value": 0,
       "total_score": 115.87
-    },
-    {
-      "id": "06ed8234099ff420",
-      "title": "京津冀印发《工作方案》 推进脑机接口质量强链 - 天津日报",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPcV9VWDlhTzk4dFRxeHFjdlFmak5CMS1vRzI5QjFhV2QyTGJUU0J3T1lvTzB5SXl1QUlMLU14VjFhdy1ndG9QUXdMU3U5VHFFRDRPTU16ZmVsNWgydjUyaGlMQk1vQ0xiOWM4dWo2SWlyNUdBMnZpVTRyUnU3RGl3Z3p3?oc=5",
-      "published_at": "2026-09-02T22:32:57+00:00",
-      "category": "国内脑机接口资讯",
-      "gn_label": "brain_computer",
-      "site_name": "国内脑机接口资讯",
-      "source": "国内脑机接口资讯",
-      "site_id": "国内脑机接口资讯",
-      "description": "京津冀印发《工作方案》 推进脑机接口质量强链  天津日报",
-      "ai_score": 80.0,
-      "ai_label": "brain_computer",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 25.73,
-      "writing_value": 0,
-      "total_score": 115.73
     }
   ]
 }
