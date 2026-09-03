@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-03T13:26:19.008408+00:00",
+  "generated_at": "2026-09-03T13:34:06.092365+00:00",
   "window_start": "2026-09-03T19:00:00+08:00",
-  "window_end": "2026-09-03T21:25:37.764906+08:00",
-  "total_items": 5,
+  "window_end": "2026-09-03T21:33:45.389923+08:00",
+  "total_items": 4,
   "items": [
     {
       "id": "1ecba27765e2003758af109c9a2a53ad679a4330",
@@ -21,9 +21,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 28.79,
+      "timeliness": 28.66,
       "writing_value": 5,
-      "total_score": 113.79
+      "total_score": 113.66
     },
     {
       "id": "1f669018a6d00f305c8f3b712196b838d97f92b3",
@@ -42,51 +42,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 28.57,
+      "timeliness": 28.44,
       "writing_value": 5,
-      "total_score": 113.57
+      "total_score": 113.44
     },
     {
-      "id": "bb4d881ffc93f483436466560773ae6232f123b6",
-      "title": "Enovis Announces Binding Offer to Acquire eCential Robotics - Med-Tech Insights",
+      "id": "3859d9050231ae2b2c46832b864d19ae1ef3d8f1",
+      "title": "全栈自研+生态协同：灵心巧手与产业链核心伙伴共建中国具身智能Tier1产业联盟 - 雷峰网",
       "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOTlFGcmN4akJTby1VbWsyUEp5REplNndGcnRIWTdkVmR3ZG91dHU5OTI4X3R2SFItSVBHejN1cHVtZU9xUjB6d1c5czA3UVFYR0xvWXFvTjdPVXFfWTU2dUgtdE9uZ0VTT2hCTkJhb0hpaXJ1WnY4ZmR5ZHJRcHpZbFhaakNLWldZS0VDMWhlLTJ4aFVDYjJ5VXZDT3dtMTVUMGc?oc=5",
-      "published_at": "2026-09-03T11:16:13+00:00",
-      "category": "GN: surgical robot",
-      "gn_label": "robotics",
-      "site_name": "GN: surgical robot",
-      "source": "GN: surgical robot",
-      "site_id": "GN: surgical robot",
-      "description": "Enovis Announces Binding Offer to Acquire eCential Robotics  Med-Tech Insights",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 27.84,
-      "writing_value": 0,
-      "total_score": 102.84
-    },
-    {
-      "id": "49f27d8253cd2e17feb6e8eaf81a46f17188ab2b",
-      "title": "人形机器人最大的问题：复杂到难以稳定运行 - 华尔街见闻",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBtUEJ6M24zVktleC1Da1RTU2QwT09MRDFWTDJyeVlXRlNtY0VES005d0RMd2NzeTVUSzdQY3p0SC1zXzd6bVNjZ3ZodE90YktQdXc?oc=5",
-      "published_at": "2026-09-03T12:59:32+00:00",
-      "category": "GN: 机械臂",
-      "gn_label": "robotics",
-      "site_name": "GN: 机械臂",
-      "source": "GN: 机械臂",
-      "site_id": "GN: 机械臂",
-      "description": "人形机器人最大的问题：复杂到难以稳定运行  华尔街见闻",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBmc2hhNGpMdzdRVTA4U04tRk53R1NiUHVYdkVqQTZvWGp6Y2ZVRVlxUmhOWUphdUFOaHR2dkh1cmVuUjJwLVZtMzR2NGhjU3duNC1mQVp2REMxb1h2Z3pEemlrSDdFNF9pS1BXdzFR?oc=5",
+      "published_at": "2026-09-03T11:05:00+00:00",
+      "category": "GN: 具身智能",
+      "gn_label": "embodied_ai",
+      "site_name": "GN: 具身智能",
+      "source": "GN: 具身智能",
+      "site_id": "GN: 具身智能",
+      "description": "全栈自研+生态协同：灵心巧手与产业链核心伙伴共建中国具身智能Tier1产业联盟  雷峰网",
       "ai_score": 80.0,
-      "ai_label": "robotics",
+      "ai_label": "embodied_ai",
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.57,
+      "timeliness": 27.52,
       "writing_value": 0,
-      "total_score": 119.57
+      "total_score": 117.52
     },
     {
       "id": "ccabb9dc60dc429bb2df3ff7b61a590e5a3ca0d1",
@@ -105,9 +84,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 5,
-      "timeliness": 27.66,
+      "timeliness": 27.52,
       "writing_value": 5,
-      "total_score": 127.66
+      "total_score": 127.52
     }
   ],
   "fallback_used": false
