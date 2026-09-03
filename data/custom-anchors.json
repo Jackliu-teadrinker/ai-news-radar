@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-03T01:21:00.165589+00:00",
+  "generated_at": "2026-09-03T01:35:46.191402+00:00",
   "window_start": "2026-09-02T19:00:00+08:00",
-  "window_end": "2026-09-03T09:18:58.601653+08:00",
-  "total_items": 19,
+  "window_end": "2026-09-03T09:33:43.046756+08:00",
+  "total_items": 20,
   "items": [
     {
       "id": "989707cd10e884e5f99d7efdd09452ed38418414",
@@ -21,9 +21,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 27.09,
+      "timeliness": 26.84,
       "writing_value": 5,
-      "total_score": 112.09
+      "total_score": 111.84
     },
     {
       "id": "8e50bc450e5b0085f6298dc6ced9497fea1ccfdd",
@@ -42,9 +42,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 16.93,
+      "timeliness": 16.68,
       "writing_value": 5,
-      "total_score": 101.93
+      "total_score": 101.68
     },
     {
       "id": "73f56d486ebb7950f086ccc3e1b05f0319d77b63",
@@ -63,9 +63,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 20.55,
+      "timeliness": 20.3,
       "writing_value": 5,
-      "total_score": 105.55
+      "total_score": 105.3
     },
     {
       "id": "13e59b284dca72505308790244b43c9a95392105",
@@ -84,13 +84,34 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 16.19,
+      "timeliness": 15.94,
       "writing_value": 5,
-      "total_score": 101.19
+      "total_score": 100.94
     },
     {
-      "id": "1bd8e65da009363abc4e6f20846b977da7a7b79a",
-      "title": "AIR to use Elmo Motion Control technology in uncrewed cargo aircraft - The Robot Report",
+      "id": "9025d1ce955130b2bbbe44f16b2a32e0412713dd",
+      "title": "Learn why food is physical AI’s hardest problem at RoboBusiness - therobotreport.com",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOT0dLcURJU0NqUGlxaWU1elY3UkVRUlNLMWVSNi14S3QyX2tUcFg0aENEWG9kTHZQOUdObUVURzV4eDhYZ2VCUlB3cmRCT2FmeFZ6LUo4YU5aRE15RnF1Tm10MHRYRFlrMHBXd05YWGNPREd4dl92VlBTalg1NmRTWGlwc0QzRWEyMHg1cUFLMFBJOFNneDk4RS1FWTZVM1JKZTF5SVVQYw?oc=5",
+      "published_at": "2026-09-02T17:53:36+00:00",
+      "category": "GN: Robot Report",
+      "gn_label": "robotics",
+      "site_name": "GN: Robot Report",
+      "source": "GN: Robot Report",
+      "site_id": "GN: Robot Report",
+      "description": "Learn why food is physical AI’s hardest problem at RoboBusiness  therobotreport.com",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 22.33,
+      "writing_value": 0,
+      "total_score": 97.33
+    },
+    {
+      "id": "95279cfbc63707dcaf29daba194c23f0446ae111",
+      "title": "AIR to use Elmo Motion Control technology in uncrewed cargo aircraft - therobotreport.com",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOT29Ic3IyeWFLTFZMaW1iNkVzbU5uSEZ4VkJoNXFiVURoQjBFcEZ6Nl9uaE1Qek82b2hoaVJ1d2MzaEEwcVp0RkZGTHE3UGVHR3o3NUJuRVpyaHYyQjVEc3hmQ2gzQkZmclBaOWYxdHhLZV9PS3FBSWRVS2Y5Z3ZhTWhHWHJCT0FmN3pCXzZkSmtWMHJXbHVLZzZDMmJSLUU?oc=5",
       "published_at": "2026-09-02T15:37:14+00:00",
@@ -99,19 +120,19 @@
       "site_name": "GN: Robot Report",
       "source": "GN: Robot Report",
       "site_id": "GN: Robot Report",
-      "description": "AIR to use Elmo Motion Control technology in uncrewed cargo aircraft  The Robot Report",
+      "description": "AIR to use Elmo Motion Control technology in uncrewed cargo aircraft  therobotreport.com",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 20.31,
+      "timeliness": 20.06,
       "writing_value": 0,
-      "total_score": 95.31
+      "total_score": 95.06
     },
     {
-      "id": "2decf538df670a3e6ee082431bcd83c54ee7e54f",
-      "title": "Dogotix Archives - The Robot Report",
+      "id": "3a630b4ea33e58b3d738613efbb9fd783ff02533",
+      "title": "Dogotix Archives - therobotreport.com",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFB2emNvdDZUcnMxVXQxZk1jUkVRejdZYmlGUm5sY25EazdMOFZwWVJNQ1Ria3pTdkxRTmlvUnk4Nmc4dE9NUmktWHNTdmp1UjZPOGY1OTJB?oc=5",
       "published_at": "2026-09-02T16:08:56+00:00",
@@ -120,19 +141,19 @@
       "site_name": "GN: Robot Report",
       "source": "GN: Robot Report",
       "site_id": "GN: Robot Report",
-      "description": "Dogotix Archives  The Robot Report",
+      "description": "Dogotix Archives  therobotreport.com",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 20.84,
+      "timeliness": 20.59,
       "writing_value": 0,
-      "total_score": 95.84
+      "total_score": 95.59
     },
     {
-      "id": "9bd60bc7fa0846675817a86c5092f565ebc18eb3",
-      "title": "Meet the 7-year-old who made history in MIT’s robotics program - face2faceafrica.com",
+      "id": "275fe82bdb1968de3ffc460e1b39c1cc69cb6fc5",
+      "title": "Meet the 7-year-old who made history in MIT’s robotics program - Face2Face Africa",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNQ3hzOVR2cXZFYTkwdjMxYUFPTkNOVVV5a1h5bGJnMF9iTUNjaEE4Q1dpSXZnZmU4Z2pwa1RjNnhLamtGMGtMNWYwejR6R2RKbVljNnlTS2FEaGkyUFF0V21pUTB1X1lFbHVCaDFuTlNiZlFscXoyS1d5YjVlalptUGpoN21lREFiLVdCYXk1OUFEY0RVSmlKd1l3eHZxZw?oc=5",
       "published_at": "2026-09-02T18:00:00+00:00",
@@ -141,36 +162,15 @@
       "site_name": "GN: MIT robotics",
       "source": "GN: MIT robotics",
       "site_id": "GN: MIT robotics",
-      "description": "Meet the 7-year-old who made history in MIT’s robotics program  face2faceafrica.com",
+      "description": "Meet the 7-year-old who made history in MIT’s robotics program  Face2Face Africa",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 22.69,
+      "timeliness": 22.44,
       "writing_value": 0,
-      "total_score": 97.69
-    },
-    {
-      "id": "486a768dd3db5ca8e1b66008a3f48b2e2a1aa783",
-      "title": "Scopia Surgical raises $2.65 million to build a GPS for robotic surgery - betakit.com",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQMXdpMFJ5Z2hDVEdqLTRqYjNqdV9SM09IWjRhOG90SElKLU9zcnZXY0NEMVJPUDlzZzcwRFIxeWJReF90dmZsMGxVaDRMWDBDa2NIcnJQTy1EQXVDeDJrSkxPRkpKX2V6LTBmcUdXUFExVmloeml6eXNhRkVTUGItakljSmloeGdMX1BEbms1VGJwRXZLR0E?oc=5",
-      "published_at": "2026-09-02T16:58:56+00:00",
-      "category": "GN: surgical robot",
-      "gn_label": "robotics",
-      "site_name": "GN: surgical robot",
-      "source": "GN: surgical robot",
-      "site_id": "GN: surgical robot",
-      "description": "Scopia Surgical raises $2.65 million to build a GPS for robotic surgery  betakit.com",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 21.67,
-      "writing_value": 0,
-      "total_score": 96.67
+      "total_score": 97.44
     },
     {
       "id": "83b2953820d2fd8c95fece498c75e96d69aa2dae",
@@ -189,9 +189,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 16.92,
+      "timeliness": 16.67,
       "writing_value": 0,
-      "total_score": 91.92
+      "total_score": 91.67
     },
     {
       "id": "85ac42763b32cc6d3dcd6f0fea6468b3fd103021",
@@ -210,9 +210,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 18.86,
+      "timeliness": 18.61,
       "writing_value": 0,
-      "total_score": 93.86
+      "total_score": 93.61
     },
     {
       "id": "4f550394573c20ee1621081b8dbad9fa5d0f167b",
@@ -231,9 +231,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 22.48,
+      "timeliness": 22.23,
       "writing_value": 5,
-      "total_score": 107.48
+      "total_score": 107.23
+    },
+    {
+      "id": "486a768dd3db5ca8e1b66008a3f48b2e2a1aa783",
+      "title": "Scopia Surgical raises $2.65 million to build a GPS for robotic surgery - betakit.com",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQMXdpMFJ5Z2hDVEdqLTRqYjNqdV9SM09IWjRhOG90SElKLU9zcnZXY0NEMVJPUDlzZzcwRFIxeWJReF90dmZsMGxVaDRMWDBDa2NIcnJQTy1EQXVDeDJrSkxPRkpKX2V6LTBmcUdXUFExVmloeml6eXNhRkVTUGItakljSmloeGdMX1BEbms1VGJwRXZLR0E?oc=5",
+      "published_at": "2026-09-02T16:58:56+00:00",
+      "category": "GN: surgical robot",
+      "gn_label": "robotics",
+      "site_name": "GN: surgical robot",
+      "source": "GN: surgical robot",
+      "site_id": "GN: surgical robot",
+      "description": "Scopia Surgical raises $2.65 million to build a GPS for robotic surgery  betakit.com",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 21.42,
+      "writing_value": 0,
+      "total_score": 96.42
     },
     {
       "id": "85e42930066958ee9333bcd91ba345aaa7462203",
@@ -252,30 +273,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 17.43,
+      "timeliness": 17.18,
       "writing_value": 0,
-      "total_score": 92.43
-    },
-    {
-      "id": "bc8367cb229f792cfa3a5420f3236e0fa977cc60",
-      "title": "宇树科技股价腰斩；星宇董事长回应劝退应届生；小米 18 Fold 手机外观亮相｜Do早报 - DoNews",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9fajk1V1N2OW9ENDh6b1dYdzNYRTV2VlFtSllJV3JzQlNJT04xMDNMMFF0YnRxMktPSDhScGsxYURneWtZblV0c3ZITDNSMVBGWEY2RVl6NFZoTzI0NkE?oc=5",
-      "published_at": "2026-09-03T00:03:03+00:00",
-      "category": "GN: 宇树科技",
-      "gn_label": "robotics",
-      "site_name": "GN: 宇树科技",
-      "source": "GN: 宇树科技",
-      "site_id": "GN: 宇树科技",
-      "description": "宇树科技股价腰斩；星宇董事长回应劝退应届生；小米 18 Fold 手机外观亮相｜Do早报  DoNews",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 28.74,
-      "writing_value": 0,
-      "total_score": 103.74
+      "total_score": 92.18
     },
     {
       "id": "7d3b38bf0bd74f3460113b2f30e21ef118f46576",
@@ -294,9 +294,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.17,
+      "timeliness": 23.92,
       "writing_value": 0,
-      "total_score": 99.17
+      "total_score": 98.92
     },
     {
       "id": "00a8ced2a30d072753be6309d07f5504da6e3297",
@@ -315,9 +315,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.07,
+      "timeliness": 27.82,
       "writing_value": 0,
-      "total_score": 103.07
+      "total_score": 102.82
     },
     {
       "id": "14158373d0ac74429cf09d0ae968cefd39128857",
@@ -336,9 +336,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 17.6,
+      "timeliness": 17.36,
       "writing_value": 0,
-      "total_score": 92.6
+      "total_score": 92.36
     },
     {
       "id": "5108c2c876c260c089d8f36e232bc30adae799d0",
@@ -357,9 +357,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 25.89,
+      "timeliness": 25.64,
       "writing_value": 5,
-      "total_score": 110.89
+      "total_score": 110.64
+    },
+    {
+      "id": "7a463b09cd7de211c0fdac976493ab79df3d5df7",
+      "title": "那个爆料的员工，还能在宇树科技干下去吗？#宇树科技回应只有罚几乎没有奖# ​ - 新浪网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBHc2xoakVNSU5qTGdUMXhKZXdsdWl5LW1nZjZVdEszOVhDYzlQUDlMUUNNT3ZldmE5Rzd6djlDZmttelE0UnJWZXE2cHpVUVlkV2c3d2Q4Ym8wQmFGSVJ4cDZBQQ?oc=5",
+      "published_at": "2026-09-03T00:33:00+00:00",
+      "category": "GN: 宇树科技",
+      "gn_label": "robotics",
+      "site_name": "GN: 宇树科技",
+      "source": "GN: 宇树科技",
+      "site_id": "GN: 宇树科技",
+      "description": "那个爆料的员工，还能在宇树科技干下去吗？#宇树科技回应只有罚几乎没有奖# ​  新浪网",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 28.99,
+      "writing_value": 0,
+      "total_score": 103.99
     },
     {
       "id": "f6c3936efc0212073fcc1c6a6bf90e1a947b4cf3",
@@ -378,9 +399,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 18.09,
+      "timeliness": 17.85,
       "writing_value": 0,
-      "total_score": 93.09
+      "total_score": 92.85
     },
     {
       "id": "7a0ba4c0e7b0630eca0bf29a93e139eee9eae844",
@@ -399,9 +420,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 17.64,
+      "timeliness": 17.39,
       "writing_value": 0,
-      "total_score": 92.64
+      "total_score": 92.39
     }
   ],
   "fallback_used": false
