@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-03T08:23:00.803643+00:00",
+  "generated_at": "2026-09-03T08:38:08.496495+00:00",
   "window_start": "2026-09-02T19:00:00+08:00",
-  "window_end": "2026-09-03T16:19:59.581359+08:00",
-  "total_items": 30,
+  "window_end": "2026-09-03T16:35:06.850547+08:00",
+  "total_items": 31,
   "items": [
     {
       "id": "989707cd10e884e5f99d7efdd09452ed38418414",
@@ -21,9 +21,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 20.07,
+      "timeliness": 19.82,
       "writing_value": 5,
-      "total_score": 105.07
+      "total_score": 104.82
     },
     {
       "id": "8e50bc450e5b0085f6298dc6ced9497fea1ccfdd",
@@ -42,9 +42,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 9.91,
+      "timeliness": 9.66,
       "writing_value": 5,
-      "total_score": 94.91
+      "total_score": 94.66
     },
     {
       "id": "73f56d486ebb7950f086ccc3e1b05f0319d77b63",
@@ -63,9 +63,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 13.53,
+      "timeliness": 13.28,
       "writing_value": 5,
-      "total_score": 98.53
+      "total_score": 98.28
     },
     {
       "id": "13e59b284dca72505308790244b43c9a95392105",
@@ -84,9 +84,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 9.17,
+      "timeliness": 8.92,
       "writing_value": 5,
-      "total_score": 94.17
+      "total_score": 93.92
     },
     {
       "id": "56fa504257d3df851c5cdbee905f716c46f68236",
@@ -105,9 +105,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 26.9,
+      "timeliness": 26.65,
       "writing_value": 5,
-      "total_score": 111.9
+      "total_score": 111.65
     },
     {
       "id": "6ca0382ee0bd9803ee5248ba2432e443154e7ed3",
@@ -126,9 +126,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 15.56,
+      "timeliness": 15.31,
       "writing_value": 0,
-      "total_score": 90.56
+      "total_score": 90.31
     },
     {
       "id": "5d79a955c46295bfe226299eb624627a237d0433",
@@ -147,9 +147,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 17.46,
+      "timeliness": 17.2,
       "writing_value": 0,
-      "total_score": 92.46
+      "total_score": 92.2
     },
     {
       "id": "1bd8e65da009363abc4e6f20846b977da7a7b79a",
@@ -168,9 +168,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 13.29,
+      "timeliness": 13.04,
       "writing_value": 0,
-      "total_score": 88.29
+      "total_score": 88.04
     },
     {
       "id": "2decf538df670a3e6ee082431bcd83c54ee7e54f",
@@ -189,93 +189,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 13.82,
+      "timeliness": 13.56,
       "writing_value": 0,
-      "total_score": 88.82
-    },
-    {
-      "id": "7de5eaa763a039fb8e2826ae8bdb527ab88c4260",
-      "title": "「小」鸭子火了之后，端侧 AI 还有一个更「大」的问题",
-      "title_zh": "",
-      "url": "https://www.leiphone.com/category/chips/pIN6zFvPEB91R6uC.html",
-      "published_at": "2026-09-03T05:56:00+00:00",
-      "category": "雷锋网",
-      "gn_label": "robotics",
-      "site_name": "雷锋网",
-      "source": "雷锋网",
-      "site_id": "雷锋网",
-      "description": "最近，一只只有 25 厘米高的机器鸭，意外把端侧 AI 的想象力拉到了聚光灯下。Hugging Face 旗下 Pollen Robotics 发布的 Microduck，是一款售价 399 美元的开源双足机器人。它约 800 克重，开箱即可行走、坐下、踢球、抓取，摔倒后还能自己爬起来。更重要的是，它并不只是一个会动的玩具，而是一个面向开发者的开源机器人平台：用户可以在仿真环境中训练动作策略，再部署到真实机器人上。这只“小鸭子”之所以引发关注，不只是因为它足够可爱、足够便宜，也不只是因为机器人终于开始进入普通开发者的桌面。它真正释放出的信号是：AI 正在从屏幕里的模型，走向会感知、会行动、会互",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 5,
-      "timeliness": 27.6,
-      "writing_value": 5,
-      "total_score": 112.6
-    },
-    {
-      "id": "9caf4dad21e098300d36960d23527297e56b527d",
-      "title": "WashU Medicine and Barnes-Jewish Transplant Center perform breakthrough robotic liver-kidney transplant - WashU Medicine",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxORHM1akR6aEI3M0t4cE44TFp2RTFadWkza09CeXBMWTJIY1NHRjJqRTMzWnFUSzl4Q2NubGJTeTB2Z1dPWWdmUUdKWkl4T2QxNjFDZzhJVWxpSzZVOEtmWWpJZFVIbzVFcDVodDVSSy1nZmJuU2VKR2FXZU5RTGc4QmNkVVFFa05OZ3VJWWZzVmNXTVBVcG5HeU9kLWJTVWR3X0ZMZ0JoQkprSV9OWGxRa2xMMmI5UlZvcnBPbkdYSnVUd01INGFZV1ZMcG1QTkZXVVE?oc=5",
-      "published_at": "2026-09-02T14:11:48+00:00",
-      "category": "GN: surgical robot",
-      "gn_label": "robotics",
-      "site_name": "GN: surgical robot",
-      "source": "GN: surgical robot",
-      "site_id": "GN: surgical robot",
-      "description": "WashU Medicine and Barnes-Jewish Transplant Center perform breakthrough robotic liver-kidney transplant  WashU Medicine",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 5,
-      "timeliness": 11.87,
-      "writing_value": 5,
-      "total_score": 96.87
-    },
-    {
-      "id": "844cd8956c003c14f842a27f642bca8cee32d3c4",
-      "title": "Medtronic partners with Cornerstone Robotics to widen surgical robot reach - Dealroom",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQV0tlOVB2UU9BVFdYLTl3TzBjRWJwbHQtSnZuMnhKdktyS0txWk5JZDZiRWtibmhLYkpaazNnYW0yYzUtVjgyLVA4T0ZGOWQtWkJJWkNTdzdabUZTQmdVUTUtbkQ1N1dhUlNTa1ZmLUMtTnItMWF1dWxKbEY4WkVwbzlJT3hld3hpM0ptUUVGRW9wSzZrX0h4TTFkZWpyNlZkMFhUajR1Q1pHdU1R?oc=5",
-      "published_at": "2026-09-02T14:39:57+00:00",
-      "category": "GN: surgical robot",
-      "gn_label": "robotics",
-      "site_name": "GN: surgical robot",
-      "source": "GN: surgical robot",
-      "site_id": "GN: surgical robot",
-      "description": "Medtronic partners with Cornerstone Robotics to widen surgical robot reach  Dealroom",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 12.33,
-      "writing_value": 0,
-      "total_score": 87.33
-    },
-    {
-      "id": "c3714f7611d49f916eedba22da572441b1c3d1c1",
-      "title": "Cornerstone Robotics Partners with Medtronic to Expand Robotic Surgery Access - TimesTech",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOQmp2b0Y0dGZQNHl1U3NVX1EtNDFaNHd2cmIxbkZmTnhfR0IxWXBBM1djcmxzU0M1RW81Zm9qSlpLVHV0bHBYaXJZM0NaRV9IakVTLVJwYzRwSXBVcDhZdTZWWDVKLTVRRU1DTElid01GRXFnYTRhdWhTWXRaRjlGem8tRmw0TmMxTTdVWkZVVnl1bjBSSE92NGROQkVDdGtY?oc=5",
-      "published_at": "2026-09-03T05:19:50+00:00",
-      "category": "GN: surgical robot",
-      "gn_label": "robotics",
-      "site_name": "GN: surgical robot",
-      "source": "GN: surgical robot",
-      "site_id": "GN: surgical robot",
-      "description": "Cornerstone Robotics Partners with Medtronic to Expand Robotic Surgery Access  TimesTech",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 27.0,
-      "writing_value": 0,
-      "total_score": 102.0
+      "total_score": 88.56
     },
     {
       "id": "83b2953820d2fd8c95fece498c75e96d69aa2dae",
@@ -294,9 +210,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 9.9,
+      "timeliness": 9.65,
       "writing_value": 0,
-      "total_score": 84.9
+      "total_score": 84.65
     },
     {
       "id": "85ac42763b32cc6d3dcd6f0fea6468b3fd103021",
@@ -315,9 +231,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 11.84,
+      "timeliness": 11.59,
       "writing_value": 0,
-      "total_score": 86.84
+      "total_score": 86.59
     },
     {
       "id": "fa69b02cd3987dbd89a3a25b47c69ec4f0990354",
@@ -336,9 +252,93 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.25,
+      "timeliness": 26.0,
       "writing_value": 0,
-      "total_score": 101.25
+      "total_score": 101.0
+    },
+    {
+      "id": "9caf4dad21e098300d36960d23527297e56b527d",
+      "title": "WashU Medicine and Barnes-Jewish Transplant Center perform breakthrough robotic liver-kidney transplant - WashU Medicine",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxORHM1akR6aEI3M0t4cE44TFp2RTFadWkza09CeXBMWTJIY1NHRjJqRTMzWnFUSzl4Q2NubGJTeTB2Z1dPWWdmUUdKWkl4T2QxNjFDZzhJVWxpSzZVOEtmWWpJZFVIbzVFcDVodDVSSy1nZmJuU2VKR2FXZU5RTGc4QmNkVVFFa05OZ3VJWWZzVmNXTVBVcG5HeU9kLWJTVWR3X0ZMZ0JoQkprSV9OWGxRa2xMMmI5UlZvcnBPbkdYSnVUd01INGFZV1ZMcG1QTkZXVVE?oc=5",
+      "published_at": "2026-09-02T14:11:48+00:00",
+      "category": "GN: surgical robot",
+      "gn_label": "robotics",
+      "site_name": "GN: surgical robot",
+      "source": "GN: surgical robot",
+      "site_id": "GN: surgical robot",
+      "description": "WashU Medicine and Barnes-Jewish Transplant Center perform breakthrough robotic liver-kidney transplant  WashU Medicine",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 11.61,
+      "writing_value": 5,
+      "total_score": 96.61
+    },
+    {
+      "id": "da96bfa919f11f419775915b5c628d8d30f1f268",
+      "title": "United Healthcare performs Bangladesh's first robotic surgeries - The Daily Star",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOQWsyaVh6dkhLOEJRQ2lXT0hycUNwSzFrcDJDZTByRU5QV1I2cGlPUEdyTzU3UEtSNzRuelJqYVM2WVEwTzRUMXpFTkU5NE1PX1FJUmNyU3RSdUtVSmtlaVhubGF6ZkpLWXotRURUTWpWaC1ycEh1QTdWbVhuNFBiRlpaeHB3a3N3WnhRNkVwUWtRV1Y1OUc3WHNtb1M4ZzdOakl0WVlBSU9GcWhkTnNvcg?oc=5",
+      "published_at": "2026-09-02T16:54:12+00:00",
+      "category": "GN: surgical robot",
+      "gn_label": "robotics",
+      "site_name": "GN: surgical robot",
+      "source": "GN: surgical robot",
+      "site_id": "GN: surgical robot",
+      "description": "United Healthcare performs Bangladesh's first robotic surgeries  The Daily Star",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 14.32,
+      "writing_value": 0,
+      "total_score": 89.32
+    },
+    {
+      "id": "c3714f7611d49f916eedba22da572441b1c3d1c1",
+      "title": "Cornerstone Robotics Partners with Medtronic to Expand Robotic Surgery Access - TimesTech",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOQmp2b0Y0dGZQNHl1U3NVX1EtNDFaNHd2cmIxbkZmTnhfR0IxWXBBM1djcmxzU0M1RW81Zm9qSlpLVHV0bHBYaXJZM0NaRV9IakVTLVJwYzRwSXBVcDhZdTZWWDVKLTVRRU1DTElid01GRXFnYTRhdWhTWXRaRjlGem8tRmw0TmMxTTdVWkZVVnl1bjBSSE92NGROQkVDdGtY?oc=5",
+      "published_at": "2026-09-03T05:19:50+00:00",
+      "category": "GN: surgical robot",
+      "gn_label": "robotics",
+      "site_name": "GN: surgical robot",
+      "source": "GN: surgical robot",
+      "site_id": "GN: surgical robot",
+      "description": "Cornerstone Robotics Partners with Medtronic to Expand Robotic Surgery Access  TimesTech",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 26.75,
+      "writing_value": 0,
+      "total_score": 101.75
+    },
+    {
+      "id": "7de5eaa763a039fb8e2826ae8bdb527ab88c4260",
+      "title": "「小」鸭子火了之后，端侧 AI 还有一个更「大」的问题",
+      "title_zh": "",
+      "url": "https://www.leiphone.com/category/chips/pIN6zFvPEB91R6uC.html",
+      "published_at": "2026-09-03T05:56:00+00:00",
+      "category": "雷锋网",
+      "gn_label": "robotics",
+      "site_name": "雷锋网",
+      "source": "雷锋网",
+      "site_id": "雷锋网",
+      "description": "最近，一只只有 25 厘米高的机器鸭，意外把端侧 AI 的想象力拉到了聚光灯下。Hugging Face 旗下 Pollen Robotics 发布的 Microduck，是一款售价 399 美元的开源双足机器人。它约 800 克重，开箱即可行走、坐下、踢球、抓取，摔倒后还能自己爬起来。更重要的是，它并不只是一个会动的玩具，而是一个面向开发者的开源机器人平台：用户可以在仿真环境中训练动作策略，再部署到真实机器人上。这只“小鸭子”之所以引发关注，不只是因为它足够可爱、足够便宜，也不只是因为机器人终于开始进入普通开发者的桌面。它真正释放出的信号是：AI 正在从屏幕里的模型，走向会感知、会行动、会互",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 27.35,
+      "writing_value": 5,
+      "total_score": 112.35
     },
     {
       "id": "706a74317bf2e3ad697e5fd764d918dc2efbc802",
@@ -357,9 +357,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 12.67,
+      "timeliness": 12.42,
       "writing_value": 5,
-      "total_score": 97.67
+      "total_score": 97.42
     },
     {
       "id": "e4093358dcc7b218feaf2854a9d61ea34fb3011f",
@@ -378,9 +378,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.95,
+      "timeliness": 28.7,
       "writing_value": 0,
-      "total_score": 103.95
+      "total_score": 103.7
     },
     {
       "id": "c319cc14334bab6fdffde550c2505fb0e5df2e9c",
@@ -399,9 +399,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.11,
+      "timeliness": 22.86,
       "writing_value": 0,
-      "total_score": 98.11
+      "total_score": 97.86
     },
     {
       "id": "da6f3a786d2acf917e3b31338ae31d2401c7f575",
@@ -420,9 +420,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 22.84,
+      "timeliness": 22.58,
       "writing_value": 0,
-      "total_score": 97.84
+      "total_score": 97.58
     },
     {
       "id": "85e42930066958ee9333bcd91ba345aaa7462203",
@@ -441,9 +441,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 10.41,
+      "timeliness": 10.16,
       "writing_value": 0,
-      "total_score": 85.41
+      "total_score": 85.16
     },
     {
       "id": "8679863c5a706cd8ac3c7d2bb34a44c044a6a402",
@@ -462,9 +462,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 12.25,
+      "timeliness": 12.0,
       "writing_value": 0,
-      "total_score": 87.25
+      "total_score": 87.0
     },
     {
       "id": "bc8367cb229f792cfa3a5420f3236e0fa977cc60",
@@ -483,9 +483,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 21.72,
+      "timeliness": 21.47,
       "writing_value": 0,
-      "total_score": 96.72
+      "total_score": 96.47
     },
     {
       "id": "be07f33251972aa723bf29316371e39587bb5ba2",
@@ -504,9 +504,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 8.8,
+      "timeliness": 8.55,
       "writing_value": 0,
-      "total_score": 83.8
+      "total_score": 83.55
+    },
+    {
+      "id": "39b73d976efb3c36aa3b472b4617f8d17f43a6ff",
+      "title": "宇树科技全资子公司正式落子成都 - sohu.com",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQMDVRVmZZaFNsY2pNUS1MVG1wNnA0QW00cWlZUm9iclhIVmotOV9Sa3BROGxIMVpqdW9hN0l1S0xEeXdnbWw4X2VuLV9yWElJOFloNURadEpNRXNZMUl4UWRFRzdvc2ZkcmFyMmVLbXFHNUUycy1VZm52U2RSVDhlRV9RN19maTM5?oc=5",
+      "published_at": "2026-09-03T02:15:00+00:00",
+      "category": "GN: 宇树科技",
+      "gn_label": "robotics",
+      "site_name": "GN: 宇树科技",
+      "source": "GN: 宇树科技",
+      "site_id": "GN: 宇树科技",
+      "description": "宇树科技全资子公司正式落子成都  sohu.com",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 23.67,
+      "writing_value": 0,
+      "total_score": 98.67
     },
     {
       "id": "a69a0b7a1e5d45e1e6870b1a7fe91bdddb2f83ac",
@@ -525,9 +546,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 17.15,
+      "timeliness": 16.9,
       "writing_value": 0,
-      "total_score": 92.15
+      "total_score": 91.9
     },
     {
       "id": "7d04a32724c11b8b6f635e7f134f0d39e5c57fe3",
@@ -546,9 +567,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 21.05,
+      "timeliness": 20.8,
       "writing_value": 0,
-      "total_score": 96.05
+      "total_score": 95.8
     },
     {
       "id": "7a0ba4c0e7b0630eca0bf29a93e139eee9eae844",
@@ -567,9 +588,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 10.62,
+      "timeliness": 10.37,
       "writing_value": 0,
-      "total_score": 85.62
+      "total_score": 85.37
     },
     {
       "id": "2655e6d5441eac49fe41da11b77a5dbfacd56dac",
@@ -588,9 +609,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 10.59,
+      "timeliness": 10.33,
       "writing_value": 0,
-      "total_score": 85.59
+      "total_score": 85.33
     },
     {
       "id": "f6c3936efc0212073fcc1c6a6bf90e1a947b4cf3",
@@ -609,9 +630,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 11.08,
+      "timeliness": 10.82,
       "writing_value": 0,
-      "total_score": 86.08
+      "total_score": 85.82
     },
     {
       "id": "55f71d07c2a1ae09e7d7499378abaffb9ca018c6",
@@ -630,9 +651,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 11.89,
+      "timeliness": 11.64,
       "writing_value": 0,
-      "total_score": 101.89
+      "total_score": 101.64
     }
   ],
   "fallback_used": false
