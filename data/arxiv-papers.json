@@ -1,7 +1,77 @@
 {
-  "generated_at": "2026-09-03T03:27:25.588946+00:00",
+  "generated_at": "2026-09-03T03:42:01.670526+00:00",
   "total_items": 30,
   "items": [
+    {
+      "id": "http://arxiv.org/abs/2609.02861v1",
+      "title": "Towards Trustworthy Autonomous Robots: An Explainable AI-Based Decision Framework",
+      "url": "https://arxiv.org/abs/2609.02861",
+      "summary": "Autonomous robots powered by deep learning face a fundamental auditability challenge: when incidents occur, investigators cannot reconstruct why the system made specific decisions. This paper presents TRACE (Transparent Reasoning Architecture for Credible Execution), a decision framework that ensures every autonomous action can be traced back to sensor evidence through documented causal chains. The framework organizes decision-making into four auditable layers: Semantic Perception for evidence-grounded entity recognition, Belief Reasoning for probabilistic state estimation with causal graphs, Action Synthesis for constraint-aware planning with counterfactual documentation, and Execution Verification for compliance monitoring. TRACE is model-agnostic yet designed to integrate learning-based perception modules (CNNs, transformers) while preserving decision-level auditability. We evaluate the framework using three objective metrics: Evidence Traceability (sensor-to-decision linkage), Decision Reconstructability (post-hoc analysis capability), and Temporal Continuity (audit trail completeness). Experimental evaluation on warehouse robot navigation demonstrates that TRACE achieves 98.6% evidence traceability, 99.0% temporal continuity, and 98.1% decision reconstructability across 500 simulated decision cycles. Post-hoc methods like LIME provide feature attributions but lack the artifact structure needed for decision-level reconstruction. The framework addresses EU AI Act requirements for high-risk system transparency and contributes to Explainable AI for safety-critical autonomous systems.",
+      "authors": "Cagri Temel",
+      "category": "cs.RO",
+      "published_at": "2026-09-02T17:44:25+00:00",
+      "updated_at": "2026-09-02T17:44:25Z"
+    },
+    {
+      "id": "http://arxiv.org/abs/2609.02830v1",
+      "title": "Toward Robust LiDAR Semantic Segmentation for Real-World Deployment: Evaluation under Coarse Labels, Adverse Conditions, and Domain Shifts",
+      "url": "https://arxiv.org/abs/2609.02830",
+      "summary": "LiDAR-based semantic segmentation is a core perception module for autonomous vehicles and mobile robots. Despite the strong performance of recent state-of-the-art methods on standard benchmarks, existing evaluation protocols remain focused on clean, single-domain settings and fine-grained label taxonomies, leaving deployment readiness largely unassessed. Real-world systems must handle safety-critical label semantics, degraded sensing conditions, and cross-domain variability, yet no unified protocol currently addresses all three aspects together. In this paper, we propose a structured evaluation protocol that assesses the deployment readiness of LiDAR semantic segmentation models along three complementary dimensions: (i) coarse-label evaluation aligned with autonomous driving safety priorities, revealing how label granularity affects different methods; (ii) robustness under eight types of LiDAR corruptions designed to emulate real-world atmospheric, geometric, and sensor degradations; and (iii) domain generalization across datasets without adaptation. The evaluation includes inference speed measured on an embedded Jetson AGX Orin platform, directly reflecting deployment constraints. Our results show that fine-grained benchmark rankings do not always reflect safety-relevant performance, that all methods experience substantial degradation under corruptions with architecture-dependent robustness characteristics, and that current domain generalization remains insufficient for reliable deployment. These findings expose concrete gaps between benchmark performance and deployment readiness, and provide a reference protocol for more practically grounded evaluation of LiDAR semantic segmentation.",
+      "authors": "Samir Abou Haidar, Alexandre Chariot, Mehdi Darouich et al.",
+      "category": "cs.RO",
+      "published_at": "2026-09-02T17:15:07+00:00",
+      "updated_at": "2026-09-02T17:15:07Z"
+    },
+    {
+      "id": "http://arxiv.org/abs/2609.02811v1",
+      "title": "Do Better Imagined Rollouts Mean Better Robot Control? A Controlled Study of World-Model Evaluation Under Feedback",
+      "url": "https://arxiv.org/abs/2609.02811",
+      "summary": "Predictive models are increasingly used in robotics for state estimation, planning, control, and policy evaluation, yet they are often judged by open-loop prediction accuracy over a fixed horizon. In closed-loop operation, a robot repeatedly acts, receives new measurements, updates its state estimate, and recomputes control. We study this difference in a differential-drive path-tracking task with biased odometry and intermittent landmark sensing. Six state estimators are evaluated across 24 sensing conditions using trajectory replay, a 20-step measurement-free rollout, and closed-loop tracking. Replay position RMSE correlates more strongly with closed-loop cross-track RMSE than rollout error (Spearman rho = 0.923 vs. 0.774) and selects a different estimator from the closed-loop optimum in 5/24 conditions, compared with 18/24 for the rollout metric. We then vary rollout horizon and measurement-update interval. With H=20, rank agreement decreases from rho = 0.916 with measurements at every step to rho = 0.774 with no measurements. A horizon-update grid shows that long prediction horizons remain informative when regular corrections are retained, whereas long rollouts without correction can produce rankings that differ substantially from closed-loop behavior. We also test recurrent estimators trained on longer sensing outages. This improves the EKF-anchored models under combined sensing degradation, reducing GRU-EKF cross-track RMSE from 1.72 m to 1.06 m, but the gain is not consistent across isolated outages or estimator architectures. These results show that predictive-model evaluation in robotics should specify both prediction horizon and measurement-update schedule. For models used in feedback, offline rollouts are most informative when their sensing and correction pattern reflects closed-loop operation. Code is available at https://github.com/rdharini2001/Robot_World_Model",
+      "authors": "Dharini Raghavan, Amritpal Singh",
+      "category": "cs.RO",
+      "published_at": "2026-09-02T16:52:30+00:00",
+      "updated_at": "2026-09-02T16:52:30Z"
+    },
+    {
+      "id": "http://arxiv.org/abs/2609.02717v1",
+      "title": "MV-dVRK: A Multi-Viewpoint Benchmark for Spatial Surgical Perception",
+      "url": "https://arxiv.org/abs/2609.02717",
+      "summary": "Large-scale training and refined optimization techniques have greatly improved sparse multi-view 3D reconstruction. Despite their relevance to surgery, such methods have never before been rigorously evaluated on real endoscopic images. Current clinical telerobots deploy a single stereo camera inside the patient, making multi-viewpoint data extremely rare. This paper presents MV-dVRK, the first ex-vivo surgical dataset to combine multiple exposure-synchronized stereo viewpoints with accurate surface geometry and camera poses. The static subset of the benchmark provides dense SfM reference geometry, validated against an industrial 3D scanner, together with ground-truth camera poses and sparse-view test sets. We use MV-dVRK to systematically compare zero-shot monocular, stereo, multi-stereo, and multi-view 3D reconstruction methods as the number of viewpoints increases. With two endoscopes, multi-stereo reconstruction achieves the highest coverage. With a third viewpoint, optimization-based multi-view methods perform best, covering 67% of ground-truth surface points within a 1 mm tolerance and recovering highly accurate relative camera poses. By contrast, feed-forward foundation models cover only 43% of the ground-truth surface in the same setting. MV-dVRK also includes ten dynamic sequences spanning multiple surgical tasks, with increasing kinematic complexity and tissue deformation, providing a basis for future research in multi-viewpoint surgical perception. The project is available at: https://mv-dvrk.is.mpg.de.",
+      "authors": "Guido Caccianiga, Sergey Prokudin, Yutong Chen et al.",
+      "category": "cs.CV",
+      "published_at": "2026-09-02T15:25:28+00:00",
+      "updated_at": "2026-09-02T15:25:28Z"
+    },
+    {
+      "id": "http://arxiv.org/abs/2609.02688v1",
+      "title": "From Proxy Learning to Driving Decisions: A Transfer-Based Framework for Evaluating Future-Aware Autonomous Driving Planners",
+      "url": "https://arxiv.org/abs/2609.02688",
+      "summary": "Future-aware representations and world models are increasingly used in proposal-based autonomous-driving planners to improve trajectory selection. However, improvements in proxy objectives or restricted subsets are often interpreted as planning gains without verifying proposal ordering, selected trajectories, full-scale utility, and critical driving components. We propose the Proxy-to-Decision Transfer (PDT) Framework, an analysis framework that evaluates when learned future information supports a reliable driving-performance improvement claim. Its Decision-Transfer Decomposition Module localizes value loss through score margins, switch-conditioned utility, and support-versus-selection regret. Its Reliability-Constrained Validation Module requires exact pairing, a minimum meaningful effect, scale-expanded confirmation, safety non-compensation, sequential comparability, and family-level robustness. On a representative future-aware planner evaluated with NAVSIM-v1, component BCE decreases from 0.705 to 0.530 while held selected PDM decreases from 0.963 to 0.961. A separate candidate improves a 512-record prefix by 0.00909, with a scene-bootstrap 95% interval of [0.000744, 0.0177], but its 2048-record and complete-support intervals include zero. A proposal-level replay further confirms the switch-utility decomposition, yet none of 432 screened configurations passes the two-half, two-seed robustness gate. PDT therefore identifies where decision transfer fails or remains indeterminate across proxy, subset, aggregate, and selection evidence.",
+      "authors": "Yikai Wu",
+      "category": "cs.RO",
+      "published_at": "2026-09-02T14:55:14+00:00",
+      "updated_at": "2026-09-02T14:55:14Z"
+    },
+    {
+      "id": "http://arxiv.org/abs/2609.02653v1",
+      "title": "HINT: Human-Intent Inception for Long-Horizon Robot Manipulation",
+      "url": "https://arxiv.org/abs/2609.02653",
+      "summary": "Humans can perform complex manipulations given a simple intent through an overall instruction, while continuously adapting to evolving visual observations. However, current vision-language action (VLA) models and other action policies struggle to realize this high-level intelligent behavior under dense, evolving visual inputs and sparse language guidance. Visual correlations can then dominate semantic intent, leading actions to follow visual shortcuts rather than human goals. We present HINT (Human-INTent INcepTion), an agentic framework inspired by the human manipulation principles: semantic intent changes sparsely at manipulation-pattern transitions, whereas continuous control primarily depends on the evolving object-hand relationship. HINT invokes semantic reasoning only at pattern transitions to resolve the current subtask and target, then maintains this commitment through multi-view grounding and visual tracking. We explore two visual interfaces-image-space semantic highlighting and attention-prior injection-to communicate the tracked intent to the action policy without introducing additional trainable parameters into the foundation action model. Experiments across three long-horizon tasks and out-of-distribution variants show that HINT substantially improves intent understanding, task progress, and end-to-end success across two foundation policies while preserving low-latency control.",
+      "authors": "Mingyu Mei, Haojie Xu, Shihao Jin et al.",
+      "category": "cs.RO",
+      "published_at": "2026-09-02T14:26:30+00:00",
+      "updated_at": "2026-09-02T14:26:30Z"
+    },
+    {
+      "id": "http://arxiv.org/abs/2609.02634v1",
+      "title": "Latent Cluster Analysis for Vision-Language-Action Models",
+      "url": "https://arxiv.org/abs/2609.02634",
+      "summary": "Vision-Language-Action (VLA) Models are increasingly used in robotics for their ability to ground language and perception into action, yet the internal representations driving their behaviour remain poorly understood. We propose LAVLA, a framework for latent cluster analysis of VLA models, and conduct a layer-wise study of the state-of-the-art GR00T N1.5 model, with particular focus on its action decoder. To better characterise the latent space during action diffusion, we introduce a cross-attention-based embedding-weighting method that amplifies relevant features while suppressing less informative ones. Quantitative evaluation shows that weighted clustering consistently outperforms the baseline. To improve interpretability, we extract human-interpretable concepts for each cluster, linking latent representations to semantic descriptions. Our analysis shows that latent clusters progressively disentangle spatiotemporal and kinematic features, with representations becoming more refined in the middle layers and stabilising toward the output. As such, LAVLA advances the interpretability of language-driven robotic systems.",
+      "authors": "Theodor Wulff, Sergio Lanza, Tamara Bila et al.",
+      "category": "cs.RO",
+      "published_at": "2026-09-02T14:10:47+00:00",
+      "updated_at": "2026-09-02T14:10:47Z"
+    },
     {
       "id": "http://arxiv.org/abs/2609.02605v1",
       "title": "Advancing Accessible Underwater Robotics: The Mini-Girona I-AUV at RAMI 2025",
@@ -231,76 +301,6 @@
       "category": "cs.RO",
       "published_at": "2026-09-02T02:46:57+00:00",
       "updated_at": "2026-09-02T02:46:57Z"
-    },
-    {
-      "id": "http://arxiv.org/abs/2609.02003v1",
-      "title": "Design and Validation of a Lightweight, Low-Profile Powered Knee Prosthesis with Quasi-Direct Drive Actuation",
-      "url": "https://arxiv.org/abs/2609.02003",
-      "summary": "Fully-powered knee prostheses, unlike traditional passive knees, can perform controlled positive work, reducing the need for compensatory behaviors by users during energy-intensive activities. While quasi-direct drive (QDD) actuators provide superior torque control, backdrivability, and acoustic noise properties compared to traditional highly-geared actuators, prior QDD prototypes have been too heavy and bulky for commercial translation. In this work, we present the design and validation of a new lightweight (2.6 kg) and low-profile (24.5 cm tip-to-tip build height) QDD knee prosthesis. By optimizing an 18 to 1 two-stage transmission alongside thermal and structural finite-element analyses, we significantly reduce device mass while enabling a peak torque of 145 Nm. Through benchtop tests, we validate the device's high output torque, low backdrive torque (1 Nm), and its precision position and torque control capabilities. We also demonstrate biomimetic kinematics and peak knee extension torques (within one standard deviation of able-bodied references) during both level-ground walking and sit-stand transitions performed by three participants with transfemoral amputation and varying K-levels. By meeting or improving upon the mass, build height, peak torque, and acoustic noise of a leading commercial powered knee, this work establishes the clinical viability of emerging QDD prostheses that promise improved dynamic performance for their users.",
-      "authors": "Ross J. Cortino, Ryan Posh, Emily G. Keller et al.",
-      "category": "cs.RO",
-      "published_at": "2026-09-02T02:28:00+00:00",
-      "updated_at": "2026-09-02T02:28:00Z"
-    },
-    {
-      "id": "http://arxiv.org/abs/2609.01961v1",
-      "title": "MACAW: Reliable And Efficient Surgical Debridement Using Monocular Adaptive Compact Attention Windows",
-      "url": "https://arxiv.org/abs/2609.01961",
-      "summary": "Augmenting the dexterity of human surgeons has the potential to free them from tedious subtasks. We consider debridement (removal of diseased or dead tissue fragments), which is challenging due to imprecision in spatial perception and cable actuation. We develop an augmented dexterity system for surgical debridement that uses visual servoing to align the cable-driven gripper with the target position in the image plane, and then introduces a novel approach to depth control, MACAW: Monocular Adaptive Compact Attention Windows. Across 100 physical trials using the da Vinci Research Kit (dVRK) robot, camera-frame servoing reduced average gripper position offset from 37 to fewer than 5 pixels within 4 optimization steps, taking an average of only 0.39s. MACAW significantly outperforms procedural and learned VLA baselines, achieving a 93% success rate at 11 seconds per fragment, yielding a throughput of 304 fragments per hour. Extending MACAW to a bimanual debridement setup maintains a 92% success rate at an average of 7 seconds per fragment, increasing the throughput to 473 fragments per hour.",
-      "authors": "Ziyang Chen, Shutong Jin, Preethi Satish et al.",
-      "category": "cs.RO",
-      "published_at": "2026-09-02T00:34:13+00:00",
-      "updated_at": "2026-09-02T00:34:13Z"
-    },
-    {
-      "id": "http://arxiv.org/abs/2609.01938v1",
-      "title": "One Demonstration, Many Objects: Generalizing Manipulation via Local Contact Geometry",
-      "url": "https://arxiv.org/abs/2609.01938",
-      "summary": "Dexterous manipulation with multi-fingered robot hands promises human-level dexterity, but collecting large-scale dexterous robot hand data remains difficult. Learning from human demonstrations has emerged as a scalable alternative to robot teleoperation, providing strong priors on object interaction and contact strategies. Recent sim-to-real RL methods incorporate such priors, but often (i) omit rewards that explicitly incentivize precise contact, yielding weak real-world performance, and/or (ii) generalize poorly to unseen object instances. We propose DemoMimic (Dexterous Motion Mimic), a policy that manipulates objects by focusing on their geometry local to the contact points. Its contact-centric rewards encourage precise contact and improve sim-to-real consistency, yielding a single real-world policy that transfers across objects of varying shape, scale, mass, and friction wherever local contact structure is preserved. Real-world ablations show that DemoMimic achieves 71% success across 16 objects, four tasks, and two robot-hand embodiments, with the smallest sim-to-real drop compared to baselines.",
-      "authors": "Satvik Sharma, Samrat Sahoo, Huang Huang et al.",
-      "category": "cs.RO",
-      "published_at": "2026-09-01T23:04:35+00:00",
-      "updated_at": "2026-09-01T23:04:35Z"
-    },
-    {
-      "id": "http://arxiv.org/abs/2609.01799v1",
-      "title": "Designing Versatile Samples for Learned Trajectory Scoring",
-      "url": "https://arxiv.org/abs/2609.01799",
-      "summary": "Many current end-to-end driving policies emit a pool of candidate trajectories and select one, which makes selection a separable component: a scorer can be retrained while the planner, its backbone, and its trajectory generator all stay frozen. However, many strong planners concentrate their proposals around safe mode, providing limited supervision near decision boundaries. In this work, we design a training dataset that provides more informative supervision for the scorer. In particular, we construct two generators that perturb the logged human trajectory along the two axes a vehicle can be displaced: laterally toward the drivable boundary and longitudinally toward a leading vehicle. The designed dataset produces more informative positive and negative samples than the base planner's proposal pool. We attach a transformer-based scorer to two frozen generative planners, DiffusionDrive and MeanFuser, and train it on the NAVSIM navtrain dataset. The results of the experiments show that we achieve 90.1 EPDMS on DiffusionDrive and 90.4 EPDMS on MeanFuser when using ResNet-34, with 0.4 and 0.3 EPDMS respectively, from the designed training dataset.",
-      "authors": "Yaguang Li, Jiaru Zhang, Chuheng Wei et al.",
-      "category": "cs.RO",
-      "published_at": "2026-09-01T19:08:05+00:00",
-      "updated_at": "2026-09-01T19:08:05Z"
-    },
-    {
-      "id": "http://arxiv.org/abs/2609.01731v1",
-      "title": "TriSAR: Task Coordination and Collision Avoidance for Aerial Robot Teams in Disaster Response",
-      "url": "https://arxiv.org/abs/2609.01731",
-      "summary": "Multi-Unmanned Aerial Vehicle (UAV) disaster-response systems require coordinated task assignment and local trajectory control, yet the individual and combined contributions of these coordination layers to mission efficiency and operational safety remain insufficiently characterised under controlled experimental conditions. TriSAR is evaluated as a five-UAV coordination system operating in a physics-based Gazebo simulation of an earthquake-damaged urban environment. A 2 x 2 factorial design compares two task-allocation strategies (Genetic Algorithm and greedy fitness-based allocation) with reactive collision avoidance enabled or disabled. Each of the four configurations was evaluated over 30 stochastic episodes in a common scenario of five UAVs and eight targets. Under greedy allocation, enabling repulsion eliminated recorded collision-threshold violations, confirmed by a Mann-Whitney test (U = 885, p = 4.03 x 10^-12, rank-biserial r = 0.97). Under GA allocation, the same protective effect was confirmed (U = 675, p = 1.26 x 10^-5, rank-biserial r = 0.50). For mission-efficiency metrics, GA-based allocation showed no statistically detectable advantage over greedy allocation when repulsion was enabled, but a significant advantage in steps, path length, and energy when repulsion was disabled (Welch's t-tests, |g| between 0.92 and 1.76). These results show that reactive repulsion provides a substantial, allocation-dependent safety benefit, while the additional computational complexity of GA-based task allocation yields a detectable mission-efficiency benefit only when repulsion is disabled.",
-      "authors": "Aditya Anil Kapile, Pedro Machado, Isibor Kennedy Ihianle",
-      "category": "cs.RO",
-      "published_at": "2026-09-01T18:02:12+00:00",
-      "updated_at": "2026-09-01T18:02:12Z"
-    },
-    {
-      "id": "http://arxiv.org/abs/2609.01596v1",
-      "title": "Facet-0: A Robotic Foundation Model for Contact-Rich Precise Manipulation",
-      "url": "https://arxiv.org/abs/2609.01596",
-      "summary": "Real-world robotic assembly at sub-millimeter tolerances demands spatial precision, compliant interaction, and robustness to contact failures. We present Facet-0, a robotic foundation model that predicts and values the contact consequences of its actions. Facet-0 unifies multimodal representation learning and reinforcement learning (RL) post-training around a joint action-wrench proposal: a causal wrench history is aligned with vision-language semantics and kinematic state, and flow matching generates each action chunk together with the future wrist-wrench profile it is expected to induce. Deployment rollouts train a distributional Action-Wrench Critic to distinguish motions with similar task progress but different contact outcomes, while phase-aware rewards and contact-selective credit concentrate policy improvement on decisive interactions. To accommodate part-specific dynamics, a lightweight bounded actor reuses the frozen representation for on-robot adaptation; RL remains defined over executable Cartesian actions, while an auxiliary wrench head preserves predictive, non-commanded action-contact coupling. Trained on ManuFacet-1K, a 1,000-hour force-synchronized corpus spanning three embodiments and multiple manufacturing cells, the bounded task-adapted system reaches 82% mean success on five sub-millimeter computer-assembly tasks, compared with 15% for the strongest baseline, with 0.5 mm placement accuracy and 50 ms command latency.",
-      "authors": "Haoyuan Deng, Haichao Liu, Wenkai Guo et al.",
-      "category": "cs.RO",
-      "published_at": "2026-09-01T17:58:07+00:00",
-      "updated_at": "2026-09-01T17:58:07Z"
-    },
-    {
-      "id": "http://arxiv.org/abs/2609.01579v1",
-      "title": "SG-AMP: Scene-Graph-Guided Active Perception and Semantics-Aware Motion Planning for Pepper Plants",
-      "url": "https://arxiv.org/abs/2609.01579",
-      "summary": "We present SG-AMP, integrating robust depth completion with input-conditioned uncertainty, persistent panoptic mapping, plant scene-graph reasoning, and semantics-aware active view-motion planning. Beyond inspecting uncertain observed regions, the scene graph explicitly hypothesizes unobserved pepper--peduncle attachments and directs close-range sensing toward them. Candidate views are selected according to expected information gain, while class-dependent motion costs distinguish protected peppers, peduncles, and stems from conditionally traversable foliage. On pepper data, the perception network achieves $55.27\\%$ semantic mIoU, $38.67\\%$ PQ, and $40.62\\,\\mathrm{mm}$ depth RMSE, while input-conditioned uncertainty improves NYUv2 NLL from $-1.6518$ to $-1.6925$ and AUSE from $0.0102$ to $0.0087$.",
-      "authors": "Rohit Menon, Shiva Rudra Lolla, Niklas Mueller-Goldingen et al.",
-      "category": "cs.RO",
-      "published_at": "2026-09-01T17:44:23+00:00",
-      "updated_at": "2026-09-01T17:44:23Z"
     }
   ]
 }
