@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-03T14:35:24.391092+00:00",
-  "total_items": 30,
+  "generated_at": "2026-09-03T15:06:27.523598+00:00",
+  "total_items": 29,
   "items": [
     {
       "id": "http://arxiv.org/abs/2609.02861v1",
@@ -320,17 +320,6 @@
       "published_at": "2026-09-02T03:20:09+00:00",
       "updated_at": "2026-09-02T03:20:09Z",
       "title_zh": "对变化进行建模：用于以对象为中心的操作的稀疏残差世界模型"
-    },
-    {
-      "id": "http://arxiv.org/abs/2609.02020v1",
-      "title": "Real-Time Dynamics-Based Torque-Sampling MPPI for Compliant and Force Aware Manipulation",
-      "url": "https://arxiv.org/abs/2609.02020",
-      "summary": "This study proposes a novel Model Predictive Path Integral (MPPI)-based task-space control framework. The proposed framework explicitly solves rigid-body dynamics within a real-time MPC formulation and enforces safety constraints, enabling accurate motion and force control that yields compliant behaviors for safe and effective physical interaction of robotic manipulators in unstructured environments. By leveraging MPPI, the proposed framework efficiently handles nonlinear dynamics that are difficult to solve with conventional MPC approaches in real-time. Furthermore, we develop a torque-sampling-based control architecture that enables efficient exploitation of GPU-based parallelization, resulting in effective compliant and force-aware behaviors. As a result, the proposed framework achieves a solver update rate of over 166 Hz with a 0.18 s prediction horizon, and its performance is validated through real-world experiments on a 7-DoF manipulator.",
-      "authors": "Euncheol Im, Taehyun Kim, Yonghwan Oh et al.",
-      "category": "cs.RO",
-      "published_at": "2026-09-02T02:46:57+00:00",
-      "updated_at": "2026-09-02T02:46:57Z",
-      "title_zh": "基于实时动力学的扭矩采样 MPPI，用于合规和力感知操纵"
     }
   ]
 }
