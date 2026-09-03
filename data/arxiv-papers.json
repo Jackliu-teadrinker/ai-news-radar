@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-03T15:06:27.523598+00:00",
-  "total_items": 29,
+  "generated_at": "2026-09-03T17:12:46.808873+00:00",
+  "total_items": 27,
   "items": [
     {
       "id": "http://arxiv.org/abs/2609.02861v1",
@@ -298,28 +298,6 @@
       "published_at": "2026-09-02T05:43:19+00:00",
       "updated_at": "2026-09-02T05:43:19Z",
       "title_zh": "通过学习的点云对应对人形机器人进行统一运动重定向"
-    },
-    {
-      "id": "http://arxiv.org/abs/2609.02079v1",
-      "title": "Koopman-Based Robust Model Predictive Control for Nonlinear Systems with Stochastic Intermittent Measurements",
-      "url": "https://arxiv.org/abs/2609.02079",
-      "summary": "Intermittent state measurements pose fundamental challenges to model predictive control of constrained nonlinear systems because prediction uncertainty grows during feedback outages and measurement-triggered resets disrupt nominal state propagation, potentially compromising closed-loop stability and recursive feasibility. This paper develops a Koopman-based stochastic MPC framework with probabilistically truncated soft constraints. Specifically, a Lipschitz-constrained deep Koopman model provides a linear latent predictor, enabling computationally efficient online optimization. The intermittent measurement process is modeled as a two-mode discrete-time Markov chain, yielding a unified Markov jump error model for open-loop propagation and measurement-triggered resets. Under numerically verifiable sufficient conditions, the prediction error is shown to be mean-square ultimately bounded, and an explicit uniform second-moment bound is obtained. A distribution-free probabilistic error radius is then constructed for a prescribed confidence level and used to truncate dropout-dependent constraint tightening. An exact-penalty soft-constraint mechanism accommodates reset-induced jumps and prolonged dropouts. Under the stated terminal compatibility and bounded-disturbance conditions, recursive feasibility and mean-square ultimate boundedness of the closed-loop regulation error are established. Numerical simulations on a visual-servoing tracking task corroborate these theoretical results and demonstrate effective tracking under stochastic measurement unavailability.",
-      "authors": "Guanhua Liu, Tong Wu, Lixian Zhang et al.",
-      "category": "cs.RO",
-      "published_at": "2026-09-02T04:08:49+00:00",
-      "updated_at": "2026-09-02T04:08:49Z",
-      "title_zh": "具有随机间歇测量的非线性系统的基于库普曼的鲁棒模型预测控制"
-    },
-    {
-      "id": "http://arxiv.org/abs/2609.02046v1",
-      "title": "Modeling What Changes: Sparse, Residual World Models for Object-Centric Manipulation",
-      "url": "https://arxiv.org/abs/2609.02046",
-      "summary": "Monolithic world models predict the entire next state at every step, spending capacity re-predicting the static majority of a scene and injecting error into it. We ask whether explicitly modeling change (a per-object change gate plus a residual delta head that perturbs only the objects the gate flags) is a more effective and interpretable bias for physical prediction and control. On a MuJoCo tabletop pushing benchmark scaling from 3 to 8 objects, the sparse/residual model predicts next-state poses 2.5 to 4.6 times more accurately than a dense multilayer perceptron at 8.6 to 11.1 times fewer parameters, sustains change-detection F1 of 0.80 to 0.87 where the dense baseline is degenerate, transfers across object counts with zero retraining (99.4 percent F1 retention), and reaches about 90 percent of its full-data accuracy with a quarter of the data. In autoregressive rollout it compounds far less error, hugging the no-motion floor while the dense model drifts. Finally, inside a sampling-based planner, prediction-only models fail (though a true-simulator oracle solves the task with the identical planner, confirming the planner is sound), but once featurized and trained for the states a planner visits, the sparse model begins to plan (0.23 plus or minus 0.06 success over three seeds) while the dense monolith stays at zero at every seed. Modeling what changes, rather than re-predicting the whole world, is a simple, effective bias for object-centric physical AI; code, data generators, and all checkpoints will be released upon publication.",
-      "authors": "Param Thakkar, Parsika Paresh Shah, Manisha Sushant Gote",
-      "category": "cs.RO",
-      "published_at": "2026-09-02T03:20:09+00:00",
-      "updated_at": "2026-09-02T03:20:09Z",
-      "title_zh": "对变化进行建模：用于以对象为中心的操作的稀疏残差世界模型"
     }
   ]
 }
