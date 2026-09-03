@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-03T17:12:46.808873+00:00",
-  "total_items": 27,
+  "generated_at": "2026-09-03T20:12:14.049140+00:00",
+  "total_items": 21,
   "items": [
     {
       "id": "http://arxiv.org/abs/2609.02861v1",
@@ -232,72 +232,6 @@
       "published_at": "2026-09-02T08:18:20+00:00",
       "updated_at": "2026-09-02T08:18:20Z",
       "title_zh": "CrashDiffuser：VLM 引导的碰撞意图推理，用于生成细粒度的安全关键交通场景"
-    },
-    {
-      "id": "http://arxiv.org/abs/2609.02252v1",
-      "title": "DiffuSearch: How Hybrid Trajectory Planning Benefits from Aligned Objectives in Diffusion and Action Space",
-      "url": "https://arxiv.org/abs/2609.02252",
-      "summary": "In trajectory planning for autonomous driving, hybrid planning architectures are often realized as a collection of disparate modules, each with its own objectives. This lack of a unifying principle can lead to inconsistencies between the initial and refined trajectory, resulting in suboptimal behavior. We address this by introducing DiffuSearch, a novel hybrid planner that uses a unified set of objectives across generation and refinement. Our model encourages all components to follow the same shared driving goals: collision avoidance, drivable area compliance, comfort, and progress. DiffuSearch employs a two-stage architecture. First, a guided diffusion model generates a scene-consistent, joint trajectory prediction, using our driving objectives as differentiable guidance functions to implicitly steer the denoising process. Second, a Monte Carlo Tree Search (MCTS) in a discretized action space performs an explicit, local refinement of this proposal, leveraging the same driving objectives as its reward function. This synergistic design leverages the diffusion model's strength in finding scene-consistent solutions combined with the explainable, constraint-aware refinement of MCTS. Experiments on nuPlan and interPlan reactive closed-loop benchmarks demonstrate that DiffuSearch achieves strong and often state-of-the-art performance, substantially reducing collisions and improving comfort, particularly in complex, interactive scenarios. Our ablation studies indicate that MCTS refinement is the main mechanism behind the gains, while sharing objectives between implicit guidance and explicit search provides further consistent improvements.",
-      "authors": "Steffen Hagedorn, Aron Distelzweig, Alexandru P. Condurache",
-      "category": "cs.RO",
-      "published_at": "2026-09-02T08:00:17+00:00",
-      "updated_at": "2026-09-02T08:00:17Z",
-      "title_zh": "DiffuSearch：混合轨迹规划如何受益于扩散和行动空间中的一致目标"
-    },
-    {
-      "id": "http://arxiv.org/abs/2609.02237v1",
-      "title": "Recursive Value Learning for Long-Horizon Offline Goal-Conditioned RL",
-      "url": "https://arxiv.org/abs/2609.02237",
-      "summary": "Scaling offline goal-conditioned reinforcement learning (GCRL) to long-horizon tasks is difficult because (1) long-range value learning depends on shorter-range estimates that may still be inaccurate, and (2) max-based value backups can amplify overestimation through repeated propagation. We propose DCRL (Divide-and-Conquer RL), which recursively decomposes each trajectory segment into a balanced binary tree and trains the values from leaves to root. Each parent is therefore updated only after its children, using an exact factorization of the observed route rather than selecting among noisy alternatives. Since this objective learns values along demonstrated routes that are not necessarily optimal, DCRL jointly propagates values across trajectories to discover shorter routes. Thanks to the balanced binary tree, DCRL reduces worst-case bootstrap depth from linear to logarithmic, and this shorter dependency structure empirically corresponds to much slower error accumulation. Across diverse goal-reaching tasks, DCRL substantially outperforms prior flat offline GCRL methods, and on the five most challenging long-horizon OGBench tasks, it improves the best prior average score from 55 to 64, surpassing all flat and hierarchical baselines.",
-      "authors": "Hyeonseong Jeon, Youngwoon Lee",
-      "category": "cs.LG",
-      "published_at": "2026-09-02T07:45:16+00:00",
-      "updated_at": "2026-09-02T07:45:16Z",
-      "title_zh": "长视野离线目标条件强化学习的递归价值学习"
-    },
-    {
-      "id": "http://arxiv.org/abs/2609.02222v1",
-      "title": "FOCUS: Foot Observation Confidence for Robust Humanoid Proprioceptive Odometry",
-      "url": "https://arxiv.org/abs/2609.02222",
-      "summary": "Foot forward kinematics (FK) is widely used to improve proprioceptive legged odometry by providing reliable velocity constraints during foot support. Existing contact-aided estimators generally rely on binary contact decisions to determine whether the FK measurements of an entire foot should be trusted. However, contact does not necessarily imply FK reliability. Dynamic locomotion often involves partial support, toe dragging, and foot slip, causing binary contact decisions to accumulate significant drift over long trajectories. To address this limitation, we propose FOCUS (Foot Observation Confidence from Unannotated Simulation), which predicts a continuous FK reliability weight for each foot instead of estimating binary foot contact. Rather than replacing the model-based estimator, the predicted reliability weights are used to blend FK velocity observations with IMU-propagated body velocity and to adapt the observation covariance of an extended Kalman filter (EKF), enabling smooth reliability-aware fusion without hard contact switching. The network is trained from automatically generated simulation signals using an FK-weighted velocity consistency loss with lightweight simulator-contact regularization, without manually annotated continuous FK-reliability labels. The deployed model relies only on IMU and joint kinematic measurements, making it suitable for hardware platforms with unreliable torque sensing. Experiments demonstrate that FOCUS reduces absolute trajectory error (ATE) by 83.7% on simulated walking episodes, preserves simulated dynamic-motion fidelity in motion scale and spectral energy, reduces ATE by 70.8% across 19 real walking segments, and reduces mean ATE by 42.7% across four real dynamic-motion routines.",
-      "authors": "Kaixin Feng, Angsong Li, Shaopeng Zhang et al.",
-      "category": "cs.RO",
-      "published_at": "2026-09-02T07:34:55+00:00",
-      "updated_at": "2026-09-02T07:34:55Z",
-      "title_zh": "焦点：稳健的人形本体感受里程计的足部观察信心"
-    },
-    {
-      "id": "http://arxiv.org/abs/2609.02219v1",
-      "title": "Hardware-Accelerated Instance Segmentation for Resource-Constrained Space Robotics with Criticality Analysis",
-      "url": "https://arxiv.org/abs/2609.02219",
-      "summary": "Autonomous lunar missions require real-time per- ception under three coupled constraints: extreme low-light conditions, limited onboard compute, and radiation-induced hardware faults that can silently corrupt inference. We present a deployment-oriented instance segmentation framework for resource-constrained lunar robotics that jointly addresses quan- tization calibration and system-level fault exposure under strict compute constraints. First, we introduce Activation Variance Informative Sampling (AVIS), a label-free calibration strategy that deterministically selects calibration samples based on activation variance statistics. Second, we deploy a YOLO-based segmentation model on a Deep Learning Processor Unit (DPU) with architectural modifications that reduce CPU fallback paths and enable statically compiled execution with bounded latency in low-lighting conditions. We further introduce a software-level criticality analysis to estimate fault exposure and guide mitigation under radiation-constrained operation. On a lunar micro-rover platform, AVIS with bias correction recovers 69.8% of quantization-induced accuracy loss while achieving 309 ms inference latency and 5.7 W power consumption. Targeted mitigation reduces global criticality by 31.7%. The results demonstrate an integrated approach and a blueprint for a reliable and safe AI perception framework under space deployment constraints.",
-      "authors": "Siddhant Shete, Hilmi Dogu Kücüker, Udo Frese et al.",
-      "category": "cs.RO",
-      "published_at": "2026-09-02T07:33:27+00:00",
-      "updated_at": "2026-09-02T07:33:27Z",
-      "title_zh": "具有关键性分析的资源受限空间机器人的硬件加速实例分割"
-    },
-    {
-      "id": "http://arxiv.org/abs/2609.02157v1",
-      "title": "Towards Effective Physical Reservoir Computing with a Pneumatic Soft Robot",
-      "url": "https://arxiv.org/abs/2609.02157",
-      "summary": "Physical reservoir computing (PRC) refers to the use of a physical dynamical system as a computational resource for tasks such as state estimation and control, but there has been a lack of formal study of design rules towards more effective design of such physical reservoirs. Using a pneumatic soft arm with a five-pouch sensing column, this work studies how the pouch interconnection topology, robot stiffness, and the number of instrumented sensors affect bending-angle estimation performance. Across 36 matched trials spanning waveform, baseline pressure of the sensing column, and actuation range, all designs are evaluated under the same-time bending-angle estimation benchmark using 0.2 s of pressure history and a fixed ridge estimator. Our analysis of the experimental results leads to three design guidelines. First, independently sealed pouches preserve a much richer observable state than a shared manifold. Second, increasing the baseline pressure of the sensing column makes the pouch responses more redundant and increases estimation error most strongly in the coupled topology. Third, in the sealed topology, two strategically placed sensors already recover most of the attainable benefit, three capture essentially all of it, and additional sensors provide little or no additional value. In summary, the results suggest that topology, stiffness, and number of instrumented sensors should be co-designed for accurate PRC of soft robot states; stronger excitation alone cannot recover the diversity that poor design choices have already removed.",
-      "authors": "Jeevan Hebbal Manjunath, Jun Wang, Suyi Li et al.",
-      "category": "cs.RO",
-      "published_at": "2026-09-02T06:14:47+00:00",
-      "updated_at": "2026-09-02T06:14:47Z",
-      "title_zh": "使用气动软体机器人实现有效的物理油藏计算"
-    },
-    {
-      "id": "http://arxiv.org/abs/2609.02134v1",
-      "title": "Unified Motion Retargeting for Humanoids with Learned Point Cloud Correspondence",
-      "url": "https://arxiv.org/abs/2609.02134",
-      "summary": "Humanoid learning increasingly relies on transforming vast and diverse human motion data into high-quality robot reference trajectories. However, retargeting human motion to humanoid robots is challenging due to substantial differences in morphology, degrees of freedom, joint ranges, and kinematic constraints between humans and robots. Existing retargeting methods typically address these differences by defining human-robot correspondence through hand-crafted sparse keypoints or body-part pairs. As a result, retargeting quality depends heavily on manual semantic design, limiting scalability across motion sources and robot morphologies and providing only sparse guidance for reproducing detailed poses and interactions. In this paper, we present Unified Motion Retargeting (UMR), a framework that learns dense point cloud correspondence without requiring manually designed human-robot mappings. By treating exterior point clouds as a unified interface between human motion and humanoid robots, UMR decouples retargeting from source-specific skeletal semantics and robot-specific topology. The learned dense correspondence provides fine-grained geometric anchors for constrained point cloud matching optimization, enabling surface-level pose alignment and direct transfer of interaction contacts. Experiments demonstrate that UMR unifies retargeting across heterogeneous motion sources, robot embodiments, and downstream scenarios ranging from locomotion to interaction, while achieving higher motion fidelity and plausibility than state-of-the-art methods. UMR therefore provides a scalable foundation for transforming large-scale human motion references into robot-ready training data.",
-      "authors": "Hanyang Cao, Yuetong Fang, Taesoo Kwon et al.",
-      "category": "cs.RO",
-      "published_at": "2026-09-02T05:43:19+00:00",
-      "updated_at": "2026-09-02T05:43:19Z",
-      "title_zh": "通过学习的点云对应对人形机器人进行统一运动重定向"
     }
   ]
 }
