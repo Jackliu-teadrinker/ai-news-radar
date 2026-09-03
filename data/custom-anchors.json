@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-09-03T14:06:13.157394+00:00",
+  "generated_at": "2026-09-03T14:34:58.234050+00:00",
   "window_start": "2026-09-03T19:00:00+08:00",
-  "window_end": "2026-09-03T22:05:13.011151+08:00",
+  "window_end": "2026-09-03T22:34:57.224480+08:00",
   "total_items": 6,
   "items": [
     {
       "id": "1ecba27765e2003758af109c9a2a53ad679a4330",
       "title": "Amazon’s Zoox expands its robotaxi service to Las Vegas airport",
-      "title_zh": "",
+      "title_zh": "亚马逊的 Zoox 将机器人出租车服务扩展到拉斯维加斯机场",
       "url": "https://techcrunch.com/2026/09/03/amazons-zoox-expands-its-robotaxi-service-to-las-vegas-airport/",
       "published_at": "2026-09-03T12:12:56+00:00",
       "category": "TechCrunch Robotics",
@@ -21,14 +21,14 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 28.13,
+      "timeliness": 27.63,
       "writing_value": 5,
-      "total_score": 113.13
+      "total_score": 112.63
     },
     {
       "id": "5050a5bb7863bdabb3026ad02df778be848971e8",
       "title": "Protecting Dynamic Industrial Robot Cable Carriers",
-      "title_zh": "",
+      "title_zh": "保护动态工业机器人电缆托架",
       "url": "https://spectrum.ieee.org/industrial-robot-cable-carrier-protection",
       "published_at": "2026-09-03T12:18:21+00:00",
       "category": "IEEE Spectrum",
@@ -42,14 +42,14 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 28.22,
+      "timeliness": 27.72,
       "writing_value": 5,
-      "total_score": 113.22
+      "total_score": 112.72
     },
     {
       "id": "1f669018a6d00f305c8f3b712196b838d97f92b3",
       "title": "The Best Way to Explore Lunar Craters Is a Giant Robot Ball",
-      "title_zh": "",
+      "title_zh": "探索月球陨石坑的最佳方式是巨型机器人球",
       "url": "https://spectrum.ieee.org/moon-ball-robot",
       "published_at": "2026-09-03T12:00:01+00:00",
       "category": "IEEE Spectrum",
@@ -63,35 +63,35 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 27.92,
+      "timeliness": 27.42,
       "writing_value": 5,
-      "total_score": 112.92
+      "total_score": 112.42
     },
     {
-      "id": "e94639f15045f88efeeb52df6351850545ddb546",
-      "title": "The Invisible Nervous System: Wireless Connectivity for Physical AI and Humanoids - Robotics Tomorrow",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPMzVVT0FGSWkwZUozcDFkTHNiMzZzZEp6Qjg1cDhQRzZhQy1ld2p5R3NuUXlibGVFMEQxS05jQ2NTVW5LcTBzQnhScWgyOHI2SjgxQ3ZPai1rbE04anNLdXQ3QVB4QjJ3Tms2Q0ZsTEFrSDk3akN1Tlp0Z2VyTTVBYWsyNXg2UEhXaWxqYWhaZjdCdzNTNjVqRFhvcDYzcmtVcVhKN3I5dmk0WFVmckppd0JIdXNydmN0Nms2UnNIaFp5cHhBXzN4WmtkdEo2WDlsclE?oc=5",
-      "published_at": "2026-09-03T12:44:14+00:00",
-      "category": "GN: humanoid robot",
-      "gn_label": "humanoid",
-      "site_name": "GN: humanoid robot",
-      "source": "GN: humanoid robot",
-      "site_id": "GN: humanoid robot",
-      "description": "The Invisible Nervous System: Wireless Connectivity for Physical AI and Humanoids  Robotics Tomorrow",
-      "ai_score": 80.0,
-      "ai_label": "humanoid",
-      "relevance": 0.8,
+      "id": "e92ade632769861b70251e6309fecfedc3dfae1f",
+      "title": "IFA 2026: DJI Osmo 360 II with 8K/60 fps and the ROMO 2 robot vacuum - Basic Tutorials",
+      "title_zh": "IFA 2026：DJI Osmo 360 II（8K/60 fps）和 ROMO 2 扫地机器人 - 基础教程",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOQ2pibF9EX3g0aWJOSFFmOU84MHhSb0RRd2EyZHJEckZ2MWctRl9QSE5jNUl4NjFTOUZhNnREb3oyV29FQjExQXBRR2xYQ0VIV2l5NUtfNkFRbjRIQzlRVjhIRExSMFppTTh4UmxaN2ItWFk5bEZkcjF3SVp3cUxoVEtMbkI3Y3BPSEFSbnFvWFJDRDV3cU5RZGlTU1VvaXpJTG40?oc=5",
+      "published_at": "2026-09-03T12:00:38+00:00",
+      "category": "GN: robot vacuum",
+      "gn_label": "robotics",
+      "site_name": "GN: robot vacuum",
+      "source": "GN: robot vacuum",
+      "site_id": "GN: robot vacuum",
+      "description": "IFA 2026: DJI Osmo 360 II with 8K/60 fps and the ROMO 2 robot vacuum  Basic Tutorials",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
       "authority": 10,
-      "depth": 5,
-      "timeliness": 28.65,
-      "writing_value": 5,
-      "total_score": 128.65
+      "depth": 0,
+      "timeliness": 27.43,
+      "writing_value": 0,
+      "total_score": 102.43
     },
     {
-      "id": "bb4d881ffc93f483436466560773ae6232f123b6",
-      "title": "Enovis Announces Binding Offer to Acquire eCential Robotics - Med-Tech Insights",
-      "title_zh": "",
+      "id": "6383e5b9a61114a470b4f74f15cf581734d374e2",
+      "title": "Enovis Announces Binding Offer to Acquire eCential Robotics - med-techinsights.com",
+      "title_zh": "Enovis 宣布收购 eCential Robotics 的约束要约 - med-techinsights.com",
       "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOTlFGcmN4akJTby1VbWsyUEp5REplNndGcnRIWTdkVmR3ZG91dHU5OTI4X3R2SFItSVBHejN1cHVtZU9xUjB6d1c5czA3UVFYR0xvWXFvTjdPVXFfWTU2dUgtdE9uZ0VTT2hCTkJhb0hpaXJ1WnY4ZmR5ZHJRcHpZbFhaakNLWldZS0VDMWhlLTJ4aFVDYjJ5VXZDT3dtMTVUMGc?oc=5",
       "published_at": "2026-09-03T11:16:13+00:00",
       "category": "GN: surgical robot",
@@ -99,15 +99,15 @@
       "site_name": "GN: surgical robot",
       "source": "GN: surgical robot",
       "site_id": "GN: surgical robot",
-      "description": "Enovis Announces Binding Offer to Acquire eCential Robotics  Med-Tech Insights",
+      "description": "Enovis Announces Binding Offer to Acquire eCential Robotics  med-techinsights.com",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.19,
+      "timeliness": 26.69,
       "writing_value": 0,
-      "total_score": 102.19
+      "total_score": 101.69
     },
     {
       "id": "ccabb9dc60dc429bb2df3ff7b61a590e5a3ca0d1",
@@ -126,9 +126,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 5,
-      "timeliness": 27.0,
+      "timeliness": 26.5,
       "writing_value": 5,
-      "total_score": 127.0
+      "total_score": 126.5
     }
   ],
   "fallback_used": false
