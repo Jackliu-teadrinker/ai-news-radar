@@ -1,9 +1,9 @@
 {
   "date": "2026-09-03",
-  "generated_at": "2026-09-03T08:17:04.027871+00:00",
+  "generated_at": "2026-09-03T08:33:20.028266+00:00",
   "score_threshold": 80,
   "total_items": 50,
-  "new_added": 2,
+  "new_added": 1,
   "items": [
     {
       "id": "e38a28591b8a1fc2",
@@ -699,6 +699,27 @@
       "total_score": 119.75
     },
     {
+      "id": "6463e32a5f6e72ab",
+      "title": "优必选超仿生人形机器人U1荣获亚太医疗创新大奖 - Sohu",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPWUVxamp2Q19MLXM5UUs5NV9kcHoyV2JpTmdwMGE0WWtrM2VGdHYzTFp6dndLYTFJRzdtUmo2bkw4cWhVdW5JdjRNQkxwS2t2eC1OSExsLU9XMHFaM1RCcm9QWmQxX2NoUFNISUxUblhzR3ZVUTFacUJwTmVtb1VPcDM1elF4R2Iz?oc=5",
+      "published_at": "2026-09-03T08:05:00+00:00",
+      "category": "国内人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国内人形机器人资讯",
+      "source": "国内人形机器人资讯",
+      "site_id": "国内人形机器人资讯",
+      "description": "优必选超仿生人形机器人U1荣获亚太医疗创新大奖  Sohu",
+      "ai_score": 80.0,
+      "ai_label": "humanoid",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.75,
+      "writing_value": 0,
+      "total_score": 119.75
+    },
+    {
       "id": "5e1746979d3cbbc7",
       "title": "Polaris AI亮相韩国安全产业博览会：展示人形机器人 - Sohu",
       "title_zh": "",
@@ -1033,27 +1054,6 @@
       "timeliness": 29.37,
       "writing_value": 0,
       "total_score": 119.37
-    },
-    {
-      "id": "c0807e0b24a365b4",
-      "title": "马斯克称人形机器人生产力将超人类总和 - Sohu",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQNURILWtXWGlobWR3cnlFM0ozWjNkUW41cGxvRm01b2NfdjNlWGY4cnVMMi1EWURGbm5sTnJyVmc4ME5kUUgyQXYwZ1p0R0RwX1FITmowOGFMV21vVVAxVDFkQmV4OXpneDgwU3U5NEF6ck9ubFZoT0ZXckNvcTV5UTRlT1lwVEp5Sm1JMg?oc=5",
-      "published_at": "2026-09-03T00:18:00+00:00",
-      "category": "国内人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国内人形机器人资讯",
-      "source": "国内人形机器人资讯",
-      "site_id": "国内人形机器人资讯",
-      "description": "马斯克称人形机器人生产力将超人类总和  Sohu",
-      "ai_score": 80.0,
-      "ai_label": "humanoid",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 29.33,
-      "writing_value": 0,
-      "total_score": 119.33
     }
   ]
 }
