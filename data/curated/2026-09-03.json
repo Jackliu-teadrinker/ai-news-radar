@@ -1,9 +1,9 @@
 {
   "date": "2026-09-03",
-  "generated_at": "2026-09-03T11:04:14.973479+00:00",
+  "generated_at": "2026-09-03T11:23:29.249094+00:00",
   "score_threshold": 80,
   "total_items": 50,
-  "new_added": 0,
+  "new_added": 1,
   "items": [
     {
       "id": "ba90de81c4dc11a1",
@@ -657,6 +657,27 @@
       "total_score": 119.81
     },
     {
+      "id": "802195c435516aed",
+      "title": "北京人形数据基地下载量破2000万，基地负责人夏华林：未来具身智能最核心的竞争点是数据飞轮 - moomoo.com",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1GV2l3d3RsSnYzZnUtcTQ3VXY5aWxTdUJROTh5aUw5bjdPZUYwVlUxZHkyZ3E2Rkx3ampTS3RIaF9rNmpXYW1fOGRKMkZiVXZtTC1YTHRsSmU2dw?oc=5",
+      "published_at": "2026-09-03T11:07:24+00:00",
+      "category": "国内人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国内人形机器人资讯",
+      "source": "国内人形机器人资讯",
+      "site_id": "国内人形机器人资讯",
+      "description": "北京人形数据基地下载量破2000万，基地负责人夏华林：未来具身智能最核心的竞争点是数据飞轮  moomoo.com",
+      "ai_score": 80.0,
+      "ai_label": "humanoid",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.8,
+      "writing_value": 0,
+      "total_score": 119.8
+    },
+    {
       "id": "fbd53a7c2c900873",
       "title": "第二届人形机器人赛事验证感知价值，3D 激光雷达成产业落地核心感知底座 - 品玩",
       "title_zh": "",
@@ -1033,27 +1054,6 @@
       "timeliness": 29.69,
       "writing_value": 0,
       "total_score": 119.69
-    },
-    {
-      "id": "0723c4e87c102cec",
-      "title": "APEC高规格论坛唯一受邀具身智能企业！智平方张鹏：多元真实场景推动物理AI持续进化 - Sohu",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPWXlSSWoxc1ZLZ2JhQUNEcFY5bkVTak03VWNCZThYSGNtYXhZVzlWOW9vY1lTeUxBTjdCMG45clowd1AzSl9tYWRWY1Raa1IzUzlFMGdsMnZINVVUWVlFdXVXc1duM0lVOV9FZHZVQ29Md0VGS2NNdUhESDR0RDVlTG1uZEpOY2I4?oc=5",
-      "published_at": "2026-09-03T02:45:09+00:00",
-      "category": "国内具身智能资讯",
-      "gn_label": "embodied_ai",
-      "site_name": "国内具身智能资讯",
-      "source": "国内具身智能资讯",
-      "site_id": "国内具身智能资讯",
-      "description": "APEC高规格论坛唯一受邀具身智能企业！智平方张鹏：多元真实场景推动物理AI持续进化  Sohu",
-      "ai_score": 80.0,
-      "ai_label": "embodied_ai",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 29.68,
-      "writing_value": 0,
-      "total_score": 119.68
     }
   ]
 }
