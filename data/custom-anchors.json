@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-03T13:20:12.129011+00:00",
+  "generated_at": "2026-09-03T13:26:19.008408+00:00",
   "window_start": "2026-09-03T19:00:00+08:00",
-  "window_end": "2026-09-03T21:19:10.560532+08:00",
-  "total_items": 6,
+  "window_end": "2026-09-03T21:25:37.764906+08:00",
+  "total_items": 5,
   "items": [
     {
       "id": "1ecba27765e2003758af109c9a2a53ad679a4330",
@@ -21,9 +21,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 28.9,
+      "timeliness": 28.79,
       "writing_value": 5,
-      "total_score": 113.9
+      "total_score": 113.79
     },
     {
       "id": "1f669018a6d00f305c8f3b712196b838d97f92b3",
@@ -42,51 +42,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 28.68,
+      "timeliness": 28.57,
       "writing_value": 5,
-      "total_score": 113.68
-    },
-    {
-      "id": "e94639f15045f88efeeb52df6351850545ddb546",
-      "title": "The Invisible Nervous System: Wireless Connectivity for Physical AI and Humanoids - Robotics Tomorrow",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPMzVVT0FGSWkwZUozcDFkTHNiMzZzZEp6Qjg1cDhQRzZhQy1ld2p5R3NuUXlibGVFMEQxS05jQ2NTVW5LcTBzQnhScWgyOHI2SjgxQ3ZPai1rbE04anNLdXQ3QVB4QjJ3Tms2Q0ZsTEFrSDk3akN1Tlp0Z2VyTTVBYWsyNXg2UEhXaWxqYWhaZjdCdzNTNjVqRFhvcDYzcmtVcVhKN3I5dmk0WFVmckppd0JIdXNydmN0Nms2UnNIaFp5cHhBXzN4WmtkdEo2WDlsclE?oc=5",
-      "published_at": "2026-09-03T12:44:14+00:00",
-      "category": "GN: Physical AI",
-      "gn_label": "robotics",
-      "site_name": "GN: Physical AI",
-      "source": "GN: Physical AI",
-      "site_id": "GN: Physical AI",
-      "description": "The Invisible Nervous System: Wireless Connectivity for Physical AI and Humanoids  Robotics Tomorrow",
-      "ai_score": 80.0,
-      "ai_label": "robotics",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 5,
-      "timeliness": 29.42,
-      "writing_value": 5,
-      "total_score": 129.42
-    },
-    {
-      "id": "d796bfdba293ce7a357c8d05b37d6072b86b72c3",
-      "title": "How NEURA Robotics is Leading European Physical AI - AI Magazine",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOaWpsN3U4cUdMT2RVN21SZmRVZG8wT2N2dzg1Yy04bm9pV0J4VXl0ODIydnBtZG9iOEw5a1ZWRDYyNk5WSWJXQWhDemExcl9tN0VQSGYybVhUd0JQeHhKV1hMdjlPY01tX25lQURLQ2t5MThWNWNNSTVVS3dIVjVzUWdEVEI?oc=5",
-      "published_at": "2026-09-03T11:18:42+00:00",
-      "category": "GN: Physical AI",
-      "gn_label": "physical_ai",
-      "site_name": "GN: Physical AI",
-      "source": "GN: Physical AI",
-      "site_id": "GN: Physical AI",
-      "description": "How NEURA Robotics is Leading European Physical AI  AI Magazine",
-      "ai_score": 65.0,
-      "ai_label": "physical_ai",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 27.99,
-      "writing_value": 0,
-      "total_score": 102.99
+      "total_score": 113.57
     },
     {
       "id": "bb4d881ffc93f483436466560773ae6232f123b6",
@@ -105,9 +63,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.95,
+      "timeliness": 27.84,
       "writing_value": 0,
-      "total_score": 102.95
+      "total_score": 102.84
+    },
+    {
+      "id": "49f27d8253cd2e17feb6e8eaf81a46f17188ab2b",
+      "title": "人形机器人最大的问题：复杂到难以稳定运行 - 华尔街见闻",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBtUEJ6M24zVktleC1Da1RTU2QwT09MRDFWTDJyeVlXRlNtY0VES005d0RMd2NzeTVUSzdQY3p0SC1zXzd6bVNjZ3ZodE90YktQdXc?oc=5",
+      "published_at": "2026-09-03T12:59:32+00:00",
+      "category": "GN: 机械臂",
+      "gn_label": "robotics",
+      "site_name": "GN: 机械臂",
+      "source": "GN: 机械臂",
+      "site_id": "GN: 机械臂",
+      "description": "人形机器人最大的问题：复杂到难以稳定运行  华尔街见闻",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.57,
+      "writing_value": 0,
+      "total_score": 119.57
     },
     {
       "id": "ccabb9dc60dc429bb2df3ff7b61a590e5a3ca0d1",
@@ -126,9 +105,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 5,
-      "timeliness": 27.76,
+      "timeliness": 27.66,
       "writing_value": 5,
-      "total_score": 127.76
+      "total_score": 127.66
     }
   ],
   "fallback_used": false
