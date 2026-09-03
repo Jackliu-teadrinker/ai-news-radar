@@ -1,20 +1,6 @@
 {
-  "generated_at": "2026-09-03T13:06:08.038116+00:00",
+  "generated_at": "2026-09-03T13:20:35.260496+00:00",
   "feeds": [
-    {
-      "feed": "国内人形机器人资讯",
-      "success": true,
-      "items_total": 0,
-      "items_unique": 0,
-      "error": null
-    },
-    {
-      "feed": "国内具身智能资讯",
-      "success": true,
-      "items_total": 0,
-      "items_unique": 0,
-      "error": null
-    },
     {
       "feed": "国内脑机接口资讯",
       "success": true,
@@ -23,14 +9,7 @@
       "error": null
     },
     {
-      "feed": "国外脑机接口资讯",
-      "success": true,
-      "items_total": 0,
-      "items_unique": 0,
-      "error": null
-    },
-    {
-      "feed": "国外机器人资讯",
+      "feed": "国内人形机器人资讯",
       "success": true,
       "items_total": 0,
       "items_unique": 0,
@@ -44,31 +23,52 @@
       "error": null
     },
     {
+      "feed": "国外人形机器人资讯",
+      "success": true,
+      "items_total": 0,
+      "items_unique": 0,
+      "error": null
+    },
+    {
       "feed": "国外物理AI资讯",
       "success": true,
-      "items_total": 100,
-      "items_unique": 100,
+      "items_total": 0,
+      "items_unique": 0,
+      "error": null
+    },
+    {
+      "feed": "国外机器人资讯",
+      "success": true,
+      "items_total": 0,
+      "items_unique": 0,
       "error": null
     },
     {
       "feed": "国内物理AI资讯",
       "success": true,
+      "items_total": 0,
+      "items_unique": 0,
+      "error": null
+    },
+    {
+      "feed": "国内具身智能资讯",
+      "success": true,
       "items_total": 100,
       "items_unique": 100,
       "error": null
     },
     {
-      "feed": "国外人形机器人资讯",
+      "feed": "国外脑机接口资讯",
       "success": true,
       "items_total": 100,
-      "items_unique": 97,
+      "items_unique": 100,
       "error": null
     },
     {
       "feed": "国内机器人资讯",
       "success": true,
       "items_total": 100,
-      "items_unique": 98,
+      "items_unique": 95,
       "error": null
     },
     {
@@ -79,21 +79,14 @@
       "error": null
     },
     {
-      "feed": "VentureBeat AI",
-      "success": true,
-      "items_total": 7,
-      "items_unique": 7,
-      "error": null
-    },
-    {
-      "feed": "HuggingFace Blog",
+      "feed": "Wired",
       "success": true,
       "items_total": 30,
       "items_unique": 30,
       "error": null
     },
     {
-      "feed": "Wired",
+      "feed": "HuggingFace Blog",
       "success": true,
       "items_total": 30,
       "items_unique": 30,
@@ -107,18 +100,18 @@
       "error": null
     },
     {
+      "feed": "VentureBeat AI",
+      "success": true,
+      "items_total": 7,
+      "items_unique": 7,
+      "error": null
+    },
+    {
       "feed": "TechXplore Robotics",
       "success": false,
       "items_total": 0,
       "items_unique": 0,
       "error": "No articles found in HTML"
-    },
-    {
-      "feed": "CNBC AI Age",
-      "success": true,
-      "items_total": 30,
-      "items_unique": 30,
-      "error": null
     },
     {
       "feed": "IEEE Spectrum",
@@ -128,10 +121,10 @@
       "error": null
     },
     {
-      "feed": "MIT Tech Review",
+      "feed": "CNBC AI Age",
       "success": true,
-      "items_total": 10,
-      "items_unique": 10,
+      "items_total": 30,
+      "items_unique": 30,
       "error": null
     },
     {
@@ -142,14 +135,21 @@
       "error": null
     },
     {
-      "feed": "GN: humanoid robot",
-      "success": false,
-      "items_total": 0,
-      "items_unique": 0,
-      "error": "RSS parsed but no entries found"
+      "feed": "MIT Tech Review",
+      "success": true,
+      "items_total": 10,
+      "items_unique": 10,
+      "error": null
     },
     {
-      "feed": "GN: embodied AI",
+      "feed": "Nature",
+      "success": true,
+      "items_total": 30,
+      "items_unique": 30,
+      "error": null
+    },
+    {
+      "feed": "GN: Robot Report",
       "success": false,
       "items_total": 0,
       "items_unique": 0,
@@ -163,7 +163,14 @@
       "error": "RSS parsed but no entries found"
     },
     {
-      "feed": "GN: robot",
+      "feed": "GN: MIT Tech Review",
+      "success": false,
+      "items_total": 0,
+      "items_unique": 0,
+      "error": "RSS parsed but no entries found"
+    },
+    {
+      "feed": "GN: humanoid robot",
       "success": false,
       "items_total": 0,
       "items_unique": 0,
@@ -177,14 +184,7 @@
       "error": "RSS parsed but no entries found"
     },
     {
-      "feed": "GN: Physical AI",
-      "success": false,
-      "items_total": 0,
-      "items_unique": 0,
-      "error": "RSS parsed but no entries found"
-    },
-    {
-      "feed": "GN: TechXplore AI",
+      "feed": "GN: robot",
       "success": false,
       "items_total": 0,
       "items_unique": 0,
@@ -198,18 +198,32 @@
       "error": "RSS parsed but no entries found"
     },
     {
-      "feed": "GN: Stanford robotics",
+      "feed": "GN: TechXplore AI",
       "success": false,
       "items_total": 0,
       "items_unique": 0,
       "error": "RSS parsed but no entries found"
     },
     {
-      "feed": "GN: MIT Tech Review",
+      "feed": "GN: embodied AI",
       "success": true,
       "items_total": 30,
       "items_unique": 30,
       "error": null
+    },
+    {
+      "feed": "GN: deep learning robot",
+      "success": false,
+      "items_total": 0,
+      "items_unique": 0,
+      "error": "RSS parsed but no entries found"
+    },
+    {
+      "feed": "GN: Stanford robotics",
+      "success": false,
+      "items_total": 0,
+      "items_unique": 0,
+      "error": "RSS parsed but no entries found"
     },
     {
       "feed": "GN: autonomous robot",
@@ -219,14 +233,14 @@
       "error": "RSS parsed but no entries found"
     },
     {
-      "feed": "GN: Robot Report",
+      "feed": "GN: Physical AI",
       "success": true,
       "items_total": 30,
       "items_unique": 30,
       "error": null
     },
     {
-      "feed": "Nature",
+      "feed": "GN: TechXplore robotics",
       "success": true,
       "items_total": 30,
       "items_unique": 30,
@@ -240,35 +254,14 @@
       "error": "RSS parsed but no entries found"
     },
     {
-      "feed": "GN: TechXplore robotics",
-      "success": true,
-      "items_total": 30,
-      "items_unique": 30,
-      "error": null
-    },
-    {
-      "feed": "GN: surgical robot",
+      "feed": "GN: industrial robot",
       "success": false,
       "items_total": 0,
       "items_unique": 0,
       "error": "RSS parsed but no entries found"
     },
     {
-      "feed": "GN: deep learning robot",
-      "success": true,
-      "items_total": 30,
-      "items_unique": 30,
-      "error": null
-    },
-    {
-      "feed": "GN: collaborative robot",
-      "success": false,
-      "items_total": 0,
-      "items_unique": 0,
-      "error": "RSS parsed but no entries found"
-    },
-    {
-      "feed": "GN: 具身智能",
+      "feed": "GN: robot learning",
       "success": false,
       "items_total": 0,
       "items_unique": 0,
@@ -282,32 +275,11 @@
       "error": "RSS parsed but no entries found"
     },
     {
-      "feed": "GN: 机器人",
+      "feed": "GN: 具身智能",
       "success": false,
       "items_total": 0,
       "items_unique": 0,
       "error": "RSS parsed but no entries found"
-    },
-    {
-      "feed": "GN: 宇树科技",
-      "success": false,
-      "items_total": 0,
-      "items_unique": 0,
-      "error": "RSS parsed but no entries found"
-    },
-    {
-      "feed": "GN: 智元机器人",
-      "success": false,
-      "items_total": 0,
-      "items_unique": 0,
-      "error": "RSS parsed but no entries found"
-    },
-    {
-      "feed": "GN: industrial robot",
-      "success": true,
-      "items_total": 30,
-      "items_unique": 30,
-      "error": null
     },
     {
       "feed": "GN: 物理AI",
@@ -317,10 +289,31 @@
       "error": "RSS parsed but no entries found"
     },
     {
-      "feed": "GN: robot learning",
+      "feed": "GN: 机器人",
+      "success": false,
+      "items_total": 0,
+      "items_unique": 0,
+      "error": "RSS parsed but no entries found"
+    },
+    {
+      "feed": "GN: collaborative robot",
       "success": true,
       "items_total": 30,
-      "items_unique": 29,
+      "items_unique": 30,
+      "error": null
+    },
+    {
+      "feed": "GN: 宇树科技",
+      "success": false,
+      "items_total": 0,
+      "items_unique": 0,
+      "error": "RSS parsed but no entries found"
+    },
+    {
+      "feed": "GN: robot manipulation",
+      "success": true,
+      "items_total": 30,
+      "items_unique": 30,
       "error": null
     },
     {
@@ -331,10 +324,10 @@
       "error": "RSS parsed but no entries found"
     },
     {
-      "feed": "GN: robot manipulation",
+      "feed": "GN: surgical robot",
       "success": true,
       "items_total": 30,
-      "items_unique": 27,
+      "items_unique": 30,
       "error": null
     },
     {
@@ -345,38 +338,10 @@
       "error": "RSS parsed but no entries found"
     },
     {
-      "feed": "GN: 服务机器人",
-      "success": false,
-      "items_total": 0,
-      "items_unique": 0,
-      "error": "RSS parsed but no entries found"
-    },
-    {
-      "feed": "GN: 自动驾驶机器人",
+      "feed": "量子位",
       "success": true,
-      "items_total": 30,
-      "items_unique": 30,
-      "error": null
-    },
-    {
-      "feed": "极链AI",
-      "success": true,
-      "items_total": 20,
-      "items_unique": 20,
-      "error": null
-    },
-    {
-      "feed": "GN: 傅利叶智能",
-      "success": true,
-      "items_total": 30,
-      "items_unique": 30,
-      "error": null
-    },
-    {
-      "feed": "GN: 工业机器人与人",
-      "success": true,
-      "items_total": 30,
-      "items_unique": 30,
+      "items_total": 10,
+      "items_unique": 10,
       "error": null
     },
     {
@@ -387,17 +352,52 @@
       "error": null
     },
     {
-      "feed": "GN: 人形机器人融资",
+      "feed": "GN: 自动驾驶机器人",
+      "success": false,
+      "items_total": 0,
+      "items_unique": 0,
+      "error": "RSS parsed but no entries found"
+    },
+    {
+      "feed": "极链AI",
+      "success": true,
+      "items_total": 20,
+      "items_unique": 20,
+      "error": null
+    },
+    {
+      "feed": "GN: 智元机器人",
       "success": true,
       "items_total": 30,
       "items_unique": 30,
       "error": null
     },
     {
-      "feed": "量子位",
+      "feed": "GN: 傅利叶智能",
       "success": true,
-      "items_total": 10,
-      "items_unique": 10,
+      "items_total": 30,
+      "items_unique": 30,
+      "error": null
+    },
+    {
+      "feed": "GN: 人形机器人融资",
+      "success": false,
+      "items_total": 0,
+      "items_unique": 0,
+      "error": "RSS parsed but no entries found"
+    },
+    {
+      "feed": "GN: 工业机器人与人",
+      "success": true,
+      "items_total": 30,
+      "items_unique": 30,
+      "error": null
+    },
+    {
+      "feed": "GN: 服务机器人",
+      "success": true,
+      "items_total": 30,
+      "items_unique": 30,
       "error": null
     },
     {
@@ -410,11 +410,11 @@
   ],
   "summary": {
     "total_feeds": 10,
-    "successful_feeds": 35,
-    "failed_feeds": 23,
-    "total_items": 378,
+    "successful_feeds": 34,
+    "failed_feeds": 24,
+    "total_items": 285,
     "deduplicated": 5,
-    "noise_filtered": 11,
+    "noise_filtered": 10,
     "short_filtered": 0
   }
 }
