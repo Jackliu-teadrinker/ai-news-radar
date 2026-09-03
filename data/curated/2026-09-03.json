@@ -1,9 +1,9 @@
 {
   "date": "2026-09-03",
-  "generated_at": "2026-09-03T01:05:09.229089+00:00",
+  "generated_at": "2026-09-03T01:25:24.337545+00:00",
   "score_threshold": 80,
   "total_items": 50,
-  "new_added": 4,
+  "new_added": 2,
   "items": [
     {
       "id": "9ea4e9eeb8612974",
@@ -151,6 +151,27 @@
       "timeliness": 29.93,
       "writing_value": 0,
       "total_score": 119.93
+    },
+    {
+      "id": "6b16832bd58b45be",
+      "title": "A股“人形机器人第一股”宇树科技股价腰斩 - 新浪网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBmTFNLWm9kTDZ2QzZoWnpMR19oa2tXaXBGME5mc3AwdlRjSWRmRE5YWUQ1X2Rrd1Bield3R29PUWZaSkN6cXBMbzVSRl9wc0FqeVM3bS10OWJSUkZkRFJXbnJOV0xlNWs4bjRtaWxocjc5bnB4VFVMVlprbmRSUQ?oc=5",
+      "published_at": "2026-09-03T01:07:59+00:00",
+      "category": "国内人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国内人形机器人资讯",
+      "source": "国内人形机器人资讯",
+      "site_id": "国内人形机器人资讯",
+      "description": "A股“人形机器人第一股”宇树科技股价腰斩  新浪网",
+      "ai_score": 80.0,
+      "ai_label": "humanoid",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.82,
+      "writing_value": 0,
+      "total_score": 119.82
     },
     {
       "id": "74285110208b0b6e",
@@ -783,6 +804,27 @@
       "total_score": 113.09
     },
     {
+      "id": "e1d24716bf4e8b17",
+      "title": "Video: Students push humanoid robots beyond walking with flips and more - Interesting Engineering",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPZVI2WEJuWHQ3WkxIODRSazVjWGNCRWNUWmhOdVVWOWR4cUlvS2hCNGd1U0JQYlMyUHdLTXMtbFl0aTFkaV80ZDNDOGJmNWdDX0RUYjl5WTBIR084UGR1RUFnT0lPUU5rUWtFUEU2cnBrejJlN0RMdTRsSFdIczV4TVlnN1JTUQ?oc=5",
+      "published_at": "2026-09-02T17:55:00+00:00",
+      "category": "国外机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国外机器人资讯",
+      "source": "国外机器人资讯",
+      "site_id": "国外机器人资讯",
+      "description": "Video: Students push humanoid robots beyond walking with flips and more  Interesting Engineering",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 22.6,
+      "writing_value": 0,
+      "total_score": 112.6
+    },
+    {
       "id": "09ec08032fe6197f",
       "title": "股价异动，又被列入“人形机器人概念”，明新旭腾紧急澄清：相关领域无订单无产业化能力 - mrjjxw.com",
       "title_zh": "",
@@ -1012,48 +1054,6 @@
       "timeliness": 26.12,
       "writing_value": 5,
       "total_score": 111.12
-    },
-    {
-      "id": "507f597da365d130",
-      "title": "标准先行，我国牵头制定多项机器人标准，万亿具身智能赛道提速 - 大河财立方",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBkMUZVcnFKX3lRVjVnMmtTd1VZVTdCWDZJNlJvSVNkSEpaekZmVUNlSURTeGRJQnRKWl9XVG5XWUVSS0hEYlpsN09NbjVxaGgtTjlKdlZ0Z0VpMk54MklsdUpaczRaT1VMQ3c?oc=5",
-      "published_at": "2026-09-02T14:13:28+00:00",
-      "category": "国内具身智能资讯",
-      "gn_label": "embodied_ai",
-      "site_name": "国内具身智能资讯",
-      "source": "国内具身智能资讯",
-      "site_id": "国内具身智能资讯",
-      "description": "标准先行，我国牵头制定多项机器人标准，万亿具身智能赛道提速  大河财立方",
-      "ai_score": 80.0,
-      "ai_label": "embodied_ai",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 20.29,
-      "writing_value": 0,
-      "total_score": 110.29
-    },
-    {
-      "id": "c2841241aef5dc19",
-      "title": "Industry Insights: The Week's Top Funding for Robotics, Automation, and Physical AI - A3 Association for Advancing Automation",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQTzQ1eDBnOV9KdGM2ZWVyXzJFYzJtOEhfSTVGZ1ctXzlBUF9yLTQwX2hXcE42YjBWY2ZYTU5DU19uenM0X2FaTTRBZEVLQ1ZJSnZCTnNOQktEYlI0a2JEOFdHLUp2bUd0SFR6bnd4azktMFZqeFQ0Y3A3TU5CMEJPZEpMUU56cHFNS0kxSk9EekhKRGdTWDZjZ0ViVUlTUmJaQzZGUHBfNU04dllvSWY1Y1kzR0FKRzlmd0FhV2p5aGUtQ00?oc=5",
-      "published_at": "2026-09-02T13:54:00+00:00",
-      "category": "国外物理AI资讯",
-      "gn_label": "physical_ai",
-      "site_name": "国外物理AI资讯",
-      "source": "国外物理AI资讯",
-      "site_id": "国外物理AI资讯",
-      "description": "Industry Insights: The Week's Top Funding for Robotics, Automation, and Physical AI  A3 Association for Advancing Automation",
-      "ai_score": 65.0,
-      "ai_label": "physical_ai",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 5,
-      "timeliness": 25.02,
-      "writing_value": 5,
-      "total_score": 110.02
     }
   ]
 }
