@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-03T20:12:14.049140+00:00",
-  "total_items": 21,
+  "generated_at": "2026-09-03T22:56:16.279857+00:00",
+  "total_items": 14,
   "items": [
     {
       "id": "http://arxiv.org/abs/2609.02861v1",
@@ -155,83 +155,6 @@
       "published_at": "2026-09-02T11:55:47+00:00",
       "updated_at": "2026-09-02T11:55:47Z",
       "title_zh": "地中海温室自主导航中坡度和地形补偿的自适应控制架构"
-    },
-    {
-      "id": "http://arxiv.org/abs/2609.02413v1",
-      "title": "WildFab: Multi-Axis 3D Printing from Models in the Wild",
-      "url": "https://arxiv.org/abs/2609.02413",
-      "summary": "Multi-axis 3D printing enables support-free fabrication and improved part quality, but robustly processing real-world geometries remains challenging. Models from design workflows or direct data acquisition often contain solid--shell combinations and non-manifold structures. Handling such models in the wild typically requires time-consuming geometry repair, which may alter the intended geometry. In this work, we present WildFab, a computational framework for multi-axis 3D printing that directly computes spatial toolpath and global collision-free motion from input models. Our pipeline builds on a hybrid query representation that combines a neural unsigned distance field (UDF) with a regularized generalized winding number field (reg-GWN). The UDF supplies differentiable surface-distance and direction queries, while the reg-GWN resolves near-surface ambiguity in the fitted UDF by providing reliable surface localization and a solid-void indicator. Based on this representation, we introduce a high-precision spatial toolpath computation algorithm that iteratively projects points between optimized guidance-field level sets and reg-GWN gradient-magnitude ridges. Subsequently, we develop an efficient and robust coarse-to-fine collision checking scheme for motion planning: UDF-based rejection first identifies potential collisions, while time-varying reg-GWN verification accurately resolves collision pairs for both solid and shell components. We validate WildFab on diverse inputs, demonstrating successful computation from non-manifold parametric surfaces, voxelized topology-optimization results, implicit models, raw scanned point clouds, and non-watertight meshes. The fabrication results highlight our method's ability to advance end-to-end design-to-3DP workflows.",
-      "authors": "Jiasheng Qu, Zhikai Shen, Chenyu Xu et al.",
-      "category": "cs.GR",
-      "published_at": "2026-09-02T10:35:32+00:00",
-      "updated_at": "2026-09-02T10:35:32Z",
-      "title_zh": "WildFab：利用野外模型进行多轴 3D 打印"
-    },
-    {
-      "id": "http://arxiv.org/abs/2609.02402v1",
-      "title": "A Physics-Consistent Benchmark for Contact-Rich Human-Robot Interaction in Assistive Care",
-      "url": "https://arxiv.org/abs/2609.02402",
-      "summary": "Conventional task-level evaluation asks whether a robot policy completes a specified action, but can miss failures that emerge only during physical human contact. This limitation is critical in contact-rich assistive tasks, where meaningful evaluation requires a physically responsive human, interaction-quality assessment beyond task success, and a leak-free observer-scorer protocol. We introduce a physics-consistent benchmark for contact-rich human-robot interaction, instantiated in robot-assisted bathing. The benchmark combines a deformable, passively responding human, physics-aware scores alongside task-level success, and a frozen vision-only / scorer-only evaluation protocol. To establish physical validity, region-wise simulated responses are calibrated against force-indentation measurements from Franka impedance pushes on a medical-care manikin. Under a frozen T1-T7 protocol with 140 runs per method, an LLM-augmented state machine (State Machine) achieves 72.9% task success but drops to 56.4% after correct-region and force-safety screening; VoxPoser produces lighter and more stable contact but completes only 27.9% of trials; and zero-shot pi0.5 achieves 0.7% task success with no correct-region or safety-gated successes. These results show that task completion alone does not imply physically valid contact and motivate physics-aware screening before deployment of contact-rich assistive robot policies.",
-      "authors": "Chengxiao He, Shanghai Yuan, Liuqun Fan et al.",
-      "category": "cs.RO",
-      "published_at": "2026-09-02T10:14:32+00:00",
-      "updated_at": "2026-09-02T10:14:32Z",
-      "title_zh": "辅助护理中接触丰富的人机交互的物理一致基准"
-    },
-    {
-      "id": "http://arxiv.org/abs/2609.02358v1",
-      "title": "Humanoid Safe Stop via Learned Stoppability Value",
-      "url": "https://arxiv.org/abs/2609.02358",
-      "summary": "Humanoid robots responding to emergency stop commands typically execute a fixed maneuver, without reasoning about whether a safe stop is actually feasible from the current state. We cast emergency stopping as a reach-avoid problem and propose Safe-Stop, a task-agnostic framework that pairs a learned stop policy with learned stoppability estimators. The estimators are complementary: a stop-probability estimator supervised by the actual outcomes of the fixed stop policy, and a reach-avoidance estimator supervised by a Hamilton-Jacobi backup over physical state. The first captures emergent stopping behavior of the learned controller; the second provides a complementary recoverability signal. Because the stop policy and estimators do not depend on the behavior policy that preceded the stop command, they transfer across diverse upstream tasks without retraining. At deployment, the two estimates are combined: Safe-Stop commits to the stop only when both estimators indicate that stopping remains feasible, otherwise it hands off to a fall policy, instantiated as a damping fallback. This agreement check yields decisions that are robust without sacrificing reactivity.",
-      "authors": "Junfeng Long, Pieter Abbeel, Koushil Sreenath et al.",
-      "category": "cs.RO",
-      "published_at": "2026-09-02T09:29:39+00:00",
-      "updated_at": "2026-09-02T09:29:39Z",
-      "title_zh": "通过学习可停止性值实现人形安全停止"
-    },
-    {
-      "id": "http://arxiv.org/abs/2609.02350v1",
-      "title": "LookStep: Efficient Vision-Language Navigation with Linguistic Foresight and Event Driven Memory",
-      "url": "https://arxiv.org/abs/2609.02350",
-      "summary": "Vision-Language Navigation (VLN) requires an embodied agent to follow natural-language instructions in unseen environments. Recent progress has been largely driven by Multimodal Large Language Models (MLLMs). Existing methods follow a next-step action prediction paradigm, supervising only the expert action, which requires a high quantity of data for training. They also rely on cognitive maps, accumulated historical frames, or external 3D tools to maintain states, leading to high computational and memory overhead. To realize resource efficiency VLN, we propose LookStep, a unified end-to-end framework that combines Language Centric Future State Modeling and Event Driven Rolling Memory that uses language labels to generate coarse-grained navigation progress and future states for each candidate action, while autonomously deciding whether to write each observation into a bounded rolling memory with a semantic role. We validate LookStep empirically. On VLN-CE tasks, LookStep outperforms existing methods under the same training settings, achieving a 49.7\\% success rate on R2R-CE Val-Unseen with better memory efficiency and less data usage. Code and model is available at https://github.com/kunyang-YU/LookStep.",
-      "authors": "Kun-Yang Yu, Yingzhe Li, Hongyu Xu et al.",
-      "category": "cs.CV",
-      "published_at": "2026-09-02T09:24:08+00:00",
-      "updated_at": "2026-09-02T09:24:08Z",
-      "title_zh": "LookStep：具有语言远见和事件驱动记忆的高效视觉语言导航"
-    },
-    {
-      "id": "http://arxiv.org/abs/2609.02319v1",
-      "title": "From Multi-Fisheye Sensing to Panoramic Perception: A Parallax-Aware Onboard Platform for Ultra-Low-Altitude UAVs",
-      "url": "https://arxiv.org/abs/2609.02319",
-      "summary": "Ultra-low-altitude unmanned aerial vehicles (UAVs) require surround vision near buildings, vegetation, and other obstacles. We present a parallax-aware onboard platform that converts four synchronized fisheye streams into an open 1280x640 equirectangular panorama (ERP) interface. A purpose-built carbon-fiber airframe integrates the cameras, NVIDIA Jetson Orin NX, a flight controller, and a global navigation satellite system (GNSS) receiver. The formation pipeline selects projection depth per overlap and combines controlled seams and photometric fusion. Its accuracy profile adds content-adaptive seam search and a validation-gated residual mesh, whereas its deployed profile retains margin-gated Per-seam updates for sensor-rate operation. Evaluation uses more than 50,000 four-view groups from 18 field sequences. Relative to Fixed Depth, the accuracy profile reduces far-field P90 feature misalignment by 41.6%; the deployed Per-seam profile achieves the lowest aggregate geometric errors across held-out sites. Under a paced 20 Hz replay, the deployed profile sustains 19.99 frames/s at 13.29W mean module-input power. Eight-sector ERP sampling reaches 90.8% mean daytime visual-place-recognition Recall@5. Together, these results validate an integrated onboard panoramic-perception architecture that unifies parallax-aware formation, sensor-rate embedded execution, and reusable downstream vision interfaces for ultra-low-altitude UAVs. The project has been open-sourced at https://github.com/DUNDAI1998/parallax-aware-uav-panorama.",
-      "authors": "Dun Dai, Ze Lu, Cheng He et al.",
-      "category": "cs.RO",
-      "published_at": "2026-09-02T09:04:52+00:00",
-      "updated_at": "2026-09-02T09:04:52Z",
-      "title_zh": "从多鱼眼传感到全景感知：超低空无人机视差感知机载平台"
-    },
-    {
-      "id": "http://arxiv.org/abs/2609.02306v1",
-      "title": "Contact-Constrained Lower-Limb Joint-Offset Calibration for Humanoid Robots",
-      "url": "https://arxiv.org/abs/2609.02306",
-      "summary": "Accurate joint encoder offsets are essential for kinematic consistency in humanoid lower limbs, yet existing calibration methods typically require external motion-capture systems or fiducial targets. We present a self-contained calibration framework exploiting only onboard joint encoders and a pelvis-mounted IMU during static double-support contact. The inter-foot transform from forward kinematics must stay constant when both feet are fixed; minimizing its posture-dependent dispersion yields a nonlinear least-squares problem over the 12-dimensional offset vector. A Hessian eigenstructure analysis shows that parallel pitch axes induce a rotational coupling. Orientation residuals then observe only the pitch-offset sum, while translation and posture diversity set the remaining numerical observability. For the A3 pitch-to-roll-to-yaw ordering, hip-roll and hip-yaw excitation reduce hip-pitch coupling. A standing-posture knee prior then anchors the remaining weak pitch-chain decomposition. Simulation and real-machine injection tests show consistent recovery, and on held-out recordings calibration reduces foot-height RMS residuals from 4.26 to 2.20 mm on A3 and from 8.03 to 1.43 mm on A2. An independent LiDAR-inertial reference checks the pitch-coupled channel. Removing an injected pitch offset moves the leg-odometry vertical drift back toward the LiDAR trajectory. A few static double-support stances thus provide contact-consistent corrections for well-excited directions. Individual offsets in the weak pitch chain remain prior-dependent.",
-      "authors": "Kaixiang Lu, Haiyu Lan, Chunxiao Qiao et al.",
-      "category": "cs.RO",
-      "published_at": "2026-09-02T08:51:37+00:00",
-      "updated_at": "2026-09-02T08:51:37Z",
-      "title_zh": "人形机器人的接触约束下肢关节偏移校准"
-    },
-    {
-      "id": "http://arxiv.org/abs/2609.02270v1",
-      "title": "CrashDiffuser: VLM-Guided Collision Intent Reasoning for Fine-Grained Safety-Critical Traffic Scenario Generation",
-      "url": "https://arxiv.org/abs/2609.02270",
-      "summary": "Generating safety-critical scenarios is essential for evaluating autonomous driving systems. However, existing generators primarily focus on inducing collisions and offer limited control over where contact occurs on the target vehicle. In this paper, we study fine-grained safety-critical scenario generation, where success requires both a target collision and a specified head, rear, or side contact region. We propose CrashDiffuser, a closed-loop VLM-guided diffusion framework that decouples semantic collision reasoning from continuous trajectory synthesis through a hierarchical collision-intent interface derived from the requested target contact region. At initialization, the VLM extracts reusable scene-level context; at each replanning step, it predicts a structured action tuple describing speed change, turning behavior, and collision stage. This intent conditions a diffusion model to generate executable adversarial trajectories, while collision-guided sampling, candidate selection, and short-horizon replanning adapt generation to the target vehicle's evolving behavior. On WOMD-derived closed-loop scenarios, CrashDiffuser achieves a target-collision rate of 50.33% in a single attempt and 67.98% after three attempts, together with a contact-region control success rate of 40.05% and competitive trajectory naturalness. Component ablations further support the proposed design.",
-      "authors": "Shucheng Zhang, Yuang Zhang, Bingzhang Wang et al.",
-      "category": "cs.RO",
-      "published_at": "2026-09-02T08:18:20+00:00",
-      "updated_at": "2026-09-02T08:18:20Z",
-      "title_zh": "CrashDiffuser：VLM 引导的碰撞意图推理，用于生成细粒度的安全关键交通场景"
     }
   ]
 }
