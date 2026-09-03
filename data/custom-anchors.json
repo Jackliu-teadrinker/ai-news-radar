@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-03T06:22:26.879003+00:00",
+  "generated_at": "2026-09-03T06:37:06.102287+00:00",
   "window_start": "2026-09-02T19:00:00+08:00",
-  "window_end": "2026-09-03T14:19:43.845610+08:00",
-  "total_items": 26,
+  "window_end": "2026-09-03T14:34:23.397820+08:00",
+  "total_items": 27,
   "items": [
     {
       "id": "989707cd10e884e5f99d7efdd09452ed38418414",
@@ -21,9 +21,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 22.07,
+      "timeliness": 21.83,
       "writing_value": 5,
-      "total_score": 107.07
+      "total_score": 106.83
     },
     {
       "id": "8e50bc450e5b0085f6298dc6ced9497fea1ccfdd",
@@ -42,9 +42,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 11.92,
+      "timeliness": 11.67,
       "writing_value": 5,
-      "total_score": 96.92
+      "total_score": 96.67
     },
     {
       "id": "73f56d486ebb7950f086ccc3e1b05f0319d77b63",
@@ -63,9 +63,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 15.54,
+      "timeliness": 15.29,
       "writing_value": 5,
-      "total_score": 100.54
+      "total_score": 100.29
     },
     {
       "id": "13e59b284dca72505308790244b43c9a95392105",
@@ -84,9 +84,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 11.17,
+      "timeliness": 10.93,
       "writing_value": 5,
-      "total_score": 96.17
+      "total_score": 95.93
     },
     {
       "id": "56fa504257d3df851c5cdbee905f716c46f68236",
@@ -105,9 +105,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 28.91,
+      "timeliness": 28.66,
       "writing_value": 5,
-      "total_score": 113.91
+      "total_score": 113.66
     },
     {
       "id": "6ca0382ee0bd9803ee5248ba2432e443154e7ed3",
@@ -126,9 +126,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 17.57,
+      "timeliness": 17.32,
       "writing_value": 0,
-      "total_score": 92.57
+      "total_score": 92.32
     },
     {
       "id": "5d79a955c46295bfe226299eb624627a237d0433",
@@ -147,9 +147,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 19.46,
+      "timeliness": 19.22,
       "writing_value": 0,
-      "total_score": 94.46
+      "total_score": 94.22
     },
     {
       "id": "1bd8e65da009363abc4e6f20846b977da7a7b79a",
@@ -168,9 +168,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 15.29,
+      "timeliness": 15.05,
       "writing_value": 0,
-      "total_score": 90.29
+      "total_score": 90.05
     },
     {
       "id": "2decf538df670a3e6ee082431bcd83c54ee7e54f",
@@ -189,9 +189,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 15.82,
+      "timeliness": 15.58,
       "writing_value": 0,
-      "total_score": 90.82
+      "total_score": 90.58
+    },
+    {
+      "id": "e1ea63e89969e270e5d02145792661a793f4a2b1",
+      "title": "Robotic mowers take over lawn care at WKYT’s sprawling campus - WKYT",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNTUt5elJpTDB4UzU3WEZMR3hOZ1hEejk1YmtCOFpGWEdDRlBPNjNTa29sMW9WdTA5SnpzV290VUgxVDhRbTN6T0VheW9YSFprQlFDQnRReGlzUEg2OWlQOTdlcUo0VnpxRndnLW1YUjFwcXp0WlpNYkRUZm81N3ZIcWpoMFdiYjZMcWlfZFhweC1OWF9V0gGoAUFVX3lxTE9SalV6cXhLMXE2RkVhZUdwd094b1A3aDBRbzBMSnlnUm1yUGpja3pSY1gxbkxqLXgta2djN052RTI4am0tT1pxWG56bFRrdFpuN3ZUZG02c1diRFlhOG93NEs4U3FRY1E1QjVRZHJDUklCZGpRMmJ0U1E1c2FBRnNqNHFjXzZLVE9aUkl4d1E1YjR4eGh6SXpyTWpZVGQyRk9tb2ZBaTdUWA?oc=5",
+      "published_at": "2026-09-02T21:39:00+00:00",
+      "category": "GN: robot",
+      "gn_label": "robotics",
+      "site_name": "GN: robot",
+      "source": "GN: robot",
+      "site_id": "GN: robot",
+      "description": "Robotic mowers take over lawn care at WKYT’s sprawling campus  WKYT",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 21.08,
+      "writing_value": 0,
+      "total_score": 96.08
     },
     {
       "id": "83b2953820d2fd8c95fece498c75e96d69aa2dae",
@@ -210,9 +231,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 11.91,
+      "timeliness": 11.66,
       "writing_value": 0,
-      "total_score": 86.91
+      "total_score": 86.66
     },
     {
       "id": "85ac42763b32cc6d3dcd6f0fea6468b3fd103021",
@@ -231,72 +252,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 13.85,
+      "timeliness": 13.6,
       "writing_value": 0,
-      "total_score": 88.85
-    },
-    {
-      "id": "9caf4dad21e098300d36960d23527297e56b527d",
-      "title": "WashU Medicine and Barnes-Jewish Transplant Center perform breakthrough robotic liver-kidney transplant - WashU Medicine",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxORHM1akR6aEI3M0t4cE44TFp2RTFadWkza09CeXBMWTJIY1NHRjJqRTMzWnFUSzl4Q2NubGJTeTB2Z1dPWWdmUUdKWkl4T2QxNjFDZzhJVWxpSzZVOEtmWWpJZFVIbzVFcDVodDVSSy1nZmJuU2VKR2FXZU5RTGc4QmNkVVFFa05OZ3VJWWZzVmNXTVBVcG5HeU9kLWJTVWR3X0ZMZ0JoQkprSV9OWGxRa2xMMmI5UlZvcnBPbkdYSnVUd01INGFZV1ZMcG1QTkZXVVE?oc=5",
-      "published_at": "2026-09-02T14:11:48+00:00",
-      "category": "GN: surgical robot",
-      "gn_label": "robotics",
-      "site_name": "GN: surgical robot",
-      "source": "GN: surgical robot",
-      "site_id": "GN: surgical robot",
-      "description": "WashU Medicine and Barnes-Jewish Transplant Center perform breakthrough robotic liver-kidney transplant  WashU Medicine",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 5,
-      "timeliness": 13.87,
-      "writing_value": 5,
-      "total_score": 98.87
-    },
-    {
-      "id": "844cd8956c003c14f842a27f642bca8cee32d3c4",
-      "title": "Medtronic partners with Cornerstone Robotics to widen surgical robot reach - Dealroom",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQV0tlOVB2UU9BVFdYLTl3TzBjRWJwbHQtSnZuMnhKdktyS0txWk5JZDZiRWtibmhLYkpaazNnYW0yYzUtVjgyLVA4T0ZGOWQtWkJJWkNTdzdabUZTQmdVUTUtbkQ1N1dhUlNTa1ZmLUMtTnItMWF1dWxKbEY4WkVwbzlJT3hld3hpM0ptUUVGRW9wSzZrX0h4TTFkZWpyNlZkMFhUajR1Q1pHdU1R?oc=5",
-      "published_at": "2026-09-02T14:39:57+00:00",
-      "category": "GN: surgical robot",
-      "gn_label": "robotics",
-      "site_name": "GN: surgical robot",
-      "source": "GN: surgical robot",
-      "site_id": "GN: surgical robot",
-      "description": "Medtronic partners with Cornerstone Robotics to widen surgical robot reach  Dealroom",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 14.34,
-      "writing_value": 0,
-      "total_score": 89.34
-    },
-    {
-      "id": "c3714f7611d49f916eedba22da572441b1c3d1c1",
-      "title": "Cornerstone Robotics Partners with Medtronic to Expand Robotic Surgery Access - TimesTech",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOQmp2b0Y0dGZQNHl1U3NVX1EtNDFaNHd2cmIxbkZmTnhfR0IxWXBBM1djcmxzU0M1RW81Zm9qSlpLVHV0bHBYaXJZM0NaRV9IakVTLVJwYzRwSXBVcDhZdTZWWDVKLTVRRU1DTElid01GRXFnYTRhdWhTWXRaRjlGem8tRmw0TmMxTTdVWkZVVnl1bjBSSE92NGROQkVDdGtY?oc=5",
-      "published_at": "2026-09-03T05:19:50+00:00",
-      "category": "GN: surgical robot",
-      "gn_label": "robotics",
-      "site_name": "GN: surgical robot",
-      "source": "GN: surgical robot",
-      "site_id": "GN: surgical robot",
-      "description": "Cornerstone Robotics Partners with Medtronic to Expand Robotic Surgery Access  TimesTech",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 29.0,
-      "writing_value": 0,
-      "total_score": 104.0
+      "total_score": 88.6
     },
     {
       "id": "706a74317bf2e3ad697e5fd764d918dc2efbc802",
@@ -315,9 +273,72 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 14.67,
+      "timeliness": 14.43,
       "writing_value": 5,
-      "total_score": 99.67
+      "total_score": 99.43
+    },
+    {
+      "id": "26dd62e3d61d20c2f6f0990a56bccc560392b5af",
+      "title": "WashU Medicine and Barnes-Jewish Transplant Center perform breakthrough robotic liver-kidney transplant - medicine.washu.edu",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxORHM1akR6aEI3M0t4cE44TFp2RTFadWkza09CeXBMWTJIY1NHRjJqRTMzWnFUSzl4Q2NubGJTeTB2Z1dPWWdmUUdKWkl4T2QxNjFDZzhJVWxpSzZVOEtmWWpJZFVIbzVFcDVodDVSSy1nZmJuU2VKR2FXZU5RTGc4QmNkVVFFa05OZ3VJWWZzVmNXTVBVcG5HeU9kLWJTVWR3X0ZMZ0JoQkprSV9OWGxRa2xMMmI5UlZvcnBPbkdYSnVUd01INGFZV1ZMcG1QTkZXVVE?oc=5",
+      "published_at": "2026-09-02T14:11:48+00:00",
+      "category": "GN: surgical robot",
+      "gn_label": "robotics",
+      "site_name": "GN: surgical robot",
+      "source": "GN: surgical robot",
+      "site_id": "GN: surgical robot",
+      "description": "WashU Medicine and Barnes-Jewish Transplant Center perform breakthrough robotic liver-kidney transplant  medicine.washu.edu",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 13.62,
+      "writing_value": 5,
+      "total_score": 98.62
+    },
+    {
+      "id": "844cd8956c003c14f842a27f642bca8cee32d3c4",
+      "title": "Medtronic partners with Cornerstone Robotics to widen surgical robot reach - Dealroom",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQV0tlOVB2UU9BVFdYLTl3TzBjRWJwbHQtSnZuMnhKdktyS0txWk5JZDZiRWtibmhLYkpaazNnYW0yYzUtVjgyLVA4T0ZGOWQtWkJJWkNTdzdabUZTQmdVUTUtbkQ1N1dhUlNTa1ZmLUMtTnItMWF1dWxKbEY4WkVwbzlJT3hld3hpM0ptUUVGRW9wSzZrX0h4TTFkZWpyNlZkMFhUajR1Q1pHdU1R?oc=5",
+      "published_at": "2026-09-02T14:39:57+00:00",
+      "category": "GN: surgical robot",
+      "gn_label": "robotics",
+      "site_name": "GN: surgical robot",
+      "source": "GN: surgical robot",
+      "site_id": "GN: surgical robot",
+      "description": "Medtronic partners with Cornerstone Robotics to widen surgical robot reach  Dealroom",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 14.09,
+      "writing_value": 0,
+      "total_score": 89.09
+    },
+    {
+      "id": "c3714f7611d49f916eedba22da572441b1c3d1c1",
+      "title": "Cornerstone Robotics Partners with Medtronic to Expand Robotic Surgery Access - TimesTech",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOQmp2b0Y0dGZQNHl1U3NVX1EtNDFaNHd2cmIxbkZmTnhfR0IxWXBBM1djcmxzU0M1RW81Zm9qSlpLVHV0bHBYaXJZM0NaRV9IakVTLVJwYzRwSXBVcDhZdTZWWDVKLTVRRU1DTElid01GRXFnYTRhdWhTWXRaRjlGem8tRmw0TmMxTTdVWkZVVnl1bjBSSE92NGROQkVDdGtY?oc=5",
+      "published_at": "2026-09-03T05:19:50+00:00",
+      "category": "GN: surgical robot",
+      "gn_label": "robotics",
+      "site_name": "GN: surgical robot",
+      "source": "GN: surgical robot",
+      "site_id": "GN: surgical robot",
+      "description": "Cornerstone Robotics Partners with Medtronic to Expand Robotic Surgery Access  TimesTech",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 28.76,
+      "writing_value": 0,
+      "total_score": 103.76
     },
     {
       "id": "c319cc14334bab6fdffde550c2505fb0e5df2e9c",
@@ -336,9 +357,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.12,
+      "timeliness": 24.87,
       "writing_value": 0,
-      "total_score": 100.12
+      "total_score": 99.87
     },
     {
       "id": "85e42930066958ee9333bcd91ba345aaa7462203",
@@ -357,9 +378,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 12.41,
+      "timeliness": 12.17,
       "writing_value": 0,
-      "total_score": 87.41
+      "total_score": 87.17
     },
     {
       "id": "8ecc4f1fae506b85826554e5ce8fd739725bf59f",
@@ -378,9 +399,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.14,
+      "timeliness": 24.9,
       "writing_value": 0,
-      "total_score": 100.14
+      "total_score": 99.9
     },
     {
       "id": "8679863c5a706cd8ac3c7d2bb34a44c044a6a402",
@@ -399,9 +420,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 14.26,
+      "timeliness": 14.01,
       "writing_value": 0,
-      "total_score": 89.26
+      "total_score": 89.01
     },
     {
       "id": "be07f33251972aa723bf29316371e39587bb5ba2",
@@ -420,9 +441,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 10.8,
+      "timeliness": 10.56,
       "writing_value": 0,
-      "total_score": 85.8
+      "total_score": 85.56
     },
     {
       "id": "a69a0b7a1e5d45e1e6870b1a7fe91bdddb2f83ac",
@@ -441,9 +462,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 19.15,
+      "timeliness": 18.91,
       "writing_value": 0,
-      "total_score": 94.15
+      "total_score": 93.91
     },
     {
       "id": "67c3e0ec050020bd5fb2338b16790418ad4b9e9a",
@@ -462,9 +483,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 14.34,
+      "timeliness": 14.09,
       "writing_value": 0,
-      "total_score": 89.34
+      "total_score": 89.09
     },
     {
       "id": "7a0ba4c0e7b0630eca0bf29a93e139eee9eae844",
@@ -483,13 +504,13 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 12.62,
+      "timeliness": 12.38,
       "writing_value": 0,
-      "total_score": 87.62
+      "total_score": 87.38
     },
     {
-      "id": "14158373d0ac74429cf09d0ae968cefd39128857",
-      "title": "【西街观察】宇树科技股价启示录 - 新浪财经",
+      "id": "2655e6d5441eac49fe41da11b77a5dbfacd56dac",
+      "title": "【西街观察】宇树科技股价启示录 - finance.sina.com.cn",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPdl9NeDNxODNJNlNyVlBtUG1qMU1WZXg4Q3VXUWhTN1FtcVVxNXlTbTR2QUk3Z091dHpiamk0ME9GQmJaS3NTSHUxYVZVMV9GdUFFTEFzaEhxbmxTQ2ZHUzZIOG9oRHRJRVpMLUZianE0dEtKZjc0OHdZdmhpVzFCX1piUmo3MGJ1?oc=5",
       "published_at": "2026-09-02T12:55:00+00:00",
@@ -498,19 +519,19 @@
       "site_name": "GN: 宇树科技",
       "source": "GN: 宇树科技",
       "site_id": "GN: 宇树科技",
-      "description": "【西街观察】宇树科技股价启示录  新浪财经",
+      "description": "【西街观察】宇树科技股价启示录  finance.sina.com.cn",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 12.59,
+      "timeliness": 12.34,
       "writing_value": 0,
-      "total_score": 87.59
+      "total_score": 87.34
     },
     {
-      "id": "ae17bf6b9c108be3fc1a1b2382069e0373ac9ac6",
-      "title": "宇树科技股价腰斩；星宇董事长回应劝退应届生；小米 18 Fold 手机外观亮相｜Do早报 - sohu.com",
+      "id": "c536f4d20bdbfe0221414e484d17094c4f0faaf4",
+      "title": "宇树科技股价腰斩；星宇董事长回应劝退应届生；小米 18 Fold 手机外观亮相｜Do早报 - Sohu",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxORzFwVDhucjdvSUdRbGlyZFFZNHFZcXJxaUUzN0pjeEtIYlNYTmdVMU1TWURSNHhweDB5T2NOREZ3aXBfZGFlcUVoU3RoUzVSOGIyX2pBMjBJV3FBdkFaVkNaa0dnRkZ3VnpzY04tQnhxeFdKa2hzYmVtSkdIMTFCS015R2twMnRWbHhLdg?oc=5",
       "published_at": "2026-09-03T00:03:03+00:00",
@@ -519,15 +540,15 @@
       "site_name": "GN: 宇树科技",
       "source": "GN: 宇树科技",
       "site_id": "GN: 宇树科技",
-      "description": "宇树科技股价腰斩；星宇董事长回应劝退应届生；小米 18 Fold 手机外观亮相｜Do早报  sohu.com",
+      "description": "宇树科技股价腰斩；星宇董事长回应劝退应届生；小米 18 Fold 手机外观亮相｜Do早报  Sohu",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.72,
+      "timeliness": 23.48,
       "writing_value": 0,
-      "total_score": 98.72
+      "total_score": 98.48
     },
     {
       "id": "f6c3936efc0212073fcc1c6a6bf90e1a947b4cf3",
@@ -546,9 +567,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 13.08,
+      "timeliness": 12.84,
       "writing_value": 0,
-      "total_score": 88.08
+      "total_score": 87.84
     }
   ],
   "fallback_used": false
