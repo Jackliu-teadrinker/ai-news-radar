@@ -1,51 +1,9 @@
 {
-  "generated_at": "2026-09-03T05:06:49.587608+00:00",
+  "generated_at": "2026-09-03T05:22:01.271321+00:00",
   "window_start": "2026-09-02T19:00:00+08:00",
-  "window_end": "2026-09-03T13:04:06.864994+08:00",
-  "total_items": 29,
+  "window_end": "2026-09-03T13:19:17.481889+08:00",
+  "total_items": 26,
   "items": [
-    {
-      "id": "989707cd10e884e5f99d7efdd09452ed38418414",
-      "title": "TechCrunch Disrupt 2026’s new Real World AI Stage features Nvidia, robots, and extinct animals",
-      "title_zh": "",
-      "url": "https://techcrunch.com/2026/09/02/techcrunch-disrupt-2026s-new-real-world-ai-stage-features-nvidia-robots-and-extinct-animals/",
-      "published_at": "2026-09-02T22:24:09+00:00",
-      "category": "TechCrunch Robotics",
-      "gn_label": "robotics",
-      "site_name": "TechCrunch Robotics",
-      "source": "TechCrunch Robotics",
-      "site_id": "TechCrunch Robotics",
-      "description": "On our new Real World AI stage, we’ll be focusing on the intersection between the digital and physical, and all the ways we’ll continue to see a blending of the two.",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 5,
-      "timeliness": 23.34,
-      "writing_value": 5,
-      "total_score": 108.34
-    },
-    {
-      "id": "8e50bc450e5b0085f6298dc6ced9497fea1ccfdd",
-      "title": "Uber is laying off 10% of staff, or 3,300 people",
-      "title_zh": "",
-      "url": "https://techcrunch.com/2026/09/02/uber-is-laying-off-10-of-staff-or-3300-people/",
-      "published_at": "2026-09-02T12:14:35+00:00",
-      "category": "TechCrunch Robotics",
-      "gn_label": "robotics",
-      "site_name": "TechCrunch Robotics",
-      "source": "TechCrunch Robotics",
-      "site_id": "TechCrunch Robotics",
-      "description": "Uber is laying off about 3,300 people, or about 10% of its global headcount, in a bid to reduce management layers and invest more in its ridesharing, delivery, and robotaxi divisions.",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 5,
-      "timeliness": 13.18,
-      "writing_value": 5,
-      "total_score": 98.18
-    },
     {
       "id": "73f56d486ebb7950f086ccc3e1b05f0319d77b63",
       "title": "The Logical End Point of AI Job Interviews Is Two Bots Talking to Each Other",
@@ -63,9 +21,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 16.8,
+      "timeliness": 16.54,
       "writing_value": 5,
-      "total_score": 101.8
+      "total_score": 101.54
     },
     {
       "id": "13e59b284dca72505308790244b43c9a95392105",
@@ -84,9 +42,72 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 12.43,
+      "timeliness": 12.18,
       "writing_value": 5,
-      "total_score": 97.43
+      "total_score": 97.18
+    },
+    {
+      "id": "989707cd10e884e5f99d7efdd09452ed38418414",
+      "title": "TechCrunch Disrupt 2026’s new Real World AI Stage features Nvidia, robots, and extinct animals",
+      "title_zh": "",
+      "url": "https://techcrunch.com/2026/09/02/techcrunch-disrupt-2026s-new-real-world-ai-stage-features-nvidia-robots-and-extinct-animals/",
+      "published_at": "2026-09-02T22:24:09+00:00",
+      "category": "TechCrunch Robotics",
+      "gn_label": "robotics",
+      "site_name": "TechCrunch Robotics",
+      "source": "TechCrunch Robotics",
+      "site_id": "TechCrunch Robotics",
+      "description": "On our new Real World AI stage, we’ll be focusing on the intersection between the digital and physical, and all the ways we’ll continue to see a blending of the two.",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 23.08,
+      "writing_value": 5,
+      "total_score": 108.08
+    },
+    {
+      "id": "8e50bc450e5b0085f6298dc6ced9497fea1ccfdd",
+      "title": "Uber is laying off 10% of staff, or 3,300 people",
+      "title_zh": "",
+      "url": "https://techcrunch.com/2026/09/02/uber-is-laying-off-10-of-staff-or-3300-people/",
+      "published_at": "2026-09-02T12:14:35+00:00",
+      "category": "TechCrunch Robotics",
+      "gn_label": "robotics",
+      "site_name": "TechCrunch Robotics",
+      "source": "TechCrunch Robotics",
+      "site_id": "TechCrunch Robotics",
+      "description": "Uber is laying off about 3,300 people, or about 10% of its global headcount, in a bid to reduce management layers and invest more in its ridesharing, delivery, and robotaxi divisions.",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 12.92,
+      "writing_value": 5,
+      "total_score": 97.92
+    },
+    {
+      "id": "56fa504257d3df851c5cdbee905f716c46f68236",
+      "title": "Waymo and Zoox expand into more U.S. markets as robotaxi race heats up",
+      "title_zh": "",
+      "url": "https://www.cnbc.com/2026/09/01/waymo-and-zoox-expand-into-more-us-markets-as-robotaxi-race-heats-up.html",
+      "published_at": "2026-09-03T05:14:10+00:00",
+      "category": "CNBC AI Age",
+      "gn_label": "robotics",
+      "site_name": "CNBC AI Age",
+      "source": "CNBC AI Age",
+      "site_id": "CNBC AI Age",
+      "description": "Waymo is bringing driverless rides to three more cities, and Amazon plans to start testing in two additional U.S. markets.",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 29.92,
+      "writing_value": 5,
+      "total_score": 114.92
     },
     {
       "id": "6ca0382ee0bd9803ee5248ba2432e443154e7ed3",
@@ -105,9 +126,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 18.83,
+      "timeliness": 18.57,
       "writing_value": 0,
-      "total_score": 93.83
+      "total_score": 93.57
     },
     {
       "id": "5d79a955c46295bfe226299eb624627a237d0433",
@@ -126,9 +147,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 20.72,
+      "timeliness": 20.47,
       "writing_value": 0,
-      "total_score": 95.72
+      "total_score": 95.47
     },
     {
       "id": "1bd8e65da009363abc4e6f20846b977da7a7b79a",
@@ -147,9 +168,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 16.55,
+      "timeliness": 16.3,
       "writing_value": 0,
-      "total_score": 91.55
+      "total_score": 91.3
     },
     {
       "id": "2decf538df670a3e6ee082431bcd83c54ee7e54f",
@@ -168,13 +189,13 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 17.08,
+      "timeliness": 16.83,
       "writing_value": 0,
-      "total_score": 92.08
+      "total_score": 91.83
     },
     {
-      "id": "275fe82bdb1968de3ffc460e1b39c1cc69cb6fc5",
-      "title": "Meet the 7-year-old who made history in MIT’s robotics program - Face2Face Africa",
+      "id": "9bd60bc7fa0846675817a86c5092f565ebc18eb3",
+      "title": "Meet the 7-year-old who made history in MIT’s robotics program - face2faceafrica.com",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNQ3hzOVR2cXZFYTkwdjMxYUFPTkNOVVV5a1h5bGJnMF9iTUNjaEE4Q1dpSXZnZmU4Z2pwa1RjNnhLamtGMGtMNWYwejR6R2RKbVljNnlTS2FEaGkyUFF0V21pUTB1X1lFbHVCaDFuTlNiZlFscXoyS1d5YjVlalptUGpoN21lREFiLVdCYXk1OUFEY0RVSmlKd1l3eHZxZw?oc=5",
       "published_at": "2026-09-02T18:00:00+00:00",
@@ -183,36 +204,15 @@
       "site_name": "GN: MIT robotics",
       "source": "GN: MIT robotics",
       "site_id": "GN: MIT robotics",
-      "description": "Meet the 7-year-old who made history in MIT’s robotics program  Face2Face Africa",
+      "description": "Meet the 7-year-old who made history in MIT’s robotics program  face2faceafrica.com",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 18.93,
+      "timeliness": 18.68,
       "writing_value": 0,
-      "total_score": 93.93
-    },
-    {
-      "id": "651dcf152cf84e96c890d3b34309fcdd3edb024b",
-      "title": "Roborock hit the ground running at IFA 2026 with a suite of new robotic cleaning products - EFTM",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNUTVvSlcxRFNoRXJWU1lHcVpFT3M0LUZsV1h3VGxIeTU1YW0zY0NPWFR5THQwYnFQNnRtaVFWUjBScy1hYnVwcUhjdW9xaE5JMzVyTmtFTlZpOUNsdi1RSS1jUG9ZdXpqSVQ0Nk5tMFNCQ2JpT0JNanIwTDVnbmFCYXk2LXZveC1fLXNtYU5NYVdnZEdkU29oV0FibEtPQ0pzbWJ1dWYwc2VMSEp4R0ZDUFA2bklhS3VzTnR5Q1dQUdIBxAFBVV95cUxPdktXSG56ZE1OMmFXVEp3SUdlOHo1Q1VBaU0zOWNwd3NnejF5eVBzWndqTzdpakpqODBJLUEwZVpraE1iV1VzbkhReDYzS1BpeWNqX3RXWF95NkxhQ25YNEhUTndnQU1VRV9qeEFndzZSdjJDaV9Sb1dKRWx2bUpXb25hSGQ5S2VCbXJsdFdBUjEydUs2N3JKdE5lZVlVWnNSTUdNZGt0UnJfQjVrN3RLYk1GcHVmN0VmMVJPQTE2TEN5WFhr?oc=5",
-      "published_at": "2026-09-02T23:03:52+00:00",
-      "category": "GN: robot vacuum",
-      "gn_label": "robotics",
-      "site_name": "GN: robot vacuum",
-      "source": "GN: robot vacuum",
-      "site_id": "GN: robot vacuum",
-      "description": "Roborock hit the ground running at IFA 2026 with a suite of new robotic cleaning products  EFTM",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 24.0,
-      "writing_value": 0,
-      "total_score": 99.0
+      "total_score": 93.68
     },
     {
       "id": "83b2953820d2fd8c95fece498c75e96d69aa2dae",
@@ -231,9 +231,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 13.17,
+      "timeliness": 12.91,
       "writing_value": 0,
-      "total_score": 88.17
+      "total_score": 87.91
     },
     {
       "id": "85ac42763b32cc6d3dcd6f0fea6468b3fd103021",
@@ -252,9 +252,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 15.11,
+      "timeliness": 14.85,
       "writing_value": 0,
-      "total_score": 90.11
+      "total_score": 89.85
     },
     {
       "id": "4f550394573c20ee1621081b8dbad9fa5d0f167b",
@@ -273,9 +273,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 18.72,
+      "timeliness": 18.47,
       "writing_value": 5,
-      "total_score": 103.72
+      "total_score": 103.47
     },
     {
       "id": "9caf4dad21e098300d36960d23527297e56b527d",
@@ -294,9 +294,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 15.13,
+      "timeliness": 14.88,
       "writing_value": 5,
-      "total_score": 100.13
+      "total_score": 99.88
     },
     {
       "id": "844cd8956c003c14f842a27f642bca8cee32d3c4",
@@ -315,9 +315,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 15.6,
+      "timeliness": 15.35,
       "writing_value": 0,
-      "total_score": 90.6
+      "total_score": 90.35
     },
     {
       "id": "706a74317bf2e3ad697e5fd764d918dc2efbc802",
@@ -336,9 +336,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 15.93,
+      "timeliness": 15.68,
       "writing_value": 5,
-      "total_score": 100.93
+      "total_score": 100.68
     },
     {
       "id": "c319cc14334bab6fdffde550c2505fb0e5df2e9c",
@@ -357,9 +357,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.38,
+      "timeliness": 26.12,
       "writing_value": 0,
-      "total_score": 101.38
+      "total_score": 101.12
     },
     {
       "id": "85e42930066958ee9333bcd91ba345aaa7462203",
@@ -378,30 +378,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 13.67,
+      "timeliness": 13.42,
       "writing_value": 0,
-      "total_score": 88.67
-    },
-    {
-      "id": "da1a1bf9b546c3436d972bb3095f0e5b1cf38527",
-      "title": "宇树科技（688836）9月2日主力资金净卖出5.56亿元_主力研究 - 证券之星",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5SN1FLS0RDcGxVOUw5c1RxUEhsNDQzRkI1blpldkVqNHpjeUNjVzM2X0I1dFZpbTRmS1kzOS1SSnFNcEdjVC00WTNWTlczdFRJbF8zbGpza3ZORFpGblBfQlRB?oc=5",
-      "published_at": "2026-09-03T00:28:16+00:00",
-      "category": "GN: 宇树科技",
-      "gn_label": "robotics",
-      "site_name": "GN: 宇树科技",
-      "source": "GN: 宇树科技",
-      "site_id": "GN: 宇树科技",
-      "description": "宇树科技（688836）9月2日主力资金净卖出5.56亿元_主力研究  证券之星",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 25.4,
-      "writing_value": 0,
-      "total_score": 100.4
+      "total_score": 88.42
     },
     {
       "id": "8ecc4f1fae506b85826554e5ce8fd739725bf59f",
@@ -420,9 +399,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.4,
+      "timeliness": 26.15,
       "writing_value": 0,
-      "total_score": 101.4
+      "total_score": 101.15
     },
     {
       "id": "be07f33251972aa723bf29316371e39587bb5ba2",
@@ -441,13 +420,13 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 12.06,
+      "timeliness": 11.81,
       "writing_value": 0,
-      "total_score": 87.06
+      "total_score": 86.81
     },
     {
-      "id": "a69a0b7a1e5d45e1e6870b1a7fe91bdddb2f83ac",
-      "title": "宇树科技股价较高点跌超一半，中签未卖者仍浮盈260%|换手率|科创板|成交额|投资者|机器人 - finance.sina.com.cn",
+      "id": "7d3b38bf0bd74f3460113b2f30e21ef118f46576",
+      "title": "宇树科技股价较高点跌超一半，中签未卖者仍浮盈260%|换手率|科创板|成交额|投资者|机器人 - 新浪财经",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQNmg5dXRCYjk3aWJ6U3NROE5OUlVYQzZTQ0dYU1NheHprMGFfd3M5ZnMwZVB4ZFVOaUhqanUyYVR5cXVrNDBsZDYzWG5HUDhhM1NUSHJ5MnZ5Y2tHdjhkNnRaU1ZLYUhJeXZzQXQ3QW5IaFl6UDA0bTFSUm96bHFjd2pfTXpWU0pFdkU2X3RyclR0QzBYbkx1eQ?oc=5",
       "published_at": "2026-09-02T19:28:47+00:00",
@@ -456,15 +435,15 @@
       "site_name": "GN: 宇树科技",
       "source": "GN: 宇树科技",
       "site_id": "GN: 宇树科技",
-      "description": "宇树科技股价较高点跌超一半，中签未卖者仍浮盈260%|换手率|科创板|成交额|投资者|机器人  finance.sina.com.cn",
+      "description": "宇树科技股价较高点跌超一半，中签未卖者仍浮盈260%|换手率|科创板|成交额|投资者|机器人  新浪财经",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 20.41,
+      "timeliness": 20.16,
       "writing_value": 0,
-      "total_score": 95.41
+      "total_score": 95.16
     },
     {
       "id": "00a8ced2a30d072753be6309d07f5504da6e3297",
@@ -483,9 +462,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.32,
+      "timeliness": 24.06,
       "writing_value": 0,
-      "total_score": 99.32
+      "total_score": 99.06
     },
     {
       "id": "7a0ba4c0e7b0630eca0bf29a93e139eee9eae844",
@@ -504,9 +483,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 13.88,
+      "timeliness": 13.63,
       "writing_value": 0,
-      "total_score": 88.88
+      "total_score": 88.63
     },
     {
       "id": "14158373d0ac74429cf09d0ae968cefd39128857",
@@ -525,51 +504,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 13.85,
+      "timeliness": 13.6,
       "writing_value": 0,
-      "total_score": 88.85
-    },
-    {
-      "id": "b06cbab9681322aee79131a0a4bc87ed89cf4e1f",
-      "title": "宇树科技股价腰斩及回购讨论|宇树科技|王兴兴|优必选_新浪新闻 - 新浪网",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE14Ymo2NWVnYWxGZUFQdkxRTGgzZnozTmFHVUxJOVhCVHVsRTdlUlNYMUpFWU5aeWkwWkRJRDF3LTNGU2p1S1BaRHRvbUlpcjFQUVB2QzM4OVZIT3R1bjRUU1Ftdw?oc=5",
-      "published_at": "2026-09-02T21:12:00+00:00",
-      "category": "GN: 宇树科技",
-      "gn_label": "robotics",
-      "site_name": "GN: 宇树科技",
-      "source": "GN: 宇树科技",
-      "site_id": "GN: 宇树科技",
-      "description": "宇树科技股价腰斩及回购讨论|宇树科技|王兴兴|优必选_新浪新闻  新浪网",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 22.13,
-      "writing_value": 0,
-      "total_score": 97.13
-    },
-    {
-      "id": "7a463b09cd7de211c0fdac976493ab79df3d5df7",
-      "title": "那个爆料的员工，还能在宇树科技干下去吗？#宇树科技回应只有罚几乎没有奖# ​ - 新浪网",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBHc2xoakVNSU5qTGdUMXhKZXdsdWl5LW1nZjZVdEszOVhDYzlQUDlMUUNNT3ZldmE5Rzd6djlDZmttelE0UnJWZXE2cHpVUVlkV2c3d2Q4Ym8wQmFGSVJ4cDZBQQ?oc=5",
-      "published_at": "2026-09-03T00:33:00+00:00",
-      "category": "GN: 宇树科技",
-      "gn_label": "robotics",
-      "site_name": "GN: 宇树科技",
-      "source": "GN: 宇树科技",
-      "site_id": "GN: 宇树科技",
-      "description": "那个爆料的员工，还能在宇树科技干下去吗？#宇树科技回应只有罚几乎没有奖# ​  新浪网",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 25.48,
-      "writing_value": 0,
-      "total_score": 100.48
+      "total_score": 88.6
     },
     {
       "id": "3953a7b06468d70d248281a20a4fecbdf0138acf",
@@ -588,9 +525,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 15.54,
+      "timeliness": 15.29,
       "writing_value": 0,
-      "total_score": 90.54
+      "total_score": 90.29
     },
     {
       "id": "f6c3936efc0212073fcc1c6a6bf90e1a947b4cf3",
@@ -609,9 +546,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 14.34,
+      "timeliness": 14.09,
       "writing_value": 0,
-      "total_score": 89.34
+      "total_score": 89.09
     }
   ],
   "fallback_used": false
