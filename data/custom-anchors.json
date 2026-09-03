@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-03T03:51:20.331033+00:00",
+  "generated_at": "2026-09-03T04:04:23.221391+00:00",
   "window_start": "2026-09-02T19:00:00+08:00",
-  "window_end": "2026-09-03T11:48:37.481021+08:00",
-  "total_items": 25,
+  "window_end": "2026-09-03T12:01:39.889444+08:00",
+  "total_items": 26,
   "items": [
     {
       "id": "989707cd10e884e5f99d7efdd09452ed38418414",
@@ -21,9 +21,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 24.63,
+      "timeliness": 24.38,
       "writing_value": 5,
-      "total_score": 109.63
+      "total_score": 109.38
     },
     {
       "id": "8e50bc450e5b0085f6298dc6ced9497fea1ccfdd",
@@ -42,9 +42,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 14.47,
+      "timeliness": 14.22,
       "writing_value": 5,
-      "total_score": 99.47
+      "total_score": 99.22
     },
     {
       "id": "73f56d486ebb7950f086ccc3e1b05f0319d77b63",
@@ -63,9 +63,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 18.09,
+      "timeliness": 17.84,
       "writing_value": 5,
-      "total_score": 103.09
+      "total_score": 102.84
     },
     {
       "id": "13e59b284dca72505308790244b43c9a95392105",
@@ -84,9 +84,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 13.72,
+      "timeliness": 13.47,
       "writing_value": 5,
-      "total_score": 98.72
+      "total_score": 98.47
     },
     {
       "id": "6ca0382ee0bd9803ee5248ba2432e443154e7ed3",
@@ -105,9 +105,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 20.12,
+      "timeliness": 19.87,
       "writing_value": 0,
-      "total_score": 95.12
+      "total_score": 94.87
     },
     {
       "id": "1bd8e65da009363abc4e6f20846b977da7a7b79a",
@@ -126,9 +126,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 17.84,
+      "timeliness": 17.6,
       "writing_value": 0,
-      "total_score": 92.84
+      "total_score": 92.6
     },
     {
       "id": "2decf538df670a3e6ee082431bcd83c54ee7e54f",
@@ -147,30 +147,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 18.37,
+      "timeliness": 18.12,
       "writing_value": 0,
-      "total_score": 93.37
+      "total_score": 93.12
     },
     {
-      "id": "6f05ffa8f1719cb067ebc267454ac545943a6ddb",
-      "title": "Medtronic bets another $700M on surgical robots - Star Tribune",
+      "id": "68fa08349cb69819e22f666b4c57c000880251c7",
+      "title": "The Physical AI Stack: 9 Stocks Across Chips, Robots, Vision, Drones and Surgery - Moomoo",
       "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQY2VYaG1MeE50Z18tN0ZScm5NWksteU5ld2VxWDNlMEVEWTN2THJOQmp4U1gzMEUwMWpjc3ZsNzV5YVVQSUJfLTR3cWxDeVFVLW1nNzVIMFZrZENFSC1pQzF1d2NSMnh2YVM1T3U2Yk5jdUZ2ZDlZVFZIVEVBTDFJWWgwczBhRjg2SHRQSzU2d3NOcUVTZ3IwWm1DdmRCUkk?oc=5",
-      "published_at": "2026-09-02T16:00:00+00:00",
-      "category": "GN: robot",
-      "gn_label": "robotics",
-      "site_name": "GN: robot",
-      "source": "GN: robot",
-      "site_id": "GN: robot",
-      "description": "Medtronic bets another $700M on surgical robots  Star Tribune",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPS3RXV0ZLbEFnQ2JJRHc2MjFqQWM5MUZhQWsydHNkUUpTaUk1QndESThqc3pmUTVFTTBRd0hUeW80VElXVGh6YlZ2OUNaQ2dFOWVuZzkzQ1FJdlk1UlhzYmV5Q3hVYkRLT1ZkdVl3eTB4bVZkcVJ3TDRlWjhtdk1PdmFGeEpFR0tzUkYxd2VjSmZpeHhlUlBhVWUxYVZYbUdnWnd1eHNlZDFYNURkVGI5Rw?oc=5",
+      "published_at": "2026-09-02T11:59:46+00:00",
+      "category": "GN: Physical AI",
+      "gn_label": "physical_ai",
+      "site_name": "GN: Physical AI",
+      "source": "GN: Physical AI",
+      "site_id": "GN: Physical AI",
+      "description": "The Physical AI Stack: 9 Stocks Across Chips, Robots, Vision, Drones and Surgery  Moomoo",
       "ai_score": 65.0,
-      "ai_label": "robotics",
+      "ai_label": "physical_ai",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 18.22,
+      "timeliness": 13.97,
       "writing_value": 0,
-      "total_score": 93.22
+      "total_score": 88.97
     },
     {
       "id": "275fe82bdb1968de3ffc460e1b39c1cc69cb6fc5",
@@ -189,30 +189,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 20.22,
+      "timeliness": 19.97,
       "writing_value": 0,
-      "total_score": 95.22
-    },
-    {
-      "id": "3078eed4dd82b34b567433c95be697b2ffd527c0",
-      "title": "Yeedi S14 Plus robot vacuum and mop falls below $400, matching its all-time low - androidauthority.com",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBYbTBwbmI4TmFNZWVDTUtqQzhudjdHNDl1MFgxbk9LRTA2MUhrYVZSWHpRSFBObVczSWdoRzZsLS1HcFJjUG9uQXg4VUdndk56Q2lHTnNWUkYxNExkcFdDSlFYR2NPV2FfdkZxaFJ3?oc=5",
-      "published_at": "2026-09-02T15:56:00+00:00",
-      "category": "GN: robot vacuum",
-      "gn_label": "robotics",
-      "site_name": "GN: robot vacuum",
-      "source": "GN: robot vacuum",
-      "site_id": "GN: robot vacuum",
-      "description": "Yeedi S14 Plus robot vacuum and mop falls below $400, matching its all-time low  androidauthority.com",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 5,
-      "timeliness": 18.16,
-      "writing_value": 5,
-      "total_score": 103.16
+      "total_score": 94.97
     },
     {
       "id": "83b2953820d2fd8c95fece498c75e96d69aa2dae",
@@ -231,9 +210,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 14.46,
+      "timeliness": 14.21,
       "writing_value": 0,
-      "total_score": 89.46
+      "total_score": 89.21
     },
     {
       "id": "85ac42763b32cc6d3dcd6f0fea6468b3fd103021",
@@ -252,9 +231,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 16.4,
+      "timeliness": 16.15,
       "writing_value": 0,
-      "total_score": 91.4
+      "total_score": 91.15
     },
     {
       "id": "4f550394573c20ee1621081b8dbad9fa5d0f167b",
@@ -273,9 +252,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 20.01,
+      "timeliness": 19.76,
       "writing_value": 5,
-      "total_score": 105.01
+      "total_score": 104.76
     },
     {
       "id": "9caf4dad21e098300d36960d23527297e56b527d",
@@ -294,9 +273,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 16.42,
+      "timeliness": 16.17,
       "writing_value": 5,
-      "total_score": 101.42
+      "total_score": 101.17
+    },
+    {
+      "id": "844cd8956c003c14f842a27f642bca8cee32d3c4",
+      "title": "Medtronic partners with Cornerstone Robotics to widen surgical robot reach - Dealroom",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQV0tlOVB2UU9BVFdYLTl3TzBjRWJwbHQtSnZuMnhKdktyS0txWk5JZDZiRWtibmhLYkpaazNnYW0yYzUtVjgyLVA4T0ZGOWQtWkJJWkNTdzdabUZTQmdVUTUtbkQ1N1dhUlNTa1ZmLUMtTnItMWF1dWxKbEY4WkVwbzlJT3hld3hpM0ptUUVGRW9wSzZrX0h4TTFkZWpyNlZkMFhUajR1Q1pHdU1R?oc=5",
+      "published_at": "2026-09-02T14:39:57+00:00",
+      "category": "GN: surgical robot",
+      "gn_label": "robotics",
+      "site_name": "GN: surgical robot",
+      "source": "GN: surgical robot",
+      "site_id": "GN: surgical robot",
+      "description": "Medtronic partners with Cornerstone Robotics to widen surgical robot reach  Dealroom",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 16.64,
+      "writing_value": 0,
+      "total_score": 91.64
     },
     {
       "id": "2fba7ed2c1f903f37b856fe7e86e0bb4f94530ab",
@@ -315,34 +315,13 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 19.21,
+      "timeliness": 18.96,
       "writing_value": 0,
-      "total_score": 94.21
+      "total_score": 93.96
     },
     {
-      "id": "3953a7b06468d70d248281a20a4fecbdf0138acf",
-      "title": "国产四足机器人进军中东：智元酷拓亮相2026LEAP - Sohu",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQanByZkZEZXpVYnNTUTRxaHMtcG5KVHRaQzR0emotS2dIb1lmQW1ueFdNQzd0RVAwZVRfLXFPV0h0Qm1maGV2LWU5UHM0eldZeWFYVUpXSTl5MTVzU3lwcTUxTVNadUFMcXkyT1lHeG1BM0tQaE1ORy1udEpPaXZfNGF3V1VuVnVn?oc=5",
-      "published_at": "2026-09-02T14:36:24+00:00",
-      "category": "GN: 智元机器人",
-      "gn_label": "robotics",
-      "site_name": "GN: 智元机器人",
-      "source": "GN: 智元机器人",
-      "site_id": "GN: 智元机器人",
-      "description": "国产四足机器人进军中东：智元酷拓亮相2026LEAP  Sohu",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 16.83,
-      "writing_value": 0,
-      "total_score": 91.83
-    },
-    {
-      "id": "c319cc14334bab6fdffde550c2505fb0e5df2e9c",
-      "title": "宇树科技全资子公司正式落子成都 - 东方财富",
+      "id": "286cb9d97150a6d343d0579fcc1b2df87c82e501",
+      "title": "宇树科技全资子公司正式落子成都 - finance.eastmoney.com",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBjZEwtcUUzU1JFSTZsN2NQcC1qRUxQU3NwQU42SVYxRG93eE1rTlNmdWlremg4NFFCdnk1Ym5nZHJWSUxtVWxrb1V2ZzQtaFlPc0JULTlrb29VQ180OU5fRDZsYVcyUQ?oc=5",
       "published_at": "2026-09-03T01:26:34+00:00",
@@ -351,15 +330,15 @@
       "site_name": "GN: 宇树科技",
       "source": "GN: 宇树科技",
       "site_id": "GN: 宇树科技",
-      "description": "宇树科技全资子公司正式落子成都  东方财富",
+      "description": "宇树科技全资子公司正式落子成都  finance.eastmoney.com",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.67,
+      "timeliness": 27.42,
       "writing_value": 0,
-      "total_score": 102.67
+      "total_score": 102.42
     },
     {
       "id": "85e42930066958ee9333bcd91ba345aaa7462203",
@@ -378,9 +357,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 14.96,
+      "timeliness": 14.71,
       "writing_value": 0,
-      "total_score": 89.96
+      "total_score": 89.71
     },
     {
       "id": "da1a1bf9b546c3436d972bb3095f0e5b1cf38527",
@@ -399,9 +378,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.69,
+      "timeliness": 26.45,
       "writing_value": 0,
-      "total_score": 101.69
+      "total_score": 101.45
+    },
+    {
+      "id": "be07f33251972aa723bf29316371e39587bb5ba2",
+      "title": "上市第11个交易日，宇树科技股价“腰斩” - 广州日报新花城",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPWEZyS1FNWWo4aXdFMnJZTXV2em9qLVdiWTZTT0d5NFV4M3FqdmEzVUJJNVFVRGh4cmw2emhyY1JzMy1qb3FrOHZoY0RPZ0h6aHpTVmdHVFlIa1laM1gydFpmLVludWlLemVtZjE2dGFSSGdIT1EtRnpJUFdwYmM3cm9HZndRa2FsQUE?oc=5",
+      "published_at": "2026-09-02T11:07:49+00:00",
+      "category": "GN: 宇树科技",
+      "gn_label": "robotics",
+      "site_name": "GN: 宇树科技",
+      "source": "GN: 宇树科技",
+      "site_id": "GN: 宇树科技",
+      "description": "上市第11个交易日，宇树科技股价“腰斩”  广州日报新花城",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 13.1,
+      "writing_value": 0,
+      "total_score": 88.1
     },
     {
       "id": "7d3b38bf0bd74f3460113b2f30e21ef118f46576",
@@ -420,30 +420,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 21.7,
+      "timeliness": 21.45,
       "writing_value": 0,
-      "total_score": 96.7
+      "total_score": 96.45
     },
     {
-      "id": "2655e6d5441eac49fe41da11b77a5dbfacd56dac",
-      "title": "【西街观察】宇树科技股价启示录 - finance.sina.com.cn",
+      "id": "00a8ced2a30d072753be6309d07f5504da6e3297",
+      "title": "宇树股价腰斩 其他企业定价恐下行 - 新浪财经",
       "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPdl9NeDNxODNJNlNyVlBtUG1qMU1WZXg4Q3VXUWhTN1FtcVVxNXlTbTR2QUk3Z091dHpiamk0ME9GQmJaS3NTSHUxYVZVMV9GdUFFTEFzaEhxbmxTQ2ZHUzZIOG9oRHRJRVpMLUZianE0dEtKZjc0OHdZdmhpVzFCX1piUmo3MGJ1?oc=5",
-      "published_at": "2026-09-02T12:55:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5Lekc2S05QT2tCTl80cVNaZ01JMFpES0NnLTlHSHZWZXpzUjEzcHBaS3dXTlJUb3hMa253cHBhdkh4MWhWZ2pyUVQ4QUY3T3V4ZVhlMFY5Z2x0T2xqay01d2ptRmFDUDZWbWhXSVB1M2p0OTVvZmxReQ?oc=5",
+      "published_at": "2026-09-02T23:23:00+00:00",
       "category": "GN: 宇树科技",
       "gn_label": "robotics",
       "site_name": "GN: 宇树科技",
       "source": "GN: 宇树科技",
       "site_id": "GN: 宇树科技",
-      "description": "【西街观察】宇树科技股价启示录  finance.sina.com.cn",
+      "description": "宇树股价腰斩 其他企业定价恐下行  新浪财经",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 15.14,
+      "timeliness": 25.36,
       "writing_value": 0,
-      "total_score": 90.14
+      "total_score": 100.36
     },
     {
       "id": "7a0ba4c0e7b0630eca0bf29a93e139eee9eae844",
@@ -462,9 +462,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 15.17,
+      "timeliness": 14.92,
       "writing_value": 0,
-      "total_score": 90.17
+      "total_score": 89.92
+    },
+    {
+      "id": "14158373d0ac74429cf09d0ae968cefd39128857",
+      "title": "【西街观察】宇树科技股价启示录 - 新浪财经",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPdl9NeDNxODNJNlNyVlBtUG1qMU1WZXg4Q3VXUWhTN1FtcVVxNXlTbTR2QUk3Z091dHpiamk0ME9GQmJaS3NTSHUxYVZVMV9GdUFFTEFzaEhxbmxTQ2ZHUzZIOG9oRHRJRVpMLUZianE0dEtKZjc0OHdZdmhpVzFCX1piUmo3MGJ1?oc=5",
+      "published_at": "2026-09-02T12:55:00+00:00",
+      "category": "GN: 宇树科技",
+      "gn_label": "robotics",
+      "site_name": "GN: 宇树科技",
+      "source": "GN: 宇树科技",
+      "site_id": "GN: 宇树科技",
+      "description": "【西街观察】宇树科技股价启示录  新浪财经",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 14.89,
+      "writing_value": 0,
+      "total_score": 89.89
     },
     {
       "id": "b06cbab9681322aee79131a0a4bc87ed89cf4e1f",
@@ -483,30 +504,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.42,
+      "timeliness": 23.17,
       "writing_value": 0,
-      "total_score": 98.42
+      "total_score": 98.17
     },
     {
-      "id": "7a463b09cd7de211c0fdac976493ab79df3d5df7",
-      "title": "那个爆料的员工，还能在宇树科技干下去吗？#宇树科技回应只有罚几乎没有奖# ​ - 新浪网",
+      "id": "3953a7b06468d70d248281a20a4fecbdf0138acf",
+      "title": "国产四足机器人进军中东：智元酷拓亮相2026LEAP - Sohu",
       "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBHc2xoakVNSU5qTGdUMXhKZXdsdWl5LW1nZjZVdEszOVhDYzlQUDlMUUNNT3ZldmE5Rzd6djlDZmttelE0UnJWZXE2cHpVUVlkV2c3d2Q4Ym8wQmFGSVJ4cDZBQQ?oc=5",
-      "published_at": "2026-09-03T00:33:00+00:00",
-      "category": "GN: 宇树科技",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQanByZkZEZXpVYnNTUTRxaHMtcG5KVHRaQzR0emotS2dIb1lmQW1ueFdNQzd0RVAwZVRfLXFPV0h0Qm1maGV2LWU5UHM0eldZeWFYVUpXSTl5MTVzU3lwcTUxTVNadUFMcXkyT1lHeG1BM0tQaE1ORy1udEpPaXZfNGF3V1VuVnVn?oc=5",
+      "published_at": "2026-09-02T14:36:24+00:00",
+      "category": "GN: 智元机器人",
       "gn_label": "robotics",
-      "site_name": "GN: 宇树科技",
-      "source": "GN: 宇树科技",
-      "site_id": "GN: 宇树科技",
-      "description": "那个爆料的员工，还能在宇树科技干下去吗？#宇树科技回应只有罚几乎没有奖# ​  新浪网",
+      "site_name": "GN: 智元机器人",
+      "source": "GN: 智元机器人",
+      "site_id": "GN: 智元机器人",
+      "description": "国产四足机器人进军中东：智元酷拓亮相2026LEAP  Sohu",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.77,
+      "timeliness": 16.58,
       "writing_value": 0,
-      "total_score": 101.77
+      "total_score": 91.58
     },
     {
       "id": "f6c3936efc0212073fcc1c6a6bf90e1a947b4cf3",
@@ -525,9 +546,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 15.63,
+      "timeliness": 15.38,
       "writing_value": 0,
-      "total_score": 90.63
+      "total_score": 90.38
     }
   ],
   "fallback_used": false
