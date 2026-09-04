@@ -1104,20 +1104,8 @@ def run(output_dir: str, window_hours: int, opml_path: str, archive_days: int, w
         json.dump(min_out, f, ensure_ascii=False, indent=2)
     print(f"[INFO] latest-24h-min.json: {len(scored[:500])} items (AI精选)")
 
-    # latest-24h-all.json: all scored (全量模式)
-    all_out = {
-        'generated_at': generated_at,
-        'total_items': len(scored),
-        'items_ai': scored[:500],
-        'items_all': scored,
-        'items_all_raw': scored,
-        'site_stats': site_stats,
-        'total_items_raw': len(scored),
-        'total_items_all_mode': len(scored),
-    }
-    with open(os.path.join(output_dir, 'latest-24h-all.json'), 'w', encoding='utf-8') as f:
-        json.dump(all_out, f, ensure_ascii=False, indent=2)
-    print(f"[INFO] latest-24h-all.json: {len(scored)} items (全量)")
+    # FIX(2026-09-04) cleanup: latest-24h-all.json removed (identical blob to
+    # latest-24h-min.json, 795KB x2 duplication). Frontend now reads min only.
 
     # Write wechat-articles.json: only articles within the current time window
     if wechat_articles:

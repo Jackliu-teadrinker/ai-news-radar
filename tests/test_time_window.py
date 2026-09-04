@@ -258,8 +258,8 @@ class ScriptSyntaxTest(unittest.TestCase):
             'output_dirtput',  # 来自 fix_script.py 的 typo
             'window_hourss',
             'args.output_dirtput',
-            'sys.exit(0)\`n',   # 反引号 + n + sys.exit
-            '\`n    sys.exit',  # 反引号 n + sys.exit
+            'sys.exit(0)`n',   # 反引号 + n + sys.exit
+            '`n    sys.exit',  # 反引号 n + sys.exit
         ]
         for typo in typos:
             self.assertNotIn(

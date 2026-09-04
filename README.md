@@ -16,7 +16,7 @@
 
 | 板块 | 数据文件 | 来源 |
 |------|----------|------|
-| 📰 机器人信号流 | `latest-24h-all.json` | Google News 10 组 RSS |
+| 📰 机器人信号流 | `latest-24h-min.json` | Google News 10 组 RSS |
 | 📱 微信公众号 | `wechat-articles.json` | 手动维护 + Exa MCP 搜索 |
 | 🏛️ 政策专区 | `government-news.json` | 政府官网 |
 | 🎓 学术专区 | `arxiv-papers.json` | arXiv cs.RO |

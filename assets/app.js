@@ -8,15 +8,13 @@ const state = {
   totalAllMode: 0,
   allDedup: true,
   allDataLoaded: false,
-  allDataUrl: "data/latest-24h-all.json",
+  allDataUrl: "data/latest-24h-min.json",
   allDataPromise: null,
   siteFilter: "",
   categoryFilter: "",
   query: "",
   mode: "ai",
   todayMode: true,
-  waytoagiMode: "today",
-  waytoagiData: null,
   sourceStatus: null,
   generatedAt: null,
   // Jack 2026-05-20: 按时间最新排序
@@ -42,11 +40,6 @@ const allDedupeLabelEl = document.getElementById("allDedupeLabel");
 const advancedSummaryEl = document.getElementById("advancedSummary");
 const sourceHealthEl = document.getElementById("sourceHealth");
 
-const waytoagiUpdatedAtEl = null;
-const waytoagiMetaEl = null;
-const waytoagiListEl = null;
-const waytoagiTodayBtnEl = null;
-const waytoagi7dBtnEl = null;
 const coverageStripEl = document.getElementById("coverageStrip");
 
 const SOURCE_KINDS = {
@@ -641,82 +634,7 @@ function renderList() {
   renderGroupedBySiteAndSource(filtered);
 }
 
-function waytoagiViews(waytoagi) {
-  const updates7d = Array.isArray(waytoagi?.updates_7d) ? waytoagi.updates_7d : [];
-  const latestDate = waytoagi?.latest_date || (updates7d.length ? updates7d[0].date : null);
-  const updatesToday = Array.isArray(waytoagi?.updates_today) && waytoagi.updates_today.length
-    ? waytoagi.updates_today
-    : (latestDate ? updates7d.filter((u) => u.date === latestDate) : []);
-  return { updates7d, updatesToday, latestDate };
-}
 
-function renderWaytoagi(waytoagi) { if (!waytoagiUpdatedAtEl) return; if (!waytoagi || !waytoagi.updates_7d || waytoagi.updates_7d.length === 0) { waytoagiUpdatedAtEl.textContent = "WaytoAGI 已禁用"; if (waytoagiListEl) waytoagiListEl.innerHTML = ""; return; }
-  const { updates7d, updatesToday, latestDate } = waytoagiViews(waytoagi);
-  if (waytoagiTodayBtnEl) waytoagiTodayBtnEl.classList.toggle("active", state.waytoagiMode === "today");
-  if (waytoagi7dBtnEl) waytoagi7dBtnEl.classList.toggle("active", state.waytoagiMode === "7d");
-  waytoagiUpdatedAtEl.textContent = `更新时间：${fmtTime(waytoagi.generated_at)}`;
-
-  waytoagiMetaEl.innerHTML = "";
-  const rootLink = document.createElement("a");
-  rootLink.href = waytoagi.root_url || "#";
-  rootLink.target = "_blank";
-  rootLink.rel = "noopener noreferrer";
-  rootLink.textContent = "主页面";
-  const historyLink = document.createElement("a");
-  historyLink.href = waytoagi.history_url || "#";
-  historyLink.target = "_blank";
-  historyLink.rel = "noopener noreferrer";
-  historyLink.textContent = "历史更新页";
-  const todayCount = document.createElement("span");
-  todayCount.textContent = `最近更新日(${latestDate || "--"})：${fmtNumber(waytoagi.count_today || updatesToday.length)} 条`;
-  const weekCount = document.createElement("span");
-  weekCount.textContent = `近 7 日：${fmtNumber(waytoagi.count_7d || updates7d.length)} 条`;
-  [rootLink, "·", historyLink, "·", todayCount, "·", weekCount].forEach((part) => {
-    if (typeof part === "string") {
-      const sep = document.createElement("span");
-      sep.textContent = part;
-      waytoagiMetaEl.appendChild(sep);
-    } else {
-      waytoagiMetaEl.appendChild(part);
-    }
-  });
-
-  waytoagiListEl.innerHTML = "";
-  if (waytoagi.has_error) {
-    const div = document.createElement("div");
-    div.className = "waytoagi-error";
-    div.textContent = waytoagi.error || "WaytoAGI 数据加载失败";
-    waytoagiListEl.appendChild(div);
-    return;
-  }
-
-  const updates = state.waytoagiMode === "today" ? updatesToday : updates7d;
-  if (!updates.length) {
-    const div = document.createElement("div");
-    div.className = "waytoagi-empty";
-    div.textContent = state.waytoagiMode === "today"
-      ? "最近更新日没有更新，可切换到近7日查看。"
-      : (waytoagi.warning || "近 7 日没有更新");
-    waytoagiListEl.appendChild(div);
-    return;
-  }
-
-  updates.forEach((u) => {
-    const row = document.createElement("a");
-    row.className = "waytoagi-item";
-    row.href = u.url || "#";
-    row.target = "_blank";
-    row.rel = "noopener noreferrer";
-    const dateEl = document.createElement("span");
-    dateEl.className = "d";
-    dateEl.textContent = fmtDate(u.date);
-    const titleEl = document.createElement("span");
-    titleEl.className = "t";
-    titleEl.textContent = u.title;
-    row.append(dateEl, titleEl);
-    waytoagiListEl.appendChild(row);
-  });
-}
 
 function renderMetric(label, value, tone = "") {
   const node = document.createElement("div");
@@ -828,7 +746,7 @@ async function loadAllModeData() {
   if (!state.allDataPromise) {
     state.allDataPromise = fetchWithTimeout(`./${state.allDataUrl}?t=${Date.now()}`)
       .then((res) => {
-        if (!res.ok) throw new Error(`加载 latest-24h-all.json 失败: ${res.status}`);
+        if (!res.ok) throw new Error(`加载 ${state.allDataUrl} 失败: ${res.status}`);
         return res.json();
       })
       .then((payload) => {
@@ -846,12 +764,6 @@ async function loadAllModeData() {
   return state.allDataPromise;
 }
 
-async function loadWaytoagiData() {
-  const res = await fetchWithTimeout(`./data/waytoagi-7d.json?t=${Date.now()}`);
-  if (!res.ok) throw new Error(`加载 waytoagi-7d.json 失败: ${res.status}`);
-  return res.json();
-}
-
 async function loadSourceStatusData() {
   const res = await fetchWithTimeout(`./data/source-status.json?t=${Date.now()}`);
   if (!res.ok) throw new Error(`加载 source-status.json 失败: ${res.status}`);
@@ -859,9 +771,8 @@ async function loadSourceStatusData() {
 }
 
 async function init() {
-  const [newsResult, waytoagiResult, statusResult] = await Promise.allSettled([
+  const [newsResult, statusResult] = await Promise.allSettled([
     loadNewsData(),
-    loadWaytoagiData(),
     loadSourceStatusData(),
   ]);
 
@@ -916,14 +827,6 @@ async function init() {
   } else {
     renderSourceHealth(statusResult.reason.message);
     renderCoverageStrip(statusResult.reason.message);
-  }
-
-  if (waytoagiResult.status === "fulfilled") {
-    state.waytoagiData = waytoagiResult.value;
-    renderWaytoagi(state.waytoagiData);
-  } else {
-    if (waytoagiUpdatedAtEl) waytoagiUpdatedAtEl.textContent = "加载失败";
-    if (waytoagiListEl) waytoagiListEl.innerHTML = `<div class="waytoagi-error">${waytoagiResult.reason.message}</div>`;
   }
 }
 

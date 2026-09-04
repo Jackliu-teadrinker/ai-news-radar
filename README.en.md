@@ -18,7 +18,7 @@ Automatically collects, scores, deduplicates, and deploys the latest news every 
 
 | Section | Data File | Source |
 |---------|-----------|--------|
-| 📰 Robot Signal Feed | `latest-24h-all.json` | Google News (10 RSS groups) |
+| 📰 Robot Signal Feed | `latest-24h-min.json` | Google News (10 RSS groups) |
 | 📱 WeChat Articles | `wechat-articles.json` | Curated + Exa MCP search |
 | 🏛️ Policy | `government-news.json` | Government websites |
 | 🎓 Academic | `arxiv-papers.json` | arXiv cs.RO |
