@@ -1,0 +1,107 @@
+name: Keeper - radar freshness guard (cloud watchdog)
+
+on:
+  schedule:
+    # 每 20 分钟一次，分钟位与主 workflow 的 */30 错峰
+    - cron: "7,27,47 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: write
+
+concurrency:
+  group: radar-keeper
+  cancel-in-progress: true
+
+jobs:
+  keep-fresh:
+    name: Freshness check & rescue dispatch
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      # 防呆：GitHub 会对不活跃仓库自动禁用 schedule；这里每次顺手 re-enable
+      # （雷达仓库每天都有 commit，理论上不会触发，作为保险）
+      - name: Keep workflows enabled (anti 60-day auto-disable)
+        if: always()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh api "repos/$GITHUB_REPOSITORY/actions/workflows/keeper.yml/enable" -X PUT >/dev/null 2>&1 \
+            && echo "[keep-alive] keeper.yml enabled OK" || echo "[keep-alive] keeper.yml enable skipped/failed"
+          gh api "repos/$GITHUB_REPOSITORY/actions/workflows/update-news.yml/enable" -X PUT >/dev/null 2>&1 \
+            && echo "[keep-alive] update-news.yml enabled OK" || echo "[keep-alive] update-news.yml enable skipped/failed"
+
+      # 核心逻辑：检查 Pages 数据年龄 -> stale 且无活跃 run 时补一刀 dispatch
+      - name: Check freshness & rescue if stale
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python3 - <<'PYEOF'
+          import json, os, time, datetime, urllib.request
+
+          PAGES = "https://jackliu-teadrinker.github.io/ai-news-radar/data/latest-24h-min.json"
+          STALE_AFTER_MIN = 45        # 数据年龄超过 45 分钟视为 stale
+          RECENT_WINDOW_SEC = 1200    # 20 分钟内有 update-news run（排队/进行/刚完成）就不补刀，防级联
+
+          # 1. freshness：读 Pages 数据的 generated_at
+          age = 9999.0
+          gen = None
+          try:
+              req = urllib.request.Request(PAGES + f"?cb={int(time.time())}")
+              req.add_header("User-Agent", "radar-keeper/1.0")
+              d = json.loads(urllib.request.urlopen(req, timeout=20).read())
+              gen = d.get("generated_at")
+              if gen:
+                  g = datetime.datetime.fromisoformat(gen.replace("Z", "+00:00"))
+                  age = (datetime.datetime.now(datetime.timezone.utc) - g).total_seconds() / 60
+          except Exception as e:
+              print(f"[freshness] Pages fetch failed: {e}")
+
+          stale = age > STALE_AFTER_MIN
+          print(f"[freshness] generated_at={gen} age={age:.0f}min stale={stale}")
+
+          # 2. busy-check：update-news 是否有排队/进行中/20分钟内创建的 run
+          busy = 0
+          try:
+              tok = os.environ["GH_TOKEN"]
+              repo = os.environ["GITHUB_REPOSITORY"]
+              req = urllib.request.Request(
+                  f"https://api.github.com/repos/{repo}/actions/workflows/update-news.yml/runs?per_page=15",
+                  headers={"Authorization": f"token {tok}", "User-Agent": "radar-keeper/1.0"})
+              runs = json.loads(urllib.request.urlopen(req, timeout=20).read())["workflow_runs"]
+              cutoff = (datetime.datetime.now(datetime.timezone.utc)
+                        - datetime.timedelta(seconds=RECENT_WINDOW_SEC)).strftime("%Y-%m-%dT%H:%M:%SZ")
+              busy = sum(1 for r in runs
+                         if r["status"] in ("queued", "in_progress", "waiting")
+                         or r["created_at"] > cutoff)
+          except Exception as e:
+              print(f"[busy-check] failed: {e}")
+
+          print(f"[busy-check] active/recent update-news runs: {busy}")
+
+          # 3. 补救：stale 且空闲才 dispatch（workflow_dispatch 是 GITHUB_TOKEN 触发链的官方例外，会真正启动）
+          if stale and busy == 0:
+              print(f"[rescue] data stale {age:.0f}min > {STALE_AFTER_MIN}min and idle -> dispatch update-news")
+              try:
+                  tok = os.environ["GH_TOKEN"]
+                  repo = os.environ["GITHUB_REPOSITORY"]
+                  req = urllib.request.Request(
+                      f"https://api.github.com/repos/{repo}/actions/workflows/update-news.yml/dispatches",
+                      data=json.dumps({"ref": "master"}).encode(),
+                      method="POST",
+                      headers={"Authorization": f"token {tok}", "Accept": "application/vnd.github+json",
+                               "User-Agent": "radar-keeper/1.0", "Content-Type": "application/json"})
+                  urllib.request.urlopen(req, timeout=20)
+                  print("[rescue] dispatched OK")
+              except Exception as e:
+                  print(f"[rescue] dispatch FAILED: {e}")
+                  raise
+          elif stale:
+              print(f"[rescue] stale but {busy} run(s) active/recent -> skip (avoid cascade)")
+          else:
+              print("[rescue] data fresh, nothing to do")
+
+          with open(os.environ["GITHUB_STEP_SUMMARY"], "a") as f:
+              f.write(f"**age**: {age:.0f} min | **stale**: {stale} | **busy**: {busy}\n")
+          PYEOF
