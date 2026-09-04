@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-04T01:39:16.584954+00:00",
+  "generated_at": "2026-09-04T02:35:17.751354+00:00",
   "window_start": "2026-09-03T19:00:00+08:00",
-  "window_end": "2026-09-04T09:35:33.653117+08:00",
-  "total_items": 27,
+  "window_end": "2026-09-04T10:31:14.486090+08:00",
+  "total_items": 28,
   "items": [
     {
       "id": "1ecba27765e2003758af109c9a2a53ad679a4330",
@@ -21,51 +21,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 16.62,
+      "timeliness": 15.7,
       "writing_value": 5,
-      "total_score": 101.62
-    },
-    {
-      "id": "5050a5bb7863bdabb3026ad02df778be848971e8",
-      "title": "Protecting Dynamic Industrial Robot Cable Carriers",
-      "title_zh": "",
-      "url": "https://spectrum.ieee.org/industrial-robot-cable-carrier-protection",
-      "published_at": "2026-09-03T12:18:21+00:00",
-      "category": "IEEE Spectrum",
-      "gn_label": "robotics",
-      "site_name": "IEEE Spectrum",
-      "source": "IEEE Spectrum",
-      "site_id": "IEEE Spectrum",
-      "description": "This article is brought to you by Tsubaki KabelSchlepp.In modern automated manufacturing, six-axis articulated robots perform high-speed, multidirectional maneuvers under demanding operational cycles. However, as robot arms swivel, rotate, and extend, the electrical cables, fiber optics, and pneumat",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 5,
-      "timeliness": 16.71,
-      "writing_value": 5,
-      "total_score": 101.71
-    },
-    {
-      "id": "1f669018a6d00f305c8f3b712196b838d97f92b3",
-      "title": "The Best Way to Explore Lunar Craters Is a Giant Robot Ball",
-      "title_zh": "",
-      "url": "https://spectrum.ieee.org/moon-ball-robot",
-      "published_at": "2026-09-03T12:00:01+00:00",
-      "category": "IEEE Spectrum",
-      "gn_label": "robotics",
-      "site_name": "IEEE Spectrum",
-      "source": "IEEE Spectrum",
-      "site_id": "IEEE Spectrum",
-      "description": "On a good day, the rock quarry in central Texas is about 370,000 kilometers (230,000 miles) from the moon. But last February, when Rishi Jangale watched his 1.8-meter-wide, 150-kilogram inflatable robot roll effortlessly over rocks, gravel, and wet clay, his imagination turned the quarry into the lu",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 5,
-      "timeliness": 16.41,
-      "writing_value": 5,
-      "total_score": 101.41
+      "total_score": 100.7
     },
     {
       "id": "f658fdca112e0189ee400fe0a33e0c00c968dfed",
@@ -84,9 +42,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 20.11,
+      "timeliness": 19.19,
       "writing_value": 0,
-      "total_score": 95.11
+      "total_score": 94.19
     },
     {
       "id": "fb5426c8c081a1af1107114af1508003278629c5",
@@ -105,9 +63,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 5,
-      "timeliness": 17.15,
+      "timeliness": 16.22,
       "writing_value": 5,
-      "total_score": 117.15
+      "total_score": 116.22
     },
     {
       "id": "573a49e974232d811b140d66b688612b33f41076",
@@ -126,9 +84,51 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 21.41,
+      "timeliness": 20.48,
       "writing_value": 0,
-      "total_score": 96.41
+      "total_score": 95.48
+    },
+    {
+      "id": "5050a5bb7863bdabb3026ad02df778be848971e8",
+      "title": "Protecting Dynamic Industrial Robot Cable Carriers",
+      "title_zh": "",
+      "url": "https://spectrum.ieee.org/industrial-robot-cable-carrier-protection",
+      "published_at": "2026-09-03T12:18:21+00:00",
+      "category": "IEEE Spectrum",
+      "gn_label": "robotics",
+      "site_name": "IEEE Spectrum",
+      "source": "IEEE Spectrum",
+      "site_id": "IEEE Spectrum",
+      "description": "This article is brought to you by Tsubaki KabelSchlepp.In modern automated manufacturing, six-axis articulated robots perform high-speed, multidirectional maneuvers under demanding operational cycles. However, as robot arms swivel, rotate, and extend, the electrical cables, fiber optics, and pneumat",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 15.79,
+      "writing_value": 5,
+      "total_score": 100.79
+    },
+    {
+      "id": "1f669018a6d00f305c8f3b712196b838d97f92b3",
+      "title": "The Best Way to Explore Lunar Craters Is a Giant Robot Ball",
+      "title_zh": "",
+      "url": "https://spectrum.ieee.org/moon-ball-robot",
+      "published_at": "2026-09-03T12:00:01+00:00",
+      "category": "IEEE Spectrum",
+      "gn_label": "robotics",
+      "site_name": "IEEE Spectrum",
+      "source": "IEEE Spectrum",
+      "site_id": "IEEE Spectrum",
+      "description": "On a good day, the rock quarry in central Texas is about 370,000 kilometers (230,000 miles) from the moon. But last February, when Rishi Jangale watched his 1.8-meter-wide, 150-kilogram inflatable robot roll effortlessly over rocks, gravel, and wet clay, his imagination turned the quarry into the lu",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 15.48,
+      "writing_value": 5,
+      "total_score": 100.48
     },
     {
       "id": "7aecde698e7a86c992d04ee1411c2fc7ebdb2d90",
@@ -147,9 +147,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 20.32,
+      "timeliness": 19.39,
       "writing_value": 0,
-      "total_score": 95.32
+      "total_score": 94.39
     },
     {
       "id": "fb51ff0fc4c9c124f45f34a0b15f4f287afbb44b",
@@ -168,9 +168,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 17.96,
+      "timeliness": 17.03,
       "writing_value": 5,
-      "total_score": 102.96
+      "total_score": 102.03
     },
     {
       "id": "20e8755446c608ed387f6d32dc02c0f01b200e14",
@@ -189,9 +189,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 21.67,
+      "timeliness": 20.74,
       "writing_value": 0,
-      "total_score": 96.67
+      "total_score": 95.74
     },
     {
       "id": "e174ee52733674756527d76d293ecded8d92353b",
@@ -210,9 +210,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 19.41,
+      "timeliness": 18.48,
       "writing_value": 0,
-      "total_score": 94.41
+      "total_score": 93.48
     },
     {
       "id": "ad8e23a7af019087fdd4f44be9af930b99594a4a",
@@ -231,9 +231,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 22.26,
+      "timeliness": 21.34,
       "writing_value": 0,
-      "total_score": 97.26
+      "total_score": 96.34
+    },
+    {
+      "id": "4afbc47a5cd79e0cf391ca5762c538f99320c72a",
+      "title": "Shenzhen Startup Yuejia Dynamics Pushes Quadruped Robots Into the Metro, Targets 10,000-Unit Capacity - Pandaily",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQSktoTW5CUmd2QnZUN1FKeFlCWE5oZ2QyY2d4Vl9IZ1ZwdFFNWjBLclhvVlhNVTFVaGpWTTlOTEgyaUNDbVJwRGUzS2FQaUVQTkI1aG9vRnE1UzE1d0dVZG9yUS14Z0wwYkdMYmp2YUxkc0VuWmN0dm5nM0N5RnQxajdqMWRKanNpQmFnVkc4WHpyRjc5?oc=5",
+      "published_at": "2026-09-04T02:25:14+00:00",
+      "category": "GN: industrial robot",
+      "gn_label": "robotics",
+      "site_name": "GN: industrial robot",
+      "source": "GN: industrial robot",
+      "site_id": "GN: industrial robot",
+      "description": "Shenzhen Startup Yuejia Dynamics Pushes Quadruped Robots Into the Metro, Targets 10,000-Unit Capacity  Pandaily",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 29.9,
+      "writing_value": 5,
+      "total_score": 114.9
     },
     {
       "id": "b3ad5b719995c553bc5952f08c71a2dbccfb66e6",
@@ -252,13 +273,13 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 20.29,
+      "timeliness": 19.36,
       "writing_value": 0,
-      "total_score": 95.29
+      "total_score": 94.36
     },
     {
-      "id": "39494ab14f05b1bc9f794838e869ce589dadb270",
-      "title": "China’s robots learn to feel as competition moves deeper into supply chain - globaltimes.cn",
+      "id": "ed35d117aa8800e1a490d46bda24a76e207cd8da",
+      "title": "China’s robots learn to feel as competition moves deeper into supply chain - Global Times",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE96bHJGdWphRnZZaXJvMlhqYTlkbktIUWhoV0c4SzhSd2ZuSGdVMFpQVF96dXhVYTg0WkJ1OHBYZUg4LTlCUElLdG5ReElhZWhDYzRyYkd4cWF4WDhhZkJ5dkFn?oc=5",
       "published_at": "2026-09-03T15:38:00+00:00",
@@ -267,15 +288,15 @@
       "site_name": "GN: industrial robot",
       "source": "GN: industrial robot",
       "site_id": "GN: industrial robot",
-      "description": "China’s robots learn to feel as competition moves deeper into supply chain  globaltimes.cn",
+      "description": "China’s robots learn to feel as competition moves deeper into supply chain  Global Times",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 20.04,
+      "timeliness": 19.11,
       "writing_value": 0,
-      "total_score": 95.04
+      "total_score": 94.11
     },
     {
       "id": "359ecca4220cdc45453c60972a9ebce5b1cddd1c",
@@ -294,13 +315,13 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 19.12,
+      "timeliness": 18.19,
       "writing_value": 5,
-      "total_score": 104.12
+      "total_score": 103.19
     },
     {
-      "id": "fda0c8016c368ce9751a2bfd2c06aa346df5205b",
-      "title": "Narwal just showed off a robot vacuum that could really change how you clean your home - androidpolice.com",
+      "id": "23e1cbacde96af270d0393c0ec01ed7595cdfc1e",
+      "title": "Narwal just showed off a robot vacuum that could really change how you clean your home - Android Police",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE91aGxlVko5dl9vcWVpMzk4emJHdkVFUDVaNlBXMkNvS29KeldSZHlLX3VITG9tcUFfdTB6SkYzVS1qc002VjJRYlB1cGo0RERHOFFtZk0tb1FDZw?oc=5",
       "published_at": "2026-09-03T14:47:10+00:00",
@@ -309,57 +330,36 @@
       "site_name": "GN: robot vacuum",
       "source": "GN: robot vacuum",
       "site_id": "GN: robot vacuum",
-      "description": "Narwal just showed off a robot vacuum that could really change how you clean your home  androidpolice.com",
+      "description": "Narwal just showed off a robot vacuum that could really change how you clean your home  Android Police",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 19.19,
+      "timeliness": 18.27,
       "writing_value": 5,
-      "total_score": 104.19
+      "total_score": 103.27
     },
     {
-      "id": "ccabb9dc60dc429bb2df3ff7b61a590e5a3ca0d1",
-      "title": "全栈自研+生态协同：灵心巧手与产业链核心伙伴共建中国具身智能Tier1产业联盟",
+      "id": "3dc0b6676dcd78f904d8faef1dcfcf46b56d3c89",
+      "title": "CSI: Living Room? Dyson's New $1,200 Robot Vacuum Uses UV Light to Hunt Down Invisible Stains - PCMag UK",
       "title_zh": "",
-      "url": "https://www.leiphone.com/category/robot/JjxeXP5ggz1y4t36.html",
-      "published_at": "2026-09-03T11:05:00+00:00",
-      "category": "雷锋网",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPTnRzdnc1czVocy16blNRVHo0bEQ5XzBya1hfcGRKMFdPYWk3RmFoeWdYUTY4VnBmWnA0LVE4WkJNSVoxdmZLRldiNWozMlRqbTFERDJJWWh5MUdGY2tlMkNlQ0JtYy1ZMkhRYXlEQ0lYb1VuMkMxVEM1Q2w5Wi0tbXBlaUtiNjBBaU9WVWRacnBqejFtWWlWS1hrWnE0WlRkdGFDcVhveWtaanBzM2c?oc=5",
+      "published_at": "2026-09-03T15:59:07+00:00",
+      "category": "GN: robot vacuum",
       "gn_label": "robotics",
-      "site_name": "雷锋网",
-      "source": "雷锋网",
-      "site_id": "雷锋网",
-      "description": "2026年9月2日，由灵心巧手与星源智共同发起，联合奥比中光、法奥机器人、福莱新材、禾赛科技、华威科、览沃科技、朗毅机器人、灵猴机器人、珞石机器人、迈尔微视、钕娲创造、泉智博、森云智能、速腾聚创、他山、无问智科、讯飞机器人超脑平台、鑫精诚、移远通信、知行具身、纵贯线等20余家产业链核心企业组成的“中国具身智能Tier1产业联盟”正式成立。联盟成员完整覆盖具身大脑、灵巧手、语音交互、视觉感知、激光雷达、机械臂、移动底盘、无线通信、热管理、传感器等关键环节。作为联盟创始成员，灵心巧手将与联盟企业，围绕跨硬件适配、跨本体部署、场景验证三大主轴，推动具身智能从“单点领先”迈向“系统领先”。产业浪潮已至",
-      "ai_score": 80.0,
-      "ai_label": "robotics",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 5,
-      "timeliness": 15.49,
-      "writing_value": 5,
-      "total_score": 115.49
-    },
-    {
-      "id": "e42d9fac4996bf37f55a8f3516d90ad68e798c75",
-      "title": "China opens “kindergarten” for robots - AzerNews",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFA1M2xIWTRMYVE0TXJFVWNUaUo4a0ZRVFc4S0syVHFiR2lnVG8wd2RKWEtnakpjNEViaWs5cEVyQldTWTl3alhxbmh2Q1R1cFhHT0R1Qg?oc=5",
-      "published_at": "2026-09-03T19:30:00+00:00",
-      "category": "GN: robot learning",
-      "gn_label": "robotics",
-      "site_name": "GN: robot learning",
-      "source": "GN: robot learning",
-      "site_id": "GN: robot learning",
-      "description": "China opens “kindergarten” for robots  AzerNews",
+      "site_name": "GN: robot vacuum",
+      "source": "GN: robot vacuum",
+      "site_id": "GN: robot vacuum",
+      "description": "CSI: Living Room? Dyson's New $1,200 Robot Vacuum Uses UV Light to Hunt Down Invisible Stains  PCMag UK",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
-      "depth": 0,
-      "timeliness": 23.91,
-      "writing_value": 0,
-      "total_score": 98.91
+      "depth": 5,
+      "timeliness": 19.47,
+      "writing_value": 5,
+      "total_score": 104.47
     },
     {
       "id": "42573130f61d22ad3030f7eb08c8054832e0b8c0",
@@ -378,9 +378,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.06,
+      "timeliness": 26.14,
       "writing_value": 0,
-      "total_score": 102.06
+      "total_score": 101.14
     },
     {
       "id": "da96bfa919f11f419775915b5c628d8d30f1f268",
@@ -399,9 +399,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.01,
+      "timeliness": 24.08,
       "writing_value": 0,
-      "total_score": 100.01
+      "total_score": 99.08
     },
     {
       "id": "bb4d881ffc93f483436466560773ae6232f123b6",
@@ -420,9 +420,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 15.72,
+      "timeliness": 14.8,
       "writing_value": 0,
-      "total_score": 90.72
+      "total_score": 89.8
     },
     {
       "id": "82dd91ba93a3aecec8c79b91f2e2ec00da8657d0",
@@ -441,9 +441,51 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.17,
+      "timeliness": 25.24,
       "writing_value": 0,
-      "total_score": 101.17
+      "total_score": 100.24
+    },
+    {
+      "id": "e42d9fac4996bf37f55a8f3516d90ad68e798c75",
+      "title": "China opens “kindergarten” for robots - AzerNews",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFA1M2xIWTRMYVE0TXJFVWNUaUo4a0ZRVFc4S0syVHFiR2lnVG8wd2RKWEtnakpjNEViaWs5cEVyQldTWTl3alhxbmh2Q1R1cFhHT0R1Qg?oc=5",
+      "published_at": "2026-09-03T19:30:00+00:00",
+      "category": "GN: robot learning",
+      "gn_label": "robotics",
+      "site_name": "GN: robot learning",
+      "source": "GN: robot learning",
+      "site_id": "GN: robot learning",
+      "description": "China opens “kindergarten” for robots  AzerNews",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 22.98,
+      "writing_value": 0,
+      "total_score": 97.98
+    },
+    {
+      "id": "ccabb9dc60dc429bb2df3ff7b61a590e5a3ca0d1",
+      "title": "全栈自研+生态协同：灵心巧手与产业链核心伙伴共建中国具身智能Tier1产业联盟",
+      "title_zh": "",
+      "url": "https://www.leiphone.com/category/robot/JjxeXP5ggz1y4t36.html",
+      "published_at": "2026-09-03T11:05:00+00:00",
+      "category": "雷锋网",
+      "gn_label": "robotics",
+      "site_name": "雷锋网",
+      "source": "雷锋网",
+      "site_id": "雷锋网",
+      "description": "2026年9月2日，由灵心巧手与星源智共同发起，联合奥比中光、法奥机器人、福莱新材、禾赛科技、华威科、览沃科技、朗毅机器人、灵猴机器人、珞石机器人、迈尔微视、钕娲创造、泉智博、森云智能、速腾聚创、他山、无问智科、讯飞机器人超脑平台、鑫精诚、移远通信、知行具身、纵贯线等20余家产业链核心企业组成的“中国具身智能Tier1产业联盟”正式成立。联盟成员完整覆盖具身大脑、灵巧手、语音交互、视觉感知、激光雷达、机械臂、移动底盘、无线通信、热管理、传感器等关键环节。作为联盟创始成员，灵心巧手将与联盟企业，围绕跨硬件适配、跨本体部署、场景验证三大主轴，推动具身智能从“单点领先”迈向“系统领先”。产业浪潮已至",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 14.56,
+      "writing_value": 5,
+      "total_score": 114.56
     },
     {
       "id": "7592e1332d8843e828936daa146733d873442eba",
@@ -462,9 +504,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.99,
+      "timeliness": 25.06,
       "writing_value": 0,
-      "total_score": 100.99
+      "total_score": 100.06
     },
     {
       "id": "40c081f4ac3b786791ec92436705ab7cfe55e4b1",
@@ -483,9 +525,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 21.07,
+      "timeliness": 20.14,
       "writing_value": 0,
-      "total_score": 111.07
+      "total_score": 110.14
     },
     {
       "id": "650970f02f0fffa68204e09b03f7a0fa33204149",
@@ -504,9 +546,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 17.76,
+      "timeliness": 16.83,
       "writing_value": 0,
-      "total_score": 92.76
+      "total_score": 91.83
     },
     {
       "id": "c9de0963a3e777ca670750a7d6b64dacd076c3b9",
@@ -525,9 +567,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 19.23,
+      "timeliness": 18.3,
       "writing_value": 0,
-      "total_score": 94.23
+      "total_score": 93.3
     },
     {
       "id": "70323ae3a3eb61af93336bcc5e560cfdf19804c8",
@@ -546,30 +588,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 16.41,
+      "timeliness": 15.48,
       "writing_value": 0,
-      "total_score": 91.41
-    },
-    {
-      "id": "cda37f1a5c9f7fadf3b2cb310707d53920b2c3a3",
-      "title": "人形机器人计算与安全的复杂性超越自动驾驶汽车 - 至顶网",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE03b3FKZGFDTkN0dGxPMWFPZVgyN0NWTFdDdWh0LTFESFZFaUNxUTM0WUhWUG9RSHhwY0pCSmI2UnV0Z2hUWGVVZ1Z4ZWxvR3hrb0E?oc=5",
-      "published_at": "2026-09-04T00:15:03+00:00",
-      "category": "GN: 自动驾驶机器人",
-      "gn_label": "robotics",
-      "site_name": "GN: 自动驾驶机器人",
-      "source": "GN: 自动驾驶机器人",
-      "site_id": "GN: 自动驾驶机器人",
-      "description": "人形机器人计算与安全的复杂性超越自动驾驶汽车  至顶网",
-      "ai_score": 80.0,
-      "ai_label": "robotics",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 28.66,
-      "writing_value": 0,
-      "total_score": 118.66
+      "total_score": 90.48
     }
   ],
   "fallback_used": false
