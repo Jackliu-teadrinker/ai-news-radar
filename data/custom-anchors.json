@@ -1,9 +1,30 @@
 {
-  "generated_at": "2026-09-04T23:00:35.611509+00:00",
+  "generated_at": "2026-09-05T00:51:27.554031+00:00",
   "window_start": "2026-09-04T19:00:00+08:00",
-  "window_end": "2026-09-05T06:58:12.849259+08:00",
-  "total_items": 19,
+  "window_end": "2026-09-05T08:49:24.842384+08:00",
+  "total_items": 21,
   "items": [
+    {
+      "id": "d59038879dbb10564b5b1a0b14f8908a82ecb9a1",
+      "title": "XDOF, just three months out of stealth, is in talks for a Series B at a $1.2B valuation",
+      "title_zh": "",
+      "url": "https://techcrunch.com/2026/09/04/xdof-just-three-months-out-of-stealth-is-in-talks-for-a-series-b-at-a-1-2b-valuation/",
+      "published_at": "2026-09-04T23:36:14+00:00",
+      "category": "TechCrunch Robotics",
+      "gn_label": "robotics",
+      "site_name": "TechCrunch Robotics",
+      "source": "TechCrunch Robotics",
+      "site_id": "TechCrunch Robotics",
+      "description": "The round is being raised just months after the robot data startup exited from stealth.",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 28.78,
+      "writing_value": 0,
+      "total_score": 103.78
+    },
     {
       "id": "7ec6ee3273f837100a0c6bf1fb99fbdda998bd7e",
       "title": "No little kids allowed, and other new info about Tesla’s Cybercab",
@@ -21,9 +42,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 23.89,
+      "timeliness": 22.03,
       "writing_value": 5,
-      "total_score": 108.89
+      "total_score": 107.03
     },
     {
       "id": "10b1a4de51adfbbea45779b28306af4bbe5e211d",
@@ -42,9 +63,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 18.16,
+      "timeliness": 16.31,
       "writing_value": 5,
-      "total_score": 103.16
+      "total_score": 101.31
     },
     {
       "id": "795a28337c0809bc0f189c8418d75465cd7198f7",
@@ -63,9 +84,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 29.01,
+      "timeliness": 27.16,
       "writing_value": 5,
-      "total_score": 114.01
+      "total_score": 112.16
+    },
+    {
+      "id": "059ecd98b73d064a3dda153b639a8018dc7b821a",
+      "title": "Public School Students Build Autonomous Robot to Search for \"Victims\" in Hostile Terrain, Achieve Top Score Among Ceará's Public Schools, and Advance in National Robotics Competition - CPG Click Oil and Gas",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxPRVA0dmcxQ2U5ZkVRb1lld2JkNUtmWF9EY1FKOXdmNjBRSTA1eUJrWmUwbThMdkY5dlo1eU5TTXRqbkJORGpFU3l3eEFIbURESjdHSDFta3R6Q3Q1ZVQ4aUMwSEg5ckk3dnAyRWs5eFBDSzM0ekU2OFhYZjk4MWJSMXRQbWQ4cXlSeF9nMUZlWndXNmZBeE1Pbk5IdEVqcHRodXR0VWRPQXl6ajUtZ0VBeTB5YndqWEVfaGR6cmZjdzgzQWduTFp5cUNzNm1RdjBuWHA3TW9PNDhzUkd5QXBzSUpVU1BPNFYzY0FWcTh6c05UbGQzYkRZeXlaakR1cUY3YVBSVUl4VQ?oc=5",
+      "published_at": "2026-09-05T00:01:00+00:00",
+      "category": "GN: autonomous robot",
+      "gn_label": "robotics",
+      "site_name": "GN: autonomous robot",
+      "source": "GN: autonomous robot",
+      "site_id": "GN: autonomous robot",
+      "description": "Public School Students Build Autonomous Robot to Search for \"Victims\" in Hostile Terrain, Achieve Top Score Among Ceará's Public Schools, and Advance in National Robotics Competition  CPG Click Oil and Gas",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 29.19,
+      "writing_value": 5,
+      "total_score": 114.19
     },
     {
       "id": "e5643e0fda785b7d465a5fa3ff19364baf29c4dd",
@@ -84,9 +126,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 19.94,
+      "timeliness": 18.09,
       "writing_value": 0,
-      "total_score": 94.94
+      "total_score": 93.09
     },
     {
       "id": "38d11e9785124b3382907b0543f64c1de1eb9bdf",
@@ -105,9 +147,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 18.85,
+      "timeliness": 16.99,
       "writing_value": 0,
-      "total_score": 93.85
+      "total_score": 91.99
     },
     {
       "id": "5679068f9c5c2126f8e30f8aa74b21ca0aececa4",
@@ -126,57 +168,15 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 19.93,
+      "timeliness": 18.07,
       "writing_value": 0,
-      "total_score": 94.93
+      "total_score": 93.07
     },
     {
-      "id": "babb51f1e9c4f2113ca22e9eacc8b1ad70fb2c29",
-      "title": "Dyson launches three new robot vacuums. - The Verge",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPZDAybi1IaTZBZjZHcFF2X1F4blpCNld5SjIwN2llTzZXTGp3V01YVzQxaFEyZFZjZmhVMjhzeHZlMnRPSUI4YnlJQ2lmU2dpVzlzR05rR25LN3lveFp0UXloSkVXbEZTSHo3aFRCV01mdDRNckp3aXhlMDFaOGxCVg?oc=5",
-      "published_at": "2026-09-04T13:19:45+00:00",
-      "category": "GN: robot vacuum",
-      "gn_label": "robotics",
-      "site_name": "GN: robot vacuum",
-      "source": "GN: robot vacuum",
-      "site_id": "GN: robot vacuum",
-      "description": "Dyson launches three new robot vacuums.  The Verge",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 20.36,
-      "writing_value": 0,
-      "total_score": 95.36
-    },
-    {
-      "id": "cfae5926ba482a08500733b548eaea27de8a98b3",
-      "title": "This new $1,000 robot vacuum can physically block its own camera - SFGATE",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPWjA2NlZlbGpabG9keWhjaVZaWHZpWGJqaG1TazRXZDZJSDB6OWg0blNQXzJmelVTNEpIUnU3X2YtYzk2QkU5RFZvOFA4eUpnWnlEZW40ZVFZcWNXTEpFMFJoTjY3QUU3Uk1lMW1LbURKYloxOVZOZXRVWVJLTEZlLWRsNEVlRXVCbGd3eg?oc=5",
-      "published_at": "2026-09-04T18:37:43+00:00",
-      "category": "GN: robot vacuum",
-      "gn_label": "robotics",
-      "site_name": "GN: robot vacuum",
-      "source": "GN: robot vacuum",
-      "site_id": "GN: robot vacuum",
-      "description": "This new $1,000 robot vacuum can physically block its own camera  SFGATE",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 25.66,
-      "writing_value": 0,
-      "total_score": 100.66
-    },
-    {
-      "id": "c4df32709f13eff3af08436042756f50ef108f90",
+      "id": "45fa479c139814e743bbb5d5aa9b17f704274b63",
       "title": "This new $1,000 robot vacuum can physically block its own camera - MySA",
       "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPbHRFekNQLWFQUUVtLXlpS2pEdHhaZng2elRESlMwcEZtZHlFUjh4aHhNWEJuZERzSlRHeXg1LTJ1MHZVVXltYXhWNjZxTjZGTXlPVzRlWHVsQWliUHlaQVUyZEtnaUpvT3UySVJVODNISTZYQUZsZjBzXzhhWVFUbFhvbkFXRF9DWjFIM2UyaG1udw?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNVWVDc0VaRS1IWXpWTXlkQTNpQVVRLV9QaWZrd0pnMm9hd24zUUh4MldPWkU5R3VtWHZMOGNNQ1FBNTVqLVE1VzhTcV9FQ0otcllQWUl2aTZiWFM1SHNJWEN1Q29Gc3UzbHFwNGFQUW5JTExQd3pPRUlQR3ptazlBSGJwS3h2eV9KbGFBQnIwa2FMTWdn?oc=5",
       "published_at": "2026-09-04T18:35:59+00:00",
       "category": "GN: robot vacuum",
       "gn_label": "robotics",
@@ -189,9 +189,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.63,
+      "timeliness": 23.78,
       "writing_value": 0,
-      "total_score": 100.63
+      "total_score": 98.78
     },
     {
       "id": "d5f4018855d35f1c347aa967382f775c1835790b",
@@ -210,30 +210,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 20.17,
+      "timeliness": 18.32,
       "writing_value": 5,
-      "total_score": 105.17
-    },
-    {
-      "id": "cf65432911e0d4ee10ccf177c1662a24c48ac065",
-      "title": "This Robot Vacuum Is Certified to Remove 97% of Dust Mite Allergens From Carpet - Gadget Review",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOQUFNeGdIX3p3OTB5YVgtRE5LM3FreGlEREwwM2hGRzAzbVVtOEd4Zk1lZlAtTW4weTZoX241ODNiZXNhSDVHRklZUUNYcDFDdVE5clRELVA3NWpIcTktOEpaMktiTFlPYWl5ZFdGWjVjUlhOWUNnczJVWGNhSjZmTnRNcTRndXpJMVIyN0tzVVZJQUtZWEpYdmt2RGdGcU0?oc=5",
-      "published_at": "2026-09-04T16:45:00+00:00",
-      "category": "GN: robot vacuum",
-      "gn_label": "robotics",
-      "site_name": "GN: robot vacuum",
-      "source": "GN: robot vacuum",
-      "site_id": "GN: robot vacuum",
-      "description": "This Robot Vacuum Is Certified to Remove 97% of Dust Mite Allergens From Carpet  Gadget Review",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 23.78,
-      "writing_value": 0,
-      "total_score": 98.78
+      "total_score": 103.32
     },
     {
       "id": "9bed841baaa6f30f9a76e360e2df3fb7b92b097e",
@@ -252,9 +231,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.56,
+      "timeliness": 21.7,
       "writing_value": 0,
-      "total_score": 98.56
+      "total_score": 96.7
     },
     {
       "id": "8bedf87efcb0184f87e7cc52df32d88b056affd7",
@@ -273,9 +252,72 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 19.19,
+      "timeliness": 17.34,
       "writing_value": 0,
-      "total_score": 94.19
+      "total_score": 92.34
+    },
+    {
+      "id": "18f0db9bb2722b5301785ff565edafb37dfdbab2",
+      "title": "关于强烈建议宇树科技私有化退市的呼吁:​​​​​鄙人1999年进入A股市场，股龄超过28年，入市时候宇树老板王兴兴才9岁。作为号称人形机器人A股上市第一股，13天时间股价从开盘巅峰1100元跌到如今530.3元，超过腰斩部分。作为两亿股民的一分子，我有几个问 - sina.cn",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE43Yl9uOFhUQkFfNjNoX0hFdDRBc0ZiSWdIdlphcVVzNEJBZ2pWbHlTWjNjRTVTMjJFSXRpd2FMZlJsNmhGZkltSkxNcm90eXBqV3hCcmFOMlY3a2lUZnZKYWNqMA?oc=5",
+      "published_at": "2026-09-04T23:34:00+00:00",
+      "category": "GN: 宇树科技",
+      "gn_label": "robotics",
+      "site_name": "GN: 宇树科技",
+      "source": "GN: 宇树科技",
+      "site_id": "GN: 宇树科技",
+      "description": "关于强烈建议宇树科技私有化退市的呼吁:​​​​​鄙人1999年进入A股市场，股龄超过28年，入市时候宇树老板王兴兴才9岁。作为号称人形机器人A股上市第一股，13天时间股价从开盘巅峰1100元跌到如今530.3元，超过腰斩部分。作为两亿股民的一分子，我有几个问  sina.cn",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 28.74,
+      "writing_value": 5,
+      "total_score": 128.74
+    },
+    {
+      "id": "e4f1dbba34a4a592f43f36b0af50d56deda21259",
+      "title": "杭州团队主攻灵巧手，拿下亿元融资 - 新浪财经",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE02dk91WEZpaTZqbTB2MnIwN1hheHBDNnVqOW44WUtTaHBQelMyRVRoUmloLWhfM0ZiM09mdENOYUUtck0wZUxNUDBQUWlyazVBYzZOUEhPd0NVSHpMcGxxbVN0S1p2NlRzTlkteHRYaG1jc2I4elZ2Wg?oc=5",
+      "published_at": "2026-09-04T23:00:00+00:00",
+      "category": "GN: 灵巧手",
+      "gn_label": "robotics",
+      "site_name": "GN: 灵巧手",
+      "source": "GN: 灵巧手",
+      "site_id": "GN: 灵巧手",
+      "description": "杭州团队主攻灵巧手，拿下亿元融资  新浪财经",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 28.18,
+      "writing_value": 0,
+      "total_score": 103.18
+    },
+    {
+      "id": "22b549c1b2c326729c6f8d1388d30dff1e57e770",
+      "title": "具身智能“超级时刻”猜想 - 凤凰网财经",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE11U2R3dHpNX1h4S1U2VW9CSXYxc2lmaWo5OU9iYlo5TjJZY09jbmt3eExnaF9FUWNfTFpHMGxMOTdWYk1yS0FxeWZSWkdvT1JD?oc=5",
+      "published_at": "2026-09-04T23:14:24+00:00",
+      "category": "GN: 智元机器人",
+      "gn_label": "robotics",
+      "site_name": "GN: 智元机器人",
+      "source": "GN: 智元机器人",
+      "site_id": "GN: 智元机器人",
+      "description": "具身智能“超级时刻”猜想  凤凰网财经",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 28.42,
+      "writing_value": 0,
+      "total_score": 118.42
     },
     {
       "id": "1395bd67ca0dd5e013ef6a52fc1f3e451e710203",
@@ -294,9 +336,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 19.95,
+      "timeliness": 18.09,
       "writing_value": 0,
-      "total_score": 94.95
+      "total_score": 93.09
     },
     {
       "id": "e307044aea566471269bc2e0f8f268e2ffa06bf8",
@@ -315,9 +357,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 22.43,
+      "timeliness": 20.58,
       "writing_value": 0,
-      "total_score": 97.43
+      "total_score": 95.58
     },
     {
       "id": "121fa29d3438b00b93dd7032b899b208f3b8e1b0",
@@ -336,9 +378,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 22.63,
+      "timeliness": 20.78,
       "writing_value": 0,
-      "total_score": 112.63
+      "total_score": 110.78
     },
     {
       "id": "a12b8d661493dfb431692e858c2bad82237ac5ec",
@@ -357,9 +399,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.06,
+      "timeliness": 22.21,
       "writing_value": 0,
-      "total_score": 114.06
+      "total_score": 112.21
     },
     {
       "id": "1383598fec0069403e1d03948b7077b5889e5d86",
@@ -378,9 +420,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 22.38,
+      "timeliness": 20.53,
       "writing_value": 0,
-      "total_score": 112.38
+      "total_score": 110.53
     },
     {
       "id": "8ec01ba27c2cbb3c4997ee1af18a0b72274d8a2a",
@@ -399,9 +441,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 20.75,
+      "timeliness": 18.89,
       "writing_value": 0,
-      "total_score": 110.75
+      "total_score": 108.89
     }
   ],
   "fallback_used": false

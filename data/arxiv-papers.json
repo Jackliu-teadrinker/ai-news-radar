@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-04T23:09:49.307904+00:00",
-  "total_items": 27,
+  "generated_at": "2026-09-05T00:59:54.010949+00:00",
+  "total_items": 16,
   "items": [
     {
       "id": "http://arxiv.org/abs/2609.04193v1",
@@ -161,116 +161,6 @@
       "category": "cs.RO",
       "published_at": "2026-09-03T13:02:25+00:00",
       "updated_at": "2026-09-03T13:02:25Z"
-    },
-    {
-      "id": "http://arxiv.org/abs/2609.03774v1",
-      "title": "Rethinking World Models for Safety-Critical Embodied Systems",
-      "url": "https://arxiv.org/abs/2609.03774",
-      "summary": "World models have progressed from compact latent dynamics to generative, controllable, and interactive simulators of embodied environments. However, high predictive likelihood and visual fidelity do not necessarily ensure that a model preserves the evidence required for safe decision-making. This perspective identifies three structural mismatches in current world modeling: likelihood versus risk, prediction versus intervention, and finite-horizon prediction versus accumulated consequences. We propose the Risk-Informed World Model (RIWM) as a decision-centric research direction for safety-critical embodied systems. RIWM organizes world modeling around consequences, intervention, epistemic uncertainty, and recoverability, and integrates four interdependent capabilities: decision-relevant representation, counterfactual reasoning, safety-critical episodic memory, and runtime safety assurance. It distinguishes physical, social, and operational consequences while using epistemic uncertainty to qualify the evidence supporting action. We further discuss open challenges in identifying consequential futures, validating counterfactual reasoning, maintaining revisable safety memories, translating learned consequences into executable constraints, and determining when evidence is sufficient to act. This perspective argues that future world models should move beyond predicting likely futures toward identifying which futures matter, revising judgments through experience, and recognizing when to act, revise, sense, defer, or abstain.",
-      "authors": "Kailang Ma, Heye Huang, Inhi Kim et al.",
-      "category": "cs.AI",
-      "published_at": "2026-09-03T12:44:44+00:00",
-      "updated_at": "2026-09-03T12:44:44Z"
-    },
-    {
-      "id": "http://arxiv.org/abs/2609.03761v1",
-      "title": "Robot Aware Computational Design of Object Specific Passive Grippers for Additive Manufacturing",
-      "url": "https://arxiv.org/abs/2609.03761",
-      "summary": "This paper presents an end-to-end computational pipeline that converts a selected object mesh, a measured object state, and a selected six-axis robot into an object-specific, unactuated, additively manufacturable gripper. The method couples exact-mesh RGB-D/ICP pose registration, deterministic surface-contact sampling, uncertainty-aware wrench screening, selection among six passive capture mechanisms, object-conformal surface synthesis, full-orientation robot inverse kinematics, a swept-volume-aware manufacturing domain, directional fused-deposition finite-element screening, and constrained three-dimensional SIMP topology optimization. Unlike workflows that treat grasp selection, tool geometry, motion, and structural design as separate problems, every exported design is bound to the source mesh, object pose, robot flange, contact set, and insertion hypothesis by a traceable design identifier. We derive the implemented registration, contact, fit-tolerance, finite-element, and density-optimization equations and prove three properties of the numerical construction: nodal load preservation, monotonic compliance sensitivity under SIMP interpolation, and voxel-domain containment after topology post-processing. Four archived object-specific attempts - a rabbit, camera flange, 3DBenchy, and faceted bust - meet the nominal fit, uncertain-wrench, runtime-sweep, and baseline/post-topology FEA gates. A deliberately enlarged +/-3 mm, +/-5 degree pose stress check differentiates the designs, retaining 29-134 of 160 simulated trials. Their reconstructed topologies retain 92.0-97.6% of the FE domain because functional regions are protected. Archived robot photographs show the corresponding printed assemblies qualitatively, while nominal material properties and absent coupon-calibrated, instrumented tests keep all four at digital-screening status rather than operational release.",
-      "authors": "Abdullah Yahya Abdullah Omaisan, Ibrahim Sheikh Mohamed",
-      "category": "cs.RO",
-      "published_at": "2026-09-03T12:29:03+00:00",
-      "updated_at": "2026-09-03T12:29:03Z"
-    },
-    {
-      "id": "http://arxiv.org/abs/2609.03760v1",
-      "title": "Virtual Testing of Automated Driving Systems through Credible Simulations",
-      "url": "https://arxiv.org/abs/2609.03760",
-      "summary": "Simulation is increasingly used to support safety-related decision-making in road transport, particularly for the assessment and approval of automated driving systems (ADS). The complexity of ADS behavior and size of their operational design domains make exclusive reliance on physical testing impractical, leading to extensive use of virtual testing (VT) during the approval phase. This shift raises critical questions regarding the credibility of modelling and simulation (M&amp;S) results used to support road safety decisions. Current VT accreditation approaches in the ADS domain typically rely on validation-only practices, which have been shown to scale poorly when applied to complex, multi-tool simulation environments. To address this limitation, this paper proposes a risk-based framework for assessing the credibility of simulation toolchains used in ADS safety evaluation, drawing inspiration from established practices in other safety-critical domains, notably NASA's STD-7009 for models and simulations. The framework extends traditional verification and validation (V&amp;V) by explicitly linking credibility requirements to the intended use of simulation outputs and to the safety criticality of the decisions they support within the approval process. It provides a lifecycle-oriented assessment scheme integrating toolchain management, modelling assumptions and limitations, verification, validation, and sensitivity analysis. Credibility acceptance thresholds are defined proportionally, allowing differentiated requirements depending on whether simulation is used for exploratory safety analysis, partial decision support, or as a substitute for physical testing. While demonstrated for ADS, the proposed approach is directly applicable to road safety and simulation studies where VT plays a central role in safety assessment and regulatory decision-making.",
-      "authors": "Riccardo Dona, Espedito Rusciano, Biagio Ciuffo",
-      "category": "cs.RO",
-      "published_at": "2026-09-03T12:28:19+00:00",
-      "updated_at": "2026-09-03T12:28:19Z"
-    },
-    {
-      "id": "http://arxiv.org/abs/2609.03758v1",
-      "title": "A Multi-Vine Soft Robot Enabling Accessible Working Channel and Steering",
-      "url": "https://arxiv.org/abs/2609.03758",
-      "summary": "Soft eversion robots, also known as vine robots, have attracted growing interest for navigation and inspection tasks, including minimally invasive medical applications [1]. A vine robot consists of a thin, flexible, inextensible tube folded inward that everts and grows forward when pressurized. This tip-growth enables navigation with minimal friction, making vine robots well suited for complex environments such as the human colon [2]. While their inherent softness allows passive conforma- tion to curved pathways in confined spaces, navigation performance strongly depends on environmental inter- actions, including contact angle and the length of un- constrained deployed material [3], [4]. Sharp directional changes, such as those in the sigmoid colon, often limit passive growth and necessitate active steering. Existing solutions include distributed artificial muscles [5] or dedicated tip-based steering mechanisms [6]. In addition, many applications require payload delivery, such as sensors and tools [7], [8]. Within the ERC Synergy project EndoTheranostics, this motivates the development of vine robots capable of delivering micro- surgical tools during growth. Prior work has integrated working channels within the vine body [8], [9], but these approaches constrain tool size, introduce friction, and limit access to the environment to the robot tip. In this work, we propose a multi-vine architecture in which two vine robots are coupled to an externally integrated working channel via soft mounting tips [10]. Independent vine actuation enables active tip steering while advancing the working channel without embed- ding it within the vine bodies Figure 1. Experiments demonstrate sharp steering of nearly 90 degrees during growth, highlighting the potential of this architecture for versatile medical and non-medical applications.",
-      "authors": "Reza Kashef, Cem Suulker, Mohammad Sheikh Sofla et al.",
-      "category": "cs.RO",
-      "published_at": "2026-09-03T12:26:59+00:00",
-      "updated_at": "2026-09-03T12:26:59Z"
-    },
-    {
-      "id": "http://arxiv.org/abs/2609.03720v1",
-      "title": "RoughSense: Lightweight Terrain-Induced Rover Vibration Prediction Using Point Clouds and IMU Feedback",
-      "url": "https://arxiv.org/abs/2609.03720",
-      "summary": "Autonomous navigation in space requires reliable terrain assessment for safe operations, especially in underground environments with limited communication, computing resources, and power budget. This paper presents a lightweight method for real-time vibration-aware traversability mapping using a Light Detecting And Ranging (LiDAR) point cloud and Inertial Measurement Unit (IMU) measurements. An initial vibration proxy is estimated from terrain geometry by applying Random sample consensus (RANSAC) to local point-cloud patches produced by a Simultaneous Localisation And Mapping (SLAM) algorithm. In parallel, the IMU provides local observations of the vibration experienced by the rover during traversal. The point-cloud-based prediction is then corrected online using Recursive Least Squares, allowing the system to adapt the geometric estimate to the measured rover response. The approach is evaluated in a lunar analogue environment, an outdoor field, and an underground mine.",
-      "authors": "Gabriel Manuel Garcia, Stephanie Aravecchia, Miguel Angel Olivares-Mendez",
-      "category": "cs.RO",
-      "published_at": "2026-09-03T11:54:16+00:00",
-      "updated_at": "2026-09-03T11:54:16Z"
-    },
-    {
-      "id": "http://arxiv.org/abs/2609.03715v1",
-      "title": "MINERVA: How Small Can a Manipulation Policy Be and Still Solve LIBERO?",
-      "url": "https://arxiv.org/abs/2609.03715",
-      "summary": "Vision-language-action (VLA) models with billions of parameters now dominate the LIBERO manipulation benchmark, but the model capacity actually required by the benchmark remains unclear. We introduce MINERVA (MINimal Efficient Robotic Vision-Action policy), a family of deliberately compact visuomotor policies designed to measure this task-specific capacity floor. A 0.54M-parameter policy achieves 95.1% average success over 2,000 rollouts on the four standard LIBERO suites, only 2.4 points below the reported LeRobot $π_{0.5}$ result despite using 7,700$\\times$ fewer parameters. Performance saturates near 1M parameters and collapses below 0.25M. Across broad architectural, training, and inference sweeps, only action-chunk length and vision capacity consistently exceed a $\\pm$1-point training-seed band. Flow matching provides no detectable advantage over direct L1 regression across three seeds, while regression is up to 3.8$\\times$ faster on GPU. A task-ID permutation probe shows that standard LIBERO instruction conditioning primarily selects among memorized tasks: changing only the task-ID mapping reduces success to near chance. The same recipe achieves 94.6% success across 89 LIBERO-90 tasks, while LIBERO-Plus perturbations reduce performance to 46--56%, with near-zero robustness to photometric shifts. The 0.54M policy replans every control step in 5--9 ms per chunk on a laptop CPU, 113$\\times$ faster than SmolVLA and 1,400$\\times$ faster than $π_{0.5}$, without a GPU. These results establish a first empirical estimate of LIBERO's task-specific capacity floor and motivate capacity-aware design and distillation for deployment-efficient robot policies.",
-      "authors": "Kohei Sendai, Tatsuya Matsushima, Yusuke Iwasawa",
-      "category": "cs.RO",
-      "published_at": "2026-09-03T11:51:10+00:00",
-      "updated_at": "2026-09-03T11:51:10Z"
-    },
-    {
-      "id": "http://arxiv.org/abs/2609.03704v1",
-      "title": "Toward an~Integrated Cognitive--Ergonomic Architecture for~Human--Machine Interaction: Combining Cognitive Models with~Human Factors Ergonomics",
-      "url": "https://arxiv.org/abs/2609.03704",
-      "summary": "This paper presents an integrated approach to modeling human competencies by combining the theoretical foundations of cognitive architectures with principles from Human Factors Ergonomics (HFE). Through a comparative analysis of established cognitive models-SOAR, ACT-R, LIDA, and COCOM-we synthesize a tailored architecture designed to address the complexities of human-machine interaction (HMI) in dynamic environments. By contextualizing this model within ergonomic frameworks, we elucidate the mechanisms underlying decision-making, skill acquisition, and adaptive behavior, bridging the gap between cognitive theory and applied system design. Our framework is empirically grounded in industrial robotics applications, where operator expertise, normative knowledge, and real-time feedback loops are critical. The proposed architecture not only enhances the cognitive alignment of HMI systems but also provides a scalable methodology for designing intelligent, human-centered interfaces in high-stakes environments. This work advances both the theoretical understanding of human competencies and the practical implementation of adaptive, ergonomically optimized systems.",
-      "authors": "Unknown",
-      "category": "cs.RO",
-      "published_at": "2026-09-03T11:41:29+00:00",
-      "updated_at": "2026-09-03T11:41:29Z"
-    },
-    {
-      "id": "http://arxiv.org/abs/2609.03699v1",
-      "title": "Predictive Zonotope Reduction: Precise Runtime Monitoring under Uncertainty",
-      "url": "https://arxiv.org/abs/2609.03699",
-      "summary": "Robots operating in physical environments make control decisions based on uncertain sensor measurements, which can lead to unsafe or suboptimal actions. Runtime monitors that check their behavior against safety specifications must represent this uncertainty soundly. Zonotopes are a widely used representation, but continuously incorporating new measurements grows their order unboundedly, so monitors must periodically apply an over-approximating reduction. The choice of the reduction method substantially affects the zonotope's precision, yet existing approaches typically utilize a fixed method throughout the run, even though the optimal choice depends on the current state. This paper presents a Predictive Zonotope Reduction (PZR) approach, which frames reducer selection as an optimal control problem and solves it using beam-search model predictive control. Policy distillation into a small neural policy further provides substantially higher execution speed than model predictive control while maintaining improved performance, enabling uncertainty-aware runtime monitoring on resource-constrained real-time systems. We implement our approach in the RLola runtime monitoring framework and evaluate it on a 5-degree-of-freedom robotic arm simulated in MuJoCo, with sensor uncertainty modeled according to ISO 5725. Experiments on a Raspberry Pi 5 show that dynamic reduction significantly lowers false-positive rates in monitoring compared with static reduction strategies.",
-      "authors": "Vladimir Krsmanovic, Florian Kohn, Bernd Finkbeiner et al.",
-      "category": "cs.RO",
-      "published_at": "2026-09-03T11:36:45+00:00",
-      "updated_at": "2026-09-03T11:36:45Z"
-    },
-    {
-      "id": "http://arxiv.org/abs/2609.03681v1",
-      "title": "WISE: World-model-guided Imagination Scheduling for Efficient Post-training of Vision-Language-Action Models",
-      "url": "https://arxiv.org/abs/2609.03681",
-      "summary": "Post-training VLA policies typically rely on supervised fine-tuning with costly expert demonstrations or reinforcement learning with expensive and potentially unstable real-world exploration. World models offer a promising alternative by evaluating candidate behaviors through imagined futures, yet effective post-training requires more than accurate prediction: imagination must be scheduled where it is useful, bounded within reliable horizons, and translated into trustworthy policy supervision. In robotic manipulation, the value of imagination varies substantially across execution stages, while extended rollouts can accumulate prediction errors and introduce unreliable learning signals. We introduce WISE (World-model-guided Imagination Scheduling for Efficient Post-training of Vision-Language-Action Models), a unified framework that coordinates when and how world-model imagination is used during policy refinement. WISE selectively invokes imagination at interaction-relevant states, performs bounded multi-view rollouts, evaluates candidate futures using progress and completion signals, and uses their relative outcomes to refine actions generated from real interaction contexts. Extensive experiments with both $π_0$ and $π_{0.5}$ demonstrate consistent improvements across diverse manipulation tasks while reducing GPU computation time by approximately 80% compared with full imagination. Real-world evaluations further show substantial gains in robustness and generalization under diverse real-world distribution shifts.",
-      "authors": "Chenhao Zhang, Hanyu Zhao, Hang Cheng et al.",
-      "category": "cs.RO",
-      "published_at": "2026-09-03T11:17:57+00:00",
-      "updated_at": "2026-09-03T11:17:57Z"
-    },
-    {
-      "id": "http://arxiv.org/abs/2609.03680v1",
-      "title": "DropClick: Semi-Automated One-Click Segmentation for Agricultural Robotic Data",
-      "url": "https://arxiv.org/abs/2609.03680",
-      "summary": "Labelling vision datasets, especially for segmentation tasks, is a laborious and costly process that stymies novel developments in agricultural robotics. In this paper, we present DropClick, a click-guided segmentation tool that simplifies the annotation process. Our system utilises single-click inputs on objects to generate pseudo-labels, which can replace manual annotations. DropClick stands out as it is a semi-automated approach and does not require a click for every object in the scene. It can therefore further reduce the required amount of user input drastically. We evaluate our method on two challenging agricultural robotic datasets, SB20 and BUP20 for plant and fruit segmentation, respectively. DropClick is first trained on a small subset of just 5 images from the original training data. This DropClick model can then be deployed as a one-click segmentation system and achieves comparable or higher performance than other one-click methods achieving an mIoU of 70.0 and 72.6 points, for SB20 and BUP20 respectively. DropClick then excels at maintaining high performance when clicks are not given (e.g. dropped); when 50% of the clicks are missing it still maintains an mIoU of 68.9 and 71.3 points, for SB20 and BUP20 respectively. We validate DropClick as a pseudo-labelling approach by taking its outputs to train a Mask2Former instance-based segmentation model in a semi-supervised manner. In this process, partially removing user input from DropClick yields similar high performance when compared to providing all clicks, at 70.1 vs 70.7 points AP50 for SB20 and no difference for BUP20 at 77.0 for both models; at the same time saving 46.3% of total input for SB20 and 31.9% for BUP20.",
-      "authors": "Patrick Zimmer, Michael Halstead, Chris McCool",
-      "category": "cs.CV",
-      "published_at": "2026-09-03T11:17:26+00:00",
-      "updated_at": "2026-09-03T11:17:26Z"
-    },
-    {
-      "id": "http://arxiv.org/abs/2609.03677v1",
-      "title": "Understanding Autonomous Driving Datasets by Describing Differences between Image Subsets in Natural Language",
-      "url": "https://arxiv.org/abs/2609.03677",
-      "summary": "Understanding the composition of large-scale autonomous driving datasets is essential for safety, robustness, and reliable operation across domains. For example, domain shift between locations could lead to the operating environment being misaligned with the training data, resulting in potentially dangerous performance degradation. Yet, existing data analysis pipelines largely rely on metadata, predefined labels, or manual inspection, which provide limited semantic insight or do not scale. This paper studies set difference captioning: given two subsets of images, the goal is to produce a natural-language hypothesis describing differences between the target and reference set. Building on a two-stage formulation, we adapt the method to autonomous driving by focusing on object-centric patches derived from object detection, which simplifies aggregation and enables attribution of differences to specific object instances or categories. To evaluate this setting in-domain, we introduce a new benchmark, AD-Diff Bench. Low-concentration experiments assess the suitability of set-difference-captioning approaches to sparse, real-world differences. We restrict our experiments to open-weight models to support reproducibility and ease of deployment. The proposed benchmark and analysis provide a step towards practical, human-interpretable dataset introspection for autonomous driving datasets. Our implementation and benchmark dataset are available at https://github.com/KIT-MRT/AD-Diff",
-      "authors": "Julian Truetsch, Felix Hauser, Christoph Stiller et al.",
-      "category": "cs.CV",
-      "published_at": "2026-09-03T11:15:23+00:00",
-      "updated_at": "2026-09-03T11:15:23Z"
     }
   ]
 }
