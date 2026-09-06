@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-06T05:42:07.865157+00:00",
+  "generated_at": "2026-09-06T08:44:42.848121+00:00",
   "window_start": "2026-09-05T19:00:00+08:00",
-  "window_end": "2026-09-06T13:41:47.191967+08:00",
-  "total_items": 3,
+  "window_end": "2026-09-06T16:44:22.199466+08:00",
+  "total_items": 4,
   "items": [
     {
       "id": "d5f4018855d35f1c347aa967382f775c1835790b",
@@ -21,9 +21,51 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 24.14,
+      "timeliness": 21.1,
       "writing_value": 5,
-      "total_score": 109.14
+      "total_score": 106.1
+    },
+    {
+      "id": "f8edade70c74653b39402b9e726e0c5318ef3221",
+      "title": "Altman says OpenAI will build humanoids, opening a path beyond software - The Rundown AI",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPTW8wSmdrWXFhVU52aEtYWG5BcHRKVWhpRjZYT3lxLWJ0V3NaVFdlMDBnSFk2WkRHMG8zMHpNUmxRTFNtZnd3bkRXNTluOXhmaEZVbWpTMlFKbnBWb2ZlRGFTVFo4c3FZZldtNGt4MEFvaXNjZzlMNExuSEdya1N1a1lrODl6Y2lMS2hR?oc=5",
+      "published_at": "2026-09-06T01:17:30+00:00",
+      "category": "GN: robot learning",
+      "gn_label": "robotics",
+      "site_name": "GN: robot learning",
+      "source": "GN: robot learning",
+      "site_id": "GN: robot learning",
+      "description": "Altman says OpenAI will build humanoids, opening a path beyond software  The Rundown AI",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 22.55,
+      "writing_value": 0,
+      "total_score": 112.55
+    },
+    {
+      "id": "4da4749aa97c61db3080ba366ccc1b481b58b006",
+      "title": "盛豐控股采用智能机械臂 自动化降30%劳力成本 - KLSE Screener",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiyAJBVV95cUxNYmZLU0Zpdk1LLU5nQ3lCcy1jbklER0gxUmxxRmJWUGZOa0JXa3VoX2VnWTEzQ0FYd3N5UU1wRGdqdlJmTHp5QWpCS3RPZDhIWi10OG1pODEtRUgzZ1BOek55bmloUVEzdGdkMUNuLW5pUXpsT3d4dDU3NGZkRnIyd0ktdUU5RkxHd0lfTmYtNmVxaTVyeWcxQzVKQTZBRzBmODdzRW1jdDNJWG5YOENGclhvWl9Hbk1XVUZ1RXowUml4V29CNHRrYkxXb0JjbFpJcTRGbElZRU9pRXlydlJQSGluM0FqeVRZSFBsYzJxS0p4c2RJZ3J4LWZ3bW9LbUhqXzhxa0dPT3JxeEpqSjZNWWhvOEFuMFZ6aTdyRjZvR1VBcHlrbnhkbGthN1BoVnBaNkNJWG1zRnZqVmZJeWZQUlZzdkotSDRL?oc=5",
+      "published_at": "2026-09-06T07:40:04+00:00",
+      "category": "GN: 机械臂",
+      "gn_label": "robotics",
+      "site_name": "GN: 机械臂",
+      "source": "GN: 机械臂",
+      "site_id": "GN: 机械臂",
+      "description": "盛豐控股采用智能机械臂 自动化降30%劳力成本  KLSE Screener",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 28.93,
+      "writing_value": 0,
+      "total_score": 103.93
     },
     {
       "id": "3b643836722f594a7e73b28771d42b23b9ed1bbf",
@@ -42,30 +84,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.54,
+      "timeliness": 22.5,
       "writing_value": 0,
-      "total_score": 115.54
-    },
-    {
-      "id": "f9353a859f470c343bd9ce0ec1c5ecffc812f95e",
-      "title": "未来智能仓储搬运系统 协作机器人电动快换盘多工具协同 - 手机网易网",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBReWpOcWQwS1pMMURtZnQ1VzRVbm0xWUQ1S1lyQVh4clk4SmxBQjBWbzN4UGxVZW9LQklrblhXVFRabEhRdDBUVnRtRGstZkdWNW4zUFYyLXlZRnU3WUpNeUt3?oc=5",
-      "published_at": "2026-09-06T01:22:40+00:00",
-      "category": "GN: 工业机器人与人",
-      "gn_label": "robotics",
-      "site_name": "GN: 工业机器人与人",
-      "source": "GN: 工业机器人与人",
-      "site_id": "GN: 工业机器人与人",
-      "description": "未来智能仓储搬运系统 协作机器人电动快换盘多工具协同  手机网易网",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 25.68,
-      "writing_value": 0,
-      "total_score": 100.68
+      "total_score": 112.5
     }
   ],
   "fallback_used": false
