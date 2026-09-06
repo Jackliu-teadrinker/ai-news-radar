@@ -1,9 +1,30 @@
 {
-  "generated_at": "2026-09-06T15:35:01.518937+00:00",
+  "generated_at": "2026-09-06T17:17:27.533594+00:00",
   "window_start": "2026-09-06T19:00:00+08:00",
-  "window_end": "2026-09-06T23:34:41.006188+08:00",
-  "total_items": 3,
+  "window_end": "2026-09-07T01:17:06.776623+08:00",
+  "total_items": 4,
   "items": [
+    {
+      "id": "3a5560a1589ad411835444f9c548307849793178",
+      "title": "Travis Kalanick’s Atoms might be getting into the robotaxi business",
+      "title_zh": "",
+      "url": "https://techcrunch.com/2026/09/06/travis-kalanicks-atoms-might-be-getting-into-the-robotaxi-business/",
+      "published_at": "2026-09-06T16:45:00+00:00",
+      "category": "TechCrunch Robotics",
+      "gn_label": "robotics",
+      "site_name": "TechCrunch Robotics",
+      "source": "TechCrunch Robotics",
+      "site_id": "TechCrunch Robotics",
+      "description": "The Uber founder has said that Atoms will allow him to complete \"unfinished business.\"",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.47,
+      "writing_value": 0,
+      "total_score": 104.47
+    },
     {
       "id": "85f430c6ddf3e8d46ae05f5ac58952c0f87737f4",
       "title": "Should You Buy a Robot Vacuum Right Now? Here's What the FCC Ban Means for You - PCMag",
@@ -21,9 +42,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.44,
+      "timeliness": 26.73,
       "writing_value": 0,
-      "total_score": 103.44
+      "total_score": 101.73
     },
     {
       "id": "026ced3a0c63ec857171d94621c08c36ad7bb399",
@@ -42,13 +63,13 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.45,
+      "timeliness": 23.74,
       "writing_value": 0,
-      "total_score": 100.45
+      "total_score": 98.74
     },
     {
-      "id": "1cd289a0f45ab978e3b3615b01b433f67d9b2d8a",
-      "title": "盛豐控股采用智能机械臂 自动化降30%劳力成本 - enanyang.my",
+      "id": "8cfc684d175e17f26e8fa1fd0c766b8fc4a85ab5",
+      "title": "盛豐控股采用智能机械臂 自动化降30%劳力成本 - e南洋",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFA2ek1idEtGS19jbGNNVktuUnd3elNlWVdzTHlmbmhEd3NhQUtXZ2tSOHdZR0E0bjZQSHZXQmM3ZUlPaElLcnRHc0RzWmh0MlpTUDFrbllvSzRQTGlVTGJXYnpQcw?oc=5",
       "published_at": "2026-09-06T13:42:48+00:00",
@@ -57,15 +78,15 @@
       "site_name": "GN: 机械臂",
       "source": "GN: 机械臂",
       "site_id": "GN: 机械臂",
-      "description": "盛豐控股采用智能机械臂 自动化降30%劳力成本  enanyang.my",
+      "description": "盛豐控股采用智能机械臂 自动化降30%劳力成本  e南洋",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.14,
+      "timeliness": 26.43,
       "writing_value": 0,
-      "total_score": 103.14
+      "total_score": 101.43
     }
   ],
   "fallback_used": false
