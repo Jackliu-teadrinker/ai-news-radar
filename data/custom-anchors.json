@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-06T23:11:00.907868+00:00",
+  "generated_at": "2026-09-06T23:39:30.582866+00:00",
   "window_start": "2026-09-06T19:00:00+08:00",
-  "window_end": "2026-09-07T07:10:40.294674+08:00",
-  "total_items": 4,
+  "window_end": "2026-09-07T07:38:50.174125+08:00",
+  "total_items": 5,
   "items": [
     {
       "id": "3a5560a1589ad411835444f9c548307849793178",
@@ -21,9 +21,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.57,
+      "timeliness": 23.1,
       "writing_value": 0,
-      "total_score": 98.57
+      "total_score": 98.1
     },
     {
       "id": "a8095857549fb478a53f6567ba586cbec7b17f46",
@@ -42,13 +42,34 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 5,
-      "timeliness": 27.77,
+      "timeliness": 27.3,
       "writing_value": 5,
-      "total_score": 127.77
+      "total_score": 127.3
     },
     {
-      "id": "224ca8f16988bf26ba8b28ee2d8304b6cd7282c4",
-      "title": "宇树科技上市两周股价腰斩，净赚6亿为何反被砸盘？ - finance.ifeng.com",
+      "id": "3b6cd421d95c5b57836f69025bae210e8444e78b",
+      "title": "Georgia Tech graduate, cancer survivor gets chance to test robotic surgery system that saved his life - CTV News",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPUVJrd3hXeFhsbENlbUJZZTliM0FMcl9id3Z3R21fTEF3X3BnNWRwMlpqNldNVlBUQVZ5aG9vN2k1dlhCZVRQVzBRYnlKUVB2SFJHMG1UT0ZTWGxlNUhvejFvS1RHNlBtakpscThJdkRaSW5yUm5EOWU3em5KSU9iX1p2RXRib0phZVlld0NmcE16VkkyNWhGTG4tTklTMjhCdk9DaElmTTFGWWRRTTRpVklnZ0RFN0ptY25yOFNTeWhFcy1oQlVCei1LMHhIUHd1TkFYMUNodHo?oc=5",
+      "published_at": "2026-09-06T17:14:17+00:00",
+      "category": "GN: surgical robot",
+      "gn_label": "robotics",
+      "site_name": "GN: surgical robot",
+      "source": "GN: surgical robot",
+      "site_id": "GN: surgical robot",
+      "description": "Georgia Tech graduate, cancer survivor gets chance to test robotic surgery system that saved his life  CTV News",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 23.59,
+      "writing_value": 5,
+      "total_score": 108.59
+    },
+    {
+      "id": "026ced3a0c63ec857171d94621c08c36ad7bb399",
+      "title": "宇树科技上市两周股价腰斩，净赚6亿为何反被砸盘？ - 凤凰网财经",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBqeGU1MTEzZzhFTmZBXzJVZWVueDlwVnZKYU5idVNBanE3T3lxRDNoZ0dXbjNCenFaMmEtcWQ1VFN1d0x1RnE2ejRjMjM0NF9h?oc=5",
       "published_at": "2026-09-06T11:01:21+00:00",
@@ -57,15 +78,15 @@
       "site_name": "GN: 宇树科技",
       "source": "GN: 宇树科技",
       "site_id": "GN: 宇树科技",
-      "description": "宇树科技上市两周股价腰斩，净赚6亿为何反被砸盘？  finance.ifeng.com",
+      "description": "宇树科技上市两周股价腰斩，净赚6亿为何反被砸盘？  凤凰网财经",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 17.85,
+      "timeliness": 17.38,
       "writing_value": 0,
-      "total_score": 92.85
+      "total_score": 92.38
     },
     {
       "id": "8cfc684d175e17f26e8fa1fd0c766b8fc4a85ab5",
@@ -84,9 +105,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.54,
+      "timeliness": 26.07,
       "writing_value": 0,
-      "total_score": 101.54
+      "total_score": 101.07
     }
   ],
   "fallback_used": false
