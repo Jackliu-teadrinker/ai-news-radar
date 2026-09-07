@@ -5,7 +5,9 @@ on:
     branches:
       - master
   schedule:
-    - cron: "*/30 * * * *"
+    # FIX(2026-09-07) bug #31: :00/:30 整点调度高峰掉拍+排队延迟严重
+    # 改 15 分钟错位拍（04/19/34/49），提高掉拍下中签率
+    - cron: "4,19,34,49 * * * *"
   workflow_dispatch:
 
 concurrency:
