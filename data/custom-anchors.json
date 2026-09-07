@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-07T06:17:04.131660+00:00",
+  "generated_at": "2026-09-07T06:47:15.837554+00:00",
   "window_start": "2026-09-06T19:00:00+08:00",
-  "window_end": "2026-09-07T14:16:22.737870+08:00",
-  "total_items": 14,
+  "window_end": "2026-09-07T14:46:14.321266+08:00",
+  "total_items": 17,
   "items": [
     {
       "id": "3a5560a1589ad411835444f9c548307849793178",
@@ -21,9 +21,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 16.48,
+      "timeliness": 15.98,
       "writing_value": 0,
-      "total_score": 91.48
+      "total_score": 90.98
+    },
+    {
+      "id": "316b6357cf646021df9918bf22b3ffa17e470846",
+      "title": "智象推出具身世界模型HiDream-O1-Embodied，登顶RoboColiseum扰动适应子榜单",
+      "title_zh": "",
+      "url": "https://zhidx.com/p/591381.html",
+      "published_at": "2026-09-07T06:34:32+00:00",
+      "category": "极链AI",
+      "gn_label": "robotics",
+      "site_name": "极链AI",
+      "source": "极链AI",
+      "site_id": "极链AI",
+      "description": "智东西\n编译 | ZeR0\n编辑 | 漠影\n智东西9月7日报道，今日，智象未来（HiDream.ai）发布具身世界模型HiDream-O1-Embodied。基于原生全模态的技术理念，该模型强化了机器人物理感知与动态预判能力，助力具身智能实现更高阶的物理交互。\n其发布标志着智象逐步实现了打通图像、视频、3D、动作等模态，贯通理解—推演—执行全流程，构建统一世界模型基座的技术闭环。\n模型发布同期，HiDream-O1-Embodied首次参评具身智能模型评测平台RoboColiseum，即在核心的Robustness（扰动适应）子榜单中，以平均分0.692的成绩登上榜首。\n\n智象未来CTO姚霆谈",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 29.81,
+      "writing_value": 5,
+      "total_score": 129.81
     },
     {
       "id": "ca8fafeb9b4ec27d3acb7ef133bf4e3516e620d5",
@@ -42,9 +63,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 26.22,
+      "timeliness": 25.72,
       "writing_value": 5,
-      "total_score": 111.22
+      "total_score": 110.72
     },
     {
       "id": "256046a8ee469353956a18b038b91b63b51ab395",
@@ -63,30 +84,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 15.73,
+      "timeliness": 15.23,
       "writing_value": 0,
-      "total_score": 90.73
-    },
-    {
-      "id": "a8095857549fb478a53f6567ba586cbec7b17f46",
-      "title": "HAMPO Launches WiFi and Bluetooth Enabled Ego Camera Module for Untethered Embodied AI Data Collection - FinancialContent",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxOUXM1SHo5RzZCa0lTbnJkRGFlaFNGYlYwMTZJa0F4dkYxNXVMdUk5MG1DSVotQVRMYTIzd240YzlETkFYbG1oSGRzZnY3dG82SmE0dTd6Rk5wQlVMdjdDR3plRWllMldhbklDcV9DQlJuYm01M1NfOGlBdk9URzV5dDAydGo3bTZVd3pJX01BOUxJN3RXbGl6T0RWXzV5YXFFX2xkRGVINGdmdTVXRmt2M1VKbU5MQy0wcmJPZWZILVhhMlcxSnhMN2FHUm04dVQ5MWp4M3N4RnVDYlNPSFR5TWt6OXN6cmtvci0zR1pFdktZRzY4S3dtSlJpaFJrNDZhR0E?oc=5",
-      "published_at": "2026-09-06T20:57:00+00:00",
-      "category": "GN: robot learning",
-      "gn_label": "robotics",
-      "site_name": "GN: robot learning",
-      "source": "GN: robot learning",
-      "site_id": "GN: robot learning",
-      "description": "HAMPO Launches WiFi and Bluetooth Enabled Ego Camera Module for Untethered Embodied AI Data Collection  FinancialContent",
-      "ai_score": 80.0,
-      "ai_label": "robotics",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 5,
-      "timeliness": 20.68,
-      "writing_value": 5,
-      "total_score": 120.68
+      "total_score": 90.23
     },
     {
       "id": "237ccb19069df2d9be36ca5801a4d7251479d037",
@@ -105,9 +105,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 5,
-      "timeliness": 27.13,
+      "timeliness": 26.63,
       "writing_value": 5,
-      "total_score": 127.13
+      "total_score": 126.63
     },
     {
       "id": "18e1aea0b6005a2e206e93c50db125fa0a0111b1",
@@ -126,9 +126,72 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 5,
-      "timeliness": 26.65,
+      "timeliness": 26.15,
       "writing_value": 5,
-      "total_score": 126.65
+      "total_score": 126.15
+    },
+    {
+      "id": "57ccbda4b321cf5c207e05576d292a70792f795e",
+      "title": "Ego Camera – Global Shutter Stereo Vision with Hardware-Synced IMU for Embodied AI - FinancialContent",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNS2ZPMDdCM2MwVEtLYUI0RmRGMkJ2U3Bkc0ZONWRFNFJFRVlpTmtHandUVzlYMFlFN2JSeXMxZ0ZrVTMzbWxudFZjaEhacnlFT2xDYWltSVVCRktRM0FmdnpRNUM3cVFTcGhCVEJrdUpNY3dKTXJQV0FBb0xnZWVCYndidWR6cDlDSjc4UFR1aWNnMVNpX3d0LV9NWnlmcTNIcW02WEQwNFhEUG5PcHZtN3F1djBpM3JmX21lVWFWTG54T1JHZ1B4eEx4eF9BZlFLUF9seXFXdUdaYkU3Tkg4Ty1HeTI?oc=5",
+      "published_at": "2026-09-06T20:59:00+00:00",
+      "category": "GN: robot learning",
+      "gn_label": "robotics",
+      "site_name": "GN: robot learning",
+      "source": "GN: robot learning",
+      "site_id": "GN: robot learning",
+      "description": "Ego Camera – Global Shutter Stereo Vision with Hardware-Synced IMU for Embodied AI  FinancialContent",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 20.21,
+      "writing_value": 5,
+      "total_score": 120.21
+    },
+    {
+      "id": "85d069a9c5b99d0f2f7d9829801492f0ae81a313",
+      "title": "Ego Camera | Head-Mounted Binocular Global-Shutter Camera – Dedicated First-Person Data Capture for Embodied AI Imitation Learning - FinancialContent",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiogJBVV95cUxNb05ncGdsTng3TWdSc1M0SjVkaEk1ckN0ZGNjb2NKWHZROV9VMUU4TERqRmZDX2pHM1NiMXUyQTdvWVNRVmtyYmhmUWdPWVM5bVdDOUJRUzNuX3VESzZ5cVJTU2tiRV8yUnZFMG9SRWlRTEJuSDJFblJwMmlBWnMxRW5NazRvT1c1MDJqcmREUkNKcmhzc3lhbXNDamc0ZUM2OENycXZTQVFqWE8tdXNES0dMZndVWFo4OFJuRkR1TEF1SlJyaXQ4MzlHaWRwaFRnNEtTTW9GZzdmMVo3MHMwMm94ZDZiN0cxcWNhNzRpcFh4R0xkM1hxcXdQOHdFTDdTYzJwcEt1NWNTS29MdmFvRHEzN3RJaFk4QmROd285a3Zydw?oc=5",
+      "published_at": "2026-09-06T21:30:00+00:00",
+      "category": "GN: robot learning",
+      "gn_label": "robotics",
+      "site_name": "GN: robot learning",
+      "source": "GN: robot learning",
+      "site_id": "GN: robot learning",
+      "description": "Ego Camera | Head-Mounted Binocular Global-Shutter Camera – Dedicated First-Person Data Capture for Embodied AI Imitation Learning  FinancialContent",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 20.73,
+      "writing_value": 5,
+      "total_score": 120.73
+    },
+    {
+      "id": "a8095857549fb478a53f6567ba586cbec7b17f46",
+      "title": "HAMPO Launches WiFi and Bluetooth Enabled Ego Camera Module for Untethered Embodied AI Data Collection - FinancialContent",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxOUXM1SHo5RzZCa0lTbnJkRGFlaFNGYlYwMTZJa0F4dkYxNXVMdUk5MG1DSVotQVRMYTIzd240YzlETkFYbG1oSGRzZnY3dG82SmE0dTd6Rk5wQlVMdjdDR3plRWllMldhbklDcV9DQlJuYm01M1NfOGlBdk9URzV5dDAydGo3bTZVd3pJX01BOUxJN3RXbGl6T0RWXzV5YXFFX2xkRGVINGdmdTVXRmt2M1VKbU5MQy0wcmJPZWZILVhhMlcxSnhMN2FHUm04dVQ5MWp4M3N4RnVDYlNPSFR5TWt6OXN6cmtvci0zR1pFdktZRzY4S3dtSlJpaFJrNDZhR0E?oc=5",
+      "published_at": "2026-09-06T20:57:00+00:00",
+      "category": "GN: robot learning",
+      "gn_label": "robotics",
+      "site_name": "GN: robot learning",
+      "source": "GN: robot learning",
+      "site_id": "GN: robot learning",
+      "description": "HAMPO Launches WiFi and Bluetooth Enabled Ego Camera Module for Untethered Embodied AI Data Collection  FinancialContent",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 20.18,
+      "writing_value": 5,
+      "total_score": 120.18
     },
     {
       "id": "9bf19694ac14152bd2b37c76d810058cbe314677",
@@ -147,9 +210,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.6,
+      "timeliness": 23.1,
       "writing_value": 0,
-      "total_score": 98.6
+      "total_score": 98.1
     },
     {
       "id": "6a4d7dfd569b6da8142f093e3085e15155d90266",
@@ -168,9 +231,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.74,
+      "timeliness": 24.24,
       "writing_value": 0,
-      "total_score": 99.74
+      "total_score": 99.24
     },
     {
       "id": "026ced3a0c63ec857171d94621c08c36ad7bb399",
@@ -189,9 +252,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 10.75,
+      "timeliness": 10.25,
       "writing_value": 0,
-      "total_score": 85.75
+      "total_score": 85.25
     },
     {
       "id": "5dcef71474573e0f4d691b9d209f349a0a4a4524",
@@ -210,9 +273,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.98,
+      "timeliness": 24.48,
       "writing_value": 0,
-      "total_score": 99.98
+      "total_score": 99.48
     },
     {
       "id": "db6dcf598285748606f589687b3316e436faf9ba",
@@ -231,9 +294,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 21.28,
+      "timeliness": 20.78,
       "writing_value": 0,
-      "total_score": 96.28
+      "total_score": 95.78
     },
     {
       "id": "8cfc684d175e17f26e8fa1fd0c766b8fc4a85ab5",
@@ -252,9 +315,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 12.82,
+      "timeliness": 12.33,
       "writing_value": 0,
-      "total_score": 87.82
+      "total_score": 87.33
     },
     {
       "id": "d3e4200569ee3c382dd1c757abfe8c5184ef26b6",
@@ -273,9 +336,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.24,
+      "timeliness": 27.74,
       "writing_value": 0,
-      "total_score": 103.24
+      "total_score": 102.74
     },
     {
       "id": "5e0dcd9c51042388ce30ee52de35d7bbb586f3b7",
@@ -294,9 +357,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 14.28,
+      "timeliness": 13.78,
       "writing_value": 0,
-      "total_score": 104.28
+      "total_score": 103.78
     }
   ],
   "fallback_used": false
