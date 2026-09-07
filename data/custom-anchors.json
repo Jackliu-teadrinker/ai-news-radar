@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-07T04:16:45.776870+00:00",
+  "generated_at": "2026-09-07T04:46:46.765448+00:00",
   "window_start": "2026-09-06T19:00:00+08:00",
-  "window_end": "2026-09-07T12:16:05.472237+08:00",
-  "total_items": 9,
+  "window_end": "2026-09-07T12:46:06.385367+08:00",
+  "total_items": 11,
   "items": [
     {
       "id": "3a5560a1589ad411835444f9c548307849793178",
@@ -21,9 +21,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 18.48,
+      "timeliness": 17.98,
       "writing_value": 0,
-      "total_score": 93.48
+      "total_score": 92.98
     },
     {
       "id": "ca8fafeb9b4ec27d3acb7ef133bf4e3516e620d5",
@@ -42,9 +42,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 28.22,
+      "timeliness": 27.72,
       "writing_value": 5,
-      "total_score": 113.22
+      "total_score": 112.72
+    },
+    {
+      "id": "e19330535f983139ee0945756b8496f7d92ff108",
+      "title": "Pet hair everywhere? This self-cleaning robot vacuum is $300 off - Burlington Free Press",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNS1RKSWM0QXNRWEwtdjRxZW5UMHB6dS1jR3RhUEl1T1c0QjZyMmNQNXR6LXUtWEp1d1pRbWs4V3llclQwenJTN0dCeTJKYWg5U1BjZDREUExmTGk4eHVCZTZrdFlibERERUdvX3ZfOFJWbmRLcFZ2eE5tT3Z0Q0FGS2lDSF9HRk5nVUE0cDh5RTZ5WFVuR2NMN3NyVTMxX2xqWG5UOWVTTHhpR0MxMmR2bUNlcjJKZldOaXJ4Nw?oc=5",
+      "published_at": "2026-09-06T22:19:00+00:00",
+      "category": "GN: robot vacuum",
+      "gn_label": "robotics",
+      "site_name": "GN: robot vacuum",
+      "source": "GN: robot vacuum",
+      "site_id": "GN: robot vacuum",
+      "description": "Pet hair everywhere? This self-cleaning robot vacuum is $300 off  Burlington Free Press",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 23.55,
+      "writing_value": 0,
+      "total_score": 98.55
     },
     {
       "id": "a8095857549fb478a53f6567ba586cbec7b17f46",
@@ -63,9 +84,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 5,
-      "timeliness": 22.68,
+      "timeliness": 22.18,
       "writing_value": 5,
-      "total_score": 122.68
+      "total_score": 122.18
     },
     {
       "id": "026ced3a0c63ec857171d94621c08c36ad7bb399",
@@ -84,13 +105,13 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 12.76,
+      "timeliness": 12.26,
       "writing_value": 0,
-      "total_score": 87.76
+      "total_score": 87.26
     },
     {
-      "id": "04b22068dcfddbb99ed31f440f1c65178fd92e51",
-      "title": "拒绝当网红的智元机器人，被邓泰华悄悄做成了行业第一 - mp.cnfol.com",
+      "id": "9bf19694ac14152bd2b37c76d810058cbe314677",
+      "title": "拒绝当网红的智元机器人，被邓泰华悄悄做成了行业第一 - 财经号",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBlTTZsMXlpeWhTeEpRQ3hCQkhKNXFIYlJGal8zdU02YUMwZVJiS19hb1B0blZHWGRMcUxOdVZwM19PeEtyZHd2a2lCMm92ZHRnMm1WNE9vbFFWdFN1Q3FvbkNUdDBCN3BhTUYw?oc=5",
       "published_at": "2026-09-06T23:52:11+00:00",
@@ -99,15 +120,15 @@
       "site_name": "GN: 智元机器人",
       "source": "GN: 智元机器人",
       "site_id": "GN: 智元机器人",
-      "description": "拒绝当网红的智元机器人，被邓泰华悄悄做成了行业第一  mp.cnfol.com",
+      "description": "拒绝当网红的智元机器人，被邓泰华悄悄做成了行业第一  财经号",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.6,
+      "timeliness": 25.1,
       "writing_value": 0,
-      "total_score": 100.6
+      "total_score": 100.1
     },
     {
       "id": "6a4d7dfd569b6da8142f093e3085e15155d90266",
@@ -126,9 +147,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.74,
+      "timeliness": 26.24,
       "writing_value": 0,
-      "total_score": 101.74
+      "total_score": 101.24
+    },
+    {
+      "id": "d3e4200569ee3c382dd1c757abfe8c5184ef26b6",
+      "title": "余杭企业黑漫科技发布新工业灵巧手“大圣1” - Sohu",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQc20xYzl5TlludnhkR2F3WEdvQ2lRcnpkbjZTX0xHdkFWX0VZd29PUkJMeXM1QzRocWdCX0xXOTlhSkxiOWVzcTZZUXNUWTJxRHhrald3VFNZUEMxWHA1NktEMm53NHZDNnBqSElPRTFONEVBZzZOTEx5cGQySVFfbUpFZy12dXFFZnJseQ?oc=5",
+      "published_at": "2026-09-07T04:30:43+00:00",
+      "category": "GN: 灵巧手",
+      "gn_label": "robotics",
+      "site_name": "GN: 灵巧手",
+      "source": "GN: 灵巧手",
+      "site_id": "GN: 灵巧手",
+      "description": "余杭企业黑漫科技发布新工业灵巧手“大圣1”  Sohu",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.74,
+      "writing_value": 0,
+      "total_score": 104.74
     },
     {
       "id": "db6dcf598285748606f589687b3316e436faf9ba",
@@ -147,9 +189,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.28,
+      "timeliness": 22.78,
       "writing_value": 0,
-      "total_score": 98.28
+      "total_score": 97.78
     },
     {
       "id": "8cfc684d175e17f26e8fa1fd0c766b8fc4a85ab5",
@@ -168,9 +210,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 21.45,
+      "timeliness": 20.95,
       "writing_value": 0,
-      "total_score": 96.45
+      "total_score": 95.95
     },
     {
       "id": "5e0dcd9c51042388ce30ee52de35d7bbb586f3b7",
@@ -189,9 +231,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 16.28,
+      "timeliness": 15.78,
       "writing_value": 0,
-      "total_score": 106.28
+      "total_score": 105.78
     }
   ],
   "fallback_used": false
