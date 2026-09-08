@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-08T02:02:24.998577+00:00",
+  "generated_at": "2026-09-08T02:32:42.733894+00:00",
   "window_start": "2026-09-07T19:00:00+08:00",
-  "window_end": "2026-09-08T10:00:42.951064+08:00",
-  "total_items": 26,
+  "window_end": "2026-09-08T10:30:40.956564+08:00",
+  "total_items": 27,
   "items": [
     {
       "id": "0776e3c3470824668b657341ce05d0ec8fef4973",
@@ -21,51 +21,51 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 16.99,
+      "timeliness": 16.49,
       "writing_value": 5,
-      "total_score": 101.99
+      "total_score": 101.49
     },
     {
-      "id": "6c61bcd8a337ad521f9de50c20ffedb723eb9ba3",
-      "title": "Robots protest rampant AI in Poland - Tech Xplore",
+      "id": "5ca984f7d8bf5ee4fc1367bc6dcac03a4bf96144",
+      "title": "Robots protest rampant AI in Poland - techxplore.com",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE0xRWF6OWE0eVJpcm9idlZYV1pmYTZobWFXZ0RjOEtxak1fXzVhRUExc2l2MmdhTzE2R093aE85RFpPbEJSemdWaEJGYm5rekJUMWU3NTZObFk2Ul9YSDhmc3VCZXZBOExQeWJQUVF0aFRMTWxTaDlxc0poOThsdw?oc=5",
       "published_at": "2026-09-07T17:40:03+00:00",
-      "category": "GN: TechXplore robotics",
+      "category": "GN: TechXplore AI",
       "gn_label": "robotics",
-      "site_name": "GN: TechXplore robotics",
-      "source": "GN: TechXplore robotics",
-      "site_id": "GN: TechXplore robotics",
-      "description": "Robots protest rampant AI in Poland  Tech Xplore",
+      "site_name": "GN: TechXplore AI",
+      "source": "GN: TechXplore AI",
+      "site_id": "GN: TechXplore AI",
+      "description": "Robots protest rampant AI in Poland  techxplore.com",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 21.66,
+      "timeliness": 21.16,
       "writing_value": 0,
-      "total_score": 96.66
+      "total_score": 96.16
     },
     {
-      "id": "1a572266ed239198ec5b3854c8ef9145e6720e55",
-      "title": "具身开始拼落地：首家集齐「6 颗商业化宝石」的公司出现了",
+      "id": "71c24be30521bb8a5461ddac8bfc611e6af75385",
+      "title": "Robotics Capability Framework: A Common Foundation for the Next Era of Intelligent Robotics | Arm - GamesBeat",
       "title_zh": "",
-      "url": "https://zhidx.com/p/591267.html",
-      "published_at": "2026-09-07T15:52:53+00:00",
-      "category": "极链AI",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxONWM5Z2Z2bVM5b2tFdzF3MzlrUHdDbnNPS1UzVkpPNGoxdFJVYVRtZ3F6OUtJZWdObnFMYWhiN3hQVlNoZkpEcUVNdEJCZFJWckZwd0VmWEJ5QUZYWi00cEhJeENyOTFza3F0Z0JSVFdYdUdMYjZWZnpzaU5EaGtSdFVVWVZxcGhNX200Zkk5aDZscHVkaVNuTU81bzlSU2dpYUdpQUVyaWFIUEhFSTk3dmhEQnlwYXV3?oc=5",
+      "published_at": "2026-09-08T02:01:00+00:00",
+      "category": "GN: autonomous robot",
       "gn_label": "robotics",
-      "site_name": "极链AI",
-      "source": "极链AI",
-      "site_id": "极链AI",
-      "description": "智东西\n作者 | 许丽思\n编辑 | 漠影\n今年年初，不少具身智能企业可能还忙于拼benchmark，各大榜单第一隔几天就刷新一回，模型能力进步飞速。\n但进入下半年，你会发现，大家好像没那么在意这些榜单了，而是收束技术能力、聚焦让机器人真正能用，狂卷落地干各种脏活的能力，行业的关注点正在加速向商业交付靠拢。\n这印证了一个判断：真正的壁垒，藏在那些没法开源的部署Know-how里。\n具身智能落地前的“最后一公里”，需要跨过三道关卡：\n模型走出实验室，要能适应光照变化、物料堆叠等现场干扰；生成动作后，系统还得处理时延、动作衔接和安全问题，让机器人稳定执行；一个工位跑通后，更要把现场经验沉淀为可复用的",
-      "ai_score": 80.0,
+      "site_name": "GN: autonomous robot",
+      "source": "GN: autonomous robot",
+      "site_id": "GN: autonomous robot",
+      "description": "Robotics Capability Framework: A Common Foundation for the Next Era of Intelligent Robotics | Arm  GamesBeat",
+      "ai_score": 65.0,
       "ai_label": "robotics",
-      "relevance": 0.8,
+      "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 19.87,
+      "timeliness": 29.51,
       "writing_value": 5,
-      "total_score": 119.87
+      "total_score": 114.51
     },
     {
       "id": "0ff65d311eb4b7e3dc30e239253ccc5028da30e9",
@@ -84,9 +84,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 19.77,
+      "timeliness": 19.27,
       "writing_value": 0,
-      "total_score": 94.77
+      "total_score": 94.27
     },
     {
       "id": "29a38d009931de8e6ed6de02391b8e48176079b3",
@@ -105,9 +105,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 16.46,
+      "timeliness": 15.96,
       "writing_value": 5,
-      "total_score": 101.46
+      "total_score": 100.96
+    },
+    {
+      "id": "c99a52b6a112694ebd1385675065798affde4299",
+      "title": "Collaborative Robotics in Textile Manufacturing - IFR International Federation of Robotics",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQbW5zc2t2cDBOYzByUzlRVEdZVHNwY05qQ1U3RzM4SUNJaU1kbkh0Qkc4TTJmSmVqRGUyQzBOTmFqQVVvc0lycDdqc1J1VVVGUy1XVDRhNUkyMzVqdUh4VF9pNGl6SnNRemxsMTBGSDI4bzBUSHZ1S1JheEpCWGF5MHdn?oc=5",
+      "published_at": "2026-09-07T12:49:38+00:00",
+      "category": "GN: industrial robot",
+      "gn_label": "robotics",
+      "site_name": "GN: industrial robot",
+      "source": "GN: industrial robot",
+      "site_id": "GN: industrial robot",
+      "description": "Collaborative Robotics in Textile Manufacturing  IFR International Federation of Robotics",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 16.32,
+      "writing_value": 0,
+      "total_score": 91.32
     },
     {
       "id": "e7c44194b6c386d4ebde28e2e911cc63f5f8ec9f",
@@ -126,9 +147,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 15.99,
+      "timeliness": 15.49,
       "writing_value": 0,
-      "total_score": 90.99
+      "total_score": 90.49
     },
     {
       "id": "f72ed3a1cc40bac478e14808b1895c6f271edacf",
@@ -147,51 +168,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 5,
-      "timeliness": 28.0,
+      "timeliness": 27.5,
       "writing_value": 5,
-      "total_score": 128.0
-    },
-    {
-      "id": "3074e157241822e44af4974c11971b04d1ba89b1",
-      "title": "Intuitive Surgical (ISRG): Embracing AI Innovations in Robotic Surgery for Future Growth - Yahoo Finance",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOUnVQZ3B3ck1NRENBOGpRYXlWOE1NdG9UZFBnMDFuM3ZnaUQ4LVU2RFRCaEcwaERKVEVpTFV3cmpCUzYtZi1GUjZPUFd5ZV94NXE1WW5rODJEaDFhbWdBOXN3ZjhjSkFqUTM5Q1dCTE5TN1dDN2xWSkUzVkNYLUctZnBLYUhkRkZRd21sS1hjRVJDYzZJTGU5MzlLckFTQm9RR0E?oc=5",
-      "published_at": "2026-09-07T12:30:44+00:00",
-      "category": "GN: surgical robot",
-      "gn_label": "robotics",
-      "site_name": "GN: surgical robot",
-      "source": "GN: surgical robot",
-      "site_id": "GN: surgical robot",
-      "description": "Intuitive Surgical (ISRG): Embracing AI Innovations in Robotic Surgery for Future Growth  Yahoo Finance",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 5,
-      "timeliness": 16.5,
-      "writing_value": 5,
-      "total_score": 101.5
-    },
-    {
-      "id": "e5935100361897f6a21c1067446c3c155ce5f6d0",
-      "title": "At a hospital in Lviv, a surgical robot saved an 8-year-old boy’s kidney - UA.NEWS",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPWTZxeHlnTFVHd0RXV0pMY29sVDU1S1VNSFotU01qdnQ0cFNxY3hQZDItU0VuZWdzVTg1QUNHMHZfdDE3ODBJOVpvTE8ySFZXM3A1NWg0V2ZpZ3h2X0xNeHhQSkoxay1IcG9taV9kSzVMN1dEdFEwaWs0Nlg4LUJjR0lrbFRIVW50ZHFXN1F2LXFxa1o1aEtsR1pCQmxuZk0?oc=5",
-      "published_at": "2026-09-07T14:27:09+00:00",
-      "category": "GN: surgical robot",
-      "gn_label": "robotics",
-      "site_name": "GN: surgical robot",
-      "source": "GN: surgical robot",
-      "site_id": "GN: surgical robot",
-      "description": "At a hospital in Lviv, a surgical robot saved an 8-year-old boy’s kidney  UA.NEWS",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 18.44,
-      "writing_value": 0,
-      "total_score": 93.44
+      "total_score": 127.5
     },
     {
       "id": "6ae7dc4cfa6f3c4f36030509091e048e1243e73f",
@@ -210,9 +189,51 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 19.59,
+      "timeliness": 19.09,
       "writing_value": 5,
-      "total_score": 104.59
+      "total_score": 104.09
+    },
+    {
+      "id": "3074e157241822e44af4974c11971b04d1ba89b1",
+      "title": "Intuitive Surgical (ISRG): Embracing AI Innovations in Robotic Surgery for Future Growth - Yahoo Finance",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOUnVQZ3B3ck1NRENBOGpRYXlWOE1NdG9UZFBnMDFuM3ZnaUQ4LVU2RFRCaEcwaERKVEVpTFV3cmpCUzYtZi1GUjZPUFd5ZV94NXE1WW5rODJEaDFhbWdBOXN3ZjhjSkFqUTM5Q1dCTE5TN1dDN2xWSkUzVkNYLUctZnBLYUhkRkZRd21sS1hjRVJDYzZJTGU5MzlLckFTQm9RR0E?oc=5",
+      "published_at": "2026-09-07T12:30:44+00:00",
+      "category": "GN: surgical robot",
+      "gn_label": "robotics",
+      "site_name": "GN: surgical robot",
+      "source": "GN: surgical robot",
+      "site_id": "GN: surgical robot",
+      "description": "Intuitive Surgical (ISRG): Embracing AI Innovations in Robotic Surgery for Future Growth  Yahoo Finance",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 16.0,
+      "writing_value": 5,
+      "total_score": 101.0
+    },
+    {
+      "id": "e5935100361897f6a21c1067446c3c155ce5f6d0",
+      "title": "At a hospital in Lviv, a surgical robot saved an 8-year-old boy’s kidney - UA.NEWS",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPWTZxeHlnTFVHd0RXV0pMY29sVDU1S1VNSFotU01qdnQ0cFNxY3hQZDItU0VuZWdzVTg1QUNHMHZfdDE3ODBJOVpvTE8ySFZXM3A1NWg0V2ZpZ3h2X0xNeHhQSkoxay1IcG9taV9kSzVMN1dEdFEwaWs0Nlg4LUJjR0lrbFRIVW50ZHFXN1F2LXFxa1o1aEtsR1pCQmxuZk0?oc=5",
+      "published_at": "2026-09-07T14:27:09+00:00",
+      "category": "GN: surgical robot",
+      "gn_label": "robotics",
+      "site_name": "GN: surgical robot",
+      "source": "GN: surgical robot",
+      "site_id": "GN: surgical robot",
+      "description": "At a hospital in Lviv, a surgical robot saved an 8-year-old boy’s kidney  UA.NEWS",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 17.94,
+      "writing_value": 0,
+      "total_score": 92.94
     },
     {
       "id": "92c8cb106ca02e790be7bebcd422c18b25cddd6a",
@@ -231,30 +252,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 22.64,
+      "timeliness": 22.14,
       "writing_value": 5,
-      "total_score": 107.64
+      "total_score": 107.14
     },
     {
-      "id": "0b9e1955a1747ef4aea1c173171750afa14b98b8",
-      "title": "芒果TV《了不起的少年》牵手智元AGIBOT 以AI+非遗双赛道探索科创育人新路径 - Sohu",
+      "id": "1a572266ed239198ec5b3854c8ef9145e6720e55",
+      "title": "具身开始拼落地：首家集齐「6 颗商业化宝石」的公司出现了",
       "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQTVdac191OHFZTndxTWVYbFVRM3REVnFKRkk1Zk1yVjNfNmNKa0ZZQXJ2QnpoS0FtNDB2ZnlYeDlaanlvX0FYMGlmTXFPOHh0VGU0RklhNW9ZSm00cVY2ZlpjTGRSc0t2MXVUTjNnWUZ3aGgyZjRRNDBYUE1DN2JUcW02a3VXbnNF?oc=5",
-      "published_at": "2026-09-07T14:16:14+00:00",
-      "category": "GN: 智元机器人",
+      "url": "https://zhidx.com/p/591267.html",
+      "published_at": "2026-09-07T15:52:53+00:00",
+      "category": "极链AI",
       "gn_label": "robotics",
-      "site_name": "GN: 智元机器人",
-      "source": "GN: 智元机器人",
-      "site_id": "GN: 智元机器人",
-      "description": "芒果TV《了不起的少年》牵手智元AGIBOT 以AI+非遗双赛道探索科创育人新路径  Sohu",
-      "ai_score": 65.0,
+      "site_name": "极链AI",
+      "source": "极链AI",
+      "site_id": "极链AI",
+      "description": "智东西\n作者 | 许丽思\n编辑 | 漠影\n今年年初，不少具身智能企业可能还忙于拼benchmark，各大榜单第一隔几天就刷新一回，模型能力进步飞速。\n但进入下半年，你会发现，大家好像没那么在意这些榜单了，而是收束技术能力、聚焦让机器人真正能用，狂卷落地干各种脏活的能力，行业的关注点正在加速向商业交付靠拢。\n这印证了一个判断：真正的壁垒，藏在那些没法开源的部署Know-how里。\n具身智能落地前的“最后一公里”，需要跨过三道关卡：\n模型走出实验室，要能适应光照变化、物料堆叠等现场干扰；生成动作后，系统还得处理时延、动作衔接和安全问题，让机器人稳定执行；一个工位跑通后，更要把现场经验沉淀为可复用的",
+      "ai_score": 80.0,
       "ai_label": "robotics",
-      "relevance": 0.65,
+      "relevance": 0.8,
       "authority": 10,
-      "depth": 0,
-      "timeliness": 18.26,
-      "writing_value": 0,
-      "total_score": 93.26
+      "depth": 5,
+      "timeliness": 19.37,
+      "writing_value": 5,
+      "total_score": 119.37
     },
     {
       "id": "e1fed61545f2151a5c5a52e82a62d2a1c067d735",
@@ -273,9 +294,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.4,
+      "timeliness": 25.9,
       "writing_value": 0,
-      "total_score": 101.4
+      "total_score": 100.9
     },
     {
       "id": "00de7b60e7221eaded70435c1c0fd2838b99225c",
@@ -294,13 +315,13 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 15.11,
+      "timeliness": 14.61,
       "writing_value": 0,
-      "total_score": 105.11
+      "total_score": 104.61
     },
     {
-      "id": "a326dce93b1bc003d56f3b6a7a67a160420d8bff",
-      "title": "1.2个宇树科技=“蔚小理零”市值之和！造车新势力半年创收超1700亿元，为什么还是不被“待见”，专家：逻辑变了 - 新浪网",
+      "id": "4d0150edeb701e4698936391d6229913f94afc42",
+      "title": "1.2个宇树科技=“蔚小理零”市值之和！造车新势力半年创收超1700亿元，为什么还是不被“待见”，专家：逻辑变了 - 新浪财经",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE90VjR2YlBDZGtlM05jUkZuemJHenJYNDhJN1ZjOGpsUkdzMUZTVy1EM1ZFRWMzNHdfT0wyOTlKT3puTkRxaFpGMmhWamhGNFJFZ3JpT1Z2TXk4SS1MVm15RlpxRjJuZnJycHZiTG9uXzBNNy03QnJhWA?oc=5",
       "published_at": "2026-09-07T15:08:00+00:00",
@@ -309,15 +330,15 @@
       "site_name": "GN: 宇树科技",
       "source": "GN: 宇树科技",
       "site_id": "GN: 宇树科技",
-      "description": "1.2个宇树科技=“蔚小理零”市值之和！造车新势力半年创收超1700亿元，为什么还是不被“待见”，专家：逻辑变了  新浪网",
+      "description": "1.2个宇树科技=“蔚小理零”市值之和！造车新势力半年创收超1700亿元，为什么还是不被“待见”，专家：逻辑变了  新浪财经",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 19.12,
+      "timeliness": 18.62,
       "writing_value": 0,
-      "total_score": 94.12
+      "total_score": 93.62
     },
     {
       "id": "f4d8eae953e3c382e4e0a668892230f43c8910ef",
@@ -336,9 +357,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 15.0,
+      "timeliness": 14.5,
       "writing_value": 0,
-      "total_score": 90.0
+      "total_score": 89.5
     },
     {
       "id": "1882ef21651cebb6a8acfd5abbdc152b6ed91a21",
@@ -357,30 +378,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 15.4,
+      "timeliness": 14.9,
       "writing_value": 0,
-      "total_score": 105.4
-    },
-    {
-      "id": "bb4b9228457a779ada983e74458aa2c5b4df159a",
-      "title": "宇树科技：全球首次实现世界模型实时驱动全自主人形机器人格斗 - 凤凰网科技",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9kOWZrempkQ2htaFlHWmpfWkxXSzZJNTRHRWRsRDJuTFdKaEdZZ0NYbnlpT3VTNXJkWko5S0NKUG9uUFFLUGtBR3lsMTk?oc=5",
-      "published_at": "2026-09-07T11:26:35+00:00",
-      "category": "GN: 宇树科技",
-      "gn_label": "robotics",
-      "site_name": "GN: 宇树科技",
-      "source": "GN: 宇树科技",
-      "site_id": "GN: 宇树科技",
-      "description": "宇树科技：全球首次实现世界模型实时驱动全自主人形机器人格斗  凤凰网科技",
-      "ai_score": 80.0,
-      "ai_label": "robotics",
-      "relevance": 0.8,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 15.43,
-      "writing_value": 0,
-      "total_score": 105.43
+      "total_score": 104.9
     },
     {
       "id": "0c74b8f8617e8ba730023ef9356c78081f1b2d70",
@@ -399,9 +399,30 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 20.01,
+      "timeliness": 19.51,
       "writing_value": 0,
-      "total_score": 110.01
+      "total_score": 109.51
+    },
+    {
+      "id": "0b9e1955a1747ef4aea1c173171750afa14b98b8",
+      "title": "芒果TV《了不起的少年》牵手智元AGIBOT 以AI+非遗双赛道探索科创育人新路径 - Sohu",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQTVdac191OHFZTndxTWVYbFVRM3REVnFKRkk1Zk1yVjNfNmNKa0ZZQXJ2QnpoS0FtNDB2ZnlYeDlaanlvX0FYMGlmTXFPOHh0VGU0RklhNW9ZSm00cVY2ZlpjTGRSc0t2MXVUTjNnWUZ3aGgyZjRRNDBYUE1DN2JUcW02a3VXbnNF?oc=5",
+      "published_at": "2026-09-07T14:16:14+00:00",
+      "category": "GN: 智元机器人",
+      "gn_label": "robotics",
+      "site_name": "GN: 智元机器人",
+      "source": "GN: 智元机器人",
+      "site_id": "GN: 智元机器人",
+      "description": "芒果TV《了不起的少年》牵手智元AGIBOT 以AI+非遗双赛道探索科创育人新路径  Sohu",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 17.76,
+      "writing_value": 0,
+      "total_score": 92.76
     },
     {
       "id": "ef1d3a02a754b450f844b2dfd6708a11124151f1",
@@ -420,9 +441,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.66,
+      "timeliness": 29.16,
       "writing_value": 0,
-      "total_score": 104.66
+      "total_score": 104.16
     },
     {
       "id": "1e821ac2651236959721b04e8ec5e600f91c511c",
@@ -441,13 +462,13 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 17.09,
+      "timeliness": 16.59,
       "writing_value": 0,
-      "total_score": 92.09
+      "total_score": 91.59
     },
     {
-      "id": "09200051187b195b6197a2fceca1a6c3000ba6d4",
-      "title": "AI接上机械臂：德国工业真正要争的，是下一代设备接口 - 新浪网",
+      "id": "5a38aacc8de072a6ed2afb48e4160f5666c0adf1",
+      "title": "AI接上机械臂：德国工业真正要争的，是下一代设备接口 - 新浪财经",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5QbncwdU51cktSOTB0ajh0SXB0cVR1bUh2LXBsVGdPVTFQMHpxN1VKTlNodElPVWJneHhCMEhQdS1BZDd4WkhEVk91bFJlbU1RN0pBTU95RnFFYU5zdVpqOHlzZFdXN05jM1MyX0VqcmlOcDZacFQ0bQ?oc=5",
       "published_at": "2026-09-07T15:47:00+00:00",
@@ -456,15 +477,15 @@
       "site_name": "GN: 机械臂",
       "source": "GN: 机械臂",
       "site_id": "GN: 机械臂",
-      "description": "AI接上机械臂：德国工业真正要争的，是下一代设备接口  新浪网",
+      "description": "AI接上机械臂：德国工业真正要争的，是下一代设备接口  新浪财经",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 19.77,
+      "timeliness": 19.27,
       "writing_value": 0,
-      "total_score": 94.77
+      "total_score": 94.27
     },
     {
       "id": "4cf800491515d4cee1061b2f456e6c44744efba5",
@@ -483,9 +504,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.3,
+      "timeliness": 26.8,
       "writing_value": 0,
-      "total_score": 102.3
+      "total_score": 101.8
     },
     {
       "id": "6c249deb08ab85da778037871d7e4945712ef19f",
@@ -504,9 +525,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 20.22,
+      "timeliness": 19.72,
       "writing_value": 0,
-      "total_score": 95.22
+      "total_score": 94.72
     },
     {
       "id": "ac58285fb887235c7cf41b7d91ac950d7bf23411",
@@ -525,9 +546,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 18.45,
+      "timeliness": 17.95,
       "writing_value": 0,
-      "total_score": 93.45
+      "total_score": 92.95
     },
     {
       "id": "2e5db77ba16aaf6500de17e6e02e5e9baf7433d5",
@@ -546,9 +567,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 16.86,
+      "timeliness": 16.36,
       "writing_value": 0,
-      "total_score": 106.86
+      "total_score": 106.36
     }
   ],
   "fallback_used": false
