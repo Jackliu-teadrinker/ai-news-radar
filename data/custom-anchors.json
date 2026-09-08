@@ -1,29 +1,29 @@
 {
-  "generated_at": "2026-09-08T14:16:47.438318+00:00",
+  "generated_at": "2026-09-08T14:47:04.573869+00:00",
   "window_start": "2026-09-08T19:00:00+08:00",
-  "window_end": "2026-09-08T22:16:26.669506+08:00",
-  "total_items": 3,
+  "window_end": "2026-09-08T22:46:23.929750+08:00",
+  "total_items": 4,
   "items": [
     {
-      "id": "061b935a53ec127d24fe88fb5219d92808bc7426",
-      "title": "Palladyne AI Corp. And FANUC America Announce Strategic Collaboration To Advance Intelligent Robotic Automation - marketscreener.com",
+      "id": "c1bd88657a8e3b20da2a09731edd3b81173ee2ed",
+      "title": "Last Chance to Sweep Up Labor Day Discounts on Dyson and Robot Vacuums - pcmag.com",
       "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPVmd0YlZTb0R6RDZvZjFueGthSUFwX3RrQk92OE56UGpfaHV5UmNWd0toNWZoRTBhRkFqaVNvZ3JQMVNWTENWTEFtallZNXZzRXhNYS1ZVjF2OGdOYkhoa3l2a0k5Wk9SMDV1VWJ5dGhjTkZXMnZaOU5aOTRJTXJBSmZ3NFJ3QUtJdEpQaXNvdFI3TFVSSDRZaGFMMndaVVhfSXNTT2VvLWpmRDNxdlJHdzdQYTZDQmhhUUk1ZHpELUpNb2FMVndJbTZSZnEtMVA0S2xoY3VFZ2lJZjJXWV8wOVktMnZyT1E?oc=5",
-      "published_at": "2026-09-08T11:52:42+00:00",
-      "category": "GN: industrial robot",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNS21yd3RqUm95SXA0RHluNEtpS3JOQk50NnlwRzVWRGk4TzhuQnVJLVRpMW44Y0Y2b0htWDFvM0J0RUJEQTNVZERGYUMxRHFkV1hrZ2JtaUpjWllERkpoc0xoTW5YeDVGazdPZUlHSWhuX1kzVnFDTzF1cUotVTRKSkZuX0xIUkh6NnJsMUtLYVVVdW14UmRsRGVqNk1TTzNsMnc?oc=5",
+      "published_at": "2026-09-08T13:47:21+00:00",
+      "category": "GN: robot vacuum",
       "gn_label": "robotics",
-      "site_name": "GN: industrial robot",
-      "source": "GN: industrial robot",
-      "site_id": "GN: industrial robot",
-      "description": "Palladyne AI Corp. And FANUC America Announce Strategic Collaboration To Advance Intelligent Robotic Automation  marketscreener.com",
+      "site_name": "GN: robot vacuum",
+      "source": "GN: robot vacuum",
+      "site_id": "GN: robot vacuum",
+      "description": "Last Chance to Sweep Up Labor Day Discounts on Dyson and Robot Vacuums  pcmag.com",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
-      "depth": 5,
-      "timeliness": 27.61,
-      "writing_value": 5,
-      "total_score": 112.61
+      "depth": 0,
+      "timeliness": 29.02,
+      "writing_value": 0,
+      "total_score": 104.02
     },
     {
       "id": "cf2bfb01335bbdcd4c3b9fdb902d81b53ca84995",
@@ -42,9 +42,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.75,
+      "timeliness": 28.25,
       "writing_value": 0,
-      "total_score": 103.75
+      "total_score": 103.25
+    },
+    {
+      "id": "061b935a53ec127d24fe88fb5219d92808bc7426",
+      "title": "Palladyne AI Corp. And FANUC America Announce Strategic Collaboration To Advance Intelligent Robotic Automation - marketscreener.com",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPVmd0YlZTb0R6RDZvZjFueGthSUFwX3RrQk92OE56UGpfaHV5UmNWd0toNWZoRTBhRkFqaVNvZ3JQMVNWTENWTEFtallZNXZzRXhNYS1ZVjF2OGdOYkhoa3l2a0k5Wk9SMDV1VWJ5dGhjTkZXMnZaOU5aOTRJTXJBSmZ3NFJ3QUtJdEpQaXNvdFI3TFVSSDRZaGFMMndaVVhfSXNTT2VvLWpmRDNxdlJHdzdQYTZDQmhhUUk1ZHpELUpNb2FMVndJbTZSZnEtMVA0S2xoY3VFZ2lJZjJXWV8wOVktMnZyT1E?oc=5",
+      "published_at": "2026-09-08T11:52:42+00:00",
+      "category": "GN: industrial robot",
+      "gn_label": "robotics",
+      "site_name": "GN: industrial robot",
+      "source": "GN: industrial robot",
+      "site_id": "GN: industrial robot",
+      "description": "Palladyne AI Corp. And FANUC America Announce Strategic Collaboration To Advance Intelligent Robotic Automation  marketscreener.com",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 27.11,
+      "writing_value": 5,
+      "total_score": 112.11
     },
     {
       "id": "b67a63d684041376fcfad53a22911e923365360a",
@@ -63,9 +84,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.63,
+      "timeliness": 27.13,
       "writing_value": 0,
-      "total_score": 102.63
+      "total_score": 102.13
     }
   ],
   "fallback_used": false
