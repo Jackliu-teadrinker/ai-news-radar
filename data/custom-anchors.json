@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-08T12:16:36.338863+00:00",
+  "generated_at": "2026-09-08T12:46:42.324089+00:00",
   "window_start": "2026-09-08T19:00:00+08:00",
-  "window_end": "2026-09-08T20:16:15.999174+08:00",
-  "total_items": 1,
+  "window_end": "2026-09-08T20:46:22.138992+08:00",
+  "total_items": 2,
   "items": [
     {
       "id": "061b935a53ec127d24fe88fb5219d92808bc7426",
@@ -21,9 +21,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 29.61,
+      "timeliness": 29.11,
       "writing_value": 5,
-      "total_score": 114.61
+      "total_score": 114.11
+    },
+    {
+      "id": "b67a63d684041376fcfad53a22911e923365360a",
+      "title": "和宇树科技合作开发工业机器人，宝通科技All in AI后研发费用不增反降 - 新浪财经",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9Lby1SRGpWcmF5QVdjU2ZQdmI0YUNWYndMX1BuRC1QRjhJVDJEUWUyS3hHTVJoQW1YXzQ4SGQ0RUVhSUFzQkxYR1dwaXR6M0xuLWFuaERxajdkWHVZa20tMXZMdDNDVjhKRG1qSGRkcWxWVlVVOWc?oc=5",
+      "published_at": "2026-09-08T11:54:00+00:00",
+      "category": "GN: 宇树科技",
+      "gn_label": "robotics",
+      "site_name": "GN: 宇树科技",
+      "source": "GN: 宇树科技",
+      "site_id": "GN: 宇树科技",
+      "description": "和宇树科技合作开发工业机器人，宝通科技All in AI后研发费用不增反降  新浪财经",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.13,
+      "writing_value": 0,
+      "total_score": 104.13
     }
   ],
   "fallback_used": false
