@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-09T19:36:25.594617+00:00",
-  "total_items": 30,
+  "generated_at": "2026-09-09T22:05:05.461788+00:00",
+  "total_items": 28,
   "items": [
     {
       "id": "http://arxiv.org/abs/2609.09158v1",
@@ -309,28 +309,6 @@
       "published_at": "2026-09-08T11:18:32+00:00",
       "updated_at": "2026-09-08T11:18:32Z",
       "title_zh": "通过高斯上下文分布估计语义歧义以进行 VLM 驱动的可遍历性分析"
-    },
-    {
-      "id": "http://arxiv.org/abs/2609.08512v1",
-      "title": "TASG-Explore: Traversability-Aware Sector-Guided Exploration for Ground Robot on Uneven Terrain",
-      "url": "https://arxiv.org/abs/2609.08512",
-      "summary": "Autonomous exploration on uneven terrain requires ground robots to balance exploration efficiency, coverage completeness, and terrain safety. Detailed tsrrain reasoning improves local reliability but can slow large-scale exploration, whereas coarse region guidance expands quickly in open areas but can miss narrow passages and irregular traversable boundaries. To address this challenge, this paper presents TASG-Explore, a traversability-aware sector-guided exploration framework for ground robots. The framework first performs hierarchical traversability analysis using variable-voxel ground fitting and adaptive 8-bit obstacle encoding. It then splitting cost map into sectors, incrementally updates sector clusters, extracts terrain-coupled frontier viewpoints, and maintains a dynamic topological roadmap with unknown topological hypotheses. Finally, a sector-guided planner selects region targets and inserts local viewpoints to generate efficient exploration routes. Benchmark experiments in diverse challenging environments, including caves, forests, and rugged hills, show that TASG-Explore achieves the best overall performance among six representative state-of-the-art planners. The proposed traversability analysis improves processing efficiency by 6.3 times while maintaining high accuracy, and the exploration planner improves exploration efficiency by 51% and increases coverage by up to 2.95 times in rugged hill scene. Large-scale real-world experiments further demonstrate the practical value of the proposed method.",
-      "authors": "Shaocong Wang, Shiliang Shao, Ting Wang et al.",
-      "category": "cs.RO",
-      "published_at": "2026-09-08T09:58:32+00:00",
-      "updated_at": "2026-09-08T09:58:32Z",
-      "title_zh": "TASG-Explore：不平坦地形上地面机器人的可遍历性感知扇区引导探索"
-    },
-    {
-      "id": "http://arxiv.org/abs/2609.08511v1",
-      "title": "PGMT: Perceptive General Motion Tracking for Humanoid Robots",
-      "url": "https://arxiv.org/abs/2609.08511",
-      "summary": "Humanoid motion trackers can reproduce diverse whole-body motions, but their performance degrades on complex terrain where terrain-agnostic references become physically infeasible. We present PGMT, a Perceptive General Motion Tracking pipeline for humanoid robots that learns terrain adaptation from independently selected motion references and terrains. PGMT first learns a general tracking and recovery prior, then incorporates terrain perception through motion-conditioned terrain glimpses that selectively encode regions relevant to the current motion. Terrain-aware tracking relaxation allows necessary deviations from the reference while preserving its motion intent. Zero-shot deployment on a Unitree G1 demonstrates robust terrain-adaptive locomotion and whole-body motion execution over real-world terrain with obstacles up to 37 cm high, while supporting teleoperation, dynamic motion tracking, and fall recovery. PGMT extends general humanoid motion tracking beyond flat ground, providing a unified policy for terrain-adaptive locomotion, diverse whole-body behaviors, and teleoperation in complex environments.",
-      "authors": "Hongyi Li, Li Peizhuo, Yucheng Tao et al.",
-      "category": "cs.RO",
-      "published_at": "2026-09-08T09:57:32+00:00",
-      "updated_at": "2026-09-08T09:57:32Z",
-      "title_zh": "PGMT：人形机器人的感知通用运动跟踪"
     }
   ]
 }
