@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-09T11:32:22.161876+00:00",
+  "generated_at": "2026-09-09T11:59:01.666731+00:00",
   "window_start": "2026-09-09T19:00:00+08:00",
-  "window_end": "2026-09-09T19:31:41.403324+08:00",
+  "window_end": "2026-09-09T19:58:21.074227+08:00",
   "total_items": 3,
   "items": [
     {
@@ -21,9 +21,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 29.85,
+      "timeliness": 29.4,
       "writing_value": 5,
-      "total_score": 114.85
+      "total_score": 114.4
     },
     {
       "id": "c8e5658a458709ed5c32e18caefb37a6ae842da4",
@@ -42,9 +42,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 29.47,
+      "timeliness": 29.03,
       "writing_value": 5,
-      "total_score": 114.47
+      "total_score": 114.03
     },
     {
       "id": "cd3908039d05a2c0d7f5de0b2f09bed5fae42b00",
@@ -63,9 +63,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.94,
+      "timeliness": 29.49,
       "writing_value": 0,
-      "total_score": 104.94
+      "total_score": 104.49
     }
   ],
   "fallback_used": false
