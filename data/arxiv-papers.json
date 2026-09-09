@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-09T07:32:44.505415+00:00",
+  "generated_at": "2026-09-09T08:02:08.242605+00:00",
   "total_items": 30,
   "items": [
     {
@@ -10,7 +10,8 @@
       "authors": "Anqi Li, Yuxin Chen, Zhaobo Li et al.",
       "category": "cs.RO",
       "published_at": "2026-09-08T17:59:55+00:00",
-      "updated_at": "2026-09-08T17:59:55Z"
+      "updated_at": "2026-09-08T17:59:55Z",
+      "title_zh": "TANGO：利用全身视觉-语言-动作模型在杂乱环境中进行人形导航"
     },
     {
       "id": "http://arxiv.org/abs/2609.09148v1",
@@ -20,7 +21,8 @@
       "authors": "Chuanruo Ning, Tianrui Wang, Wei-Chiu Ma et al.",
       "category": "cs.RO",
       "published_at": "2026-09-08T17:59:03+00:00",
-      "updated_at": "2026-09-08T17:59:03Z"
+      "updated_at": "2026-09-08T17:59:03Z",
+      "title_zh": "代理政策指导"
     },
     {
       "id": "http://arxiv.org/abs/2609.09119v1",
@@ -30,7 +32,8 @@
       "authors": "Yankai Fu, Ning Chen, Junkai Zhao et al.",
       "category": "cs.RO",
       "published_at": "2026-09-08T17:47:43+00:00",
-      "updated_at": "2026-09-08T17:47:43Z"
+      "updated_at": "2026-09-08T17:47:43Z",
+      "title_zh": "DeCAL：通过接触感知的潜在共同想象实现基于物理的灵巧视觉-语言-动作模型"
     },
     {
       "id": "http://arxiv.org/abs/2609.09073v1",
@@ -40,7 +43,8 @@
       "authors": "Brendan Gould, Zhiyuan Zhang, Panagiotis Tsiotras et al.",
       "category": "cs.RO",
       "published_at": "2026-09-08T17:27:25+00:00",
-      "updated_at": "2026-09-08T17:27:25Z"
+      "updated_at": "2026-09-08T17:27:25Z",
+      "title_zh": "在线、可达性感知、基于采样的运动规划"
     },
     {
       "id": "http://arxiv.org/abs/2609.09069v1",
@@ -50,7 +54,8 @@
       "authors": "Jiahui Zhang, Bonian Han, Gongbo Liang et al.",
       "category": "cs.RO",
       "published_at": "2026-09-08T17:23:37+00:00",
-      "updated_at": "2026-09-08T17:23:37Z"
+      "updated_at": "2026-09-08T17:23:37Z",
+      "title_zh": "使用观察门控过滤重新思考自主主动映射中的学习占用"
     },
     {
       "id": "http://arxiv.org/abs/2609.09066v1",
@@ -60,7 +65,8 @@
       "authors": "Carter Noh, Kyle Crandall, Connor Yates et al.",
       "category": "cs.RO",
       "published_at": "2026-09-08T17:20:07+00:00",
-      "updated_at": "2026-09-08T17:20:07Z"
+      "updated_at": "2026-09-08T17:20:07Z",
+      "title_zh": "使用自主水面舰艇进行目标跟踪的分布式一致性粒子滤波器"
     },
     {
       "id": "http://arxiv.org/abs/2609.09023v1",
@@ -70,7 +76,8 @@
       "authors": "Akhil Ajikumar, Mahya Qorbani, Sakib Reza et al.",
       "category": "cs.RO",
       "published_at": "2026-09-08T16:53:15+00:00",
-      "updated_at": "2026-09-08T16:53:15Z"
+      "updated_at": "2026-09-08T16:53:15Z",
+      "title_zh": "DYAD：同地人工协助的多模式数据集"
     },
     {
       "id": "http://arxiv.org/abs/2609.09012v1",
@@ -80,7 +87,8 @@
       "authors": "Fei Teng, Sheng Wu, Mengfei Duan et al.",
       "category": "cs.CV",
       "published_at": "2026-09-08T16:47:25+00:00",
-      "updated_at": "2026-09-08T16:47:25Z"
+      "updated_at": "2026-09-08T16:47:25Z",
+      "title_zh": "Spheriverse：通过野外球形观察了解 3D 场景"
     },
     {
       "id": "http://arxiv.org/abs/2609.08965v1",
@@ -90,7 +98,8 @@
       "authors": "Yuan Gao, Sebastian Müller, Mattia Piccinini et al.",
       "category": "cs.AI",
       "published_at": "2026-09-08T16:19:06+00:00",
-      "updated_at": "2026-09-08T16:19:06Z"
+      "updated_at": "2026-09-08T16:19:06Z",
+      "title_zh": "PlannerForge：用于自动驾驶中运动规划器基于场景的测试的 LLM 代理"
     },
     {
       "id": "http://arxiv.org/abs/2609.08958v1",
@@ -100,7 +109,8 @@
       "authors": "Nelson Chen, Patrick Meng, Charles Tang et al.",
       "category": "cs.RO",
       "published_at": "2026-09-08T16:14:25+00:00",
-      "updated_at": "2026-09-08T16:14:25Z"
+      "updated_at": "2026-09-08T16:14:25Z",
+      "title_zh": "通过接触感知图神经动力学模型对张拉整体机器人进行模型预测控制"
     },
     {
       "id": "http://arxiv.org/abs/2609.08920v1",
@@ -110,7 +120,8 @@
       "authors": "Benjamin Chang, Michael Amir, Manon Flageat et al.",
       "category": "cs.RO",
       "published_at": "2026-09-08T15:49:10+00:00",
-      "updated_at": "2026-09-08T15:49:10Z"
+      "updated_at": "2026-09-08T15:49:10Z",
+      "title_zh": "通过运动进行远程可检测键控通信"
     },
     {
       "id": "http://arxiv.org/abs/2609.08905v1",
@@ -120,7 +131,8 @@
       "authors": "Boxi Xia, Zijiang Yang, Ryan Shin et al.",
       "category": "cs.RO",
       "published_at": "2026-09-08T15:40:05+00:00",
-      "updated_at": "2026-09-08T15:40:05Z"
+      "updated_at": "2026-09-08T15:40:05Z",
+      "title_zh": "可视可及的工作空间，用于感知感知的人形设计"
     },
     {
       "id": "http://arxiv.org/abs/2609.08886v1",
@@ -130,7 +142,8 @@
       "authors": "Woosang Jeon, Sanghyeok Choi, Minwoo Kim et al.",
       "category": "cs.CV",
       "published_at": "2026-09-08T15:26:00+00:00",
-      "updated_at": "2026-09-08T15:26:00Z"
+      "updated_at": "2026-09-08T15:26:00Z",
+      "title_zh": "FRAME：通过以对象为中心的场景内存的属性读出进行因子检索"
     },
     {
       "id": "http://arxiv.org/abs/2609.08853v1",
@@ -140,7 +153,8 @@
       "authors": "Pietro Noah Crestaz, Mohamed Yassine Kabouri, Nicolas Mansard et al.",
       "category": "cs.RO",
       "published_at": "2026-09-08T15:05:16+00:00",
-      "updated_at": "2026-09-08T15:05:16Z"
+      "updated_at": "2026-09-08T15:05:16Z",
+      "title_zh": "CAST：基于模型的强化学习的交替状态价值目标和扩展策略梯度"
     },
     {
       "id": "http://arxiv.org/abs/2609.08848v1",
@@ -150,7 +164,8 @@
       "authors": "Hongchi Xia, Tianhang Cheng, Wei-Chiu Ma et al.",
       "category": "cs.CV",
       "published_at": "2026-09-08T15:01:49+00:00",
-      "updated_at": "2026-09-08T15:01:49Z"
+      "updated_at": "2026-09-08T15:01:49Z",
+      "title_zh": "FIRE3D：一分钟内前馈交互式 3D 场景重建"
     },
     {
       "id": "http://arxiv.org/abs/2609.08804v1",
@@ -160,7 +175,8 @@
       "authors": "Tejonidhi R. Deshpande, Tingyu Cheng, Josiah Hester",
       "category": "cs.RO",
       "published_at": "2026-09-08T14:31:59+00:00",
-      "updated_at": "2026-09-08T14:31:59Z"
+      "updated_at": "2026-09-08T14:31:59Z",
+      "title_zh": "气动软执行器的实时刺穿检测和恢复"
     },
     {
       "id": "http://arxiv.org/abs/2609.08802v1",
@@ -170,7 +186,8 @@
       "authors": "Xiao Sizhe, Dong Lijing, Bai Rui et al.",
       "category": "cs.RO",
       "published_at": "2026-09-08T14:30:06+00:00",
-      "updated_at": "2026-09-08T14:30:06Z"
+      "updated_at": "2026-09-08T14:30:06Z",
+      "title_zh": "时变拓扑多智能体系统的基于图的安全强化学习"
     },
     {
       "id": "http://arxiv.org/abs/2609.08800v1",
@@ -180,7 +197,8 @@
       "authors": "Aleš Kučera, Karel Zimmermann",
       "category": "cs.RO",
       "published_at": "2026-09-08T14:28:52+00:00",
-      "updated_at": "2026-09-08T14:28:52Z"
+      "updated_at": "2026-09-08T14:28:52Z",
+      "title_zh": "鸵鸟：通过可微动力学中的刚性接触迈出一大步"
     },
     {
       "id": "http://arxiv.org/abs/2609.08770v1",
@@ -190,7 +208,8 @@
       "authors": "Korab Hoxha, Mirza Imamovic, Angelo Henriques et al.",
       "category": "cs.RO",
       "published_at": "2026-09-08T14:04:00+00:00",
-      "updated_at": "2026-09-08T14:04:00Z"
+      "updated_at": "2026-09-08T14:04:00Z",
+      "title_zh": "输入设备的手动和遥控眼内仪器运动的受控比较"
     },
     {
       "id": "http://arxiv.org/abs/2609.08743v1",
@@ -200,7 +219,8 @@
       "authors": "Ze Fu, Pinhao Song, Yutong Hu et al.",
       "category": "cs.RO",
       "published_at": "2026-09-08T13:35:56+00:00",
-      "updated_at": "2026-09-08T13:35:56Z"
+      "updated_at": "2026-09-08T13:35:56Z",
+      "title_zh": "FOCI 政策：关注以对象为中心的交互以实现关系操作策略"
     },
     {
       "id": "http://arxiv.org/abs/2609.08711v1",
@@ -210,7 +230,8 @@
       "authors": "Shanze Wang, Wei Zhang",
       "category": "cs.RO",
       "published_at": "2026-09-08T13:09:35+00:00",
-      "updated_at": "2026-09-08T13:09:35Z"
+      "updated_at": "2026-09-08T13:09:35Z",
+      "title_zh": "DCLP++：学习利用足迹间隙和相对运动进行导航"
     },
     {
       "id": "http://arxiv.org/abs/2609.08678v1",
@@ -220,7 +241,8 @@
       "authors": "Massimiliano Nigro, Hatice Gunes, Micol Spitale et al.",
       "category": "cs.RO",
       "published_at": "2026-09-08T12:44:38+00:00",
-      "updated_at": "2026-09-08T12:44:38Z"
+      "updated_at": "2026-09-08T12:44:38Z",
+      "title_zh": "HiBRIDGE：用于群体机器人交互中可解释对话管理的分层贝叶斯神经网络框架"
     },
     {
       "id": "http://arxiv.org/abs/2609.08673v1",
@@ -230,7 +252,8 @@
       "authors": "Boheng Liu, Ziyu Li, Xia Wu",
       "category": "cs.RO",
       "published_at": "2026-09-08T12:39:36+00:00",
-      "updated_at": "2026-09-08T12:39:36Z"
+      "updated_at": "2026-09-08T12:39:36Z",
+      "title_zh": "BIFTA：针对未知传感器的受大脑启发的少量触觉适应"
     },
     {
       "id": "http://arxiv.org/abs/2609.08669v1",
@@ -240,7 +263,8 @@
       "authors": "Gabriel Vallat, Maryam Kamgarpour, Stefana Parascho",
       "category": "cs.RO",
       "published_at": "2026-09-08T12:32:42+00:00",
-      "updated_at": "2026-09-08T12:32:42Z"
+      "updated_at": "2026-09-08T12:32:42Z",
+      "title_zh": "学习构建不断调整的覆盖结构"
     },
     {
       "id": "http://arxiv.org/abs/2609.08642v1",
@@ -250,7 +274,8 @@
       "authors": "Wenyan Yang, Arsenii Mustafin, Dominik Baumann et al.",
       "category": "cs.LG",
       "published_at": "2026-09-08T12:12:13+00:00",
-      "updated_at": "2026-09-08T12:12:13Z"
+      "updated_at": "2026-09-08T12:12:13Z",
+      "title_zh": "SUN：强化学习的新奇之处"
     },
     {
       "id": "http://arxiv.org/abs/2609.08638v1",
@@ -260,7 +285,8 @@
       "authors": "Tinghe Ding, Jiahao Li, He Wang",
       "category": "cs.RO",
       "published_at": "2026-09-08T12:07:52+00:00",
-      "updated_at": "2026-09-08T12:07:52Z"
+      "updated_at": "2026-09-08T12:07:52Z",
+      "title_zh": "CASD：用于多阶段机器人操作的块对齐语义蒸馏"
     },
     {
       "id": "http://arxiv.org/abs/2609.08626v1",
@@ -270,7 +296,8 @@
       "authors": "Eunseong Jang, YuJin Chung, Sang Jun Lee et al.",
       "category": "cs.RO",
       "published_at": "2026-09-08T12:00:00+00:00",
-      "updated_at": "2026-09-08T12:00:00Z"
+      "updated_at": "2026-09-08T12:00:00Z",
+      "title_zh": "MFVINS：基于多鱼眼相机的视觉惯性系统"
     },
     {
       "id": "http://arxiv.org/abs/2609.08583v1",
@@ -280,7 +307,8 @@
       "authors": "Ramona Häuselmann, Mario A. V. Saucedo, Christoforos Kanellakis et al.",
       "category": "cs.RO",
       "published_at": "2026-09-08T11:18:32+00:00",
-      "updated_at": "2026-09-08T11:18:32Z"
+      "updated_at": "2026-09-08T11:18:32Z",
+      "title_zh": "通过高斯上下文分布估计语义歧义以进行 VLM 驱动的可遍历性分析"
     },
     {
       "id": "http://arxiv.org/abs/2609.08512v1",
@@ -290,7 +318,8 @@
       "authors": "Shaocong Wang, Shiliang Shao, Ting Wang et al.",
       "category": "cs.RO",
       "published_at": "2026-09-08T09:58:32+00:00",
-      "updated_at": "2026-09-08T09:58:32Z"
+      "updated_at": "2026-09-08T09:58:32Z",
+      "title_zh": "TASG-Explore：不平坦地形上地面机器人的可遍历性感知扇区引导探索"
     },
     {
       "id": "http://arxiv.org/abs/2609.08511v1",
@@ -300,7 +329,8 @@
       "authors": "Hongyi Li, Li Peizhuo, Yucheng Tao et al.",
       "category": "cs.RO",
       "published_at": "2026-09-08T09:57:32+00:00",
-      "updated_at": "2026-09-08T09:57:32Z"
+      "updated_at": "2026-09-08T09:57:32Z",
+      "title_zh": "PGMT：人形机器人的感知通用运动跟踪"
     }
   ]
 }
