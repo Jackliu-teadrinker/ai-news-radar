@@ -1,7 +1,37 @@
 {
-  "generated_at": "2026-09-09T04:31:43.848083+00:00",
+  "generated_at": "2026-09-09T05:16:13.916034+00:00",
   "total_items": 30,
   "items": [
+    {
+      "id": "http://arxiv.org/abs/2609.09158v1",
+      "title": "TANGO: Humanoid Navigation in Cluttered Environments with a Whole-Body Vision-Language-Action Model",
+      "url": "https://arxiv.org/abs/2609.09158",
+      "summary": "We study the problem of navigating cluttered indoor environments with a humanoid robot. Unlike conventional methods that model navigation as a 2D path planning problem, humanoid traversal in cluttered environments requires continuous geometry-aware whole-body adaptation, including coordinated arm placement, torso adjustment, and gait modulation for collision-free movement through complex 3D spaces. We introduce TANGO, the first whole-body vision-language navigation framework for language-conditioned humanoid traversal in cluttered environments. Given a natural-language instruction and egocentric RGB observations, TANGO directly predicts 29-DoF joint-space actions for downstream whole-body control. We train TANGO entirely in simulation by synthesizing diverse collision-free traversal behaviors via global path planning, kinematic whole-body motion generation, obstacle-aware motion editing, and RL-based tracking. This pipeline provides dynamically feasible action supervision for learning language-conditioned whole-body policies. In extensive simulation experiments, TANGO demonstrates state-of-the-art performance in vision-language navigation, while outperforming strong modular baselines in navigating challenging scenes requiring obstacle negotiation. Lastly, we deploy TANGO zero-shot on a Unitree G1 humanoid robot, and observe robust language-guided traversal in cluttered real-world scenes without training on any real-world navigation data.",
+      "authors": "Anqi Li, Yuxin Chen, Zhaobo Li et al.",
+      "category": "cs.RO",
+      "published_at": "2026-09-08T17:59:55+00:00",
+      "updated_at": "2026-09-08T17:59:55Z"
+    },
+    {
+      "id": "http://arxiv.org/abs/2609.09148v1",
+      "title": "Proxy Policy Steering",
+      "url": "https://arxiv.org/abs/2609.09148",
+      "summary": "Generalist robot policies carry broad manipulation priors from large-scale data, but specializing them to a new task remains the deployment bottleneck. This requires eliciting task-specific behavior from limited demonstrations without degrading their broad capabilities. We introduce Proxy Policy Steering (PPS), an inference-time adaptation method that resolves this challenge by training two lightweight proxy policies whose calibrated velocity-space difference steers the frozen base sampler. A reference proxy models the frozen base's behavior on target-task observations, and a task proxy, initialized from the reference, captures how this behavior changes under task supervision. Their difference forms a calibrated velocity-space residual that steers the frozen base sampler at every denoising step. We identify the conditions under which this residual isolates the change induced by task supervision, and validate them empirically. Because the base is never directly modified, its broad capabilities remain available at inference, including behaviors such as recovery from failure that the demonstrations themselves do not exercise. Adaptation requires only forward velocity predictions from the base, making PPS lightweight to train and applicable even without access to the base's parameters. On 8 real-world and 4 simulation manipulation tasks, PPS lifts the state-of-the-art pi 0.5 base policy by 53% absolute success rate on average, with zero-to-one gains on tasks the base never solves, while preserving the base's broad capabilities. PPS outperforms LoRA fine-tuning, from-scratch specialists, residual policies, and prior inference-time steering methods.",
+      "authors": "Chuanruo Ning, Tianrui Wang, Wei-Chiu Ma et al.",
+      "category": "cs.RO",
+      "published_at": "2026-09-08T17:59:03+00:00",
+      "updated_at": "2026-09-08T17:59:03Z"
+    },
+    {
+      "id": "http://arxiv.org/abs/2609.09119v1",
+      "title": "DeCAL: Towards Physically-Grounded Dexterous Vision-Language-Action Models via Contact-Aware Latent Co-Imagination",
+      "url": "https://arxiv.org/abs/2609.09119",
+      "summary": "Dexterous manipulation involves contact-rich and fine-grained interactions with the physical world, posing significant challenges for existing vision-language-action (VLA) models due to severe visual occlusions and complex contact dynamics. While recent works have incorporated tactile sensing into robotic manipulation, most approaches still rely on homogeneous multimodal fusion, lacking adaptive tactile integration and explicit modeling of physical dynamics. In this work, we present DeCAL, a physically-grounded dexterous vision-language-action model that unifies understanding, imagination and action generation for contact-rich dexterous manipulation. Built upon a Mixture-of-Transformers (MoT) architecture, DeCAL leverages specialized experts for each capability while enabling efficient information flow among them. To effectively leverage tactile information, we introduce Adaptive Visuo-Tactile Fusion that dynamically regulates tactile interactions via a contact-aware gating strategy. Furthermore, we propose Visuo-Tactile Latent Co-Imagination to jointly model visual and tactile dynamics, equipping the policy with implicit physical world knowledge. Experimental results show that DeCAL consistently achieves state-of-the-art performance across all tasks, attaining a 71% average success rate and an 83.4% progress success rate, while also demonstrating strong generalization to unseen scenarios. The website is available at https://aureleopku.github.io/DeCAL.",
+      "authors": "Yankai Fu, Ning Chen, Junkai Zhao et al.",
+      "category": "cs.RO",
+      "published_at": "2026-09-08T17:47:43+00:00",
+      "updated_at": "2026-09-08T17:47:43Z"
+    },
     {
       "id": "http://arxiv.org/abs/2609.09073v1",
       "title": "Online, Reachability-Aware, Sampling-Based Motion Planning",
@@ -271,36 +301,6 @@
       "category": "cs.RO",
       "published_at": "2026-09-08T09:57:32+00:00",
       "updated_at": "2026-09-08T09:57:32Z"
-    },
-    {
-      "id": "http://arxiv.org/abs/2609.08493v1",
-      "title": "AURORA: Active Uncertainty-Driven Re-Orientation for In-Hand Reconstruction",
-      "url": "https://arxiv.org/abs/2609.08493",
-      "summary": "Observing objects grasped by a robot hand is challenging due to severe visual occlusions. Although in-hand manipulation can expose hidden surfaces, existing approaches often rely on predefined or open-loop reorientation strategies that do not explicitly target under-observed regions. We propose AURORA, an active 3D reconstruction framework that closes the loop between online object-centric reconstruction and in-hand reorientation. At its core, Ray-GPIS estimates direction-wise reconstruction uncertainty along candidate viewing rays and selects next-best-view targets using an uncertainty--novelty objective, which are realized through an axis-conditioned in-hand rotation policy. The resulting RGB-D observations are fused incrementally using CAD-free 6D pose tracking and lightweight geometric reconstruction. Experiments demonstrate that AURORA improves reconstruction quality and information-acquisition efficiency over non-active rotation strategies, while Ray-GPIS also outperforms active view-planning baselines in reconstruction performance, action-ranking quality, and planning efficiency. Targeted ablations further validate its robustness to hand occlusion and pose errors. The project webpage is available at https://aurorahand.github.io/",
-      "authors": "Feiyu Zhao, Yuetong Li, Chenxi Xiao",
-      "category": "cs.RO",
-      "published_at": "2026-09-08T09:35:01+00:00",
-      "updated_at": "2026-09-08T09:35:01Z"
-    },
-    {
-      "id": "http://arxiv.org/abs/2609.08490v1",
-      "title": "Multi-bounce Drum Roll with Optimized Active Tricks to Leverage Soft Embodiment",
-      "url": "https://arxiv.org/abs/2609.08490",
-      "summary": "This paper presents a soft robotic drummer for accurate and efficient drum rolls. High-frequency drum rolls require the \"multi-bounce technique,\" where a drumstick bounces multiple times with a single stroke. In robotic reproduction of this technique, the body's elasticity is key, while the fine motion during the stroke is also crucial for maximizing the potential of that elasticity. Therefore, we design two tricks: i) Tap-Pull (TP) trick to increase the number of rebounds by adding a pulling motion after impact; and ii) Micro-Pulse (MP) trick to keep the drumming volume by injecting small oscillations during the stroke. Due to the nonlinear complexity of soft embodiment, both tricks are efficiently tuned using Bayesian optimization in a data-driven manner for accomplishing the respective objectives quantified. We evaluated the optimized behaviors with soft and rigid end-effectors. As a result, the soft TP achieved the highest bounce count (12.25 per stroke) with uniform intervals. The soft MP suppressed the volume decay, yielding 6.8-times higher acoustic efficiency compared to the rigid MP. These results indicate that the proposed tricks with the combination of elasticity and optimization can make robots play excellent drum rolls.",
-      "authors": "Naoto Yamanaka, Takanori Jin, Taisuke Kobayashi",
-      "category": "cs.RO",
-      "published_at": "2026-09-08T09:32:18+00:00",
-      "updated_at": "2026-09-08T09:32:18Z"
-    },
-    {
-      "id": "http://arxiv.org/abs/2609.08444v1",
-      "title": "Safe Task Planning with Long-Term Graph Memory for Embodied Agents",
-      "url": "https://arxiv.org/abs/2609.08444",
-      "summary": "Large language models (LLMs) and vision-language models (VLMs) have significantly advanced zero-shot task planning for embodied agents. However, most LLM- and VLM-driven methods struggle to generate safe high-level actions due to a lack of physical risk awareness, particularly under partial observability, where hazards lie outside the immediate field of view. To address this challenge, we propose a novel safe task-planning framework, SafeMem, which constructs and maintains a long-term semantic graph memory of the open and dynamic environment. Based on egocentric observations, the proposed framework incrementally accumulates knowledge about surrounding objects and their relationships with a graph. Then, an LLM-based risk predictor evaluates candidate actions using the graph memory, triggering a conservatism-modulated replanning loop with explanations for detected hazards. Extensive experiments on the IS-Bench benchmark and a real-world robot platform demonstrate that the SafeMem framework substantially improves safe success rates compared to state-of-the-art VLM-driven task planners. Video results are available on our webpage: https://sites.google.com/view/safemem.",
-      "authors": "Siyuan Li, Taiyan Lang, Aoqi Yan et al.",
-      "category": "cs.RO",
-      "published_at": "2026-09-08T08:49:50+00:00",
-      "updated_at": "2026-09-08T08:49:50Z"
     }
   ]
 }
