@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-08T23:28:18.882552+00:00",
+  "generated_at": "2026-09-09T01:11:11.704627+00:00",
   "window_start": "2026-09-08T19:00:00+08:00",
-  "window_end": "2026-09-09T07:27:18.522870+08:00",
-  "total_items": 9,
+  "window_end": "2026-09-09T09:09:51.055422+08:00",
+  "total_items": 14,
   "items": [
     {
       "id": "168dcab64d5ea01570bb709c0f97d9415debd7d3",
@@ -21,9 +21,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 19.63,
+      "timeliness": 17.92,
       "writing_value": 5,
-      "total_score": 104.63
+      "total_score": 102.92
     },
     {
       "id": "02215d377f41e772051293e4c76d877b7193a89d",
@@ -42,9 +42,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 21.61,
+      "timeliness": 19.9,
       "writing_value": 0,
-      "total_score": 96.61
+      "total_score": 94.9
+    },
+    {
+      "id": "f73d6090560e9027e437614b0d98837c3b55fc2a",
+      "title": "Eufy's C28 robot vacuum and mop gets $300 discount in Amazon's Labor Day sale - Mashable",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9WRFQzUENOaGxtV205enl1ZU42WHFHcnAteVJLOHM4RU0zOGRmbUt6Q05JOEdHdG9ReEN4Z0NxRW5tbDR0dHB2dHFUazhzeDRuTDRsY1ltdHhzVzB3UlpBckp3SnJVQmh1X1k4YWpmSDVsZWk5bjZQcFZGYVo4UQ?oc=5",
+      "published_at": "2026-09-08T18:33:04+00:00",
+      "category": "GN: robot vacuum",
+      "gn_label": "robotics",
+      "site_name": "GN: robot vacuum",
+      "source": "GN: robot vacuum",
+      "site_id": "GN: robot vacuum",
+      "description": "Eufy's C28 robot vacuum and mop gets $300 discount in Amazon's Labor Day sale  Mashable",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 23.39,
+      "writing_value": 0,
+      "total_score": 98.39
     },
     {
       "id": "88f697a4a6cfe321f8c408b3f5d51ea01162999a",
@@ -63,9 +84,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 22.42,
+      "timeliness": 20.72,
       "writing_value": 5,
-      "total_score": 107.42
+      "total_score": 105.72
     },
     {
       "id": "7e0075c991ed79ebafa8a77c47f02bc37fe99ab0",
@@ -84,9 +105,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.66,
+      "timeliness": 24.96,
       "writing_value": 0,
-      "total_score": 101.66
+      "total_score": 99.96
     },
     {
       "id": "061b935a53ec127d24fe88fb5219d92808bc7426",
@@ -105,9 +126,51 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 18.42,
+      "timeliness": 16.72,
       "writing_value": 5,
-      "total_score": 103.42
+      "total_score": 101.72
+    },
+    {
+      "id": "874706933afc4d9206fb27c8661a2c0ff95fcf62",
+      "title": "Simplifying Lift Truck Automation Deployment - Robotics Tomorrow",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxObzdYOHNBTzg5bTFYWW5ldWZNTkRDNlBPM3gwbENRYUdscHNxSFQ5akY5aGpraHRoTjlkUThmWV9LNzQycDBMVWJmQ3ZaUDFXa05SQ2hSczBNbUthTmNnYTdodE5nOGR1M1U3enNRQVgzaU5aWUtiVEFXZkotdUNBUDZFV2hnRXNGTTVFOUtNUkZPSHUwYTBNSXpzeVMwZ3d6?oc=5",
+      "published_at": "2026-09-08T13:57:29+00:00",
+      "category": "GN: industrial robot",
+      "gn_label": "robotics",
+      "site_name": "GN: industrial robot",
+      "source": "GN: industrial robot",
+      "site_id": "GN: industrial robot",
+      "description": "Simplifying Lift Truck Automation Deployment  Robotics Tomorrow",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 18.8,
+      "writing_value": 0,
+      "total_score": 93.8
+    },
+    {
+      "id": "d03d5d4c56852b613556df116fa69936cb22edb2",
+      "title": "宇树科技上市暴涨6倍后市值蒸发2200亿，谁在买单？ - 凤凰网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5IWm9RTWF6Y0lfSGI1TDEtZi1vbVFmT3g5SEFXTXlvMWZETUVfVFhJcGl5dlJXSEE5WDNKOElZQ2EwX3otTGR4RUxUMDR4WGZ6?oc=5",
+      "published_at": "2026-09-08T20:44:24+00:00",
+      "category": "GN: 宇树科技",
+      "gn_label": "robotics",
+      "site_name": "GN: 宇树科技",
+      "source": "GN: 宇树科技",
+      "site_id": "GN: 宇树科技",
+      "description": "宇树科技上市暴涨6倍后市值蒸发2200亿，谁在买单？  凤凰网",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 25.58,
+      "writing_value": 0,
+      "total_score": 100.58
     },
     {
       "id": "b67a63d684041376fcfad53a22911e923365360a",
@@ -126,9 +189,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 18.45,
+      "timeliness": 16.74,
       "writing_value": 0,
-      "total_score": 93.45
+      "total_score": 91.74
+    },
+    {
+      "id": "aaef3e67e8c0b7eb3c180f6db68f03dc5a8368f9",
+      "title": "宇树科技（688836）9月8日主力资金净卖出2.58亿元 - Sohu",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPTVBqQmpvT2hhSUw4WjBaV0F0MVdPdW5pcTBnQy02Ymd0Rm53TnFYT1BMNGp2SllpTXF3Qkx2SXB2YlZpSUN6VVp0bTEyWTRLeDlYLTlMTkpuN3MxNVJRa0JCbDRXZGF2S1FfZnFyYjJtb3F2UFFSdFNVY0szeGNPN294RUd0b3R4?oc=5",
+      "published_at": "2026-09-09T00:33:53+00:00",
+      "category": "GN: 宇树科技",
+      "gn_label": "robotics",
+      "site_name": "GN: 宇树科技",
+      "source": "GN: 宇树科技",
+      "site_id": "GN: 宇树科技",
+      "description": "宇树科技（688836）9月8日主力资金净卖出2.58亿元  Sohu",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.4,
+      "writing_value": 0,
+      "total_score": 104.4
     },
     {
       "id": "efa7718ca623fb8109d17994469c8902cf4331df",
@@ -147,30 +231,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 17.62,
+      "timeliness": 15.91,
       "writing_value": 0,
-      "total_score": 107.62
-    },
-    {
-      "id": "0142a1735ed73ae82891509fc20eaa14510fcd3b",
-      "title": "工厂里无人敢靠近的机械臂 被景区拿来抓人玩？ - 驱动之家",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5MYVdsSGhCeVJRNV9xSzl4ZHA0a2VPY3Y0RXF0V0Jxd29LVC1Fd0lqWVl0dTdaVVZ0SmZ2X21qd1R3UFR1bERpQW5nMUo3VWhwbHVqUjNLWmE?oc=5",
-      "published_at": "2026-09-08T22:49:00+00:00",
-      "category": "GN: 机械臂",
-      "gn_label": "robotics",
-      "site_name": "GN: 机械臂",
-      "source": "GN: 机械臂",
-      "site_id": "GN: 机械臂",
-      "description": "工厂里无人敢靠近的机械臂 被景区拿来抓人玩？  驱动之家",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 29.36,
-      "writing_value": 0,
-      "total_score": 104.36
+      "total_score": 105.91
     },
     {
       "id": "33858e6a45c95e7d2f86417b4b183f51599541e4",
@@ -189,9 +252,51 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 19.05,
+      "timeliness": 17.34,
       "writing_value": 0,
-      "total_score": 94.05
+      "total_score": 92.34
+    },
+    {
+      "id": "0142a1735ed73ae82891509fc20eaa14510fcd3b",
+      "title": "工厂里无人敢靠近的机械臂 被景区拿来抓人玩？ - 驱动之家",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5MYVdsSGhCeVJRNV9xSzl4ZHA0a2VPY3Y0RXF0V0Jxd29LVC1Fd0lqWVl0dTdaVVZ0SmZ2X21qd1R3UFR1bERpQW5nMUo3VWhwbHVqUjNLWmE?oc=5",
+      "published_at": "2026-09-08T22:49:00+00:00",
+      "category": "GN: 机械臂",
+      "gn_label": "robotics",
+      "site_name": "GN: 机械臂",
+      "source": "GN: 机械臂",
+      "site_id": "GN: 机械臂",
+      "description": "工厂里无人敢靠近的机械臂 被景区拿来抓人玩？  驱动之家",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 27.65,
+      "writing_value": 0,
+      "total_score": 102.65
+    },
+    {
+      "id": "45aceb8039993f1cf9ffbcefed2038ef6748118b",
+      "title": "“3米高处轻松搬起零部件”……黄色机械臂占领起亚PBV工厂 - 아시아경제",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE80THdWVHBWeHhtb2J3LWE4TkdrVXVSNFdjaHhRVklkQ3RtWXI5UVByQXYzMklpNGhLMm51V0Z3YnZDNE9TdTVlR3NWMU81VE9MRjNuaEVrTEpPZkhhWXNoai0zVXE?oc=5",
+      "published_at": "2026-09-08T23:30:00+00:00",
+      "category": "GN: 机械臂",
+      "gn_label": "robotics",
+      "site_name": "GN: 机械臂",
+      "source": "GN: 机械臂",
+      "site_id": "GN: 机械臂",
+      "description": "“3米高处轻松搬起零部件”……黄色机械臂占领起亚PBV工厂  아시아경제",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 28.34,
+      "writing_value": 0,
+      "total_score": 103.34
     }
   ],
   "fallback_used": false
