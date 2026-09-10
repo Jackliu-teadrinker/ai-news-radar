@@ -4,7 +4,7 @@
 规则:
 - 阈值: total_score >= 60 (5 维评分)
 - dedup: 跨 24h 用 URL hash 去重 (同 URL 不重复入)
-- 上限: 每天 50 条 (防爆)
+- 上限: 每天 100 条 (防爆)
 - 输出: data/curated/YYYY-MM-DD.json (按 CST 日期)
 - 字段精简: id/title/title_zh/url/published_at/source/site_name/description/total_score/relevance/authority/depth/timeliness/writing_value/ai_label
 - 增量: 同一天多次 run 追加不覆盖
@@ -20,9 +20,9 @@ from zoneinfo import ZoneInfo
 
 CURATED_DIR = "data/curated"
 # Jack 2026-06-10 18:58 CST 方案 A. 实际 score 范围 60-130 (relevance*100 + authority + depth + writing + timeliness).
-# 阈值 60 几近全过 → 调到 80 (取 top ~50/d) 才有意义。动态调整看 daily volume.
+# 阈值 60 几近全过 → 调到 80 才有意义。动态调整看 daily volume.
 SCORE_THRESHOLD = 80
-DAILY_MAX = 50
+DAILY_MAX = 100
 SHANGHAI = ZoneInfo("Asia/Shanghai")
 
 
