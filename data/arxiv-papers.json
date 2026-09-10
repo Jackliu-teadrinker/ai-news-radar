@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-10T00:13:34.647498+00:00",
-  "total_items": 24,
+  "generated_at": "2026-09-10T01:15:21.187924+00:00",
+  "total_items": 20,
   "items": [
     {
       "id": "http://arxiv.org/abs/2609.09158v1",
@@ -221,50 +221,6 @@
       "published_at": "2026-09-08T13:35:56+00:00",
       "updated_at": "2026-09-08T13:35:56Z",
       "title_zh": "FOCI 政策：关注以对象为中心的交互以实现关系操作策略"
-    },
-    {
-      "id": "http://arxiv.org/abs/2609.08711v1",
-      "title": "DCLP++: Learning to Navigate with Footprint Clearance and Relative Motion",
-      "url": "https://arxiv.org/abs/2609.08711",
-      "summary": "We present DCLP++, a local navigation frameworkthat uses footprint clearance as the geometric basis for studying relative motion features in dynamic environments. Each valid LiDAR return is mapped to its shortest Euclidean distance from the filled robot footprint before reciprocal encoding, replacing distance from the sensor with distance to the occupied body. Radial measurementsor simulated planar relative velocities provide short-horizon features without static-dynamic labels in the policy input. A preliminary study uses a rectangular robot with a speed limit of 1 m/s among 20 moving obstacles. On 100 fixed validation tasks, two selected training seeds yield mean success rates of 42% with sensor rangeand 70% with footprint clearance after 200,000 environment steps.Motion variants show mixed additional gains. These results supportthe clearance-based observation in the evaluated setting; reliable motion benefits and transfer across robots require further evaluation.",
-      "authors": "Shanze Wang, Wei Zhang",
-      "category": "cs.RO",
-      "published_at": "2026-09-08T13:09:35+00:00",
-      "updated_at": "2026-09-08T13:09:35Z",
-      "title_zh": "DCLP++：学习利用足迹间隙和相对运动进行导航"
-    },
-    {
-      "id": "http://arxiv.org/abs/2609.08678v1",
-      "title": "HiBRIDGE: A Hierarchical Bayesian Neural Network Framework for Interpretable Dialogue Management in Group-Robot Interaction",
-      "url": "https://arxiv.org/abs/2609.08678",
-      "summary": "In multi-party human-robot interaction, a robot must continuously decide whom to address and what to say to participate effectively in the conversation. In real-world interactions, this is challenging because several behaviours may be plausible at the same time: a robot might continue a topic with one participant, involve another through a question, or address the whole group, with the appropriate choice depending on both whom it addresses and the interaction context. Current approaches remain limited in representing uncertainty when several behaviours are plausible and in structuring decisions into semantically meaningful intermediate steps that make robot decisions easier to interpret. Addressing these, we present HiBRIDGE, a hierarchical Bayesian neural network framework for group-robot dialogue management. Its Bayesian formulation enables uncertainty-aware prediction and robust learning from limited interaction data, while the hierarchical approach formulates behaviour selection as a structured, multi-stage decision process. We further use decision-tree surrogates to investigate whether this structure can support more interpretable explanations. Across three offline group-HRI datasets, our findings show that Bayesian formulations outperform their deterministic counterparts and several state-of-the-art baselines. Next, through an online study (N=20), we show that explanations derived from the hierarchical model are rated as more helpful for understanding robot behaviour and are preferred over those derived from the flat model. Finally, through our in-person study (N=12), we demonstrate the feasibility of HiBRIDGE for autonomous real-time group interaction, with both hierarchical and flat Bayesian variants positively perceived. Overall, HiBRIDGE combines strong predictive performance with a structured decision process that supports more interpretable explanations of robot behaviour.",
-      "authors": "Massimiliano Nigro, Hatice Gunes, Micol Spitale et al.",
-      "category": "cs.RO",
-      "published_at": "2026-09-08T12:44:38+00:00",
-      "updated_at": "2026-09-08T12:44:38Z",
-      "title_zh": "HiBRIDGE：用于群体机器人交互中可解释对话管理的分层贝叶斯神经网络框架"
-    },
-    {
-      "id": "http://arxiv.org/abs/2609.08673v1",
-      "title": "BIFTA: Brain-Inspired Few-Shot Tactile Adaptation for Unknown Sensors",
-      "url": "https://arxiv.org/abs/2609.08673",
-      "summary": "Advances in tactile sensing have made contact-rich perception possible, accelerating progress in robotic manipulation, material understanding, and embodied interaction. However, because optical design, elastomer mechanics, and imaging geometry differ substantially across tactile sensors, models trained on known sensor types can suffer an abrupt performance collapse on unknown sensors. To address this problem, we propose the Brain-Inspired Few-Shot Tactile Adaptation (BIFTA) framework; it draws on the brain's rapid sensory adaptation mechanism to adapt a frozen encoder to an unknown tactile sensor from a small labeled support set. BIFTA preserves pretrained representations through dual-view statistical memory, constructs support-conditioned spectral graphs to repair sensor-dependent feature neighborhoods, and applies uncertainty-gated recurrent propagation to strengthen reliable cross-query evidence. Extensive benchmarks across three tactile datasets show that BIFTA substantially improves adaptation to unknown sensors: with only 10\\% labeled target data on SITR, it raises mean Sparsh accuracy from 6.86\\% for the frozen source classifier to 87.09\\%, exceeding the strongest implemented prior comparison by 47.22 percentage points, and these gains generalize across datasets, pretrained backbones, and tactile tasks. These results validate BIFTA for data-efficient adaptation to unknown tactile sensors and offer a promising route toward tactile models that transfer across heterogeneous hardware.",
-      "authors": "Boheng Liu, Ziyu Li, Xia Wu",
-      "category": "cs.RO",
-      "published_at": "2026-09-08T12:39:36+00:00",
-      "updated_at": "2026-09-08T12:39:36Z",
-      "title_zh": "BIFTA：针对未知传感器的受大脑启发的少量触觉适应"
-    },
-    {
-      "id": "http://arxiv.org/abs/2609.08669v1",
-      "title": "Learning to build covering structures with continuous adjustments",
-      "url": "https://arxiv.org/abs/2609.08669",
-      "summary": "Robotic construction offers the potential to use materials more efficiently and create complex geometries, but current methods rely on rigid, high-precision plans that cannot accommodate the tolerances, inaccuracies, and unexpected changes inherent in physical fabrication. In this work, we introduce a reinforcement learning approach that forgoes predefined plans entirely, instead generating construction sequences adaptively as the structure is built. Our method operates on graph-structured state representations and a mixed (parameterized) action space, requiring both discrete block selection and continuous placement parameters. Because the stability simulation of a structure is computationally heavy, we develop an efficient exploration strategy by incorporating unilateral edges into graph neural networks, extending soft actor-critic (SAC) to this hybrid setting. We evaluate our algorithm, HSAC, against the prior method hybrid-PPO (HPPO), demonstrating significantly higher asymptotic performance and good sample efficiency. We also demonstrate HSAC's robustness to hyperparameter choices and its exploration capability, handling up to 10 discrete actions without performance degradation. Finally, we validate our approach on a physical two-robot setup, successfully building a spanning arch with 3D-printed blocks in closed-loop execution, confirming that policies trained in simulation transfer to real hardware.",
-      "authors": "Gabriel Vallat, Maryam Kamgarpour, Stefana Parascho",
-      "category": "cs.RO",
-      "published_at": "2026-09-08T12:32:42+00:00",
-      "updated_at": "2026-09-08T12:32:42Z",
-      "title_zh": "学习构建不断调整的覆盖结构"
     }
   ]
 }
