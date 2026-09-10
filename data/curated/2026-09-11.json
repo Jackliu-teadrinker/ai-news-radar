@@ -1,9 +1,9 @@
 {
   "date": "2026-09-11",
-  "generated_at": "2026-09-10T22:38:43.838309+00:00",
+  "generated_at": "2026-09-10T22:52:25.778935+00:00",
   "score_threshold": 80,
   "total_items": 100,
-  "new_added": 15,
+  "new_added": 1,
   "items": [
     {
       "id": "793799e98e699fa9",
@@ -571,6 +571,27 @@
       "timeliness": 24.87,
       "writing_value": 0,
       "total_score": 114.87
+    },
+    {
+      "id": "67365ce9e936ef0d",
+      "title": "The da Vinci 5 robot demonstrates its precise ability by grabbing rubber bands on a surgical model. The robot is controlled by humans and can even communicate the feel of different weights to operators. - Kingsport Times News",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5rLVpud0VBWmJZM0puOUJFN3Mxb290cnpSUURWSHpMeXZMWVh5NTUxdGFkUmM4RWlYSDJQalRHSnpoTEZTWW5BNGRXcE80V2dOZVV5RDYwd2VoLWZ0VE9pa3Jn?oc=5",
+      "published_at": "2026-09-10T22:30:29+00:00",
+      "category": "国外机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国外机器人资讯",
+      "source": "国外机器人资讯",
+      "site_id": "国外机器人资讯",
+      "description": "The da Vinci 5 robot demonstrates its precise ability by grabbing rubber bands on a surgical model. The robot is controlled by humans and can even communicate the feel of different weights to operators.  Kingsport Times News",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 5,
+      "timeliness": 29.84,
+      "writing_value": 5,
+      "total_score": 114.84
     },
     {
       "id": "eb31b67fa0ff0d74",
@@ -2083,27 +2104,6 @@
       "timeliness": 23.86,
       "writing_value": 0,
       "total_score": 98.86
-    },
-    {
-      "id": "a7b11cd5a8974a2a",
-      "title": "Hyundai Motor Group Invites Global Tech Talent to Tech Talent Forum 2026 in Pursuit of Physical AI Innovation - hyundai.com",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1zWkt0dmRMd3dvY3ppUjkybzhiNGVydmFHWjhUVm1LRy1odGlQRGR4U0NnaGlqdzZoWk5HNGpVWkJ0c1M2R0pOTjBmUmVFZTlZb2FrMnBVLTRWWDRxRGI3YjFzd25HSjRjaVM0a2VfVHA?oc=5",
-      "published_at": "2026-09-10T16:00:00+00:00",
-      "category": "国外物理AI资讯",
-      "gn_label": "physical_ai",
-      "site_name": "国外物理AI资讯",
-      "source": "国外物理AI资讯",
-      "site_id": "国外物理AI资讯",
-      "description": "Hyundai Motor Group Invites Global Tech Talent to Tech Talent Forum 2026 in Pursuit of Physical AI Innovation  hyundai.com",
-      "ai_score": 50.0,
-      "ai_label": "physical_ai",
-      "relevance": 0.5,
-      "authority": 10,
-      "depth": 5,
-      "timeliness": 28.78,
-      "writing_value": 5,
-      "total_score": 98.78
     }
   ]
 }
