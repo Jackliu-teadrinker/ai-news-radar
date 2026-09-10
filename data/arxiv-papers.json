@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-09T22:05:05.461788+00:00",
-  "total_items": 28,
+  "generated_at": "2026-09-10T00:13:34.647498+00:00",
+  "total_items": 24,
   "items": [
     {
       "id": "http://arxiv.org/abs/2609.09158v1",
@@ -265,50 +265,6 @@
       "published_at": "2026-09-08T12:32:42+00:00",
       "updated_at": "2026-09-08T12:32:42Z",
       "title_zh": "学习构建不断调整的覆盖结构"
-    },
-    {
-      "id": "http://arxiv.org/abs/2609.08642v1",
-      "title": "SUN: Reaching for Novelty in Reinforcement Learning",
-      "url": "https://arxiv.org/abs/2609.08642",
-      "summary": "Exploration in reinforcement learning (RL) remains a fundamental challenge. Recent goal-conditioned RL strategies (which select goals to encourage broader state coverage) have shown promising results, but none scores a goal by novelty and reachability jointly: the two signals are traded off by hand, applied in sequence, or one is neglected outright. In this paper, we introduce a reachability-aware goal-selection framework that explicitly integrates these two aspects, and that can be seamlessly incorporated into any off-policy RL algorithm. To this aim, we propose SUccessor-to-Novelty (SUN), an indicator derived from successor value functions to identify goals that are both novel and reachable. We prove that SUN recovers count-based bonuses in the limit, bounds short-horizon hitting probabilities, and provably rejects unreachable goals. We further present an adaptive goal-selection strategy that leverages these properties, and an accurate yet lightweight pseudocount to avoid the overhead of classic methods. We back up all our claims with thorough benchmarks: SUN consistently outperforms state-of-the-art methods in standard and novel environments with unreachable or hard-to-reach states, irreversible transitions, obstacles, mazes, and unbounded spaces.",
-      "authors": "Wenyan Yang, Arsenii Mustafin, Dominik Baumann et al.",
-      "category": "cs.LG",
-      "published_at": "2026-09-08T12:12:13+00:00",
-      "updated_at": "2026-09-08T12:12:13Z",
-      "title_zh": "SUN：强化学习的新奇之处"
-    },
-    {
-      "id": "http://arxiv.org/abs/2609.08638v1",
-      "title": "CASD: Chunk-Aligned Semantic Distillation for Multi-StageRobot Manipulation",
-      "url": "https://arxiv.org/abs/2609.08638",
-      "summary": "An action chunk can span several stages of a manipulation task, yet a label for its first step describes only the current stage. We introduce Chunk-Aligned Semantic Distillation (CASD), which derives semantic targets for entire action chunks. An offline vision--language model segments demonstrations into described stages. Their occupancy within each action chunk determines a weighted semantic target, including transitions between stages. A CASD generator learns to predict this target from the current observation, robot state, and task instruction. We then freeze the generator and train a policy conditioned on its predictions. The semantic branch runs once per policy query, without online VLM calls or reasoning-trace decoding. Teacher matching on annotated LIBERO training episodes is above chance for both single-stage and boundary-crossing chunks. We evaluate three Fast-WAM variants and a DreamZero integration across four benchmarks, including distribution shifts on LIBERO-Plus. Compared with published references, IDM+CASD reaches 98.9\\% versus 98.0\\% average success on LIBERO, while Uncond falls below its reference. Joint+CASD reaches 93.0\\% versus 90.6\\% on RoboTwin 2.0, and DreamZero+CASD reaches a 47.9\\% four-category MolmoSpaces manipulation average versus 40.7\\%. Performance varies across backbone integrations.",
-      "authors": "Tinghe Ding, Jiahao Li, He Wang",
-      "category": "cs.RO",
-      "published_at": "2026-09-08T12:07:52+00:00",
-      "updated_at": "2026-09-08T12:07:52Z",
-      "title_zh": "CASD：用于多阶段机器人操作的块对齐语义蒸馏"
-    },
-    {
-      "id": "http://arxiv.org/abs/2609.08626v1",
-      "title": "MFVINS: Multiple Fisheye Camera-Based Visual Inertial System",
-      "url": "https://arxiv.org/abs/2609.08626",
-      "summary": "A simultaneous localization and mapping (SLAM) method using a monocular camera and a low-cost inertial measurement unit (IMU) sensor is an effective way to fulfill a low-cost sensor configuration. Using this sensor configuration, visual-inertial system (VINS) focuses on fusing data from a camera and an IMU sensor to estimate the six degrees-of-freedom (DOF) of the sensor pose. Typically, VINS uses only a single camera as visual input, which lead to problems such as error accumulation due to occlusion, various illumination, and textureless environments. In this paper, we propose a new multiple fisheye camera-based visual-inertial system called MFVINS. We present an IMU-aided FAST feature tracker for multiple cameras that enables efficient extraction and robust matching of local features. Then, the proposed method filters out outliers caused by fisheye distortion on the normalized image plane. Subsequently, a new reprojection error with physical validity constraints is proposed for bundle adjustment using learning-based depth estimation. The proposed method is applied to various scenarios, and its effectiveness is demonstrated by comparing previous VINS methods. In particular, MFVINS is implemented in real-time process to leverage the advantages of using multiple cameras -- robustness against occlusion and textureless regions -- while reducing the computational burden.",
-      "authors": "Eunseong Jang, YuJin Chung, Sang Jun Lee et al.",
-      "category": "cs.RO",
-      "published_at": "2026-09-08T12:00:00+00:00",
-      "updated_at": "2026-09-08T12:00:00Z",
-      "title_zh": "MFVINS：基于多鱼眼相机的视觉惯性系统"
-    },
-    {
-      "id": "http://arxiv.org/abs/2609.08583v1",
-      "title": "Estimating Semantic Ambiguity via Gaussian Context Distributions for VLM-Driven Traversability Analysis",
-      "url": "https://arxiv.org/abs/2609.08583",
-      "summary": "Autonomous navigation in unstructured environments requires robust scene understanding, yet Vision-Language Models (VLMs) often suffer from semantic ambiguity, where conflicting predictions can lead to dangerous failures. To address this, we present a novel pipeline for vision-based traversability estimation that explicitly models contextual uncertainty. Our approach utilizes Conceptual Anchoring to ground open-vocabulary VLM predictions onto a continuous physical traversability scale. By formulating the model's responses as a Gaussian Context Distribution (GCD), we derive both a dense traversability map and a dense uncertainty map based on the statistical properties of the distribution. Experimental validation on the real-world GOOSE dataset demonstrates that our proposed uncertainty metric effectively correlates with sources of ambiguity, such as visual artifacts and mixed terrain overlap. The method exhibits competitive performance while offering the distinct advantage of providing statistical uncertainty estimates to address semantic ambiguity, enabling safer and more reliable autonomous behavior in complex outdoor settings.",
-      "authors": "Ramona Häuselmann, Mario A. V. Saucedo, Christoforos Kanellakis et al.",
-      "category": "cs.RO",
-      "published_at": "2026-09-08T11:18:32+00:00",
-      "updated_at": "2026-09-08T11:18:32Z",
-      "title_zh": "通过高斯上下文分布估计语义歧义以进行 VLM 驱动的可遍历性分析"
     }
   ]
 }
