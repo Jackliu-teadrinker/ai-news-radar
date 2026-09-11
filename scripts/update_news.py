@@ -307,6 +307,13 @@ def fetch_anchor_site(feed: dict, timeout: int = 30, max_items: int = 30) -> tup
                         published_at = dt.isoformat()
                     except Exception:
                         pass
+                site_name = None
+                if hasattr(entry, 'author_detail') and hasattr(entry.author_detail, 'name'):
+                    site_name = entry.author_detail.name
+                elif hasattr(entry, 'author'):
+                    site_name = entry.author
+                else:
+                    site_name = source_name
                 description = (entry.get('summary') or entry.get('description') or '')
                 if description:
                     description = html.unescape(re.sub(r'<[^>]+>', '', description)).strip()
@@ -351,6 +358,13 @@ def fetch_anchor_site(feed: dict, timeout: int = 30, max_items: int = 30) -> tup
                             published_at = dt.isoformat()
                         except Exception:
                             pass
+                    site_name = None
+                    if hasattr(entry, 'author_detail') and hasattr(entry.author_detail, 'name'):
+                        site_name = entry.author_detail.name
+                    elif hasattr(entry, 'author'):
+                        site_name = entry.author
+                    else:
+                        site_name = source_name
                     description = (entry.get('summary') or entry.get('description') or '')
                     if description:
                         description = html.unescape(re.sub(r'<[^>]+>', '', description)).strip()
