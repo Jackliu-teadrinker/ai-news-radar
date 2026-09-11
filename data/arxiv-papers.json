@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-11T22:34:26.035763+00:00",
-  "total_items": 23,
+  "generated_at": "2026-09-11T23:20:04.915931+00:00",
+  "total_items": 20,
   "items": [
     {
       "id": "http://arxiv.org/abs/2609.11920v1",
@@ -221,39 +221,6 @@
       "published_at": "2026-09-10T12:05:54+00:00",
       "updated_at": "2026-09-10T12:05:54Z",
       "title_zh": "动态环境中强化学习的安全意识技能适应"
-    },
-    {
-      "id": "http://arxiv.org/abs/2609.11382v1",
-      "title": "SwarmNxt: Open-source Software-Hardware Platform for Fast and Agile Aerial Swarms",
-      "url": "https://arxiv.org/abs/2609.11382",
-      "summary": "Aerial robot swarms have the potential to transform time-critical safety, security, and search-and-rescue operations. By coordinating multiple robots, they can rapidly survey disaster sites, map collapsed or GPS-denied environments, and search cluttered areas faster than a single robot, reducing response times and minimizing risks to first responders. Realizing this potential, however, requires robust autonomous swarm navigation, which remains an active research challenge. Progress is further constrained by existing platforms, as commercial drones are often closed-source or lack the onboard computational resources needed for agile, vision-based collective flight. Moreover, developing, deploying, and maintaining software across multiple aerial robots requires significant engineering effort. To address these challenges, we present SwarmNxt, an open-source software platform built on the open-source OmniNxt drone hardware. SwarmNxt provides an end-to-end toolkit, including detailed hardware assembly instructions with a video tutorial, automation tools for parallel software deployment and swarm-wide updates, and a ROS 2-based framework for autonomous navigation. The platform integrates state-of-the-art control, planning, and depth estimation into a single ROS 2 multi-agent system, providing an open research infrastructure for physical swarm experimentation. We validate SwarmNxt through two real-world experiments: a six-drone swarm performing decentralized planning with high-speed inter-drone collision avoidance, and a four-drone swarm executing collective flight with onboard depth estimation in an obstacle-filled environment. Both experiments were run indoors with global position from external motion capture; perception, planning, and control run onboard.",
-      "authors": "Charbel Toumieh, Niel Mistry, Benjamin Jarvis et al.",
-      "category": "cs.RO",
-      "published_at": "2026-09-10T11:17:20+00:00",
-      "updated_at": "2026-09-10T11:17:20Z",
-      "title_zh": "SwarmNxt：用于快速敏捷空中集群的开源软硬件平台"
-    },
-    {
-      "id": "http://arxiv.org/abs/2609.11361v1",
-      "title": "GeoTrussRover: Morphological Computation with Contact-Semantic Control Primitives",
-      "url": "https://arxiv.org/abs/2609.11361",
-      "summary": "Reconfigurable robots can change their contact geometry when a fixed body cannot negotiate an obstacle. A variable-geometry truss (VGT) distributes this shape change through a load-bearing structure, but coupling it to a mobile base creates a high-dimensional coordination problem. GeoTrussRover combines an electrically actuated VGT, a wheeled base, and contact-semantic morphology planning and control. We solve one source traversal and extract four contact-semantic primitives that describe coordination among 21 members. Physics-constrained projection adapts them to unseen step heights with the same contact topology. When every phase remains feasible, adaptation does not recompute the complete motion. If one phase violates the new physical constraints, only that phase is recomputed. A full-space QP then tracks the adapted motion and corrects member and wheel errors. For transfer from 0.10m to 0.075m, the method reduces objective-function evaluations by 63.7% relative to full recomputation. Contact-phase feasibility analysis covers step heights from 0.10 to 0.46m, or 1.08 to 4.97 wheel radii, with the upper value near the theoretical feasible boundary. The electric prototype traverses 2.11 wheel radii. The resulting low-dimensional representation stores task coordination in a hyper-redundant, load-bearing morphology and reuses it during locomotion.",
-      "authors": "Muyuan Ma, Yi Zhang, Yang Yang et al.",
-      "category": "cs.RO",
-      "published_at": "2026-09-10T10:48:58+00:00",
-      "updated_at": "2026-09-10T10:48:58Z",
-      "title_zh": "GeoTrussRover：使用接触语义控制原语进行形态计算"
-    },
-    {
-      "id": "http://arxiv.org/abs/2609.11357v1",
-      "title": "Morphology-Aware Human Motion Retargeting for Wheeled-Humanoid Loco-Manipulation",
-      "url": "https://arxiv.org/abs/2609.11357",
-      "summary": "Human-to-humanoid retargeting has largely been studied on legged platforms, while comparatively few wheeled-humanoid systems support coupled locomotion and manipulation from general human motion. Building on GMR's configurable general-motion retargeting and BeyondMimic's physically simulated R1 Pro learning framework, we present a reproducible pipeline that converts multi-dataset SMPLX motion into executable loco-manipulation behavior for the Galaxea R1 Pro wheeled humanoid. The robot has a planar three-wheel base, a serial torso, and two arms but no leg joints, so human lower-body motion must be redistributed across base motion and torso posture without sacrificing manipulation-relevant arm geometry. Our pipeline combines canonical body-shape preprocessing, planar-base normalization, morphology-aware differential inverse kinematics, shoulder-rooted hierarchical arm retargeting, and continuous torso substitution for bending and squatting. A reference-twist-driven planning layer then decodes planar base motion into continuous three-wheel steering and rolling commands subject to hysteresis, kinematic continuity, acceleration, and actuator-rate limits. Finally, a 21-dimensional BaseDecode policy is trained in Isaac Lab with directional joint-limit scaling, focused upper-body tracking, and a staged wheel-contact reward. The resulting system provides a complete bridge from human motion data to physically trackable wheeled-humanoid loco-manipulation rather than a visualization-only retargeter; quantitative policy comparisons remain scheduled for a later revision.",
-      "authors": "Chenbo Xia, Chao Ye",
-      "category": "cs.RO",
-      "published_at": "2026-09-10T10:40:31+00:00",
-      "updated_at": "2026-09-10T10:40:31Z",
-      "title_zh": "用于轮式人形机器人控制的形态感知人体运动重定向"
     }
   ]
 }
