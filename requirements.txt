@@ -1,2 +1,5 @@
 feedparser>=6.0.0
 requests>=2.31.0
+# Jack 2026-09-11: 真摘要管线 — GN 跳转解码 + 正文强提取
+googlenewsdecoder>=0.1.7
+trafilatura>=1.12.0

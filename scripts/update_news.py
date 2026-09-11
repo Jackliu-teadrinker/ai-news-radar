@@ -956,6 +956,13 @@ def run(output_dir: str, window_hours: int, opml_path: str, archive_days: int, w
                     it['title_zh'] = anchor_trans_map[it['title']]
 
         custom_generated_at = datetime.now(timezone.utc).isoformat()
+        # Jack 2026-09-11: 锚点卡补 120 字真摘要（GN 解码 + trafilatura，top 60）
+        try:
+            from summary_enricher import enrich_items as _enrich_anchors
+            _enrich_anchors(high_relevance_anchors, output_dir, top_n=60)
+        except Exception as _e:
+            print(f"[SUMMARY] anchor enrich skipped: {_e}")
+
         custom_out = {
             'generated_at': custom_generated_at,
             'window_start': _start_dt.isoformat(),
@@ -1139,6 +1146,13 @@ def run(output_dir: str, window_hours: int, opml_path: str, archive_days: int, w
     scored = [score_item(item, now_ts) for item in clean_items]
     scored.sort(key=lambda x: x['total_score'], reverse=True)
     print(f"[INFO] Scored: {len(scored)}")
+
+    # Jack 2026-09-11: 补 120 字真摘要（GN 解码 + trafilatura，top 150）
+    try:
+        from summary_enricher import enrich_items as _enrich
+        _enrich(scored, output_dir, top_n=150)
+    except Exception as _e:
+        print(f"[SUMMARY] main feed enrich skipped: {_e}")
 
     generated_at = datetime.now(timezone.utc).isoformat()
     os.makedirs(output_dir, exist_ok=True)
