@@ -523,9 +523,17 @@ function renderItemNode(item, showSite) {
     d = d.replace(/\s+[^\s\-–—]{2,30}\s*$/, "").replace(/\s*[-–—]\s*[^\s\-–—]{2,30}\s*$/, "").trim();
     // title 剥尾部 " - 来源名"
     const tC = tN.replace(/\s*[-–—]\s*[^\s\-–—]{2,30}\s*$/, "").trim();
-    const isDup =
+    let isDup =
       (rawDesc && d && (d === tC || d === tN || rawDesc === tN || rawDesc === tC)) ||
       (() => { const probe = Math.min(40, d.length, tN.length); return probe >= 20 && d.slice(0, probe) === tN.slice(0, probe) && Math.abs(d.length - tN.length) < 60; })();
+    // v4: 尾 token 剥离复读判定（覆盖 "标题 eet-china.com" 等连字符来源名）
+    if (!isDup && d) {
+      const tokens = d.split(" ");
+      for (let k = 1; k <= 6 && tokens.length > k; k++) {
+        const cand = tokens.slice(0, -k).join(" ").trim();
+        if (cand.length >= 20 && tN.startsWith(cand)) { isDup = true; break; }
+      }
+    }
     if (!isDup && d.length >= 30) {
       descEl.textContent = d.length > 180 ? d.substring(0, 180) + "…" : d;
     } else {
