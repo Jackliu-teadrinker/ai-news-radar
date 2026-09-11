@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-11T20:08:57.318378+00:00",
-  "total_items": 27,
+  "generated_at": "2026-09-11T21:00:03.367901+00:00",
+  "total_items": 26,
   "items": [
     {
       "id": "http://arxiv.org/abs/2609.11920v1",
@@ -287,17 +287,6 @@
       "published_at": "2026-09-10T09:04:04+00:00",
       "updated_at": "2026-09-10T09:04:04Z",
       "title_zh": "超越噪声引导：生成机器人策略的双潜在空间强化学习"
-    },
-    {
-      "id": "http://arxiv.org/abs/2609.11225v1",
-      "title": "Harness Robotic OS: A Unified Embodied-Agent Runtime for Closed-Loop Quadruped Inspection",
-      "url": "https://arxiv.org/abs/2609.11225",
-      "summary": "Autonomous property inspection requires more than robust robot navigation: a deployable system must connect heterogeneous sensing, reusable autonomy capabilities, multimodal scene understanding, human interaction, and enterprise response within a traceable operational loop. Existing quadruped inspection systems commonly integrate these functions through task-specific interfaces, making contextual coordination, knowledge reuse, and controlled adaptation difficult. This paper presents \\textit{Harness Robotic OS} (HROS), a unified embodied-agent runtime, and Argos, its realization for residential-community inspection. HROS organizes the system into robot runtime, embodied autonomy skills, cognitive agent runtime, and interaction and operations planes. A shared context connects physical state with agent reasoning; streaming ASR/TTS supports voice-based mission interaction; hierarchical working, episodic, and semantic memory preserves operational knowledge; and a safety-gated self-evolution loop converts execution traces into versioned candidate updates without permitting unconstrained online modification. The Argos prototype integrates a Vbot quadruped, Fast-LIO2 localization and mapping, Hobot-Stereo depth perception, PCT-Planner global planning, EGO-Planner local motion generation, and OpenClaw-orchestrated Qwen3-VL inspection analysis. Experiments in a residential property environment achieved 100\\% waypoint reachability, outdoor localization error below 10~cm, local obstacle-response latency below 200~ms, representative hazard-detection rates of 85--95\\%, and 99\\% success in alarm delivery and structured-report generation. These results validate the deployed navigation and inspection closed loop, while HROS provides an extensible software foundation for memory-augmented, voice-aware, and continuously improvable embodied inspection agents.",
-      "authors": "Yaoyuan Yan, Zhiyou Heng, Haoxiang Jie et al.",
-      "category": "cs.RO",
-      "published_at": "2026-09-10T08:25:46+00:00",
-      "updated_at": "2026-09-10T08:25:46Z",
-      "title_zh": "Harness 机器人操作系统：用于闭环四足动物检查的统一实体代理运行时"
     }
   ]
 }
