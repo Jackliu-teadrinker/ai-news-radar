@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-10T22:52:23.079787+00:00",
-  "total_items": 27,
+  "generated_at": "2026-09-11T00:31:49.746447+00:00",
+  "total_items": 21,
   "items": [
     {
       "id": "http://arxiv.org/abs/2609.10522v1",
@@ -219,72 +219,6 @@
       "published_at": "2026-09-09T13:17:34+00:00",
       "updated_at": "2026-09-09T13:17:34Z",
       "title_zh": "用一只手组装两个零件"
-    },
-    {
-      "id": "http://arxiv.org/abs/2609.10082v1",
-      "title": "Automatic Reproducible Camera Intrinsic Calibration",
-      "url": "https://arxiv.org/abs/2609.10082",
-      "summary": "Accurate camera intrinsic calibration is fundamental to robot perception, and the accuracy depends on the quality of the collected images. However, existing target-based calibration methods often require the practitioner to manually filter out high-quality images and to specify an appropriate radial distortion order. This paper presents a fully automatic intrinsic calibration pipeline that determines both from the collected data. We adopt an iterative rejection scheme that estimates parameters on a candidate image set and removes views whose mean residual exceeds a multiple of the median. Crucially, this process runs independently under each candidate distortion order, so that the retained image set is consistent with the residual scale of that order. Further, the distortion order is selected on held-out images, with the intrinsics and distortion fixed and only the board pose re-estimated, ensuring that an added coefficient is supported by independent observations. Finally, we integrate both steps into an interactive calibration tool that supports full-pipeline data inspection and parameter estimation. Experiments on our own camera data and five public real-world datasets show that image filtering reduces the held-out reprojection error by 25\\%, the order selection further by 5\\%, achieving the lowest held-out mean among four compared configurations without manual image selection. We will release the code and data to facilitate future research.",
-      "authors": "Xiangcheng Hu",
-      "category": "cs.RO",
-      "published_at": "2026-09-09T12:05:17+00:00",
-      "updated_at": "2026-09-09T12:05:17Z",
-      "title_zh": "自动可重复相机内在校准"
-    },
-    {
-      "id": "http://arxiv.org/abs/2609.10050v1",
-      "title": "Grounding Generated Video Plans in Simulation Towards Versatile Dexterous Controllers",
-      "url": "https://arxiv.org/abs/2609.10050",
-      "summary": "Generated hand-object interaction (HOI) videos provide a controllable way to propose manipulation motions. Simulation-based HOI tracking can translate such kinematic references into feasible low-level control, but its scalability is limited by the lack of reliable reference motions. We therefore combine generated videos with simulation-based HOI grounding: during training, generated videos provide diverse motion references for learning a multi-object, multi-trajectory HOI tracker, and at deployment, the video model produces motion plans that are executed by the learned tracker. In particular, we propose a method that enables scalable reference generation by HOI reconstruction with minimal manual intervention and successfully grounds more than 1,500 generated videos in simulation, achieving success rates over 25 percentage points higher than those of baselines during simulation-based training. In real-world closed-loop experiments, it achieves diverse grasps, including functional grasps, non-prehensile manipulation, and post-grasp object-pose tracking. Videos and code are available at https://boyuan-an.github.io/GALATEA/.",
-      "authors": "Tianyue Wu, Boyuan An, Shuqi Zhao et al.",
-      "category": "cs.RO",
-      "published_at": "2026-09-09T11:26:25+00:00",
-      "updated_at": "2026-09-09T11:26:25Z",
-      "title_zh": "将仿真中生成的视频计划打造成多功能灵巧控制器"
-    },
-    {
-      "id": "http://arxiv.org/abs/2609.10036v1",
-      "title": "Belief-State Engine: Augmenting LLMs for Principled Planning Under Partial Observability",
-      "url": "https://arxiv.org/abs/2609.10036",
-      "summary": "Large language model agents produce fluent action sequences across a wide range of tasks, yet they fail in characteristic ways once the environment becomes partially observable. Ambiguous feedback pushes them into premature commitments. A single informative observation can collapse their uncertainty onto the wrong hypothesis. Policies drift as the history grows. We trace these symptoms to a common structural cause. An LLM agent, as commonly deployed, is a history-conditioned policy with no explicit belief over hidden state. We propose an architectural fix. The Belief-State Engine (BSE) is an inference module placed outside the LLM. It maintains a Bayesian posterior over the latent states of a given POMDP (Partially Observable Markov Decision Process) model, and at each decision step it exposes only that posterior to the LLM. The raw action-observation log is not shown. We set out a minimal four-axiom specification of what a belief-consistent internal state must satisfy, and prove that the LLM paired with the BSE is a sound Markov policy on the belief MDP induced by the underlying POMDP. It therefore inherits the Bellman optimality guarantees of classical POMDP theory, provided the LLM is never exposed to the raw history. We evaluate the architecture on the Tiger POMDP and a red-team attack-graph task, against six baselines: a reactive LLM, Chain-of-Thought, ReAct, a natural-language belief tracker, QMDP, and POMCP. Across both domains, the BSE-augmented agent improves task return, belief calibration, and decision consistency. Ten targeted ablations isolate the contribution of each architectural choice confirms that the effect is not specific to any one model. Code, environment specifications, prompt templates, and seed logs accompany this paper.",
-      "authors": "Arnab Chattopadhayay, Debdipta Halder",
-      "category": "cs.AI",
-      "published_at": "2026-09-09T11:07:47+00:00",
-      "updated_at": "2026-09-09T11:07:47Z",
-      "title_zh": "信念状态引擎：增强法学硕士在部分可观察性下的原则性规划"
-    },
-    {
-      "id": "http://arxiv.org/abs/2609.10033v1",
-      "title": "What Symmetry Buys a Learned Motion Planner",
-      "url": "https://arxiv.org/abs/2609.10033",
-      "summary": "Learning-based motion planners pay at training what classical planners pay per query. Trained in world coordinates, they relearn the same motion at every position and orientation. Existing work restores the missing rigid-body equivariance in the training data, in the inference operator, or in the weights, and each carries a cost. We ask how much of that equivariance the planning query supplies for free. A start s and a goal g determine a frame in closed form, with origin at their midpoint and first axis along g-s. Expressing trajectory and obstacles in that frame removes three translations and two rotations of SE(3), at initialisation, for one cross product per query and with no constraint on the architecture. A single rotation about the start-goal axis remains, and no continuous rule removes it. On a cluttered 3D benchmark, holding architecture, data and budget fixed, the frame raises the held-out collision-free rate from 14.60% to 51.10%, where a straight segment from start to goal scores 15.6% and the world-frame model does not beat it. We build all three mechanisms for the residual rotation and each is worth under a point, though the equivariant backbone reaches any given level two to three times sooner. What the representation supplies therefore dominates what any mechanism enforces, and the standard diagnostic does not see the difference: two models with indistinguishable non-equivariance residuals differ by 28 points. Calibrated against a non-symmetry intervention, the frame is not even the largest effect available, since local geometry is worth +40.0 where the frame is worth +36.5.",
-      "authors": "Andrea Emir Sevincel",
-      "category": "cs.RO",
-      "published_at": "2026-09-09T11:05:24+00:00",
-      "updated_at": "2026-09-09T11:05:24Z",
-      "title_zh": "对称性如何帮助学习运动规划器"
-    },
-    {
-      "id": "http://arxiv.org/abs/2609.10024v1",
-      "title": "AXON: A ROS 2 RMW with Shared-Memory/QUIC Transport and QKD/ML-KEM Key Establishment",
-      "url": "https://arxiv.org/abs/2609.10024",
-      "summary": "Robot Operating System 2 (ROS 2) standardizes application code against a middleware interface (RMW) whose reference implementations are built on the Data Distribution Service (DDS). We present AXON, an alternative ROS 2 RMW implementation that separates transport policy by deployment scope. A Rust core and C++ adapter use POSIX shared-memory rings for same-host communication, QUIC for remote communication, and a daemon for discovery and graph synchronization. We then describe two fail-closed TLS 1.3 key-establishment configurations for remote traffic. The classic configuration offers only the hybrid X25519MLKEM768 group, preventing negotiation of a classical-only group. The qkd configuration imports a 256-bit key obtained through the ETSI GS QKD 014 API as a pairwise external PSK and offers no Diffie-Hellman group. Its default messages10 strategy additionally protects remote application messages with AES-256-GCM, rotating KME material after ten outgoing messages and using a fresh nonce per envelope; session relies on QUIC protection alone. The external-PSK path requires a narrow extension to rustls, now bundled with AXON. We define the threat model, distinguish peer authentication in the two configurations, and delimit the implementation-level validation from ROS 2 conformance, comparative performance, and physical-QKD validation.",
-      "authors": "Sergio Sánchez de la Fuente, Miguel Ángel González-Santamarta, Francisco Javier Rodríguez-Lera et al.",
-      "category": "cs.RO",
-      "published_at": "2026-09-09T10:57:13+00:00",
-      "updated_at": "2026-09-09T10:57:13Z",
-      "title_zh": "AXON：具有共享内存/QUIC 传输和 QKD/ML-KEM 密钥建立的 ROS 2 RMW"
-    },
-    {
-      "id": "http://arxiv.org/abs/2609.10021v1",
-      "title": "RoboDrop: Curating VLA Post-Training Data via Local Gradient Compatibility",
-      "url": "https://arxiv.org/abs/2609.10021",
-      "summary": "Vision--language--action (VLA) models acquire broad generalization through large-scale pretraining, yet adapting them to a new task and robot embodiment still requires post-training on newly collected data. Unlike pretraining, post-training targets task- and embodiment-specific adaptation, making it particularly sensitive to data quality. In practice, collected robot datasets often contain heterogeneous errors, including execution mistakes, sensor drift, and timestamp misalignment, which can impair post-training and policy performance. Manual inspection is costly, while existing data-cleaning methods are typically tailored to particular corruption types. To address these challenges, we introduce \\textsc{RoboDrop}, a data-curation framework that audits supervision using local gradient compatibility measured along the training trajectory as a proxy for its effect on post-training performance. During a one-epoch warm-up run, RoboDrop scores each candidate sample online by comparing its gradient with those of task-semantic and visually matched validation samples. The resulting sample scores are aggregated at the episode level, and a simple automatic post-processing rule converts them into filtering decisions. We evaluate RoboDrop on controlled observation--action corruptions, naturally suboptimal demonstrations in simulation, and real-robot datasets containing non-expert collection errors. Across these settings, RoboDrop more accurately distinguishes unreliable demonstrations than prior methods, while post-training on the curated data consistently yields stronger downstream policies, with average real-robot rollout success rising from $35.0\\%$ to $67.5\\%$. These results establish training-trajectory-aware, context-conditioned supervision auditing as an effective approach to robust VLA post-training.",
-      "authors": "Runze Xu, Yuanfan Xu, Cuijie Xu et al.",
-      "category": "cs.RO",
-      "published_at": "2026-09-09T10:55:10+00:00",
-      "updated_at": "2026-09-09T10:55:10Z",
-      "title_zh": "RoboDrop：通过局部梯度兼容性管理 VLA 训练后数据"
     }
   ]
 }
