@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-11T17:53:49.884656+00:00",
+  "generated_at": "2026-09-11T20:03:46.650127+00:00",
   "window_start": "2026-09-11T19:00:00+08:00",
-  "window_end": "2026-09-12T01:52:48.912124+08:00",
-  "total_items": 8,
+  "window_end": "2026-09-12T04:02:24.771750+08:00",
+  "total_items": 10,
   "items": [
     {
       "id": "3272abba810f79a966f4f2c3ab97a3caf4ed4399",
@@ -21,9 +21,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.83,
+      "timeliness": 24.67,
       "writing_value": 0,
-      "total_score": 101.83
+      "total_score": 99.67
     },
     {
       "id": "16f41ef1671b4995aed612a7b0d04dcc9d9016c9",
@@ -42,9 +42,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.04,
+      "timeliness": 24.88,
       "writing_value": 0,
-      "total_score": 102.04
+      "total_score": 99.88
     },
     {
       "id": "31c039e7909a23530f8a0f65357a00dc60e26aa4",
@@ -63,16 +63,37 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 5,
-      "timeliness": 27.62,
+      "timeliness": 25.46,
       "writing_value": 5,
-      "total_score": 127.62
+      "total_score": 125.46
     },
     {
-      "id": "5bea9cdea42e236d61377cd8f3a5f9631aa58d50",
-      "title": "7,000 Lifts Could Open to Robots After QuikBot-Mitsubishi Deal - DANAMIC",
+      "id": "2819d953d15649b9f93f9cc62ff625cf239aa7bd",
+      "title": "7,000 Robot Vacuums, One Leaked Token: The DJI Romo Breach Proves Home Agents Have a Single-Point-of-Failure Problem - CryptoRank",
       "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPZVlSbXBPbDVVR2FqVXk4WjMyNHlRb210aGN5ZzRhVlhPcHpxV3oxMTQ3MldGdk0zcElYelpYSUNEQ295UEp4b1lKM0RTcU1QRGIxS3g4LXRxeE00RE9VM18yWFVYU1dSRHNkeVVoY1pDSkpoMGdhVlR2ck5FcmdyNVZkNkE3bHB0dXhWYTlLN2xiSnhSUl82cWhsczY4OG14NVIyRWJjRWltb1d6RVZ3WlRaX2k?oc=5",
-      "published_at": "2026-09-11T13:04:40+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxONkYtWTFWRkEwZzd6MEV2eGR6TnVoRDNieXNJVkpxcHN6dDJKbFQ2cXM1T2xtOWkxNjUzeS1LbHJfVnNrSTdSWmJuWXdDY2wySEFNb0pBX2dFWUlvU1ZoSXd6VzBnLVhGZXFRcUVubURUTGMwX3RmckVIT241WWplQk1oYTJXYS1Ma2Rta25HUVRNcG9xRlJrbW5QYVNFOXNLMEtpZzlkSnNPeUtDb2hpU21JYks3Nm1UTlNPazFOQWl5c1IxVFNBWG5GUTZacmMzWTJ4ZTBiUk1KNGxVZURBS3ZQamM5QQ?oc=5",
+      "published_at": "2026-09-11T14:21:23+00:00",
+      "category": "GN: robot vacuum",
+      "gn_label": "robotics",
+      "site_name": "GN: robot vacuum",
+      "source": "GN: robot vacuum",
+      "site_id": "GN: robot vacuum",
+      "description": "",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 24.32,
+      "writing_value": 0,
+      "total_score": 99.32
+    },
+    {
+      "id": "34de298e20e2d5e51f42ac2b81d0f2154a998bf9",
+      "title": "Northeastern graduate Joshua Joseph found path to success in robotics - Northeastern Global News",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQLVYwNW5xNnpOQ1h5ZzBXUDJOR3VHQ0o5Mm4wWDhYN2U5aGw2SkRWOWVONHRwUkY4NFRKMkZDckluXzh6cVdfck5yekNsemRUQzU5Q2lTY2k5ckJEY1Rmb2lCQ2EtRGlCT21KVzJ3ZTlJNG9ZWUxzemhmaDJ6VXMtWlZtR3FNb3pTbGFrZXV3?oc=5",
+      "published_at": "2026-09-11T18:40:55+00:00",
       "category": "GN: autonomous robot",
       "gn_label": "robotics",
       "site_name": "GN: autonomous robot",
@@ -84,9 +105,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.2,
+      "timeliness": 28.64,
       "writing_value": 0,
-      "total_score": 100.2
+      "total_score": 103.64
     },
     {
       "id": "61489305aa2506b2e9903cd738501a32f237ef52",
@@ -105,13 +126,34 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.72,
+      "timeliness": 23.56,
       "writing_value": 0,
-      "total_score": 100.72
+      "total_score": 98.56
     },
     {
-      "id": "8853896d9babfcf1228fa3e3ff84170aee8068c9",
-      "title": "宇树科技总市值跌破2000亿，专家：行业长期仍被看好 - xg.stock.cnfol.com",
+      "id": "bad68eef9eb9eda73aff9dc9409efdf47092de38",
+      "title": "Live robotic surgery - Università di Padova",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE00cFJab3hFOEstaHd4NG1WTWdITzN4ajNvOHdjNndqQUhZLTJFcTkzd3pZZ2NiQ0pDMjZRTVRjbE51LV9QQkxlYVZsSTRPVTRTOU1qSU5CQXJFOEZoVHptbXRsLVFJUQ?oc=5",
+      "published_at": "2026-09-11T11:21:05+00:00",
+      "category": "GN: surgical robot",
+      "gn_label": "robotics",
+      "site_name": "GN: surgical robot",
+      "source": "GN: surgical robot",
+      "site_id": "GN: surgical robot",
+      "description": "",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 21.31,
+      "writing_value": 0,
+      "total_score": 96.31
+    },
+    {
+      "id": "44e7ed158a81313e77433f6c6c983f8f4ea9b3ae",
+      "title": "宇树科技总市值跌破2000亿，专家：行业长期仍被看好 - 中金在线",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5Nd3VOQ2lqRkpaZjdnNmRheDg1NE1nWWhqd2JwTndIeF9VVS10bXVRTHp2ZXRXbnRCMkMwX240Y2VoX0JxeTV5Vm1iWk5zbV9Jbnp2bVA0aWJXQXBnN0UzVW9aekEzODVrQlRRSy1B?oc=5",
       "published_at": "2026-09-11T12:37:07+00:00",
@@ -126,9 +168,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.74,
+      "timeliness": 22.58,
       "writing_value": 0,
-      "total_score": 99.74
+      "total_score": 97.58
     },
     {
       "id": "3905a3141bf02c94cc829b4700673b22f0ad4f97",
@@ -147,9 +189,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.01,
+      "timeliness": 21.85,
       "writing_value": 0,
-      "total_score": 99.01
+      "total_score": 96.85
     },
     {
       "id": "cd92c87f0c1c92c73175fae235b2c8740daf5b78",
@@ -168,9 +210,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.44,
+      "timeliness": 21.28,
       "writing_value": 0,
-      "total_score": 98.44
+      "total_score": 96.28
     }
   ],
   "fallback_used": false
