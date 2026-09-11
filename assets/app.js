@@ -535,7 +535,7 @@ function renderItemNode(item, showSite) {
       }
     }
     if (!isDup && d.length >= 30) {
-      descEl.textContent = d.length > 180 ? d.substring(0, 180) + "…" : d;
+      descEl.textContent = d.length > 120 ? d.substring(0, 120) + "…" : d;
     } else {
       descEl.remove();
     }
@@ -1124,6 +1124,17 @@ function renderArxivItem(item) {
   source.style.fontWeight = '600';
   metaRow.appendChild(source);
 
+  // 相关度/分数徽章
+  if (item.total_score !== undefined && item.total_score !== null) {
+    const scoreEl = document.createElement('span');
+    scoreEl.className = 'score score-none';
+    const pct = Math.round(item.total_score);
+    scoreEl.textContent = pct;
+    scoreEl.className = 'score ' + (pct >= 60 ? 'score-high' : pct >= 40 ? 'score-mid' : 'score-low');
+    scoreEl.title = `总分: ${pct}/100`;
+    metaRow.appendChild(scoreEl);
+  }
+
   // 分类标签
   const category = document.createElement('span');
   category.className = 'category kind-robotics';
@@ -1163,8 +1174,8 @@ function renderArxivItem(item) {
   if (item.summary) {
     const summary = document.createElement('p');
     summary.className = 'arxiv-summary';
-    summary.textContent = item.summary.length > 300
-      ? item.summary.slice(0, 300) + '...'
+    summary.textContent = item.summary.length > 120
+      ? item.summary.slice(0, 120) + '...'
       : item.summary;
     summary.style.fontSize = '13px';
     summary.style.color = '#4b5563';
@@ -1250,6 +1261,15 @@ function renderGovItem(item) {
   source.style.fontWeight = '600';
   metaRow.appendChild(source);
 
+  // 分数徽章（政府项带 total_score）
+  if (item.total_score !== undefined && item.total_score !== null) {
+    const govScore = document.createElement('span');
+    const pct = Math.round(item.total_score);
+    govScore.textContent = pct;
+    govScore.className = 'score ' + (pct >= 60 ? 'score-high' : pct >= 40 ? 'score-mid' : 'score-low');
+    metaRow.appendChild(govScore);
+  }
+
   // 相关度
   const relevance = document.createElement('span');
   relevance.className = 'category kind-policy';
@@ -1281,7 +1301,7 @@ function renderGovItem(item) {
   if (item.description) {
     const desc = document.createElement('p');
     desc.className = 'description';
-    desc.textContent = item.description.substring(0, 150) + (item.description.length > 150 ? '...' : '');
+    desc.textContent = item.description.substring(0, 120) + (item.description.length > 120 ? '...' : '');
     node.appendChild(desc);
   }
 
@@ -1426,6 +1446,16 @@ function renderSearchItem(item) {
   keyword.textContent = item.source.replace('Bing: ', '');
   keyword.style.color = '#2563eb';
   metaRow.appendChild(keyword);
+
+  // 分数徽章（头条项带 total_score）
+  if (item.total_score !== undefined && item.total_score !== null) {
+    const tScore = document.createElement('span');
+    const pct = Math.round(item.total_score);
+    tScore.textContent = pct;
+    tScore.className = 'score ' + (pct >= 60 ? 'score-high' : pct >= 40 ? 'score-mid' : 'score-low');
+    tScore.title = `总分: ${pct}/100`;
+    metaRow.appendChild(tScore);
+  }
 
   // 时间
   if (item.date_str) {
