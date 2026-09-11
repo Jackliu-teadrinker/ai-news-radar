@@ -528,6 +528,15 @@ def clean_description(description: str, title: str, source_names=()) -> str:
     probe = min(40, len(d_n), len(t_n))
     if probe >= 20 and d_n[:probe] == t_n[:probe] and abs(len(d_n) - len(t_n)) < 60:
         return ''
+    # v4: 尾 token 剥离复读判定——desc 剥 1-6 个尾部 token 后成为 title 前缀 → 复读
+    # （覆盖含连字符/多段来源名："标题 eet-china.com"、"标题 36 Kr"）
+    tokens = d_n.split(' ')
+    for k in range(1, 7):
+        if len(tokens) <= k:
+            break
+        cand = ' '.join(tokens[:-k]).strip()
+        if len(cand) >= 20 and t_n.startswith(cand):
+            return ''
     if len(d_n) < 30:
         return ''
     return d_n
