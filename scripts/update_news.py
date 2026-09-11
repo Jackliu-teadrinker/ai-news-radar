@@ -130,6 +130,7 @@ def fetch_feed(feed: dict, timeout: int = 20, max_retries: int = 3, base_delay: 
                 description = (entry.summary or entry.description or '')
                 if description:
                     description = html.unescape(re.sub(r'<[^>]+>', '', description)).strip()
+                description = clean_description(description, title, (source_name, site_name))
                 items.append({
                     'title': title,
                     'url': link,
@@ -309,6 +310,7 @@ def fetch_anchor_site(feed: dict, timeout: int = 30, max_items: int = 30) -> tup
                 description = (entry.get('summary') or entry.get('description') or '')
                 if description:
                     description = html.unescape(re.sub(r'<[^>]+>', '', description)).strip()
+                description = clean_description(description, title, (source_name, site_name))
                 items.append({
                     'title': title,
                     'url': link,
@@ -352,6 +354,7 @@ def fetch_anchor_site(feed: dict, timeout: int = 30, max_items: int = 30) -> tup
                     description = (entry.get('summary') or entry.get('description') or '')
                     if description:
                         description = html.unescape(re.sub(r'<[^>]+>', '', description)).strip()
+                    description = clean_description(description, title, (source_name, (site_name or source_name)))
                     items.append({
                         'title': title,
                         'url': link,
@@ -491,6 +494,43 @@ NOISE_DOMAINS = [
 ]
 
 MIN_DESC_LEN = 0  # Disabled: GN RSS descriptions are inherently short snippets, not full article text
+
+def _norm_ws(s: str) -> str:
+    return re.sub(r'\s+', ' ', (s or '')).strip()
+
+def clean_description(description: str, title: str, source_names=()) -> str:
+    """Jack 2026-09-11 (v3): GN RSS description 为"标题+来源名"复读时清洗为空。
+
+    v3 规则（按序）：
+    1. 已知 source/site_name 精确剥离（desc 尾部与 title 尾部 " - X"）
+    2. 规范空白后全等 → ''
+    3. 规范形比对：title 剥 " - 来源" 尾巴、desc 剥 " 来源" 尾巴后全等 → ''
+       （覆盖 desc 用双空格 + title 用 " - " 分隔来源的 GN 格式）
+    4. 前缀复读兜底：前 40 字符相同且长度差 < 60 → ''（GN 长标题截断）
+    5. 剩余长度 < 30 → ''
+    """
+    if not description:
+        return ''
+    d = description.strip()
+    t = (title or '').strip()
+    for s in source_names:
+        if s and s.strip():
+            e = re.escape(s.strip())
+            d = re.sub(r'[\s\-–—]*' + e + r'\s*$', '', d).strip()
+            t = re.sub(r'\s*[-–—]\s*' + e + r'\s*$', '', t).strip()
+    d_n, t_n = _norm_ws(d), _norm_ws(t)
+    if d_n == t_n:
+        return ''
+    t_c = re.sub(r'\s*[-–—]\s*[^\s\-–—]{2,30}\s*$', '', t_n).strip()
+    d_c = re.sub(r'\s+[^\s\-–—]{2,30}\s*$', '', d_n).strip()
+    if t_c and d_c and (d_c == t_c or d_c == t_n or d_n == t_c):
+        return ''
+    probe = min(40, len(d_n), len(t_n))
+    if probe >= 20 and d_n[:probe] == t_n[:probe] and abs(len(d_n) - len(t_n)) < 60:
+        return ''
+    if len(d_n) < 30:
+        return ''
+    return d_n
 
 def is_noise(title: str, description: str, url: str) -> tuple[bool, str]:
     text = (title + ' ' + description).lower()
