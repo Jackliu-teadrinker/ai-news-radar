@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-11T14:23:52.862365+00:00",
-  "total_items": 30,
+  "generated_at": "2026-09-11T17:48:11.709483+00:00",
+  "total_items": 27,
   "items": [
     {
       "id": "http://arxiv.org/abs/2609.11920v1",
@@ -298,39 +298,6 @@
       "published_at": "2026-09-10T08:25:46+00:00",
       "updated_at": "2026-09-10T08:25:46Z",
       "title_zh": "Harness 机器人操作系统：用于闭环四足动物检查的统一实体代理运行时"
-    },
-    {
-      "id": "http://arxiv.org/abs/2609.11079v1",
-      "title": "RIDE: Relocalization-Informed Depth Estimation with 3D Gaussian Splatting",
-      "url": "https://arxiv.org/abs/2609.11079",
-      "summary": "Render--match--PnP relocalization establishes correspondences between query image pixels and 3D map points for camera pose recovery, but their potential to support dense depth estimation is often overlooked. To exploit this geometric information, we present RIDE, which estimates dense metric depth from a robot's RGB stream. Given a metrically scaled 3D Gaussian Splatting (3DGS) model, RIDE combines sparse metric depth observations derived from PnP-RANSAC inlier correspondences with the geometric prior of a pretrained video-depth model. To handle uneven and intermittent observations, it integrates global and local depth correction with temporal memory, supporting depth estimation through short observation gaps after metric scale initialization. Trained on public RGB-D videos, RIDE is evaluated on robot sequences without fine tuning. Experiments show improved depth accuracy and temporal consistency over scale-only calibration, demonstrating how localization geometry can support both pose recovery and dense robot perception.",
-      "authors": "Jiarong Lian, Zhe Xiao, Zhaoyang Zhang et al.",
-      "category": "cs.RO",
-      "published_at": "2026-09-10T04:36:58+00:00",
-      "updated_at": "2026-09-10T04:36:58Z",
-      "title_zh": "RIDE：利用 3D 高斯分布进行重定位信息深度估计"
-    },
-    {
-      "id": "http://arxiv.org/abs/2609.11078v1",
-      "title": "Freehand Sketching for End-User Programming of Robot Swarms",
-      "url": "https://arxiv.org/abs/2609.11078",
-      "summary": "Robot swarms are increasingly used in applications where accessible interaction with non-expert users is desirable. This paper investigates freehand sketching as an end-user programming interface for specifying robot swarm geometries. Users communicate spatial intent through a drawing, while the swarm autonomously extracts target formation points, constructs a rigid formation graph, assigns robots to formation nodes, and executes distributed formation control with a guarantee against unintended reflected formations. The resulting sketch-to-swarm framework is evaluated through a human study examining the usability of freehand formation specification. Twenty participants generated $42$ geometric shapes, and the interface achieved a mean System Usability Scale score of $84.25$, which conventionally indicates high perceived usability. The results support freehand sketching as an intuitive interaction abstraction for human-swarm collaboration without requiring robotics or programming expertise.",
-      "authors": "Riwa Karam, Ian Kuo, Magnus Egerstedt",
-      "category": "cs.RO",
-      "published_at": "2026-09-10T04:34:02+00:00",
-      "updated_at": "2026-09-10T04:34:02Z",
-      "title_zh": "机器人群最终用户编程的手绘草图"
-    },
-    {
-      "id": "http://arxiv.org/abs/2609.11059v1",
-      "title": "Gait-Dependent Effects on Quadruped Locomotion for Load-Carrying using Passive Mechanism",
-      "url": "https://arxiv.org/abs/2609.11059",
-      "summary": "Passive mechanical interfaces offer a lightweight alternative to actuated manipulators for quadruped payload carrying, but their impedance directly couples the payload dynamics with the locomotion pattern. This paper analyzes how passive-arm stiffness-damping selection affects payload-carrying locomotion under different gait and payload conditions. We compare damped and underdamped passive-arm impedance configurations in simulation during flat-ground locomotion. For crawl gaits, where the support polygon remains well defined, the results show that underdamped impedance increases passive-joint oscillations and can reduce the ZMP margin with respect to the support polygon. Trot is retained as a dynamic excitation case for the passive arm, but it is not used for direct ZMP-margin stability comparison. The results are summarized in gait-payload-stiffness-damping maps, where ZMP-margin reduction is evaluated for crawl gaits and trot is retained only as a passive-arm excitation case.",
-      "authors": "Giovanni B. Dessy, Claudio Semini, Victor Barasuol",
-      "category": "cs.RO",
-      "published_at": "2026-09-10T04:05:12+00:00",
-      "updated_at": "2026-09-10T04:05:12Z",
-      "title_zh": "使用被动机构承载四足动物的步态相关效应"
     }
   ]
 }
