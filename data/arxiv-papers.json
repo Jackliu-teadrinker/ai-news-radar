@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-11T00:49:09.638073+00:00",
-  "total_items": 21,
+  "generated_at": "2026-09-11T01:28:43.039781+00:00",
+  "total_items": 20,
   "items": [
     {
       "id": "http://arxiv.org/abs/2609.10522v1",
@@ -208,17 +208,6 @@
       "published_at": "2026-09-09T13:40:09+00:00",
       "updated_at": "2026-09-09T13:40:09Z",
       "title_zh": "用于安全无人机目标跟踪的未来感知流程规划"
-    },
-    {
-      "id": "http://arxiv.org/abs/2609.10137v1",
-      "title": "Assembling Two Parts in One Hand",
-      "url": "https://arxiv.org/abs/2609.10137",
-      "summary": "A hallmark of human dexterity is the cooperative use of fingers, where different fingers take on distinct yet coordinated roles to accomplish fine manipu- lation, such as capping a pen with the hand that holds it. We study this finger-level coordination through in-hand assembly: mating two rigid objects within a single dexterous hand, with no second arm and no fixture. We present a reinforcement learning formulation to solve this problem in a unified framework, which is driven by a goal relative pose between the two parts. Finger coordination is shaped by a function-based auxiliary reward and regularized toward a single human reference pose, while domain randomization and a fusion of historical proprioception and object observation confer robustness to occlusion-induced estimation noise. The same recipe solves three different assembly tasks (Bottle, Syringe, and Marker). Trained purely in simulation, the policies transfer zero-shot to hardware with a single camera, demonstrating robustness to state-estimation errors caused by oc- clusion. Our experiments also reveal that in-hand assembly places demands on hand morphology and can serve as a benchmark for modern robotic hand systems. Videos and code are available at https://ltbgbird.github.io/in-hand-assembly-page/.",
-      "authors": "Liuao Pei, Tianyue Wu, Hui Zhang et al.",
-      "category": "cs.RO",
-      "published_at": "2026-09-09T13:17:34+00:00",
-      "updated_at": "2026-09-09T13:17:34Z",
-      "title_zh": "用一只手组装两个零件"
     }
   ]
 }
