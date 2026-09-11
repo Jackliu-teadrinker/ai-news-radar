@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-11T21:00:03.367901+00:00",
-  "total_items": 26,
+  "generated_at": "2026-09-11T22:34:26.035763+00:00",
+  "total_items": 23,
   "items": [
     {
       "id": "http://arxiv.org/abs/2609.11920v1",
@@ -254,39 +254,6 @@
       "published_at": "2026-09-10T10:40:31+00:00",
       "updated_at": "2026-09-10T10:40:31Z",
       "title_zh": "用于轮式人形机器人控制的形态感知人体运动重定向"
-    },
-    {
-      "id": "http://arxiv.org/abs/2609.11338v1",
-      "title": "Modular Kinematic Reduction of Closed-Chain Mechanisms Using Path Assembly and Defect Homotopy",
-      "url": "https://arxiv.org/abs/2609.11338",
-      "summary": "Closed kinematic chains complicate modular modeling by coupling active and passive coordinates through nonlinear closure constraints. This paper presents a Path-Assembled Closure Differential Mapping (PACDM) framework for modular closure resolution and kinematic reduction. Each closure element compares two ordered transformation paths with common endpoints, with their mismatch expressed through the logarithm on SE(3) and the corresponding Jacobian assembled from local transformation derivatives. Multi-path modules are constructed from a minimal set of pairwise closure elements, while rank-revealing analysis selects locally independent scalar constraints. A defect homotopy recovers closure-consistent passive coordinates from approximate estimates along a feasible and regular continuation path. At regular configurations, implicit differentiation yields the local active-to-passive differential mapping, which is subsequently used in a predictor-corrector continuation procedure for prescribed motion. The framework is evaluated on a seven-degree-of-freedom heavy-duty manipulator containing two-path and three-path closed-chain modules. Comparison with Simscape Multibody yields trajectory root-mean-square errors below 8.5 x 10^-10 rad, while predictor-corrector continuation is approximately 45.8 times faster than applying defect homotopy at every trajectory sample.",
-      "authors": "Mohammad Dastranj, Jouni Mattila",
-      "category": "cs.RO",
-      "published_at": "2026-09-10T10:14:16+00:00",
-      "updated_at": "2026-09-10T10:14:16Z",
-      "title_zh": "使用路径组装和缺陷同伦的闭链机构的模块化运动还原"
-    },
-    {
-      "id": "http://arxiv.org/abs/2609.11308v1",
-      "title": "2AM: Grounding Agent-Side Memory as Guidance for Steerable Action Models in Long-Horizon Manipulation",
-      "url": "https://arxiv.org/abs/2609.11308",
-      "summary": "Long-horizon robot manipulation requires memory, but not necessarily inside the action policy. To address such tasks, current agentic systems often combine VLAs with planners and geometric tools, sometimes using additional depth or calibrated geometry. These systems confound attribution: gains may come from richer observations or alternative motor tools, while failures may stem from either the policy or an under-specified language interface. We isolate this question through a deliberately constrained design: less tool breadth, but greater interface bandwidth. 2AM makes a multimodal Agent the sole holder of task memory and a single RGB-based, episodically stateless Action Model the sole executor of task-relevant motion. The Agent compiles interaction history into subtask language and optional 2D grasp, place, and move hints that bind its physical intention at different time scales. To teach this steerability to the VLA, we augment demonstrations with structured hint labels and train under condition dropout, spatial noise, and temporal jitter to tolerate imperfect Agent outputs. On LIBERO-Mem, without depth, online geometry, or planner-based object motion, 2AM reaches 76.3% average completion, a 61.5-point improvement over the strongest reported baseline of 14.8%, together with 63.0% relaxed and 11.8% strict success. These results show that task memory can remain Agent-side. They further show that Action Model capability depends not only on what the policy has learned, but on how precisely the Agent can steer it.",
-      "authors": "Yutong Hu, Fengjiao Chen, Xuezhi Cao et al.",
-      "category": "cs.RO",
-      "published_at": "2026-09-10T09:35:56+00:00",
-      "updated_at": "2026-09-10T09:35:56Z",
-      "title_zh": "2AM：接地代理端记忆作为长视野操纵中可操纵动作模型的指导"
-    },
-    {
-      "id": "http://arxiv.org/abs/2609.11270v1",
-      "title": "Beyond Noise Steering: Dual-Latent Space Reinforcement Learning for Generative Robot Policy",
-      "url": "https://arxiv.org/abs/2609.11270",
-      "summary": "Pretrained generative robot policies learn expressive action priors from demonstrations. However, existing reinforcement learning methods only steer the noisy space but fail to modulate intermediate action representations during the generation process, resulting in performance degradation and inefficiency. To address this limitation, we propose a novel Dual-Latent Space Reinforcement Learning (DLSRL) framework, which complements initial-noise steering with representation-level control inside the frozen generator. Specifically, our actor network predicts two distinct latent variables: an initial-noise latent variable that steers behavior generation, and an action-representation latent variable for intermediate feature modulation. Moreover, this representation latent variable is mapped to adapter features and ingeniously injected into the hidden states of intermediate action tokens via residual connections. Our dual-control design enables direct adjustment of action representations without updating the base policy. Experiments across generative policy architectures and robotic manipulation tasks show that DLSRL effectively accelerates online robot policy adaptation and achieves competitive performance. Our code is available at \\href{https://github.com/xianchaoxiu/DLSRL}{https://github.com/xianchaoxiu/DLSRL}.",
-      "authors": "Pengfei Zhang, Teng Sun, Xianchao Xiu",
-      "category": "cs.RO",
-      "published_at": "2026-09-10T09:04:04+00:00",
-      "updated_at": "2026-09-10T09:04:04Z",
-      "title_zh": "超越噪声引导：生成机器人策略的双潜在空间强化学习"
     }
   ]
 }
