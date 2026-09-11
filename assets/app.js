@@ -462,14 +462,19 @@ function sortByScore(items, sortMode) {
   });
 }
 
-function renderItemNode(item) {
+function renderItemNode(item, showSite) {
   const node = itemTpl.content.firstElementChild.cloneNode(true);
-  node.querySelector(".site").textContent = item.site_name;
+  // Jack 2026-09-11: .site 仅在无分组标题上下文时显示（精选锚点区），主信号流由 site-group 标题承载，避免冗余
+  const siteEl = node.querySelector(".site");
+  if (showSite && item.site_name) {
+    siteEl.textContent = item.site_name;
+  } else {
+    siteEl.remove();
+  }
   const kind = sourceKind(item.site_id);
   const categoryEl = node.querySelector(".category");
   categoryEl.textContent = kind.label;
   categoryEl.classList.add(`kind-${kind.tone}`);
-  node.querySelector(".source").textContent = `分区: ${itemGnCategory(item)}`;
   node.querySelector(".time").textContent = fmtTime(item.published_at || item.first_seen_at);
 
   // Jack 2026-05-15: 五维评分 badge
@@ -506,21 +511,48 @@ function renderItemNode(item) {
     titleEl.textContent = original;
   }
   titleEl.href = item.url;
+
+  // Jack 2026-09-11 (v3): 与后端 clean_description 同规则的摘要渲染
+  const descEl = node.querySelector(".description");
+  if (descEl) {
+    const normWs = (s) => (s || "").replace(/\s+/g, " ").trim();
+    const rawDesc = normWs(item.description);
+    const tN = normWs(item.title);
+    let d = rawDesc;
+    // 剥 desc 尾部 " 来源名" / " - 来源名"
+    d = d.replace(/\s+[^\s\-–—]{2,30}\s*$/, "").replace(/\s*[-–—]\s*[^\s\-–—]{2,30}\s*$/, "").trim();
+    // title 剥尾部 " - 来源名"
+    const tC = tN.replace(/\s*[-–—]\s*[^\s\-–—]{2,30}\s*$/, "").trim();
+    const isDup =
+      (rawDesc && d && (d === tC || d === tN || rawDesc === tN || rawDesc === tC)) ||
+      (() => { const probe = Math.min(40, d.length, tN.length); return probe >= 20 && d.slice(0, probe) === tN.slice(0, probe) && Math.abs(d.length - tN.length) < 60; })();
+    if (!isDup && d.length >= 30) {
+      descEl.textContent = d.length > 180 ? d.substring(0, 180) + "…" : d;
+    } else {
+      descEl.remove();
+    }
+  }
   return node;
 }
 
-function buildSourceGroupNode(source, items) {
+function buildSourceGroupNode(source, items, siteName) {
   const section = document.createElement("section");
   section.className = "source-group";
   const header = document.createElement("header");
   header.className = "source-group-head";
-  const title = document.createElement("h3");
-  title.textContent = source;
-  const count = document.createElement("span");
-  count.textContent = `${fmtNumber(items.length)} 条`;
+  // Jack 2026-09-11: 组内 source 与大栏目 site 同名（如"国外机器人资讯"下再分"国外机器人资讯"）→ 不再重复渲染标题
+  const isRedundant = siteName && (source === siteName || source.startsWith(siteName));
+  if (!isRedundant) {
+    const title = document.createElement("h3");
+    title.textContent = source;
+    const count = document.createElement("span");
+    count.textContent = `${fmtNumber(items.length)} 条`;
+    header.append(title, count);
+  } else {
+    header.classList.add("redundant");
+  }
   const listEl = document.createElement("div");
   listEl.className = "source-group-list";
-  header.append(title, count);
   section.append(header, listEl);
   items.forEach((item) => { try { listEl.appendChild(renderItemNode(item)); } catch(e) { console.error('[BSGN] error:', e.message, 'item:', item?.title?.substring(0,30)); } });
   return section;
@@ -593,7 +625,7 @@ function renderGroupedBySiteAndSource(items) {
 
     const sourceGroups = groupBySource(site.items);
     sourceGroups.forEach(([source, groupItems]) => {
-      siteListEl.appendChild(buildSourceGroupNode(source, groupItems));
+      siteListEl.appendChild(buildSourceGroupNode(source, groupItems, site.siteName));
     });
     frag.appendChild(siteSection);
   });
@@ -1311,7 +1343,7 @@ async function initAnchorSection() {
   anchorItems.forEach(item => {
     try {
       // 锚点文章显示具体来源（TechCrunch Robotics、GN: 智元机器人等）
-      const node = renderItemNode(item);
+      const node = renderItemNode(item, true);
       fragment.appendChild(node);
     }
     catch(e) { console.error('[ANCHOR] 渲染失败:', e.message); }
