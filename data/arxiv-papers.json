@@ -1,39 +1,5 @@
 {
-  "generated_at": "2026-09-12T04:57:51.940022+00:00",
-  "total_items": 3,
-  "items": [
-    {
-      "id": "http://arxiv.org/abs/2609.11920v1",
-      "title": "EVPeriscope: Extended Perception across Aerial and Ground Vehicles with Event-based Propeller Tracking",
-      "url": "https://arxiv.org/abs/2609.11920",
-      "summary": "Reliable relative localization between aerial and ground robots is a key requirement for tightly coordinated heterogeneous teams. This can be difficult to do using conventional frame-based cameras and fiducial markers because they are sensitive to motion blur, lighting variations, and payload constraints. This paper presents EVPeriscope, an event-based perception system that enables detection, localization and control of a quadrotor using an upward-facing event camera on a ground robot by detecting the high-frequency visual signature of its propellers. This system allows the quadrotor to function as an extended perception system for the ground robot when onboard sensors exhibit degradation or occlusion. We demonstrate the capabilities of this marsupial ground-aerial system via experiments in challenging field conditions with wind speeds of up to 15 mph, in both daylight and at night. We show that the system supports localization and closed-loop navigation through dense foliage where the ground robot's sensors are occluded. Our control system for the quadrotor operates at 200 Hz entirely with onboard sensing and computation. More details and experiment videos can be found on the project page: https://ongdexter.github.io/evperiscope.",
-      "authors": "Dexter Ong, Vijay Kumar, Pratik Chaudhari",
-      "category": "cs.RO",
-      "published_at": "2026-09-10T17:58:03+00:00",
-      "updated_at": "2026-09-10T17:58:03Z",
-      "title_zh": "EVPeriscope：通过基于事件的螺旋桨跟踪扩展空中和地面车辆的感知"
-    },
-    {
-      "id": "http://arxiv.org/abs/2609.11875v1",
-      "title": "UniMPA: A Unified Memory-Prediction-Action Model via Action-Grounded Transition Modeling",
-      "url": "https://arxiv.org/abs/2609.11875",
-      "summary": "Recent advances in Vision-Language-Action (VLA) models have improved robotic manipulation, yet observation-to-action learning remains limited by a fundamental transition realizability gap, manifested in three tightly coupled problems: (i) Transition ambiguity. Visually similar current observations may correspond to different manipulation phases and imply different subsequent transitions. (ii) Prediction--execution mismatch. A visually plausible predicted future observation does not necessarily correspond to a physically realizable transition. (iii) Experience--realization mismatch. A historically executable action pattern may not necessarily realize the intended transition in the current scene and therefore requires context-aware adaptation. Accordingly, we propose UniMPA, a Unified Memory-Prediction-Action model that addresses these problems through a shared action-grounded transition interface. (i) UniMPA introduces Persistent-Selective Future Prediction to resolve transition ambiguity by modeling the intended future state evolution. A persistent latent stream continuously tracks task-level progress, while a transition-critical pixel stream selectively resolves fine-grained interaction changes through memory-grounded prediction. (ii) To assess the physical executability of the anticipated transition, the predicted transition queries a temporal Visual-Action Memory Bank. The bank retrieves historically realized visual-action experience, grounding future prediction in executable evidence. (iii) To adapt executable experience to the current scene, an Action-Visual Memory Bank retrieves visually grounded action prototypes from historical action evolution. Prototype-Biased Flow then shifts the flow source toward a historically supported action manifold for context-aware refinement.",
-      "authors": "Wei Li, Rui Shao, Jie He et al.",
-      "category": "cs.RO",
-      "published_at": "2026-09-10T17:45:03+00:00",
-      "updated_at": "2026-09-10T17:45:03Z",
-      "title_zh": "UniMPA：通过基于动作的转换建模建立统一的记忆-预测-动作模型"
-    },
-    {
-      "id": "http://arxiv.org/abs/2609.11871v1",
-      "title": "Learning Agent-based Model Predictive Control for Holistic Vehicle Performance",
-      "url": "https://arxiv.org/abs/2609.11871",
-      "summary": "Agent-based model predictive control (AMPC) has recently been proposed as a distributed scheme that collaborates with all agents to achieve optimal holistic performance. However, its optimality highly depends on the prediction accuracy that requires all agents or their contributions to be known, which is too idealistic for actual implementation. This research proposes a novel practical hybrid control scheme - learning agent-based MPC (LAMPC), combining the model-based AMPC approach and data-based learning methods to improve the holistic vehicle performance for multi-agent systems. The Gaussian process regression (GPR) enhanced by an online data management strategy serves as the learning core to predict unknown contributions. A novel multi-step prediction mechanism leverages the GPR learning potential along the horizon. The predicted mean, representing the learned unknown contributions, completes the system model in the MPC for more accurate control. Meanwhile, a stochastic framework is formulated to guarantee control safety and feasibility using soft chance constraints based on the prediction variance. Both simulations and experiments show that, with the learning capability, LAMPC outperforms the traditional AMPC. LAMPC can achieve higher tracking performance in well-learned scenarios and always guarantee constraint satisfaction even in less-learned scenarios. Moreover, the proposed hybrid control scheme is efficient for real-time implementation and is flexible to any control agent topology.",
-      "authors": "Jiaming Zhong, Reza Valiollahi Mehrizi, Mohammad Pirani et al.",
-      "category": "cs.RO",
-      "published_at": "2026-09-10T17:43:16+00:00",
-      "updated_at": "2026-09-10T17:43:16Z",
-      "title_zh": "基于学习代理的模型预测控制，实现车辆整体性能"
-    }
-  ]
+  "generated_at": "2026-09-12T06:04:18.749326+00:00",
+  "total_items": 0,
+  "items": []
 }
