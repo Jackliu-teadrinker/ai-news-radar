@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-09-13T11:39:25.002806+00:00",
+  "generated_at": "2026-09-13T12:09:30.030498+00:00",
   "window_start": "2026-09-13T19:00:00+08:00",
-  "window_end": "2026-09-13T19:39:04.995415+08:00",
-  "total_items": 1,
+  "window_end": "2026-09-13T20:09:29.379526+08:00",
+  "total_items": 2,
   "items": [
     {
-      "id": "3d9b358080cc94ba8026d27695e2f2e4463501dc",
-      "title": "Victoria emerges as a national leader in robotic surgery - timescolonist.com",
-      "title_zh": "",
+      "id": "a5cfc1f30fdf185ede6950495789e9e83a6143e4",
+      "title": "Victoria emerges as a national leader in robotic surgery - Times Colonist",
+      "title_zh": "维多利亚成为机器人手术领域的全国领导者 - Times Colonist",
       "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPSkVOcndySmJlWFdhaFA1ZlFHMGNzQncxRnRuZTNiU0pDRTJRdmpNYjJBSi1nOVBaZEY5RTZyODFXOENLcFhBeXJmNVZlRzBVbUQ5NFR1b1NNalN6cGFjUkM5dTExY0FNRTZHZ3FnYldIR0p3OEJDejdzVnlrckFELVhOekJwOUdkTi1zdnRJeFZEVEE2bnNveGlUMWNwd01WcUhvajBvM2Q1Zw?oc=5",
       "published_at": "2026-09-13T11:30:00+00:00",
       "category": "GN: surgical robot",
@@ -21,9 +21,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 29.85,
+      "timeliness": 29.34,
       "writing_value": 0,
-      "total_score": 104.85
+      "total_score": 104.34
+    },
+    {
+      "id": "7345f70d6293e7f3780c40669fb2822929e7f21f",
+      "title": "How cobots are powering the next generation of production - electronics360.globalspec.com",
+      "title_zh": "协作机器人如何为下一代生产提供动力 - electronics360.globalspec.com",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQbjRSZE9HalhvRE13cjhUVW9pN2JEcUN0a3dZbG9TS2EwUHdFSEl2N2Y5WjNyZUdvUWRxOVNQTnA2TmJwRHpTQURnU2tGNDlrUGdtbVVUR1hsWWxfNS1sUHF5NFRvbXJJYmRTdzVQczRRRmRmVnpQQXZycjRXWXd6YmhwRDE4M3M1U0NMZ19YT3owSndJMkxVSHVHaWRBSm1ONnozTUd1M0ZTN0FidVE?oc=5",
+      "published_at": "2026-09-13T12:06:24+00:00",
+      "category": "GN: industrial robot",
+      "gn_label": "robotics",
+      "site_name": "GN: industrial robot",
+      "source": "GN: industrial robot",
+      "site_id": "GN: industrial robot",
+      "description": "",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 29.95,
+      "writing_value": 0,
+      "total_score": 104.95
     }
   ],
   "fallback_used": false
