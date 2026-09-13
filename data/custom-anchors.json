@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-13T18:06:21.633690+00:00",
+  "generated_at": "2026-09-13T18:56:37.792623+00:00",
   "window_start": "2026-09-13T19:00:00+08:00",
-  "window_end": "2026-09-14T02:05:20.536419+08:00",
-  "total_items": 5,
+  "window_end": "2026-09-14T02:55:56.347104+08:00",
+  "total_items": 3,
   "items": [
     {
       "id": "4d92f53423d62c55f3c6eafa780425ac74144f31",
@@ -21,51 +21,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 27.98,
+      "timeliness": 27.14,
       "writing_value": 5,
-      "total_score": 112.98
-    },
-    {
-      "id": "7a31277b958da5345e926e5c5869388d8062a37f",
-      "title": "Will robots save the day? - Daily Kos",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNb2Z6YlI1bWhlVVBQNHZXSFJxWjZ3ZEFhNGtPZHVKMGtzUmNqOGdBVEZYSU0xdzZTTlQtNWFXQjVZVTBTLVFaUlBIVGpiRGxkRUFjdDg2SF90ZXpEeHFpTjhXb1NxQ0oyWGw4ZkpEZ3Y4QVpjZnFBdVZfc2VlVzFQRlhMeU0zTzNNLU9MN2ZEdw?oc=5",
-      "published_at": "2026-09-13T12:30:00+00:00",
-      "category": "GN: robot",
-      "gn_label": "robotics",
-      "site_name": "GN: robot",
-      "source": "GN: robot",
-      "site_id": "GN: robot",
-      "description": "",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 24.41,
-      "writing_value": 0,
-      "total_score": 99.41
-    },
-    {
-      "id": "17ca9078eeb8cbf70ed31f73d4b8de09e08c3e03",
-      "title": "Chinese Appliance Firms Shift to Robotics, B2B - chosun.com",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOZzhDS3d0OEZTaXNPUjZqWnB4dlBhbFY3b0VKRnpoOUllZVQ4VjhxaFNXb2tOMUJRQ0ZIU25FVm5jMjdYMFpZcEtXRnk0Q0FxMUpxeS1MaHQwVDE0a19JYWRSSThlVFZmdExWM3ZLUVNhRDY4OThsSnNFakVtdVo2RDlwYVZHdDZr?oc=5",
-      "published_at": "2026-09-13T15:35:56+00:00",
-      "category": "GN: robot vacuum",
-      "gn_label": "robotics",
-      "site_name": "GN: robot vacuum",
-      "source": "GN: robot vacuum",
-      "site_id": "GN: robot vacuum",
-      "description": "",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 27.51,
-      "writing_value": 0,
-      "total_score": 102.51
+      "total_score": 112.14
     },
     {
       "id": "75ed3688634109095b0a360114bda95f58af7259",
@@ -84,9 +42,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.02,
+      "timeliness": 23.18,
       "writing_value": 0,
-      "total_score": 99.02
+      "total_score": 98.18
     },
     {
       "id": "a5cfc1f30fdf185ede6950495789e9e83a6143e4",
@@ -105,9 +63,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.41,
+      "timeliness": 22.57,
       "writing_value": 0,
-      "total_score": 98.41
+      "total_score": 97.57
     }
   ],
   "fallback_used": false
