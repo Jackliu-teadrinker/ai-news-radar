@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-14T20:54:31.443793+00:00",
+  "generated_at": "2026-09-14T22:46:10.106773+00:00",
   "window_start": "2026-09-14T19:00:00+08:00",
-  "window_end": "2026-09-15T04:52:29.188930+08:00",
-  "total_items": 15,
+  "window_end": "2026-09-15T06:43:46.762002+08:00",
+  "total_items": 17,
   "items": [
     {
       "id": "cea4137f8215101e4bd4a9e6fe4adc8e8d7f0417",
@@ -21,9 +21,51 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.2,
+      "timeliness": 23.34,
       "writing_value": 0,
-      "total_score": 100.2
+      "total_score": 98.34
+    },
+    {
+      "id": "77c25508e67f8319f27940fe19093d58983c0df6",
+      "title": "Report covers advances in surgical robots, deploying warehouse automation in the real world - The Robot Report",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNV0pkTW5PNkZrM3R1LUhtM2xPbzN5V3hrck5rWmcyemxTaHlrTjgxYjluWVQ1dzkxdXR2a2pwWDF6dWlXQmpXZ1NRbTR4VGhnV2NEbXpjY0VkNUxOTkx2Z1g2Si1oVk9BeEczbVdIQzVfdjVyTkxpV2VDbUt6czF0SWdXekpZa2dqNXBKYU8yTTRzR0hXdGE1WDZTYTFFMTY4bEJ0aVFJYjJWYTMzWWQ0NQ?oc=5",
+      "published_at": "2026-09-14T21:07:44+00:00",
+      "category": "GN: Robot Report",
+      "gn_label": "robotics",
+      "site_name": "GN: Robot Report",
+      "source": "GN: Robot Report",
+      "site_id": "GN: Robot Report",
+      "description": "at two of the more successful areas for automation: surgical robots and warehouse logistics. This free download shares r",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 28.4,
+      "writing_value": 0,
+      "total_score": 103.4
+    },
+    {
+      "id": "24c536e08a61fe490f0b7aafe37454eafd539577",
+      "title": "Paradromics Achieves Real-Time Speech with Connexus® Brain-Computer Interface - Morningstar",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNWjdlWnRIWXltYVdfNXMtaEV0YmF0ZVg1ZlZENDdYU3BDT0hxOTRPek90WDNHX0ZoYjRWalJFb1ByaGFXYmJGcGcxcVhlRUVOQnJvYk01M1VjajJiMDNMVm1BNlRhTWZFQ0REbHpHczBLeFY4VHp5VllIZ0dzcEJHOUtyUmZ1WC1NbWJXcTk2blpBcWJ2NVNubUYwaTFhejFZdXJXc2JMckFaRnJkdHZpYTE2SWdveHprdVlieDl5YWQ4NzVTSmhHSU9ob0gxYUItU1hTbQ?oc=5",
+      "published_at": "2026-09-14T18:57:00+00:00",
+      "category": "GN: brain-computer interface",
+      "gn_label": "robotics",
+      "site_name": "GN: brain-computer interface",
+      "source": "GN: brain-computer interface",
+      "site_id": "GN: brain-computer interface",
+      "description": "Michigan woman living with motor neuron disease uses brain activity to generate her own words, answer open-ended questio",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 26.22,
+      "writing_value": 0,
+      "total_score": 116.22
     },
     {
       "id": "b48acbbdbe689da57a2894158e7cfcf325e33265",
@@ -42,51 +84,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.87,
+      "timeliness": 22.02,
       "writing_value": 0,
-      "total_score": 98.87
-    },
-    {
-      "id": "82e77a20d31a7c2892d4eef6cf8b4b38381a797a",
-      "title": "Ban delivery robots that put pedestrians at risk, says charity - thetimes.com",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNWUpEUWlWRG5kR0tHa1RPRHBuOXZCZGI5d09tanNfdUFhU1ROaURGRzByX2FtQ2tsdUV2WTdReWhMUnhNeVZ6MWhNdzBPR215QkI5S25LeUVkR2pncHo2S282X3JCWVp1MG5GcS1FcjdHLWpUT19Nb0NobENNYkFBWjd3SHRUc0pCOS1qX0JFd3ViMV8wTVp3dkZuSkU4TDlUb3IwQ1p2RXdYbllWMFJocXFrc2R3U2E1bVhOVk13?oc=5",
-      "published_at": "2026-09-14T20:15:23+00:00",
-      "category": "GN: autonomous robot",
-      "gn_label": "robotics",
-      "site_name": "GN: autonomous robot",
-      "source": "GN: autonomous robot",
-      "site_id": "GN: autonomous robot",
-      "description": "Verifying your device, please wait Verification failed. Please try again. Try Again Verification failed. Please try again.",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 29.38,
-      "writing_value": 0,
-      "total_score": 104.38
-    },
-    {
-      "id": "5c52a4927f9b4132af7f2d6cd42aecb9981273a4",
-      "title": "Can Serve Robotics' Beacon Overcome Restaurant Integration Barriers? - Yahoo Finance",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPcHA0SXAzSzEwU0Z3bXJ2QTdUbGhYMlF3dm9pM0djODQtZTgyc0VoVXBvRUN3dUU0TVpSSDB5MTZjUDRnOEVtcGZPMTdUaFc4OV9pN0NHSlh4dFBId2RwWHBlRkU1YWp6U3hqb0RBeDUzbDEtY2RoeWRrZE43LVZRSkdmbU1rVjFzMUZseDRKV3h6OVF6cUFhWTE2VWdoeEwyZWZXWG12Tm8?oc=5",
-      "published_at": "2026-09-14T13:37:00+00:00",
-      "category": "GN: autonomous robot",
-      "gn_label": "robotics",
-      "site_name": "GN: autonomous robot",
-      "source": "GN: autonomous robot",
-      "site_id": "GN: autonomous robot",
-      "description": "Serve Robotics Inc. SERV is working to address a key obstacle to wider robotic delivery adoption by reducing the difficu",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 22.74,
-      "writing_value": 0,
-      "total_score": 97.74
+      "total_score": 97.02
     },
     {
       "id": "12dc43a92549f31e07a3a60755eb2b2da5712ff2",
@@ -105,9 +105,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.64,
+      "timeliness": 21.79,
       "writing_value": 0,
-      "total_score": 98.64
+      "total_score": 96.79
     },
     {
       "id": "6fd1bd830eb64adbbb3df9b87d10e72c2f2427a2",
@@ -126,30 +126,51 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.11,
+      "timeliness": 23.26,
       "writing_value": 0,
-      "total_score": 100.11
+      "total_score": 98.26
     },
     {
-      "id": "723dc2395a363c143a3dd88258c64f05fa40a9a8",
-      "title": "Universal Robots Unveils Gen 7, a New Platform for Industrial Automation and Physical AI Deployment - The Joplin Globe",
+      "id": "82e77a20d31a7c2892d4eef6cf8b4b38381a797a",
+      "title": "Ban delivery robots that put pedestrians at risk, says charity - thetimes.com",
       "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiqAJBVV95cUxOUlJEcVlaLXM5cGY3SEJQYTN6YmtmV1RBcFEwLWFINGNmWEZiS1A2Wm9PYmltWE03bWNqZWg3Um9XMmF4YUdqbVU5YXpneW40MFZ5NWxOZURTb1NSdExhNmVYUGhnQUpjS2JuQmtjWmRSNmZYMk52M1JEVzl3STVyZzVOcUNycXlBRmo2WkptN05DdGxYc3hGSXN1Z1JHVUR5RUR4dk0tX0ZhY2JVdTNHMDZmV2NtZzltcFJSS1dYTzBiMEpnTDk1cXZQVlE0dmN6dFpQMGp3N3FRVXAxZ09tLXVocmtQQ3FLbG8tNTR1S2tYQmhwc0FOOHJTTDk1VU9RMEJtMWVucnBETXdNWWdDdElnQWtLaXE1Y0dEUUVORUM5aU9CLVpZSw?oc=5",
-      "published_at": "2026-09-14T15:23:19+00:00",
-      "category": "GN: industrial robot",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNWUpEUWlWRG5kR0tHa1RPRHBuOXZCZGI5d09tanNfdUFhU1ROaURGRzByX2FtQ2tsdUV2WTdReWhMUnhNeVZ6MWhNdzBPR215QkI5S25LeUVkR2pncHo2S282X3JCWVp1MG5GcS1FcjdHLWpUT19Nb0NobENNYkFBWjd3SHRUc0pCOS1qX0JFd3ViMV8wTVp3dkZuSkU4TDlUb3IwQ1p2RXdYbllWMFJocXFrc2R3U2E1bVhOVk13?oc=5",
+      "published_at": "2026-09-14T20:15:23+00:00",
+      "category": "GN: autonomous robot",
       "gn_label": "robotics",
-      "site_name": "GN: industrial robot",
-      "source": "GN: industrial robot",
-      "site_id": "GN: industrial robot",
-      "description": "CHICAGO--(BUSINESS WIRE)--Sep 14, 2026-- Today at the IMTS tradeshow, Teradyne Robotics company Universal Robots (UR) – ",
+      "site_name": "GN: autonomous robot",
+      "source": "GN: autonomous robot",
+      "site_id": "GN: autonomous robot",
+      "description": "Verifying your device, please wait Verification failed. Please try again. Try Again Verification failed. Please try again.",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.52,
+      "timeliness": 27.53,
       "writing_value": 0,
-      "total_score": 99.52
+      "total_score": 102.53
+    },
+    {
+      "id": "5c52a4927f9b4132af7f2d6cd42aecb9981273a4",
+      "title": "Can Serve Robotics' Beacon Overcome Restaurant Integration Barriers? - Yahoo Finance",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPcHA0SXAzSzEwU0Z3bXJ2QTdUbGhYMlF3dm9pM0djODQtZTgyc0VoVXBvRUN3dUU0TVpSSDB5MTZjUDRnOEVtcGZPMTdUaFc4OV9pN0NHSlh4dFBId2RwWHBlRkU1YWp6U3hqb0RBeDUzbDEtY2RoeWRrZE43LVZRSkdmbU1rVjFzMUZseDRKV3h6OVF6cUFhWTE2VWdoeEwyZWZXWG12Tm8?oc=5",
+      "published_at": "2026-09-14T13:37:00+00:00",
+      "category": "GN: autonomous robot",
+      "gn_label": "robotics",
+      "site_name": "GN: autonomous robot",
+      "source": "GN: autonomous robot",
+      "site_id": "GN: autonomous robot",
+      "description": "Serve Robotics Inc. SERV is working to address a key obstacle to wider robotic delivery adoption by reducing the difficu",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 20.89,
+      "writing_value": 0,
+      "total_score": 95.89
     },
     {
       "id": "34ddeee6f2db0a199418a841cffa761a3791ad27",
@@ -168,9 +189,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 28.86,
+      "timeliness": 27.01,
       "writing_value": 0,
-      "total_score": 103.86
+      "total_score": 102.01
     },
     {
       "id": "9adaf242823ed952a83c041f0555aca123745faa",
@@ -189,16 +210,16 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 21.98,
+      "timeliness": 20.13,
       "writing_value": 0,
-      "total_score": 96.98
+      "total_score": 95.13
     },
     {
-      "id": "52da1a0396e592b638853d5d8550d81b4fb2a7b4",
-      "title": "Universal Robots launches Gen 7 collaborative robot platform By Investing.com - Investing.com India",
+      "id": "929d89a2573d7ddcff86af5e6b5a0aed48854958",
+      "title": "Universal Robots launches Gen 7 collaborative robot platform By Investing.com - Investing.com South Africa",
       "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPV0huNUttSWlTTTZTUTA1dzBYRjg2YUxmR09HNk1fUHVrM0ExY1V0RUctMGJxSkhNU1BONHpCa0hYd0hMR1Ricmo4cTlKeGtSVW9WVWNJeHVoekFQZ3NUOEQ4YVpXWFY4ODlVMEdkMkdwdGJzMi14X1pRdWZsSUh0TzM3bG1wVEJxX0hielpncnVCWUhJdlZhSHZHOVYtRFhjNlBMS1AtUmFRaVpNeXFjMU5JamRNMGtsWUk5TEJR?oc=5",
-      "published_at": "2026-09-14T15:39:22+00:00",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOZXFrbWdsbGtZN1hTSVdWS3FfMUZVV0tvUzRqUmptelhoTFZUY0pZQmtzRENvZklpY1JQTzB6aVpmTC1nSkgtTVo0YzJjWHN1X1dsMWZPRjVMNlBhYks0R3ZDY1dxYzFWUnN0R1NFRkJFSnk5dmZDZHg0V1hVN3hKOHZ5aE1zYzJTMHJFcmxHLXBFWVF0eTBpMHVrMHF5QkJ1eEZqczRlbzBrekVCRW9qcHpZdzlQbl9pZjRNb1Nn?oc=5",
+      "published_at": "2026-09-14T15:32:47+00:00",
       "category": "GN: collaborative robot",
       "gn_label": "robotics",
       "site_name": "GN: collaborative robot",
@@ -210,9 +231,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.78,
+      "timeliness": 22.82,
       "writing_value": 0,
-      "total_score": 99.78
+      "total_score": 97.82
     },
     {
       "id": "6fd0ad9126a22b995de15752f3df1d680dfda118",
@@ -231,9 +252,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 27.63,
+      "timeliness": 25.77,
       "writing_value": 0,
-      "total_score": 102.63
+      "total_score": 100.77
+    },
+    {
+      "id": "827e65e2ea3ba7835494cdafe32c232eedce0553",
+      "title": "The Advantages of Robotic-Assisted Surgery - MetroHealth",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPN2k2MWJ3X3FwZDhxNVJKSWRzZWU4TG1OSHc1STcyclJjaDBwUzRRTlN6YlhObW4za3lWZ1RBbEVuSXY4bnpUZXI2ZlBUcmRoa1BDR0ZOVjFUbi1JbEFkRllrdllkZ2c3aFhEdmtTS29UeWlDLTBZV19EVnRsUTZhWDlHb1QwWEE?oc=5",
+      "published_at": "2026-09-14T16:19:57+00:00",
+      "category": "GN: surgical robot",
+      "gn_label": "robotics",
+      "site_name": "GN: surgical robot",
+      "source": "GN: surgical robot",
+      "site_id": "GN: surgical robot",
+      "description": "Despite its name, robotic-assisted surgery does not allow a robot to operate on its own. Instead, highly trained surgeon",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 23.61,
+      "writing_value": 0,
+      "total_score": 98.61
     },
     {
       "id": "1b20fa4eef8bcccf1e3a245e9f591da7b6bc6a0b",
@@ -252,13 +294,13 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.13,
+      "timeliness": 24.27,
       "writing_value": 0,
-      "total_score": 101.13
+      "total_score": 99.27
     },
     {
-      "id": "a5fd3787f6f92e0bd0d8b5e3a5edd2a81e3a4ca4",
-      "title": "雷军到访宇树科技 - 新浪网",
+      "id": "eda0dcd8209f4b3d9fff673801d70b9334eb2dcf",
+      "title": "雷军到访宇树科技 - 新浪财经",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE11VGJDdms5LU9NTS1jYllIamo3bjVOMXg5SUdjbWR4c25SbjBVd3hMcmhjMzdMX2hUalpfYUM4al9NN25UT19oZFYwb3V2NWxTNHZJRE5Mb1F0SWhwNFVfUGd3MFRxakR2RjZHUGZETHY3dkdCNWJxdQ?oc=5",
       "published_at": "2026-09-14T13:16:00+00:00",
@@ -273,9 +315,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 22.39,
+      "timeliness": 20.54,
       "writing_value": 0,
-      "total_score": 97.39
+      "total_score": 95.54
     },
     {
       "id": "528640b2cde2cf59d4649eb5d129d6452690f75c",
@@ -294,13 +336,13 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.87,
+      "timeliness": 22.01,
       "writing_value": 0,
-      "total_score": 98.87
+      "total_score": 97.01
     },
     {
-      "id": "102522c64faa8fc5af6ad5fb8efc07716b56c97f",
-      "title": "雷军今晚到访宇树科技！ 王兴兴全程陪同，雷军现场“踢踹”机器人 - 新浪网",
+      "id": "7eb3cac50b1bf33c62bf0885ff1dd41c807de440",
+      "title": "雷军今晚到访宇树科技！ 王兴兴全程陪同，雷军现场“踢踹”机器人 - 新浪财经",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPdkE5TmtESE5Yb1Z3S2lTMDZmRnItYk9jNkZaaGkwRk9QQ3RuSElGNEl0OUVFYWJFb2xsR3dnaGgzZzNRSl80aUpDeDk5aFFvenlWZ0V0eTdZOE85UE9tUmJrTTFPNjJKenhNWk1wT1c2dWVqdUVNSV8tbml1WllIdXJsbXdQdVowdUlqbGpIRFp0Ynh6WUxQLS1obTk3WkpicFV2RTlqdVBsSXRvZHVsQ29Mc1VnNEFzSnZad3cyblBZb2V3Vi1pSGNtaHA2LTFm?oc=5",
       "published_at": "2026-09-14T15:16:00+00:00",
@@ -315,9 +357,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.39,
+      "timeliness": 22.54,
       "writing_value": 0,
-      "total_score": 99.39
+      "total_score": 97.54
     }
   ],
   "fallback_used": false
