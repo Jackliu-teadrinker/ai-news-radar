@@ -170,15 +170,44 @@ def _make_description(item: dict, cache: dict, cache_path: str) -> str:
         return ''
     try:
         resp = requests.get(
-            real, headers={'User-Agent': USER_AGENT},
+            real, headers={'User-Agent': USER_AGENT,
+                           'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8'},
             timeout=FETCH_TIMEOUT, allow_redirects=True, verify=False,
         )
         text = trafilatura.extract(
             resp.content, include_comments=False,
             include_tables=False, with_metadata=False,
         )
+        # GBK 编码兜底（部分国内站 resp.encoding 判错）
+        if not text or len(text.strip()) < MIN_BODY_LEN:
+            try:
+                text = trafilatura.extract(
+                    resp.content.decode('gb18030', errors='ignore').encode('utf-8'),
+                    include_comments=False, include_tables=False, with_metadata=False)
+            except Exception:
+                pass
     except Exception:
         return ''
+    # 部分源 sohu 等返回 200 但首抓偶发空/JS 壳：换移动版域名重试一次
+    if not text or len(text.strip()) < MIN_BODY_LEN:
+        host = urlparse(real).netloc
+        mobile_map = {'www.sohu.com': 'm.sohu.com', 'm.sohu.com': 'www.sohu.com',
+                      'finance.sina.com.cn': 'finance.sina.cn', 'www.sina.com.cn': 'sina.cn'}
+        alt_host = mobile_map.get(host)
+        if alt_host:
+            alt_url = re.sub(re.escape(host), alt_host, real, count=1)
+            try:
+                resp2 = requests.get(
+                    alt_url, headers={'User-Agent': USER_AGENT,
+                                      'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8'},
+                    timeout=FETCH_TIMEOUT, allow_redirects=True, verify=False)
+                text2 = trafilatura.extract(
+                    resp2.content, include_comments=False,
+                    include_tables=False, with_metadata=False)
+                if text2 and len(text2.strip()) > len((text or '').strip()):
+                    text = text2
+            except Exception:
+                pass
     if not text or len(text.strip()) < MIN_BODY_LEN:
         return ''
     # 垃圾正文检测（反爬/403/验证码页）
@@ -195,11 +224,14 @@ def _make_description(item: dict, cache: dict, cache_path: str) -> str:
     return _cut_summary(body)
 
 
-def enrich_items(items: list, output_dir: str, top_n: int = 150) -> dict:
+def enrich_items(items: list, output_dir: str, top_n: int = 150, recheck: bool = False) -> dict:
     """给 items 补 description（120 字真摘要）。就地修改 item dict。
 
     只处理：url 是 GN 跳转 且 description 为空/复读的条目；
     按 total_score 取 top_n；并发解码+抓取。返回统计 dict。
+
+    recheck=True: 已有 ≥30 字摘要且未成功抓过(无标记)的条目也重新抓取
+      （用于本地/CI 校验真实覆盖；每 12min 定时刷新仍默认 recheck=False，只补空）。
     """
     stats = {'candidates': 0, 'ok': 0, 'failed': 0, 'decode_miss': 0, 'elapsed_s': 0.0}
     if trafilatura is None or _gnd is None:
@@ -209,8 +241,15 @@ def enrich_items(items: list, output_dir: str, top_n: int = 150) -> dict:
     cache_path = os.path.join(output_dir, 'gn-url-cache.json')
     cache = _load_cache(cache_path)
 
-    cands = [i for i in items
-             if _is_gn_url(i.get('url', '')) and len((i.get('description') or '').strip()) < 30]
+    def _needs(i):
+        d = (i.get('description') or '').strip()
+        if not _is_gn_url(i.get('url', '')):
+            return False
+        if len(d) < 30:
+            return True
+        return recheck and not i.get('_summary_ok')
+
+    cands = [i for i in items if _needs(i)]
     cands.sort(key=lambda x: -x.get('total_score', 0))
     cands = cands[:min(top_n, MAX_CANDIDATES)]
     stats['candidates'] = len(cands)
@@ -232,23 +271,36 @@ def enrich_items(items: list, output_dir: str, top_n: int = 150) -> dict:
     stats['decode_miss'] = miss
     _save_cache(cache_path, cache)
 
-    # 阶段 2: 并发抓正文（跳过已解出 URL 的缓存部分也要抓——description 可能仍是复读清洗后的空）
+    # 阶段 2: 并发抓正文（按 url 去重，同一真实 URL 只抓一次；缓存命中也重抓一次正文）
     need_fetch = [i for i in cands if urls.get(i['url'])]
+    seen, uniq = set(), []
+    for i in need_fetch:
+        u = urls[i['url']]
+        if u not in seen:
+            seen.add(u)
+            uniq.append(i)
     with ThreadPoolExecutor(max_workers=FETCH_WORKERS) as ex:
-        futs = [ex.submit(_make_description, i, cache, cache_path) for i in need_fetch]
-        for f, item in zip(futs, need_fetch):
+        futs = [ex.submit(_make_description, i, cache, cache_path) for i in uniq]
+        results = []
+        for f, item in zip(futs, uniq):
             try:
                 s = f.result()
             except Exception:
                 s = ''
-            if s:
-                item['description'] = s[:300]
-                stats['ok'] += 1
-            else:
-                stats['failed'] += 1
+            results.append((item, s))
+        by_url = {item['url']: s for item, s in results}
+    for item in need_fetch:
+        s = by_url.get(item['url'], '')
+        if s:
+            item['description'] = s[:300]
+            item.pop('_summary_ok', None)
+            item['_summary_ok'] = True
+            stats['ok'] += 1
+        else:
+            stats['failed'] += 1
     stats['elapsed_s'] = round(time.time() - t0, 1)
     print(f"[SUMMARY] enriched {stats['ok']}/{stats['candidates']} "
-          f"(decode_miss={miss}, failed={stats['failed']}, {stats['elapsed_s']}s)")
+          f"(decode_miss={miss}, failed={stats['failed']}, {stats['elapsed_s']}s, recheck={recheck})")
     return stats
 
 
