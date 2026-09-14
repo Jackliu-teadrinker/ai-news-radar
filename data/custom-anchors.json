@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-14T06:15:10.634279+00:00",
+  "generated_at": "2026-09-14T07:05:57.496811+00:00",
   "window_start": "2026-09-13T19:00:00+08:00",
-  "window_end": "2026-09-14T14:13:49.194515+08:00",
-  "total_items": 14,
+  "window_end": "2026-09-14T15:04:36.180822+08:00",
+  "total_items": 15,
   "items": [
     {
       "id": "4d92f53423d62c55f3c6eafa780425ac74144f31",
@@ -21,9 +21,51 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 5,
-      "timeliness": 15.84,
+      "timeliness": 14.99,
       "writing_value": 5,
-      "total_score": 100.84
+      "total_score": 99.99
+    },
+    {
+      "id": "75ed3688634109095b0a360114bda95f58af7259",
+      "title": "How cobots are powering the next generation of production - Electronics360",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQbjRSZE9HalhvRE13cjhUVW9pN2JEcUN0a3dZbG9TS2EwUHdFSEl2N2Y5WjNyZUdvUWRxOVNQTnA2TmJwRHpTQURnU2tGNDlrUGdtbVVUR1hsWWxfNS1sUHF5NFRvbXJJYmRTdzVQczRRRmRmVnpQQXZycjRXWXd6YmhwRDE4M3M1U0NMZ19YT3owSndJMkxVSHVHaWRBSm1ONnozTUd1M0ZTN0FidVE?oc=5",
+      "published_at": "2026-09-13T12:06:24+00:00",
+      "category": "GN: industrial robot",
+      "gn_label": "robotics",
+      "site_name": "GN: industrial robot",
+      "source": "GN: industrial robot",
+      "site_id": "GN: industrial robot",
+      "description": "Please complete the security check to access this website. Ray ID: a3ad8be09ecf86c1 Client IP: 52.161.59.0 GlobalSpec © ",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.65,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 11.03,
+      "writing_value": 0,
+      "total_score": 86.03
+    },
+    {
+      "id": "7e12122e12c38c61db071f8b3cf654a1de80706a",
+      "title": "Machines that think: the humanoid question - Bits&Chips",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE4ycDhoVGtMN1VObFFVbU56XzFnS1I1R1Ryb1gzbzVwUmhZdDdrNVpKM3BKcnQ3Q3RGQlk2Y2VrdWEtRkpEek16eUJFSE4zeG5fV1AzdmdFUkJTalNYcWt5MV9iX2VyLTRORS1kaF9HR3Q4dkNSREtpdzVkMXR3dw?oc=5",
+      "published_at": "2026-09-14T04:40:27+00:00",
+      "category": "GN: industrial robot",
+      "gn_label": "robotics",
+      "site_name": "GN: industrial robot",
+      "source": "GN: industrial robot",
+      "site_id": "GN: industrial robot",
+      "description": "and at least one of them, safety for legged platforms, is currently a standards vacuum with well-capitalized customers w",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 27.6,
+      "writing_value": 0,
+      "total_score": 117.6
     },
     {
       "id": "56446442116de91f258a6b87e6125d59dc27d1c2",
@@ -42,34 +84,34 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 22.63,
+      "timeliness": 21.78,
       "writing_value": 0,
-      "total_score": 97.63
+      "total_score": 96.78
     },
     {
-      "id": "9246477830bc68579592b3e187b98969c66d2887",
-      "title": "Chinese Appliance Firms Turn to Robotics, B2B Amid Domestic Slump - 조선일보",
+      "id": "924607b8e73ff3ee681fe95935fb754fa1667ac6",
+      "title": "Robot vacuum makers urged to enhance privacy compliance in South Korea - mlex.com",
       "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOZzhDS3d0OEZTaXNPUjZqWnB4dlBhbFY3b0VKRnpoOUllZVQ4VjhxaFNXb2tOMUJRQ0ZIU25FVm5jMjdYMFpZcEtXRnk0Q0FxMUpxeS1MaHQwVDE0a19JYWRSSThlVFZmdExWM3ZLUVNhRDY4OThsSnNFakVtdVo2RDlwYVZHdDZr?oc=5",
-      "published_at": "2026-09-14T00:19:15+00:00",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNSFZSaGlaeUhuUlBZcF9MV29qWG5CSHRrV1NKdG9jUnlVc1NZZ0NYVHJWeHctRDJsNURlUEFiOExTekh2TGw3cVdFMW0wUUdqbWJPZW5sZmE1TmdrZlIwc3g4MUdKbVYwUWV1X3pJYWxtRWlvYWVvRDFpWm9IbkFBRXdmNW5RY0RqWDJ2aG1feXhvSndyaVZSOXVSVmpiVHJxeWpqMFRwekVmX1I20gFaQVVfeXFMTjBhRnJpX2YzQU1EMnJkcWQ0ZFdGSHhWb2ZPLVc1cEpVNnVQU2NOOWNGOEtiX2h3SGlCd3JpVXRQX3E1enF5VTEtT05oWFVnOEd1Y0ZjOS1TZXFB?oc=5",
+      "published_at": "2026-09-14T05:19:00+00:00",
       "category": "GN: robot vacuum",
       "gn_label": "robotics",
       "site_name": "GN: robot vacuum",
       "source": "GN: robot vacuum",
       "site_id": "GN: robot vacuum",
-      "description": "",
+      "description": "privacy rules, following a preventive inspection of the latest models sold in the country by five major brands — Roboroc",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 24.09,
+      "timeliness": 28.24,
       "writing_value": 0,
-      "total_score": 99.09
+      "total_score": 103.24
     },
     {
-      "id": "a072562c00175bfcef6a1049f031fb938de0788d",
-      "title": "While personal information such as video and audio of major robot vacuum cleaners sold in Korea is b.. - 매일경제",
+      "id": "aff1dbd6ff94f7f2efafc45611da98df1d9e5786",
+      "title": "While personal information such as video and audio of major robot vacuum cleaners sold in Korea is b.. - mk.co.kr",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5BcHBtcUZzQndUSThIZnJLRUF3ZUxkZnRCcFE0S3Z2emkxN2tGUU9sTUw2Q2Rid1BtdnRXOXpZdnNNeUxsRWhhZ0JDU3JkczVTNlE?oc=5",
       "published_at": "2026-09-14T02:22:11+00:00",
@@ -84,34 +126,13 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 26.14,
+      "timeliness": 25.29,
       "writing_value": 0,
-      "total_score": 101.14
+      "total_score": 100.29
     },
     {
-      "id": "f6bd88112d9ca5d2f041fa0562cc3346b3e3f27b",
-      "title": "ECOVACS launches DEEBOT X12S OmniCyclone robot vacuum - futurefive.com.au",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOb1VFOWJkY0JWX3R3UmVQeGl0WVcxVDRVa0VHSV85LWpOQ1hwMV9VeGtKVDBPLVNSdVdsMURIajk3LWNXd05jaUt4ZWxVQ0tkNHg4SkE3TUM5N1Z0am43RE9YNkttYzdXajVGcXZ4bHN4bWI2TEhldlFfanMzSE9qdnhLQkJTOFYzZURBckhR?oc=5",
-      "published_at": "2026-09-14T02:03:00+00:00",
-      "category": "GN: robot vacuum",
-      "gn_label": "robotics",
-      "site_name": "GN: robot vacuum",
-      "source": "GN: robot vacuum",
-      "site_id": "GN: robot vacuum",
-      "description": "Mon, 14th Sep 2026 (Today) ECOVACS has launched the DEEBOT X12S OmniCyclone robotic vacuum and mop in Australia and New ",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 25.82,
-      "writing_value": 0,
-      "total_score": 100.82
-    },
-    {
-      "id": "a5cfc1f30fdf185ede6950495789e9e83a6143e4",
-      "title": "Victoria emerges as a national leader in robotic surgery - Times Colonist",
+      "id": "3d9b358080cc94ba8026d27695e2f2e4463501dc",
+      "title": "Victoria emerges as a national leader in robotic surgery - timescolonist.com",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPSkVOcndySmJlWFdhaFA1ZlFHMGNzQncxRnRuZTNiU0pDRTJRdmpNYjJBSi1nOVBaZEY5RTZyODFXOENLcFhBeXJmNVZlRzBVbUQ5NFR1b1NNalN6cGFjUkM5dTExY0FNRTZHZ3FnYldIR0p3OEJDejdzVnlrckFELVhOekJwOUdkTi1zdnRJeFZEVEE2bnNveGlUMWNwd01WcUhvajBvM2Q1Zw?oc=5",
       "published_at": "2026-09-13T11:30:00+00:00",
@@ -120,40 +141,19 @@
       "site_name": "GN: surgical robot",
       "source": "GN: surgical robot",
       "site_id": "GN: surgical robot",
-      "description": "It took Dr. Jeff McCracken almost two decades to acquire the most advanced robotic surgical equipment for Greater Victor",
+      "description": "as well as a Mazor X neurosurgical robot for brain and spine surgeries at Victoria General. With the da Vinci Xi robot-a",
       "ai_score": 65.0,
       "ai_label": "robotics",
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 11.27,
+      "timeliness": 10.42,
       "writing_value": 0,
-      "total_score": 86.27
+      "total_score": 85.42
     },
     {
-      "id": "75ed3688634109095b0a360114bda95f58af7259",
-      "title": "How cobots are powering the next generation of production - Electronics360",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQbjRSZE9HalhvRE13cjhUVW9pN2JEcUN0a3dZbG9TS2EwUHdFSEl2N2Y5WjNyZUdvUWRxOVNQTnA2TmJwRHpTQURnU2tGNDlrUGdtbVVUR1hsWWxfNS1sUHF5NFRvbXJJYmRTdzVQczRRRmRmVnpQQXZycjRXWXd6YmhwRDE4M3M1U0NMZ19YT3owSndJMkxVSHVHaWRBSm1ONnozTUd1M0ZTN0FidVE?oc=5",
-      "published_at": "2026-09-13T12:06:24+00:00",
-      "category": "GN: industrial robot",
-      "gn_label": "robotics",
-      "site_name": "GN: industrial robot",
-      "source": "GN: industrial robot",
-      "site_id": "GN: industrial robot",
-      "description": "Please complete the security check to access this website. Ray ID: a3ad417f4966051c Client IP: 135.119.237.69 GlobalSpec",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.65,
-      "authority": 10,
-      "depth": 0,
-      "timeliness": 11.88,
-      "writing_value": 0,
-      "total_score": 86.88
-    },
-    {
-      "id": "fc58ab6a57f44e964fec9bdce52dc2426a16c15f",
-      "title": "宇树科技仅7.44%股份可交易，如何炒出4449亿市值泡沫？ - finance.ifeng.com",
+      "id": "269e9286ec12baee2cadbb70005ae5beb2233c96",
+      "title": "宇树科技仅7.44%股份可交易，如何炒出4449亿市值泡沫？ - 凤凰网财经",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBCT0xrcm1sNWNUUUtHeTlUUEpRaFJRRmp0N3FpOWExc3lsUVQ4clVsWXBxVXJsSjIyU0tQaFlRVFc5d2l3WGJTNC1lSGR5Zm9o?oc=5",
       "published_at": "2026-09-13T21:37:32+00:00",
@@ -168,13 +168,13 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 21.4,
+      "timeliness": 20.55,
       "writing_value": 0,
-      "total_score": 96.4
+      "total_score": 95.55
     },
     {
-      "id": "c2ad6f069ec57198f08bed51fec98876c1ce2659",
-      "title": "不简单的波动：宇树科技和海底捞的这轮行情表现，背后大有门道？ - finance.ifeng.com",
+      "id": "da4d97736e843925852942b30b79b4fbba322a7e",
+      "title": "不简单的波动：宇树科技和海底捞的这轮行情表现，背后大有门道？ - 凤凰网财经",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBRR2JxUWZjY3pWRHlxRThMOEpEck5ObmpUb0VqbGRfRjAzRHYxY1UyS0hIUVBzUVJCbW9NVGZpZVNIYnhTZEVTd2ZncXdmQ0gz?oc=5",
       "published_at": "2026-09-13T13:24:50+00:00",
@@ -189,9 +189,9 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 13.19,
+      "timeliness": 12.34,
       "writing_value": 0,
-      "total_score": 88.19
+      "total_score": 87.34
     },
     {
       "id": "6a8c8b51e6d7acbcbcc656eecc05944a62b5bce7",
@@ -210,13 +210,13 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 18.84,
+      "timeliness": 17.99,
       "writing_value": 0,
-      "total_score": 93.84
+      "total_score": 92.99
     },
     {
-      "id": "5766c332d453e8b98412adf887b10270c318db4e",
-      "title": "智元-精灵G2 | 申报2026第八届金辑奖汽车新供应链百强 - chejiahao.autohome.com.cn",
+      "id": "1de87168fbe6ccc800aefe950fc306a375ac78aa",
+      "title": "智元-精灵G2 | 申报2026第八届金辑奖汽车新供应链百强 - 汽车之家",
       "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFB5WldtOUMzb2RJR3U1WWxuU19tNjAzY1haLUlyOWxJVEFUWDRRS2c0QUhiMm9QQjcwRzBVNWhhNWpHdWxWYy1GY0V2eVI2YXpIZ1d2YVRpUkhMQmc?oc=5",
       "published_at": "2026-09-13T23:55:32+00:00",
@@ -231,9 +231,30 @@
       "relevance": 0.65,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.7,
+      "timeliness": 22.85,
       "writing_value": 0,
-      "total_score": 98.7
+      "total_score": 97.85
+    },
+    {
+      "id": "10ac142fce012e016987f84352a91c5f650ead9c",
+      "title": "傅利叶的十年，和一张\"有温度\"的具身智能落地入场券 | 2026 WAIC专访顾捷 - 新浪网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5xYmxVU2Z2TDJDYUJ3bXFLdHdMbEJJcl95Mi1FYW9ob2lJYnRHSWhZT3piNGVHMV9QdDFEck9rTnFxRmpmRFF0T3VhcmhiU0xybnY2dXBsRktGc2tyYW00aDNRNjFqZEI5aDh1cVptVHQ?oc=5",
+      "published_at": "2026-09-13T19:15:57+00:00",
+      "category": "GN: 傅利叶智能",
+      "gn_label": "robotics",
+      "site_name": "GN: 傅利叶智能",
+      "source": "GN: 傅利叶智能",
+      "site_id": "GN: 傅利叶智能",
+      "description": "",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.8,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 18.19,
+      "writing_value": 0,
+      "total_score": 108.19
     },
     {
       "id": "53f5176a96fe41b3110fd28c4dc9acc699823aa9",
@@ -252,9 +273,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 25.89,
+      "timeliness": 25.04,
       "writing_value": 0,
-      "total_score": 115.89
+      "total_score": 115.04
     },
     {
       "id": "619e7f28a429d7f49ebd31efbc87b4d073967886",
@@ -273,9 +294,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 11.99,
+      "timeliness": 11.14,
       "writing_value": 0,
-      "total_score": 101.99
+      "total_score": 101.14
     },
     {
       "id": "bca3c4a0f0f7bbaf6363995a3eb532593f202c72",
@@ -294,9 +315,9 @@
       "relevance": 0.8,
       "authority": 10,
       "depth": 0,
-      "timeliness": 23.21,
+      "timeliness": 22.36,
       "writing_value": 0,
-      "total_score": 113.21
+      "total_score": 112.36
     }
   ],
   "fallback_used": false
