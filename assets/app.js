@@ -1300,11 +1300,11 @@ function renderGovItem(item) {
   const labelFor = (v, fb) => (v !== undefined && v !== null ? v : fb);
   const breakdown = hasScore
     ? `得分依据 (总分 ${pct}/100 = 相关性 + 权威 + 深度 + 时效 + 写作):
-相关 ${labelFor(Math.round((item.relevance || 0) * 100), '?')} /100 (T1:80 T2:65 T3:50 其他:35)
+相关 ${labelFor(Math.round((item.relevance || 0) * 100), '?')} /100 (政策相关度: 领域词+政策词+来源权重)
 权威 ${labelFor(item.authority, '?')} /20 (gov.cn 10 / 新华社 8 / 部委 7 / 其他 5)
 深度 ${labelFor(item.depth, '?')} /5 (摘要≥100字记满)
 时效 ${labelFor(Math.round((item.timeliness != null ? item.timeliness : 0) * 10) / 10, '?')} /10 (满分10, 每6小时-1)
-写作 ${labelFor(item.writing_value, '?')} /5 (有实质摘要记满)`
+写作 ${labelFor(item.writing_value, '?')} /5 (摘要≥80字记满)`
     : '得分未计算';
   const scoreEl = document.createElement('span');
   scoreEl.className = 'score ' + color;
