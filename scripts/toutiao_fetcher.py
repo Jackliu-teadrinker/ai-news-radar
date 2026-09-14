@@ -164,6 +164,25 @@ def main():
     # 按发布时间倒序
     all_items.sort(key=lambda x: x.get('published_at', '') or '', reverse=True)
 
+    # Jack 2026-09-11: 补 total_score（与主 feed 同刻度），头条卡前端显示分数徽章
+    try:
+        sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+        from update_news import relevance_score, timeliness_score
+        now_ts = datetime.now(timezone.utc).timestamp()
+        for item in all_items:
+            rel = relevance_score(item['title'], (item.get('description') or '')[:200])
+            desc_len = len(item.get('description') or '')
+            depth = 5 if desc_len >= 100 else 0
+            writing_value = 5 if desc_len >= 100 else 0
+            authority = 10  # 头条号自媒体，默认 10
+            tim = timeliness_score(item.get('published_at'), now_ts)
+            item['total_score'] = round(rel * 100 + authority + depth + writing_value + tim, 1)
+            item['relevance'], item['authority'], item['depth'] = rel, authority, depth
+            item['timeliness'], item['writing_value'] = round(tim, 2), writing_value
+        print(f"[TOUTIAO] Scored {len(all_items)} items (with total_score)")
+    except Exception as e:
+        print(f"[TOUTIAO] scoring skipped: {e}")
+
     output = {
         'generated_at': datetime.now(timezone.utc).isoformat(),
         'total_items': len(all_items),

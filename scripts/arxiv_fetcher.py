@@ -178,6 +178,27 @@ def main(output_dir: str = "data", window_hours: int = 24):
             if item['title'] in trans_map and trans_map[item['title']]:
                 item['title_zh'] = trans_map[item['title']]
 
+    # Jack 2026-09-11: 补 total_score（与主 feed 同刻度：relevance*100 + 权威 + 深度 + 写作 + 时效）
+    try:
+        from datetime import timezone as _tz
+        sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+        from update_news import relevance_score, timeliness_score
+        now_ts = datetime.now(_tz.utc).timestamp()
+        for item in filtered:
+            rel = relevance_score(item['title'], item.get('summary', '')[:200])
+            summary_len = len(item.get('summary', '') or '')
+            depth = 5 if summary_len >= 100 else 0
+            writing_value = 5 if summary_len >= 100 else 0
+            authority = 15  # arXiv = 学术权威（与 Google News 同级 15）
+            # arxiv items 用 'published' 字段，对齐 timeliness_score 期望的 published_at
+            tim = timeliness_score(item.get('published') or item.get('published_at'), now_ts)
+            item['total_score'] = round(rel * 100 + authority + depth + writing_value + tim, 1)
+            item['relevance'], item['authority'], item['depth'] = rel, authority, depth
+            item['timeliness'], item['writing_value'] = round(tim, 2), writing_value
+        print(f"[ARXIV] Scored {len(filtered)} papers (with total_score)")
+    except Exception as e:
+        print(f"[ARXIV] scoring skipped: {e}")
+
     os.makedirs(output_dir, exist_ok=True)
     output = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
