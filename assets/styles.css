@@ -84,6 +84,7 @@
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 10px;
 }.stat {
+  min-width: 0;
   border: 1px solid var(--line);
   background: var(--surface);
   border-radius: var(--radius);
@@ -95,45 +96,17 @@
   margin-top: 4px;
   font-size: 23px;
   font-weight: 700;
-}.coverage-strip {
-  grid-column: 1 / -1;
-  display: grid;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
-  gap: 8px;
-}.coverage-card {
-  min-width: 0;
-  display: grid;
-  gap: 4px;
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  padding: 10px 11px;
-  background: var(--surface-soft);
-}.coverage-card strong {
-  min-width: 0;
-  color: var(--ink);
-  font-size: 17px;
-  line-height: 1.15;
-  overflow-wrap: anywhere;
-}.coverage-label, .coverage-meta {
-  min-width: 0;
-  color: var(--muted);
+}.stat .m {
+  margin-top: 3px;
   font-size: 11px;
   line-height: 1.3;
+  color: var(--muted);
   overflow-wrap: anywhere;
-}.coverage-card.ok strong {
+}.stat.ok .v {
   color: var(--good);
-}.coverage-card.warn strong {
+}.stat.warn .v {
   color: var(--warn);
-}.coverage-card.signal {
-  border-color: rgba(18, 106, 115, 0.3);
-}.coverage-card.official {
-  border-color: rgba(31, 122, 77, 0.28);
-}.coverage-card.builders {
-  border-color: rgba(181, 82, 49, 0.32);
-}.coverage-card.aggregate {
-  border-color: rgba(102, 100, 95, 0.32);
-}.coverage-card.private {
-  border-color: rgba(154, 103, 0, 0.3);
+}
 }.primary-controls {
   margin-top: 16px;
   display: grid;
@@ -510,7 +483,7 @@
     height: 50px;
   }.hero-meta {
     min-width: 0;
-  }.stats, .coverage-strip, .health-grid {
+  }.stats, .health-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }.mode-hint, .advanced-summary, #resultCount {
     white-space: normal;
@@ -520,7 +493,7 @@
 }@media (max-width: 460px) {
   .hero-headline {
     align-items: flex-start;
-  }.stats, .coverage-strip, .health-grid {
+  }.stats, .health-grid {
     grid-template-columns: 1fr;
   }
 }/* ═══════════════════════════════════════════════
