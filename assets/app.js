@@ -197,7 +197,11 @@ function buildScoreBadge(item, isGov = false) {
   const totalScore = item.total_score;
   const hasScore = totalScore !== undefined && totalScore !== null;
   const pct = hasScore ? Math.round(totalScore) : null;
-  const color = hasScore ? (pct >= 60 ? 'score-high' : pct >= 40 ? 'score-mid' : 'score-low') : 'score-none';
+  const calibrated = item.hx_topic !== undefined;   // 虎嗅选题逻辑校准后的数据（2026-09-15 起）
+  const color = hasScore
+    ? (calibrated ? (pct >= 70 ? 'score-high' : pct >= 45 ? 'score-mid' : 'score-low')
+                  : (pct >= 60 ? 'score-high' : pct >= 40 ? 'score-mid' : 'score-low'))
+    : 'score-none';
   const el = document.createElement('span');
   el.className = 'score-inline ' + color;
   if (!hasScore) {
@@ -210,20 +214,23 @@ function buildScoreBadge(item, isGov = false) {
   const depth = item.depth != null ? item.depth : 0;
   const timeliness = item.timeliness != null ? Math.round(item.timeliness * 10) / 10 : 0;
   const writing = item.writing_value != null ? item.writing_value : 0;
+  if (calibrated && !isGov) {
+    const topic = item.hx_topic || 0;
+    const conflict = item.hx_conflict || 0;
+    const dataPts = item.hx_data || 0;
+    const prPen = item.hx_pr_penalty || 0;
+    const dupPen = item.hx_dup_penalty || 0;
+    const parts = [`相关性${rel}`, `选题${topic}`, `权威${auth}`, `深度${depth}`, `时效${timeliness}`, `写作${writing}`];
+    if (prPen) parts.push(`通稿${prPen}`);
+    if (dupPen) parts.push(`冗余${Math.round(dupPen * 10) / 10}`);
+    el.textContent = `新闻价值 ${pct}分 (${parts.join(' + ')})`;
+    el.title = `得分依据 (虎嗅选题逻辑, 总分 ${pct}):\n相关性 ${rel} /50 (领域匹配度压缩)\n选题 ${topic} /25 (反常识冲突${conflict} + 数据驱动${dataPts})\n权威 ${auth} /10 (学术/大媒体10, 其他5)\n深度 ${depth} /5 (摘要≥100字=5 ≥60字=3 ≥30字=1)\n时效 ${timeliness} /20 (已降权: 时间不占优必须在深度上占优)\n写作 ${writing} /5 (梯度同上)\n扣分: 公关通稿腔 ${prPen}, 同文多平台冗余 ${Math.round(dupPen * 10) / 10} (与更高排名条目的标题相似度×18)`;
+    return el;
+  }
   el.textContent = `新闻价值 ${pct}分 (相关性${rel} + 权威${auth} + 深度${depth} + 时效${timeliness} + 写作${writing})`;
   el.title = isGov
-    ? `得分依据 (总分 ${pct} = 相关性 + 权威 + 深度 + 时效 + 写作):
-相关性 ${rel} /100 (政策相关度: 领域词+政策词+来源权重)
-权威 ${auth} /20 (gov.cn 10 / 新华社 8 / 部委 7 / 其他 5)
-深度 ${depth} /5 (摘要≥100字记满)
-时效 ${timeliness} /10 (满分10, 每6小时-1)
-写作 ${writing} /5 (摘要≥80字记满)`
-    : `得分依据 (总分 ${pct} = 相关性 + 权威 + 深度 + 时效 + 写作):
-相关性 ${rel} /100 (T1:80 T2:65 T3:50 其他:35)
-权威 ${auth} /20 (Google News 15, 其余源 10)
-深度 ${depth} /5 (摘要≥100字记满)
-时效 ${timeliness} /30 (满分30, 每超1小时-1)
-写作 ${writing} /5 (有实质摘要记满)`;
+    ? `得分依据 (总分 ${pct} = 相关性 + 权威 + 深度 + 时效 + 写作):\n相关性 ${rel} /100 (政策相关度: 领域词+政策词+来源权重)\n权威 ${auth} /20 (gov.cn 10 / 新华社 8 / 部委 7 / 其他 5)\n深度 ${depth} /5 (摘要≥100字记满)\n时效 ${timeliness} /10 (满分10, 每6小时-1)\n写作 ${writing} /5 (摘要≥80字记满)`
+    : `得分依据 (总分 ${pct} = 相关性 + 权威 + 深度 + 时效 + 写作):\n相关性 ${rel} /100 (T1:80 T2:65 T3:50 其他:35)\n权威 ${auth} /20 (Google News 15, 其余源 10)\n深度 ${depth} /5 (摘要≥100字记满)\n时效 ${timeliness} /30 (满分30, 每超1小时-1)\n写作 ${writing} /5 (有实质摘要记满)`;
   return el;
 }
 
