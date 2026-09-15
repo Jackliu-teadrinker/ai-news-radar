@@ -158,11 +158,12 @@ function fmtDate(iso) {
 }
 
 function setStats(payload) {
+  // Jack 2026-09-15: 接真实字段。源数=feed 总数(58)，来源分组=主 feed 命中的分组数(10)。
+  // 归档卡删除：archive.json 不进 git，CI 每次从零开始，归档总数无意义。
   const cards = [
     ["AI 信号", fmtNumber(payload.total_items)],
-    ["站点数", fmtNumber(payload.site_count)],
-    ["来源分组", fmtNumber(payload.source_count)],
-    ["归档", fmtNumber(payload.archive_total || 0)]
+    ["源数", fmtNumber(payload.source_count || 0)],
+    ["来源分组", fmtNumber(payload.site_count || 0)],
   ];
 
   statsEl.innerHTML = "";
@@ -180,10 +181,6 @@ function sourceKind(siteId) {
 
 function siteRows() {
   return Array.isArray(state.sourceStatus?.sites) ? state.sourceStatus.sites : [];
-}
-
-function siteRow(siteId) {
-  return siteRows().find((site) => site.site_id === siteId) || null;
 }
 
 function renderCoverageCard(label, value, meta, tone = "") {
@@ -208,31 +205,20 @@ function renderCoverageStrip(errorMessage = "") {
   const rows = siteRows();
   const failedSites = Array.isArray(state.sourceStatus?.failed_sites) ? state.sourceStatus.failed_sites : [];
   const rss = state.sourceStatus?.rss_opml || {};
-  const agentmail = state.sourceStatus?.agentmail || {};
-  const xApi = state.sourceStatus?.x_api || {};
   const allCount = Number(state.sourceStatus?.items_before_topic_filter || state.totalAllMode || state.itemsAll.length || 0);
   const coverageCount = Number(state.sourceStatus?.fetched_raw_items || state.totalRaw || allCount || 0);
-  const officialCount = Number(siteRow("official_ai")?.item_count || 0);
-  const newsletterCount = Number(siteRow("aibreakfast")?.item_count || 0);
-  const buildersCount = Number(siteRow("followbuilders")?.item_count || 0);
   const totalSites = rows.length;
   const okSites = Number(state.sourceStatus?.successful_sites || 0);
   const opmlValue = rss.enabled ? `${fmtNumber(rss.ok_feeds || 0)}/${fmtNumber(rss.effective_feed_total || 0)}` : "OPML";
-  const opmlMeta = rss.enabled ? "RSS示例/自定义订阅已接入" : "可用OPML批量接入RSS";
-  const xApiLabel = xApi.enabled ? `X ${xApi.skipped ? "待窗口" : fmtNumber(xApi.item_count || 0)}` : "X待配置";
-  const mailLabel = agentmail.enabled ? `Mail ${fmtNumber(agentmail.item_count || 0)}` : "Mail待配置";
-  const advancedMeta = xApi.enabled || agentmail.enabled
-    ? `额度保护 · ${xApiLabel} / ${mailLabel}`
-    : "X API 与 AgentMail 默认关闭";
+  const opmlMeta = rss.enabled
+    ? (failedSites.length ? `${failedSites.length} 个源待修复` : "全部订阅源正常")
+    : "可用OPML批量接入RSS";
 
   const cards = [
     ["源健康", totalSites ? `${fmtNumber(okSites)}/${fmtNumber(totalSites)}` : "加载中", failedSites.length ? `${fmtNumber(failedSites.length)} 个失败源` : (errorMessage || "内置源正常"), failedSites.length ? "warn" : "ok"],
     ["今日覆盖池", `${fmtNumber(coverageCount)} 条`, allCount ? `全网抓取原始信号 · ${fmtNumber(allCount)} 条入池` : "全网抓取原始信号", "signal"],
     ["AI精选", `${fmtNumber(state.totalAi)} 条`, "24小时强相关信号", "signal"],
-    ["官方/日报源池", `${fmtNumber(officialCount + newsletterCount)} 条`, "官方节点 + AI Breakfast", "official"],
-    ["Builders/X源池", `${fmtNumber(buildersCount)} 条`, "Follow Builders公开feed", "builders"],
-    ["RSS/OPML扩展", opmlValue, opmlMeta, "private"],
-    ["高级源", "X / Mail", advancedMeta, "private"],
+    ["OPML源池", opmlValue, opmlMeta, "private"],
   ];
 
   cards.forEach(([label, value, meta, tone]) => {
@@ -741,21 +727,17 @@ function renderSourceHealth(errorMessage = "") {
   const failedSites = Array.isArray(status.failed_sites) ? status.failed_sites : [];
   const zeroSites = Array.isArray(status.zero_item_sites) ? status.zero_item_sites : [];
   const rss = status.rss_opml || {};
-  const agentmail = status.agentmail || {};
-  const xApi = status.x_api || {};
   const failedFeeds = Array.isArray(rss.failed_feeds) ? rss.failed_feeds : [];
-  const skippedFeeds = Array.isArray(rss.skipped_feeds) ? rss.skipped_feeds : [];
-  const replacedFeeds = Array.isArray(rss.replaced_feeds) ? rss.replaced_feeds : [];
+  const summary = status.summary || {};
 
   const metricGrid = document.createElement("div");
   metricGrid.className = "health-grid";
   metricGrid.append(
-    renderMetric("内置源", `${fmtNumber(status.successful_sites || 0)}/${fmtNumber(sites.length)}`, failedSites.length ? "warn" : "ok"),
-    renderMetric("RSS", rss.enabled ? `${fmtNumber(rss.ok_feeds || 0)}/${fmtNumber(rss.effective_feed_total || 0)}` : "未启用"),
-    renderMetric("X API", xApi.enabled ? (xApi.skipped ? "待窗口" : `${fmtNumber(xApi.item_count || 0)}条`) : "未启用", xApi.error ? "bad" : ""),
-    renderMetric("AgentMail", agentmail.enabled ? `${fmtNumber(agentmail.item_count || 0)}封` : "未启用", agentmail.error ? "bad" : ""),
-    renderMetric("失败源", fmtNumber(failedSites.length + failedFeeds.length), failedSites.length || failedFeeds.length ? "bad" : "ok"),
-    renderMetric("替换/跳过", `${fmtNumber(replacedFeeds.length)}/${fmtNumber(skippedFeeds.length)}`)
+    renderMetric("OPML源", `${fmtNumber(status.successful_sites || 0)}/${fmtNumber(sites.length)}`, failedSites.length ? "warn" : "ok"),
+    renderMetric("抓取条目", `${fmtNumber(summary.total_items || 0)} 条`, "ok"),
+    renderMetric("去重剔除", fmtNumber(summary.deduplicated || 0), ""),
+    renderMetric("噪声过滤", fmtNumber((summary.noise_filtered || 0) + (summary.short_filtered || 0)), ""),
+    renderMetric("失败源", fmtNumber(failedSites.length + failedFeeds.length), failedSites.length || failedFeeds.length ? "bad" : "ok")
   );
   sourceHealthEl.appendChild(metricGrid);
 
@@ -763,10 +745,7 @@ function renderSourceHealth(errorMessage = "") {
   issues.className = "health-issues";
   if (failedSites.length) issues.appendChild(renderIssueList("失败站点", failedSites));
   if (zeroSites.length) issues.appendChild(renderIssueList("零结果站点", zeroSites));
-  if (failedFeeds.length) issues.appendChild(renderIssueList("失败 RSS", failedFeeds));
-  if (skippedFeeds.length) {
-    issues.appendChild(renderIssueList("跳过 RSS", skippedFeeds.map((item) => `${item.feed_url} · ${item.reason || "skipped"}`)));
-  }
+  if (failedFeeds.length && !failedSites.length) issues.appendChild(renderIssueList("失败 RSS", failedFeeds));
 
   if (issues.childElementCount) {
     sourceHealthEl.appendChild(issues);

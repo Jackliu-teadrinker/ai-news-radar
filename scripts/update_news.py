@@ -1169,6 +1169,11 @@ def run(output_dir: str, window_hours: int, opml_path: str, archive_days: int, w
         site_stat_map[sid]['count'] += 1
     site_stats = sorted(site_stat_map.values(), key=lambda x: -x['count'])
 
+    # Update archive (提前到 min_out 前计算，归档总数要进 min.json 给统计卡)
+    updated = archive_items + scored
+    save_archive(archive_path, updated)
+    print(f"[INFO] Archive updated: {len(updated)} total")
+
     # latest-24h-min.json: top 500 (AI精选模式)
     # Jack 2026-09-11: 写入前剥掉 enricher 的内部标记 _summary_ok（不对外暴露）
     for _it in scored:
@@ -1182,6 +1187,10 @@ def run(output_dir: str, window_hours: int, opml_path: str, archive_days: int, w
         'site_stats': site_stats,
         'total_items_raw': len(scored[:500]),
         'total_items_all_mode': len(scored[:500]),
+        # Jack 2026-09-15: 统计卡真实字段（此前前端读 site_count/source_count/archive_total 全为 undefined→0）
+        'site_count': len({s['site_name'] for s in site_stats}),
+        'source_count': len(feed_statuses),
+        'archive_total': len(updated),
     }
     with open(os.path.join(output_dir, 'latest-24h-min.json'), 'w', encoding='utf-8') as f:
         json.dump(min_out, f, ensure_ascii=False, indent=2)
@@ -1213,19 +1222,28 @@ def run(output_dir: str, window_hours: int, opml_path: str, archive_days: int, w
             json.dump(wechat_empty, f, ensure_ascii=False, indent=2)
         print("[INFO] wechat-articles.json: 0 articles (no wechat articles in time window)")
 
-    # Update archive
-    updated = archive_items + scored
-    save_archive(archive_path, updated)
-    print(f"[INFO] Archive updated: {len(updated)} total")
-
     # source-status.json
+    # Jack 2026-09-15: 修 total_feeds 只算主 feed 的 bug；补前端字段别名
+    # (sites/failed_sites/successful_sites/rss_opml)，统计卡与源健康不再空转
+    _ok_feeds = sum(1 for s in feed_statuses if s['success'])
+    _fail_feeds = sum(1 for s in feed_statuses if not s['success'])
     status_out = {
         'generated_at': generated_at,
         'feeds': feed_statuses,
+        'sites': [
+            {'site_id': s['feed'], 'site_name': s['feed'],
+             'item_count': s.get('items_unique', 0), 'success': s['success']}
+            for s in feed_statuses
+        ],
+        'failed_sites': [s['feed'] for s in feed_statuses if not s['success']],
+        'successful_sites': _ok_feeds,
+        'rss_opml': {'enabled': True, 'ok_feeds': _ok_feeds,
+                     'effective_feed_total': len(feed_statuses),
+                     'failed_feeds': [s['feed'] for s in feed_statuses if not s['success']]},
         'summary': {
-            'total_feeds': len(feeds),
-            'successful_feeds': sum(1 for s in feed_statuses if s['success']),
-            'failed_feeds': sum(1 for s in feed_statuses if not s['success']),
+            'total_feeds': len(feed_statuses),
+            'successful_feeds': _ok_feeds,
+            'failed_feeds': _fail_feeds,
             'total_items': len(all_items),
             'deduplicated': total_dedup,
             'noise_filtered': total_noise,
