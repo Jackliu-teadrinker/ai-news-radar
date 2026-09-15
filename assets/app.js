@@ -195,6 +195,42 @@ function sourceKind(siteId) {
   return SOURCE_KINDS[siteId] || { label: "来源", tone: "default" };
 }
 
+// Jack 2026-09-15 v3: 卡面直接摊开五维明细，格式「新闻价值 N分 (相关性X分 + 权威X分 + ...)」
+// hover tooltip 保留打分规则说明。isGov=true 用政策口径的时效/写作满分。
+function buildScoreBadge(item, isGov = false) {
+  const totalScore = item.total_score;
+  const hasScore = totalScore !== undefined && totalScore !== null;
+  const pct = hasScore ? Math.round(totalScore) : null;
+  const color = hasScore ? (pct >= 60 ? 'score-high' : pct >= 40 ? 'score-mid' : 'score-low') : 'score-none';
+  const el = document.createElement('span');
+  el.className = 'score-inline ' + color;
+  if (!hasScore) {
+    el.textContent = '新闻价值 –';
+    el.title = '得分未计算';
+    return el;
+  }
+  const rel = Math.round((item.relevance || 0) * 100);
+  const auth = item.authority != null ? item.authority : 0;
+  const depth = item.depth != null ? item.depth : 0;
+  const timeliness = item.timeliness != null ? Math.round(item.timeliness * 10) / 10 : 0;
+  const writing = item.writing_value != null ? item.writing_value : 0;
+  el.textContent = `新闻价值 ${pct}分 (相关性${rel} + 权威${auth} + 深度${depth} + 时效${timeliness} + 写作${writing})`;
+  el.title = isGov
+    ? `得分依据 (总分 ${pct} = 相关性 + 权威 + 深度 + 时效 + 写作):
+相关性 ${rel} /100 (政策相关度: 领域词+政策词+来源权重)
+权威 ${auth} /20 (gov.cn 10 / 新华社 8 / 部委 7 / 其他 5)
+深度 ${depth} /5 (摘要≥100字记满)
+时效 ${timeliness} /10 (满分10, 每6小时-1)
+写作 ${writing} /5 (摘要≥80字记满)`
+    : `得分依据 (总分 ${pct} = 相关性 + 权威 + 深度 + 时效 + 写作):
+相关性 ${rel} /100 (T1:80 T2:65 T3:50 其他:35)
+权威 ${auth} /20 (Google News 15, 其余源 10)
+深度 ${depth} /5 (摘要≥100字记满)
+时效 ${timeliness} /30 (满分30, 每超1小时-1)
+写作 ${writing} /5 (有实质摘要记满)`;
+  return el;
+}
+
 function renderAdvancedSummary() {
   if (!advancedSummaryEl) return;
   const status = state.sourceStatus;
@@ -432,35 +468,11 @@ function renderItemNode(item, showSite) {
   categoryEl.classList.add(`kind-${kind.tone}`);
   node.querySelector(".time").textContent = fmtTime(item.published_at || item.first_seen_at);
 
-  // 得分徽章（来源位 → 得分）
-  const totalScore = item.total_score;
-  const hasScore = totalScore !== undefined && totalScore !== null;
-  const pct = hasScore ? Math.round(totalScore) : null;
-  const color = hasScore ? (pct >= 60 ? 'score-high' : pct >= 40 ? 'score-mid' : 'score-low') : 'score-none';
-  const labelFor = (v, fallback) => (v !== undefined && v !== null && v !== '' ? v : fallback);
-  const breakdown = hasScore
-    ? `得分依据 (总分 ${pct}/100 = 相关性 + 权威 + 深度 + 时效 + 写作):
-相关 ${labelFor(Math.round((item.relevance || 0) * 100), '?')} /100 (T1:80 T2:65 T3:50 其他:35)
-权威 ${labelFor(item.authority, '?')} /20 (Google News 15, 其余源 10)
-深度 ${labelFor(item.depth, '?')} /5 (摘要≥100字记满)
-时效 ${labelFor(Math.round(item.timeliness != null ? item.timeliness * 10 : 0) / 10, '?')} /30 (满分30, 每超1小时-1)
-写作 ${labelFor(item.writing_value, '?')} /5 (有实质摘要记满)`
-    : '得分未计算';
-  let scoreEl = node.querySelector(".score");
-  if (!scoreEl) {
-    scoreEl = document.createElement("span");
-    scoreEl.className = "score";
-    metaRow.appendChild(scoreEl);
-  }
-  if (hasScore) {
-    scoreEl.textContent = pct;
-    scoreEl.className = 'score ' + color;
-    scoreEl.title = breakdown;
-  } else {
-    scoreEl.textContent = '–';
-    scoreEl.className = 'score score-none';
-    scoreEl.title = breakdown;
-  }
+  // 得分徽章（v3: 卡面摊开五维明细）
+  const scoreEl = buildScoreBadge(item);
+  const oldScore = node.querySelector(".score");
+  if (oldScore) oldScore.replaceWith(scoreEl);
+  else node.querySelector(".meta-row").appendChild(scoreEl);
 
   const titleEl = node.querySelector(".title");
   const original = (item.title || "").trim();
@@ -939,25 +951,9 @@ function renderWechatArticle(item) {
   // 时间
   node.querySelector('.time').textContent = fmtTime(item.published_at || item.first_seen_at);
 
-  // 得分徽章（来源位 → 得分，带详细依据）
-  const totalScore = item.total_score;
-  const hasScore = totalScore !== undefined && totalScore !== null;
-  const pct = hasScore ? Math.round(totalScore) : null;
-  const color = hasScore ? (pct >= 60 ? 'score-high' : pct >= 40 ? 'score-mid' : 'score-low') : 'score-none';
-  const labelFor = (v, fb) => (v !== undefined && v !== null ? v : fb);
-  const breakdown = hasScore
-    ? `得分依据 (总分 ${pct}/100 = 相关性 + 权威 + 深度 + 时效 + 写作):
-相关 ${labelFor(Math.round((item.relevance || 0) * 100), '?')} /100 (T1:80 T2:65 T3:50 其他:35)
-权威 ${labelFor(item.authority, '?')} /20 (Google News 15, 其余源 10)
-深度 ${labelFor(item.depth, '?')} /5 (摘要≥100字记满)
-时效 ${labelFor(Math.round((item.timeliness != null ? item.timeliness : 0) * 10) / 10, '?')} /30 (满分30, 每超1小时-1)
-写作 ${labelFor(item.writing_value, '?')} /5 (有实质摘要记满)`
-    : '得分未计算';
+  // 得分徽章（v3: 卡面摊开五维明细）
   const metaRow = node.querySelector('.meta-row');
-  const scoreEl = document.createElement('span');
-  scoreEl.className = 'score ' + color;
-  scoreEl.textContent = hasScore ? pct : '–';
-  scoreEl.title = breakdown;
+  const scoreEl = buildScoreBadge(item);
   if (metaRow) metaRow.insertBefore(scoreEl, metaRow.firstChild);
   else node.insertBefore(scoreEl, node.querySelector('.title'));
   
@@ -1092,24 +1088,8 @@ function renderArxivItem(item) {
   source.style.fontWeight = '600';
   metaRow.appendChild(source);
 
-  // 得分徽章（来源位 → 得分，带详细依据）
-  const totalScore = item.total_score;
-  const hasScore = totalScore !== undefined && totalScore !== null;
-  const pct = hasScore ? Math.round(totalScore) : null;
-  const color = hasScore ? (pct >= 60 ? 'score-high' : pct >= 40 ? 'score-mid' : 'score-low') : 'score-none';
-  const labelFor = (v, fb) => (v !== undefined && v !== null ? v : fb);
-  const breakdown = hasScore
-    ? `得分依据 (总分 ${pct}/100 = 相关性 + 权威 + 深度 + 时效 + 写作):
-相关 ${labelFor(Math.round((item.relevance || 0) * 100), '?')} /100 (T1:80 T2:65 T3:50 其他:35)
-权威 ${labelFor(item.authority, '?')} /20 (Google News 15, 其余源 10)
-深度 ${labelFor(item.depth, '?')} /5 (摘要≥100字记满)
-时效 ${labelFor(Math.round((item.timeliness != null ? item.timeliness : 0) * 10) / 10, '?')} /30 (满分30, 每超1小时-1)
-写作 ${labelFor(item.writing_value, '?')} /5 (有实质摘要记满)`
-    : '得分未计算';
-  const scoreEl = document.createElement('span');
-  scoreEl.className = 'score ' + color;
-  scoreEl.textContent = hasScore ? pct : '–';
-  scoreEl.title = breakdown;
+  // 得分徽章（v3: 卡面摊开五维明细）
+  const scoreEl = buildScoreBadge(item);
   metaRow.insertBefore(scoreEl, source.nextSibling);
 
   // 分类标签
@@ -1238,24 +1218,8 @@ function renderGovItem(item) {
   source.style.fontWeight = '600';
   metaRow.appendChild(source);
 
-  // 得分徽章（来源位 → 得分，带详细依据）
-  const totalScore = item.total_score;
-  const hasScore = totalScore !== undefined && totalScore !== null;
-  const pct = hasScore ? Math.round(totalScore) : null;
-  const color = hasScore ? (pct >= 60 ? 'score-high' : pct >= 40 ? 'score-mid' : 'score-low') : 'score-none';
-  const labelFor = (v, fb) => (v !== undefined && v !== null ? v : fb);
-  const breakdown = hasScore
-    ? `得分依据 (总分 ${pct}/100 = 相关性 + 权威 + 深度 + 时效 + 写作):
-相关 ${labelFor(Math.round((item.relevance || 0) * 100), '?')} /100 (政策相关度: 领域词+政策词+来源权重)
-权威 ${labelFor(item.authority, '?')} /20 (gov.cn 10 / 新华社 8 / 部委 7 / 其他 5)
-深度 ${labelFor(item.depth, '?')} /5 (摘要≥100字记满)
-时效 ${labelFor(Math.round((item.timeliness != null ? item.timeliness : 0) * 10) / 10, '?')} /10 (满分10, 每6小时-1)
-写作 ${labelFor(item.writing_value, '?')} /5 (摘要≥80字记满)`
-    : '得分未计算';
-  const scoreEl = document.createElement('span');
-  scoreEl.className = 'score ' + color;
-  scoreEl.textContent = hasScore ? pct : '–';
-  scoreEl.title = breakdown;
+  // 得分徽章（v3: 卡面摊开五维明细，政策口径）
+  const scoreEl = buildScoreBadge(item, true);
   metaRow.insertBefore(scoreEl, source.nextSibling);
 
   // 相关度
@@ -1434,24 +1398,8 @@ function renderSearchItem(item) {
   keyword.style.color = '#2563eb';
   metaRow.appendChild(keyword);
 
-  // 得分徽章（替代来源位）
-  const totalScore = item.total_score;
-  const hasScore = totalScore !== undefined && totalScore !== null;
-  const pct = hasScore ? Math.round(totalScore) : null;
-  const color = hasScore ? (pct >= 60 ? 'score-high' : pct >= 40 ? 'score-mid' : 'score-low') : 'score-none';
-  const labelFor = (v, fb) => (v !== undefined && v !== null ? v : fb);
-  const breakdown = hasScore
-    ? `得分依据 (总分 ${pct}/100 = 相关性 + 权威 + 深度 + 时效 + 写作):
-相关 ${labelFor(Math.round((item.relevance || 0) * 100), '?')} /100 (T1:80 T2:65 T3:50 其他:35)
-权威 ${labelFor(item.authority, '?')} /20 (Google News 15, 其余源 10)
-深度 ${labelFor(item.depth, '?')} /5 (摘要≥100字记满)
-时效 ${labelFor(Math.round((item.timeliness != null ? item.timeliness : 0) * 10) / 10, '?')} /30 (满分30, 每超1小时-1)
-写作 ${labelFor(item.writing_value, '?')} /5 (有实质摘要记满)`
-    : '得分未计算';
-  const scoreEl = document.createElement('span');
-  scoreEl.className = 'score ' + color;
-  scoreEl.textContent = hasScore ? pct : '–';
-  scoreEl.title = breakdown;
+  // 得分徽章（v3: 卡面摊开五维明细）
+  const scoreEl = buildScoreBadge(item);
   metaRow.insertBefore(scoreEl, source.nextSibling);
 
   // 时间
