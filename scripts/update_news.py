@@ -728,14 +728,39 @@ def translate_batch(texts: list[str], target: str = 'zh', max_workers: int = 2) 
 
     return results
 
+def summary_quality(desc: str) -> tuple:
+    """Jack 2026-09-15: 摘要长度 → (深度, 写作) 梯度分，替代原 ≥100 二值跳变。
+    ≥100 字记满 5，≥60 字 3 分，≥30 字 1 分，更短 0。"""
+    L = len((desc or '').strip())
+    if L >= 100:
+        return 5, 5
+    if L >= 60:
+        return 3, 3
+    if L >= 30:
+        return 1, 1
+    return 0, 0
+
+
+def rescore_after_summary(item: dict) -> None:
+    """Jack 2026-09-15: 修打分/补摘要的先后顺序 bug。
+    score_item 在 enricher 之前跑，补进来的 120 字真摘要没参与评分，
+    导致大量有实质摘要的条目 depth/writing 恒为 0。
+    写盘前按最终 description 重算这两维并同步 total_score。"""
+    depth, writing = summary_quality(item.get('description', ''))
+    old_pts = (item.get('depth') or 0) + (item.get('writing_value') or 0)
+    item['depth'] = depth
+    item['writing_value'] = writing
+    if item.get('total_score') is not None:
+        item['total_score'] = round(item['total_score'] - old_pts + depth + writing, 2)
+
+
 def score_item(item: dict, now_ts: float) -> dict:
     title = item['title']
     desc = item.get('description', '')
     source = item['source']
     relevance = relevance_score(title, desc)
     authority = authority_score(source)
-    depth = 5 if len(desc) >= 100 else 0
-    writing_value = 5 if len(desc) >= 100 else 0
+    depth, writing_value = summary_quality(desc)
     timeliness = timeliness_score(item['published_at'], now_ts)
     total = relevance * 100 + authority + depth + writing_value + timeliness
     # BUG#2 FIX: cross-label priority
@@ -963,6 +988,10 @@ def run(output_dir: str, window_hours: int, opml_path: str, archive_days: int, w
         except Exception as _e:
             print(f"[SUMMARY] anchor enrich skipped: {_e}")
 
+        # Jack 2026-09-15: 锚点同样在摘要补齐后重算 depth/writing
+        for _it in high_relevance_anchors:
+            rescore_after_summary(_it)
+
         # Jack 2026-09-11: 锚点写入前剥掉 enricher 内部标记 _summary_ok
         for _it in high_relevance_anchors:
             _it.pop('_summary_ok', None)
@@ -1156,6 +1185,13 @@ def run(output_dir: str, window_hours: int, opml_path: str, archive_days: int, w
         _enrich(scored, output_dir, top_n=150, recheck=True)
     except Exception as _e:
         print(f"[SUMMARY] main feed enrich skipped: {_e}")
+
+    # Jack 2026-09-15: 摘要补齐后重算 depth/writing 并同步 total_score，再重排
+    for _it in scored:
+        rescore_after_summary(_it)
+    scored.sort(key=lambda x: x['total_score'], reverse=True)
+    _n_w = sum(1 for _it in scored if _it.get('writing_value'))
+    print(f"[INFO] Rescored after summary enrichment: {_n_w} items with writing>0")
 
     generated_at = datetime.now(timezone.utc).isoformat()
     os.makedirs(output_dir, exist_ok=True)
