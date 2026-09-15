@@ -33,7 +33,6 @@ const listTitleEl = document.getElementById("listTitle");
 const itemTpl = document.getElementById("itemTpl");
 const modeAiBtnEl = document.getElementById("modeAiBtn");
 const modeAllBtnEl = document.getElementById("modeAllBtn");
-const modeHintEl = document.getElementById("modeHint");
 const allDedupeWrapEl = document.getElementById("allDedupeWrap");
 const allDedupeToggleEl = document.getElementById("allDedupeToggle");
 const allDedupeLabelEl = document.getElementById("allDedupeLabel");
@@ -357,13 +356,8 @@ function renderModeSwitch() {
   if (allDedupeToggleEl) allDedupeToggleEl.checked = state.allDedup;
   if (allDedupeLabelEl) allDedupeLabelEl.textContent = state.allDedup ? "去重开" : "去重关";
   if (state.mode === "ai") {
-    modeHintEl.textContent = `AI强相关 · ${fmtNumber(state.totalAi)} 条`;
     if (listTitleEl) listTitleEl.textContent = "AI 信号流";
   } else {
-    const allCount = state.allDedup
-      ? (state.totalAllMode || state.itemsAll.length)
-      : (state.totalRaw || state.itemsAllRaw.length);
-    modeHintEl.textContent = `全量 · ${state.allDedup ? "去重开" : "去重关"} · ${fmtNumber(allCount)} 条`;
     if (listTitleEl) listTitleEl.textContent = "全量更新";
   }
   renderAdvancedSummary();
