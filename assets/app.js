@@ -477,20 +477,34 @@ function renderItemNode(item, showSite) {
   categoryEl.classList.add(`kind-${kind.tone}`);
   node.querySelector(".time").textContent = fmtTime(item.published_at || item.first_seen_at);
 
-  // Jack 2026-05-15: 五维评分 badge
-  const scoreEl = node.querySelector(".score");
-  if (scoreEl) {
-    const totalScore = item.total_score;
-    if (totalScore !== undefined && totalScore !== null) {
-      const pct = Math.round(totalScore); // 0-100
-      const color = pct >= 60 ? 'score-high' : pct >= 40 ? 'score-mid' : 'score-low';
-      scoreEl.textContent = pct;
-      scoreEl.className = 'score ' + color;
-      scoreEl.title = `五维总分: ${pct}/100 (相关性${item.relevance || '?'} | 权威性${item.authority || '?'} | 深度${item.depth || '?'} | 时效性${item.timeliness || '?'} | 写作价值${item.writing_value || '?'})`;
-    } else {
-      scoreEl.textContent = '--';
-      scoreEl.className = 'score score-none';
-    }
+  // 得分徽章（来源位 → 得分）
+  const totalScore = item.total_score;
+  const hasScore = totalScore !== undefined && totalScore !== null;
+  const pct = hasScore ? Math.round(totalScore) : null;
+  const color = hasScore ? (pct >= 60 ? 'score-high' : pct >= 40 ? 'score-mid' : 'score-low') : 'score-none';
+  const labelFor = (v, fallback) => (v !== undefined && v !== null && v !== '' ? v : fallback);
+  const breakdown = hasScore
+    ? `得分依据 (总分 ${pct}/100 = 相关性 + 权威 + 深度 + 时效 + 写作):
+相关 ${labelFor(Math.round((item.relevance || 0) * 100), '?')} /100 (T1:80 T2:65 T3:50 其他:35)
+权威 ${labelFor(item.authority, '?')} /20 (Google News 15, 其余源 10)
+深度 ${labelFor(item.depth, '?')} /5 (摘要≥100字记满)
+时效 ${labelFor(Math.round(item.timeliness != null ? item.timeliness * 10 : 0) / 10, '?')} /30 (满分30, 每超1小时-1)
+写作 ${labelFor(item.writing_value, '?')} /5 (有实质摘要记满)`
+    : '得分未计算';
+  let scoreEl = node.querySelector(".score");
+  if (!scoreEl) {
+    scoreEl = document.createElement("span");
+    scoreEl.className = "score";
+    metaRow.appendChild(scoreEl);
+  }
+  if (hasScore) {
+    scoreEl.textContent = pct;
+    scoreEl.className = 'score ' + color;
+    scoreEl.title = breakdown;
+  } else {
+    scoreEl.textContent = '–';
+    scoreEl.className = 'score score-none';
+    scoreEl.title = breakdown;
   }
 
   const titleEl = node.querySelector(".title");
@@ -973,25 +987,33 @@ function renderWechatArticle(item) {
   categoryEl.className = 'category kind-wechat';
   
   // 来源
-  node.querySelector('.source').textContent = `来源: ${item.source || '公众号'}`;
-  
+  const sourceEl = node.querySelector('.source');
+  if (sourceEl) sourceEl.remove();
+
   // 时间
   node.querySelector('.time').textContent = fmtTime(item.published_at || item.first_seen_at);
-  
-  // 五维评分 badge
-  const scoreEl = node.querySelector('.score');
-  if (scoreEl) {
-    const totalScore = item.total_score;
-    if (totalScore !== undefined && totalScore !== null) {
-      const pct = Math.round(totalScore);
-      const color = pct >= 60 ? 'score-high' : pct >= 40 ? 'score-mid' : 'score-low';
-      scoreEl.textContent = pct;
-      scoreEl.className = 'score ' + color;
-    } else {
-      scoreEl.textContent = '--';
-      scoreEl.className = 'score score-none';
-    }
-  }
+
+  // 得分徽章（来源位 → 得分，带详细依据）
+  const totalScore = item.total_score;
+  const hasScore = totalScore !== undefined && totalScore !== null;
+  const pct = hasScore ? Math.round(totalScore) : null;
+  const color = hasScore ? (pct >= 60 ? 'score-high' : pct >= 40 ? 'score-mid' : 'score-low') : 'score-none';
+  const labelFor = (v, fb) => (v !== undefined && v !== null ? v : fb);
+  const breakdown = hasScore
+    ? `得分依据 (总分 ${pct}/100 = 相关性 + 权威 + 深度 + 时效 + 写作):
+相关 ${labelFor(Math.round((item.relevance || 0) * 100), '?')} /100 (T1:80 T2:65 T3:50 其他:35)
+权威 ${labelFor(item.authority, '?')} /20 (Google News 15, 其余源 10)
+深度 ${labelFor(item.depth, '?')} /5 (摘要≥100字记满)
+时效 ${labelFor(Math.round((item.timeliness != null ? item.timeliness : 0) * 10) / 10, '?')} /30 (满分30, 每超1小时-1)
+写作 ${labelFor(item.writing_value, '?')} /5 (有实质摘要记满)`
+    : '得分未计算';
+  const metaRow = node.querySelector('.meta-row');
+  const scoreEl = document.createElement('span');
+  scoreEl.className = 'score ' + color;
+  scoreEl.textContent = hasScore ? pct : '–';
+  scoreEl.title = breakdown;
+  if (metaRow) metaRow.insertBefore(scoreEl, metaRow.firstChild);
+  else node.insertBefore(scoreEl, node.querySelector('.title'));
   
   // 标题（双语）
   const titleEl = node.querySelector('.title');
@@ -1124,16 +1146,25 @@ function renderArxivItem(item) {
   source.style.fontWeight = '600';
   metaRow.appendChild(source);
 
-  // 相关度/分数徽章
-  if (item.total_score !== undefined && item.total_score !== null) {
-    const scoreEl = document.createElement('span');
-    scoreEl.className = 'score score-none';
-    const pct = Math.round(item.total_score);
-    scoreEl.textContent = pct;
-    scoreEl.className = 'score ' + (pct >= 60 ? 'score-high' : pct >= 40 ? 'score-mid' : 'score-low');
-    scoreEl.title = `总分: ${pct}/100`;
-    metaRow.appendChild(scoreEl);
-  }
+  // 得分徽章（来源位 → 得分，带详细依据）
+  const totalScore = item.total_score;
+  const hasScore = totalScore !== undefined && totalScore !== null;
+  const pct = hasScore ? Math.round(totalScore) : null;
+  const color = hasScore ? (pct >= 60 ? 'score-high' : pct >= 40 ? 'score-mid' : 'score-low') : 'score-none';
+  const labelFor = (v, fb) => (v !== undefined && v !== null ? v : fb);
+  const breakdown = hasScore
+    ? `得分依据 (总分 ${pct}/100 = 相关性 + 权威 + 深度 + 时效 + 写作):
+相关 ${labelFor(Math.round((item.relevance || 0) * 100), '?')} /100 (T1:80 T2:65 T3:50 其他:35)
+权威 ${labelFor(item.authority, '?')} /20 (Google News 15, 其余源 10)
+深度 ${labelFor(item.depth, '?')} /5 (摘要≥100字记满)
+时效 ${labelFor(Math.round((item.timeliness != null ? item.timeliness : 0) * 10) / 10, '?')} /30 (满分30, 每超1小时-1)
+写作 ${labelFor(item.writing_value, '?')} /5 (有实质摘要记满)`
+    : '得分未计算';
+  const scoreEl = document.createElement('span');
+  scoreEl.className = 'score ' + color;
+  scoreEl.textContent = hasScore ? pct : '–';
+  scoreEl.title = breakdown;
+  metaRow.insertBefore(scoreEl, source.nextSibling);
 
   // 分类标签
   const category = document.createElement('span');
@@ -1261,14 +1292,25 @@ function renderGovItem(item) {
   source.style.fontWeight = '600';
   metaRow.appendChild(source);
 
-  // 分数徽章（政府项带 total_score）
-  if (item.total_score !== undefined && item.total_score !== null) {
-    const govScore = document.createElement('span');
-    const pct = Math.round(item.total_score);
-    govScore.textContent = pct;
-    govScore.className = 'score ' + (pct >= 60 ? 'score-high' : pct >= 40 ? 'score-mid' : 'score-low');
-    metaRow.appendChild(govScore);
-  }
+  // 得分徽章（来源位 → 得分，带详细依据）
+  const totalScore = item.total_score;
+  const hasScore = totalScore !== undefined && totalScore !== null;
+  const pct = hasScore ? Math.round(totalScore) : null;
+  const color = hasScore ? (pct >= 60 ? 'score-high' : pct >= 40 ? 'score-mid' : 'score-low') : 'score-none';
+  const labelFor = (v, fb) => (v !== undefined && v !== null ? v : fb);
+  const breakdown = hasScore
+    ? `得分依据 (总分 ${pct}/100 = 相关性 + 权威 + 深度 + 时效 + 写作):
+相关 ${labelFor(Math.round((item.relevance || 0) * 100), '?')} /100 (政策相关度: 领域词+政策词+来源权重)
+权威 ${labelFor(item.authority, '?')} /20 (gov.cn 10 / 新华社 8 / 部委 7 / 其他 5)
+深度 ${labelFor(item.depth, '?')} /5 (摘要≥100字记满)
+时效 ${labelFor(Math.round((item.timeliness != null ? item.timeliness : 0) * 10) / 10, '?')} /10 (满分10, 每6小时-1)
+写作 ${labelFor(item.writing_value, '?')} /5 (摘要≥80字记满)`
+    : '得分未计算';
+  const scoreEl = document.createElement('span');
+  scoreEl.className = 'score ' + color;
+  scoreEl.textContent = hasScore ? pct : '–';
+  scoreEl.title = breakdown;
+  metaRow.insertBefore(scoreEl, source.nextSibling);
 
   // 相关度
   const relevance = document.createElement('span');
@@ -1438,7 +1480,6 @@ function renderSearchItem(item) {
   source.textContent = 'Bing搜索';
   source.style.color = '#2563eb';
   source.style.fontWeight = '600';
-  metaRow.appendChild(source);
 
   // 关键词标签
   const keyword = document.createElement('span');
@@ -1447,15 +1488,25 @@ function renderSearchItem(item) {
   keyword.style.color = '#2563eb';
   metaRow.appendChild(keyword);
 
-  // 分数徽章（头条项带 total_score）
-  if (item.total_score !== undefined && item.total_score !== null) {
-    const tScore = document.createElement('span');
-    const pct = Math.round(item.total_score);
-    tScore.textContent = pct;
-    tScore.className = 'score ' + (pct >= 60 ? 'score-high' : pct >= 40 ? 'score-mid' : 'score-low');
-    tScore.title = `总分: ${pct}/100`;
-    metaRow.appendChild(tScore);
-  }
+  // 得分徽章（替代来源位）
+  const totalScore = item.total_score;
+  const hasScore = totalScore !== undefined && totalScore !== null;
+  const pct = hasScore ? Math.round(totalScore) : null;
+  const color = hasScore ? (pct >= 60 ? 'score-high' : pct >= 40 ? 'score-mid' : 'score-low') : 'score-none';
+  const labelFor = (v, fb) => (v !== undefined && v !== null ? v : fb);
+  const breakdown = hasScore
+    ? `得分依据 (总分 ${pct}/100 = 相关性 + 权威 + 深度 + 时效 + 写作):
+相关 ${labelFor(Math.round((item.relevance || 0) * 100), '?')} /100 (T1:80 T2:65 T3:50 其他:35)
+权威 ${labelFor(item.authority, '?')} /20 (Google News 15, 其余源 10)
+深度 ${labelFor(item.depth, '?')} /5 (摘要≥100字记满)
+时效 ${labelFor(Math.round((item.timeliness != null ? item.timeliness : 0) * 10) / 10, '?')} /30 (满分30, 每超1小时-1)
+写作 ${labelFor(item.writing_value, '?')} /5 (有实质摘要记满)`
+    : '得分未计算';
+  const scoreEl = document.createElement('span');
+  scoreEl.className = 'score ' + color;
+  scoreEl.textContent = hasScore ? pct : '–';
+  scoreEl.title = breakdown;
+  metaRow.insertBefore(scoreEl, source.nextSibling);
 
   // 时间
   if (item.date_str) {

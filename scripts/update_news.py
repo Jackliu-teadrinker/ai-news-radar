@@ -963,6 +963,9 @@ def run(output_dir: str, window_hours: int, opml_path: str, archive_days: int, w
         except Exception as _e:
             print(f"[SUMMARY] anchor enrich skipped: {_e}")
 
+        # Jack 2026-09-11: 锚点写入前剥掉 enricher 内部标记 _summary_ok
+        for _it in high_relevance_anchors:
+            _it.pop('_summary_ok', None)
         custom_out = {
             'generated_at': custom_generated_at,
             'window_start': _start_dt.isoformat(),
@@ -1147,10 +1150,10 @@ def run(output_dir: str, window_hours: int, opml_path: str, archive_days: int, w
     scored.sort(key=lambda x: x['total_score'], reverse=True)
     print(f"[INFO] Scored: {len(scored)}")
 
-    # Jack 2026-09-11: 补 120 字真摘要（GN 解码 + trafilatura，top 150）
+    # Jack 2026-09-11: 补 120 字真摘要（GN 解码 + trafilatura，top 150；recheck 模式校验真实覆盖）
     try:
         from summary_enricher import enrich_items as _enrich
-        _enrich(scored, output_dir, top_n=150)
+        _enrich(scored, output_dir, top_n=150, recheck=True)
     except Exception as _e:
         print(f"[SUMMARY] main feed enrich skipped: {_e}")
 
@@ -1167,6 +1170,9 @@ def run(output_dir: str, window_hours: int, opml_path: str, archive_days: int, w
     site_stats = sorted(site_stat_map.values(), key=lambda x: -x['count'])
 
     # latest-24h-min.json: top 500 (AI精选模式)
+    # Jack 2026-09-11: 写入前剥掉 enricher 的内部标记 _summary_ok（不对外暴露）
+    for _it in scored:
+        _it.pop('_summary_ok', None)
     min_out = {
         'generated_at': generated_at,
         'total_items': len(scored[:500]),
