@@ -178,22 +178,20 @@ def main(output_dir: str = "data", window_hours: int = 24):
             if item['title'] in trans_map and trans_map[item['title']]:
                 item['title_zh'] = trans_map[item['title']]
 
-    # Jack 2026-09-11: 补 total_score（与主 feed 同刻度：relevance*100 + 权威 + 深度 + 写作 + 时效）
+    # Jack 2026-09-15: 与主 feed 同用虎嗅选题逻辑校准（arXiv=学术权威、摘要=summary 字段）
     try:
         from datetime import timezone as _tz
         sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-        from update_news import relevance_score, timeliness_score, summary_quality
+        from update_news import relevance_score
+        from huxiu_score import calibrate_scores
         now_ts = datetime.now(_tz.utc).timestamp()
         for item in filtered:
-            rel = relevance_score(item['title'], item.get('summary', '')[:200])
-            depth, writing_value = summary_quality(item.get('summary', '') or '')
-            authority = 15  # arXiv = 学术权威（与 Google News 同级 15）
-            # arxiv items 用 'published' 字段，对齐 timeliness_score 期望的 published_at
-            tim = timeliness_score(item.get('published') or item.get('published_at'), now_ts)
-            item['total_score'] = round(rel * 100 + authority + depth + writing_value + tim, 1)
-            item['relevance'], item['authority'], item['depth'] = rel, authority, depth
-            item['timeliness'], item['writing_value'] = round(tim, 2), writing_value
-        print(f"[ARXIV] Scored {len(filtered)} papers (with total_score)")
+            item['relevance'] = relevance_score(item['title'], item.get('summary', '')[:200])
+            item['description'] = item.get('summary', '') or item.get('description', '')
+            item['published_at'] = item.get('published') or item.get('published_at')
+            item['authority'] = 15  # arXiv = 学术权威（校准映射后 =10 档）
+        calibrate_scores(filtered, now_ts)
+        print(f"[ARXIV] Scored {len(filtered)} papers (huxiu-calibrated)")
     except Exception as e:
         print(f"[ARXIV] scoring skipped: {e}")
 

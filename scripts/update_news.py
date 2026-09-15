@@ -729,23 +729,14 @@ def translate_batch(texts: list[str], target: str = 'zh', max_workers: int = 2) 
     return results
 
 def summary_quality(desc: str) -> tuple:
-    """Jack 2026-09-15: 摘要长度 → (深度, 写作) 梯度分，替代原 ≥100 二值跳变。
-    ≥100 字记满 5，≥60 字 3 分，≥30 字 1 分，更短 0。"""
-    L = len((desc or '').strip())
-    if L >= 100:
-        return 5, 5
-    if L >= 60:
-        return 3, 3
-    if L >= 30:
-        return 1, 1
-    return 0, 0
+    """Re-export（arxiv/toutiao fetcher 与历史调用方兼容）；实体在 huxiu_score.py。"""
+    from huxiu_score import summary_quality as _sq
+    return _sq(desc)
 
 
 def rescore_after_summary(item: dict) -> None:
-    """Jack 2026-09-15: 修打分/补摘要的先后顺序 bug。
-    score_item 在 enricher 之前跑，补进来的 120 字真摘要没参与评分，
-    导致大量有实质摘要的条目 depth/writing 恒为 0。
-    写盘前按最终 description 重算这两维并同步 total_score。"""
+    """DEPRECATED 2026-09-15: 主管线已改用 calibrate_scores()。
+    仅为 arxiv/toutiao 之外的兼容保留；按最终 description 重算 depth/writing。"""
     depth, writing = summary_quality(item.get('description', ''))
     old_pts = (item.get('depth') or 0) + (item.get('writing_value') or 0)
     item['depth'] = depth
@@ -988,9 +979,10 @@ def run(output_dir: str, window_hours: int, opml_path: str, archive_days: int, w
         except Exception as _e:
             print(f"[SUMMARY] anchor enrich skipped: {_e}")
 
-        # Jack 2026-09-15: 锚点同样在摘要补齐后重算 depth/writing
-        for _it in high_relevance_anchors:
-            rescore_after_summary(_it)
+        # Jack 2026-09-15: 锚点区同样按虎嗅选题逻辑校准（摘要补齐后）
+        from huxiu_score import calibrate_scores as _calib_anchors
+        high_relevance_anchors = _calib_anchors(high_relevance_anchors, now_ts)
+        print(f"[INFO] Anchor huxiu-calibrated: {len(high_relevance_anchors)} items")
 
         # Jack 2026-09-11: 锚点写入前剥掉 enricher 内部标记 _summary_ok
         for _it in high_relevance_anchors:
@@ -1186,12 +1178,15 @@ def run(output_dir: str, window_hours: int, opml_path: str, archive_days: int, w
     except Exception as _e:
         print(f"[SUMMARY] main feed enrich skipped: {_e}")
 
-    # Jack 2026-09-15: 摘要补齐后重算 depth/writing 并同步 total_score，再重排
+    # Jack 2026-09-15: 虎嗅选题逻辑校准（在 enricher 补齐摘要之后跑）——
+    # 冲突+数据=选题分, 通稿腔/冗余/自媒体噪声=扣分, 时效降权, 相关性压缩到 22-50
+    from huxiu_score import calibrate_scores
+    scored = calibrate_scores(scored, now_ts)
+    _n_topic = sum(1 for _it in scored if _it.get('hx_topic'))
+    _n_pen = sum(1 for _it in scored if _it.get('hx_pr_penalty') or _it.get('hx_dup_penalty'))
+    print(f"[INFO] Huxiu-calibrated: {_n_topic} items with 选题加分, {_n_pen} items penalized (通稿/冗余)")
     for _it in scored:
-        rescore_after_summary(_it)
-    scored.sort(key=lambda x: x['total_score'], reverse=True)
-    _n_w = sum(1 for _it in scored if _it.get('writing_value'))
-    print(f"[INFO] Rescored after summary enrichment: {_n_w} items with writing>0")
+        _it.pop('_hx', None)
 
     generated_at = datetime.now(timezone.utc).isoformat()
     os.makedirs(output_dir, exist_ok=True)
