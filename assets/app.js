@@ -191,10 +191,6 @@ function renderStats() {
   });
 }
 
-function sourceKind(siteId) {
-  return SOURCE_KINDS[siteId] || { label: "来源", tone: "default" };
-}
-
 // Jack 2026-09-15 v3: 卡面直接摊开五维明细，格式「新闻价值 N分 (相关性X分 + 权威X分 + ...)」
 // hover tooltip 保留打分规则说明。isGov=true 用政策口径的时效/写作满分。
 function buildScoreBadge(item, isGov = false) {
@@ -462,10 +458,16 @@ function renderItemNode(item, showSite) {
   } else {
     siteEl.remove();
   }
-  const kind = sourceKind(item.site_id);
+  // Jack 2026-09-15 v3: SOURCE_KINDS 的 key 全是退役源体系 site_id，真实数据永不命中，
+  // 兜底 label「来源」与分数徽章连读成"来源105"造成误导。未知来源不渲染该 chip。
+  const kind = SOURCE_KINDS[item.site_id];
   const categoryEl = node.querySelector(".category");
-  categoryEl.textContent = kind.label;
-  categoryEl.classList.add(`kind-${kind.tone}`);
+  if (kind) {
+    categoryEl.textContent = kind.label;
+    categoryEl.classList.add(`kind-${kind.tone}`);
+  } else {
+    categoryEl.remove();
+  }
   node.querySelector(".time").textContent = fmtTime(item.published_at || item.first_seen_at);
 
   // 得分徽章（v3: 卡面摊开五维明细）
