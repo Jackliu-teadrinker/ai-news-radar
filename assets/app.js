@@ -40,8 +40,6 @@ const allDedupeLabelEl = document.getElementById("allDedupeLabel");
 const advancedSummaryEl = document.getElementById("advancedSummary");
 const sourceHealthEl = document.getElementById("sourceHealth");
 
-const coverageStripEl = document.getElementById("coverageStrip");
-
 const SOURCE_KINDS = {
   official_ai: { label: "官方", tone: "official" },
   aibreakfast: { label: "日报", tone: "newsletter" },
@@ -158,72 +156,43 @@ function fmtDate(iso) {
 }
 
 function setStats(payload) {
-  // Jack 2026-09-15: 接真实字段。源数=feed 总数(58)，来源分组=主 feed 命中的分组数(10)。
-  // 归档卡删除：archive.json 不进 git，CI 每次从零开始，归档总数无意义。
+  state.statsPayload = payload;
+  renderStats();
+}
+
+// Jack 2026-09-15 v2: 两行 7 卡瘦身为一行 4 卡。
+// 删除重复：源数/OPML源池/源健康 是同一 58 feed 数据说三遍 → 只留源健康；
+// 今日覆盖池与 AI精选 恒相等 → 换成抓取池(原始抓取数)，漏斗数据不再重复。
+function renderStats() {
+  if (!statsEl) return;
+  const payload = state.statsPayload || {};
+  const status = state.sourceStatus || {};
+  const summary = status.summary || {};
+  const rss = status.rss_opml || {};
+  const failedSites = Array.isArray(status.failed_sites) ? status.failed_sites : [];
+  const totalFeeds = Number(rss.effective_feed_total || summary.total_feeds || 0);
+  const okFeeds = Number(rss.ok_feeds || status.successful_sites || 0);
+  const noise = (summary.noise_filtered || 0) + (summary.short_filtered || 0);
+  const hasStatus = Boolean(state.sourceStatus);
+
   const cards = [
-    ["AI 信号", fmtNumber(payload.total_items)],
-    ["源数", fmtNumber(payload.source_count || 0)],
-    ["来源分组", fmtNumber(payload.site_count || 0)],
+    { k: "AI 信号", v: fmtNumber(payload.total_items || state.totalAi || 0), m: "24小时强相关信号" },
+    { k: "抓取池", v: summary.total_items ? `${fmtNumber(summary.total_items)} 条` : "加载中", m: summary.total_items ? `去重剔除 ${fmtNumber(summary.deduplicated || 0)} · 噪声过滤 ${fmtNumber(noise)}` : "全网原始抓取" },
+    { k: "源健康", v: hasStatus && totalFeeds ? `${fmtNumber(okFeeds)}/${fmtNumber(totalFeeds)}` : "—", m: hasStatus ? (failedSites.length ? `${fmtNumber(failedSites.length)} 个失败源` : "全部订阅源正常") : "源状态加载中", tone: hasStatus ? (failedSites.length ? "warn" : "ok") : "" },
+    { k: "来源分组", v: fmtNumber(payload.site_count || 0), m: hasStatus && totalFeeds ? `${fmtNumber(totalFeeds)} 个 OPML 订阅源` : "主 feed 命中分组" },
   ];
 
   statsEl.innerHTML = "";
-  cards.forEach(([k, v]) => {
+  cards.forEach(({ k, v, m, tone }) => {
     const node = document.createElement("div");
-    node.className = "stat";
-    node.innerHTML = `<div class="k">${k}</div><div class="v">${v}</div>`;
+    node.className = `stat ${tone || ""}`.trim();
+    node.innerHTML = `<div class="k">${k}</div><div class="v">${v}</div><div class="m">${m}</div>`;
     statsEl.appendChild(node);
   });
 }
 
 function sourceKind(siteId) {
   return SOURCE_KINDS[siteId] || { label: "来源", tone: "default" };
-}
-
-function siteRows() {
-  return Array.isArray(state.sourceStatus?.sites) ? state.sourceStatus.sites : [];
-}
-
-function renderCoverageCard(label, value, meta, tone = "") {
-  const node = document.createElement("div");
-  node.className = `coverage-card ${tone}`.trim();
-  const labelEl = document.createElement("span");
-  labelEl.className = "coverage-label";
-  labelEl.textContent = label;
-  const valueEl = document.createElement("strong");
-  valueEl.textContent = value;
-  const metaEl = document.createElement("span");
-  metaEl.className = "coverage-meta";
-  metaEl.textContent = meta;
-  node.append(labelEl, valueEl, metaEl);
-  return node;
-}
-
-function renderCoverageStrip(errorMessage = "") {
-  if (!coverageStripEl) return;
-  coverageStripEl.innerHTML = "";
-
-  const rows = siteRows();
-  const failedSites = Array.isArray(state.sourceStatus?.failed_sites) ? state.sourceStatus.failed_sites : [];
-  const rss = state.sourceStatus?.rss_opml || {};
-  const allCount = Number(state.sourceStatus?.items_before_topic_filter || state.totalAllMode || state.itemsAll.length || 0);
-  const coverageCount = Number(state.sourceStatus?.fetched_raw_items || state.totalRaw || allCount || 0);
-  const totalSites = rows.length;
-  const okSites = Number(state.sourceStatus?.successful_sites || 0);
-  const opmlValue = rss.enabled ? `${fmtNumber(rss.ok_feeds || 0)}/${fmtNumber(rss.effective_feed_total || 0)}` : "OPML";
-  const opmlMeta = rss.enabled
-    ? (failedSites.length ? `${failedSites.length} 个源待修复` : "全部订阅源正常")
-    : "可用OPML批量接入RSS";
-
-  const cards = [
-    ["源健康", totalSites ? `${fmtNumber(okSites)}/${fmtNumber(totalSites)}` : "加载中", failedSites.length ? `${fmtNumber(failedSites.length)} 个失败源` : (errorMessage || "内置源正常"), failedSites.length ? "warn" : "ok"],
-    ["今日覆盖池", `${fmtNumber(coverageCount)} 条`, allCount ? `全网抓取原始信号 · ${fmtNumber(allCount)} 条入池` : "全网抓取原始信号", "signal"],
-    ["AI精选", `${fmtNumber(state.totalAi)} 条`, "24小时强相关信号", "signal"],
-    ["OPML源池", opmlValue, opmlMeta, "private"],
-  ];
-
-  cards.forEach(([label, value, meta, tone]) => {
-    coverageStripEl.appendChild(renderCoverageCard(label, value, meta, tone));
-  });
 }
 
 function renderAdvancedSummary() {
@@ -825,7 +794,6 @@ async function init() {
 
     setStats(payload);
     renderModeSwitch();
-    renderCoverageStrip();
     renderSiteFilters();
     renderList();
     updatedAtEl.textContent = `更新时间：${fmtTime(state.generatedAt)}`;
@@ -850,16 +818,15 @@ async function init() {
         init();
       });
     }
-    renderCoverageStrip(errMsg);
   }
 
   if (statusResult.status === "fulfilled") {
     state.sourceStatus = statusResult.value;
     renderSourceHealth();
-    renderCoverageStrip();
+    renderStats();
   } else {
     renderSourceHealth(statusResult.reason.message);
-    renderCoverageStrip(statusResult.reason.message);
+    renderStats();
   }
 }
 
