@@ -110,8 +110,8 @@
 }.primary-controls {
   margin-top: 16px;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) auto auto;
-  gap: 12px;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 10px;
   align-items: center;
 }input, select {
   width: 100%;
@@ -124,10 +124,6 @@
 }input:focus, select:focus, button:focus-visible, summary:focus-visible {
   outline: 2px solid rgba(18, 106, 115, 0.35);
   outline-offset: 2px;
-}.mode-hint {
-  color: var(--muted);
-  font-size: 13px;
-  white-space: nowrap;
 }/* Jack 2026-05-15: 排序下拉 */
 #sortSelect {
   width: auto;
@@ -496,8 +492,13 @@
 }@media (max-width: 760px) {
   .shell {
     padding: 18px 12px 36px;
-  }.hero, .primary-controls, .advanced-controls {
+  }.hero, .advanced-controls {
     grid-template-columns: 1fr;
+  }.primary-controls {
+    gap: 8px;
+  }#sortSelect {
+    padding: 10px 8px;
+    font-size: 12px;
   }.advanced-panel summary {
     align-items: flex-start;
     flex-direction: column;
@@ -510,7 +511,7 @@
     min-width: 0;
   }.stats, .health-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }.mode-hint, .advanced-summary, #resultCount {
+  }.advanced-summary, #resultCount {
     white-space: normal;
   }.time {
     margin-left: 0;
