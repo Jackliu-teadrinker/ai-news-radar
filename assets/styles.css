@@ -444,6 +444,31 @@
 }.score.score-none {
   color: var(--muted);
   background: transparent;
+}
+/* Jack 2026-09-15 v3: 卡面摊开的五维明细徽章（新闻价值 N分 (相关性X + ...)） */
+.score-inline {
+  font-size: 12px;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  padding: 1px 8px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  line-height: 1.6;
+}.score-inline.score-high {
+  border-color: rgba(31, 122, 77, 0.4);
+  color: var(--good);
+  background: rgba(31, 122, 77, 0.08);
+}.score-inline.score-mid {
+  border-color: rgba(154, 103, 0, 0.4);
+  color: var(--warn);
+  background: rgba(154, 103, 0, 0.08);
+}.score-inline.score-low {
+  border-color: rgba(181, 82, 49, 0.4);
+  color: var(--accent-warm);
+  background: rgba(181, 82, 49, 0.08);
+}.score-inline.score-none {
+  color: var(--muted);
+  background: transparent;
 }.time {
   margin-left: auto;
 }.title {
