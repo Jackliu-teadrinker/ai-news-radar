@@ -63,6 +63,30 @@ def robot_signal(text: str) -> int:
             n += 1
     return n
 
+
+# Jack 2026-09-16：Exa 对公众号不返回真实发布时间（Published: N/A），且
+# startPublishedDate 对 mp.weixin.qq.com 域被静默忽略 → 历史旧文（2024/2025
+# 综述/盘点/回顾）混进采集结果。加标题启发式识别旧文，直接丢弃。
+def is_stale_wechat_title(title: str) -> bool:
+    """标题含过去年份 / 回顾盘点综述等特征 → 判定为旧文，不进公众号专区。"""
+    t = title or ""
+    # 出现 2020~2025 年份（不含当前 2026）即视为旧文
+    import re as _re
+    years = _re.findall(r"(20\d\d)", t)
+    for y in years:
+        if y < "2026":
+            return True
+    stale_markers = [
+        "回顾", "盘点", "综述", "年度报告", "白皮书", "发展报告",
+        "总结", "复盘", "历史", "前世今生", "历程",
+        "调研近", "篇文献", "万字综述",
+    ]
+    low = t.lower()
+    for m in stale_markers:
+        if m in t or m.lower() in low:
+            return True
+    return False
+
 # ── AI HOT 聚合源（公众号文章抓取） ─────────────────────────────
 # 参考 LearnPrompt/ai-news-radar：AI HOT 聚合 API 会把各 AI 公众号文章
 # 转成带标题+摘要+publishedAt 的 mp.weixin.qq.com 链接，已做 AI 相关性
@@ -225,18 +249,20 @@ def search_wechat_via_exa(keyword: str, max_results: int = 20) -> list[dict]:
     try:
         # 内嵌脚本用占位符，普通字符串拼接（避免 f-string 嵌套花括号转义地狱）
         _script = (
-            "import requests, json, sys, base64\n"
+            "import requests, json, sys, base64, datetime\n"
             'EXA_MCP_URL = "https://mcp.exa.ai/mcp"\n'
+            'now_minus_24h = datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(hours=24)\n'
+            'now_minus_24h_str = now_minus_24h.isoformat()\n'
             'payload = {"jsonrpc": "2.0", "id": 1, "method": "tools/call",\n'
             '    "params": {"name": "web_search_exa",\n'
-            '        "arguments": {"query": "site:mp.weixin.qq.com __KW__", "numResults": __NR__}}}\n'
+            '        "arguments": {"query": "site:mp.weixin.qq.com __KW__", "numResults": __NR__, "startPublishedDate": now_minus_24h_str}}}\n'
             'headers = {"Content-Type": "application/json", "Accept": "application/json, text/event-stream"}\n'
             'r = requests.post(EXA_MCP_URL, json=payload, headers=headers, timeout=45)\n'
             'r.raise_for_status()\n'
             'text = r.content.decode("utf-8", errors="replace").strip()\n'
             "res = None\n"
             'for line in text.split("\\n"):\n'
-            '    if line.startswith("data: "):\n'
+            '    if line.startswith("data: ")\n'
             '        d = json.loads(line[6:])\n'
             '        if "error" in d:\n'
             '            print("EXA_ERROR:" + json.dumps(d["error"], ensure_ascii=False)); sys.exit(0)\n'
@@ -246,7 +272,7 @@ def search_wechat_via_exa(keyword: str, max_results: int = 20) -> list[dict]:
             'c = res.get("content") or []\n'
             'blob = c[0].get("text", "") if c and isinstance(c[0], dict) else ""\n'
             'print("EXA_B64:" + base64.b64encode(blob.encode("utf-8")).decode("ascii"))\n'
-        ).replace("__KW__", keyword).replace("__NR__", str(max_results))
+        )
         result = subprocess.run(
             ["python", "-c", _script],
             capture_output=True, text=True, timeout=90, encoding="utf-8", errors="replace"
@@ -359,6 +385,11 @@ def collect_wechat_articles(
         for sr in search_results:
             url = sr.get("url", "")
             if not url or url in all_articles:
+                continue
+            title = sr.get("title", "")
+            # Jack 2026-09-16：过滤 Exa 索引里的历史旧文（2024/2025 综述/盘点/回顾）
+            if is_stale_wechat_title(title):
+                print(f"  [STALE] 跳过旧文: {title[:40]}")
                 continue
             filtered = None
             if filter_by_content:
