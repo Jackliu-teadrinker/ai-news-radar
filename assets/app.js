@@ -811,7 +811,19 @@ async function init() {
     renderModeSwitch();
     renderSiteFilters();
     renderList();
-    updatedAtEl.textContent = `更新时间：${fmtTime(state.generatedAt)}`;
+    // 2026-09-15: "更新时间"显示"页面数据刷新于 X:XX（快照 00:00）"，
+    // 让"更新时间"跟随页面加载时刻走，不再卡在快照小时位上
+    const pageLoadTime = new Date();
+    const loadFmt = `${String(pageLoadTime.getHours()).padStart(2,'0')}:${String(pageLoadTime.getMinutes()).padStart(2,'0')}`;
+    // 若页面长期停留，generatedAt 本身被新快照刷新（同页 auto-poll 场景），
+    // 优先显示新快照时刻，避免"刷新于"永远停在第一次 load 的时间
+    const snapFmt = fmtTime(state.generatedAt);
+    const displayTime = (state.generatedAt && state.generatedAt !== state._initialGeneratedAt)
+      ? snapFmt
+      : loadFmt;
+    updatedAtEl.textContent = `更新时间：${displayTime} · 数据快照 ${snapFmt}`;
+    updatedAtEl.title = `数据生成时间：${state.generatedAt}（"更新时间"跟随页面加载/自动刷新时刻，快照时间反映数据轮次）`;
+    if (!state._initialGeneratedAt) state._initialGeneratedAt = state.generatedAt;
   } else {
     // FIX (2026-07-13): 显示错误状态 + 重试按钮，不再静默卡在"加载中..."
     updatedAtEl.textContent = "加载失败";
