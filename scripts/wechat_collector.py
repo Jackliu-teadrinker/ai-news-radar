@@ -221,10 +221,16 @@ def _parse_exa_text(text: str) -> list[dict]:
             elif low.startswith("highlights:"):
                 highlights = ls[11:].strip()
         if title and url and url.startswith("http"):
+            pa = published if published not in ("", "N/A") else ""
+            # Jack 2026-09-16: Exa 对公众号不返回真实发布时间（Published: N/A），
+            # 旧文若兜底"现在"会骗过 1 天滑动窗口。**没有真实时间的 Exa 项直接丢弃**，
+            # 只保留 publishedAt 真实可解析的项（主要来自 AI HOT，少量 Exa 命中）。
+            if not pa:
+                continue
             out.append({
                 "title": title,
                 "url": url,
-                "publishedAt": published if published not in ("", "N/A") else "",
+                "publishedAt": pa,
                 "snippet": (highlights or title)[:300],
             })
     return out
