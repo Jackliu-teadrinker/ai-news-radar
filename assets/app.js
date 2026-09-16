@@ -21,7 +21,10 @@ const state = {
   sortMode: 'time',  // 'time' | 'priority' | 'total_score' | 'relevance' | 'authority' | 'depth' | 'timeliness'
 };
 
-const statsEl = document.getElementById("stats");
+const categoryBarEl = document.getElementById("categoryBar");
+const sourceBadgeEl = document.getElementById("sourceBadge");
+const advancedPanelEl = document.getElementById("advancedPanel");
+const modeCountBadgeEl = document.getElementById("modeCountBadge");
 const siteSelectEl = document.getElementById("siteSelect");
 const sitePillsEl = document.getElementById("sitePills");
 const newsListEl = document.getElementById("newsList");
@@ -159,35 +162,92 @@ function setStats(payload) {
   renderStats();
 }
 
-// Jack 2026-09-15 v2: 两行 7 卡瘦身为一行 4 卡。
-// 删除重复：源数/OPML源池/源健康 是同一 58 feed 数据说三遍 → 只留源健康；
-// 今日覆盖池与 AI精选 恒相等 → 换成抓取池(原始抓取数)，漏斗数据不再重复。
-function renderStats() {
-  if (!statsEl) return;
-  const payload = state.statsPayload || {};
-  const status = state.sourceStatus || {};
+// Jack 2026-09-16: 参考 Tech Radar 布局改版——
+// 删除 4 张统计卡，信息重排为：顶栏源状态徽章（16/17 正常·失败 1）+ 分类计数胶囊栏。
+// 抓取池/漏斗等运营数据收进高级筛选的 source-health，不再占首屏。
+function computeCutoffMs() {
+  if (!state.todayMode) return null;
+  // CST 19:00 anchor = UTC 11:00; cutoff = 上一个 19:00 锚点
+  const now = new Date();
+  const utcMsInDay = now.getUTCHours() * 3600000 + now.getUTCMinutes() * 60000;
+  const anchorUtcMs = 11 * 3600000;
+  const base = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate()));
+  if (utcMsInDay < anchorUtcMs) base.setUTCDate(base.getUTCDate() - 1);
+  return base.getTime() + anchorUtcMs;
+}
+
+function categoryBaseItems() {
+  const cutoff = computeCutoffMs();
+  return modeItems().filter((item) => {
+    if (cutoff === null) return true;
+    const ms = new Date(item.first_seen_at || item.published_at || 0).getTime();
+    return ms >= cutoff;
+  });
+}
+
+function renderCategoryBar() {
+  if (!categoryBarEl) return;
+  const base = categoryBaseItems();
+  const counts = new Map();
+  base.forEach((item) => {
+    let cat;
+    try { cat = itemGnCategory(item); } catch (e) { cat = ""; }
+    counts.set(cat, (counts.get(cat) || 0) + 1);
+  });
+  categoryBarEl.innerHTML = "";
+  const mk = (id, label) => {
+    const btn = document.createElement("button");
+    const n = id === "" ? base.length : (counts.get(id) || 0);
+    btn.type = "button";
+    btn.className = `cat-pill${state.categoryFilter === id ? " active" : ""}${n === 0 && id !== "" ? " empty" : ""}`;
+    const name = document.createElement("span");
+    name.className = "cat-name";
+    name.textContent = label;
+    const cnt = document.createElement("span");
+    cnt.className = "cat-count";
+    cnt.textContent = n;
+    btn.appendChild(name);
+    btn.appendChild(cnt);
+    btn.onclick = () => {
+      state.categoryFilter = state.categoryFilter === id ? "" : id;
+      renderList();
+    };
+    categoryBarEl.appendChild(btn);
+  };
+  mk("", "全部");
+  GN_CATEGORIES.forEach((cat) => mk(cat.id, cat.label));
+}
+
+function renderSourceBadge() {
+  if (!sourceBadgeEl) return;
+  const status = state.sourceStatus;
+  if (!status) {
+    sourceBadgeEl.textContent = "源状态加载中…";
+    sourceBadgeEl.className = "src-badge";
+    return;
+  }
   const summary = status.summary || {};
   const rss = status.rss_opml || {};
-  const failedSites = Array.isArray(status.failed_sites) ? status.failed_sites : [];
-  const totalFeeds = Number(rss.effective_feed_total || summary.total_feeds || 0);
-  const okFeeds = Number(rss.ok_feeds || status.successful_sites || 0);
-  const noise = (summary.noise_filtered || 0) + (summary.short_filtered || 0);
-  const hasStatus = Boolean(state.sourceStatus);
+  const total = Number(rss.effective_feed_total || summary.total_feeds || 0);
+  const ok = Number(rss.ok_feeds || status.successful_sites || 0);
+  const failed = Array.isArray(status.failed_sites) ? status.failed_sites.length : 0;
+  if (!total) {
+    sourceBadgeEl.textContent = "源状态不可用";
+    sourceBadgeEl.className = "src-badge";
+    return;
+  }
+  sourceBadgeEl.textContent = failed ? `${ok}/${total} 源正常 · 失败 ${failed}` : `${ok}/${total} 源正常`;
+  sourceBadgeEl.className = `src-badge ${failed ? "warn" : "ok"}`;
+}
 
-  const cards = [
-    { k: "AI 信号", v: fmtNumber(payload.total_items || state.totalAi || 0), m: "24小时强相关信号" },
-    { k: "抓取池", v: summary.total_items ? `${fmtNumber(summary.total_items)} 条` : "加载中", m: summary.total_items ? `去重剔除 ${fmtNumber(summary.deduplicated || 0)} · 噪声过滤 ${fmtNumber(noise)}` : "全网原始抓取" },
-    { k: "源健康", v: hasStatus && totalFeeds ? `${fmtNumber(okFeeds)}/${fmtNumber(totalFeeds)}` : "—", m: hasStatus ? (failedSites.length ? `${fmtNumber(failedSites.length)} 个失败源` : "全部订阅源正常") : "源状态加载中", tone: hasStatus ? (failedSites.length ? "warn" : "ok") : "" },
-    { k: "来源分组", v: fmtNumber(payload.site_count || 0), m: hasStatus && totalFeeds ? `${fmtNumber(totalFeeds)} 个 OPML 订阅源` : "主 feed 命中分组" },
-  ];
+function renderModeCountBadge(count) {
+  if (!modeCountBadgeEl) return;
+  modeCountBadgeEl.textContent = `${state.mode === "ai" ? "精选" : "全量"} ${fmtNumber(count)} 条`;
+}
 
-  statsEl.innerHTML = "";
-  cards.forEach(({ k, v, m, tone }) => {
-    const node = document.createElement("div");
-    node.className = `stat ${tone || ""}`.trim();
-    node.innerHTML = `<div class="k">${k}</div><div class="v">${v}</div><div class="m">${m}</div>`;
-    statsEl.appendChild(node);
-  });
+function renderStats() {
+  renderCategoryBar();
+  renderSourceBadge();
 }
 
 // Jack 2026-09-15 v3: 卡面直接摊开五维明细，格式「新闻价值 N分 (相关性X分 + 权威X分 + ...)」
@@ -295,35 +355,6 @@ function renderSiteFilters() {
 
   sitePillsEl.innerHTML = "";
 
-  // GN category pills
-  const categoryAllPill = document.createElement("button");
-  categoryAllPill.className = `pill ${state.categoryFilter === "" ? "active" : ""}`;
-  categoryAllPill.textContent = "全部分区";
-  categoryAllPill.onclick = () => {
-    state.categoryFilter = "";
-    renderSiteFilters();
-    renderList();
-  };
-  sitePillsEl.appendChild(categoryAllPill);
-
-  GN_CATEGORIES.forEach((cat) => {
-    const btn = document.createElement("button");
-    btn.className = `pill ${state.categoryFilter === cat.id ? "active" : ""}`;
-    btn.textContent = cat.label;
-    btn.onclick = () => {
-      state.categoryFilter = cat.id;
-      renderSiteFilters();
-      renderList();
-    };
-    sitePillsEl.appendChild(btn);
-  });
-
-  // Divider
-  const divider = document.createElement("span");
-  divider.className = "pill-divider";
-  divider.textContent = "·";
-  sitePillsEl.appendChild(divider);
-
   // Site pills
   const allPill = document.createElement("button");
   allPill.className = `pill ${state.siteFilter === "" ? "active" : ""}`;
@@ -360,6 +391,7 @@ function renderModeSwitch() {
   } else {
     if (listTitleEl) listTitleEl.textContent = "全量更新";
   }
+  if (modeCountBadgeEl) modeCountBadgeEl.textContent = `${state.mode === "ai" ? "精选" : "全量"} ${fmtNumber(categoryBaseItems().length)} 条`;
   renderAdvancedSummary();
 }
 
@@ -627,6 +659,7 @@ function renderGroupedBySiteAndSource(items) {
 
 function renderList() {
   const filtered = getFilteredItems();
+  renderCategoryBar();
   console.log('[RL] itemsAi=' + state.itemsAi.length + ' filtered=' + filtered.length + ' mode=' + state.mode + ' today=' + state.todayMode + ' siteF=' + state.siteFilter + ' catF=' + state.categoryFilter + ' newsListEl=' + !!newsListEl);
   if (filtered.length > 0) {
     console.log('[RL] OK, first:', filtered[0].title?.substring(0,40));
@@ -821,7 +854,7 @@ async function init() {
     const displayTime = (state.generatedAt && state.generatedAt !== state._initialGeneratedAt)
       ? snapFmt
       : loadFmt;
-    updatedAtEl.textContent = `更新时间：${displayTime} · 数据快照 ${snapFmt}`;
+    updatedAtEl.textContent = `${displayTime} · 快照 ${snapFmt}`;
     updatedAtEl.title = `数据生成时间：${state.generatedAt}（"更新时间"跟随页面加载/自动刷新时刻，快照时间反映数据轮次）`;
     if (!state._initialGeneratedAt) state._initialGeneratedAt = state.generatedAt;
   } else {
@@ -855,6 +888,13 @@ async function init() {
     renderSourceHealth(statusResult.reason.message);
     renderStats();
   }
+}
+
+if (sourceBadgeEl && advancedPanelEl) {
+  sourceBadgeEl.addEventListener("click", () => {
+    advancedPanelEl.open = !advancedPanelEl.open;
+    if (advancedPanelEl.open) advancedPanelEl.scrollIntoView({ behavior: "smooth", block: "nearest" });
+  });
 }
 
 searchInputEl.addEventListener("input", (e) => {

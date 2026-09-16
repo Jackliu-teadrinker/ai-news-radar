@@ -33,23 +33,24 @@
           <div class="hero-headline">
             <img class="hero-logo" src="./assets/logo.svg" alt="机器人新闻雷达 Logo" />
             <div>
-              <p class="hero-tag">机器人新闻雷达</p>
-              <h1>24 小时机器人更新雷达</h1>
+              <h1>机器人新闻雷达</h1>
+              <p class="hero-updated"><span class="updated-label">更新时间</span> <span class="updated" id="updatedAt">加载中...</span></p>
             </div>
           </div>
-          <p class="hero-sub">
-            过去 24 小时值得看的机器人、具身智能、脑机接口精准更新。
-          </p>
         </div>
-        <div class="hero-meta">
-          <span class="updated-label">更新时间</span>
-          <span class="updated" id="updatedAt">加载中...</span>
+        <div class="hero-side">
+          <button class="src-badge" id="sourceBadge" type="button" title="点击展开高级筛选查看源健康与来源明细">源状态加载中…</button>
+          <a class="gh-pill" href="https://github.com/Jackliu-teadrinker/ai-news-radar" target="_blank" rel="noopener noreferrer">GitHub 与接入指南</a>
         </div>
-
-        <section class="stats" id="stats"></section>
       </header>
 
+      <section class="category-bar" id="categoryBar" aria-label="分区筛选"></section>
+
       <section class="primary-controls">
+        <div class="mode-switch">
+          <button id="modeAiBtn" class="mode-btn active" type="button">✦ 精选</button>
+          <button id="modeAllBtn" class="mode-btn" type="button">≡ 全量</button>
+        </div>
         <input id="searchInput" type="search" placeholder="搜索机器人信号 / 来源" />
         <select id="sortSelect" title="排序方式">
           <option value="time">🕐 时间最新</option>
@@ -60,12 +61,13 @@
           <option value="depth">📊 内容深度</option>
           <option value="timeliness">⏰ 时效性</option>
         </select>
+        <span class="mode-count" id="modeCountBadge"></span>
       </section>
 
-      <details class="advanced-panel">
+      <details class="advanced-panel" id="advancedPanel">
         <summary>
-          <span>高级筛选与源状态</span>
-          <span class="advanced-summary" id="advancedSummary">加载中...</span>
+          <span>高级筛选</span>
+          <span class="advanced-summary" id="advancedSummary">只看某个来源，或检查各信源采集是否正常</span>
         </summary>
         <div class="advanced-content">
           <div class="advanced-controls">
@@ -75,13 +77,6 @@
                 <option value="">全部站点</option>
               </select>
             </label>
-            <div class="field">
-              <span>视图</span>
-              <div class="mode-switch">
-                <button id="modeAiBtn" class="mode-btn active" type="button">机器人强相关</button>
-                <button id="modeAllBtn" class="mode-btn" type="button">全量</button>
-              </div>
-            </div>
             <label id="allDedupeWrap" class="all-dedupe" for="allDedupeToggle">
               <input id="allDedupeToggle" type="checkbox" checked />
               <span class="all-dedupe-dot"></span>
@@ -167,6 +162,6 @@
       </article>
     </template>
 
-    <script src="./assets/app.js?v=20260916093322" defer></script>
+    <script src="./assets/app.js?v=20260916094427" defer></script>
   </body>
 </html>
