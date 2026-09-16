@@ -45,6 +45,85 @@ RELEVANCE_KEYWORDS = [
     "小米", "CyberDog", "铁蛋", "Iron",
 ]
 
+# ── AI HOT 聚合源（公众号文章抓取） ─────────────────────────────
+# 参考 LearnPrompt/ai-news-radar：AI HOT 聚合 API 会把各 AI 公众号文章
+# 转成带标题+摘要+publishedAt 的 mp.weixin.qq.com 链接，已做 AI 相关性
+# 打分（score≥60 才 selected），比直接爬微信稳定得多。
+AIHOT_API_BASE = "https://aihot.virxact.com/api/public/items"
+AIHOT_UA = "Mozilla/5.0 (compatible; AI-News-Radar/1.0)"
+AIHOT_TAKE = 100          # 单页条数
+AIHOT_MAX_PAGES = 2       # 2 页 = 200 条，覆盖近 5~7 天 AI 公众号全量
+AIHOT_MIN_SCORE = 60      # 只收 AI HOT 自己筛选过的（与参考库一致）
+AIHOT_MAX_AGE_DAYS = 7    # 7 天内的公众号文章才进管道（与雷达 7d 归档上限对齐）
+
+
+def fetch_aihot_wechat() -> list[dict]:
+    """拉取 AI HOT 聚合的 AI 公众号文章（参考 LearnPrompt/ai-news-radar 方案）。
+
+    返回与 search_wechat_via_exa 兼容的 dict 列表：
+      {title, url, publishedAt, snippet, source}
+    失败（网络/4xx/5xx/空）返回 []，绝不抛异常中断主流程。
+    """
+    import urllib.request
+    import urllib.parse
+
+    results = []
+    now = datetime.now(timezone.utc)
+    cutoff = now - timedelta(days=AIHOT_MAX_AGE_DAYS)
+    cursor = ""
+    for _page in range(AIHOT_MAX_PAGES):
+        params = {"mode": "selected", "take": str(AIHOT_TAKE)}
+        if cursor:
+            params["cursor"] = cursor
+        url = f"{AIHOT_API_BASE}?{urllib.parse.urlencode(params)}"
+        try:
+            req = urllib.request.Request(
+                url,
+                headers={"User-Agent": AIHOT_UA, "Accept": "application/json"},
+            )
+            payload = json.loads(urllib.request.urlopen(req, timeout=25).read())
+        except Exception as e:
+            print(f"[AIHOT] 拉取失败 (page): {e}")
+            break
+        items = payload.get("items", [])
+        if not items:
+            break
+        for it in items:
+            try:
+                score = float(it.get("score") or 0)
+                if score < AIHOT_MIN_SCORE:
+                    continue
+                raw_src = str(it.get("source", "")).strip()
+                # 只收 AI 公众号文章（source 形如 "公众号：XXX"），排除 X/HN/RSS
+                if "公众号" not in raw_src:
+                    continue
+                pub_raw = str(it.get("publishedAt") or "")
+                if not pub_raw:
+                    continue
+                pub_dt = datetime.fromisoformat(pub_raw.replace("Z", "+00:00"))
+                if pub_dt < cutoff:
+                    continue
+                title = str(it.get("title") or "").strip()
+                link = str(it.get("url") or "").strip()
+                if not title or not link:
+                    continue
+                # source 去掉 "公众号：" 前缀，只留账号名（前端显示更干净）
+                account = raw_src.replace("公众号：", "").replace("公众号:", "").strip()
+                results.append({
+                    "title": title,
+                    "url": link,
+                    "publishedAt": pub_dt.isoformat(),
+                    "snippet": str(it.get("summary") or "")[:500],
+                    "source": f"公众号：{account}" if account else raw_src,
+                })
+            except Exception:
+                continue
+        if not payload.get("hasNext") or not payload.get("nextCursor"):
+            break
+        cursor = str(payload.get("nextCursor") or "")
+    print(f"[AIHOT] 拉到 {len(results)} 篇 AI 公众号文章（7 天内，score≥{AIHOT_MIN_SCORE}）")
+    return results
+
 
 def sha1_short(text: str) -> str:
     return hashlib.sha1(text.encode("utf-8")).hexdigest()[:16]
@@ -57,11 +136,18 @@ def now_iso() -> str:
 def normalize_wechat_time(published_str: str) -> str:
     if not published_str:
         return now_iso()
+    s = published_str.strip()
+    # ISO-8601 带 T（AI HOT API 返回 "2026-09-15T14:30:59+00:00"）
+    if "T" in s:
+        try:
+            return datetime.fromisoformat(s).astimezone(timezone.utc).isoformat()
+        except ValueError:
+            pass
     try:
-        if " " in published_str:
-            dt = datetime.strptime(published_str.strip(), "%Y-%m-%d %H:%M")
+        if " " in s:
+            dt = datetime.strptime(s, "%Y-%m-%d %H:%M")
         else:
-            dt = datetime.strptime(published_str.strip(), "%Y-%m-%d")
+            dt = datetime.strptime(s, "%Y-%m-%d")
         dt = dt.replace(tzinfo=timezone.utc)
         return dt.isoformat()
     except (ValueError, TypeError):
@@ -186,6 +272,22 @@ def collect_wechat_articles(
     if keywords is None:
         keywords = DEFAULT_KEYWORDS
     all_articles = {}
+    # ① AI HOT 聚合源（稳定，带标题+摘要+真实 publishedAt，参考 LearnPrompt 方案）
+    aihot_results = fetch_aihot_wechat()
+    for sr in aihot_results:
+        url = sr.get("url", "")
+        if not url or url in all_articles:
+            continue
+        all_articles[url] = {
+            "title": sr.get("title", ""),
+            "url": url,
+            "published_at": normalize_wechat_time(sr.get("publishedAt", "")),
+            "source": sr.get("source", "微信公众号"),
+            "description": sr.get("snippet", ""),
+            "relevance_score": 10,
+            "first_seen_at": now_iso(),
+        }
+    print(f"[WECHAT] AI HOT 得到 {len(all_articles)} 篇（去重后）")
     print(f"[WECHAT] 开始搜索 {len(keywords)} 个关键词...")
     for kw in keywords:
         print(f"  搜索: {kw}")
