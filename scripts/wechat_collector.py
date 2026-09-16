@@ -66,24 +66,16 @@ def robot_signal(text: str) -> int:
 
 # Jack 2026-09-16：Exa 对公众号不返回真实发布时间（Published: N/A），且
 # startPublishedDate 对 mp.weixin.qq.com 域被静默忽略 → 历史旧文（2024/2025
-# 综述/盘点/回顾）混进采集结果。加标题启发式识别旧文，直接丢弃。
+# 综述/盘点/回顾）混进采集结果。
+# Jack 2026-09-16 再次明确：旧文判断 **只看标题里的明确年份**（< 当前年），
+# 不做"回顾/盘点/综述"等猜测性兜底 —— 那类特征可能误伤近期深度稿。
 def is_stale_wechat_title(title: str) -> bool:
-    """标题含过去年份 / 回顾盘点综述等特征 → 判定为旧文，不进公众号专区。"""
+    """标题含明确年份且 < 当前年（2026）→ 视为旧文，直接丢弃。"""
     t = title or ""
-    # 出现 2020~2025 年份（不含当前 2026）即视为旧文
     import re as _re
     years = _re.findall(r"(20\d\d)", t)
     for y in years:
         if y < "2026":
-            return True
-    stale_markers = [
-        "回顾", "盘点", "综述", "年度报告", "白皮书", "发展报告",
-        "总结", "复盘", "历史", "前世今生", "历程",
-        "调研近", "篇文献", "万字综述",
-    ]
-    low = t.lower()
-    for m in stale_markers:
-        if m in t or m.lower() in low:
             return True
     return False
 
