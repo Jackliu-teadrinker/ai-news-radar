@@ -41,7 +41,8 @@ jobs:
           import json, os, time, datetime, urllib.request
 
           PAGES = "https://jackliu-teadrinker.github.io/ai-news-radar/data/latest-24h-min.json"
-          STALE_AFTER_MIN = 45        # 数据年龄超过 45 分钟视为 stale
+          # 2026-09-15: 整点拍数据落点 ≈ 整点前 4min，age 25min 内属正常节奏
+          STALE_AFTER_MIN = 25
           RECENT_WINDOW_SEC = 1200    # 20 分钟内有 update-news run（排队/进行/刚完成）就不补刀，防级联
 
           # 1. freshness：读 Pages 数据的 generated_at
