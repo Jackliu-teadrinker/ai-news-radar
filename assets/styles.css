@@ -426,17 +426,17 @@
   min-width: 28px;
   text-align: center;
 }.score.score-high {
-  border-color: rgba(31, 122, 77, 0.4);
-  color: var(--good);
-  background: rgba(31, 122, 77, 0.08);
+  border-color: rgba(31, 122, 77, 0.16);
+  color: #6e9485;
+  background: rgba(31, 122, 77, 0.04);
 }.score.score-mid {
-  border-color: rgba(154, 103, 0, 0.4);
-  color: var(--warn);
-  background: rgba(154, 103, 0, 0.08);
+  border-color: rgba(154, 103, 0, 0.16);
+  color: #a48c5b;
+  background: rgba(154, 103, 0, 0.04);
 }.score.score-low {
-  border-color: rgba(181, 82, 49, 0.4);
-  color: var(--accent-warm);
-  background: rgba(181, 82, 49, 0.08);
+  border-color: rgba(181, 82, 49, 0.16);
+  color: #b28a78;
+  background: rgba(181, 82, 49, 0.04);
 }.score.score-none {
   color: var(--muted);
   background: transparent;
@@ -451,17 +451,17 @@
   border-radius: 999px;
   line-height: 1.6;
 }.score-inline.score-high {
-  border-color: rgba(31, 122, 77, 0.4);
-  color: var(--good);
-  background: rgba(31, 122, 77, 0.08);
+  border-color: rgba(31, 122, 77, 0.16);
+  color: #6e9485;
+  background: rgba(31, 122, 77, 0.04);
 }.score-inline.score-mid {
-  border-color: rgba(154, 103, 0, 0.4);
-  color: var(--warn);
-  background: rgba(154, 103, 0, 0.08);
+  border-color: rgba(154, 103, 0, 0.16);
+  color: #a48c5b;
+  background: rgba(154, 103, 0, 0.04);
 }.score-inline.score-low {
-  border-color: rgba(181, 82, 49, 0.4);
-  color: var(--accent-warm);
-  background: rgba(181, 82, 49, 0.08);
+  border-color: rgba(181, 82, 49, 0.16);
+  color: #b28a78;
+  background: rgba(181, 82, 49, 0.04);
 }.score-inline.score-none {
   color: var(--muted);
   background: transparent;
@@ -527,9 +527,10 @@
    ═══════════════════════════════════════════════ */
 
 .wechat-section {
-  margin-top: 16px;
-  border: 1px solid rgba(0, 128, 0, 0.2);
-  background: linear-gradient(135deg, var(--surface) 0%, rgba(0, 128, 0, 0.03) 100%);
+  margin-top: 24px;
+  border: 1px solid rgba(0, 128, 0, 0.14);
+  background: linear-gradient(135deg, var(--surface) 0%, rgba(0, 128, 0, 0.02) 100%);
+  opacity: 0.94;
 }.wechat-section .list-head {
   background: linear-gradient(135deg, var(--surface-soft) 0%, rgba(0, 128, 0, 0.05) 100%);
   border-bottom: 1px solid rgba(0, 128, 0, 0.15);
