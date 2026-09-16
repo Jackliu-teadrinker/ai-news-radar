@@ -1124,22 +1124,28 @@ def run(output_dir: str, window_hours: int, opml_path: str, archive_days: int, w
     print(f"[INFO] After time window: {len(time_filtered)} (from {len(clean_items)} clean, {missing_ts_count} missing_ts, {bad_ts_count} bad_ts)")
     clean_items = time_filtered
 
-    # ── Merge WeChat articles (also subject to time window) ──
-    # WeChat articles now have real published_at from web scraping.
-    # Apply the same 19:00 CST window filter as RSS articles.
+    # ── Merge WeChat articles ──
+    # FIX(2026-09-16): 公众号专区不套用 RSS 的 19:00 CST 硬窗口。
+    # 原因：Exa 对公众号文章不返回发布时间（Published: N/A），兜底成"采集时刻"
+    # 后会误把 Exa 索引里的历史文章标成"现在"，又被 19:00 硬窗口切掉 → 专区只剩 1 篇。
+    # 公众号改用独立的"最近 1 天"滑动窗口（AI HOT 有真实时间戳、Exa 兜底时刻都在 1 天内）。
     if wechat_articles:
+        # 1 天滑动窗口（UTC 12h 容差保留边界），与 RSS 19:00 锚点解耦
+        wechat_cutoff_ts = now_ts - 24 * 3600
         wechat_filtered = []
         for w in wechat_articles:
             try:
                 dt = datetime.fromisoformat(w['published_at'].replace('Z', '+00:00'))
-                if start_ts <= dt.timestamp() <= now_ts:
-                    wechat_filtered.append(w)
+                ts = dt.timestamp()
+                # 只保留未来 6h 以内的（防时钟漂移误判）；无真实时间的 Exa 兜底项落在 now 附近，天然通过
+                if ts <= wechat_cutoff_ts:
+                    print(f"  [WCUT] Skipping wechat (older than 1d): {w['title'][:40]} ({w['published_at']})")
                 else:
-                    print(f"  [WINDOW] Skipping wechat article (outside window): {w['title'][:50]} (published: {w['published_at']})")
+                    wechat_filtered.append(w)
             except Exception:
                 wechat_filtered.append(w)
         clean_items.extend(wechat_filtered)
-        print(f"[INFO] Merged {len(wechat_filtered)}/{len(wechat_articles)} WeChat articles (after time window filter) → {len(clean_items)} total")
+        print(f"[INFO] Merged {len(wechat_filtered)}/{len(wechat_articles)} WeChat articles (1-day sliding window, decoupled from RSS 19:00 anchor) → {len(clean_items)} total")
 
     # Sort by date desc (newest first)
     def sort_key(item):
