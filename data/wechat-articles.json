@@ -1,6 +1,28 @@
 {
-  "articles": [],
-  "total_articles": 0,
-  "last_updated": "2026-09-17T00:01:27.033430+00:00",
+  "articles": [
+    {
+      "id": "35f2f79afb66769b",
+      "title": "用 MCP 插件让 GPT-6 Pro 分担 Codex 规划任务，节省 Pro 会员周额度",
+      "title_zh": "",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647686431&idx=1&sn=c1bfba7e0b5b7cf995e444daf79861a4",
+      "published_at": "2026-09-17T00:09:06+00:00",
+      "site_name": "微信公众号",
+      "site_id": "wechat",
+      "source": "公众号：数字生命卡兹克",
+      "description": "自媒体作者分享一套节省 Codex 额度的工作流：让 Codex 把自己的服务器封装成只读、最小权限、飞书 OAuth 鉴权的 MCP Server，作为插件供 ChatGPT 网页版的 GPT-6 Pro 调用，读取真实生产数据和 GitHub PR 记录做分析与规划。",
+      "ai_score": 0,
+      "relevance": 0,
+      "authority": 0,
+      "depth": 0,
+      "timeliness": 0,
+      "writing_value": 0,
+      "total_score": 0,
+      "ai_label": "wechat",
+      "robot_hits": 0,
+      "first_seen_at": "2026-09-17T01:19:27.630431+00:00"
+    }
+  ],
+  "total_articles": 1,
+  "last_updated": "2026-09-17T01:29:09.290314+00:00",
   "source": "auto_filtered_by_time_window"
 }
