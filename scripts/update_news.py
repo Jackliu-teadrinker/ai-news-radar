@@ -181,6 +181,7 @@ def fetch_feed(feed: dict, timeout: int = 20, max_retries: int = 3, base_delay: 
 def _try_find_rss(base_url: str, timeout: int = 10) -> str | None:
     """Try common RSS feed URLs and return the first successful one."""
     candidate_paths = [
+        '/rss-feed/robotics-news/', '/rss-feed/',
         '/feed', '/feed.xml', '/rss', '/rss.xml', '/atom.xml',
         '/feeds/posts/default', '/feed/rss', '/rss.xml',
         '/feed/atom', '/rss.xml/', '/feed.xml/',
