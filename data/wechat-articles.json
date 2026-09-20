@@ -1,6 +1,28 @@
 {
-  "articles": [],
-  "total_articles": 0,
-  "last_updated": "2026-09-20T02:22:14.580145+00:00",
+  "articles": [
+    {
+      "id": "601fc5ce55fc2b4d",
+      "title": "阶跃星辰发布旗舰模型 Step 5 Preview，10 月 15 日开源权重",
+      "title_zh": "",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzkyNTYxNzg5Mg%3D%3D&mid=2247488120&idx=1&sn=8ba9ac7f0b36682d6262290677c665da",
+      "published_at": "2026-09-20T02:00:00+00:00",
+      "site_name": "微信公众号",
+      "site_id": "wechat",
+      "source": "公众号：阶跃星辰（Step）",
+      "description": "阶跃星辰发布旗舰基座模型 Step 5 Preview，采用稀疏 MoE 架构，总参数量 600B、激活 27B，支持 100 万 Token 上下文和文本与视觉输入，在 Artificial Analysis Intelligence Index 得 44 分，居全球开源模型前三，单任务成本为 Claude Opus 5 的 1/8。",
+      "ai_score": 0,
+      "relevance": 0,
+      "authority": 0,
+      "depth": 0,
+      "timeliness": 0,
+      "writing_value": 0,
+      "total_score": 0,
+      "ai_label": "wechat",
+      "robot_hits": 0,
+      "first_seen_at": "2026-09-20T03:46:34.002754+00:00"
+    }
+  ],
+  "total_articles": 1,
+  "last_updated": "2026-09-20T03:47:11.459615+00:00",
   "source": "auto_filtered_by_time_window"
 }
