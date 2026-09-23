@@ -1,9 +1,49 @@
 {
-  "generated_at": "2026-09-23T13:44:47.790721+00:00",
+  "generated_at": "2026-09-23T14:17:22.306576+00:00",
   "window_start": "2026-09-23T19:00:00+08:00",
-  "window_end": "2026-09-23T21:44:27.196301+08:00",
-  "total_items": 2,
+  "window_end": "2026-09-23T22:16:42.032470+08:00",
+  "total_items": 3,
   "items": [
+    {
+      "id": "2da9367bbb4b7ccd9974ea9aa6d4d831bbb00bcf",
+      "title": "Telerobotic surgery is advancing around the world. Will the US embrace it? - MedTech Dive",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxObTJYWnZSdzUxM3pqMmh5Wk14ZFlWUmhiQWVfQzB3WVBxbjNJV3E0Qy1fM1FDaXZ5N1pBR0pwSGlOU2Zsdmk2WHFFVTJ4U0Z2YmV1SWM3U0U2aVl1cUxWRjRpbWlxaG9KQll2aHdQOXExbmxFLXRFWmpqWGoxVjJxaUo3UEJRODF2T042MFBJVDQyOE1XMll4YnlLaEhMVnRmZUthYjdoTTFmdTNkYkF6emt0WQ?oc=5",
+      "published_at": "2026-09-23T13:57:27+00:00",
+      "category": "GN: surgical robot",
+      "gn_label": "robotics",
+      "site_name": "GN: surgical robot",
+      "source": "GN: surgical robot",
+      "site_id": "GN: surgical robot",
+      "description": "Felipe Rios Mendoza’s right arm fell limp, the phone in his hand slipping to the floor. Frightened family members rushed",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.406,
+      "authority": 5,
+      "depth": 5,
+      "timeliness": 20.0,
+      "writing_value": 5,
+      "total_score": 75.6,
+      "_hx": {
+        "topic": 0,
+        "conflict": 0,
+        "data": 0,
+        "pr_pen": 0,
+        "rel": 40.625,
+        "auth": 5,
+        "tim": 20.0,
+        "writing": 5,
+        "depth": 5,
+        "junk": 0,
+        "dup_pen": 0.0,
+        "dup_of": false
+      },
+      "hx_topic": 0,
+      "hx_conflict": 0,
+      "hx_data": 0,
+      "hx_pr_penalty": 0,
+      "hx_dup_penalty": -0.0
+    },
     {
       "id": "e9f8fc4e903340e6572664c9eb8fd4d0b761e1ae",
       "title": "PitPro’s first tire-changing robot goes live in Canada",
@@ -23,7 +63,7 @@
       "depth": 3,
       "timeliness": 20.0,
       "writing_value": 3,
-      "total_score": 71.6,
+      "total_score": 69.1,
       "_hx": {
         "topic": 0,
         "conflict": 0,
@@ -35,14 +75,14 @@
         "writing": 3,
         "depth": 3,
         "junk": 0,
-        "dup_pen": 0.0,
+        "dup_pen": 2.5,
         "dup_of": false
       },
       "hx_topic": 0,
       "hx_conflict": 0,
       "hx_data": 0,
       "hx_pr_penalty": 0,
-      "hx_dup_penalty": -0.0
+      "hx_dup_penalty": -2.5
     },
     {
       "id": "27967f51968a14fcda5407c6263cd34e0e80139c",
@@ -63,7 +103,7 @@
       "depth": 0,
       "timeliness": 20.0,
       "writing_value": 0,
-      "total_score": 64.4,
+      "total_score": 63.5,
       "_hx": {
         "topic": 0,
         "conflict": 0,
@@ -75,14 +115,14 @@
         "writing": 0,
         "depth": 0,
         "junk": 0,
-        "dup_pen": 1.2,
+        "dup_pen": 2.1,
         "dup_of": false
       },
       "hx_topic": 0,
       "hx_conflict": 0,
       "hx_data": 0,
       "hx_pr_penalty": 0,
-      "hx_dup_penalty": -1.2
+      "hx_dup_penalty": -2.1
     }
   ],
   "fallback_used": false
