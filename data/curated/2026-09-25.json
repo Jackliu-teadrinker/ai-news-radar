@@ -1,9 +1,9 @@
 {
   "date": "2026-09-25",
-  "generated_at": "2026-09-25T10:32:44.716384+00:00",
+  "generated_at": "2026-09-25T11:43:18.761182+00:00",
   "score_threshold": 80,
-  "total_items": 85,
-  "new_added": 0,
+  "total_items": 86,
+  "new_added": 1,
   "items": [
     {
       "id": "c643e505c1aa848d",
@@ -1902,6 +1902,32 @@
       "hx_data": 0,
       "hx_pr_penalty": 0,
       "hx_dup_penalty": -2.8
+    },
+    {
+      "id": "1e05f056f1e4aa6c",
+      "title": "IFR Reports Global Industrial Robot Fleet Reaches 5M as China Drives Growth - AI Insider",
+      "title_zh": "IFR 报告称，随着中国经济的增长，全球工业机器人数量已达 500 万个 - AI Insider",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPMnZYRWRfZVlwTlhTSnZlOVF0LTVTNmdtWXBqTUJkMTQ1UVNFUFM2Rm1JaXp4ZnlpeEZmbGYwTlczVTM2U3VVSUFtTFhxUHBWR2c2a2JmWlZDYVlhX2lhRExNUUx1TDZGRE1BYmRKWTRXZlMtQTFwXzZDR3VYdkVNZDJUNW95RjM2UUMyX0VLbTFpTmVCRklCNEY4dzZfVzUyQnpkak9pMEFHYjEzcWFPNGdYcw?oc=5",
+      "published_at": "2026-09-25T11:39:50+00:00",
+      "category": "国外机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国外机器人资讯",
+      "source": "国外机器人资讯",
+      "site_id": "国外机器人资讯",
+      "description": "Insider Brief - The International Federation of Robotics reported that the global stock of industrial robots reached a r",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.406,
+      "authority": 5,
+      "depth": 5,
+      "timeliness": 20.0,
+      "writing_value": 5,
+      "total_score": 81.6,
+      "hx_topic": 6,
+      "hx_conflict": 0,
+      "hx_data": 6,
+      "hx_pr_penalty": 0,
+      "hx_dup_penalty": -0.0
     },
     {
       "id": "66d52c657fe45a9b",
