@@ -1,9 +1,9 @@
 {
   "date": "2026-09-26",
-  "generated_at": "2026-09-26T10:11:37.792447+00:00",
+  "generated_at": "2026-09-26T14:15:23.867621+00:00",
   "score_threshold": 80,
-  "total_items": 56,
-  "new_added": 2,
+  "total_items": 57,
+  "new_added": 1,
   "items": [
     {
       "id": "b7e1fa3274e5bffc",
@@ -524,6 +524,32 @@
       "hx_data": 6,
       "hx_pr_penalty": 0,
       "hx_dup_penalty": -1.3
+    },
+    {
+      "id": "4abd07014ad96e48",
+      "title": "Tesla targets 1,000 Optimus weekly, but robots struggle with tasks - Interesting Engineering",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPNUJwTE94d0xIanJVSmZ3bm84dnVuWWQ5enFZelVEd2t0bEplWXJ1dVg2MHNZZG5pbFpreHB6Wi1MTjBOaGdtaVBhSXRKM3czUkxSeXo0UEE4MHQzbWJKNmNGQ2Y4NmEydG91bXl4RVVpTHFjWmVtV2FudWozMUYyUWFEYl9vbDhxWEpyQ2VWbDRPQlE?oc=5",
+      "published_at": "2026-09-26T12:39:00+00:00",
+      "category": "国外人形机器人资讯",
+      "gn_label": "humanoid",
+      "site_name": "国外人形机器人资讯",
+      "source": "国外人形机器人资讯",
+      "site_id": "国外人形机器人资讯",
+      "description": "are capable of fine motor control, tactile sensing, and strength. Replicating this in metal is a very difficult task and",
+      "ai_score": 65.0,
+      "ai_label": "humanoid",
+      "relevance": 0.406,
+      "authority": 5,
+      "depth": 5,
+      "timeliness": 20.0,
+      "writing_value": 5,
+      "total_score": 85.6,
+      "hx_topic": 10,
+      "hx_conflict": 10,
+      "hx_data": 0,
+      "hx_pr_penalty": 0,
+      "hx_dup_penalty": -0.0
     },
     {
       "id": "b87a890e1d2acb7e",

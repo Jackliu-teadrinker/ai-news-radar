@@ -1,9 +1,49 @@
 {
-  "generated_at": "2026-09-26T11:47:30.560989+00:00",
+  "generated_at": "2026-09-26T14:13:34.424184+00:00",
   "window_start": "2026-09-26T19:00:00+08:00",
-  "window_end": "2026-09-26T19:47:30.555406+08:00",
-  "total_items": 1,
+  "window_end": "2026-09-26T22:13:14.583063+08:00",
+  "total_items": 2,
   "items": [
+    {
+      "id": "f6af8e689644fd9bda121db942e7023efed94146",
+      "title": "From 14 cities to 15,000: What it will take to scale robotaxis? - The Robot Report",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOMXBiN3lSMURwMFU0dVpSRWpqWHctU2d4X2liTm01RTVfLTNpc2ZQWWtQV1dZcm9WUGhNLU4wd2VRS2ZiUVN5aW8tVVVENXBpNGVfQVBRWVY5aTltYUtUQkk1emJIYmJid0hCME44Ul9ybXhJNzNFUm12VzBGcVRzRWtEcU52UFN5Uzhlek1xQ0l0WE9VYUlZ?oc=5",
+      "published_at": "2026-09-26T12:40:54+00:00",
+      "category": "GN: Robot Report",
+      "gn_label": "robotics",
+      "site_name": "GN: Robot Report",
+      "source": "GN: Robot Report",
+      "site_id": "GN: Robot Report",
+      "description": "Robotaxis are proven. Waymo has logged more than 220 million autonomous miles and, by its own count, has more than 94% f",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.406,
+      "authority": 5,
+      "depth": 5,
+      "timeliness": 20.0,
+      "writing_value": 5,
+      "total_score": 79.6,
+      "_hx": {
+        "topic": 4,
+        "conflict": 0,
+        "data": 4,
+        "pr_pen": 0,
+        "rel": 40.625,
+        "auth": 5,
+        "tim": 20.0,
+        "writing": 5,
+        "depth": 5,
+        "junk": 0,
+        "dup_pen": 0.0,
+        "dup_of": false
+      },
+      "hx_topic": 4,
+      "hx_conflict": 0,
+      "hx_data": 4,
+      "hx_pr_penalty": 0,
+      "hx_dup_penalty": -0.0
+    },
     {
       "id": "877563dfa6b873895b589eb7536aa56778bb51af",
       "title": "视频|国产Linkerbot灵巧手！五指复刻人手，捏球拧螺丝全都行 - finance.sina.com.cn",
@@ -23,7 +63,7 @@
       "depth": 5,
       "timeliness": 20.0,
       "writing_value": 5,
-      "total_score": 75.6,
+      "total_score": 74.6,
       "_hx": {
         "topic": 0,
         "conflict": 0,
@@ -35,14 +75,14 @@
         "writing": 5,
         "depth": 5,
         "junk": 0,
-        "dup_pen": 0.0,
+        "dup_pen": 1.0,
         "dup_of": false
       },
       "hx_topic": 0,
       "hx_conflict": 0,
       "hx_data": 0,
       "hx_pr_penalty": 0,
-      "hx_dup_penalty": -0.0
+      "hx_dup_penalty": -1.0
     }
   ],
   "fallback_used": false
