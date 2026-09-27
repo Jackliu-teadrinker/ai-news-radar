@@ -1,9 +1,9 @@
 {
   "date": "2026-09-28",
-  "generated_at": "2026-09-27T17:55:43.036601+00:00",
+  "generated_at": "2026-09-27T19:05:02.406515+00:00",
   "score_threshold": 80,
-  "total_items": 9,
-  "new_added": 9,
+  "total_items": 10,
+  "new_added": 1,
   "items": [
     {
       "id": "d1dc26251b600946",
@@ -82,6 +82,32 @@
       "hx_data": 4,
       "hx_pr_penalty": 0,
       "hx_dup_penalty": -1.2
+    },
+    {
+      "id": "5d090840f58f5e9d",
+      "title": "Ukraine's 1st Medical Battalion reveals that over 50% of evacuation missions using Maul ground robot are succ - Українська правда",
+      "title_zh": "乌克兰第一医疗营透露，使用 Maul 地面机器人的疏散任务成功率超过 50% - 乌克兰真理报",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBBWU5GZmRfV1daZnpNUFU0R29uSTF0cEdDNnM5R09vTHJRVVFHOG0zWkZwN3VVYldkTXNUc2kxRHZ5WmlseXlSRllLc3RCZ0Q5LUFBck4xQnRNVWk5YjV2UU9ORm7SAXBBVV95cUxNQ0RFZEJ4UFZBYVgtRlRMUXhON1VrX1FHUVBHR2ZUdUV1WDJqaE9VRGJYTzJsMUozR2dyOF9PMVU1dmowLTVfN2M0YTR2YWxfUDZKUHdncUxlWm50Ujd3ZEFSNmw0Qm1wR3B6YU8xdzZH?oc=5",
+      "published_at": "2026-09-27T17:02:00+00:00",
+      "category": "国外机器人资讯",
+      "gn_label": "robotics",
+      "site_name": "国外机器人资讯",
+      "source": "国外机器人资讯",
+      "site_id": "国外机器人资讯",
+      "description": "Ukraine's 1st Medical Battalion reveals that over 50% of evacuation missions using Maul ground robot are successful Over",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.406,
+      "authority": 5,
+      "depth": 5,
+      "timeliness": 20.0,
+      "writing_value": 5,
+      "total_score": 92.0,
+      "hx_topic": 20,
+      "hx_conflict": 10,
+      "hx_data": 10,
+      "hx_pr_penalty": 0,
+      "hx_dup_penalty": -3.6
     },
     {
       "id": "2358c0ec476e009c",
