@@ -37,8 +37,21 @@
     <outline text="GN: humanoid robot"           type="rss" xmlUrl="https://news.google.com/rss/search?q=humanoid+robot&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" />
     <outline text="GN: embodied AI"              type="rss" xmlUrl="https://news.google.com/rss/search?q=embodied+intelligence+OR+embodied+AI&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" />
     <outline text="GN: brain-computer interface" type="rss" xmlUrl="https://news.google.com/rss/search?q=brain+computer+interface+OR+BCI+OR+neural+interface&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" />
+    <!-- Jack 2026-09-28: BCI 扩源——公司/实验室/术语，提升脑机资讯量 -->
+    <outline text="GN: Neuralink"          type="rss" xmlUrl="https://news.google.com/rss/search?q=Neuralink&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" />
+    <outline text="GN: Synchron"         type="rss" xmlUrl="https://news.google.com/rss/search?q=Synchron+stentrode&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" />
+    <outline text="GN: Blackrock Neurotech" type="rss" xmlUrl="https://news.google.com/rss/search?q=Blackrock+Neurotech&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" />
+    <outline text="GN: BCI EEG"          type="rss" xmlUrl="https://news.google.com/rss/search?q=brain+computer+interface+OR+BCI+OR+neural+interface&amp;hl=en-US&amp;gl=US&amp;ceid=US:en&amp;when=7d" />
     <outline text="GN: robot"                    type="rss" xmlUrl="https://news.google.com/rss/search?q=robot&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" />
     <outline text="GN: Physical AI"              type="rss" xmlUrl="https://news.google.com/rss/search?q=physical+AI&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" />
+    <!-- Jack 2026-09-28: Physical AI 扩源——世界模型/VLA/具身，覆盖实际报道术语 -->
+    <outline text="GN: Physical AI 7d"      type="rss" xmlUrl="https://news.google.com/rss/search?q=physical+AI+OR+physical+world+model&amp;hl=en-US&amp;gl=US&amp;ceid=US:en&amp;when=7d" />
+    <outline text="GN: VLA model"       type="rss" xmlUrl="https://news.google.com/rss/search?q=vision-language-action+OR+VLA+model+robot&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" />
+    <outline text="GN: world model"     type="rss" xmlUrl="https://news.google.com/rss/search?q=world+model+robot&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" />
+    <outline text="GN: robot foundation model" type="rss" xmlUrl="https://news.google.com/rss/search?q=robot+foundation+model&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" />
+    <outline text="GN: sim-to-real"     type="rss" xmlUrl="https://news.google.com/rss/search?q=sim-to-real+robot&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" />
+    <outline text="GN: TheRobotReport"  type="rss" xmlUrl="https://news.google.com/rss/search?q=site%3Atherobotreport.com&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" />
+    <outline text="GN: 具身智能 世界模型" type="rss" xmlUrl="https://news.google.com/rss/search?q=%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD+OR+%E4%B8%96%E7%95%8C%E6%A8%A1%E5%9E%8B+%E6%9C%BA%E5%99%A8%E4%BA%BA&amp;hl=zh-CN&amp;gl=CN&amp;ceid=CN:zh-Hans" />
     <!-- TechXplore 相关 (Cloudflare 防护，用 Google News 代理) -->
     <outline text="GN: TechXplore robotics"     type="rss" xmlUrl="https://news.google.com/rss/search?q=site%3Atechxplore.com+robotics&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" />
     <outline text="GN: TechXplore AI"           type="rss" xmlUrl="https://news.google.com/rss/search?q=site%3Atechxplore.com+AI+robot&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" />
