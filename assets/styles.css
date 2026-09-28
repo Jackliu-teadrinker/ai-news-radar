@@ -866,15 +866,42 @@ input:focus, select:focus, button:focus-visible, summary:focus-visible {
     grid-template-columns: 1fr;
   }
   .primary-controls {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 10px;
+    padding: 10px 12px;
+  }
+  /* 胶囊栏占满第一行，横向滚动，不换行 */
+  .primary-controls .category-bar {
+    grid-column: 1 / -1;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 2px;
+    scrollbar-width: none;
+  }
+  .primary-controls .category-bar::-webkit-scrollbar {
+    display: none;
+  }
+  /* 精选/全量 和排序各占半行 */
+  .mode-switch {
+    height: 38px;
+  }
+  .mode-btn {
+    flex: 1;
+    padding: 0 12px;
+  }
+  #sortSelect {
+    width: 100%;
   }
   .mode-count {
     display: none;
   }
-  #sortSelect {
-    padding: 10px 8px;
-    font-size: 12px;
+  .advanced-search input {
+    font-size: 16px; /* 防止 iOS 聚焦时自动缩放 */
+  }
+  #sortSelect,
+  .advanced-search input {
+    min-height: 44px; /* 移动端触控目标 */
   }
   .advanced-panel summary {
     align-items: flex-start;
@@ -905,7 +932,21 @@ input:focus, select:focus, button:focus-visible, summary:focus-visible {
   .hero-headline {
     align-items: flex-start;
   }
+  .hero-side {
+    grid-template-columns: 1fr;
+  }
   .health-grid {
     grid-template-columns: 1fr;
+  }
+  .list-head {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+  .news-card {
+    padding: 12px 14px;
+  }
+  .title {
+    font-size: 15px;
   }
 }
