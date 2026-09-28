@@ -185,13 +185,41 @@ button {
   color: var(--muted);
 }
 
-/* ── 主控制区 ─────────────────────── */
+/* ── 主控制区：分区胶囊 + 精选/全量 + 排序 同行合并 ── */
 .primary-controls {
   margin-bottom: 12px;
   display: grid;
-  grid-template-columns: auto minmax(0, 1fr) auto auto;
+  grid-template-columns: minmax(0, 1fr) auto auto auto;
   gap: 10px;
   align-items: center;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow-sm);
+  padding: 10px 14px;
+}
+/* 分区胶囊栏作为主控制区首格：去掉独立边框，融入行内 */
+.primary-controls .category-bar {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  overflow-x: auto;
+}
+/* 高级筛选：搜索框（收进折叠区） */
+.advanced-search {
+  padding-top: 14px;
+}
+.advanced-search input {
+  width: 100%;
+}
+/* 分区 0 项自动隐藏（学术 0 / 商业 0 等），减少视觉噪点 */
+.cat-pill.empty {
+  display: none;
 }
 .mode-count {
   border: 1px solid var(--line-strong);
@@ -838,8 +866,8 @@ input:focus, select:focus, button:focus-visible, summary:focus-visible {
     grid-template-columns: 1fr;
   }
   .primary-controls {
-    grid-template-columns: minmax(0, 1fr) auto;
-    gap: 8px;
+    grid-template-columns: 1fr;
+    gap: 10px;
   }
   .mode-count {
     display: none;

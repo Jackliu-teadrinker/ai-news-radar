@@ -44,14 +44,12 @@
         </div>
       </header>
 
-      <section class="category-bar" id="categoryBar" aria-label="分区筛选"></section>
-
-      <section class="primary-controls">
+      <section class="primary-controls" aria-label="筛选与排序">
+        <section class="category-bar" id="categoryBar"></section>
         <div class="mode-switch">
           <button id="modeAiBtn" class="mode-btn active" type="button">✦ 精选</button>
           <button id="modeAllBtn" class="mode-btn" type="button">≡ 全量</button>
         </div>
-        <input id="searchInput" type="search" placeholder="搜索机器人信号 / 来源" />
         <select id="sortSelect" title="排序方式">
           <option value="time">🕐 时间最新</option>
           <option value="priority">🔢 分区优先级</option>
@@ -67,9 +65,12 @@
       <details class="advanced-panel" id="advancedPanel">
         <summary>
           <span>高级筛选</span>
-          <span class="advanced-summary" id="advancedSummary">只看某个来源，或检查各信源采集是否正常</span>
+          <span class="advanced-summary" id="advancedSummary">按站点搜索，或检查各信源采集是否正常</span>
         </summary>
         <div class="advanced-content">
+          <div class="advanced-search">
+            <input id="searchInput" type="search" placeholder="搜索标题 / 来源 / 关键词" />
+          </div>
           <div class="advanced-controls">
             <label class="field">
               <span>站点</span>
@@ -82,7 +83,6 @@
               <span class="all-dedupe-dot"></span>
               <span id="allDedupeLabel">去重开</span>
             </label>
-            <!-- Jack 2026-05-15: 今日9点CST分界线 -->
             <label id="todayCutoffWrap" class="all-dedupe" for="todayCutoffToggle">
               <input id="todayCutoffToggle" type="checkbox" checked />
               <span class="all-dedupe-dot"></span>
