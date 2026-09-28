@@ -455,17 +455,13 @@ function getFilteredItems() {
 function sortByScore(items, sortMode) {
   if (sortMode === 'priority') return items;
   if (sortMode === 'time') {
-    // 先按 feed 分组：优先 feed 排前面，然后各组内按时间
-    const PRIORITY_FEEDS = ['robotics', 'humanoid'];
-    const isPriority = item => PRIORITY_FEEDS.includes(item.ai_label);
-    const priorityItems = items.filter(isPriority);
-    const otherItems = items.filter(item => !isPriority(item));
+    // 纯时间倒序：每个板块（source/site 组）内最新排最上，组间也按组内最新时间排
     const cmp = (a, b) => {
       const ta = a.published_at ? new Date(a.published_at).getTime() : 0;
       const tb = b.published_at ? new Date(b.published_at).getTime() : 0;
       return tb - ta;
     };
-    return [...priorityItems.sort(cmp), ...otherItems.sort(cmp)];
+    return [...items].sort(cmp);
   }
   return [...items].sort((a, b) => {
     try {
