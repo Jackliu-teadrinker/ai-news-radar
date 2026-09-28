@@ -1,9 +1,9 @@
 {
   "date": "2026-09-28",
-  "generated_at": "2026-09-28T12:01:10.758928+00:00",
+  "generated_at": "2026-09-28T12:31:24.243716+00:00",
   "score_threshold": 80,
   "total_items": 100,
-  "new_added": 2,
+  "new_added": 1,
   "items": [
     {
       "id": "504e0fbbf2ae3e52",
@@ -1696,6 +1696,32 @@
       "hx_dup_penalty": -1.5
     },
     {
+      "id": "47298a83f533bc78",
+      "title": "诺亦腾机器人对谈源策未来：具身智能到底需要什么样的数据？需要多少数据？ - 极客公园",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5ISVlQOGI0LWFiU3lRMHdyc000amVmM2FWYVNndi1SSnBDOE1sYkdfNU1zOWJtcmNVazRoNENyMEVYMC1ycFRyR0ZYdDg?oc=5",
+      "published_at": "2026-09-28T12:04:27+00:00",
+      "category": "国内具身智能资讯",
+      "gn_label": "embodied_ai",
+      "site_name": "国内具身智能资讯",
+      "source": "国内具身智能资讯",
+      "site_id": "国内具身智能资讯",
+      "description": "机器人甚至还没有迎来自己的GPT-1时刻 本文首发于 Founder Park 公众号 · 2026 年 8 月 29 日 具身智能今年这么火，最火的却是数据公司，所有人都想要数据。过去一年，行业对数据规模的需求，从几千小时迅速上升到几十万乃至上百万小时。",
+      "ai_score": 80.0,
+      "ai_label": "embodied_ai",
+      "relevance": 0.5,
+      "authority": 5,
+      "depth": 5,
+      "timeliness": 20.0,
+      "writing_value": 5,
+      "total_score": 83.5,
+      "hx_topic": 0,
+      "hx_conflict": 0,
+      "hx_data": 0,
+      "hx_pr_penalty": 0,
+      "hx_dup_penalty": -1.5
+    },
+    {
       "id": "b0773be15de4369d",
       "title": "从“能落地”到“稳落地”：具身智能平台打通工业巡检闭环 - tech.gmw.cn",
       "title_zh": "",
@@ -2578,32 +2604,6 @@
       "hx_data": 0,
       "hx_pr_penalty": 0,
       "hx_dup_penalty": -4.0
-    },
-    {
-      "id": "e2f388f8de5f7c47",
-      "title": "横琴长隆｜全球首个具身智能主题乐园落地 近百台机器人集体登场 - 香港01",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMitANBVV95cUxOVElhdzZIa3I3NGRzY3NmWnl0enVSVG16YUZfY0ZGc0lHNnVUdWlEM3pxdE5OTG1kdnZEMUxCYlFEd2syaUxyX0J4djROdkhWVmlQRWM1M1dvSkx6cWhwR1NWSm4ydnVpVWNSY25JbGw2WUJuUDJQem9kVkpXVk4xRDAyN3N6b09RMVhDWTBQZlZzOENfQVpXNTNQVWUxczY4VzR2Mk9FYnVkaFBTRTRkS21GVzV2QUdzamtLeDlweHU4aEg4Y0xROWpnVlpFV1VLcXdxbHNUSjZ0cS1fQ2sydTU4SlVpYzRtUl9ENE9Nbm9RZzh5WEVqTjh3ZUZocjliUkJKbmZiYzdEWm05Nk5naDVYemlxWDZxb1FCQ1NralNGSU9oczNwRlcteGI4TlRYdHdMRkloQzI1a3JQNFFqSk1EbkQ1YXotemV6WUJjaTdEdEg3S0JKTXJJRW9uanVNWW1nYjVuXzVOMGZ2TmZBclVQY0Y2dUJ1RFZleHFsRVJPdlM2VlZVVjFWMkxNbHl4NjB0NkltNkRleHhxdzNHbkdUeGlDUGhraEI4SFR3dlAxaFRY?oc=5",
-      "published_at": "2026-09-28T09:06:00+00:00",
-      "category": "国内具身智能资讯",
-      "gn_label": "embodied_ai",
-      "site_name": "国内具身智能资讯",
-      "source": "国内具身智能资讯",
-      "site_id": "国内具身智能资讯",
-      "description": "横琴长隆｜全球首个具身智能主题乐园落地 近百台机器人集体登场 大湾区文旅科创迎来里程碑式突破！横琴长隆飞船乐园于9月24日正式开园，标志著全球首个大规模具身智能主题乐园盛大启幕。从8月23日战略签约到9月24日实景运营落地，长隆集团携手智元",
-      "ai_score": 80.0,
-      "ai_label": "embodied_ai",
-      "relevance": 0.5,
-      "authority": 5,
-      "depth": 5,
-      "timeliness": 20.0,
-      "writing_value": 5,
-      "total_score": 80.9,
-      "hx_topic": 0,
-      "hx_conflict": 0,
-      "hx_data": 0,
-      "hx_pr_penalty": 0,
-      "hx_dup_penalty": -4.1
     }
   ]
 }
