@@ -1,9 +1,9 @@
 {
   "date": "2026-09-29",
-  "generated_at": "2026-09-28T16:01:57.257622+00:00",
+  "generated_at": "2026-09-28T16:20:53.275442+00:00",
   "score_threshold": 80,
-  "total_items": 29,
-  "new_added": 29,
+  "total_items": 30,
+  "new_added": 1,
   "items": [
     {
       "id": "c0e6e1fb4532234a",
@@ -550,6 +550,32 @@
       "hx_data": 0,
       "hx_pr_penalty": 0,
       "hx_dup_penalty": -3.2
+    },
+    {
+      "id": "9d9607d623944ffd",
+      "title": "全球首台搭载全国产化电子架构的具身智能机器人正式亮相 - sohu.com",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQSFJoODRmMkJCUGxic085NWd0S0VEdEFoQWk4UThEOFRCYmZJUkY3SnBMMjJrRkhHbW9HS1M0dzZtNGNJQmRLZVpKdHlCNDR4WDVOQzZCaHJwUUc2WjhMdWVoaFlrX1VXUWlZSERKWU44Y0JyYVhqR1AtMzhKOW1ab3lrYjgxTmhPYy1GQw?oc=5",
+      "published_at": "2026-09-28T11:31:00+00:00",
+      "category": "国内具身智能资讯",
+      "gn_label": "embodied_ai",
+      "site_name": "国内具身智能资讯",
+      "source": "国内具身智能资讯",
+      "site_id": "国内具身智能资讯",
+      "description": "据 东土科技（300353.SZ）官微消息，9月28日，国产化电子架构具身智能机器人发布会在湖北宜昌举行，全球首台搭载全国产化电子架构的具身智能机器人正式亮相。电子架构是决定整机性能上限的“智能神经系统”，包括操作系统、网络、工具软件和AI计算芯片。",
+      "ai_score": 80.0,
+      "ai_label": "embodied_ai",
+      "relevance": 0.5,
+      "authority": 5,
+      "depth": 5,
+      "timeliness": 19.3,
+      "writing_value": 5,
+      "total_score": 81.8,
+      "hx_topic": 0,
+      "hx_conflict": 0,
+      "hx_data": 0,
+      "hx_pr_penalty": 0,
+      "hx_dup_penalty": -2.5
     },
     {
       "id": "c5784f29171e38c0",
