@@ -737,11 +737,22 @@ function renderSourceHealth(errorMessage = "") {
   }
 
   const sites = Array.isArray(status.sites) ? status.sites : [];
-  const failedSites = Array.isArray(status.failed_sites) ? status.failed_sites : [];
+  const failedSitesRaw = Array.isArray(status.failed_sites) ? status.failed_sites : [];
   const zeroSites = Array.isArray(status.zero_item_sites) ? status.zero_item_sites : [];
   const rss = status.rss_opml || {};
   const failedFeeds = Array.isArray(rss.failed_feeds) ? rss.failed_feeds : [];
   const summary = status.summary || {};
+
+  // Jack 2026-09-28: 坏快照容错——交叉校验 site_stats：
+  // failed_sites 里但当前 site_stats 有数据的站点，说明是旧坏快照，不渲染
+  const stats = currentSiteStats();
+  const dataSiteNames = new Set(
+    (Array.isArray(stats) ? stats : []).map((s) => s.site_name || s.site_id)
+  );
+  const failedSites = failedSitesRaw.filter((s) => {
+    const name = typeof s === "string" ? s : (s.site_name || s.feed || "");
+    return !dataSiteNames.has(name);
+  });
 
   const metricGrid = document.createElement("div");
   metricGrid.className = "health-grid";

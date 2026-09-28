@@ -59,7 +59,12 @@ def parse_opml(opml_path: str) -> list[dict]:
     return feeds
 
 def fetch_feed(feed: dict, timeout: int = 20, max_retries: int = 3, base_delay: float = 1.0) -> tuple[dict, list[dict]]:
-    """Fetch RSS feed with exponential backoff retry logic."""
+    """Fetch RSS feed with exponential backoff retry logic.
+
+    Jack 2026-09-28: VentureBeat / TechXplore 等反爬站点改用"模仿人类"头
+    （真实 Chrome UA + Accept + Accept-Language），429 退避加长，
+    避免被 Cloudflare 识别为 bot。
+    """
     source_name = feed['text']
     status = {
         'feed': source_name,
@@ -68,23 +73,34 @@ def fetch_feed(feed: dict, timeout: int = 20, max_retries: int = 3, base_delay: 
         'items_unique': 0,
         'error': None,
     }
-    
+
     url = feed['xmlUrl']
+    # 反爬站点（VentureBeat/TechXplore 等）需要更长的退避和更"人类"的请求头
+    bot_sites = ('venturebeat.com', 'techxplore.com')
+    is_bot = any(d in url for d in bot_sites)
     headers = {
-        'User-Agent': 'Mozilla/5.0 (compatible; AI-News-Radar/1.0)',
+        'User-Agent': (
+            'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 '
+            '(KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36'
+            if is_bot else 'Mozilla/5.0 (compatible; AI-News-Radar/1.0)'
+        ),
+        'Accept': 'text/xml,application/xml,application/rss+xml;q=0.9,*/*;q=0.8',
+        'Accept-Language': 'en-US,en;q=0.9',
     }
-    
+    if is_bot:
+        headers['Referer'] = 'https://www.google.com/'
+
     last_error = None
-    
     for attempt in range(max_retries):
         try:
             resp = requests.get(url, timeout=timeout, headers=headers)
             resp.raise_for_status()
-            
+
             # Check for rate limiting - retry on 429
             if resp.status_code == 429:
                 if attempt < max_retries - 1:
-                    delay = base_delay * (2 ** attempt)
+                    # Jack 2026-09-28: 反爬站点退避窗口拉长（5s/10s/20s），普通站点保持 1s/2s/4s
+                    delay = (5.0 if is_bot else base_delay) * (2 ** attempt)
                     print(f"[WARN] Rate limited ({url}), retrying in {delay:.1f}s...")
                     time.sleep(delay)
                     continue
@@ -189,7 +205,12 @@ def _try_find_rss(base_url: str, timeout: int = 10) -> str | None:
     ]
     parsed = urlparse(base_url)
     base = f"{parsed.scheme}://{parsed.netloc}"
-    headers = {'User-Agent': 'Mozilla/5.0 (compatible; AI-News-Radar/1.0)'}
+    # Jack 2026-09-28: RSS 探测也用浏览器 UA（_try_find_rss 主要服务于 TechXplore 等反爬站点）
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36',
+        'Accept': 'text/xml,application/xml,application/rss+xml;q=0.9,*/*;q=0.8',
+        'Accept-Language': 'en-US,en;q=0.9',
+    }
     for p in candidate_paths:
         try:
             r = requests.get(base + p, headers=headers, timeout=timeout, allow_redirects=True)
@@ -342,7 +363,21 @@ def fetch_anchor_site(feed: dict, timeout: int = 30, max_items: int = 30) -> tup
         rss_url = _try_find_rss(url, timeout=10)
         if rss_url:
             try:
-                resp = requests.get(rss_url, headers={'User-Agent': 'Mozilla/5.0 (compatible; AI-News-Radar/1.0)'}, timeout=timeout, allow_redirects=True, verify=False)
+                # Jack 2026-09-28: anchor RSS 直连也用浏览器 UA（VentureBeat/TechXplore 等反爬源）
+                bot_sites = ('venturebeat.com', 'techxplore.com')
+                is_bot = any(d in (url + rss_url) for d in bot_sites)
+                rss_headers = {
+                    'User-Agent': (
+                        'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 '
+                        '(KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36'
+                        if is_bot else 'Mozilla/5.0 (compatible; AI-News-Radar/1.0)'
+                    ),
+                    'Accept': 'text/xml,application/xml,application/rss+xml;q=0.9,*/*;q=0.8',
+                    'Accept-Language': 'en-US,en;q=0.9',
+                }
+                if is_bot:
+                    rss_headers['Referer'] = 'https://www.google.com/'
+                resp = requests.get(rss_url, headers=rss_headers, timeout=timeout, allow_redirects=True, verify=False)
                 parsed = feedparser.parse(resp.content)
                 items = []
                 for entry in parsed.entries[:max_items]:
