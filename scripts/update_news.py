@@ -912,7 +912,10 @@ def run(output_dir: str, window_hours: int, opml_path: str, archive_days: int, w
                 unique, n_dup = deduplicate(items, anchor_seen)
                 anchor_items.extend(unique)
                 status['items_unique'] = len(unique)
-                feed_statuses.append(status)
+                # Jack 2026-09-28: custom 锚点源（VentureBeat/TechXplore 等）是"精选锚点"补充专区，
+                # 它们抓取失败不进 feed_statuses（否则污染主 feed 的 failed_sites，
+                # 前端"失败站点"会误报）。锚点源失败只打日志，由 GN 代理源兜底。
+                status['_is_custom_anchor'] = True
                 name = futures[future]['text']
                 ok = '[OK]' if status['success'] else '[FAIL]'
                 d = f", -{n_dup} dup" if n_dup else ""
