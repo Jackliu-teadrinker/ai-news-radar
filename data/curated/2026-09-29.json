@@ -1,9 +1,9 @@
 {
   "date": "2026-09-29",
-  "generated_at": "2026-09-29T06:45:33.053519+00:00",
+  "generated_at": "2026-09-29T11:50:41.558479+00:00",
   "score_threshold": 80,
   "total_items": 100,
-  "new_added": 10,
+  "new_added": 1,
   "items": [
     {
       "id": "895e6567726dc01c",
@@ -654,6 +654,32 @@
       "hx_data": 6,
       "hx_pr_penalty": 0,
       "hx_dup_penalty": -1.9
+    },
+    {
+      "id": "70b5d36b6204ce2b",
+      "title": "智元携手爱仕达，开启具身智能零售部署态新时代 - 搜狐网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQOWJhcU9KUkhTeFBlVzAxaXBBTm9RMXJRN1A3XzFCU0dzeEJNdm1KeTlZSjRkaWJ3LUFIZlNXemF1bGc3TU9DWTdWR1dNMXRaNDFWeWd3aHBvdVlzWHVyWWZGcHVZX29WTmxKS2Fha0RTTnY0LVJ5Sk94UTkwbnluRDRtWkdHNTVo?oc=5",
+      "published_at": "2026-09-29T11:21:26+00:00",
+      "category": "国内具身智能资讯",
+      "gn_label": "embodied_ai",
+      "site_name": "国内具身智能资讯",
+      "source": "国内具身智能资讯",
+      "site_id": "国内具身智能资讯",
+      "description": "近日，全球领先的具身智能科技企业智元与国民锅具品牌爱仕达展开合作，100 台智元灵犀 X2 入驻爱仕达全国范围内 100 家门店，担任“门店促销员”，在真实零售场景上岗，跑通 “迎宾接待‑需求理解‑商品讲解‑选品推荐‑导购转接‑成交辅助” 全链路零售任务。",
+      "ai_score": 80.0,
+      "ai_label": "embodied_ai",
+      "relevance": 0.5,
+      "authority": 5,
+      "depth": 5,
+      "timeliness": 20.0,
+      "writing_value": 5,
+      "total_score": 89.0,
+      "hx_topic": 4,
+      "hx_conflict": 0,
+      "hx_data": 4,
+      "hx_pr_penalty": 0,
+      "hx_dup_penalty": -0.0
     },
     {
       "id": "25da2cd5981b5a38",
@@ -2578,32 +2604,6 @@
       "hx_data": 0,
       "hx_pr_penalty": 0,
       "hx_dup_penalty": -4.0
-    },
-    {
-      "id": "2f1bc1910f185341",
-      "title": "World robotics conference, held in Pittsburgh, boasts everything from robot dogs to humanoid boxers - TribLIVE.com",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQUV9ndVoyTTItbDVnYnNFOU5CQ3duOE00d2x2M1BlQU9lQ1MyQ0hFNDBpMUxqQ21NUVliY2o1Vm8yOVZZcm9aTTVXYndqa3I2b3JNR3FKR2wwSnMyMW9nU2FoZnJTNWgwcEpxaHBSTGFnX1l0VVRyRzE5RlMxOE5Xdmw3cWJIMEJEUGFvLWJrblBIZmVBSXZYWWpFTWNHU2RzVlJhM0FUeGpYMVdPaERFMzk3WVBEbnJKSWZXYmFVSmlqV19yMGlTd0ZmdGVielJSdDZENGpB?oc=5",
-      "published_at": "2026-09-28T20:56:34+00:00",
-      "category": "国外人形机器人资讯",
-      "gn_label": "humanoid",
-      "site_name": "国外人形机器人资讯",
-      "source": "国外人形机器人资讯",
-      "site_id": "国外人形机器人资讯",
-      "description": "While robotics is known as a hot and trending field, some of its real-world applications as lesser known, said Wenshan W",
-      "ai_score": 80.0,
-      "ai_label": "humanoid",
-      "relevance": 0.5,
-      "authority": 5,
-      "depth": 5,
-      "timeliness": 20.0,
-      "writing_value": 5,
-      "total_score": 80.9,
-      "hx_topic": 0,
-      "hx_conflict": 0,
-      "hx_data": 0,
-      "hx_pr_penalty": 0,
-      "hx_dup_penalty": -4.1
     }
   ]
 }
