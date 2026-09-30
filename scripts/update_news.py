@@ -897,10 +897,23 @@ def _run_enrich_subprocess(items, output_dir, top_n=150, recheck=False, tag='mai
         if r.returncode == 0 and items_path.exists():
             with open(items_path, encoding='utf-8') as f:
                 enriched = json.load(f)
-            items.clear()
-            items.update(enriched)
-            print(f"[SUMMARY] {tag} enrich via subprocess: "
-                  f"{(r.stdout or '').strip().splitlines()[-1] if r.stdout.strip() else 'ok'}")
+            # 2026-09-30 BUGFIX: items 可能是 list（scored/anchors）或 dict。
+            # 旧写法 items.clear()+items.update() 只适配 dict：list 上
+            # clear() 先清空数据，update() 再炸 AttributeError，主管线
+            # 拿着空 list 继续 → 生成 0 条推上 Pages（09/30 09:54 事故）。
+            # 改为原位置替换（list 用切片，dict 用 clear+update），
+            # 任何环节失败都不允许把已抓到的数据弄丢。
+            try:
+                if isinstance(items, dict):
+                    items.clear()
+                    items.update(enriched)
+                else:
+                    items[:] = enriched
+                print(f"[SUMMARY] {tag} enrich via subprocess: "
+                      f"{(r.stdout or '').strip().splitlines()[-1] if r.stdout.strip() else 'ok'}")
+            except Exception as _merge_e:
+                print(f"[SUMMARY] {tag} enrich merge failed ({_merge_e}); "
+                      f"keeping original {len(items)} items (enriched data discarded)")
         else:
             print(f"[SUMMARY] {tag} enrich subprocess rc={r.returncode}, "
                   f"degraded (data proceeds without fresh summaries)")

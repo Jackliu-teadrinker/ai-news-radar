@@ -123,6 +123,26 @@ jobs:
           git config user.email "radar-bot@users.noreply.github.com"
           git config user.name "radar-bot"
           touch data/wechat-articles.json
+          # 2026-09-30 GUARD: 空数据/异常缩水拒推。
+          # 09:54 事故教训：一次 run 把 330 条清空推上 Pages，UI 直接空白。
+          # 规则：items==0 → 用 git HEAD 里的旧快照回滚，跳过本次 push（旧数据继续服务）。
+          #       items < 10 → 打 WARN（可能真在低活跃时段，允许推送）。
+          python - <<'EOF'
+          import json, sys
+          d = json.load(open('data/latest-24h-min.json'))
+          n = d.get('total_items', 0)
+          print(f"[GUARD] current total_items = {n}")
+          if n == 0:
+              print("[GUARD] EMPTY DATA — refusing to push; rolling back to last good snapshot")
+              sys.exit(2)
+          if n < 10:
+              print("[GUARD] WARN: unusually low item count, pushing with caution")
+          EOF
+          if [ $? -eq 2 ]; then
+            git checkout HEAD -- data/latest-24h-min.json
+            echo "[GUARD] rolled back data/latest-24h-min.json to last good snapshot; skipping push this cycle"
+            exit 0
+          fi
           # FIX(2026-08-07): scripts/feeds/ 路径不存在（feeds/ 在仓库根目录），导致 git add
           # 整体 fatal 失败 → 数据从 2026-07-21 起从未 push 到 git。已改回正确路径。
           # 同时移除 2>/dev/null || true：git add 失败必须显式报错，不能静默吞掉。
