@@ -13,7 +13,7 @@ import time
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
 from zoneinfo import ZoneInfo
-from concurrent.futures import ThreadPoolExecutor, as_completed
+from concurrent.futures import ThreadPoolExecutor, as_completed, TimeoutError as FuturesTimeout
 from urllib.parse import urlparse, urljoin
 
 import feedparser
@@ -890,17 +890,22 @@ def run(output_dir: str, window_hours: int, opml_path: str, archive_days: int, w
         futures = {ex.submit(fetch_feed, f): f for f in feeds}
         # 2026-09-30 FIX: per-feed hard cap 45s — 单个慢源（超时重试累积）
         # 曾拖垮整个 20min job timeout 导致连环 cancel（9/29 15:15-18:45 事故）。
-        for future in as_completed(futures, timeout=45):
-            status, items = future.result()
-            unique, n_dup = deduplicate(items, seen_ids)
-            all_items.extend(unique)
-            total_dedup += n_dup
-            status['items_unique'] = len(unique)
-            feed_statuses.append(status)
-            name = futures[future]['text']
-            ok = '[OK]' if status['success'] else '[FAIL]'
-            d = f", -{n_dup} dup" if n_dup else ""
-            print(f"  {ok} {name}: +{status['items_total']} items, {len(unique)} unique{d}")
+        # as_completed(timeout=45) 整批超时会抛 FuturesTimeout —— 接住后走下方
+        # "标记未完成 future 为 FAIL" 兜底，绝不让异常冒泡崩掉脚本。
+        try:
+            for future in as_completed(futures, timeout=45):
+                status, items = future.result()
+                unique, n_dup = deduplicate(items, seen_ids)
+                all_items.extend(unique)
+                total_dedup += n_dup
+                status['items_unique'] = len(unique)
+                feed_statuses.append(status)
+                name = futures[future]['text']
+                ok = '[OK]' if status['success'] else '[FAIL]'
+                d = f", -{n_dup} dup" if n_dup else ""
+                print(f"  {ok} {name}: +{status['items_total']} items, {len(unique)} unique{d}")
+        except FuturesTimeout:
+            print(f"  [WARN] 45s hard cap hit — {sum(1 for f in futures if not f.done())} feeds still pending, marked FAIL")
         # 未完成的 future（45s 超时的慢源）→ 标记 FAIL，不阻塞整体
         for future in futures:
             if not future.done():
@@ -918,19 +923,24 @@ def run(output_dir: str, window_hours: int, opml_path: str, archive_days: int, w
         with ThreadPoolExecutor(max_workers=8) as ex:
             futures = {ex.submit(fetch_anchor_site, f): f for f in custom_feeds}
             # 2026-09-30 FIX: 锚点源同样 45s hard cap（慢源不拖垮 job）
-            for future in as_completed(futures, timeout=45):
-                status, items = future.result()
-                unique, n_dup = deduplicate(items, anchor_seen)
-                anchor_items.extend(unique)
-                status['items_unique'] = len(unique)
-                # Jack 2026-09-28: custom 锚点源（VentureBeat/TechXplore 等）是"精选锚点"补充专区，
-                # 它们抓取失败不进 feed_statuses（否则污染主 feed 的 failed_sites，
-                # 前端"失败站点"会误报）。锚点源失败只打日志，由 GN 代理源兜底。
-                status['_is_custom_anchor'] = True
-                name = futures[future]['text']
-                ok = '[OK]' if status['success'] else '[FAIL]'
-                d = f", -{n_dup} dup" if n_dup else ""
-                print(f"  {ok} {name}: +{status['items_total']} items, {len(unique)} unique{d}")
+            # as_completed(timeout=45) 整批超时会抛 FuturesTimeout —— 接住后把
+            # 未完成锚点源标记 FAIL，绝不让异常冒泡崩掉脚本。
+            try:
+                for future in as_completed(futures, timeout=45):
+                    status, items = future.result()
+                    unique, n_dup = deduplicate(items, anchor_seen)
+                    anchor_items.extend(unique)
+                    status['items_unique'] = len(unique)
+                    # Jack 2026-09-28: custom 锚点源（VentureBeat/TechXplore 等）是"精选锚点"补充专区，
+                    # 它们抓取失败不进 feed_statuses（否则污染主 feed 的 failed_sites，
+                    # 前端"失败站点"会误报）。锚点源失败只打日志，由 GN 代理源兜底。
+                    status['_is_custom_anchor'] = True
+                    name = futures[future]['text']
+                    ok = '[OK]' if status['success'] else '[FAIL]'
+                    d = f", -{n_dup} dup" if n_dup else ""
+                    print(f"  {ok} {name}: +{status['items_total']} items, {len(unique)} unique{d}")
+            except FuturesTimeout:
+                print(f"  [WARN] 锚点源 45s hard cap hit — {sum(1 for f in futures if not f.done())} sites pending, skipped (GN 代理源兜底)")
         print(f"[INFO] Custom anchors raw: {len(anchor_items)} items")
 
         # FIX (2026-08-06): 对齐微信 ANCHOR_HOUR=19 规则

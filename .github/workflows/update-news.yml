@@ -28,7 +28,10 @@ jobs:
   update:
     name: Fetch & deploy
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    # 2026-09-30: 20→35。单跑 Run update 常 13-16min（30 feed 重试 + enrich 123s
+    # + 翻译 126 英文标题 + huxiu 校准），再叠 arXiv/政府/头条/部署，20min 撞线
+    # 会被 cancel 导致数据推不上 Pages（9/30 05:43 run 即栽在这）。35min 留足余量。
+    timeout-minutes: 35
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
