@@ -19,7 +19,7 @@
       "total_score": 0,
       "ai_label": "wechat",
       "robot_hits": 0,
-      "first_seen_at": "2026-09-30T10:22:18.309830+00:00"
+      "first_seen_at": "2026-09-30T13:54:56.292492+00:00"
     },
     {
       "id": "daff315f4129ce56",
@@ -40,10 +40,31 @@
       "total_score": 0,
       "ai_label": "wechat",
       "robot_hits": 0,
-      "first_seen_at": "2026-09-30T10:22:18.309816+00:00"
+      "first_seen_at": "2026-09-30T13:54:56.292482+00:00"
+    },
+    {
+      "id": "5e5ed4785fa17bbb",
+      "title": "蚂蚁百灵发布 Ling-3.1-flash，面向真实世界长任务升级",
+      "title_zh": "",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzkyODk2MDQwNw==&mid=2247488041&idx=1&sn=e895cef2129ff2a96598d78b5a45c17b&chksm=c3a0565f2837a278a1a2f05d010189577c4e94fb18ccdd5e25001862b11c205fcd792160b382&scene=126&sessionid=1790772500#rd",
+      "published_at": "2026-09-30T12:30:49+00:00",
+      "site_name": "微信公众号",
+      "site_id": "wechat",
+      "source": "公众号：蚂蚁百灵（Ling）",
+      "description": "蚂蚁百灵推出 Ling-3.1-flash，总参数约 560B，每个 Token 激活约 25B，上下文窗口上限 1M，延续混合线性架构并提高线性 Attention 层比例（7 层 KDA 配 1 层 Gated MLA，512 个路由专家选 8 个加 1 个共享专家）。",
+      "ai_score": 0,
+      "relevance": 0,
+      "authority": 0,
+      "depth": 0,
+      "timeliness": 0,
+      "writing_value": 0,
+      "total_score": 0,
+      "ai_label": "wechat",
+      "robot_hits": 0,
+      "first_seen_at": "2026-09-30T13:54:56.292467+00:00"
     }
   ],
-  "total_articles": 2,
-  "last_updated": "2026-09-30T10:23:10.535017+00:00",
+  "total_articles": 3,
+  "last_updated": "2026-09-30T13:57:21.580374+00:00",
   "source": "auto_filtered_by_time_window"
 }
