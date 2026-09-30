@@ -2,8 +2,9 @@ name: Keeper - radar freshness guard (cloud watchdog)
 
 on:
   schedule:
-    # 每 20 分钟一次，分钟位与主 workflow 的 */30 错峰
-    - cron: "7,27,47 * * * *"
+    # 2026-09-30: 每 15min 一拍（原 20min 7,27,47 → 实测 24h 只中 ~30%，数据 gap 到 129min）。
+    # 更密拍降低单次掉拍影响；busy-check（20min 窗口）防级联 dispatch。
+    - cron: "*/15 * * * *"
   workflow_dispatch:
 
 permissions:
@@ -41,9 +42,10 @@ jobs:
           import json, os, time, datetime, urllib.request
 
           PAGES = "https://jackliu-teadrinker.github.io/ai-news-radar/data/latest-24h-min.json"
-          # 2026-09-15: 整点拍数据落点 ≈ 整点前 4min，age 25min 内属正常节奏
-          STALE_AFTER_MIN = 25
-          RECENT_WINDOW_SEC = 1200    # 20 分钟内有 update-news run（排队/进行/刚完成）就不补刀，防级联
+          # 2026-09-30: keeper 改 15min 拍，主任务 */30 拍数据落点 ≈ 拍点前 13min，
+          # age 30min 内属正常节奏；busy-check 窗口 25min 防 15min 拍下连环 dispatch。
+          STALE_AFTER_MIN = 30
+          RECENT_WINDOW_SEC = 1500
 
           # 1. freshness：读 Pages 数据的 generated_at
           age = 9999.0

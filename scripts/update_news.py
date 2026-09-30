@@ -888,7 +888,9 @@ def run(output_dir: str, window_hours: int, opml_path: str, archive_days: int, w
     print("[INFO] Fetching feeds...")
     with ThreadPoolExecutor(max_workers=8) as ex:
         futures = {ex.submit(fetch_feed, f): f for f in feeds}
-        for future in as_completed(futures):
+        # 2026-09-30 FIX: per-feed hard cap 45s — 单个慢源（超时重试累积）
+        # 曾拖垮整个 20min job timeout 导致连环 cancel（9/29 15:15-18:45 事故）。
+        for future in as_completed(futures, timeout=45):
             status, items = future.result()
             unique, n_dup = deduplicate(items, seen_ids)
             all_items.extend(unique)
@@ -899,6 +901,14 @@ def run(output_dir: str, window_hours: int, opml_path: str, archive_days: int, w
             ok = '[OK]' if status['success'] else '[FAIL]'
             d = f", -{n_dup} dup" if n_dup else ""
             print(f"  {ok} {name}: +{status['items_total']} items, {len(unique)} unique{d}")
+        # 未完成的 future（45s 超时的慢源）→ 标记 FAIL，不阻塞整体
+        for future in futures:
+            if not future.done():
+                status, _items = {'success': False, 'items_total': 0, 'items_unique': 0,
+                                  'feed': futures[future]['text'],
+                                  'error': 'timeout_45s'}, []
+                feed_statuses.append(status)
+                print(f"  [FAIL] {futures[future]['text']}: 45s hard cap timeout, skipped")
 
     # Fetch custom anchor sites (use 7-day window for anchors)
     if custom_feeds:
@@ -907,7 +917,8 @@ def run(output_dir: str, window_hours: int, opml_path: str, archive_days: int, w
         now_ts = time.time()
         with ThreadPoolExecutor(max_workers=8) as ex:
             futures = {ex.submit(fetch_anchor_site, f): f for f in custom_feeds}
-            for future in as_completed(futures):
+            # 2026-09-30 FIX: 锚点源同样 45s hard cap（慢源不拖垮 job）
+            for future in as_completed(futures, timeout=45):
                 status, items = future.result()
                 unique, n_dup = deduplicate(items, anchor_seen)
                 anchor_items.extend(unique)
