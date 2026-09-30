@@ -306,10 +306,28 @@ def enrich_items(items: list, output_dir: str, top_n: int = 150, recheck: bool =
 
 if __name__ == '__main__':
     import sys
-    out = sys.argv[1] if len(sys.argv) > 1 else 'data'
-    # 独立运行：对 data/latest-24h-min.json 补摘要
-    p = os.path.join(out, 'latest-24h-min.json')
-    with open(p, encoding='utf-8') as f:
-        d = json.load(f)
-    st = enrich_items(d.get('items_ai', []), out, top_n=150)
-    print(st)
+    out = sys.argv[1] if len(sys.argv[1:]) else 'data'
+    if len(sys.argv) >= 4 and sys.argv[1] == '--items':
+        # 子进程隔离模式（2026-09-30）：enrich_items 会调 trafilatura/lxml C 扩展，
+        # 高并发抓正文时偶发 glibc 堆损坏 → SIGABRT（exit 134），主管线 try/except
+        # 接不住 C 层 abort。update_news.py 现在在子进程里跑本 CLI：
+        #   python summary_enricher.py --items <items.json> <output_dir> <top_n> [recheck]
+        # 崩溃只死子进程，主流程降级跳过摘要，数据照常落地。
+        items_path, odir, top_n = sys.argv[2], sys.argv[3], int(sys.argv[4])
+        recheck = (sys.argv[5] == '1') if len(sys.argv) > 5 else False
+        with open(items_path, encoding='utf-8') as f:
+            items = json.load(f)
+        st = enrich_items(items, odir, top_n=top_n, recheck=recheck)
+        # 写回（子进程崩溃时主流程拿不到写回文件 → 判为失败降级）
+        tmp = items_path + '.enriched'
+        with open(tmp, 'w', encoding='utf-8') as f:
+            json.dump(items, f, ensure_ascii=False)
+        os.replace(tmp, items_path)
+        print(f"[SUMMARY-CLI] done: {st}")
+    else:
+        # 独立运行：对 data/latest-24h-min.json 补摘要
+        p = os.path.join(out, 'latest-24h-min.json')
+        with open(p, encoding='utf-8') as f:
+            d = json.load(f)
+        st = enrich_items(d.get('items_ai', []), out, top_n=150)
+        print(st)

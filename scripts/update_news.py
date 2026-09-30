@@ -865,6 +865,57 @@ def save_archive(path: str, items: list[dict]):
                    'total_items': len(valid), 'items': valid},
                   f, ensure_ascii=False, indent=2)
 
+
+def _run_enrich_subprocess(items, output_dir, top_n=150, recheck=False, tag='main'):
+    """2026-09-30: 把 summary enricher 隔离到子进程跑。
+
+    根因：enrich_items 里 trafilatura/lxml C 扩展在高并发抓正文时偶发
+    glibc 堆损坏（`corrupted size vs. prev_size` → SIGABRT, exit 134），
+    主管线 try/except 接不住 C 层 abort，直接把整个 update-news run 杀掉，
+    数据永远推不上 Pages（9/30 08:30/09:00 两次 dispatch 都栽在这）。
+
+    现在走 summary_enricher.py CLI（--items 模式）在独立子进程里跑：
+      崩溃 → 子进程死，主流程拿不到写回的 enriched 文件 → 降级跳过摘要，
+      RSS 数据 + 分数照常生成推送。摘要缺失只是前端降级显示，不是数据冻结。
+    子进程 240s 硬顶（enricher 单跑约 123s，留一倍余量防慢网/限流），
+    超时/非 0 退出同样降级。C 层 abort 只死子进程，主流程无感。
+    """
+    import subprocess, tempfile
+    from pathlib import Path
+    items_path = Path(output_dir) / f'_enrich_items_{tag}.json'
+    try:
+        with open(items_path, 'w', encoding='utf-8') as f:
+            json.dump(items, f, ensure_ascii=False)
+    except Exception as _e:
+        print(f"[SUMMARY] {tag} enrich skipped (items dump failed: {_e})")
+        return
+    script = Path(__file__).resolve().parent / 'summary_enricher.py'
+    cmd = [sys.executable, str(script), '--items', str(items_path),
+           output_dir, str(top_n), '1' if recheck else '0']
+    try:
+        r = subprocess.run(cmd, timeout=240, capture_output=True, text=True)
+        if r.returncode == 0 and items_path.exists():
+            with open(items_path, encoding='utf-8') as f:
+                enriched = json.load(f)
+            items.clear()
+            items.update(enriched)
+            print(f"[SUMMARY] {tag} enrich via subprocess: "
+                  f"{(r.stdout or '').strip().splitlines()[-1] if r.stdout.strip() else 'ok'}")
+        else:
+            print(f"[SUMMARY] {tag} enrich subprocess rc={r.returncode}, "
+                  f"degraded (data proceeds without fresh summaries)")
+    except subprocess.TimeoutExpired:
+        print(f"[SUMMARY] {tag} enrich subprocess 240s timeout, degraded")
+    except Exception as _e:
+        print(f"[SUMMARY] {tag} enrich subprocess failed: {_e}, degraded")
+    finally:
+        try:
+            items_path.unlink()
+            items_path.with_suffix('.json.enriched').unlink()
+        except Exception:
+            pass
+
+
 def run(output_dir: str, window_hours: int, opml_path: str, archive_days: int, window_from: str = None, custom_opml_path: str = None):
     global ARCHIVE_DAYS
     ARCHIVE_DAYS = archive_days
@@ -1033,11 +1084,8 @@ def run(output_dir: str, window_hours: int, opml_path: str, archive_days: int, w
 
         custom_generated_at = datetime.now(timezone.utc).isoformat()
         # Jack 2026-09-11: 锚点卡补 120 字真摘要（GN 解码 + trafilatura，top 60）
-        try:
-            from summary_enricher import enrich_items as _enrich_anchors
-            _enrich_anchors(high_relevance_anchors, output_dir, top_n=60)
-        except Exception as _e:
-            print(f"[SUMMARY] anchor enrich skipped: {_e}")
+        # 2026-09-30: 子进程隔离（防 glibc 堆损坏 abort 崩掉整条管线）
+        _run_enrich_subprocess(high_relevance_anchors, output_dir, top_n=60, tag='anchor')
 
         # Jack 2026-09-15: 锚点区同样按虎嗅选题逻辑校准（摘要补齐后）
         from huxiu_score import calibrate_scores as _calib_anchors
@@ -1238,11 +1286,7 @@ def run(output_dir: str, window_hours: int, opml_path: str, archive_days: int, w
     print(f"[INFO] Scored: {len(scored)}")
 
     # Jack 2026-09-11: 补 120 字真摘要（GN 解码 + trafilatura，top 150；recheck 模式校验真实覆盖）
-    try:
-        from summary_enricher import enrich_items as _enrich
-        _enrich(scored, output_dir, top_n=150, recheck=True)
-    except Exception as _e:
-        print(f"[SUMMARY] main feed enrich skipped: {_e}")
+    _run_enrich_subprocess(scored, output_dir, top_n=150, recheck=True, tag='main')
 
     # Jack 2026-09-15: 虎嗅选题逻辑校准（在 enricher 补齐摘要之后跑）——
     # 冲突+数据=选题分, 通稿腔/冗余/自媒体噪声=扣分, 时效降权, 相关性压缩到 22-50
