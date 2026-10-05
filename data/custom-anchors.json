@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-05T12:15:55.009983+00:00",
+  "generated_at": "2026-10-05T12:45:59.904869+00:00",
   "window_start": "2026-10-05T19:00:00+08:00",
-  "window_end": "2026-10-05T20:15:54.850611+08:00",
-  "total_items": 1,
+  "window_end": "2026-10-05T20:45:59.434938+08:00",
+  "total_items": 2,
   "items": [
     {
       "id": "9db61b484d1238b991f7b81d239febb81870f982",
@@ -43,6 +43,46 @@
       "hx_data": 0,
       "hx_pr_penalty": 0,
       "hx_dup_penalty": -0.0
+    },
+    {
+      "id": "28dc177a5ba9fb0f92c2016dec41614748c7e326",
+      "title": "German robotics startup RobCo hits $1 billion valuation - qz.com",
+      "title_zh": "德国机器人初创公司RobCo估值达10亿美元_手机网易网",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBlSW5XWHJPd2RWSDdPMl9hR0RUX0R1eXlDUDk5blpqbDNVUE1HWmdSOXYwY1NYck9NaFE3MkJZeWJIQk9DNDAtczJVZjZuLUwycXBIVlRnYUV4Nml3RVY4R0V1VFJIMllhSDgwOVNIdldGbi1s?oc=5",
+      "published_at": "2026-10-05T12:33:45+00:00",
+      "category": "GN: industrial robot",
+      "gn_label": "robotics",
+      "site_name": "GN: industrial robot",
+      "source": "GN: industrial robot",
+      "site_id": "GN: industrial robot",
+      "description": "",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.406,
+      "authority": 5,
+      "depth": 0,
+      "timeliness": 20.0,
+      "writing_value": 0,
+      "total_score": 68.9,
+      "_hx": {
+        "topic": 6,
+        "conflict": 0,
+        "data": 6,
+        "pr_pen": 0,
+        "rel": 40.625,
+        "auth": 5,
+        "tim": 20.0,
+        "writing": 0,
+        "depth": 0,
+        "junk": 0,
+        "dup_pen": 2.7,
+        "dup_of": false
+      },
+      "hx_topic": 6,
+      "hx_conflict": 0,
+      "hx_data": 6,
+      "hx_pr_penalty": 0,
+      "hx_dup_penalty": -2.7
     }
   ],
   "fallback_used": false
