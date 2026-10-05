@@ -1,9 +1,9 @@
 {
   "date": "2026-10-06",
-  "generated_at": "2026-10-05T22:31:25.732882+00:00",
+  "generated_at": "2026-10-05T23:11:47.604136+00:00",
   "score_threshold": 80,
-  "total_items": 5,
-  "new_added": 0,
+  "total_items": 6,
+  "new_added": 1,
   "items": [
     {
       "id": "169f889d17a95d37",
@@ -134,6 +134,32 @@
       "hx_data": 10,
       "hx_pr_penalty": 0,
       "hx_dup_penalty": -0.2
+    },
+    {
+      "id": "c0af3953278d76a9",
+      "title": "Embodied AI: The Robotics Battle India Cannot Afford To Miss - BW Businessworld",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQODI5SWhJWDVGY0NhUTh2QjlTOUhWSDd2XzBrOFVNLTQ0cGozYVBPTUFia0F4NkhXR2xLSUNydU51OTFPcnlMcTR5amhxR3l1dWc4a3A1eHMxTlQwU1FxSEdQck9QYnlSMzJ0T2d2X2RWN00xc0NCWmpWWTlwUnFIaThZSG9iczBlcFk0?oc=5",
+      "published_at": "2026-10-05T16:24:58+00:00",
+      "category": "国外具身智能资讯",
+      "gn_label": "embodied_ai",
+      "site_name": "国外具身智能资讯",
+      "source": "国外具身智能资讯",
+      "site_id": "国外具身智能资讯",
+      "description": "",
+      "ai_score": 80.0,
+      "ai_label": "embodied_ai",
+      "relevance": 0.5,
+      "authority": 5,
+      "depth": 0,
+      "timeliness": 17.9,
+      "writing_value": 0,
+      "total_score": 80.8,
+      "hx_topic": 10,
+      "hx_conflict": 10,
+      "hx_data": 0,
+      "hx_pr_penalty": 0,
+      "hx_dup_penalty": -2.1
     }
   ]
 }
