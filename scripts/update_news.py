@@ -51,11 +51,23 @@ def parse_opml(opml_path: str) -> list[dict]:
     feeds = []
     for outline in root.iter('outline'):
         xml_url = outline.get('xmlUrl')
-        if xml_url:
-            feeds.append({
-                'text': outline.get('text', 'unknown'),
-                'xmlUrl': xml_url,
-            })
+        if not xml_url:
+            continue
+        feed = {
+            'text': outline.get('text', 'unknown'),
+            'xmlUrl': xml_url,
+        }
+        # BUGFIX(2026-10-08): 透传 type/url 属性。custom.opml 里
+        # type="page" 的锚点站（TechXplore 等）靠它走 HTML 抓取分支；
+        # 旧实现只取 text/xmlUrl，type 丢失 → 所有源一律按 RSS 直连，
+        # 反爬站直连 403 后无 fallback，锚点区持续空。
+        feed_type = outline.get('type')
+        if feed_type:
+            feed['type'] = feed_type
+        feed_url = outline.get('url')
+        if feed_url:
+            feed['url'] = feed_url
+        feeds.append(feed)
     return feeds
 
 def fetch_feed(feed: dict, timeout: int = 20, max_retries: int = 3, base_delay: float = 1.0) -> tuple[dict, list[dict]]:
@@ -94,19 +106,23 @@ def fetch_feed(feed: dict, timeout: int = 20, max_retries: int = 3, base_delay: 
     for attempt in range(max_retries):
         try:
             resp = requests.get(url, timeout=timeout, headers=headers)
-            resp.raise_for_status()
 
-            # Check for rate limiting - retry on 429
+            # BUGFIX(2026-10-08): 原代码先 raise_for_status() 再判 429，
+            # 429 在 raise_for_status() 就抛 HTTPError → 下面的 429 分支是死代码，
+            # 反爬站（VentureBeat/TechXplore）从未拿到加长退避（5s/10s/20s），
+            # 一直走 1s/2s/4s 普通退避，429 三连打满后被 Cloudflare 记入坏快照。
             if resp.status_code == 429:
                 if attempt < max_retries - 1:
-                    # Jack 2026-09-28: 反爬站点退避窗口拉长（5s/10s/20s），普通站点保持 1s/2s/4s
                     delay = (5.0 if is_bot else base_delay) * (2 ** attempt)
                     print(f"[WARN] Rate limited ({url}), retrying in {delay:.1f}s...")
                     time.sleep(delay)
                     continue
                 else:
                     last_error = f"Rate limited after {max_retries} attempts"
+                    status['error'] = last_error
                     break
+
+            resp.raise_for_status()
             
             parsed = feedparser.parse(resp.content)
             items = []
@@ -464,7 +480,6 @@ CUSTOM_ANCHOR_LABEL = {
     'DeepMind Blog':            'robotics',
     'Meta AI Blog':             'robotics',
     'HuggingFace Blog':         'robotics',
-    'Synchron':                 'robotics',
     'Robot Magazine':           'robotics',
     'Figure AI':                'humanoid',
     'Unitree':                  'humanoid',
@@ -724,7 +739,7 @@ def translate_text(text: str, target: str = 'zh', _retries: int = 3) -> str:
             if attempt == _retries - 1:
                 return ''
             time.sleep(0.5)
-    return ''  # all retries exhausted''
+    return ''  # all retries exhausted
 
 def translate_batch(texts: list[str], target: str = 'zh', max_workers: int = 2) -> dict[str, str]:
     """Translate multiple texts concurrently using Google Translate.

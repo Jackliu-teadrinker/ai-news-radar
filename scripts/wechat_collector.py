@@ -70,12 +70,17 @@ def robot_signal(text: str) -> int:
 # Jack 2026-09-16 再次明确：旧文判断 **只看标题里的明确年份**（< 当前年），
 # 不做"回顾/盘点/综述"等猜测性兜底 —— 那类特征可能误伤近期深度稿。
 def is_stale_wechat_title(title: str) -> bool:
-    """标题含明确年份且 < 当前年（2026）→ 视为旧文，直接丢弃。"""
+    """标题含明确年份且 < 当前年 → 视为旧文，直接丢弃。
+
+    BUGFIX(2026-10-08): 原实现硬编码 '2026'，跨年后（2027 起）会把所有
+    2026/2027 标题误判为旧文 → 采集结果归零。改为取当前年份。
+    """
     t = title or ""
     import re as _re
+    this_year = str(datetime.now(timezone.utc).year)
     years = _re.findall(r"(20\d\d)", t)
     for y in years:
-        if y < "2026":
+        if y < this_year:
             return True
     return False
 
@@ -171,6 +176,16 @@ def sha1_short(text: str) -> str:
 
 def now_iso() -> str:
     return datetime.now(timezone.utc).isoformat()
+
+
+def _parse_dt_ts(s: str) -> float:
+    """ISO 时间串 → Unix 时间戳（用于排序取负）。解析失败返回 0（排最前=视为最新缺失兜底）。"""
+    if not s:
+        return 0
+    try:
+        return datetime.fromisoformat(s.replace("Z", "+00:00")).timestamp()
+    except (ValueError, TypeError):
+        return 0
 
 
 def normalize_wechat_time(published_str: str) -> str:
@@ -465,7 +480,15 @@ def collect_wechat_articles(
             "first_seen_at": article.get("first_seen_at", now_iso()),
         })
     # 排序：机器人/具身命中数 ↓，再时间 ↓（命中的排最前，命中的里新的在前）
-    results.sort(key=lambda x: (-x.get("robot_hits", 0), x.get("published_at", "")))
+    # BUGFIX(2026-10-08): 原写法 published_at 正序（旧文在前），与注释"新的在前"相反。
+    # ISO 时间串按字符串序 = 时间序，取反字符串无法排序，用元组 (负命中数, -时间戳)。
+    def _wkey(x):
+        try:
+            ts = -_parse_dt_ts(x.get("published_at", ""))
+        except Exception:
+            ts = 0
+        return (-x.get("robot_hits", 0), ts)
+    results.sort(key=_wkey)
     print(f"[WECHAT] 最终输出 {len(results)} 篇标准化文章（机器人/具身命中 {sum(1 for r in results if r['robot_hits']>0)} 篇排前）")
     return results
 
