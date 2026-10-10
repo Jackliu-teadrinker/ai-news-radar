@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!doctype html>
 <html lang="zh-CN">
   <head>
@@ -162,6 +163,175 @@
       </article>
     </template>
 
-    <script src="./assets/app.js?v=20261010113054" defer></script>
+    <script src="./assets/app.js?v=20261010123129" defer></script>
   </body>
 </html>
+=======
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>机器人新闻雷达｜24 小时机器人更新雷达</title>
+    <meta
+      name="description"
+      content="自动整理过去 24 小时值得看的机器人、具身智能、脑机接口更新；由 Jack 团队精选精准来源。"
+    />
+    <link rel="canonical" href="https://jackliu-teadrinker.github.io/ai-news-radar/" />
+    <meta property="og:title" content="机器人新闻雷达｜24 小时机器人更新雷达" />
+    <meta
+      property="og:description"
+      content="自动整理过去 24 小时值得看的机器人、具身智能、脑机接口更新；由 Jack 团队精选精准来源。"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://jackliu-teadrinker.github.io/ai-news-radar/" />
+    <meta property="og:site_name" content="机器人新闻雷达" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="机器人新闻雷达｜24 小时机器人更新雷达" />
+    <meta
+      name="twitter:description"
+      content="自动整理过去 24 小时值得看的机器人、具身智能、脑机接口更新；由 Jack 团队精选精准来源。"
+    />
+    <link rel="icon" href="./assets/logo.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./assets/styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <header class="hero">
+        <div class="hero-main">
+          <div class="hero-headline">
+            <img class="hero-logo" src="./assets/logo.svg" alt="机器人新闻雷达 Logo" />
+            <div>
+              <h1>机器人新闻雷达</h1>
+              <p class="hero-updated"><span class="updated-label">更新时间</span> <span class="updated" id="updatedAt">加载中...</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="hero-side">
+          <button class="src-badge" id="sourceBadge" type="button" title="点击展开高级筛选查看源健康与来源明细">源状态加载中…</button>
+          <a class="gh-pill" href="https://github.com/Jackliu-teadrinker/ai-news-radar" target="_blank" rel="noopener noreferrer">GitHub 与接入指南</a>
+        </div>
+      </header>
+
+      <section class="primary-controls" aria-label="筛选与排序">
+        <section class="category-bar" id="categoryBar"></section>
+        <div class="mode-switch">
+          <button id="modeAiBtn" class="mode-btn active" type="button">✦ 精选</button>
+          <button id="modeAllBtn" class="mode-btn" type="button">≡ 全量</button>
+        </div>
+        <select id="sortSelect" title="排序方式">
+          <option value="time">🕐 时间最新</option>
+          <option value="priority">🔢 分区优先级</option>
+          <option value="total_score">⭐ 五维总分</option>
+          <option value="relevance">🎯 相关性</option>
+          <option value="authority">🏛️ 权威性</option>
+          <option value="depth">📊 内容深度</option>
+          <option value="timeliness">⏰ 时效性</option>
+        </select>
+        <span class="mode-count" id="modeCountBadge"></span>
+      </section>
+
+      <details class="advanced-panel" id="advancedPanel">
+        <summary>
+          <span>高级筛选</span>
+          <span class="advanced-summary" id="advancedSummary">按站点搜索，或检查各信源采集是否正常</span>
+        </summary>
+        <div class="advanced-content">
+          <div class="advanced-search">
+            <input id="searchInput" type="search" placeholder="搜索标题 / 来源 / 关键词" />
+          </div>
+          <div class="advanced-controls">
+            <label class="field">
+              <span>站点</span>
+              <select id="siteSelect">
+                <option value="">全部站点</option>
+              </select>
+            </label>
+            <label id="allDedupeWrap" class="all-dedupe" for="allDedupeToggle">
+              <input id="allDedupeToggle" type="checkbox" checked />
+              <span class="all-dedupe-dot"></span>
+              <span id="allDedupeLabel">去重开</span>
+            </label>
+            <label id="todayCutoffWrap" class="all-dedupe" for="todayCutoffToggle">
+              <input id="todayCutoffToggle" type="checkbox" checked />
+              <span class="all-dedupe-dot"></span>
+              <span id="todayCutoffLabel">昨日9点后</span>
+            </label>
+          </div>
+          <div class="source-health" id="sourceHealth">源状态加载中...</div>
+          <section class="site-pills" id="sitePills"></section>
+        </div>
+      </details>
+
+      <section class="list-wrap">
+        <div class="list-head">
+          <h2 id="listTitle">机器人信号流</h2>
+          <span id="resultCount">0 条</span>
+        </div>
+        <div id="newsList" class="news-list"></div>
+      </section>
+
+      <!-- 🎓 学术专区（arXiv cs.RO 机器人论文） -->
+            <section class="list-wrap arxiv-section" id="arxivSection" style="">
+              <div class="list-head">
+                <h2>🎓 学术专区</h2>
+                <span id="arxivCount">0 篇</span>
+              </div>
+              <div id="arxivList" class="news-list arxiv-list"></div>
+            </section>
+            <!-- 🏛️ 政府专区（中国机器人与具身智能政策新闻） -->
+            <section class="list-wrap gov-section" id="govSection" style="">
+              <div class="list-head">
+                <h2>🏛️ 政府专区</h2>
+                <span id="govCount">0 条</span>
+              </div>
+              <div id="govList" class="news-list gov-list"></div>
+            </section>
+
+
+            
+            <!-- 📰 今日头条专区（Bing 搜索机器人相关新闻） -->
+            <section class="list-wrap toutiao-section" id="toutiaoSection" style="">
+              <div class="list-head">
+                <h2>📰 今日头条专区</h2>
+                <span id="toutiaoCount">0 条</span>
+              </div>
+              <div id="toutiaoList" class="news-list toutiao-list"></div>
+            </section>
+
+            <!-- 精选锚点专区（底部） -->
+      <section class="list-wrap anchor-section" id="anchorSection" style="">
+        <div class="list-head">
+          <h2>🔗 精选锚点</h2>
+          <span id="anchorCount">0 条</span>
+        </div>
+        <div id="anchorList" class="news-list"></div>
+      </section>
+
+      <!-- ══════════ 微信公众号专区（移至底部，Jack 2026-09-16）══════════ -->
+      <section class="list-wrap wechat-section" id="wechatSection" style="">
+        <div class="list-head">
+          <h2>📱 微信公众号</h2>
+          <span id="wechatCount">0 篇</span>
+        </div>
+        <div id="wechatList" class="news-list wechat-list"></div>
+      </section>
+    </main>
+
+    <template id="itemTpl">
+      <article class="news-card">
+        <div class="meta-row">
+          <span class="site"></span>
+          <span class="category"></span>
+          <span class="score score-none">--</span>
+          <time class="time"></time>
+        </div>
+        <a class="title" target="_blank" rel="noopener noreferrer"></a>
+        <p class="description"></p>
+      </article>
+    </template>
+
+    <script src="./assets/app.js?v=20261010123129" defer></script>
+  </body>
+</html>
+>>>>>>> origin/master
