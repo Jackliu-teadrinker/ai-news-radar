@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-10T12:32:30.035495+00:00",
+  "generated_at": "2026-10-10T13:51:54.656292+00:00",
   "window_start": "2026-10-10T19:00:00+08:00",
-  "window_end": "2026-10-10T20:32:29.524835+08:00",
-  "total_items": 3,
+  "window_end": "2026-10-10T21:51:34.352719+08:00",
+  "total_items": 4,
   "items": [
     {
       "id": "f43ea9c40e9d7c9b5bab18ede929e4a5ade85379",
@@ -87,7 +87,7 @@
     {
       "id": "0828cd91323c81688610e61f585e2794657b026d",
       "title": "A first-of-its-kind robotic surgery helps Bethesda breast cancer patient retain sensation postsurgery - WTOP News",
-      "title_zh": "首创的机器人手术帮助贝塞斯达乳腺癌患者保留术后感觉 - WTOP News",
+      "title_zh": "",
       "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPT1VkOTdIcHd5YWN6ZUlHMTItSkFMUG5zb25sdEZGd3ZZMkw0OFNnNkc3U1VYOEtuakNXay0wQlI5WjhVQjhxOGIwVkQ1ZlpnU3M3X1hPWEVtZUd5QTRNWWFBMUF5RFZURVBnVDdkeUxOOUI0VFB5ZWF2MmtOZ1VUeEs3TzU0VGFBb1FFQ3JtWGpwYklNVUNiMmhnUWZpaWtyZkFza0hBM3Z3VDA5TDlVLS0wYWxxNk9kNHNnVE9NX3RoSEJ4NnRILUNaWmhMX0h3bkE?oc=5",
       "published_at": "2026-10-10T11:06:43+00:00",
       "category": "GN: surgical robot",
@@ -123,6 +123,46 @@
       "hx_data": 0,
       "hx_pr_penalty": 0,
       "hx_dup_penalty": -0.2
+    },
+    {
+      "id": "98e137b1a6f0d7f6ef92d5db6dd3f180046ea6cc",
+      "title": "智元创新启用香港办公室 计划投入数千万元设科研中心 - 观点网",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9SVGY0blhGVEFvSmxSOWptWkZad3pCMWE0YlotMWtqR0tZb01NZUZpem81R1BTbVMwQXRrU3Q0LS1xSDdqRkNpemI1OXgtNXlza2o5Tm93R2RsUjgxNWxaaWhR?oc=5",
+      "published_at": "2026-10-10T12:26:55+00:00",
+      "category": "GN: 智元机器人",
+      "gn_label": "robotics",
+      "site_name": "GN: 智元机器人",
+      "source": "GN: 智元机器人",
+      "site_id": "GN: 智元机器人",
+      "description": "",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.406,
+      "authority": 5,
+      "depth": 0,
+      "timeliness": 20.0,
+      "writing_value": 0,
+      "total_score": 65.3,
+      "_hx": {
+        "topic": 0,
+        "conflict": 0,
+        "data": 0,
+        "pr_pen": 0,
+        "rel": 40.625,
+        "auth": 5,
+        "tim": 20.0,
+        "writing": 0,
+        "depth": 0,
+        "junk": 0,
+        "dup_pen": 0.3,
+        "dup_of": false
+      },
+      "hx_topic": 0,
+      "hx_conflict": 0,
+      "hx_data": 0,
+      "hx_pr_penalty": 0,
+      "hx_dup_penalty": -0.3
     }
   ],
   "fallback_used": false
