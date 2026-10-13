@@ -1,6 +1,49 @@
 {
-  "articles": [],
-  "total_articles": 0,
-  "last_updated": "2026-10-13T09:46:16.294213+00:00",
+  "articles": [
+    {
+      "id": "71aa1bcc5b7fc1da",
+      "title": "面壁智能开源 MiniCPM-V 4.7，35B-A3B MoE 模型 3GB 内存端侧流畅运行",
+      "title_zh": "",
+      "url": "https://mp.weixin.qq.com/s?__biz=Mzg3Mzg2MTg2NQ%3D%3D&mid=2247499456&idx=1&sn=03da7aed4dabbd4fca5c89ce88d4a90a",
+      "published_at": "2026-10-13T10:29:21+00:00",
+      "site_name": "微信公众号",
+      "site_id": "wechat",
+      "source": "公众号：面壁智能（MiniCPM）",
+      "description": "面壁智能联合 OpenBMB 社区于10月13日发布并开源 MiniCPM-V 4.7，包含 35B-A3B 和 1B 两个版本，称其为全球首个可在端侧无损流畅运行的开源 MoE 多模态大模型。",
+      "ai_score": 0,
+      "relevance": 0,
+      "authority": 0,
+      "depth": 0,
+      "timeliness": 0,
+      "writing_value": 0,
+      "total_score": 0,
+      "ai_label": "wechat",
+      "robot_hits": 0,
+      "first_seen_at": "2026-10-13T11:16:12.886671+00:00"
+    },
+    {
+      "id": "df368285a6476898",
+      "title": "千问发布AI眼镜N1/N1 Pro及首款AI耳夹式耳机并现货开售",
+      "title_zh": "",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzYzNDE5MDEwMQ%3D%3D&mid=2247489149&idx=1&sn=26d7fefe24bfb18efa4582467313b1eb",
+      "published_at": "2026-10-13T08:06:57+00:00",
+      "site_name": "微信公众号",
+      "site_id": "wechat",
+      "source": "公众号：千问APP（阿里）",
+      "description": "千问发布三款硬件新品：AI眼镜N1、N1 Pro和AI耳夹式耳机，今日在淘宝、天猫、京东、抖音等平台现货开售，眼镜到手价2218元起，耳机1099元起。",
+      "ai_score": 0,
+      "relevance": 0,
+      "authority": 0,
+      "depth": 0,
+      "timeliness": 0,
+      "writing_value": 0,
+      "total_score": 0,
+      "ai_label": "wechat",
+      "robot_hits": 0,
+      "first_seen_at": "2026-10-13T11:16:12.886687+00:00"
+    }
+  ],
+  "total_articles": 2,
+  "last_updated": "2026-10-13T11:16:14.056648+00:00",
   "source": "auto_filtered_by_time_window"
 }
