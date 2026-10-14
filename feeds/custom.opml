@@ -78,5 +78,10 @@
     <outline text="GN: 工业机器人与人"             type="rss" xmlUrl="https://news.google.com/rss/search?q=%E5%B7%A5%E4%B8%9A%E6%9C%BA%E5%99%A8%E4%BA%BA&amp;hl=zh-CN&amp;gl=CN&amp;ceid=CN:zh-Hans" />
     <outline text="GN: 服务机器人"                 type="rss" xmlUrl="https://news.google.com/rss/search?q=%E6%9C%8D%E5%8A%A1%E6%9C%BA%E5%99%A8%E4%BA%BA&amp;hl=zh-CN&amp;gl=CN&amp;ceid=CN:zh-Hans" />
     <outline text="GN: 人形机器人融资"             type="rss" xmlUrl="https://news.google.com/rss/search?q=%E4%BA%BA%E5%BD%A2%E6%9C%BA%E5%99%A8%E4%BA%BA+%E8%9E%8D%E8%B5%84&amp;hl=zh-CN&amp;gl=CN&amp;ceid=CN:zh-Hans" />
+
+    <!-- 量化投研锚点（JoinQuant 聚宽社区）
+         注：joinquant 官方社区是 JS 渲染 SPA，API 需 appId 签名无法匿名调用，
+         通过 Google News 代理 site:joinquant.com 抓最新策略/回测/选股内容 -->
+    <outline text="GN: JoinQuant 策略"        type="rss" xmlUrl="https://news.google.com/rss/search?q=site%3Ajoinquant.com+%E7%AD%96%E7%95%A5&amp;hl=zh-CN&amp;gl=CN&amp;ceid=CN:zh-Hans" />
   </body>
 </opml>

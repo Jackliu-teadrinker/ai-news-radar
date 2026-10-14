@@ -508,7 +508,17 @@ CUSTOM_ANCHOR_LABEL = {
     '罗戈研究':                  'robotics',
     '极链AI':                    'robotics',
     '雷锋网':                    'robotics',
+    # 量化投研锚点（聚宽社区 / 回测 / 选股策略）
+    'GN: JoinQuant 策略':       'quant_trading',
+    'JoinQuant 策略':          'quant_trading',
 }
+
+# 量化投研相关词（命中则归入 quant_trading）
+QUANT_TRADING_KEYWORDS = [
+    '选股', '回测', '量化', '策略', 'joinquant', '聚宽',
+    'backtest', 'quant', 'factor', '因子',
+    '市场', 'alpha', 'portfolio', '组合',
+]
 
 TIER1 = ['humanoid robot','humanoid','embodied intelligence','embodied AI',
          '具身智能','人形机器人','脑机接口','brain-computer interface',
@@ -519,6 +529,8 @@ TIER2 = ['robot','robots','robotics','robotic',
          'agility robotics','1X Technologies',
          '灵巧手','机械臂','双足','协作机器人','cobot']
 TIER3 = ['physical AI','dexterous manipulation','robot learning']
+# 量化投研 tier：与机器人 tier 互不干扰
+QUANT_TIER = QUANT_TRADING_KEYWORDS
 
 def relevance_score(title: str, description: str = '') -> float:
     text = (title + ' ' + description).lower()
@@ -531,6 +543,10 @@ def relevance_score(title: str, description: str = '') -> float:
     for kw in TIER3:
         if kw.lower() in text:
             return 0.50
+    # 量化投研 tier（JoinQuant / 选股 / 回测 / 策略）
+    for kw in QUANT_TIER:
+        if kw.lower() in text:
+            return 0.60
     return 0.35
 
 AUTHORITY_MAP = {'Google News': 15}
