@@ -664,6 +664,69 @@ input:focus, select:focus, button:focus-visible, summary:focus-visible {
   background: transparent;
 }
 
+/* ── 评分行（2026-10-14）─────────────────────────
+   评分从卡面顶部 meta-row 移到标题/摘要下方。理由：
+   1) 层级——meta-row 里挤着栏目/来源/时间，评分插在旁边会跟这些元信息抢
+      视觉权重，读者第一眼看到的是分数而不是新闻本身；
+   2) 语义——分数是对"这条内容值不值得读"的总结，天然属于读完标题摘要
+      之后的判断，不该出现在读标题之前的位置。
+   配色整体压淡（低饱和 + 细边 + 无重底色），让标题保持唯一强视觉锚点。 */
+.score-row {
+  margin-top: 7px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: center;
+}
+
+/* 卡面里的评分徽标：去掉高饱和底色，改用淡描边 + 低饱和前景色。
+   原来的 .good/.warn/.warm 底色在密集列表里会形成一片色块，抢标题的注意力。 */
+.score-row .score,
+.score-row .score-inline {
+  padding: 1px 8px;
+  border-width: 1px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 500;          /* 原 600/700 → 500，不再和标题抢 */
+  line-height: 1.6;
+  letter-spacing: .01em;
+  background: transparent;    /* 去掉底色块 */
+  box-shadow: none;
+}
+/* 悬停时才给一点底色反馈，静态时保持克制 */
+.score-row .score:hover,
+.score-row .score-inline:hover {
+  background: var(--surface-soft);
+}
+
+/* 分档配色：同色相但整体降饱和/降亮度，浅到不抢标题 */
+.score-row .score-high {
+  border-color: color-mix(in srgb, var(--good) 35%, var(--line));
+  color: color-mix(in srgb, var(--good) 72%, var(--muted));
+}
+.score-row .score-mid {
+  border-color: color-mix(in srgb, var(--warn) 32%, var(--line));
+  color: color-mix(in srgb, var(--warn) 70%, var(--muted));
+}
+.score-row .score-low {
+  border-color: color-mix(in srgb, var(--warm) 30%, var(--line));
+  color: color-mix(in srgb, var(--warm) 68%, var(--muted));
+}
+.score-row .score-none {
+  border-color: var(--line);
+  color: var(--muted);
+  background: transparent;
+}
+
+/* 兼容旧浏览器：没有 color-mix 时退回 muted 灰，不至于把颜色丢掉 */
+@supports not (color: color-mix(in srgb, red 50%, blue)) {
+  .score-row .score-high,
+  .score-row .score-mid,
+  .score-row .score-low {
+    color: var(--muted);
+  }
+}
+
 .time {
   margin-left: auto;
 }

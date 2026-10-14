@@ -500,10 +500,16 @@ function renderItemNode(item, showSite) {
   node.querySelector(".time").textContent = fmtTime(item.published_at || item.first_seen_at);
 
   // 得分徽章（v3: 卡面摊开五维明细）
+  // 2026-10-14: 评分从卡面顶部 meta-row 移到标题/摘要下方的独立 score-row。
+  // 原来它挤在来源标签旁边跟栏目/来源抢层级，读者第一眼看到的是分数不是新闻。
   const scoreEl = buildScoreBadge(item);
-  const oldScore = node.querySelector(".score");
-  if (oldScore) oldScore.replaceWith(scoreEl);
-  else node.querySelector(".meta-row").appendChild(scoreEl);
+  const scoreRow = node.querySelector('.score-row');
+  if (scoreRow) scoreRow.replaceChildren(scoreEl);
+  else {
+    const oldScore = node.querySelector('.score');
+    if (oldScore) oldScore.replaceWith(scoreEl);
+    else node.querySelector('.meta-row').appendChild(scoreEl);
+  }
 
   const titleEl = node.querySelector(".title");
   const original = (item.title || "").trim();
@@ -1061,9 +1067,12 @@ function renderWechatArticle(item) {
   node.querySelector('.time').textContent = fmtTime(item.published_at || item.first_seen_at);
 
   // 得分徽章（v3: 卡面摊开五维明细）
+  // 2026-10-14: 与普通卡片一致，放到标题/摘要下方的独立 score-row
   const metaRow = node.querySelector('.meta-row');
   const scoreEl = buildScoreBadge(item);
-  if (metaRow) metaRow.insertBefore(scoreEl, metaRow.firstChild);
+  const scoreRow = node.querySelector('.score-row');
+  if (scoreRow) scoreRow.replaceChildren(scoreEl);
+  else if (metaRow) metaRow.insertBefore(scoreEl, metaRow.firstChild);
   else node.insertBefore(scoreEl, node.querySelector('.title'));
   
   // 标题（双语）
@@ -1137,6 +1146,18 @@ async function initWechatSection() {
 // 在 init 完成后异步加载微信公众号专区
 initWechatSection();
 
+// 2026-10-14: 把评分徽章挂到卡面底部（标题/摘要之后）的独立 .score-row。
+// 主卡片走 index.html 的 itemTpl 模板（模板里已有 .score-row，用 replaceChildren 填），
+// 其余分区（arXiv / 政府 / 搜索）用 JS 拼 DOM，统一走这个 helper，
+// 保证全站评分位置一致，也避免在 meta-row 里 insertBefore 造成位置漂移。
+function attachScoreRow(node, scoreEl) {
+  const scoreRow = document.createElement('div');
+  scoreRow.className = 'score-row';
+  scoreRow.appendChild(scoreEl);
+  node.appendChild(scoreRow);
+  return scoreRow;
+}
+
 // ═══════════════════════════════════════════════
 // 学术专区 (2026-08-04) - arXiv cs.RO 机器人论文
 // ═══════════════════════════════════════════════
@@ -1198,8 +1219,8 @@ function renderArxivItem(item) {
   metaRow.appendChild(source);
 
   // 得分徽章（v3: 卡面摊开五维明细）
+  // 2026-10-14: 徽章先建好，等标题/摘要都 append 完再由 attachScoreRow 挂到卡面底部
   const scoreEl = buildScoreBadge(item);
-  metaRow.insertBefore(scoreEl, source.nextSibling);
 
   // 分类标签
   const category = document.createElement('span');
@@ -1249,6 +1270,9 @@ function renderArxivItem(item) {
     summary.style.lineHeight = '1.5';
     node.appendChild(summary);
   }
+
+  // 2026-10-14: 评分挂到卡面最后（标题/摘要之后）
+  attachScoreRow(node, scoreEl);
 
   return node;
 }
@@ -1328,8 +1352,8 @@ function renderGovItem(item) {
   metaRow.appendChild(source);
 
   // 得分徽章（v3: 卡面摊开五维明细，政策口径）
+  // 2026-10-14: 徽章先建好，标题/描述 append 完再由 attachScoreRow 挂到卡面底部
   const scoreEl = buildScoreBadge(item, true);
-  metaRow.insertBefore(scoreEl, source.nextSibling);
 
   // 相关度
   const relevance = document.createElement('span');
@@ -1365,6 +1389,9 @@ function renderGovItem(item) {
     desc.textContent = item.description.substring(0, 120) + (item.description.length > 120 ? '...' : '');
     node.appendChild(desc);
   }
+
+  // 2026-10-14: 评分挂到卡面最后（标题/摘要之后）
+  attachScoreRow(node, scoreEl);
 
   return node;
 }
@@ -1508,8 +1535,8 @@ function renderSearchItem(item) {
   metaRow.appendChild(keyword);
 
   // 得分徽章（v3: 卡面摊开五维明细）
+  // 2026-10-14: 徽章先建好，标题/描述 append 完再由 attachScoreRow 挂到卡面底部
   const scoreEl = buildScoreBadge(item);
-  metaRow.insertBefore(scoreEl, source.nextSibling);
 
   // 时间
   if (item.date_str) {
@@ -1537,6 +1564,9 @@ function renderSearchItem(item) {
     desc.textContent = item.description.substring(0, 120) + (item.description.length > 120 ? '...' : '');
     node.appendChild(desc);
   }
+
+  // 2026-10-14: 评分挂到卡面最后（标题/摘要之后）
+  attachScoreRow(node, scoreEl);
 
   return node;
 }
