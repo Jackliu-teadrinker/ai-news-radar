@@ -1579,6 +1579,116 @@ initToutiaoSection();
 initAnchorSection();
 
 // ═══════════════════════════════════════════════
+// 聚宽回测专区 - JoinQuant 社区策略 + 主题徽章 (2026-10-14)
+// ═══════════════════════════════════════════════
+
+async function loadJoinquantArticles() {
+  try {
+    const res = await fetchWithTimeout('./data/joinquant-news.json?t=' + Date.now());
+    if (!res.ok) return null;
+    return await res.json();
+  } catch (e) {
+    console.log('[JOINQUANT] load failed:', e.message);
+    return null;
+  }
+}
+
+async function initJoinquantSection() {
+  const jqData = await loadJoinquantArticles();
+  const section = document.getElementById('joinquantSection');
+  const list = document.getElementById('joinquantList');
+  const count = document.getElementById('joinquantCount');
+
+  if (!section || !list || !count) return;
+
+  if (!jqData || !jqData.items || jqData.items.length === 0) {
+    section.style.display = 'none';
+    return;
+  }
+
+  section.style.display = '';
+  count.textContent = `${jqData.items.length} 条`;
+  list.innerHTML = '';
+  const fragment = document.createDocumentFragment();
+  jqData.items.forEach(item => {
+    try {
+      fragment.appendChild(renderJoinquantItem(item));
+    } catch (e) {
+      console.error('[JOINQUANT] 渲染失败:', e.message);
+    }
+  });
+  list.appendChild(fragment);
+  console.log('[JOINQUANT] 聚宽回测专区渲染完成:', jqData.items.length, '条');
+}
+
+function renderJoinquantItem(item) {
+  const node = document.createElement('article');
+  node.className = 'news-card jq-card';
+
+  const metaRow = document.createElement('div');
+  metaRow.className = 'meta-row';
+
+  // 来源标签
+  const source = document.createElement('span');
+  source.className = 'jq-source';
+  source.textContent = '聚宽回测';
+  metaRow.appendChild(source);
+
+  // 主题徽章（止损/仓位/轮动等）
+  (item.topics || []).slice(0, 3).forEach(t => {
+    const chip = document.createElement('span');
+    chip.className = 'jq-topic';
+    chip.textContent = t;
+    metaRow.appendChild(chip);
+  });
+
+  // 浏览量/点赞
+  const stats = document.createElement('span');
+  stats.className = 'jq-stats';
+  stats.textContent = `👁 ${item.view_count || 0}  👍 ${item.like_count || 0}`;
+  metaRow.appendChild(stats);
+
+  // 时间
+  if (item.date_str || item.published_at) {
+    const time = document.createElement('time');
+    time.className = 'time';
+    time.textContent = item.date_str || (item.published_at || '').slice(0, 10);
+    metaRow.appendChild(time);
+  }
+  node.appendChild(metaRow);
+
+  // 标题
+  const title = document.createElement('a');
+  title.className = 'title';
+  title.href = item.url;
+  title.target = '_blank';
+  title.rel = 'noopener noreferrer';
+  title.textContent = item.title;
+  node.appendChild(title);
+
+  // 摘要
+  if (item.description) {
+    const desc = document.createElement('p');
+    desc.className = 'description';
+    desc.textContent = item.description.substring(0, 120) + (item.description.length > 120 ? '...' : '');
+    node.appendChild(desc);
+  }
+
+  // 评分行（数据带 total_score 时）
+  if (item.total_score != null) {
+    try {
+      const scoreEl = buildScoreBadge(item);
+      metaRow.insertBefore(scoreEl, source.nextSibling);
+    } catch (e) { /* 评分徽章不可用时忽略 */ }
+  }
+
+  return node;
+}
+
+// 在 init 完成后异步加载聚宽回测专区
+initJoinquantSection();
+
+// ═══════════════════════════════════════════════
 // 微信公众号专区实时轮询 (2026-07-16)
 // ═══════════════════════════════════════════════
 

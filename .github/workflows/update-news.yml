@@ -118,6 +118,11 @@ jobs:
           TZ: Asia/Shanghai
         run: python scripts/toutiao_fetcher.py
 
+      - name: Fetch JoinQuant community strategies
+        env:
+          TZ: Asia/Shanghai
+        run: python scripts/joinquant_fetcher.py
+
       - name: Curate high-quality articles
         env:
           TZ: Asia/Shanghai
