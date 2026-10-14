@@ -46,6 +46,8 @@ TARGET_LEN = 120       # Jack 目标：120 字词摘要
 MAX_CANDIDATES = 300   # 单次刷新参与 enrich 的候选上限（top 分数优先）
 
 _lock = threading.Lock()
+# 2026-10-14: GoogleDecoder 实例复用（内部复用 httpx 连接池，别每次新建）
+_decoder_inst = None
 
 
 def _is_gn_url(url: str) -> bool:
@@ -76,15 +78,38 @@ def _decode_gn_url(gn_url: str, cache: dict, cache_path: str) -> str:
             return cache[gn_url]
     if _gnd is None:
         return ''
-    try:
-        r = _gnd.new_decoderv1(gn_url)
-        real = r.get('decoded_url') if isinstance(r, dict) else None
-    except Exception:
-        real = None
+    real = None
+    # 2026-10-14 BUGFIX: googlenewsdecoder 0.2.x 删除了 new_decoderv1，
+    # 旧代码只调 new_decoderv1（AttributeError 被 except 吞掉）再退回
+    # gnewsdecoder；而 0.2.1 的 gnewsdecoder 同样解不出（Google 改了
+    # data 属性，函数返回 success=False / 无 decoded_url）。两条路径都失败
+    # → decode_miss 接近 100% → 摘要永久为空（日志里 candidates=0/ok=0）。
+    # 现在按可用入口依次尝试：GoogleDecoder 实例 → legacy gnewsdecoder。
+    decoder_cls = getattr(_gnd, 'GoogleDecoder', None)
+    if decoder_cls is not None:
+        global _decoder_inst
+        if _decoder_inst is None:
+            try:
+                _decoder_inst = decoder_cls(timeout=20, user_agent=USER_AGENT)
+            except Exception:
+                try:
+                    _decoder_inst = decoder_cls(timeout=20)
+                except Exception:
+                    _decoder_inst = False
+        if _decoder_inst:
+            try:
+                r = _decoder_inst.decode_google_news_url(gn_url)
+                if isinstance(r, dict):
+                    real = r.get('decoded_url') or r.get('url')
+                    if not real and not r.get('success', True):
+                        real = None
+            except Exception:
+                real = None
     if not real:
         try:
             r2 = _gnd.gnewsdecoder(gn_url)
-            real = r2.get('decoded_url') if isinstance(r2, dict) else None
+            if isinstance(r2, dict):
+                real = r2.get('decoded_url') or r2.get('url')
         except Exception:
             real = None
     if real and real.startswith('http'):
@@ -254,6 +279,12 @@ def enrich_items(items: list, output_dir: str, top_n: int = 150, recheck: bool =
     cands = cands[:min(top_n, MAX_CANDIDATES)]
     stats['candidates'] = len(cands)
     if not cands:
+        # 2026-10-14: candidates=0 过去是静默 return stats，日志里只留一行
+        # "candidates: 0"，看起来像"没有需要补的"（正常），实际是全站摘要
+        # 集体失效的信号。改成显式告警，避免再次静默。
+        print('[SUMMARY] candidates=0 —— 没有条目进入补摘要队列。'
+              '若同时 decode_miss 也为 0，多半是上游解码器失效（GN 跳转解析），'
+              '不是"摘要已齐"，请检查 googlenewsdecoder 版本。')
         return stats
 
     t0 = time.time()

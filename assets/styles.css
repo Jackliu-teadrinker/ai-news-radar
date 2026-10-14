@@ -542,7 +542,7 @@ input:focus, select:focus, button:focus-visible, summary:focus-visible {
 /* ── 新闻卡片 ─────────────────────── */
 .news-card {
   min-width: 0;
-  padding: 14px 18px;
+  padding: 11px 18px;          /* 14px → 11px：收紧卡面上下留白 */
   border-top: 1px solid var(--line);
   transition: background .15s;
 }
@@ -561,7 +561,7 @@ input:focus, select:focus, button:focus-visible, summary:focus-visible {
   font-size: 12px;
 }
 .news-card .description {
-  margin: 6px 0 0;
+  margin: 4px 0 0;             /* 6px → 4px */
   color: var(--ink-2);
   font-size: 13px;
   line-height: 1.55;
@@ -671,8 +671,30 @@ input:focus, select:focus, button:focus-visible, summary:focus-visible {
    2) 语义——分数是对"这条内容值不值得读"的总结，天然属于读完标题摘要
       之后的判断，不该出现在读标题之前的位置。
    配色整体压淡（低饱和 + 细边 + 无重底色），让标题保持唯一强视觉锚点。 */
+/* ── 卡面紧凑化（2026-10-14）───────────────────────
+   用户反馈"内容间距过大"。三处收紧：
+   1) .title-row —— 时间从独立 meta-row 移进来，与标题同一行右对齐；
+   2) 行高/外边距整体下调，卡片 padding 由 14px 收到 11px；
+   3) .score-row margin-top 7→5px，徽章本身更矮一点。 */
+.title-row {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+}
+.title-row .title {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+.title-row .time {
+  flex: 0 0 auto;
+  margin-left: auto;   /* 推到标题行最右 */
+  white-space: nowrap;
+  align-self: flex-start;
+  padding-top: 1px;
+}
+
 .score-row {
-  margin-top: 7px;
+  margin-top: 5px;
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
@@ -732,7 +754,7 @@ input:focus, select:focus, button:focus-visible, summary:focus-visible {
 }
 .title {
   min-width: 0;
-  margin-top: 8px;
+  margin-top: 3px;             /* 8px → 3px */
   display: inline-flex;
   flex-direction: column;
   gap: 3px;

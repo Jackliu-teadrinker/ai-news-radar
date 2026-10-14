@@ -497,7 +497,14 @@ function renderItemNode(item, showSite) {
   } else {
     categoryEl.remove();
   }
-  node.querySelector(".time").textContent = fmtTime(item.published_at || item.first_seen_at);
+  // 2026-10-14: 时间移到标题行右侧（.title-row），不再独占 meta-row 一行。
+  // 原来 meta-row 里 site/category 被 remove() 后只剩 .time（margin-left:auto
+  // 推到最右），于是时间单独占一行，与标题之间留出一大片空白。
+  const timeEl = node.querySelector(".time");
+  if (timeEl) timeEl.textContent = fmtTime(item.published_at || item.first_seen_at);
+  // meta-row 若已无可见子元素则整行移除，避免留下空行
+  const metaRow = node.querySelector('.meta-row');
+  if (metaRow && !metaRow.children.length) metaRow.remove();
 
   // 得分徽章（v3: 卡面摊开五维明细）
   // 2026-10-14: 评分从卡面顶部 meta-row 移到标题/摘要下方的独立 score-row。
@@ -1238,24 +1245,25 @@ function renderArxivItem(item) {
     metaRow.appendChild(authors);
   }
 
-  // 时间
-  if (item.published_at) {
-    const time = document.createElement('time');
-    time.className = 'time';
-    time.textContent = item.published_at.slice(0, 10);
-    metaRow.appendChild(time);
-  }
-
   node.appendChild(metaRow);
 
-  // 标题链接
+  // 2026-10-14: 标题 + 时间同一行（时间右对齐），其余分区与主卡片一致
+  const titleRow = document.createElement('div');
+  titleRow.className = 'title-row';
   const title = document.createElement('a');
   title.className = 'title';
   title.href = item.url;
   title.target = '_blank';
   title.rel = 'noopener noreferrer';
   title.textContent = item.title_zh || item.title;
-  node.appendChild(title);
+  titleRow.appendChild(title);
+  if (item.published_at) {
+    const time = document.createElement('time');
+    time.className = 'time';
+    time.textContent = item.published_at.slice(0, 10);
+    titleRow.appendChild(time);
+  }
+  node.appendChild(titleRow);
 
   // 摘要
   if (item.summary) {
@@ -1362,25 +1370,26 @@ function renderGovItem(item) {
   relevance.style.color = '#d97706';
   metaRow.appendChild(relevance);
 
-  // 时间
-  const pubDate = item.published_at ? new Date(item.published_at.replace('Z', '+00:00')) : null;
-  if (pubDate) {
-    const time = document.createElement('time');
-    time.className = 'time';
-    time.textContent = fmtTime(pubDate.toISOString());
-    metaRow.appendChild(time);
-  }
-
   node.appendChild(metaRow);
 
-  // 标题
+  // 2026-10-14: 标题 + 时间同一行（时间右对齐）
+  const titleRow = document.createElement('div');
+  titleRow.className = 'title-row';
   const title = document.createElement('a');
   title.className = 'title';
   title.href = item.url;
   title.target = '_blank';
   title.rel = 'noopener noreferrer';
   title.textContent = item.title_zh || item.title;
-  node.appendChild(title);
+  titleRow.appendChild(title);
+  const pubDate = item.published_at ? new Date(item.published_at.replace('Z', '+00:00')) : null;
+  if (pubDate) {
+    const time = document.createElement('time');
+    time.className = 'time';
+    time.textContent = fmtTime(pubDate.toISOString());
+    titleRow.appendChild(time);
+  }
+  node.appendChild(titleRow);
 
   // 描述（如有）
   if (item.description) {
@@ -1538,24 +1547,25 @@ function renderSearchItem(item) {
   // 2026-10-14: 徽章先建好，标题/描述 append 完再由 attachScoreRow 挂到卡面底部
   const scoreEl = buildScoreBadge(item);
 
-  // 时间
-  if (item.date_str) {
-    const time = document.createElement('time');
-    time.className = 'time';
-    time.textContent = item.date_str;
-    metaRow.appendChild(time);
-  }
-
   node.appendChild(metaRow);
 
-  // 标题
+  // 2026-10-14: 标题 + 时间同一行（时间右对齐）
+  const titleRow = document.createElement('div');
+  titleRow.className = 'title-row';
   const title = document.createElement('a');
   title.className = 'title';
   title.href = item.url;
   title.target = '_blank';
   title.rel = 'noopener noreferrer';
   title.textContent = item.title;
-  node.appendChild(title);
+  titleRow.appendChild(title);
+  if (item.date_str) {
+    const time = document.createElement('time');
+    time.className = 'time';
+    time.textContent = item.date_str;
+    titleRow.appendChild(time);
+  }
+  node.appendChild(titleRow);
 
   // 描述
   if (item.description) {
@@ -1648,23 +1658,25 @@ function renderJoinquantItem(item) {
   stats.textContent = `👁 ${item.view_count || 0}  👍 ${item.like_count || 0}`;
   metaRow.appendChild(stats);
 
-  // 时间
-  if (item.date_str || item.published_at) {
-    const time = document.createElement('time');
-    time.className = 'time';
-    time.textContent = item.date_str || (item.published_at || '').slice(0, 10);
-    metaRow.appendChild(time);
-  }
   node.appendChild(metaRow);
 
-  // 标题
+  // 2026-10-14: 标题 + 时间同一行（时间右对齐），与其余分区一致
+  const titleRow = document.createElement('div');
+  titleRow.className = 'title-row';
   const title = document.createElement('a');
   title.className = 'title';
   title.href = item.url;
   title.target = '_blank';
   title.rel = 'noopener noreferrer';
   title.textContent = item.title;
-  node.appendChild(title);
+  titleRow.appendChild(title);
+  if (item.date_str || item.published_at) {
+    const time = document.createElement('time');
+    time.className = 'time';
+    time.textContent = item.date_str || (item.published_at || '').slice(0, 10);
+    titleRow.appendChild(time);
+  }
+  node.appendChild(titleRow);
 
   // 摘要
   if (item.description) {
