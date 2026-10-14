@@ -1675,10 +1675,11 @@ function renderJoinquantItem(item) {
   }
 
   // 评分行（数据带 total_score 时）
+  // 2026-10-14: 与其余分区一致，挂到卡面底部（标题/摘要之后）而不是 meta-row
   if (item.total_score != null) {
     try {
       const scoreEl = buildScoreBadge(item);
-      metaRow.insertBefore(scoreEl, source.nextSibling);
+      attachScoreRow(node, scoreEl);
     } catch (e) { /* 评分徽章不可用时忽略 */ }
   }
 
