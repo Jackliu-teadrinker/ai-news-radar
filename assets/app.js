@@ -827,14 +827,10 @@ async function loadSourceStatusData() {
   return res.json();
 }
 
-async function init() {
-  const [newsResult, statusResult] = await Promise.allSettled([
-    loadNewsData(),
-    loadSourceStatusData(),
-  ]);
-
-  if (newsResult.status === "fulfilled") {
-    const payload = newsResult.value;
+// 2026-10-14：把"数据落库 → 渲染"抽成独立函数，主数据轮询复用。
+// 之前只有 wechat 专区轮询，主数据 latest-24h-min.json 只在页面加载时取一次，
+// 页面长时间停留时"更新时间"永久冻结在首次加载时刻（观感即"卡住"）。
+function applyNewsPayload(payload) {
     state.itemsAi = payload.items_ai || payload.items || [];
     console.log('[INIT] itemsAi set: ' + state.itemsAi.length + ' items_ai: ' + (payload.items_ai||[]).length + ' items: ' + (payload.items||[]).length);
     state.itemsAllRaw = payload.items_all_raw || payload.items_all || [];
@@ -851,8 +847,15 @@ async function init() {
     renderModeSwitch();
     renderSiteFilters();
     renderList();
-    // 2026-09-15: "更新时间"显示"页面数据刷新于 X:XX（快照 00:00）"，
-    // 让"更新时间"跟随页面加载时刻走，不再卡在快照小时位上
+    renderUpdatedAt();
+    if (!state._initialGeneratedAt) state._initialGeneratedAt = state.generatedAt;
+}
+
+// 2026-09-15: "更新时间"显示"页面数据刷新于 X:XX（快照 00:00）"，
+// 让"更新时间"跟随页面加载时刻走，不再卡在快照小时位上
+// 2026-10-14: 追加"数据年龄"，直接暴露快照滞后多久（原来滞后完全不可见，
+// 只能靠"更新时间"猜，观感就是"卡住了"）。
+function renderUpdatedAt() {
     const pageLoadTime = new Date();
     const loadFmt = `${String(pageLoadTime.getHours()).padStart(2,'0')}:${String(pageLoadTime.getMinutes()).padStart(2,'0')}`;
     // 若页面长期停留，generatedAt 本身被新快照刷新（同页 auto-poll 场景），
@@ -861,10 +864,54 @@ async function init() {
     const displayTime = (state.generatedAt && state.generatedAt !== state._initialGeneratedAt)
       ? snapFmt
       : loadFmt;
-    updatedAtEl.textContent = `${displayTime} · 快照 ${snapFmt}`;
+
+    let ageTxt = '';
+    if (state.generatedAt) {
+        const gen = new Date(state.generatedAt);
+        if (!isNaN(gen.getTime())) {
+            const ageMin = Math.max(0, Math.floor((Date.now() - gen.getTime()) / 60000));
+            ageTxt = ageMin >= 60 ? ` · 数据 ${Math.floor(ageMin/60)}h${ageMin%60}m 前` : ` · 数据 ${ageMin}m 前`;
+            // 超过 90min 还没新快照 → 标红提示，别让"卡住"无声发生
+            if (ageMin > 90) updatedAtEl.style.color = '#e53e3e';
+            else updatedAtEl.style.color = '';
+        }
+    }
+    updatedAtEl.textContent = `${displayTime} · 快照 ${snapFmt}${ageTxt}`;
     updatedAtEl.title = `数据生成时间：${state.generatedAt}（"更新时间"跟随页面加载/自动刷新时刻，快照时间反映数据轮次）`;
-    if (!state._initialGeneratedAt) state._initialGeneratedAt = state.generatedAt;
-  } else {
+}
+
+// 主数据轮询：每 90s 拉一次快照，只在 generated_at 变化时才重渲染。
+// 后台标签页自动降频（skip），避免无意义的 GitHub Pages 请求。
+const MAIN_DATA_POLL_MS = 90000;
+async function pollMainData() {
+    if (document.hidden) return;
+    try {
+        const payload = await loadNewsData();
+        if (payload && payload.generated_at && payload.generated_at !== state.generatedAt) {
+            console.log('[POLL] 新快照:', payload.generated_at);
+            state.allDataPromise = null;   // 强制重新拉 all-mode 数据
+            applyNewsPayload(payload);
+        } else {
+            renderUpdatedAt();             // 无新数据也刷新年龄显示
+        }
+    } catch (e) {
+        // 静默：下次轮询再试
+    }
+}
+if (typeof pollMainData === 'function') {
+    setInterval(pollMainData, MAIN_DATA_POLL_MS);
+    document.addEventListener('visibilitychange', () => { if (!document.hidden) pollMainData(); });
+}
+
+async function init() {
+  const [newsResult, statusResult] = await Promise.allSettled([
+    loadNewsData(),
+    loadSourceStatusData(),
+  ]);
+
+  if (newsResult.status === "fulfilled") {
+      applyNewsPayload(newsResult.value);
+    } else {
     // FIX (2026-07-13): 显示错误状态 + 重试按钮，不再静默卡在"加载中..."
     updatedAtEl.textContent = "加载失败";
     const errMsg = newsResult.reason ? newsResult.reason.message : "未知错误";

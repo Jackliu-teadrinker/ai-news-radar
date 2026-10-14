@@ -78,6 +78,16 @@ jobs:
           fi
           echo "[OK] No known typos"
 
+          # 3b. Conflict-marker check (defense against 2026-10-10 incident)
+          # local_refresh.sh 的 merge 冲突处理曾把 <<<<<<< / ======= / >>>>>> 连同
+          # 24 份重复页面提交并推上 master，Pages 上裸奔 83 个 commit。
+          # 任何被跟踪的源文件带冲突标记都必须在流水线启动前拦下。
+          if grep -lE '^(<<<<<<<|>>>>>>>|=======)$' index.html scripts/*.py .github/workflows/*.yml 2>/dev/null; then
+            echo "ERROR: git conflict markers found in tracked files (2026-10-10 incident)"
+            exit 1
+          fi
+          echo "[OK] No conflict markers"
+
           # 4. Time window regression test (defense against 2026-08-30 inversion)
           # Run unit tests BEFORE doing the expensive RSS fetch
           pip install pyyaml > /dev/null 2>&1 || true
