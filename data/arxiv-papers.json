@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-14T04:01:04.127681+00:00",
-  "total_items": 17,
+  "generated_at": "2026-10-14T04:36:42.851435+00:00",
+  "total_items": 16,
   "items": [
     {
       "id": "http://arxiv.org/abs/2610.17232v1",
@@ -577,42 +577,6 @@
       "hx_data": 0,
       "hx_pr_penalty": 0,
       "hx_dup_penalty": -5.2
-    },
-    {
-      "id": "http://arxiv.org/abs/2610.17069v1",
-      "title": "Task-Space Motion-Force Nonlinear Model Predictive Control for Precise and Compliant Control under Uncertainties",
-      "url": "https://arxiv.org/abs/2610.17069",
-      "summary": "In Nonlinear Model Predictive Control (NMPC), the control law is implicitly determined by the solution of an Optimal Control Problem (OCP). Consequently, OCP design is often tailored to specific platforms and tasks, demanding extensive expert knowledge and tuning effort. To address this, we propose a unified NMPC framework that directly plans and controls the robot joints subject to task-space motion and force requirements and is capable of seamlessly generalizing across multiple robotic platforms and diverse tasks. Furthermore, optimization-based methods often treat interactions as rigid contacts, making the torque solution sensitive to the modeling errors of the robot dynamics and the environment. We study the intrinsic task-space impedance of our proposed controller, its partial contraction for differential stability and differential passivity under unmodeled interactions. As a result, our framework enables closing the force-feedback loop in the high-level planning layer to achieve precise motion-force tracking performance, addressing the long-standing challenge of force-feedback NMPC. Finally, we validate our framework on physical hardware, demonstrating hybrid motion-force control on a redundant manipulator and compliant locomotion on a quadruped, while preserving core NMPC advantages such as hard constraint satisfaction, optimal redundancy exploitation, and real-time planning under unforeseen interactions.",
-      "authors": "Quang-Nam Nguyen, Ludovic Righetti",
-      "category": "cs.RO",
-      "published_at": "2026-10-12T16:34:30+00:00",
-      "updated_at": "2026-10-12T16:34:30Z",
-      "relevance": 0.22,
-      "description": "In Nonlinear Model Predictive Control (NMPC), the control law is implicitly determined by the solution of an Optimal Control Problem (OCP). Consequently, OCP design is often tailored to specific platforms and tasks, demanding extensive expert knowledge and tuning effort. To address this, we propose a unified NMPC framework that directly plans and controls the robot joints subject to task-space motion and force requirements and is capable of seamlessly generalizing across multiple robotic platforms and diverse tasks. Furthermore, optimization-based methods often treat interactions as rigid contacts, making the torque solution sensitive to the modeling errors of the robot dynamics and the environment. We study the intrinsic task-space impedance of our proposed controller, its partial contraction for differential stability and differential passivity under unmodeled interactions. As a result, our framework enables closing the force-feedback loop in the high-level planning layer to achieve precise motion-force tracking performance, addressing the long-standing challenge of force-feedback NMPC. Finally, we validate our framework on physical hardware, demonstrating hybrid motion-force control on a redundant manipulator and compliant locomotion on a quadruped, while preserving core NMPC advantages such as hard constraint satisfaction, optimal redundancy exploitation, and real-time planning under unforeseen interactions.",
-      "authority": 10,
-      "depth": 5,
-      "writing_value": 5,
-      "_hx": {
-        "topic": 0,
-        "conflict": 0,
-        "data": 0,
-        "pr_pen": 0,
-        "rel": 22.0,
-        "auth": 10,
-        "tim": 0.0,
-        "writing": 5,
-        "depth": 5,
-        "junk": 0,
-        "dup_pen": 5.8,
-        "dup_of": false
-      },
-      "total_score": 36.2,
-      "timeliness": 0.0,
-      "hx_topic": 0,
-      "hx_conflict": 0,
-      "hx_data": 0,
-      "hx_pr_penalty": 0,
-      "hx_dup_penalty": -5.8
     }
   ]
 }
