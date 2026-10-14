@@ -278,6 +278,15 @@ def enrich_items(items: list, output_dir: str, top_n: int = 150, recheck: bool =
     cands.sort(key=lambda x: -x.get('total_score', 0))
     cands = cands[:min(top_n, MAX_CANDIDATES)]
     stats['candidates'] = len(cands)
+    # 2026-10-14 诊断：candidates 恒为 0 是"输入就没进去"的信号，过去静默 return。
+    # 打印输入规模 + 为什么没进队列，让 CI 日志能直接定位。
+    _gn = sum(1 for i in items if _is_gn_url(i.get('url','')))
+    _empty = sum(1 for i in items if len((i.get('description') or '').strip()) < 30)
+    _notdict = sum(1 for i in items if not isinstance(i, dict))
+    print(f"[SUMMARY] input: total={len(items)} gn_urls={_gn} desc<30={_empty} "
+          f"non_dict={_notdict} -> candidates={len(cands)} (top_n={top_n}, recheck={recheck})")
+    if not cands and _notdict:
+        print(f"[SUMMARY] 输入含 {_notdict} 个非 dict 元素（期望 item dict，可能是顶层 dict 未解包）")
     if not cands:
         # 2026-10-14: candidates=0 过去是静默 return stats，日志里只留一行
         # "candidates: 0"，看起来像"没有需要补的"（正常），实际是全站摘要

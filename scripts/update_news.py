@@ -940,14 +940,27 @@ def _run_enrich_subprocess(items, output_dir, top_n=150, recheck=False, tag='mai
                     items.update(enriched)
                 else:
                     items[:] = enriched
+                # 2026-10-14 可观测性修复：过去只打 stdout 最后一行，
+                # 子进程早退（deps missing / candidates=0 / 内部异常）的关键日志
+                # 全被吞掉，CI 上只看到 "candidates: 0" 却无从判断死在哪一步。
+                # 现在把 stdout 全量 + stderr（rc!=0 时）都打出来。
+                _so = (r.stdout or '').strip()
+                _se = (r.stderr or '').strip()
                 print(f"[SUMMARY] {tag} enrich via subprocess: "
-                      f"{(r.stdout or '').strip().splitlines()[-1] if r.stdout.strip() else 'ok'}")
+                      f"{_so.splitlines()[-1] if _so else 'ok'}")
+                if _so:
+                    for _l in _so.splitlines()[:-1]:
+                        print(f"[SUMMARY:{tag}] {_l}")
+                if _se:
+                    print(f"[SUMMARY:{tag}] stderr: {_se[-800:]}")
             except Exception as _merge_e:
                 print(f"[SUMMARY] {tag} enrich merge failed ({_merge_e}); "
                       f"keeping original {len(items)} items (enriched data discarded)")
         else:
             print(f"[SUMMARY] {tag} enrich subprocess rc={r.returncode}, "
                   f"degraded (data proceeds without fresh summaries)")
+            print(f"[SUMMARY:{tag}] stdout: {(r.stdout or '').strip()[-800:]}")
+            print(f"[SUMMARY:{tag}] stderr: {(r.stderr or '').strip()[-800:]}")
     except subprocess.TimeoutExpired:
         print(f"[SUMMARY] {tag} enrich subprocess 240s timeout, degraded")
     except Exception as _e:
