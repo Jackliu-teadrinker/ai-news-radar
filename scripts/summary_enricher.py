@@ -26,15 +26,24 @@ from urllib.parse import urlparse
 
 import requests
 
+_imp_errors = {}
 try:
     import trafilatura
-except ImportError:
+except Exception as _e:   # 2026-10-14: 记真实异常，别再静默吞
     trafilatura = None
+    _imp_errors['trafilatura'] = repr(_e)
 
 try:
     import googlenewsdecoder as _gnd
-except ImportError:
+except Exception as _e:
     _gnd = None
+    _imp_errors['googlenewsdecoder'] = repr(_e)
+
+if _imp_errors:
+    import sys as _sys
+    print(f"[SUMMARY] import failed: {_imp_errors} "
+          f"(python={_sys.version.split()[0]}, executable={_sys.executable})",
+          file=_sys.stderr)
 
 USER_AGENT = ('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 '
               '(KHTML, like Gecko) Chrome/126.0 Safari/537.36')
@@ -260,7 +269,10 @@ def enrich_items(items: list, output_dir: str, top_n: int = 150, recheck: bool =
     """
     stats = {'candidates': 0, 'ok': 0, 'failed': 0, 'decode_miss': 0, 'elapsed_s': 0.0}
     if trafilatura is None or _gnd is None:
-        print('[SUMMARY] enricher deps missing (trafilatura/googlenewsdecoder), skip')
+        _miss = {k: v for k, v in _imp_errors.items()}
+        _miss.setdefault('trafilatura' if trafilatura is None else 'googlenewsdecoder', 'import raised non-ImportError')
+        print(f"[SUMMARY] enricher deps missing: {_miss} — 见上方 import failed 行确认哪个包导入失败"
+              )
         return stats
 
     cache_path = os.path.join(output_dir, 'gn-url-cache.json')
