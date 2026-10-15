@@ -3,3 +3,7 @@ requests>=2.31.0
 # Jack 2026-09-11: 真摘要管线 — GN 跳转解码 + 正文强提取
 googlenewsdecoder>=0.1.7
 trafilatura>=1.12.0
+
+# 2026-10-14: pin selectolax<1.0 — 1.0.0 的 modest backend 在 import 期硬失败，
+# 导致 `import googlenewsdecoder` 崩掉、摘要管线静默 skip（CI 上 98% 摘要为空的根因）。0.4.x 可正常解码。
+selectolax<1.0
