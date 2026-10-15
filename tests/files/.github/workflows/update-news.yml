@@ -1,0 +1,173 @@
+name: Update AI News Radar
+
+on:
+  push:
+    branches:
+      - master
+  schedule:
+    # 2026-09-15: 回滚到整点 30 分钟拍。15 分钟错位拍（04/19/34/49）导致
+    # "更新时间"永远显示 08:00/08:30 这种错位快照，观感像卡住。
+    # 整点拍 + run 耗时 ~11min → 数据落点 ≈ 整点前 4min，观感"刚过整点就刷新"。
+    # 掉拍风险由 Keeper（20min 巡检 + rescue dispatch）兜底，可接受。
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+
+concurrency:
+  # FIX(2026-08-27): schedule 走独立 group，永不被 dispatch/push cancel;
+  #                  只 dispatch 之间互抢（保证手动只跑最新一次）。
+  group: >-
+    update-news-${{ github.event_name == 'schedule' && 'schedule' || github.event_name }}${{ github.event_name == 'workflow_dispatch' && format('-{0}', github.run_id) || '' }}
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  update:
+    name: Fetch & deploy
+    runs-on: ubuntu-latest
+    # 2026-09-30: 20→35。单跑 Run update 常 13-16min（30 feed 重试 + enrich 123s
+    # + 翻译 126 英文标题 + huxiu 校准），再叠 arXiv/政府/头条/部署，20min 撞线
+    # 会被 cancel 导致数据推不上 Pages（9/30 05:43 run 即栽在这）。35min 留足余量。
+    timeout-minutes: 35
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 1
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+          cache-dependency-path: "requirements.txt"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Pre-flight checks
+        run: |
+          echo "============================================================"
+          echo "  PRE-FLIGHT CHECKS (defense against 2026-08-30 incidents)"
+          echo "============================================================"
+
+          # 1. Python syntax check (catches typo, literal `n)
+          python -m py_compile scripts/update_news.py
+          python -m py_compile scripts/curated_collector.py
+          echo "[OK] Python syntax check passed"
+
+          # 2. Literal backtick-n check (defense against bc58c191)
+          if grep -nP "\`n" scripts/*.py 2>/dev/null; then
+            echo "ERROR: literal backtick-n found in scripts (bc58c191 regression)"
+            exit 1
+          fi
+          echo "[OK] No literal backtick-n found"
+
+          # 3. Common typo check (defense against output_dirtput_dir etc.)
+          if grep -nE "(output_dirtput|window_hourss)" scripts/*.py; then
+            echo "ERROR: known typo found in scripts"
+            exit 1
+          fi
+          echo "[OK] No known typos"
+
+          # 4. Time window regression test (defense against 2026-08-30 inversion)
+          # Run unit tests BEFORE doing the expensive RSS fetch
+          pip install pyyaml > /dev/null 2>&1 || true
+          python tests/test_time_window.py
+          echo "[OK] Time window regression test passed"
+
+          echo "============================================================"
+          echo "  ALL PRE-FLIGHT CHECKS PASSED"
+          echo "============================================================"
+
+      - name: Run update
+        env:
+          TZ: Asia/Shanghai
+        run: python scripts/update_news.py --output-dir data --window-hours 24 --rss-opml feeds/follow.example.opml --custom-opml feeds/custom.opml --archive-days 21
+
+      - name: Fetch arXiv papers
+        env:
+          TZ: Asia/Shanghai
+        run: python scripts/arxiv_fetcher.py --output-dir data --window-hours 24
+
+      - name: Fetch government news
+        env:
+          TZ: Asia/Shanghai
+        run: python scripts/government_fetcher.py
+
+      - name: Fetch Toutiao news
+        env:
+          TZ: Asia/Shanghai
+        run: python scripts/toutiao_fetcher.py
+
+      - name: Curate high-quality articles
+        env:
+          TZ: Asia/Shanghai
+        run: python scripts/curated_collector.py --data-path data/latest-24h-min.json --curated-dir data/curated
+
+      - name: Update index.html version hash
+        run: python -c "import re; from datetime import datetime, timezone; c=open('index.html','r',encoding='utf-8').read(); now=datetime.now(timezone.utc).strftime('%Y%m%d%H%M%S'); c2=re.sub(r'(<script src=\"./assets/app\\.js\\?v=)[^\"]*\"', r'\g<1>'+now+'\"', c); open('index.html','w',encoding='utf-8').write(c2); print('[OK] version:',now)"
+
+      - name: Auto-push data
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config user.email "radar-bot@users.noreply.github.com"
+          git config user.name "radar-bot"
+          touch data/wechat-articles.json
+          # 2026-09-30 GUARD: 空数据/异常缩水拒推。
+          # 09:54 事故教训：一次 run 把 330 条清空推上 Pages，UI 直接空白。
+          # 规则：items==0 → 用 git HEAD 里的旧快照回滚，跳过本次 push（旧数据继续服务）。
+          #       items < 10 → 打 WARN（可能真在低活跃时段，允许推送）。
+          python - <<'EOF'
+          import json, sys
+          d = json.load(open('data/latest-24h-min.json'))
+          n = d.get('total_items', 0)
+          print(f"[GUARD] current total_items = {n}")
+          if n == 0:
+              print("[GUARD] EMPTY DATA — refusing to push; rolling back to last good snapshot")
+              sys.exit(2)
+          if n < 10:
+              print("[GUARD] WARN: unusually low item count, pushing with caution")
+          EOF
+          if [ $? -eq 2 ]; then
+            git checkout HEAD -- data/latest-24h-min.json
+            echo "[GUARD] rolled back data/latest-24h-min.json to last good snapshot; skipping push this cycle"
+            exit 0
+          fi
+          # FIX(2026-08-07): scripts/feeds/ 路径不存在（feeds/ 在仓库根目录），导致 git add
+          # 整体 fatal 失败 → 数据从 2026-07-21 起从未 push 到 git。已改回正确路径。
+          # 同时移除 2>/dev/null || true：git add 失败必须显式报错，不能静默吞掉。
+          git add data/ feeds/ index.html
+          if git diff --cached --quiet; then
+            echo "[SKIP] no changes staged"
+          else
+            git commit -m "[radar-auto] data refresh $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+            git push origin master || echo "[WARN] push failed"
+          fi
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+        with:
+          enablement: false
+        continue-on-error: true
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: "."
+        continue-on-error: true
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+        continue-on-error: true
+        timeout-minutes: 5

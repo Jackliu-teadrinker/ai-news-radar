@@ -103,9 +103,6 @@ log "run: government_fetcher.py"
 log "run: toutiao_fetcher.py"
 "$PY" scripts/toutiao_fetcher.py >>"$LOG" 2>&1 || log "toutiao warn"
 
-log "run: joinquant_fetcher.py"
-"$PY" scripts/joinquant_fetcher.py >>"$LOG" 2>&1 || log "joinquant warn"
-
 log "run: curated_collector.py"
 "$PY" scripts/curated_collector.py --data-path data/latest-24h-min.json --curated-dir data/curated >>"$LOG" 2>&1 || log "curate warn"
 

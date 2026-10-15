@@ -897,62 +897,6 @@ input:focus, select:focus, button:focus-visible, summary:focus-visible {
   font-size: 17px;
 }
 
-/* ── 聚宽回测专区 ─────────────────── */
-.joinquant-section {
-  margin-top: 14px;
-  border: 1px solid var(--line);
-  border-left: 3px solid var(--good);
-}
-.joinquant-section .list-head {
-  background: var(--good-soft);
-  border-bottom-color: var(--line);
-}
-.joinquant-section .list-head h2 {
-  font-size: 17px;
-}
-.jq-card {
-  padding: 12px 18px;
-}
-.jq-card .meta-row {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-bottom: 6px;
-  flex-wrap: wrap;
-}
-.jq-card .jq-source {
-  color: var(--good);
-  font-weight: 700;
-}
-.jq-card .title {
-  display: block;
-  font-size: 15px;
-  font-weight: 600;
-  color: var(--ink);
-  text-decoration: none;
-  margin: 4px 0;
-  line-height: 1.4;
-}
-.jq-card .title:hover {
-  color: var(--good);
-}
-.jq-card .jq-topic {
-  display: inline-block;
-  padding: 1px 7px;
-  margin-right: 5px;
-  font-size: 11px;
-  font-weight: 600;
-  color: var(--good);
-  background: var(--good-soft);
-  border: 1px solid rgba(31, 122, 77, 0.25);
-  border-radius: 999px;
-}
-.jq-card .jq-stats {
-  display: inline-block;
-  font-size: 11px;
-  color: var(--muted, #8a8f98);
-}
-
 /* ── 头条专区 ─────────────────────── */
 .toutiao-section {
   margin-top: 14px;
