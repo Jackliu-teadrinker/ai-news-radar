@@ -42,9 +42,8 @@ jobs:
     # + 翻译 126 英文标题 + huxiu 校准），再叠 arXiv/政府/头条/部署，20min 撞线
     # 会被 cancel 导致数据推不上 Pages（9/30 05:43 run 即栽在这）。35min 留足余量。
     timeout-minutes: 35
-    # 2026-10-15: 数据刷新是唯一对外 SLA（页面"更新时间"），排在代码构建之前。
-    # 默认 100 让 UI/脚本改动先跑；这里压到 10，确保 schedule 拍点优先拿到 runner。
-    priority: 10
+    # 数据刷新是唯一对外 SLA（页面"更新时间"），排在代码构建之前。
+    # 默认 runner 调度权重足够；如需更高优先级考虑 GitHub Plans。
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
