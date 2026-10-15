@@ -1,9 +1,10 @@
 name: Update AI News Radar
 
 on:
-  push:
-    branches:
-      - master
+  # 2026-10-15: 移除 push 触发。数据刷新（30 feed + 摘要提取 + 翻译，实测 13-16min）
+  # 不该由"推代码"驱动——推一次 UI/脚本改动就跑一遍完整采集，纯属浪费 runner，
+  # 还会把 schedule 拍点挤掉。实测更新间隔从 ~30min 恶化到 100-270min，起点正是
+  # 10-14 10:03 起本会话开始频繁推代码。修复后推代码只改文件，不触发采集。
   schedule:
     # 2026-09-15: 回滚到整点 30 分钟拍。15 分钟错位拍（04/19/34/49）导致
     # "更新时间"永远显示 08:00/08:30 这种错位快照，观感像卡住。
@@ -13,11 +14,20 @@ on:
   workflow_dispatch:
 
 concurrency:
-  # FIX(2026-08-27): schedule 走独立 group，永不被 dispatch/push cancel;
-  #                  只 dispatch 之间互抢（保证手动只跑最新一次）。
-  group: >-
-    update-news-${{ github.event_name == 'schedule' && 'schedule' || github.event_name }}${{ github.event_name == 'workflow_dispatch' && format('-{0}', github.run_id) || '' }}
-  cancel-in-progress: false
+  # 2026-10-15 重写。旧配置的致命缺陷：
+  #   group: update-news-${schedule?'schedule':event_name}${dispatch?'-{run_id}':''}
+  # dispatch 分支带 run_id 后缀 → 每次手动触发都是"独立 group"，
+  # 于是多个 dispatch 互不排队、并发抢占 runner，schedule 拍点被挤掉，
+  # 更新间隔一路劣化到 100-270min（且 watchdog 每次 ALERT 都再补一刀 dispatch，
+  # 进一步放大并发量）。
+  #
+  # 新配置：
+  #   - schedule 独占 group update-news-schedule，cancel-in-progress: false
+  #     （绝不打断正在跑的数据刷新，否则那一轮数据推不上 Pages）；
+  #   - dispatch 独立 group update-news-dispatch，cancel-in-progress: true
+  #     （手动触发可被后一次打断，只保留最新一次，不堆积）。
+  group: update-news-${{ github.event_name }}
+  cancel-in-progress: ${{ github.event_name != 'schedule' }}
 
 permissions:
   contents: write
@@ -32,6 +42,9 @@ jobs:
     # + 翻译 126 英文标题 + huxiu 校准），再叠 arXiv/政府/头条/部署，20min 撞线
     # 会被 cancel 导致数据推不上 Pages（9/30 05:43 run 即栽在这）。35min 留足余量。
     timeout-minutes: 35
+    # 2026-10-15: 数据刷新是唯一对外 SLA（页面"更新时间"），排在代码构建之前。
+    # 默认 100 让 UI/脚本改动先跑；这里压到 10，确保 schedule 拍点优先拿到 runner。
+    priority: 10
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
