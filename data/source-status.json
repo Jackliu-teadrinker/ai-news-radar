@@ -1,29 +1,8 @@
 {
-  "generated_at": "2026-10-17T05:20:50.652396+00:00",
+  "generated_at": "2026-10-17T09:15:48.817060+00:00",
   "feeds": [
     {
-      "feed": "国外人形机器人资讯",
-      "success": true,
-      "items_total": 100,
-      "items_unique": 100,
-      "error": null
-    },
-    {
       "feed": "国内人形机器人资讯",
-      "success": true,
-      "items_total": 100,
-      "items_unique": 100,
-      "error": null
-    },
-    {
-      "feed": "国外物理AI资讯",
-      "success": true,
-      "items_total": 100,
-      "items_unique": 93,
-      "error": null
-    },
-    {
-      "feed": "国内脑机接口资讯",
       "success": true,
       "items_total": 100,
       "items_unique": 100,
@@ -37,17 +16,24 @@
       "error": null
     },
     {
-      "feed": "国外机器人资讯",
-      "success": true,
-      "items_total": 102,
-      "items_unique": 81,
-      "error": null
-    },
-    {
-      "feed": "国外脑机接口资讯",
+      "feed": "国外物理AI资讯",
       "success": true,
       "items_total": 100,
       "items_unique": 100,
+      "error": null
+    },
+    {
+      "feed": "国内脑机接口资讯",
+      "success": true,
+      "items_total": 100,
+      "items_unique": 100,
+      "error": null
+    },
+    {
+      "feed": "国外机器人资讯",
+      "success": true,
+      "items_total": 102,
+      "items_unique": 101,
       "error": null
     },
     {
@@ -58,42 +44,38 @@
       "error": null
     },
     {
+      "feed": "国外脑机接口资讯",
+      "success": true,
+      "items_total": 100,
+      "items_unique": 100,
+      "error": null
+    },
+    {
+      "feed": "国外人形机器人资讯",
+      "success": true,
+      "items_total": 102,
+      "items_unique": 68,
+      "error": null
+    },
+    {
       "feed": "国内机器人资讯",
       "success": true,
       "items_total": 100,
-      "items_unique": 68,
+      "items_unique": 67,
       "error": null
     },
     {
       "feed": "国内物理AI资讯",
       "success": true,
       "items_total": 100,
-      "items_unique": 96,
+      "items_unique": 98,
       "error": null
     }
   ],
   "sites": [
     {
-      "site_id": "国外人形机器人资讯",
-      "site_name": "国外人形机器人资讯",
-      "item_count": 100,
-      "success": true
-    },
-    {
       "site_id": "国内人形机器人资讯",
       "site_name": "国内人形机器人资讯",
-      "item_count": 100,
-      "success": true
-    },
-    {
-      "site_id": "国外物理AI资讯",
-      "site_name": "国外物理AI资讯",
-      "item_count": 93,
-      "success": true
-    },
-    {
-      "site_id": "国内脑机接口资讯",
-      "site_name": "国内脑机接口资讯",
       "item_count": 100,
       "success": true
     },
@@ -104,15 +86,21 @@
       "success": true
     },
     {
-      "site_id": "国外机器人资讯",
-      "site_name": "国外机器人资讯",
-      "item_count": 81,
+      "site_id": "国外物理AI资讯",
+      "site_name": "国外物理AI资讯",
+      "item_count": 100,
       "success": true
     },
     {
-      "site_id": "国外脑机接口资讯",
-      "site_name": "国外脑机接口资讯",
+      "site_id": "国内脑机接口资讯",
+      "site_name": "国内脑机接口资讯",
       "item_count": 100,
+      "success": true
+    },
+    {
+      "site_id": "国外机器人资讯",
+      "site_name": "国外机器人资讯",
+      "item_count": 101,
       "success": true
     },
     {
@@ -122,15 +110,27 @@
       "success": true
     },
     {
+      "site_id": "国外脑机接口资讯",
+      "site_name": "国外脑机接口资讯",
+      "item_count": 100,
+      "success": true
+    },
+    {
+      "site_id": "国外人形机器人资讯",
+      "site_name": "国外人形机器人资讯",
+      "item_count": 68,
+      "success": true
+    },
+    {
       "site_id": "国内机器人资讯",
       "site_name": "国内机器人资讯",
-      "item_count": 68,
+      "item_count": 67,
       "success": true
     },
     {
       "site_id": "国内物理AI资讯",
       "site_name": "国内物理AI资讯",
-      "item_count": 96,
+      "item_count": 98,
       "success": true
     }
   ],
@@ -146,8 +146,8 @@
     "total_feeds": 10,
     "successful_feeds": 10,
     "failed_feeds": 0,
-    "total_items": 883,
-    "deduplicated": 76,
+    "total_items": 887,
+    "deduplicated": 82,
     "noise_filtered": 14,
     "short_filtered": 0
   }
