@@ -3,6 +3,7 @@
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-green?style=flat-square)](https://jackliu-teadrinker.github.io/ai-news-radar/)
 [![Actions](https://img.shields.io/badge/Actions-Running-blue?style=flat-square)](https://github.com/Jackliu-teadrinker/ai-news-radar/actions)
 [![Self-Healing](https://img.shields.io/badge/Watchdog-Dual--Layer-orange?style=flat-square)](#双层自愈看门狗)
+[![Issues](https://img.shields.io/badge/Issues-Disabled-lightgrey?style=flat-square)](#问题跟踪说明)
 
 [English](README.en.md) · [在线访问](https://jackliu-teadrinker.github.io/ai-news-radar/)
 
@@ -12,11 +13,20 @@
 
 人形机器人 / 具身智能 / 脑机接口 / 物理 AI 领域的全球新闻雷达。每 30 分钟由 GitHub Actions 自动采集、评分、去重并部署，覆盖国内外中英文信源，全自动运行，无需人工干预。
 
+**当前规模（2026-09-10）：**
+
+| 维度 | 数据 |
+|---|---|
+| 总信源 | 58 个 feed |
+| 有效信源 | 56 个（97%）|
+| 24h 数据量 | ~880 条 → 去重 ~80 条 → 噪声过滤 ~38 条 |
+| 主题锚点 | 5 大主题：国内具身智能 / 国内人形机器人 / 国内脑机接口 / 国内机器人 / 国外机器人+物理AI+具身智能 |
+
 **页面板块：**
 
 | 板块 | 数据文件 | 来源 |
 |------|----------|------|
-| 📰 机器人信号流 | `latest-24h-min.json` | Google News 10 组 RSS |
+| 📰 机器人信号流 | `latest-24h-min.json` | Google News 10 组 RSS + 精选媒体 |
 | 📱 微信公众号 | `wechat-articles.json` | 手动维护 + Exa MCP 搜索 |
 | 🏛️ 政策专区 | `government-news.json` | 政府官网 |
 | 🎓 学术专区 | `arxiv-papers.json` | arXiv cs.RO |
@@ -90,6 +100,8 @@ python -m http.server 8080
 
 编辑 `feeds/follow.example.opml`（主区块）或 `feeds/custom.opml`（锚点专区），commit 后自动触发部署。
 
+信源健康度在每次采集后写入 `data/source-status.json`（58 条记录，含 success / items_unique / error），可作为失效源诊断依据。
+
 ---
 
 ## 诊断
@@ -98,6 +110,10 @@ python -m http.server 8080
 # Pages 数据新鲜度（破缓存）
 curl -s "https://jackliu-teadrinker.github.io/ai-news-radar/data/latest-24h-min.json?cb=$(date +%s)" \
   | python -c "import sys,json; d=json.load(sys.stdin); print(d.get('generated_at'), d.get('total_items'), 'items')"
+
+# 当前信源健康度（成功/失败/0条）
+curl -s "https://jackliu-teadrinker.github.io/ai-news-radar/data/source-status.json" \
+  | python -c "import sys,json; d=json.load(sys.stdin); print('ok:', sum(1 for f in d['feeds'] if f['success']), '/', len(d['feeds']))"
 
 # 云端 keeper 最近运行
 gh run list -R Jackliu-teadrinker/ai-news-radar --workflow=keeper.yml --limit 5
@@ -110,13 +126,23 @@ gh run list -R Jackliu-teadrinker/ai-news-radar --workflow=update-news.yml --lim
 
 ## 已知问题与修复历史
 
-| 问题 | 状态 |
-|---|---|
-| #26 workflow concurrency 互抢 | ✅ 2026-08-27 根治（schedule 独立 concurrency group，永不互抢） |
-| #31 GitHub cron 间歇性掉拍 | ✅ 双层 watchdog 兜底（平台问题无法根治，缓解到最坏 ~20 分钟） |
-| 本地 watchdog 静默失效 5 天 | ✅ 2026-09-04 根治（僵尸缓存阻塞判定 + 采集器挂死崩溃传播） |
-| #10 RSS 静默 0 items | ⚠️ 未根治 |
-| #27 Google News 集体 503 | ⚠️ 未根治（防级联 dispatch 已缓解） |
+| 问题 | 状态 | 真实情况 / 根因 |
+|---|---|---|
+| #26 workflow concurrency 互抢 | ✅ 2026-08-27 根治 | schedule 独立 concurrency group，永不互抢 |
+| #31 GitHub cron 间歇性掉拍 | ✅ 双层 watchdog 兜底 | 平台问题无法根治，缓解到最坏 ~20 分钟 |
+| 本地 watchdog 静默失效 5 天 | ✅ 2026-09-04 根治 | 僵尸缓存阻塞判定 + 采集器挂死崩溃传播 |
+| **#10 RSS 静默 0 items** | ⚠️ **名实不符，已查根因** | 实际是 **2 个 RSS 源 HTML 解析失败**（`VentureBeat AI` / `TechXplore Robotics`），不是真 0 条；56/58 源覆盖良好。修法：换 URL 或改 parser 跳过 |
+| #27 Google News 集体 503 | ⚠️ 未根治 | keeper 防级联 dispatch 已缓解，GN 仍偶发；根治需重试+退避+多源备份 |
+
+---
+
+## 问题跟踪说明
+
+> ⚠️ **GitHub Issues 已禁用（2026-09）**——仓库的 Issues 功能被关闭。
+
+- **当前跟踪方式**：本 README 的"已知问题与修复历史"表 + 每个修复的 commit message
+- **新增 bug 报告**：直接在 commit message 里写 `fix(#X): <一句话根因>`，并在 PR description 里写上下文
+- **修复历史可查**：浏览仓库 commit log（搜索 `fix:`、`根治`、相关 issue 号）
 
 ---
 
