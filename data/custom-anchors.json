@@ -1,9 +1,49 @@
 {
-  "generated_at": "2026-10-18T11:27:20.261516+00:00",
+  "generated_at": "2026-10-18T13:33:46.877695+00:00",
   "window_start": "2026-10-18T19:00:00+08:00",
-  "window_end": "2026-10-18T19:27:20.012424+08:00",
-  "total_items": 1,
+  "window_end": "2026-10-18T21:33:46.476351+08:00",
+  "total_items": 2,
   "items": [
+    {
+      "id": "54038ce1af49bde1f32e45c086e763072c63edde",
+      "title": "How to choose a BLDC motor for robotic arms and mobile robots - The Robot Report",
+      "title_zh": "如何为机械臂和移动机器人选择 BLDC 电机 - The Robot Report",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOWUdyekRRem03WHFvbG9SOXQtaS1kdWFjY3NiNVE0UUFNcWxtTWZXUU9EaThqNzBUbV9kUEdLWm5VRXk4MG5Rb1NDQkllNlE4Z0dETGpPaGU1eVJxMXVEeTdCRnRDY2hsTVhiSEtpNEtxNUZwNlJTVW1RaGU5bW1oX0x6VUFwQjBzM2g4?oc=5",
+      "published_at": "2026-10-18T12:43:30+00:00",
+      "category": "GN: Robot Report",
+      "gn_label": "robotics",
+      "site_name": "GN: Robot Report",
+      "source": "GN: Robot Report",
+      "site_id": "GN: Robot Report",
+      "description": "previously covered actuator architectures using integrated servo drives and dual absolute encoders, illustrating why enc",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.406,
+      "authority": 5,
+      "depth": 5,
+      "timeliness": 20.0,
+      "writing_value": 5,
+      "total_score": 75.6,
+      "_hx": {
+        "topic": 0,
+        "conflict": 0,
+        "data": 0,
+        "pr_pen": 0,
+        "rel": 40.625,
+        "auth": 5,
+        "tim": 20.0,
+        "writing": 5,
+        "depth": 5,
+        "junk": 0,
+        "dup_pen": 0.0,
+        "dup_of": false
+      },
+      "hx_topic": 0,
+      "hx_conflict": 0,
+      "hx_data": 0,
+      "hx_pr_penalty": 0,
+      "hx_dup_penalty": -0.0
+    },
     {
       "id": "bcee3dda8d6d29934500ba8cd20f273ba3baa077",
       "title": "Large blind test of methane-detecting satellites lends credibility to emissions data",
@@ -23,7 +63,7 @@
       "depth": 5,
       "timeliness": 0.0,
       "writing_value": 5,
-      "total_score": 62.5,
+      "total_score": 60.5,
       "_hx": {
         "topic": 10,
         "conflict": 10,
@@ -35,14 +75,14 @@
         "writing": 5,
         "depth": 5,
         "junk": 0,
-        "dup_pen": 0.0,
+        "dup_pen": 2.0,
         "dup_of": false
       },
       "hx_topic": 10,
       "hx_conflict": 10,
       "hx_data": 0,
       "hx_pr_penalty": 0,
-      "hx_dup_penalty": -0.0
+      "hx_dup_penalty": -2.0
     }
   ],
   "fallback_used": false
