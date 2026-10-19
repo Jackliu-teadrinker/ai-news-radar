@@ -1,9 +1,9 @@
 {
   "date": "2026-10-19",
-  "generated_at": "2026-10-19T14:15:47.540585+00:00",
+  "generated_at": "2026-10-19T14:19:12.571319+00:00",
   "score_threshold": 80,
   "total_items": 100,
-  "new_added": 6,
+  "new_added": 1,
   "items": [
     {
       "id": "9fac7238aa5068ba",
@@ -1696,6 +1696,32 @@
       "hx_dup_penalty": -0.0
     },
     {
+      "id": "9de1d9826640f72d",
+      "title": "Paradromics and Siemens Healthineers Launch Strategic Initiative to Build Advanced Imaging Foundation for the Future of Brain-Computer Interfaces - BioSpace",
+      "title_zh": "Paradromics 和西门子 Healthineers 启动战略计划，为未来脑机接口构建先进成像基础 - BioSpace",
+      "url": "https://news.google.com/rss/articles/CBMikwJBVV95cUxQWDkzdVFtNmtySHZKZU9VczViZW1kVHZ1d2R2WkcyQVVLLXJrdG9VVkI2S2Z6S3lQZURZZXhwSTF2ZXRId1U5U3Y0ZVkxUWd6TkpWWVl3TzlmdE5yOVA0RWYyNGlNZDlxTEJSOU1yYXR1SzdfS011alRlUFp5My10ZTQ2TTVvLWF6TEUxQjFPVGRFNEFOWkc4RG03Mk9XSFdETVVETk43NjlIZnBoWThqSEszWV8xYWVCTnNzTkMwVnhBTHlTYWRVMVREY0p1d2tsaUVXTzMteFNfWXhiZHoxM0pLZ3pMZUpfSGdLNjNHZThJUi0yNUNlZUdVUVNYQi1HeXBhQTRndklvMEQwQWttX0JJTQ?oc=5",
+      "published_at": "2026-10-19T13:57:47+00:00",
+      "category": "国外脑机接口资讯",
+      "gn_label": "brain_computer",
+      "site_name": "国外脑机接口资讯",
+      "source": "国外脑机接口资讯",
+      "site_id": "国外脑机接口资讯",
+      "description": "Goal is to develop an end-to-end multimodal imaging workflow designed to support patient assessment, surgical planning, ",
+      "ai_score": 80.0,
+      "ai_label": "brain_computer",
+      "relevance": 0.5,
+      "authority": 5,
+      "depth": 5,
+      "timeliness": 20.0,
+      "writing_value": 5,
+      "total_score": 85.0,
+      "hx_topic": 0,
+      "hx_conflict": 0,
+      "hx_data": 0,
+      "hx_pr_penalty": 0,
+      "hx_dup_penalty": -0.0
+    },
+    {
       "id": "4cc1ade293228a9a",
       "title": "In a Second Robotics Contract, Nyobolt Will Power Agility’s Latest Humanoid - The Information",
       "title_zh": "在第二份机器人合同中，Nyobolt 将为 Agility 最新的人形机器人提供动力 - 信息",
@@ -2578,32 +2604,6 @@
       "hx_data": 0,
       "hx_pr_penalty": 0,
       "hx_dup_penalty": -0.3
-    },
-    {
-      "id": "7aadab720e10469b",
-      "title": "乐聚机器人与兆丰机电联合发布具身智能方案，中国汽车零部件产业链全球化布局再升级 - 网通社",
-      "title_zh": "",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBGZkcxU3hobV9oLUUxTlZFYW5ad2RLdS1mRl9ieUJmZERYTHVmc0dQRG9hcThSSG0tUjNEeVE4SGx1cDAwb2kyUDhjR3dDQnlwVVoxbHdDd0UtX00?oc=5",
-      "published_at": "2026-10-18T17:47:09+00:00",
-      "category": "国内具身智能资讯",
-      "gn_label": "embodied_ai",
-      "site_name": "国内具身智能资讯",
-      "source": "国内具身智能资讯",
-      "site_id": "国内具身智能资讯",
-      "description": "10月15日，乐聚机器人与兆丰机电在浙江联合发布“具身智能+汽车零部件上料解决方案”。在全球汽车产业链加速重构的背景下，此次出海供应链的智能化升级引发关注。据原始信息源报道，该方案将为中国汽车零部件企业应对海外关税壁垒、提升本地化生产效率提供重要支撑。",
-      "ai_score": 80.0,
-      "ai_label": "embodied_ai",
-      "relevance": 0.5,
-      "authority": 5,
-      "depth": 5,
-      "timeliness": 20.0,
-      "writing_value": 5,
-      "total_score": 82.9,
-      "hx_topic": 0,
-      "hx_conflict": 0,
-      "hx_data": 0,
-      "hx_pr_penalty": 0,
-      "hx_dup_penalty": -2.1
     }
   ]
 }
