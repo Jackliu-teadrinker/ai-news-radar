@@ -1,6 +1,27 @@
 {
   "articles": [
     {
+      "id": "4179f96e11a6fe11",
+      "title": "DeepSeek 全面开源内部推理框架 DeepInfer",
+      "title_zh": "",
+      "url": "https://mp.weixin.qq.com/s?__biz=Mzk0OTYwNzc3NQ%3D%3D&mid=2247485884&idx=1&sn=d457981abe7db1f1b5d600fc109dc836",
+      "published_at": "2026-10-20T08:54:54+00:00",
+      "site_name": "微信公众号",
+      "site_id": "wechat",
+      "source": "公众号：DeepSeek（深度求索）",
+      "description": "DeepSeek 宣布将内部推理框架 DeepInfer 全面开源，并同步开源生产级 Token 编解码组件 deepseek-recipe。",
+      "ai_score": 0,
+      "relevance": 0,
+      "authority": 0,
+      "depth": 0,
+      "timeliness": 0,
+      "writing_value": 0,
+      "total_score": 0,
+      "ai_label": "wechat",
+      "robot_hits": 0,
+      "first_seen_at": "2026-10-20T10:21:11.379602+00:00"
+    },
+    {
       "id": "d26e520a455147ad",
       "title": "面壁智能解析前瞻专家调度 LES 如何让 35B MoE 在手机端侧实时无损运行",
       "title_zh": "",
@@ -19,7 +40,7 @@
       "total_score": 0,
       "ai_label": "wechat",
       "robot_hits": 0,
-      "first_seen_at": "2026-10-20T09:02:31.544772+00:00"
+      "first_seen_at": "2026-10-20T10:21:11.379616+00:00"
     },
     {
       "id": "835d9d399db5d6b2",
@@ -40,10 +61,10 @@
       "total_score": 0,
       "ai_label": "wechat",
       "robot_hits": 0,
-      "first_seen_at": "2026-10-20T09:02:31.544787+00:00"
+      "first_seen_at": "2026-10-20T10:21:11.379623+00:00"
     }
   ],
-  "total_articles": 2,
-  "last_updated": "2026-10-20T09:03:48.349352+00:00",
+  "total_articles": 3,
+  "last_updated": "2026-10-20T10:32:58.290725+00:00",
   "source": "auto_filtered_by_time_window"
 }
