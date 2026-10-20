@@ -23,6 +23,11 @@
     <outline text="MIT Tech Review"      type="rss" xmlUrl="https://www.technologyreview.com/feed/" />
     <outline text="Nature Neuroscience"  type="rss" xmlUrl="https://www.nature.com/neuro.rss" />
     <outline text="Nature"               type="rss" xmlUrl="https://www.nature.com/nature.rss" />
+    <!-- 2026-10-20: 验证可直连的净新增源（curl 200 + feedparser 解析成功，且锚点里无同 host，不重复） -->
+    <outline text="IEEE Spectrum AI"     type="rss" xmlUrl="https://spectrum.ieee.org/rss/artificial-intelligence" />
+    <outline text="The Verge AI"         type="rss" xmlUrl="https://www.theverge.com/rss/ai-artificial-intelligence/index.xml" />
+    <!-- The Robot Report 直连 403（Cloudflare），已有 GN: Robot Report + GN: TheRobotReport 双代理，不重复加 -->
+    <!-- TechXplore 已有直连 TechXplore Robotics + GN 双代理，不再加 -->
 
     <!-- ══════════ Google News 代理（直连被 Cloudflare/无 RSS 防护的站点） ══════════ -->
     <outline text="GN: Robot Report"     type="rss" xmlUrl="https://news.google.com/rss/search?q=site%3Atherobotreport.com+robot&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" />

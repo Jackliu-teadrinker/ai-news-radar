@@ -1157,10 +1157,26 @@ def run(output_dir: str, window_hours: int, opml_path: str, archive_days: int, w
                 anchor_filtered.append(item)
         print(f"[INFO] Custom anchors after {anchor_window_hours}h anchor window ({_start_dt.strftime('%Y-%m-%d %H:%M')} CST): {len(anchor_filtered)} items")
 
-        # Cross-dedup with main items
+        # Cross-dedup with main items（2026-10-20: URL + 标题归一化 双键）
+        # 只用 URL 去不掉「同一篇 GN 重定向 URL（news.google.com/rss/articles/...）
+        # vs 出版方直连规范 URL（therobotreport.com/xxx）」的重复 —— 两者 URL 不同但
+        # 标题相同，必须再按 normalize_title_for_dedup 去一遍，避免锚点栏出现和主 feed
+        # 重复的同文（GN 一条 + 直连一条）。
         all_urls = {item.get('url') for item in all_items if item.get('url')}
-        anchor_unique = [item for item in anchor_filtered if item.get('url') not in all_urls]
-        print(f"[INFO] Custom anchors (unique, not in main): {len(anchor_unique)} items")
+        main_titles = {normalize_title_for_dedup(item.get('title', '')) for item in all_items if item.get('title')}
+        _url_dup = 0
+        _title_dup = 0
+        anchor_unique = []
+        for item in anchor_filtered:
+            if item.get('url') in all_urls:
+                _url_dup += 1
+                continue
+            if normalize_title_for_dedup(item.get('title', '')) in main_titles:
+                _title_dup += 1
+                continue
+            anchor_unique.append(item)
+        print(f"[INFO] Custom anchors (unique, not in main): {len(anchor_unique)} items "
+              f"(dedup -{_url_dup} by URL, -{_title_dup} by title vs GN/main)")
 
         # Score + filter (ai_score >= 70)
         ANCHOR_MIN_SCORE = 60  # 降低门槛以捕获更多优质锚点（原 70 导致 8/6 只有 3 条）
@@ -1198,7 +1214,13 @@ def run(output_dir: str, window_hours: int, opml_path: str, archive_days: int, w
                         anchor_filtered_fb.append(item)
                 except Exception:
                     anchor_filtered_fb.append(item)
-            anchor_unique_fb = [item for item in anchor_filtered_fb if item.get('url') not in all_urls]
+            anchor_unique_fb = []
+            for item in anchor_filtered_fb:
+                if item.get('url') in all_urls:
+                    continue
+                if normalize_title_for_dedup(item.get('title', '')) in main_titles:
+                    continue
+                anchor_unique_fb.append(item)
             scored_anchors_fb = [score_item(item, now_ts) for item in anchor_unique_fb]
             high_relevance_anchors = [item for item in scored_anchors_fb if item.get('ai_score', 0) >= ANCHOR_MIN_SCORE]
             high_relevance_anchors.sort(key=lambda x: x.get('published_at',''), reverse=True)
