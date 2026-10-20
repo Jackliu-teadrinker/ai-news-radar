@@ -205,9 +205,73 @@ def fetch_feed(feed: dict, timeout: int = 20, max_retries: int = 3, base_delay: 
                 time.sleep(delay)
             else:
                 print(f"[ERROR] Max retries exceeded for {url}: {e}")
-    
+
+    # ── 2026-10-20 GN 搜索源 5xx/超时兜底：切 Bing News RSS ──
+    # 10-20 02:01 那轮 Google News RSS 集体 503（Bug #27 复发），整轮只采到 1 条。
+    # 治根：GN 源彻底失败时，把它等价成一次 Bing News 搜索（同 q 查询词）兜底，
+    # 避免"Google 一抖全灭"。下游 24h 窗口 + 标题归一去重会滤掉 Bing 混进的旧文。
+    if 'news.google.com' in url:
+        bing_items = gn_to_bing_items(url, source_name, headers, timeout)
+        if bing_items:
+            status['success'] = True
+            status['items_total'] = len(bing_items)
+            status['error'] = f"GN {last_error} -> Bing fallback"
+            print(f"  [OK] {source_name}: GN failed ({last_error}), Bing fallback +{len(bing_items)} items")
+            return status, bing_items
+        # Bing 也失败 → 落到下方原样失败返回
+
     status['error'] = last_error if last_error else ("Unknown failure after {max_retries} attempts".format(max_retries=max_retries))
     return status, []
+
+
+def gn_to_bing_items(url: str, source_name: str, headers: dict, timeout: int = 20) -> list[dict]:
+    """GN 搜索源（news.google.com/rss/search?q=...）失败时的 Bing News 兜底。
+
+    从 GN URL 的 q 参数提取查询词，改打 Bing News 的 RSS 端点
+    （https://www.bing.com/news/search?q=<q>&format=RSS），
+    返回与 GN 同结构的 items 列表（source 保留原分类名，便于下游归类）。
+    """
+    try:
+        from urllib.parse import parse_qs, quote_plus
+        qs = parse_qs(urlparse(url).query)
+        q = qs.get('q', [''])[0]
+        if not q:
+            print(f"  [FALLBACK] {source_name}: GN URL has no q param, cannot fall back to Bing")
+            return []
+        bing_url = f"https://www.bing.com/news/search?q={quote_plus(q)}&format=RSS"
+        print(f"  [FALLBACK] {source_name}: GN failed -> Bing ({q!r})")
+        resp = requests.get(bing_url, timeout=timeout, headers=headers)
+        resp.raise_for_status()
+        parsed = feedparser.parse(resp.content)
+        items = []
+        for entry in parsed.entries:
+            link = getattr(entry, 'link', None) or getattr(entry, 'id', None)
+            title = (getattr(entry, 'title', '') or '').strip()
+            if not link or not title:
+                continue
+            published_at = None
+            for attr in ('published_parsed', 'updated_parsed'):
+                tp = getattr(entry, attr, None)
+                if tp:
+                    try:
+                        published_at = datetime(*tp[:6], tzinfo=timezone.utc).isoformat()
+                        break
+                    except Exception:
+                        pass
+            items.append({
+                'title': title,
+                'url': link,
+                'published_at': published_at,
+                'source': source_name,
+                'site_name': source_name,
+                'description': '',
+                '_via_bing_fallback': True,
+            })
+        print(f"  [FALLBACK] {source_name}: Bing returned {len(items)} items")
+        return items
+    except Exception as e:
+        print(f"  [FALLBACK] {source_name}: Bing fallback also failed: {e}")
+        return []
 
 # ── Custom anchor site fetcher (RSS + HTML page fallback) ──────────────
 def _try_find_rss(base_url: str, timeout: int = 10) -> str | None:
