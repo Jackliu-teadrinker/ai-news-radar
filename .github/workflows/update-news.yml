@@ -47,6 +47,13 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+    # 2026-10-20 GN 边缘代理（Bug #27 治根）：配了 secret GN_PROXY_BASE_URL
+    # （Cloudflare Worker 地址）时，update_news.py 把 Google News RSS 抓取改走
+    # 边缘出口，绕开 GitHub 云段 IP 被 Google 限流。secret 未设时此变量为空，
+    # 抓取走原直连 + Bing 兜底。Worker 源码见 workers/gn-proxy/index.js，部署后在
+    # repo Settings → Secrets and variables → Actions 加 GN_PROXY_BASE_URL。
+    env:
+      GN_PROXY_BASE_URL: ${{ secrets.GN_PROXY_BASE_URL }}
 
     steps:
       - name: Checkout

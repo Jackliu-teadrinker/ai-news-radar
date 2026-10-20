@@ -14,7 +14,7 @@ import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
 from zoneinfo import ZoneInfo
 from concurrent.futures import ThreadPoolExecutor, as_completed, TimeoutError as FuturesTimeout
-from urllib.parse import urlparse, urljoin
+from urllib.parse import urlparse, urljoin, parse_qs, urlencode
 
 import feedparser
 import requests
@@ -87,6 +87,17 @@ def fetch_feed(feed: dict, timeout: int = 20, max_retries: int = 3, base_delay: 
     }
 
     url = feed['xmlUrl']
+    # 记录这是不是 GN 源（用原始 xmlUrl 判断，代理改写后 url 会变成 proxy 地址）
+    _is_gn = 'news.google.com' in url
+    # 2026-10-20 GN 边缘代理：设了 GN_PROXY_BASE_URL（Cloudflare Worker）时，
+    # 把 Google News RSS 抓取改走边缘出口，绕开 GitHub 云段 IP 被 Google 限流（Bug #27）。
+    # 例：GN_PROXY_BASE_URL=https://radar-gn-proxy.xxx.workers.dev
+    _gn_proxy = os.environ.get('GN_PROXY_BASE_URL', '').rstrip('/')
+    if _gn_proxy and _is_gn:
+        _gn_q = parse_qs(urlparse(url).query)
+        _gq = urlencode({k: v[0] for k, v in _gn_q.items()}, doseq=False)
+        url = f"{_gn_proxy}/?{_gq}"
+        print(f"  [PROXY] {source_name}: GN -> {url[:80]}")
     # 反爬站点（VentureBeat/TechXplore 等）需要更长的退避和更"人类"的请求头
     bot_sites = ('venturebeat.com', 'techxplore.com')
     is_bot = any(d in url for d in bot_sites)
@@ -210,8 +221,9 @@ def fetch_feed(feed: dict, timeout: int = 20, max_retries: int = 3, base_delay: 
     # 10-20 02:01 那轮 Google News RSS 集体 503（Bug #27 复发），整轮只采到 1 条。
     # 治根：GN 源彻底失败时，把它等价成一次 Bing News 搜索（同 q 查询词）兜底，
     # 避免"Google 一抖全灭"。下游 24h 窗口 + 标题归一去重会滤掉 Bing 混进的旧文。
-    if 'news.google.com' in url:
-        bing_items = gn_to_bing_items(url, source_name, headers, timeout)
+    # 注意用 _is_gn（原始 xmlUrl 判断），代理改写后 url 会变成 proxy 地址。
+    if _is_gn:
+        bing_items = gn_to_bing_items(feed['xmlUrl'], source_name, headers, timeout)
         if bing_items:
             status['success'] = True
             status['items_total'] = len(bing_items)
