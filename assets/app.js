@@ -651,9 +651,17 @@ function renderGroupedBySiteAndSource(items) {
     title.textContent = site.siteName;
     const count = document.createElement("span");
     count.textContent = `${fmtNumber(site.items.length)} 条`;
+    const arrow = document.createElement("span");
+    arrow.className = "collapse-ind";
+    arrow.textContent = "▾";
+    arrow.title = "点击折叠/展开本栏目";
     const siteListEl = document.createElement("div");
     siteListEl.className = "site-group-list";
-    header.append(title, count);
+    header.append(title, count, arrow);
+    // 点击栏目行折叠/展开整个板块（其下全部消息）
+    header.addEventListener("click", () => {
+      siteSection.classList.toggle("collapsed");
+    });
     siteSection.append(header, siteListEl);
 
     const sourceGroups = groupBySource(site.items);
@@ -1495,21 +1503,21 @@ async function loadToutiaoArticles() {
 }
 
 async function initToutiaoSection() {
-  const searchData = await loadSearchArticles();
-  const searchSection = document.getElementById('searchSection');
-  const searchList = document.getElementById('searchList');
-  const searchCount = document.getElementById('searchCount');
+  const searchData = await loadToutiaoArticles();
+  const section = document.getElementById('toutiaoSection');
+  const listEl = document.getElementById('toutiaoList');
+  const countEl = document.getElementById('toutiaoCount');
 
-  if (!searchSection || !searchList || !searchCount) return;
+  if (!section || !listEl || !countEl) return;
 
   if (!searchData || !searchData.items || searchData.items.length === 0) {
-    searchSection.style.display = 'none';
+    section.style.display = 'none';
     return;
   }
 
-  searchSection.style.display = '';
-  searchCount.textContent = `${searchData.items.length} 条`;
-  searchList.innerHTML = '';
+  section.style.display = '';
+  countEl.textContent = `${searchData.items.length} 条`;
+  listEl.innerHTML = '';
   const fragment = document.createDocumentFragment();
   searchData.items.forEach(item => {
     try {
@@ -1519,8 +1527,8 @@ async function initToutiaoSection() {
       console.error('[TOUTIAO] 渲染失败:', e.message);
     }
   });
-  searchList.appendChild(fragment);
-  console.log('[TOUTIAO] 搜索专区渲染完成:', searchData.items.length, '条');
+  listEl.appendChild(fragment);
+  console.log('[TOUTIAO] 头条专区渲染完成:', searchData.items.length, '条');
 }
 
 function renderSearchItem(item) {

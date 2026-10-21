@@ -1407,8 +1407,11 @@ def run(output_dir: str, window_hours: int, opml_path: str, archive_days: int, w
                     wechat_filtered.append(w)
             except Exception:
                 wechat_filtered.append(w)
-        clean_items.extend(wechat_filtered)
-        print(f"[INFO] Merged {len(wechat_filtered)}/{len(wechat_articles)} WeChat articles (1-day sliding window, decoupled from RSS 19:00 anchor) → {len(clean_items)} total")
+        # 2026-10-20: 公众号不再混进主 feed。
+        # 旧逻辑 clean_items.extend(wechat_filtered) 会让它按 site 分组时冒出一个
+        # "微信公众号"桶（夹在"国外具身智能资讯"等栏目中间），同时 wechat-articles.json
+        # 又独立输出给底部📱专区 —— 同一条出两次（双写）。现在公众号只走独立专区。
+        print(f"[INFO] WeChat {len(wechat_filtered)}/{len(wechat_articles)} kept out of main feed (dedup vs 📱专区) → wechat-articles.json only")
 
     # Sort by date desc (newest first)
     def sort_key(item):

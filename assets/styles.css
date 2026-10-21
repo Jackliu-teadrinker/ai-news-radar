@@ -514,6 +514,32 @@ input:focus, select:focus, button:focus-visible, summary:focus-visible {
   border-bottom: 1px solid var(--line);
   background: var(--surface-soft);
 }
+/* 点击折叠：site-group-head 变成可点，鼠标手型 */
+.site-group-head {
+  cursor: pointer;
+  user-select: none;
+  transition: background .15s;
+}
+.site-group-head:hover {
+  background: var(--surface);
+}
+/* 折叠箭头 */
+.site-group-head .collapse-ind {
+  font-size: 11px;
+  color: var(--muted);
+  transition: transform .2s;
+  margin-left: 2px;
+}
+.site-group.collapsed .collapse-ind {
+  transform: rotate(-90deg);
+}
+/* 折叠时隐藏板块内全部消息（source-group 组 + 列表） */
+.site-group.collapsed .site-group-list {
+  display: none;
+}
+.site-group.collapsed .site-group-head {
+  border-bottom: 0;
+}
 .site-group-head h3 {
   font-size: 15px;
   font-weight: 600;
