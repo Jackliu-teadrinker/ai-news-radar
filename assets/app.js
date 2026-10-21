@@ -1421,10 +1421,9 @@ initGovSection();
 // ═══════════════════════════════════════════════
 
 const ANCHOR_SOURCES = [
-  'TechCrunch Robotics', 'VentureBeat AI', 'IEEE Spectrum', 'IEEE Brain',
-  'HuggingFace Blog', '量子位', '极链AI', 'Wired', '雷锋网', 'TechXplore Robotics',
-  'CNBC AI Age', 'MIT Tech Review', 'Nature Neuroscience', 'Nature',
-  'IEEE Spectrum AI', 'The Verge AI',
+  // 精选 5 直连权威源（与 custom.opml 对齐，2026-10-21 收敛：Nature/MIT Tech Review/IEEE Spectrum AI/量子位/IEEE Brain）
+  'Nature', 'MIT Tech Review', 'IEEE Spectrum AI', '量子位', 'IEEE Brain',
+  // GN 代理
   'GN: Robot Report', 'GN: BCI Intel', 'GN: MIT Tech Review',
   'GN: 人形机器人', 'GN: 具身智能', 'GN: 机器人',
   'GN: Physical AI', 'GN: 人形机器人 (中文)', 'GN: 具身智能 (中文)',

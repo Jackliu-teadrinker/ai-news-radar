@@ -4,30 +4,21 @@
     <title>Custom Anchors — Google News + 已验证 RSS</title>
   </head>
   <body>
-    <!-- ══════════ 已验证可用的 RSS ══════════ -->
-    <outline text="TechCrunch Robotics"  type="rss" xmlUrl="https://techcrunch.com/feed/" />
-    <outline text="VentureBeat AI"       type="rss" xmlUrl="https://venturebeat.com/feed/" />
-    <outline text="IEEE Spectrum"        type="rss" xmlUrl="https://spectrum.ieee.org/rss/robotics" />
-    <outline text="IEEE Brain"           type="rss" xmlUrl="https://brain.ieee.org/feed/" />
-    <outline text="HuggingFace Blog"     type="rss" xmlUrl="https://huggingface.co/blog/feed.xml" />
-    <outline text="量子位"               type="rss" xmlUrl="https://www.qbitai.com/rss" />
-    <outline text="极链AI"               type="rss" xmlUrl="https://zhidx.com/rss" />
-    <outline text="Wired"                type="rss" xmlUrl="https://www.wired.com/feed/rss" />
-    <outline text="雷锋网"               type="rss" xmlUrl="https://www.leiphone.com/feed" />
-    <outline text="TechXplore Robotics"  type="page" xmlUrl="https://techxplore.com/robotics-news/" />
-    <!-- VentureBeat 直连 feed 频繁 429，加 Google News 代理双保险 -->
-    <outline text="GN: VentureBeat AI"   type="rss" xmlUrl="https://news.google.com/rss/search?q=site%3Aventurebeat.com+AI&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" />
-
-    <!-- ══════════ 新增核心信源 (2026-08-12) ══════════ -->
-    <outline text="CNBC AI Age"          type="rss" xmlUrl="https://www.cnbc.com/id/19854910/device/rss/rss.html" />
-    <outline text="MIT Tech Review"      type="rss" xmlUrl="https://www.technologyreview.com/feed/" />
-    <outline text="Nature Neuroscience"  type="rss" xmlUrl="https://www.nature.com/neuro.rss" />
+    <!-- ══════════ 精选 5 直连权威源（2026-10-21 收敛：GN 宽搜覆盖弱 + 权威 + 实测 200 可用 + 方向不重叠） ══════════
+         Nature（顶刊一手，GN 完全不覆盖）· MIT Tech Review（前沿工程/深度）· IEEE Spectrum AI（AI 权威专刊）
+         量子位（中文 AI 权威一手）· IEEE Brain（BCI 垂直权威）
+         删掉的 11 个（TechCrunch Robotics / VentureBeat AI / IEEE Spectrum / HuggingFace Blog / 极链AI /
+         Wired / 雷锋网 / TechXplore Robotics / CNBC AI Age / Nature Neuroscience / The Verge AI）
+         与 GN 宽搜高度重合，让位给 GN 网 -->
     <outline text="Nature"               type="rss" xmlUrl="https://www.nature.com/nature.rss" />
-    <!-- 2026-10-20: 验证可直连的净新增源（curl 200 + feedparser 解析成功，且锚点里无同 host，不重复） -->
+    <outline text="MIT Tech Review"      type="rss" xmlUrl="https://www.technologyreview.com/feed/" />
     <outline text="IEEE Spectrum AI"     type="rss" xmlUrl="https://spectrum.ieee.org/rss/artificial-intelligence" />
-    <outline text="The Verge AI"         type="rss" xmlUrl="https://www.theverge.com/rss/ai-artificial-intelligence/index.xml" />
+    <outline text="量子位"               type="rss" xmlUrl="https://www.qbitai.com/rss" />
+    <outline text="IEEE Brain"           type="rss" xmlUrl="https://brain.ieee.org/feed/" />
+    <!-- VentureBeat 直连已删（与 GN 重合 + 频繁 429），保留 GN 代理双保险 -->
+    <outline text="GN: VentureBeat AI"   type="rss" xmlUrl="https://news.google.com/rss/search?q=site%3Aventurebeat.com+AI&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" />
     <!-- The Robot Report 直连 403（Cloudflare），已有 GN: Robot Report + GN: TheRobotReport 双代理，不重复加 -->
-    <!-- TechXplore 已有直连 TechXplore Robotics + GN 双代理，不再加 -->
+    <!-- TechXplore 已有 GN 双代理，不再加直连 -->
 
     <!-- ══════════ Google News 代理（直连被 Cloudflare/无 RSS 防护的站点） ══════════ -->
     <outline text="GN: Robot Report"     type="rss" xmlUrl="https://news.google.com/rss/search?q=site%3Atherobotreport.com+robot&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" />
