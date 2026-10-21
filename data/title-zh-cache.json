@@ -1,10 +1,20 @@
 {
-  "SPAR: Search-trained Push Action Ranker for Efficient Navigation Among Movable Obstacles": "SPAR：经过搜索训练的推动动作排序器，用于在可移动障碍物中高效导航",
-  "Reinforced Iterative Learning Control for elastic joint arms: Guaranteed cross-trajectory generalization under model uncertainties": "弹性关节臂的强化迭代学习控制：模型不确定性下保证跨轨迹泛化",
-  "Large Multimodal Models for Direct Robot Control: GPT-6 as a Beginning": "用于直接机器人控制的大型多模态模型：GPT-6 作为开始",
-  "Perceives but Doesn't Brake: A Perception-Action Binding Gap in Reasoning Driving VLAs": "感知但不制动：推理驱动 VLA 时的感知与行动绑定差距",
-  "Reasoning as a Distribution: Generative Plan Latents for Vision-Language-Action Models": "作为分布的推理：视觉-语言-动作模型的生成计划潜伏",
-  "From Predictive Geometry to Action: Learning Complementary Predictive Representations for Embodied Manipulation": "从预测几何到行动：学习体现操纵的互补预测表示",
-  "De-Diffusing WAMs: Action-Sufficient Direct Prediction for Robot Control": "去扩散 WAM：机器人控制的动作充足直接预测",
-  "Design and implementation of thermal control strategy for micro-size lunar exploration rover hakuto": "微型月球车Hakuto热控策略设计与实现"
+  "Planning under Noise with Neural Operators": "使用神经算子在噪声下进行规划",
+  "Physical Canvas: A Vision Tactile World Model For Robot Policy Evaluation And Learning": "物理画布：用于机器人政策评估和学习的视觉触觉世界模型",
+  "AgenticRoboRL: Bringing Coding-Agent Post-Training to Agentic Robotics": "AgenticRoboRL：将编码代理训练后引入 Agentic Robotics",
+  "SceneRig: An Agentic System for Simulation-Ready 3D Scene Reconstruction from Single Images": "SceneRig：用于从单图像重建模拟就绪 3D 场景的代理系统",
+  "CoGaussian: Open-Vocabulary Gaussian-based Collaborative 3D Scene Understanding": "CoGaussian：基于开放词汇高斯的协作 3D 场景理解",
+  "MAPLE: Mondrian-Anchored Prior for Learning-free Indoor Exploration": "MAPLE：蒙德里安锚定的先验，用于无学习的室内探索",
+  "VLM-Guided Contact Retargeting and Generative Partner Modeling for Humanoid-Human Interaction": "用于人形交互的 VLM 引导的联系人重定向和生成伙伴建模",
+  "SuperMimic: Scaling Humanoid Whole-Body Control with One Differentiable World Model": "SuperMimic：用一个可微的世界模型扩展人形全身控制",
+  "Fast Motion Retargeting Pipeline for Scalable Humanoid Robot Learning": "用于可扩展人形机器人学习的快速运动重定向管道",
+  "MARE: An Open-Source Lunar Rover Simulator with Shadow Ground Truth for Perception and Autonomy": "MARE：一款开源月球车模拟器，具有用于感知和自主的影子地面真相",
+  "CLOSER: Evidence-Aware Active Visual Verification for Embodied Object-Goal Navigation": "CLOSER：用于具体对象目标导航的证据感知主动视觉验证",
+  "GPT-6-Astra Understands Touch and Outperform Vision--Tactile--Language--Action Models": "GPT-6-Astra 理解触觉并超越视觉-触觉-语言-动作模型",
+  "Physical AI for Intralogistics: Benchmarking the NVIDIA Sim-to-Real Ecosystem for Cosmos-Enhanced COMPASS Navigation on Industrial Mobile Robots": "用于内部物流的物理 AI：对工业移动机器人上 Cosmos 增强型 COMPASS 导航的 NVIDIA Sim-to-Real 生态系统进行基准测试",
+  "CAPSafe: A Benchmark for Contextual Action and Plan Safety Reasoning in Embodied Agents": "CAPSafe：具体代理中情境行动和计划安全推理的基准",
+  "Plausible Future, Wrong Choice: Steering World-Action Models toward Intended Future": "看似合理的未来，错误的选择：引导世界行动模式走向预期的未来",
+  "Safe Multi-Robot Collaboration With Uniform Exclusion Using Trust": "使用信任进行统一排除的安全多机器人协作",
+  "Distributed Platoon Control for Safe and Smooth Crossing at an Unsignalized Intersection-Part I: Stability Analysis": "无信号交叉口安全平稳穿越的分布式编队控制——第一部分：稳定性分析",
+  "Interruption-Aware Recurrent Reinforcement Learning for UAS Navigation Under Temporary Overrides": "临时覆盖下无人机导航的中断感知循环强化学习"
 }
