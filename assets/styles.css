@@ -488,6 +488,34 @@ input:focus, select:focus, button:focus-visible, summary:focus-visible {
   font-size: 18px;
   letter-spacing: -.01em;
 }
+/* ── 专区折叠（学术 / 今日头条 / 精选锚点）───────────────── */
+/* 只挂在带 collapsible 类的 .list-head 上，主信号流不受影响 */
+.list-head.collapsible {
+  cursor: pointer;
+  user-select: none;
+  transition: background .15s;
+}
+.list-head.collapsible > h2 {
+  flex: 1;
+}
+.list-head.collapsible:hover {
+  background: var(--surface);
+}
+.list-head .collapse-ind {
+  font-size: 12px;
+  color: var(--muted);
+  transition: transform .2s;
+  margin-left: 4px;
+}
+section.collapsed .list-head .collapse-ind {
+  transform: rotate(-90deg);
+}
+section.collapsed .news-list {
+  display: none;
+}
+section.collapsed .list-head {
+  border-bottom: 0;
+}
 #resultCount {
   color: var(--muted);
   font-size: 13px;

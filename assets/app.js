@@ -1590,6 +1590,30 @@ function renderSearchItem(item) {
   return node;
 }
 
+// ═══════════════════════════════════════════════
+// 专区折叠（学术 / 今日头条 / 精选锚点）
+// 点 .list-head 收起整个专区，再点展开；箭头 ▾ 提示可点
+// ═══════════════════════════════════════════════
+function setupSectionCollapse(sectionId) {
+  const section = document.getElementById(sectionId);
+  if (!section) return;
+  const head = section.querySelector('.list-head');
+  if (!head) return;
+  if (head.querySelector('.collapse-ind')) return; // 已挂过
+  head.classList.add('collapsible');
+  const arrow = document.createElement('span');
+  arrow.className = 'collapse-ind';
+  arrow.textContent = '▾';
+  arrow.title = '点击折叠/展开本专区';
+  head.appendChild(arrow);
+  head.addEventListener('click', () => {
+    section.classList.toggle('collapsed');
+  });
+}
+setupSectionCollapse('arxivSection');
+setupSectionCollapse('toutiaoSection');
+setupSectionCollapse('anchorSection');
+
 // 在 init 完成后异步加载今日头条专区
 initToutiaoSection();
 
