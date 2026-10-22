@@ -1,29 +1,15 @@
 {
-  "generated_at": "2026-10-22T20:03:31.857679+00:00",
+  "generated_at": "2026-10-22T20:41:05.552557+00:00",
   "feeds": [
     {
-      "feed": "国外机器人资讯",
+      "feed": "国外具身智能资讯",
       "success": true,
-      "items_total": 101,
-      "items_unique": 101,
+      "items_total": 65,
+      "items_unique": 65,
       "error": null
     },
     {
       "feed": "国内具身智能资讯",
-      "success": true,
-      "items_total": 100,
-      "items_unique": 100,
-      "error": null
-    },
-    {
-      "feed": "国内人形机器人资讯",
-      "success": true,
-      "items_total": 102,
-      "items_unique": 99,
-      "error": null
-    },
-    {
-      "feed": "国内脑机接口资讯",
       "success": true,
       "items_total": 100,
       "items_unique": 100,
@@ -37,63 +23,65 @@
       "error": null
     },
     {
-      "feed": "国外物理AI资讯",
+      "feed": "国内人形机器人资讯",
       "success": true,
-      "items_total": 100,
-      "items_unique": 98,
+      "items_total": 102,
+      "items_unique": 99,
       "error": null
     },
     {
-      "feed": "国外具身智能资讯",
+      "feed": "国外机器人资讯",
       "success": true,
-      "items_total": 100,
-      "items_unique": 99,
+      "items_total": 102,
+      "items_unique": 102,
       "error": null
     },
     {
       "feed": "国外人形机器人资讯",
       "success": true,
-      "items_total": 102,
-      "items_unique": 63,
+      "items_total": 100,
+      "items_unique": 66,
+      "error": null
+    },
+    {
+      "feed": "国外物理AI资讯",
+      "success": true,
+      "items_total": 100,
+      "items_unique": 95,
+      "error": null
+    },
+    {
+      "feed": "国内脑机接口资讯",
+      "success": true,
+      "items_total": 100,
+      "items_unique": 100,
       "error": null
     },
     {
       "feed": "国内机器人资讯",
       "success": true,
       "items_total": 106,
-      "items_unique": 80,
+      "items_unique": 79,
       "error": null
     },
     {
       "feed": "国内物理AI资讯",
       "success": true,
-      "items_total": 104,
-      "items_unique": 94,
+      "items_total": 102,
+      "items_unique": 93,
       "error": null
     }
   ],
   "sites": [
     {
-      "site_id": "国外机器人资讯",
-      "site_name": "国外机器人资讯",
-      "item_count": 101,
+      "site_id": "国外具身智能资讯",
+      "site_name": "国外具身智能资讯",
+      "item_count": 65,
       "success": true
     },
     {
       "site_id": "国内具身智能资讯",
       "site_name": "国内具身智能资讯",
-      "item_count": 100,
-      "success": true
-    },
-    {
-      "site_id": "国内人形机器人资讯",
-      "site_name": "国内人形机器人资讯",
-      "item_count": 99,
-      "success": true
-    },
-    {
-      "site_id": "国内脑机接口资讯",
-      "site_name": "国内脑机接口资讯",
       "item_count": 100,
       "success": true
     },
@@ -104,33 +92,45 @@
       "success": true
     },
     {
-      "site_id": "国外物理AI资讯",
-      "site_name": "国外物理AI资讯",
-      "item_count": 98,
+      "site_id": "国内人形机器人资讯",
+      "site_name": "国内人形机器人资讯",
+      "item_count": 99,
       "success": true
     },
     {
-      "site_id": "国外具身智能资讯",
-      "site_name": "国外具身智能资讯",
-      "item_count": 99,
+      "site_id": "国外机器人资讯",
+      "site_name": "国外机器人资讯",
+      "item_count": 102,
       "success": true
     },
     {
       "site_id": "国外人形机器人资讯",
       "site_name": "国外人形机器人资讯",
-      "item_count": 63,
+      "item_count": 66,
+      "success": true
+    },
+    {
+      "site_id": "国外物理AI资讯",
+      "site_name": "国外物理AI资讯",
+      "item_count": 95,
+      "success": true
+    },
+    {
+      "site_id": "国内脑机接口资讯",
+      "site_name": "国内脑机接口资讯",
+      "item_count": 100,
       "success": true
     },
     {
       "site_id": "国内机器人资讯",
       "site_name": "国内机器人资讯",
-      "item_count": 80,
+      "item_count": 79,
       "success": true
     },
     {
       "site_id": "国内物理AI资讯",
       "site_name": "国内物理AI资讯",
-      "item_count": 94,
+      "item_count": 93,
       "success": true
     }
   ],
@@ -146,9 +146,9 @@
     "total_feeds": 10,
     "successful_feeds": 10,
     "failed_feeds": 0,
-    "total_items": 876,
-    "deduplicated": 81,
-    "noise_filtered": 19,
+    "total_items": 838,
+    "deduplicated": 78,
+    "noise_filtered": 18,
     "short_filtered": 0
   }
 }
