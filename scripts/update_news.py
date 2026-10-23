@@ -661,6 +661,27 @@ def authority_score(source: str) -> int:
 # Jack 2026-10-23 改进：资本事件不是噪声——删掉 \b上市\b|\bIPO\b 后
 # 松延动力/Noetix 递表港交所、宇树上市、Eka 融资这类重磅消息不再被误杀。
 # 保留的市场噪声：纯股价涨跌行情（没有事件本身，只有交易噪音）。
+# Jack 2026-10-23: 二级市场纯行情噪声——涨跌快讯/收评/涨停板 无实质事件时过滤。
+# 行情词命中 且 标题/摘要无实质事件词（IPO/融资/递表/上市/国标/量产…）才判噪声；
+# 含实质事件的上市公司新闻保留。"租金暴跌"（产业价而非股价）不命中百分比形态 → 保留。
+MARKET_MOVE_PAT = re.compile(
+    r'收评|收涨|收跌|收盘|开盘|涨停|跌停|板块|沪指|深证|大盘|涨幅|连板|封板|封死|'
+    r'逆市|异动|拉升|走高|走强|涨超|跌超|后市|行情|猛攻|市值|反弹'
+)
+MARKET_PCT_PAT = re.compile(r'(大涨|大跌|暴涨|暴跌)[^。！!?？\n]{0,10}\d')
+SUBSTANTIVE_EVENT_PAT = re.compile(
+    r'ipo|融资|递表|招股|募资|备案|估值|上市|收购|并购|起草|参编|国标|合作|签约|'
+    r'发布|量产|交付|订单|下线|投资|战略|funding|funds|raises|prospectus|merger|acquisition',
+    re.I,
+)
+
+def is_market_move_noise(title: str, description: str) -> bool:
+    """二级市场纯行情快讯判噪声（Jack 2026-10-23：上市公司新闻保留，股价涨跌砍掉）。"""
+    text = title + ' ' + (description or '')
+    if not (MARKET_MOVE_PAT.search(text) or MARKET_PCT_PAT.search(text)):
+        return False
+    return SUBSTANTIVE_EVENT_PAT.search(text) is None
+
 NOISE_PATTERNS = [
     re.compile(r'\bETF\b', re.I),
     re.compile(r'机器人ETF', re.I),
@@ -730,6 +751,9 @@ def is_noise(title: str, description: str, url: str) -> tuple[bool, str]:
     for pat in NOISE_PATTERNS:
         if pat.search(text):
             return True, pat.pattern
+    # Jack 2026-10-23: 二级市场纯行情快讯（收评/涨停/板块走强 且 无实质事件）过滤
+    if is_market_move_noise(title, description):
+        return True, 'market_move'
     try:
         parsed = urlparse(url)
         domain = parsed.netloc.lower()
