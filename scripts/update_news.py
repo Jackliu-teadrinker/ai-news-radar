@@ -544,6 +544,14 @@ GN_LABEL_MAP = {
     '国外机器人资讯':               'robotics',
     'GN: 机器人':                'robotics',
     '国内机器人资讯':            'robotics',
+    # Jack 2026-10-23: 资本事件层——融资/IPO/递表/招股 重磅消息归入 capital_events
+    # （新 ai_label，前端注册到 GN_CATEGORIES/GN_PRIORITY/AI_LABEL_TO_GN，不再沉底）
+    'GN: 资本事件':              'capital_events',
+    'GN: Capital Events':        'capital_events',
+    'GN: 融资':                  'capital_events',
+    # 目标公司资本锚点（Noetix/松延 递表港交所、宇树 IPO）
+    'GN: Noetix 松延':           'capital_events',
+    'GN: 宇树资本':              'capital_events',
 }
 
 # Custom anchors: map source name → gn_label (high authority sites get top-level labels)
@@ -608,6 +616,15 @@ TIER3 = ['physical AI','dexterous manipulation','robot learning']
 # 量化投研 tier：与机器人 tier 互不干扰
 QUANT_TIER = QUANT_TRADING_KEYWORDS
 
+# Jack 2026-10-23: 资本事件层——融资/IPO/递表/招股/上市/估值/募资 命中标题
+# 直接给 0.72 相关度（高于 TIER3 的 0.50），让重磅资本消息在 24h 主流里排名靠前。
+# 注意不用裸"轮"（"轮式机器人"会误伤），只用"融资/募资/估值"等确定词。
+CAPITAL_TIER = [
+    '融资','募资','招股','递表','港股','上市','估值','IPO',
+    'funding','raises','raised','prospectus','valuation','seed round',
+    'series a','series b','series c',
+]
+
 def relevance_score(title: str, description: str = '') -> float:
     text = (title + ' ' + description).lower()
     for kw in TIER1:
@@ -619,6 +636,11 @@ def relevance_score(title: str, description: str = '') -> float:
     for kw in TIER3:
         if kw.lower() in text:
             return 0.50
+    # 资本事件层（Jack 2026-10-23）：融资/IPO/递表/招股 重磅消息
+    # 相关度 0.72，高于 TIER3 低于 TIER2，让重磅资本事件在主流里排得上去
+    for kw in CAPITAL_TIER:
+        if kw.lower() in text:
+            return 0.72
     # 量化投研 tier（JoinQuant / 选股 / 回测 / 策略）
     for kw in QUANT_TIER:
         if kw.lower() in text:
@@ -634,10 +656,13 @@ def authority_score(source: str) -> int:
     return 10
 
 # Noise patterns with word boundaries (avoid false matches like "Interface" matching "ETF")
+# Jack 2026-10-23 改进：资本事件不是噪声——删掉 \b上市\b|\bIPO\b 后
+# 松延动力/Noetix 递表港交所、宇树上市、Eka 融资这类重磅消息不再被误杀。
+# 保留的市场噪声：纯股价涨跌行情（没有事件本身，只有交易噪音）。
 NOISE_PATTERNS = [
     re.compile(r'\bETF\b', re.I),
     re.compile(r'机器人ETF', re.I),
-    re.compile(r'\b股票\b|\b股价\b|\b涨跌\b|\b上市\b|\bIPO\b', re.I),
+    re.compile(r'\b股票\b|\b股价\b|\b涨跌\b', re.I),
     re.compile(r'扫地机器人|扫地机|扫地|roomba|robovac|roborock|dreame|ecovacs|narwal|irobot|追觅|科沃斯|云鲸|石头科技|robot vacuum|robot mop|robot cleaner|robotic vacuum|smart vacuum|auto vacuum', re.I),
     re.compile(r'概念股', re.I),
     re.compile(r'\b评级\b|\b买入\b|\b卖出\b|\b增持\b|\b目标价\b', re.I),
@@ -1358,9 +1383,18 @@ def run(output_dir: str, window_hours: int, opml_path: str, archive_days: int, w
     end_utc = datetime.fromtimestamp(now_ts, timezone.utc)
     print(f"[INFO] Time window: {start_utc.strftime('%Y-%m-%d %H:%M')} UTC to {end_utc.strftime('%Y-%m-%d %H:%M')} UTC (window_hours={window_hours})")
 
+    # Jack 2026-10-23: 资本事件 7d 逃逸窗——融资/IPO/递表/招股 重磅消息若比
+    # 锚点窗更早（3~7 天前），仍保留，避免 Noetix 递表这类事件 48h 后从雷达消失。
+    CAPITAL_WINDOW_HOURS = 7 * 24
+    capital_start_ts = now_ts - CAPITAL_WINDOW_HOURS * 3600
+    def _is_capital_item(_it):
+        _t = (_it.get('title') or '').lower()
+        return any(k in _t for k in CAPITAL_TIER)
+
     time_filtered = []
     missing_ts_count = 0
     bad_ts_count = 0
+    capital_escape = 0
     for item in clean_items:
         if not item.get('published_at'):
             # FIX (2026-07-13): log missing timestamp but still include (no silent hard pass)
@@ -1374,12 +1408,18 @@ def run(output_dir: str, window_hours: int, opml_path: str, archive_days: int, w
             dt = datetime.fromisoformat(item['published_at'].replace('Z', '+00:00'))
             if start_ts <= dt.timestamp() <= now_ts:
                 time_filtered.append(item)
+            elif _is_capital_item(item) and capital_start_ts <= dt.timestamp() <= now_ts:
+                # 资本事件 7d 逃逸窗（Jack 2026-10-23）
+                time_filtered.append(item)
+                capital_escape += 1
         except Exception:
             bad_ts_count += 1
             if bad_ts_count <= 3:
                 t = item['title'][:35].encode('ascii', 'replace').decode('ascii')
                 print(f"  [WARN] unparseable published_at: {item['published_at'][:30]} | {t}")
             time_filtered.append(item)
+    if capital_escape:
+        print(f"  [CAPITAL] {capital_escape} capital-event items rescued via 7d escape window")
     if missing_ts_count > 3:
         print(f"  [WARN] ... and {missing_ts_count - 3} more missing published_at")
     if bad_ts_count > 3:

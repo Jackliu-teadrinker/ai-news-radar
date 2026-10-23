@@ -80,6 +80,13 @@ const GN_PRIORITY = {
   "GN: 物理AI":         5,
   "GN: Physical AI":     5,
   "GN: 机器人":         1,
+  // Jack 2026-10-23: 资本事件层——融资/IPO/递表/招股 重磅消息，紧随 physical AI，不沉底
+  "GN: 资本事件":       6,
+  "GN: Capital Events": 6,
+  "GN: 融资":           6,
+  // Jack 2026-10-23: 目标公司资本锚点（Noetix/松延、宇树），不沉底
+  "GN: Noetix 松延":    6,
+  "GN: 宇树资本":       6,
   // arXiv 和商业源优先级较低
   "arXiv Robotics":     10,
   "arXiv Robot Perception": 11,
@@ -93,6 +100,7 @@ const GN_CATEGORIES = [
   { id: "GN: 具身智能",   label: "具身智能" },
   { id: "GN: 脑机接口",   label: "脑机接口" },
   { id: "GN: Physical AI", label: "Physical AI" },
+  { id: "GN: 资本事件",    label: "资本事件" },
   { id: "arXiv Robotics", label: "学术" },
   { id: "商业",           label: "商业" },
 ];
@@ -104,6 +112,8 @@ const AI_LABEL_TO_GN = {
   "embodied_ai":    "GN: 具身智能",
   "brain_computer": "GN: 脑机接口",
   "physical_ai":    "GN: Physical AI",
+  // Jack 2026-10-23: 资本事件层 ai_label → 资本事件 chip
+  "capital_events": "GN: 资本事件",
   // Also support matching the category ID directly as ai_label
 };
 
@@ -1436,6 +1446,9 @@ const ANCHOR_SOURCES = [
   'GN: 宇树科技', 'GN: 智元机器人',
   'GN: 自动驾驶机器人', 'GN: 灵巧手', 'GN: 机械臂', 'GN: 优必选',
   'GN: 工业机器人与人', 'GN: 服务机器人', 'GN: 人形机器人融资',
+  // Jack 2026-10-23: 资本事件层源（融资/IPO/递表/招股 + 目标公司锚点）
+  'GN: 资本事件', 'GN: Capital Events', 'GN: 融资',
+  'GN: Noetix 松延', 'GN: 宇树资本',
   'GN: TechXplore robotics', 'GN: TechXplore AI'
 ];
 
