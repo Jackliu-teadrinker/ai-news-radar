@@ -676,11 +676,15 @@ SUBSTANTIVE_EVENT_PAT = re.compile(
 )
 
 def is_market_move_noise(title: str, description: str) -> bool:
-    """二级市场纯行情快讯判噪声（Jack 2026-10-23：上市公司新闻保留，股价涨跌砍掉）。"""
-    text = title + ' ' + (description or '')
-    if not (MARKET_MOVE_PAT.search(text) or MARKET_PCT_PAT.search(text)):
+    """二级市场纯行情快讯判噪声（Jack 2026-10-23：上市公司新闻保留，股价涨跌砍掉）。
+    行情触发只看标题——GN 摘要常复读标题或夹带"板块/涨幅"等行情词，若摘要也能触发，
+    纯实质新闻（标题无行情词、摘要沾行情词）会被误杀；摘要仅作实质词兜底，不作触发源。
+    实质词表刻意保持窄（见 SUBSTANTIVE_EVENT_PAT），标题+摘要都扫以最大化保留真新闻。"""
+    t = title or ''
+    full = t + ' ' + (description or '')
+    if not (MARKET_MOVE_PAT.search(t) or MARKET_PCT_PAT.search(t)):
         return False
-    return SUBSTANTIVE_EVENT_PAT.search(text) is None
+    return SUBSTANTIVE_EVENT_PAT.search(full) is None
 
 NOISE_PATTERNS = [
     re.compile(r'\bETF\b', re.I),
