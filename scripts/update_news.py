@@ -552,6 +552,8 @@ GN_LABEL_MAP = {
     # 目标公司资本锚点（Noetix/松延 递表港交所、宇树 IPO）
     'GN: Noetix 松延':           'capital_events',
     'GN: 宇树资本':              'capital_events',
+    'GN: 智元资本':              'capital_events',
+    'GN: 傅利叶资本':            'capital_events',
 }
 
 # Custom anchors: map source name → gn_label (high authority sites get top-level labels)

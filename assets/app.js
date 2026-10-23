@@ -87,6 +87,8 @@ const GN_PRIORITY = {
   // Jack 2026-10-23: 目标公司资本锚点（Noetix/松延、宇树），不沉底
   "GN: Noetix 松延":    6,
   "GN: 宇树资本":       6,
+  "GN: 智元资本":       6,
+  "GN: 傅利叶资本":     6,
   // arXiv 和商业源优先级较低
   "arXiv Robotics":     10,
   "arXiv Robot Perception": 11,
@@ -1448,7 +1450,7 @@ const ANCHOR_SOURCES = [
   'GN: 工业机器人与人', 'GN: 服务机器人', 'GN: 人形机器人融资',
   // Jack 2026-10-23: 资本事件层源（融资/IPO/递表/招股 + 目标公司锚点）
   'GN: 资本事件', 'GN: Capital Events', 'GN: 融资',
-  'GN: Noetix 松延', 'GN: 宇树资本',
+  'GN: Noetix 松延', 'GN: 宇树资本', 'GN: 智元资本', 'GN: 傅利叶资本',
   'GN: TechXplore robotics', 'GN: TechXplore AI'
 ];
 
