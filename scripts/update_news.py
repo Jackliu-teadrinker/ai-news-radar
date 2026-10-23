@@ -670,8 +670,8 @@ MARKET_MOVE_PAT = re.compile(
 )
 MARKET_PCT_PAT = re.compile(r'(大涨|大跌|暴涨|暴跌)[^。！!?？\n]{0,10}\d')
 SUBSTANTIVE_EVENT_PAT = re.compile(
-    r'ipo|融资|递表|招股|募资|备案|估值|上市|收购|并购|起草|参编|国标|合作|签约|'
-    r'发布|量产|交付|订单|下线|投资|战略|funding|funds|raises|prospectus|merger|acquisition',
+    r'ipo|融资|递表|招股|募资|备案|估值|收购|并购|起草|参编|国标|合作|签约|'
+    r'量产|交付|订单大爆发|订单突破|战略投资|战略签约|funding|funds|raises|prospectus|merger|acquisition',
     re.I,
 )
 
