@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-24T13:31:27.097519+00:00",
+  "generated_at": "2026-10-24T14:46:19.477454+00:00",
   "window_start": "2026-10-24T19:00:00+08:00",
-  "window_end": "2026-10-24T21:31:25.659677+08:00",
-  "total_items": 1,
+  "window_end": "2026-10-24T22:46:18.124381+08:00",
+  "total_items": 2,
   "fallback_used": true,
   "items": [
     {
-      "id": "gov-7051cd6e",
+      "id": "gov-049b6a86",
       "title": "前三季度重点平台具身智能机器人销售额增长22.6% - 中国科技网",
       "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1FNXRDd0c3YzVISHJya245dTdKX0lGN09pUTF6S3h6eXd6TW42WW1mM0gydTVRSUt5MUZld3VyTC1XVkNHcFBndTB6azc3QVdiMDNYYVhmTWZwbFVqRndEMVpGa0d6X282MmdYanBYWjA?oc=5",
       "published_at": "2026-10-23T02:57:18+00:00",
@@ -17,9 +17,25 @@
       "relevance": 0.56,
       "authority": 5,
       "depth": 0,
-      "timeliness": 4.24,
+      "timeliness": 4.03,
       "writing_value": 0,
-      "total_score": 65.24
+      "total_score": 65.03
+    },
+    {
+      "id": "gov-acb031c9",
+      "title": "依托智能机器人领域坚实产业底座 经开区入选第一批国家新兴产业发展示范基地创建对象名单 - 北京市人民政府门户网站",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE90N3hDTmFpWjlhaVRzNjZaUEF0ZHlEWGFLMmlkYjM4T2N4aWswSmtHLWl0MUN5S054RVJjQUNEbUVEUzZXMFNJTkxPbFdaNE01T0w1d3VuMVpwQVRXRlptM0VmR2xaREtVdW9CN3V4WE5nXzda?oc=5",
+      "published_at": "2026-10-22T02:40:00+00:00",
+      "source": "GN: gov.cn 具身智能政策",
+      "site_name": "GN: gov.cn 具身智能政策",
+      "description": "依托智能机器人领域坚实产业底座 经开区入选第一批国家新兴产业发展示范基地创建对象名单  北京市人民政府门户网站",
+      "ai_score": 64.0,
+      "relevance": 0.64,
+      "authority": 10,
+      "depth": 0,
+      "timeliness": 0,
+      "writing_value": 0,
+      "total_score": 74.0
     }
   ]
 }
