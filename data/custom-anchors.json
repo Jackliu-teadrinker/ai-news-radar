@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-25T21:06:10.841521+00:00",
+  "generated_at": "2026-10-25T21:58:23.207555+00:00",
   "window_start": "2026-10-25T19:00:00+08:00",
-  "window_end": "2026-10-26T05:06:08.302525+08:00",
-  "total_items": 4,
+  "window_end": "2026-10-26T05:58:22.685216+08:00",
+  "total_items": 3,
   "items": [
     {
       "id": "7480969245be7725a100b34a3b4dc0f706923892",
@@ -63,7 +63,7 @@
       "depth": 5,
       "timeliness": 20.0,
       "writing_value": 5,
-      "total_score": 74.7,
+      "total_score": 75.3,
       "_hx": {
         "topic": 0,
         "conflict": 0,
@@ -75,54 +75,14 @@
         "writing": 5,
         "depth": 5,
         "junk": 0,
-        "dup_pen": 0.9,
+        "dup_pen": 0.3,
         "dup_of": false
       },
       "hx_topic": 0,
       "hx_conflict": 0,
       "hx_data": 0,
       "hx_pr_penalty": 0,
-      "hx_dup_penalty": -0.9
-    },
-    {
-      "id": "fdd83ea89d40094cae6bd3b1b7aed49401498179",
-      "title": "Electromagnetic tracking brings sub-millimeter augmented reality to robotic surgery - Bioengineer.org",
-      "title_zh": "电磁跟踪为机器人手术带来亚毫米增强现实 - Bioengineer.org",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOODkxSEN3enQ5cnFMUzZZbXMxbV9TQ01ZeFpQUS1Qb2JOYUdLV013UXE5UFZCdWtISlEtWGpOMW9aN2VMY281ekNHZ1ZEU3ZHUi1QdThxY3NOSFZrTmJkU2ZsSmw1Z0wyX0ZTandhMFdKTW1RV1ppRnVWT25oWlZpRVlkUVZseFM0UTFvWklxaHJ4YnppSi10aF83RV9mYzZzOVc4ekhZUmxjNTF4?oc=5",
-      "published_at": "2026-10-25T18:53:41+00:00",
-      "category": "GN: surgical robot",
-      "gn_label": "robotics",
-      "site_name": "GN: surgical robot",
-      "source": "GN: surgical robot",
-      "site_id": "GN: surgical robot",
-      "description": "The significance of sub-millimeter accuracy lies in what it enables technically. An augmented reality overlay is only us",
-      "ai_score": 65.0,
-      "ai_label": "robotics",
-      "relevance": 0.406,
-      "authority": 5,
-      "depth": 5,
-      "timeliness": 20.0,
-      "writing_value": 5,
-      "total_score": 73.2,
-      "_hx": {
-        "topic": 0,
-        "conflict": 0,
-        "data": 0,
-        "pr_pen": 0,
-        "rel": 40.625,
-        "auth": 5,
-        "tim": 20.0,
-        "writing": 5,
-        "depth": 5,
-        "junk": 0,
-        "dup_pen": 2.4,
-        "dup_of": false
-      },
-      "hx_topic": 0,
-      "hx_conflict": 0,
-      "hx_data": 0,
-      "hx_pr_penalty": 0,
-      "hx_dup_penalty": -2.4
+      "hx_dup_penalty": -0.3
     },
     {
       "id": "1b8f8b5100b6d4379639b733d4c7e65c1bbd72a4",
@@ -141,9 +101,9 @@
       "relevance": 0.406,
       "authority": 5,
       "depth": 0,
-      "timeliness": 20.0,
+      "timeliness": 19.4,
       "writing_value": 0,
-      "total_score": 59.9,
+      "total_score": 63.1,
       "_hx": {
         "topic": 0,
         "conflict": 0,
@@ -151,18 +111,18 @@
         "pr_pen": 0,
         "rel": 40.625,
         "auth": 5,
-        "tim": 20.0,
+        "tim": 19.43208882580863,
         "writing": 0,
         "depth": 0,
         "junk": 0,
-        "dup_pen": 5.7,
+        "dup_pen": 2.0,
         "dup_of": false
       },
       "hx_topic": 0,
       "hx_conflict": 0,
       "hx_data": 0,
       "hx_pr_penalty": 0,
-      "hx_dup_penalty": -5.7
+      "hx_dup_penalty": -2.0
     }
   ],
   "fallback_used": false
