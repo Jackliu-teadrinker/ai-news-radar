@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-25T15:11:39.119826+00:00",
+  "generated_at": "2026-10-25T16:30:44.053321+00:00",
   "window_start": "2026-10-25T19:00:00+08:00",
-  "window_end": "2026-10-25T23:11:38.967002+08:00",
+  "window_end": "2026-10-26T00:30:43.931900+08:00",
   "total_items": 2,
   "items": [
     {
@@ -21,9 +21,9 @@
       "relevance": 0.5,
       "authority": 5,
       "depth": 5,
-      "timeliness": 20.0,
+      "timeliness": 19.6,
       "writing_value": 5,
-      "total_score": 70.0,
+      "total_score": 69.6,
       "_hx": {
         "topic": 0,
         "conflict": 0,
@@ -31,7 +31,7 @@
         "pr_pen": 15,
         "rel": 50.0,
         "auth": 5,
-        "tim": 20.0,
+        "tim": 19.59126079750061,
         "writing": 5,
         "depth": 5,
         "junk": 0,
@@ -61,9 +61,9 @@
       "relevance": 0.406,
       "authority": 5,
       "depth": 0,
-      "timeliness": 20.0,
+      "timeliness": 19.5,
       "writing_value": 0,
-      "total_score": 65.6,
+      "total_score": 65.1,
       "_hx": {
         "topic": 0,
         "conflict": 0,
@@ -71,7 +71,7 @@
         "pr_pen": 0,
         "rel": 40.625,
         "auth": 5,
-        "tim": 20.0,
+        "tim": 19.500371908611722,
         "writing": 0,
         "depth": 0,
         "junk": 0,
