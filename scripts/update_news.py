@@ -1551,8 +1551,9 @@ def run(output_dir: str, window_hours: int, opml_path: str, archive_days: int, w
         'generated_at': generated_at,
         'total_items': len(scored[:500]),
         'items_ai': scored[:500],
-        'items_all': scored[:500],
-        'items_all_raw': scored[:500],
+        # 2026-10-28: items_all / items_all_raw 曾与 items_ai 同 blob 各存一份 →
+        # payload 膨胀到 ~900KB，慢链路上超过前端 8s fetch 超时导致首屏卡死。
+        # 前端 loadAllModeData 的 fallback 已改为从 items_ai 复用，此处不再重复存 3 份。
         'site_stats': site_stats,
         'total_items_raw': len(scored[:500]),
         'total_items_all_mode': len(scored[:500]),
@@ -1562,7 +1563,7 @@ def run(output_dir: str, window_hours: int, opml_path: str, archive_days: int, w
         'archive_total': len(updated),
     }
     with open(os.path.join(output_dir, 'latest-24h-min.json'), 'w', encoding='utf-8') as f:
-        json.dump(min_out, f, ensure_ascii=False, indent=2)
+        json.dump(min_out, f, ensure_ascii=False)
     print(f"[INFO] latest-24h-min.json: {len(scored[:500])} items (AI精选)")
 
     # FIX(2026-09-04) cleanup: latest-24h-all.json removed (identical blob to

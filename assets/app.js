@@ -826,26 +826,49 @@ function fetchWithTimeout(url, ms = 8000) {
 }
 
 async function loadNewsData() {
-  const res = await fetchWithTimeout(`./data/latest-24h-min.json?t=${Date.now()}`);
-  if (!res.ok) throw new Error(`加载 latest-24h.json 失败: ${res.status}`);
-  return res.json();
+  // 2026-10-28: 慢链路（大 payload + 弱网）首拉固定 8s 超时→首屏卡死"加载中…"。
+  // 改成分级重试：6s / 12s / 20s 各一次（累计 ~38s 仍失败才抛错进错误态）。
+  // 复用同一 url（同 ?t=），前一次 fetch 已完成的响应可被浏览器缓存命中。
+  const url = `./data/latest-24h-min.json?t=${Date.now()}`;
+  const attempts = [6000, 12000, 20000];
+  let lastErr = null;
+  for (let i = 0; i < attempts.length; i++) {
+    try {
+      const res = await fetchWithTimeout(url, attempts[i]);
+      if (!res.ok) throw new Error(`加载 latest-24h.json 失败: ${res.status}`);
+      return await res.json();
+    } catch (e) {
+      lastErr = e;
+    }
+  }
+  throw lastErr || new Error("加载 latest-24h.json 失败");
 }
 
 async function loadAllModeData() {
   if (state.allDataLoaded) return;
   if (!state.allDataPromise) {
-    state.allDataPromise = fetchWithTimeout(`./${state.allDataUrl}?t=${Date.now()}`)
-      .then((res) => {
-        if (!res.ok) throw new Error(`加载 ${state.allDataUrl} 失败: ${res.status}`);
-        return res.json();
-      })
-      .then((payload) => {
-        state.itemsAllRaw = payload.items_all_raw || payload.items_all || state.itemsAi;
-        state.itemsAll = payload.items_all || state.itemsAi;
-        state.totalRaw = payload.total_items_raw || state.itemsAllRaw.length;
-        state.totalAllMode = payload.total_items_all_mode || state.itemsAll.length;
-        state.allDataLoaded = true;
-      })
+    // 2026-10-28: 同 loadNewsData——分级超时重试（6s/12s/20s），弱网不再一次 8s 直接炸全量模式
+    state.allDataPromise = (async () => {
+      const url = `./${state.allDataUrl}?t=${Date.now()}`;
+      const attempts = [6000, 12000, 20000];
+      let lastErr = null;
+      for (let i = 0; i < attempts.length; i++) {
+        try {
+          const res = await fetchWithTimeout(url, attempts[i]);
+          if (!res.ok) throw new Error(`加载 ${state.allDataUrl} 失败: ${res.status}`);
+          const payload = await res.json();
+          state.itemsAllRaw = payload.items_all_raw || payload.items_all || state.itemsAi;
+          state.itemsAll = payload.items_all || state.itemsAi;
+          state.totalRaw = payload.total_items_raw || state.itemsAllRaw.length;
+          state.totalAllMode = payload.total_items_all_mode || state.itemsAll.length;
+          state.allDataLoaded = true;
+          return;
+        } catch (e) {
+          lastErr = e;
+        }
+      }
+      throw lastErr || new Error(`加载 ${state.allDataUrl} 失败`);
+    })()
       .catch((err) => {
         state.allDataPromise = null;
         throw err;
@@ -866,14 +889,17 @@ async function loadSourceStatusData() {
 function applyNewsPayload(payload) {
     state.itemsAi = payload.items_ai || payload.items || [];
     console.log('[INIT] itemsAi set: ' + state.itemsAi.length + ' items_ai: ' + (payload.items_ai||[]).length + ' items: ' + (payload.items||[]).length);
-    state.itemsAllRaw = payload.items_all_raw || payload.items_all || [];
-    state.itemsAll = payload.items_all || [];
+    // 2026-10-28: payload 不再重复携带 items_all/items_all_raw（原与 items_ai 同 blob，
+    // 3 份同数据把文件撑到 ~900KB）。全量模式直接复用 items_ai，标记 allDataLoaded
+    // 避免 loadAllModeData 再拉一遍同样的文件。
+    state.itemsAllRaw = payload.items_all_raw || payload.items_all || state.itemsAi;
+    state.itemsAll = payload.items_all || state.itemsAi;
     state.statsAi = payload.site_stats || [];
     state.totalAi = payload.total_items || state.itemsAi.length;
     state.totalRaw = payload.total_items_raw || state.itemsAllRaw.length;
     state.totalAllMode = payload.total_items_all_mode || state.itemsAll.length;
     state.allDataUrl = payload.all_mode_data_url || state.allDataUrl;
-    state.allDataLoaded = Boolean(payload.items_all || payload.items_all_raw);
+    state.allDataLoaded = Boolean(payload.items_all || payload.items_all_raw) || state.itemsAll.length > 0;
     state.generatedAt = payload.generated_at;
 
     setStats(payload);
