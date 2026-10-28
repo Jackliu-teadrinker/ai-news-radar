@@ -179,10 +179,14 @@ jobs:
           if n == 0:
               print("[GUARD] EMPTY DATA — refusing to push; rolling back to last good snapshot")
               sys.exit(2)
-          if n < 10 and prev >= 20 and n < 0.5 * prev:
+          # 2026-10-28 GUARD v3：12 条 vs 277 条瞬态塌缩因 n<10 门槛溜过 v2，
+          # 12 条坏快照覆盖 277 条健康快照推上 Pages（当天 05:12）。
+          # 24h 滚动窗口下，任何时刻都应有过去 24h 的存量新闻，条数不应腰斩；
+          # 改按 比例 判定：prev 健康(>=20) 且 new < 0.5*prev → 视为源集体故障，拒推。
+          if prev >= 20 and n < 0.5 * prev:
               print(f"[GUARD] COLLAPSE DETECTED: {n} vs prev {prev} "
-                    f"(likely GN 503 / mass source failure) — refusing to push; "
-                    f"rolling back to last good snapshot")
+                    f"(less than 50% of last healthy snapshot — likely mass source failure) "
+                    f"— refusing to push; rolling back to last good snapshot")
               sys.exit(2)
           if n < 10:
               print("[GUARD] WARN: unusually low item count, pushing with caution")
