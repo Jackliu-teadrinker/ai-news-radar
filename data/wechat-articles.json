@@ -1,15 +1,15 @@
 {
   "articles": [
     {
-      "id": "91d5112fc7ed2324",
-      "title": "Google 发布世界模型 Genie 4，支持实时操控与原生音频",
+      "id": "3f6b8d15cf327442",
+      "title": "面壁智能发布并开源 MiniCPM-OCR 系列：1.3B 解析模型与 2B 判别模型",
       "title_zh": "",
-      "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647687902&idx=1&sn=9a57b3d769582b12d8645af23431743d",
-      "published_at": "2026-10-28T00:22:00+00:00",
+      "url": "https://mp.weixin.qq.com/s?__biz=Mzg3Mzg2MTg2NQ%3D%3D&mid=2247499654&idx=1&sn=9bcbf9492c492a5d5e611af41670425f",
+      "published_at": "2026-10-28T11:38:17+00:00",
       "site_name": "微信公众号",
       "site_id": "wechat",
-      "source": "公众号：数字生命卡兹克",
-      "description": "Google 发布下一代世界模型 Genie 4，相比 Genie 3 在照片级真实感、物体碰撞等物理模拟上有明显进步。用户可用 WASD 和双摇杆实时控制角色或镜头，运行中可用自然语言修改天气和加入物体，模型还能同步生成环境音与人物实时对话。",
+      "source": "公众号：面壁智能（MiniCPM）",
+      "description": "面壁智能发布并开源 MiniCPM-OCR 系列。MiniCPM-OCR 1.0（1.3B）在 Real5-OmniDocBench 取得 93.68 分、OCRBench v2 取得 54.7 分的 SOTA，经 DSpark 加速后吞吐达 1.217 页/秒，端到端效率提升 55%。",
       "ai_score": 0,
       "relevance": 0,
       "authority": 0,
@@ -19,10 +19,10 @@
       "total_score": 0,
       "ai_label": "wechat",
       "robot_hits": 0,
-      "first_seen_at": "2026-10-28T09:55:12.633888+00:00"
+      "first_seen_at": "2026-10-29T00:31:19.370420+00:00"
     }
   ],
   "total_articles": 1,
-  "last_updated": "2026-10-28T09:57:40.161736+00:00",
+  "last_updated": "2026-10-29T00:32:26.871202+00:00",
   "source": "auto_filtered_by_time_window"
 }
