@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-05T08:01:33.112224+00:00",
+  "generated_at": "2026-11-05T09:02:27.205566+00:00",
   "feeds": [
     {
       "feed": "国外脑机接口资讯",
@@ -23,31 +23,31 @@
       "error": null
     },
     {
-      "feed": "国内人形机器人资讯",
-      "success": true,
-      "items_total": 100,
-      "items_unique": 100,
-      "error": null
-    },
-    {
-      "feed": "国内具身智能资讯",
-      "success": true,
-      "items_total": 100,
-      "items_unique": 89,
-      "error": null
-    },
-    {
       "feed": "国外机器人资讯",
       "success": true,
-      "items_total": 102,
-      "items_unique": 102,
+      "items_total": 101,
+      "items_unique": 100,
       "error": null
     },
     {
       "feed": "国外人形机器人资讯",
       "success": true,
       "items_total": 102,
-      "items_unique": 75,
+      "items_unique": 78,
+      "error": null
+    },
+    {
+      "feed": "国内具身智能资讯",
+      "success": true,
+      "items_total": 101,
+      "items_unique": 101,
+      "error": null
+    },
+    {
+      "feed": "国内人形机器人资讯",
+      "success": true,
+      "items_total": 100,
+      "items_unique": 92,
       "error": null
     },
     {
@@ -58,24 +58,24 @@
       "error": null
     },
     {
-      "feed": "国内机器人资讯",
+      "feed": "GN: 资本事件",
       "success": true,
-      "items_total": 100,
-      "items_unique": 78,
+      "items_total": 21,
+      "items_unique": 21,
       "error": null
     },
     {
-      "feed": "GN: 资本事件",
+      "feed": "国内机器人资讯",
       "success": true,
-      "items_total": 20,
-      "items_unique": 20,
+      "items_total": 100,
+      "items_unique": 81,
       "error": null
     },
     {
       "feed": "国内物理AI资讯",
       "success": true,
       "items_total": 100,
-      "items_unique": 92,
+      "items_unique": 87,
       "error": null
     },
     {
@@ -86,6 +86,13 @@
       "error": null
     },
     {
+      "feed": "GN: 宇树资本",
+      "success": true,
+      "items_total": 27,
+      "items_unique": 27,
+      "error": null
+    },
+    {
       "feed": "GN: 智元资本",
       "success": true,
       "items_total": 13,
@@ -93,10 +100,10 @@
       "error": null
     },
     {
-      "feed": "GN: 宇树资本",
+      "feed": "GN: 傅利叶资本",
       "success": true,
-      "items_total": 28,
-      "items_unique": 28,
+      "items_total": 16,
+      "items_unique": 15,
       "error": null
     },
     {
@@ -104,13 +111,6 @@
       "success": true,
       "items_total": 52,
       "items_unique": 47,
-      "error": null
-    },
-    {
-      "feed": "GN: 傅利叶资本",
-      "success": true,
-      "items_total": 16,
-      "items_unique": 15,
       "error": null
     }
   ],
@@ -134,27 +134,27 @@
       "success": true
     },
     {
-      "site_id": "国内人形机器人资讯",
-      "site_name": "国内人形机器人资讯",
-      "item_count": 100,
-      "success": true
-    },
-    {
-      "site_id": "国内具身智能资讯",
-      "site_name": "国内具身智能资讯",
-      "item_count": 89,
-      "success": true
-    },
-    {
       "site_id": "国外机器人资讯",
       "site_name": "国外机器人资讯",
-      "item_count": 102,
+      "item_count": 100,
       "success": true
     },
     {
       "site_id": "国外人形机器人资讯",
       "site_name": "国外人形机器人资讯",
-      "item_count": 75,
+      "item_count": 78,
+      "success": true
+    },
+    {
+      "site_id": "国内具身智能资讯",
+      "site_name": "国内具身智能资讯",
+      "item_count": 101,
+      "success": true
+    },
+    {
+      "site_id": "国内人形机器人资讯",
+      "site_name": "国内人形机器人资讯",
+      "item_count": 92,
       "success": true
     },
     {
@@ -164,21 +164,21 @@
       "success": true
     },
     {
-      "site_id": "国内机器人资讯",
-      "site_name": "国内机器人资讯",
-      "item_count": 78,
+      "site_id": "GN: 资本事件",
+      "site_name": "GN: 资本事件",
+      "item_count": 21,
       "success": true
     },
     {
-      "site_id": "GN: 资本事件",
-      "site_name": "GN: 资本事件",
-      "item_count": 20,
+      "site_id": "国内机器人资讯",
+      "site_name": "国内机器人资讯",
+      "item_count": 81,
       "success": true
     },
     {
       "site_id": "国内物理AI资讯",
       "site_name": "国内物理AI资讯",
-      "item_count": 92,
+      "item_count": 87,
       "success": true
     },
     {
@@ -188,27 +188,27 @@
       "success": true
     },
     {
+      "site_id": "GN: 宇树资本",
+      "site_name": "GN: 宇树资本",
+      "item_count": 27,
+      "success": true
+    },
+    {
       "site_id": "GN: 智元资本",
       "site_name": "GN: 智元资本",
       "item_count": 12,
       "success": true
     },
     {
-      "site_id": "GN: 宇树资本",
-      "site_name": "GN: 宇树资本",
-      "item_count": 28,
+      "site_id": "GN: 傅利叶资本",
+      "site_name": "GN: 傅利叶资本",
+      "item_count": 15,
       "success": true
     },
     {
       "site_id": "GN: Capital Events",
       "site_name": "GN: Capital Events",
       "item_count": 47,
-      "success": true
-    },
-    {
-      "site_id": "GN: 傅利叶资本",
-      "site_name": "GN: 傅利叶资本",
-      "item_count": 15,
       "success": true
     }
   ],
@@ -224,9 +224,9 @@
     "total_feeds": 16,
     "successful_feeds": 16,
     "failed_feeds": 0,
-    "total_items": 946,
-    "deduplicated": 79,
-    "noise_filtered": 55,
+    "total_items": 948,
+    "deduplicated": 76,
+    "noise_filtered": 51,
     "short_filtered": 0
   }
 }
