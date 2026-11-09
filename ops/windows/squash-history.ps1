@@ -59,6 +59,11 @@ if ($commits -le 1) {
   exit 0
 }
 
+# 原生 git 会把进度（如 "Switched to a new branch"）写到 stderr，
+# 在 $ErrorActionPreference='Stop' 下会被当成终止错误 → 后面所有步骤都不执行。
+# 从这里开始改回 Continue，改由 $LASTEXITCODE 判断成败。
+$ErrorActionPreference = 'Continue'
+
 $stamp = Get-Date -Format 'yyyyMMdd-HHmmss'
 if (-not $SkipBackup) {
   New-Item -ItemType Directory -Force -Path $Bak | Out-Null
@@ -72,7 +77,7 @@ if (-not $SkipBackup) {
 }
 
 Write-Output "[2/4] 生成孤立提交（当前工作树快照）..."
-& $Git -C $Repo checkout --orphan squash-$stamp 2>&1 | Out-Null
+& $Git -C $Repo checkout -q --orphan "squash-$stamp" 2>$null
 & $Git -C $Repo add -A
 $msg = "chore: 历史瘦身（单提交重建，原 {0} 个提交已归档）" -f $commits
 & $Git -C $Repo -c user.name='radar-local' -c user.email='radar-local@users.noreply.github.com' commit -q -m $msg
