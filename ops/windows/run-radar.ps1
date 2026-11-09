@@ -134,6 +134,24 @@ try {
   # ---------- 2. 发布 ----------
   if ($NoPublish) { Log "[PUBLISH] -NoPublish，跳过发布"; return }
 
+  # 2026-11-09 SELF-HEAL：云端接管过一轮后，远端会比本机多一个 [radar-auto] 提交，
+  # 本机如果直接 push 会被拒（non-fast-forward），而且此后每轮都失败 → 本机静默掉队。
+  # 所以每轮发布前先对齐 origin/master。_repo 里只有站点快照（本地独有的东西都在 live\），
+  # reset --hard 不会丢数据；fetch 失败（代理/网络）就按现状继续，不阻断本轮。
+  $sync = Invoke-Native -Exe $Git -ArgList @('-c',"http.proxy=$Proxy",'-c','http.version=HTTP/1.1','fetch','origin','master','--quiet') -WorkDir $Repo
+  if ($sync.Code -eq 0) {
+    $h1 = (& $Git -C $Repo rev-parse HEAD).Trim()
+    $rs = Invoke-Native -Exe $Git -ArgList @('reset','--hard','origin/master') -WorkDir $Repo
+    if ($rs.Code -eq 0) {
+      $h2 = (& $Git -C $Repo rev-parse HEAD).Trim()
+      if ($h1 -ne $h2) { Log ("[SYNC] 已对齐 origin/master：{0} -> {1}（云端接管过，本机追平）" -f $h1.Substring(0,7), $h2.Substring(0,7)) }
+    } else {
+      Log ("[SYNC] reset 失败（退出码 {0}），继续用当前工作区" -f $rs.Code)
+    }
+  } else {
+    Log ("[SYNC] fetch 失败（退出码 {0}，代理/网络问题），本轮按现状发布" -f $sync.Code)
+  }
+
   $liveLatest = Join-Path $Live 'latest-24h-min.json'
   $repoLatest = Join-Path $Repo 'data\latest-24h-min.json'
   $newN = (Get-Content -LiteralPath $liveLatest -Raw -Encoding utf8 | ConvertFrom-Json).total_items
@@ -278,6 +296,16 @@ try {
       }
     }
   }
+
+  # ---- 每日定版长期留档（2026-11-09）----
+  # 分片只有 60 天在仓库里，且会被归档挪走；这里在 E 盘留一份「当天最后一版」，
+  # 一年约 70 MB，永久可查、可直接拿去做蒸馏或回溯，不依赖 GitHub 历史。
+  $historyDir = Join-Path $Live 'history'
+  New-Item -ItemType Directory -Force -Path $historyDir | Out-Null
+  $histPath = Join-Path $historyDir ($todayKey + '.json')
+  $isNewHist = -not (Test-Path -LiteralPath $histPath)
+  Copy-Item -LiteralPath $liveLatest -Destination $histPath -Force
+  if ($isNewHist) { Log ("[HISTORY] 新建每日定版 live\history\{0}.json" -f $todayKey) }
 
   # index.html 版本号（前端缓存击穿）
   $idx = Join-Path $Repo 'index.html'

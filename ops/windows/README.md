@@ -187,16 +187,47 @@ data/latest-24h-min.json       前端兜底，每天定版一次（不再每轮�
 推送前还有第二道闸（`Auto-push` 步骤的 `[HANDOFF]`）：40 分钟内有过 `radar-local` 提交就让位。
 抓取可以重复，推送必须单点。
 
-实测（2026-11-09）：
+实测（2026-11-09，两个方向都真跑过）：
 
-| 场景 | 耗时 | 说明 |
+| 场景 | 耗时 | 日志证据 |
 | --- | --- | --- |
-| 本地在跑时 dispatch | 9s | 只跑 Set up / Checkout / Gate，其余 13 个步骤全跳过 |
-| 放行后完整一轮 | 1m42s | 自举 373 条状态 + 抓取 400 条 + 分片 28 新增 + 缓存保存 |
+| 本机在跑，云端被触发 | 4s | `[GATE] 最近提交作者=radar-local 距今=…` → 13 个步骤全跳过 |
+| 本机停跑 55min，云端被触发 | 2m40s | `[GATE] …距今=3320s` → `[HANDOFF] 本机已有 57 分钟没推过，云端接管本轮推送` |
+| 接管那一轮的产出 | — | `[STATE] 479 条自举 / gn-url-cache 77 条（cache 命中）`、`[SHARD] 2026-11-09 新增 5 条 → 441`、`[KEEP] arxiv 0 条还原 30 条`、提交 `7fdc4c8 [radar-auto]` |
+| 本机恢复后 | — | `[SYNC] 已对齐 origin/master：54d828d -> 7fdc4c8（云端接管过，本机追平）` → 推 `1749650 [radar-local]` |
 | 每小时一次合计 | ≈40min/天 | 远低于最初触发 fork 熔断的 ~2.4h/天 |
 
-所以：本机一停，最坏 45min + 60min = **1h45m 后云端接班**，之后每小时刷新一次；
-本机恢复后，云端看到 40 分钟内的 `radar-local` 提交就自动让位。
+### ⚠ GitHub cron 在本仓库靠不住（2026-11-09 实测）
+
+`schedule` 事件被 GitHub 大规模丢弃，这是 fork 的老问题：本仓库历史每天只跳 5-12 次
+（而 `*/30` 理论上该有 48 次），11-09 全天 **0 次**——`0 * * * *` 定到 10:00Z
+等了 42 分钟也没跳。所以**别把 cron 当成保命机制**，它只是"白捡一次"。
+
+真正在保命的是本机 Hermes cron：
+
+| 组件 | 周期 | 作用 |
+| --- | --- | --- |
+| Windows 任务 `radar-local-refresh` | 30min | 主链路，本地采集 + 发布 |
+| Hermes cron `radar-freshness-watchdog`（`radar_watchdog_v2.py`） | 15min | 外部哨兵：发现线上数据 >45min 就 `workflow_dispatch` 云端接管，40min 冷却防连环 |
+
+所以本机一停的现实接管延迟是 **45min（阈值）+ ≤15min（巡检）≈ 1 小时**，不依赖 GitHub cron。
+
+**哨兵口径（2026-11-09 修正）**：watchdog 原来读 `data/latest-24h-min.json` 的
+`generated_at`。但本地管线对 24h 快照做"今日定版"（当天只写一次，之后每轮只更新分片），
+于是该字段会被冻在当天第一次定版的时刻（实测 07:49Z 定版 → 10:45Z 报 176min），
+而线上真实更新时间在 `data/days/index.json`（同一时刻只有 29min）。
+结果：watchdog 误判 stale，冷却一过就 dispatch 一次，一天白烧 ~30 次 runner 且长期红着。
+现已改为"分片索引优先、24h 快照兜底"，取最年轻的那个。
+**任何外部监控（UptimeRobot 等）都必须读 `data/days/index.json`，不要读 `latest-24h-min.json`。**
+
+### 本机自愈
+
+云端接管后会多一个 `[radar-auto]` 提交，本机如果直接 push 会被拒（non-fast-forward），
+而且此后每轮都失败 → 本机静默掉队。`run-radar.ps1` 现在每轮发布前先
+`git fetch + reset --hard origin/master`（`[SYNC]`），追上就继续，fetch 失败也不阻断本轮。
+
+**手动关掉云端**：在仓库根建一个空文件 `.radar-local-mode` 并提交（紧急开关）。
+**手动切纯云端**：`Disable-ScheduledTask -TaskName 'radar-local-refresh'`，其余交给 cron + watchdog。
 
 **手动关掉云端**：在仓库根建一个空文件 `.radar-local-mode` 并提交（紧急开关）。
 **手动切纯云端**：`Disable-ScheduledTask -TaskName 'radar-local-refresh'`，其余交给 cron。
