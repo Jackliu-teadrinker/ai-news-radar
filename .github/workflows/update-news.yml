@@ -162,6 +162,22 @@ jobs:
             echo "[LOCAL-MODE] 本地采集模式生效：本轮不提交、不推送"
             exit 0
           fi
+
+          # 2026-11-09 HANDOFF：没有标记文件时，也不跟本机抢分支。
+          # 只要 40 分钟内有 radar-local 的提交，说明本机在跑 → 云端让位；
+          # 本机停跑超过 40 分钟，云端自动接管推送。这样 cron 可以一直开着当兜底，
+          # 本地恢复后云端自动退让，不需要人工切换。
+          LAST_LOCAL=$(git log -1 --format=%ct --author='radar-local' 2>/dev/null || true)
+          if [ -n "$LAST_LOCAL" ]; then
+            AGE=$(( $(date +%s) - LAST_LOCAL ))
+            if [ "$AGE" -lt 2400 ]; then
+              echo "[HANDOFF] 本机 ${AGE}s 前刚推过（<40min），云端让位，本轮不推送"
+              exit 0
+            fi
+            echo "[HANDOFF] 本机已有 $((AGE / 60)) 分钟没推过，云端接管本轮推送"
+          else
+            echo "[HANDOFF] 未发现本地提交记录，云端按主链路运行"
+          fi
           git config user.email "radar-bot@users.noreply.github.com"
           git config user.name "radar-bot"
           touch data/wechat-articles.json
