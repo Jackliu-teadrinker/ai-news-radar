@@ -1,0 +1,1660 @@
+#!/usr/bin/env python3
+"""AI News Radar - RSS Aggregation Pipeline"""
+
+import argparse
+import hashlib
+import json
+import os
+import re
+import sys
+import unicodedata
+import html
+import time
+import xml.etree.ElementTree as ET
+from datetime import datetime, timedelta, timezone
+from zoneinfo import ZoneInfo
+from concurrent.futures import ThreadPoolExecutor, as_completed, TimeoutError as FuturesTimeout
+from urllib.parse import urlparse, urljoin, parse_qs, urlencode
+
+import feedparser
+import requests
+
+STRIP_QUERY_PARAMS = {
+    'utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content',
+    'fbclid', 'gclid', 'ref', 'spm', 'mc_cid', 'mc_eid',
+    '_hsenc', '_hsmi', 'mkt_tok', 'igshid',
+    'gl', 'hl',
+}
+
+def normalize_url(url: str) -> str:
+    try:
+        parsed = urlparse(url)
+        if not parsed.query:
+            return url
+        pairs = parsed.query.split('&')
+        params = []
+        for pair in pairs:
+            if '=' not in pair:
+                continue
+            k, _, v = pair.partition('=')
+            if k not in STRIP_QUERY_PARAMS:
+                params.append(f"{k}={v}")
+        clean_query = '&'.join(params)
+        reconstructed = parsed._replace(query=clean_query).geturl()
+        return reconstructed.rstrip('?')
+    except Exception:
+        return url
+
+def parse_opml(opml_path: str) -> list[dict]:
+    tree = ET.parse(opml_path)
+    root = tree.getroot()
+    feeds = []
+    for outline in root.iter('outline'):
+        xml_url = outline.get('xmlUrl')
+        if not xml_url:
+            continue
+        feed = {
+            'text': outline.get('text', 'unknown'),
+            'xmlUrl': xml_url,
+        }
+        # BUGFIX(2026-10-08): 透传 type/url 属性。custom.opml 里
+        # type="page" 的锚点站（TechXplore 等）靠它走 HTML 抓取分支；
+        # 旧实现只取 text/xmlUrl，type 丢失 → 所有源一律按 RSS 直连，
+        # 反爬站直连 403 后无 fallback，锚点区持续空。
+        feed_type = outline.get('type')
+        if feed_type:
+            feed['type'] = feed_type
+        feed_url = outline.get('url')
+        if feed_url:
+            feed['url'] = feed_url
+        feeds.append(feed)
+    return feeds
+
+def fetch_feed(feed: dict, timeout: int = 20, max_retries: int = 3, base_delay: float = 1.0) -> tuple[dict, list[dict]]:
+    """Fetch RSS feed with exponential backoff retry logic.
+
+    Jack 2026-09-28: VentureBeat / TechXplore 等反爬站点改用"模仿人类"头
+    （真实 Chrome UA + Accept + Accept-Language），429 退避加长，
+    避免被 Cloudflare 识别为 bot。
+    """
+    source_name = feed['text']
+    status = {
+        'feed': source_name,
+        'success': False,
+        'items_total': 0,
+        'items_unique': 0,
+        'error': None,
+    }
+
+    url = feed['xmlUrl']
+    # 记录这是不是 GN 源（用原始 xmlUrl 判断，代理改写后 url 会变成 proxy 地址）
+    _is_gn = 'news.google.com' in url
+    # 2026-10-20 GN 边缘代理：设了 GN_PROXY_BASE_URL（Cloudflare Worker）时，
+    # 把 Google News RSS 抓取改走边缘出口，绕开 GitHub 云段 IP 被 Google 限流（Bug #27）。
+    # 例：GN_PROXY_BASE_URL=https://radar-gn-proxy.xxx.workers.dev
+    _gn_proxy = os.environ.get('GN_PROXY_BASE_URL', '').rstrip('/')
+    if _gn_proxy and _is_gn:
+        _gn_q = parse_qs(urlparse(url).query)
+        _gq = urlencode({k: v[0] for k, v in _gn_q.items()}, doseq=False)
+        url = f"{_gn_proxy}/?{_gq}"
+        print(f"  [PROXY] {source_name}: GN -> {url[:80]}")
+    # 反爬站点（VentureBeat/TechXplore 等）需要更长的退避和更"人类"的请求头
+    bot_sites = ('venturebeat.com', 'techxplore.com')
+    is_bot = any(d in url for d in bot_sites)
+    headers = {
+        'User-Agent': (
+            'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 '
+            '(KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36'
+            if is_bot else 'Mozilla/5.0 (compatible; AI-News-Radar/1.0)'
+        ),
+        'Accept': 'text/xml,application/xml,application/rss+xml;q=0.9,*/*;q=0.8',
+        'Accept-Language': 'en-US,en;q=0.9',
+    }
+    if is_bot:
+        headers['Referer'] = 'https://www.google.com/'
+
+    last_error = None
+    for attempt in range(max_retries):
+        try:
+            resp = requests.get(url, timeout=timeout, headers=headers)
+
+            # BUGFIX(2026-10-08): 原代码先 raise_for_status() 再判 429，
+            # 429 在 raise_for_status() 就抛 HTTPError → 下面的 429 分支是死代码，
+            # 反爬站（VentureBeat/TechXplore）从未拿到加长退避（5s/10s/20s），
+            # 一直走 1s/2s/4s 普通退避，429 三连打满后被 Cloudflare 记入坏快照。
+            if resp.status_code == 429:
+                if attempt < max_retries - 1:
+                    delay = (5.0 if is_bot else base_delay) * (2 ** attempt)
+                    print(f"[WARN] Rate limited ({url}), retrying in {delay:.1f}s...")
+                    time.sleep(delay)
+                    continue
+                else:
+                    last_error = f"Rate limited after {max_retries} attempts"
+                    status['error'] = last_error
+                    break
+
+            resp.raise_for_status()
+            
+            parsed = feedparser.parse(resp.content)
+            items = []
+            for entry in parsed.entries:
+                link = None
+                if hasattr(entry, 'link'):
+                    link = entry.link
+                elif hasattr(entry, 'id'):
+                    link = entry.id
+                if not link:
+                    continue
+                title = None
+                if hasattr(entry, 'title'):
+                    title = entry.title.strip()
+                if not title:
+                    continue
+                published_at = None
+                if hasattr(entry, 'published_parsed') and entry.published_parsed:
+                    try:
+                        dt = datetime(*entry.published_parsed[:6], tzinfo=timezone.utc)
+                        published_at = dt.isoformat()
+                    except Exception:
+                        pass
+                elif hasattr(entry, 'updated_parsed') and entry.updated_parsed:
+                    try:
+                        dt = datetime(*entry.updated_parsed[:6], tzinfo=timezone.utc)
+                        published_at = dt.isoformat()
+                    except Exception:
+                        pass
+                site_name = None
+                if hasattr(entry, 'author_detail') and hasattr(entry.author_detail, 'name'):
+                    site_name = entry.author_detail.name
+                elif hasattr(entry, 'author'):
+                    site_name = entry.author
+                else:
+                    site_name = source_name
+                description = (entry.summary or entry.description or '')
+                if description:
+                    description = html.unescape(re.sub(r'<[^>]+>', '', description)).strip()
+                description = clean_description(description, title, (source_name, site_name))
+                items.append({
+                    'title': title,
+                    'url': link,
+                    'published_at': published_at,
+                    'source': source_name,
+                    'site_name': site_name or source_name,
+                    'description': description,
+                })
+            status['success'] = True
+            status['items_total'] = len(items)
+            return status, items
+            
+        except requests.exceptions.ConnectionError as e:
+            last_error = str(e)
+            if attempt < max_retries - 1:
+                delay = base_delay * (2 ** attempt)
+                print(f"[WARN] Connection error ({url}), retrying in {delay:.1f}s... ({attempt+1}/{max_retries})")
+                time.sleep(delay)
+            else:
+                print(f"[ERROR] Max retries exceeded for {url}: {e}")
+        except requests.exceptions.HTTPError as e:
+            # Don't retry on client errors (4xx), only on server errors (5xx) or rate limiting (429)
+            if e.response.status_code >= 500 or e.response.status_code == 429:
+                last_error = str(e)
+                if attempt < max_retries - 1:
+                    delay = base_delay * (2 ** attempt)
+                    print(f"[WARN] HTTP Error {e.response.status_code} ({url}), retrying in {delay:.1f}s... ({attempt+1}/{max_retries})")
+                    time.sleep(delay)
+                else:
+                    print(f"[ERROR] Max retries exceeded for {url}: {e}")
+            else:
+                # Client errors like 404 don't retry
+                status['error'] = f"HTTP {e.response.status_code}"
+                break
+        except Exception as e:
+            last_error = str(e)
+            if attempt < max_retries - 1:
+                delay = base_delay * (2 ** attempt)
+                print(f"[WARN] Exception ({url}), retrying in {delay:.1f}s... ({attempt+1}/{max_retries})")
+                time.sleep(delay)
+            else:
+                print(f"[ERROR] Max retries exceeded for {url}: {e}")
+
+    # ── 2026-10-20 GN 搜索源 5xx/超时兜底：切 Bing News RSS ──
+    # 10-20 02:01 那轮 Google News RSS 集体 503（Bug #27 复发），整轮只采到 1 条。
+    # 治根：GN 源彻底失败时，把它等价成一次 Bing News 搜索（同 q 查询词）兜底，
+    # 避免"Google 一抖全灭"。下游 24h 窗口 + 标题归一去重会滤掉 Bing 混进的旧文。
+    # 注意用 _is_gn（原始 xmlUrl 判断），代理改写后 url 会变成 proxy 地址。
+    if _is_gn:
+        bing_items = gn_to_bing_items(feed['xmlUrl'], source_name, headers, timeout)
+        if bing_items:
+            status['success'] = True
+            status['items_total'] = len(bing_items)
+            status['error'] = f"GN {last_error} -> Bing fallback"
+            print(f"  [OK] {source_name}: GN failed ({last_error}), Bing fallback +{len(bing_items)} items")
+            return status, bing_items
+        # Bing 也失败 → 落到下方原样失败返回
+
+    status['error'] = last_error if last_error else ("Unknown failure after {max_retries} attempts".format(max_retries=max_retries))
+    return status, []
+
+
+def gn_to_bing_items(url: str, source_name: str, headers: dict, timeout: int = 20) -> list[dict]:
+    """GN 搜索源（news.google.com/rss/search?q=...）失败时的 Bing News 兜底。
+
+    从 GN URL 的 q 参数提取查询词，改打 Bing News 的 RSS 端点
+    （https://www.bing.com/news/search?q=<q>&format=RSS），
+    返回与 GN 同结构的 items 列表（source 保留原分类名，便于下游归类）。
+    """
+    try:
+        from urllib.parse import parse_qs, quote_plus
+        qs = parse_qs(urlparse(url).query)
+        q = qs.get('q', [''])[0]
+        if not q:
+            print(f"  [FALLBACK] {source_name}: GN URL has no q param, cannot fall back to Bing")
+            return []
+        bing_url = f"https://www.bing.com/news/search?q={quote_plus(q)}&format=RSS"
+        print(f"  [FALLBACK] {source_name}: GN failed -> Bing ({q!r})")
+        resp = requests.get(bing_url, timeout=timeout, headers=headers)
+        resp.raise_for_status()
+        parsed = feedparser.parse(resp.content)
+        items = []
+        for entry in parsed.entries:
+            link = getattr(entry, 'link', None) or getattr(entry, 'id', None)
+            title = (getattr(entry, 'title', '') or '').strip()
+            if not link or not title:
+                continue
+            published_at = None
+            for attr in ('published_parsed', 'updated_parsed'):
+                tp = getattr(entry, attr, None)
+                if tp:
+                    try:
+                        published_at = datetime(*tp[:6], tzinfo=timezone.utc).isoformat()
+                        break
+                    except Exception:
+                        pass
+            items.append({
+                'title': title,
+                'url': link,
+                'published_at': published_at,
+                'source': source_name,
+                'site_name': source_name,
+                'description': '',
+                '_via_bing_fallback': True,
+            })
+        print(f"  [FALLBACK] {source_name}: Bing returned {len(items)} items")
+        return items
+    except Exception as e:
+        print(f"  [FALLBACK] {source_name}: Bing fallback also failed: {e}")
+        return []
+
+# ── Custom anchor site fetcher (RSS + HTML page fallback) ──────────────
+def _try_find_rss(base_url: str, timeout: int = 10) -> str | None:
+    """Try common RSS feed URLs and return the first successful one."""
+    candidate_paths = [
+        '/rss-feed/robotics-news/', '/rss-feed/',
+        '/feed', '/feed.xml', '/rss', '/rss.xml', '/atom.xml',
+        '/feeds/posts/default', '/feed/rss', '/rss.xml',
+        '/feed/atom', '/rss.xml/', '/feed.xml/',
+        '/blog/feed', '/blog/feed.xml',
+    ]
+    parsed = urlparse(base_url)
+    base = f"{parsed.scheme}://{parsed.netloc}"
+    # Jack 2026-09-28: RSS 探测也用浏览器 UA（_try_find_rss 主要服务于 TechXplore 等反爬站点）
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36',
+        'Accept': 'text/xml,application/xml,application/rss+xml;q=0.9,*/*;q=0.8',
+        'Accept-Language': 'en-US,en;q=0.9',
+    }
+    for p in candidate_paths:
+        try:
+            r = requests.get(base + p, headers=headers, timeout=timeout, allow_redirects=True)
+            if r.status_code == 200:
+                text = r.text[:500]
+                if '<?xml' in text or '<rss' in text.lower() or '<feed' in text:
+                    return base + p
+        except Exception:
+            continue
+    return None
+
+def _extract_articles_from_html(url: str, source_name: str, max_items: int = 30) -> list[dict]:
+    """Extract article links from HTML page using BeautifulSoup."""
+    try:
+        from bs4 import BeautifulSoup
+    except ImportError:
+        return []
+    
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+        'Accept-Language': 'en-US,en;q=0.9',
+    }
+    
+    try:
+        resp = requests.get(url, headers=headers, timeout=15, verify=False)
+        resp.raise_for_status()
+        content = resp.text
+        soup = BeautifulSoup(content, 'html.parser')
+        
+        items = []
+        seen_urls = set()
+        
+        # Pattern 1: Known article link classes
+        article_patterns = [
+            ('a', {'class': 'term-page--news-article--item--title--link'}),
+            ('a', {'class': 'article-link'}),
+            ('a', {'class': 'post-title'}),
+            ('a', {'class': 'news-title'}),
+            ('a', {'class': 'story-link'}),
+        ]
+        
+        # Try patterns
+        for tag, attrs in article_patterns:
+            links = soup.find_all(tag, attrs=attrs)
+            for a in links[:max_items]:
+                href = a.get('href', '')
+                title = a.get_text(strip=True)
+                if href and title and len(title) > 10:
+                    full_url = urljoin(url, href)
+                    if full_url not in seen_urls:
+                        seen_urls.add(full_url)
+                        items.append({
+                            'title': title[:120],
+                            'url': full_url,
+                            'published_at': None,
+                            'source': source_name,
+                            'site_name': source_name,
+                            'description': '',
+                        })
+            if items:
+                break
+        
+        # Fallback: find all links with date patterns in href
+        if not items:
+            for a in soup.find_all('a', href=True):
+                href = a.get('href', '')
+                title = a.get_text(strip=True)
+                if href and title and len(title) > 10:
+                    # Check if href contains date pattern
+                    if '/20' in href or '/blog/' in href or '/news/' in href or '/article' in href.lower():
+                        full_url = urljoin(url, href)
+                        if full_url not in seen_urls:
+                            seen_urls.add(full_url)
+                            items.append({
+                                'title': title[:120],
+                                'url': full_url,
+                                'published_at': None,
+                                'source': source_name,
+                                'site_name': source_name,
+                                'description': '',
+                            })
+                if len(items) >= max_items:
+                    break
+        
+        return items
+    except Exception as e:
+        print(f"[ANCHOR] HTML scrape error for {source_name}: {str(e)[:80]}")
+        return []
+
+def fetch_anchor_site(feed: dict, timeout: int = 30, max_items: int = 30) -> tuple[dict, list[dict]]:
+    """Fetch a custom anchor site: try RSS first, fallback to HTML scraping."""
+    source_name = feed['text']
+    url = feed.get('xmlUrl', feed.get('url', ''))
+    feed_type = feed.get('type', 'rss')
+    status = {'feed': source_name, 'success': False, 'items_total': 0, 'items_unique': 0, 'error': None}
+
+    if feed_type == 'rss':
+        # Direct RSS fetch
+        try:
+            resp = requests.get(url, headers={'User-Agent': 'Mozilla/5.0 (compatible; AI-News-Radar/1.0)'}, timeout=timeout, allow_redirects=True, verify=False)
+            resp.raise_for_status()
+            parsed = feedparser.parse(resp.content)
+            items = []
+            for entry in parsed.entries[:max_items]:
+                link = entry.get('link') or entry.get('id')
+                if not link:
+                    continue
+                title = entry.get('title', '').strip()
+                if not title:
+                    continue
+                published_at = None
+                if hasattr(entry, 'published_parsed') and entry.published_parsed:
+                    try:
+                        dt = datetime(*entry.published_parsed[:6], tzinfo=timezone.utc)
+                        published_at = dt.isoformat()
+                    except Exception:
+                        pass
+                site_name = None
+                if hasattr(entry, 'author_detail') and hasattr(entry.author_detail, 'name'):
+                    site_name = entry.author_detail.name
+                elif hasattr(entry, 'author'):
+                    site_name = entry.author
+                else:
+                    site_name = source_name
+                description = (entry.get('summary') or entry.get('description') or '')
+                if description:
+                    description = html.unescape(re.sub(r'<[^>]+>', '', description)).strip()
+                description = clean_description(description, title, (source_name, site_name))
+                items.append({
+                    'title': title,
+                    'url': link,
+                    'published_at': published_at,
+                    'source': source_name,
+                    'site_name': source_name,
+                    'description': description[:300],
+                })
+            if items:
+                status['success'] = True
+                status['items_total'] = len(items)
+                return status, items
+            else:
+                status['error'] = 'RSS parsed but no entries found'
+                return status, []
+        except Exception as e:
+            status['error'] = f'RSS fetch failed: {str(e)[:80]}'
+            # Fall through to HTML scraping
+    else:
+        # Try to find RSS first
+        rss_url = _try_find_rss(url, timeout=10)
+        if rss_url:
+            try:
+                # Jack 2026-09-28: anchor RSS 直连也用浏览器 UA（VentureBeat/TechXplore 等反爬源）
+                bot_sites = ('venturebeat.com', 'techxplore.com')
+                is_bot = any(d in (url + rss_url) for d in bot_sites)
+                rss_headers = {
+                    'User-Agent': (
+                        'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 '
+                        '(KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36'
+                        if is_bot else 'Mozilla/5.0 (compatible; AI-News-Radar/1.0)'
+                    ),
+                    'Accept': 'text/xml,application/xml,application/rss+xml;q=0.9,*/*;q=0.8',
+                    'Accept-Language': 'en-US,en;q=0.9',
+                }
+                if is_bot:
+                    rss_headers['Referer'] = 'https://www.google.com/'
+                resp = requests.get(rss_url, headers=rss_headers, timeout=timeout, allow_redirects=True, verify=False)
+                parsed = feedparser.parse(resp.content)
+                items = []
+                for entry in parsed.entries[:max_items]:
+                    link = entry.get('link') or entry.get('id')
+                    if not link:
+                        continue
+                    title = entry.get('title', '').strip()
+                    if not title:
+                        continue
+                    published_at = None
+                    if hasattr(entry, 'published_parsed') and entry.published_parsed:
+                        try:
+                            dt = datetime(*entry.published_parsed[:6], tzinfo=timezone.utc)
+                            published_at = dt.isoformat()
+                        except Exception:
+                            pass
+                    site_name = None
+                    if hasattr(entry, 'author_detail') and hasattr(entry.author_detail, 'name'):
+                        site_name = entry.author_detail.name
+                    elif hasattr(entry, 'author'):
+                        site_name = entry.author
+                    else:
+                        site_name = source_name
+                    description = (entry.get('summary') or entry.get('description') or '')
+                    if description:
+                        description = html.unescape(re.sub(r'<[^>]+>', '', description)).strip()
+                    description = clean_description(description, title, (source_name, (site_name or source_name)))
+                    items.append({
+                        'title': title,
+                        'url': link,
+                        'published_at': published_at,
+                        'source': source_name,
+                        'site_name': source_name,
+                        'description': description[:300],
+                    })
+                if items:
+                    status['success'] = True
+                    status['items_total'] = len(items)
+                    return status, items
+            except Exception:
+                pass  # Fall through to HTML scraping
+
+    # Fallback: HTML scrape with BeautifulSoup
+    print(f"[ANCHOR] Scraping {source_name}: {url}")
+    items = _extract_articles_from_html(url, source_name, max_items)
+    if items:
+        status['success'] = True
+        status['items_total'] = len(items)
+        return status, items
+    else:
+        status['error'] = 'No articles found in HTML'
+        return status, []
+
+GN_LABEL_MAP = {
+    'GN: humanoid robot':        'humanoid',
+    '国外人形机器人资讯':           'humanoid',
+    'GN: 人形机器人':              'humanoid',
+    '国内人形机器人资讯':          'humanoid',
+    'GN: embodied intelligence':  'embodied_ai',
+    '国外具身智能资讯':          'embodied_ai',
+    'GN: 具身智能':              'embodied_ai',
+    '国内具身智能资讯':          'embodied_ai',
+    'GN: Physical AI':           'physical_ai',  # BUG#2 FIX: removed 'robot' keyword to prevent misclassification
+    '国外物理AI资讯':            'physical_ai',
+    'GN: 物理AI':               'physical_ai',
+    '国内物理AI资讯':            'physical_ai',
+    'GN: BCI':                   'brain_computer',
+    'GN: 脑机接口':              'brain_computer',
+    '国外脑机接口资讯':          'brain_computer',
+    '国内脑机接口资讯':          'brain_computer',
+    'GN: robot':                 'robotics',
+    '国外机器人资讯':               'robotics',
+    'GN: 机器人':                'robotics',
+    '国内机器人资讯':            'robotics',
+    # Jack 2026-10-23: 资本事件层——融资/IPO/递表/招股 重磅消息归入 capital_events
+    # （新 ai_label，前端注册到 GN_CATEGORIES/GN_PRIORITY/AI_LABEL_TO_GN，不再沉底）
+    'GN: 资本事件':              'capital_events',
+    'GN: Capital Events':        'capital_events',
+    'GN: 融资':                  'capital_events',
+    # 目标公司资本锚点（Noetix/松延 递表港交所、宇树 IPO）
+    'GN: Noetix 松延':           'capital_events',
+    'GN: 宇树资本':              'capital_events',
+    'GN: 智元资本':              'capital_events',
+    'GN: 傅利叶资本':            'capital_events',
+}
+
+# Custom anchors: map source name → gn_label (high authority sites get top-level labels)
+CUSTOM_ANCHOR_LABEL = {
+    # 机器人锚点
+    'Robot Report':             'robotics',
+    'IEEE Spectrum':            'robotics',
+    'MIT News Robotics':        'robotics',
+    'NVIDIA Blog Robotics':     'robotics',
+    'DeepMind Blog':            'robotics',
+    'Meta AI Blog':             'robotics',
+    'HuggingFace Blog':         'robotics',
+    'Robot Magazine':           'robotics',
+    'Figure AI':                'humanoid',
+    'Unitree':                  'humanoid',
+    'Boston Dynamics':          'humanoid',
+    '1X Technologies':          'humanoid',
+    'Apptronik':                'humanoid',
+    'Agility Robotics':         'humanoid',
+    'Embodied AI':              'embodied_ai',
+    # BCI 锚点
+    'BCI News':                 'brain_computer',
+    'Neurofounders':            'brain_computer',
+    'ScienceDaily BCI':         'brain_computer',
+    'Neuroscience News':        'brain_computer',
+    'IEEE Brain':               'brain_computer',
+    'OpenBCI':                  'brain_computer',
+    'Neuralink':                'brain_computer',
+    'Synchron':                 'brain_computer',
+    'IEEE Spectrum Neuro':      'brain_computer',
+    'Medical Xpress BCI':       'brain_computer',
+    'EMOTIV':                   'brain_computer',
+    'Neurosity':                'brain_computer',
+    # 中文媒体
+    '机器之心':                  'robotics',
+    '量子位':                    'robotics',
+    'LatePost':                  'robotics',
+    '罗戈研究':                  'robotics',
+    '极链AI':                    'robotics',
+    '雷锋网':                    'robotics',
+    # 量化投研锚点（聚宽社区 / 回测 / 选股策略）
+    'GN: JoinQuant 策略':       'quant_trading',
+    'JoinQuant 策略':          'quant_trading',
+}
+
+# 量化投研相关词（命中则归入 quant_trading）
+QUANT_TRADING_KEYWORDS = [
+    '选股', '回测', '量化', '策略', 'joinquant', '聚宽',
+    'backtest', 'quant', 'factor', '因子',
+    '市场', 'alpha', 'portfolio', '组合',
+]
+
+TIER1 = ['humanoid robot','humanoid','embodied intelligence','embodied AI',
+         '具身智能','人形机器人','脑机接口','brain-computer interface',
+         'brain computer interface','bci']
+TIER2 = ['robot','robots','robotics','robotic',
+         'Tesla Optimus','Figure AI','Boston Dynamics',
+         'Unitree','Fourier','宇树','傅利叶','智元','星动纪元',
+         'agility robotics','1X Technologies',
+         '灵巧手','机械臂','双足','协作机器人','cobot']
+TIER3 = ['physical AI','dexterous manipulation','robot learning']
+# 量化投研 tier：与机器人 tier 互不干扰
+QUANT_TIER = QUANT_TRADING_KEYWORDS
+
+# Jack 2026-10-23: 资本事件层——融资/IPO/递表/招股/上市/估值/募资 命中标题
+# 直接给 0.72 相关度（高于 TIER3 的 0.50），让重磅资本消息在 24h 主流里排名靠前。
+# 注意不用裸"轮"（"轮式机器人"会误伤），只用"融资/募资/估值"等确定词。
+CAPITAL_TIER = [
+    '融资','募资','招股','递表','港股','上市','估值','IPO',
+    'funding','raises','raised','prospectus','valuation','seed round',
+    'series a','series b','series c',
+]
+
+def relevance_score(title: str, description: str = '') -> float:
+    text = (title + ' ' + description).lower()
+    for kw in TIER1:
+        if kw.lower() in text:
+            return 0.80
+    for kw in TIER2:
+        if kw.lower() in text:
+            return 0.65
+    for kw in TIER3:
+        if kw.lower() in text:
+            return 0.50
+    # 资本事件层（Jack 2026-10-23）：融资/IPO/递表/招股 重磅消息
+    # 相关度 0.72，高于 TIER3 低于 TIER2，让重磅资本事件在主流里排得上去
+    for kw in CAPITAL_TIER:
+        if kw.lower() in text:
+            return 0.72
+    # 量化投研 tier（JoinQuant / 选股 / 回测 / 策略）
+    for kw in QUANT_TIER:
+        if kw.lower() in text:
+            return 0.60
+    return 0.35
+
+AUTHORITY_MAP = {'Google News': 15}
+
+def authority_score(source: str) -> int:
+    for prefix, score in AUTHORITY_MAP.items():
+        if source.startswith(prefix):
+            return score
+    return 10
+
+# Noise patterns with word boundaries (avoid false matches like "Interface" matching "ETF")
+# Jack 2026-10-23 改进：资本事件不是噪声——删掉 \b上市\b|\bIPO\b 后
+# 松延动力/Noetix 递表港交所、宇树上市、Eka 融资这类重磅消息不再被误杀。
+# 保留的市场噪声：纯股价涨跌行情（没有事件本身，只有交易噪音）。
+# Jack 2026-10-23: 二级市场纯行情噪声——涨跌快讯/收评/涨停板 无实质事件时过滤。
+# 行情词命中 且 标题/摘要无实质事件词（IPO/融资/递表/上市/国标/量产…）才判噪声；
+# 含实质事件的上市公司新闻保留。"租金暴跌"（产业价而非股价）不命中百分比形态 → 保留。
+MARKET_MOVE_PAT = re.compile(
+    r'收评|收涨|收跌|收盘|开盘|涨停|跌停|板块|沪指|深证|大盘|涨幅|连板|封板|封死|'
+    r'逆市|异动|拉升|走高|走强|涨超|跌超|后市|行情|猛攻|市值|反弹'
+)
+MARKET_PCT_PAT = re.compile(r'(大涨|大跌|暴涨|暴跌)[^。！!?？\n]{0,10}\d')
+SUBSTANTIVE_EVENT_PAT = re.compile(
+    r'ipo|融资|递表|招股|募资|备案|估值|收购|并购|起草|参编|国标|合作|签约|'
+    r'量产|交付|订单大爆发|订单突破|战略投资|战略签约|funding|funds|raises|prospectus|merger|acquisition',
+    re.I,
+)
+
+def is_market_move_noise(title: str, description: str) -> bool:
+    """二级市场纯行情快讯判噪声（Jack 2026-10-23：上市公司新闻保留，股价涨跌砍掉）。
+    行情触发只看标题——GN 摘要常复读标题或夹带"板块/涨幅"等行情词，若摘要也能触发，
+    纯实质新闻（标题无行情词、摘要沾行情词）会被误杀；摘要仅作实质词兜底，不作触发源。
+    实质词表刻意保持窄（见 SUBSTANTIVE_EVENT_PAT），标题+摘要都扫以最大化保留真新闻。"""
+    t = title or ''
+    full = t + ' ' + (description or '')
+    if not (MARKET_MOVE_PAT.search(t) or MARKET_PCT_PAT.search(t)):
+        return False
+    return SUBSTANTIVE_EVENT_PAT.search(full) is None
+
+NOISE_PATTERNS = [
+    re.compile(r'\bETF\b', re.I),
+    re.compile(r'机器人ETF', re.I),
+    re.compile(r'\b股票\b|\b股价\b|\b涨跌\b', re.I),
+    re.compile(r'扫地机器人|扫地机|扫地|roomba|robovac|roborock|dreame|ecovacs|narwal|irobot|追觅|科沃斯|云鲸|石头科技|robot vacuum|robot mop|robot cleaner|robotic vacuum|smart vacuum|auto vacuum', re.I),
+    re.compile(r'概念股', re.I),
+    re.compile(r'\b评级\b|\b买入\b|\b卖出\b|\b增持\b|\b目标价\b', re.I),
+    re.compile(r'财报|营收|利润|亏损|盈利', re.I),
+    re.compile(r'回购|分红|配股', re.I),
+]
+
+NOISE_DOMAINS = [
+    'eastmoney.com','finance.sina.com.cn','stock.hexun.com',
+    'stock.cnfol.com','guba.sina.com.cn','xueqiu.com',
+]
+
+MIN_DESC_LEN = 0  # Disabled: GN RSS descriptions are inherently short snippets, not full article text
+
+def _norm_ws(s: str) -> str:
+    return re.sub(r'\s+', ' ', (s or '')).strip()
+
+def clean_description(description: str, title: str, source_names=()) -> str:
+    """Jack 2026-09-11 (v3): GN RSS description 为"标题+来源名"复读时清洗为空。
+
+    v3 规则（按序）：
+    1. 已知 source/site_name 精确剥离（desc 尾部与 title 尾部 " - X"）
+    2. 规范空白后全等 → ''
+    3. 规范形比对：title 剥 " - 来源" 尾巴、desc 剥 " 来源" 尾巴后全等 → ''
+       （覆盖 desc 用双空格 + title 用 " - " 分隔来源的 GN 格式）
+    4. 前缀复读兜底：前 40 字符相同且长度差 < 60 → ''（GN 长标题截断）
+    5. 剩余长度 < 30 → ''
+    """
+    if not description:
+        return ''
+    d = description.strip()
+    t = (title or '').strip()
+    for s in source_names:
+        if s and s.strip():
+            e = re.escape(s.strip())
+            d = re.sub(r'[\s\-–—]*' + e + r'\s*$', '', d).strip()
+            t = re.sub(r'\s*[-–—]\s*' + e + r'\s*$', '', t).strip()
+    d_n, t_n = _norm_ws(d), _norm_ws(t)
+    if d_n == t_n:
+        return ''
+    t_c = re.sub(r'\s*[-–—]\s*[^\s\-–—]{2,30}\s*$', '', t_n).strip()
+    d_c = re.sub(r'\s+[^\s\-–—]{2,30}\s*$', '', d_n).strip()
+    if t_c and d_c and (d_c == t_c or d_c == t_n or d_n == t_c):
+        return ''
+    probe = min(40, len(d_n), len(t_n))
+    if probe >= 20 and d_n[:probe] == t_n[:probe] and abs(len(d_n) - len(t_n)) < 60:
+        return ''
+    # v4: 尾 token 剥离复读判定——desc 剥 1-6 个尾部 token 后成为 title 前缀 → 复读
+    # （覆盖含连字符/多段来源名："标题 eet-china.com"、"标题 36 Kr"）
+    tokens = d_n.split(' ')
+    for k in range(1, 7):
+        if len(tokens) <= k:
+            break
+        cand = ' '.join(tokens[:-k]).strip()
+        if len(cand) >= 20 and t_n.startswith(cand):
+            return ''
+    if len(d_n) < 30:
+        return ''
+    return d_n
+
+def is_noise(title: str, description: str, url: str) -> tuple[bool, str]:
+    text = (title + ' ' + description).lower()
+    for pat in NOISE_PATTERNS:
+        if pat.search(text):
+            return True, pat.pattern
+    # Jack 2026-10-23: 二级市场纯行情快讯（收评/涨停/板块走强 且 无实质事件）过滤
+    if is_market_move_noise(title, description):
+        return True, 'market_move'
+    try:
+        parsed = urlparse(url)
+        domain = parsed.netloc.lower()
+        for nd in NOISE_DOMAINS:
+            if domain.endswith(nd):
+                return True, f'domain:{nd}'
+    except Exception:
+        pass
+    desc_len = len(description.strip()) if description else 0
+    # short_item filter: description < 200 chars = low value content
+    if desc_len < MIN_DESC_LEN:
+        return True, "short_item"
+    return False, ''
+
+def item_id(title: str, url: str) -> str:
+    norm_title = re.sub(r'\s+', ' ', title.strip().lower())
+    norm_url = normalize_url(url).lower()
+    return hashlib.sha1(f"{norm_title}|{norm_url}".encode()).hexdigest()
+
+def deduplicate(items: list[dict], seen: dict[str, str]) -> tuple[list[dict], int]:
+    unique, duplicates = [], 0
+    for item in items:
+        sid = item_id(item['title'], item['url'])
+        if sid not in seen:
+            seen[sid] = sid
+            unique.append(item)
+        else:
+            duplicates += 1
+    return unique, duplicates
+
+
+def normalize_title_for_dedup(title: str) -> str:
+    """归一化标题用于跨 feed 去重：去标点/空格/中英括号/全半角差异
+    
+    Google News 会在标题末尾加 ' - Source Name' 标识发布来源，
+    同一篇文章被多次抓取时这个 source 名称会变（如 'ACCESS Newswire' vs 'Yahoo Finance'），
+    必须在 dedup 前剥离。
+    
+    FIX (2026-07-13): 旧正则把所有标点压缩成一个字符导致误合并。
+    正确做法：只去掉末尾的 ' - Source' 后缀，保留标题主体中的所有字符和结构。
+    """
+    t = unicodedata.normalize('NFKC', title)
+    # 去掉 Google News 在标题末尾加的 ' - Source Name' 后缀
+    t = re.sub(r'\s+-\s+[^-–—]+$', '', t)
+    # 归一化标点（去中日文标点+去西文标点），但不压缩内部字符
+    t = re.sub(r'[\s　]+', ' ', t)                              # 合并空格（不删字符）
+    t = re.sub(r'[，。、！？；：""''《》【】()（）]', '', t)  # 去中日文标点
+    t = re.sub(r'[\-_,.!?/:;"\'\'\(\)\[\]]+', '', t)             # 去西文标点
+    t = t.lower().strip()
+    return t
+
+
+def cross_feed_deduplicate(items: list[dict]) -> tuple[list[dict], int]:
+    """跨 feed 去重（BUG#1 修复）：同一文章在不同 feed 里 id 不同但标题相同。
+    
+    用 normalize_title_for_dedup 作为第二去重键，保留 quality_score 最高的那条。
+    返回 (unique_items, removed_count) — removed = 输入数 - 输出数。
+    """
+    seen_titles: dict[str, dict] = {}
+    unique = []
+    for item in items:
+        norm = normalize_title_for_dedup(item['title'])
+        if norm in seen_titles:
+            existing = seen_titles[norm]
+            # 比较 total_score（scored items）或 relevance（raw items），保留高的
+            existing_score = existing.get('total_score', existing.get('relevance', 0))
+            new_score = item.get('total_score', item.get('relevance', 0))
+            if new_score > existing_score:
+                # Replace: remove old from unique list, add new
+                seen_titles[norm] = item
+                unique = [u for u in unique if u is not existing]
+                unique.append(item)
+        else:
+            seen_titles[norm] = item
+            unique.append(item)
+    removed = len(items) - len(unique)
+    return unique, removed
+
+def timeliness_score(published_at: str | None, now_ts: float) -> float:
+    if not published_at:
+        return 0.0
+    try:
+        dt = datetime.fromisoformat(published_at.replace('Z', '+00:00'))
+        age_hours = (now_ts - dt.timestamp()) / 3600
+        if age_hours < 0:
+            age_hours = 0
+        return max(0, 30 - age_hours)
+    except Exception:
+        return 0.0
+
+
+def is_english(title: str) -> bool:
+    """Returns True if title is predominantly English (fewer than 20% Chinese chars)."""
+    chinese = len(re.findall(r'[\u4e00-\u9fff]', title))
+    total = len(title.strip())
+    return total > 0 and chinese / total < 0.2
+
+def translate_text(text: str, target: str = 'zh', _retries: int = 3) -> str:
+    """Translate text using Google Translate API (free, no key required).
+    
+    FIX (2026-07-13): Add exponential backoff retry for 429 rate limit responses.
+    Google Translate free API returns 429 when overused; without retry the whole
+    batch silently returns empty strings for rate-limited requests.
+    """
+    if not text or not text.strip():
+        return text
+    url = 'https://translate.googleapis.com/translate_a/single'
+    params = {
+        'client': 'gtx', 'sl': 'auto', 'tl': target,
+        'dt': 't', 'q': text
+    }
+    for attempt in range(_retries):
+        try:
+            r = requests.get(url, params=params, timeout=8)
+            if r.status_code == 200:
+                data = r.json()
+                return ''.join(item[0] for item in data[0] if item[0])
+            elif r.status_code == 429:
+                # Rate limited — wait with exponential backoff then retry
+                wait = (attempt + 1) * 1.5
+                time.sleep(wait)
+                continue
+            else:
+                return ''
+        except Exception:
+            if attempt == _retries - 1:
+                return ''
+            time.sleep(0.5)
+    return ''  # all retries exhausted
+
+def translate_batch(texts: list[str], target: str = 'zh', max_workers: int = 2) -> dict[str, str]:
+    """Translate multiple texts concurrently using Google Translate.
+    Returns dict mapping original text to translated text.
+    
+    FIX (2026-07-13): Reduced max_workers from 8 to 2 to avoid triggering
+    Google Translate free API rate limits. Combined with retry+backoff in
+    translate_text(), this dramatically reduces silent translation failures.
+    """
+    if not texts:
+        return {}
+    # Deduplicate while preserving order
+    seen = set()
+    unique = []
+    for t in texts:
+        if t and t not in seen:
+            seen.add(t)
+            unique.append(t)
+
+    results = {}
+    from concurrent.futures import ThreadPoolExecutor, as_completed
+
+    def _translate(text):
+        return text, translate_text(text, target)
+
+    # FIX: cap workers at 2 — Google free API rate limits fast with higher concurrency
+    actual_workers = min(max_workers, 2)
+    with ThreadPoolExecutor(max_workers=actual_workers) as executor:
+        futures = {executor.submit(_translate, t): t for t in unique}
+        for future in as_completed(futures):
+            try:
+                orig, trans = future.result(timeout=15)
+                results[orig] = trans
+            except Exception:
+                orig = futures[future]
+                results[orig] = orig  # fallback to original
+
+    return results
+
+def summary_quality(desc: str) -> tuple:
+    """Re-export（arxiv/toutiao fetcher 与历史调用方兼容）；实体在 huxiu_score.py。"""
+    from huxiu_score import summary_quality as _sq
+    return _sq(desc)
+
+
+def rescore_after_summary(item: dict) -> None:
+    """DEPRECATED 2026-09-15: 主管线已改用 calibrate_scores()。
+    仅为 arxiv/toutiao 之外的兼容保留；按最终 description 重算 depth/writing。"""
+    depth, writing = summary_quality(item.get('description', ''))
+    old_pts = (item.get('depth') or 0) + (item.get('writing_value') or 0)
+    item['depth'] = depth
+    item['writing_value'] = writing
+    if item.get('total_score') is not None:
+        item['total_score'] = round(item['total_score'] - old_pts + depth + writing, 2)
+
+
+def score_item(item: dict, now_ts: float) -> dict:
+    title = item['title']
+    desc = item.get('description', '')
+    source = item['source']
+    relevance = relevance_score(title, desc)
+    authority = authority_score(source)
+    depth, writing_value = summary_quality(desc)
+    timeliness = timeliness_score(item['published_at'], now_ts)
+    total = relevance * 100 + authority + depth + writing_value + timeliness
+    # BUG#2 FIX: cross-label priority
+    # If title has strong robot signal (机器人/人形/具身), don't let physical_ai override
+    title_lower = title.lower()
+    has_robot_signal = any(kw in title_lower for kw in ['机器人', '人形', '具身智能', 'humanoid', 'embodied'])
+    # Use CUSTOM_ANCHOR_LABEL for high-authority sites, fallback to GN_LABEL_MAP
+    gn_label = CUSTOM_ANCHOR_LABEL.get(source) or GN_LABEL_MAP.get(source, 'robotics')
+    if has_robot_signal and gn_label == 'physical_ai':
+        gn_label = 'robotics'  # downgrade physical_ai to generic robotics
+    return {
+        'id': item_id(title, item['url']),
+        'title': title,
+        'title_zh': item.get('title_zh', ''),
+        'url': item['url'],
+        'published_at': item['published_at'],
+        'category': source,
+        'gn_label': gn_label,
+        'site_name': item['site_name'],
+        'source': source,
+        'site_id': source,
+        'description': item.get('description', ''),
+        'ai_score': round(relevance * 100, 2),
+        'ai_label': gn_label,
+        'relevance': round(relevance, 3),
+        'authority': authority,
+        'depth': depth,
+        'timeliness': round(timeliness, 2),
+        'writing_value': writing_value,
+        'total_score': round(total, 2),
+    }
+
+ARCHIVE_DAYS = 21
+ANCHOR_HOUR = 19
+
+def load_archive(path: str) -> tuple[list[dict], dict[str, str]]:
+    if not os.path.exists(path):
+        return [], {}
+    try:
+        with open(path, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+        seen, valid = {}, []
+        cutoff = datetime.now(timezone.utc) - timedelta(days=ARCHIVE_DAYS)
+        for item in data.get('items', []):
+            sid = item.get('id', '') or item_id(item.get('title',''), item.get('url',''))
+            seen[sid] = sid
+            if item.get('published_at'):
+                try:
+                    dt = datetime.fromisoformat(item['published_at'].replace('Z','+00:00'))
+                    if dt >= cutoff:
+                        valid.append(item)
+                except Exception:
+                    valid.append(item)
+            else:
+                valid.append(item)
+        return valid, seen
+    except Exception:
+        return [], {}
+
+def save_archive(path: str, items: list[dict]):
+    cutoff = datetime.now(timezone.utc) - timedelta(days=ARCHIVE_DAYS)
+    valid = []
+    for item in items:
+        if item.get('published_at'):
+            try:
+                dt = datetime.fromisoformat(item['published_at'].replace('Z','+00:00'))
+                if dt >= cutoff:
+                    valid.append(item)
+            except Exception:
+                valid.append(item)
+        else:
+            valid.append(item)
+    with open(path, 'w', encoding='utf-8') as f:
+        json.dump({'generated_at': datetime.now(timezone.utc).isoformat(),
+                   'total_items': len(valid), 'items': valid},
+                  f, ensure_ascii=False, indent=2)
+
+
+def _run_enrich_subprocess(items, output_dir, top_n=150, recheck=False, tag='main'):
+    """2026-09-30: 把 summary enricher 隔离到子进程跑。
+
+    根因：enrich_items 里 trafilatura/lxml C 扩展在高并发抓正文时偶发
+    glibc 堆损坏（`corrupted size vs. prev_size` → SIGABRT, exit 134），
+    主管线 try/except 接不住 C 层 abort，直接把整个 update-news run 杀掉，
+    数据永远推不上 Pages（9/30 08:30/09:00 两次 dispatch 都栽在这）。
+
+    现在走 summary_enricher.py CLI（--items 模式）在独立子进程里跑：
+      崩溃 → 子进程死，主流程拿不到写回的 enriched 文件 → 降级跳过摘要，
+      RSS 数据 + 分数照常生成推送。摘要缺失只是前端降级显示，不是数据冻结。
+    子进程 240s 硬顶（enricher 单跑约 123s，留一倍余量防慢网/限流），
+    超时/非 0 退出同样降级。C 层 abort 只死子进程，主流程无感。
+    """
+    import subprocess, tempfile
+    from pathlib import Path
+    items_path = Path(output_dir) / f'_enrich_items_{tag}.json'
+    try:
+        with open(items_path, 'w', encoding='utf-8') as f:
+            json.dump(items, f, ensure_ascii=False)
+    except Exception as _e:
+        print(f"[SUMMARY] {tag} enrich skipped (items dump failed: {_e})")
+        return
+    script = Path(__file__).resolve().parent / 'summary_enricher.py'
+    cmd = [sys.executable, str(script), '--items', str(items_path),
+           output_dir, str(top_n), '1' if recheck else '0']
+    try:
+        r = subprocess.run(cmd, timeout=240, capture_output=True, text=True)
+        if r.returncode == 0 and items_path.exists():
+            with open(items_path, encoding='utf-8') as f:
+                enriched = json.load(f)
+            # 2026-09-30 BUGFIX: items 可能是 list（scored/anchors）或 dict。
+            # 旧写法 items.clear()+items.update() 只适配 dict：list 上
+            # clear() 先清空数据，update() 再炸 AttributeError，主管线
+            # 拿着空 list 继续 → 生成 0 条推上 Pages（09/30 09:54 事故）。
+            # 改为原位置替换（list 用切片，dict 用 clear+update），
+            # 任何环节失败都不允许把已抓到的数据弄丢。
+            try:
+                if isinstance(items, dict):
+                    items.clear()
+                    items.update(enriched)
+                else:
+                    items[:] = enriched
+                # 2026-10-14 可观测性修复：过去只打 stdout 最后一行，
+                # 子进程早退（deps missing / candidates=0 / 内部异常）的关键日志
+                # 全被吞掉，CI 上只看到 "candidates: 0" 却无从判断死在哪一步。
+                # 现在把 stdout 全量 + stderr（rc!=0 时）都打出来。
+                _so = (r.stdout or '').strip()
+                _se = (r.stderr or '').strip()
+                print(f"[SUMMARY] {tag} enrich via subprocess: "
+                      f"{_so.splitlines()[-1] if _so else 'ok'}")
+                if _so:
+                    for _l in _so.splitlines()[:-1]:
+                        print(f"[SUMMARY:{tag}] {_l}")
+                if _se:
+                    print(f"[SUMMARY:{tag}] stderr: {_se[-800:]}")
+            except Exception as _merge_e:
+                print(f"[SUMMARY] {tag} enrich merge failed ({_merge_e}); "
+                      f"keeping original {len(items)} items (enriched data discarded)")
+        else:
+            print(f"[SUMMARY] {tag} enrich subprocess rc={r.returncode}, "
+                  f"degraded (data proceeds without fresh summaries)")
+            print(f"[SUMMARY:{tag}] stdout: {(r.stdout or '').strip()[-800:]}")
+            print(f"[SUMMARY:{tag}] stderr: {(r.stderr or '').strip()[-800:]}")
+    except subprocess.TimeoutExpired:
+        print(f"[SUMMARY] {tag} enrich subprocess 240s timeout, degraded")
+    except Exception as _e:
+        print(f"[SUMMARY] {tag} enrich subprocess failed: {_e}, degraded")
+    finally:
+        try:
+            items_path.unlink()
+            items_path.with_suffix('.json.enriched').unlink()
+        except Exception:
+            pass
+
+
+def run(output_dir: str, window_hours: int, opml_path: str, archive_days: int, window_from: str = None, custom_opml_path: str = None):
+    global ARCHIVE_DAYS
+    ARCHIVE_DAYS = archive_days
+
+    feeds = parse_opml(opml_path)
+    print(f"[INFO] Loaded {len(feeds)} feeds from {opml_path}")
+
+    # Load custom anchor feeds
+    custom_feeds = []
+    if custom_opml_path and os.path.exists(custom_opml_path):
+        custom_feeds = parse_opml(custom_opml_path)
+        print(f"[INFO] Loaded {len(custom_feeds)} custom anchor feeds from {custom_opml_path}")
+    elif custom_opml_path:
+        print(f"[WARN] Custom opml not found: {custom_opml_path}")
+
+    all_items, seen_ids = [], {}
+    now_ts = time.time()
+    feed_statuses, total_dedup = [], 0
+    total_noise, total_short = 0, 0
+
+    print("[INFO] Fetching feeds...")
+    with ThreadPoolExecutor(max_workers=8) as ex:
+        futures = {ex.submit(fetch_feed, f): f for f in feeds}
+        # 2026-09-30 FIX: per-feed hard cap 45s — 单个慢源（超时重试累积）
+        # 曾拖垮整个 20min job timeout 导致连环 cancel（9/29 15:15-18:45 事故）。
+        # as_completed(timeout=45) 整批超时会抛 FuturesTimeout —— 接住后走下方
+        # "标记未完成 future 为 FAIL" 兜底，绝不让异常冒泡崩掉脚本。
+        try:
+            for future in as_completed(futures, timeout=45):
+                status, items = future.result()
+                unique, n_dup = deduplicate(items, seen_ids)
+                all_items.extend(unique)
+                total_dedup += n_dup
+                status['items_unique'] = len(unique)
+                feed_statuses.append(status)
+                name = futures[future]['text']
+                ok = '[OK]' if status['success'] else '[FAIL]'
+                d = f", -{n_dup} dup" if n_dup else ""
+                print(f"  {ok} {name}: +{status['items_total']} items, {len(unique)} unique{d}")
+        except FuturesTimeout:
+            print(f"  [WARN] 45s hard cap hit — {sum(1 for f in futures if not f.done())} feeds still pending, marked FAIL")
+        # 未完成的 future（45s 超时的慢源）→ 标记 FAIL，不阻塞整体
+        for future in futures:
+            if not future.done():
+                status, _items = {'success': False, 'items_total': 0, 'items_unique': 0,
+                                  'feed': futures[future]['text'],
+                                  'error': 'timeout_45s'}, []
+                feed_statuses.append(status)
+                print(f"  [FAIL] {futures[future]['text']}: 45s hard cap timeout, skipped")
+
+    # Fetch custom anchor sites (use 7-day window for anchors)
+    if custom_feeds:
+        print(f"[INFO] Fetching custom anchor sites...")
+        anchor_items, anchor_seen = [], {}
+        now_ts = time.time()
+        with ThreadPoolExecutor(max_workers=8) as ex:
+            futures = {ex.submit(fetch_anchor_site, f): f for f in custom_feeds}
+            # 2026-09-30 FIX: 锚点源同样 45s hard cap（慢源不拖垮 job）
+            # as_completed(timeout=45) 整批超时会抛 FuturesTimeout —— 接住后把
+            # 未完成锚点源标记 FAIL，绝不让异常冒泡崩掉脚本。
+            try:
+                for future in as_completed(futures, timeout=45):
+                    status, items = future.result()
+                    unique, n_dup = deduplicate(items, anchor_seen)
+                    anchor_items.extend(unique)
+                    status['items_unique'] = len(unique)
+                    # Jack 2026-09-28: custom 锚点源（VentureBeat/TechXplore 等）是"精选锚点"补充专区，
+                    # 它们抓取失败不进 feed_statuses（否则污染主 feed 的 failed_sites，
+                    # 前端"失败站点"会误报）。锚点源失败只打日志，由 GN 代理源兜底。
+                    status['_is_custom_anchor'] = True
+                    name = futures[future]['text']
+                    ok = '[OK]' if status['success'] else '[FAIL]'
+                    d = f", -{n_dup} dup" if n_dup else ""
+                    print(f"  {ok} {name}: +{status['items_total']} items, {len(unique)} unique{d}")
+            except FuturesTimeout:
+                print(f"  [WARN] 锚点源 45s hard cap hit — {sum(1 for f in futures if not f.done())} sites pending, skipped (GN 代理源兜底)")
+        print(f"[INFO] Custom anchors raw: {len(anchor_items)} items")
+
+        # FIX (2026-08-06): 对齐微信 ANCHOR_HOUR=19 规则
+        # 窗口 = 昨天 19:00 CST → 现在（早 19:00 前）；今天 19:00 CST → 现在（晚 19:00 后）
+        # 原因：RSS 文章集中在白天发布；纯 24h sliding 早上跑会错过前晚内容，且旧文 fallback 到 72h 穿透
+        try:
+            from zoneinfo import ZoneInfo
+            _shanghai = ZoneInfo('Asia/Shanghai')
+        except Exception:
+            from datetime import timezone as _tz
+            _shanghai = _tz(timedelta(hours=8))
+        _now_sh = datetime.now(_shanghai)
+        _today_anchor = _now_sh.replace(hour=ANCHOR_HOUR, minute=0, second=0, microsecond=0)
+        if _now_sh < _today_anchor:
+            _start_dt = _today_anchor - timedelta(days=1)
+        else:
+            _start_dt = _today_anchor
+        anchor_start_ts = _start_dt.timestamp()
+        anchor_window_hours = max(1, int((_now_sh - _start_dt).total_seconds() / 3600))
+        anchor_filtered = []
+        for item in anchor_items:
+            if not item.get('published_at'):
+                anchor_filtered.append(item)
+                continue
+            try:
+                dt = datetime.fromisoformat(item['published_at'].replace('Z', '+00:00'))
+                if anchor_start_ts <= dt.timestamp() <= now_ts:
+                    anchor_filtered.append(item)
+            except Exception:
+                anchor_filtered.append(item)
+        print(f"[INFO] Custom anchors after {anchor_window_hours}h anchor window ({_start_dt.strftime('%Y-%m-%d %H:%M')} CST): {len(anchor_filtered)} items")
+
+        # Cross-dedup with main items（2026-10-20: URL + 标题归一化 双键）
+        # 只用 URL 去不掉「同一篇 GN 重定向 URL（news.google.com/rss/articles/...）
+        # vs 出版方直连规范 URL（therobotreport.com/xxx）」的重复 —— 两者 URL 不同但
+        # 标题相同，必须再按 normalize_title_for_dedup 去一遍，避免锚点栏出现和主 feed
+        # 重复的同文（GN 一条 + 直连一条）。
+        all_urls = {item.get('url') for item in all_items if item.get('url')}
+        main_titles = {normalize_title_for_dedup(item.get('title', '')) for item in all_items if item.get('title')}
+        _url_dup = 0
+        _title_dup = 0
+        anchor_unique = []
+        for item in anchor_filtered:
+            if item.get('url') in all_urls:
+                _url_dup += 1
+                continue
+            if normalize_title_for_dedup(item.get('title', '')) in main_titles:
+                _title_dup += 1
+                continue
+            anchor_unique.append(item)
+        print(f"[INFO] Custom anchors (unique, not in main): {len(anchor_unique)} items "
+              f"(dedup -{_url_dup} by URL, -{_title_dup} by title vs GN/main)")
+
+        # Score + filter (ai_score >= 70)
+        ANCHOR_MIN_SCORE = 60  # 降低门槛以捕获更多优质锚点（原 70 导致 8/6 只有 3 条）
+        scored_anchors = [score_item(item, now_ts) for item in anchor_unique]
+        high_relevance_anchors = [item for item in scored_anchors if item.get('ai_score', 0) >= ANCHOR_MIN_SCORE]
+        print(f"[INFO] Anchor relevance filter (>= {ANCHOR_MIN_SCORE}): {len(high_relevance_anchors)}/{len(scored_anchors)} items passed")
+
+        # 翻译锚点英文标题
+        english_anchor_titles = [it['title'] for it in high_relevance_anchors if is_english(it['title'])]
+        if english_anchor_titles:
+            print(f"[INFO] Translating {len(english_anchor_titles)} anchor titles...")
+            anchor_trans_map = translate_batch(english_anchor_titles)
+            for it in high_relevance_anchors:
+                if it['title'] in anchor_trans_map and anchor_trans_map[it['title']]:
+                    it['title_zh'] = anchor_trans_map[it['title']]
+
+        # FIX (2026-08-06): Fallback 策略重写
+        # 原策略：24h 内 <5 条 → 72h → 旧文穿透（8/4 23:54 触发，导致页面展示 8/2~8/4 旧文）
+        # 新策略：anchor 窗口内 0 条才允许 fallback，且 fallback 窗口严格按 7d 上限，
+        #         标记 fallback_used=True（前端可据此降权展示），绝不显示超过 7 天的旧文
+        fallback_used = False
+        if len(high_relevance_anchors) == 0:
+            print(f"[INFO] Anchor window empty, fallback to 7d...")
+            anchor_window_hours_fallback = 168  # 7d hard cap
+            anchor_start_fb = datetime.now(_shanghai) - timedelta(hours=anchor_window_hours_fallback)
+            anchor_start_fb_ts = anchor_start_fb.timestamp()
+            anchor_filtered_fb = []
+            for item in anchor_items:
+                if not item.get('published_at'):
+                    anchor_filtered_fb.append(item)
+                    continue
+                try:
+                    dt = datetime.fromisoformat(item['published_at'].replace('Z', '+00:00'))
+                    if anchor_start_fb_ts <= dt.timestamp() <= now_ts:
+                        anchor_filtered_fb.append(item)
+                except Exception:
+                    anchor_filtered_fb.append(item)
+            anchor_unique_fb = []
+            for item in anchor_filtered_fb:
+                if item.get('url') in all_urls:
+                    continue
+                if normalize_title_for_dedup(item.get('title', '')) in main_titles:
+                    continue
+                anchor_unique_fb.append(item)
+            scored_anchors_fb = [score_item(item, now_ts) for item in anchor_unique_fb]
+            high_relevance_anchors = [item for item in scored_anchors_fb if item.get('ai_score', 0) >= ANCHOR_MIN_SCORE]
+            high_relevance_anchors.sort(key=lambda x: x.get('published_at',''), reverse=True)
+            high_relevance_anchors = high_relevance_anchors[:30]
+            fallback_used = True
+            print(f"[INFO] Fallback result: {len(high_relevance_anchors)} items (after 7d window)")
+
+        # 翻译锚点英文标题
+        english_anchor_titles = [it['title'] for it in high_relevance_anchors if is_english(it['title'])]
+        if english_anchor_titles:
+            print(f"[INFO] Translating {len(english_anchor_titles)} anchor titles...")
+            anchor_trans_map = translate_batch(english_anchor_titles)
+            for it in high_relevance_anchors:
+                if it['title'] in anchor_trans_map and anchor_trans_map[it['title']]:
+                    it['title_zh'] = anchor_trans_map[it['title']]
+
+        custom_generated_at = datetime.now(timezone.utc).isoformat()
+        # Jack 2026-09-11: 锚点卡补 120 字真摘要（GN 解码 + trafilatura，top 60）
+        # 2026-09-30: 子进程隔离（防 glibc 堆损坏 abort 崩掉整条管线）
+        _run_enrich_subprocess(high_relevance_anchors, output_dir, top_n=60, tag='anchor')
+
+        # Jack 2026-09-15: 锚点区同样按虎嗅选题逻辑校准（摘要补齐后）
+        from huxiu_score import calibrate_scores as _calib_anchors
+        high_relevance_anchors = _calib_anchors(high_relevance_anchors, now_ts)
+        print(f"[INFO] Anchor huxiu-calibrated: {len(high_relevance_anchors)} items")
+
+        # Jack 2026-09-11: 锚点写入前剥掉 enricher 内部标记 _summary_ok
+        for _it in high_relevance_anchors:
+            _it.pop('_summary_ok', None)
+        custom_out = {
+            'generated_at': custom_generated_at,
+            'window_start': _start_dt.isoformat(),
+            'window_end': _now_sh.isoformat(),
+            'total_items': len(high_relevance_anchors),
+            'items': high_relevance_anchors,
+            'fallback_used': fallback_used,
+        }
+        with open(os.path.join(output_dir, 'custom-anchors.json'), 'w', encoding='utf-8') as f:
+            json.dump(custom_out, f, ensure_ascii=False, indent=2)
+        print(f"[INFO] custom-anchors.json: {len(high_relevance_anchors)} items (filtered from {len(scored_anchors)})")
+        # 锚点文章只输出到 custom-anchors.json，不进入主数据
+        # print(f"[INFO] Total items after anchor merge: {len(all_items)}")
+
+    print(f"[INFO] Raw unique: {len(all_items)} (intra-run dedup: {total_dedup})")
+
+    # ── Inject WeChat articles (optional) ──
+    wechat_articles = []
+    wechat_enabled = os.environ.get('WECHAT_COLLECTOR_ENABLED', '1').lower() in ('1', 'true', 'yes')
+    if wechat_enabled:
+        try:
+            script_dir = os.path.dirname(os.path.abspath(__file__))
+            sys.path.insert(0, script_dir)
+            from wechat_collector import collect_wechat_articles as _collect_wechat
+            wechat_articles = _collect_wechat(
+                keywords=os.environ.get('WECHAT_KEYWORDS', '').split(',') if os.environ.get('WECHAT_KEYWORDS') else None,
+                hours=int(os.environ.get('WECHAT_HOURS', '24')),
+                max_per_keyword=int(os.environ.get('WECHAT_MAX_PER_KW', '10')),
+                include_manual=True,
+            )
+            print(f"[INFO] WeChat articles: {len(wechat_articles)} (WECHAT_COLLECTOR_ENABLED={wechat_enabled})")
+        except Exception as e:
+            print(f"[WARN] WeChat collection skipped: {e}")
+            wechat_articles = []
+
+    # ── WeChat cross-dedup ──
+    # Remove wechat articles that already exist in RSS (by URL)
+    rss_urls = {item.get('url') for item in all_items if item.get('url')}
+    wechat_deduped = []
+    for item in wechat_articles:
+        if item.get('url') not in rss_urls:
+            wechat_deduped.append(item)
+        else:
+            print(f"  [DEDUP] Skipping wechat dup URL: {item['url'][:60]}...")
+    print(f"[INFO] WeChat deduped: {len(wechat_articles)} → {len(wechat_deduped)} (removed {len(wechat_articles)-len(wechat_deduped)} RSS duplicates)")
+    wechat_articles = wechat_deduped
+
+    # BUG#1 FIX: Cross-feed deduplication
+    # Items from different feeds may have different item_id but same title
+    all_items, cross_dup = cross_feed_deduplicate(all_items)
+    print(f"[INFO] After cross-feed dedup: {len(all_items)} (-{cross_dup} cross-feed dup)")
+
+    # Load archive
+    archive_path = os.path.join(output_dir, 'archive.json')
+    archive_items, archive_seen = load_archive(archive_path)
+    print(f"[INFO] Archive: {len(archive_items)} items ({ARCHIVE_DAYS}d)")
+
+    # Step 1: Archive dedup FIRST (dedup against ALL archive items for permanent dedup)
+    # Special handling for custom anchor sites: skip archive dedup to ensure they appear daily
+    final_items = []
+    anchor_urls = set()
+    if custom_feeds:
+        # Collect anchor URLs to exclude from archive dedup
+        for item in all_items:
+            if item.get('source') in [f['text'] for f in custom_feeds]:
+                anchor_urls.add(item.get('url', ''))
+    
+    for item in all_items:
+        sid = item_id(item['title'], item['url'])
+        # Skip archive dedup for custom anchor sites
+        if item.get('url') in anchor_urls:
+            final_items.append(item)
+        elif sid not in archive_seen:
+            final_items.append(item)
+    print(f"[INFO] After archive dedup: {len(final_items)} (from {len(all_items)} raw, {len(anchor_urls)} anchor items preserved)")
+
+    # Step 2: Noise filter (clean out low-quality items before time window)
+    clean_items = []
+    for item in final_items:
+        noisy, reason = is_noise(item['title'], item.get('description', ''), item['url'])
+        if noisy:
+            total_noise += 1
+            t = item['title'][:35].encode('ascii', 'replace').decode('ascii')
+            print(f"  [FILTER] {reason} | {t}")
+        else:
+            clean_items.append(item)
+    print(f"[INFO] After noise filter: {len(clean_items)} (-{total_noise} noise)")
+
+    # Step 3: Time window only for FINAL OUTPUT (not for archive dedup)
+    #
+    # FIX (2026-07-14): Restore CST 19:00 anchor as default behavior.
+    # Reverted from sliding window because RSS articles are concentrated during
+    # daytime hours; a pure 24h sliding window misses content when run in the morning.
+    # The window always starts at 19:00 CST the previous day and ends at the current time,
+    # ensuring a full 24h coverage when run daily around 19:00 CST.
+    shanghai = ZoneInfo('Asia/Shanghai')
+    now_sh = datetime.now(shanghai)
+    today_anchor = now_sh.replace(hour=ANCHOR_HOUR, minute=0, second=0, microsecond=0)
+    if now_sh > today_anchor:
+        start_dt = today_anchor
+    else:
+        start_dt = today_anchor - timedelta(days=1)
+    start_ts = start_dt.timestamp()
+
+    start_utc = datetime.fromtimestamp(start_ts, timezone.utc)
+    end_utc = datetime.fromtimestamp(now_ts, timezone.utc)
+    print(f"[INFO] Time window: {start_utc.strftime('%Y-%m-%d %H:%M')} UTC to {end_utc.strftime('%Y-%m-%d %H:%M')} UTC (window_hours={window_hours})")
+
+    # Jack 2026-10-23: 资本事件 7d 逃逸窗——融资/IPO/递表/招股 重磅消息若比
+    # 锚点窗更早（3~7 天前），仍保留，避免 Noetix 递表这类事件 48h 后从雷达消失。
+    CAPITAL_WINDOW_HOURS = 7 * 24
+    capital_start_ts = now_ts - CAPITAL_WINDOW_HOURS * 3600
+    def _is_capital_item(_it):
+        _t = (_it.get('title') or '').lower()
+        return any(k in _t for k in CAPITAL_TIER)
+
+    time_filtered = []
+    missing_ts_count = 0
+    bad_ts_count = 0
+    capital_escape = 0
+    for item in clean_items:
+        if not item.get('published_at'):
+            # FIX (2026-07-13): log missing timestamp but still include (no silent hard pass)
+            missing_ts_count += 1
+            if missing_ts_count <= 3:
+                t = item['title'][:35].encode('ascii', 'replace').decode('ascii')
+                print(f"  [WARN] missing published_at | {t}")
+            time_filtered.append(item)
+            continue
+        try:
+            dt = datetime.fromisoformat(item['published_at'].replace('Z', '+00:00'))
+            if start_ts <= dt.timestamp() <= now_ts:
+                time_filtered.append(item)
+            elif _is_capital_item(item) and capital_start_ts <= dt.timestamp() <= now_ts:
+                # 资本事件 7d 逃逸窗（Jack 2026-10-23）
+                time_filtered.append(item)
+                capital_escape += 1
+        except Exception:
+            bad_ts_count += 1
+            if bad_ts_count <= 3:
+                t = item['title'][:35].encode('ascii', 'replace').decode('ascii')
+                print(f"  [WARN] unparseable published_at: {item['published_at'][:30]} | {t}")
+            time_filtered.append(item)
+    if capital_escape:
+        print(f"  [CAPITAL] {capital_escape} capital-event items rescued via 7d escape window")
+    if missing_ts_count > 3:
+        print(f"  [WARN] ... and {missing_ts_count - 3} more missing published_at")
+    if bad_ts_count > 3:
+        print(f"  [WARN] ... and {bad_ts_count - 3} more unparseable published_at")
+    print(f"[INFO] After time window: {len(time_filtered)} (from {len(clean_items)} clean, {missing_ts_count} missing_ts, {bad_ts_count} bad_ts)")
+    clean_items = time_filtered
+
+    # ── Merge WeChat articles ──
+    # FIX(2026-09-16): 公众号专区不套用 RSS 的 19:00 CST 硬窗口。
+    # 原因：Exa 对公众号文章不返回发布时间（Published: N/A），兜底成"采集时刻"
+    # 后会误把 Exa 索引里的历史文章标成"现在"，又被 19:00 硬窗口切掉 → 专区只剩 1 篇。
+    # 公众号改用独立的"最近 1 天"滑动窗口（AI HOT 有真实时间戳、Exa 兜底时刻都在 1 天内）。
+    if wechat_articles:
+        # 1 天滑动窗口（UTC 12h 容差保留边界），与 RSS 19:00 锚点解耦
+        wechat_cutoff_ts = now_ts - 24 * 3600
+        wechat_filtered = []
+        for w in wechat_articles:
+            try:
+                dt = datetime.fromisoformat(w['published_at'].replace('Z', '+00:00'))
+                ts = dt.timestamp()
+                # 只保留未来 6h 以内的（防时钟漂移误判）；无真实时间的 Exa 兜底项落在 now 附近，天然通过
+                if ts <= wechat_cutoff_ts:
+                    print(f"  [WCUT] Skipping wechat (older than 1d): {w['title'][:40]} ({w['published_at']})")
+                else:
+                    wechat_filtered.append(w)
+            except Exception:
+                wechat_filtered.append(w)
+        # 2026-10-20: 公众号不再混进主 feed。
+        # 旧逻辑 clean_items.extend(wechat_filtered) 会让它按 site 分组时冒出一个
+        # "微信公众号"桶（夹在"国外具身智能资讯"等栏目中间），同时 wechat-articles.json
+        # 又独立输出给底部📱专区 —— 同一条出两次（双写）。现在公众号只走独立专区。
+        print(f"[INFO] WeChat {len(wechat_filtered)}/{len(wechat_articles)} kept out of main feed (dedup vs 📱专区) → wechat-articles.json only")
+
+    # Sort by date desc (newest first)
+    def sort_key(item):
+        if not item.get('published_at'):
+            return datetime.min.replace(tzinfo=timezone.utc)
+        try:
+            dt = datetime.fromisoformat(item['published_at'].replace('Z','+00:00'))
+            # Ensure timezone-aware for safe comparison
+            if dt.tzinfo is None:
+                dt = dt.replace(tzinfo=timezone.utc)
+            return dt
+        except Exception:
+            return datetime.min.replace(tzinfo=timezone.utc)
+
+    clean_items.sort(key=sort_key, reverse=True)
+    print(f"[INFO] Sorted by date (newest first)")
+
+    # Score
+    # Pre-translate English titles
+    english_titles = [item['title'] for item in clean_items if is_english(item['title'])]
+    if english_titles:
+        print(f"[INFO] Translating {len(english_titles)} English titles...")
+        trans_map = translate_batch(english_titles)
+        for item in clean_items:
+            if item['title'] in trans_map:
+                item['title_zh'] = trans_map[item['title']]
+
+    scored = [score_item(item, now_ts) for item in clean_items]
+    scored.sort(key=lambda x: x['total_score'], reverse=True)
+    print(f"[INFO] Scored: {len(scored)}")
+
+    # Jack 2026-09-11: 补 120 字真摘要（GN 解码 + trafilatura，top 150；recheck 模式校验真实覆盖）
+    _run_enrich_subprocess(scored, output_dir, top_n=150, recheck=True, tag='main')
+
+    # Jack 2026-09-15: 虎嗅选题逻辑校准（在 enricher 补齐摘要之后跑）——
+    # 冲突+数据=选题分, 通稿腔/冗余/自媒体噪声=扣分, 时效降权, 相关性压缩到 22-50
+    from huxiu_score import calibrate_scores
+    scored = calibrate_scores(scored, now_ts)
+    _n_topic = sum(1 for _it in scored if _it.get('hx_topic'))
+    _n_pen = sum(1 for _it in scored if _it.get('hx_pr_penalty') or _it.get('hx_dup_penalty'))
+    print(f"[INFO] Huxiu-calibrated: {_n_topic} items with 选题加分, {_n_pen} items penalized (通稿/冗余)")
+    for _it in scored:
+        _it.pop('_hx', None)
+
+    generated_at = datetime.now(timezone.utc).isoformat()
+    os.makedirs(output_dir, exist_ok=True)
+
+    # Compute site_stats for frontend
+    site_stat_map = {}
+    for item in scored:
+        sid = item['site_id']
+        if sid not in site_stat_map:
+            site_stat_map[sid] = {'site_id': sid, 'site_name': item['site_name'], 'count': 0}
+        site_stat_map[sid]['count'] += 1
+    site_stats = sorted(site_stat_map.values(), key=lambda x: -x['count'])
+
+    # Update archive (提前到 min_out 前计算，归档总数要进 min.json 给统计卡)
+    updated = archive_items + scored
+    save_archive(archive_path, updated)
+    print(f"[INFO] Archive updated: {len(updated)} total")
+
+    # latest-24h-min.json: top 500 (AI精选模式)
+    # 2026-11-09 LOCAL FIX: 快照改为「近 window_hours 窗口内的并集」（archive + scored）。
+    # 原先只装本轮 scored（新通过筛选的条目）：云端 archive 每次从空开始，看不出来；
+    # 本地 archive 一旦持久化，第二轮起新条目骤减 → 快照从 162 条塌缩到 14 条（11-09 实测）。
+    def _in_window(it):
+        pa = (it.get('published_at') or '').strip()
+        if not pa:
+            return True
+        try:
+            dt = datetime.fromisoformat(pa.replace('Z', '+00:00'))
+            if dt.tzinfo is None:
+                dt = dt.replace(tzinfo=timezone.utc)
+            return (now_ts - dt.timestamp()) <= window_hours * 3600
+        except Exception:
+            return True
+
+    snapshot = [it for it in updated if _in_window(it)]
+    snapshot.sort(key=lambda x: x.get('total_score', 0), reverse=True)
+    print(f"[INFO] 24h snapshot: {len(snapshot)} items (window={window_hours}h, archive={len(archive_items)}, new={len(scored)})")
+
+    # Jack 2026-09-11: 写入前剥掉 enricher 的内部标记 _summary_ok（不对外暴露）
+    for _it in snapshot:
+        _it.pop('_summary_ok', None)
+    min_out = {
+        'generated_at': generated_at,
+        'total_items': len(snapshot[:500]),
+        'items_ai': snapshot[:500],
+        # 2026-10-28: items_all / items_all_raw 曾与 items_ai 同 blob 各存一份 →
+        # payload 膨胀到 ~900KB，慢链路上超过前端 8s fetch 超时导致首屏卡死。
+        # 前端 loadAllModeData 的 fallback 已改为从 items_ai 复用，此处不再重复存 3 份。
+        'site_stats': site_stats,
+        'total_items_raw': len(snapshot[:500]),
+        'total_items_all_mode': len(snapshot[:500]),
+        # Jack 2026-09-15: 统计卡真实字段（此前前端读 site_count/source_count/archive_total 全为 undefined→0）
+        'site_count': len({s['site_name'] for s in site_stats}),
+        'source_count': len(feed_statuses),
+        'archive_total': len(updated),
+    }
+    with open(os.path.join(output_dir, 'latest-24h-min.json'), 'w', encoding='utf-8') as f:
+        json.dump(min_out, f, ensure_ascii=False)
+    print(f"[INFO] latest-24h-min.json: {len(snapshot[:500])} items (AI精选)")
+
+    # FIX(2026-09-04) cleanup: latest-24h-all.json removed (identical blob to
+    # latest-24h-min.json, 795KB x2 duplication). Frontend now reads min only.
+
+    # Write wechat-articles.json: only articles within the current time window
+    if wechat_articles:
+        wechat_output = {
+            'articles': wechat_filtered,
+            'total_articles': len(wechat_filtered),
+            'last_updated': generated_at,
+            'source': 'auto_filtered_by_time_window',
+        }
+        with open(os.path.join(output_dir, 'wechat-articles.json'), 'w', encoding='utf-8') as f:
+            json.dump(wechat_output, f, ensure_ascii=False, indent=2)
+        print(f"[INFO] wechat-articles.json: {len(wechat_filtered)}/{len(wechat_articles)} articles (within time window)")
+    else:
+        # Write empty wechat-articles.json if no wechat articles
+        wechat_empty = {
+            'articles': [],
+            'total_articles': 0,
+            'last_updated': generated_at,
+            'source': 'auto_filtered_by_time_window',
+        }
+        with open(os.path.join(output_dir, 'wechat-articles.json'), 'w', encoding='utf-8') as f:
+            json.dump(wechat_empty, f, ensure_ascii=False, indent=2)
+        print("[INFO] wechat-articles.json: 0 articles (no wechat articles in time window)")
+
+    # source-status.json
+    # Jack 2026-09-15: 修 total_feeds 只算主 feed 的 bug；补前端字段别名
+    # (sites/failed_sites/successful_sites/rss_opml)，统计卡与源健康不再空转
+    _ok_feeds = sum(1 for s in feed_statuses if s['success'])
+    _fail_feeds = sum(1 for s in feed_statuses if not s['success'])
+    status_out = {
+        'generated_at': generated_at,
+        'feeds': feed_statuses,
+        'sites': [
+            {'site_id': s['feed'], 'site_name': s['feed'],
+             'item_count': s.get('items_unique', 0), 'success': s['success']}
+            for s in feed_statuses
+        ],
+        'failed_sites': [s['feed'] for s in feed_statuses if not s['success']],
+        'successful_sites': _ok_feeds,
+        'rss_opml': {'enabled': True, 'ok_feeds': _ok_feeds,
+                     'effective_feed_total': len(feed_statuses),
+                     'failed_feeds': [s['feed'] for s in feed_statuses if not s['success']]},
+        'summary': {
+            'total_feeds': len(feed_statuses),
+            'successful_feeds': _ok_feeds,
+            'failed_feeds': _fail_feeds,
+            'total_items': len(all_items),
+            'deduplicated': total_dedup,
+            'noise_filtered': total_noise,
+            'short_filtered': total_short,
+        }
+    }
+    with open(os.path.join(output_dir, 'source-status.json'), 'w', encoding='utf-8') as f:
+        json.dump(status_out, f, ensure_ascii=False, indent=2)
+    ok_feeds = status_out['summary']['successful_feeds']
+    print(f"[INFO] source-status.json: {ok_feeds}/{len(feeds)} feeds OK")
+    sys.exit(0)
+
+if __name__ == '__main__':
+    p = argparse.ArgumentParser()
+    p.add_argument('--output-dir', default='data')
+    p.add_argument('--window-hours', type=int, default=24)
+    p.add_argument('--rss-opml', default='feeds/follow.example.opml')
+    p.add_argument('--custom-opml', default='feeds/custom.opml',
+                   help='Path to custom anchor OPML file')
+    p.add_argument('--window-from', type=str, default=None,
+                        help='Start of time window (YYYY-MM-DD, defaults to yesterday 9AM CST)')
+    p.add_argument('--archive-days', type=int, default=21)
+    args = p.parse_args()
+    custom_opml = args.custom_opml if os.path.exists(args.custom_opml) else None
+    run(args.output_dir, args.window_hours, args.rss_opml, args.archive_days, args.window_from, custom_opml)

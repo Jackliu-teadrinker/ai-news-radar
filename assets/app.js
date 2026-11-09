@@ -1,0 +1,1774 @@
+const state = {
+  itemsAi: [],
+  itemsAll: [],
+  itemsAllRaw: [],
+  statsAi: [],
+  totalAi: 0,
+  totalRaw: 0,
+  totalAllMode: 0,
+  allDedup: true,
+  allDataLoaded: false,
+  allDataUrl: "data/latest-24h-min.json",
+  allDataPromise: null,
+  siteFilter: "",
+  categoryFilter: "",
+  query: "",
+  mode: "ai",
+  todayMode: true,
+  sourceStatus: null,
+  generatedAt: null,
+  // Jack 2026-05-20: 按时间最新排序
+  sortMode: 'time',  // 'time' | 'priority' | 'total_score' | 'relevance' | 'authority' | 'depth' | 'timeliness'
+};
+
+// 2026-11-09 方案C：主数据改读「按日分片」data/days/YYYY-MM-DD.json。
+// 原因：原来每轮（约 48 次/天）全量重写 latest-24h-min.json（190KB），
+// 3 个月把 git 历史撑到 5.8GB，而真实内容只有 8.4MB。
+// 现在仓库每天只增一个分片，前端取最近 3 天合并去重。
+// 任何一步失败自动回退到 latest-24h-min.json（兜底定版，每天一份），不会白屏。
+// 需要紧急关闭时把这里改成 false 并重新发布即可。
+const USE_DAY_SHARDS = true;
+const SHARD_DAYS_BACK = 2;   // 通常只需要「今天 + 昨天」；条目偏少时再补一天
+
+const categoryBarEl = document.getElementById("categoryBar");
+const sourceBadgeEl = document.getElementById("sourceBadge");
+const advancedPanelEl = document.getElementById("advancedPanel");
+const modeCountBadgeEl = document.getElementById("modeCountBadge");
+const siteSelectEl = document.getElementById("siteSelect");
+const sitePillsEl = document.getElementById("sitePills");
+const newsListEl = document.getElementById("newsList");
+const updatedAtEl = document.getElementById("updatedAt");
+const searchInputEl = document.getElementById("searchInput");
+const sortSelectEl = document.getElementById("sortSelect");
+const resultCountEl = document.getElementById("resultCount");
+const listTitleEl = document.getElementById("listTitle");
+const itemTpl = document.getElementById("itemTpl");
+const modeAiBtnEl = document.getElementById("modeAiBtn");
+const modeAllBtnEl = document.getElementById("modeAllBtn");
+const allDedupeWrapEl = document.getElementById("allDedupeWrap");
+const allDedupeToggleEl = document.getElementById("allDedupeToggle");
+const allDedupeLabelEl = document.getElementById("allDedupeLabel");
+const advancedSummaryEl = document.getElementById("advancedSummary");
+const sourceHealthEl = document.getElementById("sourceHealth");
+
+const SOURCE_KINDS = {
+  official_ai: { label: "官方", tone: "official" },
+  aibreakfast: { label: "日报", tone: "newsletter" },
+  followbuilders: { label: "Builders/X", tone: "builders" },
+  xapi: { label: "X API", tone: "builders" },
+  techurls: { label: "聚合", tone: "aggregate" },
+  buzzing: { label: "聚合", tone: "aggregate" },
+  iris: { label: "聚合", tone: "aggregate" },
+  bestblogs: { label: "博客", tone: "blogs" },
+  tophub: { label: "聚合", tone: "aggregate" },
+  zeli: { label: "聚合", tone: "aggregate" },
+  aihubtoday: { label: "AI站点", tone: "aihub" },
+  aibase: { label: "AI站点", tone: "aihub" },
+  newsnow: { label: "聚合", tone: "aggregate" },
+};
+
+// Jack 2026-05-13: GN feed display priority (lower = shown first)
+const GN_PRIORITY = {
+  // Jack 2026-07-13: FIX — 兼容两种标签格式
+  // OPML feed 的 text 属性会被解析为中文标签（如"国外机器人资讯"），
+  // 也可能是带 "GN: " 前缀的分类 ID。两者都映射到同一优先级。
+  "国外人形机器人资讯": 2,  // 中文标签 → 人形机器人优先级
+  "国外具身智能资讯":   3,  // 中文标签 → 具身智能优先级
+  "国外物理AI资讯":     5,  // 中文标签 → Physical AI 优先级
+  "国外机器人资讯":     1,  // 中文标签 → 机器人优先级
+  "国外脑机接口资讯":   4,  // 中文标签 → 脑机接口优先级
+  "国内人形机器人资讯": 2,
+  "国内具身智能资讯":   3,
+  "国内脑机接口资讯":   4,
+  "国内机器人资讯":     1,
+  "国内物理AI资讯":     5,
+  "GN: 人形机器人":     2,
+  "GN: 具身智能":       3,
+  "GN: 脑机接口":       4,
+  "GN: BCI":            4,
+  "GN: 物理AI":         5,
+  "GN: Physical AI":     5,
+  "GN: 机器人":         1,
+  // Jack 2026-10-23: 资本事件层——融资/IPO/递表/招股 重磅消息，紧随 physical AI，不沉底
+  "GN: 资本事件":       6,
+  "GN: Capital Events": 6,
+  "GN: 融资":           6,
+  // Jack 2026-10-23: 目标公司资本锚点（Noetix/松延、宇树），不沉底
+  "GN: Noetix 松延":    6,
+  "GN: 宇树资本":       6,
+  "GN: 智元资本":       6,
+  "GN: 傅利叶资本":     6,
+  // arXiv 和商业源优先级较低
+  "arXiv Robotics":     10,
+  "arXiv Robot Perception": 11,
+  "商业":               12,
+};
+
+const GN_CATEGORIES = [
+  // Jack 2026-05-20: 国外机器人资讯 + 国外人形机器人资讯 优先
+  { id: "GN: 机器人",     label: "机器人" },
+  { id: "GN: 人形机器人", label: "人形机器人" },
+  { id: "GN: 具身智能",   label: "具身智能" },
+  { id: "GN: 脑机接口",   label: "脑机接口" },
+  { id: "GN: Physical AI", label: "Physical AI" },
+  { id: "GN: 资本事件",    label: "资本事件" },
+  { id: "arXiv Robotics", label: "学术" },
+  { id: "商业",           label: "商业" },
+];
+
+// Jack 2026-05-18: map ai_label values to GN category IDs
+const AI_LABEL_TO_GN = {
+  "robotics":       "GN: 机器人",
+  "humanoid":       "GN: 人形机器人",
+  "embodied_ai":    "GN: 具身智能",
+  "brain_computer": "GN: 脑机接口",
+  "physical_ai":    "GN: Physical AI",
+  // Jack 2026-10-23: 资本事件层 ai_label → 资本事件 chip
+  "capital_events": "GN: 资本事件",
+  // Also support matching the category ID directly as ai_label
+};
+
+// Jack 2026-05-15: map raw source names to canonical category IDs
+const SOURCE_TO_CATEGORY = {
+  "36氪":   "商业",
+  "创业邦": "商业",
+};
+
+function normalizeSourceCategory(source) {
+  return SOURCE_TO_CATEGORY[source] || source;
+}
+
+// Jack 2026-05-18: return the GN category for an item (checks ai_label first, then source)
+function itemGnCategory(item) {
+  const labelGn = AI_LABEL_TO_GN[item.ai_label];
+  if (labelGn) return labelGn;
+  if (Object.values(AI_LABEL_TO_GN).includes(item.ai_label)) return item.ai_label;
+  return normalizeSourceCategory(item.source);
+}
+
+function gnPriority(source) {
+  const norm = normalizeSourceCategory(source);
+  return GN_PRIORITY[norm] !== undefined ? GN_PRIORITY[norm] : 999;
+}
+
+
+function fmtNumber(n) {
+  return new Intl.NumberFormat("zh-CN").format(n || 0);
+}
+
+function fmtTime(iso) {
+  if (!iso) return "时间未知";
+  const d = new Date(iso);
+  if (Number.isNaN(d.getTime())) return "时间未知";
+  return new Intl.DateTimeFormat("zh-CN", {
+    month: "2-digit",
+    day: "2-digit",
+    hour: "2-digit",
+    minute: "2-digit",
+  }).format(d);
+}
+
+function fmtDate(iso) {
+  if (!iso) return "未知日期";
+  const d = new Date(`${iso}T00:00:00`);
+  if (Number.isNaN(d.getTime())) return iso;
+  return new Intl.DateTimeFormat("zh-CN", {
+    month: "2-digit",
+    day: "2-digit",
+  }).format(d);
+}
+
+function setStats(payload) {
+  state.statsPayload = payload;
+  renderStats();
+}
+
+// Jack 2026-09-16: 参考 Tech Radar 布局改版——
+// 删除 4 张统计卡，信息重排为：顶栏源状态徽章（16/17 正常·失败 1）+ 分类计数胶囊栏。
+// 抓取池/漏斗等运营数据收进高级筛选的 source-health，不再占首屏。
+function computeCutoffMs() {
+  if (!state.todayMode) return null;
+  // CST 19:00 anchor = UTC 11:00; cutoff = 上一个 19:00 锚点
+  const now = new Date();
+  const utcMsInDay = now.getUTCHours() * 3600000 + now.getUTCMinutes() * 60000;
+  const anchorUtcMs = 11 * 3600000;
+  const base = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate()));
+  if (utcMsInDay < anchorUtcMs) base.setUTCDate(base.getUTCDate() - 1);
+  return base.getTime() + anchorUtcMs;
+}
+
+function categoryBaseItems() {
+  const cutoff = computeCutoffMs();
+  return modeItems().filter((item) => {
+    if (cutoff === null) return true;
+    const ms = new Date(item.first_seen_at || item.published_at || 0).getTime();
+    return ms >= cutoff;
+  });
+}
+
+function renderCategoryBar() {
+  if (!categoryBarEl) return;
+  const base = categoryBaseItems();
+  const counts = new Map();
+  base.forEach((item) => {
+    let cat;
+    try { cat = itemGnCategory(item); } catch (e) { cat = ""; }
+    counts.set(cat, (counts.get(cat) || 0) + 1);
+  });
+  categoryBarEl.innerHTML = "";
+  const mk = (id, label) => {
+    const btn = document.createElement("button");
+    const n = id === "" ? base.length : (counts.get(id) || 0);
+    btn.type = "button";
+    btn.className = `cat-pill${state.categoryFilter === id ? " active" : ""}${n === 0 && id !== "" ? " empty" : ""}`;
+    const name = document.createElement("span");
+    name.className = "cat-name";
+    name.textContent = label;
+    const cnt = document.createElement("span");
+    cnt.className = "cat-count";
+    cnt.textContent = n;
+    btn.appendChild(name);
+    btn.appendChild(cnt);
+    btn.onclick = () => {
+      state.categoryFilter = state.categoryFilter === id ? "" : id;
+      renderList();
+    };
+    categoryBarEl.appendChild(btn);
+  };
+  mk("", "全部");
+  GN_CATEGORIES.forEach((cat) => mk(cat.id, cat.label));
+}
+
+function renderSourceBadge() {
+  if (!sourceBadgeEl) return;
+  const status = state.sourceStatus;
+  if (!status) {
+    sourceBadgeEl.textContent = "源状态加载中…";
+    sourceBadgeEl.className = "src-badge";
+    return;
+  }
+  const summary = status.summary || {};
+  const rss = status.rss_opml || {};
+  const total = Number(rss.effective_feed_total || summary.total_feeds || 0);
+  const ok = Number(rss.ok_feeds || status.successful_sites || 0);
+  const failed = Array.isArray(status.failed_sites) ? status.failed_sites.length : 0;
+  if (!total) {
+    sourceBadgeEl.textContent = "源状态不可用";
+    sourceBadgeEl.className = "src-badge";
+    return;
+  }
+  sourceBadgeEl.textContent = failed ? `${ok}/${total} 源正常 · 失败 ${failed}` : `${ok}/${total} 源正常`;
+  sourceBadgeEl.className = `src-badge ${failed ? "warn" : "ok"}`;
+}
+
+function renderModeCountBadge(count) {
+  if (!modeCountBadgeEl) return;
+  modeCountBadgeEl.textContent = `${state.mode === "ai" ? "精选" : "全量"} ${fmtNumber(count)} 条`;
+}
+
+function renderStats() {
+  renderCategoryBar();
+  renderSourceBadge();
+}
+
+// Jack 2026-09-15 v3: 卡面直接摊开五维明细，格式「新闻价值 N分 (相关性X分 + 权威X分 + ...)」
+// hover tooltip 保留打分规则说明。isGov=true 用政策口径的时效/写作满分。
+function buildScoreBadge(item, isGov = false) {
+  const totalScore = item.total_score;
+  const hasScore = totalScore !== undefined && totalScore !== null;
+  const pct = hasScore ? Math.round(totalScore) : null;
+  const calibrated = item.hx_topic !== undefined;   // 虎嗅选题逻辑校准后的数据（2026-09-15 起）
+  const color = hasScore
+    ? (calibrated ? (pct >= 70 ? 'score-high' : pct >= 45 ? 'score-mid' : 'score-low')
+                  : (pct >= 60 ? 'score-high' : pct >= 40 ? 'score-mid' : 'score-low'))
+    : 'score-none';
+  const el = document.createElement('span');
+  el.className = 'score-inline ' + color;
+  if (!hasScore) {
+    el.textContent = '新闻价值 –';
+    el.title = '得分未计算';
+    return el;
+  }
+  const rel = Math.round((item.relevance || 0) * 100);
+  const auth = item.authority != null ? item.authority : 0;
+  const depth = item.depth != null ? item.depth : 0;
+  const timeliness = item.timeliness != null ? Math.round(item.timeliness * 10) / 10 : 0;
+  const writing = item.writing_value != null ? item.writing_value : 0;
+  if (calibrated && !isGov) {
+    const topic = item.hx_topic || 0;
+    const conflict = item.hx_conflict || 0;
+    const dataPts = item.hx_data || 0;
+    const prPen = item.hx_pr_penalty || 0;
+    const dupPen = item.hx_dup_penalty || 0;
+    const parts = [`相关性${rel}`, `选题${topic}`, `权威${auth}`, `深度${depth}`, `时效${timeliness}`, `写作${writing}`];
+    if (prPen) parts.push(`通稿${prPen}`);
+    if (dupPen) parts.push(`冗余${Math.round(dupPen * 10) / 10}`);
+    el.textContent = `新闻价值 ${pct}分 (${parts.join(' + ')})`;
+    el.title = `得分依据 (虎嗅选题逻辑, 总分 ${pct}):\n相关性 ${rel} /50 (领域匹配度压缩)\n选题 ${topic} /25 (反常识冲突${conflict} + 数据驱动${dataPts})\n权威 ${auth} /10 (学术/大媒体10, 其他5)\n深度 ${depth} /5 (摘要≥100字=5 ≥60字=3 ≥30字=1)\n时效 ${timeliness} /20 (已降权: 时间不占优必须在深度上占优)\n写作 ${writing} /5 (梯度同上)\n扣分: 公关通稿腔 ${prPen}, 同文多平台冗余 ${Math.round(dupPen * 10) / 10} (与更高排名条目的标题相似度×18)`;
+    return el;
+  }
+  el.textContent = `新闻价值 ${pct}分 (相关性${rel} + 权威${auth} + 深度${depth} + 时效${timeliness} + 写作${writing})`;
+  el.title = isGov
+    ? `得分依据 (总分 ${pct} = 相关性 + 权威 + 深度 + 时效 + 写作):\n相关性 ${rel} /100 (政策相关度: 领域词+政策词+来源权重)\n权威 ${auth} /20 (gov.cn 10 / 新华社 8 / 部委 7 / 其他 5)\n深度 ${depth} /5 (摘要≥100字记满)\n时效 ${timeliness} /10 (满分10, 每6小时-1)\n写作 ${writing} /5 (摘要≥80字记满)`
+    : `得分依据 (总分 ${pct} = 相关性 + 权威 + 深度 + 时效 + 写作):\n相关性 ${rel} /100 (T1:80 T2:65 T3:50 其他:35)\n权威 ${auth} /20 (Google News 15, 其余源 10)\n深度 ${depth} /5 (摘要≥100字记满)\n时效 ${timeliness} /30 (满分30, 每超1小时-1)\n写作 ${writing} /5 (有实质摘要记满)`;
+  return el;
+}
+
+function renderAdvancedSummary() {
+  if (!advancedSummaryEl) return;
+  const status = state.sourceStatus;
+  const allCount = state.allDedup
+    ? (state.totalAllMode || state.itemsAll.length)
+    : (state.totalRaw || state.itemsAllRaw.length);
+  if (!status) {
+    const catLabel = state.categoryFilter ? ` · 已筛选：${GN_CATEGORIES.find(c => c.id === state.categoryFilter)?.label || state.categoryFilter}` : "";
+    const todayLabel = state.todayMode ? " · 上一19点后" : "";
+    advancedSummaryEl.textContent = `全量 ${fmtNumber(allCount)} 条${catLabel}${todayLabel}`;
+    return;
+  }
+  const sites = Array.isArray(status.sites) ? status.sites : [];
+  const totalSites = sites.length;
+  const okSites = Number(status.successful_sites || 0);
+  const catLabel = state.categoryFilter ? ` · 已筛选：${GN_CATEGORIES.find(c => c.id === state.categoryFilter)?.label || state.categoryFilter}` : "";
+  const todayLabel = state.todayMode ? " · 上一19点后" : "";
+  advancedSummaryEl.textContent = `${fmtNumber(okSites)}/${fmtNumber(totalSites)} 源可用 · 全量 ${fmtNumber(allCount)} 条${catLabel}${todayLabel}`;
+}
+
+function computeSiteStats(items) {
+  const m = new Map();
+  items.forEach((item) => {
+    if (!m.has(item.site_id)) {
+      m.set(item.site_id, { site_id: item.site_id, site_name: item.site_name, count: 0, raw_count: 0 });
+    }
+    const row = m.get(item.site_id);
+    row.count += 1;
+    row.raw_count += 1;
+  });
+  return Array.from(m.values()).sort((a, b) => b.count - a.count || a.site_name.localeCompare(b.site_name, "zh-CN"));
+}
+
+function currentSiteStats() {
+  if (state.mode === "ai") {
+    const s = state.statsAi;
+    // statsAi should be an array; if it's an object or empty, compute from items
+    if (!Array.isArray(s) || s.length === 0) {
+      return computeSiteStats(state.itemsAi || []);
+    }
+    return s;
+  }
+  return computeSiteStats(state.allDedup ? (state.itemsAll || []) : (state.itemsAllRaw || []));
+}
+
+function renderSiteFilters() {
+  const stats = currentSiteStats();
+
+  siteSelectEl.innerHTML = '<option value="">全部站点</option>';
+  // Defensive: ensure stats is always an array
+  const safeStats = Array.isArray(stats) ? stats : [];
+  safeStats.forEach((s) => {
+    const opt = document.createElement("option");
+    opt.value = s.site_id;
+    const raw = s.raw_count ?? s.count;
+    opt.textContent = `${s.site_name} (${s.count}/${raw})`;
+    siteSelectEl.appendChild(opt);
+  });
+  siteSelectEl.value = state.siteFilter;
+
+  sitePillsEl.innerHTML = "";
+
+  // Site pills
+  const allPill = document.createElement("button");
+  allPill.className = `pill ${state.siteFilter === "" ? "active" : ""}`;
+  allPill.textContent = "全部";
+  allPill.onclick = () => {
+    state.siteFilter = "";
+    renderSiteFilters();
+    renderList();
+  };
+  sitePillsEl.appendChild(allPill);
+
+  stats.forEach((s) => {
+    const btn = document.createElement("button");
+    btn.className = `pill ${state.siteFilter === s.site_id ? "active" : ""}`;
+    const raw = s.raw_count ?? s.count;
+    btn.textContent = `${s.site_name} ${s.count}/${raw}`;
+    btn.onclick = () => {
+      state.siteFilter = s.site_id;
+      renderSiteFilters();
+      renderList();
+    };
+    sitePillsEl.appendChild(btn);
+  });
+}
+
+function renderModeSwitch() {
+  modeAiBtnEl.classList.toggle("active", state.mode === "ai");
+  modeAllBtnEl.classList.toggle("active", state.mode === "all");
+  if (allDedupeWrapEl) allDedupeWrapEl.classList.toggle("show", state.mode === "all");
+  if (allDedupeToggleEl) allDedupeToggleEl.checked = state.allDedup;
+  if (allDedupeLabelEl) allDedupeLabelEl.textContent = state.allDedup ? "去重开" : "去重关";
+  if (state.mode === "ai") {
+    if (listTitleEl) listTitleEl.textContent = "AI 信号流";
+  } else {
+    if (listTitleEl) listTitleEl.textContent = "全量更新";
+  }
+  if (modeCountBadgeEl) modeCountBadgeEl.textContent = `${state.mode === "ai" ? "精选" : "全量"} ${fmtNumber(categoryBaseItems().length)} 条`;
+  renderAdvancedSummary();
+}
+
+function effectiveAllItems() {
+  return state.allDedup ? state.itemsAll : state.itemsAllRaw;
+}
+
+function modeItems() {
+  return state.mode === "all" ? effectiveAllItems() : state.itemsAi;
+}
+
+function getFilteredItems() {
+  const q = state.query.trim().toLowerCase();
+  let cutoffMs = null;
+  if (state.todayMode) {
+    // Jack 2026-06-09: CST 7pm anchor (19:00). cutoff = previous 19:00 anchor in CST.
+    // CST 19:00 = UTC 11:00. Compute cutoff in UTC ms for direct getTime() comparison.
+    const now = new Date();
+    const nowUtcMs = now.getTime();
+    const utcHour = now.getUTCHours();
+    const utcMin = now.getUTCMinutes();
+    const utcMsInDay = utcHour * 3600000 + utcMin * 60000;
+    const today1900UtcMs = 11 * 3600000; // UTC 11:00 = CST 19:00
+    // If current UTC time >= 11:00 (CST >= 19:00), cutoff = today UTC 11:00
+    // Otherwise, cutoff = yesterday UTC 11:00
+    let cutoffMs;
+    if (utcMsInDay >= today1900UtcMs) {
+      const today = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate()));
+      cutoffMs = today.getTime() + today1900UtcMs;
+    } else {
+      const yesterday = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate() - 1));
+      cutoffMs = yesterday.getTime() + today1900UtcMs;
+    }
+    cutoffMs = cutoffMs;
+  }
+  const filtered = modeItems().filter((item) => {
+    try {
+      if (state.siteFilter && item.site_id !== state.siteFilter) return false;
+      if (state.categoryFilter) {
+        let itemCat;
+        try { itemCat = itemGnCategory(item); } catch(e) { itemCat = item.source || ''; }
+        if (itemCat !== state.categoryFilter) return false;
+      }
+      if (cutoffMs !== null) {
+        const itemMs = new Date(item.first_seen_at || item.published_at || 0).getTime();
+        if (itemMs < cutoffMs) return false;
+      }
+      if (!q) return true;
+      const hay = `${item.title || ""} ${item.title_zh || ""} ${item.title_en || ""} ${item.site_name || ""} ${item.source || ""}`.toLowerCase();
+      return hay.includes(q);
+    } catch(e) {
+      console.error('[getFilteredItems] item error:', e.message, 'item:', item?.title?.substring(0,30));
+      return false;
+    }
+  });
+  // Jack 2026-05-15: 五维评分排序
+  return sortByScore(filtered, state.sortMode);
+}
+
+// Jack 2026-05-15: 五维评分排序函数
+function sortByScore(items, sortMode) {
+  if (sortMode === 'priority') return items;
+  if (sortMode === 'time') {
+    // 纯时间倒序：每个板块（source/site 组）内最新排最上，组间也按组内最新时间排
+    const cmp = (a, b) => {
+      const ta = a.published_at ? new Date(a.published_at).getTime() : 0;
+      const tb = b.published_at ? new Date(b.published_at).getTime() : 0;
+      return tb - ta;
+    };
+    return [...items].sort(cmp);
+  }
+  return [...items].sort((a, b) => {
+    try {
+      const scoreA = a[sortMode] !== undefined && a[sortMode] !== null ? a[sortMode] : -1;
+      const scoreB = b[sortMode] !== undefined && b[sortMode] !== null ? b[sortMode] : -1;
+      if (scoreA !== scoreB) return scoreB - scoreA;
+      const pa = gnPriority(itemGnCategory(a) || ''), pb = gnPriority(itemGnCategory(b) || '');
+      if (pa !== pb) return pa - pb;
+      return 0;
+    } catch(e) {
+      console.error('[sortByScore] error:', e.message);
+      return 0;
+    }
+  });
+}
+
+function renderItemNode(item, showSite) {
+  const node = itemTpl.content.firstElementChild.cloneNode(true);
+  // Jack 2026-09-11: .site 仅在无分组标题上下文时显示（精选锚点区），主信号流由 site-group 标题承载，避免冗余
+  const siteEl = node.querySelector(".site");
+  if (showSite && item.site_name) {
+    siteEl.textContent = item.site_name;
+  } else {
+    siteEl.remove();
+  }
+  // Jack 2026-09-15 v3: SOURCE_KINDS 的 key 全是退役源体系 site_id，真实数据永不命中，
+  // 兜底 label「来源」与分数徽章连读成"来源105"造成误导。未知来源不渲染该 chip。
+  const kind = SOURCE_KINDS[item.site_id];
+  const categoryEl = node.querySelector(".category");
+  if (kind) {
+    categoryEl.textContent = kind.label;
+    categoryEl.classList.add(`kind-${kind.tone}`);
+  } else {
+    categoryEl.remove();
+  }
+  // 2026-10-14: 时间移到标题行右侧（.title-row），不再独占 meta-row 一行。
+  // 原来 meta-row 里 site/category 被 remove() 后只剩 .time（margin-left:auto
+  // 推到最右），于是时间单独占一行，与标题之间留出一大片空白。
+  const timeEl = node.querySelector(".time");
+  if (timeEl) timeEl.textContent = fmtTime(item.published_at || item.first_seen_at);
+  // meta-row 若已无可见子元素则整行移除，避免留下空行
+  const metaRow = node.querySelector('.meta-row');
+  if (metaRow && !metaRow.children.length) metaRow.remove();
+
+  // 得分徽章（v3: 卡面摊开五维明细）
+  // 2026-10-14: 评分从卡面顶部 meta-row 移到标题/摘要下方的独立 score-row。
+  // 原来它挤在来源标签旁边跟栏目/来源抢层级，读者第一眼看到的是分数不是新闻。
+  const scoreEl = buildScoreBadge(item);
+  const scoreRow = node.querySelector('.score-row');
+  if (scoreRow) scoreRow.replaceChildren(scoreEl);
+  else {
+    const oldScore = node.querySelector('.score');
+    if (oldScore) oldScore.replaceWith(scoreEl);
+    else node.querySelector('.meta-row').appendChild(scoreEl);
+  }
+
+  const titleEl = node.querySelector(".title");
+  const original = (item.title || "").trim();
+  const zh = (item.title_zh || "").trim();
+  titleEl.textContent = "";
+  // Bilingual: show Chinese translation + original English as subtitle
+  // When title_zh is a genuine Chinese translation different from title
+  if (zh && original && zh !== original) {
+    const primary = document.createElement("span");
+    primary.textContent = zh;
+    const sub = document.createElement("span");
+    sub.className = "title-sub";
+    sub.textContent = original;
+    titleEl.appendChild(primary);
+    titleEl.appendChild(sub);
+  } else {
+    titleEl.textContent = original;
+  }
+  titleEl.href = item.url;
+
+  // Jack 2026-09-11 (v3): 与后端 clean_description 同规则的摘要渲染
+  const descEl = node.querySelector(".description");
+  if (descEl) {
+    const normWs = (s) => (s || "").replace(/\s+/g, " ").trim();
+    const rawDesc = normWs(item.description);
+    const tN = normWs(item.title);
+    let d = rawDesc;
+    // 剥 desc 尾部 " 来源名" / " - 来源名"
+    d = d.replace(/\s+[^\s\-–—]{2,30}\s*$/, "").replace(/\s*[-–—]\s*[^\s\-–—]{2,30}\s*$/, "").trim();
+    // title 剥尾部 " - 来源名"
+    const tC = tN.replace(/\s*[-–—]\s*[^\s\-–—]{2,30}\s*$/, "").trim();
+    let isDup =
+      (rawDesc && d && (d === tC || d === tN || rawDesc === tN || rawDesc === tC)) ||
+      (() => { const probe = Math.min(40, d.length, tN.length); return probe >= 20 && d.slice(0, probe) === tN.slice(0, probe) && Math.abs(d.length - tN.length) < 60; })();
+    // v4: 尾 token 剥离复读判定（覆盖 "标题 eet-china.com" 等连字符来源名）
+    if (!isDup && d) {
+      const tokens = d.split(" ");
+      for (let k = 1; k <= 6 && tokens.length > k; k++) {
+        const cand = tokens.slice(0, -k).join(" ").trim();
+        if (cand.length >= 20 && tN.startsWith(cand)) { isDup = true; break; }
+      }
+    }
+    if (!isDup && d.length >= 30) {
+      descEl.textContent = d.length > 120 ? d.substring(0, 120) + "…" : d;
+    } else {
+      descEl.remove();
+    }
+  }
+  return node;
+}
+
+function buildSourceGroupNode(source, items, siteName) {
+  const section = document.createElement("section");
+  section.className = "source-group";
+  const header = document.createElement("header");
+  header.className = "source-group-head";
+  // Jack 2026-09-11: 组内 source 与大栏目 site 同名（如"国外机器人资讯"下再分"国外机器人资讯"）→ 不再重复渲染标题
+  const isRedundant = siteName && (source === siteName || source.startsWith(siteName));
+  if (!isRedundant) {
+    const title = document.createElement("h3");
+    title.textContent = source;
+    const count = document.createElement("span");
+    count.textContent = `${fmtNumber(items.length)} 条`;
+    header.append(title, count);
+  } else {
+    header.classList.add("redundant");
+  }
+  const listEl = document.createElement("div");
+  listEl.className = "source-group-list";
+  section.append(header, listEl);
+  items.forEach((item) => { try { listEl.appendChild(renderItemNode(item)); } catch(e) { console.error('[BSGN] error:', e.message, 'item:', item?.title?.substring(0,30)); } });
+  return section;
+}
+
+function groupBySource(items) {
+  const groupMap = new Map();
+  items.forEach((item) => {
+    const key = item.source || "未分区";
+    if (!groupMap.has(key)) {
+      groupMap.set(key, []);
+    }
+    groupMap.get(key).push(item);
+  });
+
+  return Array.from(groupMap.entries()).sort((a, b) => {
+    try {
+      const pa = gnPriority(a[0]), pb = gnPriority(b[0]);
+      if (pa !== pb) return pa - pb;
+      return b[1].length - a[1].length;
+    } catch(e) { console.error('sort error:', e.message); return 0; }
+  });
+}
+
+function renderGroupedBySource(items) {
+  const groups = groupBySource(items);
+  const frag = document.createDocumentFragment();
+
+  groups.forEach(([source, groupItems]) => {
+    frag.appendChild(buildSourceGroupNode(source, groupItems));
+  });
+
+  newsListEl.appendChild(frag);
+}
+
+function renderGroupedBySiteAndSource(items) {
+  const siteMap = new Map();
+  items.forEach((item) => {
+    if (!siteMap.has(item.site_id)) {
+      siteMap.set(item.site_id, {
+        siteName: item.site_name || item.site_id,
+        items: [],
+      });
+    }
+    siteMap.get(item.site_id).items.push(item);
+  });
+
+  const sites = Array.from(siteMap.entries()).sort((a, b) => {
+    const byCount = b[1].items.length - a[1].items.length;
+    if (byCount !== 0) return byCount;
+    const pa = gnPriority(a[1].siteName), pb = gnPriority(b[1].siteName);
+    if (pa !== pb) return pa - pb;
+    return a[1].siteName.localeCompare(b[1].siteName, "zh-CN");
+  });
+
+  const frag = document.createDocumentFragment();
+  sites.forEach(([, site]) => {
+    const siteSection = document.createElement("section");
+    siteSection.className = "site-group";
+    const header = document.createElement("header");
+    header.className = "site-group-head";
+    const title = document.createElement("h3");
+    title.textContent = site.siteName;
+    const count = document.createElement("span");
+    count.textContent = `${fmtNumber(site.items.length)} 条`;
+    const arrow = document.createElement("span");
+    arrow.className = "collapse-ind";
+    arrow.textContent = "▾";
+    arrow.title = "点击折叠/展开本栏目";
+    const siteListEl = document.createElement("div");
+    siteListEl.className = "site-group-list";
+    header.append(title, count, arrow);
+    // 点击栏目行折叠/展开整个板块（其下全部消息）
+    header.addEventListener("click", () => {
+      siteSection.classList.toggle("collapsed");
+    });
+    siteSection.append(header, siteListEl);
+
+    const sourceGroups = groupBySource(site.items);
+    sourceGroups.forEach(([source, groupItems]) => {
+      siteListEl.appendChild(buildSourceGroupNode(source, groupItems, site.siteName));
+    });
+    frag.appendChild(siteSection);
+  });
+
+  newsListEl.appendChild(frag);
+}
+
+function renderList() {
+  const filtered = getFilteredItems();
+  renderCategoryBar();
+  console.log('[RL] itemsAi=' + state.itemsAi.length + ' filtered=' + filtered.length + ' mode=' + state.mode + ' today=' + state.todayMode + ' siteF=' + state.siteFilter + ' catF=' + state.categoryFilter + ' newsListEl=' + !!newsListEl);
+  if (filtered.length > 0) {
+    console.log('[RL] OK, first:', filtered[0].title?.substring(0,40));
+  } else {
+    console.log('[RL] EMPTY! itemsAi[0]:', state.itemsAi[0]?.title?.substring(0,40));
+    // Show ALL items without date filter for debugging
+    const allItems = modeItems();
+    console.log('[RL] allItems without filter:', allItems.length);
+  }
+  resultCountEl.textContent = `${fmtNumber(filtered.length)} 条`;
+
+  // Force clear and rebuild
+  if (!newsListEl) { console.error('[RL] newsListEl is NULL!'); return; }
+  newsListEl.innerHTML = "";
+
+  if (!filtered.length) {
+    const empty = document.createElement("div");
+    empty.className = "empty";
+    empty.textContent = "当前筛选条件下没有结果。";
+    newsListEl.appendChild(empty);
+    return;
+  }
+
+  if (state.siteFilter) {
+    renderGroupedBySource(filtered);
+    return;
+  }
+
+  renderGroupedBySiteAndSource(filtered);
+}
+
+
+
+function renderMetric(label, value, tone = "") {
+  const node = document.createElement("div");
+  node.className = `health-metric ${tone}`.trim();
+  const labelEl = document.createElement("span");
+  labelEl.className = "health-label";
+  labelEl.textContent = label;
+  const valueEl = document.createElement("strong");
+  valueEl.textContent = value;
+  node.append(labelEl, valueEl);
+  return node;
+}
+
+function renderIssueList(title, items) {
+  const wrap = document.createElement("div");
+  wrap.className = "health-issue";
+  const titleEl = document.createElement("div");
+  titleEl.className = "health-issue-title";
+  titleEl.textContent = title;
+  const list = document.createElement("ul");
+  items.slice(0, 6).forEach((item) => {
+    const li = document.createElement("li");
+    li.textContent = typeof item === "string" ? item : JSON.stringify(item);
+    list.appendChild(li);
+  });
+  if (items.length > 6) {
+    const li = document.createElement("li");
+    li.textContent = `另有 ${fmtNumber(items.length - 6)} 项`;
+    list.appendChild(li);
+  }
+  wrap.append(titleEl, list);
+  return wrap;
+}
+
+function renderSourceHealth(errorMessage = "") {
+  if (!sourceHealthEl) return;
+  sourceHealthEl.innerHTML = "";
+
+  const status = state.sourceStatus;
+  if (!status) {
+    const empty = document.createElement("div");
+    empty.className = "health-empty";
+    empty.textContent = errorMessage || "源状态未生成";
+    sourceHealthEl.appendChild(empty);
+    renderAdvancedSummary();
+    return;
+  }
+
+  const sites = Array.isArray(status.sites) ? status.sites : [];
+  const failedSitesRaw = Array.isArray(status.failed_sites) ? status.failed_sites : [];
+  const zeroSites = Array.isArray(status.zero_item_sites) ? status.zero_item_sites : [];
+  const rss = status.rss_opml || {};
+  const failedFeeds = Array.isArray(rss.failed_feeds) ? rss.failed_feeds : [];
+  const summary = status.summary || {};
+
+  // Jack 2026-09-28: 坏快照容错——交叉校验 site_stats：
+  // failed_sites 里但当前 site_stats 有数据的站点，说明是旧坏快照，不渲染
+  const stats = currentSiteStats();
+  const dataSiteNames = new Set(
+    (Array.isArray(stats) ? stats : []).map((s) => s.site_name || s.site_id)
+  );
+  const failedSites = failedSitesRaw.filter((s) => {
+    const name = typeof s === "string" ? s : (s.site_name || s.feed || "");
+    return !dataSiteNames.has(name);
+  });
+
+  const metricGrid = document.createElement("div");
+  metricGrid.className = "health-grid";
+  metricGrid.append(
+    renderMetric("OPML源", `${fmtNumber(status.successful_sites || 0)}/${fmtNumber(sites.length)}`, failedSites.length ? "warn" : "ok"),
+    renderMetric("抓取条目", `${fmtNumber(summary.total_items || 0)} 条`, "ok"),
+    renderMetric("去重剔除", fmtNumber(summary.deduplicated || 0), ""),
+    renderMetric("噪声过滤", fmtNumber((summary.noise_filtered || 0) + (summary.short_filtered || 0)), ""),
+    renderMetric("失败源", fmtNumber(failedSites.length + failedFeeds.length), failedSites.length || failedFeeds.length ? "bad" : "ok")
+  );
+  sourceHealthEl.appendChild(metricGrid);
+
+  const issues = document.createElement("div");
+  issues.className = "health-issues";
+  if (failedSites.length) issues.appendChild(renderIssueList("失败站点", failedSites));
+  if (zeroSites.length) issues.appendChild(renderIssueList("零结果站点", zeroSites));
+  if (failedFeeds.length && !failedSites.length) issues.appendChild(renderIssueList("失败 RSS", failedFeeds));
+
+  if (issues.childElementCount) {
+    sourceHealthEl.appendChild(issues);
+  } else {
+    const ok = document.createElement("div");
+    ok.className = "health-ok";
+    ok.textContent = "源状态正常";
+    sourceHealthEl.appendChild(ok);
+  }
+  renderAdvancedSummary();
+}
+
+// FIX (2026-07-13): 所有 fetch 加 8s 超时，防止 GitHub Pages 冷启动时无限 pending
+function fetchWithTimeout(url, ms = 8000) {
+  return Promise.race([
+    fetch(url),
+    new Promise((_, reject) =>
+      setTimeout(() => reject(new Error(`网络超时 (${ms/1000}s)，请刷新重试`)), ms)
+    )
+  ]);
+}
+
+async function fetchJsonBust(url, ms) {
+  const res = await fetchWithTimeout(url, ms);
+  if (!res.ok) throw new Error(`${url} -> HTTP ${res.status}`);
+  return res.json();
+}
+
+// 分片加载：index.json 给出日期清单，默认只取最近 2 天（今天 + 昨天），
+// 覆盖「上一 19:00 锚点」跨零点场景；合并后条目偏少（<80）再补取第 3 天。
+function mergeShardItems(shards) {
+  const seen = new Map();
+  for (const sh of shards) {
+    for (const it of (sh.items_ai || sh.items || [])) {
+      const k = it.url || it.id || it.title;
+      if (!k) continue;
+      const prev = seen.get(k);
+      if (!prev || (it.total_score || 0) > (prev.total_score || 0)) seen.set(k, it);
+    }
+  }
+  return Array.from(seen.values()).sort((a, b) => (b.total_score || 0) - (a.total_score || 0));
+}
+
+async function loadDayShards() {
+  const idx = await fetchJsonBust(`./data/days/index.json?t=${Date.now()}`, 8000);
+  const all = Array.isArray(idx.days) ? idx.days : [];
+  if (!all.length) throw new Error('index.days 为空');
+
+  const bucket = Math.floor(Date.now() / 60000);   // 分钟级 bust：同一分钟内多次请求可命中浏览器缓存
+  const fetchDay = (d) => fetchJsonBust(`./data/days/${d}.json?t=${bucket}`, 8000);
+
+  const wanted = all.slice(-SHARD_DAYS_BACK);
+  const shards = await Promise.all(wanted.map(fetchDay));
+  let items = mergeShardItems(shards);
+
+  // 兜底补一天：跨零点的早间时段，2 天合并后可能偏少
+  if (items.length < 80 && all.length > wanted.length) {
+    const extraDay = all[all.length - wanted.length - 1];
+    try {
+      const extra = await fetchDay(extraDay);
+      items = mergeShardItems([...shards, extra]);
+      wanted.unshift(extraDay);
+    } catch (e) {
+      console.warn('[LOAD] 补取分片失败：', extraDay, (e && e.message) || e);
+    }
+  }
+
+  if (!items.length) throw new Error('分片合并后为空');
+  const siteStats = computeSiteStats(items);
+  return {
+    generated_at: idx.generated_at || shards[shards.length - 1].generated_at,
+    items_ai: items,
+    site_stats: siteStats,
+    total_items: items.length,
+    total_items_raw: items.length,
+    total_items_all_mode: items.length,
+    site_count: siteStats.length,
+    source_count: idx.source_count || 0,
+    archive_total: idx.archive_total || items.length,
+    _via: 'day-shards[' + wanted.join(',') + ']',
+  };
+}
+
+async function loadNewsData() {
+  if (USE_DAY_SHARDS) {
+    try {
+      const payload = await loadDayShards();
+      console.log('[LOAD] 分片 OK', payload._via, payload.items_ai.length, '条');
+      return payload;
+    } catch (e) {
+      console.warn('[LOAD] 分片失败，回退 latest-24h-min.json：', (e && e.message) || e);
+    }
+  }
+  return loadSnapshotData();
+}
+
+async function loadSnapshotData() {
+  // 2026-10-28: 慢链路（大 payload + 弱网）首拉固定 8s 超时→首屏卡死"加载中…"。
+  // 改成分级重试：6s / 12s / 20s 各一次（累计 ~38s 仍失败才抛错进错误态）。
+  // 复用同一 url（同 ?t=），前一次 fetch 已完成的响应可被浏览器缓存命中。
+  const url = `./data/latest-24h-min.json?t=${Date.now()}`;
+  const attempts = [6000, 12000, 20000];
+  let lastErr = null;
+  for (let i = 0; i < attempts.length; i++) {
+    try {
+      const res = await fetchWithTimeout(url, attempts[i]);
+      if (!res.ok) throw new Error(`加载 latest-24h.json 失败: ${res.status}`);
+      return await res.json();
+    } catch (e) {
+      lastErr = e;
+    }
+  }
+  throw lastErr || new Error("加载 latest-24h.json 失败");
+}
+
+async function loadAllModeData() {
+  if (state.allDataLoaded) return;
+  if (!state.allDataPromise) {
+    // 2026-10-28: 同 loadNewsData——分级超时重试（6s/12s/20s），弱网不再一次 8s 直接炸全量模式
+    state.allDataPromise = (async () => {
+      const url = `./${state.allDataUrl}?t=${Date.now()}`;
+      const attempts = [6000, 12000, 20000];
+      let lastErr = null;
+      for (let i = 0; i < attempts.length; i++) {
+        try {
+          const res = await fetchWithTimeout(url, attempts[i]);
+          if (!res.ok) throw new Error(`加载 ${state.allDataUrl} 失败: ${res.status}`);
+          const payload = await res.json();
+          state.itemsAllRaw = payload.items_all_raw || payload.items_all || state.itemsAi;
+          state.itemsAll = payload.items_all || state.itemsAi;
+          state.totalRaw = payload.total_items_raw || state.itemsAllRaw.length;
+          state.totalAllMode = payload.total_items_all_mode || state.itemsAll.length;
+          state.allDataLoaded = true;
+          return;
+        } catch (e) {
+          lastErr = e;
+        }
+      }
+      throw lastErr || new Error(`加载 ${state.allDataUrl} 失败`);
+    })()
+      .catch((err) => {
+        state.allDataPromise = null;
+        throw err;
+      });
+  }
+  return state.allDataPromise;
+}
+
+async function loadSourceStatusData() {
+  const res = await fetchWithTimeout(`./data/source-status.json?t=${Date.now()}`);
+  if (!res.ok) throw new Error(`加载 source-status.json 失败: ${res.status}`);
+  return res.json();
+}
+
+// 2026-10-14：把"数据落库 → 渲染"抽成独立函数，主数据轮询复用。
+// 之前只有 wechat 专区轮询，主数据 latest-24h-min.json 只在页面加载时取一次，
+// 页面长时间停留时"更新时间"永久冻结在首次加载时刻（观感即"卡住"）。
+function applyNewsPayload(payload) {
+    state.itemsAi = payload.items_ai || payload.items || [];
+    console.log('[INIT] itemsAi set: ' + state.itemsAi.length + ' items_ai: ' + (payload.items_ai||[]).length + ' items: ' + (payload.items||[]).length);
+    // 2026-10-28: payload 不再重复携带 items_all/items_all_raw（原与 items_ai 同 blob，
+    // 3 份同数据把文件撑到 ~900KB）。全量模式直接复用 items_ai，标记 allDataLoaded
+    // 避免 loadAllModeData 再拉一遍同样的文件。
+    state.itemsAllRaw = payload.items_all_raw || payload.items_all || state.itemsAi;
+    state.itemsAll = payload.items_all || state.itemsAi;
+    state.statsAi = payload.site_stats || [];
+    state.totalAi = payload.total_items || state.itemsAi.length;
+    state.totalRaw = payload.total_items_raw || state.itemsAllRaw.length;
+    state.totalAllMode = payload.total_items_all_mode || state.itemsAll.length;
+    state.allDataUrl = payload.all_mode_data_url || state.allDataUrl;
+    state.allDataLoaded = Boolean(payload.items_all || payload.items_all_raw) || state.itemsAll.length > 0;
+    state.generatedAt = payload.generated_at;
+
+    setStats(payload);
+    renderModeSwitch();
+    renderSiteFilters();
+    renderList();
+    renderUpdatedAt();
+    if (!state._initialGeneratedAt) state._initialGeneratedAt = state.generatedAt;
+}
+
+// 2026-09-15: "更新时间"显示"页面数据刷新于 X:XX（快照 00:00）"，
+// 让"更新时间"跟随页面加载时刻走，不再卡在快照小时位上
+// 2026-10-14: 追加"数据年龄"，直接暴露快照滞后多久（原来滞后完全不可见，
+// 只能靠"更新时间"猜，观感就是"卡住了"）。
+function renderUpdatedAt() {
+    const pageLoadTime = new Date();
+    const loadFmt = `${String(pageLoadTime.getHours()).padStart(2,'0')}:${String(pageLoadTime.getMinutes()).padStart(2,'0')}`;
+    // 若页面长期停留，generatedAt 本身被新快照刷新（同页 auto-poll 场景），
+    // 优先显示新快照时刻，避免"刷新于"永远停在第一次 load 的时间
+    const snapFmt = fmtTime(state.generatedAt);
+    const displayTime = (state.generatedAt && state.generatedAt !== state._initialGeneratedAt)
+      ? snapFmt
+      : loadFmt;
+
+    let ageTxt = '';
+    if (state.generatedAt) {
+        const gen = new Date(state.generatedAt);
+        if (!isNaN(gen.getTime())) {
+            const ageMin = Math.max(0, Math.floor((Date.now() - gen.getTime()) / 60000));
+            ageTxt = ageMin >= 60 ? ` · 数据 ${Math.floor(ageMin/60)}h${ageMin%60}m 前` : ` · 数据 ${ageMin}m 前`;
+            // 超过 90min 还没新快照 → 标红提示，别让"卡住"无声发生
+            if (ageMin > 90) updatedAtEl.style.color = '#e53e3e';
+            else updatedAtEl.style.color = '';
+        }
+    }
+    updatedAtEl.textContent = `${displayTime} · 快照 ${snapFmt}${ageTxt}`;
+    updatedAtEl.title = `数据生成时间：${state.generatedAt}（"更新时间"跟随页面加载/自动刷新时刻，快照时间反映数据轮次）`;
+}
+
+// 主数据轮询：每 90s 拉一次快照，只在 generated_at 变化时才重渲染。
+// 后台标签页自动降频（skip），避免无意义的 GitHub Pages 请求。
+const MAIN_DATA_POLL_MS = 90000;
+async function pollMainData() {
+    if (document.hidden) return;
+    try {
+        const payload = await loadNewsData();
+        if (payload && payload.generated_at && payload.generated_at !== state.generatedAt) {
+            console.log('[POLL] 新快照:', payload.generated_at);
+            state.allDataPromise = null;   // 强制重新拉 all-mode 数据
+            applyNewsPayload(payload);
+        } else {
+            renderUpdatedAt();             // 无新数据也刷新年龄显示
+        }
+    } catch (e) {
+        // 静默：下次轮询再试
+    }
+}
+if (typeof pollMainData === 'function') {
+    setInterval(pollMainData, MAIN_DATA_POLL_MS);
+    document.addEventListener('visibilitychange', () => { if (!document.hidden) pollMainData(); });
+}
+
+async function init() {
+  const [newsResult, statusResult] = await Promise.allSettled([
+    loadNewsData(),
+    loadSourceStatusData(),
+  ]);
+
+  if (newsResult.status === "fulfilled") {
+      applyNewsPayload(newsResult.value);
+    } else {
+    // FIX (2026-07-13): 显示错误状态 + 重试按钮，不再静默卡在"加载中..."
+    updatedAtEl.textContent = "加载失败";
+    const errMsg = newsResult.reason ? newsResult.reason.message : "未知错误";
+    newsListEl.innerHTML = `<div class="empty">
+      <div style="margin-bottom:12px;color:#e53e3e">${errMsg}</div>
+      <button id="retryBtn" style="padding:8px 20px;cursor:pointer;background:#3182ce;color:#fff;border:none;border-radius:4px;font-size:14px">重新加载</button>
+    </div>`;
+    const retryBtn = document.getElementById('retryBtn');
+    if (retryBtn) {
+      retryBtn.addEventListener('click', () => {
+        newsListEl.innerHTML = '<div class="empty">正在重新加载...</div>';
+        // Reset all promises and re-init
+        state.allDataPromise = null;
+        state.allDataLoaded = false;
+        state.itemsAi = [];
+        state.itemsAll = [];
+        state.itemsAllRaw = [];
+        init();
+      });
+    }
+  }
+
+  if (statusResult.status === "fulfilled") {
+    state.sourceStatus = statusResult.value;
+    renderSourceHealth();
+    renderStats();
+  } else {
+    renderSourceHealth(statusResult.reason.message);
+    renderStats();
+  }
+}
+
+if (sourceBadgeEl && advancedPanelEl) {
+  sourceBadgeEl.addEventListener("click", () => {
+    advancedPanelEl.open = !advancedPanelEl.open;
+    if (advancedPanelEl.open) advancedPanelEl.scrollIntoView({ behavior: "smooth", block: "nearest" });
+  });
+}
+
+searchInputEl.addEventListener("input", (e) => {
+  state.query = e.target.value;
+  renderList();
+});
+
+siteSelectEl.addEventListener("change", (e) => {
+  state.siteFilter = e.target.value;
+  state.categoryFilter = "";
+  renderSiteFilters();
+  renderList();
+});
+
+modeAiBtnEl.addEventListener("click", () => {
+  state.mode = "ai";
+  renderModeSwitch();
+  renderSiteFilters();
+  renderList();
+});
+
+modeAllBtnEl.addEventListener("click", async () => {
+  state.mode = "all";
+  renderModeSwitch();
+  newsListEl.innerHTML = "";
+  const loading = document.createElement("div");
+  loading.className = "empty";
+  loading.textContent = "正在加载全量更新...";
+  newsListEl.appendChild(loading);
+  try {
+    await loadAllModeData();
+    renderSiteFilters();
+    renderList();
+  } catch (err) {
+    newsListEl.innerHTML = "";
+    const failed = document.createElement("div");
+    failed.className = "empty";
+    failed.textContent = err.message;
+    newsListEl.appendChild(failed);
+  }
+});
+
+if (allDedupeToggleEl) {
+  allDedupeToggleEl.addEventListener("change", (e) => {
+    state.allDedup = Boolean(e.target.checked);
+    renderModeSwitch();
+    renderSiteFilters();
+    renderList();
+  });
+}
+
+// Jack 2026-05-15: 五维评分排序
+if (sortSelectEl) {
+  sortSelectEl.addEventListener("change", (e) => {
+    state.sortMode = e.target.value;
+    renderList();
+  });
+}
+
+// Jack 2026-05-15: 今日9点CST分界线
+const todayCutoffToggleEl = document.getElementById("todayCutoffToggle");
+const todayCutoffWrapEl = document.getElementById("todayCutoffWrap");
+if (todayCutoffToggleEl) {
+  todayCutoffToggleEl.addEventListener("change", (e) => {
+    state.todayMode = Boolean(e.target.checked);
+    renderList();
+    renderAdvancedSummary();
+  });
+}
+
+
+
+
+
+init();
+
+// ═══════════════════════════════════════════════
+// 微信公众号专区 (2026-07-16)
+// ═══════════════════════════════════════════════
+
+async function loadWechatArticles() {
+  try {
+    const res = await fetchWithTimeout('./data/wechat-articles.json?t=' + Date.now());
+    if (!res.ok) return [];
+    const data = await res.json();
+    return data.articles || [];
+  } catch (e) {
+    console.log('[WECHAT] 未加载到公众号文章:', e.message);
+    return [];
+  }
+}
+
+function renderWechatArticle(item) {
+  const node = itemTpl.content.firstElementChild.cloneNode(true);
+  
+  // 站点标签
+  const siteEl = node.querySelector('.site');
+  siteEl.textContent = '微信公众号';
+  
+  // 分类 badge — 微信公众号专用样式
+  const categoryEl = node.querySelector('.category');
+  categoryEl.textContent = '公众号';
+  categoryEl.className = 'category kind-wechat';
+  
+  // 来源
+  const sourceEl = node.querySelector('.source');
+  if (sourceEl) sourceEl.remove();
+
+  // 时间
+  node.querySelector('.time').textContent = fmtTime(item.published_at || item.first_seen_at);
+
+  // 得分徽章（v3: 卡面摊开五维明细）
+  // 2026-10-14: 与普通卡片一致，放到标题/摘要下方的独立 score-row
+  const metaRow = node.querySelector('.meta-row');
+  const scoreEl = buildScoreBadge(item);
+  const scoreRow = node.querySelector('.score-row');
+  if (scoreRow) scoreRow.replaceChildren(scoreEl);
+  else if (metaRow) metaRow.insertBefore(scoreEl, metaRow.firstChild);
+  else node.insertBefore(scoreEl, node.querySelector('.title'));
+  
+  // 标题（双语）
+  const titleEl = node.querySelector('.title');
+  const original = (item.title || '').trim();
+  const zh = (item.title_zh || '').trim();
+  titleEl.textContent = '';
+  if (zh && original && zh !== original) {
+    const primary = document.createElement('span');
+    primary.textContent = zh;
+    const sub = document.createElement('span');
+    sub.className = 'title-sub';
+    sub.textContent = original;
+    titleEl.appendChild(primary);
+    titleEl.appendChild(sub);
+  } else {
+    titleEl.textContent = original || '（无标题）';
+  }
+  titleEl.href = item.url;
+  titleEl.target = '_blank';
+  titleEl.rel = 'noopener noreferrer';
+  
+  return node;
+}
+
+async function renderWechatSection(wechatArticles) {
+  const wechatSection = document.getElementById('wechatSection');
+  const wechatList = document.getElementById('wechatList');
+  const wechatCount = document.getElementById('wechatCount');
+  
+  if (!wechatSection || !wechatList || !wechatCount) return;
+  
+  if (!wechatArticles || wechatArticles.length === 0) {
+    wechatSection.style.display = ''; wechatCount.textContent = '0 篇'; wechatList.innerHTML = '<div class="empty">暂无微信公众号文章</div>';
+    return;
+  }
+  
+  // 显示专区
+  wechatSection.style.display = '';
+  
+  // 排序：按时间最新
+  wechatArticles.sort((a, b) => {
+    const ta = a.published_at ? new Date(a.published_at).getTime() : 0;
+    const tb = b.published_at ? new Date(b.published_at).getTime() : 0;
+    return tb - ta;
+  });
+  
+  // 数量
+  wechatCount.textContent = `${wechatArticles.length} 篇`;
+  
+  // 清空并渲染
+  wechatList.innerHTML = '';
+  const fragment = document.createDocumentFragment();
+  for (const item of wechatArticles) {
+    try {
+      fragment.appendChild(renderWechatArticle(item));
+    } catch (e) {
+      console.error('[WECHAT] 渲染失败:', e.message, 'item:', item?.title?.substring(0, 30));
+    }
+  }
+  wechatList.appendChild(fragment);
+}
+
+// 在 init 完成后加载微信公众号文章
+async function initWechatSection() {
+  const wechatArticles = await loadWechatArticles();
+  await renderWechatSection(wechatArticles);
+  console.log('[WECHAT] 微信公众号专区渲染完成:', wechatArticles.length, '篇');
+}
+
+// 在 init 完成后异步加载微信公众号专区
+initWechatSection();
+
+// 2026-10-14: 把评分徽章挂到卡面底部（标题/摘要之后）的独立 .score-row。
+// 主卡片走 index.html 的 itemTpl 模板（模板里已有 .score-row，用 replaceChildren 填），
+// 其余分区（arXiv / 政府 / 搜索）用 JS 拼 DOM，统一走这个 helper，
+// 保证全站评分位置一致，也避免在 meta-row 里 insertBefore 造成位置漂移。
+function attachScoreRow(node, scoreEl) {
+  const scoreRow = document.createElement('div');
+  scoreRow.className = 'score-row';
+  scoreRow.appendChild(scoreEl);
+  node.appendChild(scoreRow);
+  return scoreRow;
+}
+
+// ═══════════════════════════════════════════════
+// 学术专区 (2026-08-04) - arXiv cs.RO 机器人论文
+// ═══════════════════════════════════════════════
+
+async function loadArxivArticles() {
+  try {
+    const res = await fetchWithTimeout('./data/arxiv-papers.json?t=' + Date.now());
+    if (!res.ok) return null;
+    return await res.json();
+  } catch (e) {
+    console.log('[ARXIV] Failed to load arxiv-papers.json:', e.message);
+    return null;
+  }
+}
+
+async function initArxivSection() {
+  const arxivData = await loadArxivArticles();
+  const arxivSection = document.getElementById('arxivSection');
+  const arxivList = document.getElementById('arxivList');
+  const arxivCount = document.getElementById('arxivCount');
+
+  if (!arxivSection || !arxivList || !arxivCount) return;
+
+  if (!arxivData || !arxivData.items || arxivData.items.length === 0) {
+    arxivSection.style.display = 'none';
+    return;
+  }
+
+  arxivSection.style.display = '';
+  arxivCount.textContent = `${arxivData.items.length} 篇`;
+  arxivList.innerHTML = '';
+  const fragment = document.createDocumentFragment();
+  arxivData.items.forEach(item => {
+    try {
+      const node = renderArxivItem(item);
+      fragment.appendChild(node);
+    } catch (e) {
+      console.error('[ARXIV] 渲染失败:', e.message);
+    }
+  });
+  arxivList.appendChild(fragment);
+  console.log('[ARXIV] 学术专区渲染完成:', arxivData.items.length, '篇');
+}
+
+function renderArxivItem(item) {
+  const node = document.createElement('article');
+  node.className = 'news-card arxiv-card';
+
+  // Meta row
+  const metaRow = document.createElement('div');
+  metaRow.className = 'meta-row';
+
+  // 来源标签（紫色背景）
+  const source = document.createElement('span');
+  source.className = 'source';
+  source.textContent = 'arXiv';
+  source.style.color = '#7c3aed';
+  source.style.fontWeight = '600';
+  metaRow.appendChild(source);
+
+  // 得分徽章（v3: 卡面摊开五维明细）
+  // 2026-10-14: 徽章先建好，等标题/摘要都 append 完再由 attachScoreRow 挂到卡面底部
+  const scoreEl = buildScoreBadge(item);
+
+  // 分类标签
+  const category = document.createElement('span');
+  category.className = 'category kind-robotics';
+  category.textContent = item.category || 'cs.RO';
+  metaRow.appendChild(category);
+
+  // 作者
+  if (item.authors) {
+    const authors = document.createElement('span');
+    authors.className = 'arxiv-authors';
+    authors.textContent = item.authors;
+    authors.style.fontSize = '12px';
+    authors.style.color = '#6b7280';
+    metaRow.appendChild(authors);
+  }
+
+  node.appendChild(metaRow);
+
+  // 2026-10-14: 标题 + 时间同一行（时间右对齐），其余分区与主卡片一致
+  const titleRow = document.createElement('div');
+  titleRow.className = 'title-row';
+  const title = document.createElement('a');
+  title.className = 'title';
+  title.href = item.url;
+  title.target = '_blank';
+  title.rel = 'noopener noreferrer';
+  title.textContent = item.title_zh || item.title;
+  titleRow.appendChild(title);
+  if (item.published_at) {
+    const time = document.createElement('time');
+    time.className = 'time';
+    time.textContent = item.published_at.slice(0, 10);
+    titleRow.appendChild(time);
+  }
+  node.appendChild(titleRow);
+
+  // 摘要
+  if (item.summary) {
+    const summary = document.createElement('p');
+    summary.className = 'arxiv-summary';
+    summary.textContent = item.summary.length > 120
+      ? item.summary.slice(0, 120) + '...'
+      : item.summary;
+    summary.style.fontSize = '13px';
+    summary.style.color = '#4b5563';
+    summary.style.margin = '6px 0 0 0';
+    summary.style.lineHeight = '1.5';
+    node.appendChild(summary);
+  }
+
+  // 2026-10-14: 评分挂到卡面最后（标题/摘要之后）
+  attachScoreRow(node, scoreEl);
+
+  return node;
+}
+
+// 加载学术专区
+initArxivSection();
+
+
+
+function formatRelativeTime(date) {
+  const now = new Date();
+  const diff = Math.floor((now - date) / 1000);
+  if (diff < 60) return '刚刚';
+  if (diff < 3600) return Math.floor(diff / 60) + '分钟前';
+  if (diff < 86400) return Math.floor(diff / 3600) + '小时前';
+  if (diff < 172800) return '昨天';
+  return Math.floor(diff / 86400) + '天前';
+}
+
+// ═══════════════════════════════════════════════
+// 政府专区 - 政策新闻 (2026-08-06)
+// ═══════════════════════════════════════════════
+
+async function loadGovArticles() {
+  try {
+    const res = await fetchWithTimeout('./data/government-news.json?t=' + Date.now());
+    if (!res.ok) return null;
+    return await res.json();
+  } catch (e) {
+    console.log('[GOV] Failed to load government-news.json:', e.message);
+    return null;
+  }
+}
+
+async function initGovSection() {
+  const govData = await loadGovArticles();
+  const govSection = document.getElementById('govSection');
+  const govList = document.getElementById('govList');
+  const govCount = document.getElementById('govCount');
+
+  if (!govSection || !govList || !govCount) return;
+
+  if (!govData || !govData.items || govData.items.length === 0) {
+    govSection.style.display = 'none';
+    return;
+  }
+
+  govSection.style.display = '';
+  govCount.textContent = `${govData.items.length} 条`;
+  govList.innerHTML = '';
+  const fragment = document.createDocumentFragment();
+  govData.items.forEach(item => {
+    try {
+      const node = renderGovItem(item);
+      fragment.appendChild(node);
+    } catch (e) {
+      console.error('[GOV] 渲染失败:', e.message);
+    }
+  });
+  govList.appendChild(fragment);
+  console.log('[GOV] 政府专区渲染完成:', govData.items.length, '条');
+}
+
+function renderGovItem(item) {
+  const node = document.createElement('article');
+  node.className = 'news-card gov-card';
+
+  const metaRow = document.createElement('div');
+  metaRow.className = 'meta-row';
+
+  // 来源标签（金色背景）
+  const source = document.createElement('span');
+  source.className = 'source';
+  source.textContent = '政府政策';
+  source.style.color = '#d97706';
+  source.style.fontWeight = '600';
+  metaRow.appendChild(source);
+
+  // 得分徽章（v3: 卡面摊开五维明细，政策口径）
+  // 2026-10-14: 徽章先建好，标题/描述 append 完再由 attachScoreRow 挂到卡面底部
+  const scoreEl = buildScoreBadge(item, true);
+
+  // 相关度
+  const relevance = document.createElement('span');
+  relevance.className = 'category kind-policy';
+  relevance.textContent = `${Math.round((item.relevance || 0) * 100)}%`;
+  relevance.style.color = '#d97706';
+  metaRow.appendChild(relevance);
+
+  node.appendChild(metaRow);
+
+  // 2026-10-14: 标题 + 时间同一行（时间右对齐）
+  const titleRow = document.createElement('div');
+  titleRow.className = 'title-row';
+  const title = document.createElement('a');
+  title.className = 'title';
+  title.href = item.url;
+  title.target = '_blank';
+  title.rel = 'noopener noreferrer';
+  title.textContent = item.title_zh || item.title;
+  titleRow.appendChild(title);
+  const pubDate = item.published_at ? new Date(item.published_at.replace('Z', '+00:00')) : null;
+  if (pubDate) {
+    const time = document.createElement('time');
+    time.className = 'time';
+    time.textContent = fmtTime(pubDate.toISOString());
+    titleRow.appendChild(time);
+  }
+  node.appendChild(titleRow);
+
+  // 描述（如有）
+  if (item.description) {
+    const desc = document.createElement('p');
+    desc.className = 'description';
+    desc.textContent = item.description.substring(0, 120) + (item.description.length > 120 ? '...' : '');
+    node.appendChild(desc);
+  }
+
+  // 2026-10-14: 评分挂到卡面最后（标题/摘要之后）
+  attachScoreRow(node, scoreEl);
+
+  return node;
+}
+
+// 在 init 完成后异步加载政府专区
+initGovSection();
+
+// ═══════════════════════════════════════════════
+// 精选锚点专区 - 底部板块 (2026-08-03)
+// ═══════════════════════════════════════════════
+
+const ANCHOR_SOURCES = [
+  // 精选 5 直连权威源（与 custom.opml 对齐，2026-10-21 收敛：Nature/MIT Tech Review/IEEE Spectrum AI/量子位/IEEE Brain）
+  'Nature', 'MIT Tech Review', 'IEEE Spectrum AI', '量子位', 'IEEE Brain',
+  // GN 代理
+  'GN: Robot Report', 'GN: BCI Intel', 'GN: MIT Tech Review',
+  'GN: 人形机器人', 'GN: 具身智能', 'GN: 机器人',
+  'GN: Physical AI', 'GN: 人形机器人 (中文)', 'GN: 具身智能 (中文)',
+  'GN: 机器人 (中文)', 'GN: 物理AI (中文)',
+  'GN: humanoid robot', 'GN: embodied AI', 'GN: brain-computer interface',
+  'GN: robot', 'GN: MIT robotics', 'GN: Stanford robotics',
+  'GN: autonomous robot', 'GN: surgical robot', 'GN: deep learning robot',
+  'GN: robot vacuum', 'GN: robot learning', 'GN: industrial robot',
+  'GN: collaborative robot', 'GN: robot manipulation',
+  'GN: 宇树科技', 'GN: 智元机器人',
+  'GN: 自动驾驶机器人', 'GN: 灵巧手', 'GN: 机械臂', 'GN: 优必选',
+  'GN: 工业机器人与人', 'GN: 服务机器人', 'GN: 人形机器人融资',
+  // Jack 2026-10-23: 资本事件层源（融资/IPO/递表/招股 + 目标公司锚点）
+  'GN: 资本事件', 'GN: Capital Events', 'GN: 融资',
+  'GN: Noetix 松延', 'GN: 宇树资本', 'GN: 智元资本', 'GN: 傅利叶资本',
+  'GN: TechXplore robotics', 'GN: TechXplore AI'
+];
+
+async function loadCustomAnchors() {
+  try {
+    const res = await fetchWithTimeout('./data/custom-anchors.json?t=' + Date.now());
+    if (!res.ok) return null;
+    return await res.json();
+  } catch (e) {
+    console.log('[ANCHOR] Failed to load custom-anchors.json:', e.message);
+    return null;
+  }
+}
+
+async function initAnchorSection() {
+  // Load from custom-anchors.json (7-day window)
+  const customData = await loadCustomAnchors();
+  let anchorItems = [];
+
+  if (customData && customData.items && customData.items.length > 0) {
+    anchorItems = customData.items.filter(item => ANCHOR_SOURCES.includes(item.source));
+  } else if (state.itemsAll && state.itemsAll.length > 0) {
+    // Fallback: use itemsAll from main feed
+    anchorItems = state.itemsAll.filter(item => ANCHOR_SOURCES.includes(item.source));
+  }
+
+  const anchorSection = document.getElementById('anchorSection');
+  if (!anchorSection || anchorItems.length === 0) {
+    if (anchorSection) anchorSection.style.display = 'none';
+    return;
+  }
+
+  anchorSection.style.display = '';
+  document.getElementById('anchorCount').textContent = `${anchorItems.length} 条`;
+  const anchorList = document.getElementById('anchorList');
+  anchorList.innerHTML = '';
+  const fragment = document.createDocumentFragment();
+  anchorItems.forEach(item => {
+    try {
+      // 锚点文章显示具体来源（TechCrunch Robotics、GN: 智元机器人等）
+      const node = renderItemNode(item, true);
+      fragment.appendChild(node);
+    }
+    catch(e) { console.error('[ANCHOR] 渲染失败:', e.message); }
+  });
+  anchorList.appendChild(fragment);
+  console.log('[ANCHOR] 精选锚点专区渲染完成:', anchorItems.length, '条');
+}
+
+
+// ═══════════════════════════════════════════════
+// 今日头条专区 - 头条号机器人资讯 (2026-08-07)
+// ═══════════════════════════════════════════════
+
+async function loadToutiaoArticles() {
+  try {
+    const res = await fetchWithTimeout('./data/toutiao-news.json?t=' + Date.now());
+    if (!res.ok) return null;
+    return await res.json();
+  } catch (e) {
+    console.log('[TOUTIAO] Failed to load search-news.json:', e.message);
+    return null;
+  }
+}
+
+async function initToutiaoSection() {
+  const searchData = await loadToutiaoArticles();
+  const section = document.getElementById('toutiaoSection');
+  const listEl = document.getElementById('toutiaoList');
+  const countEl = document.getElementById('toutiaoCount');
+
+  if (!section || !listEl || !countEl) return;
+
+  if (!searchData || !searchData.items || searchData.items.length === 0) {
+    section.style.display = 'none';
+    return;
+  }
+
+  section.style.display = '';
+  countEl.textContent = `${searchData.items.length} 条`;
+  listEl.innerHTML = '';
+  const fragment = document.createDocumentFragment();
+  searchData.items.forEach(item => {
+    try {
+      const node = renderSearchItem(item);
+      fragment.appendChild(node);
+    } catch (e) {
+      console.error('[TOUTIAO] 渲染失败:', e.message);
+    }
+  });
+  listEl.appendChild(fragment);
+  console.log('[TOUTIAO] 头条专区渲染完成:', searchData.items.length, '条');
+}
+
+function renderSearchItem(item) {
+  const node = document.createElement('article');
+  node.className = 'news-card search-card';
+
+  const metaRow = document.createElement('div');
+  metaRow.className = 'meta-row';
+
+  // 来源标签（蓝色背景）
+  const source = document.createElement('span');
+  source.className = 'source';
+  source.textContent = 'Bing搜索';
+  source.style.color = '#2563eb';
+  source.style.fontWeight = '600';
+
+  // 关键词标签
+  const keyword = document.createElement('span');
+  keyword.className = 'category kind-search';
+  keyword.textContent = item.source.replace('Bing: ', '');
+  keyword.style.color = '#2563eb';
+  metaRow.appendChild(keyword);
+
+  // 得分徽章（v3: 卡面摊开五维明细）
+  // 2026-10-14: 徽章先建好，标题/描述 append 完再由 attachScoreRow 挂到卡面底部
+  const scoreEl = buildScoreBadge(item);
+
+  node.appendChild(metaRow);
+
+  // 2026-10-14: 标题 + 时间同一行（时间右对齐）
+  const titleRow = document.createElement('div');
+  titleRow.className = 'title-row';
+  const title = document.createElement('a');
+  title.className = 'title';
+  title.href = item.url;
+  title.target = '_blank';
+  title.rel = 'noopener noreferrer';
+  title.textContent = item.title;
+  titleRow.appendChild(title);
+  if (item.date_str) {
+    const time = document.createElement('time');
+    time.className = 'time';
+    time.textContent = item.date_str;
+    titleRow.appendChild(time);
+  }
+  node.appendChild(titleRow);
+
+  // 描述
+  if (item.description) {
+    const desc = document.createElement('p');
+    desc.className = 'description';
+    desc.textContent = item.description.substring(0, 120) + (item.description.length > 120 ? '...' : '');
+    node.appendChild(desc);
+  }
+
+  // 2026-10-14: 评分挂到卡面最后（标题/摘要之后）
+  attachScoreRow(node, scoreEl);
+
+  return node;
+}
+
+// ═══════════════════════════════════════════════
+// 专区折叠（学术 / 今日头条 / 精选锚点）
+// 点 .list-head 收起整个专区，再点展开；箭头 ▾ 提示可点
+// ═══════════════════════════════════════════════
+function setupSectionCollapse(sectionId) {
+  const section = document.getElementById(sectionId);
+  if (!section) return;
+  const head = section.querySelector('.list-head');
+  if (!head) return;
+  if (head.querySelector('.collapse-ind')) return; // 已挂过
+  head.classList.add('collapsible');
+  const arrow = document.createElement('span');
+  arrow.className = 'collapse-ind';
+  arrow.textContent = '▾';
+  arrow.title = '点击折叠/展开本专区';
+  head.appendChild(arrow);
+  head.addEventListener('click', () => {
+    section.classList.toggle('collapsed');
+  });
+}
+setupSectionCollapse('arxivSection');
+setupSectionCollapse('toutiaoSection');
+setupSectionCollapse('anchorSection');
+
+// 在 init 完成后异步加载今日头条专区
+initToutiaoSection();
+
+// 在 init 完成后异步加载精选锚点专区
+// 在 init 完成后异步加载精选锚点专区
+initAnchorSection();
+
+// ═══════════════════════════════════════════════
+// 微信公众号专区实时轮询 (2026-07-16)
+// ═══════════════════════════════════════════════
+
+// 轮询间隔：30秒
+const WECHAT_POLL_INTERVAL_MS = 30000;
+
+async function pollWechatSection() {
+  try {
+    // 检查 manual 文件的最后修改时间
+    const res = await fetch('./data/wechat-articles.json?t=' + Date.now());
+    if (!res.ok) return;
+    const data = await res.json();
+    if (data && data.articles && data.articles.length > 0) {
+      // 更新 wechat 专区
+      await renderWechatSection(data.articles);
+    }
+  } catch (e) {
+    // 静默失败
+  }
+}
+
+// 启动轮询
+if (typeof pollWechatSection === 'function') {
+  setInterval(pollWechatSection, WECHAT_POLL_INTERVAL_MS);
+  // 首次立即加载
+  pollWechatSection();
+}

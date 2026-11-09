@@ -1,0 +1,15 @@
+name = "radar-watchdog"
+main = "index.js"
+compatibility_date = "2026-11-09"
+
+# 每 30 分钟一拍，与 update-news 的 cron 同频；数据年龄阈值 90/180 分钟，不会误报
+[triggers]
+crons = ["*/30 * * * *"]
+
+# 部署前执行：
+#   wrangler secret put GH_PAT            # fine-grained PAT: Actions 写权限 + ai-news-radar 仓库
+#   wrangler secret put ALERT_WEBHOOK_URL # 可选，接收 {"text": "..."} 的 webhook
+#   wrangler deploy
+#
+# 手动验证：
+#   curl "https://radar-watchdog.<your-subdomain>.workers.dev/check"
