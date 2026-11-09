@@ -148,6 +148,12 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          # 2026-11-09 LOCAL MODE GUARD：仓库已切换本地采集（.radar-local-mode 存在）时，
+          # 云端即使被手动触发也只做抓取演练，绝不提交/推送。
+          if [ -f .radar-local-mode ]; then
+            echo "[LOCAL-MODE] 本地采集模式生效：本轮不提交、不推送"
+            exit 0
+          fi
           git config user.email "radar-bot@users.noreply.github.com"
           git config user.name "radar-bot"
           touch data/wechat-articles.json
