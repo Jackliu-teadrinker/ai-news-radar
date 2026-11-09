@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-09T12:46:24.984296+00:00",
+  "generated_at": "2026-11-09T13:16:49.331456+00:00",
   "window_start": "2026-11-09T19:00:00+08:00",
-  "window_end": "2026-11-09T20:45:38.263357+08:00",
-  "total_items": 5,
+  "window_end": "2026-11-09T21:15:40.388768+08:00",
+  "total_items": 7,
   "items": [
     {
       "id": "816912aaaff621d60e5183954c7608ee515d8b21",
@@ -45,6 +45,46 @@
       "hx_dup_penalty": -0.0
     },
     {
+      "id": "dc8e0b9616b154b894f26bfc7671a2a25487ebc3",
+      "title": "Tidy up your floors with $500 off the Roborock Qrevo Edge 3 Pro robot vacuum - Mashable",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBBdm1mQ0VOTWYzNUl6MUQyWVFfYU5PRVNWT1ZJZWRtV2lMTnpyYkJsUVRlcVlpeVVWeEk1azZfRUY4dHdLLTV1QzM2Z3pSLXE4UmJlWFkxdGc5SS1abVVwSHgyQjIwZGVUd2d2Mk4tZw?oc=5",
+      "published_at": "2026-11-09T13:10:03+00:00",
+      "category": "GN: robot vacuum",
+      "gn_label": "robotics",
+      "site_name": "GN: robot vacuum",
+      "source": "GN: robot vacuum",
+      "site_id": "GN: robot vacuum",
+      "description": "SAVE $500: As of Nov. 4, get the Roborock Qrevo Edge 3 Pro for $999.99 at Amazon, down from its usual price of $1,499.99",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.406,
+      "authority": 5,
+      "depth": 5,
+      "timeliness": 20.0,
+      "writing_value": 5,
+      "total_score": 81.4,
+      "_hx": {
+        "topic": 6,
+        "conflict": 0,
+        "data": 6,
+        "pr_pen": 0,
+        "rel": 40.625,
+        "auth": 5,
+        "tim": 20.0,
+        "writing": 5,
+        "depth": 5,
+        "junk": 0,
+        "dup_pen": 0.2,
+        "dup_of": false
+      },
+      "hx_topic": 6,
+      "hx_conflict": 0,
+      "hx_data": 6,
+      "hx_pr_penalty": 0,
+      "hx_dup_penalty": -0.2
+    },
+    {
       "id": "875acc4d6236552aa6c29e6099f12e1bf342f0d1",
       "title": "The realities of robotics in farming - Agweek",
       "title_zh": "",
@@ -63,7 +103,7 @@
       "depth": 5,
       "timeliness": 20.0,
       "writing_value": 5,
-      "total_score": 75.6,
+      "total_score": 72.8,
       "_hx": {
         "topic": 0,
         "conflict": 0,
@@ -75,14 +115,14 @@
         "writing": 5,
         "depth": 5,
         "junk": 0,
-        "dup_pen": 0.0,
+        "dup_pen": 2.8,
         "dup_of": false
       },
       "hx_topic": 0,
       "hx_conflict": 0,
       "hx_data": 0,
       "hx_pr_penalty": 0,
-      "hx_dup_penalty": -0.0
+      "hx_dup_penalty": -2.8
     },
     {
       "id": "0f1a05ea16cfb9852639aefc08f8eb54729b8ed9",
@@ -123,6 +163,46 @@
       "hx_data": 0,
       "hx_pr_penalty": 0,
       "hx_dup_penalty": -0.0
+    },
+    {
+      "id": "53a5f6b71ab42683ef3bccd8435641c45b80fb14",
+      "title": "MIT system lets robots reason beyond literal commands - news.lavx.hu",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQd1dwMjRKT0d2MjAwM2VYb2pDeTI1QTJNeGNkY0FJSldBdW4yeWtoOVFhN0k5a2d2MlhRUnpDaXdpOGhzWEZJUklJRkdfM3dZOGdZSjNmMk05YVNCdWdmLVl0enJEX2NfM3FseXRTTUdSclhmckpQMlR2REYxelk5cnMwSUs2ajRjZGc?oc=5",
+      "published_at": "2026-11-09T12:44:52+00:00",
+      "category": "GN: MIT robotics",
+      "gn_label": "robotics",
+      "site_name": "GN: MIT robotics",
+      "source": "GN: MIT robotics",
+      "site_id": "GN: MIT robotics",
+      "description": "",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.406,
+      "authority": 5,
+      "depth": 0,
+      "timeliness": 20.0,
+      "writing_value": 0,
+      "total_score": 61.6,
+      "_hx": {
+        "topic": 0,
+        "conflict": 0,
+        "data": 0,
+        "pr_pen": 0,
+        "rel": 40.625,
+        "auth": 5,
+        "tim": 20.0,
+        "writing": 0,
+        "depth": 0,
+        "junk": 0,
+        "dup_pen": 4.0,
+        "dup_of": false
+      },
+      "hx_topic": 0,
+      "hx_conflict": 0,
+      "hx_data": 0,
+      "hx_pr_penalty": 0,
+      "hx_dup_penalty": -4.0
     },
     {
       "id": "fac22b63c14562f2519f9cbc5c424bb746a418b2",
@@ -183,7 +263,7 @@
       "depth": 5,
       "timeliness": 0.0,
       "writing_value": 5,
-      "total_score": 52.6,
+      "total_score": 52.5,
       "_hx": {
         "topic": 0,
         "conflict": 0,
@@ -195,14 +275,14 @@
         "writing": 5,
         "depth": 5,
         "junk": 0,
-        "dup_pen": 3.0,
+        "dup_pen": 3.1,
         "dup_of": false
       },
       "hx_topic": 0,
       "hx_conflict": 0,
       "hx_data": 0,
       "hx_pr_penalty": 0,
-      "hx_dup_penalty": -3.0
+      "hx_dup_penalty": -3.1
     }
   ],
   "fallback_used": false
