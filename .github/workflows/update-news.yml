@@ -141,6 +141,14 @@ jobs:
           TZ: Asia/Shanghai
         run: python scripts/curated_collector.py --data-path data/latest-24h-min.json --curated-dir data/curated
 
+      - name: Build day shards (方案C)
+        # 2026-11-09：前端主数据读 data/days/YYYY-MM-DD.json（按日分片），
+        # 云端必须产出同样结构，否则切回云端时站点会停在旧分片上。
+        # 规则与 ops/windows/run-radar.ps1 内的一致：按 published_at(+08:00) 分日、
+        # 同 url 去重保留高分、只追加不重排、一条 item 一行（便于 git 按行 delta）。
+        run: |
+          python scripts/build_shards.py --data-dir data --days-dir data/days --keep-days 60
+
       - name: Update index.html version hash
         run: python -c "import re; from datetime import datetime, timezone; c=open('index.html','r',encoding='utf-8').read(); now=datetime.now(timezone.utc).strftime('%Y%m%d%H%M%S'); c2=re.sub(r'(<script src=\"./assets/app\\.js\\?v=)[^\"]*\"', r'\g<1>'+now+'\"', c); open('index.html','w',encoding='utf-8').write(c2); print('[OK] version:',now)"
 
@@ -207,7 +215,7 @@ jobs:
           # 2026-11-09：只提交站点真正读取的快照，档案与状态由 .gitignore 挡在外面。
           git add data/latest-24h-min.json data/arxiv-papers.json data/custom-anchors.json \
                   data/government-news.json data/toutiao-news.json data/wechat-articles.json \
-                  data/wechat-manual.json data/source-status.json feeds/ index.html
+                  data/wechat-manual.json data/source-status.json data/days feeds/ index.html
           if git diff --cached --quiet; then
             echo "[SKIP] no changes staged"
           else
