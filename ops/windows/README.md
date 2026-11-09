@@ -171,3 +171,26 @@ data/latest-24h-min.json       前端兜底，每天定版一次（不再每轮�
 **注意**：不要用云端 workflow 跑数据了。仓库根目录有 `.radar-local-mode` 标记，
 云端即使被手动触发也只做抓取演练、不提交不推送（11-09 13:48 就发生过一次云端 dispatch
 把历史分叉、并把 30 条的 arxiv 覆盖成 0 条）。
+
+## 云端热备（2026-11-09 启用）
+
+云端 workflow 现在是**热备**模式：cron 每 2 小时一拍，但默认不干活。
+
+判断顺序（`Gate` 步骤，checkout 后立即执行）：
+
+| 条件 | 结果 |
+| --- | --- |
+| 仓库根目录存在 `.radar-local-mode` | 整个 job 几秒结束，云端永不推送 |
+| 最近一次提交作者是 `radar-local` 且不到 45 分钟 | 云端让位（本机在跑，云端不抢分支） |
+| 以上都不满足（本机停了 45 分钟以上） | 云端接管，抓取 + 生成分片 + 推送 |
+
+所以：本机在跑时云端成本≈0（只跑 3 个步骤）；本机一停，最迟下一个 2 小时拍点自动接班。
+本机恢复后，云端看到新的 `radar-local` 提交就自动让位。
+
+**手动关掉云端**：在仓库根建一个空文件 `.radar-local-mode` 并提交。
+**手动切纯云端**：`Disable-ScheduledTask -TaskName 'radar-local-refresh'`，其余交给 cron。
+
+云端状态处理（解决 runner 无状态）：
+- `seen_urls` / `title-zh-cache` / `archive` 由 `scripts/rebuild_state.py` 从 `data/days/*.json` 重建，零外部依赖
+- `gn-url-cache`（6.3MB，GN 跳转解析结果，快照里没有）走 `actions/cache`，每轮存新 key + 前缀恢复
+- 专区快照（arxiv / government / toutiao）本轮 0 条时从 HEAD 还原，不会把好数据覆盖成空
