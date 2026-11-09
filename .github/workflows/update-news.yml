@@ -5,6 +5,10 @@ on:
   # 不该由"推代码"驱动——推一次 UI/脚本改动就跑一遍完整采集，纯属浪费 runner，
   # 还会把 schedule 拍点挤掉。实测更新间隔从 ~30min 恶化到 100-270min，起点正是
   # 10-14 10:03 起本会话开始频繁推代码。修复后推代码只改文件，不触发采集。
+  schedule:
+    # 2026-11-09：每 2 小时一轮（原来 */30 是 fork 熔断的直接原因，别再加回去）。
+    # 本地在跑时 gate 步骤会直接跳过整个 job；本地停跑 45 分钟后自动接管。
+    - cron: "0 */2 * * *"
   workflow_dispatch:
 
 concurrency:
@@ -59,9 +63,51 @@ jobs:
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          fetch-depth: 1
+          fetch-depth: 20
+
+      - name: Gate (local-first / handoff)
+        id: gate
+        # 2026-11-09：门禁提前到最前面，本地在跑时整个 job 几秒钟结束，
+        # 既省 runner 分钟（降低 fork 熔断风险），也不跟本机抢分支。
+        run: |
+          set -e
+          skip=false
+          if [ -f .radar-local-mode ]; then
+            echo "[GATE] .radar-local-mode 存在 → 本地优先，本轮跳过"
+            skip=true
+          fi
+          row=$(git log -1 --format='%an|%ct' 2>/dev/null || echo "")
+          if [ -n "$row" ]; then
+            an="${row%%|*}"; ts="${row##*|}"
+            age=$(( $(date +%s) - ts ))
+            echo "[GATE] 最近提交作者=${an} 距今=${age}s"
+            if [ "$an" = "radar-local" ] && [ "$age" -lt 2700 ]; then
+              echo "[GATE] 本机 45 分钟内推过 → 云端让位"
+              skip=true
+            fi
+          fi
+          echo "skip=$skip" >> "$GITHUB_OUTPUT"
+
+      - name: Restore GN url cache
+        if: steps.gate.outputs.skip != 'true'
+        # GN 跳转解析缓存是唯一无法从仓库数据自举的状态（快照里没存解析结果），
+        # 用 actions/cache 传递：每轮存一份新 key，restore 前缀取最新的。
+        uses: actions/cache@v4
+        with:
+          path: data/gn-url-cache.json
+          key: radar-gn-cache-${{ github.run_id }}
+          restore-keys: |
+            radar-gn-cache-
+
+      - name: Rebuild state from repo data
+        if: steps.gate.outputs.skip != 'true'
+        # 云端 runner 无状态，但 seen_urls / title-zh-cache / archive 都能从
+        # data/days/*.json + latest-24h-min.json 推出来，不用任何外部存储。
+        run: |
+          python scripts/rebuild_state.py --data-dir data --archive-days 21
 
       - name: Set up Python 3.11
+        if: steps.gate.outputs.skip != 'true'
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
@@ -69,9 +115,11 @@ jobs:
           cache-dependency-path: "requirements.txt"
 
       - name: Install dependencies
+        if: steps.gate.outputs.skip != 'true'
         run: pip install -r requirements.txt
 
       - name: Pre-flight checks
+        if: steps.gate.outputs.skip != 'true'
         run: |
           echo "============================================================"
           echo "  PRE-FLIGHT CHECKS (defense against 2026-08-30 incidents)"
@@ -117,31 +165,37 @@ jobs:
           echo "============================================================"
 
       - name: Run update
+        if: steps.gate.outputs.skip != 'true'
         env:
           TZ: Asia/Shanghai
         run: python scripts/update_news.py --output-dir data --window-hours 24 --rss-opml feeds/follow.example.opml --custom-opml feeds/custom.opml --archive-days 21
 
       - name: Fetch arXiv papers
+        if: steps.gate.outputs.skip != 'true'
         env:
           TZ: Asia/Shanghai
         run: python scripts/arxiv_fetcher.py --output-dir data --window-hours 24
 
       - name: Fetch government news
+        if: steps.gate.outputs.skip != 'true'
         env:
           TZ: Asia/Shanghai
         run: python scripts/government_fetcher.py
 
       - name: Fetch Toutiao news
+        if: steps.gate.outputs.skip != 'true'
         env:
           TZ: Asia/Shanghai
         run: python scripts/toutiao_fetcher.py
 
       - name: Curate high-quality articles
+        if: steps.gate.outputs.skip != 'true'
         env:
           TZ: Asia/Shanghai
         run: python scripts/curated_collector.py --data-path data/latest-24h-min.json --curated-dir data/curated
 
       - name: Build day shards (方案C)
+        if: steps.gate.outputs.skip != 'true'
         # 2026-11-09：前端主数据读 data/days/YYYY-MM-DD.json（按日分片），
         # 云端必须产出同样结构，否则切回云端时站点会停在旧分片上。
         # 规则与 ops/windows/run-radar.ps1 内的一致：按 published_at(+08:00) 分日、
@@ -149,10 +203,19 @@ jobs:
         run: |
           python scripts/build_shards.py --data-dir data --days-dir data/days --keep-days 60
 
+      - name: Save GN url cache
+        if: steps.gate.outputs.skip != 'true' && always()
+        uses: actions/cache/save@v4
+        with:
+          path: data/gn-url-cache.json
+          key: radar-gn-cache-${{ github.run_id }}
+
       - name: Update index.html version hash
+        if: steps.gate.outputs.skip != 'true'
         run: python -c "import re; from datetime import datetime, timezone; c=open('index.html','r',encoding='utf-8').read(); now=datetime.now(timezone.utc).strftime('%Y%m%d%H%M%S'); c2=re.sub(r'(<script src=\"./assets/app\\.js\\?v=)[^\"]*\"', r'\g<1>'+now+'\"', c); open('index.html','w',encoding='utf-8').write(c2); print('[OK] version:',now)"
 
       - name: Auto-push data
+        if: steps.gate.outputs.skip != 'true'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
