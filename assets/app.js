@@ -840,6 +840,48 @@ async function fetchJsonBust(url, ms) {
   return res.json();
 }
 
+// 2026-11-10 加固：单日分片到下午会涨到 600KB+，8s 超时在移动网络下容易整包失败，
+// 而失败后会静默退到「今日定版」的 latest-24h-min.json（一天只写一次），
+// 表现就是「页面还停在今天凌晨/昨天的消息」。三层兜底改为：
+//   分片（最新一天必成，旧的一天尽力而为）→ 上次成功的离线副本 → 定版快照
+const SHARD_TIMEOUT_MS = 15000;
+const LAST_GOOD_KEY = 'radar:lastGoodPayload:v1';
+
+function saveLastGood(payload) {
+  try {
+    if (!payload || !Array.isArray(payload.items_ai) || !payload.items_ai.length) return;
+    localStorage.setItem(LAST_GOOD_KEY, JSON.stringify({
+      generated_at: payload.generated_at,
+      saved_at: new Date().toISOString(),
+      total_items: payload.total_items,
+      total_items_raw: payload.total_items_raw,
+      total_items_all_mode: payload.total_items_all_mode,
+      source_count: payload.source_count,
+      archive_total: payload.archive_total,
+      site_stats: payload.site_stats,
+      items_ai: payload.items_ai,
+      _via: 'localStorage',
+    }));
+  } catch (e) {
+    console.warn('[CACHE] 离线副本保存失败：', e.message);
+  }
+}
+
+function loadLastGood() {
+  try {
+    const raw = localStorage.getItem(LAST_GOOD_KEY);
+    if (!raw) return null;
+    const p = JSON.parse(raw);
+    if (!p || !Array.isArray(p.items_ai) || !p.items_ai.length) return null;
+    p._via = 'offline-cache@' + (p.saved_at || '?');
+    p._stale = true;
+    return p;
+  } catch (e) {
+    console.warn('[CACHE] 离线副本读取失败：', e.message);
+    return null;
+  }
+}
+
 // 分片加载：index.json 给出日期清单，默认只取最近 2 天（今天 + 昨天），
 // 覆盖「上一 19:00 锚点」跨零点场景；合并后条目偏少（<80）再补取第 3 天。
 function mergeShardItems(shards) {
@@ -856,15 +898,27 @@ function mergeShardItems(shards) {
 }
 
 async function loadDayShards() {
-  const idx = await fetchJsonBust(`./data/days/index.json?t=${Date.now()}`, 8000);
+  const idx = await fetchJsonBust(`./data/days/index.json?t=${Date.now()}`, 12000);
   const all = Array.isArray(idx.days) ? idx.days : [];
   if (!all.length) throw new Error('index.days 为空');
 
   const bucket = Math.floor(Date.now() / 60000);   // 分钟级 bust：同一分钟内多次请求可命中浏览器缓存
-  const fetchDay = (d) => fetchJsonBust(`./data/days/${d}.json?t=${bucket}`, 8000);
+  const fetchDay = (d) => fetchJsonBust(`./data/days/${d}.json?t=${bucket}`, SHARD_TIMEOUT_MS);
 
-  const wanted = all.slice(-SHARD_DAYS_BACK);
-  const shards = await Promise.all(wanted.map(fetchDay));
+  // 2026-11-10：串行加载，最新一天是硬需求（拿不到就让整条链降级），
+  // 更早的分片改成尽力而为——单天超时不再让整页退回旧快照。
+  const newest = all[all.length - 1];
+  const shards = [await fetchDay(newest)];
+  const wanted = [newest];
+  const older = all.slice(0, -1).slice(-(SHARD_DAYS_BACK - 1)).reverse();
+  for (const d of older) {
+    try {
+      shards.push(await fetchDay(d));
+      wanted.unshift(d);
+    } catch (e) {
+      console.warn('[LOAD] 旧分片加载失败，已跳过：', d, (e && e.message) || e);
+    }
+  }
   let items = mergeShardItems(shards);
 
   // 兜底补一天：跨零点的早间时段，2 天合并后可能偏少
@@ -900,12 +954,22 @@ async function loadNewsData() {
     try {
       const payload = await loadDayShards();
       console.log('[LOAD] 分片 OK', payload._via, payload.items_ai.length, '条');
+      saveLastGood(payload);
       return payload;
     } catch (e) {
-      console.warn('[LOAD] 分片失败，回退 latest-24h-min.json：', (e && e.message) || e);
+      console.warn('[LOAD] 分片失败：', (e && e.message) || e);
     }
   }
-  return loadSnapshotData();
+  // 兜底 1：上一次成功加载的离线副本（通常只滞后几分钟）
+  const cached = loadLastGood();
+  if (cached) {
+    console.warn('[LOAD] 使用离线副本', cached.generated_at, (cached._via || ''));
+    return cached;
+  }
+  // 兜底 2：今日定版快照（一天只写一次，可能明显滞后，但不会白屏）
+  const snap = await loadSnapshotData();
+  snap._stale = true;
+  return snap;
 }
 
 async function loadSnapshotData() {
@@ -984,6 +1048,7 @@ function applyNewsPayload(payload) {
     state.allDataUrl = payload.all_mode_data_url || state.allDataUrl;
     state.allDataLoaded = Boolean(payload.items_all || payload.items_all_raw) || state.itemsAll.length > 0;
     state.generatedAt = payload.generated_at;
+    state.dataStale = Boolean(payload._stale);
 
     setStats(payload);
     renderModeSwitch();
@@ -1018,7 +1083,14 @@ function renderUpdatedAt() {
             else updatedAtEl.style.color = '';
         }
     }
-    updatedAtEl.textContent = `${displayTime} · 快照 ${snapFmt}${ageTxt}`;
+    // 2026-11-10：降级取数时明确标出来，别让「还是旧消息」再次无声发生
+    const staleTxt = state.dataStale ? ' · ⚠ 离线副本，点此强制刷新' : '';
+    updatedAtEl.textContent = `${displayTime} · 快照 ${snapFmt}${ageTxt}${staleTxt}`;
+    if (state.dataStale) {
+      updatedAtEl.style.color = '#d69e2e';
+      updatedAtEl.style.cursor = 'pointer';
+      updatedAtEl.onclick = () => { try { localStorage.removeItem(LAST_GOOD_KEY); } catch (e) {} location.reload(); };
+    }
     updatedAtEl.title = `数据生成时间：${state.generatedAt}（"更新时间"跟随页面加载/自动刷新时刻，快照时间反映数据轮次）`;
 }
 
