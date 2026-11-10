@@ -1,11 +1,18 @@
 {
-  "generated_at": "2026-11-10T22:22:02.261325+00:00",
+  "generated_at": "2026-11-10T22:52:12.187568+00:00",
   "feeds": [
     {
-      "feed": "国外机器人资讯",
+      "feed": "国内脑机接口资讯",
       "success": true,
-      "items_total": 92,
-      "items_unique": 92,
+      "items_total": 65,
+      "items_unique": 65,
+      "error": null
+    },
+    {
+      "feed": "国外具身智能资讯",
+      "success": true,
+      "items_total": 75,
+      "items_unique": 75,
       "error": null
     },
     {
@@ -16,24 +23,10 @@
       "error": null
     },
     {
-      "feed": "国外物理AI资讯",
+      "feed": "国外机器人资讯",
       "success": true,
-      "items_total": 100,
-      "items_unique": 96,
-      "error": null
-    },
-    {
-      "feed": "国外具身智能资讯",
-      "success": true,
-      "items_total": 75,
-      "items_unique": 74,
-      "error": null
-    },
-    {
-      "feed": "国内脑机接口资讯",
-      "success": true,
-      "items_total": 65,
-      "items_unique": 65,
+      "items_total": 92,
+      "items_unique": 92,
       "error": null
     },
     {
@@ -46,8 +39,15 @@
     {
       "feed": "国内人形机器人资讯",
       "success": true,
+      "items_total": 103,
+      "items_unique": 102,
+      "error": null
+    },
+    {
+      "feed": "国外物理AI资讯",
+      "success": true,
       "items_total": 100,
-      "items_unique": 99,
+      "items_unique": 95,
       "error": null
     },
     {
@@ -58,6 +58,13 @@
       "error": null
     },
     {
+      "feed": "国内机器人资讯",
+      "success": true,
+      "items_total": 100,
+      "items_unique": 65,
+      "error": null
+    },
+    {
       "feed": "GN: 资本事件",
       "success": true,
       "items_total": 19,
@@ -65,24 +72,24 @@
       "error": null
     },
     {
-      "feed": "GN: Noetix 松延",
+      "feed": "GN: 宇树资本",
       "success": true,
-      "items_total": 12,
-      "items_unique": 12,
+      "items_total": 30,
+      "items_unique": 30,
       "error": null
     },
     {
       "feed": "国内物理AI资讯",
       "success": true,
       "items_total": 100,
-      "items_unique": 92,
+      "items_unique": 90,
       "error": null
     },
     {
-      "feed": "GN: 宇树资本",
+      "feed": "GN: Noetix 松延",
       "success": true,
-      "items_total": 30,
-      "items_unique": 30,
+      "items_total": 12,
+      "items_unique": 12,
       "error": null
     },
     {
@@ -105,20 +112,19 @@
       "items_total": 58,
       "items_unique": 52,
       "error": null
-    },
-    {
-      "feed": "国内机器人资讯",
-      "success": true,
-      "items_total": 100,
-      "items_unique": 64,
-      "error": null
     }
   ],
   "sites": [
     {
-      "site_id": "国外机器人资讯",
-      "site_name": "国外机器人资讯",
-      "item_count": 92,
+      "site_id": "国内脑机接口资讯",
+      "site_name": "国内脑机接口资讯",
+      "item_count": 65,
+      "success": true
+    },
+    {
+      "site_id": "国外具身智能资讯",
+      "site_name": "国外具身智能资讯",
+      "item_count": 75,
       "success": true
     },
     {
@@ -128,21 +134,9 @@
       "success": true
     },
     {
-      "site_id": "国外物理AI资讯",
-      "site_name": "国外物理AI资讯",
-      "item_count": 96,
-      "success": true
-    },
-    {
-      "site_id": "国外具身智能资讯",
-      "site_name": "国外具身智能资讯",
-      "item_count": 74,
-      "success": true
-    },
-    {
-      "site_id": "国内脑机接口资讯",
-      "site_name": "国内脑机接口资讯",
-      "item_count": 65,
+      "site_id": "国外机器人资讯",
+      "site_name": "国外机器人资讯",
+      "item_count": 92,
       "success": true
     },
     {
@@ -154,7 +148,13 @@
     {
       "site_id": "国内人形机器人资讯",
       "site_name": "国内人形机器人资讯",
-      "item_count": 99,
+      "item_count": 102,
+      "success": true
+    },
+    {
+      "site_id": "国外物理AI资讯",
+      "site_name": "国外物理AI资讯",
+      "item_count": 95,
       "success": true
     },
     {
@@ -164,27 +164,33 @@
       "success": true
     },
     {
+      "site_id": "国内机器人资讯",
+      "site_name": "国内机器人资讯",
+      "item_count": 65,
+      "success": true
+    },
+    {
       "site_id": "GN: 资本事件",
       "site_name": "GN: 资本事件",
       "item_count": 19,
       "success": true
     },
     {
-      "site_id": "GN: Noetix 松延",
-      "site_name": "GN: Noetix 松延",
-      "item_count": 12,
+      "site_id": "GN: 宇树资本",
+      "site_name": "GN: 宇树资本",
+      "item_count": 30,
       "success": true
     },
     {
       "site_id": "国内物理AI资讯",
       "site_name": "国内物理AI资讯",
-      "item_count": 92,
+      "item_count": 90,
       "success": true
     },
     {
-      "site_id": "GN: 宇树资本",
-      "site_name": "GN: 宇树资本",
-      "item_count": 30,
+      "site_id": "GN: Noetix 松延",
+      "site_name": "GN: Noetix 松延",
+      "item_count": 12,
       "success": true
     },
     {
@@ -204,12 +210,6 @@
       "site_name": "GN: Capital Events",
       "item_count": 52,
       "success": true
-    },
-    {
-      "site_id": "国内机器人资讯",
-      "site_name": "国内机器人资讯",
-      "item_count": 64,
-      "success": true
     }
   ],
   "failed_sites": [],
@@ -224,8 +224,8 @@
     "total_feeds": 16,
     "successful_feeds": 16,
     "failed_feeds": 0,
-    "total_items": 902,
-    "deduplicated": 77,
+    "total_items": 906,
+    "deduplicated": 78,
     "noise_filtered": 78,
     "short_filtered": 0
   }
