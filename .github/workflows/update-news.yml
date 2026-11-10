@@ -176,7 +176,7 @@ jobs:
         if: steps.gate.outputs.skip != 'true'
         env:
           TZ: Asia/Shanghai
-        run: python scripts/arxiv_fetcher.py --output-dir data --window-hours 24
+        run: python scripts/arxiv_fetcher.py --output-dir data --window-hours 168
 
       - name: Fetch government news
         if: steps.gate.outputs.skip != 'true'

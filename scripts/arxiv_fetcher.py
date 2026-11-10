@@ -129,7 +129,7 @@ def parse_entry(entry_xml: str) -> dict | None:
     }
 
 
-def filter_by_time_window(items: list[dict], window_hours: int = 24) -> list[dict]:
+def filter_by_time_window(items: list[dict], window_hours: int = 168) -> list[dict]:
     """Filter papers to the time window.
 
     FIX (2026-08-06): 用滑动窗口 (默认 36h) 替代 19:00 anchor。
@@ -141,8 +141,11 @@ def filter_by_time_window(items: list[dict], window_hours: int = 24) -> list[dic
     now_sh = datetime.now(shanghai)
     now_ts = datetime.now(timezone.utc).timestamp()
 
-    # 滑动窗口：默认 36h（覆盖 arXiv 一次完整发布日 + 缓冲）
-    effective_hours = max(window_hours, 36)
+    # 2026-11-10 BUGFIX：原来下限 36h，遇周末/假期 arXiv 不宣布新论文就必然 0 条，
+    # 加上守卫「0 条保留旧快照」，学术专区会一路冻结在最后一次有料的批次
+    # （实测 11-05 冻结 5 天，而 API 最新一篇是 11-07）。下限抬到 72h 兜住周末，
+    # 调用方再传 168（7 天）保证任何 Lull 都不会把专区掏空。
+    effective_hours = max(window_hours, 72)
     start_dt = now_sh - timedelta(hours=effective_hours)
     start_ts = start_dt.timestamp()
 
@@ -161,7 +164,7 @@ def filter_by_time_window(items: list[dict], window_hours: int = 24) -> list[dic
     return filtered
 
 
-def main(output_dir: str = "data", window_hours: int = 24):
+def main(output_dir: str = "data", window_hours: int = 168):
     print(f"[ARXIV] Fetching latest robotics papers...")
     items = fetch_arxiv_robotics(max_results=30)
     print(f"[ARXIV] Fetched {len(items)} papers")
@@ -211,6 +214,7 @@ if __name__ == "__main__":
     import argparse
     p = argparse.ArgumentParser()
     p.add_argument("--output-dir", default="data")
-    p.add_argument("--window-hours", type=int, default=24)
+    p.add_argument("--window-hours", type=int, default=168,
+                   help="抓取窗口小时数，默认 168（7 天）：arXiv 周末不宣布新论文，窗口太窄会连续 0 条")
     args = p.parse_args()
     main(args.output_dir, args.window_hours)

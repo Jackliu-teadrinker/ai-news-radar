@@ -19,6 +19,7 @@ param(
   [switch]$OnlyPublish,
   [switch]$NoPublish,
   [int]$WindowHours = 24,
+  [int]$ArxivWindowHours = 168,   # arXiv 单独用 7 天窗口：周末不宣布论文，24h 会连续 0 条
   [int]$ArchiveDays = 21,
   [int]$LockMinutes = 45,
   [string]$Proxy = 'http://127.0.0.1:7897',   # 本机 Clash 混合端口；直连/HTTP2 会被 Connection reset
@@ -107,7 +108,7 @@ try {
 
     $steps = @(
       @{ name = 'update_news'; args = @('scripts/update_news.py','--output-dir',$Live,'--window-hours',"$WindowHours",'--rss-opml','feeds/follow.example.opml','--custom-opml','feeds/custom.opml','--archive-days',"$ArchiveDays") },
-      @{ name = 'arxiv';       args = @('scripts/arxiv_fetcher.py','--output-dir',$Live,'--window-hours',"$WindowHours") },
+      @{ name = 'arxiv';       args = @('scripts/arxiv_fetcher.py','--output-dir',$Live,'--window-hours',"$ArxivWindowHours") },
       @{ name = 'government';  args = @('scripts/government_fetcher.py','--output-dir',$Live) },
       @{ name = 'toutiao';     args = @('scripts/toutiao_fetcher.py','--output-dir',$Live) },
       @{ name = 'curated';     args = @('scripts/curated_collector.py','--data-path',(Join-Path $Live 'latest-24h-min.json'),'--curated-dir',(Join-Path $Live 'curated')) }
