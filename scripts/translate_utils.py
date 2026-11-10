@@ -14,6 +14,14 @@ import requests
 # 翻译缓存路径（相对于仓库根目录）
 _CACHE_PATH = os.path.join(os.path.dirname(__file__), '..', 'data', 'title-zh-cache.json')
 
+# 2026-11-10：直连 translate.googleapis.com 在本机会被重置（SSL UNEXPECTED_EOF），
+# 于是 arXiv 30 篇标题全拿不到中文（实测 title_zh 从 30/30 掉到 0/30）。
+# 这里加本地代理兜底：先直连，失败后自动改走代理重试。
+_PROXY = (os.environ.get('RADAR_PROXY')
+          or os.environ.get('HTTPS_PROXY')
+          or os.environ.get('HTTP_PROXY')
+          or 'http://127.0.0.1:7897')
+
 
 def is_english(text: str) -> bool:
     """Returns True if text is predominantly English (fewer than 20% Chinese chars)."""
@@ -44,7 +52,9 @@ def translate_text(text: str, target: str = 'zh', _retries: int = 3) -> str:
     last_exception = None
     for attempt in range(_retries):
         try:
-            r = requests.get(url, params=params, timeout=10)
+            # 第一次直连（代理没开时也能用），之后强制走本地代理绕开 TLS 重置
+            kwargs = {} if attempt == 0 else {'proxies': {'http': _PROXY, 'https': _PROXY}}
+            r = requests.get(url, params=params, timeout=10, **kwargs)
             if r.status_code == 200:
                 data = r.json()
                 # Parse the response carefully
