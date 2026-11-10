@@ -78,5 +78,29 @@
       xmlUrl="https://news.google.com/rss/search?q=site%3Awh.gov.cn+机器人+政策&amp;hl=zh-CN&amp;gl=CN&amp;ceid=CN:zh-Hans" />
     <outline text="GN: 合肥 具身智能" type="rss"
       xmlUrl="https://news.google.com/rss/search?q=site%3Ahefei.gov.cn+具身智能+机器人&amp;hl=zh-CN&amp;gl=CN&amp;ceid=CN:zh-Hans" />
+
+    <!-- ══════════ 宽口径政策检索（2026-11-10 加）══════════ -->
+    <!-- 上面全是 site: 限定查询，命中的池子太小（实测多源 0 raw、全天仅 3 条且停在 11-02）；
+         这里补一批不限站点的政策词组合，覆盖媒体报道的政策稿。 -->
+    <outline text="GN: 人形机器人 政策 发布" type="rss"
+      xmlUrl="https://news.google.com/rss/search?q=人形机器人+政策+发布&amp;hl=zh-CN&amp;gl=CN&amp;ceid=CN:zh-Hans" />
+    <outline text="GN: 具身智能 政策 通知" type="rss"
+      xmlUrl="https://news.google.com/rss/search?q=具身智能+政策+通知&amp;hl=zh-CN&amp;gl=CN&amp;ceid=CN:zh-Hans" />
+    <outline text="GN: 机器人 产业 实施方案 印发" type="rss"
+      xmlUrl="https://news.google.com/rss/search?q=机器人+产业+实施方案+印发&amp;hl=zh-CN&amp;gl=CN&amp;ceid=CN:zh-Hans" />
+    <outline text="GN: 工信部 人形机器人 具身智能" type="rss"
+      xmlUrl="https://news.google.com/rss/search?q=工信部+人形机器人+具身智能&amp;hl=zh-CN&amp;gl=CN&amp;ceid=CN:zh-Hans" />
+    <outline text="GN: 发改委 机器人 产业 政策" type="rss"
+      xmlUrl="https://news.google.com/rss/search?q=发改委+机器人+产业+政策&amp;hl=zh-CN&amp;gl=CN&amp;ceid=CN:zh-Hans" />
+    <outline text="GN: 智能机器人 试点 示范 名单" type="rss"
+      xmlUrl="https://news.google.com/rss/search?q=智能机器人+试点+示范+名单&amp;hl=zh-CN&amp;gl=CN&amp;ceid=CN:zh-Hans" />
+    <outline text="GN: 机器人 十五五 规划" type="rss"
+      xmlUrl="https://news.google.com/rss/search?q=机器人+十五五+规划&amp;hl=zh-CN&amp;gl=CN&amp;ceid=CN:zh-Hans" />
+    <outline text="GN: 人形机器人 创新中心 认定" type="rss"
+      xmlUrl="https://news.google.com/rss/search?q=人形机器人+创新中心+认定&amp;hl=zh-CN&amp;gl=CN&amp;ceid=CN:zh-Hans" />
+    <outline text="GN: 具身智能 行动计划" type="rss"
+      xmlUrl="https://news.google.com/rss/search?q=具身智能+行动计划&amp;hl=zh-CN&amp;gl=CN&amp;ceid=CN:zh-Hans" />
+    <outline text="GN: 机器人 揭榜挂帅 白名单" type="rss"
+      xmlUrl="https://news.google.com/rss/search?q=机器人+揭榜挂帅+白名单&amp;hl=zh-CN&amp;gl=CN&amp;ceid=CN:zh-Hans" />
   </body>
 </opml>

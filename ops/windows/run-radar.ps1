@@ -142,12 +142,31 @@ try {
   $sync = Invoke-Native -Exe $Git -ArgList @('-c',"http.proxy=$Proxy",'-c','http.version=HTTP/1.1','fetch','origin','master','--quiet') -WorkDir $Repo
   if ($sync.Code -eq 0) {
     $h1 = (& $Git -C $Repo rev-parse HEAD).Trim()
-    $rs = Invoke-Native -Exe $Git -ArgList @('reset','--hard','origin/master') -WorkDir $Repo
-    if ($rs.Code -eq 0) {
-      $h2 = (& $Git -C $Repo rev-parse HEAD).Trim()
-      if ($h1 -ne $h2) { Log ("[SYNC] 已对齐 origin/master：{0} -> {1}（云端接管过，本机追平）" -f $h1.Substring(0,7), $h2.Substring(0,7)) }
+    # 2026-11-10 事故：无条件 reset --hard 会把本地未推送的代码提交直接抹掉
+    # （实测 arxiv 窗口修复 + 翻译代理修复两个提交被丢弃，推送照样报成功、无任何提示）。
+    # 只有「待丢弃的提交全是数据快照」时才允许硬对齐；含代码改动一律不碰。
+    $ahead = (& $Git -C $Repo rev-list --count 'origin/master..HEAD').Trim()
+    $dropOk = $false
+    if ($ahead -eq '0') {
+      $dropOk = $true
     } else {
-      Log ("[SYNC] reset 失败（退出码 {0}），继续用当前工作区" -f $rs.Code)
+      $paths = @(& $Git -C $Repo diff --name-only 'origin/master..HEAD')
+      $codePaths = @($paths | Where-Object { $_ -and $_ -notmatch '^(data/|index\.html$)' })
+      if ($codePaths.Count -eq 0) {
+        $dropOk = $true
+        Log ("[SYNC] 本地 {0} 个未推送提交只含数据快照（本轮会重新生成），允许对齐远端" -f $ahead)
+      } else {
+        Log ("[SYNC] 本地有 {0} 个未推送提交且含代码改动，跳过对齐以免丢失：{1}" -f $ahead, ($codePaths -join ', '))
+      }
+    }
+    if ($dropOk) {
+      $rs = Invoke-Native -Exe $Git -ArgList @('reset','--hard','origin/master') -WorkDir $Repo
+      if ($rs.Code -eq 0) {
+        $h2 = (& $Git -C $Repo rev-parse HEAD).Trim()
+        if ($h1 -ne $h2) { Log ("[SYNC] 已对齐 origin/master：{0} -> {1}（云端接管过，本机追平）" -f $h1.Substring(0,7), $h2.Substring(0,7)) }
+      } else {
+        Log ("[SYNC] reset 失败（退出码 {0}），继续用当前工作区" -f $rs.Code)
+      }
     }
   } else {
     Log ("[SYNC] fetch 失败（退出码 {0}，代理/网络问题），本轮按现状发布" -f $sync.Code)

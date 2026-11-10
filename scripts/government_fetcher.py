@@ -34,7 +34,8 @@ from translate_utils import is_english, translate_batch
 
 # ── 配置 ──
 ANCHOR_HOUR = 19
-GOV_MIN_SCORE = 45          # 相关度阈值（政策新闻更新慢，放宽以覆盖历史重要政策）
+GOV_MIN_SCORE = 30          # 相关度阈值（政策新闻更新慢；宽口径检索来的多为媒体报道，
+                            # 领域词0.12+政策词0.10 累计约 0.32，38 会把它们全刷掉）
 GOV_MAX_ITEMS = 30          # 最多展示条数
 WINDOW_HOURS = 24           # 默认滑动窗口（兜底，实际被 anchor 规则覆盖）
 CUSTOM_OPML = os.path.join(os.path.dirname(__file__), '..', 'feeds', 'government.opml')
@@ -258,7 +259,7 @@ def main():
     # Fallback: expand to 7d if < 5 items (policy news is infrequent)
     fallback_used = False
     if len(high) < 5:
-        fb_window = 336  # 14d（政策新闻发布频率低，需展示历史积累）
+        fb_window = 720  # 30d（政策稿发布稀疏，14d 实测仍只有 3 条且停在 11-02）
         print(f"[GOV] Too few items ({len(high)}), expanding to {fb_window}h fallback...")
         fb_start = now_sh - timedelta(hours=fb_window)
         fb_start_ts = fb_start.timestamp()
