@@ -425,6 +425,10 @@ function modeItems() {
 }
 
 function getFilteredItems() {
+  // 2026-11-10 BUGFIX：这里曾经在 if 块内又写了一次 `let cutoffMs;`，
+  // 遮蔽了外层变量 → 出块后 cutoffMs 仍是 null → 时间锚点过滤完全失效，
+  // 主列表把分片里 00:00 起的全部条目都显示出来（看到的都是 19:00 之前的内容）。
+  // 别在块内重复声明，直接给外层赋值。
   const q = state.query.trim().toLowerCase();
   let cutoffMs = null;
   if (state.todayMode) {
@@ -438,7 +442,6 @@ function getFilteredItems() {
     const today1900UtcMs = 11 * 3600000; // UTC 11:00 = CST 19:00
     // If current UTC time >= 11:00 (CST >= 19:00), cutoff = today UTC 11:00
     // Otherwise, cutoff = yesterday UTC 11:00
-    let cutoffMs;
     if (utcMsInDay >= today1900UtcMs) {
       const today = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate()));
       cutoffMs = today.getTime() + today1900UtcMs;
@@ -446,7 +449,6 @@ function getFilteredItems() {
       const yesterday = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate() - 1));
       cutoffMs = yesterday.getTime() + today1900UtcMs;
     }
-    cutoffMs = cutoffMs;
   }
   const filtered = modeItems().filter((item) => {
     try {
