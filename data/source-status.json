@@ -1,13 +1,6 @@
 {
-  "generated_at": "2026-11-10T18:50:27.011633+00:00",
+  "generated_at": "2026-11-10T19:16:11.865262+00:00",
   "feeds": [
-    {
-      "feed": "国内脑机接口资讯",
-      "success": true,
-      "items_total": 67,
-      "items_unique": 67,
-      "error": null
-    },
     {
       "feed": "国外脑机接口资讯",
       "success": true,
@@ -23,10 +16,10 @@
       "error": null
     },
     {
-      "feed": "国外机器人资讯",
+      "feed": "国内脑机接口资讯",
       "success": true,
-      "items_total": 92,
-      "items_unique": 92,
+      "items_total": 65,
+      "items_unique": 65,
       "error": null
     },
     {
@@ -37,10 +30,31 @@
       "error": null
     },
     {
+      "feed": "国外机器人资讯",
+      "success": true,
+      "items_total": 92,
+      "items_unique": 92,
+      "error": null
+    },
+    {
       "feed": "国外物理AI资讯",
       "success": true,
       "items_total": 100,
       "items_unique": 93,
+      "error": null
+    },
+    {
+      "feed": "国内人形机器人资讯",
+      "success": true,
+      "items_total": 101,
+      "items_unique": 99,
+      "error": null
+    },
+    {
+      "feed": "国外人形机器人资讯",
+      "success": true,
+      "items_total": 100,
+      "items_unique": 79,
       "error": null
     },
     {
@@ -51,17 +65,24 @@
       "error": null
     },
     {
-      "feed": "国外人形机器人资讯",
+      "feed": "GN: 宇树资本",
+      "success": true,
+      "items_total": 30,
+      "items_unique": 30,
+      "error": null
+    },
+    {
+      "feed": "国内机器人资讯",
       "success": true,
       "items_total": 100,
-      "items_unique": 80,
+      "items_unique": 64,
       "error": null
     },
     {
       "feed": "国内物理AI资讯",
       "success": true,
       "items_total": 100,
-      "items_unique": 97,
+      "items_unique": 91,
       "error": null
     },
     {
@@ -72,31 +93,10 @@
       "error": null
     },
     {
-      "feed": "国内机器人资讯",
-      "success": true,
-      "items_total": 100,
-      "items_unique": 93,
-      "error": null
-    },
-    {
-      "feed": "国内人形机器人资讯",
-      "success": true,
-      "items_total": 100,
-      "items_unique": 66,
-      "error": null
-    },
-    {
       "feed": "GN: Capital Events",
       "success": true,
       "items_total": 59,
       "items_unique": 53,
-      "error": null
-    },
-    {
-      "feed": "GN: 宇树资本",
-      "success": true,
-      "items_total": 30,
-      "items_unique": 30,
       "error": null
     },
     {
@@ -116,12 +116,6 @@
   ],
   "sites": [
     {
-      "site_id": "国内脑机接口资讯",
-      "site_name": "国内脑机接口资讯",
-      "item_count": 67,
-      "success": true
-    },
-    {
       "site_id": "国外脑机接口资讯",
       "site_name": "国外脑机接口资讯",
       "item_count": 42,
@@ -134,9 +128,9 @@
       "success": true
     },
     {
-      "site_id": "国外机器人资讯",
-      "site_name": "国外机器人资讯",
-      "item_count": 92,
+      "site_id": "国内脑机接口资讯",
+      "site_name": "国内脑机接口资讯",
+      "item_count": 65,
       "success": true
     },
     {
@@ -146,9 +140,27 @@
       "success": true
     },
     {
+      "site_id": "国外机器人资讯",
+      "site_name": "国外机器人资讯",
+      "item_count": 92,
+      "success": true
+    },
+    {
       "site_id": "国外物理AI资讯",
       "site_name": "国外物理AI资讯",
       "item_count": 93,
+      "success": true
+    },
+    {
+      "site_id": "国内人形机器人资讯",
+      "site_name": "国内人形机器人资讯",
+      "item_count": 99,
+      "success": true
+    },
+    {
+      "site_id": "国外人形机器人资讯",
+      "site_name": "国外人形机器人资讯",
+      "item_count": 79,
       "success": true
     },
     {
@@ -158,15 +170,21 @@
       "success": true
     },
     {
-      "site_id": "国外人形机器人资讯",
-      "site_name": "国外人形机器人资讯",
-      "item_count": 80,
+      "site_id": "GN: 宇树资本",
+      "site_name": "GN: 宇树资本",
+      "item_count": 30,
+      "success": true
+    },
+    {
+      "site_id": "国内机器人资讯",
+      "site_name": "国内机器人资讯",
+      "item_count": 64,
       "success": true
     },
     {
       "site_id": "国内物理AI资讯",
       "site_name": "国内物理AI资讯",
-      "item_count": 97,
+      "item_count": 91,
       "success": true
     },
     {
@@ -176,27 +194,9 @@
       "success": true
     },
     {
-      "site_id": "国内机器人资讯",
-      "site_name": "国内机器人资讯",
-      "item_count": 93,
-      "success": true
-    },
-    {
-      "site_id": "国内人形机器人资讯",
-      "site_name": "国内人形机器人资讯",
-      "item_count": 66,
-      "success": true
-    },
-    {
       "site_id": "GN: Capital Events",
       "site_name": "GN: Capital Events",
       "item_count": 53,
-      "success": true
-    },
-    {
-      "site_id": "GN: 宇树资本",
-      "site_name": "GN: 宇树资本",
-      "item_count": 30,
       "success": true
     },
     {
@@ -224,9 +224,9 @@
     "total_feeds": 16,
     "successful_feeds": 16,
     "failed_feeds": 0,
-    "total_items": 909,
-    "deduplicated": 78,
-    "noise_filtered": 73,
+    "total_items": 904,
+    "deduplicated": 82,
+    "noise_filtered": 74,
     "short_filtered": 0
   }
 }
