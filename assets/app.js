@@ -168,6 +168,47 @@ function fmtTime(iso) {
   }).format(d);
 }
 
+// 2026-11-10：各专区标注「数据截至」。专区抓取每轮都在跑，但源本身可能几天不出新东西
+// （arXiv 周末不宣布、政策稿发布稀疏），只显示条数会让人误以为是刚更新的。
+// 取「内容里最新一条的时间」，没有时间字段时退回 payload.generated_at。
+function sectionAsOfLabel(items, fallbackIso) {
+  let maxMs = 0;
+  (items || []).forEach((it) => {
+    if (!it) return;
+    const raw = it.published_at || it.pub_date || it.date || it.updated_at || it.first_seen_at;
+    if (!raw) return;
+    const t = new Date(raw).getTime();
+    if (!Number.isNaN(t) && t > maxMs) maxMs = t;
+  });
+  if (!maxMs && fallbackIso) {
+    const t = new Date(fallbackIso).getTime();
+    if (!Number.isNaN(t)) maxMs = t;
+  }
+  if (!maxMs) return null;
+  const d = new Date(maxMs);
+  const p = (n) => String(n).padStart(2, "0");
+  return `${p(d.getMonth() + 1)}-${p(d.getDate())} ${p(d.getHours())}:${p(d.getMinutes())}`;
+}
+
+function markSectionAsOf(countEl, items, fallbackIso) {
+  if (!countEl || !countEl.parentElement) return;
+  const head = countEl.parentElement;
+  let el = head.querySelector(".data-asof");
+  const label = sectionAsOfLabel(items, fallbackIso);
+  if (!label) {
+    if (el) el.remove();
+    return;
+  }
+  if (!el) {
+    el = document.createElement("span");
+    el.className = "data-asof";
+    el.style.cssText = "margin-left:8px;font-size:12px;color:#718096;white-space:nowrap";
+    el.title = "本专区内容里最新一条的时间；抓取每轮都在跑，条目不新是源本身没出新内容";
+    countEl.insertAdjacentElement("afterend", el);
+  }
+  el.textContent = `数据截至 ${label}`;
+}
+
 function fmtDate(iso) {
   if (!iso) return "未知日期";
   const d = new Date(`${iso}T00:00:00`);
@@ -1332,6 +1373,7 @@ async function renderWechatSection(wechatArticles) {
   
   // 数量
   wechatCount.textContent = `${wechatArticles.length} 篇`;
+  markSectionAsOf(wechatCount, wechatArticles, null);
   
   // 清空并渲染
   wechatList.innerHTML = '';
@@ -1398,6 +1440,7 @@ async function initArxivSection() {
 
   arxivSection.style.display = '';
   arxivCount.textContent = `${arxivData.items.length} 篇`;
+  markSectionAsOf(arxivCount, arxivData.items, arxivData.generated_at);
   arxivList.innerHTML = '';
   const fragment = document.createDocumentFragment();
   arxivData.items.forEach(item => {
@@ -1533,6 +1576,7 @@ async function initGovSection() {
 
   govSection.style.display = '';
   govCount.textContent = `${govData.items.length} 条`;
+  markSectionAsOf(govCount, govData.items, govData.generated_at);
   govList.innerHTML = '';
   const fragment = document.createDocumentFragment();
   govData.items.forEach(item => {
@@ -1667,7 +1711,9 @@ async function initAnchorSection() {
   }
 
   anchorSection.style.display = '';
-  document.getElementById('anchorCount').textContent = `${anchorItems.length} 条`;
+  const anchorCountEl = document.getElementById('anchorCount');
+  anchorCountEl.textContent = `${anchorItems.length} 条`;
+  markSectionAsOf(anchorCountEl, anchorItems, customData && customData.generated_at);
   const anchorList = document.getElementById('anchorList');
   anchorList.innerHTML = '';
   const fragment = document.createDocumentFragment();
@@ -1714,6 +1760,7 @@ async function initToutiaoSection() {
 
   section.style.display = '';
   countEl.textContent = `${searchData.items.length} 条`;
+  markSectionAsOf(countEl, searchData.items, searchData.generated_at);
   listEl.innerHTML = '';
   const fragment = document.createDocumentFragment();
   searchData.items.forEach(item => {
