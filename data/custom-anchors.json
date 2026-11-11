@@ -1,9 +1,49 @@
 {
-  "generated_at": "2026-11-11T11:46:29.354740+00:00",
+  "generated_at": "2026-11-11T12:16:24.363396+00:00",
   "window_start": "2026-11-11T19:00:00+08:00",
-  "window_end": "2026-11-11T19:45:43.358815+08:00",
-  "total_items": 4,
+  "window_end": "2026-11-11T20:15:38.702437+08:00",
+  "total_items": 5,
   "items": [
+    {
+      "id": "cf231778dfddb3c8f76f65a14e74f544f8e2c4ff",
+      "title": "优必选与永达首批400台超仿生人形机器人U1 Pro采购合同落地 - 富途牛牛",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQazUwVVpvbWtvU1lLbzlvZkRpX2RrNktwNHFncTl5aUZtamtEck9qNFZXRlNvUms1VGpKRnpBWURHZXQ0ZjJaVDlOb0V4cVJlYlQtR2xRYlRRUVVicTdqX3VSdE9kVk11UzR5SG54Y01ySVNaa19lWHdJUFVIb2MwZWNSN2hpclRPOEJRajhOWDBnTlB4RGJKMHlscGVpa280eE90THU5MWFvR1pFZG9xVw?oc=5",
+      "published_at": "2026-11-11T12:00:54+00:00",
+      "category": "GN: 优必选",
+      "gn_label": "robotics",
+      "site_name": "GN: 优必选",
+      "source": "GN: 优必选",
+      "site_id": "GN: 优必选",
+      "description": "以上内容仅用作资讯或教育之目的，不构成与富途相关的任何投资建议。富途竭力但不能保证上述全部内容的真实性、准确性和原创性。风险及免责提示 以上内容仅用作资讯或教育之目的，不构成与富途相关的任何投资建议。富途竭力但不能保证上述全部内容的真实性、准确性和原创性。",
+      "ai_score": 80.0,
+      "ai_label": "robotics",
+      "relevance": 0.5,
+      "authority": 5,
+      "depth": 5,
+      "timeliness": 20.0,
+      "writing_value": 5,
+      "total_score": 91.0,
+      "_hx": {
+        "topic": 6,
+        "conflict": 0,
+        "data": 6,
+        "pr_pen": 0,
+        "rel": 50.0,
+        "auth": 5,
+        "tim": 20.0,
+        "writing": 5,
+        "depth": 5,
+        "junk": 0,
+        "dup_pen": 0.0,
+        "dup_of": false
+      },
+      "hx_topic": 6,
+      "hx_conflict": 0,
+      "hx_data": 6,
+      "hx_pr_penalty": 0,
+      "hx_dup_penalty": -0.0
+    },
     {
       "id": "a4aa86541e3aa7c049d7b080fdbf9843dea9d38e",
       "title": "A robot-arm maker and toy company plan about $5 million in supply every six months - Stock Titan",
@@ -143,7 +183,7 @@
       "depth": 5,
       "timeliness": 0.0,
       "writing_value": 5,
-      "total_score": 60.0,
+      "total_score": 59.6,
       "_hx": {
         "topic": 0,
         "conflict": 0,
@@ -155,14 +195,14 @@
         "writing": 5,
         "depth": 5,
         "junk": 0,
-        "dup_pen": 0.0,
+        "dup_pen": 0.4,
         "dup_of": false
       },
       "hx_topic": 0,
       "hx_conflict": 0,
       "hx_data": 0,
       "hx_pr_penalty": 0,
-      "hx_dup_penalty": -0.0
+      "hx_dup_penalty": -0.4
     }
   ],
   "fallback_used": false
