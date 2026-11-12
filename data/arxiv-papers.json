@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-12T00:23:38.256286+00:00",
+  "generated_at": "2026-11-12T01:20:58.433929+00:00",
   "total_items": 30,
   "items": [
     {
@@ -85,7 +85,7 @@
       "category": "cs.RO",
       "published_at": "2026-11-10T11:18:34+00:00",
       "updated_at": "2026-11-10T11:18:34Z",
-      "title_zh": "ReACT：非对称负载下人形速度跟踪的反射一致调制和交叉负载一致性",
+      "title_zh": "ReACT：不对称负载下人形速度跟踪的反射一致调制和交叉负载一致性",
       "relevance": 0.5,
       "description": "In recent years, humanoid loco-manipulation has progressed to whole-body grasping, lifting, and transport. A basic requirement underlying these tasks is carrying the object to its destination, which depends on the locomotion controller accurately executing velocity commands from the navigation policy. However, carrying an object in one hand introduces a persistent asymmetric upper-body load that can degrade velocity tracking. Persistent tracking biases can accumulate into position and heading deviations, increasing the risk of collisions and navigation failure. To address this problem, we present ReACT, a framework for accurate velocity tracking under asymmetric upper-body loads. Reflection-consistent disturbance modulation uses the estimated wrench to modulate actor features for load compensation while preserving action correspondence under reflected observations. Cross-load tracking consistency training compares loaded and unloaded conditions under the same velocity commands to promote consistent velocity tracking across loading conditions. Simulation experiments on a Unitree G1 humanoid robot show improved velocity tracking and reduced directional bias under varying asymmetric loads. Real-world experiments demonstrate collision-free goal reaching in all 40 tested navigation trials under unilateral hand loads with a fixed mapless navigation policy.",
       "authority": 10,
