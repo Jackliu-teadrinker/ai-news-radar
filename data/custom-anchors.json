@@ -1,13 +1,53 @@
 {
-  "generated_at": "2026-11-13T11:46:14.505444+00:00",
+  "generated_at": "2026-11-13T14:20:18.137005+00:00",
   "window_start": "2026-11-13T19:00:00+08:00",
-  "window_end": "2026-11-13T19:45:47.127064+08:00",
-  "total_items": 2,
+  "window_end": "2026-11-13T22:20:17.561854+08:00",
+  "total_items": 3,
   "items": [
+    {
+      "id": "cc224ce6bdf796d2a10c8fd70baa69ffcabe65f5",
+      "title": "Manufacturing’s Next Phase: From AI Pilots to Autonomous Decisions on the Factory Floor - Robotics Tomorrow",
+      "title_zh": "制造业的下一阶段：从人工智能试点到工厂车间自主决策 - 明天的机器人",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPV1lrVzNXVkxnRUYxM3pObFFOZGJJUGgxV2ZqTk5ZV05qeHdXYXFUc0pJMzdPc0dfTXJHZEdqRW5vX3o3SzJFT0RlbUZCRThGYW1UMW0tWEJJRUduaGJMaV9sY3RGUzR4TXRjOHdEeU9SbWR3X09ELUZSa3EwdkRjQmYza0RTLWp6RDZtakJwQWxTOWd4d0loQUZ4Y0NWN1NyLW5DdjhhY3NlcEtvdVdwdVhkNFFHYmpHX0x4bmVfT0o0UTRYZ0tVWjJNNlBZUlVMbFRrMGl3?oc=5",
+      "published_at": "2026-11-13T13:42:26+00:00",
+      "category": "GN: industrial robot",
+      "gn_label": "robotics",
+      "site_name": "GN: industrial robot",
+      "source": "GN: industrial robot",
+      "site_id": "GN: industrial robot",
+      "description": "Manufacturing’s Next Phase: From AI Pilots to Autonomous Decisions on the Factory Floor Manufacturers entered 2026 with ",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.406,
+      "authority": 5,
+      "depth": 5,
+      "timeliness": 20.0,
+      "writing_value": 5,
+      "total_score": 73.4,
+      "_hx": {
+        "topic": 0,
+        "conflict": 0,
+        "data": 0,
+        "pr_pen": 0,
+        "rel": 40.625,
+        "auth": 5,
+        "tim": 20.0,
+        "writing": 5,
+        "depth": 5,
+        "junk": 0,
+        "dup_pen": 2.2,
+        "dup_of": false
+      },
+      "hx_topic": 0,
+      "hx_conflict": 0,
+      "hx_data": 0,
+      "hx_pr_penalty": 0,
+      "hx_dup_penalty": -2.2
+    },
     {
       "id": "1be1b9c19577eeb37601957c7b37571c176c7a65",
       "title": "Record-breaking Ebola outbreak: phone data reconstruct first weeks of spread",
-      "title_zh": "",
+      "title_zh": "破纪录的埃博拉疫情：电话数据重建了传播的前几周",
       "url": "https://www.nature.com/articles/d41586-026-03666-z",
       "published_at": null,
       "category": "Nature",
@@ -47,7 +87,7 @@
     {
       "id": "b528c291a5744131faf0300f5d4f504ea9921f79",
       "title": "DeepMind’s ultra-powerful AI for genome mapping wows scientists",
-      "title_zh": "",
+      "title_zh": "DeepMind 超强大的基因组图谱人工智能令科学家惊叹不已",
       "url": "https://www.nature.com/articles/d41586-026-03673-0",
       "published_at": null,
       "category": "Nature",
@@ -63,7 +103,7 @@
       "depth": 5,
       "timeliness": 0.0,
       "writing_value": 5,
-      "total_score": 50.8,
+      "total_score": 49.8,
       "_hx": {
         "topic": 0,
         "conflict": 0,
@@ -75,14 +115,14 @@
         "writing": 5,
         "depth": 5,
         "junk": 0,
-        "dup_pen": 1.7,
+        "dup_pen": 2.7,
         "dup_of": false
       },
       "hx_topic": 0,
       "hx_conflict": 0,
       "hx_data": 0,
       "hx_pr_penalty": 0,
-      "hx_dup_penalty": -1.7
+      "hx_dup_penalty": -2.7
     }
   ],
   "fallback_used": false
