@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-15T12:46:46.153759+00:00",
+  "generated_at": "2026-11-15T13:16:47.367040+00:00",
   "window_start": "2026-11-15T19:00:00+08:00",
-  "window_end": "2026-11-15T20:45:52.771521+08:00",
-  "total_items": 4,
+  "window_end": "2026-11-15T21:15:48.117611+08:00",
+  "total_items": 5,
   "items": [
     {
       "id": "b97e89dffdd05bb9669418a18de62b8b3446576a",
@@ -45,6 +45,46 @@
       "hx_dup_penalty": -0.0
     },
     {
+      "id": "a4ad357cb404d267cea9134827b93e14cfd213de",
+      "title": "Uzbekistan and China’s SIASUN discuss industrial robotics - UzDaily",
+      "title_zh": "",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNVjZTM2Z5ck9KUnFjdV9TU09OanZqU2JaM1hJc25QLTJmMU9Ca3FVdHRFTVdaRDBFQm9YQUhwWENhNGZJbWZPcXE5RWtTUWt1VmlBLUxqVVdIbzJXX09CT2xOdWdyRTlVYVVXako4bHUzWXk3VjI1VDVBaVYtcWFFNU12a01UclN1QzR3?oc=5",
+      "published_at": "2026-11-15T12:44:14+00:00",
+      "category": "GN: industrial robot",
+      "gn_label": "robotics",
+      "site_name": "GN: industrial robot",
+      "source": "GN: industrial robot",
+      "site_id": "GN: industrial robot",
+      "description": "Tashkent, Uzbekistan (UzDaily.uz) — Uzbekistan’s electrical engineering association Uzeltеkhsanoat has discussed introdu",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.406,
+      "authority": 5,
+      "depth": 5,
+      "timeliness": 20.0,
+      "writing_value": 5,
+      "total_score": 74.1,
+      "_hx": {
+        "topic": 0,
+        "conflict": 0,
+        "data": 0,
+        "pr_pen": 0,
+        "rel": 40.625,
+        "auth": 5,
+        "tim": 20.0,
+        "writing": 5,
+        "depth": 5,
+        "junk": 0,
+        "dup_pen": 1.5,
+        "dup_of": false
+      },
+      "hx_topic": 0,
+      "hx_conflict": 0,
+      "hx_data": 0,
+      "hx_pr_penalty": 0,
+      "hx_dup_penalty": -1.5
+    },
+    {
       "id": "6c7310f4cc4b13a3888ae71c7230313db1657b63",
       "title": "Sheikh Shakhbout Medical City performs 1,300 robotic-assisted surgeries - Gulf News",
       "title_zh": "",
@@ -63,7 +103,7 @@
       "depth": 5,
       "timeliness": 20.0,
       "writing_value": 5,
-      "total_score": 74.2,
+      "total_score": 72.3,
       "_hx": {
         "topic": 0,
         "conflict": 0,
@@ -75,14 +115,14 @@
         "writing": 5,
         "depth": 5,
         "junk": 0,
-        "dup_pen": 1.4,
+        "dup_pen": 3.3,
         "dup_of": false
       },
       "hx_topic": 0,
       "hx_conflict": 0,
       "hx_data": 0,
       "hx_pr_penalty": 0,
-      "hx_dup_penalty": -1.4
+      "hx_dup_penalty": -3.3
     },
     {
       "id": "1be1b9c19577eeb37601957c7b37571c176c7a65",
