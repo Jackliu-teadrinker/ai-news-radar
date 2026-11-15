@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T05:21:38.856397+00:00",
+  "generated_at": "2026-11-15T05:51:30.041335+00:00",
   "total_items": 30,
   "items": [
     {
@@ -840,6 +840,7 @@
       "category": "stat.ME",
       "published_at": "2026-11-12T13:58:05+00:00",
       "updated_at": "2026-11-12T13:58:05Z",
+      "title_zh": "用于运动估计的 $SE_n(3)$ 上的一类贝叶斯共轭分布",
       "relevance": 0.22,
       "description": "This paper proposes a novel class of Bayesian Conjugate Distributions (BCDs) on extended special Euclidean groups SE_n(3) for global motion uncertainty representation and estimation. BCDs are constructed by restricting matrix Gaussian distributions on ambient Euclidean space to SE_n(3), avoiding singularity of local coordinates. The unique feature of BCDs is their conjugacy to a broad class of sampling distributions arising in motion estimation, enabling exact closed-form Bayesian inference. Optimal estimation with respect to BCDs is further investigated for implementing motion estimation. Two means are extracted as random state estimates, which maximize probability and minimize mean squared error, respectively. Moreover, within the BCD class, moment matching is shown to minimize the Kullback-Leibler divergence, and maximum likelihood estimation is also derived, which provide analytical methods to approximate underlying distributions with the optimality guarantee. As an application, a Bayesian estimator for pose and velocity estimation of an Unmanned Aerial Vehicle (UAV) is developed within an assumed density filtering architecture. The propagation and estimate extraction leverage the optimal estimation related to BCDs, and the landmark measurements are exactly fused with the BCD prior in closed form due to the conjugacy. Numerical simulations of a UAV flight indicate the advantages of BCD-based estimators over two classic Kalman filters on Lie groups with various initial uncertainties and measurement noise.",
       "authority": 10,
