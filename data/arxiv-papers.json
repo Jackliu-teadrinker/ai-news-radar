@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T08:52:53.710187+00:00",
+  "generated_at": "2026-11-15T09:22:40.814135+00:00",
   "total_items": 30,
   "items": [
     {
@@ -227,6 +227,7 @@
       "category": "cs.RO",
       "published_at": "2026-11-12T10:21:49+00:00",
       "updated_at": "2026-11-12T10:21:49Z",
+      "title_zh": "STVLA：视觉语言动作模型的空间感知和时间记忆",
       "relevance": 0.406,
       "description": "Robotic manipulation often requires both spatial scene understanding and task history. However, many vision-language-action (VLA) policies rely primarily on current observations, without explicitly integrating spatial structure and task history. Appearance-based memories can be sensitive to occlusion and viewpoint changes, while spatial representations of the current scene alone do not preserve how the scene has changed during task execution. We introduce STVLA, a framework that incorporates features from a pretrained visual geometry foundation model into temporal memory alongside visual representations. This allows the policy to recall past scene structure as context for current action decisions. To select informative history, STVLA uses a mathematically grounded scoring rule that balances relevance to the current observation with complementary evidence from memory. Across evaluations on LIBERO, LIBERO-Mem, MIKASA-Robo, and SimplerEnv Bridge, STVLA achieves the highest average success rate among the compared methods on each benchmark. On real-world block stacking, object organization, and phone packaging, it improves success over $π_{0.5}$ by $58.33$, $30.00$, and $35.00$ percentage points, respectively. These results support integrating scene geometry into temporal memory to improve manipulation requiring both spatial precision and task history. Project website: \\href{https://stvla.github.io/}{https://stvla.github.io/}",
       "authority": 10,
