@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-17T12:56:54.402389+00:00",
+  "generated_at": "2026-11-17T13:26:25.299086+00:00",
   "window_start": "2026-11-17T19:00:00+08:00",
-  "window_end": "2026-11-17T20:56:53.068575+08:00",
-  "total_items": 8,
+  "window_end": "2026-11-17T21:26:24.728567+08:00",
+  "total_items": 7,
   "items": [
     {
       "id": "c81d743d6a4a881444ef721b6d115ec638a49f4a",
@@ -21,9 +21,9 @@
       "relevance": 0.26,
       "authority": 5,
       "depth": 8,
-      "timeliness": 23.4,
+      "timeliness": 23.0,
       "writing_value": 5,
-      "total_score": 70.1,
+      "total_score": 70.0,
       "_hx": {
         "topic": 6,
         "conflict": 0,
@@ -31,12 +31,12 @@
         "pr_pen": 0,
         "rel": 26.0,
         "auth": 5,
-        "tim": 23.44450719151232,
+        "tim": 22.95229696393013,
         "writing": 5,
         "depth": 8,
         "secjunk": 0,
         "junk": 0,
-        "dup_pen": 3.3,
+        "dup_pen": 3.0,
         "dup_of": false
       },
       "hx_topic": 6,
@@ -44,49 +44,7 @@
       "hx_data": 6,
       "hx_pr_penalty": 0,
       "hx_secjunk_penalty": 0,
-      "hx_dup_penalty": -3.3
-    },
-    {
-      "id": "3ae656e0e6a71489bacd141c818a01887bc841c7",
-      "title": "Iconic Raises $10M to Build Software That Understands the World’s Biggest Projects - VentureBeat",
-      "title_zh": "Iconic 融资 1000 万美元，用于构建了解世界上最大项目的软件 - VentureBeat",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOTEtZUUszc09nQktWN1ZOTVRXQTBZdFBXNkdDaWJqSk42WjVzU2RNNE9OSl9NbEt1RDdqVDBleVd1bkZFS3hVQ3RIaFBGTkhIZlhaZnZySWZ3RmVvRFFqS0ZPS05EcnFRWTZCNk1fanBTSjdoMHU1U01VQnZIUHVZWm1BeEgzbXNBWTloWUlvSG1HT2lOVmZtbHdINmcyeUdtaHNUekdfRHBXVkxNY09ucnA2dw?oc=5",
-      "published_at": "2026-11-17T12:05:30+00:00",
-      "category": "GN: VentureBeat AI",
-      "gn_label": "robotics",
-      "site_name": "GN: VentureBeat AI",
-      "source": "GN: VentureBeat AI",
-      "site_id": "GN: VentureBeat AI",
-      "description": "",
-      "ai_score": 72.0,
-      "ai_label": "robotics",
-      "relevance": 0.288,
-      "authority": 5,
-      "depth": 0,
-      "timeliness": 24.1,
-      "writing_value": 0,
-      "total_score": 67.9,
-      "_hx": {
-        "topic": 10,
-        "conflict": 0,
-        "data": 10,
-        "pr_pen": 0,
-        "rel": 28.8,
-        "auth": 5,
-        "tim": 24.144507191512318,
-        "writing": 0,
-        "depth": 0,
-        "secjunk": 0,
-        "junk": 0,
-        "dup_pen": 0.0,
-        "dup_of": false
-      },
-      "hx_topic": 10,
-      "hx_conflict": 0,
-      "hx_data": 10,
-      "hx_pr_penalty": 0,
-      "hx_secjunk_penalty": 0,
-      "hx_dup_penalty": -0.0
+      "hx_dup_penalty": -3.0
     },
     {
       "id": "a5ff288957276ee46dc05e2589a0d569c476fe4a",
@@ -105,9 +63,9 @@
       "relevance": 0.26,
       "authority": 5,
       "depth": 8,
-      "timeliness": 23.1,
+      "timeliness": 22.6,
       "writing_value": 5,
-      "total_score": 62.9,
+      "total_score": 62.4,
       "_hx": {
         "topic": 0,
         "conflict": 0,
@@ -115,7 +73,7 @@
         "pr_pen": 0,
         "rel": 26.0,
         "auth": 5,
-        "tim": 23.052840524845653,
+        "tim": 22.560630297263465,
         "writing": 5,
         "depth": 8,
         "secjunk": 0,
@@ -147,9 +105,9 @@
       "relevance": 0.26,
       "authority": 5,
       "depth": 5,
-      "timeliness": 23.3,
+      "timeliness": 22.8,
       "writing_value": 3,
-      "total_score": 62.3,
+      "total_score": 61.8,
       "_hx": {
         "topic": 0,
         "conflict": 0,
@@ -157,7 +115,7 @@
         "pr_pen": 0,
         "rel": 26.0,
         "auth": 5,
-        "tim": 23.26700719151232,
+        "tim": 22.77479696393013,
         "writing": 3,
         "depth": 5,
         "secjunk": 0,
@@ -189,9 +147,9 @@
       "relevance": 0.26,
       "authority": 5,
       "depth": 0,
-      "timeliness": 23.8,
+      "timeliness": 23.3,
       "writing_value": 0,
-      "total_score": 54.8,
+      "total_score": 54.3,
       "_hx": {
         "topic": 0,
         "conflict": 0,
@@ -199,7 +157,7 @@
         "pr_pen": 0,
         "rel": 26.0,
         "auth": 5,
-        "tim": 23.812840524845654,
+        "tim": 23.320630297263463,
         "writing": 0,
         "depth": 0,
         "secjunk": 0,
@@ -233,7 +191,7 @@
       "depth": 8,
       "timeliness": 0.0,
       "writing_value": 5,
-      "total_score": 43.9,
+      "total_score": 46.8,
       "_hx": {
         "topic": 0,
         "conflict": 0,
@@ -246,7 +204,7 @@
         "depth": 8,
         "secjunk": 0,
         "junk": 0,
-        "dup_pen": 2.9,
+        "dup_pen": 0.0,
         "dup_of": false
       },
       "hx_topic": 0,
@@ -254,7 +212,7 @@
       "hx_data": 0,
       "hx_pr_penalty": 0,
       "hx_secjunk_penalty": 0,
-      "hx_dup_penalty": -2.9
+      "hx_dup_penalty": -0.0
     },
     {
       "id": "a969ba1a811d9b007b1aee84d79810b2f840ac96",
@@ -275,7 +233,7 @@
       "depth": 8,
       "timeliness": 0.0,
       "writing_value": 1,
-      "total_score": 40.5,
+      "total_score": 40.9,
       "_hx": {
         "topic": 0,
         "conflict": 0,
@@ -288,7 +246,7 @@
         "depth": 8,
         "secjunk": 0,
         "junk": 0,
-        "dup_pen": 2.3,
+        "dup_pen": 1.9,
         "dup_of": false
       },
       "hx_topic": 0,
@@ -296,7 +254,7 @@
       "hx_data": 0,
       "hx_pr_penalty": 0,
       "hx_secjunk_penalty": 0,
-      "hx_dup_penalty": -2.3
+      "hx_dup_penalty": -1.9
     },
     {
       "id": "2f90251ec0600bd6a773aa7fb1000b6623fc333c",
