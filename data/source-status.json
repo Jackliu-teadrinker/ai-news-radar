@@ -1,232 +1,254 @@
 {
-  "generated_at": "2026-11-17T03:35:06.159906+00:00",
+  "generated_at": "2026-11-17T04:29:52.782393+00:00",
   "feeds": [
     {
-      "feed": "国外具身智能资讯",
-      "success": true,
-      "items_total": 64,
-      "items_unique": 64,
-      "error": null
-    },
-    {
       "feed": "国内脑机接口资讯",
-      "success": true,
-      "items_total": 91,
-      "items_unique": 91,
-      "error": null
-    },
-    {
-      "feed": "国内人形机器人资讯",
-      "success": true,
-      "items_total": 95,
-      "items_unique": 95,
-      "error": null
+      "success": false,
+      "items_total": 0,
+      "items_unique": 0,
+      "error": "503 Server Error: Service Unavailable for url: https://news.google.com/rss/search?q=%E8%84%91%E6%9C%BA%E6%8E%A5%E5%8F%A3+OR+%E7%A5%9E%E7%BB%8F%E6%8E%A5%E5%8F%A3+OR+%E8%84%91%E7%94%B5%E6%8E%A5%E5%8F%A3+OR+BCI&hl=zh-CN&gl=CN&ceid=CN:zh-Hans&when=1d"
     },
     {
       "feed": "国外机器人资讯",
       "success": true,
-      "items_total": 100,
-      "items_unique": 100,
-      "error": null
+      "items_total": 9,
+      "items_unique": 9,
+      "error": "GN 503 Server Error: Service Unavailable for url: https://news.google.com/rss/search?q=robot&hl=en-US&gl=US&ceid=US:en&when=1d -> Bing fallback"
     },
     {
       "feed": "国内具身智能资讯",
       "success": true,
-      "items_total": 97,
-      "items_unique": 94,
-      "error": null
+      "items_total": 12,
+      "items_unique": 12,
+      "error": "GN 503 Server Error: Service Unavailable for url: https://news.google.com/rss/search?q=%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD&hl=zh-CN&gl=CN&ceid=CN:zh-Hans&when=1d -> Bing fallback"
+    },
+    {
+      "feed": "国内人形机器人资讯",
+      "success": true,
+      "items_total": 12,
+      "items_unique": 12,
+      "error": "GN 503 Server Error: Service Unavailable for url: https://news.google.com/rss/search?q=%E4%BA%BA%E5%BD%A2%E6%9C%BA%E5%99%A8%E4%BA%BA&hl=zh-CN&gl=CN&ceid=CN:zh-Hans&when=1d -> Bing fallback"
     },
     {
       "feed": "国外物理AI资讯",
       "success": true,
-      "items_total": 100,
-      "items_unique": 98,
-      "error": null
+      "items_total": 12,
+      "items_unique": 12,
+      "error": "GN 503 Server Error: Service Unavailable for url: https://news.google.com/rss/search?q=physical+AI&hl=en-US&gl=US&ceid=US:en&when=1d -> Bing fallback"
     },
     {
       "feed": "国外人形机器人资讯",
       "success": true,
-      "items_total": 100,
-      "items_unique": 82,
-      "error": null
+      "items_total": 12,
+      "items_unique": 12,
+      "error": "GN 503 Server Error: Service Unavailable for url: https://news.google.com/rss/search?q=humanoid+robot&hl=en-US&gl=US&ceid=US:en&when=1d -> Bing fallback"
+    },
+    {
+      "feed": "国外脑机接口资讯",
+      "success": false,
+      "items_total": 0,
+      "items_unique": 0,
+      "error": "503 Server Error: Service Unavailable for url: https://news.google.com/rss/search?q=BCI+OR+brain+computer+interface+OR+neural+interface&hl=en-US&gl=US&ceid=US:en&when=1d"
+    },
+    {
+      "feed": "国外具身智能资讯",
+      "success": false,
+      "items_total": 0,
+      "items_unique": 0,
+      "error": "503 Server Error: Service Unavailable for url: https://news.google.com/rss/search?q=embodied+intelligence+OR+embodied+AI&hl=en-US&gl=US&ceid=US:en&when=1d"
     },
     {
       "feed": "GN: 资本事件",
-      "success": true,
-      "items_total": 20,
-      "items_unique": 20,
-      "error": null
+      "success": false,
+      "items_total": 0,
+      "items_unique": 0,
+      "error": "503 Server Error: Service Unavailable for url: https://news.google.com/rss/search?q=%E6%9C%BA%E5%99%A8%E4%BA%BA%20%E8%9E%8D%E8%B5%84%20OR%20%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD%20%E8%9E%8D%E8%B5%84%20OR%20%E6%9C%BA%E5%99%A8%E4%BA%BA%20IPO%20OR%20%E4%BA%BA%E5%BD%A2%E6%9C%BA%E5%99%A8%E4%BA%BA%20%E6%B8%AF%E8%82%A1&hl=zh-CN&gl=CN&ceid=CN:zh-Hans&when=7d"
     },
     {
       "feed": "国内机器人资讯",
       "success": true,
-      "items_total": 100,
-      "items_unique": 68,
-      "error": null
-    },
-    {
-      "feed": "GN: Noetix 松延",
-      "success": true,
       "items_total": 12,
       "items_unique": 12,
-      "error": null
+      "error": "GN 503 Server Error: Service Unavailable for url: https://news.google.com/rss/search?q=%E6%9C%BA%E5%99%A8%E4%BA%BA&hl=zh-CN&gl=CN&ceid=CN:zh-Hans&when=1d -> Bing fallback"
     },
     {
-      "feed": "GN: 智元资本",
-      "success": true,
-      "items_total": 18,
-      "items_unique": 18,
-      "error": null
-    },
-    {
-      "feed": "GN: Capital Events",
-      "success": true,
-      "items_total": 57,
-      "items_unique": 52,
-      "error": null
-    },
-    {
-      "feed": "国外脑机接口资讯",
-      "success": true,
-      "items_total": 58,
-      "items_unique": 58,
-      "error": null
-    },
-    {
-      "feed": "GN: 宇树资本",
-      "success": true,
-      "items_total": 31,
-      "items_unique": 31,
-      "error": null
-    },
-    {
-      "feed": "GN: 傅利叶资本",
-      "success": true,
-      "items_total": 7,
-      "items_unique": 7,
-      "error": null
-    },
-    {
+      "success": false,
+      "items_total": 0,
+      "items_unique": 0,
       "feed": "国内物理AI资讯",
-      "success": true,
-      "items_total": 80,
-      "items_unique": 70,
-      "error": null
+      "error": "timeout_45s"
+    },
+    {
+      "success": false,
+      "items_total": 0,
+      "items_unique": 0,
+      "feed": "GN: Capital Events",
+      "error": "timeout_45s"
+    },
+    {
+      "success": false,
+      "items_total": 0,
+      "items_unique": 0,
+      "feed": "GN: Noetix 松延",
+      "error": "timeout_45s"
+    },
+    {
+      "success": false,
+      "items_total": 0,
+      "items_unique": 0,
+      "feed": "GN: 宇树资本",
+      "error": "timeout_45s"
+    },
+    {
+      "success": false,
+      "items_total": 0,
+      "items_unique": 0,
+      "feed": "GN: 智元资本",
+      "error": "timeout_45s"
+    },
+    {
+      "success": false,
+      "items_total": 0,
+      "items_unique": 0,
+      "feed": "GN: 傅利叶资本",
+      "error": "timeout_45s"
     }
   ],
   "sites": [
     {
-      "site_id": "国外具身智能资讯",
-      "site_name": "国外具身智能资讯",
-      "item_count": 64,
-      "success": true
-    },
-    {
       "site_id": "国内脑机接口资讯",
       "site_name": "国内脑机接口资讯",
-      "item_count": 91,
-      "success": true
-    },
-    {
-      "site_id": "国内人形机器人资讯",
-      "site_name": "国内人形机器人资讯",
-      "item_count": 95,
-      "success": true
+      "item_count": 0,
+      "success": false
     },
     {
       "site_id": "国外机器人资讯",
       "site_name": "国外机器人资讯",
-      "item_count": 100,
+      "item_count": 9,
       "success": true
     },
     {
       "site_id": "国内具身智能资讯",
       "site_name": "国内具身智能资讯",
-      "item_count": 94,
+      "item_count": 12,
+      "success": true
+    },
+    {
+      "site_id": "国内人形机器人资讯",
+      "site_name": "国内人形机器人资讯",
+      "item_count": 12,
       "success": true
     },
     {
       "site_id": "国外物理AI资讯",
       "site_name": "国外物理AI资讯",
-      "item_count": 98,
+      "item_count": 12,
       "success": true
     },
     {
       "site_id": "国外人形机器人资讯",
       "site_name": "国外人形机器人资讯",
-      "item_count": 82,
-      "success": true
-    },
-    {
-      "site_id": "GN: 资本事件",
-      "site_name": "GN: 资本事件",
-      "item_count": 20,
-      "success": true
-    },
-    {
-      "site_id": "国内机器人资讯",
-      "site_name": "国内机器人资讯",
-      "item_count": 68,
-      "success": true
-    },
-    {
-      "site_id": "GN: Noetix 松延",
-      "site_name": "GN: Noetix 松延",
       "item_count": 12,
-      "success": true
-    },
-    {
-      "site_id": "GN: 智元资本",
-      "site_name": "GN: 智元资本",
-      "item_count": 18,
-      "success": true
-    },
-    {
-      "site_id": "GN: Capital Events",
-      "site_name": "GN: Capital Events",
-      "item_count": 52,
       "success": true
     },
     {
       "site_id": "国外脑机接口资讯",
       "site_name": "国外脑机接口资讯",
-      "item_count": 58,
-      "success": true
+      "item_count": 0,
+      "success": false
     },
     {
-      "site_id": "GN: 宇树资本",
-      "site_name": "GN: 宇树资本",
-      "item_count": 31,
-      "success": true
+      "site_id": "国外具身智能资讯",
+      "site_name": "国外具身智能资讯",
+      "item_count": 0,
+      "success": false
     },
     {
-      "site_id": "GN: 傅利叶资本",
-      "site_name": "GN: 傅利叶资本",
-      "item_count": 7,
+      "site_id": "GN: 资本事件",
+      "site_name": "GN: 资本事件",
+      "item_count": 0,
+      "success": false
+    },
+    {
+      "site_id": "国内机器人资讯",
+      "site_name": "国内机器人资讯",
+      "item_count": 12,
       "success": true
     },
     {
       "site_id": "国内物理AI资讯",
       "site_name": "国内物理AI资讯",
-      "item_count": 70,
-      "success": true
+      "item_count": 0,
+      "success": false
+    },
+    {
+      "site_id": "GN: Capital Events",
+      "site_name": "GN: Capital Events",
+      "item_count": 0,
+      "success": false
+    },
+    {
+      "site_id": "GN: Noetix 松延",
+      "site_name": "GN: Noetix 松延",
+      "item_count": 0,
+      "success": false
+    },
+    {
+      "site_id": "GN: 宇树资本",
+      "site_name": "GN: 宇树资本",
+      "item_count": 0,
+      "success": false
+    },
+    {
+      "site_id": "GN: 智元资本",
+      "site_name": "GN: 智元资本",
+      "item_count": 0,
+      "success": false
+    },
+    {
+      "site_id": "GN: 傅利叶资本",
+      "site_name": "GN: 傅利叶资本",
+      "item_count": 0,
+      "success": false
     }
   ],
-  "failed_sites": [],
-  "successful_sites": 16,
+  "failed_sites": [
+    "国内脑机接口资讯",
+    "国外脑机接口资讯",
+    "国外具身智能资讯",
+    "GN: 资本事件",
+    "国内物理AI资讯",
+    "GN: Capital Events",
+    "GN: Noetix 松延",
+    "GN: 宇树资本",
+    "GN: 智元资本",
+    "GN: 傅利叶资本"
+  ],
+  "successful_sites": 6,
   "rss_opml": {
     "enabled": true,
-    "ok_feeds": 16,
+    "ok_feeds": 6,
     "effective_feed_total": 16,
-    "failed_feeds": []
+    "failed_feeds": [
+      "国内脑机接口资讯",
+      "国外脑机接口资讯",
+      "国外具身智能资讯",
+      "GN: 资本事件",
+      "国内物理AI资讯",
+      "GN: Capital Events",
+      "GN: Noetix 松延",
+      "GN: 宇树资本",
+      "GN: 智元资本",
+      "GN: 傅利叶资本"
+    ]
   },
   "summary": {
     "total_feeds": 16,
-    "successful_feeds": 16,
-    "failed_feeds": 0,
-    "total_items": 940,
-    "deduplicated": 70,
-    "noise_filtered": 26,
+    "successful_feeds": 6,
+    "failed_feeds": 10,
+    "total_items": 67,
+    "deduplicated": 0,
+    "noise_filtered": 1,
     "short_filtered": 0
   }
 }
