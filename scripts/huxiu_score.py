@@ -5,7 +5,16 @@ Jack 2026-09-15: 用选题方法论校准雷达打分——
 - 三支柱: 反常识/冲突视角、数据驱动(具体数字)、差异化信息增量(重复报道惩罚)
 - 红线: 不写公司通稿视角 → 公关腔扣分
 - 时效降权: 时间不占优必须在深度/角度上占优，时效只保留小权重
-总分 = 相关性(22-50) + 选题(0-25) + 权威(0-10) + 深度(0-5) + 时效(0-20) + 写作(0-5) − 通稿(15) − 冗余(18/10)
+
+Jack 2026-11-05 评分机制调优（针对证券流水新闻分数虚高问题）：
+- 相关性降权: 上限 40（原 50），去掉 22 保底（原 22-50 夹逼），0.35 原始相关性只给 ~14 分
+- 时效提升: 满 25 分（原 20），age=0 给 25，每 1h 扣 1，age>=25h 归零
+- 深度提升: 摘要 >=100 给 8（原 5），>=60 给 5（原 3），>=30 给 2（原 1）
+- 写作重估: 与深度解耦，不再同梯度；流水数字堆砌只给 1，有实质论述才给 3/5
+- 新增证券流水惩罚: 命中"融资买入/融资余额/融资融券/主力/龙虎榜/大宗交易/股东减持/
+  北向资金/两融/解禁/回购/涨跌停"等证券快讯流水词 → 额外扣 30
+总分 = 相关性(0-40) + 选题(0-25) + 权威(0-10) + 深度(0-8) + 时效(0-25) + 写作(0-5)
+       − 通稿(15) − 证券流水(30) − 冗余(0-18) − 垃圾(25)
 """
 import re
 
@@ -40,9 +49,30 @@ HX_PR_CN = [
 ]
 HX_PR_EN = ['strategic partnership', 'awarded', 'partners with', 'wins big', 'launched grand']
 
+# ---- 证券流水快讯信号（Jack 2026-11-05 新增：两融/龙虎榜/大宗交易/减持等无信息增量的流水快讯） ----
+# 命中这些词即判"证券流水"，额外扣 30。
+# 不要求标题含数字——即使标题没数字，命中"融资余额"等词即判流水。
+HX_SECU_JUNK = [
+    '融资买入', '融资余额', '融资融券', '融资净买入', '融资净卖出',
+    '两融余额', '两融数据', '融券余量',
+    '主力净买', '主力净卖', '主力净流入', '主力净流出', '主力买', '主力卖',
+    '龙虎榜', '大宗交易',
+    '股东减持', '股东增持', '机构增持', '机构减持', '高管减持',
+    '北向资金', '南向资金',
+    '解禁', '回购', '涨跌停', '涨停', '跌停',
+    '收盘', '开盘', '午盘', '尾盘', '异动', '异动榜', '换手率',
+]
+
 # ---- 自媒体噪声信号 ----
 def hx_is_junk(title: str) -> bool:
     return '##' in title or 't.cn' in title
+
+
+def hx_is_securities_flow(title: str) -> bool:
+    """Jack 2026-11-05: 判定证券流水快讯（两融/龙虎榜/减持/大宗交易等无信息增量内容）。
+    条件：标题命中 HX_SECU_JUNK 任一关键词。"""
+    t = (title or '').lower()
+    return any(k in t for k in HX_SECU_JUNK)
 
 
 def huxiu_signals(title: str, desc: str = '') -> tuple:
@@ -65,15 +95,23 @@ def hx_bigrams(s: str) -> set:
 
 
 def summary_quality(desc: str) -> tuple:
-    """摘要长度 → (深度, 写作) 梯度分：≥100→5/5, ≥60→3/3, ≥30→1/1, 更短 0。"""
+    """摘要 → (深度, 写作)。
+    Jack 2026-11-05: 深度提升（>=100→8, >=60→5, >=30→2, 更短 0），
+    写作与深度解耦：看"是否有实质论述"而非单纯长度——
+    流水数字堆砌（>=4 个数字且数字字符占比 >15%）写作只给 1。"""
     L = len((desc or '').strip())
+    depth = 8 if L >= 100 else (5 if L >= 60 else (2 if L >= 30 else 0))
+    digit_count = len(re.findall(r'\d', desc or ''))
+    num_dominant = L >= 30 and digit_count >= 4 and digit_count / L > 0.15
     if L >= 100:
-        return 5, 5
-    if L >= 60:
-        return 3, 3
-    if L >= 30:
-        return 1, 1
-    return 0, 0
+        writing = 1 if num_dominant else 5
+    elif L >= 60:
+        writing = 1 if num_dominant else 3
+    elif L >= 30:
+        writing = 1
+    else:
+        writing = 0
+    return depth, writing
 
 
 def hx_similarity(a: str, b: str) -> float:
@@ -97,11 +135,21 @@ def _age_hours(item: dict, now_ts: float) -> float:
         return 999.0
 
 
-def calibrate_scores(items: list, now_ts: float | None = None) -> list:
-    """虎嗅选题逻辑校准（Jack 2026-09-15），enricher 补摘要后调用。
+# Jack 2026-11-05: 新权重（原值见 docstring 历史说明）
+REL_SCALE = 0.40   # 相关性倍率（原 0.625）
+REL_CAP = 40.0     # 相关性上限（原 50，且原无 22 保底以下空间——现 0.35 原始相关性 ≈ 14 分）
+TIM_CAP = 25.0     # 时效上限（原 20）
+TIM_DECAY = 1.0    # 每小时扣 1 分（原 4h 内不扣、之后每 h 扣 0.8）
 
-    总分 = 相关性(22-50) + 选题(0-25, 冲突+数据) + 权威(0/5/10) + 深度(0-5)
-          + 时效(0-20, 降权) + 写作(0-5) − 通稿(15) − 冗余(0-18) − 垃圾(25)
+SECJUNK_PENALTY = 30  # 证券流水快讯额外扣分
+
+
+def calibrate_scores(items: list, now_ts: float | None = None) -> list:
+    """虎嗅选题逻辑校准（Jack 2026-09-15, 2026-11-05 调优），enricher 补摘要后调用。
+
+    总分 = 相关性(0-40) + 选题(0-25, 冲突+数据) + 权威(0/5/10) + 深度(0-8)
+          + 时效(0-25) + 写作(0-5)
+          − 通稿(15) − 证券流水(30) − 冗余(0-18) − 垃圾(25)
     冗余 = 与更高排名条目标题的最大 bigram 相似度 ×18（同文多平台只奖励首发高分版）。
     就地写回 total_score/relevance/authority/timeliness/depth/writing_value +
     hx_* 明细字段，返回按新总分降序排好的列表。
@@ -111,13 +159,17 @@ def calibrate_scores(items: list, now_ts: float | None = None) -> list:
         depth, writing = summary_quality(it.get('description', ''))
         it['depth'], it['writing_value'] = depth, writing
         topic, conflict, data_pts, pr_pen = huxiu_signals(it['title'], it.get('description', ''))
-        rel_scaled = min(50.0, max(22.0, it.get('relevance', 0.35) * 100 * 0.625))
+        # Jack 2026-11-05: 相关性降权，去掉 22 保底
+        rel_scaled = min(REL_CAP, it.get('relevance', 0.35) * 100 * REL_SCALE)
         auth = 10 if (it.get('authority') or 0) >= 15 else 5
         age = _age_hours(it, now_ts)
-        tim = min(20.0, max(0.0, 20 - max(0.0, age - 4) * 0.8))
+        # Jack 2026-11-05: 时效提升，age=0 给满 25，每 1h 扣 1
+        tim = min(TIM_CAP, max(0.0, TIM_CAP - age * TIM_DECAY))
+        secjunk_pen = SECJUNK_PENALTY if hx_is_securities_flow(it['title']) else 0
         it['_hx'] = dict(topic=topic, conflict=conflict, data=data_pts,
                          pr_pen=pr_pen, rel=rel_scaled, auth=auth, tim=tim,
                          writing=writing, depth=depth,
+                         secjunk=secjunk_pen,
                          junk=25 if hx_is_junk(it['title']) else 0)
     # 贪心冗余：高分/高相关优先保留，后到者按与已收录条目的最大相似度扣分
     order = sorted(items, key=lambda i: (-i['_hx']['rel'], -(i['_hx']['topic'] + i['_hx']['auth'] + i['_hx']['depth'] + i['_hx']['tim'] + i['_hx']['writing'])))
@@ -136,7 +188,7 @@ def calibrate_scores(items: list, now_ts: float | None = None) -> list:
     for it in items:
         h = it['_hx']
         total = (h['rel'] + h['topic'] + h['auth'] + h['depth'] + h['tim'] + h['writing']
-                 - h['pr_pen'] - h['dup_pen'] - h['junk'])
+                 - h['pr_pen'] - h['secjunk'] - h['dup_pen'] - h['junk'])
         it['total_score'] = round(total, 1)
         it['relevance'] = round(h['rel'] / 100, 3)   # 回写缩放后相关性，保证前端明细与总分自洽
         it['timeliness'] = round(h['tim'], 1)
@@ -145,6 +197,7 @@ def calibrate_scores(items: list, now_ts: float | None = None) -> list:
         it['hx_conflict'] = h['conflict']
         it['hx_data'] = h['data']
         it['hx_pr_penalty'] = -h['pr_pen']
+        it['hx_secjunk_penalty'] = -h['secjunk']
         it['hx_dup_penalty'] = -h['dup_pen']
     items.sort(key=lambda x: x['total_score'], reverse=True)
     return items

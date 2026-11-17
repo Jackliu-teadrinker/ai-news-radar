@@ -21,7 +21,8 @@ from zoneinfo import ZoneInfo
 CURATED_DIR = "data/curated"
 # Jack 2026-06-10 18:58 CST 方案 A. 实际 score 范围 60-130 (relevance*100 + authority + depth + writing + timeliness).
 # 阈值 60 几近全过 → 调到 80 才有意义。动态调整看 daily volume.
-SCORE_THRESHOLD = 80
+# Jack 2026-11-05: 新评分机制上线（相关性降权/时效提升/证券流水惩罚），分数中枢下移 ~20，阈值 80→65。
+SCORE_THRESHOLD = 65
 DAILY_MAX = 100
 SHANGHAI = ZoneInfo("Asia/Shanghai")
 

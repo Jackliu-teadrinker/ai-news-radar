@@ -320,7 +320,7 @@ function buildScoreBadge(item, isGov = false) {
   const pct = hasScore ? Math.round(totalScore) : null;
   const calibrated = item.hx_topic !== undefined;   // 虎嗅选题逻辑校准后的数据（2026-09-15 起）
   const color = hasScore
-    ? (calibrated ? (pct >= 70 ? 'score-high' : pct >= 45 ? 'score-mid' : 'score-low')
+    ? (calibrated ? (pct >= 65 ? 'score-high' : pct >= 40 ? 'score-mid' : 'score-low')
                   : (pct >= 60 ? 'score-high' : pct >= 40 ? 'score-mid' : 'score-low'))
     : 'score-none';
   const el = document.createElement('span');
@@ -343,10 +343,19 @@ function buildScoreBadge(item, isGov = false) {
     const dupPen = item.hx_dup_penalty || 0;
     const parts = [`相关性${rel}`, `选题${topic}`, `权威${auth}`, `深度${depth}`, `时效${timeliness}`, `写作${writing}`];
     if (prPen) parts.push(`通稿${prPen}`);
+    const secPen = item.hx_secjunk_penalty || 0;
+    if (secPen) parts.push(`证券流水${secPen}`);
     if (dupPen) parts.push(`冗余${Math.round(dupPen * 10) / 10}`);
     el.textContent = `新闻价值 ${pct}分 (${parts.join(' + ')})`;
-    el.title = `得分依据 (虎嗅选题逻辑, 总分 ${pct}):\n相关性 ${rel} /50 (领域匹配度压缩)\n选题 ${topic} /25 (反常识冲突${conflict} + 数据驱动${dataPts})\n权威 ${auth} /10 (学术/大媒体10, 其他5)\n深度 ${depth} /5 (摘要≥100字=5 ≥60字=3 ≥30字=1)\n时效 ${timeliness} /20 (已降权: 时间不占优必须在深度上占优)\n写作 ${writing} /5 (梯度同上)\n扣分: 公关通稿腔 ${prPen}, 同文多平台冗余 ${Math.round(dupPen * 10) / 10} (与更高排名条目的标题相似度×18)`;
-    return el;
+    el.title = `得分依据 (虎嗅选题逻辑, 总分 ${pct}):
+相关性 ${rel} /40 (领域匹配度, 已降权: 0.4 倍率无保底)
+选题 ${topic} /25 (反常识冲突${conflict} + 数据驱动${dataPts})
+权威 ${auth} /10 (学术/大媒体10, 其他5)
+深度 ${depth} /8 (摘要≥100字=8 ≥60字=5 ≥30字=2)
+时效 ${timeliness} /25 (满分25, 每1小时-1, 25小时归零)
+写作 ${writing} /5 (与深度解耦: 有实质论述满分, 流水数字堆砌只给1)
+扣分: 公关通稿腔 ${prPen}, 证券流水快讯 ${secPen}, 同文多平台冗余 ${Math.round(dupPen * 10) / 10} (与更高排名条目的标题相似度×18)`;
+return el;
   }
   el.textContent = `新闻价值 ${pct}分 (相关性${rel} + 权威${auth} + 深度${depth} + 时效${timeliness} + 写作${writing})`;
   el.title = isGov
