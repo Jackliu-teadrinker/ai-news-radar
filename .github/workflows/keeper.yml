@@ -2,6 +2,10 @@ name: Keeper - radar freshness guard (cloud watchdog)
 
 on:
   workflow_dispatch:
+  # 2026-11-17 修复：schedule 在 11-09 历史瘦身重建时丢失，keeper 自 11-06 起 0 运行。
+  # bug #31 会让大部分拍被平台丢弃（历史命中率约 5%），但保留 schedule 才有云端兜底。
+  schedule:
+    - cron: '*/15 * * * *'
 
 permissions:
   contents: read
@@ -37,25 +41,35 @@ jobs:
           python3 - <<'PYEOF'
           import json, os, time, datetime, urllib.request
 
-          PAGES = "https://jackliu-teadrinker.github.io/ai-news-radar/data/latest-24h-min.json"
+          # 2026-11-17 修复：latest-24h-min.json 的 generated_at 自 11-09 起被"今日定版"
+          # 冻结在当天首次版面时刻（当天不再更新），拿它判 freshness 会整天误报 stale。
+          # 真实更新时间在按日分片索引 data/days/index.json 里 —— 索引优先、24h 快照兜底。
+          PAGES_INDEX = "https://jackliu-teadrinker.github.io/ai-news-radar/data/days/index.json"
+          PAGES_MIN = "https://jackliu-teadrinker.github.io/ai-news-radar/data/latest-24h-min.json"
           # 2026-09-30: keeper 改 15min 拍，主任务 */30 拍数据落点 ≈ 拍点前 13min，
-          # age 30min 内属正常节奏；busy-check 窗口 25min 防 15min 拍下连环 dispatch。
-          STALE_AFTER_MIN = 30
+          # age 45min 内属正常节奏（与本地 watchdog WARN=45 对齐）；busy-check 窗口 25min 防连环 dispatch。
+          STALE_AFTER_MIN = 45
           RECENT_WINDOW_SEC = 1500
 
-          # 1. freshness：读 Pages 数据的 generated_at
+          # 1. freshness：分片索引优先（真实更新时间），24h 快照兜底
           age = 9999.0
           gen = None
-          try:
-              req = urllib.request.Request(PAGES + f"?cb={int(time.time())}")
-              req.add_header("User-Agent", "radar-keeper/1.0")
-              d = json.loads(urllib.request.urlopen(req, timeout=20).read())
-              gen = d.get("generated_at")
-              if gen:
-                  g = datetime.datetime.fromisoformat(gen.replace("Z", "+00:00"))
-                  age = (datetime.datetime.now(datetime.timezone.utc) - g).total_seconds() / 60
-          except Exception as e:
-              print(f"[freshness] Pages fetch failed: {e}")
+          for url, label in ((PAGES_INDEX, "days-index"), (PAGES_MIN, "24h-min")):
+              try:
+                  req = urllib.request.Request(url + f"?cb={int(time.time())}")
+                  req.add_header("User-Agent", "radar-keeper/1.0")
+                  d = json.loads(urllib.request.urlopen(req, timeout=20).read())
+                  g_at = d.get("generated_at")
+                  if not g_at:
+                      print(f"[freshness] {label}: no generated_at")
+                      continue
+                  g = datetime.datetime.fromisoformat(g_at.replace("Z", "+00:00"))
+                  a = (datetime.datetime.now(datetime.timezone.utc) - g).total_seconds() / 60
+                  print(f"[freshness] {label}: generated_at={g_at} age={a:.0f}min")
+                  if a < age:
+                      age, gen = a, g_at
+              except Exception as e:
+                  print(f"[freshness] {label} fetch failed: {e}")
 
           stale = age > STALE_AFTER_MIN
           print(f"[freshness] generated_at={gen} age={age:.0f}min stale={stale}")
