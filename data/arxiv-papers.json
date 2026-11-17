@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T19:57:40.571863+00:00",
+  "generated_at": "2026-11-17T20:28:25.471813+00:00",
   "total_items": 30,
   "items": [
     {
@@ -141,7 +141,7 @@
         "pr_pen": 0,
         "rel": 26.0,
         "auth": 10,
-        "tim": 0.032343614432548407,
+        "tim": 0.0,
         "writing": 5,
         "depth": 8,
         "secjunk": 0,
@@ -375,7 +375,7 @@
         "pr_pen": 0,
         "rel": 14.0,
         "auth": 10,
-        "tim": 0.00623250332143499,
+        "tim": 0.0,
         "writing": 5,
         "depth": 8,
         "secjunk": 0,
@@ -479,7 +479,7 @@
       "category": "cs.CV",
       "published_at": "2026-11-16T10:46:59+00:00",
       "updated_at": "2026-11-16T10:46:59Z",
-      "title_zh": "MVSTF：基于 LiDAR 的移动物体分割的多视图时空融合",
+      "title_zh": "MVSTF：基于 LiDAR 的移动对象分割的多视图时空融合",
       "relevance": 0.26,
       "description": "Autonomous mobile robots confront significant chal lenges in recognizing the motion properties of objects in dy namic environments. However, existing methods are hindered by limitations such as boundary ambiguity, occlusion, viewpoint constraints, and training complexity. In this paper, we propose an innovative end-to-end Multi-View Spatio-Temporal Fusion network, named MVSTF, which utilizes sequential point clouds to generate multi-view images and feature differences, and designs a multi-branch network to extract spatio-temporal and dimen sional features in parallel, and realizes high-precision moving object segmentation. First, sequential point clouds are utilized to generate multi-view images and feature differences. Then, an end-to-end multi-branch network including Dual Down-sampling Blocks (DDB), Spatial Attention Blocks (SAB), Multi-Kernel Convolutional Neural Network blocks (MKCNN), Dual Feature Fusion Blocks (DFFB), and the Point Fusion (PF) module, is designed to extract motion features from feature differences and geometric and semantic features from multi-view images. Finally, an auxiliary semantic head is introduced to further improve the algorithm's robustness and the model's interpretability. This work is validated on the SemanticKITTI and KITTI-Road bench marks, achieving state-of-the-art results on the SemanticKITTI MOS validation set and the KITTI-Road validation set, and competitive results on the hidden SemanticKITTI-MOS test set. The code is available at https://github.com/ZhouJJ111/MVSTF.",
       "authority": 10,
