@@ -1,11 +1,25 @@
 {
-  "generated_at": "2026-11-18T12:30:45.533109+00:00",
+  "generated_at": "2026-11-18T12:50:42.911060+00:00",
   "feeds": [
+    {
+      "feed": "国内脑机接口资讯",
+      "success": true,
+      "items_total": 80,
+      "items_unique": 80,
+      "error": null
+    },
     {
       "feed": "国外脑机接口资讯",
       "success": true,
-      "items_total": 56,
-      "items_unique": 56,
+      "items_total": 55,
+      "items_unique": 55,
+      "error": null
+    },
+    {
+      "feed": "国内人形机器人资讯",
+      "success": true,
+      "items_total": 100,
+      "items_unique": 100,
       "error": null
     },
     {
@@ -16,59 +30,31 @@
       "error": null
     },
     {
-      "feed": "国外物理AI资讯",
-      "success": true,
-      "items_total": 100,
-      "items_unique": 99,
-      "error": null
-    },
-    {
-      "feed": "国内具身智能资讯",
+      "feed": "国外机器人资讯",
       "success": true,
       "items_total": 100,
       "items_unique": 100,
       "error": null
     },
     {
-      "feed": "国外人形机器人资讯",
-      "success": true,
-      "items_total": 100,
-      "items_unique": 96,
-      "error": null
-    },
-    {
-      "feed": "国外机器人资讯",
-      "success": true,
-      "items_total": 100,
-      "items_unique": 77,
-      "error": null
-    },
-    {
-      "feed": "国内人形机器人资讯",
+      "feed": "国内具身智能资讯",
       "success": true,
       "items_total": 100,
       "items_unique": 94,
       "error": null
     },
     {
-      "feed": "国内脑机接口资讯",
+      "feed": "国外人形机器人资讯",
       "success": true,
-      "items_total": 78,
-      "items_unique": 78,
+      "items_total": 100,
+      "items_unique": 76,
       "error": null
     },
     {
-      "feed": "国内机器人资讯",
+      "feed": "国外物理AI资讯",
       "success": true,
-      "items_total": 101,
-      "items_unique": 72,
-      "error": null
-    },
-    {
-      "feed": "GN: Noetix 松延",
-      "success": true,
-      "items_total": 12,
-      "items_unique": 12,
+      "items_total": 100,
+      "items_unique": 94,
       "error": null
     },
     {
@@ -81,15 +67,22 @@
     {
       "feed": "国内物理AI资讯",
       "success": true,
-      "items_total": 95,
-      "items_unique": 91,
+      "items_total": 96,
+      "items_unique": 90,
+      "error": null
+    },
+    {
+      "feed": "国内机器人资讯",
+      "success": true,
+      "items_total": 101,
+      "items_unique": 74,
       "error": null
     },
     {
       "feed": "GN: 傅利叶资本",
       "success": true,
-      "items_total": 8,
-      "items_unique": 8,
+      "items_total": 7,
+      "items_unique": 7,
       "error": null
     },
     {
@@ -100,25 +93,44 @@
       "error": null
     },
     {
+      "feed": "GN: Capital Events",
+      "success": true,
+      "items_total": 61,
+      "items_unique": 54,
+      "error": null
+    },
+    {
+      "feed": "GN: Noetix 松延",
+      "success": true,
+      "items_total": 12,
+      "items_unique": 12,
+      "error": null
+    },
+    {
       "feed": "GN: 宇树资本",
       "success": true,
       "items_total": 31,
       "items_unique": 31,
       "error": null
-    },
-    {
-      "feed": "GN: Capital Events",
-      "success": true,
-      "items_total": 63,
-      "items_unique": 55,
-      "error": null
     }
   ],
   "sites": [
     {
+      "site_id": "国内脑机接口资讯",
+      "site_name": "国内脑机接口资讯",
+      "item_count": 80,
+      "success": true
+    },
+    {
       "site_id": "国外脑机接口资讯",
       "site_name": "国外脑机接口资讯",
-      "item_count": 56,
+      "item_count": 55,
+      "success": true
+    },
+    {
+      "site_id": "国内人形机器人资讯",
+      "site_name": "国内人形机器人资讯",
+      "item_count": 100,
       "success": true
     },
     {
@@ -128,51 +140,27 @@
       "success": true
     },
     {
-      "site_id": "国外物理AI资讯",
-      "site_name": "国外物理AI资讯",
-      "item_count": 99,
+      "site_id": "国外机器人资讯",
+      "site_name": "国外机器人资讯",
+      "item_count": 100,
       "success": true
     },
     {
       "site_id": "国内具身智能资讯",
       "site_name": "国内具身智能资讯",
-      "item_count": 100,
+      "item_count": 94,
       "success": true
     },
     {
       "site_id": "国外人形机器人资讯",
       "site_name": "国外人形机器人资讯",
-      "item_count": 96,
+      "item_count": 76,
       "success": true
     },
     {
-      "site_id": "国外机器人资讯",
-      "site_name": "国外机器人资讯",
-      "item_count": 77,
-      "success": true
-    },
-    {
-      "site_id": "国内人形机器人资讯",
-      "site_name": "国内人形机器人资讯",
+      "site_id": "国外物理AI资讯",
+      "site_name": "国外物理AI资讯",
       "item_count": 94,
-      "success": true
-    },
-    {
-      "site_id": "国内脑机接口资讯",
-      "site_name": "国内脑机接口资讯",
-      "item_count": 78,
-      "success": true
-    },
-    {
-      "site_id": "国内机器人资讯",
-      "site_name": "国内机器人资讯",
-      "item_count": 72,
-      "success": true
-    },
-    {
-      "site_id": "GN: Noetix 松延",
-      "site_name": "GN: Noetix 松延",
-      "item_count": 12,
       "success": true
     },
     {
@@ -184,13 +172,19 @@
     {
       "site_id": "国内物理AI资讯",
       "site_name": "国内物理AI资讯",
-      "item_count": 91,
+      "item_count": 90,
+      "success": true
+    },
+    {
+      "site_id": "国内机器人资讯",
+      "site_name": "国内机器人资讯",
+      "item_count": 74,
       "success": true
     },
     {
       "site_id": "GN: 傅利叶资本",
       "site_name": "GN: 傅利叶资本",
-      "item_count": 8,
+      "item_count": 7,
       "success": true
     },
     {
@@ -200,15 +194,21 @@
       "success": true
     },
     {
-      "site_id": "GN: 宇树资本",
-      "site_name": "GN: 宇树资本",
-      "item_count": 31,
+      "site_id": "GN: Capital Events",
+      "site_name": "GN: Capital Events",
+      "item_count": 54,
       "success": true
     },
     {
-      "site_id": "GN: Capital Events",
-      "site_name": "GN: Capital Events",
-      "item_count": 55,
+      "site_id": "GN: Noetix 松延",
+      "site_name": "GN: Noetix 松延",
+      "item_count": 12,
+      "success": true
+    },
+    {
+      "site_id": "GN: 宇树资本",
+      "site_name": "GN: 宇树资本",
+      "item_count": 31,
       "success": true
     }
   ],
@@ -224,9 +224,9 @@
     "total_feeds": 16,
     "successful_feeds": 16,
     "failed_feeds": 0,
-    "total_items": 944,
-    "deduplicated": 75,
-    "noise_filtered": 32,
+    "total_items": 943,
+    "deduplicated": 76,
+    "noise_filtered": 31,
     "short_filtered": 0
   }
 }
