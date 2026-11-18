@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T20:21:01.522645+00:00",
+  "generated_at": "2026-11-18T20:51:59.513180+00:00",
   "total_items": 30,
   "items": [
     {
@@ -986,7 +986,7 @@
       "category": "cs.RO",
       "published_at": "2026-11-17T18:56:09+00:00",
       "updated_at": "2026-11-17T18:56:09Z",
-      "title_zh": "通过模型知情的鲁棒几何 DDPC 进行反馈线性化轨迹跟踪",
+      "title_zh": "通过模型通知的鲁棒几何 DDPC 进行反馈线性化轨迹跟踪",
       "relevance": 0.14,
       "description": "Data-driven predictive control (DDPC) predicts system responses from recorded trajectories, but nonlinear dynamics can limit the accuracy of fixed linear predictors. This paper studies geometric robust DDPC for trajectory tracking of a fully actuated manipulator using model-based feedback linearisation. A mechanical model maps virtual acceleration commands into joint torques, while recorded data capture residual dynamics arising from imperfect model parameters. The controller minimises worst-case prediction error over an open Grassmannian ball centred at the fitted trajectory subspace. Simulations on a planar 2R manipulator under gravity compare the proposed method with double-integrator model predictive control (MPC) and direct regularised data-enabled predictive control (DeePC). Results show improved tracking over double-integrator MPC despite increased torque effort, while performance relative to DeePC depends on the reference trajectory.",
       "authority": 10,
