@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T01:12:46.375339+00:00",
+  "generated_at": "2026-11-19T01:42:08.967298+00:00",
   "total_items": 30,
   "items": [
     {
@@ -869,7 +869,7 @@
       "category": "cs.AI",
       "published_at": "2026-11-17T16:12:55+00:00",
       "updated_at": "2026-11-17T16:12:55Z",
-      "title_zh": "使用冻结世界模型进行风险意识轨迹选择的残差引导轻量级强化学习",
+      "title_zh": "使用冻结世界模型进行风险感知轨迹选择的残差引导轻量级强化学习",
       "relevance": 0.14,
       "description": "In automated driving, world models provide future scene predictions for evaluating candidate trajectories, but fixed selection rules may not capture scene-dependent trade-offs. We propose a residual-guided reinforcement learning (RL) framework for lightweight trajectory selection with a frozen world model and a fixed candidate bank. The framework uses proximal policy optimization (PPO) to fine-tune a joint policy over candidate selection and bounded trajectory residuals. A context-conditioned ranking network learns candidate preferences from feedback obtained by evaluating local perturbations of the selected trajectories. At inference, the selector combines learned preference and predicted risk ranks using fixed weights and returns the selected candidate trajectory without modification. Fine-tuning updates 16,106 parameters across the actor and critic, while the deployed selector retains only the 11,725-parameter ranking network, with the residual branch and critic used exclusively during training. In open-loop evaluation on the nuScenes validation set, the method reduces average Euclidean trajectory error (L2) by 3.99% relative to the RiskWorld model baseline without RL-based selection. Under matched budgets for feedback accesses and actor updates, residual exploration reduces L2 by 0.83% relative to the categorical PPO variant trained without residuals. The method also maintains lower L2 than RiskWorld when risk features are removed or shuffled.",
       "authority": 10,
@@ -986,7 +986,7 @@
       "category": "cs.RO",
       "published_at": "2026-11-17T18:56:09+00:00",
       "updated_at": "2026-11-17T18:56:09Z",
-      "title_zh": "通过模型知情的鲁棒几何 DDPC 进行反馈线性化轨迹跟踪",
+      "title_zh": "通过模型通知的鲁棒几何 DDPC 进行反馈线性化轨迹跟踪",
       "relevance": 0.14,
       "description": "Data-driven predictive control (DDPC) predicts system responses from recorded trajectories, but nonlinear dynamics can limit the accuracy of fixed linear predictors. This paper studies geometric robust DDPC for trajectory tracking of a fully actuated manipulator using model-based feedback linearisation. A mechanical model maps virtual acceleration commands into joint torques, while recorded data capture residual dynamics arising from imperfect model parameters. The controller minimises worst-case prediction error over an open Grassmannian ball centred at the fitted trajectory subspace. Simulations on a planar 2R manipulator under gravity compare the proposed method with double-integrator model predictive control (MPC) and direct regularised data-enabled predictive control (DeePC). Results show improved tracking over double-integrator MPC despite increased torque effort, while performance relative to DeePC depends on the reference trajectory.",
       "authority": 10,
