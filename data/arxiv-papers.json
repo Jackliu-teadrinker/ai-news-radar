@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T22:16:57.025593+00:00",
+  "generated_at": "2026-11-19T22:44:43.856713+00:00",
   "total_items": 30,
   "items": [
     {
@@ -284,7 +284,7 @@
       "category": "cs.RO",
       "published_at": "2026-11-18T15:44:27+00:00",
       "updated_at": "2026-11-18T15:44:27Z",
-      "title_zh": "机器人微型游泳者在限制条件下的流体动力学",
+      "title_zh": "机器人微型游泳者在禁闭中的流体动力学",
       "relevance": 0.26,
       "description": "Inspired by seminal work by E.M. Purcell, we discuss the problem of predicting and optimizing the performance of autonomous robots swimming in confinement. Our approach is based on the explicit numerical resolution of the fluid flow induced by the swimmer, and it is validated experimentally on a cm-size prototype composed of a cargo head and a rotating propulsive tail. Using hydrodynamic scaling, we predict the performance of replicas of our prototype scaled down to mm- and sub-mm-size to test the feasibility of autonomous micro-robots navigating in narrow vessels. The main result of our theoretical, computational, and experimental analysis is that, while hydrodynamics seems to place no fundamental obstruction to the vision of autonomous micro-robots navigating in narrow lumens inside the human body, it does provide useful and strict guidelines for rational design at different length scales.",
       "authority": 10,
@@ -1064,7 +1064,7 @@
       "category": "cs.RO",
       "published_at": "2026-11-18T18:23:29+00:00",
       "updated_at": "2026-11-18T18:23:29Z",
-      "title_zh": "学习多智能体自我对弈中的交互，以生成可控的自动驾驶场景",
+      "title_zh": "学习多智能体自我对弈中的交互以生成可控的自动驾驶场景",
       "relevance": 0.14,
       "description": "Large-scale, multi-agent self-play trains robust driving policies effectively in simulation, but controlling these models to generate specific, safety-critical edge cases remains a key challenge. Existing goal-conditioned self-play frameworks rely primarily on static map-location goals and fail to reliably produce complex agent interactions such as aggressive tailgating or adversarial cut-offs. These agent interactions are necessary for rigorous autonomous vehicle (AV) testing. To address this, we present an extended multi-agent self-play framework that introduces agent-relative dynamic goals. By conditioning policies on this extended goal representation, our framework enables targeted, controllable scenario synthesis. We demonstrate that our approach successfully generates interactive driving behaviors that static-goal baselines cannot simulate, providing a flexible tool for long-tail scenario generation in AV testing.",
       "authority": 10,
