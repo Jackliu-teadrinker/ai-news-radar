@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T20:16:45.626384+00:00",
+  "generated_at": "2026-11-19T20:44:05.682159+00:00",
   "total_items": 30,
   "items": [
     {
@@ -1064,7 +1064,7 @@
       "category": "cs.RO",
       "published_at": "2026-11-18T18:23:29+00:00",
       "updated_at": "2026-11-18T18:23:29Z",
-      "title_zh": "学习多智能体自我对弈中的交互以生成可控的自动驾驶场景",
+      "title_zh": "学习多智能体自我对弈中的交互，以生成可控的自动驾驶场景",
       "relevance": 0.14,
       "description": "Large-scale, multi-agent self-play trains robust driving policies effectively in simulation, but controlling these models to generate specific, safety-critical edge cases remains a key challenge. Existing goal-conditioned self-play frameworks rely primarily on static map-location goals and fail to reliably produce complex agent interactions such as aggressive tailgating or adversarial cut-offs. These agent interactions are necessary for rigorous autonomous vehicle (AV) testing. To address this, we present an extended multi-agent self-play framework that introduces agent-relative dynamic goals. By conditioning policies on this extended goal representation, our framework enables targeted, controllable scenario synthesis. We demonstrate that our approach successfully generates interactive driving behaviors that static-goal baselines cannot simulate, providing a flexible tool for long-tail scenario generation in AV testing.",
       "authority": 10,
