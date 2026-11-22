@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T11:56:48.751637+00:00",
+  "generated_at": "2026-11-22T12:28:20.937390+00:00",
   "total_items": 30,
   "items": [
     {
@@ -986,7 +986,7 @@
       "category": "cs.RO",
       "published_at": "2026-11-19T16:53:19+00:00",
       "updated_at": "2026-11-19T16:53:19Z",
-      "title_zh": "TacInno：教学视觉-语言-行动模型超越视觉和行动的接触动力",
+      "title_zh": "TacInno：教学视觉-语言-行动模型超越视觉和行动的接触动力学",
       "relevance": 0.14,
       "description": "Vision-Language-Action (VLA) models have recently been equipped with tactile sensing to perceive visually subtle contact events in contact-rich manipulation. However, adding tactile input yields inconsistent gains, and some visuo-tactile VLA models rely little on tactile input, because much of the tactile change, such as the gel deformation during gripper closure, is predictable from visual observations and executed actions. To address this problem, we introduce TacInno, which isolates the contact dynamics that vision and executed actions cannot explain, termed tactile innovation, and uses tactile innovation only as a training target. Specifically, the TacInno tokenizer, conditioned on visual observations and executed actions, compresses the future tactile change into a discrete code, and the policy, TacInno-VLA, learns to predict the code, adding no module for the code at deployment. TacInno-VLA achieves average success rates of 87.5% across six simulation tasks and 70.5% across four real-world tasks, outperforming the strongest visuo-tactile baseline by 10.7 and 9.0 percentage points, respectively. Ablation studies validate the contributions of visual and action conditioning, multi-frame encoding, and auxiliary code prediction. Together, these results demonstrate the effectiveness of tactile innovation as a supervision signal for contact-rich manipulation.",
       "authority": 10,
