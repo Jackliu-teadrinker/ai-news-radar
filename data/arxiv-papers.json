@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T06:56:03.156225+00:00",
+  "generated_at": "2026-11-22T07:26:03.041003+00:00",
   "total_items": 30,
   "items": [
     {
@@ -635,7 +635,7 @@
       "category": "cs.RO",
       "published_at": "2026-11-19T14:19:04+00:00",
       "updated_at": "2026-11-19T14:19:04Z",
-      "title_zh": "计划停止：非圆形机器人的分解认证和终端维修",
+      "title_zh": "计划停止：非圆形机器人的因素认证和终端维修",
       "relevance": 0.26,
       "description": "Tight-space navigation requires a robot to clear obstacles and stop inside its goal despite uncertainty. We present GeoDiff, a motion-program planner coupling original-goal stopped-set inclusion, witness-guided terminal repair, and factored proof compilation. An exact feasible-translation characterization guides repair; request-local reuse reduces repeated geometric work. We establish conditions for compiler equivalence and reach-and-stop soundness. Across 11,440 floorplan-derived jobs, GeoDiff certifies 61/139 tasks at 5-cm tolerance within 15 s, versus 44/139 for the stop-set baseline. The strongest observed external certificate adapter certifies 13/139 tasks from 119/139 native routes, separating route availability from certification. On tasks derived from public BARN maps, GeoDiff certifies 202/270 at 5-cm tolerance for a Jackal-shaped body, versus 3/270 for the portal baseline. Development analyses distinguish emitter savings from solver coverage, and 1,420 route-tracking episodes characterize the execution interface. These results show how terminal reasoning and proof reuse increase finite-budget certification coverage while preserving the original physical task and goal.",
       "authority": 10,
@@ -986,7 +986,7 @@
       "category": "cs.RO",
       "published_at": "2026-11-19T16:53:19+00:00",
       "updated_at": "2026-11-19T16:53:19Z",
-      "title_zh": "TacInno：教学视觉-语言-行动模型超越视觉和行动的接触动力",
+      "title_zh": "TacInno：教学视觉-语言-行动模型超越视觉和行动的接触动力学",
       "relevance": 0.14,
       "description": "Vision-Language-Action (VLA) models have recently been equipped with tactile sensing to perceive visually subtle contact events in contact-rich manipulation. However, adding tactile input yields inconsistent gains, and some visuo-tactile VLA models rely little on tactile input, because much of the tactile change, such as the gel deformation during gripper closure, is predictable from visual observations and executed actions. To address this problem, we introduce TacInno, which isolates the contact dynamics that vision and executed actions cannot explain, termed tactile innovation, and uses tactile innovation only as a training target. Specifically, the TacInno tokenizer, conditioned on visual observations and executed actions, compresses the future tactile change into a discrete code, and the policy, TacInno-VLA, learns to predict the code, adding no module for the code at deployment. TacInno-VLA achieves average success rates of 87.5% across six simulation tasks and 70.5% across four real-world tasks, outperforming the strongest visuo-tactile baseline by 10.7 and 9.0 percentage points, respectively. Ablation studies validate the contributions of visual and action conditioning, multi-frame encoding, and auxiliary code prediction. Together, these results demonstrate the effectiveness of tactile innovation as a supervision signal for contact-rich manipulation.",
       "authority": 10,
