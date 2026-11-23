@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T15:12:33.461204+00:00",
+  "generated_at": "2026-11-23T15:42:54.802254+00:00",
   "total_items": 30,
   "items": [
     {
@@ -128,7 +128,7 @@
       "category": "cs.RO",
       "published_at": "2026-11-20T16:58:59+00:00",
       "updated_at": "2026-11-20T16:58:59Z",
-      "title_zh": "用于安全关键型电气开关的人形机器人：基于感知的运行时约束过滤器",
+      "title_zh": "用于安全关键电气开关的人形机器人：基于感知的运行时约束过滤器",
       "relevance": 0.32,
       "description": "Humanoid robots can reduce personnel exposure in electrical switching, but safe control is challenging because the tool must reach a target switch next to similar devices, where an imprecise operator command can contact a non-target switch. This study proposes a runtime safety filter that checks each operator command during virtual-reality teleoperation of a humanoid robot. The filter integrates a scene model estimated from the robot head camera and a target-conditioned control barrier function quadratic program that keeps the tool away from the non-target switch while passing safe commands unchanged. In real-world experiments on a Unitree G1 humanoid robot, with six rounds at each of two standing positions, target operations succeed in all ten rounds with an unchanged target and no non-target actuation. A simulation study achieves 9/9 safe completions, compared with 5/9 for raw teleoperation, demonstrating the feasibility of the method for humanoid switching operations.",
       "authority": 10,
