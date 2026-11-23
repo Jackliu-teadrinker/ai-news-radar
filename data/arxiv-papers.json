@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T13:11:52.677780+00:00",
+  "generated_at": "2026-11-23T13:42:07.340266+00:00",
   "total_items": 30,
   "items": [
     {
@@ -11,7 +11,7 @@
       "category": "cs.RO",
       "published_at": "2026-11-20T14:11:47+00:00",
       "updated_at": "2026-11-20T14:11:47Z",
-      "title_zh": "相信重复的事情：用于人形运动跟踪的有上限的世界模型策略梯度",
+      "title_zh": "相信重复的事情：用于人形运动跟踪的有限世界模型策略梯度",
       "relevance": 0.32,
       "description": "Training a humanoid motion tracker by backpropagating imagined returns through a learned world model is fast, because the model gives a first-order policy gradient. We ask how much of that gradient holds in the simulator. On a tracker for the Unitree G1, the $0.5\\%$ of imagined rollouts with the largest gradients carry $22\\%$ of the summed gradient norm, yet neither a second rollout from the same state nor the simulator confirms them. When the actions are moved along the model's gradient, the simulator returns 94% of the predicted change in return where the gradient norm is below the batch median, 48% between 3 and 10 times the median, and 1% above 30 times; the part of a gradient that either check confirms stops growing at a few times the median. We therefore cap each rollout's action-gradient norm at 10 times the batch median, draw imagination starts in proportion to their predicted gradient norm so that the cap removes less, and reset episodes where the world model and critic predict the lowest return. Trained on 223 hours of motion and tested on 353 motions that no actor performed in training, the method raises the normalized return of SuperMimic, the baseline it builds on, from 0.953 to 0.967 and the lowest $1\\%$ of test clips from 0.65 to 0.76, halves the test clips that fall persistently, from 15--18 to 7--10, and reaches the baseline's final return in 40% of the baseline's iterations and half its training time. On LAFAN1, trained and evaluated on the same clips as prior work, it reaches 0.935 against 0.906.",
       "authority": 10,
@@ -128,7 +128,7 @@
       "category": "cs.RO",
       "published_at": "2026-11-20T16:58:59+00:00",
       "updated_at": "2026-11-20T16:58:59Z",
-      "title_zh": "用于安全关键电气开关的人形机器人：基于感知的运行时约束过滤器",
+      "title_zh": "用于安全关键型电气开关的人形机器人：基于感知的运行时约束过滤器",
       "relevance": 0.32,
       "description": "Humanoid robots can reduce personnel exposure in electrical switching, but safe control is challenging because the tool must reach a target switch next to similar devices, where an imprecise operator command can contact a non-target switch. This study proposes a runtime safety filter that checks each operator command during virtual-reality teleoperation of a humanoid robot. The filter integrates a scene model estimated from the robot head camera and a target-conditioned control barrier function quadratic program that keeps the tool away from the non-target switch while passing safe commands unchanged. In real-world experiments on a Unitree G1 humanoid robot, with six rounds at each of two standing positions, target operations succeed in all ten rounds with an unchanged target and no non-target actuation. A simulation study achieves 9/9 safe completions, compared with 5/9 for raw teleoperation, demonstrating the feasibility of the method for humanoid switching operations.",
       "authority": 10,
@@ -557,7 +557,7 @@
       "category": "cs.RO",
       "published_at": "2026-11-20T13:13:41+00:00",
       "updated_at": "2026-11-20T13:13:41Z",
-      "title_zh": "基于数字孪生和人工智能的智能弹性制造桌面学习工厂",
+      "title_zh": "基于数字孪生和人工智能的桌面学习工厂，用于智能和弹性制造",
       "relevance": 0.24,
       "description": "Learning factories have been increasingly applied in engineering research and education. In this paper, we develop a small-scale, low-cost, fully open-sourced learning factory that leverages AI and digital twins to demonstrate smart and resilient manufacturing. The learning factory consists of an AGV, three robots, two conveyors and their digital twins. Three typical use cases are designed to demonstrate the capabilities of the learning factory, i.e., material sorting through computer vision-based robot control, coordinating AGV, robots and conveyors for assembly, and digital twin-driven predictive maintenance. The results show that the developed learning factory can adequately support the teaching and research activities on digital twins and AI on manufacturing. Its fully open-source architecture and relatively low deployment cost make it an ideal solution for universities and research institutions.",
       "authority": 10,
@@ -986,7 +986,7 @@
       "category": "cs.RO",
       "published_at": "2026-11-20T13:57:51+00:00",
       "updated_at": "2026-11-20T13:57:51Z",
-      "title_zh": "Instant-LIVO：具有紧凑几何结构和有界单参考帧地图的高效激光雷达惯性视觉里程计",
+      "title_zh": "Instant-LIVO：具有紧凑几何结构和有界单参考帧地图的高效 LiDAR 惯性视觉里程计",
       "relevance": 0.14,
       "description": "LiDAR-Inertial-Visual Odometry (LIVO) is a fundamental technology for autonomous systems; however, deployment on resource-constrained platforms remains challenging due to physical limitations. This paper presents Instant-LIVO, a tightly coupled, high-speed, real-time LIVO system. The system introduces a compact geometric map based on spatial-hashed OctVox and accelerates local-neighborhood retrieval and plane fitting through cache-assisted heuristic staged K-nearest-neighbor searches. It also employs a bounded single-reference-frame visual map that adaptively updates the reference frame according to the tracking status, while using Schmidt-type uncertainty-aware photometric fusion to maintain the correlation between the reference pose and the current state. The system performs multisensor fusion through a sequential process consisting of IMU prediction, LiDAR geometric correction, and visual photometric correction. It was evaluated on 32 public benchmarks and custom datasets. While maintaining competitive accuracy on both X86 and ARM platforms, Instant-LIVO achieves average processing-speed improvements of approximately 2.3x and 2.1x, respectively, and reduces peak memory usage to approximately 1/20 and 1/13, respectively. The results demonstrate that the proposed method outperforms existing LIO and LIVO baselines in both accuracy and computational efficiency.The implementation is available at: https://github.com/Faker-0714/Instant-LIVO.git.",
       "authority": 10,
