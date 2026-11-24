@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T23:18:26.355726+00:00",
+  "generated_at": "2026-11-24T23:49:06.898745+00:00",
   "total_items": 30,
   "items": [
     {
@@ -635,7 +635,7 @@
       "category": "cs.RO",
       "published_at": "2026-11-23T17:09:38+00:00",
       "updated_at": "2026-11-23T17:09:38Z",
-      "title_zh": "SurgeCount：用于双手外科海绵计数的协议引导组合线束",
+      "title_zh": "SurgeCount：用于双手手术海绵计数的协议引导组合线束",
       "relevance": 0.26,
       "description": "We present SurgeCount, a system for auditable robotic surgical sponge counting that composes learned skills under a written procedural protocol. Retained sponges cause preventable harm, and surgical teams count every sponge before closure to reduce that risk. The robot repeatedly isolates one deformable sponge from a tangled pile and places it in the next numbered counting-tray slot, requiring handling of occluded grasp threads while preserving step order. We train one subtask-conditioned policy on eleven short skills and learn when each skill ends. At each learned boundary, a stateful vision-language model selects the next skill from an operator-authored specification of step order, visual verification, and recovery. This creates temporal commitment to each subtask and enables failures to be recovered by recomposing existing skills rather than using a dedicated recovery policy. We evaluate five methods across 100 real-robot trials using 20 matched layouts. SurgeCount fills 47 of 60 ordered slots and completes 12 of 20 procedures, compared with 27 of 60 and 3 of 20 for the strongest of four end-to-end policies trained on the same data. Replacing the detailed protocol prompt with a minimal prompt reduces performance to 29 of 60 slots and 5 of 20 completed procedures. These results show that long-horizon performance depends not only on visuomotor capacity, but also on how learned skills are committed, verified, and composed. This tabletop proof of concept motivates further evaluation of protocol-guided robotic sponge counting in clinically representative settings.",
       "authority": 10,
