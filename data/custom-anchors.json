@@ -1,9 +1,51 @@
 {
-  "generated_at": "2026-11-25T11:50:09.458883+00:00",
+  "generated_at": "2026-11-25T12:18:48.317204+00:00",
   "window_start": "2026-11-25T19:00:00+08:00",
-  "window_end": "2026-11-25T19:50:08.993735+08:00",
-  "total_items": 3,
+  "window_end": "2026-11-25T20:18:48.025548+08:00",
+  "total_items": 4,
   "items": [
+    {
+      "id": "332e9fc901e7382b6cd34f9218b4934cef95a927",
+      "title": "WATCH: Ramaphosa examines Stanford research into AI-powered household robots - IOL",
+      "title_zh": "观看：拉马福萨审查斯坦福大学对人工智能驱动的家用机器人的研究 - IOL",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPVEtIU0I1c1ZSb29Tbk9IS2lseW1rY0oxQWduTGZMcUpxdWg1OUlfb1Nkb2RySDlqNnFNV2cyQWxMaHEtUjFrQkFoRm1HUmlKcjh0cjlvdWpFN3RVd3Azc0hlcUU1dVpsamFjSmdtMi1ydHNoVm5zWGItZWVNVXJsTzU1bHlfSGZLb043UWdWWnAzdDg1WHF3ZG5iam1Id2IyM2FwVkZKZmZIR0s4aFpYVzk0dmY5M0hublE?oc=5",
+      "published_at": "2026-11-25T11:45:27+00:00",
+      "category": "GN: Stanford robotics",
+      "gn_label": "robotics",
+      "site_name": "GN: Stanford robotics",
+      "source": "GN: Stanford robotics",
+      "site_id": "GN: Stanford robotics",
+      "description": "President Cyril Ramaphosa has been given a glimpse of how artificial intelligence (AI) and robotics could transform ever",
+      "ai_score": 65.0,
+      "ai_label": "robotics",
+      "relevance": 0.26,
+      "authority": 5,
+      "depth": 8,
+      "timeliness": 24.4,
+      "writing_value": 5,
+      "total_score": 68.4,
+      "_hx": {
+        "topic": 0,
+        "conflict": 0,
+        "data": 0,
+        "pr_pen": 0,
+        "rel": 26.0,
+        "auth": 5,
+        "tim": 24.44506615784433,
+        "writing": 5,
+        "depth": 8,
+        "secjunk": 0,
+        "junk": 0,
+        "dup_pen": 0.0,
+        "dup_of": false
+      },
+      "hx_topic": 0,
+      "hx_conflict": 0,
+      "hx_data": 0,
+      "hx_pr_penalty": 0,
+      "hx_secjunk_penalty": 0,
+      "hx_dup_penalty": -0.0
+    },
     {
       "id": "d480148bfd3bd9f4cebe777e512f61ece4423a57",
       "title": "Anker Eufy Robot Vacuum Omni E35 Review - techbuzzireland.com",
@@ -21,9 +63,9 @@
       "relevance": 0.26,
       "authority": 5,
       "depth": 8,
-      "timeliness": 24.2,
+      "timeliness": 23.8,
       "writing_value": 5,
-      "total_score": 68.2,
+      "total_score": 66.2,
       "_hx": {
         "topic": 0,
         "conflict": 0,
@@ -31,12 +73,12 @@
         "pr_pen": 0,
         "rel": 26.0,
         "auth": 5,
-        "tim": 24.24023976041211,
+        "tim": 23.762566157844333,
         "writing": 5,
         "depth": 8,
         "secjunk": 0,
         "junk": 0,
-        "dup_pen": 0.0,
+        "dup_pen": 1.6,
         "dup_of": false
       },
       "hx_topic": 0,
@@ -44,7 +86,7 @@
       "hx_data": 0,
       "hx_pr_penalty": 0,
       "hx_secjunk_penalty": 0,
-      "hx_dup_penalty": -0.0
+      "hx_dup_penalty": -1.6
     },
     {
       "id": "a04ed0ace854b6b535c2917d74077b27923c49eb",
@@ -65,7 +107,7 @@
       "depth": 8,
       "timeliness": 0.0,
       "writing_value": 5,
-      "total_score": 40.0,
+      "total_score": 39.0,
       "_hx": {
         "topic": 0,
         "conflict": 0,
@@ -78,7 +120,7 @@
         "depth": 8,
         "secjunk": 0,
         "junk": 0,
-        "dup_pen": 2.0,
+        "dup_pen": 3.0,
         "dup_of": false
       },
       "hx_topic": 0,
@@ -86,7 +128,7 @@
       "hx_data": 0,
       "hx_pr_penalty": 0,
       "hx_secjunk_penalty": 0,
-      "hx_dup_penalty": -2.0
+      "hx_dup_penalty": -3.0
     },
     {
       "id": "c913929672dca60a37af5e4e5eed3b75bf38cdf5",
@@ -107,7 +149,7 @@
       "depth": 8,
       "timeliness": 0.0,
       "writing_value": 1,
-      "total_score": 38.5,
+      "total_score": 37.3,
       "_hx": {
         "topic": 0,
         "conflict": 0,
@@ -120,7 +162,7 @@
         "depth": 8,
         "secjunk": 0,
         "junk": 0,
-        "dup_pen": 1.5,
+        "dup_pen": 2.7,
         "dup_of": false
       },
       "hx_topic": 0,
@@ -128,7 +170,7 @@
       "hx_data": 0,
       "hx_pr_penalty": 0,
       "hx_secjunk_penalty": 0,
-      "hx_dup_penalty": -1.5
+      "hx_dup_penalty": -2.7
     }
   ],
   "fallback_used": false
